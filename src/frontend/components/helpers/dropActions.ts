@@ -45,15 +45,16 @@ type Keys = { shiftKey: boolean; ctrlKey: boolean; altKey: boolean }
 export const dropActions = {
     slides: ({ drag, drop }: Data, history: History, keys?: Keys) => dropActions.slide({ drag, drop }, history, keys),
     slide: async ({ drag, drop }: Data, history: History, keys?: Keys) => {
-        const customId: string = drag.showId || drag.data[0]?.showId
+        const id: string = getId(drag)
+        // In Focus Mode the destination can be a different show/arrangement from the opened show.
+        const customId: string = (id === "media" ? drop.data?.showId : "") || drag.showId || drag.data[0]?.showId
         const showId = customId || get(activeShow)?.id || ""
         if (!showId || get(shows)[showId]?.locked) return
 
-        history.location = { page: get(activePage), show: customId ? { id: customId } : get(activeShow) || undefined, layout: get(showsCache)[showId]?.settings?.activeLayout }
+        history.location = { page: get(activePage), show: customId ? { id: customId } : get(activeShow) || undefined, layout: (id === "media" ? drop.data?.layout : "") || get(showsCache)[showId]?.settings?.activeLayout }
 
-        const id: string = getId(drag)
         if (slideDrop[id]) {
-            const show = _show().get()
+            const show = _show(showId).get()
             if (show?.locked) {
                 alertMessage.set("show.locked")
                 activePopup.set("alert")
@@ -718,8 +719,11 @@ const slideDrop = {
             h.newData = newData
 
             // change slide group name if same name as previous media
-            const showId = get(activeShow)?.id || ""
-            const layoutRef = getLayoutRef()
+            const showId = h.location?.show?.id || ""
+            const layoutRef =
+                _show(showId)
+                    .layouts([h.location?.layout || ""])
+                    .ref()[0] || []
             const slideId = layoutRef[drop.index!]?.id
             const slide = _show(showId).slides([slideId]).get()?.[0] || {}
             const currentBgId = layoutRef[drop.index!]?.data.background || ""
@@ -732,11 +736,11 @@ const slideDrop = {
 
             // add as slide bg instead of layout bg
             if (keys.ctrlKey) {
-                const slideSettings = _show().slides([slideId]).get("settings")
+                const slideSettings = _show(showId).slides([slideId]).get("settings")
                 const oldData = { style: clone(slideSettings) }
                 newData = { style: { ...clone(slideSettings), backgroundImage: newData.path } }
 
-                history({ id: "slideStyle", oldData, newData, location: { page: "edit", show: get(activeShow)!, slide: slideId } })
+                history({ id: "slideStyle", oldData, newData, location: { page: "edit", show: h.location!.show, slide: slideId } })
                 return
             }
 

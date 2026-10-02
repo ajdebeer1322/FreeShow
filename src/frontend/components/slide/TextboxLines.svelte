@@ -110,6 +110,28 @@
     let alignHeight = 0
 
     $: isScrolling = !isStage && !!item?.scrolling?.type && item.scrolling.type !== "none"
+    $: messageScroll = isScrolling && item?.scrolling?.duration !== undefined
+    $: scrollPass = messageScroll && (item?.scrolling?.startOffscreen || item?.scrolling?.repeat === false)
+    $: horizontalScroll = item?.scrolling?.type === "left_right" || item?.scrolling?.type === "right_left"
+    $: feather = messageScroll ? Math.max(0, item?.scrolling?.feather || 0) : 0
+    $: scrollMask = feather ? `mask-image:linear-gradient(to ${horizontalScroll ? "right" : "bottom"}, transparent, #000 ${feather}px, #000 calc(100% - ${feather}px), transparent);` : ""
+    $: scrollGap = Math.max(0, item?.scrolling?.gap || 0)
+    $: messageScrollStyle = messageScroll
+        ? [
+              `--messageDuration:${Math.max(0.1, item?.scrolling?.duration || 15)}s`,
+              `--scrollRepeat:${item?.scrolling?.repeat === false ? 1 : "infinite"}`,
+              `--scrollViewportWidth:${alignWidth}px`,
+              `--scrollViewportHeight:${alignHeight}px`,
+              `--scrollContentWidth:${contentWidth}px`,
+              `--scrollContentHeight:${contentHeight}px`,
+              `--scrollGap:${scrollGap}px`,
+              `--scrollStartX:${item?.scrolling?.startOffscreen ? alignWidth + scrollGap : 0}px`,
+              `--scrollStartY:${item?.scrolling?.startOffscreen ? alignHeight + scrollGap : 0}px`,
+              `--scrollReverseStartX:${item?.scrolling?.startOffscreen ? -contentWidth - scrollGap : 0}px`,
+              `--scrollReverseStartY:${item?.scrolling?.startOffscreen ? -contentHeight - scrollGap : 0}px`,
+              scrollMask
+          ].join(";") + ";"
+        : ""
     $: copyCountHorizontal = contentWidth > 0 ? Math.ceil(alignWidth / (contentWidth + (item?.scrolling?.gap ?? 0))) + 2 : 2
     $: copyCountVertical = contentHeight > 0 ? Math.ceil(alignHeight / (contentHeight + (item?.scrolling?.gap ?? 0))) + 2 : 2
 
@@ -362,11 +384,11 @@
     $: baseFontSize = fontSize || (style ? resolveFontSize(mainTextSegment?.style, outputStyle) : 100)
 </script>
 
-<div class="align" class:hasShapeOutside={!!shapeOutside} class:hidden={hideContent} class:isStage class:scrolling={!isStage && item?.scrolling?.type} style="--scrollSpeed: {(item?.scrolling?.speed ?? 30) * 1.5}s;{style ? item?.align : null};" use:measureScroll={"align"}>
+<div class="align" class:hasShapeOutside={!!shapeOutside} class:hidden={hideContent} class:isStage class:scrolling={!isStage && item?.scrolling?.type} class:messageScroll style="--scrollSpeed: {(item?.scrolling?.speed ?? 30) * 1.5}s;{style ? item?.align : null};{messageScrollStyle}" use:measureScroll={"align"}>
     <!-- scrolling lines -->
     {#if !isStage && item?.scrolling?.type && item?.scrolling?.type !== "none"}
-        <div class="scrollWrapper" style="--copyCountHorizontal: {copyCountHorizontal};--copyCountVertical: {copyCountVertical};" class:topBottomContinuousScrolling={!isStage && item?.scrolling?.type === "top_bottom"} class:bottomTopContinuousScrolling={!isStage && item?.scrolling?.type === "bottom_top"} class:leftRightContinuousScrolling={!isStage && item?.scrolling?.type === "left_right"} class:rightLeftContinuousScrolling={!isStage && item?.scrolling?.type === "right_left"}>
-            {#each Array.from({ length: item?.scrolling?.type === "top_bottom" || item?.scrolling?.type === "bottom_top" ? copyCountVertical : copyCountHorizontal }) as _}
+        <div class="scrollWrapper" style="--copyCountHorizontal: {copyCountHorizontal};--copyCountVertical: {copyCountVertical};" class:scrollPass class:topBottomContinuousScrolling={!isStage && item?.scrolling?.type === "top_bottom"} class:bottomTopContinuousScrolling={!isStage && item?.scrolling?.type === "bottom_top"} class:leftRightContinuousScrolling={!isStage && item?.scrolling?.type === "left_right"} class:rightLeftContinuousScrolling={!isStage && item?.scrolling?.type === "right_left"}>
+            {#each Array.from({ length: scrollPass ? 1 : item?.scrolling?.type === "top_bottom" || item?.scrolling?.type === "bottom_top" ? copyCountVertical : copyCountHorizontal }) as _}
                 <div class="scrollContent" style="{item?.scrolling?.type === 'top_bottom' || item?.scrolling?.type === 'bottom_top' ? 'margin-bottom' : 'margin-right'}: {item?.scrolling?.gap ?? 100}px;" use:measureScroll={"content"}>
                     <!-- WIP duplicate of "lines" down below -->
                     <div
@@ -616,6 +638,72 @@
     .scrolling {
         /* scroll will always show overflowing text */
         overflow: visible !important;
+    }
+    .align.messageScroll {
+        position: relative;
+        overflow: hidden !important;
+    }
+    .messageScroll .scrollWrapper {
+        animation-duration: var(--messageDuration);
+        animation-iteration-count: var(--scrollRepeat);
+        animation-fill-mode: forwards;
+    }
+    .scrollPass {
+        position: absolute;
+    }
+    .scrollPass.rightLeftContinuousScrolling,
+    .scrollPass.leftRightContinuousScrolling {
+        left: 0;
+        top: 50%;
+    }
+    .scrollPass.topBottomContinuousScrolling,
+    .scrollPass.bottomTopContinuousScrolling {
+        top: 0;
+        left: 50%;
+    }
+    .scrollPass.rightLeftContinuousScrolling {
+        animation-name: messageRightLeft;
+    }
+    .scrollPass.leftRightContinuousScrolling {
+        animation-name: messageLeftRight;
+    }
+    .scrollPass.topBottomContinuousScrolling {
+        animation-name: messageTopBottom;
+    }
+    .scrollPass.bottomTopContinuousScrolling {
+        animation-name: messageBottomTop;
+    }
+    @keyframes messageRightLeft {
+        from {
+            transform: translate(var(--scrollStartX), -50%);
+        }
+        to {
+            transform: translate(calc(-1 * (var(--scrollContentWidth) + var(--scrollGap))), -50%);
+        }
+    }
+    @keyframes messageLeftRight {
+        from {
+            transform: translate(var(--scrollReverseStartX), -50%);
+        }
+        to {
+            transform: translate(calc(var(--scrollViewportWidth) + var(--scrollGap)), -50%);
+        }
+    }
+    @keyframes messageTopBottom {
+        from {
+            transform: translate(-50%, var(--scrollReverseStartY));
+        }
+        to {
+            transform: translate(-50%, calc(var(--scrollViewportHeight) + var(--scrollGap)));
+        }
+    }
+    @keyframes messageBottomTop {
+        from {
+            transform: translate(-50%, var(--scrollStartY));
+        }
+        to {
+            transform: translate(-50%, calc(-1 * (var(--scrollContentHeight) + var(--scrollGap))));
+        }
     }
 
     /* chords */

@@ -271,6 +271,9 @@ export const effects: Writable<Effects> = writable({}) // {default}
 // OVERLAYS
 export const overlayCategories: Writable<Categories> = writable({}) // {default}
 export const overlays: Writable<Overlays> = writable({}) // {default}
+export const messageDrafts = writable<Record<string, Record<string, string>>>({})
+export const activeMessage = writable("")
+export const messagesPanelOpen = writable(false)
 
 export const deletedDefaults: Writable<{ [key: string]: string[] }> = writable({}) // {}
 

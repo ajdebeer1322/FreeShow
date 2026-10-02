@@ -1,5 +1,6 @@
 import type { AutosizeTypes } from "../frontend/components/edit/scripts/autosize"
 import type { Input } from "./Input"
+import type { MessageDefinition } from "./Message"
 import type { Animation } from "./Output"
 import type { Cropping, Resolution } from "./Settings"
 
@@ -108,6 +109,8 @@ export interface Slide {
 }
 
 export interface Item {
+    messageText?: boolean // primary wording textbox in a saved Message
+    messageBackground?: boolean // optional banner shape, editable in the overlay editor
     id?: string
     lines?: Line[]
     list?: List
@@ -266,6 +269,10 @@ export interface Scrolling {
     type: "none" | "top_bottom" | "bottom_top" | "left_right" | "right_left"
     speed?: number
     gap?: number
+    startOffscreen?: boolean
+    repeat?: boolean
+    feather?: number // edge mask in pixels
+    duration?: number // seconds per pass; overrides legacy speed for Messages
 }
 
 // pre 1.5.0
@@ -531,6 +538,7 @@ export interface Overlays {
     [key: ID]: Overlay
 }
 export interface Overlay {
+    message?: MessageDefinition
     isDefault?: boolean
     name: string
     color: null | string

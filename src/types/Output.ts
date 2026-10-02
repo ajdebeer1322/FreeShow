@@ -1,4 +1,5 @@
 import type { Cropping, Resolution } from "./Settings"
+import type { LiveMessage } from "./Message"
 import type { OutBackground, OutScene, OutSlide, OutTransition } from "./Show"
 
 export interface Outputs {
@@ -68,6 +69,7 @@ export interface RtmpStatus {
 }
 
 export interface OutData {
+    messages?: Record<string, LiveMessage>
     refresh?: boolean
     background?: null | OutBackground
     slide?: null | OutSlide

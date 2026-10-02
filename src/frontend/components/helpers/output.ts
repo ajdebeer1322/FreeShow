@@ -749,6 +749,7 @@ export function isOutCleared(key: string | null = null, updater: Outputs = get(o
             if (type === "effects") {
                 return output.out.effects?.length
             }
+            if (type === "messages") return Object.keys(output.out.messages || {}).length > 0
 
             return output.out[type] !== null
         })

@@ -20,6 +20,7 @@
     import Background from "./layers/Background.svelte"
     import Overlay from "./layers/Overlay.svelte"
     import Overlays from "./layers/Overlays.svelte"
+    import Messages from "./layers/Messages.svelte"
     import PdfOutput from "./layers/PdfOutput.svelte"
     import SceneMedia from "./layers/SceneMedia.svelte"
     import SlideContent from "./layers/SlideContent.svelte"
@@ -421,6 +422,7 @@
         {#if overlaysActive}
             <Overlays {outputId} overlays={clonedOverlays} activeOverlays={outOverlays} transition={transitions.overlay} {mirror} {preview} styleIdOverride={styleIdOverride || sceneStyleId} />
         {/if}
+        <Messages messages={out.messages || {}} {outputId} {mirror} {preview} styleIdOverride={styleIdOverride || sceneStyleId} />
     {/if}
 
     {#if actualSlide?.attributionString && layers.includes("slide")}

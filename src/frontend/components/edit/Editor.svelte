@@ -1,7 +1,7 @@
 <script lang="ts">
     import { onMount } from "svelte"
     import type { TabsObj } from "../../../types/Tabs"
-    import { activeEdit, activePopup, activeShow, cloudUsers, drawer, drawerOpenedInEdit, editMode, focusMode, refreshEditSlide, showsCache, slideNotesActive, special } from "../../stores"
+    import { activeEdit, activePopup, activeShow, cloudUsers, drawer, drawerOpenedInEdit, editMode, focusMode, overlays, refreshEditSlide, showsCache, slideNotesActive, special } from "../../stores"
     import { isActiveShowInUseByCloudUser } from "../../utils/cloudSync"
     import { getAccess } from "../../utils/profile"
     import Icon from "../helpers/Icon.svelte"
@@ -58,7 +58,7 @@
         }
 
         // mainly for overlay preview
-        if ($activeShow?.id && ($activeShow.type || "show") !== "show" && (!$activeEdit.id || $activeEdit.type === $activeShow.type)) {
+        if (!$overlays[$activeEdit.id || ""]?.message && $activeShow?.id && ($activeShow.type || "show") !== "show" && (!$activeEdit.id || $activeEdit.type === $activeShow.type)) {
             activeEdit.set({ id: $activeShow.id, type: $activeShow.type, items: [] } as any)
         }
     })

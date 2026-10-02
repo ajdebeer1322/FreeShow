@@ -9,6 +9,7 @@
     import { getNormalizedKey, shouldOpenReplace } from "../../utils/shortcuts"
     import { isTypingTarget } from "../../utils/shortcutsHelper"
     import { drawerTabs } from "../../values/tabs"
+    import { menuClick } from "../context/menuClick"
     import Content from "../drawer/Content.svelte"
     import Navigation from "../drawer/Navigation.svelte"
     import { keysToID } from "../helpers/array"
@@ -276,6 +277,12 @@
                 {/if}
             {/each}
         </span>
+
+        {#if $activePage === "show" || $focusMode}
+            <MaterialButton id="focus_mode_button" icon="focus_mode" title="actions.focus_mode [Ctrl+Shift+F]" isActive={$focusMode} disabled={!$focusMode && !$projects[$activeProject || ""]?.shows?.length} style="flex-shrink: 0;" on:click={() => menuClick("focus_mode")}>
+                <T id="actions.focus_mode" />
+            </MaterialButton>
+        {/if}
 
         <input bind:this={searchElem} class:hidden={!searchActive && !searchValue.length} class="search edit drawer_search" type="text" placeholder={translateText("main.search...", $dictionary)} bind:value={searchValue} on:input={search} use:selectTextOnFocus />
         {#if !searchActive && !searchValue.length}

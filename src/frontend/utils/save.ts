@@ -153,6 +153,7 @@ export function save(closeWhenFinished = false, customTriggers: SaveActions = {}
     // strip runtime state that should not save
     const sanitizedOutputs = clone(get(outputs))
     Object.values(sanitizedOutputs).forEach((out: any) => {
+        if (out.out) delete out.out.messages // save definitions, never relaunch a live notice
         if (out.webrtcData) out.webrtcData.streaming = false
         if (out.rtmpData) out.rtmpData.streaming = false
     })

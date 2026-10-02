@@ -503,7 +503,7 @@
 <div class="main" class:padding={!$focusMode} style="display: contents;">
     <Autoscroll class={$focusMode || isLocked ? "" : "context #shows__close"} {offset} disabled={disableAutoScroll} {shouldSkipSmooth} bind:scrollElem style="display: flex;">
         <DropArea id="all_slides" selectChildren>
-            <DropArea id="slides" hoverTimeout={0} selectChildren>
+            <DropArea id="slides" data={{ showId, layout: activeLayout }} hoverTimeout={0} selectChildren>
                 {#if !$focusMode}
                     <ShowHeader {showId} hideOptions={!layoutSlides?.length} />
                 {/if}

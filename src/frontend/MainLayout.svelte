@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { onMount } from "svelte"
     import AiFloating from "./ai/components/floating/AiFloating.svelte"
     import { customActionActivation } from "./components/actions/actions"
     import DrawTabs from "./components/draw/DrawTabs.svelte"
@@ -8,6 +9,8 @@
     import Tipbar from "./components/main/Tipbar.svelte"
     import Top from "./components/main/Top.svelte"
     import Preview from "./components/output/preview/Preview.svelte"
+    import MessagesPanel from "./components/output/messages/MessagesPanel.svelte"
+    import { startMessageTimers } from "./components/helpers/messageOutput"
     import SettingsTabs from "./components/settings/SettingsTabs.svelte"
     import Projects from "./components/show/Projects.svelte"
     import Show from "./components/show/Show.svelte"
@@ -15,11 +18,13 @@
     import StageLayouts from "./components/stage/StageLayouts.svelte"
     import Resizeable from "./components/system/Resizeable.svelte"
     import Timeline from "./components/timeline/Timeline.svelte"
-    import { activeEdit, activePage, activeProfile, activeProject, activeShow, activeStage, ai, currentWindow, editMode, focusMode, loaded, os, projectView, resized, showChangeProfileMenu, showsCache, special } from "./stores"
+    import { activeEdit, activePage, activeProfile, activeProject, activeShow, activeStage, ai, currentWindow, editMode, focusMode, loaded, os, overlays, projectView, resized, showChangeProfileMenu, showsCache, special } from "./stores"
     import { DEFAULT_WIDTH } from "./utils/common"
 
     $: page = $activePage
     $: isWindows = !$currentWindow && $os.platform === "win32"
+    $: isMessageEditor = $activeEdit.type === "overlay" && !!$overlays[$activeEdit.id || ""]?.message
+    onMount(startMessageTimers)
 
     let previousId = ""
     $: if ($activeShow?.id !== previousId) showOpened()
@@ -64,6 +69,7 @@
                 {/if}
             {:else if page === "edit"}
                 <LazyLoad component={() => import("./components/edit/Editor.svelte")} show={page === "edit"} />
+                {#if isMessageEditor}<button class="message-back" on:click={() => activePage.set("show")}>Back to Messages</button>{/if}
             {:else if page === "draw"}
                 <LazyLoad component={() => import("./components/draw/Slide.svelte")} show={page === "draw"} />
             {:else if page === "settings"}
@@ -74,12 +80,15 @@
         </div>
 
         <Resizeable id="rightPanel" let:width side="right">
-            <div class="right" class:row={width > DEFAULT_WIDTH * 1.8}>
+            <div class="right" class:row={width > DEFAULT_WIDTH * 1.8} class:messages-layout={page === "show"}>
                 <Preview />
                 {#if page === "show"}
-                    {#if $activeShow && ($activeShow.type === "show" || $activeShow.type === undefined) && !$focusMode}
-                        <ShowTools />
-                    {/if}
+                    <div class="show-controls">
+                        <MessagesPanel />
+                        {#if $activeShow && ($activeShow.type === "show" || $activeShow.type === undefined) && !$focusMode}
+                            <div class="show-tools"><ShowTools /></div>
+                        {/if}
+                    </div>
                 {:else if page === "edit"}
                     {#if $activeEdit.type === "media" || $activeEdit.type === "camera"}
                         <LazyLoad component={() => import("./components/edit/MediaTools.svelte")} show={$activeEdit.type === "media" || $activeEdit.type === "camera"} />
@@ -90,10 +99,10 @@
                     {:else if $activeEdit.type === "scene"}
                         <LazyLoad component={() => import("./components/edit/SceneTools.svelte")} show={$activeEdit.type === "scene"} />
                     {:else if $activeEdit.type === "overlay" || $activeEdit.type === "template" || $showsCache[$activeShow?.id || ""]}
-                        {#if $focusMode || (($activeEdit.type || "show") === "show" && $editMode !== "default")}
+                        {#if ($focusMode && !isMessageEditor) || (($activeEdit.type || "show") === "show" && $editMode !== "default")}
                             <!-- show nothing -->
                         {:else}
-                            <LazyLoad component={() => import("./components/edit/EditTools.svelte")} show={!$focusMode} />
+                            <LazyLoad component={() => import("./components/edit/EditTools.svelte")} show={!$focusMode || isMessageEditor} />
                         {/if}
                     {/if}
                 {:else if page === "draw"}
@@ -170,6 +179,31 @@
     }
     .right.row {
         flex-direction: row-reverse;
+    }
+
+    .right.messages-layout:not(.row) > :global(.main) {
+        flex: 0 0 auto;
+    }
+    .show-controls {
+        flex: 1;
+        min-height: 0;
+        min-width: 0;
+        overflow-y: auto;
+    }
+    .show-tools {
+        min-height: 180px;
+    }
+    .message-back {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        z-index: 10;
+        background: var(--primary-darkest);
+        color: inherit;
+        border: 1px solid var(--primary-lighter);
+        border-radius: 4px;
+        padding: 8px;
+        cursor: pointer;
     }
 
     .right :global(.border) {

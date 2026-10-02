@@ -6,6 +6,7 @@
     import T from "../helpers/T.svelte"
 
     export let id: DropAreas
+    export let data: { showId?: string; layout?: string } = {}
     export let selectChildren = false
     export let hoverTimeout = 500
     export let file = false
@@ -41,13 +42,13 @@
                 // convert web media files to base64
                 const mediaData = await Promise.all(webMediaFiles.map((file) => fileToBase64(file)))
                 selected.set({ id: "media", data: mediaData })
-                ondrop(e, id)
+                ondrop(e, id, data)
                 return
             }
 
             // Regular local files
             selected.set({ id: "files", data: files })
-            ondrop(e, id)
+            ondrop(e, id, data)
             return
         }
 
@@ -57,12 +58,12 @@
             if (mediaUrls.length) {
                 const mediaData = mediaUrls.map((u) => ({ name: getNameFromUrl(u), path: u }))
                 selected.set({ id: "media", data: mediaData })
-                ondrop(e, id)
+                ondrop(e, id, data)
                 return
             }
 
             selected.set({ id: "urls", data: urls })
-            ondrop(e, id)
+            ondrop(e, id, data)
             return
         }
 
@@ -70,7 +71,7 @@
         hover = false
         console.log($selected.id, "=>", id)
 
-        if (validateDrop(id, $selected.id, true)) ondrop(e, id)
+        if (validateDrop(id, $selected.id, true)) ondrop(e, id, data)
     }
 
     function getFiles(e: any): any[] {
@@ -187,7 +188,7 @@
     function onTouchEnd(e: TouchEvent) {
         if (hover && active) {
             // simulate a drop event
-            ondrop(e, id)
+            ondrop(e, id, data)
         }
         hover = false
     }

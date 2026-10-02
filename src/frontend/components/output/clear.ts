@@ -8,6 +8,7 @@ import { startMetronome } from "../drawer/audio/metronome"
 import { clone } from "../helpers/array"
 import { clearOverlayTimer, getAllActiveOutputIds, getAllActiveOutputs, isOutCleared, setOutput } from "../helpers/output"
 import { _show } from "../helpers/shows"
+import { clearMessages } from "../helpers/messageOutput"
 import { getActiveTimelinePlayback } from "../timeline/TimelinePlayback"
 
 export function clearAll(button = false) {
@@ -29,6 +30,7 @@ export function clearAll(button = false) {
     clearBackground()
     clearSlide(!keepLastSlide)
     clearOverlays()
+    clearMessages(getAllActiveOutputIds())
     clearAudio("", { clearPlaylist: true, commonClear: true })
     clearTimers()
 }

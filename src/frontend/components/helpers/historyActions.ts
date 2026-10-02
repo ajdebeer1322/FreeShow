@@ -374,7 +374,8 @@ function handleSlides(obj, data, initializing) {
     data = (deleting ? obj.oldData : obj.newData) || {}
 
     if (initializing) {
-        data.remember = { showId: get(activeShow)?.id, layout: _show().get("settings.activeLayout") }
+        const targetShowId = obj.location?.show?.id || get(activeShow)?.id
+        data.remember = { showId: targetShowId, layout: obj.location?.layout || _show(targetShowId).get("settings.activeLayout") }
     }
 
     let slides = clone(data?.data) || []

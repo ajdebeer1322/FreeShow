@@ -39,7 +39,7 @@ export function validateDrop(id: string, selectedId: SelectIds | null, children 
     return areas[id]?.includes(selectedId) || (children && areaChildren[id]?.includes(selectedId))
 }
 
-export async function ondrop(e: any, id: string) {
+export async function ondrop(e: any, id: string, target: { showId?: string; layout?: string } = {}) {
     // let data: string = e.dataTransfer.getData("text")
     const h = { id: null, location: { page: get(activePage) } }
     const sel = get(selected)
@@ -52,7 +52,7 @@ export async function ondrop(e: any, id: string) {
     }
 
     const trigger: undefined | string = e?.target.closest(".TriggerBlock")?.id
-    const data: any = JSON.parse(elem?.getAttribute("data-item") || "{}")
+    const data: any = { ...target, ...JSON.parse(elem?.getAttribute("data-item") || "{}") }
     let index: undefined | number = data.index
     let center = false
     if (trigger?.includes("center")) center = true
