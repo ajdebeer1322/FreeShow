@@ -1,6 +1,6 @@
 # Messages
 
-On the **Show** page, open **Messages** beneath the output preview on the right. It is available in Focus Mode too.
+On the **Show** page, open **Messages** beneath the output preview on the right. The normal Show page displays the project as one continuous list. Messages is also available in the original Focus Mode.
 
 1. Click **+ New**. A starter child-pickup notice and banner are created.
 2. Fill **Child name**, then press **Show**. The notice appears over the current presentation.

@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { ProjectShowRef } from "../../../../types/Projects"
-    import { outputs, showsCache } from "../../../stores"
-    import { getActiveOutputs } from "../../helpers/output"
+    import { outLocked, outputs, showsCache } from "../../../stores"
+    import { getActiveOutputs, setOutput } from "../../helpers/output"
     import AudioPreview from "../AudioPreview.svelte"
     import FolderShow from "../folder/FolderShow.svelte"
     import MediaPreview from "../media/MediaPreview.svelte"
@@ -9,8 +9,16 @@
     import EffectPreview from "../effect/EffectPreview.svelte"
     import PdfPreview from "../pdf/PdfPreview.svelte"
     import Slides from "../Slides.svelte"
+    import HoverButton from "../../inputs/HoverButton.svelte"
+    import Camera from "../../output/Camera.svelte"
+    import Capture from "../../drawer/live/Capture.svelte"
+    import NdiStream from "../../drawer/live/NDIStream.svelte"
+    import PowerPointPreview from "../ppt/PowerPointPreview.svelte"
+    import ProjectShowPlaceholder from "../placeholder/ProjectShowPlaceholder.svelte"
 
     export let show: ProjectShowRef
+    export let continuous = true
+    $: layoutId = show.layout || $showsCache[show.id]?.settings?.activeLayout
     $: type = show.type
 
     $: outputId = getActiveOutputs($outputs)[0]
@@ -37,16 +45,35 @@
     </div>
 {:else if type === "pdf"}
     <PdfPreview {show} index={show.index || 0} />
-    <!-- ppt, screen, ndi -->
+{:else if type === "ppt"}
+    <PowerPointPreview {show} />
+{:else if type === "camera" || type === "screen" || type === "ndi"}
+    <HoverButton
+        icon="play"
+        size={10}
+        on:click={() => {
+            if (!$outLocked) setOutput("background", { id: show.id, type })
+        }}
+    >
+        {#if type === "camera"}
+            <Camera id={show.id} groupId={show.data?.groupId} class="media" preview />
+        {:else if type === "screen"}
+            <Capture screen={{ id: show.id, name: show.name || "" }} streams={[]} background />
+        {:else}
+            <NdiStream screen={{ id: show.id, name: show.name || "" }} background />
+        {/if}
+    </HoverButton>
+{:else if type === "show_placeholder"}
+    <ProjectShowPlaceholder />
 {:else if type === "folder"}
     <FolderShow path={show.id} index={show.index || 0} />
 {:else}
-    <Slides showId={show.id} layout={show.layout} projectIndex={show.index} />
+    <Slides showId={show.id} layout={show.layout} projectIndex={show.index} {continuous} />
 
     <!-- WIP change layout??? -->
     <!-- <Layouts /> -->
-    {#if $showsCache[show.id]?.layouts?.[$showsCache[show.id]?.settings?.activeLayout]?.notes}
-        <p class="notes">{$showsCache[show.id]?.layouts?.[$showsCache[show.id]?.settings?.activeLayout]?.notes}</p>
+    {#if $showsCache[show.id]?.layouts?.[layoutId]?.notes}
+        <p class="notes">{$showsCache[show.id]?.layouts?.[layoutId]?.notes}</p>
     {/if}
 {/if}
 

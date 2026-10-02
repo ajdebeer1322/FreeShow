@@ -43,7 +43,7 @@ test("Messages operate over live slides, render literal fields, animate, and sav
                     if (
                         !page.isClosed() &&
                         (await page
-                            .locator(".popup button.start, .top, #focus_mode_button")
+                            .locator(".popup button.start, .top")
                             .count()
                             .catch(() => 0)) > 0
                     ) {
@@ -298,8 +298,8 @@ test("Messages operate over live slides, render literal fields, animate, and sav
             await panel.getByRole("button", { name: "Hide", exact: true }).click()
         }
 
-        // Focus Mode keeps the panel and the native artwork editor available.
-        await window!.locator("#focus_mode_button").click()
+        // The continuous Show view keeps Messages and the native artwork editor available.
+        await expect(window!.locator(".focusId")).toHaveCount(1)
         await panel.getByRole("button", { name: "Edit design", exact: true }).click()
         await expect(window!.locator(".editArea .editItem")).toHaveCount(2)
         const artwork = window!.getByTestId("message-design-tools")
@@ -337,10 +337,9 @@ test("Messages operate over live slides, render literal fields, animate, and sav
         await expect(outputWindow!.locator(".message-design [style*='gradient']").first()).toBeVisible()
         expect(await outputWindow!.locator(".message-design [style*='background:']").evaluateAll((nodes, expectedGradient) => nodes.some((node) => getComputedStyle(node).backgroundImage === expectedGradient), gradient)).toBe(true)
         await panel.getByRole("button", { name: "Hide", exact: true }).click()
-        await expect(window!.locator("#focus_mode_button")).toHaveClass(/isActive/)
+        await expect(window!.locator("#focus_mode_button")).toHaveCount(0)
         await expect(panel.getByLabel("Room", { exact: true })).toHaveValue("Room 3")
         await window!.screenshot({ path: "test-output/screenshots/messages.png" })
-        await window!.locator("#focus_mode_button").click()
         await panel.getByRole("button", { name: "Edit message", exact: true }).click()
         await panel.getByText("Appearance, timing and scrolling", { exact: true }).click()
         await panel.getByLabel("Hide after (seconds; 0 = manual)", { exact: true }).fill("0")

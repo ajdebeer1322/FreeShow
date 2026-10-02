@@ -153,7 +153,7 @@
         // check if media is a local file
         let localPath = ""
         try {
-            localPath = (file as any).path || window.api?.showFilePath?.(file) || ""
+            localPath = (file as any).path || window.api.showFilePath?.(file) || ""
         } catch {}
 
         return !localPath

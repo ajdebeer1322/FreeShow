@@ -14,6 +14,7 @@
     import AudioPreview from "./AudioPreview.svelte"
     import EffectPreview from "./effect/EffectPreview.svelte"
     import FolderShow from "./folder/FolderShow.svelte"
+    import FocusMode from "./focus/FocusMode.svelte"
     import MediaPreview from "./media/MediaPreview.svelte"
     import OverlayPreview from "./overlay/OverlayPreview.svelte"
     import PdfPreview from "./pdf/PdfPreview.svelte"
@@ -29,6 +30,11 @@
     $: if (show?.id) createGlobalTimerFromLocalTimer(show?.id)
 
     $: position = $projects[$activeProject || ""]?.shows?.findIndex((a) => a.id === show?.id)
+
+    // Project items share the continuous Focus Mode renderer; library browsing
+    // still opens a single item, and normal Show state/tools remain available.
+    $: projectItems = $projects[$activeProject || ""]?.shows || []
+    $: continuousProject = projectItems.length > 0 && (!show || projectItems.some((item) => item.id === show?.id && (item.type || "show") === (show?.type || "show")))
 
     // TIMELINE
 
@@ -60,9 +66,11 @@
     }
 </script>
 
-<div class="double">
-    <div id="showArea" class="main" class:highlight={$templateApplied}>
-        {#if show}
+<div class="double" class:projectView={continuousProject}>
+    <div id="showArea" class="main" class:projectView={continuousProject} class:highlight={$templateApplied}>
+        {#if continuousProject}
+            <FocusMode normalView />
+        {:else if show}
             {#if show.type === "video" || show.type === "image" || show.type === "player"}
                 <MediaPreview />
             {:else if show.type === "audio"}
@@ -131,7 +139,11 @@
     </div>
 
     {#if show && (show.type || "show") === "show"}
-        <ShowNotes />
+        {#if continuousProject}
+            <Layouts />
+        {:else}
+            <ShowNotes />
+        {/if}
 
         <!-- || $showsCache[show.id || ""]?.layouts[$showsCache[show.id || ""]?.settings?.activeLayout || ""]?.timeline?.actions?.length -->
         {#if $special.timelineActive}
@@ -163,6 +175,17 @@
         justify-content: center;
 
         overflow: auto;
+    }
+
+    .double.projectView {
+        height: auto;
+        min-height: 100%;
+    }
+
+    .main.projectView {
+        height: auto;
+        overflow: visible;
+        justify-content: flex-start;
     }
 
     .main.highlight {

@@ -1,9 +1,9 @@
 <!-- THIS MODE WILL SHOW ALL THE ELEMENTS IN YOUR PROJECT! -->
 
 <script lang="ts">
-    import { onMount } from "svelte"
+    import { onDestroy } from "svelte"
     import type { ProjectShowRef } from "../../../../types/Projects"
-    import { activeFocus, activeProject, outputs, projects, resized } from "../../../stores"
+    import { activeFocus, activeProject, activeShow, outputs, projects, resized, showsCache } from "../../../stores"
     import Icon from "../../helpers/Icon.svelte"
     import { getActiveOutputs } from "../../helpers/output"
     import T from "../../helpers/T.svelte"
@@ -12,6 +12,9 @@
     import { getAllProjectItems } from "./focus"
     import FocusItem from "./FocusItem.svelte"
     import { hasNewerUpdate } from "../../../utils/common"
+    import { openProjectItem } from "../project"
+
+    export let normalView = false
 
     $: projectId = $activeProject || ""
     $: project = $projects[projectId]
@@ -24,8 +27,8 @@
             if (isScrolling) clearTimeout(isScrolling)
             isScrolling = null
             projectUpdating = null
-            // scrollToActive()
-            if ($activeFocus.id) {
+            if (normalView) scrollToActive()
+            if (!normalView && $activeFocus.id) {
                 const shows = project?.shows || []
                 if (active.index !== undefined && shows[active.index]?.id === active.id) {
                     activeFocus.set(active)
@@ -46,7 +49,7 @@
     $: outputShowProjectIndex = output?.out?.slide?.projectIndex
     $: outputIndex = output?.out?.slide?.index
 
-    $: active = $activeFocus
+    $: active = (normalView ? $activeShow : $activeFocus) || { id: "", index: undefined, type: undefined }
     let scrollingToActive: any = null
     let previousId = ""
     // auto scroll to active slide when show or output changes
@@ -58,7 +61,7 @@
         if (await hasNewerUpdate("FOCUS_SCROLL")) return
         if (!listElem) return
 
-        let currentId = active.id
+        let currentId = active.id || ""
         let slideIndex = active.id === outputShowId ? outputIndex || 0 : 0
         let currentType = active.type
 
@@ -69,14 +72,15 @@
             } else {
                 if (outputShowId) currentId = outputShowId
                 if (outputShowId) currentType = undefined
-                index = getProjectItemIndex(currentId, currentType, outputShowLayout)
+                index = getProjectItemIndex(currentId, currentType, normalView ? project?.shows[active.index ?? -1]?.layout : outputShowLayout)
             }
         }
 
         if (index < 0) return
 
-        if (!outputShowId && previousId && previousId === currentId) return
-        previousId = currentId
+        const targetKey = `${currentId}:${index}`
+        if (!outputShowId && previousId === targetKey) return
+        previousId = targetKey
 
         let id = "id_" + getId(currentId) + "_" + index
         let elem = listElem.querySelector("#" + id) as HTMLElement
@@ -118,12 +122,18 @@
         return shows.findIndex((item) => item.id === id)
     }
 
+    let scrollContainer: HTMLElement | null = null
     $: if (listElem) setScrollListener()
     function setScrollListener() {
         if (!listElem?.closest(".center")) return
 
         fromTop = (listElem.children[0] as HTMLElement)?.offsetTop || 0
-        if (listElem.closest(".center")) (listElem.closest(".center") as HTMLElement).onscroll = (e) => scrolling(e)
+        const container = listElem.closest(".center") as HTMLElement
+        if (scrollContainer !== container) {
+            scrollContainer?.removeEventListener("scroll", scrolling)
+            scrollContainer = container
+            scrollContainer.addEventListener("scroll", scrolling)
+        }
 
         // Trigger once when list is ready so initial active media/show gets centered.
         scrollToActive()
@@ -140,7 +150,7 @@
             isScrolling = null
         }, 500)
 
-        if (sidebarClosed) return
+        if (sidebarClosed || normalView) return
 
         let scrollTop = e.target.scrollTop
 
@@ -166,14 +176,23 @@
         return text.replace(/[^a-zA-Z0-9]+/g, "")
     }
 
-    // don't refresh list unless order changes
-    let projectsItemsList: ProjectShowRef[] = []
-    onMount(updateProjectItemsList)
-    $: projectItems = (project?.shows || []).map((a) => a.id || a.name).join(",")
-    $: if (projectItems) updateProjectItemsList()
-    function updateProjectItemsList() {
-        projectsItemsList = project?.shows || []
+    function selectItem(index: number) {
+        if (!normalView || ($activeShow?.id === project?.shows[index]?.id && $activeShow?.index === index)) return
+        openProjectItem(projectId, index)
     }
+
+    // Include arrangement/metadata changes but avoid remounting all thumbnails
+    // when slide contents change. Do not mutate the stored project references.
+    let projectsItemsList: ProjectShowRef[] = []
+    $: projectItems = JSON.stringify((project?.shows || []).map((item) => ({ ...item, name: (item.type || "show") === "show" ? $showsCache[item.id]?.name : item.name })))
+    $: if (projectItems) projectsItemsList = (project?.shows || []).map((item) => ({ ...item }))
+
+    onDestroy(() => {
+        scrollContainer?.removeEventListener("scroll", scrolling)
+        if (projectUpdating) clearTimeout(projectUpdating)
+        if (isScrolling) clearTimeout(isScrolling)
+        if (scrollingToActive) clearTimeout(scrollingToActive)
+    })
 </script>
 
 {#await getAllProjectItems(projectsItemsList)}
@@ -184,12 +203,13 @@
     {#if list.length}
         <div class="list" bind:this={listElem}>
             {#each list as item, i}
-                <div id={"id_" + getId(item.id) + "_" + i} class="focusId">
-                    <div class="name" style={item.color ? `border-bottom: 2px solid ${item.color}` : ""}>
+                <div id={"id_" + getId(item.id) + "_" + i} class="focusId" class:selected={normalView && active.id === item.id && active.index === i} role="none" on:mousedown={() => selectItem(i)} on:focusin={() => selectItem(i)} on:click={() => selectItem(i)}>
+                    <button class="name" type="button" aria-label={item.name} on:click={() => selectItem(i)} style={item.color ? `border-bottom: 2px solid ${item.color}` : ""}>
                         <Icon id={item.icon || "noIcon"} custom={(item.type || "show") === "show"} white right />
                         <p>{item.name}</p>
-                    </div>
-                    <FocusItem show={{ ...item, index: i }} />
+                        {#if item.layoutInfo?.name}<span class="arrangement">{item.layoutInfo.name}</span>{/if}
+                    </button>
+                    <FocusItem show={{ ...item, index: i }} continuous />
                 </div>
             {/each}
         </div>
@@ -206,7 +226,22 @@
         flex-direction: column;
     }
 
+    .selected > .name {
+        box-shadow: inset 3px 0 var(--secondary);
+    }
+
+    .arrangement {
+        margin-left: auto;
+        opacity: 0.6;
+        font-size: 0.85em;
+    }
+
     .name {
+        border: 0;
+        border-radius: 0;
+        color: inherit;
+        text-align: left;
+        cursor: pointer;
         width: 100%;
         background-color: var(--primary-darkest);
         padding: 4px 8px;

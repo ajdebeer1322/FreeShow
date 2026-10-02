@@ -25,6 +25,7 @@
     export let showId: string
     export let layout = ""
     export let projectIndex = -1
+    export let continuous = false
 
     $: currentShow = $showsCache[showId]
     $: activeLayout = layout || $showsCache[showId]?.settings?.activeLayout
@@ -140,7 +141,7 @@
                 if (revealCount > maxLines) revealCount = 0
             } else revealCount = 0
 
-            setOutput("slide", { id: showId, layout: activeLayout, index, line, revealCount, itemClickReveal })
+            setOutput("slide", { id: showId, layout: activeLayout, index, line, revealCount, itemClickReveal, ...(projectIndex >= 0 ? { projectIndex } : {}) })
             updateOut(showId, index, slideRef, !e.altKey)
 
             // force update output if index is the same as previous
@@ -205,7 +206,7 @@
             createItems = true
         }
 
-        history({ id: "TEMPLATE", save: false, newData: { id: currentTemplate, data: { createItems } }, location: { page: "show" } })
+        history({ id: "TEMPLATE", save: false, newData: { id: currentTemplate, data: { createItems } }, location: { page: "show", show: { id: showId }, layout: activeLayout } })
     }
 
     $: if (showId && $special.capitalize_words) capitalizeWords()
@@ -347,8 +348,8 @@
     function createSlide() {
         if (isLocked) return
 
-        history({ id: "SLIDES" })
-        activeEdit.set({ type: "show", slide: 0, items: [] })
+        history({ id: "SLIDES", location: { page: "show", show: { id: showId }, layout: activeLayout } })
+        activeEdit.set({ type: "show", showId, slide: 0, items: [] })
         activePage.set("edit")
     }
 
@@ -500,11 +501,11 @@
 
 <svelte:window on:keydown={keydown} on:keyup={keyup} on:mousedown={keyup} on:blur={blurred} />
 
-<div class="main" class:padding={!$focusMode} style="display: contents;">
-    <Autoscroll class={$focusMode || isLocked ? "" : "context #shows__close"} {offset} disabled={disableAutoScroll} {shouldSkipSmooth} bind:scrollElem style="display: flex;">
+<div class="main" class:padding={!$focusMode && !continuous} style="display: contents;">
+    <Autoscroll class={$focusMode || continuous || isLocked ? "" : "context #shows__close"} {offset} disabled={disableAutoScroll || continuous} {shouldSkipSmooth} bind:scrollElem style="display: flex;">
         <DropArea id="all_slides" selectChildren>
             <DropArea id="slides" data={{ showId, layout: activeLayout }} hoverTimeout={0} selectChildren>
-                {#if !$focusMode}
+                {#if !$focusMode && !continuous}
                     <ShowHeader {showId} hideOptions={!layoutSlides?.length} />
                 {/if}
 
@@ -517,10 +518,11 @@
                         {/if}
                     </Center>
                 {:else}
-                    <div class="grid" style={$focusMode ? "" : "padding-bottom: 60px;"}>
+                    <div class="grid" style={$focusMode || continuous ? "" : "padding-bottom: 60px;"}>
                         {#if layoutSlides.length}
                             {#each layoutSlides as slide, i}
-                                {@const currentSlide = currentShow?.slides?.[slide.id]}
+                                {@const currentSlide = currentShow?.slides?.[slide.id] || (slide.id === "fake_empty" ? { group: null, color: null, settings: {}, notes: "", items: [] } : undefined)}
+
                                 {#if hasMounted && (loaded || i < lazyLoader)}
                                     {#if currentSlide && (mode === "grid" || mode === "groups" || !slide.disabled) && (mode !== "groups" || currentSlide.group !== null || activeSlides[i] !== undefined)}
                                         <Slide {showId} slide={currentSlide} show={currentShow} {layoutSlides} layoutSlide={slide} index={i} color={slide.color} output={activeSlides[i]} active={activeSlides[i] !== undefined} {endIndex} list={!gridMode} columns={$slidesOptions.columns} icons {altKeyPressed} disableThumbnails={isLessons && !loaded} centerPreview on:click={(e) => slideClick(e, i)} />

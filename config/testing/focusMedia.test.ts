@@ -4,8 +4,12 @@ import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from "node:fs"
 import { tmpdir } from "node:os"
 import { join } from "node:path"
 
-test("Focus Mode button and media insertion/replacement use the destination show", async () => {
+test("Normal Show displays the project continuously and media drops use the destination show", async () => {
     const directory = mkdtempSync(join(tmpdir(), "freeshow-focus-media-"))
+    const settingsDirectory = join(directory, "settings")
+    mkdirSync(settingsDirectory)
+    writeFileSync(join(settingsDirectory, "config.json"), JSON.stringify({ dataPath: directory }))
+    writeFileSync(join(settingsDirectory, "settings.json"), JSON.stringify({ alertUpdates: false }))
     const mediaDirectory = join(directory, "media")
     mkdirSync(mediaDirectory)
     writeFileSync(join(mediaDirectory, "new-media.png"), Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aO1EAAAAASUVORK5CYII=", "base64"))
@@ -46,20 +50,24 @@ test("Focus Mode button and media insertion/replacement use the destination show
             await window!.getByText("Quick Lyrics").click()
             await window!.getByPlaceholder("[Verse]").fill("[Verse]\nFirst slide\n\n[Chorus]\nSecond slide")
             await window!.getByTestId("create.show.popup.new.show").click()
-            await expect(window!.locator("#showArea .grid > .main")).toHaveCount(2)
+            await expect(
+                window!
+                    .locator(".focusId")
+                    .filter({ has: window!.getByRole("button", { name, exact: true }) })
+                    .locator(".grid > .main")
+            ).toHaveCount(2)
         }
         await createShow("Focus A")
         await createShow("Focus B")
 
-        const toggle = window.locator("#focus_mode_button")
-        await toggle.click()
-        await expect(toggle).toHaveClass(/isActive/)
+        await expect(window.locator("#focus_mode_button")).toHaveCount(0)
+        await expect(window.locator(".top").first()).toBeVisible()
         const first = window.locator(".focusId").filter({ has: window.locator(".name p").filter({ hasText: /^Focus A$/ }) })
         const second = window.locator(".focusId").filter({ has: window.locator(".name p").filter({ hasText: /^Focus B$/ }) })
         await expect(first.locator(".grid > .main")).toHaveCount(2)
         await expect(second.locator(".grid > .main")).toHaveCount(2)
 
-        // Keep another show live while editing Focus B.
+        // Keep another show live while editing Focus B in the ordinary Show page.
         await first.locator(".grid > .main .slide").first().click()
         await expect.poll(() => app.evaluate(() => Object.values((globalThis as any).focusTestOutputs || {}).some((output: any) => output.out?.slide))).toBe(true)
         const previousOutputs = await app.evaluate(() => JSON.stringify((globalThis as any).focusTestOutputs))
@@ -113,16 +121,28 @@ test("Focus Mode button and media insertion/replacement use the destination show
         expect(await app.evaluate(() => JSON.stringify((globalThis as any).focusTestOutputs))).toBe(previousOutputs)
 
         await window.screenshot({ path: "test-output/screenshots/focus-media.png" })
-        await toggle.click()
-        await expect(window.locator(".focusId")).toHaveCount(0)
-        await expect(toggle).not.toHaveClass(/isActive/)
+        // Project browsing scrolls to the selected show; the list stays present.
+        await second.getByRole("button", { name: "Focus B", exact: true }).click()
+        await expect(second).toHaveClass(/selected/)
+        await expect(window.locator(".focusId")).toHaveCount(2)
+        expect(await app.evaluate(() => JSON.stringify((globalThis as any).focusTestOutputs))).toBe(previousOutputs)
     } catch (error) {
         if (window) await window.screenshot({ path: "test-output/screenshots/focus-media-failed.png" })
         throw error
     } finally {
-        const process = app.process()
-        await Promise.race([app.close(), new Promise((resolve) => setTimeout(resolve, 5_000))]).catch(() => {})
-        if (process && !process.killed) process.kill("SIGKILL")
+        const childProcess = app.process()
+        const forceClose = setTimeout(() => {
+            if (!childProcess?.pid) return
+            try {
+                if (process.platform === "win32") childProcess.kill("SIGKILL")
+                else process.kill(-childProcess.pid, "SIGKILL")
+            } catch {}
+        }, 5_000)
+        try {
+            await app.close()
+        } finally {
+            clearTimeout(forceClose)
+        }
         rmSync(directory, { recursive: true, force: true })
     }
 })

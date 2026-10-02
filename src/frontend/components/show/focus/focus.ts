@@ -9,8 +9,8 @@ export async function getAllProjectItems(projectShows: ProjectShowRef[]) {
     await loadShows(showIds)
 
     // get names & icons
-    projectShows = projectShows.map((a) => {
-        if (typeof a !== "object") return a
+    projectShows = projectShows.map((item) => {
+        const a = { ...item }
 
         // same icon as ShowButton.svelte
         if ((a.type || "show") === "show") {

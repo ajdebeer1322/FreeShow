@@ -577,6 +577,7 @@ export interface TemplateSettings {
     backgroundPath?: string
     overlayId?: string
     firstSlideTemplate?: string
+    createFirstSlide?: boolean
     maxLinesPerSlide?: number | string // auto break slides if more than set lines
     breakLongLines?: number | string // auto break lines if longer than set words
     actions?: any[]
@@ -600,6 +601,7 @@ export interface SceneContent {
     media?: any
     style?: string
     overlays?: string[]
+    hiddenOverlays?: string[]
 }
 
 // output

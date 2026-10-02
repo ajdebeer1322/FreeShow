@@ -1,6 +1,8 @@
 import { _electron as electron } from "playwright"
 import { expect, test } from "@playwright/test"
 import tmp from "tmp"
+import { writeFileSync } from "node:fs"
+import { join } from "node:path"
 
 const timeoutMs = 2_000
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
@@ -11,14 +13,17 @@ test.beforeEach(async ({ context }) => {
 
 test("Launch electron app", async () => {
     const tmpSettingFolder = tmp.dirSync({ unsafeCleanup: true })
+    const tmpDataFolder = tmp.dirSync({ unsafeCleanup: true })
+    writeFileSync(join(tmpSettingFolder.name, "config.json"), JSON.stringify({ dataPath: tmpDataFolder.name }))
+    writeFileSync(join(tmpSettingFolder.name, "settings.json"), JSON.stringify({ alertUpdates: false }))
     const electronApp = await electron.launch({
         // --no-sandbox is required for Electron to launch reliably on Linux CI.
         args: [".", "--no-sandbox"],
-        env: { ...process.env, NODE_ENV: "production", FS_MOCK_STORE_PATH: tmpSettingFolder.name }
+        cwd: process.env.FS_TEST_APP_PATH || process.cwd(),
+        env: { ...process.env, NODE_ENV: process.env.FS_TEST_NODE_ENV || "production", FS_MOCK_STORE_PATH: tmpSettingFolder.name }
     })
 
     // Mocking Electron open dialog
-    const tmpDataFolder = tmp.dirSync({ unsafeCleanup: true })
     await electronApp.evaluate(async ({ dialog }, tmpDataFolderName) => {
         dialog.showOpenDialog = async (): Promise<any> => {
             return { canceled: false, filePaths: [tmpDataFolderName] }
@@ -133,22 +138,27 @@ test("Launch electron app", async () => {
         console.log("Taking screenshot")
         await window.screenshot({ path: "test-output/screenshots/failed.png" })
         throw ex
-    }
+    } finally {
+        // Close after finishing
+        console.log("Closing app...")
+        const electronProcess = electronApp.process()
+        const forceClose = setTimeout(() => {
+            if (!electronProcess?.pid) return
+            try {
+                if (process.platform === "win32") electronProcess.kill("SIGKILL")
+                else process.kill(-electronProcess.pid, "SIGKILL")
+            } catch {}
+        }, 5_000)
+        try {
+            await electronApp.close()
+        } finally {
+            clearTimeout(forceClose)
+        }
+        await delay(1_000)
+        console.log("App closed!")
 
-    // Close after finishing
-    console.log("Closing app...")
-    // Race shutdown with a timeout to avoid hanging CI on Linux.
-    const electronProcess = electronApp.process()
-    await Promise.race([electronApp.close(), delay(5_000)]).catch(() => {})
-    try {
-        if (electronProcess?.pid && !electronProcess.killed) electronProcess.kill("SIGKILL")
-    } catch {
-        // already exited
+        tmpDataFolder.removeCallback()
+        tmpSettingFolder.removeCallback()
+        console.log("DONE!")
     }
-    await delay(1_000)
-    console.log("App closed!")
-
-    tmpDataFolder.removeCallback()
-    tmpSettingFolder.removeCallback()
-    console.log("DONE!")
 })

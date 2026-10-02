@@ -13,6 +13,7 @@ vi.mock("../actions/actionData", () => ({ actionData: {} }))
 vi.mock("../actions/actions", () => ({ addSlideAction: vi.fn(), getActionTriggerId: vi.fn(), isMatchingSlideAction: vi.fn(), customActionActivation: vi.fn() }))
 vi.mock("../drawer/bible/scripture", () => ({ getActiveScripturesContent: vi.fn(), getReferenceText: vi.fn(), getScriptureShow: vi.fn(), getScriptureSlidesNew: vi.fn() }))
 vi.mock("../drawer/player/playerHelper", () => ({ getVimeoData: vi.fn(), getYouTubeData: vi.fn(), trimPlayerId: vi.fn() }))
+vi.mock("../stage/stage", () => ({ addStageItem: vi.fn() }))
 vi.mock("../edit/scripts/itemHelpers", () => ({ addItem: vi.fn(), DEFAULT_ITEM_STYLE: "" }))
 vi.mock("../edit/scripts/textStyle", () => ({ getItemText: vi.fn() }))
 vi.mock("./array", () => ({ clone: (value: unknown) => (value === undefined ? undefined : JSON.parse(JSON.stringify(value))), removeDuplicates: (values: unknown[]) => [...new Set(values)], areObjectsEqual: vi.fn(() => false), keysToID: vi.fn() }))
@@ -74,13 +75,13 @@ function paths() {
     return show.layouts.project.slides.map((slide) => (slide.background ? show.media[slide.background]?.path : slide.id))
 }
 
-describe("media drops into Focus Mode shows", () => {
+describe.each([false, true])("media drops with focusMode=%s", (isFocusMode) => {
     beforeEach(() => {
         vi.clearAllMocks()
         vi.mocked(getAccess).mockReturnValue({})
         activePage.set("show")
-        activeShow.set(null)
-        focusMode.set(true)
+        activeShow.set(isFocusMode ? null : { id: "other", index: 0, type: "show" })
+        focusMode.set(isFocusMode)
         activeFocus.set({ id: "other", index: 0, type: "show" })
         showsCache.set({ target: makeShow(), other: { ...makeShow(), name: "Other show" } })
         shows.set({ target: { name: "Target show", category: null, timestamps: { created: 0, modified: null, used: null } }, other: { name: "Other show", category: null, timestamps: { created: 0, modified: null, used: null } } })
@@ -99,7 +100,7 @@ describe("media drops into Focus Mode shows", () => {
         expect(get(showsCache).target.layouts.default.slides).toEqual([{ id: "first" }])
         expect(JSON.stringify(get(showsCache).other)).toBe(other)
         expect(JSON.stringify(get(outputs))).toBe(previousOutputs)
-        expect(get(activeShow)).toBeNull()
+        expect(get(activeShow)).toEqual(isFocusMode ? null : { id: "other", index: 0, type: "show" })
         expect(get(activeFocus).id).toBe("other")
     })
 
@@ -131,6 +132,14 @@ describe("media drops into Focus Mode shows", () => {
         await dropMedia("start")
         expect(paths()).toEqual(["first", "second"])
         expect(get(undoHistory)).toHaveLength(0)
+    })
+
+    it("applies thumbnail templates to the explicit show and arrangement", () => {
+        activeShow.set({ id: "other", type: "show" })
+        history({ id: "TEMPLATE", newData: { id: "target-template" }, location: { page: "show", show: { id: "target" }, layout: "project" } })
+        expect(get(showsCache).target.settings.template).toBe("target-template")
+        expect(get(showsCache).other.settings.template).toBeNull()
+        expect(get(undoHistory)[0].newData.remember).toEqual({ showId: "target", layout: "project" })
     })
 
     it("preserves the opened-show fallback for normal/API slide creation", () => {

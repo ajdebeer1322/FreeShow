@@ -1,6 +1,6 @@
 # FreeShow: repository reference for AI agents
 
-This is a source-navigation and change-planning reference, not end-user documentation. Paths below are repository-relative. Read the actual implementation before editing; this map describes the checkout at FreeShow `1.6.6-beta.3` (upstream base `13879edf`) plus the Focus Mode and Messages changes documented below. Keep this file synchronized when architecture or behavior changes.
+This is a source-navigation and change-planning reference, not end-user documentation. Paths below are repository-relative. Read the actual implementation before editing; this map describes the checkout at FreeShow `1.6.6-beta.4` (upstream tag commit `1ed8ffa3`) plus the continuous Show view and Messages changes documented below. Keep this file synchronized when architecture or behavior changes.
 
 ## Identity and execution boundaries
 
@@ -61,7 +61,7 @@ This is a source-navigation and change-planning reference, not end-user document
 | Change overall panes or which mode renders   | `MainLayout.svelte`; `components/show/Show.svelte`.                                                                                |
 | Project sidebar/tree                         | `components/show/Projects.svelte`, `ProjectList.svelte`, `ProjectContentList.svelte`, `project.ts`.                                |
 | Show headers, notes, groups and layouts      | `components/show/ShowHeader.svelte`, `ShowNotes.svelte`, `ShowTools.svelte`, `tools/`; locate layout components with `rg --files`. |
-| Normal show slide grid                       | `components/show/Slides.svelte`.                                                                                                   |
+| Normal Show project view / slide grids       | `components/show/Show.svelte`, `show/focus/FocusMode.svelte` (`normalView`), `components/show/Slides.svelte`.                                                                                                   |
 | Focus Mode continuous project list           | `components/show/focus/FocusMode.svelte`, `FocusItem.svelte`, `focus.ts`.                                                          |
 | Thumbnail appearance, badges and selections  | `components/slide/Slide.svelte` and neighbors; `components/system/SelectElem.svelte`.                                              |
 | Media/image/video/PDF/audio preview          | `components/show/media/`, `pdf/`, `AudioPreview.svelte`; `components/media/`.                                                      |
@@ -124,7 +124,7 @@ The output engine is shared by normal and Focus Mode views. Reuse it.
 
 Keep navigation/editing independent from live output unless the existing explicit activation action requires presentation. Test mutations while a different show remains live.
 
-## Focus Mode and this fork's media change
+## Continuous Show view, Focus Mode and media drops
 
 Existing behavior:
 
@@ -136,7 +136,11 @@ Existing behavior:
 
 Added behavior:
 
-- `Drawer.svelte` has `#focus_mode_button` in its tab bar, outside the tab list. It remains available with a collapsed drawer and when the main toolbar is hidden; it invokes the existing `menuClick("focus_mode")`. The same Ctrl+Shift+F shortcut remains valid. Entry is disabled for an empty project; exit remains enabled.
+- The custom drawer Focus Mode button was removed. Normal `Show.svelte` renders `FocusMode.svelte normalView` for the active nonempty project while browsing one of its items (or no item). Opening a library item outside the project retains the original single-item view. The original View menu / Ctrl+Shift+F Focus Mode remains available.
+- `normalView` uses `activeShow`, without enabling the `focusMode` store: top navigation, normal drawer, ShowTools, editing and Messages remain available. Headers/items select with `openProjectItem(projectId, index)` before mouse/focus actions. Browsing never sends content live; clicking a thumbnail uses native `Slides.svelte::slideClick`. Project selection/outputs scroll the shared `.center` container. Manual scroll changes `activeFocus` only in legacy Focus Mode.
+- `FocusMode.svelte` refreshes copied project references for order/arrangement/metadata/name changes, avoids mutating stored references in `focus.ts`, and removes scroll listeners/timers on destruction. `.focusId` remains the wrapper class in both views. `FocusItem.svelte` renders existing native item previews, including camera/screen/NDI/PPT/placeholders; layout notes use the occurrence's layout.
+- `Slides.svelte continuous` suppresses duplicate show headers, extra bottom padding and inner-grid auto-scroll. The parent project list owns scrolling. The normal Show component retains selected-show layout/timeline controls. Native slide icons and editing remain enabled in normal Show.
+- Slide output carries the project occurrence index explicitly. Thumbnail template application and empty-show slide creation carry explicit show/layout history destinations. `historyActions.ts::handleTemplate` and `handleSlides` honor them, preserving their legacy active-show fallback.
 - Drop media on the center of an existing slide to replace its background using the existing media action. Drop at the left edge to insert a new media slide before it; drop at the right edge to insert after it. Center replacement preserves the existing slide/text structure, consistent with the original behavior.
 - `Slides.svelte` gives its inner DropArea `{showId, layout: activeLayout}`. Existing thumbnail SelectElem metadata supplies the precise index/show; the containing grid supplies its arrangement, including empty-grid drops.
 - `system/DropArea.svelte` forwards optional destination metadata on internal, native-file, URL and touch drop paths. `helpers/drop.ts::ondrop` merges the area fallback with precise thumbnail metadata.
@@ -212,10 +216,10 @@ Package scripts are authoritative. The intended installation is `npm ci` with a 
 | `npm run build:frontend:prod`                                                                        | Build renderer only into `public/build`.                                                                                       |
 | `npm run build`                                                                                      | npm prebuild hook, sequential frontend/server/Electron compilation, npm postbuild hook copying/minifying native/static assets. |
 | `npm run test:unit`                                                                                  | Vitest source-adjacent `src/**/*.test.ts` in Node environment.                                                                 |
-| `npm run test:unit -- src/frontend/components/helpers/drop.test.ts`                                  | Focus Mode drop/history regression tests without launching Electron.                                                           |
+| `npm run test:unit -- src/frontend/components/helpers/drop.test.ts`                                  | Normal/Focus drop and template destination/history regressions without Electron.                                                           |
 | `npx playwright install chromium`                                                                    | Browser installation needed by Playwright tooling in this checkout.                                                            |
 | `npm run test:playwright`                                                                            | Electron UI tests in `config/testing/*.test.ts`; requires runnable built app and production HTML/bundle.                       |
-| `npx playwright test --config config/testing/playwright.config.ts config/testing/focusMedia.test.ts` | Focus Mode button, real drag/drop, undo and live-output isolation UI regression.                                               |
+| `npx playwright test --config config/testing/playwright.config.ts config/testing/focusMedia.test.ts` | Default continuous Show, removed button, real drag/drop, undo and live-output isolation.                                               |
 | `npm run test:svelte`                                                                                | Svelte/TypeScript diagnostics; can require a larger Node heap.                                                                 |
 | `NODE_OPTIONS=--max-old-space-size=8192 npm run test:svelte`                                         | Same check with increased heap.                                                                                                |
 | `npm run test:format`                                                                                | Prettier checks `src` and `scripts`; excludes root Markdown and config tests.                                                  |
@@ -223,7 +227,7 @@ Package scripts are authoritative. The intended installation is `npm ci` with a 
 | `npm run pack`                                                                                       | Build unpacked Electron distribution using electron-builder config; requires build/native modules.                             |
 | `npm run release`                                                                                    | Builds and publishes (`--publish always`). Treat this as a publication action.                                                 |
 
-The Focus Mode UI test also accepts `FS_TEST_APP_PATH` (a separate runnable app checkout/build root) and `FS_TEST_NODE_ENV` (defaults to production). A separate app root avoids build-script conflicts with a concurrently running development session. The renderer's main window and its output window can use the same URL; the test selects the window containing the desktop UI.
+The startup, continuous Show and Messages UI tests accept `FS_TEST_APP_PATH` (a separate runnable app checkout/build root) and `FS_TEST_NODE_ENV` (defaults to production). A separate app root avoids build-script conflicts with a concurrently running development session. The renderer's main window and its output window can use the same URL; the test selects the window containing the desktop UI.
 
 ### Known validation constraints observed in this checkout
 
@@ -233,16 +237,18 @@ These are environment/baseline observations, not permanent project guarantees:
 - For renderer/unit/Electron UI checks, dependencies were installed with `npm ci --ignore-scripts`, then `node node_modules/electron/install.js`. This does not rebuild native integration modules and is not evidence that packaging/device integrations work.
 - Frontend/server/Electron compilation succeeded. Full postbuild stopped on absent `node_modules/@discordjs/opus/prebuild` after skipped native scripts. Resolve native install before claiming a packaged app build.
 - Build scripts rewrite tracked `public/index.html` between dev and production entrypoints. Inspect/revert incidental generated HTML changes before handing over a feature diff; rebuild for UI tests when needed.
-- Baseline Svelte check reported 186 errors, 61 warnings and 242 hints, identical totals after the Focus Mode source changes. Compare against the same base/dependencies when assessing new diagnostics.
+- The merged beta 4 baseline and this fork both report 186 Svelte errors, 60 warnings and 238 hints (8 GB Node heap). No new diagnostic locations; one existing EditValues union overload message can reorder its types. Compare against the same base/dependencies when assessing changes.
 - Repository-wide formatting had existing failures (41 files); scoped checks are useful for avoiding unrelated formatting edits.
 - Targeted ESLint/stylelint on changed source also reported existing diagnostics. Compare baseline locations, not just global counts.
-- The original unit suite had 169 passing tests; the drop regression file adds 9 and Messages adds 17. All 195 passed after the compact Messages/artwork changes; all three Electron UI tests passed, including native Focus Mode drag/drop and the Messages workflow. Check current output rather than relying on these counts after future changes.
+- All 211 beta 4 unit checks pass, including both normal and legacy Focus Mode destination cases and Messages tests. All three Electron UI tests pass (startup/group editing, continuous Show drag/drop and Messages). The latter two cover native edge insertion/center background replacement, live-output isolation, arbitrary tokens, gradient shapes, animated scrolling in preview/output, undo/redo and definition-only persistence. Check current output rather than assuming historical test counts.
+- Beta 4 added sync result arrays used by `syncData::finish`. Initialize `downloadedShowIds` / `replacedShows` before early upload/empty-cloud/error returns; otherwise those flows throw a temporal-dead-zone error. Existing cloud sync tests cover this.
+- Beta 4 imported `addStageItem` into dropActions; the Node-only drop unit harness stubs the stage UI dependency, retaining real drop/history/model code.
 
 A scoped baseline comparison can use a temporary `git archive HEAD` checkout with the same node_modules; keep test stores/data temporary and never overwrite the working tree to obtain a baseline.
 
 ## Messages: definitions, drafts and live instances
 
-Implemented in this fork after [ProPresenter research](docs/PROPresenter_MESSAGES_RESEARCH.md). Operator instructions: [MESSAGES.md](docs/MESSAGES.md). These are independent notices above the presentation, available in the right pane on the Show page, including Focus Mode. The Focus Mode button's relocation remains deferred.
+Implemented in this fork after [ProPresenter research](docs/PROPresenter_MESSAGES_RESEARCH.md). Operator instructions: [MESSAGES.md](docs/MESSAGES.md). These are independent notices above the presentation, available in the right pane on the Show page, including Focus Mode.
 
 | Responsibility                                                                                        | Source                                                                                                                                                                                                          |
 | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -281,3 +287,7 @@ Rendering/timing constraints:
 - Overlay profile `read` allows operation while disabling definition/design edits. Profile `none` prevents showing restricted definitions. Configured destination IDs/names reuse normal output resolution; disabled and stage outputs are excluded. Missing destinations report an operator error rather than rerouting to an unrelated screen.
 
 Future extensions from the research (not part of this implementation): clock/countdown tokens as labeled operator fields, remote submission/approval, stage-only message control, and message-specific actions/macros. Do not claim complete ProPresenter feature parity.
+
+## Upstream update procedure for this fork
+
+Keep custom commits on fork `main`. Fetch upstream tags, choose the exact release tag, and make a backup branch at the current custom head. Merge that tag into the custom branch; never replace it with the official downloaded binary or reset it to upstream. Resolve conflicts preserving custom Messages, explicit media destinations and default continuous Show behavior as well as upstream additions. Verify build/version, unit/UI behavior and diagnostic differences before committing/pushing. The beta 4 merge used `v1.6.6-beta.4`; pre-merge recovery branch is `backup/custom-features-before-beta4-20261002` at `be2706a5`. App data is separate from Git; use isolated test config/data folders before startup to avoid touching the operator's real portable stores.
