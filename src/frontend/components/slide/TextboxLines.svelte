@@ -111,7 +111,7 @@
 
     $: isScrolling = !isStage && !!item?.scrolling?.type && item.scrolling.type !== "none"
     $: messageScroll = isScrolling && item?.scrolling?.duration !== undefined
-    $: scrollPass = messageScroll && (item?.scrolling?.startOffscreen || item?.scrolling?.repeat === false)
+    $: scrollPass = messageScroll && item?.scrolling?.repeat === false
     $: horizontalScroll = item?.scrolling?.type === "left_right" || item?.scrolling?.type === "right_left"
     $: feather = messageScroll ? Math.max(0, item?.scrolling?.feather || 0) : 0
     $: scrollMask = feather ? `mask-image:linear-gradient(to ${horizontalScroll ? "right" : "bottom"}, transparent, #000 ${feather}px, #000 calc(100% - ${feather}px), transparent);` : ""
@@ -647,6 +647,63 @@
         animation-duration: var(--messageDuration);
         animation-iteration-count: var(--scrollRepeat);
         animation-fill-mode: forwards;
+    }
+    .messageScroll .rightLeftContinuousScrolling,
+    .messageScroll .leftRightContinuousScrolling {
+        position: absolute;
+        left: 0;
+        top: 50%;
+    }
+    .messageScroll .topBottomContinuousScrolling,
+    .messageScroll .bottomTopContinuousScrolling {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+    }
+    .messageScroll .rightLeftContinuousScrolling {
+        animation-name: messageRepeatRightLeft;
+    }
+    .messageScroll .leftRightContinuousScrolling {
+        animation-name: messageRepeatLeftRight;
+    }
+    .messageScroll .topBottomContinuousScrolling {
+        animation-name: messageRepeatTopBottom;
+    }
+    .messageScroll .bottomTopContinuousScrolling {
+        animation-name: messageRepeatBottomTop;
+    }
+    @keyframes messageRepeatRightLeft {
+        from {
+            transform: translate(0, -50%);
+        }
+        to {
+            transform: translate(calc(-1 * (var(--scrollContentWidth) + var(--scrollGap))), -50%);
+        }
+    }
+    @keyframes messageRepeatLeftRight {
+        from {
+            transform: translate(calc(-1 * (var(--scrollContentWidth) + var(--scrollGap))), -50%);
+        }
+        to {
+            transform: translate(0, -50%);
+        }
+    }
+    @keyframes messageRepeatTopBottom {
+        from {
+            transform: translate(-50%, calc(-1 * (var(--scrollContentHeight) + var(--scrollGap))));
+        }
+        to {
+            transform: translate(-50%, 0);
+        }
+    }
+    @keyframes messageRepeatBottomTop {
+        from {
+            transform: translate(-50%, 0);
+        }
+        to {
+            transform: translate(-50%, calc(-1 * (var(--scrollContentHeight) + var(--scrollGap))));
+        }
     }
     .scrollPass {
         position: absolute;

@@ -1,7 +1,9 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest"
 import { get } from "svelte/store"
 import { activeProfile, outLocked, outputs, overlays, profiles } from "../../stores"
-import { createMessage, getMessageTokens, messageWording, normalizeMessage, replaceMessageTokens, setMessageWording, snapshotMessage } from "./messages"
+import { createMessage, getMessageScrolling, getMessageTokens, messageParts, messageVariableName, messageWording, normalizeMessage, replaceMessageTokens, setMessageItemScrolling, setMessageScrolling, setMessageWording, snapshotMessage } from "./messages"
+import { createMessageShape, messageFillStyle, shapeStyle } from "./messageShapes"
+import { getStyles } from "./style"
 
 vi.mock("./output", () => ({
     getActiveOutputs: (outs: any) => Object.keys(outs).filter((id) => outs[id].enabled && outs[id].active && !outs[id].stageOutput),
@@ -11,6 +13,55 @@ vi.mock("./output", () => ({
 import { clearMessages, hideMessage, showMessage, startMessageTimers } from "./messageOutput"
 
 describe("saved Message templates and immutable output snapshots", () => {
+    it("recovers saved native scrolling instead of overriding it with disabled message metadata", () => {
+        const definition = createMessage()
+        definition.items = [definition.items[1]]
+        definition.items[0].scrolling = { type: "right_left", speed: 7 }
+        expect(definition.message!.scrolling.type).toBe("none")
+        expect(getMessageScrolling(definition)).toMatchObject({ type: "right_left", duration: 7, repeat: true })
+        expect(snapshotMessage("notice", definition, { "token:Child name": "Emma" }).items[0].scrolling).toMatchObject({ type: "right_left", duration: 7 })
+        expect(definition.message!.scrolling.type).toBe("none")
+    })
+
+    it("keeps panel and native scrolling edits in sync, including turning scrolling off", () => {
+        const original = createMessage()
+        const panelEdit = setMessageScrolling(original, { ...original.message!.scrolling, type: "left_right", duration: 2 })
+        expect(panelEdit.items[1].scrolling).toEqual(panelEdit.message!.scrolling)
+        const nativeEdit = setMessageItemScrolling(panelEdit, [1], { ...panelEdit.items[1].scrolling!, type: "bottom_top", duration: 4 })
+        expect(getMessageScrolling(nativeEdit)).toMatchObject({ type: "bottom_top", duration: 4 })
+        expect(nativeEdit.message!.scrolling).toEqual(nativeEdit.items[1].scrolling)
+        const disabled = setMessageItemScrolling(nativeEdit, [1], { ...nativeEdit.items[1].scrolling!, type: "none" })
+        expect(snapshotMessage("notice", disabled, {}).items[1].scrolling!.type).toBe("none")
+        const backgroundEdit = setMessageItemScrolling(nativeEdit, [0], { type: "right_left" })
+        expect(backgroundEdit.message!.scrolling.type).toBe("bottom_top")
+        expect(original.items[1].scrolling).toBeUndefined()
+        expect(panelEdit.message!.scrolling.type).toBe("left_right")
+    })
+
+    it("keeps chips and custom variable names literal and validates names before insertion", () => {
+        expect(messageParts("Hi { Child name }\nGo to {Room # / code}. <b>")).toEqual([{ text: "Hi " }, { text: "{ Child name }", token: "Child name" }, { text: "\nGo to " }, { text: "{Room # / code}", token: "Room # / code" }, { text: ". <b>" }])
+        expect(messageVariableName(" Room # / code ")).toBe("Room # / code")
+        for (const name of ["", "  ", "{Room}", "A\nB", "A\rB"]) expect(messageVariableName(name)).toBeNull()
+    })
+
+    it("renders shape fills in snapshots and finds wording after empty artwork when the marked item is deleted", () => {
+        const original = createMessage()
+        const shape = createMessageShape("rounded")
+        const gradient = "linear-gradient(90deg, #245779 0%, transparent 100%)"
+        shape.style = messageFillStyle(shape.style, gradient)
+        original.items.splice(1, 0, shape)
+        const live = snapshotMessage("notice", original, { "token:Child name": "Emma" })
+        expect(live.items[1].style).toContain(gradient)
+        shape.style = messageFillStyle(shape.style, "#ffffff")
+        expect(getStyles(shape.style).background).toBeUndefined()
+        expect(getStyles(shape.style)["background-color"]).toBe("#ffffff")
+        expect(getStyles(shapeStyle(shapeStyle(shape.style, "triangle"), "ellipse"))["clip-path"]).toBeUndefined()
+        delete original.items[2].messageText
+        expect(messageWording(original)).toContain("Parents of {Child name}")
+        expect(getMessageTokens(original)).toHaveLength(1)
+        expect(live.items[1].style).toContain(gradient)
+    })
+
     it("finds repeated fields across styled runs and keeps their identities", () => {
         const definition = createMessage()
         const id = definition.message!.tokens[0].id

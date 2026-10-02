@@ -321,7 +321,7 @@
         }
     }
     let prevAutosizeSignature = ""
-    $: autosizeSignature = `${isStage ? stageItem?.style || "" : item?.style || ""}_${resolvedTemplateId}_${chordLines ? 1 : 0}_${stageAutoSize ? 1 : 0}_${item?.textFit || ""}_${stageItem?.textFit || ""}_${JSON.stringify(item?.lines || stageItem?.lines || "")}_${ratio}`
+    $: autosizeSignature = `${isStage ? stageItem?.style || "" : item?.style || ""}_${resolvedTemplateId}_${chordLines ? 1 : 0}_${stageAutoSize ? 1 : 0}_${item?.textFit || ""}_${stageItem?.textFit || ""}_${JSON.stringify(item?.lines || stageItem?.lines || "")}_${JSON.stringify(item?.scrolling || null)}_${ratio}`
 
     let debounceTimer: NodeJS.Timeout | null = null
     function debouncedCalculateAutosize(delay = 50) {
@@ -589,6 +589,7 @@
             style: activeStyle,
             boxDimensions, // Add explicit dimensions for better cache invalidation
             textFit: item?.textFit || "none",
+            scrolling: item?.scrolling || null,
             list: item?.list || null,
             chords: !!(customChords !== undefined ? customChords : chords),
             stageAutoSize: !!stageAutoSize,

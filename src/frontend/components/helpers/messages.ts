@@ -1,11 +1,29 @@
 import { uid } from "uid"
 import type { LiveMessage, MessageDefinition, MessageToken } from "../../../types/Message"
-import type { Item, Overlay } from "../../../types/Show"
+import type { Item, Overlay, Scrolling } from "../../../types/Show"
 
 const tokenPattern = () => /\{([^{}\r\n]+)\}/g
 export const messageItemText = (item?: Item) => (item?.lines || []).map((line) => (line.text || []).map((text) => text.value || "").join("")).join("\n")
-export const messageTextItem = (overlay?: Overlay) => overlay?.items.find((item) => item.messageText) || overlay?.items.find((item) => (item.type || "text") === "text" && item.lines?.length)
+export const messageTextItem = (overlay?: Overlay) => overlay?.items.find((item) => item.messageText) || overlay?.items.find((item) => (item.type || "text") === "text" && messageItemText(item).trim())
 export const messageWording = (overlay?: Overlay) => messageItemText(messageTextItem(overlay))
+
+// Shared by the chip editor and its read-only template preview. Text stays text, never HTML.
+export function messageParts(text: string) {
+    const parts: { text: string; token?: string }[] = []
+    let offset = 0
+    for (const match of text.matchAll(tokenPattern())) {
+        if (match.index! > offset) parts.push({ text: text.slice(offset, match.index) })
+        parts.push({ text: match[0], token: match[1].trim() })
+        offset = match.index! + match[0].length
+    }
+    if (offset < text.length) parts.push({ text: text.slice(offset) })
+    return parts
+}
+
+export function messageVariableName(name: string) {
+    const label = name.trim()
+    return label && !/[{}\r\n]/.test(label) ? label : null
+}
 
 export function getMessageTokens(overlay: Overlay): MessageToken[] {
     const labels = [...new Set(overlay.items.flatMap((item) => [...messageItemText(item).matchAll(tokenPattern())].map((match) => match[1].trim())).filter(Boolean))]
@@ -64,14 +82,44 @@ export function normalizeMessage(definition: MessageDefinition): MessageDefiniti
     }
 }
 
+// Native artwork edits take precedence over legacy message metadata. Both UIs write
+// the same setting from now on; this also recovers already saved editor changes.
+export function getMessageScrolling(overlay: Overlay): Scrolling {
+    const definition = overlay.message!
+    const itemScrolling = messageTextItem(overlay)?.scrolling
+    const scrolling = { ...definition.scrolling, ...itemScrolling }
+    scrolling.duration = itemScrolling?.duration ?? itemScrolling?.speed ?? definition.scrolling.duration
+    return normalizeMessage({ ...definition, scrolling }).scrolling
+}
+
+export function setMessageScrolling(overlay: Overlay, scrolling: Scrolling): Overlay {
+    const updated = JSON.parse(JSON.stringify(overlay)) as Overlay
+    const normalized = normalizeMessage({ ...updated.message!, scrolling }).scrolling
+    delete normalized.speed // Messages use seconds per pass in both editors.
+    updated.message!.scrolling = normalized
+    const item = messageTextItem(updated)
+    if (item) item.scrolling = { ...normalized }
+    return updated
+}
+
+export function setMessageItemScrolling(overlay: Overlay, indexes: number[], scrolling: Scrolling): Overlay {
+    let updated = JSON.parse(JSON.stringify(overlay)) as Overlay
+    const primaryIndex = updated.items.indexOf(messageTextItem(updated)!)
+    const primaryScrolling = getMessageScrolling(updated)
+    for (const index of indexes) if (updated.items[index]) updated.items[index].scrolling = { ...scrolling }
+    if (indexes.includes(primaryIndex)) updated = setMessageScrolling(updated, { ...primaryScrolling, ...scrolling })
+    return updated
+}
+
 export function snapshotMessage(id: string, overlay: Overlay, values: Record<string, string>, now = Date.now()): LiveMessage {
-    const definition = normalizeMessage(overlay.message!)
+    const definition = normalizeMessage({ ...overlay.message!, scrolling: getMessageScrolling(overlay) })
     const tokens = getMessageTokens(overlay)
     const items = JSON.parse(JSON.stringify(overlay.items)) as Item[]
+    const primaryItem = messageTextItem({ ...overlay, items })
     items.forEach((item) => {
         // Message fades apply to the whole design. Item timers must not outlive the message.
         delete item.actions
-        if (item === messageTextItem({ ...overlay, items })) item.scrolling = { ...definition.scrolling }
+        if (item === primaryItem) item.scrolling = { ...definition.scrolling }
         item.lines?.forEach((line) => {
             const original = line.text || []
             const text = original.map((segment) => segment.value || "").join("")

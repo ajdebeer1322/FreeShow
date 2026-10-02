@@ -111,6 +111,7 @@ export interface Slide {
 export interface Item {
     messageText?: boolean // primary wording textbox in a saved Message
     messageBackground?: boolean // optional banner shape, editable in the overlay editor
+    messageShape?: "rectangle" | "rounded" | "ellipse" | "triangle" // native empty text artwork
     id?: string
     lines?: Line[]
     list?: List

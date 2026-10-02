@@ -35,6 +35,9 @@ export default function autosize(elem: HTMLElement, { type, textQuery, defaultFo
 
     const boxElem = virtualElem()
     if (!boxElem) return defaultFontSize
+    const messageScroller = boxElem.classList.contains("messageScroll") ? boxElem.querySelector<HTMLElement>(".scrollWrapper") : null
+    const horizontalMessageScroll = !!messageScroller && (messageScroller.classList.contains("rightLeftContinuousScrolling") || messageScroller.classList.contains("leftRightContinuousScrolling"))
+    const verticalMessageScroll = !!messageScroller && !horizontalMessageScroll
 
     try {
         const boxWidth = boxElem.clientWidth
@@ -87,7 +90,9 @@ export default function autosize(elem: HTMLElement, { type, textQuery, defaultFo
         return Math.min(maxFontSize, lowestValue)
 
         function textIsBiggerThanBox() {
-            return boxElem!.scrollWidth > boxWidth || boxElem!.scrollHeight > boxHeight
+            // A ticker is allowed to extend along its travel axis. Fit only
+            // the perpendicular axis, so long messages retain readable text.
+            return (!horizontalMessageScroll && boxElem!.scrollWidth > boxWidth) || (!verticalMessageScroll && boxElem!.scrollHeight > boxHeight)
         }
 
         function addStyleToElemText(currentFontSize: number) {
@@ -149,9 +154,18 @@ export default function autosize(elem: HTMLElement, { type, textQuery, defaultFo
         // scrolling text should not include repeated text in measurement
         const scrollWrapper = cloned.querySelector<HTMLElement>(".scrollWrapper")
         if (scrollWrapper) scrollWrapper.style.setProperty("--copyCountHorizontal", "0")
+        if (cloned.classList.contains("messageScroll") && scrollWrapper) {
+            // Measure stationary text. Offscreen keyframes otherwise make the
+            // clone overflow at every font size and shrink it to the minimum.
+            scrollWrapper.style.animation = "none"
+            scrollWrapper.style.transform = "none"
+            scrollWrapper.style.position = "static"
+            cloned.style.justifyContent = "flex-start"
+        }
         // only keep first scrollContent element
         cloned.querySelectorAll(".scrollContent").forEach((el, index) => {
             if (index > 0) el.remove()
+            else if (cloned.classList.contains("messageScroll")) (el as HTMLElement).style.margin = "0"
         })
 
         // CRITICAL FIX FOR LIST ITEMS:

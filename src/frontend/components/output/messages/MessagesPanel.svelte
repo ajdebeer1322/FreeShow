@@ -5,12 +5,13 @@
     import { clone } from "../../helpers/array"
     import { history } from "../../helpers/history"
     import { hideMessage, showMessage } from "../../helpers/messageOutput"
-    import { createMessage, getMessageTokens, messageWording, normalizeMessage, replaceMessageTokens, setMessageWording, snapshotMessage } from "../../helpers/messages"
+    import { createMessage, getMessageScrolling, getMessageTokens, messageWording, messageParts, normalizeMessage, setMessageScrolling, setMessageWording, snapshotMessage } from "../../helpers/messages"
     import { getActiveOutputs } from "../../helpers/output"
     import { getStyles } from "../../helpers/style"
     import MaterialButton from "../../inputs/MaterialButton.svelte"
     import Zoomed from "../../slide/Zoomed.svelte"
     import Overlay from "../layers/Overlay.svelte"
+    import MessageWordingEditor from "./MessageWordingEditor.svelte"
 
     let editing = false
     let previewOpen = false
@@ -34,6 +35,7 @@
     }
     $: if (current && !editing) {
         config = clone(current)
+        config.message!.scrolling = getMessageScrolling(current)
         wording = messageWording(current)
         const bg = getStyles(current.items.find((item) => item.messageBackground)?.style || "")["background-color"]
         background = /^#[0-9a-f]{6}$/i.test(bg || "") ? bg : "#172338"
@@ -45,7 +47,7 @@
     $: tokens = current ? getMessageTokens(current) : []
     $: values = $messageDrafts[$activeMessage] || {}
     $: missing = tokens.filter((token) => !values[token.id]?.trim())
-    $: resolved = replaceMessageTokens(messageWording(current), tokens, values)
+    $: draftTokens = config ? getMessageTokens(setMessageWording(config, wording)) : []
     $: liveOutputs = Object.entries($outputs).filter(([, output]) => output.out?.messages?.[$activeMessage])
     $: allLiveMessages = [
         ...new Map(
@@ -80,9 +82,11 @@
     function save() {
         if (!config?.message || readOnly) return
         let updated = setMessageWording(config, wording)
+        updated = setMessageScrolling(updated, config.message.scrolling)
         const bg = updated.items.find((item) => item.messageBackground)
         if (bg && (background !== savedBannerColor || transparent !== savedTransparent)) {
-            const style = { ...getStyles(bg.style), "background-color": transparent ? "transparent" : background }
+            const style: Record<string, string> = { ...getStyles(bg.style), "background-color": transparent ? "transparent" : background }
+            delete style.background
             bg.style = Object.entries(style)
                 .map(([key, value]) => `${key}:${value};`)
                 .join("")
@@ -138,30 +142,33 @@
                 <div class="buttons"><span class="hint">Also live: {message.name}</span><MaterialButton small disabled={$outLocked} on:click={() => hideMessage(message.id)}>Hide {message.name}</MaterialButton></div>
             {/each}
             {#if definitions.length}
-                <label
-                    >Saved message
-                    <select class="edit" aria-label="Saved message" bind:value={$activeMessage}>
-                        {#each definitions as [id, definition]}<option value={id}>{definition.name}</option>{/each}
-                    </select>
-                </label>
-                <p class="wording">{messageWording(current)}</p>
-                {#each tokens as token (token.id)}
-                    <label>{token.label}<input class="edit" value={values[token.id] || ""} on:input={(event) => setValue(token.id, event.currentTarget.value)} /></label>
-                {/each}
-                <p class="resolved" data-testid="message-resolved">{resolved}</p>
-                <div class="buttons">
-                    <MaterialButton variant="contained" disabled={$outLocked || !!missing.length} on:click={() => present()}>Show</MaterialButton>
-                    <MaterialButton variant="outlined" disabled={$outLocked || !liveOutputs.length || !!missing.length} on:click={() => present(true)}>Update</MaterialButton>
-                    <MaterialButton variant="outlined" disabled={$outLocked || !liveOutputs.length} on:click={() => hideMessage($activeMessage)}>Hide</MaterialButton>
-                </div>
-                {#if $outLocked}<p class="hint">Output is locked.</p>{:else if missing.length}<p class="hint">Fill in {missing.map((token) => token.label).join(", ")} before showing.</p>{/if}
-                {#if liveOutputs.length}<p class="hint">Live on {liveOutputs.map(([, output]) => output.name).join(", ")}. Draft changes appear when you press Update.</p>{/if}
-                {#if feedback}<p role="status">{feedback}</p>{/if}
-                <div class="buttons">
-                    <MaterialButton small on:click={() => (previewOpen = !previewOpen)}>{previewOpen ? "Close preview" : "Preview message"}</MaterialButton>
+                <select class="edit message-select" aria-label="Saved message" bind:value={$activeMessage}>
+                    {#each definitions as [id, definition]}<option value={id}>{definition.name}</option>{/each}
+                </select>
+                <div class="detail-heading">
+                    <span>Message detail</span>
                     <MaterialButton small disabled={readOnly} on:click={() => (editing = !editing)}>Edit message</MaterialButton>
-                    <MaterialButton small disabled={readOnly} on:click={editDesign}>Edit design</MaterialButton>
                 </div>
+                {#if !editing}
+                    <div class="template" aria-label="Message wording">
+                        {#each messageParts(messageWording(current)) as part}{#if part.token}<span class="variable-chip">{part.token}</span>{:else}{part.text}{/if}{/each}
+                    </div>
+                    <div class="design-row">
+                        <MaterialButton small title="Preview message" on:click={() => (previewOpen = !previewOpen)}>{previewOpen ? "Close preview" : "Preview"}</MaterialButton>
+                        <MaterialButton small disabled={readOnly} on:click={editDesign}>Edit design</MaterialButton>
+                        <span class="hint">{current?.message?.duration ? `Hide after ${current.message.duration}s` : "Manual"}</span>
+                    </div>
+                    {#each tokens as token (token.id)}
+                        <label class="value-row"><span>{token.label}</span><input class="edit" value={values[token.id] || ""} on:input={(event) => setValue(token.id, event.currentTarget.value)} /></label>
+                    {/each}
+                    <div class="buttons operation-buttons">
+                        <span class="hint status">{liveOutputs.length ? `Live on ${liveOutputs.map(([, output]) => output.name).join(", ")}` : "Ready"}</span>
+                        {#if liveOutputs.length}<MaterialButton small variant="outlined" disabled={$outLocked} on:click={() => hideMessage($activeMessage)}>Hide</MaterialButton>{/if}
+                        <MaterialButton small variant="contained" disabled={$outLocked || !!missing.length} on:click={() => present(!!liveOutputs.length)}>{liveOutputs.length ? "Update" : "Show"}</MaterialButton>
+                    </div>
+                    {#if $outLocked}<p class="hint">Output is locked.</p>{:else if missing.length}<p class="hint">Fill in {missing.map((token) => token.label).join(", ")} before showing.</p>{/if}
+                    {#if feedback}<p role="status">{feedback}</p>{/if}
+                {/if}
                 {#if previewOpen && previewMessage}
                     <div class="message-preview">
                         <Zoomed background="transparent" checkered center mirror>
@@ -172,45 +179,60 @@
                 {#if editing && config?.message}
                     <fieldset disabled={readOnly}>
                         <label>Name<input class="edit" bind:value={config.name} /></label>
-                        <label>Wording<textarea class="edit" rows="3" bind:value={wording} /></label>
-                        <p class="hint">Put a field in braces, for example {"{Child name}"}. Its input appears above after saving. Edit design for fonts, placement, shapes and images.</p>
-                        {#if config.items.some((item) => item.messageBackground)}
-                            <label>Banner background<input type="color" bind:value={background} /></label>
-                            <label class="check"><input type="checkbox" bind:checked={transparent} />Transparent banner</label>
-                        {/if}
-                        <div class="two-columns">
-                            <label>Fade in (seconds)<input class="edit" type="number" min="0" max="30" step="0.1" value={config.message.fadeIn / 1000} on:input={(e) => setFade("fadeIn", e.currentTarget.value)} /></label>
-                            <label>Fade out (seconds)<input class="edit" type="number" min="0" max="30" step="0.1" value={config.message.fadeOut / 1000} on:input={(e) => setFade("fadeOut", e.currentTarget.value)} /></label>
+                        <MessageWordingEditor bind:value={wording} variables={draftTokens.map((token) => token.label)} />
+                        <div class="buttons">
+                            <MaterialButton
+                                small
+                                on:click={() => {
+                                    save()
+                                    editDesign()
+                                }}>Edit design</MaterialButton
+                            ><span class="hint">Shapes, gradients, fonts and images</span>
                         </div>
-                        <label>Hide after (seconds; 0 = manual)<input class="edit" type="number" min="0" max="86400" bind:value={config.message.duration} /></label>
-                        <label
-                            >Scroll direction<select class="edit" aria-label="Scroll direction" bind:value={config.message.scrolling.type}>
-                                <option value="none">No scrolling</option><option value="right_left">Right to left</option><option value="left_right">Left to right</option><option value="bottom_top">Bottom to top</option><option value="top_bottom">Top to bottom</option>
-                            </select></label
-                        >
-                        {#if config.message.scrolling.type !== "none"}
+                        <details class="appearance-options">
+                            <summary>Appearance, timing and scrolling</summary>
+                            {#if config.items.some((item) => item.messageBackground)}
+                                <label>Banner background<input type="color" bind:value={background} /></label>
+                                <label class="check"><input type="checkbox" bind:checked={transparent} />Transparent banner</label>
+                            {/if}
                             <div class="two-columns">
-                                <label>Seconds per pass<input class="edit" type="number" min="1" max="600" bind:value={config.message.scrolling.duration} /></label>
-                                <label>Gap (pixels)<input class="edit" type="number" min="0" max="2000" bind:value={config.message.scrolling.gap} /></label>
+                                <label>Fade in (seconds)<input class="edit" type="number" min="0" max="30" step="0.1" value={config.message.fadeIn / 1000} on:input={(e) => setFade("fadeIn", e.currentTarget.value)} /></label>
+                                <label>Fade out (seconds)<input class="edit" type="number" min="0" max="30" step="0.1" value={config.message.fadeOut / 1000} on:input={(e) => setFade("fadeOut", e.currentTarget.value)} /></label>
                             </div>
-                            <label class="check"><input type="checkbox" bind:checked={config.message.scrolling.startOffscreen} />Start outside the text box</label>
-                            <label class="check"><input type="checkbox" bind:checked={config.message.scrolling.repeat} />Repeat scrolling</label>
-                            <label>Edge feather (pixels)<input class="edit" type="number" min="0" max="200" bind:value={config.message.scrolling.feather} /></label>
-                        {/if}
-                        <label class="check"><input type="checkbox" bind:checked={repeatFades} on:change={enableCycle} />Repeat fade in and out</label>
-                        {#if repeatFades && config.message.cycle}
-                            <div class="two-columns">
-                                <label>Visible hold (seconds)<input class="edit" type="number" min="0.1" max="600" bind:value={config.message.cycle.hold} /></label>
-                                <label>Hidden pause (seconds)<input class="edit" type="number" min="0" max="600" bind:value={config.message.cycle.pause} /></label>
-                            </div>
-                        {/if}
-                        <details>
-                            <summary>Output destination</summary>
-                            <p class="hint">No boxes checked uses the currently selected outputs.</p>
-                            {#each Object.entries($outputs).filter(([, output]) => !output.stageOutput) as [id, output]}
-                                <label class="check"><input type="checkbox" checked={config.message.outputIds?.includes(id) || false} on:change={(e) => toggleOutput(id, e.currentTarget.checked)} />{output.name}{output.enabled ? "" : " (disabled)"}</label>
-                            {/each}
-                            {#each config.message.outputIds?.filter((id) => !$outputs[id]) || [] as id}<p class="hint">Unavailable output: {id}</p>{/each}
+                            <label>Hide after (seconds; 0 = manual)<input class="edit" type="number" min="0" max="86400" bind:value={config.message.duration} /></label>
+                            <label
+                                >Scroll direction<select class="edit" aria-label="Scroll direction" bind:value={config.message.scrolling.type}>
+                                    <option value="none">No scrolling</option><option value="right_left">Right to left</option><option value="left_right">Left to right</option><option value="bottom_top">Bottom to top</option><option value="top_bottom">Top to bottom</option>
+                                </select></label
+                            >
+                            {#if config.message.scrolling.type !== "none"}
+                                <div class="two-columns">
+                                    <label>Seconds per pass<input class="edit" type="number" min="1" max="600" bind:value={config.message.scrolling.duration} /></label>
+                                    <label>Gap (pixels)<input class="edit" type="number" min="0" max="2000" bind:value={config.message.scrolling.gap} /></label>
+                                </div>
+                                <label class="check"><input type="checkbox" bind:checked={config.message.scrolling.repeat} />Repeat scrolling</label>
+                                {#if config.message.scrolling.repeat}
+                                    <p class="hint">The next copy follows after the gap above.</p>
+                                {:else}
+                                    <label class="check"><input type="checkbox" bind:checked={config.message.scrolling.startOffscreen} />Start outside the text box</label>
+                                {/if}
+                                <label>Edge feather (pixels)<input class="edit" type="number" min="0" max="200" bind:value={config.message.scrolling.feather} /></label>
+                            {/if}
+                            <label class="check"><input type="checkbox" bind:checked={repeatFades} on:change={enableCycle} />Repeat fade in and out</label>
+                            {#if repeatFades && config.message.cycle}
+                                <div class="two-columns">
+                                    <label>Visible hold (seconds)<input class="edit" type="number" min="0.1" max="600" bind:value={config.message.cycle.hold} /></label>
+                                    <label>Hidden pause (seconds)<input class="edit" type="number" min="0" max="600" bind:value={config.message.cycle.pause} /></label>
+                                </div>
+                            {/if}
+                            <details>
+                                <summary>Output destination</summary>
+                                <p class="hint">No boxes checked uses the currently selected outputs.</p>
+                                {#each Object.entries($outputs).filter(([, output]) => !output.stageOutput) as [id, output]}
+                                    <label class="check"><input type="checkbox" checked={config.message.outputIds?.includes(id) || false} on:change={(e) => toggleOutput(id, e.currentTarget.checked)} />{output.name}{output.enabled ? "" : " (disabled)"}</label>
+                                {/each}
+                                {#each config.message.outputIds?.filter((id) => !$outputs[id]) || [] as id}<p class="hint">Unavailable output: {id}</p>{/each}
+                            </details>
                         </details>
                         <div class="buttons"><MaterialButton variant="contained" on:click={save}>Save message</MaterialButton><MaterialButton on:click={() => (editing = false)}>Cancel</MaterialButton><MaterialButton red disabled={$outLocked} on:click={remove}>Delete</MaterialButton></div>
                     </fieldset>
@@ -263,7 +285,6 @@
         font-size: 0.85em;
     }
     input,
-    textarea,
     select {
         box-sizing: border-box;
         width: 100%;
@@ -272,11 +293,8 @@
         background: var(--primary-darkest);
         border: 1px solid var(--primary-lighter);
         border-radius: 4px;
-        padding: 8px;
+        padding: 6px 8px;
         font: inherit;
-    }
-    textarea {
-        resize: vertical;
     }
     input[type="color"] {
         height: 36px;
@@ -293,18 +311,62 @@
         font-size: 0.78em;
         margin: 8px 0;
     }
-    .wording {
-        opacity: 0.65;
-        font-size: 0.85em;
-        white-space: pre-wrap;
+    .message-select {
+        margin: 0 0 6px;
     }
-    .resolved {
+    .detail-heading,
+    .design-row {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+    .detail-heading {
+        justify-content: space-between;
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+    .template {
         white-space: pre-wrap;
-        font-size: 0.85em;
+        overflow-wrap: anywhere;
         padding: 8px;
         background: var(--primary-darkest);
+        border: 1px solid var(--primary-lighter);
         border-radius: 4px;
+        font-size: 0.9em;
+        line-height: 1.8;
+    }
+    .variable-chip {
+        padding: 2px 7px;
+        border-radius: 4px;
+        background: #245779;
+        color: #fff;
+    }
+    .design-row {
+        flex-wrap: wrap;
+        margin: 4px 0;
+    }
+    .design-row .hint {
+        margin-left: auto;
+    }
+    .value-row {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+    }
+    .value-row span {
+        width: 30%;
         overflow-wrap: anywhere;
+        flex-shrink: 0;
+    }
+    .operation-buttons {
+        border-top: 1px solid var(--primary-lighter);
+        padding-top: 6px;
+    }
+    .status {
+        flex: 1;
+    }
+    .appearance-options {
+        margin: 12px 0;
     }
     fieldset {
         border: 1px solid var(--primary-lighter);

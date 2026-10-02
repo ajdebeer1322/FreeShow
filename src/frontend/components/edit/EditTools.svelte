@@ -7,6 +7,7 @@
     import T from "../helpers/T.svelte"
     import { clone } from "../helpers/array"
     import { history } from "../helpers/history"
+    import { messageItemText } from "../helpers/messages"
     import { getLayoutRef, isSlideLocked } from "../helpers/show"
     import { _show } from "../helpers/shows"
     import { getStyles } from "../helpers/style"
@@ -19,6 +20,7 @@
     import { addStyleString } from "./scripts/textStyle"
     import BoxStyle from "./tools/BoxStyle.svelte"
     import ItemStyle from "./tools/ItemStyle.svelte"
+    import MessageDesignTools from "./tools/MessageDesignTools.svelte"
     import OverlayStyle from "./tools/OverlayStyle.svelte"
     import SlideFilters from "./tools/SlideFilters.svelte"
     import SlideStyle from "./tools/SlideStyle.svelte"
@@ -53,7 +55,8 @@
         // tabs.slide.remove = false
     }
     $: templateItemMode = $activeEdit.type === "template" && $templates[activeId]?.settings?.mode === "item"
-    $: if (templateItemMode) {
+    $: artworkOnly = $activeEdit.type === "overlay" && !!$overlays[activeId]?.message && !!(item?.messageShape || item?.messageBackground) && !messageItemText(item || undefined).trim()
+    $: if (templateItemMode || artworkOnly) {
         if (active === "text") active = "item"
         tabs.text.remove = true
     } else {
@@ -411,6 +414,9 @@
 
 <div class="main border editTools">
     {#if slideActive && !isLocked}
+        {#if $activeEdit.type === "overlay" && $overlays[activeId]?.message}
+            <MessageDesignTools />
+        {/if}
         <Tabs {tabs} bind:active {overflowHidden} />
 
         {#if active === "text"}

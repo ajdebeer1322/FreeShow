@@ -737,7 +737,7 @@
 
 {#if item?.lines}
     <div bind:this={alignElem} class="align" class:chords={chordsMode} class:plain style={plain ? null : item.align || null}>
-        {#if item.lines?.length < 2 && !getItemText(item).length}
+        {#if item.lines?.length < 2 && !getItemText(item).length && !item.messageShape && !item.messageBackground}
             <span class="placeholder">
                 <p>
                     {#if chordsMode}

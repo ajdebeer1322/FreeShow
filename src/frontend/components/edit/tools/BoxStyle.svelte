@@ -6,6 +6,7 @@
     import { newToast } from "../../../utils/common"
     import { clone } from "../../helpers/array"
     import { history } from "../../helpers/history"
+    import { getMessageScrolling, messageTextItem, setMessageItemScrolling } from "../../helpers/messages"
     import { getExtension, getMediaType } from "../../helpers/media"
     import { getAllEnabledOutputs } from "../../helpers/output"
     import { getCustomMetadata, getLayoutRef, initializeMetadata } from "../../helpers/show"
@@ -233,6 +234,19 @@
     let box = setBox()
     $: if ($activeEdit.id || $activeShow?.id || ($activeEdit.slide ?? -1) > -1) box = setBox()
 
+    $: messageOverlay = $activeEdit.type === "overlay" ? $overlays[$activeEdit.id || ""] : undefined
+    $: primaryIndex = messageOverlay?.message ? messageOverlay.items.indexOf(messageTextItem(messageOverlay)!) : -1
+    $: primarySelected = primaryIndex >= 0 && ($activeEdit.items.length ? Math.max(...$activeEdit.items) : (messageOverlay?.items.length || 0) - 1) === primaryIndex
+    $: inputItem = primarySelected && messageOverlay ? { ...item, scrolling: getMessageScrolling(messageOverlay) } : item
+    $: if (box?.sections?.scrolling) {
+        const durationInput = box.sections.scrolling.inputs.flat().find((input) => input.id === "scrolling.speed" || input.id === "scrolling.duration")
+        if (durationInput) {
+            durationInput.id = primarySelected ? "scrolling.duration" : "scrolling.speed"
+            durationInput.values.label = primarySelected ? "Seconds per pass" : "edit.scrolling_speed (s)"
+            durationInput.value = primarySelected ? 15 : 30
+        }
+    }
+
     // get item values
     $: style = item?.lines ? getItemStyleAtPos(item.lines, selection) : item?.type === "table" && activeRowIdx >= 0 && activeColIdx >= 0 && item.table?.rows?.[activeRowIdx]?.cells?.[activeColIdx] ? item.table.rows[activeRowIdx].cells[activeColIdx].style || "" : item?.style || ""
     let styles: any = {}
@@ -396,6 +410,11 @@
         // UPDATE
 
         if ($activeEdit.id) {
+            if ($activeEdit.type === "overlay" && $overlays[$activeEdit.id]?.message && targetId === "scrolling") {
+                const updated = setMessageItemScrolling($overlays[$activeEdit.id], allItems, value)
+                history({ id: "UPDATE", newData: { data: updated }, oldData: { id: $activeEdit.id }, location: { page: "edit", id: "overlay" } })
+                return
+            }
             if ($activeEdit.type === "overlay") overlays.update(updateItemValues)
             else if ($activeEdit.type === "template") templates.update(updateItemValues)
 
@@ -763,5 +782,5 @@
 <svelte:window on:keyup={keyup} on:keydown={keydown} on:mouseup={getTextSelection} on:mousedown={mousedown} />
 
 {#if loaded}
-    <EditValues sections={boxSections} {item} {styles} {customValues} {customLocalFonts} type="text" on:change={updateValue2} />
+    <EditValues sections={boxSections} item={inputItem} {styles} {customValues} {customLocalFonts} type="text" on:change={updateValue2} />
 {/if}
