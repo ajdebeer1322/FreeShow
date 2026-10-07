@@ -586,6 +586,10 @@
         "statement_slide_exists_arrangement": "Slide exists in a different arrangement!",
         "question_delete": "Would you like to delete?"
     },
+    "panel": {
+        "messages": "Messages",
+        "show_tools": "Slide groups, metadata and media"
+    },
     "inspector": {
         "copy": "Copy",
         "used_elsewhere": "Also used on other slides",

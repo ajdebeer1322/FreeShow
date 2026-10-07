@@ -10,6 +10,8 @@
     import Top from "./components/main/Top.svelte"
     import Preview from "./components/output/preview/Preview.svelte"
     import MessagesPanel from "./components/output/messages/MessagesPanel.svelte"
+    import Icon from "./components/helpers/Icon.svelte"
+    import MaterialButton from "./components/inputs/MaterialButton.svelte"
     import { startMessageTimers } from "./components/helpers/messageOutput"
     import SettingsTabs from "./components/settings/SettingsTabs.svelte"
     import Projects from "./components/show/Projects.svelte"
@@ -18,13 +20,24 @@
     import StageLayouts from "./components/stage/StageLayouts.svelte"
     import Resizeable from "./components/system/Resizeable.svelte"
     import Timeline from "./components/timeline/Timeline.svelte"
-    import { activeEdit, activePage, activeProfile, activeProject, activeShow, activeStage, ai, currentWindow, editMode, focusMode, loaded, os, overlays, projectView, resized, showChangeProfileMenu, showsCache, special } from "./stores"
+    import { activeEdit, activePage, activeProfile, activeProject, activeShow, activeStage, ai, currentWindow, editMode, focusMode, loaded, messagesPanelOpen, os, overlays, projectView, resized, showChangeProfileMenu, showsCache, special } from "./stores"
     import { DEFAULT_WIDTH } from "./utils/common"
 
     $: page = $activePage
     $: isWindows = !$currentWindow && $os.platform === "win32"
     $: isMessageEditor = $activeEdit.type === "overlay" && !!$overlays[$activeEdit.id || ""]?.message
     onMount(startMessageTimers)
+
+    // Messages and the show tools (groups, metadata, media) share the right panel, switched with icons
+    $: hasShowTools = !!$activeShow && ($activeShow.type === "show" || $activeShow.type === undefined) && !$focusMode
+    $: panelTab = hasShowTools && $special.rightPanel === "show" ? "show" : "messages"
+    function setPanelTab(tab: string) {
+        if (tab === "messages") messagesPanelOpen.set(true)
+        special.update((a) => {
+            a.rightPanel = tab
+            return a
+        })
+    }
 
     let previousId = ""
     $: if ($activeShow?.id !== previousId) showOpened()
@@ -84,8 +97,20 @@
                 <Preview />
                 {#if page === "show"}
                     <div class="show-controls">
-                        <MessagesPanel />
-                        {#if $activeShow && ($activeShow.type === "show" || $activeShow.type === undefined) && !$focusMode}
+                        {#if hasShowTools}
+                            <div class="panel-switch">
+                                <MaterialButton isActive={panelTab === "messages"} title="panel.messages" on:click={() => setPanelTab("messages")}>
+                                    <Icon id="message" white={panelTab === "messages"} />
+                                </MaterialButton>
+                                <MaterialButton isActive={panelTab === "show"} title="panel.show_tools" on:click={() => setPanelTab("show")}>
+                                    <Icon id="groups" white={panelTab === "show"} />
+                                </MaterialButton>
+                            </div>
+                        {/if}
+                        <div class="panel" class:hidden={panelTab !== "messages"}>
+                            <MessagesPanel />
+                        </div>
+                        {#if panelTab === "show"}
                             <div class="show-tools"><ShowTools /></div>
                         {/if}
                     </div>
@@ -192,6 +217,19 @@
     }
     .show-tools {
         min-height: 180px;
+    }
+    .panel.hidden {
+        display: none;
+    }
+    .panel-switch {
+        display: flex;
+        background-color: var(--primary-darker);
+    }
+    .panel-switch :global(button) {
+        flex: auto;
+        padding: 0.3em 0.5em;
+        border-radius: 0;
+        border-bottom: 2px solid var(--primary-darker);
     }
     .message-back {
         position: absolute;
