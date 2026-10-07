@@ -146,6 +146,8 @@ export const contextMenuItems: { [key: string]: ContextMenuItem } = {
     edit_style: { label: "menu.edit", icon: "edit", iconColor: "#97c7ff" },
     recolor: { label: "actions.recolor", icon: "color", iconColor: "#6effbe" },
     actions: { label: "actions.slide_actions", icon: "actions", iconColor: "#d497ff", items: ["LOAD_actions"] },
+    link_slides: { label: "actions.link_slides", icon: "bind", iconColor: "#d497ff" },
+    unlink_slides: { label: "actions.unlink_slides", icon: "bind", iconColor: "#ff5454" },
     bind_to: { label: "actions.bind_to", icon: "bind", iconColor: "#d497ff", items: ["LOAD_bind_slide"] },
     remove_layers: { label: "actions.remove_layers", icon: "remove_layers", iconColor: "#ff5454", items: ["LOAD_remove_layers"] },
     set_key: { label: "actions.set_key", icon: "chords", items: ["LOAD_keys"] },
@@ -203,6 +205,7 @@ export const contextMenuItems: { [key: string]: ContextMenuItem } = {
     overlay_actions: { label: "tabs.actions", icon: "actions", iconColor: "#d497ff" },
     // SCENES
     scene_actions: { label: "tabs.actions", icon: "actions", iconColor: "#d497ff" },
+    bind_to_show: { label: "actions.specific_outputs", icon: "bind", iconColor: "#d497ff", items: ["LOAD_bind_show"] },
     bind_to_scene: { label: "actions.specific_outputs", icon: "bind", iconColor: "#d497ff", items: ["LOAD_bind_scene"] },
     // TEMPLATES
     template_actions: { label: "tabs.actions", icon: "actions", iconColor: "#d497ff" },
@@ -282,7 +285,7 @@ export const contextMenuLayouts: { [key: string]: string[] } = {
     // , "changeCategory" ? edit with rename & categories...
     // , "convertToOverlay"
     // , "SEPARATOR", "export"
-    drawer_show_button: ["GROUP_open", "tag_set", "tag_filter", "SEPARATOR", "rename", "duplicate", "delete"], // "GROUP_rename"
+    drawer_show_button: ["GROUP_open", "tag_set", "tag_filter", "SEPARATOR", "bind_to_show", "rename", "duplicate", "delete"], // "GROUP_rename"
     drawer_show_button_readonly: ["tag_filter"],
     drawer_new_show: ["newShow"],
     // media / audio
@@ -347,7 +350,7 @@ export const contextMenuLayouts: { [key: string]: string[] } = {
     project_player: ["remove"],
     // "delete" removed as too many users thought it just removed the show from the project
     // "duplicate" removed as it was people did not get that it only duplicated the reference in project, and not the entire show (keyboard / menu bar shortcuts can be used)
-    project_show: ["GROUP_rename_only", "remove", "SEPARATOR", "mark_played", "private"],
+    project_show: ["GROUP_rename_only", "remove", "SEPARATOR", "mark_played", "bind_to_show", "private"],
     project_show_placeholder: ["remove"],
     project_show_placeholder_template: ["GROUP_rename_only", "remove"],
     pco_item: ["unlink_pco"],
@@ -376,8 +379,8 @@ export const contextMenuLayouts: { [key: string]: string[] } = {
 
     // SHOWS
     // , "copy", "paste"
-    slide: ["GROUP_edit", "slideGroups", "actions", "bind_to", "format", "remove_layers", "slide_transition", "disable", "SEPARATOR", "duplicate", "make_unique", "GROUP_slide_remove"],
-    slideChild: ["GROUP_edit", "slideGroups", "actions", "bind_to", "format", "remove_layers", "slide_transition", "disable", "SEPARATOR", "duplicate", "make_unique", "GROUP_slide_remove"],
+    slide: ["GROUP_edit", "slideGroups", "actions", "bind_to", "link_slides", "unlink_slides", "format", "remove_layers", "slide_transition", "disable", "SEPARATOR", "duplicate", "make_unique", "GROUP_slide_remove"],
+    slideChild: ["GROUP_edit", "slideGroups", "actions", "bind_to", "link_slides", "unlink_slides", "format", "remove_layers", "slide_transition", "disable", "SEPARATOR", "duplicate", "make_unique", "GROUP_slide_remove"],
     slideFake: ["convert_to_regular"],
     slideFocus: ["editSlideText"],
     group: ["GROUP_rename_recolor", "lock_group", "SEPARATOR", "selectAll", "SEPARATOR", "duplicate", "delete_group"],

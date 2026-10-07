@@ -34,6 +34,7 @@
     export let color: string | null = slide.color
     export let index: number
     export let columns = 1
+    export let widthPercent: number | null = null // override width (used by linked slides sharing one card)
     export let output: { color: string; line: number; maxLines: number; cached: boolean; clickRevealed?: boolean } | null = null
     export let active = false
     export let focused = false
@@ -274,7 +275,7 @@
     $: highlightColor = $slideDeleteHighlight?.color || "#ff5454"
 </script>
 
-<div class="main" class:active class:focused style="{output?.color ? 'outline: 2px solid ' + getOutputColor(output.color) + ';' : ''}width: {viewMode === 'grid' || viewMode === 'simple' || viewMode === 'groups' || noQuickEdit ? 100 / columns : 100}%;">
+<div class="main" class:active class:focused style="{output?.color ? 'outline: 2px solid ' + getOutputColor(output.color) + ';' : ''}width: {widthPercent ?? (viewMode === 'grid' || viewMode === 'simple' || viewMode === 'groups' || noQuickEdit ? 100 / columns : 100)}%;" data-slide-index={index}>
     <!-- group box -->
     {#if $fullColors}
         <div class="group_box" style="background-color: {color};" />

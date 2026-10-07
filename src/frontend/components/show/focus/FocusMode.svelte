@@ -6,6 +6,7 @@
     import { activeFocus, activeProject, activeShow, outputs, projects, resized, showsCache } from "../../../stores"
     import Icon from "../../helpers/Icon.svelte"
     import { getActiveOutputs } from "../../helpers/output"
+    import { getSlideElement } from "../../helpers/slideLinks"
     import T from "../../helpers/T.svelte"
     import Loader from "../../main/Loader.svelte"
     import Center from "../../system/Center.svelte"
@@ -86,7 +87,7 @@
         let elem = listElem.querySelector("#" + id) as HTMLElement
         if (!elem) return
         let elemTop = elem?.offsetTop || 0
-        const slide = elem?.querySelector(".grid")?.children[slideIndex] as HTMLElement
+        const slide = getSlideElement(elem?.querySelector(".grid"), slideIndex)
         let slideTop = slide ? elemTop + slide.offsetTop : elemTop
 
         // don't scroll if already visible

@@ -764,6 +764,8 @@
         "toggle_time_marker": "Toggle time markers",
         "add_time_marker": "Add time marker",
         "bind_to": "Specific outputs",
+        "link_slides": "Link slides",
+        "unlink_slides": "Unlink slides",
         "remove_binding": "Remove specific outputs",
         "dynamic_values": "Dynamic values",
         "dynamic_value": "Dynamic value",

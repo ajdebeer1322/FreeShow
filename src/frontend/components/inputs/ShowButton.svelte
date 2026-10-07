@@ -298,6 +298,12 @@
 
                 <HiddenInput value={type === "show_placeholder" ? showTemplateName : newName} id={index !== null ? "show_" + id + "#" + index : "show_drawer_" + id} on:edit={rename} bind:edit={editActive} allowEmpty={false} allowEdit={!readOnly && ((type === "show_placeholder" && !!$editingProjectTemplate) || !show.type || show.type === "show")} />
 
+                {#if $showsCache[id]?.settings?.bindings?.length}
+                    <span class="layout" title={($showsCache[id].settings.bindings || []).map((outputId) => $outputs[outputId]?.name || "").join(", ")} style="display: inline-flex;align-items: center;">
+                        <Icon id="bind" size={0.9} white />
+                    </span>
+                {/if}
+
                 {#if isProject}
                     {#if show.layoutInfo?.name}
                         <span class="layout" style="opacity: 0.6;font-style: italic;font-size: 0.9em;">{show.layoutInfo.name}</span>

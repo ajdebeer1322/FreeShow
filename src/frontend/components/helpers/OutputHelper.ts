@@ -9,7 +9,7 @@ import { activeFocus, activeProject, activeShow, focusMode, outLocked, outputs, 
 import { playFolder, togglePlayingMedia } from "../../utils/shortcuts"
 import { openProjectItem } from "../show/project"
 import { clone } from "./array"
-import { getAllActiveOutputIds, isOutputBound, setOutput } from "./output"
+import { getAllActiveOutputIds, getSlideBindings, isOutputBound, setOutput } from "./output"
 import { checkActionTrigger, getFewestOutputLines, getItemWithMostLines, playPdf, updateOut } from "./showActions"
 import { _show } from "./shows"
 import { runActionId } from "../actions/actions"
@@ -349,7 +349,7 @@ export class OutputHelper {
             if (layoutRef[data.index]?.data?.end) data.index = -1
 
             data.index++
-            while (layoutRef[data.index] && this.slideCannotBeOutputted(outputId, layoutRef[data.index])) data.index++
+            while (layoutRef[data.index] && this.slideCannotBeOutputted(outputId, layoutRef[data.index], data.id)) data.index++
         }
 
         return layoutRef[data.index] ? { layout: data.layout, index: data.index, ...outSlideData } : null
@@ -381,7 +381,7 @@ export class OutputHelper {
             if (linesReveal.previousReveal > -1 && clickReveal._isRevealed) outSlideData.itemClickReveal = true
         } else {
             data.index--
-            while (layoutRef[data.index] && this.slideCannotBeOutputted(outputId, layoutRef[data.index])) data.index--
+            while (layoutRef[data.index] && this.slideCannotBeOutputted(outputId, layoutRef[data.index], data.id)) data.index--
 
             const newShowSlide: Slide | null = _show(data.id).slides([layoutRef?.[data.index]?.id]).get()?.[0] || null
             const styleLines = this.checkStyleLines(data, newShowSlide)
@@ -396,14 +396,14 @@ export class OutputHelper {
         return layoutRef[data.index] ? { layout: data.layout, index: data.index, ...outSlideData } : null
     }
 
-    private static slideCannotBeOutputted(outputId: string, ref: LayoutRef) {
+    private static slideCannotBeOutputted(outputId: string, ref: LayoutRef, showId = "") {
         if (!ref) return false // should always exist - but this breaks the loop if not
 
         // disabled
         if (ref.data?.disabled) return true
 
         // bound to specific outputs, but not this one
-        const bindings = ref.data?.bindings || []
+        const bindings = getSlideBindings(showId, ref.data?.bindings)
         if (bindings.length && !isOutputBound(bindings, outputId)) return true
 
         return false
@@ -497,7 +497,7 @@ export class OutputHelper {
         const layout = this.getShowLayout(data)
         const layoutData = layout[data.index ?? -1]?.data
 
-        checkActionTrigger(layoutData, data.index)
+        checkActionTrigger(layoutData, data.index, data.id)
 
         this.pendingSlides[outputId] = data
 

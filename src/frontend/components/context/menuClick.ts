@@ -112,7 +112,8 @@ import { history, redo, undo } from "../helpers/history"
 import { getExtension, getFileName, getMediaLayerType, getMediaStyle, getMediaType, removeExtension, splitPath } from "../helpers/media"
 import { defaultOutput, getCurrentStyle, getFirstActiveOutput, isOutputBound, resolveOutputId, setOutput, toggleOutput, toggleOutputs, updateActiveSceneOutputs } from "../helpers/output"
 import { select } from "../helpers/select"
-import { bindSlidesToOutput, checkName, formatToFileName, getLayoutRef, openShow, removeTemplatesFromShow, updateShowsList } from "../helpers/show"
+import { loadShows } from "../helpers/setShow"
+import { bindSlidesToOutput, checkName, formatToFileName, getLayoutRef, getSelectedSlideIndexes, linkSlides, openShow, removeTemplatesFromShow, unlinkSlides, updateShowsList } from "../helpers/show"
 import { sendMidi } from "../helpers/showActions"
 import { _show } from "../helpers/shows"
 import { getMenuTagId, openTagManager, toggleSelectionTags, toggleTagFilter } from "../helpers/tags"
@@ -1921,6 +1922,8 @@ const clickActions = {
         const indexes: number[] = obj.sel?.data.map(({ index }) => index) || []
         bindSlidesToOutput(indexes, outputId)
     },
+    link_slides: () => linkSlides(getSelectedSlideIndexes()),
+    unlink_slides: () => unlinkSlides(getSelectedSlideIndexes()),
     // bind item
     bind_item: (obj: ObjData) => {
         const id = obj.menu?.id
@@ -1974,6 +1977,33 @@ const clickActions = {
         // _show().slides([slideID!]).set({ key: "items", value: items })
 
         removeTemplatesFromShow(get(activeShow)?.id || "", slideRef.id)
+    },
+    // send every slide in the selected shows to specific outputs (no outputs = normal behavior)
+    bind_show: async (obj: ObjData) => {
+        const outputId = obj.menu?.id
+        const showIds: string[] = removeDuplicates(obj.sel?.data?.map((a) => a?.id).filter(Boolean) || [])
+
+        await loadShows(showIds)
+
+        showIds.forEach((showId) => {
+            const show = get(showsCache)[showId]
+            if (!show) return
+
+            let bindings: string[] = clone(show.settings?.bindings || [])
+            if (!outputId) bindings = []
+            else if (bindings.length && isOutputBound(bindings, outputId)) {
+                bindings = bindings.filter((bId) => resolveOutputId(bId) !== outputId && bId !== outputId)
+            } else {
+                bindings.push(outputId)
+            }
+
+            history({
+                id: "UPDATE",
+                oldData: { id: showId },
+                newData: { key: "settings", subkey: "bindings", data: bindings },
+                location: { page: "show", id: "show_key", override: "show_bindings_" + showId }
+            })
+        })
     },
     bind_scene: (obj: ObjData) => {
         const id = obj.menu?.id

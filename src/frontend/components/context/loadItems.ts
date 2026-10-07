@@ -1,6 +1,6 @@
 import { get } from "svelte/store"
 import type { Media } from "../../../types/Show"
-import { actions, actionTags, activeActionTagFilter, activeEdit, activeMediaTagFilter, activePlayerTagFilter, activeTagFilter, activeTimerTagFilter, activeVariableTagFilter, contextData, drawerTabsData, globalTags, groups, media, mediaOptions, mediaTags, outputs, overlays, playerTags, playerVideos, scenes, selected, shows, sorted, timers, timerTags, variables, variableTags } from "../../stores"
+import { actions, actionTags, activeActionTagFilter, activeEdit, activeMediaTagFilter, activePlayerTagFilter, activeTagFilter, activeTimerTagFilter, activeVariableTagFilter, contextData, drawerTabsData, globalTags, groups, media, mediaOptions, mediaTags, outputs, overlays, playerTags, playerVideos, scenes, selected, shows, showsCache, sorted, timers, timerTags, variables, variableTags } from "../../stores"
 import { translateText } from "../../utils/language"
 import { isGroupHidden } from "../../utils/profile"
 import { drawerTabs } from "../../values/tabs"
@@ -362,6 +362,23 @@ const loadActions = {
         return contextOutputList
     },
     bind_item: () => loadActions.bind_slide([], true),
+    bind_show: () => {
+        const outputList: any[] = sortByName(keysToID(get(outputs)).filter((a) => !a.stageOutput))
+        let contextOutputList: (ContextMenuItem | "SEPARATOR")[] = outputList.map((a) => ({ id: a.id, label: a.name, translate: false }))
+
+        // all selected shows share the first one's setting in the menu
+        const showId = get(selected).data[0]?.id
+        const currentBindings: string[] = (showId && get(showsCache)[showId]?.settings?.bindings) || []
+
+        contextOutputList = contextOutputList.map((a) => {
+            if (typeof a !== "string" && currentBindings.length && isOutputBound(currentBindings, a.id!)) a.enabled = true
+            return a
+        })
+
+        setContextData("outputList", contextOutputList?.length > 0)
+
+        return contextOutputList
+    },
     bind_scene: () => {
         const outputList: any[] = sortByName(keysToID(get(outputs)).filter((a) => !a.stageOutput))
         let contextOutputList: (ContextMenuItem | "SEPARATOR")[] = outputList.map((a) => ({ id: a.id, label: a.name, translate: false }))

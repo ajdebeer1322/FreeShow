@@ -10,8 +10,10 @@
     import { encodeFilePath, getExtension } from "../helpers/media"
     import { getActiveOutputs, refreshOut, setOutput } from "../helpers/output"
     import { getCachedShow } from "../helpers/show"
+    import { getSlideElement, getSlideLinkGroups } from "../helpers/slideLinks"
     import { checkActionTrigger, getFewestOutputLines, getFewestOutputLinesReveal, getItemWithMostLines, updateOut } from "../helpers/showActions"
     import { _show } from "../helpers/shows"
+    import Icon from "../helpers/Icon.svelte"
     import T from "../helpers/T.svelte"
     import MaterialButton from "../inputs/MaterialButton.svelte"
     import Loader from "../main/Loader.svelte"
@@ -88,13 +90,21 @@
         if (output?.out?.slide && showId === output.out.slide.id && activeLayout === output.out.slide.layout) {
             let columns = mode === "grid" ? ($slidesOptions.columns > 2 ? $slidesOptions.columns : 0) : 1
             let index = Math.max(0, (output.out.slide.index || 0) - columns)
-            offset = ((scrollElem?.querySelector(".grid")?.children[index] as HTMLElement)?.offsetTop || 5) - 5
+            offset = (getSlideElement(scrollElem?.querySelector(".grid"), index)?.offsetTop || 5) - 5
         }
     }
 
     let nextScrollTimeout: NodeJS.Timeout | null = null
     let disableAutoScroll = false
+    // clicking a slide in a linked card activates every slide in the card
     function slideClick(e: any, index: number) {
+        const linked = slideGroups.find((group) => group.length > 1 && group.includes(index))
+        if (!linked) return activateSlide(e, index)
+
+        linked.forEach((linkedIndex) => activateSlide(e, linkedIndex))
+    }
+
+    function activateSlide(e: any, index: number) {
         // TODO: duplicate function of "preview:126 - updateOut"
         if ($outLocked || e.ctrlKey || e.metaKey || e.shiftKey) return
 
@@ -103,7 +113,7 @@
         let slideRef = _show(showId).layouts([activeLayout]).ref()[0] || []
 
         let data = slideRef[index]?.data
-        checkActionTrigger(data, index)
+        checkActionTrigger(data, index, showId)
         // allow custom actions to trigger first
         setTimeout(() => {
             // get line
@@ -174,6 +184,9 @@
     }
 
     $: gridMode = mode === "grid" || mode === "simple" || mode === "groups"
+
+    // linked slides share one card (only in the grid views)
+    $: slideGroups = gridMode ? getSlideLinkGroups(layoutSlides) : layoutSlides.map((_, i) => [i])
 
     // apply any group templates whenever a new slide group is added/updated
     let previousTemplateSignature = ""
@@ -520,15 +533,39 @@
                 {:else}
                     <div class="grid" style={$focusMode || continuous ? "" : "padding-bottom: 60px;"}>
                         {#if layoutSlides.length}
-                            {#each layoutSlides as slide, i}
-                                {@const currentSlide = currentShow?.slides?.[slide.id] || (slide.id === "fake_empty" ? { group: null, color: null, settings: {}, notes: "", items: [] } : undefined)}
+                            {#each slideGroups as group}
+                                {#if group.length > 1}
+                                    <!-- linked slides are shown as one card -->
+                                    <div class="linkedCard" style="width: {Math.min(100, (group.length * 100) / $slidesOptions.columns)}%;">
+                                        {#each group as i}
+                                            {@const slide = layoutSlides[i]}
+                                            {@const currentSlide = currentShow?.slides?.[slide.id] || (slide.id === "fake_empty" ? { group: null, color: null, settings: {}, notes: "", items: [] } : undefined)}
 
-                                {#if hasMounted && (loaded || i < lazyLoader)}
-                                    {#if currentSlide && (mode === "grid" || mode === "groups" || !slide.disabled) && (mode !== "groups" || currentSlide.group !== null || activeSlides[i] !== undefined)}
-                                        <Slide {showId} slide={currentSlide} show={currentShow} {layoutSlides} layoutSlide={slide} index={i} color={slide.color} output={activeSlides[i]} active={activeSlides[i] !== undefined} {endIndex} list={!gridMode} columns={$slidesOptions.columns} icons {altKeyPressed} disableThumbnails={isLessons && !loaded} centerPreview on:click={(e) => slideClick(e, i)} />
-                                    {/if}
+                                            {#if hasMounted && (loaded || i < lazyLoader)}
+                                                {#if currentSlide && (mode === "grid" || mode === "groups" || !slide.disabled) && (mode !== "groups" || currentSlide.group !== null || activeSlides[i] !== undefined)}
+                                                    <Slide {showId} slide={currentSlide} show={currentShow} {layoutSlides} layoutSlide={slide} index={i} color={slide.color} output={activeSlides[i]} active={activeSlides[i] !== undefined} {endIndex} list={!gridMode} columns={$slidesOptions.columns} widthPercent={100 / group.length} icons {altKeyPressed} disableThumbnails={isLessons && !loaded} centerPreview on:click={(e) => slideClick(e, i)} />
+                                                {/if}
+                                            {:else}
+                                                <SkeletonSlide slide={currentSlide} index={i} color={slide.color} columns={$slidesOptions.columns} widthPercent={100 / group.length} active={activeSlides[i] !== undefined} on:click={(e) => slideClick(e, i)} />
+                                            {/if}
+                                        {/each}
+
+                                        <div class="linkDivider"></div>
+                                        <div class="linkBadge"><Icon id="bind" size={0.8} white /></div>
+                                    </div>
                                 {:else}
-                                    <SkeletonSlide slide={currentSlide} index={i} color={slide.color} columns={$slidesOptions.columns} active={activeSlides[i] !== undefined} on:click={(e) => slideClick(e, i)} />
+                                    {#each group as i}
+                                        {@const slide = layoutSlides[i]}
+                                        {@const currentSlide = currentShow?.slides?.[slide.id] || (slide.id === "fake_empty" ? { group: null, color: null, settings: {}, notes: "", items: [] } : undefined)}
+
+                                        {#if hasMounted && (loaded || i < lazyLoader)}
+                                            {#if currentSlide && (mode === "grid" || mode === "groups" || !slide.disabled) && (mode !== "groups" || currentSlide.group !== null || activeSlides[i] !== undefined)}
+                                                <Slide {showId} slide={currentSlide} show={currentShow} {layoutSlides} layoutSlide={slide} index={i} color={slide.color} output={activeSlides[i]} active={activeSlides[i] !== undefined} {endIndex} list={!gridMode} columns={$slidesOptions.columns} widthPercent={null} icons {altKeyPressed} disableThumbnails={isLessons && !loaded} centerPreview on:click={(e) => slideClick(e, i)} />
+                                            {/if}
+                                        {:else}
+                                            <SkeletonSlide slide={currentSlide} index={i} color={slide.color} columns={$slidesOptions.columns} active={activeSlides[i] !== undefined} on:click={(e) => slideClick(e, i)} />
+                                        {/if}
+                                    {/each}
                                 {/if}
                             {/each}
                         {:else}
@@ -552,5 +589,33 @@
         display: flex;
         flex-wrap: wrap;
         padding: 5px;
+    }
+
+    /* two linked slides shown as one card */
+    .linkedCard {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+    }
+    .linkDivider {
+        position: absolute;
+        top: 4px;
+        bottom: 4px;
+        left: 50%;
+        border-left: 2px dotted rgb(255 255 255 / 0.55);
+        pointer-events: none;
+        z-index: 3;
+    }
+    .linkBadge {
+        position: absolute;
+        top: 4px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        padding: 2px;
+        border-radius: 50%;
+        background-color: var(--primary-darkest);
+        pointer-events: none;
+        z-index: 4;
     }
 </style>

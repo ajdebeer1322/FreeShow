@@ -93,6 +93,13 @@ export function isOutputBound(bindings: string[] | undefined, currentOutputId: s
     return bindings.includes(currentOutputId) || bindings.some((bId) => resolveOutputId(bId, currentOutputs) === currentOutputId)
 }
 
+// slide specific outputs win, otherwise fall back to the outputs set on the whole show (none = all active outputs)
+export function getSlideBindings(showId: string | undefined, slideBindings?: string[]): string[] {
+    if (slideBindings?.length) return slideBindings
+    if (!showId) return []
+    return _show(showId).get("settings.bindings") || []
+}
+
 export function updateSyncedOutputs() {
     const outs = get(outputs)
     if (!outs) return
@@ -145,7 +152,7 @@ export function setOutput(type: string, data: any, toggle = false, outputId = ""
     // stop any active break slide recording when the slide changes
     if (type === "slide") _stopBreakRecording()
 
-    const bindings = data?.bindings || (data?.layout ? ref[data.index]?.data?.bindings || [] : [])
+    const bindings = getSlideBindings(type === "slide" ? data?.id : "", data?.bindings || (data?.layout ? ref[data.index]?.data?.bindings || [] : []))
     const resolvedBindings = bindings.length ? resolveOutputIds(bindings) : []
     const allOutputIds = resolvedBindings.length ? resolvedBindings : getActiveOutputs(get(outputs), true, false, true)
     const resolvedOutputId = outputId ? resolveOutputId(outputId) || outputId : ""

@@ -6,6 +6,7 @@
     export let index: number
     export let color: string
     export let columns = 1
+    export let widthPercent: number | null = null // override width (used by linked slides sharing one card)
     export let active: boolean = false
 
     // $: isLessons = show?.reference?.type === "lessons"
@@ -14,7 +15,7 @@
     $: name = slide?.group
 </script>
 
-<div class="main" class:active style="width: {viewMode === 'grid' || viewMode === 'simple' || viewMode === 'groups' ? 100 / columns : 100}%;" role="none" on:click>
+<div class="main" class:active style="width: {widthPercent ?? (viewMode === 'grid' || viewMode === 'simple' || viewMode === 'groups' ? 100 / columns : 100)}%;" role="none" on:click>
     {#if viewMode === "lyrics"}
         <div class="label" style="color: {color};margin-bottom: 5px;">
             <span style="color: var(--text);opacity: 0.85;font-size: 0.9em;">{index + 1}</span>

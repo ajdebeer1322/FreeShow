@@ -2,13 +2,14 @@ import { get } from "svelte/store"
 import type { Item, Show, ShowList, Shows, Slide, TrimmedShow, TrimmedShows } from "../../../types/Show"
 import { activeEdit, activeFocus, activePage, activeProject, activeShow, cachedShowsData, customMetadata, dictionary, focusMode, groupNumbers, groups, projects, refreshEditSlide, selected, shows, showsCache, sorted, sortedShowsList } from "../../stores"
 import { translateText } from "../../utils/language"
-import { clone, keysToID, removeValues, sortByName, sortByNameAndNumber } from "./array"
+import { clone, keysToID, removeDuplicates, removeValues, sortByName, sortByNameAndNumber } from "./array"
 import { GetLayout } from "./get"
 import { history } from "./history"
 import { isOutputBound, resolveOutputId } from "./output"
 import { loadShows } from "./setShow"
 import { swichProjectItem } from "./showActions"
 import { _show } from "./shows"
+import { getLinkedPartner, getLinkStart } from "./slideLinks"
 
 // check if name exists and add number
 export function checkName(name = "", showId = "") {
@@ -448,6 +449,46 @@ export function bindSlidesToOutput(indexes: number[], outputId: string) {
     })
 
     history({ id: "SHOW_LAYOUT", newData: { key: "bindings", data: newBindings, indexes, dataIsArray: false } })
+}
+
+// link two neighbouring slides so they show as one card & activate together (see helpers/slideLinks.ts)
+export function canLinkSlides(indexes: number[]): boolean {
+    if (indexes.length !== 2) return false
+
+    const [first, second] = [...indexes].sort((a, b) => a - b)
+    if (second !== first + 1) return false
+
+    const slides = getLayoutRef().map((a) => a.data)
+    if (!slides[first] || !slides[second]) return false
+
+    // can't be part of another link
+    return getLinkedPartner(slides, first) === null && getLinkedPartner(slides, second) === null
+}
+
+export function canUnlinkSlides(indexes: number[]): boolean {
+    const slides = getLayoutRef().map((a) => a.data)
+    return indexes.some((i) => getLinkedPartner(slides, i) !== null)
+}
+
+export function getSelectedSlideIndexes(): number[] {
+    const sel = get(selected)
+    if (sel.id !== "slide") return []
+    return (sel.data || []).map((a: { index?: number }) => a.index).filter((a): a is number => typeof a === "number")
+}
+
+export function linkSlides(indexes: number[]) {
+    if (!canLinkSlides(indexes)) return
+
+    const first = Math.min(...indexes)
+    history({ id: "SHOW_LAYOUT", newData: { key: "linkNext", data: [true], indexes: [first], dataIsArray: false } })
+}
+
+export function unlinkSlides(indexes: number[]) {
+    const slides = getLayoutRef().map((a) => a.data)
+    const starts = removeDuplicates(indexes.filter((i) => getLinkedPartner(slides, i) !== null).map((i) => getLinkStart(slides, i)))
+    if (!starts.length) return
+
+    history({ id: "SHOW_LAYOUT", newData: { key: "linkNext", data: starts.map(() => undefined), indexes: starts, dataIsArray: false } })
 }
 
 // WIP should be merged with existing functions instead

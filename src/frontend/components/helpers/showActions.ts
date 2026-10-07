@@ -61,7 +61,7 @@ import {
 } from "./../../stores"
 import { clone, keysToID, sortByName } from "./array"
 import { downloadOnlineMedia, encodeFilePath, getExtension, getFileName, getMedia, getMediaStyle, getMediaType, removeExtension } from "./media"
-import { defaultLayers, getActiveOutputs, getAllActiveOutputIds, getAllNormalOutputs, getAllStageOutputs, getFirstActiveOutput, getFirstOutput, getWindowOutputId, isOutCleared, refreshOut, resolveOutputId, resolveOutputIds, setOutput, startFolderTimer } from "./output"
+import { defaultLayers, getActiveOutputs, getAllActiveOutputIds, getAllNormalOutputs, getAllStageOutputs, getFirstActiveOutput, getFirstOutput, getWindowOutputId, getSlideBindings, isOutCleared, isOutputBound, refreshOut, resolveOutputId, resolveOutputIds, setOutput, startFolderTimer } from "./output"
 import { OutputHelper } from "./OutputHelper"
 import { getSetChars } from "./randomValue"
 import { loadShows } from "./setShow"
@@ -221,10 +221,12 @@ function runPerOutputAction(trigger: string, outputIds: string[]) {
     outputIds.forEach((outputId) => action(outputId))
 }
 
-export function checkActionTrigger(layoutData: SlideData, slideIndex = 0) {
+export function checkActionTrigger(layoutData: SlideData, slideIndex = 0, showId = "") {
     if (!Array.isArray(layoutData?.actions?.slideActions)) return
 
-    const outputIds = getActiveOutputs(get(outputs), true, false, true)
+    // slides bound to specific outputs should only clear those outputs
+    const bindings = getSlideBindings(showId, layoutData.bindings)
+    const outputIds = getActiveOutputs(get(outputs), true, false, true).filter((id) => isOutputBound(bindings, id))
 
     layoutData.actions.slideActions.forEach((a) => {
         if (!shouldTriggerBefore(a)) return
@@ -292,7 +294,7 @@ export function randomSlide() {
 
     // play slide
     const data = layout?.[randomIndex]?.data
-    checkActionTrigger(data, randomIndex)
+    checkActionTrigger(data, randomIndex, showId)
     // allow custom actions to trigger first
     setTimeout(() => {
         setOutput("slide", { id: showId, layout: layoutId, index: randomIndex }, false)
@@ -320,7 +322,7 @@ export function updateOut(showId: string, index: number, layout: LayoutRef[], ex
         return
     }
 
-    const bindings = data?.bindings || []
+    const bindings = getSlideBindings(showId, data?.bindings)
     const resolvedBindings = bindings.length ? resolveOutputIds(bindings) : []
 
     // get output slide
@@ -364,7 +366,8 @@ export function updateOut(showId: string, index: number, layout: LayoutRef[], ex
         // get ghost background
         if (!background) {
             layout.forEach((a, i) => {
-                if (i <= index && !a.data.disabled) {
+                // only inherit backgrounds from slides that are meant for this output
+                if (i <= index && !a.data.disabled && isOutputBound(getSlideBindings(showId, a.data.bindings), outputId)) {
                     if (slideHasAction(a.data?.actions, "clear_background")) background = null
                     else if (a.data.background) background = a.data.background
 
@@ -566,7 +569,7 @@ export async function startShow(showId: string) {
     if (!slideRef[index]) return
 
     const slideData = slideRef[index]?.data
-    checkActionTrigger(slideData, index)
+    checkActionTrigger(slideData, index, showId)
 
     setOutput("slide", { id: showId, layout: activeLayout, index, line: 0 })
     // timeout has to be 1200 to let output data update properly (in case slide has special actions)
@@ -640,7 +643,7 @@ function playGroup(globalGroupIds: string[], { showRef, outSlide, currentShowId 
 
     // WIP duplicate of "slideClick" in Slides.svelte
     const data = showRef[index]?.data
-    checkActionTrigger(data, index)
+    checkActionTrigger(data, index, currentShowId)
     // allow custom actions to trigger first
     setTimeout(() => {
         setOutput("slide", { id: currentShowId, layout: _show(currentShowId).get("settings.activeLayout"), index, line: 0 })

@@ -33,6 +33,7 @@ export interface Show {
         // resolution?: Resolution
         template: null | ID
         customAction?: string // special custom trigger
+        bindings?: string[] // send all slides in this show to specific outputs (slide bindings override this)
         customFonts?: CustomFont[]
     }
     timestamps: {
@@ -417,6 +418,7 @@ export interface SlideData {
     }
     // actions?: {} // to begininng / index, clear (all), start timer, start audio/music ++
     bindings?: string[] // bind slide to an output
+    linkNext?: boolean // show & activate together with the next slide
     breakDuration?: number // seconds spent on "break" slide (used for countdown display)
 }
 
