@@ -4,6 +4,7 @@ import localizedFormat from "dayjs/plugin/localizedFormat"
 import { clone } from "../../helpers/array"
 import type { ItemType } from "./../../../../types/Show"
 import { captionLanguages } from "./captionLanguages"
+import { NEW_ACCENT } from "../../../values/defaultColors"
 
 // Initialize plugins
 dayjs.extend(localizedFormat)
@@ -562,7 +563,7 @@ export const itemBoxes: Box2 = {
                         {
                             id: "tracker.accent",
                             type: "color",
-                            value: "#F0008C",
+                            value: NEW_ACCENT,
                             values: {
                                 label: "edit.accent_color",
                                 allowEmpty: true,

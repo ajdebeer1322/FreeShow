@@ -14,6 +14,7 @@
     import { getStyles } from "../../helpers/style"
     import { MAX_FONT_SIZE } from "../scripts/autosize"
     import { addFilterString, addStyle, addStyleString, getItemStyleAtPos, getItemText, getLastLineAlign, getLineText, getSelectionRange } from "../scripts/textStyle"
+    import { NEW_ACCENT } from "../../../values/defaultColors"
     import { itemBoxes, setBoxInputValue } from "../values/boxes"
     import EditValues from "./EditValues.svelte"
 
@@ -328,7 +329,7 @@
         if (item.device?.type) setBoxInputValue(box, "default", "device", "icon", item.device.type === "ndi" ? "ndi" : item.device.type === "omt" ? "omt" : item.device.type === "screen" ? "screen" : item.device.type === "blackmagic" ? "blackmagic" : "camera")
     }
     $: if (id === "slide_tracker" && item) {
-        setBoxInputValue(box, "default", "tracker.accent", "value", item.tracker?.accent || $themes[$theme]?.colors?.secondary || "#F0008C")
+        setBoxInputValue(box, "default", "tracker.accent", "value", item.tracker?.accent || $themes[$theme]?.colors?.secondary || NEW_ACCENT)
 
         const defaultMetadataKeys = Object.keys(initializeMetadata({}))
         const metadataOptions = [{ value: "name", label: "show.name" }, ...Object.keys(getCustomMetadata()).map((key) => ({ value: key, label: defaultMetadataKeys.includes(key) ? `meta.${key}` : key }))]

@@ -9,6 +9,7 @@
     import { getCustomMetadata } from "../../helpers/show"
     import { getStyles } from "../../helpers/style"
     import { updateStageShow } from "../stage"
+    import { NEW_ACCENT } from "../../../values/defaultColors"
     import { slideTextSections } from "../values/text"
 
     let activeItemIds: string[] = []
@@ -104,7 +105,7 @@
     }
 
     $: if (item?.type === "slide_tracker" || activeItemId?.includes("tracker")) {
-        setBoxInputValue(stageSections, "default", "tracker.accent", "value", item?.tracker?.accent || $themes[$theme]?.colors?.secondary || "#F0008C")
+        setBoxInputValue(stageSections, "default", "tracker.accent", "value", item?.tracker?.accent || $themes[$theme]?.colors?.secondary || NEW_ACCENT)
 
         const metadataLabelMap: Record<string, string> = {
             number: "meta.number",

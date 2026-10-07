@@ -1,5 +1,6 @@
 <script lang="ts">
     import { uid } from "uid"
+    import { NEW_ACCENT } from "../../values/defaultColors"
     import type { Selected } from "../../../types/Main"
     import { activePopup, localeDirection, selected, theme, themes } from "../../stores"
     import { triggerClickOnEnterSpace } from "../../utils/clickable"
@@ -23,11 +24,11 @@
 
     const gradientId = `icon-gradient-${uid(5)}`
     export let gradientColor: string | null = null
-    let baseColor = gradientColor || (gradient ? "#e800f0" : "#f0008c")
+    let baseColor = gradientColor || NEW_ACCENT
     $: if ($themes[$theme]) updateBaseColor()
     function updateBaseColor() {
         if (gradientColor || gradient) return
-        baseColor = $themes[$theme]?.colors?.secondary || "#f0008c"
+        baseColor = $themes[$theme]?.colors?.secondary || NEW_ACCENT
     }
 
     // smaller change
