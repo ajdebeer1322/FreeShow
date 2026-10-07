@@ -12,7 +12,6 @@
     import Icon from "../../helpers/Icon.svelte"
     import { _show } from "../../helpers/shows"
     import T from "../../helpers/T.svelte"
-    import FloatingInputs from "../../input/FloatingInputs.svelte"
     import MaterialButton from "../../inputs/MaterialButton.svelte"
     import Center from "../../system/Center.svelte"
     import SelectElem from "../../system/SelectElem.svelte"
@@ -186,24 +185,27 @@
         {/if}
     </div>
 
-    <FloatingInputs round={!(!isLocked && duplicateGroups.length)}>
+    <!-- a fixed bar under the list (does not cover the groups) -->
+    <div class="toolbar">
         {#if !isLocked && duplicateGroups.length}
-            <MaterialButton title="groups.merge_duplicated_groups" on:click={() => mergeDuplicateGroups(showId, duplicateGroups)}>
+            <MaterialButton small title="groups.merge_duplicated_groups" on:click={() => mergeDuplicateGroups(showId, duplicateGroups)}>
                 <Icon id="autofill" gradient />
                 <T id="groups.merge_duplicated_groups" />
             </MaterialButton>
-
-            <div class="divider"></div>
         {/if}
 
-        <MaterialButton isActive={displayGlobalGroups} title="groups.toggle_global_group" on:click={() => globalGroupViewEnabled.set(!$globalGroupViewEnabled)}>
+        <span class="spacer"></span>
+
+        <MaterialButton small isActive={displayGlobalGroups} title="groups.toggle_global_group" on:click={() => globalGroupViewEnabled.set(!$globalGroupViewEnabled)}>
             <Icon style={displayGlobalGroups ? "" : "opacity: 0.8;"} id="groups" white={!displayGlobalGroups} />
         </MaterialButton>
-    </FloatingInputs>
+    </div>
 </div>
 
 <style>
     .groups {
+        display: flex;
+        flex-direction: column;
         height: 100%;
         overflow: hidden;
         position: relative;
@@ -215,10 +217,24 @@
         display: flex;
         align-items: flex-start;
 
-        height: 100%;
+        flex: 1;
+        min-height: 0;
         padding: 10px;
 
         overflow-y: auto;
+    }
+
+    .toolbar {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-shrink: 0;
+        padding: 4px 8px;
+        border-top: 1px solid var(--primary-lighter);
+        background-color: var(--primary-darker);
+    }
+    .spacer {
+        flex: 1;
     }
 
     .main {
