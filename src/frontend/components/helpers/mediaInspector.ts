@@ -46,14 +46,10 @@ export function countFileUses(path: string) {
 
 /** Loop off = play once (and hold the last frame). Saved on this show's background, so other shows are not affected. */
 export function setBackgroundLoop(showId: string, bgId: string, loop: boolean) {
-    showsCache.update((a) => {
-        const entry = a[showId]?.media?.[bgId]
-        if (!entry) return a
-
-        if (loop) delete entry.loop
-        else entry.loop = false
-        return a
-    })
+    // this also marks the show as modified, so it gets saved and synced
+    _show(showId)
+        .media([bgId])
+        .set({ key: "loop", value: loop ? undefined : false })
 }
 
 /** Point a layout slide at another of the show's media files */
