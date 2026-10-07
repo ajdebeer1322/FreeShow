@@ -9,6 +9,7 @@
     import { joinTime, secondsToTime } from "../../helpers/time"
     import MaterialButton from "../../inputs/MaterialButton.svelte"
     import MaterialNumberInput from "../../inputs/MaterialNumberInput.svelte"
+    import MaterialToggleSwitch from "../../inputs/MaterialToggleSwitch.svelte"
     import { registerPopupSubmit } from "../../../utils/popup"
 
     registerPopupSubmit(() => {
@@ -115,11 +116,28 @@
 
     $: newTime = allTime * count
 
+    // the show's default timer: new slides get it automatically (e.g. an announcements slideshow)
+    $: showId = $activeShow?.id || ""
+    $: applyToNew = Number($showsCache[showId]?.settings?.nextTimer || 0) > 0
+    function setDefaultTimer(seconds: number) {
+        if (!showId) return
+        history({ id: "UPDATE", newData: { key: "settings", subkey: "nextTimer", data: seconds }, oldData: { id: showId }, location: { page: "show", id: "show_key", override: "next_timer_default_" + showId } })
+    }
+    function changeSeconds(seconds: number) {
+        allTime = seconds
+        // keep the default in sync while it is on
+        if (applyToNew && seconds > 0) setDefaultTimer(seconds)
+    }
+
     const getTime = (time: number) => (time > 59 ? joinTime(secondsToTime(time)) : time + "s")
 </script>
 
 {#if allSlides}
-    <MaterialNumberInput style="margin-bottom: 10px;" label="timer.seconds" value={allTime} max={3600} on:change={(e) => (allTime = e.detail)} />
+    <MaterialNumberInput style="margin-bottom: 10px;" label="timer.seconds" value={allTime} max={3600} on:change={(e) => changeSeconds(e.detail)} />
+
+    {#if !isProjectItem}
+        <MaterialToggleSwitch label="timer.apply_new_slides" title="timer.apply_new_slides_tip" checked={applyToNew} defaultValue={false} disabled={!allTime} on:change={(e) => setDefaultTimer(e.detail ? allTime : 0)} />
+    {/if}
 
     <!-- reset if next timer applied, but not same on all slides ?? (set input to 0) -->
     {#if isProjectItem ? !allTime || allTime === value : totalTime && (appliedToSlides === allTime || allTime === 0)}

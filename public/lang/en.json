@@ -1273,6 +1273,8 @@
         "lower-greek": "Greek"
     },
     "timer": {
+        "apply_new_slides": "Apply to new slides",
+        "apply_new_slides_tip": "Slides added to this show later get this next slide timer automatically",
         "from_to": "From start to end",
         "to_time": "Towards a time",
         "to_event": "Time until event",

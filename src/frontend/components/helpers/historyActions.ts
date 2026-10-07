@@ -14,6 +14,7 @@ import { addToPos } from "./mover"
 import { getItemsCountByType, isEmptyOrSpecial, mergeWithTemplate, updateActiveSceneOutputs, updateLayoutsFromTemplate, updateSlideFromTemplate } from "./output"
 import { loadShows, saveTextCache } from "./setShow"
 import { getShowCacheId } from "./show"
+import { planNewSlideTimer } from "./nextTimerDefault"
 import { getItemWithMostLines } from "./showActions"
 import { _show } from "./shows"
 
@@ -525,6 +526,7 @@ function addSlideToLayout(slide, slideId, slideIndex, i, showId, layout, ref, da
     if (isParent) {
         const refAtIndex = ref[slideIndex - 1]?.parent || ref[slideIndex - 1]
         const slideLayoutIndex = refAtIndex ? refAtIndex.index + 1 : (slideIndex ?? ref.length)
+        applyShowNextTimer(showId, layout, layoutValue, slideLayoutIndex)
         _show(showId).layouts([layout]).slides([slideLayoutIndex]).add([layoutValue])
         const updatedRef = _show(showId).layouts([layout]).ref()[0] || []
         index = updatedRef.find((a) => a.id === layoutValue.id)?.layoutIndex ?? index
@@ -544,6 +546,26 @@ function addSlideToLayout(slide, slideId, slideIndex, i, showId, layout, ref, da
                 .add([{ ...layoutValue, id: slideId }])
         }
     }
+}
+
+// new slides get the show's default next slide timer (and keep the loop to the start on the last slide)
+function applyShowNextTimer(showId: string, layout: string, layoutValue: any, insertIndex: number) {
+    const defaultTimer = Number(_show(showId).get("settings.nextTimer")) || 0
+    if (!defaultTimer) return
+
+    const layoutSlides = _show(showId).layouts([layout]).get()[0]?.slides || []
+    const plan = planNewSlideTimer(defaultTimer, layoutSlides, insertIndex, layoutValue.nextTimer !== undefined)
+    if (plan.timer === null) return
+
+    layoutValue.nextTimer = plan.timer
+    if (!plan.setEnd || plan.clearEndAt === null) return
+
+    layoutValue.end = true
+    showsCache.update((a) => {
+        const slide = a[showId]?.layouts?.[layout]?.slides?.[plan.clearEndAt!]
+        if (slide) delete slide.end
+        return a
+    })
 }
 
 function createNewSlide(showId, _layout, ref, data, index) {

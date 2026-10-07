@@ -242,7 +242,7 @@ These are environment/baseline observations, not permanent project guarantees:
 - The merged beta 4 baseline and this fork both report 186 Svelte errors, 60 warnings and 238 hints (8 GB Node heap). No new diagnostic locations; one existing EditValues union overload message can reorder its types. Compare against the same base/dependencies when assessing changes.
 - Repository-wide formatting had existing failures (41 files); scoped checks are useful for avoiding unrelated formatting edits.
 - Targeted ESLint/stylelint on changed source also reported existing diagnostics. Compare baseline locations, not just global counts.
-- All 239 unit checks pass (211 beta 4 checks plus linked-slide grouping, copy naming, media inspector, crop geometry, filter string and default color helpers), including both normal and legacy Focus Mode destination cases and Messages tests. All three Electron UI tests pass (startup/group editing, continuous Show drag/drop and Messages). The latter two cover native edge insertion/center background replacement, live-output isolation, arbitrary tokens, gradient shapes, animated scrolling in preview/output, undo/redo and definition-only persistence. Check current output rather than assuming historical test counts.
+- All 244 unit checks pass (211 beta 4 checks plus linked-slide grouping, copy naming, media inspector, crop geometry, filter string, default color and next timer helpers), including both normal and legacy Focus Mode destination cases and Messages tests. All three Electron UI tests pass (startup/group editing, continuous Show drag/drop and Messages). The latter two cover native edge insertion/center background replacement, live-output isolation, arbitrary tokens, gradient shapes, animated scrolling in preview/output, undo/redo and definition-only persistence. Check current output rather than assuming historical test counts.
 - Beta 4 added sync result arrays used by `syncData::finish`. Initialize `downloadedShowIds` / `replacedShows` before early upload/empty-cloud/error returns; otherwise those flows throw a temporal-dead-zone error. Existing cloud sync tests cover this.
 - Beta 4 imported `addStageItem` into dropActions; the Node-only drop unit harness stubs the stage UI dependency, retaining real drop/history/model code.
 
@@ -274,6 +274,10 @@ On the Show page the right column's lower area holds Messages (`output/messages/
 ## Slide bar and arrangements
 
 The Show page has a thin bar at the bottom of the show area, just above the drawer (`slide/SlideBar.svelte`, rendered by `show/Show.svelte`; `position: sticky; bottom: 0` so it stays visible when the continuous project view scrolls). It holds the view controls (zoom, view mode) and show tools (translate, next-slide timer, custom action, scripture reference, lock indicator); add future show-wide controls there. Arrangements (layouts) are chosen, created (copy of the current one, Ctrl for empty), renamed and deleted in the Groups tab of the right panel (`show/tools/Arrangements.svelte`, placed above the group list in `SlideGroups.svelte`); the old floating `slide/Layouts.svelte` was removed. Keep arrangement features there so they can later work like ProPresenter's arrangements.
+
+## Default next slide timer
+
+`Show.settings.nextTimer` (seconds, 0/undefined = off) is a show-level default set from the Next slide timer popup (`main/popups/NextTimer.svelte`, "Apply to new slides"). `historyActions.ts::addSlideToLayout` calls `applyShowNextTimer`, which gives new parent slides that timer unless they already have one, and moves the "go to start" marker (`end`) to the new last slide when a slide is appended after it. The decision logic is `helpers/nextTimerDefault.ts` (tested). Existing slides are not changed; "To all" still applies a timer to the current slides.
 
 ## Default colors
 

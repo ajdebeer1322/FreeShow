@@ -34,6 +34,7 @@ export interface Show {
         template: null | ID
         customAction?: string // special custom trigger
         bindings?: string[] // send all slides in this show to specific outputs (slide bindings override this)
+        nextTimer?: number // default next slide timer (seconds) that new slides get
         customFonts?: CustomFont[]
     }
     timestamps: {
