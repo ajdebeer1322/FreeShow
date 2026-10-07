@@ -15,6 +15,7 @@
     import MaterialButton from "../../inputs/MaterialButton.svelte"
     import Center from "../../system/Center.svelte"
     import SelectElem from "../../system/SelectElem.svelte"
+    import Arrangements from "./Arrangements.svelte"
     import { getDuplicateGroups, getSlideGroups, mergeDuplicateGroups } from "./groups"
 
     $: showId = $activeShow?.id || ""
@@ -51,6 +52,8 @@
 </script>
 
 <div class="groups">
+    <Arrangements />
+
     <div class="groupsScroll">
         <div class="main" style="{showGroups.length ? '' : 'height: 100%;'}{displayGlobalGroups ? 'width: 50%;' : ''}">
             {#if displayGlobalGroups}

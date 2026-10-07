@@ -8,7 +8,7 @@
     import HoverButton from "../inputs/HoverButton.svelte"
     import Splash from "../main/Splash.svelte"
     import Camera from "../output/Camera.svelte"
-    import Layouts from "../slide/Layouts.svelte"
+    import SlideBar from "../slide/SlideBar.svelte"
     import Resizeable from "../system/Resizeable.svelte"
     import Timeline from "../timeline/Timeline.svelte"
     import AudioPreview from "./AudioPreview.svelte"
@@ -127,7 +127,6 @@
                 {/key}
             {:else if (show.type || "show") === "show"}
                 <Slides showId={$activeShow?.id || ""} />
-                <Layouts />
             {:else if show.type === "show_placeholder"}
                 <ProjectShowPlaceholder />
             {:else}
@@ -139,9 +138,10 @@
     </div>
 
     {#if show && (show.type || "show") === "show"}
-        {#if continuousProject}
-            <Layouts />
-        {:else}
+        <!-- thin bar with the view controls, just above the drawer -->
+        <SlideBar />
+
+        {#if !continuousProject}
             <ShowNotes />
         {/if}
 

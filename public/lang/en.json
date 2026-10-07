@@ -588,7 +588,8 @@
     },
     "panel": {
         "messages": "Messages",
-        "show_tools": "Slide groups, metadata and media"
+        "show_tools": "Slide groups, metadata and media",
+        "arrangements": "Arrangements"
     },
     "inspector": {
         "copy": "Copy",
