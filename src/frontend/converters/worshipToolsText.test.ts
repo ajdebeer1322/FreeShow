@@ -91,6 +91,77 @@ describe("buildSections", () => {
     })
 })
 
+describe("charts with variants, repeats and cues", () => {
+    it("drops the variant letter so the group (and its colour) is found", () => {
+        const { sections } = buildSections(
+            chart([
+                { heading: "CHORUS 1A", lines: [lyric("First time words")] },
+                { heading: "CHORUS 1B", lines: [lyric("Last time words")] },
+                { heading: "BRIDGE 2", lines: [lyric("Bridge words")] }
+            ])
+        )
+        expect(sections.map((a) => a.heading)).toEqual(["Chorus 1", "Chorus 1", "Bridge 2"])
+        expect(sections.map((a) => a.lines[0])).toEqual(["First time words", "Last time words", "Bridge words"])
+    })
+
+    it("treats a section without words that says repeat as the earlier section again", () => {
+        const { sections, notes } = buildSections(
+            chart([
+                { heading: "VERSE 1", lines: [lyric("Verse words")] },
+                { heading: "CHORUS 1", lines: [lyric("Chorus words")] },
+                { heading: "INTERLUDE", lines: [] },
+                { heading: "VERSE 1 REPEAT", lines: [] },
+                { heading: "CHORUS 1 REPEAT", lines: [] }
+            ])
+        )
+        expect(sections.map((a) => a.heading)).toEqual(["Verse 1", "Chorus 1", "Verse 1", "Chorus 1"])
+        expect(sections[2].lines).toEqual(["Verse words"])
+        expect(notes).toEqual([])
+    })
+
+    it("reads a repeat count in an upper case heading", () => {
+        const { sections } = buildSections(chart([{ heading: "BRIDGE X4", lines: [lyric("Bridge words")] }]))
+        expect(sections[0]).toEqual({ heading: "Bridge", lines: ["Bridge words"], repeat: 4 })
+    })
+
+    it("keeps only the first ending when the endings repeat the same words", () => {
+        const { sections, notes } = buildSections(
+            chart([
+                {
+                    heading: "BRIDGE 1B",
+                    lines: [lyric("Come on"), lyric("Lift up"), instruction("(1.)"), lyric("Get up and praise"), instruction("(To Bridge 1b)"), instruction("(2.)"), lyric("Get up and praise"), instruction("(To Instr.2)")]
+                }
+            ])
+        )
+        expect(sections[0].lines).toEqual(["Come on", "Lift up", "Get up and praise"])
+        expect(notes).toEqual([])
+    })
+
+    it("keeps a second ending that has different words", () => {
+        const { sections } = buildSections(chart([{ heading: "Bridge", lines: [lyric("Come on"), instruction("(1.)"), lyric("Go back"), instruction("(2.)"), lyric("Go on to the end")] }]))
+        expect(sections[0].lines).toEqual(["Come on", "Go back", "Go on to the end"])
+    })
+
+    it("removes jump cues from the lyrics", () => {
+        const { sections, notes } = buildSections(chart([{ heading: "Chorus 1A", lines: [lyric("Sing it aloud (To Turnaround)"), lyric("Last words (Last x)"), instruction("(To Bridge 1b)")] }]))
+        expect(sections[0].lines).toEqual(["Sing it aloud", "Last words"])
+        expect(notes).toEqual([])
+    })
+
+    it("does not show chord only sections", () => {
+        const { sections, notes } = buildSections(
+            chart([
+                { heading: "INTRO", lines: [] },
+                { heading: "TURNAROUND", lines: [] },
+                { heading: "INSTRUMENTAL 1", lines: [] },
+                { heading: "VERSE 1", lines: [lyric("Words")] }
+            ])
+        )
+        expect(sections.map((a) => a.heading)).toEqual(["Verse 1"])
+        expect(notes).toEqual([])
+    })
+})
+
 describe("buildSongText", () => {
     it("builds the text for convertText with headers and repeat markers", () => {
         const song = buildSongText(
@@ -109,6 +180,21 @@ describe("buildSongText", () => {
 
     it("returns nothing when no lyrics are left", () => {
         expect(buildSongText(chart([{ heading: "Instrumental", lines: [] }]))).toBeNull()
+    })
+
+    it("reads the metadata of a SongSelect footer", () => {
+        const song = buildSongText(
+            chart([{ heading: "Verse", lines: [lyric("Words")] }], {
+                attribution: ["Invented Writer | Another Writer | Third Writer", "(based on the recording by Invented Band | original key: B)", "CCLI Song # 7158417", "© 2019 Invented Worship Publishing | Invented Music | Another Publishing", "For use solely with the SongSelect® Terms of Use. All rights reserved. www.ccli.com", "Note: Reproduction of this sheet music requires a CCLI Music Reproduction License. Please report all copies.", "CCLI License # 433932"]
+            })
+        )
+        expect(song?.meta).toEqual({
+            title: "Synthetic Lanterns",
+            key: "D",
+            author: "Invented Writer, Another Writer, Third Writer",
+            copyright: "© 2019 Invented Worship Publishing, Invented Music, Another Publishing",
+            CCLI: "7158417"
+        })
     })
 
     it("reads the metadata from the attribution", () => {

@@ -115,3 +115,18 @@ test("reports a chart that has no readable lyrics", async ({ page }) => {
     })
     expect(result.error).toContain("no readable lyrics")
 })
+
+test("keeps footer lines apart and ignores bar lines of chord only rows", async ({ page }) => {
+    const bars = `<div class="cproSongLine">||: <span class="chordWrapper"><code class="chord">B</code><span class="chordLyrics"> | </span></span> :||</div>`
+    const html = `<html><body><div class="cproTitle">Footer Song</div><div class="cproAuthors"><div>Writer One | Writer Two</div></div><code class="cproSongKey" data-chordname="B">B</code><pre class="cproSongBody"><div class="cproColumn"><div class="cproSongSection"><div class="cproComment">INSTRUMENTAL 1</div>${bars}</div><div class="cproSongSection"><div class="cproComment">CHORUS 1A</div>${line([["B", "Words here"]])}</div></div></pre><div class="copyright-info"><div>CCLI Song # 7000002</div><div>© 2019 Invented Publishing | Invented Music</div><div>All rights reserved.</div></div></body></html>`
+    await load(page, menu + frame(html))
+    const result = await page.evaluate(() => {
+        const WT = (window as any).WT
+        return WT.extractChart(WT.findChart(WT.discoverCharts(document), "Footer Song", "B"))
+    })
+    expect(result.chart.attribution).toEqual(["Writer One | Writer Two", "CCLI Song # 7000002", "© 2019 Invented Publishing | Invented Music", "All rights reserved."])
+    expect(result.chart.sections).toEqual([
+        { heading: "INSTRUMENTAL 1", lines: [] },
+        { heading: "CHORUS 1A", lines: [{ text: "Words here", kind: "lyric" }] }
+    ])
+})

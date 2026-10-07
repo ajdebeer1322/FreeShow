@@ -25,16 +25,29 @@ const lanterns = `<html><body><div class="cproTitle">Synthetic Lanterns</div><di
 const boatsPageOne = `<html><body><div class="cproTitle">Paper Boats</div><code class="cproSongKey" data-chordname="G">G</code><pre class="cproSongBody"><div class="cproColumn"><div class="cproSongSection"><div class="cproComment">Verse</div>${line([["G", "Floating away"]])}${line([[null, "On the river"]])}</div></div></pre></body></html>`
 const boatsPageTwo = `<html><body><pre class="cproSongBody"><div class="cproColumn"><div class="cproSongSection"><div class="cproComment">Chorus (2x)</div>${line([["C", "Sail, sail on"]])}</div></div></pre>${footer}</body></html>`
 
+// shaped like a SongSelect chart: upper case headings, variants (1A/1B), chord only rows, jump cues and a footer with one div per line
+const bars = `<div class="cproSongLine">||: <span class="chordWrapper"><code class="chord">E</code><span class="chordLyrics"> | </span></span> | :||</div>`
+const cue = (text: string) => `<div class="cproSongLine"><i>${text}</i></div>`
+const hymn = `<html><body><div class="cproTitle">Lantern Hymn</div><div class="cproAuthors">Invented Writer | Another Writer</div><code class="cproSongKey" data-chordname="E">E</code><pre class="cproSongBody"><div class="cproColumn">
+<div class="cproSongSection"><div class="cproComment">INTRO</div>${bars}</div>
+<div class="cproSongSection"><div class="cproComment">VERSE 1</div>${line([["E", "Light a lamp for me"]])}${line([[null, "Light it for the night"]])}</div>
+<div class="cproSongSection"><div class="cproComment">CHORUS 1A</div>${line([["A", "Hold it high"]])}${line([[null, "Hold it high (To Bridge 1b)"]])}</div>
+<div class="cproSongSection"><div class="cproComment">INTERLUDE</div>${bars}</div>
+<div class="cproSongSection"><div class="cproComment">VERSE 1 REPEAT</div></div>
+<div class="cproSongSection"><div class="cproComment">BRIDGE 1B</div>${line([["B", "Carry it home"]])}${cue("(1.)")}${line([[null, "Sing it out"]])}${cue("(To Bridge 1b)")}${cue("(2.)")}${line([[null, "Sing it out"]])}${cue("(To Instr.2)")}</div>
+</div></pre><div class="copyright-info"><div>CCLI Song # 7000001</div><div>© 2019 Invented Publishing | Invented Music</div><div>For use solely with the SongSelect® Terms of Use. All rights reserved. www.ccli.com</div></div></body></html>`
+
 // a chart without readable lyrics (like an image)
 const harbor = `<html><body><div class="cproTitle">Quiet Harbor</div><code class="cproSongKey" data-chordname="A">A</code></body></html>`
 
-const charts: { [index: number]: string[] } = { 0: [lanterns], 1: [boatsPageOne, boatsPageTwo], 2: [harbor] }
+const charts: { [index: number]: string[] } = { 0: [lanterns], 1: [boatsPageOne, boatsPageTwo], 2: [hymn], 3: [harbor] }
 
 const page = `<!doctype html><html><body style="font-family: sans-serif">
 <h3>Mock Music Stand</h3>
 <ion-menu>
   <ion-item class="song selected"><ion-label>Synthetic Lanterns <strong>[D]</strong></ion-label></ion-item>
   <ion-item class="song"><ion-label>Paper Boats <strong>[G]</strong></ion-label></ion-item>
+  <ion-item class="song"><ion-label>Lantern Hymn <strong>[E]</strong></ion-label></ion-item>
   <ion-item class="song"><ion-label>Quiet Harbor <strong>[A]</strong></ion-label></ion-item>
 </ion-menu>
 <div id="stack"></div>
@@ -122,7 +135,7 @@ test("Add show > WorshipTools imports the chosen songs as separate shows", async
         await window!.getByText("WorshipTools", { exact: true }).click()
 
         // the embedded page reports the service menu
-        await expect(window!.getByText("Songs in service: 3")).toBeVisible({ timeout: 30_000 })
+        await expect(window!.getByText("Songs in service: 4")).toBeVisible({ timeout: 30_000 })
 
         // the native page sits exactly over the placeholder box of the popup
         const box = await window!.locator(".browser").boundingBox()
@@ -143,7 +156,7 @@ test("Add show > WorshipTools imports the chosen songs as separate shows", async
 
         await window!.getByTestId("worshiptools.choose").click()
         const rows = window!.locator(".songs .song")
-        await expect(rows).toHaveCount(3)
+        await expect(rows).toHaveCount(4)
         await expect(rows.nth(0)).toContainText("Synthetic Lanterns")
         await expect(rows.nth(0)).toContainText("D")
         await window!.screenshot({ path: join(process.cwd(), "test-output", "worshiptools-pick.png") })
@@ -155,19 +168,21 @@ test("Add show > WorshipTools imports the chosen songs as separate shows", async
         // leave the third one (no readable lyrics) checked, to see the failure
         await window!.getByTestId("worshiptools.import").click()
 
-        await expect(window!.locator(".summary")).toContainText("Imported songs: 2", { timeout: 90_000 })
+        await expect(window!.locator(".summary")).toBeVisible({ timeout: 90_000 })
+        await expect(window!.locator(".summary")).toContainText("Imported songs: 3")
         await window!.screenshot({ path: join(process.cwd(), "test-output", "worshiptools-done.png") })
         const progress = window!.locator(".song.progress")
         await expect(progress.nth(0)).toContainText("Done")
         await expect(progress.nth(1)).toContainText("Done")
-        await expect(progress.nth(2)).toContainText("no readable lyrics")
+        await expect(progress.nth(2)).toContainText("Done")
+        await expect(progress.nth(3)).toContainText("no readable lyrics")
 
         await window!.getByRole("button", { name: "Close" }).last().click()
 
         // every song is its own show, in the project in service order (the project view lists both)
         const slides = window!.locator("#showArea .grid > .main")
         await window!.getByText("Synthetic Lanterns").first().click()
-        await expect(slides).toHaveCount(7)
+        await expect(slides).toHaveCount(11)
         const texts = (await slides.allInnerTexts()).map((text) => text.replace(/\s+/g, " ").trim())
 
         // Synthetic Lanterns: no instrumental slide, "Repeat Chorus" adds the chorus again
@@ -182,6 +197,18 @@ test("Add show > WorshipTools imports the chosen songs as separate shows", async
         expect(texts[4]).toContain("Floating away On the river")
         expect(texts[5]).toContain("Sail, sail on")
         expect(texts[6]).toContain("Sail, sail on")
+
+        // Lantern Hymn: chord only sections are gone, the variant letter is gone (so the group keeps its colour),
+        // "Verse 1 Repeat" repeats the verse, the repeated ending and the jump cues are not in the words
+        expect(texts[7]).toMatch(/Light a lamp for me Light it for the night\s+\d\s+Verse/)
+        expect(texts[8]).toContain("Hold it high Hold it high")
+        expect(texts[8]).toMatch(/Chorus/)
+        expect(texts[8]).not.toMatch(/1A|To Bridge/)
+        expect(texts[9]).toContain("Light a lamp for me")
+        expect(texts[10]).toContain("Carry it home Sing it out")
+        expect(texts[10].match(/Sing it out/g)).toHaveLength(1)
+        expect(texts[10]).toMatch(/Bridge/)
+        expect(texts.slice(7).join(" ")).not.toMatch(/Intro|Interlude|\|\||\(1\.\)|To Instr/i)
         await window!.screenshot({ path: join(process.cwd(), "test-output", "worshiptools-show.png") })
     } finally {
         await app?.close().catch(() => undefined)

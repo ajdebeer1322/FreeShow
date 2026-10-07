@@ -31,6 +31,10 @@ type OutSection = { heading: string; lines: string[]; repeat: number }
 
 const SECTION_WORDS = "pre[\\s-]?chorus|chorus|refrain|verse(?:\\s*\\d+)?|bridge(?:\\s*\\d+)?|tag|ending|outro|intro|interlude|coda"
 const DROP_WORDS = /^(?:instrumental|instr\.?|interlude|solo|guitar solo|keys? solo|piano solo|turnaround|vamp|tacet|no vocals?|musical break|instrumental break)\b/i
+// sections that are only chords (no words), they are not shown
+const DROP_HEADING = /^(?:intro|interlude|instr\.?(?:umental)?|turnaround|outro|ending|solo|vamp|tacet|break|musical break)\b/i
+// jump instructions of the chart ("To Bridge 1b", "Last x", "D.S.") are not lyrics and not worth a note
+const NAVIGATION = /^(?:to\b|go to\b|d\.?\s?[cs]\b|fine\b|last x\b|\d+(?:st|nd|rd|th)? x\b|(?:1st|2nd|3rd|last|first|second) time\b)/i
 const COUNT_TOKEN = /(?:^|[\s(\[,-])(?:x\s*(\d{1,2})|(\d{1,2})\s*(?:x|×|times)|(twice))(?=$|[\s)\],.])/i
 
 function countOf(text: string): number | null {
@@ -49,13 +53,18 @@ function stripWrap(text: string): string {
         .trim()
 }
 
-type Instruction = { type: "drop" } | { type: "repeat"; count: number } | { type: "again"; target: string; count: number } | { type: "note" }
+type Instruction = { type: "drop" } | { type: "skip" } | { type: "ending"; n: number } | { type: "repeat"; count: number } | { type: "again"; target: string; count: number } | { type: "note" }
 
 export function parseInstruction(raw: string): Instruction {
     const text = stripWrap(raw)
     if (!text) return { type: "note" }
 
     if (DROP_WORDS.test(text)) return { type: "drop" }
+    if (NAVIGATION.test(text)) return { type: "skip" }
+
+    // first / second ending "(1.)"
+    const ending = /^(\d{1,2})\.?$/.exec(text)
+    if (ending) return { type: "ending", n: parseInt(ending[1]) }
 
     const count = countOf(text)
 
@@ -97,8 +106,13 @@ function looksLikeDirection(text: string): boolean {
     return /^(?:x\s*\d{1,2}|\d{1,2}\s*[x×])$/i.test(trimmed)
 }
 
-function cleanHeading(raw: string): { heading: string; repeat: number } {
-    let heading = raw.replace(/[[\]]/g, "").trim()
+function titleCase(text: string): string {
+    return text.toLowerCase().replace(/(^|[\s-])(\p{L})/gu, (_m, space, letter) => space + letter.toUpperCase())
+}
+
+// "CHORUS 1A" -> "Chorus 1": the variant letter keeps Free Show from finding the group (and its colour)
+function cleanHeading(raw: string): { heading: string; repeat: number; again: string } {
+    let heading = raw.replace(/[[\]]/g, "").replace(/\s+/g, " ").trim()
     let repeat = 1
 
     const count = countOf(heading)
@@ -107,44 +121,90 @@ function cleanHeading(raw: string): { heading: string; repeat: number } {
         // "Chorus (2x)" and "Chorus x2"
         heading = heading.replace(/[([]\s*(?:x\s*\d{1,2}|\d{1,2}\s*(?:x|×|times)|twice)\s*[)\]]/i, " ").replace(COUNT_TOKEN, " ")
     }
+
+    // "Verse 1 Repeat" points to a section that was already sung
+    let again = ""
+    const repeated = /^(.*?)[\s-–:]*\brepeat(?:ed)?\b$/i.exec(heading.trim())
+    if (repeated && repeated[1].trim()) {
+        again = repeated[1].trim()
+        heading = again
+    }
+
     heading = heading
         .replace(/\(\s*\)/g, "")
         .replace(/[\s-–—:]+$/g, "")
         .replace(/\s+/g, " ")
         .trim()
-    return { heading, repeat }
+
+    if (heading && heading === heading.toUpperCase()) heading = titleCase(heading)
+    heading = heading.replace(/(\d+)\s*[A-Za-z]$/, "$1")
+    if (again) again = heading
+    return { heading, repeat, again }
 }
+
+// a trailing jump cue on a lyric line: "words (To Turnaround)", "words (Last x)"
+const TRAILING_CUE = /\s*[([]\s*(?:to\b[^)\]]*|last x|\d+(?:st|nd|rd|th)? x|(?:1st|2nd|3rd|last) time)\s*[)\]]\s*$/i
+const LEADING_ENDING = /^[([]\s*(\d{1,2})\.?\s*[)\]]\s*(.*)$/
 
 export function buildSections(chart: WorshipToolsChart): { sections: OutSection[]; notes: string[] } {
     const sections: OutSection[] = []
     const notes: string[] = []
 
     chart.sections.forEach((source) => {
-        const { heading, repeat } = cleanHeading(source.heading)
+        const { heading, repeat, again } = cleanHeading(source.heading)
         const section: OutSection = { heading, lines: [], repeat }
         const copies: { target: string; count: number }[] = []
         let drop = false
 
+        // first / second endings repeat the same words, only the first one is kept
+        let ending = 0
+        let endingIndex = 0
+        const firstEnding: string[] = []
+
+        const addLyric = (raw: string) => {
+            const text = raw.replace(TRAILING_CUE, "").trim()
+            if (!text) return
+            if (ending === 1) firstEnding.push(text)
+            if (ending > 1) {
+                const same = firstEnding[endingIndex]
+                endingIndex++
+                if (same !== undefined && same.toLowerCase() === text.toLowerCase()) return
+            }
+            section.lines.push(text)
+        }
+
         source.lines.forEach((line) => {
-            const direction = line.kind === "instruction" || looksLikeDirection(line.text)
+            let text = line.text
+            // "(2.) Words" starts an ending on the same line, a lone "(2.)" is handled as a direction below
+            const lead = LEADING_ENDING.exec(text)?.[2] ? LEADING_ENDING.exec(text) : null
+            if (lead) {
+                ending = parseInt(lead[1])
+                endingIndex = 0
+                text = lead[2]
+            }
+
+            const direction = !lead && (line.kind === "instruction" || looksLikeDirection(text))
             if (!direction) {
-                section.lines.push(line.text)
+                addLyric(text)
                 return
             }
 
-            const instruction = parseInstruction(line.text)
-            if (instruction.type === "repeat") section.repeat = instruction.count
+            const instruction = parseInstruction(text)
+            if (instruction.type === "ending") {
+                ending = instruction.n
+                endingIndex = 0
+            } else if (instruction.type === "repeat") section.repeat = instruction.count
             else if (instruction.type === "again") copies.push({ target: instruction.target, count: instruction.count })
             else if (instruction.type === "drop") drop = true
-            else notes.push(heading ? `${heading}: ${line.text}` : line.text)
+            else if (instruction.type === "skip") return
+            else notes.push(heading ? `${heading}: ${text}` : text)
         })
 
-        // sections like "Instrumental" or "Interlude" without words are not shown
-        const emptyDrop = !section.lines.length
-        if (emptyDrop && (drop || DROP_WORDS.test(heading))) return
-
         if (section.lines.length) sections.push(section)
-        else if (heading && !copies.length) notes.push(`${heading}: (no lyrics)`)
+        // "Verse 1 Repeat": the section itself is the repeat
+        else if (again) copies.unshift({ target: again, count: 1 })
+        // sections with only chords (intro, interlude, turnaround...) are not shown
+        else if (heading && !drop && !DROP_HEADING.test(heading) && !DROP_WORDS.test(heading) && !copies.length) notes.push(`${heading}: (no lyrics)`)
 
         copies.forEach(({ target, count }) => {
             const found = findTarget(sections, target)
@@ -169,12 +229,15 @@ function metadata(chart: WorshipToolsChart): { [key: string]: string } {
         const ccli = /CCLI\s*(?:Song)?\s*#\s*(\d+)/i.exec(line)
         if (ccli && !meta.CCLI) meta.CCLI = ccli[1]
 
+        // pipes separate the names in the chart
+        const clean = line.replace(/\s*\|\s*/g, ", ").trim()
         if (/ccli/i.test(line) && !/[©]|\(c\)|copyright/i.test(line)) return
         if (/[©]|\(c\)|copyright/i.test(line)) {
-            copyright.push(line.replace(/\s*CCLI\s*(?:Song)?\s*#\s*\d+/i, "").trim())
+            copyright.push(clean.replace(/\s*CCLI\s*(?:Song)?\s*#\s*\d+/i, "").trim())
             return
         }
-        authors.push(line)
+        if (/terms of use|reproduction|all rights|www\.|^\(?\s*based on/i.test(line)) return
+        authors.push(clean)
     })
     if (authors.length) meta.author = authors.join(", ")
     if (copyright.length) meta.copyright = copyright.join(" ")

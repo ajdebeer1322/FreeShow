@@ -151,11 +151,30 @@ function collectText(node: Node): string {
     return text
 }
 
+// bar lines of chord rows ("||: | | :||") are left over without their chords, they have no words
+const HAS_WORDS = /[\p{L}\p{N}]/u
+
 function elementLines(el: Node): string[] {
     return collectText(el)
         .split(/\r?\n/)
         .map((line) => cleanText(line))
-        .filter(Boolean)
+        .filter((line) => HAS_WORDS.test(line))
+}
+
+const BLOCK_TAGS = new Set(["DIV", "P", "LI", "UL", "OL", "TR", "H1", "H2", "H3", "H4", "H5", "H6", "SECTION", "ARTICLE", "PRE"])
+
+// text with a line break between block elements (a footer is often one div per line)
+function textWithBreaks(node: Node): string {
+    if (node.nodeType === 3) return node.nodeValue || ""
+    if (node.nodeType !== 1) return ""
+
+    const el = node as Element
+    if (el.tagName === "BR") return "\n"
+    if (el.tagName === "SCRIPT" || el.tagName === "STYLE") return ""
+
+    let text = ""
+    el.childNodes.forEach((child) => (text += textWithBreaks(child)))
+    return BLOCK_TAGS.has(el.tagName) ? `\n${text}\n` : text
 }
 
 function isElement(node: Node): node is Element {
@@ -242,8 +261,8 @@ function outermostSections(column: Element): Element[] {
     return Array.from(column.querySelectorAll(".cproSongSection")).filter((el) => !el.parentElement?.closest(".cproSongSection"))
 }
 
-function splitMultiline(text: string): string[] {
-    return text
+function splitMultiline(el: Element): string[] {
+    return textWithBreaks(el)
         .split(/\r?\n+/)
         .map((a) => cleanText(a))
         .filter(Boolean)
@@ -286,14 +305,14 @@ export function extractChart(ref: ChartRef): ExtractResult {
     const last = ref.docs[ref.docs.length - 1]
 
     const attribution: string[] = []
-    const addAttribution = (text: string) => {
-        splitMultiline(text).forEach((line) => {
+    const addAttribution = (el: Element) => {
+        splitMultiline(el).forEach((line) => {
             if (!attribution.includes(line)) attribution.push(line)
         })
     }
-    first.querySelectorAll(".cproAuthors, .cproAuthor2").forEach((el) => addAttribution(el.textContent || ""))
+    first.querySelectorAll(".cproAuthors, .cproAuthor2").forEach((el) => addAttribution(el))
     const footer = last.querySelector(".copyright-info")
-    if (footer) addAttribution(footer.textContent || "")
+    if (footer) addAttribution(footer)
 
     return {
         chart: {
