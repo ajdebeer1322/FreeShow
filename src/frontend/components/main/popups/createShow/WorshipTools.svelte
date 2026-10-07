@@ -5,14 +5,16 @@
     import { ToMain } from "../../../../../types/IPC/ToMain"
     import type { WorshipToolsChart, WorshipToolsProgress, WorshipToolsSong, WorshipToolsState } from "../../../../../types/WorshipTools"
     import { createWorshipToolsShows, getExistingShowNames, isInLibrary } from "../../../../converters/worshipTools"
+    import { DEFAULT_MAX_LINE_LENGTH } from "../../../../converters/worshipToolsText"
     import { destroyMain, receiveToMain, sendMain } from "../../../../IPC/main"
-    import { activePopup, activeProject, projects, shows } from "../../../../stores"
+    import { activePopup, activeProject, projects, shows, special } from "../../../../stores"
     import { newToast } from "../../../../utils/common"
     import { translateText } from "../../../../utils/language"
     import T from "../../../helpers/T.svelte"
     import List from "../../../input/List.svelte"
     import MaterialButton from "../../../inputs/MaterialButton.svelte"
     import MaterialDropdown from "../../../inputs/MaterialDropdown.svelte"
+    import MaterialNumberInput from "../../../inputs/MaterialNumberInput.svelte"
     import LyricsFormatOptions from "./LyricsFormatOptions.svelte"
 
     export let cats: { id: string; name: string; icon: string; iconColor: string }[] = []
@@ -112,6 +114,11 @@
     $: destinationOptions = [{ label: translateText("worshiptools.library_only"), value: "library" }, ...($activeProject && $projects[$activeProject] ? [{ label: `${translateText("worshiptools.library_project")}: ${projectName}`, value: "project" }] : [])]
     $: if (destination === "project" && !($activeProject && $projects[$activeProject])) destination = "library"
 
+    // ---------- line length ----------
+
+    // long chart lines are broken into shorter lines (saved with the other settings)
+    $: maxLineLength = Number($special.worshipToolsLineLength ?? DEFAULT_MAX_LINE_LENGTH) || 0
+
     // ---------- import ----------
 
     let results: { [index: number]: SongResult } = {}
@@ -150,7 +157,7 @@
 
         const readable = importing.filter((song) => results[song.index]?.chart)
         const charts = readable.map((song) => results[song.index].chart!)
-        const { created, empty } = createWorshipToolsShows(charts, { category, addToProject: destination === "project" })
+        const { created, empty } = createWorshipToolsShows(charts, { category, addToProject: destination === "project", maxLineLength })
 
         // songs that had nothing left to show
         readable.forEach((song, i) => {
@@ -234,6 +241,10 @@
     </List>
 
     <LyricsFormatOptions />
+
+    <List top={5}>
+        <MaterialNumberInput label="worshiptools.max_line" value={maxLineLength} max={120} on:change={(e) => special.set({ ...$special, worshipToolsLineLength: e.detail })} hideWhenZero />
+    </List>
 
     <MaterialButton on:click={startImport} variant="contained" disabled={!chosen.length} icon="import" style="width: 100%;margin-top: 20px;" data-testid="worshiptools.import">
         <T id="worshiptools.import" /> ({chosen.length})

@@ -19,6 +19,13 @@ import type { WorshipToolsChart } from "../../types/WorshipTools"
 
 const MAX_REPEAT = 9
 
+export type BuildOptions = {
+    // lines longer than this many characters are broken in two (0 = never)
+    maxLineLength?: number
+}
+
+export const DEFAULT_MAX_LINE_LENGTH = 40
+
 export type WorshipToolsSong = {
     name: string
     // text for convertText
@@ -83,6 +90,46 @@ export function parseInstruction(raw: string): Instruction {
     }
 
     return { type: "note" }
+}
+
+// text fixes for the slides: straight quotes (the curly apostrophe leaves a gap in many fonts),
+// and the " - " the charts print between the parts of a word that has a chord in the middle ("a - gain")
+export function normalizeLyric(text: string): string {
+    return text
+        .replace(/[\u2018\u2019\u201B\u02BC]/g, "'")
+        .replace(/[\u201C\u201D]/g, '"')
+        .replace(/(\p{L})'\s+(s|t|d|m|ll|re|ve)\b/giu, "$1'$2")
+        .replace(/(\p{L})\s+-\s+(?=\p{Ll})/gu, "$1")
+        .replace(/\s+/g, " ")
+        .trim()
+}
+
+// breaks a long line at the best place near the middle, a comma or similar is preferred
+export function splitLongLine(text: string, max: number): string[] {
+    if (!max || max < 12 || text.length <= max) return [text]
+
+    const minPart = Math.min(8, Math.floor(max / 3))
+    const middle = text.length / 2
+    let best = -1
+    let bestScore = Infinity
+
+    for (let i = 1; i < text.length - 1; i++) {
+        if (text[i] !== " ") continue
+
+        const left = text.slice(0, i).trimEnd()
+        const right = text.slice(i + 1).trimStart()
+        if (left.length < minPart || right.length < minPart) continue
+
+        const punctuation = /[,;:!?.]$/.test(left)
+        const score = Math.abs(left.length - middle) - (punctuation ? text.length * 0.15 : 0)
+        if (score < bestScore) {
+            bestScore = score
+            best = i
+        }
+    }
+    if (best < 0) return [text]
+
+    return [...splitLongLine(text.slice(0, best).trimEnd(), max), ...splitLongLine(text.slice(best + 1).trimStart(), max)]
 }
 
 function normalizeHeading(text: string): string {
@@ -162,7 +209,7 @@ export function buildSections(chart: WorshipToolsChart): { sections: OutSection[
         const firstEnding: string[] = []
 
         const addLyric = (raw: string) => {
-            const text = raw.replace(TRAILING_CUE, "").trim()
+            const text = normalizeLyric(raw.replace(TRAILING_CUE, ""))
             if (!text) return
             if (ending === 1) firstEnding.push(text)
             if (ending > 1) {
@@ -249,14 +296,14 @@ function metadata(chart: WorshipToolsChart): { [key: string]: string } {
     return meta
 }
 
-export function buildSongText(chart: WorshipToolsChart): WorshipToolsSong | null {
+export function buildSongText(chart: WorshipToolsChart, options: BuildOptions = {}): WorshipToolsSong | null {
     const { sections, notes } = buildSections(chart)
     if (!sections.length) return null
 
     const blocks = sections.map((section) => {
         const lines: string[] = []
         if (section.heading) lines.push(`[${section.heading}]`)
-        lines.push(...section.lines)
+        section.lines.forEach((line) => lines.push(...splitLongLine(line, options.maxLineLength || 0)))
         if (section.repeat > 1) lines.push(`x${section.repeat}`)
         return lines.join("\n")
     })

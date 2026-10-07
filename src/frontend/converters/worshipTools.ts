@@ -29,12 +29,12 @@ export type WorshipToolsImportResult = {
 }
 
 // the line splitting, auto groups and text formatting come from the same settings as Quick lyrics
-export function createWorshipToolsShows(charts: WorshipToolsChart[], options: { category: string; addToProject: boolean }): WorshipToolsImportResult {
+export function createWorshipToolsShows(charts: WorshipToolsChart[], options: { category: string; addToProject: boolean; maxLineLength?: number }): WorshipToolsImportResult {
     const tempShows: { id: string; show: Show }[] = []
     const empty: string[] = []
 
     charts.forEach((chart) => {
-        const song = buildSongText(chart)
+        const song = buildSongText(chart, { maxLineLength: options.maxLineLength })
         if (!song) {
             empty.push(chart.title)
             return

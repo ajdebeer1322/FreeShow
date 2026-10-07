@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest"
 import type { WorshipToolsChart } from "../../types/WorshipTools"
-import { buildSections, buildSongText, parseInstruction } from "./worshipToolsText"
+import { buildSections, buildSongText, normalizeLyric, parseInstruction, splitLongLine } from "./worshipToolsText"
 
 const lyric = (text: string) => ({ text, kind: "lyric" as const })
 const instruction = (text: string) => ({ text, kind: "instruction" as const })
@@ -204,5 +204,63 @@ describe("buildSongText", () => {
             })
         )
         expect(song?.meta).toEqual({ title: "Synthetic Lanterns", key: "D", author: "Invented Author, Another Author", copyright: "© 2020 Invented Publishing", CCLI: "1234567" })
+    })
+})
+
+describe("normalizeLyric", () => {
+    it("uses straight apostrophes so there is no gap after them", () => {
+        expect(normalizeLyric("I\u2019ve got it\u2019s \u2018cause you\u2019re here")).toBe("I've got it's 'cause you're here")
+        expect(normalizeLyric("don\u2019 t you worry, I\u2019 ve got you")).toBe("don't you worry, I've got you")
+    })
+
+    it("joins the parts of a word that the chart splits with a dash", () => {
+        expect(normalizeLyric("And praise You again and a - gain")).toBe("And praise You again and again")
+        expect(normalizeLyric('Halle - lu - jah"')).toBe('Hallelujah"')
+        expect(normalizeLyric("Never cease to wor - ship You")).toBe("Never cease to worship You")
+        expect(normalizeLyric("A - wake my soul and sing")).toBe("Awake my soul and sing")
+    })
+
+    it("keeps a real dash between words", () => {
+        expect(normalizeLyric("Lord - Jesus is here")).toBe("Lord - Jesus is here")
+    })
+})
+
+describe("splitLongLine", () => {
+    it("keeps short lines", () => {
+        expect(splitLongLine("Hold it high", 40)).toEqual(["Hold it high"])
+        expect(splitLongLine("Any line at all because it is turned off", 0)).toEqual(["Any line at all because it is turned off"])
+    })
+
+    it("breaks a long line near the middle", () => {
+        const parts = splitLongLine("Come and see the light that shines in every dark and lonely place", 40)
+        expect(parts).toHaveLength(2)
+        expect(parts.join(" ")).toBe("Come and see the light that shines in every dark and lonely place")
+        parts.forEach((part) => expect(part.length).toBeLessThanOrEqual(40))
+    })
+
+    it("prefers to break after a comma", () => {
+        expect(splitLongLine("We lift our hands up high, and we sing out loud to You today", 40)).toEqual(["We lift our hands up high,", "and we sing out loud to You today"])
+    })
+
+    it("keeps breaking until every part fits", () => {
+        const parts = splitLongLine("one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen", 30)
+        expect(parts.length).toBeGreaterThan(2)
+        parts.forEach((part) => expect(part.length).toBeLessThanOrEqual(30))
+    })
+
+    it("leaves a line without spaces alone", () => {
+        expect(splitLongLine("Hallelujahhallelujahhallelujahhallelujahhallelujah", 30)).toHaveLength(1)
+    })
+})
+
+describe("buildSongText line length", () => {
+    it("breaks long lines and leaves the rest", () => {
+        const song = buildSongText(chart([{ heading: "Verse 1", lines: [lyric("Short line here"), lyric("We lift our hands up high, and we sing out loud to You today")] }]), { maxLineLength: 40 })
+        expect(song?.text).toBe("[Verse 1]\nShort line here\nWe lift our hands up high,\nand we sing out loud to You today")
+    })
+
+    it("does not break lines when it is turned off", () => {
+        const song = buildSongText(chart([{ heading: "Verse 1", lines: [lyric("We lift our hands up high, and we sing out loud to You today")] }]))
+        expect(song?.text).toBe("[Verse 1]\nWe lift our hands up high, and we sing out loud to You today")
     })
 })

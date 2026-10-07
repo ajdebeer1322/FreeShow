@@ -30,7 +30,10 @@ const bars = `<div class="cproSongLine">||: <span class="chordWrapper"><code cla
 const cue = (text: string) => `<div class="cproSongLine"><i>${text}</i></div>`
 const hymn = `<html><body><div class="cproTitle">Lantern Hymn</div><div class="cproAuthors">Invented Writer | Another Writer</div><code class="cproSongKey" data-chordname="E">E</code><pre class="cproSongBody"><div class="cproColumn">
 <div class="cproSongSection"><div class="cproComment">INTRO</div>${bars}</div>
-<div class="cproSongSection"><div class="cproComment">VERSE 1</div>${line([["E", "Light a lamp for me"]])}${line([[null, "Light it for the night"]])}</div>
+<div class="cproSongSection"><div class="cproComment">VERSE 1</div>${line([["E", "Light a lamp for me"]])}${line([
+    [null, "Light it for the night, we won\u2019t be a - "],
+    ["B", "fraid of the dark"]
+])}</div>
 <div class="cproSongSection"><div class="cproComment">CHORUS 1A</div>${line([["A", "Hold it high"]])}${line([[null, "Hold it high (To Bridge 1b)"]])}</div>
 <div class="cproSongSection"><div class="cproComment">INTERLUDE</div>${bars}</div>
 <div class="cproSongSection"><div class="cproComment">VERSE 1 REPEAT</div></div>
@@ -74,7 +77,7 @@ test("Add show > WorshipTools imports the chosen songs as separate shows", async
     test.setTimeout(240_000)
 
     const server: Server = createServer((_req, res) => {
-        res.writeHead(200, { "content-type": "text/html" })
+        res.writeHead(200, { "content-type": "text/html; charset=utf-8" })
         res.end(page)
     })
     await new Promise<void>((resolve) => server.listen(0, "127.0.0.1", resolve))
@@ -200,7 +203,8 @@ test("Add show > WorshipTools imports the chosen songs as separate shows", async
 
         // Lantern Hymn: chord only sections are gone, the variant letter is gone (so the group keeps its colour),
         // "Verse 1 Repeat" repeats the verse, the repeated ending and the jump cues are not in the words
-        expect(texts[7]).toMatch(/Light a lamp for me Light it for the night\s+\d\s+Verse/)
+        expect(texts[7]).toContain("Light a lamp for me Light it for the night, we won't be afraid of the dark")
+        expect(texts[7]).toMatch(/Verse/)
         expect(texts[8]).toContain("Hold it high Hold it high")
         expect(texts[8]).toMatch(/Chorus/)
         expect(texts[8]).not.toMatch(/1A|To Bridge/)

@@ -153,6 +153,7 @@
         "destination": "Add to",
         "library_only": "Library only",
         "library_project": "Library and open project",
+        "max_line": "Max characters per line",
         "back": "Back",
         "forward": "Forward",
         "reload": "Reload",
