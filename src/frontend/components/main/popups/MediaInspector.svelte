@@ -1,12 +1,16 @@
 <script lang="ts">
-    import { activePopup, media, popupData, showsCache } from "../../../stores"
+    import { activePopup, media, outputs, popupData, showsCache, styles } from "../../../stores"
     import { getAccess } from "../../../utils/profile"
+    import ImageCropEditor from "../../edit/editors/ImageCropEditor.svelte"
     import MediaEditor from "../../edit/editors/MediaEditor.svelte"
     import MediaTools from "../../edit/MediaTools.svelte"
-    import { getFileName } from "../../helpers/media"
+    import { encodeFilePath, getFileName, getMedia, getMediaStyle } from "../../helpers/media"
     import { backToOriginal, countFileUses, duplicateBackground, getInspectorBackground, setBackgroundLoop, type InspectorTarget } from "../../helpers/mediaInspector"
+    import { getActiveOutputs, getResolution, getSlideBindings, resolveOutputIds } from "../../helpers/output"
+    import { _show } from "../../helpers/shows"
     import T from "../../helpers/T.svelte"
     import MaterialButton from "../../inputs/MaterialButton.svelte"
+    import MaterialDropdown from "../../inputs/MaterialDropdown.svelte"
     import MaterialToggleSwitch from "../../inputs/MaterialToggleSwitch.svelte"
     import TrimBar from "../../inputs/TrimBar.svelte"
 
@@ -23,7 +27,7 @@
 
     $: path = bg?.path || ""
     $: settings = $media[path] || {}
-    $: isVideo = bg?.type === "video"
+    $: isImage = bg?.type === "image"
     $: fileName = getFileName(path)
 
     // other slides using the same file would be changed as well (the settings belong to the file)
@@ -36,22 +40,49 @@
     $: show = $showsCache[target.showId]
     $: isLocked = !!show?.locked || profile.global === "read" || profile[show?.category || ""] === "read"
 
-    // preview (video position & length)
+    let tools: MediaTools
+    let cropEditor: ImageCropEditor
+
+    // OUTPUT (the screen shape the image is positioned for)
+
+    $: outputIds = getActiveOutputs($outputs, false, true, true)
+    $: outputOptions = outputIds.map((id) => ({ value: id, label: $outputs[id]?.name || id }))
+
+    let outputId = ""
+    $: if (!outputId || !outputIds.includes(outputId)) outputId = getDefaultOutputId()
+    function getDefaultOutputId() {
+        // the output this slide is sent to, if it is set to specific outputs
+        const ref = _show(target.showId).layouts([target.layoutId]).ref()[0] || []
+        const bound = resolveOutputIds(getSlideBindings(target.showId, ref[target.index]?.data?.bindings))
+        return bound.find((id) => outputIds.includes(id)) || outputIds[0] || ""
+    }
+
+    $: frame = getResolution(null, null, false, outputId)
+    $: outputStyle = $styles[$outputs[outputId]?.style || ""]
+    $: mediaStyle = getMediaStyle(settings, outputStyle)
+
+    // IMAGE CROP
+
+    let lockRatio = true
+    let imageSrc = ""
+    $: if (path && isImage) loadImage(path)
+    async function loadImage(filePath: string) {
+        const loaded = await getMedia(filePath)
+        if (filePath !== path) return
+        imageSrc = encodeFilePath(loaded?.path || filePath)
+    }
+
+    // VIDEO
+
     let videoTime = 0
     let videoData = { paused: false, muted: true, duration: 0, loop: true }
     $: duration = videoData.duration || 0
-
-    let tools: MediaTools
-
-    // PLAYBACK
 
     $: loop = bg?.entry.loop !== false
     function changeLoop(value: boolean) {
         if (!bg || isLocked) return
         setBackgroundLoop(target.showId, bg.bgId, value)
     }
-
-    // TRIM
 
     $: fromTime = Number(settings.fromTime) || 0
     $: toTime = Number(settings.toTime) || 0
@@ -94,32 +125,55 @@
 
 {#if bg}
     <div class="inspector">
-        <div class="left">
-            <div class="preview">
-                <MediaEditor overridePath={path} bind:videoTime bind:videoData />
-            </div>
-
-            <div class="file">
-                <span class="name" title={path}>{fileName}</span>
-                {#if bg.isDuplicate}
-                    <span class="badge"><T id="inspector.copy" /></span>
+        <div class="main">
+            <header>
+                <div class="title">
+                    <span class="name" title={path}>{fileName}</span>
+                    {#if bg.isDuplicate}
+                        <span class="badge"><T id="inspector.copy" /></span>
+                    {/if}
+                </div>
+                {#if otherUses > 0}
+                    <span class="note" title={$showsCache ? "" : ""}><T id="inspector.used_elsewhere" />: {otherUses}</span>
                 {/if}
-            </div>
+            </header>
 
-            {#if otherUses > 0}
-                <div class="note"><T id="inspector.used_elsewhere" />: {otherUses}</div>
-            {/if}
+            {#if isImage}
+                <div class="toolbar">
+                    <div class="output">
+                        <MaterialDropdown label="inspector.output" value={outputId} options={outputOptions} on:change={(e) => (outputId = e.detail)} />
+                    </div>
+                    <span class="size">{frame.width}×{frame.height}</span>
 
-            {#if isVideo}
-                <div class="section">
-                    <h5><T id="inspector.playback" /></h5>
+                    <MaterialToggleSwitch label="inspector.lock_ratio" title="inspector.lock_ratio_tip" checked={lockRatio} defaultValue={true} small on:change={(e) => (lockRatio = e.detail)} />
 
-                    <MaterialToggleSwitch label="inspector.loop" title="inspector.loop_tip" checked={loop} defaultValue={true} disabled={isLocked} on:change={(e) => changeLoop(e.detail)} />
+                    <MaterialButton variant="outlined" small title="inspector.fit_screen_tip" on:click={() => cropEditor?.fitToScreen()}>
+                        <T id="inspector.fit_screen" />
+                    </MaterialButton>
+                    <MaterialButton variant="outlined" small icon="reset" title="inspector.clear_crop_tip" on:click={() => cropEditor?.clearCrop()}>
+                        <T id="inspector.clear_crop" />
+                    </MaterialButton>
+                </div>
+
+                <div class="media">
+                    <ImageCropEditor bind:this={cropEditor} src={imageSrc} cropping={settings.cropping} {frame} {lockRatio} fit={mediaStyle.fit || "contain"} filter={mediaStyle.filter || ""} flipped={!!mediaStyle.flipped} flippedY={!!mediaStyle.flippedY} on:change={(e) => tools?.setCropping(e.detail)} />
+                </div>
+                <p class="hint"><T id="inspector.crop_hint" /></p>
+            {:else}
+                <div class="media video">
+                    <MediaEditor overridePath={path} bind:videoTime bind:videoData />
+                </div>
+
+                <div class="card">
+                    <div class="row">
+                        <h5><T id="inspector.playback" /></h5>
+                        <MaterialToggleSwitch label="inspector.loop" title="inspector.loop_tip" checked={loop} defaultValue={true} small disabled={isLocked} on:change={(e) => changeLoop(e.detail)} />
+                    </div>
 
                     <h5><T id="inspector.trim" /></h5>
                     <TrimBar {duration} from={fromTime} to={toTime} current={videoTime} on:change={(e) => applyTrim(e.detail.key, e.detail.value)} />
 
-                    <div class="trimRow">
+                    <div class="row">
                         <MaterialButton variant="outlined" small disabled={!duration} on:click={() => applyTrim("fromTime", videoTime)}>
                             <T id="inspector.set_start" />
                         </MaterialButton>
@@ -132,27 +186,30 @@
             {/if}
         </div>
 
-        <div class="right">
-            <div class="tools">
-                <MediaTools bind:this={tools} overridePath={path} showReset={false} />
-            </div>
+        <aside>
+            <MediaTools bind:this={tools} overridePath={path} showReset={false} hideCropping />
+        </aside>
 
-            <div class="actions">
-                <MaterialButton variant="outlined" icon="copy" disabled={isLocked || busy} title="inspector.duplicate_tip" on:click={duplicate}>
-                    <T id="inspector.duplicate" />
+        <footer>
+            <MaterialButton variant="outlined" icon="copy" disabled={isLocked || busy} title="inspector.duplicate_tip" on:click={duplicate}>
+                <T id="inspector.duplicate" />
+            </MaterialButton>
+
+            {#if bg.isDuplicate}
+                <MaterialButton variant="outlined" icon="undo" disabled={isLocked} title="inspector.original_tip" on:click={original}>
+                    <T id="inspector.original" />
                 </MaterialButton>
+            {/if}
 
-                {#if bg.isDuplicate}
-                    <MaterialButton variant="outlined" icon="undo" disabled={isLocked} title="inspector.original_tip" on:click={original}>
-                        <T id="inspector.original" />
-                    </MaterialButton>
-                {/if}
+            <span class="spacer"></span>
 
-                <MaterialButton variant="outlined" icon="reset" title="inspector.reset_tip" on:click={() => tools?.resetAll()}>
-                    <T id="inspector.reset" />
-                </MaterialButton>
-            </div>
-        </div>
+            <MaterialButton variant="outlined" icon="reset" title="inspector.reset_tip" on:click={() => tools?.resetAll()}>
+                <T id="inspector.reset" />
+            </MaterialButton>
+            <MaterialButton variant="contained" on:click={() => activePopup.set(null)}>
+                <T id="inspector.done" />
+            </MaterialButton>
+        </footer>
     </div>
 {:else}
     <p class="empty"><T id="inspector.no_background" /></p>
@@ -161,59 +218,105 @@
 <style>
     .inspector {
         display: grid;
-        grid-template-columns: minmax(380px, 1fr) 340px;
-        gap: 12px;
-        width: min(980px, 82vw);
-        height: min(600px, 72vh);
+        grid-template-columns: minmax(420px, 1fr) 330px;
+        grid-template-rows: minmax(0, 1fr) auto;
+        gap: 14px 16px;
+        width: min(1120px, 90vw);
+        height: min(700px, 82vh);
     }
 
-    .left,
-    .right {
+    .main {
         display: flex;
         flex-direction: column;
+        gap: 10px;
         min-height: 0;
-        gap: 8px;
     }
 
-    .preview {
-        position: relative;
-        flex: 1;
-        min-height: 220px;
-        border: 1px solid var(--primary-lighter);
-        background-color: var(--primary-darkest);
-        overflow: hidden;
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
     }
-
-    .file {
+    .title {
         display: flex;
         align-items: center;
         gap: 8px;
+        min-width: 0;
     }
     .name {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        font-weight: bold;
+        font-size: 1.1em;
+        font-weight: 600;
     }
     .badge {
         flex-shrink: 0;
-        padding: 1px 8px;
+        padding: 1px 9px;
         border-radius: 10px;
         background-color: var(--secondary);
         color: var(--secondary-text);
         font-size: 0.75em;
+        font-weight: 600;
     }
     .note {
-        opacity: 0.7;
+        flex-shrink: 0;
+        opacity: 0.65;
         font-size: 0.85em;
     }
 
-    .section h5 {
-        margin: 8px 0 4px;
-        opacity: 0.7;
+    .toolbar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 8px 10px;
+        border-radius: 8px;
+        background-color: var(--primary-darker);
+    }
+    .output {
+        width: 190px;
+    }
+    .size {
+        opacity: 0.55;
+        font-size: 0.85em;
+        font-variant-numeric: tabular-nums;
     }
 
-    .trimRow {
+    .media {
+        flex: 1;
+        min-height: 0;
+    }
+    .media.video {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: var(--primary-darkest);
+    }
+
+    .hint {
+        margin: 0;
+        opacity: 0.55;
+        font-size: 0.8em;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding: 10px 12px;
+        border-radius: 8px;
+        background-color: var(--primary-darker);
+    }
+    .card h5 {
+        margin: 4px 0 0;
+        opacity: 0.7;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+    .row {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -224,17 +327,23 @@
         opacity: 0.8;
     }
 
-    .tools {
-        flex: 1;
+    aside {
         min-height: 0;
-        border: 1px solid var(--primary-lighter);
+        border-radius: 8px;
         overflow: hidden;
+        background-color: var(--primary-darker);
     }
 
-    .actions {
+    footer {
+        grid-column: 1 / -1;
         display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
+        align-items: center;
+        gap: 8px;
+        padding-top: 12px;
+        border-top: 1px solid var(--primary-lighter);
+    }
+    .spacer {
+        flex: 1;
     }
 
     .empty {

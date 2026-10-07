@@ -602,7 +602,16 @@
         "original_tip": "Use the original file again for this slide",
         "reset": "Reset all adjustments",
         "reset_tip": "Remove the crop, colour and trim settings of this file",
-        "no_background": "This slide has no background"
+        "no_background": "This slide has no background",
+        "output": "Position for output",
+        "lock_ratio": "Match screen shape",
+        "lock_ratio_tip": "Keep the crop the same shape as the output screen, so it fills the screen",
+        "fit_screen": "Fit to screen",
+        "fit_screen_tip": "Reshape the crop to match the output screen",
+        "clear_crop": "Clear crop",
+        "clear_crop_tip": "Show the whole image again",
+        "crop_hint": "Drag the box to position the image, drag the corners to zoom. The screen below shows how it looks on the output.",
+        "done": "Done"
     },
     "toast": {
         "saving": "Saving...",

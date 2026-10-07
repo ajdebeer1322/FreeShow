@@ -24,6 +24,8 @@
     // use a specific file instead of the one being edited (media inspector)
     export let overridePath = ""
     export let showReset = true
+    /** Cropping is edited by dragging on a preview instead (media inspector) */
+    export let hideCropping = false
 
     // update values
     $: mediaId = overridePath || $activeEdit.id || $activeShow!.id
@@ -31,7 +33,12 @@
 
     $: mediaType = !overridePath && $activeEdit.type === "camera" ? "camera" : getMediaType(getExtension(mediaId))
 
-    $: mediaSections = clone(mediaBoxes[mediaType]?.sections || {})
+    $: mediaSections = getSections(mediaType, hideCropping)
+    function getSections(type: string, hideCrop: boolean) {
+        const sections = clone(mediaBoxes[type]?.sections || {})
+        if (hideCrop) delete sections.cropping
+        return sections
+    }
 
     // WIP camera / video cropping ??
 
@@ -83,7 +90,19 @@
             }
         }
 
-        mediaSections = clone(mediaBoxes[mediaType]?.sections || {})
+        mediaSections = getSections(mediaType, hideCropping)
+    }
+
+    /** Save a crop (pixels removed from each side) and update the output if this file is showing */
+    export function setCropping(crop: { top: number; right: number; bottom: number; left: number }) {
+        if (!mediaId) return
+
+        updateStore("media", { keys: [mediaId, "cropping"], value: { ...crop } })
+
+        const bg = getFirstActiveOutput()?.out?.background
+        if (!bg || (bg.path || bg.id || "") !== mediaId) return
+        ;(bg as any).cropping = { ...crop }
+        setOutput("background", bg)
     }
 
     export function valueChanged(input: any) {
