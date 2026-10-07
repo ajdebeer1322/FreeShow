@@ -469,6 +469,7 @@ export interface Media {
     muted?: boolean
     loop?: boolean
     filters?: string
+    duplicateOf?: string // original file path, if this file was duplicated from the media inspector
     base64?: string // saving media data
     cloud?: { [key: string]: string }
 }

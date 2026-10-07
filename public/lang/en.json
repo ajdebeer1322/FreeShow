@@ -502,6 +502,7 @@
         "max_lines": "Set max lines",
         "transition": "Transition",
         "media_fit": "Change media fit",
+        "media_inspector": "Inspector",
         "metadata_display": "Metadata display",
         "delete_show": "Delete show",
         "delete_show_confirmation": "Are you sure you want to delete",
@@ -584,6 +585,24 @@
     "confirm": {
         "statement_slide_exists_arrangement": "Slide exists in a different arrangement!",
         "question_delete": "Would you like to delete?"
+    },
+    "inspector": {
+        "copy": "Copy",
+        "used_elsewhere": "Also used on other slides",
+        "playback": "Playback",
+        "loop": "Loop",
+        "loop_tip": "Off: plays once and holds the last frame",
+        "trim": "Trim (start and end)",
+        "set_start": "Set start here",
+        "set_end": "Set end here",
+        "duplicate": "Duplicate and adjust",
+        "duplicate_tip": "Copy the file and use the copy for this slide only, so changes don't affect other songs",
+        "duplicate_failed": "Could not duplicate the file",
+        "original": "Back to original",
+        "original_tip": "Use the original file again for this slide",
+        "reset": "Reset all adjustments",
+        "reset_tip": "Remove the crop, colour and trim settings of this file",
+        "no_background": "This slide has no background"
     },
     "toast": {
         "saving": "Saving...",
@@ -764,6 +783,7 @@
         "toggle_time_marker": "Toggle time markers",
         "add_time_marker": "Add time marker",
         "bind_to": "Specific outputs",
+        "media_inspector": "Inspector",
         "link_slides": "Link slides",
         "unlink_slides": "Unlink slides",
         "remove_binding": "Remove specific outputs",

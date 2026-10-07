@@ -6,6 +6,7 @@
     import { closeContextMenu } from "../../utils/shortcuts"
     import { getEditItems } from "../edit/scripts/itemHelpers"
     import { hexToRgb } from "../helpers/color"
+    import { getSelectedInspectorTarget } from "../helpers/mediaInspector"
     import { canLinkSlides, canUnlinkSlides, getSelectedSlideIndexes } from "../helpers/show"
     import ContextChild from "./ContextChild.svelte"
     import ContextItem from "./ContextItem.svelte"
@@ -152,6 +153,7 @@
         if (id === "rearrange") return getEditItems().length > 1
 
         if (id === "bind_to" || id === "bind_to_scene" || id === "bind_to_show") return $contextData.outputList
+        if (id === "media_inspector") return !!getSelectedInspectorTarget()
         if (id === "link_slides") return canLinkSlides(getSelectedSlideIndexes())
         if (id === "unlink_slides") return canUnlinkSlides(getSelectedSlideIndexes())
         if (id === "format") return $contextData.textContent || $activePage !== "show"

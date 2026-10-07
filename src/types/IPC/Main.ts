@@ -136,6 +136,7 @@ export enum Main {
     GET_SIMILAR = "GET_SIMILAR",
     BUNDLE_MEDIA_FILES = "BUNDLE_MEDIA_FILES",
     MEDIA_FOLDER_COPY = "MEDIA_FOLDER_COPY",
+    DUPLICATE_MEDIA_FILE = "DUPLICATE_MEDIA_FILE",
     READ_BIBLES_FOLDER = "READ_BIBLES_FOLDER",
     FILE_INFO = "FILE_INFO",
     READ_FOLDER = "READ_FOLDER",
@@ -257,6 +258,7 @@ export interface MainSendPayloads {
     [Main.GET_SIMILAR]: { paths: string[] }
     [Main.BUNDLE_MEDIA_FILES]: { openFolder?: boolean; outputPath?: string }
     [Main.MEDIA_FOLDER_COPY]: { paths: string[] }
+    [Main.DUPLICATE_MEDIA_FILE]: { path: string }
     [Main.FILE_INFO]: string
     [Main.READ_FOLDER]: { path: string | string[]; depth?: number; generateThumbnails?: boolean; captureFolderContent?: boolean }
     [Main.READ_FILE]: { path: string }
@@ -375,6 +377,7 @@ export interface MainReturnPayloads {
     [Main.GET_SIMILAR]: { path: string; name: string }[]
     [Main.RESTORE_CLOUD_BACKUP]: Promise<{ success: boolean; error?: string }>
     [Main.MEDIA_FOLDER_COPY]: Promise<boolean>
+    [Main.DUPLICATE_MEDIA_FILE]: Promise<{ path: string } | null>
     [Main.LOCATE_MEDIA_FILE]: Promise<{ path: string; hasChanged: boolean } | null>
     [Main.GET_MEDIA_FOLDER_PATH]: string
     [Main.READ_BIBLES_FOLDER]: { path: string; name: string }[]

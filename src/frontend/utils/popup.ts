@@ -60,6 +60,7 @@ import ManageMetadata from "../components/main/popups/ManageMetadata.svelte"
 import ManageTags from "../components/main/popups/ManageTags.svelte"
 import MaxLines from "../components/main/popups/MaxLines.svelte"
 import MediaFit from "../components/main/popups/MediaFit.svelte"
+import MediaInspector from "../components/main/popups/MediaInspector.svelte"
 import MetadataDisplay from "../components/main/popups/MetadataDisplay.svelte"
 import NewUpdate from "../components/main/popups/NewUpdate.svelte"
 import NextTimer from "../components/main/popups/NextTimer.svelte"
@@ -136,6 +137,7 @@ export const popups: { [key in Popups]: ComponentType } = {
     max_lines: MaxLines,
     transition: Transition,
     media_fit: MediaFit,
+    media_inspector: MediaInspector,
     metadata_display: MetadataDisplay,
     import_scripture: ImportScripture,
     import_calendar: ImportCalendar,

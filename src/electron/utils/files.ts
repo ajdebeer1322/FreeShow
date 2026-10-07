@@ -19,6 +19,7 @@ import { _store, appDataPath, config, getStore, setStore, setStoreValue } from "
 import { createThumbnail, doesMediaExist, filePathHashCode } from "../data/thumbnails"
 import { sendMain, sendToMain } from "../IPC/main"
 import { mainWindow, setAutoProfile } from "./../index"
+import { getNextCopyPath } from "./copyName"
 import { getAllShows, trimShow } from "./shows"
 
 function actionComplete(err: Error | null, actionFailedMessage: string) {
@@ -201,6 +202,21 @@ export function copyFileAsync(sourcePath: string, destPath: string) {
         fs.copyFile(sourcePath, destPath, (err) => {
             actionComplete(err, "Could not copy file")
             resolve(!err)
+        })
+    })
+}
+
+// copy a media file next to the original (named "name 2.ext"), using a copy-on-write clone when the file system supports it
+export async function duplicateMediaFile(data: { path: string }): Promise<{ path: string } | null> {
+    const sourcePath = data?.path
+    if (!sourcePath || !fs.existsSync(sourcePath) || !fs.statSync(sourcePath).isFile()) return null
+
+    const newPath = getNextCopyPath(sourcePath, fs.existsSync)
+
+    return new Promise((resolve) => {
+        fs.copyFile(sourcePath, newPath, fs.constants.COPYFILE_FICLONE, (err) => {
+            actionComplete(err, "Could not duplicate media file")
+            resolve(err ? null : { path: newPath })
         })
     })
 }

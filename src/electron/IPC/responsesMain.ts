@@ -35,7 +35,7 @@ import { downloadFfmpeg, resolveFfmpegPath } from "../streaming/ffmpegManager"
 import { processAudioData, timecodeStart, timecodeStop, updateTimecodeValue } from "../timecode/timecode"
 import { apiReturnData, emitOSC, startWebSocketAndRest, stopApiListener } from "../utils/api"
 import { closeMain } from "../utils/close"
-import { addToMediaFolder, bundleMediaFiles, createFolder, getDataFolderPath, getDataFolderRoot, getFileInfo, getMediaCodec, getMediaSyncFolderPath, getMediaTracks, getPaths, getSimularPaths, loadFile, loadShowsAsync, locateMediaFile, openInSystem, readExifData, readFile, readFolder, readFolderContent, selectFiles, selectFilesDialog, selectFolder, setMediaSyncFolderPath, writeFile } from "../utils/files"
+import { addToMediaFolder, bundleMediaFiles, createFolder, duplicateMediaFile, getDataFolderPath, getDataFolderRoot, getFileInfo, getMediaCodec, getMediaSyncFolderPath, getMediaTracks, getPaths, getSimularPaths, loadFile, loadShowsAsync, locateMediaFile, openInSystem, readExifData, readFile, readFolder, readFolderContent, selectFiles, selectFilesDialog, selectFolder, setMediaSyncFolderPath, writeFile } from "../utils/files"
 import { listGraphicsDevices } from "../utils/gpu"
 import { getMachineId } from "../utils/helpers"
 import { LyricSearch } from "../utils/LyricSearch"
@@ -173,6 +173,7 @@ export const mainResponses: MainResponses = {
     [Main.GET_SIMILAR]: (data) => getSimularPaths(data),
     [Main.BUNDLE_MEDIA_FILES]: (data) => bundleMediaFiles(data),
     [Main.MEDIA_FOLDER_COPY]: (data) => addToMediaFolder(data.paths),
+    [Main.DUPLICATE_MEDIA_FILE]: (data) => duplicateMediaFile(data),
     [Main.READ_BIBLES_FOLDER]: () => readBiblesFolder(),
     [Main.FILE_INFO]: (data) => getFileInfo(data),
     [Main.READ_FOLDER]: (data) => readFolderContent(data),

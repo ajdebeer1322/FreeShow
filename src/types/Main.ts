@@ -426,6 +426,7 @@ export type Popups =
     | "max_lines"
     | "transition"
     | "media_fit"
+    | "media_inspector"
     | "metadata_display"
     | "import_scripture"
     | "import_calendar"

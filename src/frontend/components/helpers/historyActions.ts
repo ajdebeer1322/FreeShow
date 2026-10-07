@@ -792,7 +792,9 @@ function handleShowLayout(obj, data, initializing) {
     data = clone((deleting ? obj.oldData : obj.newData) || {})
 
     if (initializing) {
-        data.remember = { showId: get(activeShow)?.id, layout: _show().get("settings.activeLayout") }
+        // an explicit destination (e.g. the media inspector) wins over the active show
+        const showId = obj.location?.show?.id || get(activeShow)?.id
+        data.remember = { showId, layout: obj.location?.layout || _show(showId).get("settings.activeLayout") }
     }
 
     if (deleting) {

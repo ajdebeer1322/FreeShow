@@ -21,11 +21,15 @@
     }
     let active: string = Object.keys(tabs)[0]
 
+    // use a specific file instead of the one being edited (media inspector)
+    export let overridePath = ""
+    export let showReset = true
+
     // update values
-    $: mediaId = $activeEdit.id || $activeShow!.id
+    $: mediaId = overridePath || $activeEdit.id || $activeShow!.id
     $: currentMedia = $media[mediaId] || {}
 
-    $: mediaType = $activeEdit.type === "camera" ? "camera" : getMediaType(getExtension(mediaId))
+    $: mediaType = !overridePath && $activeEdit.type === "camera" ? "camera" : getMediaType(getExtension(mediaId))
 
     $: mediaSections = clone(mediaBoxes[mediaType]?.sections || {})
 
@@ -50,23 +54,34 @@
         }
     }
 
-    function reset() {
+    export function reset() {
         let deleteKeys: string[] = ["flipped", "flippedY", "blend", "fit", "speed", "volume", "fromTime", "toTime", "videoType", "cropping"]
 
         // reset
         if (active === "filters") deleteKeys = ["filter"]
         else if (active !== "media") return
+
+        resetKeys(deleteKeys)
+    }
+
+    /** Reset every adjustment of the file (media inspector) */
+    export function resetAll() {
+        resetKeys(["flipped", "flippedY", "blend", "fit", "speed", "volume", "fromTime", "toTime", "softLoop", "videoType", "cropping", "filter"])
+    }
+
+    function resetKeys(deleteKeys: string[]) {
         deleteKeys.forEach((key) => removeStore("media", { keys: [mediaId, key] }))
 
         // update output
         let currentOutput: any = getFirstActiveOutput()
         let bg = currentOutput?.out?.background
-        if (!bg) return
-        const bgId = bg.path || bg.id || ""
-        if (bgId !== mediaId) return
-
-        deleteKeys.forEach((key) => delete bg[key])
-        setOutput("background", bg)
+        if (bg) {
+            const bgId = bg.path || bg.id || ""
+            if (bgId === mediaId) {
+                deleteKeys.forEach((key) => delete bg[key])
+                setOutput("background", bg)
+            }
+        }
 
         mediaSections = clone(mediaBoxes[mediaType]?.sections || {})
     }
@@ -120,9 +135,11 @@
         {/if}
     </div>
 
-    <FloatingInputs>
-        <MaterialButton icon="reset" title="actions.reset" on:click={reset} />
-    </FloatingInputs>
+    {#if showReset}
+        <FloatingInputs>
+            <MaterialButton icon="reset" title="actions.reset" on:click={reset} />
+        </FloatingInputs>
+    {/if}
 </div>
 
 <style>

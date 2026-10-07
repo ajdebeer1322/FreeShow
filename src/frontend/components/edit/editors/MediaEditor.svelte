@@ -12,7 +12,10 @@
     import { getStyleResolution } from "../../slide/getStyleResolution"
     import Zoomed from "../../slide/Zoomed.svelte"
 
-    $: path = $activeEdit.id || $activeShow!.id
+    // use a specific file instead of the one being edited (media inspector)
+    export let overridePath = ""
+
+    $: path = overridePath || $activeEdit.id || $activeShow!.id
 
     let mediaPath = ""
 
@@ -45,15 +48,15 @@
     $: extension = getExtension(mediaPath)
     $: type = getMediaType(extension)
 
-    let videoTime = 0
-    let videoData = { paused: false, muted: true, duration: 0, loop: true }
+    export let videoTime = 0
+    export let videoData = { paused: false, muted: true, duration: 0, loop: true }
 
     $: output = getFirstActiveOutput($outputs)
     $: outputStyle = getCurrentStyle($styles, output?.style)
 
     // get styling
     let mediaStyle: MediaStyle = {}
-    $: mediaId = $activeEdit.id && $activeEdit.type === "media" ? $activeEdit.id : $activeShow?.id && ($activeShow.type === "image" || $activeShow.type === "video") ? $activeShow.id : ""
+    $: mediaId = overridePath || ($activeEdit.id && $activeEdit.type === "media" ? $activeEdit.id : $activeShow?.id && ($activeShow.type === "image" || $activeShow.type === "video") ? $activeShow.id : "")
     $: if (mediaId) mediaStyle = getMediaStyle($media[mediaId], outputStyle)
 </script>
 

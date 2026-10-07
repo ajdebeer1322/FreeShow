@@ -112,6 +112,7 @@ import { history, redo, undo } from "../helpers/history"
 import { getExtension, getFileName, getMediaLayerType, getMediaStyle, getMediaType, removeExtension, splitPath } from "../helpers/media"
 import { defaultOutput, getCurrentStyle, getFirstActiveOutput, isOutputBound, resolveOutputId, setOutput, toggleOutput, toggleOutputs, updateActiveSceneOutputs } from "../helpers/output"
 import { select } from "../helpers/select"
+import { openMediaInspector } from "../helpers/mediaInspector"
 import { loadShows } from "../helpers/setShow"
 import { bindSlidesToOutput, checkName, formatToFileName, getLayoutRef, getSelectedSlideIndexes, linkSlides, openShow, removeTemplatesFromShow, unlinkSlides, updateShowsList } from "../helpers/show"
 import { sendMidi } from "../helpers/showActions"
@@ -1922,6 +1923,7 @@ const clickActions = {
         const indexes: number[] = obj.sel?.data.map(({ index }) => index) || []
         bindSlidesToOutput(indexes, outputId)
     },
+    media_inspector: () => openMediaInspector(),
     link_slides: () => linkSlides(getSelectedSlideIndexes()),
     unlink_slides: () => unlinkSlides(getSelectedSlideIndexes()),
     // bind item

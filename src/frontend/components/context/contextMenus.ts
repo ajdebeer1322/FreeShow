@@ -146,6 +146,7 @@ export const contextMenuItems: { [key: string]: ContextMenuItem } = {
     edit_style: { label: "menu.edit", icon: "edit", iconColor: "#97c7ff" },
     recolor: { label: "actions.recolor", icon: "color", iconColor: "#6effbe" },
     actions: { label: "actions.slide_actions", icon: "actions", iconColor: "#d497ff", items: ["LOAD_actions"] },
+    media_inspector: { label: "actions.media_inspector", icon: "image", iconColor: "#7fd1ff" },
     link_slides: { label: "actions.link_slides", icon: "bind", iconColor: "#d497ff" },
     unlink_slides: { label: "actions.unlink_slides", icon: "bind", iconColor: "#ff5454" },
     bind_to: { label: "actions.bind_to", icon: "bind", iconColor: "#d497ff", items: ["LOAD_bind_slide"] },
@@ -379,8 +380,8 @@ export const contextMenuLayouts: { [key: string]: string[] } = {
 
     // SHOWS
     // , "copy", "paste"
-    slide: ["GROUP_edit", "slideGroups", "actions", "bind_to", "link_slides", "unlink_slides", "format", "remove_layers", "slide_transition", "disable", "SEPARATOR", "duplicate", "make_unique", "GROUP_slide_remove"],
-    slideChild: ["GROUP_edit", "slideGroups", "actions", "bind_to", "link_slides", "unlink_slides", "format", "remove_layers", "slide_transition", "disable", "SEPARATOR", "duplicate", "make_unique", "GROUP_slide_remove"],
+    slide: ["GROUP_edit", "slideGroups", "actions", "bind_to", "media_inspector", "link_slides", "unlink_slides", "format", "remove_layers", "slide_transition", "disable", "SEPARATOR", "duplicate", "make_unique", "GROUP_slide_remove"],
+    slideChild: ["GROUP_edit", "slideGroups", "actions", "bind_to", "media_inspector", "link_slides", "unlink_slides", "format", "remove_layers", "slide_transition", "disable", "SEPARATOR", "duplicate", "make_unique", "GROUP_slide_remove"],
     slideFake: ["convert_to_regular"],
     slideFocus: ["editSlideText"],
     group: ["GROUP_rename_recolor", "lock_group", "SEPARATOR", "selectAll", "SEPARATOR", "duplicate", "delete_group"],
