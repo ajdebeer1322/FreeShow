@@ -21,24 +21,13 @@
     }
     let active: string = Object.keys(tabs)[0]
 
-    // use a specific file instead of the one being edited (media inspector)
-    export let overridePath = ""
-    export let showReset = true
-    /** Cropping is edited by dragging on a preview instead (media inspector) */
-    export let hideCropping = false
-
     // update values
-    $: mediaId = overridePath || $activeEdit.id || $activeShow!.id
+    $: mediaId = $activeEdit.id || $activeShow!.id
     $: currentMedia = $media[mediaId] || {}
 
-    $: mediaType = !overridePath && $activeEdit.type === "camera" ? "camera" : getMediaType(getExtension(mediaId))
+    $: mediaType = $activeEdit.type === "camera" ? "camera" : getMediaType(getExtension(mediaId))
 
-    $: mediaSections = getSections(mediaType, hideCropping)
-    function getSections(type: string, hideCrop: boolean) {
-        const sections = clone(mediaBoxes[type]?.sections || {})
-        if (hideCrop) delete sections.cropping
-        return sections
-    }
+    $: mediaSections = clone(mediaBoxes[mediaType]?.sections || {})
 
     // WIP camera / video cropping ??
 
@@ -61,48 +50,25 @@
         }
     }
 
-    export function reset() {
+    function reset() {
         let deleteKeys: string[] = ["flipped", "flippedY", "blend", "fit", "speed", "volume", "fromTime", "toTime", "videoType", "cropping"]
 
         // reset
         if (active === "filters") deleteKeys = ["filter"]
         else if (active !== "media") return
-
-        resetKeys(deleteKeys)
-    }
-
-    /** Reset every adjustment of the file (media inspector) */
-    export function resetAll() {
-        resetKeys(["flipped", "flippedY", "blend", "fit", "speed", "volume", "fromTime", "toTime", "softLoop", "videoType", "cropping", "filter"])
-    }
-
-    function resetKeys(deleteKeys: string[]) {
         deleteKeys.forEach((key) => removeStore("media", { keys: [mediaId, key] }))
 
         // update output
         let currentOutput: any = getFirstActiveOutput()
         let bg = currentOutput?.out?.background
-        if (bg) {
-            const bgId = bg.path || bg.id || ""
-            if (bgId === mediaId) {
-                deleteKeys.forEach((key) => delete bg[key])
-                setOutput("background", bg)
-            }
-        }
+        if (!bg) return
+        const bgId = bg.path || bg.id || ""
+        if (bgId !== mediaId) return
 
-        mediaSections = getSections(mediaType, hideCropping)
-    }
-
-    /** Save a crop (pixels removed from each side) and update the output if this file is showing */
-    export function setCropping(crop: { top: number; right: number; bottom: number; left: number }) {
-        if (!mediaId) return
-
-        updateStore("media", { keys: [mediaId, "cropping"], value: { ...crop } })
-
-        const bg = getFirstActiveOutput()?.out?.background
-        if (!bg || (bg.path || bg.id || "") !== mediaId) return
-        ;(bg as any).cropping = { ...crop }
+        deleteKeys.forEach((key) => delete bg[key])
         setOutput("background", bg)
+
+        mediaSections = clone(mediaBoxes[mediaType]?.sections || {})
     }
 
     export function valueChanged(input: any) {
@@ -154,11 +120,9 @@
         {/if}
     </div>
 
-    {#if showReset}
-        <FloatingInputs>
-            <MaterialButton icon="reset" title="actions.reset" on:click={reset} />
-        </FloatingInputs>
-    {/if}
+    <FloatingInputs>
+        <MaterialButton icon="reset" title="actions.reset" on:click={reset} />
+    </FloatingInputs>
 </div>
 
 <style>

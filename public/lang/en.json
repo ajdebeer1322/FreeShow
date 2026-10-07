@@ -611,7 +611,12 @@
         "clear_crop": "Clear crop",
         "clear_crop_tip": "Show the whole image again",
         "crop_hint": "Drag the box to position the image, drag the corners to zoom. The screen below shows how it looks on the output.",
-        "done": "Done"
+        "done": "Done",
+        "scaling": "Scaling",
+        "colour": "Adjust colour",
+        "reset_colour": "Reset",
+        "hue": "Hue",
+        "saturation": "Saturation"
     },
     "toast": {
         "saving": "Saving...",

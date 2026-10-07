@@ -47,7 +47,7 @@
 
 {#if popupId !== null}
     {#key popupId}
-        <div style={isWindows ? `height: calc(100% - ${MENU_BAR_HEIGHT}px);` : null} class="popup" class:isOptimized transition:fade={{ duration: isOptimized ? 20 : 100 }} on:mousedown={mousedown}>
+        <div style={isWindows ? `height: calc(100% - ${MENU_BAR_HEIGHT}px);` : null} class="popup" class:isOptimized class:wide={popupId === "media_inspector"} transition:fade={{ duration: isOptimized ? 20 : 100 }} on:mousedown={mousedown}>
             <div class="card" transition:scale={{ duration: isOptimized ? 50 : 200 }}>
                 {#if popupId !== "alert"}
                     <div class="headerContent" style="border-bottom: 1px solid var(--primary-lighter);{scrolled ? 'box-shadow: 2px 2px 4px 5px rgb(0 0 0 / 0.1);' : ''}">
@@ -107,6 +107,11 @@
     }
     .popup.isOptimized {
         background-color: rgb(0 0 0 / 0.8);
+    }
+
+    /* big popups use the whole window */
+    .popup.wide {
+        padding: 20px 24px;
     }
 
     @media screen and (max-width: 1000px) {

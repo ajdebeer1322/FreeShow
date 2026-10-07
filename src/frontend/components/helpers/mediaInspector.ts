@@ -2,13 +2,16 @@ import { get } from "svelte/store"
 import { Main } from "../../../types/IPC/Main"
 import type { Media } from "../../../types/Show"
 import { requestMain } from "../../IPC/main"
-import { activePopup, media, popupData, selected, showsCache } from "../../stores"
+import { activePopup, media, outputs, popupData, selected, showsCache } from "../../stores"
 import { newToast } from "../../utils/common"
 import { clone } from "./array"
+import { VideoPlayer } from "../media/video/videoPlayer"
 import { history } from "./history"
 import { downloadOnlineMedia, getFileName, getMediaType, getExtension, removeExtension } from "./media"
 import { countBackgroundUses, findMediaKeyByPath, getMediaPath } from "./mediaInspectorLogic"
+import { getActiveOutputs, setOutput } from "./output"
 import { _show } from "./shows"
+import { removeStore, updateStore } from "./update"
 
 export type InspectorTarget = { showId: string; layoutId: string; index: number }
 
@@ -133,4 +136,41 @@ export function openMediaInspector() {
 
     popupData.set(target)
     activePopup.set("media_inspector")
+}
+
+// FILE SETTINGS (saved per file in the media store and applied to outputs showing the file)
+
+const FILE_SETTINGS = ["fit", "flipped", "flippedY", "blend", "filter", "cropping", "speed", "fromTime", "toTime", "softLoop", "videoType"]
+
+/** Change a setting on the outputs that are currently showing this file */
+function updateOutputsShowing(path: string, changes: { [key: string]: any }, remove: string[] = []) {
+    getActiveOutputs(get(outputs), true, true, true).forEach((outputId) => {
+        const background = get(outputs)[outputId]?.out?.background
+        if (!background || (background.path || background.id || "") !== path) return
+
+        const updated = { ...clone(background), ...changes }
+        remove.forEach((key) => delete updated[key])
+        setOutput("background", updated, false, outputId)
+    })
+}
+
+/** Save one setting for a file (undefined removes it) */
+export function setMediaSetting(path: string, key: string, value: any) {
+    if (!path) return
+
+    if (value === undefined) removeStore("media", { keys: [path, key] })
+    else updateStore("media", { keys: [path, key], value })
+
+    VideoPlayer.updateProperties(path)
+    updateOutputsShowing(path, value === undefined ? {} : { [key]: value }, value === undefined ? [key] : [])
+}
+
+/** Remove every crop, colour, fit and trim setting of a file */
+export function resetMediaSettings(path: string) {
+    if (!path) return
+
+    FILE_SETTINGS.forEach((key) => removeStore("media", { keys: [path, key] }))
+
+    VideoPlayer.updateProperties(path)
+    updateOutputsShowing(path, {}, FILE_SETTINGS)
 }

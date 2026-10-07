@@ -3,15 +3,15 @@
     import { getAccess } from "../../../utils/profile"
     import ImageCropEditor from "../../edit/editors/ImageCropEditor.svelte"
     import MediaEditor from "../../edit/editors/MediaEditor.svelte"
-    import MediaTools from "../../edit/MediaTools.svelte"
     import { encodeFilePath, getFileName, getMedia, getMediaStyle } from "../../helpers/media"
-    import { backToOriginal, countFileUses, duplicateBackground, getInspectorBackground, setBackgroundLoop, type InspectorTarget } from "../../helpers/mediaInspector"
+    import { backToOriginal, countFileUses, duplicateBackground, getInspectorBackground, resetMediaSettings, setBackgroundLoop, setMediaSetting, type InspectorTarget } from "../../helpers/mediaInspector"
     import { getActiveOutputs, getResolution, getSlideBindings, resolveOutputIds } from "../../helpers/output"
     import { _show } from "../../helpers/shows"
     import T from "../../helpers/T.svelte"
     import MaterialButton from "../../inputs/MaterialButton.svelte"
     import MaterialDropdown from "../../inputs/MaterialDropdown.svelte"
     import MaterialToggleSwitch from "../../inputs/MaterialToggleSwitch.svelte"
+    import MediaInspectorSettings from "./MediaInspectorSettings.svelte"
     import TrimBar from "../../inputs/TrimBar.svelte"
 
     // opened from the slide context menu
@@ -28,6 +28,7 @@
     $: path = bg?.path || ""
     $: settings = $media[path] || {}
     $: isImage = bg?.type === "image"
+    $: isVideo = bg?.type === "video"
     $: fileName = getFileName(path)
 
     // other slides using the same file would be changed as well (the settings belong to the file)
@@ -40,7 +41,6 @@
     $: show = $showsCache[target.showId]
     $: isLocked = !!show?.locked || profile.global === "read" || profile[show?.category || ""] === "read"
 
-    let tools: MediaTools
     let cropEditor: ImageCropEditor
 
     // OUTPUT (the screen shape the image is positioned for)
@@ -97,7 +97,8 @@
             if (value >= duration - 0.05) value = 0 // the end of the video = no end point
         }
 
-        tools?.valueChanged({ id: key, value: Math.round(value * 10) / 10 })
+        // a start of 0 / no end point is the same as no trim
+        setMediaSetting(path, key, value > 0 ? Math.round(value * 10) / 10 : undefined)
     }
 
     function formatTime(seconds: number) {
@@ -156,7 +157,7 @@
                 </div>
 
                 <div class="media">
-                    <ImageCropEditor bind:this={cropEditor} src={imageSrc} cropping={settings.cropping} {frame} {lockRatio} fit={mediaStyle.fit || "contain"} filter={mediaStyle.filter || ""} flipped={!!mediaStyle.flipped} flippedY={!!mediaStyle.flippedY} on:change={(e) => tools?.setCropping(e.detail)} />
+                    <ImageCropEditor bind:this={cropEditor} src={imageSrc} cropping={settings.cropping} {frame} {lockRatio} fit={mediaStyle.fit || "contain"} filter={mediaStyle.filter || ""} flipped={!!mediaStyle.flipped} flippedY={!!mediaStyle.flippedY} on:change={(e) => setMediaSetting(path, "cropping", e.detail)} />
                 </div>
                 <p class="hint"><T id="inspector.crop_hint" /></p>
             {:else}
@@ -187,7 +188,7 @@
         </div>
 
         <aside>
-            <MediaTools bind:this={tools} overridePath={path} showReset={false} hideCropping />
+            <MediaInspectorSettings {settings} fit={mediaStyle.fit || "contain"} {isVideo} on:change={(e) => setMediaSetting(path, e.detail.key, e.detail.value)} />
         </aside>
 
         <footer>
@@ -203,7 +204,7 @@
 
             <span class="spacer"></span>
 
-            <MaterialButton variant="outlined" icon="reset" title="inspector.reset_tip" on:click={() => tools?.resetAll()}>
+            <MaterialButton variant="outlined" icon="reset" title="inspector.reset_tip" on:click={() => resetMediaSettings(path)}>
                 <T id="inspector.reset" />
             </MaterialButton>
             <MaterialButton variant="contained" on:click={() => activePopup.set(null)}>
@@ -218,11 +219,12 @@
 <style>
     .inspector {
         display: grid;
-        grid-template-columns: minmax(420px, 1fr) 330px;
+        grid-template-columns: minmax(0, 1fr) 340px;
         grid-template-rows: minmax(0, 1fr) auto;
         gap: 14px 16px;
-        width: min(1120px, 90vw);
-        height: min(700px, 82vh);
+        /* fits inside the popup (which has its own margins) */
+        width: min(1120px, calc(100vw - 110px));
+        height: min(700px, calc(100vh - 190px));
     }
 
     .main {
