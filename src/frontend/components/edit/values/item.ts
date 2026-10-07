@@ -1,11 +1,11 @@
 import { splitIntoRows, type EditBoxSection } from "./boxes"
 
 export const sectionColors = {
-    font: "#f079b4",
-    align: "#f079b2",
-    text: "#e490c9",
-    lines: "#ffb6e7",
-    list: "#a16adb",
+    font: "#8ab6f2",
+    align: "#8ab6f2",
+    text: "#9cc3f5",
+    lines: "#b3d1f7",
+    list: "#8f9fe6",
     outline: "#d8d8d8",
     border: "#d8d8d8",
     shadow: "#9e9e9e",
@@ -13,8 +13,8 @@ export const sectionColors = {
     chords: "#ffbe86",
     scrolling: "#ceffbe",
     special: "#e9e495",
-    position: "#f079b4",
-    transform: "#f079b2",
+    position: "#8ab6f2",
+    transform: "#8ab6f2",
     backdrop_filters: "#ceffbe",
     filters: "#ceffbe"
 }

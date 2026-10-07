@@ -1579,7 +1579,7 @@
     }
 
     :global(.floating-control-button.active) {
-        background: rgba(255, 105, 180, 0.25) !important;
+        background: rgba(62, 125, 203, 0.25) !important;
     }
 
     :global(.floating-control-button:hover) {
@@ -1587,7 +1587,7 @@
     }
 
     :global(.floating-control-button.active:hover) {
-        background: rgba(255, 105, 180, 0.35) !important;
+        background: rgba(62, 125, 203, 0.35) !important;
     }
 
     :global(.floating-control-button:active) {

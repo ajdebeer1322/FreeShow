@@ -20,6 +20,7 @@ import { loadShows, saveTextCache } from "../components/helpers/setShow"
 import { checkName, getGlobalGroup, getLabelId } from "../components/helpers/show"
 import { joinTimeBig } from "../components/helpers/time"
 import { defaultThemes } from "../components/settings/tabs/defaultThemes"
+import { migrateThemeAccent } from "../values/defaultColors"
 import { processTimecodeFrame, updateTimelineStatus, updateTimelineTime } from "../components/timeline/timecode"
 import { importBibles } from "../converters/bible"
 import { convertCalendar } from "../converters/calendar"
@@ -139,10 +140,12 @@ export const mainResponses: MainResponses = {
     [Main.EVENTS]: (a) => events.set(a),
     [Main.MEDIA]: (a) => media.set(a),
     [Main.THEMES]: (a) => {
+        // built-in themes saved with the old pink accent get the new blue (otherwise they replace the migrated ones)
+        if (Object.keys(a).length) migrateThemeAccent(a)
         themes.set(Object.keys(a).length ? a : clone(defaultThemes))
 
         // update if themes are loaded after settings
-        if (get(theme) !== "default") updateThemeValues(get(themes)[get(theme)])
+        if (get(themes)[get(theme)]) updateThemeValues(get(themes)[get(theme)])
     },
     [Main.DRIVE_API_KEY]: (a) => driveKeys.set(a),
     [Main.HISTORY]: (a) => {

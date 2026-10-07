@@ -179,14 +179,14 @@ const loadActions = {
         const currentActions = slideRef?.data?.actions
 
         const slideActions = [
-            { id: "action", label: "midi.start_action", icon: "actions", iconColor: "#d497ff" },
+            { id: "action", label: "midi.start_action", icon: "actions", iconColor: "#8fb4f0" },
             "SEPARATOR",
             { id: "slide_shortcut", label: "actions.play_with_shortcut", icon: "play", iconColor: "#7d81ff", enabled: currentActions?.slide_shortcut || false },
             { id: "receiveMidi", label: "actions.play_on_midi", icon: "play", iconColor: "#7d81ff", enabled: currentActions?.receiveMidi || false },
             "SEPARATOR",
-            { id: "nextTimer", label: "preview.nextTimer", icon: "clock", iconColor: "#fca4ff", enabled: Number(slideRef?.data?.nextTimer || 0) || false },
-            { id: "loop", label: "preview.to_start", icon: "restart", iconColor: "#fca4ff", enabled: slideRef?.data?.end || false },
-            { id: "nextAfterMedia", label: "actions.next_after_media", iconColor: "#fca4ff", icon: "forward", enabled: currentActions?.nextAfterMedia || false }
+            { id: "nextTimer", label: "preview.nextTimer", icon: "clock", iconColor: "#86c3ea", enabled: Number(slideRef?.data?.nextTimer || 0) || false },
+            { id: "loop", label: "preview.to_start", icon: "restart", iconColor: "#86c3ea", enabled: slideRef?.data?.end || false },
+            { id: "nextAfterMedia", label: "actions.next_after_media", iconColor: "#86c3ea", icon: "forward", enabled: currentActions?.nextAfterMedia || false }
         ]
 
         return slideActions
@@ -201,18 +201,18 @@ const loadActions = {
 
         const itemActions: any[] = []
         if (get(activeEdit).type !== "overlay") {
-            itemActions.push({ id: "clickReveal", label: "actions.click_reveal", icon: "click_action", iconColor: "#d4a3f6", enabled: !!currentItem?.clickReveal })
-            if (currentItem?.type === "text" || currentItem?.lines) itemActions.push({ id: "lineReveal", label: "actions.line_reveal", icon: "line_reveal", iconColor: "#d4a3f6", enabled: !!currentItem?.lineReveal })
+            itemActions.push({ id: "clickReveal", label: "actions.click_reveal", icon: "click_action", iconColor: "#9ebcf0", enabled: !!currentItem?.clickReveal })
+            if (currentItem?.type === "text" || currentItem?.lines) itemActions.push({ id: "lineReveal", label: "actions.line_reveal", icon: "line_reveal", iconColor: "#9ebcf0", enabled: !!currentItem?.lineReveal })
             itemActions.push("SEPARATOR")
         }
 
         itemActions.push(
             ...[
                 // { id: "transition", label: "popup.transition", icon: "transition", enabled: !!currentItemActions.transition },
-                { id: "display_duration", label: "popup.display_duration", icon: "clock", iconColor: "#d497ff", enabled: Number(currentItemActions.displayDuration || 0) || false },
+                { id: "display_duration", label: "popup.display_duration", icon: "clock", iconColor: "#8fb4f0", enabled: Number(currentItemActions.displayDuration || 0) || false },
                 "SEPARATOR",
-                { id: "showTimer", label: "actions.show_timer", icon: "time_in", iconColor: "#cd86ff", enabled: Number(currentItemActions.showTimer || 0) || false },
-                { id: "hideTimer", label: "actions.hide_timer", icon: "time_out", iconColor: "#cd86ff", enabled: Number(currentItemActions.hideTimer || 0) || false }
+                { id: "showTimer", label: "actions.show_timer", icon: "time_in", iconColor: "#7ca5eb", enabled: Number(currentItemActions.showTimer || 0) || false },
+                { id: "hideTimer", label: "actions.hide_timer", icon: "time_out", iconColor: "#7ca5eb", enabled: Number(currentItemActions.hideTimer || 0) || false }
             ]
         )
 

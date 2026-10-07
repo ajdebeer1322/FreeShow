@@ -265,7 +265,7 @@
     // Generate dynamic colors for Bible versions that match FreeShow's theme
     // Uses HSL to create evenly distributed, vibrant colors on dark background
     const GOLDEN_ANGLE = 137.508
-    const BASE_HUE = 330 // FreeShow's pink
+    const BASE_HUE = 215 // FreeShow's accent blue
 
     function getVersionHue(index: number): number {
         return (BASE_HUE + index * GOLDEN_ANGLE) % 360
@@ -792,8 +792,8 @@
         box-shadow: inset 0 0 0 2px var(--secondary);
     }
     .main span.isSelected {
-        background-color: rgba(255, 105, 180, 0.3);
-        box-shadow: inset 0 0 0 2px rgba(255, 105, 180, 0.6);
+        background-color: rgba(62, 125, 203, 0.3);
+        box-shadow: inset 0 0 0 2px rgba(62, 125, 203, 0.6);
     }
     /* Only highlight the clickable row items (not nested spans inside a verse row) */
     .main div > span:hover:not(.isActive) {

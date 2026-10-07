@@ -18,7 +18,7 @@
     // Generate dynamic colors for Bible versions that match FreeShow's theme
     function getVersionColor(index: number): string {
         const goldenAngle = 137.508
-        const baseHue = 330 // FreeShow's pink
+        const baseHue = 215 // FreeShow's accent blue
         const hue = (baseHue + index * goldenAngle) % 360
         const saturation = 75
         const lightness = 65
@@ -27,7 +27,7 @@
 
     function getVersionBgColor(index: number): string {
         const goldenAngle = 137.508
-        const baseHue = 330
+        const baseHue = 215
         const hue = (baseHue + index * goldenAngle) % 360
         return `hsla(${hue}, 70%, 50%, 0.12)`
     }
@@ -450,7 +450,7 @@
     let lastScrolledChapter = -1
     let lastScrolledBook = -1
 
-    $: currentActiveOrDisplayedVerse = activeVerse > 0 ? activeVerse : (activeBook === displayedBookIndex && activeChapter === displayedChapterIndex ? displayedVerseNumber : 0)
+    $: currentActiveOrDisplayedVerse = activeVerse > 0 ? activeVerse : activeBook === displayedBookIndex && activeChapter === displayedChapterIndex ? displayedVerseNumber : 0
 
     $: if (depth === 2 && currentActiveOrDisplayedVerse > 0 && versesContainer && verses.length > 0) {
         const viewChanged = $scriptureViewList !== previousViewList
@@ -462,9 +462,12 @@
             lastScrolledChapter = activeChapter
             lastScrolledBook = activeBook
             const targetVerse = currentActiveOrDisplayedVerse
-            setTimeout(() => {
-                scrollToVerse(targetVerse)
-            }, viewChanged || chapterChanged ? 150 : 50)
+            setTimeout(
+                () => {
+                    scrollToVerse(targetVerse)
+                },
+                viewChanged || chapterChanged ? 150 : 50
+            )
         }
         previousViewList = $scriptureViewList
     } else {
@@ -833,8 +836,8 @@
         right: -4px;
         top: 0;
         bottom: 0;
-        background-color: rgba(255, 105, 180, 0.3);
-        box-shadow: inset 0 0 0 2px rgba(255, 105, 180, 0.6);
+        background-color: rgba(62, 125, 203, 0.3);
+        box-shadow: inset 0 0 0 2px rgba(62, 125, 203, 0.6);
         border-radius: 6px;
         z-index: -1;
     }

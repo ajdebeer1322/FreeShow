@@ -151,7 +151,7 @@
         position: absolute;
         inset: -22%;
         border-radius: 44% 56% 61% 39% / 46% 42% 58% 54%;
-        background: radial-gradient(circle at 30% 35%, rgba(0, 210, 255, calc(0.35 + var(--audio-level) * 0.45)), transparent 40%), radial-gradient(circle at 70% 58%, rgba(138, 43, 226, calc(0.25 + var(--audio-level) * 0.55)), transparent 40%), radial-gradient(circle at 48% 72%, rgba(255, 0, 128, calc(0.15 + var(--audio-level) * 0.65)), transparent 35%);
+        background: radial-gradient(circle at 30% 35%, rgba(0, 210, 255, calc(0.35 + var(--audio-level) * 0.45)), transparent 40%), radial-gradient(circle at 70% 58%, rgba(80, 120, 220, calc(0.25 + var(--audio-level) * 0.55)), transparent 40%), radial-gradient(circle at 48% 72%, rgba(62, 125, 203, calc(0.15 + var(--audio-level) * 0.65)), transparent 35%);
         filter: blur(8px) saturate(calc(0.4 + var(--audio-level) * 1.8));
         opacity: calc(0.65 + var(--audio-level) * 0.35);
         transform: scale(calc(0.92 + var(--audio-level) * 0.25));
@@ -185,7 +185,7 @@
         position: absolute;
         pointer-events: none;
         border-radius: 42% 58% 55% 45% / 48% 43% 57% 52%;
-        background: radial-gradient(circle at 34% 28%, rgba(255, 255, 255, calc(0.4 + var(--audio-level) * 0.4)), transparent 30%), linear-gradient(135deg, rgba(0, 180, 216, calc(0.6 + var(--audio-level) * 0.4)), rgba(94, 55, 210, calc(0.5 + var(--audio-level) * 0.45)) 54%, rgba(255, 0, 110, calc(0.2 + var(--audio-level) * 0.75)));
+        background: radial-gradient(circle at 34% 28%, rgba(255, 255, 255, calc(0.4 + var(--audio-level) * 0.4)), transparent 30%), linear-gradient(135deg, rgba(0, 180, 216, calc(0.6 + var(--audio-level) * 0.4)), rgba(70, 110, 215, calc(0.5 + var(--audio-level) * 0.45)) 54%, rgba(62, 125, 203, calc(0.2 + var(--audio-level) * 0.75)));
         box-shadow:
             inset 0 0 10px rgba(255, 255, 255, calc(0.2 + var(--audio-level) * 0.4)),
             0 0 calc(6px + var(--audio-level) * 20px) rgba(0, 210, 255, calc(0.3 + var(--audio-level) * 0.5));
