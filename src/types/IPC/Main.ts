@@ -20,6 +20,7 @@ import type { StageLayouts } from "../Stage"
 import type { Event } from "./../Calendar"
 import type { History } from "./../History"
 import type { SaveData, SaveListSyncedSettings } from "./../Save"
+import type { WorshipToolsSong, WorshipToolsViewAction } from "../WorshipTools"
 
 export const MAIN = "MAIN"
 
@@ -127,6 +128,9 @@ export enum Main {
     CLOSE_MIDI = "CLOSE_MIDI",
     GET_LYRICS = "GET_LYRICS",
     SEARCH_LYRICS = "SEARCH_LYRICS",
+    WORSHIPTOOLS_VIEW = "WORSHIPTOOLS_VIEW",
+    WORSHIPTOOLS_IMPORT = "WORSHIPTOOLS_IMPORT",
+    WORSHIPTOOLS_CANCEL = "WORSHIPTOOLS_CANCEL",
     RECORDER = "RECORDER",
     RESTORE = "RESTORE",
     SYSTEM_OPEN = "SYSTEM_OPEN",
@@ -249,6 +253,8 @@ export interface MainSendPayloads {
     [Main.CLOSE_MIDI]: { id: string }
     [Main.GET_LYRICS]: { song: LyricSearchResult }
     [Main.SEARCH_LYRICS]: { artist: string; title: string }
+    [Main.WORSHIPTOOLS_VIEW]: WorshipToolsViewAction
+    [Main.WORSHIPTOOLS_IMPORT]: { songs: WorshipToolsSong[] }
     [Main.RESTORE]?: { path: string }
     [Main.RECORDER]: { blob: ArrayBuffer; name: string; path?: string }
     [Main.SYSTEM_OPEN]: string

@@ -2,7 +2,7 @@
     import { uid } from "uid"
     import { ShowObj } from "../../../../classes/Show"
     import { convertText, getQuickExample, trimNameFromString } from "../../../../converters/txt"
-    import { activePopup, activeProject, activeShow, categories, drawerTabsData, formatNewShow, quickTextCache, shows, special, splitLines } from "../../../../stores"
+    import { activePopup, activeProject, activeShow, categories, drawerTabsData, quickTextCache, shows, splitLines } from "../../../../stores"
     import { newToast } from "../../../../utils/common"
     import { translateText } from "../../../../utils/language"
     import { getNormalizedKey } from "../../../../utils/shortcuts"
@@ -15,11 +15,11 @@
     import MaterialButton from "../../../inputs/MaterialButton.svelte"
     import MaterialDropdown from "../../../inputs/MaterialDropdown.svelte"
     import MaterialMultiChoice from "../../../inputs/MaterialMultiChoice.svelte"
-    import MaterialNumberInput from "../../../inputs/MaterialNumberInput.svelte"
     import MaterialTextarea from "../../../inputs/MaterialTextarea.svelte"
     import MaterialTextInput from "../../../inputs/MaterialTextInput.svelte"
-    import MaterialToggleSwitch from "../../../inputs/MaterialToggleSwitch.svelte"
+    import LyricsFormatOptions from "./LyricsFormatOptions.svelte"
     import WebSearch from "./WebSearch.svelte"
+    import WorshipTools from "./WorshipTools.svelte"
 
     const changeValue = (e: any, key = "text") => {
         values[key] = e.target?.value || e.detail || ""
@@ -69,6 +69,7 @@
         { id: "text", name: translateText("create_show.quick_lyrics"), title: translateText("create_show.quick_lyrics_tip [Enter]"), icon: "text" },
         // { id: "clipboard", name: "clipboard", icon: "clipboard" },
         { id: "web", name: translateText("create_show.web"), title: translateText("create_show.search_web [Ctrl+F]"), icon: "search" },
+        { id: "worshiptools", name: translateText("create_show.worshiptools"), title: translateText("create_show.worshiptools_tip"), icon: "cloud_download" },
         { id: "empty", name: translateText("create_show.empty"), title: translateText("new.empty_show [Ctrl+Enter]"), icon: "add" }
     ]
     $: resolvedCreateOptions = clone(createOptions).map((a: any) => {
@@ -162,6 +163,7 @@
     // SHORTCUTS
 
     function keydown(e: KeyboardEvent) {
+        if (selectedOption === "worshiptools") return
         if (e.shiftKey || e.altKey) return
 
         const ctrl = e.ctrlKey || e.metaKey
@@ -230,11 +232,7 @@
     <!-- WIP buttons for paste / format(remove chords, remove empty lines), etc. -->
 
     {#if showMore}
-        <List top={5}>
-            <MaterialToggleSwitch label="create_show.auto_groups" checked={$special.autoGroups !== false} defaultValue={true} on:change={(e) => special.set({ ...$special, autoGroups: e.detail })} />
-            <MaterialToggleSwitch label="create_show.format_new_show" checked={$formatNewShow} defaultValue={false} on:change={(e) => formatNewShow.set(e.detail)} />
-            <MaterialNumberInput label="create_show.split_lines" value={$splitLines} max={100} on:change={(e) => splitLines.set(e.detail)} hideWhenZero />
-        </List>
+        <LyricsFormatOptions />
     {/if}
 
     <MaterialButton on:click={textToShow} variant="contained" title="timer.create [Ctrl+Enter]" disabled={values.text.trim().length === 0} info={getName(values) || translateText("main.unnamed")} style="width: 100%;margin-top: 20px;" icon="add" data-testid="create.show.popup.new.show">
@@ -242,4 +240,6 @@
     </MaterialButton>
 {:else if selectedOption === "web"}
     <WebSearch query={values.name} on:update={updateLyrics} />
+{:else if selectedOption === "worshiptools"}
+    <WorshipTools {cats} category={selectedCategory?.id || ""} on:category={(e) => (selectedCategory = cats.find((a) => a.id === e.detail))} />
 {/if}

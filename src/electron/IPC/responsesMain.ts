@@ -32,6 +32,7 @@ import { getPresentationApplications, presentationControl, startSlideshow } from
 import { closeServers, startServers, updateServerData } from "../servers"
 import { detectEncoders, setRtmpEncoderSetting } from "../streaming/encoderDetection"
 import { downloadFfmpeg, resolveFfmpegPath } from "../streaming/ffmpegManager"
+import { cancelImport, importSongs, worshipToolsView } from "../worshipTools/worshipTools"
 import { processAudioData, timecodeStart, timecodeStop, updateTimecodeValue } from "../timecode/timecode"
 import { apiReturnData, emitOSC, startWebSocketAndRest, stopApiListener } from "../utils/api"
 import { closeMain } from "../utils/close"
@@ -163,6 +164,12 @@ export const mainResponses: MainResponses = {
     // LYRICS
     [Main.GET_LYRICS]: (data) => getLyrics(data),
     [Main.SEARCH_LYRICS]: (data) => searchLyrics(data),
+    // WORSHIPTOOLS
+    [Main.WORSHIPTOOLS_VIEW]: (data) => worshipToolsView(data),
+    [Main.WORSHIPTOOLS_IMPORT]: (data) => {
+        importSongs(data.songs)
+    },
+    [Main.WORSHIPTOOLS_CANCEL]: () => cancelImport(),
     // FILES
     [Main.RESTORE]: (data) => restoreFiles(data),
     [Main.RECORDER]: (data) => saveRecording(data),
