@@ -11,6 +11,7 @@
     import { getStyles } from "../helpers/style"
     import { calculateShapeVerticalOffset, getShapeFloatSide } from "../edit/scripts/shapeOutside"
     import { applyStyleOverrides } from "./wordOverride"
+    import { hideEmptyLineBackgrounds } from "./emptyLineBackgrounds"
 
     export let item: Item
     export let slideIndex = 0
@@ -393,6 +394,7 @@
                     <!-- WIP duplicate of "lines" down below -->
                     <div
                         class="lines"
+                        use:hideEmptyLineBackgrounds
                         class:hasShapeOutside={!!shapeOutside}
                         data-chord-size-ratio={chordFontSize ? chordFontSize / 100 : null}
                         style="{style ? lineStyleBox : ''}{shapeOutside ? `--shape-outside: ${shapeOutside};` : ''}{shapeOutside && typeof item?.align === 'string' ? item.align.replace(/align-items/g, 'align-content') + ';' : ''}{smallFontSize || customFontSize !== null ? '--font-size: ' + (smallFontSize ? (-1.1 * $slidesOptions.columns + 10) * 5 : customFontSize) + 'px;' : ''}{textAnimation}{chordsStyle}"
@@ -452,7 +454,7 @@
         </div>
     {:else}
         <!-- non scrolling lines -->
-        <div bind:this={linesElem} class="lines" class:hasShapeOutside={!!shapeOutside} data-chord-size-ratio={chordFontSize ? chordFontSize / 100 : null} style="{style ? lineStyleBox : ''}{shapeOutside ? `--shape-outside: ${shapeOutside};--shape-offset-top: ${shapeOffsetTop}px;` : ''}{smallFontSize || customFontSize !== null ? '--font-size: ' + (smallFontSize ? (-1.1 * $slidesOptions.columns + 10) * 5 : customFontSize) + 'px;' : ''}{textAnimation}{chordsStyle}">
+        <div bind:this={linesElem} class="lines" use:hideEmptyLineBackgrounds class:hasShapeOutside={!!shapeOutside} data-chord-size-ratio={chordFontSize ? chordFontSize / 100 : null} style="{style ? lineStyleBox : ''}{shapeOutside ? `--shape-outside: ${shapeOutside};--shape-offset-top: ${shapeOffsetTop}px;` : ''}{smallFontSize || customFontSize !== null ? '--font-size: ' + (smallFontSize ? (-1.1 * $slidesOptions.columns + 10) * 5 : customFontSize) + 'px;' : ''}{textAnimation}{chordsStyle}">
             {#if shapeOutside}
                 <div class="shape-outside-float" style="shape-outside: {shapeOutside}; float: {shapeFloatSide};"></div>
             {/if}
@@ -507,6 +509,10 @@
 </div>
 
 <style>
+    .lines > :global(.break.emptyLineBackground) {
+        background: transparent !important;
+    }
+
     /* .align .lines:nth-child(1) {
         position: absolute;
     } */

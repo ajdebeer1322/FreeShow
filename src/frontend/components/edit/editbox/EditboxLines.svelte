@@ -19,6 +19,7 @@
     import EditboxChords from "./EditboxChords.svelte"
     import { EditboxHelper } from "./EditboxHelper"
     import { EditboxPaste } from "./EditboxPaste"
+    import { hideEmptyLineBackgrounds } from "../../slide/emptyLineBackgrounds"
 
     export let item: Item
     export let ref: {
@@ -749,13 +750,14 @@
             </span>
         {/if}
         {#if isLocked}
-            <div class="edit" class:hasShapeOutside={!!shapeOutside} style="{shapeOutside ? `--shape-outside: ${shapeOutside};--shape-float: ${shapeFloatSide};--shape-offset-top: ${shapeOffsetTop}px;` : ''}{plain ? '' : typeof item.align === 'string' ? item.align.replace('align-items', 'justify-content') : ''}">{@html html}</div>
+            <div class="edit" use:hideEmptyLineBackgrounds class:hasShapeOutside={!!shapeOutside} style="{shapeOutside ? `--shape-outside: ${shapeOutside};--shape-float: ${shapeFloatSide};--shape-offset-top: ${shapeOffsetTop}px;` : ''}{plain ? '' : typeof item.align === 'string' ? item.align.replace('align-items', 'justify-content') : ''}">{@html html}</div>
         {:else}
             {#if chordsMode && textElem}
                 <EditboxChords {item} {autoSize} {index} {ref} {chordsMode} {chordsAction} />
             {/if}
             <div
                 bind:this={textElem}
+                use:hideEmptyLineBackgrounds
                 on:mouseup={() => storeCurrentCaretPos()}
                 class="edit context {plain ? '#editbox_text' : '#edit_box__editbox_text'}"
                 class:hidden={chordsMode}
@@ -784,6 +786,10 @@
 {/if}
 
 <style>
+    .edit > :global(.break.emptyLineBackground) {
+        background: transparent !important;
+    }
+
     .align span.placeholder {
         opacity: 0.5;
         pointer-events: none;

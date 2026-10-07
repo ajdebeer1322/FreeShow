@@ -183,6 +183,8 @@ For a mutation, locate an existing history command and reuse it. Directly changi
 
 ## Editing conventions and investigation recipes
 
+Text-line backgrounds are suppressed on empty rendered lines by `components/slide/emptyLineBackgrounds.ts::hideEmptyLineBackgrounds`, shared by `slide/TextboxLines.svelte` (thumbnails, previews, output and scrolling copies) and `edit/editbox/EditboxLines.svelte` / `EditboxChords.svelte`. The action checks DOM text after HTML/entity rendering and dynamic-value resolution, observes text changes and disconnects on destruction. A CSS class makes only the empty line's background transparent; line height/gaps, saved template/line styles, textbox/shape fills and media backgrounds are preserved. Chord positioning rows retain their existing rendering. `config/testing/lineBackgrounds.test.ts` renders the real components in an isolated browser/Vite server (separate port/cache, no Electron or operator library) to cover whitespace/entities, media and shape fills, typing/clearing and resolved variables in scrolling copies.
+
 - Reuse `MaterialButton`, `T`, existing icons and CSS theme variables. English translation IDs are in `public/lang/en.json`; prefer existing strings for unchanged actions.
 - Follow Svelte 3 syntax and existing reactive store patterns; do not introduce Svelte 5 APIs.
 - Prettier config: `config/formatting/.prettierrc.yaml` (4 spaces, double quotes, no semicolons, wide print width). Format only changed files to avoid unrelated churn.

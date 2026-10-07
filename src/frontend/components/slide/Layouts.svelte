@@ -129,6 +129,10 @@
     $: isLocked = currentShow?.locked || profile.global === "read" || profile[currentShow?.category || ""] === "read"
 
     $: referenceType = currentShow?.reference?.type
+
+    // new arrangements need a show with groups, and no scripture/lessons reference
+    $: canAddLayout = !!layouts && !reference && !isLocked
+    $: hasGroups = !!layoutSlides.length && layoutSlides.some((a) => a && currentShow?.slides?.[a.id]?.group && currentShow?.slides?.[a.id]?.group !== ".")
 </script>
 
 {#if referenceType === "lessons"}
@@ -147,6 +151,15 @@
             <MaterialButton on:click={() => activePopup.set("translate")} title="popup.translate">
                 <Icon size={1.1} id="translate" white={!isTranslated} />
             </MaterialButton>
+
+            {#if canAddLayout}
+                <div class="divider" />
+
+                <MaterialButton disabled={!hasGroups} on:click={addLayout} style="white-space: nowrap;" title="show.new_arrangement" center>
+                    <Icon id="add" size={1.1} white />
+                    {#if !$labelsDisabled}<T id="show.new_arrangement" />{/if}
+                </MaterialButton>
+            {/if}
         </div>
 
         {#if !open && customAction}
@@ -194,33 +207,26 @@
     </FloatingInputs>
 {/if}
 
-{#if $slidesOptions.mode !== "simple"}
-    <FloatingInputs style="max-width: {referenceType ? 90 : 70}%;" side="left" onlyOne={!reference && !multipleLayouts}>
+{#if $slidesOptions.mode !== "simple" && (reference || (layouts && multipleLayouts))}
+    <FloatingInputs style="max-width: {referenceType ? 90 : 70}%;" side="left">
         {#if reference}
             <Reference {showId} show={currentShow} />
-        {:else if layouts}
-            {#if multipleLayouts}
-                <span class="layouts">
-                    {#each sortedLayouts as layout}
-                        <SelectElem id="layout" data={layout.id} fill={!edit || edit === layout.id}>
-                            <MaterialButton
-                                class={isLocked ? "" : "context #layout"}
-                                on:click={() => {
-                                    if (!edit) setLayout(layout.id, { name: layout.name })
-                                }}
-                                isActive={activeLayout === layout.id}
-                            >
-                                <HiddenInput value={layout.name} id={"layout_" + layout.id} on:edit={changeName} bind:edit allowEdit={!isLocked} />
-                            </MaterialButton>
-                        </SelectElem>
-                    {/each}
-                </span>
-            {/if}
-
-            <MaterialButton disabled={!layoutSlides.length || isLocked || !layoutSlides?.some((a) => a && currentShow?.slides?.[a.id]?.group && currentShow?.slides?.[a.id]?.group !== ".")} on:click={addLayout} style="white-space: nowrap;" title="show.new_arrangement" center>
-                <Icon id="add" size={1.1} white={multipleLayouts} />
-                {#if !multipleLayouts && !$labelsDisabled}<T id="show.new_arrangement" />{/if}
-            </MaterialButton>
+        {:else}
+            <span class="layouts">
+                {#each sortedLayouts as layout}
+                    <SelectElem id="layout" data={layout.id} fill={!edit || edit === layout.id}>
+                        <MaterialButton
+                            class={isLocked ? "" : "context #layout"}
+                            on:click={() => {
+                                if (!edit) setLayout(layout.id, { name: layout.name })
+                            }}
+                            isActive={activeLayout === layout.id}
+                        >
+                            <HiddenInput value={layout.name} id={"layout_" + layout.id} on:edit={changeName} bind:edit allowEdit={!isLocked} />
+                        </MaterialButton>
+                    </SelectElem>
+                {/each}
+            </span>
         {/if}
     </FloatingInputs>
 {/if}

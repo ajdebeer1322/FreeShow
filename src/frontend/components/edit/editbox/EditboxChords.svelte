@@ -6,6 +6,7 @@
     import { deleteAction } from "../../helpers/clipboard"
     import { history } from "../../helpers/history"
     import { addChords } from "./../scripts/chords"
+    import { hideEmptyLineBackgrounds } from "../../slide/emptyLineBackgrounds"
 
     export let item: Item
     export let autoSize: number
@@ -224,7 +225,7 @@
 </script>
 
 {#if item?.lines}
-    <div class="edit chords" on:mousedown={chordClick} on:dragstart={handleDragStart} on:dragover={handleDragOver} on:dragleave={handleDragLeave} on:drop={handleDrop} on:dragend={handleDragEnd}>
+    <div class="edit chords" use:hideEmptyLineBackgrounds on:mousedown={chordClick} on:dragstart={handleDragStart} on:dragover={handleDragOver} on:dragleave={handleDragLeave} on:drop={handleDrop} on:dragend={handleDragEnd}>
         {#each item.lines as line, i}
             <div class="break chordsBreak" style="{lineStyle}{line.align || ''}">
                 {@html chordLines[i]}
@@ -234,6 +235,10 @@
 {/if}
 
 <style>
+    .edit > :global(.break.emptyLineBackground) {
+        background: transparent !important;
+    }
+
     .chords,
     .break {
         width: 100%;
