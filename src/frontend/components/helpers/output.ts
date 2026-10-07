@@ -59,6 +59,7 @@ import { customActionActivation, runAction } from "../actions/actions"
 import type { API_camera, API_screen, API_stage_output_layout } from "../actions/api"
 import { getItemText, getSlideText } from "../edit/scripts/textStyle"
 import type { EditInput } from "../edit/values/boxes"
+import { NEW_ACCENT } from "../../values/defaultColors"
 import { VideoPlayer } from "../media/video/videoPlayer"
 import { clearBackground, clearSlide } from "../output/clear"
 import { areObjectsEqual, clone, keysToID, removeDuplicates, sortByName, sortObject } from "./array"
@@ -1079,7 +1080,7 @@ export const defaultOutput: Output = {
     enabled: true,
     active: true,
     name: "Output",
-    color: "#F0008C",
+    color: NEW_ACCENT,
     bounds: { x: 0, y: 0, width: 1920, height: 1080 }, // x: 1920 ?
     screen: null
 }

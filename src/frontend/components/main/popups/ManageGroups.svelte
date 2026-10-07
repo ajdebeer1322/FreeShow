@@ -2,6 +2,7 @@
     import { activePopup, groupNumbers, groups, groupsMoreOptionsEnabled, special, templates } from "../../../stores"
     import { newToast } from "../../../utils/common"
     import { translateText } from "../../../utils/language"
+    import { NEW_GROUP_COLORS } from "../../../values/defaultColors"
     import { isGroupHidden } from "../../../utils/profile"
     import T from "../../helpers/T.svelte"
     import { clone, sortByName } from "../../helpers/array"
@@ -43,14 +44,14 @@
     }
 
     const defaultGroups = {
-        break: { name: "break", default: true, color: "#f5255e" },
-        bridge: { name: "bridge", default: true, color: "#f52598", shortcut: "B" },
-        chorus: { name: "chorus", default: true, color: "#f525d2", shortcut: "C" },
-        intro: { name: "intro", default: true, color: "#d525f5" },
-        outro: { name: "outro", default: true, color: "#a525f5" },
-        pre_chorus: { name: "pre_chorus", default: true, color: "#8825f5" },
-        tag: { name: "tag", default: true, color: "#7525f5" },
-        verse: { name: "verse", default: true, color: "#5825f5", shortcut: "V" }
+        break: { name: "break", default: true, color: NEW_GROUP_COLORS.break },
+        bridge: { name: "bridge", default: true, color: NEW_GROUP_COLORS.bridge, shortcut: "B" },
+        chorus: { name: "chorus", default: true, color: NEW_GROUP_COLORS.chorus, shortcut: "C" },
+        intro: { name: "intro", default: true, color: NEW_GROUP_COLORS.intro },
+        outro: { name: "outro", default: true, color: NEW_GROUP_COLORS.outro },
+        pre_chorus: { name: "pre_chorus", default: true, color: NEW_GROUP_COLORS.pre_chorus },
+        tag: { name: "tag", default: true, color: NEW_GROUP_COLORS.tag },
+        verse: { name: "verse", default: true, color: NEW_GROUP_COLORS.verse, shortcut: "V" }
     }
 
     function addGroup() {

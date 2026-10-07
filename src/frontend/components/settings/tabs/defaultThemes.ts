@@ -1,4 +1,5 @@
 import type { Themes } from "../../../../types/Settings"
+import { NEW_ACCENT, NEW_ACCENT_OPACITY } from "../../../values/defaultColors"
 
 export const defaultThemes: { [key: string]: Themes } = {
     default: {
@@ -16,8 +17,8 @@ export const defaultThemes: { [key: string]: Themes } = {
             text: "#f0f0ff",
             textInvert: "#131313",
             "secondary-text": "#f0f0ff",
-            secondary: "#F0008C",
-            "secondary-opacity": "rgba(240, 0, 140, 0.5)",
+            secondary: NEW_ACCENT,
+            "secondary-opacity": NEW_ACCENT_OPACITY,
             hover: "rgb(255 255 255 / 0.05)",
             focus: "rgb(255 255 255 / 0.1)"
         }
@@ -58,8 +59,8 @@ export const defaultThemes: { [key: string]: Themes } = {
             text: "#333748",
             textInvert: "#f0f0ff",
             "secondary-text": "#131313",
-            secondary: "#F0008C",
-            "secondary-opacity": "rgb(230 52 156 / 0.5)",
+            secondary: NEW_ACCENT,
+            "secondary-opacity": NEW_ACCENT_OPACITY,
             hover: "rgb(0 0 0 / 0.05)",
             focus: "rgb(0 0 0 / 0.1)"
         }

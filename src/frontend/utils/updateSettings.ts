@@ -11,6 +11,7 @@ import { clone, keysToID } from "../components/helpers/array"
 import { checkFFmpeg, checkWindowCapture, setOutput, startScene, toggleOutputs } from "../components/helpers/output"
 import { migrateOutputsRtmp } from "../components/helpers/rtmpDestinations"
 import { defaultThemes } from "../components/settings/tabs/defaultThemes"
+import { migrateGroupColors, migrateOutputColors, migrateThemeAccent } from "../values/defaultColors"
 import { sendMain } from "../IPC/main"
 import {
     actionTags,
@@ -163,6 +164,9 @@ export function updateSettings(data: any) {
     sendMain(Main.START, { ports: customPorts, max: data.maxConnections === undefined ? 10 : data.maxConnections, disabled, data: get(serverData) })
 
     // theme
+    // built-in themes that still have the old pink accent get the new blue
+    themes.update((a) => migrateThemeAccent(a).themes)
+
     let currentTheme = get(themes)[data.theme]
     if (currentTheme?.colors) {
         // update colors (pre 0.9.2 or 1.4.9)
@@ -264,7 +268,6 @@ const updateList: { [key in SaveListSettings | SaveListSyncedSettings]: any } = 
         if (v) projectView.set(false)
     },
 
-
     lockedOverlays: (v: any) => {
         if (Array.isArray(v)) {
             const map: { [id: string]: string[] } = {}
@@ -320,6 +323,7 @@ const updateList: { [key in SaveListSettings | SaveListSyncedSettings]: any } = 
             if (v[id].rtmpData?.streaming) v[id].rtmpData.streaming = false
         })
         migrateOutputsRtmp(v)
+        migrateOutputColors(v)
         outputs.set(v)
 
         // RTMP check
@@ -351,7 +355,11 @@ const updateList: { [key in SaveListSettings | SaveListSyncedSettings]: any } = 
     groupNumbers: (v: any) => groupNumbers.set(v),
     fullColors: (v: any) => fullColors.set(v),
     formatNewShow: (v: any) => formatNewShow.set(v),
-    groups: (v: any) => groups.set(v),
+    groups: (v: any) => {
+        // default groups that still have their old default color get the new softer colors
+        migrateGroupColors(v)
+        groups.set(v)
+    },
     labelsDisabled: (v: any) => labelsDisabled.set(v),
     mediaFolders: (v: any) => mediaFolders.set(v),
     mediaOptions: (v: any) => mediaOptions.set(v),

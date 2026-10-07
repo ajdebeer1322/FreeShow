@@ -3,14 +3,14 @@ import type { SaveListSettings, SaveListSyncedSettings } from "../../types/Save"
 export const defaultConfig = { loaded: false, maximized: true, bounds: { width: 800, height: 600, x: 0, y: 0 }, dataPath: null, disableHardwareAcceleration: null, graphicsDevice: null }
 
 export const defaultGroups = {
-    break: { name: "break", default: true, color: "#f5255e" },
-    bridge: { name: "bridge", default: true, color: "#f52598", shortcut: "B" },
-    chorus: { name: "chorus", default: true, color: "#f525d2", shortcut: "C" },
-    intro: { name: "intro", default: true, color: "#d525f5" },
-    outro: { name: "outro", default: true, color: "#a525f5" },
-    pre_chorus: { name: "pre_chorus", default: true, color: "#8825f5" },
-    tag: { name: "tag", default: true, color: "#7525f5" },
-    verse: { name: "verse", default: true, color: "#5825f5", shortcut: "V" }
+    break: { name: "break", default: true, color: "#7f8791" },
+    bridge: { name: "bridge", default: true, color: "#d39a3a", shortcut: "B" },
+    chorus: { name: "chorus", default: true, color: "#d1605f", shortcut: "C" },
+    intro: { name: "intro", default: true, color: "#6b9a58" },
+    outro: { name: "outro", default: true, color: "#7a8aa6" },
+    pre_chorus: { name: "pre_chorus", default: true, color: "#3aa7a0" },
+    tag: { name: "tag", default: true, color: "#8b7cc0" },
+    verse: { name: "verse", default: true, color: "#3b82c4", shortcut: "V" }
 }
 
 export const defaultSettings: { [key in SaveListSettings]: any } = {
@@ -21,7 +21,7 @@ export const defaultSettings: { [key in SaveListSettings]: any } = {
             enabled: true,
             active: true,
             name: "Primary",
-            color: "#F0008C",
+            color: "#3E7DCB",
             bounds: { x: 0, y: 0, width: 1920, height: 1080 },
             screen: null,
             style: "default",

@@ -5,6 +5,7 @@ import { ShowObj } from "../../classes/Show"
 import { actions, activeDrawerTab, activeEdit, activeProject, activeRename, activeShow, activeStage, activeTagFilter, audioPlaylists, currentOutputSettings, dictionary, drawerTabsData, editingProjectTemplate, effects, events, focusMode, folders, globalTags, groups, interactions, notFound, openedFolders, overlays, playerVideos, profiles, projects, projectTemplates, projectView, scenes, shows, showsCache, special, stageShows, styles, theme, themes } from "../../stores"
 import { translateText } from "../../utils/language"
 import { updateThemeValues } from "../../utils/updateSettings"
+import { NEW_ACCENT } from "../../values/defaultColors"
 import { EMPTY_CATEGORY, EMPTY_EFFECT, EMPTY_EVENT, EMPTY_LAYOUT, EMPTY_PLAYER_VIDEO, EMPTY_PROJECT, EMPTY_PROJECT_FOLDER, EMPTY_SCENE, EMPTY_SECTION, EMPTY_SLIDE, EMPTY_STAGE, EMPTY_TAG } from "../../values/empty"
 import { getWeekNumber } from "../drawer/calendar/calendar"
 import { audioFolders, categories, mediaFolders, outputs, overlayCategories, templateCategories, templates } from "./../../stores"
@@ -588,7 +589,7 @@ export const _updaters = {
 
                 // create output if no normal outputs (in case stage outputs are still active)
                 outputs.update((a) => {
-                    a.default = { enabled: true, active: true, name: translateText("theme.primary"), color: "#F0008C", bounds: { x: 0, y: 0, width: 1920, height: 1080 }, screen: null, style: "default", show: {} }
+                    a.default = { enabled: true, active: true, name: translateText("theme.primary"), color: NEW_ACCENT, bounds: { x: 0, y: 0, width: 1920, height: 1080 }, screen: null, style: "default", show: {} }
                     return a
                 })
             }, 100)
