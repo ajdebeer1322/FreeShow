@@ -78,7 +78,7 @@ import { updateActiveSceneOutputs } from "./output"
 import { select } from "./select"
 import { loadShows } from "./setShow"
 import { checkName, getLayoutRef } from "./show"
-import { copySlides, getSlidePasteTarget, pasteSlides } from "./slideTransfer"
+import { copySlides, getClickedSlideSelection, getSlidePasteTarget, pasteSlides } from "./slideTransfer"
 import { _show } from "./shows"
 
 export function copy(clip: Clipboard | null = null, getData = true, shouldDuplicate = false) {
@@ -90,12 +90,19 @@ export function copy(clip: Clipboard | null = null, getData = true, shouldDuplic
         return
     }
 
-    if (window.getSelection()?.toString()) {
-        navigator.clipboard.writeText(window.getSelection()!.toString())
+    // selected slides win over text that got highlighted inside them (e.g. by shift-clicking)
+    const textSelection = window.getSelection()
+    const textInSelectedElem = !!get(selected).id && !!(textSelection?.anchorNode?.parentElement as Element | null)?.closest(".selectElem")
+    if (textSelection?.toString() && !textInSelectedElem) {
+        navigator.clipboard.writeText(textSelection.toString())
         return
     }
 
-    if (get(selected).id) copyData = get(selected)
+    const clickedSlide = !clip && !get(selected).id && get(activePage) === "show" ? getClickedSlideSelection() : null
+
+    // a copy, so the selection stays selected and does not share its data with the clipboard
+    if (get(selected).id) copyData = { ...get(selected) }
+    else if (clickedSlide) copyData = clickedSlide
     else if (get(activeEdit).items?.length) copyData = { id: "item", data: get(activeEdit) }
     else if (get(activePage) === "stage" && get(activeStage).items?.length) {
         copyData = { id: "stage_item", data: get(activeStage) }

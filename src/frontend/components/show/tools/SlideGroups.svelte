@@ -9,6 +9,7 @@
     import { hexToRgb } from "../../helpers/color"
     import { ondrop } from "../../helpers/drop"
     import { history } from "../../helpers/history"
+    import { getImageLabels } from "../../helpers/arrangements"
     import Icon from "../../helpers/Icon.svelte"
     import { _show } from "../../helpers/shows"
     import T from "../../helpers/T.svelte"
@@ -23,6 +24,17 @@
     $: showGroups = allShowGroups.filter((a) => a.group !== ".")
 
     $: currentShow = $showsCache[showId]
+
+    // image slides are named after their file, which is too long for the list: show "Image 1", "Image 2"...
+    $: imageLabels = getImageLabels(
+        currentShow?.slides,
+        currentShow?.media,
+        showGroups.map((a) => a.id),
+        translateText("items.image")
+    )
+    function getGroupName(slide: { id: string; group: string }) {
+        return imageLabels[slide.id] || slide.group
+    }
     $: duplicateGroups = getDuplicateGroups(currentShow?.slides, showGroups)
 
     $: layoutSlides = currentShow?.layouts?.[_show().get("settings.activeLayout")]?.slides || []
@@ -116,7 +128,7 @@
                                     <span class="info template" data-title={translateText("groups.global")}><Icon id="bind" size={0.6} white /></span>
                                 {/if}
 
-                                {slide.group === "." ? "" : slide.group || "—"}
+                                {slide.group === "." ? "" : getGroupName(slide) || "—"}
 
                                 {#if groupCount > 1}<span class="info shortcut" style="opacity: 0.5;font-style: initial;">{groupCount}</span>{/if}
                             </p>

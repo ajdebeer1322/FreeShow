@@ -1,6 +1,6 @@
 import { get } from "svelte/store"
 import type { Media } from "../../../types/Show"
-import { actions, actionTags, activeActionTagFilter, activeEdit, activeMediaTagFilter, activePlayerTagFilter, activeTagFilter, activeTimerTagFilter, activeVariableTagFilter, contextData, drawerTabsData, globalTags, groups, media, mediaOptions, mediaTags, outputs, overlays, playerTags, playerVideos, scenes, selected, shows, showsCache, sorted, timers, timerTags, variables, variableTags } from "../../stores"
+import { actions, actionTags, activeActionTagFilter, activeEdit, activeProject, editingProjectTemplate, projects, projectTemplates, activeMediaTagFilter, activePlayerTagFilter, activeTagFilter, activeTimerTagFilter, activeVariableTagFilter, contextData, drawerTabsData, globalTags, groups, media, mediaOptions, mediaTags, outputs, overlays, playerTags, playerVideos, scenes, selected, shows, showsCache, sorted, timers, timerTags, variables, variableTags } from "../../stores"
 import { translateText } from "../../utils/language"
 import { isGroupHidden } from "../../utils/profile"
 import { drawerTabs } from "../../values/tabs"
@@ -15,6 +15,7 @@ import { isOutputBound } from "../helpers/output"
 import { getLayoutRef } from "../helpers/show"
 import { _show } from "../helpers/shows"
 import { createTagItems, getSelectedTagIds } from "../helpers/tags"
+import { SHOW_COLORS } from "../show/focus/showColors"
 import { type ContextMenuItem } from "./contextMenus"
 
 const loadActions = {
@@ -101,6 +102,13 @@ const loadActions = {
             { label: "media.image", icon: "image", id: "image", enabled: view === "image" },
             { label: "media.video", icon: "video", id: "video", enabled: view === "video" }
         ]
+    },
+    show_colors: () => {
+        const projectId = get(editingProjectTemplate) || get(activeProject) || ""
+        const store = get(editingProjectTemplate) ? get(projectTemplates) : get(projects)
+        const currentColor = store[projectId]?.shows?.[get(selected).data[0]?.index]?.color || ""
+
+        return [...SHOW_COLORS.map((a) => ({ id: a.id, label: a.name, icon: "record", iconColor: a.color, enabled: currentColor === a.color })), "SEPARATOR", { id: "custom", label: "context.color_custom", icon: "color" }, { id: "none", label: "main.none", style: "opacity: 0.8;", disabled: !currentColor }] as (ContextMenuItem | "SEPARATOR")[]
     },
     slide_groups: (items: ContextMenuItem[]) => {
         const selectedIndex = get(selected).data[0]?.index

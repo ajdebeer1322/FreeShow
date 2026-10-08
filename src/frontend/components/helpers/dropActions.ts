@@ -10,6 +10,7 @@ import { sendMain } from "../../IPC/main"
 import { changeLayout, changeSlideGroups } from "../../show/slides"
 import { activeDrawerTab, activeEdit, activePage, activePopup, activeProject, activeShow, alertMessage, audioFolders, audioPlaylists, audioStreams, drawerTabsData, editingProjectTemplate, effectsLibrary, media, mediaFolders, overlays, playerVideos, projects, projectTemplates, scenes, scriptureSettings, shows, showsCache, slidesOptions, templates, timers } from "../../stores"
 import { newToast } from "../../utils/common"
+import { translateText } from "../../utils/language"
 import { getAccess } from "../../utils/profile"
 import { audioExtensions, imageExtensions, mediaExtensions, presentationExtensions, videoExtensions } from "../../values/extensions"
 import { actionData } from "../actions/actionData"
@@ -18,6 +19,7 @@ import { getActiveScripturesContent, getReferenceText, getScriptureShow, getScri
 import { getVimeoData, getYouTubeData, trimPlayerId } from "../drawer/player/playerHelper"
 import { addItem, DEFAULT_ITEM_STYLE } from "../edit/scripts/itemHelpers"
 import { addStageItem } from "../stage/stage"
+import { createBlankSlide, BLANK_GROUP_ID, findBlankSlideId } from "./arrangements"
 import { clone, removeDuplicates } from "./array"
 import { projectDropFolders } from "./drop"
 import { history, historyAwait } from "./history"
@@ -699,7 +701,8 @@ const slideDrop = {
         } else if (!data[0]?.name) data[0].name = data[0].path
 
         let center = drop.center
-        if (drag.id === "files" && drop.index !== undefined) center = true
+        // files dropped without a before/after marker are set on the slide they landed on
+        if (drag.id === "files" && drop.index !== undefined && !drop.trigger) center = true
 
         // videos are probably not meant to be background if they are added in bulk
         const shouldBeForeground = data.length > 1 && !center
@@ -858,8 +861,8 @@ const slideDrop = {
         const oldLayout = _show(showId).layouts("active").get()[0]?.slides || []
         history.oldData = clone({ layout: oldLayout, slides })
 
-        // in "Groups view", never place groups as children in between. Always place right before or after a parent group.
-        if (get(slidesOptions)?.mode === "groups" && drop.data?.index !== undefined) {
+        // in "Groups view" (and the arrangement bar), never place groups as children in between. Always place right before or after a parent group.
+        if ((get(slidesOptions)?.mode === "groups" || drop.data?.arrangementBar) && drop.data?.index !== undefined) {
             const targetRef = ref[drop.data.index]
             if (drop.trigger?.includes("end")) {
                 if (targetRef?.type === "parent") {
@@ -884,6 +887,7 @@ const slideDrop = {
         let newIndex: number = drop.index
         let moved: any[] = []
         let sortedLayout: any[] = []
+        let slidesWithBlank = slides
 
         if (drag.id === "slide") {
             let selected: number[] = getIndexes(data)
@@ -917,6 +921,17 @@ const slideDrop = {
                 if (drop.trigger?.includes("end")) newIndex--
             }
 
+            // the blank group of the arrangement bar becomes an empty slide in the show (the same one when it is added again)
+            if (data.some((a) => a.id === BLANK_GROUP_ID)) {
+                let blankId = findBlankSlideId(slides)
+                slidesWithBlank = { ...slides }
+                if (!blankId) {
+                    blankId = uid()
+                    slidesWithBlank[blankId] = createBlankSlide(translateText("show.blank_group"))
+                }
+                data = data.map((a) => (a.id === BLANK_GROUP_ID ? { ...a, id: blankId } : a))
+            }
+
             moved = data.map(({ index, id }) => ref[index] || { type: "parent", id })
             sortedLayout = addToPos(ref, moved, newIndex)
         }
@@ -927,7 +942,7 @@ const slideDrop = {
         // check if first slide child
         if (newLayoutRef[0]?.type === "child") newLayoutRef[0].newType = "parent"
 
-        history.newData = changeLayout(sortedLayout, slides, clone(newLayoutRef), moved, newIndex)
+        history.newData = changeLayout(sortedLayout, slidesWithBlank, clone(newLayoutRef), moved, newIndex)
         return history
     },
     global_group: ({ drag, drop }: Data, history: History) => {

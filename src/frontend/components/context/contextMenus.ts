@@ -145,6 +145,7 @@ export const contextMenuItems: { [key: string]: ContextMenuItem } = {
     change_style: { label: "edit.style", icon: "styles", iconColor: "#97c7ff" },
     edit_style: { label: "menu.edit", icon: "edit", iconColor: "#97c7ff" },
     recolor: { label: "actions.recolor", icon: "color", iconColor: "#6effbe" },
+    show_color: { label: "actions.recolor", icon: "color", iconColor: "#6effbe", items: ["LOAD_show_colors"] },
     actions: { label: "actions.slide_actions", icon: "actions", iconColor: "#8fb4f0", items: ["LOAD_actions"] },
     media_inspector: { label: "actions.media_inspector", icon: "image", iconColor: "#7fd1ff" },
     link_slides: { label: "actions.link_slides", icon: "bind", iconColor: "#8fb4f0" },
@@ -356,6 +357,7 @@ export const contextMenuLayouts: { [key: string]: string[] } = {
     project_show_placeholder_template: ["GROUP_rename_only", "remove"],
     pco_item: ["unlink_pco"],
     project_section: ["GROUP_recolor", "remove"],
+    project_header: ["show_color"],
     project_overlay: ["remove"],
     project_pdf: ["remove", "SEPARATOR", "mark_played"],
     project_ppt: ["remove", "SEPARATOR", "mark_played"],
@@ -379,12 +381,11 @@ export const contextMenuLayouts: { [key: string]: string[] } = {
     audio_stream: ["GROUP_edit", "delete"],
 
     // SHOWS
-    // , "copy", "paste"
-    slide: ["GROUP_edit", "slideGroups", "actions", "bind_to", "media_inspector", "link_slides", "unlink_slides", "format", "remove_layers", "slide_transition", "disable", "SEPARATOR", "duplicate", "make_unique", "GROUP_slide_remove"],
-    slideChild: ["GROUP_edit", "slideGroups", "actions", "bind_to", "media_inspector", "link_slides", "unlink_slides", "format", "remove_layers", "slide_transition", "disable", "SEPARATOR", "duplicate", "make_unique", "GROUP_slide_remove"],
+    slide: ["GROUP_edit", "slideGroups", "actions", "bind_to", "media_inspector", "link_slides", "unlink_slides", "format", "remove_layers", "slide_transition", "disable", "SEPARATOR", "copy", "paste", "duplicate", "make_unique", "GROUP_slide_remove"],
+    slideChild: ["GROUP_edit", "slideGroups", "actions", "bind_to", "media_inspector", "link_slides", "unlink_slides", "format", "remove_layers", "slide_transition", "disable", "SEPARATOR", "copy", "paste", "duplicate", "make_unique", "GROUP_slide_remove"],
     slideFake: ["convert_to_regular"],
     slideFocus: ["editSlideText"],
-    group: ["GROUP_rename_recolor", "lock_group", "SEPARATOR", "selectAll", "SEPARATOR", "duplicate", "delete_group"],
+    group: ["GROUP_rename_recolor", "lock_group", "SEPARATOR", "selectAll", "SEPARATOR", "copy", "paste", "duplicate", "delete_group"],
     global_group: ["manage_groups"],
     metadata_tools: ["manage_metadata"],
     // global_group: ["rename"],

@@ -122,6 +122,7 @@ import { getMenuTagId, openTagManager, toggleSelectionTags, toggleTagFilter } fr
 import { clearSlide } from "../output/clear"
 import { defaultThemes } from "../settings/tabs/defaultThemes"
 import { activeProject } from "./../../stores"
+import { SHOW_COLORS } from "../show/focus/showColors"
 import type { ContextMenuItem } from "./contextMenus"
 
 interface ObjData {
@@ -321,6 +322,30 @@ const clickActions = {
         }
 
         console.error("COULD NOT REMOVE", obj)
+    },
+    // header color of a project item (a preset, "custom" opens the color picker, "none" removes it)
+    show_colors: (obj: ObjData) => {
+        const colorId = obj.menu?.id || ""
+        if (colorId === "custom") return clickActions.recolor(obj)
+
+        const index = obj.sel?.data?.[0]?.index
+        if (index === undefined) return
+
+        const color = colorId === "none" ? "" : SHOW_COLORS.find((a) => a.id === colorId)?.color
+        if (color === undefined) return
+
+        const projectId = get(editingProjectTemplate) || get(activeProject) || ""
+        const store = get(editingProjectTemplate) ? projectTemplates : projects
+        store.update((a) => {
+            const item = a[projectId]?.shows?.[index]
+            if (!item) return a
+
+            if (color) item.color = color
+            else delete item.color
+
+            a[projectId].modified = Date.now()
+            return a
+        })
     },
     recolor: (obj: ObjData) => {
         if (obj.contextElem?.classList?.contains("#audio_channel") || obj.contextElem?.classList?.contains("#audio_channel_main")) {

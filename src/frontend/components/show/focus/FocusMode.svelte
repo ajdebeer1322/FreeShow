@@ -3,7 +3,7 @@
 <script lang="ts">
     import { onDestroy } from "svelte"
     import type { ProjectShowRef } from "../../../../types/Projects"
-    import { activeFocus, activeProject, activeShow, outputs, projects, resized, showsCache } from "../../../stores"
+    import { activeFocus, activeProject, activeShow, outputs, projects, resized, selected, showsCache } from "../../../stores"
     import Icon from "../../helpers/Icon.svelte"
     import { getActiveOutputs } from "../../helpers/output"
     import { getSlideElement } from "../../helpers/slideLinks"
@@ -12,6 +12,10 @@
     import Center from "../../system/Center.svelte"
     import { getAllProjectItems } from "./focus"
     import FocusItem from "./FocusItem.svelte"
+    import ArrangementBar from "../ArrangementBar.svelte"
+    import { openArrangementBars } from "../arrangementBar"
+    import ArrangementToggle from "../ArrangementToggle.svelte"
+    import NextTimerButton from "../NextTimerButton.svelte"
     import { hasNewerUpdate } from "../../../utils/common"
     import { openProjectItem } from "../project"
 
@@ -177,8 +181,11 @@
         return text.replace(/[^a-zA-Z0-9]+/g, "")
     }
 
-    function selectItem(index: number) {
-        if (!normalView || ($activeShow?.id === project?.shows[index]?.id && $activeShow?.index === index)) return
+    function selectItem(index: number, force = false) {
+        if (!normalView) return
+        const isActive = $activeShow?.id === project?.shows[index]?.id && $activeShow?.index === index
+        // forced when the layout of the item must be set before something uses it
+        if (isActive && !force) return
         openProjectItem(projectId, index)
     }
 
@@ -205,11 +212,20 @@
         <div class="list" bind:this={listElem}>
             {#each list as item, i}
                 <div id={"id_" + getId(item.id) + "_" + i} class="focusId" class:selected={normalView && active.id === item.id && active.index === i} role="none" on:mousedown={() => selectItem(i)} on:focusin={() => selectItem(i)} on:click={() => selectItem(i)}>
-                    <button class="name" type="button" aria-label={item.name} on:click={() => selectItem(i)} style={item.color ? `border-bottom: 2px solid ${item.color}` : ""}>
-                        <Icon id={item.icon || "noIcon"} custom={(item.type || "show") === "show"} white right />
-                        <p>{item.name}</p>
-                        {#if item.layoutInfo?.name}<span class="arrangement">{item.layoutInfo.name}</span>{/if}
-                    </button>
+                    <div class="name {item.type === 'section' ? '' : 'context #project_header'}" style={item.color ? `${item.type === "section" ? "" : `background-color: color-mix(in srgb, ${item.color} 20%, var(--primary-darkest));`}border-bottom: 2px solid ${item.color}` : ""} on:contextmenu={() => selected.set({ id: "show", data: [{ index: i, id: item.id, type: item.type }] })}>
+                        <button class="title" type="button" aria-label={item.name} on:click={() => selectItem(i)}>
+                            <Icon id={item.icon || "noIcon"} custom={(item.type || "show") === "show"} white right />
+                            <p>{item.name}</p>
+                            {#if item.layoutInfo?.name}<span class="arrangement">{item.layoutInfo.name}</span>{/if}
+                        </button>
+                        {#if normalView && (item.type || "show") === "show"}
+                            <ArrangementToggle showId={item.id} key={item.id + ":" + i} select={() => selectItem(i)} />
+                            <NextTimerButton showId={item.id} layout={item.layout} select={() => selectItem(i, true)} />
+                        {/if}
+                    </div>
+                    {#if normalView && (item.type || "show") === "show" && $openArrangementBars.includes(item.id + ":" + i)}
+                        <ArrangementBar showId={item.id} layout={item.layout} index={i} />
+                    {/if}
                     <FocusItem show={{ ...item, index: i }} continuous />
                 </div>
             {/each}
@@ -238,15 +254,25 @@
     }
 
     .name {
-        border: 0;
-        border-radius: 0;
-        color: inherit;
-        text-align: left;
-        cursor: pointer;
         width: 100%;
         background-color: var(--primary-darkest);
-        padding: 4px 8px;
         font-weight: 600;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .title {
+        flex: 1;
+        min-width: 0;
+        border: 0;
+        border-radius: 0;
+        background: none;
+        color: inherit;
+        font: inherit;
+        text-align: left;
+        cursor: pointer;
+        padding: 4px 8px;
 
         display: flex;
         align-items: center;

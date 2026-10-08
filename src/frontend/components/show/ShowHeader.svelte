@@ -9,11 +9,16 @@
     import { removeTemplatesFromShow } from "../helpers/show"
     import T from "../helpers/T.svelte"
     import MaterialButton from "../inputs/MaterialButton.svelte"
+    import ArrangementBar from "./ArrangementBar.svelte"
+    import { openArrangementBars } from "./arrangementBar"
+    import ArrangementToggle from "./ArrangementToggle.svelte"
+    import NextTimerButton from "./NextTimerButton.svelte"
 
     export let showId: string
     export let hideOptions = false
 
     $: currentShow = $showsCache[showId]
+    $: arrangementBarOpen = $openArrangementBars.includes(showId)
     $: layouts = currentShow?.layouts
 
     let notes: { text: string; id: string; title: string; icon: string; tab: string } | null = null
@@ -102,6 +107,12 @@
     </div>
 
     <div class="right">
+        <!-- arrangement bar -->
+        {#if !hideOptions}<ArrangementToggle {showId} />{/if}
+
+        <!-- next slide timer -->
+        <NextTimerButton {showId} />
+
         <!-- template icon -->
         {#if enableStylePreview}
             <MaterialButton style="width: 32px;height: 100%;padding: 0.3em 0.5em;" title="formats.template: <b>{$templates[outputStyleTemplate]?.name || ''}</b>" on:click={() => activePopup.set("template_info")}>
@@ -171,6 +182,10 @@
         {/if}
     </div>
 </div>
+
+{#if arrangementBarOpen && !hideOptions}
+    <ArrangementBar {showId} />
+{/if}
 
 <style>
     /* header */

@@ -10,6 +10,7 @@
     import { encodeFilePath, getExtension } from "../helpers/media"
     import { getActiveOutputs, refreshOut, setOutput } from "../helpers/output"
     import { getCachedShow } from "../helpers/show"
+    import { rememberClickedSlide } from "../helpers/slideTransfer"
     import { getSlideElement, getSlideLinkGroups } from "../helpers/slideLinks"
     import { checkActionTrigger, getFewestOutputLines, getFewestOutputLinesReveal, getItemWithMostLines, updateOut } from "../helpers/showActions"
     import { _show } from "../helpers/shows"
@@ -98,6 +99,8 @@
     let disableAutoScroll = false
     // clicking a slide in a linked card activates every slide in the card
     function slideClick(e: any, index: number) {
+        rememberClickedSlide(showId, activeLayout !== currentShow?.settings?.activeLayout ? activeLayout : "", index)
+
         const linked = slideGroups.find((group) => group.length > 1 && group.includes(index))
         if (!linked) return activateSlide(e, index)
 
@@ -517,7 +520,7 @@
 <div class="main" class:padding={!$focusMode && !continuous} style="display: contents;">
     <Autoscroll class={$focusMode || continuous || isLocked ? "" : "context #shows__close"} {offset} disabled={disableAutoScroll || continuous} {shouldSkipSmooth} bind:scrollElem style="display: flex;">
         <DropArea id="all_slides" selectChildren>
-            <DropArea id="slides" data={{ showId, layout: activeLayout }} hoverTimeout={0} selectChildren>
+            <DropArea id="slides" data={{ showId, layout: activeLayout }} hoverTimeout={0} selectChildren file let:fileOver>
                 {#if !$focusMode && !continuous}
                     <ShowHeader {showId} hideOptions={!layoutSlides?.length} />
                 {/if}
@@ -543,7 +546,7 @@
 
                                             {#if hasMounted && (loaded || i < lazyLoader)}
                                                 {#if currentSlide && (mode === "grid" || mode === "groups" || !slide.disabled) && (mode !== "groups" || currentSlide.group !== null || activeSlides[i] !== undefined)}
-                                                    <Slide {showId} layout={activeLayout} slide={currentSlide} show={currentShow} {layoutSlides} layoutSlide={slide} index={i} color={slide.color} output={activeSlides[i]} active={activeSlides[i] !== undefined} {endIndex} list={!gridMode} columns={$slidesOptions.columns} widthPercent={100 / group.length} icons {altKeyPressed} disableThumbnails={isLessons && !loaded} centerPreview on:click={(e) => slideClick(e, i)} />
+                                                    <Slide {fileOver} {showId} layout={activeLayout} slide={currentSlide} show={currentShow} {layoutSlides} layoutSlide={slide} index={i} color={slide.color} output={activeSlides[i]} active={activeSlides[i] !== undefined} {endIndex} list={!gridMode} columns={$slidesOptions.columns} widthPercent={100 / group.length} icons {altKeyPressed} disableThumbnails={isLessons && !loaded} centerPreview on:click={(e) => slideClick(e, i)} />
                                                 {/if}
                                             {:else}
                                                 <SkeletonSlide slide={currentSlide} index={i} color={slide.color} columns={$slidesOptions.columns} widthPercent={100 / group.length} active={activeSlides[i] !== undefined} on:click={(e) => slideClick(e, i)} />
@@ -560,7 +563,7 @@
 
                                         {#if hasMounted && (loaded || i < lazyLoader)}
                                             {#if currentSlide && (mode === "grid" || mode === "groups" || !slide.disabled) && (mode !== "groups" || currentSlide.group !== null || activeSlides[i] !== undefined)}
-                                                <Slide {showId} layout={activeLayout} slide={currentSlide} show={currentShow} {layoutSlides} layoutSlide={slide} index={i} color={slide.color} output={activeSlides[i]} active={activeSlides[i] !== undefined} {endIndex} list={!gridMode} columns={$slidesOptions.columns} widthPercent={null} icons {altKeyPressed} disableThumbnails={isLessons && !loaded} centerPreview on:click={(e) => slideClick(e, i)} />
+                                                <Slide {fileOver} {showId} layout={activeLayout} slide={currentSlide} show={currentShow} {layoutSlides} layoutSlide={slide} index={i} color={slide.color} output={activeSlides[i]} active={activeSlides[i] !== undefined} {endIndex} list={!gridMode} columns={$slidesOptions.columns} widthPercent={null} icons {altKeyPressed} disableThumbnails={isLessons && !loaded} centerPreview on:click={(e) => slideClick(e, i)} />
                                             {/if}
                                         {:else}
                                             <SkeletonSlide slide={currentSlide} index={i} color={slide.color} columns={$slidesOptions.columns} active={activeSlides[i] !== undefined} on:click={(e) => slideClick(e, i)} />

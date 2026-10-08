@@ -36,8 +36,9 @@ vi.mock("./showActions", () => ({ getVariableNameId: vi.fn(), getItemWithMostLin
 
 import { getAccess } from "../../utils/profile"
 import { ondrop } from "./drop"
+import { undo } from "./history"
 import { historyActions } from "./historyActions"
-import { copySlides, getSlidePasteTarget, isCrossShowDrop, pasteSlides } from "./slideTransfer"
+import { copySlides, getSlidePasteTarget, getClickedSlideSelection, isCrossShowDrop, pasteSlides, rememberClickedSlide } from "./slideTransfer"
 
 function makeShow(name: string, slideIds: string[]): Show {
     const slides = Object.fromEntries(slideIds.map((id) => [id, { group: id.toUpperCase(), color: null, settings: {}, notes: "", items: [] }]))
@@ -209,6 +210,52 @@ describe("copy and paste between shows", () => {
         expect(names("c")).toEqual(["C1"])
     })
 
+    it("pastes in the show of the last selected slide when the selection spans shows", () => {
+        selected.set({
+            id: "slide",
+            data: [
+                { index: 0, showId: "a" },
+                { index: 1, showId: "b" }
+            ]
+        })
+        expect(getSlidePasteTarget({})).toEqual({ showId: "b", layout: "", index: 2 })
+    })
+
+    it("pastes after the last clicked slide when nothing is selected, and keeps going after the pasted slides", () => {
+        activeShow.set({ id: "b", type: "show" } as any)
+        selected.set({ id: null, data: [] })
+        rememberClickedSlide("b", "", 0)
+        expect(getSlidePasteTarget({})).toEqual({ showId: "b", layout: "", index: 1 })
+
+        pasteSlides(
+            copySlides([
+                { index: 0, showId: "a" },
+                { index: 1, showId: "a" }
+            ]),
+            getSlidePasteTarget({})
+        )
+        pasteSlides(copySlides([{ index: 0, showId: "c" }]), getSlidePasteTarget({}))
+        expect(names("b")).toEqual(["B1", "A1", "A2", "C1", "B2"])
+    })
+
+    it("copies the slide clicked last when nothing is selected", () => {
+        activeShow.set({ id: "a", type: "show" } as any)
+        rememberClickedSlide("a", "", 1)
+        const clicked = getClickedSlideSelection()
+        expect(clicked).toEqual({ id: "slide", data: [{ index: 1, showId: "a" }] })
+        expect(copySlides(clicked!.data).slides.map((a) => a.group)).toEqual(["A2"])
+
+        activeShow.set({ id: "b", type: "show" } as any)
+        expect(getClickedSlideSelection()).toBeNull()
+    })
+
+    it("ignores a clicked slide of a show that is not opened", () => {
+        activeShow.set({ id: "c", type: "show" } as any)
+        selected.set({ id: null, data: [] })
+        rememberClickedSlide("b", "", 0)
+        expect(getSlidePasteTarget({})).toEqual({})
+    })
+
     it("pastes last in the opened show when no slide is selected", () => {
         pasteSlides(copySlides([{ index: 0, showId: "a" }]), getSlidePasteTarget({}))
         expect(names("c")).toEqual(["C1", "A1"])
@@ -219,6 +266,94 @@ describe("copy and paste between shows", () => {
         pasteSlides(copied, getSlidePasteTarget({ index: 0, showId: "b" }), true)
         expect(names("b")).toEqual(["B1", "B1", "B2"])
         expect(names("c")).toEqual(["C1"])
+    })
+
+    describe("pasting back into the show it was copied from", () => {
+        const layoutIds = (showId: string) => get(showsCache)[showId].layouts.default.slides.map((a) => a.id)
+
+        it("repeats the group in the arrangement instead of making a copy", () => {
+            const slidesBefore = JSON.stringify(get(showsCache).a.slides)
+            const copied = copySlides([{ index: 0, showId: "a" }])
+
+            expect(pasteSlides(copied, { showId: "a", index: 1 })).toBe(true)
+            expect(layoutIds("a")).toEqual(["a1", "a1", "a2"])
+            expect(JSON.stringify(get(showsCache).a.slides)).toBe(slidesBefore)
+            expect(names("a")).toEqual(["A1", "A1", "A2"])
+        })
+
+        it("adds last when no position is given and keeps the layout data of the copied slide", () => {
+            showsCache.update((cache) => {
+                cache.a.layouts.default.slides[1] = { id: "a2", background: "bg", nextTimer: 5, end: true } as any
+                return cache
+            })
+            pasteSlides(copySlides([{ index: 1, showId: "a" }]), { showId: "a" })
+
+            const layout = get(showsCache).a.layouts.default.slides
+            expect(layout.map((a) => a.id)).toEqual(["a1", "a2", "a2"])
+            expect(layout[2]).toEqual({ id: "a2", background: "bg", nextTimer: 5 })
+        })
+
+        it("is undone in one step", () => {
+            vi.stubGlobal("document", { activeElement: null })
+            pasteSlides(copySlides([{ index: 0, showId: "a" }]), { showId: "a", index: 2 })
+            expect(layoutIds("a")).toEqual(["a1", "a2", "a1"])
+
+            undo()
+            expect(layoutIds("a")).toEqual(["a1", "a2"])
+            vi.unstubAllGlobals()
+        })
+
+        it("still copies when duplicating, pasting into another show, or when the group is gone", () => {
+            const copied = copySlides([{ index: 0, showId: "a" }])
+
+            pasteSlides(copied, { showId: "a", index: 1 }, true)
+            expect(Object.keys(get(showsCache).a.slides)).toHaveLength(3)
+
+            pasteSlides(copied, { showId: "b" })
+            expect(Object.keys(get(showsCache).b.slides)).toHaveLength(3)
+
+            // cut: the slide no longer exists in the show
+            showsCache.update((cache) => {
+                delete cache.a.slides.a1
+                cache.a.layouts.default.slides = cache.a.layouts.default.slides.filter((a) => a.id !== "a1")
+                return cache
+            })
+            pasteSlides(copied, { showId: "a" })
+            expect(layoutIds("a")).toHaveLength(3) // a2, the duplicate and the new copy
+            expect(layoutIds("a")).not.toContain("a1")
+        })
+
+        it("repeats a whole group with its children, never a child alone or a partial group", () => {
+            showsCache.update((cache) => {
+                cache.p = {
+                    ...makeShow("Song P", ["p1", "p1c", "p2"]),
+                    layouts: { default: { name: "Default", notes: "", slides: [{ id: "p1", children: { p1c: {} } }, { id: "p2" }] } }
+                } as any
+                cache.p.slides.p1.children = ["p1c"]
+                cache.p.slides.p1c.group = null
+                return cache
+            })
+
+            // parent + child selected (indexes 0 and 1), pasted after the first group
+            pasteSlides(
+                copySlides([
+                    { index: 0, showId: "p" },
+                    { index: 1, showId: "p" }
+                ]),
+                { showId: "p", index: 2 }
+            )
+            expect(get(showsCache).p.layouts.default.slides.map((a) => a.id)).toEqual(["p1", "p1", "p2"])
+            expect(get(showsCache).p.layouts.default.slides[1].children).toEqual({ p1c: {} })
+
+            // a pasted position inside a group goes after the whole group
+            pasteSlides(copySlides([{ index: 4, showId: "p" }]), { showId: "p", index: 1 })
+            expect(get(showsCache).p.layouts.default.slides.map((a) => a.id)).toEqual(["p1", "p2", "p1", "p2"])
+
+            // only the child, or only the parent of a group with a child: real copies
+            const before = Object.keys(get(showsCache).p.slides).length
+            pasteSlides(copySlides([{ index: 1, showId: "p" }]), { showId: "p" })
+            expect(Object.keys(get(showsCache).p.slides).length).toBeGreaterThan(before)
+        })
     })
 
     it("does nothing for an empty clipboard or a locked show", () => {

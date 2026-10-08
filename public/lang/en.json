@@ -722,6 +722,9 @@
         "name": "Name",
         "category": "Category",
         "new_arrangement": "New arrangement",
+        "master_arrangement": "Master",
+        "blank_group": "Blank",
+        "arrangement_groups": "Groups",
         "new_layout": "New layout",
         "grid": "Grid view",
         "simple": "Simple view",
@@ -1070,6 +1073,13 @@
         "margin": "Margin"
     },
     "context": {
+        "color_rose": "Rose",
+        "color_peach": "Peach",
+        "color_butter": "Butter",
+        "color_mint": "Mint",
+        "color_sky": "Sky",
+        "color_lavender": "Lavender",
+        "color_custom": "Custom...",
         "to_dictionary": "Add to dictionary",
         "correct": "Replace with this word",
         "enabledTabs": "Toggle tabs",

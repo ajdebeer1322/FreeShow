@@ -95,6 +95,7 @@ export interface Slide {
     color: null | string
     globalGroup?: string
     locked?: boolean // lock slide group to prevent changes
+    blank?: boolean // empty slide added from the arrangement bar (not listed as a group)
     settings: {
         template?: string
         background?: boolean
@@ -329,6 +330,7 @@ export interface Chords {
 export interface Layout {
     id?: string
     name: string
+    master?: boolean // one of each group (arrangement bar)
     notes: string
     timeline?: Timeline
     recording?: Recording[] // deprecated

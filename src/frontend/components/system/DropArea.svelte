@@ -6,7 +6,7 @@
     import T from "../helpers/T.svelte"
 
     export let id: DropAreas
-    export let data: { showId?: string; layout?: string } = {}
+    export let data: { showId?: string; layout?: string; arrangementBar?: boolean } = {}
     export let selectChildren = false
     export let hoverTimeout = 500
     export let file = false
@@ -25,7 +25,10 @@
         }, hoverTimeout)
     }
 
-    function leave() {
+    function leave(e: DragEvent) {
+        // a file dragged out of the area (not just between its children)
+        if (fileOver && !(e.currentTarget as HTMLElement)?.contains(e.relatedTarget as Node | null)) fileOver = false
+
         if (!active || !selectChildren) return
 
         count = Math.max(0, count - 1)
@@ -34,7 +37,16 @@
         }, 10)
     }
 
+    // the drop markers must stay until the drop target is read from the event
     async function dropEvent(e: any) {
+        try {
+            await handleDrop(e)
+        } finally {
+            fileOver = false
+        }
+    }
+
+    async function handleDrop(e: any) {
         const files = getFiles(e)
         if (files.length) {
             const webMediaFiles = files.filter((file) => isWebMediaFile(file))
@@ -67,7 +79,6 @@
             return
         }
 
-        fileOver = false
         hover = false
         console.log($selected.id, "=>", id)
 

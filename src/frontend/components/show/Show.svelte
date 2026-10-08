@@ -137,10 +137,10 @@
         {/if}
     </div>
 
-    {#if show && (show.type || "show") === "show"}
-        <!-- thin bar with the view controls, just above the drawer -->
-        <SlideBar />
+    <!-- thin bar with the view controls, always just above the drawer -->
+    <SlideBar />
 
+    {#if show && (show.type || "show") === "show"}
         {#if !continuousProject}
             <ShowNotes />
         {/if}
@@ -184,6 +184,8 @@
 
     .main.projectView {
         height: auto;
+        /* fills a short project so the bar stays at the bottom */
+        flex: 1 0 auto;
         overflow: visible;
         justify-content: flex-start;
     }

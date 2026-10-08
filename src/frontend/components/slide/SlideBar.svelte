@@ -6,7 +6,6 @@
     import { getActionIcon, runAction } from "../actions/actions"
     import Icon from "../helpers/Icon.svelte"
     import { _show } from "../helpers/shows"
-    import { joinTime, secondsToTime } from "../helpers/time"
     import MaterialButton from "../inputs/MaterialButton.svelte"
     import MaterialZoom from "../inputs/MaterialZoom.svelte"
     import Reference from "./Reference.svelte"
@@ -15,24 +14,16 @@
     // Arrangements are chosen and created in the Groups tab of the right panel.
 
     $: showId = $activeShow?.id || ""
+    // the bar is always visible, the show tools only apply to an opened show
+    $: hasShow = !!$showsCache[showId]
     $: currentShow = $showsCache[showId] || {}
     $: layouts = currentShow.layouts
     $: activeLayout = currentShow.settings?.activeLayout
 
-    let totalTime = "0s"
     let isTranslated = false
     $: layoutSlides = layouts?.[activeLayout]?.slides || []
-    $: if (layoutSlides.length) getTotalTime()
-    function getTotalTime() {
-        let ref =
-            _show()
-                .layouts("active")
-                .ref()[0]
-                ?.filter((a) => a?.data && !a.data.disabled) || []
-        let total = ref.reduce((value, slide) => (value += Number(slide?.data?.nextTimer || 0)), 0)
-
-        totalTime = total ? (total > 59 ? joinTime(secondsToTime(total)) : total + "s") : "0s"
-
+    $: if (layoutSlides.length) checkTranslated()
+    function checkTranslated() {
         isTranslated = !!layoutSlides.find(
             (a) =>
                 a?.id &&
@@ -64,11 +55,15 @@
 
 <div class="bar">
     <div class="left">
-        {#if reference}
+        {#if !hasShow}
+            <!-- no show tools -->
+        {:else if reference}
             <Reference {showId} show={currentShow} />
         {/if}
 
-        {#if customAction}
+        {#if !hasShow}
+            <!-- no show tools -->
+        {:else if customAction}
             <MaterialButton class="context #edit_custom_action" title="actions.run_action: {$actions[customAction].name}" on:click={() => runCustomAction()}>
                 <Icon size={1.1} id={getActionIcon(customAction)} />
                 <p>{$actions[customAction].name}</p>
@@ -81,7 +76,9 @@
     </div>
 
     <div class="right">
-        {#if isLocked}
+        {#if !hasShow}
+            <!-- no show tools -->
+        {:else if isLocked}
             <MaterialButton
                 title="show.locked"
                 on:click={() => {
@@ -95,15 +92,9 @@
             <MaterialButton on:click={() => activePopup.set("translate")} title="popup.translate">
                 <Icon size={1.1} id="translate" white={!isTranslated} />
             </MaterialButton>
-
-            {#if totalTime !== "0s" || referenceType !== "scripture"}
-                <MaterialButton title="popup.next_timer{totalTime !== '0s' ? ': ' + totalTime : ''} [Ctrl+Shift+D]" on:click={() => activePopup.set("next_timer")}>
-                    <Icon size={1.1} id="clock" white={totalTime === "0s"} />
-                </MaterialButton>
-            {/if}
         {/if}
 
-        <div class="divider"></div>
+        {#if hasShow}<div class="divider"></div>{/if}
 
         <MaterialZoom hidden={false} columns={$slidesOptions.columns} on:change={(e) => slidesOptions.set({ ...$slidesOptions, columns: e.detail })} />
 

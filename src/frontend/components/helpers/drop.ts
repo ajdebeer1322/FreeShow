@@ -28,7 +28,7 @@ const areas = {
 const areaChildren = {
     projects: ["folder", "project"],
     project: ["show", "media", "audio", "audio_effect", "show_drawer", "player", "action"],
-    slides: ["slide", "group", "global_group", "effect", "screen", "ndi", "camera", "microphone", "media", "player", "urls", "audio", "audio_effect", "show", "omt", "blackmagic"],
+    slides: ["slide", "group", "global_group", "files", "effect", "screen", "ndi", "camera", "microphone", "media", "player", "urls", "audio", "audio_effect", "show", "omt", "blackmagic"],
     all_slides: [],
     navigation: ["show", "show_drawer", "media", "audio", "audio_effect", "overlay", "template"],
     audio_playlist: ["audio"],
@@ -39,7 +39,7 @@ export function validateDrop(id: string, selectedId: SelectIds | null, children 
     return areas[id]?.includes(selectedId) || (children && areaChildren[id]?.includes(selectedId))
 }
 
-export async function ondrop(e: any, id: string, target: { showId?: string; layout?: string } = {}) {
+export async function ondrop(e: any, id: string, target: { showId?: string; layout?: string; arrangementBar?: boolean } = {}) {
     // let data: string = e.dataTransfer.getData("text")
     const h = { id: null, location: { page: get(activePage) } }
     const sel = get(selected)

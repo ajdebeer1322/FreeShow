@@ -46,6 +46,7 @@
     export let altKeyPressed = false
     export let disableThumbnails = false
     export let centerPreview = false
+    export let fileOver = false // a file from outside the app is dragged over the slides
 
     $: isLessons = show?.reference?.type === "lessons"
 
@@ -152,7 +153,8 @@
         // history({ id: "UPDATE", save: false, newData: { data: color, key: "slides", keys: [layoutSlide.id], subkey: "color" }, oldData: { id: showId }, location: { page: "show", id: "show_key" } })
     }
 
-    $: name = getGroupName({ show, showId }, layoutSlide.id, group, index, true)
+    // no repeat count ("Verse 1", "Verse 2") on slides that use the same group again, it confuses the operators
+    $: name = getGroupName({ show, showId }, layoutSlide.id, group, index, true, false)
 
     let timer: number[] = []
     $: if ($activeTimers) {
@@ -301,7 +303,7 @@
 
         <!-- <DropArea id="slide" hoverTimeout={0} file> -->
         <div style="width: 100%;height: 100%;">
-            <SelectElem style={colorStyle} id="slide" data={{ index, showId, ...selectLayout }} draggable={!$focusMode && !isLocked} shiftRange={layoutSlides.map((_, index) => ({ index, showId, ...selectLayout }))} onlyRightClickSelect={$focusMode} selectable={!isLocked} trigger={list ? "column" : "row"}>
+            <SelectElem style={colorStyle} id="slide" data={{ index, showId, ...selectLayout }} draggable={!$focusMode && !isLocked} shiftRange={layoutSlides.map((_, index) => ({ index, showId, ...selectLayout }))} onlyRightClickSelect={$focusMode} selectable={!isLocked} trigger={list ? "column" : "row"} {fileOver}>
                 <!-- TODO: tab select on enter -->
                 {#if viewMode === "lyrics" && !noQuickEdit}
                     <!-- border-bottom: 1px dashed {color}; -->

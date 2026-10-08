@@ -68,10 +68,17 @@ export function copySlides(data: any, fullGroup = false) {
     // dont know why this is like this when ctrl + c
     if (data?.slides) data = data.slides
 
-    const result: { slides: any[]; layouts: any[]; media: any } = { slides: [], layouts: [], media: {} }
+    const result: { slides: any[]; layouts: any[]; media: any; source?: { showId: string; layout: string } } = { slides: [], layouts: [], media: {} }
     if (!Array.isArray(data)) return result
 
-    splitSelectionBySource(data).forEach((group) => {
+    const groups = splitSelectionBySource(data)
+    // pasting back into the show it was copied from repeats the groups, so remember where they came from
+    if (groups.length === 1) {
+        const showId = groups[0].showId || get(activeShow)?.id || ""
+        result.source = { showId, layout: groups[0].layout || get(showsCache)[showId]?.settings?.activeLayout || "" }
+    }
+
+    groups.forEach((group) => {
         const copied = copyFromSource(group, fullGroup)
         result.slides.push(...copied.slides)
         result.layouts.push(...copied.layouts)
@@ -159,6 +166,15 @@ export function pasteSlides(data: any, target: SlideTarget = {}, isDuplicating =
     const showId = target.showId || get(activeShow)?.id || ""
     if (!showId || !canEditShow(showId)) return false
 
+    // the same groups again in the arrangement (not separate copies), unless it is a duplicate
+    if (!isDuplicating) {
+        const repeated = repeatGroups(data, showId, target)
+        if (repeated !== null) {
+            if (lastClicked?.showId === showId) lastClicked = { ...lastClicked, index: repeated }
+            return true
+        }
+    }
+
     data = clone(data)
     const copiedIds: string[] = data.slides.map((a) => a.id)
     const newSlides: any[] = []
@@ -194,13 +210,76 @@ export function pasteSlides(data: any, target: SlideTarget = {}, isDuplicating =
         removeTemplatesFromShow(showId)
     }
 
+    const insertIndex = target.index ?? getSlideRef(showId, target.layout).length
+
     history({
         id: "SLIDES",
         newData: { data: newSlides, layouts, media: data.media, index: target.index },
         location: { page: get(activePage) as HistoryPages, show: { id: showId }, layout: target.layout || undefined }
     })
 
+    // the next paste continues after these slides
+    if (lastClicked?.showId === showId) lastClicked = { ...lastClicked, index: insertIndex + newSlides.length - 1 }
+
     return true
+}
+
+/**
+ * Paste back into the show the slides were copied from: the groups are added to the arrangement again, using the same slides.
+ * Returns the flattened index of the last added slide, or null when the slides must be real copies (another show, a child without its group, deleted slides).
+ */
+function repeatGroups(data: any, showId: string, target: SlideTarget): number | null {
+    if (data.source?.showId !== showId) return null
+
+    const show = get(showsCache)[showId]
+    const sourceSlides = show?.layouts?.[data.source.layout]?.slides
+    const targetLayoutId = target.layout || show?.settings?.activeLayout || ""
+    const targetSlides = show?.layouts?.[targetLayoutId]?.slides
+    if (!sourceSlides || !targetSlides) return null
+
+    const copied: any[] = data.slides
+    const parents = copied.filter((a) => a.group !== null)
+    if (!parents.length) return null
+
+    // every copied child belongs to a copied group, and a copied group has all its children
+    const copiedIds = copied.map((a) => a.id)
+    const covered = parents.flatMap((a) => a.children || [])
+    if (copied.some((a) => a.group === null && !covered.includes(a.id))) return null
+    if (parents.some((a) => (a.children || []).some((id: string) => !copiedIds.includes(id)))) return null
+
+    // the slides must still exist (a cut group is gone) and be in the arrangement it was copied from
+    const entries = parents.map((a) => (show.slides?.[a.id] ? sourceSlides.find((b) => b?.id === a.id) : undefined))
+    if (entries.some((a) => !a)) return null
+
+    const newEntries = entries.map((a: any) => {
+        const entry = clone(a)
+        delete entry.end
+        return entry
+    })
+
+    // insert after the whole group at the position (never between a group and its children)
+    const ref = getSlideRef(showId, targetLayoutId)
+    const before = target.index === undefined ? undefined : ref[target.index - 1]
+    const anchor = before?.parent || before
+    let layoutIndex = targetSlides.length
+    if (target.index !== undefined && target.index <= 0) layoutIndex = 0
+    else if (anchor) layoutIndex = Math.min(anchor.index + 1, targetSlides.length)
+
+    const flatStart = layoutIndex >= targetSlides.length ? ref.length : ref.findIndex((a) => a.type === "parent" && a.index === layoutIndex)
+    const flatCount = parents.reduce((count, a) => count + 1 + (a.children?.length || 0), 0)
+
+    const newLayout = [...clone(targetSlides).slice(0, layoutIndex), ...newEntries, ...clone(targetSlides).slice(layoutIndex)]
+    const slides = clone(show.slides)
+    const media = clone(show.media || {})
+
+    history({
+        id: "slide",
+        oldData: { layout: clone(targetSlides), slides, media },
+        newData: { layout: newLayout, slides, media },
+        location: { page: get(activePage) as HistoryPages, show: { id: showId }, layout: targetLayoutId }
+    })
+
+    return (flatStart < 0 ? ref.length : flatStart) + flatCount - 1
 }
 
 function cloneChildren(slide, data, i, copiedIds, addedChildren, newSlides, layouts) {
@@ -239,13 +318,43 @@ export function getSlidePasteTarget(extra: { index?: number; showId?: string; la
     }
 
     const selection = get(selected)
-    if (selection.id !== "slide" || !Array.isArray(selection.data)) return {}
+    if (selection.id === "slide" && Array.isArray(selection.data)) {
+        // the last selected slide decides, e.g. a slide of another show added to the selection
+        const group = splitSelectionBySource(selection.data)
+            .reverse()
+            .find((a) => a.showId)
+        if (group) {
+            const indexes = group.items.map((a) => a.index).filter((a) => typeof a === "number")
+            return { showId: group.showId, layout: group.layout, index: indexes.length ? Math.max(...indexes) + 1 : undefined }
+        }
+    }
 
-    const group = splitSelectionBySource(selection.data).find((a) => a.showId)
-    if (!group) return {}
+    // a plain click does not select, so paste after the slide that was clicked last (never at the end of a show, which inherits its last background)
+    const clicked = getClickedSlide()
+    if (clicked) return { showId: clicked.showId, layout: clicked.layout, index: clicked.index + 1 }
 
-    const indexes = group.items.map((a) => a.index).filter((a) => typeof a === "number")
-    return { showId: group.showId, layout: group.layout, index: indexes.length ? Math.max(...indexes) + 1 : undefined }
+    return {}
+}
+
+/** Slide selection for the slide clicked last in the opened show. A plain click does not select, but Ctrl+C should still copy it. */
+export function getClickedSlideSelection(): { id: "slide"; data: any[] } | null {
+    const target = getClickedSlide()
+    if (!target) return null
+
+    return { id: "slide", data: [{ index: target.index, showId: target.showId, ...(target.layout ? { layout: target.layout } : {}) }] }
+}
+
+function getClickedSlide() {
+    if (!lastClicked || lastClicked.showId !== get(activeShow)?.id) return null
+    if (lastClicked.index >= getSlideRef(lastClicked.showId, lastClicked.layout).length) return null
+    return lastClicked
+}
+
+let lastClicked: { showId: string; layout: string; index: number } | null = null
+
+/** The slide the operator clicked last, used as the paste position when no slide is selected. */
+export function rememberClickedSlide(showId: string, layout: string, index: number) {
+    lastClicked = { showId, layout, index }
 }
 
 /** Dragging slides onto a different show (or a different arrangement of the same show) moves them there. */

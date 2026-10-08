@@ -93,7 +93,8 @@ test("Add show > WorshipTools imports the chosen songs as separate shows", async
     let window: Page | undefined
     try {
         app = await electron.launch({
-            args: [".", "--no-sandbox"],
+            // own browser storage (IndexedDB locks, cookies), so a running dev session of the app is not shared
+            args: [".", "--no-sandbox", `--user-data-dir=${join(directory, "user-data")}`],
             cwd: process.env.FS_TEST_APP_PATH || process.cwd(),
             env: {
                 ...process.env,

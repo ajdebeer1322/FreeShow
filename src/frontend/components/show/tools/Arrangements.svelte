@@ -1,20 +1,30 @@
 <script lang="ts">
     import { uid } from "uid"
     import type { ClickEvent } from "../../../../types/Main"
-    import { activeProject, activeShow, editingProjectTemplate, projects, projectTemplates, showsCache } from "../../../stores"
+    import { activeProject, activeRename, activeShow, editingProjectTemplate, projects, projectTemplates, showsCache } from "../../../stores"
+    import { translateText } from "../../../utils/language"
     import { getAccess } from "../../../utils/profile"
+    import { findMasterId, getMasterSlides, masterIsUpToDate } from "../../helpers/arrangements"
     import { keysToID, sortByName } from "../../helpers/array"
     import { duplicate } from "../../helpers/clipboard"
     import { history } from "../../helpers/history"
     import Icon from "../../helpers/Icon.svelte"
     import HiddenInput from "../../inputs/HiddenInput.svelte"
     import MaterialButton from "../../inputs/MaterialButton.svelte"
+    import T from "../../helpers/T.svelte"
     import SelectElem from "../../system/SelectElem.svelte"
 
-    // The arrangements (layouts) of the active show: choose one, create a new one (copy of the current, or empty with Ctrl), rename or delete from the context menu.
+    // The arrangements (layouts) of a show (the active show by default): choose one, create a new one (copy of the current, or empty with Ctrl), rename or delete from the context menu.
+    // "Master" is the arrangement with every group once, it is created the first time it is chosen.
 
-    $: showId = $activeShow?.id || ""
-    $: currentShow = $showsCache[showId] || {}
+    export let showId = ""
+    export let index: number | undefined = undefined // project item, the active one by default
+    // in the arrangement bar: no border and padding
+    export let bar = false
+
+    $: currentId = showId || $activeShow?.id || ""
+    $: projectIndex = index ?? $activeShow?.index
+    $: currentShow = $showsCache[currentId] || {}
     $: layouts = currentShow.layouts
     $: activeLayout = currentShow.settings?.activeLayout
     $: layoutSlides = layouts?.[activeLayout]?.slides || []
@@ -24,7 +34,9 @@
     $: store = isTemplate ? projectTemplates : projects
     $: project = $store[projectId!]
 
-    $: sortedLayouts = sortByName(keysToID(layouts || {}))
+    $: masterId = findMasterId(layouts)
+    // the Master is always first in the list
+    $: sortedLayouts = [...sortByName(keysToID(layouts || {})).filter((a) => a.id === masterId), ...sortByName(keysToID(layouts || {})).filter((a) => a.id !== masterId)]
 
     let profile = getAccess("shows")
     $: isLocked = currentShow?.locked || profile.global === "read" || profile[currentShow?.category || ""] === "read"
@@ -38,7 +50,7 @@
             return
         }
 
-        history({ id: "UPDATE", newData: { key: "layouts", subkey: uid() }, oldData: { id: showId }, location: { page: "show", id: "show_layout" } })
+        history({ id: "UPDATE", newData: { key: "layouts", subkey: uid() }, oldData: { id: currentId }, location: { page: "show", id: "show_layout" } })
     }
 
     let edit: string | boolean = false
@@ -48,9 +60,9 @@
         if (!currentLayout || isLocked) return
 
         const newName = e.detail.value
-        history({ id: "UPDATE", newData: { key: "layouts", keys: [currentLayout], subkey: "name", data: newName }, oldData: { id: showId }, location: { page: "show", id: "show_key" } })
+        history({ id: "UPDATE", newData: { key: "layouts", keys: [currentLayout], subkey: "name", data: newName }, oldData: { id: currentId }, location: { page: "show", id: "show_key" } })
 
-        const showIndex = $activeShow?.index
+        const showIndex = projectIndex
         if (project?.shows?.[showIndex ?? -1]?.layout === currentLayout) {
             store.update((a) => {
                 if (a[projectId!]?.shows?.[showIndex!]) {
@@ -62,20 +74,20 @@
     }
 
     function setLayout(id: string, layoutInfo) {
-        if (!$showsCache[showId]) return
+        if (!$showsCache[currentId]) return
 
         showsCache.update((a) => {
-            if (a[showId]) {
-                if (!a[showId].settings) a[showId].settings = { activeLayout: "", template: null }
-                a[showId].settings.activeLayout = id
+            if (a[currentId]) {
+                if (!a[currentId].settings) a[currentId].settings = { activeLayout: "", template: null }
+                a[currentId].settings.activeLayout = id
             }
             return a
         })
 
         // set active layout in project
         if (sortedLayouts?.length < 2) return
-        const showIndex = $activeShow?.index
-        if (($activeShow?.type === undefined || $activeShow?.type === "show") && showIndex !== undefined && projectId && project?.shows?.[showIndex]) {
+        const showIndex = projectIndex
+        if ((project?.shows?.[showIndex ?? -1]?.type || "show") === "show" && showIndex !== undefined && projectId && project?.shows?.[showIndex]) {
             store.update((a) => {
                 if (a[projectId!]?.shows?.[showIndex]) {
                     a[projectId!].shows[showIndex].layout = id
@@ -94,6 +106,29 @@
         open = false
         if (!edit) setLayout(id, { name })
     }
+
+    // the Master arrangement does not exist until it is chosen
+    function pickMaster() {
+        open = false
+        if (edit || isLocked) return
+
+        const masterName = translateText("show.master_arrangement")
+        const slides = getMasterSlides(currentShow.slides, layouts, masterId ? layouts[masterId].slides : [])
+
+        if (!masterId) {
+            // creating a layout selects it (and starts renaming)
+            const newLayout = { name: masterName, master: true, notes: "", slides }
+            history({ id: "UPDATE", newData: { key: "layouts", subkey: uid(), data: newLayout }, oldData: { id: currentId }, location: { page: "show", id: "show_layout" } })
+            activeRename.set(null)
+            return
+        }
+
+        if (!masterIsUpToDate(currentShow.slides, layouts, masterId)) {
+            history({ id: "UPDATE", newData: { key: "layouts", keys: [masterId], subkey: "slides", data: slides }, oldData: { id: currentId }, location: { page: "show", id: "show_key" } })
+        }
+        setLayout(masterId, { name: layouts[masterId].name })
+    }
+
     function outside(e: MouseEvent) {
         if (!(e.target as HTMLElement)?.closest?.(".picker")) open = false
     }
@@ -103,7 +138,7 @@
 
 {#if layouts && !currentShow.reference}
     <!-- one narrow row: the arrangement (click to switch, right-click for rename / duplicate / delete) and a + for a new one -->
-    <div class="arrangements">
+    <div class="arrangements" class:bar>
         <div class="picker">
             <SelectElem id="layout" data={activeLayout} fill>
                 <MaterialButton class={isLocked ? "" : "context #layout"} title="panel.arrangements" on:click={() => (open = !open)} isActive={open}>
@@ -114,8 +149,11 @@
 
             {#if open}
                 <div class="menu">
+                    {#if !masterId}
+                        <button on:click={pickMaster}><T id="show.master_arrangement" /></button>
+                    {/if}
                     {#each sortedLayouts as layout}
-                        <button class:active={layout.id === activeLayout} on:click={() => pick(layout.id, layout.name)}>{layout.name}</button>
+                        <button class:active={layout.id === activeLayout} on:click={() => (layout.id === masterId ? pickMaster() : pick(layout.id, layout.name))}>{layout.name}</button>
                     {/each}
                 </div>
             {/if}
@@ -135,6 +173,10 @@
         flex-shrink: 0;
         padding: 4px 8px;
         border-bottom: 1px solid var(--primary-lighter);
+    }
+    .arrangements.bar {
+        padding: 0;
+        border-bottom: none;
     }
 
     .picker {
