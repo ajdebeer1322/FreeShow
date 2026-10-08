@@ -69,7 +69,7 @@ import { deleteTimer } from "../drawer/timers/timers"
 import { updateSortedStageItems } from "../edit/scripts/itemHelpers"
 import { setCaret } from "../edit/scripts/textStyle"
 import { activeEdit } from "./../../stores"
-import { clone, keysToID, removeDeleted, removeDuplicates } from "./array"
+import { clone, keysToID, removeDeleted } from "./array"
 import { pasteText } from "./caretHelper"
 import { history } from "./history"
 import { deleteStore } from "./historyStores"
@@ -77,7 +77,8 @@ import { getFileName, removeExtension } from "./media"
 import { updateActiveSceneOutputs } from "./output"
 import { select } from "./select"
 import { loadShows } from "./setShow"
-import { checkName, getLayoutRef, removeTemplatesFromShow } from "./show"
+import { checkName, getLayoutRef } from "./show"
+import { copySlides, getSlidePasteTarget, pasteSlides } from "./slideTransfer"
 import { _show } from "./shows"
 
 export function copy(clip: Clipboard | null = null, getData = true, shouldDuplicate = false) {
@@ -109,7 +110,7 @@ export function copy(clip: Clipboard | null = null, getData = true, shouldDuplic
     if (getData && copyActions[copyData.id]) copyData.data = copyActions[copyData.id](copyData.data)
 
     if (shouldDuplicate) {
-        return { id: null, data: copyData, index: copyObj.data?.[0]?.index }
+        return { id: null, data: copyData, index: copyObj.data?.[0]?.index, showId: copyObj.data?.[0]?.showId, layout: copyObj.data?.[0]?.layout }
     }
 
     if (copyData.data) {
@@ -219,7 +220,7 @@ export function duplicate(clip: Clipboard | null = null) {
 
     const copyData = copy(clip, true, true)
     if (!copyData?.data) return false
-    paste(copyData.data, { index: (copyData as any).index }, null, true)
+    paste(copyData.data, { index: (copyData as any).index, showId: (copyData as any).showId, layout: (copyData as any).layout }, null, true)
 
     console.info("DUPLICATED:", copyData)
     return true
@@ -458,73 +459,7 @@ const copyActions = {
         items = items.filter((_a, i) => data.items?.includes(i))
         return [...items]
     },
-    slide: (data: any, fullGroup = false) => {
-        const ref = getLayoutRef()
-        const layouts: any[] = []
-        const mediaData: any = {}
-
-        // dont know why this is like this when ctrl + c
-        if (data.slides) data = data.slides
-
-        if (!Array.isArray(data)) return { slides: [], layouts: [], media: {} }
-
-        const sortedData = data.sort((a, b) => (a.index < b.index ? -1 : 1))
-
-        let ids = sortedData
-            .map((a) => {
-                if (!ref[a.index]) return ""
-
-                // get layout
-                if (a.index !== undefined) layouts.push(ref[a.index].data)
-
-                return a.id || (a.index !== undefined ? ref[a.index].id : "")
-            })
-            .filter(Boolean)
-
-        if (fullGroup) {
-            // select all children of group
-            const allSlides = _show().get("slides")
-            const newIds: string[] = []
-            ids.forEach((id: string) => {
-                const children = allSlides[id]?.children || []
-                newIds.push(id, ...children)
-            })
-            ids = removeDuplicates(newIds)
-        }
-
-        let slides = clone(_show().slides(ids).get())
-        slides = slides.map((slide) => {
-            if (slide.group !== null) return slide
-
-            // make children parent
-            // this should never be here
-            delete slide.children
-
-            const parent = ref.find((a) => a.id === slide.id)?.parent || ""
-            // check that parent is not copied
-            if (ids.includes(parent)) return slide
-
-            // slide.group = ""
-            slide.oldChild = slide.id
-
-            return slide
-        })
-
-        const layoutMedia = layouts.filter((a) => a.background || a.audio?.length)
-        const showMedia = _show().get()?.media || {}
-        layoutMedia.forEach((layoutData) => {
-            const mediaIds: string[] = []
-            if (layoutData.background) mediaIds.push(layoutData.background)
-            if (layoutData.audio?.length) mediaIds.push(...layoutData.audio)
-
-            mediaIds.forEach((mediaId) => {
-                const m = showMedia[mediaId]
-                if (m) mediaData[mediaId] = m
-            })
-        })
-
-        return { slides, layouts, media: mediaData }
-    },
+    slide: (data: any, fullGroup = false) => copySlides(data, fullGroup),
     group: (data: any) => copyActions.slide(data, true),
     overlay: (data: any) => {
         if (!Array.isArray(data)) return []
@@ -600,46 +535,8 @@ const pasteActions = {
         const items = data.map((item) => clone(item))
         history({ id: "UPDATE", newData: { data: items, key: "slides", keys: [ref.id], subkey: "items", index: -1 }, oldData: { id: get(activeShow)!.id }, location: { page: "edit", id: "show_key" } })
     },
-    slide: (data: any, { index }: any = {}, isDuplicating: boolean = false) => {
-        if (!data?.slides) return
-
-        data = clone(data)
-        const copiedIds: string[] = data.slides.map((a) => a.id)
-        const newSlides: any[] = []
-        const layouts: any[] = []
-        const addedChildren: string[] = []
-
-        data.slides.forEach((slide, i) => {
-            if (slide.group === null && addedChildren.includes(slide.id)) return
-            if (!isDuplicating && slide.group === null) slide.group = ""
-
-            slide.id = uid()
-            const slideIndex = newSlides.length
-            newSlides.push(slide)
-
-            if (slide.children) {
-                const { clonedChildren, childrenLayouts } = cloneChildren(slide, data, i, copiedIds, addedChildren, newSlides, layouts)
-                slide.children = clonedChildren
-                const layout = data.layouts?.[i]
-                if (layout) {
-                    if (Object.keys(childrenLayouts).length) layout.children = childrenLayouts
-                    else delete layout.children
-                    layouts[slideIndex] = layout
-                }
-            } else {
-                const layout = data.layouts?.[i]
-                if (!layout) return
-                delete layout.children
-                layouts[slideIndex] = layout
-            }
-        })
-
-        const showId = get(activeShow)?.id || ""
-        if (!Object.keys(get(showsCache)[showId]?.slides || {}).length) {
-            removeTemplatesFromShow(showId)
-        }
-
-        history({ id: "SLIDES", newData: { data: newSlides, layouts, media: data.media, index: index !== undefined ? index + 1 : undefined } })
+    slide: (data: any, extraData: any = {}, isDuplicating: boolean = false) => {
+        pasteSlides(data, getSlidePasteTarget(extraData), isDuplicating)
     },
     group: (data: any, extraData: any = {}, isDuplicating: boolean = false) => pasteActions.slide(data, extraData, isDuplicating),
     overlay: (data: any) => pasteDrawerItem(data, "overlay"),
@@ -1360,32 +1257,6 @@ function pasteDrawerItem(data: any, type: "overlay" | "template" | "scene") {
         history({ id: "UPDATE", newData: { data: newItem }, oldData: { id: newId }, location: { page: "drawer", id: type } })
         if (data.length === 1) activeRename.set(type + "_" + newId)
     })
-}
-
-function cloneChildren(slide, data, i, copiedIds, addedChildren, newSlides, layouts) {
-    const clonedChildren: string[] = []
-    const childrenLayouts: any = {}
-
-    slide.children.forEach((childId: string, j) => {
-        if (!copiedIds.includes(childId)) return
-        const childSlide: any = clone(data.slides.find((a) => a.id === childId))
-        if (!childSlide) return
-
-        addedChildren.push(childId)
-        const oldId = childSlide.id
-        childSlide.id = uid()
-        delete childSlide.oldChild
-        clonedChildren.push(childSlide.id)
-
-        const childIndex = newSlides.length
-        newSlides.push(childSlide)
-
-        const layout = data.layouts?.[i + j + 1] || data.layouts?.[i]?.[oldId] || {}
-        childrenLayouts[childSlide.id] = layout
-        layouts[childIndex] = layout
-    })
-
-    return { clonedChildren, childrenLayouts }
 }
 
 const videoKeys = ["speed", "volume"]

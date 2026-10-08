@@ -24,6 +24,7 @@ import { history, historyAwait } from "./history"
 import { downloadOnlineMedia, getExtension, getFileName, getMediaLayerType, getMediaStyle, getMediaType, removeExtension } from "./media"
 import { addToPos, getIndexes, mover } from "./mover"
 import { getLayoutRef } from "./show"
+import { dropSlidesOnShow, isCrossShowDrop } from "./slideTransfer"
 import { getVariableNameId } from "./showActions"
 import { _show } from "./shows"
 
@@ -47,6 +48,13 @@ export const dropActions = {
     slides: ({ drag, drop }: Data, history: History, keys?: Keys) => dropActions.slide({ drag, drop }, history, keys),
     slide: async ({ drag, drop }: Data, history: History, keys?: Keys) => {
         const id: string = getId(drag)
+
+        // slides dropped on another show (or arrangement) move there, hold Ctrl/Cmd or Alt to copy
+        if (isCrossShowDrop(drag, drop)) {
+            dropSlidesOnShow(drag, drop, !!(keys?.ctrlKey || keys?.altKey))
+            return
+        }
+
         // In Focus Mode the destination can be a different show/arrangement from the opened show.
         const customId: string = (id === "media" ? drop.data?.showId : "") || drag.showId || drag.data[0]?.showId
         const showId = customId || get(activeShow)?.id || ""

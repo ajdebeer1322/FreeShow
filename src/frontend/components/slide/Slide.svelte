@@ -27,6 +27,7 @@
     import Zoomed from "./Zoomed.svelte"
 
     export let showId: string
+    export let layout = "" // arrangement shown in the grid
     export let slide: Slide
     export let layoutSlide: SlideData
     export let layoutSlides: SlideData[] = []
@@ -49,6 +50,9 @@
     $: isLessons = show?.reference?.type === "lessons"
 
     $: viewMode = isLessons ? "grid" : $slidesOptions.mode || "grid"
+    // selections only name the arrangement when it is not the show's active one (the default way to find the slide)
+    $: selectLayout = layout && layout !== show?.settings?.activeLayout ? { layout } : {}
+
     $: background = layoutSlide.background ? show.media[layoutSlide.background] : slide?.settings?.backgroundImage ? { path: slide.settings.backgroundImage } : null
 
     let ghostBackground: Media | null = null
@@ -297,7 +301,7 @@
 
         <!-- <DropArea id="slide" hoverTimeout={0} file> -->
         <div style="width: 100%;height: 100%;">
-            <SelectElem style={colorStyle} id="slide" data={{ index, showId }} draggable={!$focusMode && !isLocked} shiftRange={layoutSlides.map((_, index) => ({ index, showId }))} onlyRightClickSelect={$focusMode} selectable={!isLocked} trigger={list ? "column" : "row"}>
+            <SelectElem style={colorStyle} id="slide" data={{ index, showId, ...selectLayout }} draggable={!$focusMode && !isLocked} shiftRange={layoutSlides.map((_, index) => ({ index, showId, ...selectLayout }))} onlyRightClickSelect={$focusMode} selectable={!isLocked} trigger={list ? "column" : "row"}>
                 <!-- TODO: tab select on enter -->
                 {#if viewMode === "lyrics" && !noQuickEdit}
                     <!-- border-bottom: 1px dashed {color}; -->

@@ -115,6 +115,7 @@ import { select } from "../helpers/select"
 import { openMediaInspector } from "../helpers/mediaInspector"
 import { loadShows } from "../helpers/setShow"
 import { bindSlidesToOutput, checkName, formatToFileName, getLayoutRef, getSelectedSlideIndexes, linkSlides, openShow, removeTemplatesFromShow, unlinkSlides, updateShowsList } from "../helpers/show"
+import { getSlideRef, splitSelectionBySource } from "../helpers/slideTransfer"
 import { sendMidi } from "../helpers/showActions"
 import { _show } from "../helpers/shows"
 import { getMenuTagId, openTagManager, toggleSelectionTags, toggleTagFilter } from "../helpers/tags"
@@ -2350,12 +2351,21 @@ function changeSlideAction(obj: ObjData, id: string) {
 export async function removeSlide(initialData: any[], type: "delete" | "remove" = "delete") {
     if (!Array.isArray(initialData)) return
 
-    const ref = getLayoutRef()
+    // slides can be selected in several shows (continuous Show view), remove from each in its own show
+    const sources = splitSelectionBySource(initialData)
+    if (sources.length > 1) {
+        for (const source of sources) await removeSlide(source.items, type)
+        return
+    }
+
+    const showId = initialData[0]?.showId || get(activeShow)?.id || ""
+    const layoutId = initialData[0]?.layout || ""
+    const ref = getSlideRef(showId, layoutId)
     const parents: any[] = []
     const childs: any[] = []
 
     // remove locked slide groups
-    const showSlides = get(showsCache)[get(activeShow)?.id || ""]?.slides || {}
+    const showSlides = get(showsCache)[showId]?.slides || {}
     let data: any[] = []
     initialData.forEach((a: any) => {
         const slideId = ref[a.index]?.parent?.id ?? ref[a.index]?.id
@@ -2372,7 +2382,7 @@ export async function removeSlide(initialData: any[], type: "delete" | "remove" 
     })
 
     if (type === "delete") {
-        const selectedInDifferentLayout = checkIfAddedToDifferentLayout(ref, data)
+        const selectedInDifferentLayout = checkIfAddedToDifferentLayout(ref, data, showId, layoutId)
         const prompt = translateText("confirm.statement_slide_exists_arrangement confirm.question_delete")
         if (selectedInDifferentLayout && !(await confirmCustom(prompt))) return
     }
@@ -2405,7 +2415,7 @@ export async function removeSlide(initialData: any[], type: "delete" | "remove" 
 
     if (!slides.length) return
 
-    history({ id: "SLIDES", oldData: { type, data: slides } })
+    history({ id: "SLIDES", oldData: { type, data: slides }, location: { page: get(activePage) as HistoryPages, show: { id: showId }, layout: layoutId || undefined } })
 }
 
 export async function format(id: string, obj: ObjData, data: any = null) {
@@ -2485,12 +2495,14 @@ export async function format(id: string, obj: ObjData, data: any = null) {
     refreshEditSlide.set(true)
 }
 
-function checkIfAddedToDifferentLayout(ref: LayoutRef[], data: any[]) {
-    let showLayouts = _show().layouts().get(null, true)
+function checkIfAddedToDifferentLayout(ref: LayoutRef[], data: any[], showId = "", layoutId = "") {
+    let showLayouts = _show(showId || "active")
+        .layouts()
+        .get(null, true)
     if (showLayouts.length < 2) return false
 
     // don't check current
-    const currentLayoutId = _show().get("settings.activeLayout")
+    const currentLayoutId = layoutId || _show(showId || "active").get("settings.activeLayout")
     showLayouts = showLayouts.filter((a) => a.layoutId !== currentLayoutId)
 
     // check if slide is added to any other layout
