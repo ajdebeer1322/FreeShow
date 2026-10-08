@@ -62,7 +62,6 @@ import MaxLines from "../components/main/popups/MaxLines.svelte"
 import MediaFit from "../components/main/popups/MediaFit.svelte"
 import MediaInspector from "../components/main/popups/MediaInspector.svelte"
 import MetadataDisplay from "../components/main/popups/MetadataDisplay.svelte"
-import NewUpdate from "../components/main/popups/NewUpdate.svelte"
 import NextTimer from "../components/main/popups/NextTimer.svelte"
 import NodeOptions from "../components/main/popups/NodeOptions.svelte"
 import NowPlaying from "../components/main/popups/NowPlaying.svelte"
@@ -91,7 +90,6 @@ import TimelineSettings from "../components/main/popups/TimelineSettings.svelte"
 import Timer from "../components/main/popups/Timer.svelte"
 import Transition from "../components/main/popups/Transition.svelte"
 import Unsaved from "../components/main/popups/Unsaved.svelte"
-import UpdateManager from "../components/main/popups/UpdateManager.svelte"
 import Variable from "../components/main/popups/Variable.svelte"
 import { activePopup, popupData } from "../stores"
 
@@ -159,13 +157,11 @@ export const popups: { [key in Popups]: ComponentType } = {
     display_duration: DisplayDuration,
     manage_tags: ManageTags,
     about: About,
-    update_manager: UpdateManager,
     shortcuts: Shortcuts,
     unsaved: Unsaved,
     restore: Restore,
     reset_all: ResetAll,
     alert: Alert,
-    new_update: NewUpdate,
     history: History,
     action_history: ActionHistory,
     manage_emitters: Emitters,

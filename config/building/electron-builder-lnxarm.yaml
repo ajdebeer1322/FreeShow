@@ -2,6 +2,9 @@ appId: app.freeshow
 productName: FreeShow
 artifactName: FreeShow-${version}-${arch}.${ext}
 
+# no auto-update feed (app-update.yml) and no publishing to the original repo
+publish: null
+
 files:
     - build/electron/**
     - build/types/**

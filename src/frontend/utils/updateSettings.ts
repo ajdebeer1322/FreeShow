@@ -102,7 +102,6 @@ import {
     version,
     videoMarkers
 } from "./../stores"
-import { checkForUpdates } from "./checkForUpdates"
 import { isMainWindow, startAutosave } from "./common"
 import { setLanguage } from "./language"
 import { startRemoteController } from "./remoteController"
@@ -303,8 +302,6 @@ const updateList: { [key in SaveListSettings | SaveListSyncedSettings]: any } = 
     customFonts: (v: any) => customFonts.set(v),
     alertUpdates: (v: any) => {
         alertUpdates.set(v !== false)
-        // make sure "special" is set before checking
-        setTimeout(() => checkForUpdates(get(version)), 50)
     },
     autoOutput: (v: any) => autoOutput.set(v),
     maxConnections: (v: any) => maxConnections.set(v),
@@ -413,7 +410,6 @@ const updateList: { [key in SaveListSettings | SaveListSyncedSettings]: any } = 
     },
     special: (v: any) => {
         if (v.capitalize_words === undefined) v.capitalize_words = "Jesus, Lord" // God
-        if (v.autoUpdates) sendMain(Main.AUTO_UPDATE)
         // don't backup when just initialized (or reset)
         if (!v.autoBackupPrevious) v.autoBackupPrevious = Date.now()
         if (v.startupProjectsList) {
