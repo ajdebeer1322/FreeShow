@@ -38,7 +38,7 @@ import { getAccess } from "../../utils/profile"
 import { ondrop } from "./drop"
 import { undo } from "./history"
 import { historyActions } from "./historyActions"
-import { copySlides, getSlidePasteTarget, getClickedSlideSelection, isCrossShowDrop, pasteSlides, rememberClickedSlide } from "./slideTransfer"
+import { copySlides, getSlidePasteTarget, getClickedSlideSelection, isCrossShowDrop, isSongShow, pasteSlides, rememberClickedSlide } from "./slideTransfer"
 
 function makeShow(name: string, slideIds: string[]): Show {
     const slides = Object.fromEntries(slideIds.map((id) => [id, { group: id.toUpperCase(), color: null, settings: {}, notes: "", items: [] }]))
@@ -114,6 +114,20 @@ describe("dragging slides between shows", () => {
         await dropOnB("start", 0, undefined, true)
         expect(names("b")).toEqual(["A2", "B1", "B2"])
         expect(names("a")).toEqual(["A1", "A2"])
+    })
+
+    it("always copies slides of a song so its arrangements stay intact", async () => {
+        showsCache.update((cache) => {
+            Object.values(cache.a.slides).forEach((slide: any) => (slide.items = [{ lines: [{ text: [{ value: "Amazing grace", style: "" }] }] }]))
+            return cache
+        })
+        expect(isSongShow("a")).toBe(true)
+        expect(isSongShow("b")).toBe(false)
+
+        await dropOnB("start", 0)
+        expect(names("b")).toEqual(["A2", "B1", "B2"])
+        expect(names("a")).toEqual(["A1", "A2"])
+        expect(get(showsCache).a.layouts.default.slides).toHaveLength(2)
     })
 
     it("uses a new slide id for the slide in the destination", async () => {

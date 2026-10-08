@@ -372,6 +372,15 @@ export function isCrossShowDrop(drag: Selected, drop: DropData): boolean {
     return !!sourceLayout && !!destinationLayout && sourceLayout !== destinationLayout
 }
 
+/**
+ * A song has lyric text in its slides. Its slides are groups that the arrangements point to, so moving one away would break the
+ * arrangement. Shows with only images, media or other non-text slides can be moved.
+ */
+export function isSongShow(showId = ""): boolean {
+    const show = _show(showId || "active").get()
+    return Object.values(show?.slides || {}).some((slide: any) => slide?.items?.some((item: any) => item?.lines?.some((line: any) => line?.text?.some((text: any) => text?.value?.trim()))))
+}
+
 type RemovePlan = { showId: string; layout: string; type: "delete" | "remove"; slides: { id: string; index?: number }[] }
 
 /** What removing a selection from its show takes. Null if a slide group is locked (a locked group can't be moved away). */
@@ -404,8 +413,8 @@ function removeSlides(plan: RemovePlan) {
 }
 
 /**
- * Dragging slides onto a show. By default they move there (added to the destination, then removed from where they came from);
- * `copy` leaves the originals. Two history steps: undo first restores the originals, then removes the added slides.
+ * Dragging slides onto a show. Slides of non-song shows move there (added to the destination, then removed from where they came from);
+ * `copy` leaves the originals, and slides from a song are always copied so the song's arrangements stay intact. Two history steps: undo first restores the originals, then removes the added slides.
  */
 export function dropSlidesOnShow(drag: Selected, drop: DropData, copy = false): boolean {
     const showId: string = drop.data?.showId
@@ -413,6 +422,7 @@ export function dropSlidesOnShow(drag: Selected, drop: DropData, copy = false): 
 
     const sources = splitSelectionBySource(drag.data)
     const removals: RemovePlan[] = []
+    if (!copy && sources.some((source) => isSongShow(source.showId))) copy = true
     if (!copy) {
         for (const source of sources) {
             if (source.showId && !canEditShow(source.showId)) return false
