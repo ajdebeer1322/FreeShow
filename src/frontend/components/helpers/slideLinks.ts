@@ -3,11 +3,14 @@
 
 type LinkableSlide = { linkNext?: boolean } | undefined | null
 
-/** Groups slide indexes to render: pairs for linked slides, single indexes for the rest. */
-export function getSlideLinkGroups(layoutSlides: LinkableSlide[]): number[][] {
+/**
+ * Groups slide indexes to render: pairs for linked slides, single indexes for the rest.
+ * `canLink` can reject a pair (e.g. the outputs changed after linking), which then stays as two single slides.
+ */
+export function getSlideLinkGroups<T extends LinkableSlide>(layoutSlides: T[], canLink?: (first: T, second: T) => boolean): number[][] {
     const groups: number[][] = []
     for (let i = 0; i < layoutSlides.length; i++) {
-        if (layoutSlides[i]?.linkNext && i + 1 < layoutSlides.length) {
+        if (layoutSlides[i]?.linkNext && i + 1 < layoutSlides.length && (!canLink || canLink(layoutSlides[i], layoutSlides[i + 1]))) {
             groups.push([i, i + 1])
             i++
             continue
@@ -22,6 +25,16 @@ export function getLinkedPartner(layoutSlides: LinkableSlide[], index: number): 
     const group = getSlideLinkGroups(layoutSlides).find((a) => a.includes(index))
     if (!group || group.length < 2) return null
     return group[0] === index ? group[1] : group[0]
+}
+
+/**
+ * Slides can only be linked when each one goes to its own output(s). Both need specific outputs (no outputs means every output),
+ * and they can't share one, otherwise the two slides would fight over the same screen when activated together.
+ * Takes the resolved output ids of each slide.
+ */
+export function haveDifferentOutputs(first: string[], second: string[]): boolean {
+    if (!first.length || !second.length) return false
+    return !first.some((id) => second.includes(id))
 }
 
 /** Index of the first slide in a linked pair that contains the index (or the index itself) */

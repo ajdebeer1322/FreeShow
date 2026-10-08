@@ -8,10 +8,10 @@
     import { loadCustomFonts } from "../helpers/fonts"
     import { history } from "../helpers/history"
     import { encodeFilePath, getExtension } from "../helpers/media"
-    import { getActiveOutputs, refreshOut, setOutput } from "../helpers/output"
+    import { getActiveOutputs, refreshOut, resolveOutputIds, setOutput } from "../helpers/output"
     import { getCachedShow } from "../helpers/show"
     import { rememberClickedSlide } from "../helpers/slideTransfer"
-    import { getSlideElement, getSlideLinkGroups } from "../helpers/slideLinks"
+    import { getSlideElement, getSlideLinkGroups, haveDifferentOutputs } from "../helpers/slideLinks"
     import { checkActionTrigger, getFewestOutputLines, getFewestOutputLinesReveal, getItemWithMostLines, updateOut } from "../helpers/showActions"
     import { _show } from "../helpers/shows"
     import Icon from "../helpers/Icon.svelte"
@@ -188,8 +188,9 @@
 
     $: gridMode = mode === "grid" || mode === "simple" || mode === "groups"
 
-    // linked slides share one card (only in the grid views)
-    $: slideGroups = gridMode ? getSlideLinkGroups(layoutSlides) : layoutSlides.map((_, i) => [i])
+    // linked slides share one card (only in the grid views), as long as each one still has a different output
+    const slideOutputIds = (slide: any, show: any, _outputs: any) => resolveOutputIds(slide?.bindings?.length ? slide.bindings : show?.settings?.bindings || [])
+    $: slideGroups = gridMode ? getSlideLinkGroups(layoutSlides, (a, b) => haveDifferentOutputs(slideOutputIds(a, currentShow, $outputs), slideOutputIds(b, currentShow, $outputs))) : layoutSlides.map((_, i) => [i])
 
     // apply any group templates whenever a new slide group is added/updated
     let previousTemplateSignature = ""

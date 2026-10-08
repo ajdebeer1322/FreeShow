@@ -1,15 +1,16 @@
 import { get } from "svelte/store"
 import type { Item, Show, ShowList, Shows, Slide, TrimmedShow, TrimmedShows } from "../../../types/Show"
 import { activeEdit, activeFocus, activePage, activeProject, activeShow, cachedShowsData, customMetadata, dictionary, focusMode, groupNumbers, groups, projects, refreshEditSlide, selected, shows, showsCache, sorted, sortedShowsList } from "../../stores"
+import { newToast } from "../../utils/common"
 import { translateText } from "../../utils/language"
 import { clone, keysToID, removeDuplicates, removeValues, sortByName, sortByNameAndNumber } from "./array"
 import { GetLayout } from "./get"
 import { history } from "./history"
-import { isOutputBound, resolveOutputId } from "./output"
+import { getSlideBindings, isOutputBound, resolveOutputId, resolveOutputIds } from "./output"
 import { loadShows } from "./setShow"
 import { swichProjectItem } from "./showActions"
 import { _show } from "./shows"
-import { getLinkedPartner, getLinkStart } from "./slideLinks"
+import { getLinkedPartner, getLinkStart, haveDifferentOutputs } from "./slideLinks"
 
 // check if name exists and add number
 export function checkName(name = "", showId = "") {
@@ -476,8 +477,25 @@ export function getSelectedSlideIndexes(): number[] {
     return (sel.data || []).map((a: { index?: number }) => a.index).filter((a): a is number => typeof a === "number")
 }
 
+// the outputs a layout slide goes to (its own, otherwise the show's), empty = all outputs
+function getSlideOutputIds(showId: string, slide: { bindings?: string[] } | undefined): string[] {
+    return resolveOutputIds(getSlideBindings(showId, slide?.bindings))
+}
+
+/** Linking needs two slides that go to different outputs, see `haveDifferentOutputs` */
+export function canLinkSlideOutputs(indexes: number[]): boolean {
+    const [first, second] = [...indexes].sort((a, b) => a - b)
+    const showId = get(activeShow)?.id || ""
+    const slides = getLayoutRef().map((a) => a.data)
+    return haveDifferentOutputs(getSlideOutputIds(showId, slides[first]), getSlideOutputIds(showId, slides[second]))
+}
+
 export function linkSlides(indexes: number[]) {
     if (!canLinkSlides(indexes)) return
+    if (!canLinkSlideOutputs(indexes)) {
+        newToast("actions.link_slides_outputs")
+        return
+    }
 
     const first = Math.min(...indexes)
     history({ id: "SHOW_LAYOUT", newData: { key: "linkNext", data: [true], indexes: [first], dataIsArray: false } })

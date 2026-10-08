@@ -837,6 +837,7 @@
         "media_inspector": "Inspector",
         "link_slides": "Link slides",
         "unlink_slides": "Unlink slides",
+        "link_slides_outputs": "Slides can only be linked when each one is set to a different output",
         "remove_binding": "Remove specific outputs",
         "dynamic_values": "Dynamic values",
         "dynamic_value": "Dynamic value",
