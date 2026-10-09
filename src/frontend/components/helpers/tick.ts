@@ -4,6 +4,7 @@ import { playFolder } from "../../utils/shortcuts"
 import { clone } from "./array"
 import { startFolderTimer } from "./output"
 import { OutputHelper } from "./OutputHelper"
+import { debugLog, outputName } from "./debugLog"
 
 export function newSlideTimer(timerId: string, duration: number, folderPath = "") {
     if (duration <= 0) return
@@ -11,6 +12,7 @@ export function newSlideTimer(timerId: string, duration: number, folderPath = ""
     if (get(slideTimers)[timerId]) {
         get(slideTimers)[timerId]?.timer?.clear()
     }
+    debugLog("TIMER", `${outputName(timerId)}: next slide timer started, ${duration}s${folderPath ? " (folder/pdf)" : ""}`)
 
     slideTimers.update((a) => {
         a[timerId] = { time: 0, paused: true, sliderTimer: null, autoPlay: true, max: duration, timer: new Timer(timerEnded, duration * 1000, timerId), data: folderPath }
@@ -23,6 +25,7 @@ export function newSlideTimer(timerId: string, duration: number, folderPath = ""
 
     function timerEnded(id: string) {
         if (!get(slideTimers)[id]) return
+        debugLog("TIMER", `${outputName(id)}: next slide timer ENDED`)
 
         const data = get(slideTimers)[id].data || ""
 

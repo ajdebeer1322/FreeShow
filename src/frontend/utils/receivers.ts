@@ -74,6 +74,7 @@ import { closeApp, save } from "./save"
 import { client } from "./sendData"
 import { previewShortcuts } from "./shortcuts"
 import { restartOutputs } from "./updateSettings"
+import { addDebugEntry, setRemoteDebug } from "../components/helpers/debugLog"
 
 let mainReceiversInitialized = false
 export function setupMainReceivers() {
@@ -158,6 +159,8 @@ const receiveOUTPUTasMAIN: any = {
     },
     REQUEST_DATA_MAIN: () => sendInitialOutputData(),
     MAIN_LOG: (msg: any) => console.info(msg),
+    // log lines from the output windows (debug panel)
+    MAIN_DEBUG: (entry: any) => addDebugEntry(entry),
     ALERT_MAIN: (data: string) => {
         if (!data) return
 
@@ -204,6 +207,7 @@ export const receiveOUTPUTasOUTPUT: any = {
         outputs.set(a)
         previousOutputs = newOutputs
     },
+    DEBUG_ENABLED: (on: boolean) => setRemoteDebug(!!on),
     ALL_OUTPUTS: (a: any) => {
         // used for stage mirror data (hacky fix)
         allOutputs.set(a)

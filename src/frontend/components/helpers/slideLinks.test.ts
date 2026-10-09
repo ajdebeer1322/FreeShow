@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest"
-import { getLinkedPartner, getLinkStart, getSlideLinkGroups, haveDifferentOutputs } from "./slideLinks"
+import { getCardTimer, getLinkedPartner, getLinkGroup, getLinkStart, getSlideLinkGroups, haveDifferentOutputs } from "./slideLinks"
 
 describe("linked slides", () => {
     const slides = [{}, { linkNext: true }, {}, {}, { linkNext: true }, {}]
@@ -39,5 +39,22 @@ describe("linked slides", () => {
         const pair = [{ linkNext: true }, {}, {}]
         expect(getSlideLinkGroups(pair, () => false)).toEqual([[0], [1], [2]])
         expect(getSlideLinkGroups(pair, () => true)).toEqual([[0, 1], [2]])
+    })
+
+    it("finds the whole card for either slide, or just the slide when it is single", () => {
+        expect(getLinkGroup(slides, 1)).toEqual([1, 2])
+        expect(getLinkGroup(slides, 2)).toEqual([1, 2])
+        expect(getLinkGroup(slides, 3)).toEqual([3])
+        expect(getLinkGroup(slides, 1, () => false)).toEqual([1])
+    })
+
+    it("gives a card one next slide timer", () => {
+        // the first slide with a timer sets it for the whole card
+        expect(getCardTimer([{ nextTimer: 8 }, {}], [0, 1])).toBe(8)
+        expect(getCardTimer([{}, { nextTimer: 5 }], [0, 1])).toBe(5)
+        expect(getCardTimer([{ nextTimer: 8 }, { nextTimer: 5 }], [0, 1])).toBe(8)
+        expect(getCardTimer([{}, {}], [0, 1])).toBe(0)
+        // slides outside the card are ignored
+        expect(getCardTimer([{ nextTimer: 8 }, {}, { nextTimer: 3 }], [1, 2])).toBe(3)
     })
 })

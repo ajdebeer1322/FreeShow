@@ -12,6 +12,7 @@
     import { getCachedShow } from "../helpers/show"
     import { rememberClickedSlide } from "../helpers/slideTransfer"
     import { getSlideElement, getSlideLinkGroups, haveDifferentOutputs } from "../helpers/slideLinks"
+    import { debugLog, describeSlide } from "../helpers/debugLog"
     import { checkActionTrigger, getFewestOutputLines, getFewestOutputLinesReveal, getItemWithMostLines, updateOut } from "../helpers/showActions"
     import { _show } from "../helpers/shows"
     import Icon from "../helpers/Icon.svelte"
@@ -102,6 +103,7 @@
         rememberClickedSlide(showId, activeLayout !== currentShow?.settings?.activeLayout ? activeLayout : "", index)
 
         const linked = slideGroups.find((group) => group.length > 1 && group.includes(index))
+        debugLog("CLICK", () => `clicked ${describeSlide({ id: showId, layout: activeLayout, index })}${linked ? `; linked card, activating slides ${linked.join(" + ")}` : "; single slide"}`)
         if (!linked) return activateSlide(e, index)
 
         linked.forEach((linkedIndex) => activateSlide(e, linkedIndex))

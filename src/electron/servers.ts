@@ -110,8 +110,23 @@ function registerIpcBridge(id: ServerName) {
 }
 
 let hasStarted = false
-export function startServers({ ports, max, disabled, data }: MainSendPayloads[Main.SERVER_DATA]) {
-    if (hasStarted) closeServers()
+
+// starts, restarts and stops run one after another: the app restarts the servers several times during startup,
+// and a new server cannot listen until the previous one has released its port
+let serverQueue: Promise<void> = Promise.resolve()
+function enqueue(task: () => Promise<void> | void) {
+    serverQueue = serverQueue.then(task).catch((err) => console.error("Servers:", err))
+    return serverQueue
+}
+
+export function startServers(payload: MainSendPayloads[Main.SERVER_DATA]) {
+    return enqueue(async () => {
+        if (hasStarted) await closeAll()
+        listenServers(payload)
+    })
+}
+
+function listenServers({ ports, max, disabled, data }: MainSendPayloads[Main.SERVER_DATA]) {
     hasStarted = true
 
     const serverList = Object.keys(servers) as ServerName[]
@@ -131,7 +146,7 @@ export function startServers({ ports, max, disabled, data }: MainSendPayloads[Ma
             if ((err as any).code === "EADDRINUSE") {
                 servers[id]!.server.close()
                 console.error(`${id} server port ${servers[id]!.port} already in use`)
-            }
+            } else console.error(`${id} server error:`, err)
         })
 
         function onStarted() {
@@ -153,17 +168,40 @@ export function getServerData(id: ServerName) {
 }
 
 export function closeServers() {
+    return enqueue(closeAll)
+}
+
+// resolves when every server has released its port
+function closeAll() {
     unpublishPorts()
 
     hasStarted = false
     const serverList = Object.keys(servers) as ServerName[]
-    serverList.forEach((id: ServerName) => {
-        if (!servers[id]?.server) return
-        // close socket.io (disconnects clients and closes the underlying http server)
-        servers[id]!.io.close()
+    const closing = serverList.map((id: ServerName) => {
+        const current = servers[id]
+        if (!current?.server) return Promise.resolve()
+
+        const { server, io } = current
         // clear connection state so reconnect counts / max limit don't drift across restarts
-        servers[id]!.connections = {}
+        current.connections = {}
+
+        // a server that never started (disabled) has no port to wait for
+        const closed = server.listening
+            ? new Promise<void>((resolve) => {
+                  server.once("close", () => resolve())
+                  // keep-alive connections would otherwise hold the close back
+                  setTimeout(resolve, 2000)
+              })
+            : Promise.resolve()
+
+        // close socket.io (disconnects clients and closes the underlying http server, which happens asynchronously)
+        io.close()
+        setTimeout(() => server.closeAllConnections(), 0)
+
+        return closed
     })
+
+    return Promise.all(closing).then(() => {})
 }
 
 let responded: { [key: string]: boolean } = {}

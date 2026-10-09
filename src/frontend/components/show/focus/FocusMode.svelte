@@ -11,13 +11,15 @@
     import Loader from "../../main/Loader.svelte"
     import Center from "../../system/Center.svelte"
     import { getAllProjectItems } from "./focus"
+    import { getProjectItemsSignature } from "./projectSignature"
     import FocusItem from "./FocusItem.svelte"
     import ArrangementBar from "../ArrangementBar.svelte"
     import { openArrangementBars } from "../arrangementBar"
     import ArrangementToggle from "../ArrangementToggle.svelte"
     import NextTimerButton from "../NextTimerButton.svelte"
     import { hasNewerUpdate } from "../../../utils/common"
-    import { openProjectItem } from "../project"
+    import { openProjectItem, shouldKeepProjectScroll } from "../project"
+    import { debugLog, isDebugging } from "../../helpers/debugLog"
 
     export let normalView = false
 
@@ -57,14 +59,17 @@
     $: active = (normalView ? $activeShow : $activeFocus) || { id: "", index: undefined, type: undefined }
     let scrollingToActive: any = null
     let previousId = ""
-    // auto scroll to active slide when show or output changes
-    $: if (active || outputIndex !== undefined) scrollToActive()
+    // auto scroll to the active item when it changes (not on every outputted slide change, so the view stays where the user scrolled)
+    $: if (active) scrollToActive()
     async function scrollToActive() {
-        if (!listElem || isScrolling || projectUpdating) return
+        if (!listElem || isScrolling || projectUpdating || shouldKeepProjectScroll()) {
+            if (listElem && shouldKeepProjectScroll()) debugLog("SCROLL", "project view scroll skipped (moving on with key/timer)")
+            return
+        }
 
         // wait until both output and active has updated if they update at mostly the same time
         if (await hasNewerUpdate("FOCUS_SCROLL")) return
-        if (!listElem) return
+        if (!listElem || shouldKeepProjectScroll()) return
 
         let currentId = active.id || ""
         let slideIndex = active.id === outputShowId ? outputIndex || 0 : 0
@@ -106,6 +111,7 @@
         }, 3000)
 
         // scroll to active elem!
+        debugLog("SCROLL", `project view scrolls to "${currentId}" #${index} (slide ${slideIndex}) at ${Math.round(slideTop - fromTop - 80)}px, was at ${Math.round(currentScrollPos)}px`)
         const MARGIN = 80
         listElem.closest(".center")?.scrollTo(0, slideTop - fromTop - MARGIN)
     }
@@ -192,8 +198,39 @@
     // Include arrangement/metadata changes but avoid remounting all thumbnails
     // when slide contents change. Do not mutate the stored project references.
     let projectsItemsList: ProjectShowRef[] = []
-    $: projectItems = JSON.stringify((project?.shows || []).map((item) => ({ ...item, name: (item.type || "show") === "show" ? $showsCache[item.id]?.name : item.name })))
+    // "played" only marks items in the project list and changes every time the project moves on: reloading the whole view for it made it flash
+    $: projectItems = getProjectItemsSignature(project?.shows || [], (id) => $showsCache[id]?.name)
     $: if (projectItems) projectsItemsList = (project?.shows || []).map((item) => ({ ...item }))
+    $: logProjectItemsChange(projectItems)
+
+    let previousProjectItems = ""
+    function logProjectItemsChange(current: string) {
+        if (!isDebugging()) return
+        if (previousProjectItems && previousProjectItems !== current) {
+            const before = JSON.parse(previousProjectItems)
+            const after = JSON.parse(current)
+            const changes: string[] = []
+            for (let i = 0; i < Math.max(before.length, after.length); i++) {
+                const keys = Object.keys({ ...before[i], ...after[i] }).filter((key) => JSON.stringify(before[i]?.[key]) !== JSON.stringify(after[i]?.[key]))
+                if (keys.length) changes.push(`#${i} ${after[i]?.name || before[i]?.name || ""}: ${keys.join(", ")}`)
+            }
+            debugLog("UI", `project view list changed (reloads the list): ${changes.join(" | ") || "order/length"}`)
+        }
+        previousProjectItems = current
+    }
+
+    // the list is replaced when loaded, the old one stays on screen meanwhile (an {#await} would show the loader and rebuild every thumbnail)
+    let projectList: any[] | null = null
+    let loadToken = 0
+    $: loadProjectList(projectsItemsList)
+    async function loadProjectList(items: ProjectShowRef[]) {
+        const token = ++loadToken
+        const started = Date.now()
+        const result = await getAllProjectItems(items)
+        if (token !== loadToken) return
+        if (isDebugging()) debugLog("UI", `project view list ready: ${result.length} items, loaded in ${Date.now() - started}ms${projectList === null ? " (first load: loader shown)" : " (old list stayed on screen)"}`)
+        projectList = result
+    }
 
     onDestroy(() => {
         scrollContainer?.removeEventListener("scroll", scrolling)
@@ -203,39 +240,37 @@
     })
 </script>
 
-{#await getAllProjectItems(projectsItemsList)}
+{#if projectList === null}
     <Center>
         <Loader />
     </Center>
-{:then list}
-    {#if list.length}
-        <div class="list" bind:this={listElem}>
-            {#each list as item, i}
-                <div id={"id_" + getId(item.id) + "_" + i} class="focusId" class:selected={normalView && active.id === item.id && active.index === i} role="none" on:mousedown={() => selectItem(i)} on:focusin={() => selectItem(i)} on:click={() => selectItem(i)}>
-                    <div class="name {item.type === 'section' ? '' : 'context #project_header'}" style={item.color ? `${item.type === "section" ? "" : `background-color: color-mix(in srgb, ${item.color} 20%, var(--primary-darkest));`}border-bottom: 2px solid ${item.color}` : ""} on:contextmenu={() => selected.set({ id: "show", data: [{ index: i, id: item.id, type: item.type }] })}>
-                        <button class="title" type="button" aria-label={item.name} on:click={() => selectItem(i)}>
-                            <Icon id={item.icon || "noIcon"} custom={(item.type || "show") === "show"} white right />
-                            <p>{item.name}</p>
-                            {#if item.layoutInfo?.name}<span class="arrangement">{item.layoutInfo.name}</span>{/if}
-                        </button>
-                        {#if normalView && (item.type || "show") === "show"}
-                            <ArrangementToggle showId={item.id} key={item.id + ":" + i} select={() => selectItem(i)} />
-                            <NextTimerButton showId={item.id} layout={item.layout} select={() => selectItem(i, true)} />
-                        {/if}
-                    </div>
-                    {#if normalView && (item.type || "show") === "show" && $openArrangementBars.includes(item.id + ":" + i)}
-                        <ArrangementBar showId={item.id} layout={item.layout} index={i} />
+{:else if projectList.length}
+    <div class="list" bind:this={listElem}>
+        {#each projectList as item, i (item.id + ":" + i)}
+            <div id={"id_" + getId(item.id) + "_" + i} class="focusId" class:selected={normalView && active.id === item.id && active.index === i} role="none" on:mousedown={() => selectItem(i)} on:focusin={() => selectItem(i)} on:click={() => selectItem(i)}>
+                <div class="name {item.type === 'section' ? '' : 'context #project_header'}" style={item.color ? `${item.type === "section" ? "" : `background-color: color-mix(in srgb, ${item.color} 20%, var(--primary-darkest));`}border-bottom: 2px solid ${item.color}` : ""} on:contextmenu={() => selected.set({ id: "show", data: [{ index: i, id: item.id, type: item.type }] })}>
+                    <button class="title" type="button" aria-label={item.name} on:click={() => selectItem(i)}>
+                        <Icon id={item.icon || "noIcon"} custom={(item.type || "show") === "show"} white right />
+                        <p>{item.name}</p>
+                        {#if item.layoutInfo?.name}<span class="arrangement">{item.layoutInfo.name}</span>{/if}
+                    </button>
+                    {#if normalView && (item.type || "show") === "show"}
+                        <ArrangementToggle showId={item.id} key={item.id + ":" + i} select={() => selectItem(i)} />
+                        <NextTimerButton showId={item.id} layout={item.layout} select={() => selectItem(i, true)} />
                     {/if}
-                    <FocusItem show={{ ...item, index: i }} continuous />
                 </div>
-            {/each}
-        </div>
-    {:else}
-        <Center faded>
-            <T id="empty.general" />
-        </Center>
-    {/if}
-{/await}
+                {#if normalView && (item.type || "show") === "show" && $openArrangementBars.includes(item.id + ":" + i)}
+                    <ArrangementBar showId={item.id} layout={item.layout} index={i} />
+                {/if}
+                <FocusItem show={{ ...item, index: i }} continuous />
+            </div>
+        {/each}
+    </div>
+{:else}
+    <Center faded>
+        <T id="empty.general" />
+    </Center>
+{/if}
 
 <style>
     .list {

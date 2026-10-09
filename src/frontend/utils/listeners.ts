@@ -69,6 +69,7 @@ import { driveConnect } from "./drive"
 import { convertBackgrounds, getFilteredAudioChannels } from "./remoteTalk"
 import { send } from "./request"
 import { arrayToObject, eachConnection, filterObjectArray, sendData, timedout } from "./sendData"
+import { debugOutputsSent } from "../components/helpers/debugLog"
 
 export function storeSubscriber() {
     shows.subscribe(async (data) => {
@@ -196,6 +197,7 @@ export function storeSubscriber() {
         // if (await hasNewerUpdate("LISTENER_OUTPUTS", 15)) return
 
         send(OUTPUT, ["OUTPUTS"], data)
+        debugOutputsSent(data)
         // used for stage mirror data
         send(OUTPUT, ["ALL_OUTPUTS"], data)
         send(REMOTE, ["AUDIO_ROUTING"], getFilteredAudioChannels())

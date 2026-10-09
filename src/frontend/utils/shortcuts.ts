@@ -31,6 +31,7 @@ import { triggerPopupSubmit } from "./popup"
 import { send } from "./request"
 import { save } from "./save"
 import { isTypingTarget } from "./shortcutsHelper"
+import { debugPanelOpen } from "../components/helpers/debugLog"
 
 const menus: TopViews[] = ["show", "edit", "stage", "draw", "settings"]
 
@@ -76,6 +77,8 @@ const shiftCtrlKeys = {
         activePage.set("edit")
     },
     f: () => menuClick("focus_mode"),
+    // debug panel: live state and a copyable log of what the presentation engine does
+    l: () => debugPanelOpen.update((a) => !a),
     n: () => activePopup.set("show"),
     v: () => changeSlidesView(),
     z: () => redo()

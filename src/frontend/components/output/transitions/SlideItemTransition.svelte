@@ -51,7 +51,17 @@
         const lastStateId = Object.keys(currentlyTransitioning).pop()
         if (lastStateId) {
             const lastState = currentlyTransitioning[lastStateId]
-            if (JSON.stringify(lastState.item) === JSON.stringify(item) && JSON.stringify(lastState.lines) === JSON.stringify(lines) && JSON.stringify(lastState.outSlide) === JSON.stringify(outSlide) && JSON.stringify(lastState.currentSlide) === JSON.stringify(currentSlide)) {
+            if (JSON.stringify(lastState.item) === JSON.stringify(item) && JSON.stringify(lastState.lines) === JSON.stringify(lines)) {
+                if (JSON.stringify(lastState.outSlide) === JSON.stringify(outSlide) && JSON.stringify(lastState.currentSlide) === JSON.stringify(currentSlide)) return
+
+                // identical content on another slide (e.g. repeated slides in an arrangement): hold it without a new transition, but keep the slide references up to date
+                lastState.outSlide = clone(outSlide)
+                lastState.currentSlide = clone(currentSlide)
+                currentlyTransitioning = currentlyTransitioning
+                if (currentOut[lastStateId]) {
+                    currentOut[lastStateId] = { ...currentOut[lastStateId], outSlide: clone(outSlide), currentSlide: clone(currentSlide) }
+                    currentOut = currentOut
+                }
                 return
             }
         }

@@ -11,6 +11,7 @@
     import Textbox from "../../slide/Textbox.svelte"
     import { SlideTimeline } from "../../timeline/SlideTimeline"
     import SlideItemTransition from "../transitions/SlideItemTransition.svelte"
+    import { debugRender, isDebugging } from "../../helpers/debugLog"
 
     export let outputId: string
     export let outSlide: OutSlide
@@ -60,6 +61,14 @@
         if (!item) return false
         return !!getItemText(item).length
     }
+
+    // Dynamic values (slide number, timers, variables...) can display differently with identical stored content
+    function hasDynamicContent(item: Item | undefined): boolean {
+        return getItemText(item || null).includes("{")
+    }
+
+    // Lines shown by the currently rendered items (current.lines is updated reactively, so it can't be compared against)
+    let renderedLines = ""
 
     // Compare two items to see if their visible content is identical
     function itemsAreEqual(oldItem: Item | undefined, newItem: Item | undefined): boolean {
@@ -190,11 +199,13 @@
         if (betweenClearingTransition?.type === "none") betweenClearingTransition.duration = 0
 
         if (!currentSlideItems?.length) {
+            debugRender(`slide content cleared (${outSlide?.id}#${outSlide?.index} has no items)`)
             scheduleAutoSizePrecompute([])
             currentItems = []
             // Clear persistent items when no slide content
             persistentItems = []
             persistentItemIndexes = []
+            renderedLines = ""
             current = {
                 outSlide: clone(outSlide),
                 slideData: clone(slideData),
@@ -238,6 +249,9 @@
         const newPersistentItems: Item[] = []
         const transitioningItems: Item[] = []
         const transitioningIndexes: number[] = []
+        // Text items that are identical & visible with the same lines (e.g. repeated slides in an arrangement) keep showing without a transition
+        const linesString = JSON.stringify(lines)
+        let heldTextItems = 0
 
         currentSlide.items.forEach((newItem: Item, newIndex: number) => {
             // Find matching old item by index (position-based matching for slides)
@@ -249,6 +263,9 @@
             if (!hasLinesContent(newItem) && itemsAreEqual(oldItem, newItem)) {
                 newPersistentIndexes.push(newIndex)
                 newPersistentItems.push(clone(newItem))
+            } else if (show && linesString === renderedLines && itemsAreEqual(oldItem, newItem) && !hasDynamicContent(newItem)) {
+                // Identical text item, shown with the same lines: keep it as is (SlideItemTransition just receives the new slide refs)
+                heldTextItems++
             } else {
                 // Item needs to be re-rendered (changed, or has lines content)
                 transitioningIndexes.push(newIndex)
@@ -260,14 +277,16 @@
         persistentItemIndexes = newPersistentIndexes
         persistentItems = newPersistentItems
 
+        if (isDebugging()) debugRender(`slide content update: ${outSlide?.id}#${outSlide?.index}, items ${currentItems.length} -> ${currentSlide.items.length}: ${persistentItems.length} persistent, ${heldTextItems} held, ${transitioningItems.length} re-rendered (hide + show cycle)${transitionEnabled ? `, transition ${currentTransitionDuration}ms` : ", no transition"}`)
+
         // between
         const isDifferentSlide = current.currentSlide?.id !== currentSlide?.id || current.outSlide?.index !== outSlide?.index || current.outSlide?.id !== outSlide?.id
         if (isDifferentSlide && currentItems.length && currentSlide.items.length) transitioningBetween = true
 
         if (timeout) clearTimeout(timeout)
 
-        // If all items are persistent (unchanged), skip the show/hide cycle entirely
-        if (transitioningItems.length === 0 && persistentItems.length > 0) {
+        // If all items are persistent/held (unchanged), skip the show/hide cycle entirely
+        if (transitioningItems.length === 0 && (persistentItems.length > 0 || heldTextItems > 0)) {
             // Just update the context without triggering transitions
             current = {
                 outSlide: clone(outSlide),
@@ -277,6 +296,7 @@
                 currentStyle: clone(currentStyle)
             }
             // Keep currentItems in sync but don't toggle show
+            renderedLines = linesString
             currentItems = clone(currentSlide.items || [])
             transitioningBetween = false
             return
@@ -287,6 +307,7 @@
         // wait for between to update out transition
         timeout = setTimeout(() => {
             if (gen !== updateGeneration) return
+            debugRender("slide content hidden (show = false)")
             show = false
 
             // wait for previous items to start fading out (svelte will keep them until the transition is done!)
@@ -295,6 +316,7 @@
                 // Only include items that need transitioning in currentItems
                 // Persistent items are rendered separately
                 currentItems = clone(currentSlide.items || [])
+                renderedLines = linesString
                 current = {
                     outSlide: clone(outSlide),
                     slideData: clone(slideData),
@@ -306,6 +328,7 @@
                 // wait until half transition duration of previous items have passed as it looks better visually
                 timeout = setTimeout(() => {
                     if (gen !== updateGeneration) return
+                    debugRender("slide content shown again (show = true)")
                     show = true
 
                     // wait for between to set in transition

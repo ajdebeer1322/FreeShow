@@ -6,6 +6,7 @@
     import Navigation from "./components/edit/Navigation.svelte"
     import LazyLoad from "./components/helpers/LazyLoad.svelte"
     import ProfileChangerMenu from "./components/main/ProfileChangerMenu.svelte"
+    import DebugPanel from "./components/main/DebugPanel.svelte"
     import Tipbar from "./components/main/Tipbar.svelte"
     import Top from "./components/main/Top.svelte"
     import Preview from "./components/output/preview/Preview.svelte"
@@ -13,6 +14,7 @@
     import Icon from "./components/helpers/Icon.svelte"
     import MaterialButton from "./components/inputs/MaterialButton.svelte"
     import { startMessageTimers } from "./components/helpers/messageOutput"
+    import { debugPanelOpen } from "./components/helpers/debugLog"
     import SettingsTabs from "./components/settings/SettingsTabs.svelte"
     import Projects from "./components/show/Projects.svelte"
     import Show from "./components/show/Show.svelte"
@@ -162,6 +164,10 @@
     {/if}
 
     <Tipbar />
+
+    {#if $debugPanelOpen}
+        <DebugPanel />
+    {/if}
 </div>
 
 <style>

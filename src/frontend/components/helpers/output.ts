@@ -68,6 +68,8 @@ import { createDestination, hasStreamableDestination } from "./rtmpDestinations"
 import { getLayoutRef } from "./show"
 import { getFewestOutputLines, getItemWithMostLines } from "./showActions"
 import { _show } from "./shows"
+import { getLinkGroup, haveDifferentOutputs } from "./slideLinks"
+import { callerNames, debugLog, describeOutputData, isDebugging, outputNames } from "./debugLog"
 import { getStyles } from "./style"
 
 // Resolve output ID or name to matching local output ID
@@ -99,6 +101,12 @@ export function getSlideBindings(showId: string | undefined, slideBindings?: str
     if (slideBindings?.length) return slideBindings
     if (!showId) return []
     return _show(showId).get("settings.bindings") || []
+}
+
+// the slides of a linked card (see helpers/slideLinks.ts), as long as each one still goes to different outputs
+export function getLinkedSlides(showId: string, layoutSlides: { linkNext?: boolean; bindings?: string[] }[], index: number): number[] {
+    const outputIds = (slide: { bindings?: string[] }) => resolveOutputIds(getSlideBindings(showId, slide?.bindings))
+    return getLinkGroup(layoutSlides, index, (a, b) => haveDifferentOutputs(outputIds(a), outputIds(b)))
 }
 
 export function updateSyncedOutputs() {
@@ -158,6 +166,11 @@ export function setOutput(type: string, data: any, toggle = false, outputId = ""
     const allOutputIds = resolvedBindings.length ? resolvedBindings : getActiveOutputs(get(outputs), true, false, true)
     const resolvedOutputId = outputId ? resolveOutputId(outputId) || outputId : ""
     const outs = resolvedOutputId ? [resolvedOutputId] : allOutputIds
+
+    if (isDebugging() && ["slide", "background", "transition", "overlays", "effects", "audio"].includes(type)) {
+        const target = outputId ? "asked for " + outputNames([resolvedOutputId]).join(",") : resolvedBindings.length ? "slide is bound to " + outputNames(resolvedBindings).join(",") : "all active outputs"
+        debugLog("SET", `${type} -> ${outputNames(outs).join(", ") || "nobody"} (${target}${toggle ? ", toggle" : ""}${add ? ", add" : ""}): ${describeOutputData(type, data)}  from: ${callerNames(2, 4)}`)
+    }
 
     // track usage (& set attributionString)
     if (type === "slide" && data?.id) {

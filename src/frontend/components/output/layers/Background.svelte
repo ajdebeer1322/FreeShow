@@ -3,6 +3,7 @@
     import type { OutBackground, Transition } from "../../../../types/Show"
     import { clone } from "../../helpers/array"
     import BackgroundMedia from "./BackgroundMedia.svelte"
+    import { debugRender } from "../../helpers/debugLog"
 
     export let data: OutBackground
     export let outputId: string
@@ -31,13 +32,19 @@
     let timeout: NodeJS.Timeout | null = null
     let tooRapid: NodeJS.Timeout | null = null
     let tryAgain = false
+    const bgName = (bg: any) =>
+        String(bg?.path || bg?.id || "-")
+            .split("/")
+            .pop()
     $: if (data) createBackground()
     function createBackground() {
         // prevent svelte bug creating multiple items if creating new while old clears
         if (tooRapid) {
+            debugRender(`background ${bgName(data)}: changed again within ${Math.round(duration / 2)}ms, will retry`)
             tryAgain = true
             return
         }
+        debugRender(`background: ${bgName(data)} (was ${bgName(background1)} / ${bgName(background2)}), fade ${duration}ms`)
         tooRapid = setTimeout(() => {
             tooRapid = null
             if (tryAgain) createBackground()

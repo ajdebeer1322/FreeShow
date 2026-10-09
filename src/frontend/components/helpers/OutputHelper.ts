@@ -9,25 +9,115 @@ import { activeFocus, activeProject, activeShow, focusMode, outLocked, outputs, 
 import { playFolder, togglePlayingMedia } from "../../utils/shortcuts"
 import { openProjectItem } from "../show/project"
 import { clone } from "./array"
-import { getAllActiveOutputIds, getSlideBindings, isOutputBound, setOutput } from "./output"
+import { getAllActiveOutputIds, getLinkedSlides, getSlideBindings, isOutputBound, setOutput } from "./output"
 import { checkActionTrigger, getFewestOutputLines, getItemWithMostLines, playPdf, updateOut } from "./showActions"
+import { loadShows } from "./setShow"
 import { _show } from "./shows"
 import { runActionId } from "../actions/actions"
+import { clearTimers } from "../output/clear"
+import { debugLog, describeOutputs, describeSlide, isDebugging, outputName, outputNames } from "./debugLog"
 
-type Options = { isSpace: boolean; slideLayers: boolean; playNext: boolean }
+type Options = { isSpace: boolean; slideLayers: boolean; playNext: boolean; selectOnly?: boolean }
 
 export class OutputHelper {
     static advanceOutputs(e: KeyboardEvent | "next" | "previous" = "next") {
-        getAllActiveOutputIds().forEach((id) => {
-            if (typeof e === "string") this.advanceOutput(id, e === "next" ? "ArrowRight" : "ArrowLeft")
-            else this.advanceOutput(id, e.key, { slideLayers: !e.altKey })
+        const triggerKey = typeof e === "string" ? (e === "next" ? "ArrowRight" : "ArrowLeft") : e.key
+        const outputIds = getAllActiveOutputIds()
+        const waiting = this.getLinkedWaiting(outputIds, triggerKey)
+        this.clearLeftBehind(this.getCardOutputs(outputIds))
+
+        if (isDebugging()) {
+            const keyName = triggerKey === " " ? "Space" : triggerKey || "(button)"
+            debugLog("KEY", [`${keyName} pressed. Before:`, ...describeOutputs().map((a) => "    " + a), ...outputIds.map((id) => `    ${outputName(id)} would: ${this.debugPeek(id, triggerKey !== "ArrowLeft" && triggerKey !== "PageUp")}`), `    waiting for the linked slide: ${waiting.length ? outputNames(waiting).join(", ") : "none"}`].join("\n"))
+        }
+
+        outputIds.forEach((id) => {
+            if (waiting.includes(id)) return
+
+            if (typeof e === "string") this.advanceOutput(id, triggerKey)
+            else this.advanceOutput(id, triggerKey, { slideLayers: !e.altKey })
         })
+    }
+
+    // The outputs that currently show a slide of a linked card, grouped per card
+    private static getCardOutputs(outputIds: string[]): Record<string, { id: string; slide: OutSlide }[]> {
+        const cards: Record<string, { id: string; slide: OutSlide }[]> = {}
+
+        outputIds.forEach((id) => {
+            const outSlide = this.getOut(id).slide || null
+            if (!outSlide || !this.isShow(outSlide) || typeof outSlide.index !== "number") return
+
+            const card = getLinkedSlides(
+                outSlide.id,
+                this.getShowLayout(outSlide).map((a) => a.data),
+                outSlide.index
+            )
+            if (card.length < 2) return
+
+            const key = [outSlide.id, outSlide.layout || "", card[0]].join("|")
+            if (!cards[key]) cards[key] = []
+            cards[key].push({ id, slide: clone(outSlide) })
+        })
+
+        return cards
+    }
+
+    // A linked card steps as one slide. While one output of the card is still going through its lines/reveals,
+    // the other outputs of the card stay on their slide instead of jumping ahead on their own.
+    private static getLinkedWaiting(outputIds: string[], triggerKey: string): string[] {
+        if (triggerKey === "Home" || triggerKey === "End") return []
+        const next = triggerKey !== "ArrowLeft" && triggerKey !== "PageUp"
+
+        return Object.values(this.getCardOutputs(outputIds)).flatMap((members) => {
+            // staying on the same slide = another line or reveal of it
+            const isStepping = (member: { id: string; slide: OutSlide }) => this.getSubsequent(member.id, member.slide, next)?.index === member.slide.index
+            if (!members.some(isStepping)) return []
+            return members.filter((member) => !isStepping(member)).map((member) => member.id)
+        })
+    }
+
+    // When a card is left, an output that gets no new slide (the next slide is meant for another output) must not keep showing the slide of its half of the card.
+    // Its background stays: it is remembered like for any slide that has none of its own.
+    // This is checked on every output change, so it is cleared in the same update as the output that moved on (no flash of the old half).
+    private static clearLeftBehind(cards: Record<string, { id: string; slide: OutSlide }[]>) {
+        if (!Object.keys(cards).length) return
+
+        const isSame = (member: { id: string; slide: OutSlide }) => {
+            const slide = get(outputs)[member.id]?.out?.slide
+            return !!slide && slide.id === member.slide.id && (slide.layout || "") === (member.slide.layout || "") && slide.index === member.slide.index
+        }
+
+        const check = () => {
+            Object.values(cards).forEach((members) => {
+                if (members.every(isSame)) return
+                members.filter(isSame).forEach((member) => {
+                    debugLog("CLEAR", () => `${outputName(member.id)}: slide cleared (was ${describeSlide(member.slide)}) after the linked card was left by another output, its background stays`)
+                    clearTimers(member.id, false)
+                    setOutput("slide", null, false, member.id)
+                })
+            })
+        }
+
+        // the next slide is set after a short delay (custom actions, timers, loading the next show)
+        let started = false
+        const unsubscribe = outputs.subscribe(() => {
+            if (started) check()
+        })
+        started = true
+        setTimeout(unsubscribe, 1500)
     }
 
     // play next slide or item in project
     // continue from outputted, or play active
-    static advanceOutput(outputId: string, triggerKey: string = "", options: { slideLayers?: boolean; playNext?: boolean } = {}) {
-        if (get(outLocked)) return
+    static advanceOutput(outputId: string, triggerKey: string = "", options: { slideLayers?: boolean; playNext?: boolean; followLinked?: boolean } = {}) {
+        if (get(outLocked)) {
+            debugLog("ADVANCE", `${outputName(outputId)}: ignored, outputs are locked`)
+            return
+        }
+        if (options.playNext || options.followLinked === false) debugLog("ADVANCE", `${outputName(outputId)}: ${options.followLinked === false ? "moved along with its linked slide" : "timer / next-after-media ended"}`)
+
+        // a timer ends per output, but a linked card is one slide: the other outputs showing the card move on with it
+        if (options.playNext && options.followLinked !== false && this.advanceLinkedOutputs(outputId, triggerKey, options)) return
 
         // blur to remove tab highlight from slide after clicked, and using arrows
         if (document.activeElement?.closest(".slide") && !document.activeElement?.closest(".edit")) (document.activeElement as HTMLElement).blur()
@@ -45,6 +135,41 @@ export class OutputHelper {
         if (triggerKey === "ArrowLeft" || triggerKey === "PageUp") return this.playPrevious(outputId, opts)
 
         this.playNext(outputId, opts) // ArrowRight, PageDown, Space
+    }
+
+    // returns true when this output should wait (another output of its card is still stepping through its lines)
+    private static advanceLinkedOutputs(outputId: string, triggerKey: string, options: { slideLayers?: boolean; playNext?: boolean }): boolean {
+        const outSlide = this.getOut(outputId).slide
+        if (!outSlide || !this.isShow(outSlide) || typeof outSlide.index !== "number") return false
+
+        const layoutRef = this.getShowLayout(outSlide)
+        const card = getLinkedSlides(
+            outSlide.id,
+            layoutRef.map((a) => a.data),
+            outSlide.index
+        )
+        if (card.length < 2) return false
+
+        const others = getAllActiveOutputIds().filter((id) => {
+            if (id === outputId) return false
+
+            const otherSlide = this.getOut(id).slide
+            if (!otherSlide || otherSlide.id !== outSlide.id || (otherSlide.layout || "") !== (outSlide.layout || "")) return false
+            return card.includes(otherSlide.index ?? -1)
+        })
+
+        // this output's timer ended, but if another one still has lines left it keeps going and this one waits
+        const waiting = this.getLinkedWaiting([outputId, ...others], triggerKey || "ArrowRight")
+        this.clearLeftBehind(this.getCardOutputs([outputId, ...others]))
+        debugLog("LINK", `${outputName(outputId)}'s timer ended on a linked card (slides ${card.join("+")}). Moving along: ${others.length ? outputNames(others).join(", ") : "nobody else"}. Waiting: ${waiting.length ? outputNames(waiting).join(", ") : "nobody"}`)
+
+        others.forEach((id) => {
+            // its own timer would otherwise move it on a second time
+            clearTimers(id, false)
+            if (!waiting.includes(id)) this.advanceOutput(id, triggerKey, { ...options, followLinked: false })
+        })
+
+        return waiting.includes(outputId)
     }
 
     /////
@@ -81,9 +206,20 @@ export class OutputHelper {
         const show = this.getShow(outputId, next, options)
         if (show) {
             const newSlide = this.getSubsequent(outputId, show, next)
-            if (!newSlide) return this.changeProjectItem(outputId, show, next, options)
+            if (!newSlide) {
+                // this show is not meant for this output (e.g. it only goes to another screen): that screen decides when to change project item
+                if (this.showIsForOtherOutput(outputId, show, next)) {
+                    debugLog("PLAY", () => `${outputName(outputId)}: no ${next ? "next" : "previous"} slide after ${describeSlide(show)}; another output still has slides to go in this show, so it stays and does NOT change project item`)
+                    return
+                }
+                debugLog("PLAY", () => `${outputName(outputId)}: no ${next ? "next" : "previous"} slide after ${describeSlide(show)}; going to the ${next ? "next" : "previous"} project item`)
+                return this.changeProjectItem(outputId, show, next, options)
+            }
 
-            if (!options.playNext && this.quickChangeBack(outputId, show, next, options)) return
+            if (!options.playNext && this.quickChangeBack(outputId, show, next, options)) {
+                debugLog("PLAY", `${outputName(outputId)}: quick change back to the active project item`)
+                return
+            }
 
             this.playSlide(outputId, newSlide, options.slideLayers)
             return
@@ -92,10 +228,48 @@ export class OutputHelper {
         const item = this.getItem(outputId, next, options)
         if (!item) {
             if (options.isSpace && this.toggleActiveMedia(outputId)) return
+            debugLog("PLAY", `${outputName(outputId)}: no show to continue from, changing project item from the active item`)
             return this.changeProjectItem(outputId, this.getActiveItem(), next, options)
         }
+        debugLog("PLAY", `${outputName(outputId)}: playing project item "${item.id}" (${item.type || "show"})`)
 
         this.playItem(outputId, item, next, options)
+    }
+
+    // for the debug panel: what pressing next/previous would do for this output, without doing it
+    static debugPeek(outputId: string, next = true): string {
+        try {
+            const show = this.getShow(outputId, next, { isSpace: true })
+            if (!show) return "continue from a project item that is not a show"
+
+            const target = this.getSubsequent(outputId, show, next)
+            if (target) return `go to ${describeSlide(target)}`
+            if (this.showIsForOtherOutput(outputId, show, next)) return `stay (another output still has slides to go in this show)`
+            return `change project item (no ${next ? "next" : "previous"} slide after ${describeSlide(show)})`
+        } catch (error) {
+            return "error: " + String(error)
+        }
+    }
+
+    // Another active output still has slides to go in this show, so it decides when the project moves on (an output that has run out of its own
+    // slides, or has none in this show, must not push the project on while the others are still in it). Once the others are at the end too,
+    // this output moves on with them, otherwise it would stay one slide behind.
+    private static showIsForOtherOutput(outputId: string, show: OutSlide, next = true) {
+        const layoutRef = this.getShowLayout(show)
+        const hasSlides = (id: string) => layoutRef.some((ref) => !this.slideCannotBeOutputted(id, ref, show.id))
+        const mine = hasSlides(outputId)
+
+        return getAllActiveOutputIds().some((id) => {
+            if (id === outputId || !hasSlides(id)) return false
+
+            // where the output is now (not the pending slide of an output that was already handled during this key press)
+            const outSlide = get(outputs)[id]?.out?.slide
+            const inShow = !!outSlide && outSlide.id === show.id && (outSlide.layout || "") === (show.layout || "")
+
+            // an output that has not started this show does not hold back an output that has slides in it
+            if (!inShow && mine) return false
+            return !!this.getSubsequent(id, inShow ? outSlide : show, next)
+        })
     }
 
     // don't go to next if active is same as currently outputted video/audio
@@ -123,7 +297,8 @@ export class OutputHelper {
         if (projectItems[active.index + (next ? 1 : -1)]?.id !== show.id) return false
         if (next ? this.getPreviousSlide(outputId, show) : this.getNextSlide(outputId, show)) return false
 
-        this.changeProjectItem(outputId, active, next, options)
+        // this only selects the outputted show again, it is already playing
+        this.changeProjectItem(outputId, active, next, { ...options, selectOnly: true })
         return true
     }
 
@@ -133,7 +308,10 @@ export class OutputHelper {
         const projectItems = this.getProjectItems()
         const projectItemIndex = this.getProjectItemIndex(item)
         let newIndex = projectItemIndex + (next ? 1 : -1)
-        if (!projectItems[newIndex]) return
+        if (!projectItems[newIndex]) {
+            debugLog("PROJECT", `${outputName(outputId)}: project item #${projectItemIndex} is the ${next ? "last" : "first"} one, nothing to change to`)
+            return
+        }
 
         // update mark as played
         projects.update((a) => {
@@ -172,22 +350,39 @@ export class OutputHelper {
         const newItem = projectItems[newIndex]
         if (!newItem) return
 
+        debugLog("PROJECT", `${outputName(outputId)}: project item #${projectItemIndex} -> #${newIndex} "${newItem.name || newItem.id}" (${newItem.type || "show"}), ${(newItem.type || "show") === "show" ? "will play it directly" : options.playNext ? "will play it" : "only selecting it"}`)
         this.runSectionAction(newItem)
 
-        openProjectItem(get(activeProject) || "", newIndex)
+        // a show is played right away (see below), so the project view stays where it is
+        // (once is enough: every output of a key press comes here)
+        const opened = get(activeShow)
+        if (opened?.id !== newItem.id || opened?.index !== newIndex) openProjectItem(get(activeProject) || "", newIndex, !(((newItem.type || "show") === "show" && !options.selectOnly) || options.playNext))
+        else debugLog("PROJECT", `project item #${newIndex} is already open`)
 
-        // play directly from "Next slide timer" & "nextAfterMedia"
-        if (options.playNext) {
-            if ((newItem.type || "show") === "show") {
-                // allow show to load first
-                setTimeout(() => {
-                    const newOut = this.getSubsequent(outputId, { id: newItem.id, layout: newItem.layout }, next)
-                    if (newOut) this.playSlide(outputId, newOut, options.slideLayers)
-                }, 10)
-            } else {
-                this.playItem(outputId, newItem, next, options)
-            }
+        // a show is played directly (key, button, "Next slide timer" & "nextAfterMedia"), so going to the next show doesn't take an extra key press
+        if (options.selectOnly) {
+            // just selected (see quickChangeBack)
+        } else if ((newItem.type || "show") === "show") {
+            this.playShowItem(outputId, newItem, newIndex, next, options)
+        } else if (options.playNext) {
+            this.playItem(outputId, newItem, next, options)
         }
+    }
+
+    // play the first (or last) slide of a project show once it has loaded. A show without any slides is skipped.
+    private static playShowItem(outputId: string, item: ProjectShowRef, projectIndex: number, next: boolean, options: Options) {
+        // allow show to load first
+        loadShows([item.id]).then(() => {
+            setTimeout(() => {
+                const showRef = { id: item.id, layout: item.layout }
+                const newOut = this.getSubsequent(outputId, showRef, next)
+                if (newOut) return this.playSlide(outputId, newOut, options.slideLayers)
+
+                if (this.getShowLayout(showRef).length) return
+                debugLog("PROJECT", `${outputName(outputId)}: "${item.name || item.id}" has no slides at all, skipping it`)
+                this.changeProjectItem(outputId, { ...showRef, projectIndex }, next, options)
+            }, 10)
+        })
     }
 
     private static runSectionAction(item: ProjectShowRef | undefined) {
@@ -500,6 +695,7 @@ export class OutputHelper {
         checkActionTrigger(layoutData, data.index, data.id)
 
         this.pendingSlides[outputId] = data
+        debugLog("PLAY", () => `${outputName(outputId)} <- ${describeSlide(data)}`)
 
         // allow custom actions to trigger first
         setTimeout(() => {

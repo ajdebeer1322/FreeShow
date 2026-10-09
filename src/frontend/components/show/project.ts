@@ -5,6 +5,7 @@ import { similarity } from "../../converters/txt"
 import { activeEdit, activeProject, activeShow, projects, projectView, saved, showRecentlyUsedProjects, shows, showsCache } from "../../stores"
 import { generateScriptureShowFromReference } from "../drawer/bible/scripture"
 import { keysToID, sortByTimeNew } from "../helpers/array"
+import { debugLog } from "../helpers/debugLog"
 import { history } from "../helpers/history"
 
 export function openProject(id: string, openFirstItem: boolean = true) {
@@ -31,7 +32,17 @@ function markProjectAsUsed(id: string) {
     })
 }
 
-export function openProjectItem(id: string, index: number = 0) {
+// The project view scrolls to the selected item. Moving on with the keys or a timer plays the next item straight away,
+// and must not jump the view away from where the operator is looking.
+let keepScrollUntil = 0
+export function shouldKeepProjectScroll() {
+    return Date.now() < keepScrollUntil
+}
+
+export function openProjectItem(id: string, index: number = 0, scroll = true) {
+    debugLog("PROJECT", `openProjectItem #${index}, project view ${scroll ? "may scroll to it" : "must NOT scroll"}`)
+    if (!scroll) keepScrollUntil = Date.now() + 1500
+
     const projectItems = get(projects)[id]?.shows || []
     if (!projectItems.length) return
 
@@ -48,6 +59,8 @@ export function openProjectItem(id: string, index: number = 0) {
             const show = get(showsCache)[item.id]
             if (!show?.settings) return
             if (!show.layouts?.[storedLayout]) return
+            // no update when it is already the arrangement: the cache is sent to the output windows on every change
+            if (show.settings.activeLayout === storedLayout) return
 
             showsCache.update((a) => {
                 a[item.id].settings.activeLayout = storedLayout

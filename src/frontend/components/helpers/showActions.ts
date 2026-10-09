@@ -61,12 +61,14 @@ import {
 } from "./../../stores"
 import { clone, keysToID, sortByName } from "./array"
 import { downloadOnlineMedia, encodeFilePath, getExtension, getFileName, getMedia, getMediaStyle, getMediaType, removeExtension } from "./media"
-import { defaultLayers, getActiveOutputs, getAllActiveOutputIds, getAllNormalOutputs, getAllStageOutputs, getFirstActiveOutput, getFirstOutput, getWindowOutputId, getSlideBindings, isOutCleared, isOutputBound, refreshOut, resolveOutputId, resolveOutputIds, setOutput, startFolderTimer } from "./output"
+import { defaultLayers, getActiveOutputs, getAllActiveOutputIds, getAllNormalOutputs, getAllStageOutputs, getFirstActiveOutput, getFirstOutput, getLinkedSlides, getWindowOutputId, getSlideBindings, isOutCleared, isOutputBound, refreshOut, resolveOutputId, resolveOutputIds, setOutput, startFolderTimer } from "./output"
 import { OutputHelper } from "./OutputHelper"
 import { getSetChars } from "./randomValue"
 import { loadShows } from "./setShow"
 import { getCustomMetadata, getGroupName, getLayoutRef } from "./show"
 import { _show } from "./shows"
+import { getCardTimer } from "./slideLinks"
+import { debugLog, describeSlide, isDebugging, outputNames } from "./debugLog"
 import { addZero, getMonthName, getWeekday, joinTime, joinTimeBig, secondsToTime } from "./time"
 import { stopTimers } from "./timerTick"
 
@@ -335,7 +337,11 @@ export function updateOut(showId: string, index: number, layout: LayoutRef[], ex
     // let slideLines = showSlide ? getItemWithMostLines(showSlide) : null
     // let outputWithLines = getOutputWithLines() || 0
     // let maxLines = slideLines && outSlide.index !== null ? (outputWithLines >= slideLines ? 0 : Math.ceil(slideLines / outputWithLines)) : 0
-    const duration = data.nextTimer
+    // a linked card is one slide, so every slide in it gets the same timer
+    const layoutData = layout.map((a) => a.data)
+    const linkedSlides = getLinkedSlides(showId, layoutData, index)
+    const duration = linkedSlides.length > 1 ? getCardTimer(layoutData, linkedSlides) : data.nextTimer
+    if (isDebugging()) debugLog("UPDATEOUT", `slide ${describeSlide({ id: showId, index })}: outputs ${outputNames(outputIds).join(", ")}; own timer ${data.nextTimer || 0}s, ${linkedSlides.length > 1 ? `linked card ${linkedSlides.join("+")} -> timer ${duration}s` : "not linked"}${specificOutputId ? `; only for ${outputNames([specificOutputId])}` : ""}`)
     // if (maxLines) duration /= maxLines
 
     // find any selected output with no lines

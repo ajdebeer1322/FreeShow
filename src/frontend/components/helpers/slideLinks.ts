@@ -37,6 +37,23 @@ export function haveDifferentOutputs(first: string[], second: string[]): boolean
     return !first.some((id) => second.includes(id))
 }
 
+/** All slide indexes of the card that contains the index (just the index itself for a single slide) */
+export function getLinkGroup<T extends LinkableSlide>(layoutSlides: T[], index: number, canLink?: (first: T, second: T) => boolean): number[] {
+    return getSlideLinkGroups(layoutSlides, canLink).find((a) => a.includes(index)) || [index]
+}
+
+/**
+ * A linked card is one slide, so it has one next slide timer: the first slide in the card with a timer sets it for every slide.
+ * Without a card the slide keeps its own timer.
+ */
+export function getCardTimer(layoutSlides: ({ nextTimer?: number } | undefined | null)[], group: number[]): number {
+    for (const index of group) {
+        const timer = Number(layoutSlides[index]?.nextTimer || 0)
+        if (timer > 0) return timer
+    }
+    return 0
+}
+
 /** Index of the first slide in a linked pair that contains the index (or the index itself) */
 export function getLinkStart(layoutSlides: LinkableSlide[], index: number): number {
     return getSlideLinkGroups(layoutSlides).find((a) => a.includes(index))?.[0] ?? index
