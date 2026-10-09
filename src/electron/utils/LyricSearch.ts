@@ -50,9 +50,7 @@ export class LyricSearch {
             for (const searchedSong of searchedSongs) {
                 if (searchedSong.id.toString() === song.key) {
                     result = await searchedSong.lyrics()
-                    // remove extra song info
-                    const songInfo = result.indexOf("Read More")
-                    if (songInfo > -1) result = result.slice(songInfo + 9).trim()
+                    result = LyricSearch.cleanGeniusLyrics(result)
                     break
                 }
             }
@@ -61,6 +59,21 @@ export class LyricSearch {
             console.error(err)
             return ""
         }
+    }
+
+    // remove the page header Genius puts in front of the lyrics
+    // ("62 ContributorsTranslationsItalianoO Holy Night Lyrics[Verse 1]", with "Read More" after the description if the song has one)
+    private static cleanGeniusLyrics = (lyrics: string) => {
+        let result = lyrics
+
+        const songInfo = result.indexOf("Read More")
+        if (songInfo > -1) result = result.slice(songInfo + 9).trim()
+
+        // the header is the first line, ending with "Lyrics", directly followed by the first [Section]
+        const header = result.match(/^[^\n]{0,400}?Lyrics\s*(?=\[)/)
+        if (header) result = result.slice(header[0].length).trim()
+
+        return result
     }
 
     private static convertGenuisToResult = (geniusResult: any, originalQuery: string) => {

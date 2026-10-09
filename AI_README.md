@@ -68,6 +68,7 @@ This is a source-navigation and change-planning reference, not end-user document
 | Bottom drawer tabs, open/closed size, search | `components/drawer/Drawer.svelte`, `Content.svelte`, `Navigation.svelte`; `values/tabs.ts`.                                        |
 | Media library, folders and thumbnails        | `components/drawer/` and `components/media/`; search `mediaFolders`, `MediaLoader`, `VirtualList`.                                 |
 | Show creation popup                          | `components/main/popups/createShow/CreateShow.svelte`; `converters/txt.ts`; `classes/Show.ts`.                                     |
+| Web lyrics search and Genius cleanup         | `components/main/popups/createShow/WebSearch.svelte`; `electron/utils/LyricSearch.ts` (`cleanGeniusLyrics`).                       |
 | Editing text/items/slide styles              | `components/edit/`; `show/slides.ts`; history helpers.                                                                             |
 | Context menus and action dispatch            | `components/context/menuClick.ts` and context components/definitions.                                                              |
 | Presentation preview and rendered output     | `components/output/`; `MainOutput.svelte`; `helpers/output.ts`, `OutputHelper.ts`, `showActions.ts`.                               |
