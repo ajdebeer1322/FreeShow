@@ -382,6 +382,7 @@ export const contextMenuLayouts: { [key: string]: string[] } = {
 
     // SHOWS
     slide: ["GROUP_edit", "slideGroups", "actions", "bind_to", "media_inspector", "link_slides", "unlink_slides", "format", "remove_layers", "slide_transition", "disable", "SEPARATOR", "copy", "paste", "duplicate", "make_unique", "GROUP_slide_remove"],
+    arrangement_token: ["remove_group"],
     slideChild: ["GROUP_edit", "slideGroups", "actions", "bind_to", "media_inspector", "link_slides", "unlink_slides", "format", "remove_layers", "slide_transition", "disable", "SEPARATOR", "copy", "paste", "duplicate", "make_unique", "GROUP_slide_remove"],
     slideFake: ["convert_to_regular"],
     slideFocus: ["editSlideText"],

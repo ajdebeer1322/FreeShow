@@ -663,6 +663,8 @@ const deleteActions = {
         }
     },
     slide: (data, type: "delete" | "remove" = "delete") => {
+        // slides selected in the arrangement bar are only removed from the arrangement
+        if (Array.isArray(data) && data.length && data.every((a) => a?.arrangementBar)) type = "remove"
         removeSlide(data, type)
         if (get(activePage) === "edit") refreshEditSlide.set(true)
     },

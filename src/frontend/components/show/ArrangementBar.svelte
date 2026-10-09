@@ -137,8 +137,9 @@
             <DropArea id="slides" data={{ showId, layout: layoutId, arrangementBar: true }} hoverTimeout={0}>
                 <div class="tokens">
                     {#each orderTokens as token}
-                        <SelectElem id="slide" data={{ index: token.index, showId, ...selectLayout }} draggable={!isLocked} selectable={!isLocked} trigger="row" borders="edges">
-                            <span class="token" class:disabled={token.disabled} class:active={outIndex >= token.index && outIndex <= token.end} style={tokenStyle(token.color)}>
+                        <!-- arrangementBar: Delete / right click only removes it from the arrangement, the group stays in the show -->
+                        <SelectElem id="slide" data={{ index: token.index, showId, ...selectLayout, arrangementBar: true }} draggable={!isLocked} selectable={!isLocked} trigger="row" borders="edges">
+                            <span class="token {isLocked ? '' : 'context #arrangement_token'}" class:disabled={token.disabled} class:active={outIndex >= token.index && outIndex <= token.end} style={tokenStyle(token.color)}>
                                 {token.name}
                                 {#if !isLocked}
                                     <button class="remove" title={translateText("actions.remove")} on:click|stopPropagation={() => remove(token.index)}>
