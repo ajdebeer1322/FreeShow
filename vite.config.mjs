@@ -35,10 +35,12 @@ export default defineConfig({
               rollupOptions: {
                   output: {
                       assetFileNames: (assetInfo) => {
-                          if (assetInfo.name.endsWith(".css")) {
+                          // Vite 8 (rolldown) deprecates assetInfo.name and it can be undefined; names[] has the file names
+                          const name = assetInfo.names?.[0] ?? ""
+                          if (name.endsWith(".css")) {
                               return "bundle.css"
                           }
-                          return assetInfo.name
+                          return name || "assets/[name]-[hash][extname]"
                       }
                   }
               }
