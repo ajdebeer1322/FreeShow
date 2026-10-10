@@ -41,6 +41,7 @@ test("empty template lines keep their spacing without bars over media or shape f
     await page.evaluate(async () => {
         const textboxPath = (window as any).sourceRoot + "/components/slide/Textbox.svelte"
         const { default: Textbox } = await import(textboxPath)
+        const { mountLegacy } = await import((window as any).sourceRoot + "/../../config/testing/legacyMount.ts")
         const item = {
             type: "text",
             style: "width:800px;height:600px;",
@@ -48,9 +49,9 @@ test("empty template lines keep their spacing without bars over media or shape f
             specialStyle: { lineBg: "#ffffff", lineGap: 22, lineRadius: 12 },
             lines: ["", " \t\n&nbsp;&#160;&#x200b;", "<br>", "Lyrics"].map((value) => ({ align: "", text: [{ value, style: "font-size:100px;" }] }))
         }
-        ;(window as any).fixture = new Textbox({ target: document.querySelector("#fixture"), props: { item, ref: { id: "fixture" }, dynamicValues: false, originalStyle: true } })
+        ;(window as any).fixture = mountLegacy(Textbox, { target: document.querySelector("#fixture"), props: { item, ref: { id: "fixture" }, dynamicValues: false, originalStyle: true } })
         ;(window as any).fixtureItem = item
-        new Textbox({ target: document.querySelector("#shape"), props: { item: { type: "text", style: "width:200px;height:100px;background:#123456;", lines: [{ align: "", text: [{ value: "", style: "" }] }] }, ref: { id: "shape" }, dynamicValues: false, originalStyle: true } })
+        mountLegacy(Textbox, { target: document.querySelector("#shape"), props: { item: { type: "text", style: "width:200px;height:100px;background:#123456;", lines: [{ align: "", text: [{ value: "", style: "" }] }] }, ref: { id: "shape" }, dynamicValues: false, originalStyle: true } })
     })
 
     const lines = page.locator("#fixture .lines > .break")
@@ -94,9 +95,10 @@ test("resolved empty variables suppress solid and gradient bars in every scrolli
         const linesPath = (window as any).sourceRoot + "/components/slide/TextboxLines.svelte"
         const stores = await import(storesPath)
         const { default: TextboxLines } = await import(linesPath)
+        const { mountLegacy } = await import((window as any).sourceRoot + "/../../config/testing/legacyMount.ts")
         ;(window as any).variables = stores.variables
         stores.variables.set({ lyric: { name: "Lyric", type: "text", text: "" } })
-        ;(window as any).fixture = new TextboxLines({
+        ;(window as any).fixture = mountLegacy(TextboxLines, {
             target: document.querySelector("#fixture"),
             props: {
                 item: { type: "text", align: "", specialStyle: { lineBg: "linear-gradient(to right, #fff, #eee)", lineGap: 22 }, scrolling: { type: "right_left", repeat: true, duration: 5, gap: 100 }, lines: [{ align: "", text: [{ value: "{variable_lyric}", style: "font-size:100px;" }] }] },
@@ -122,6 +124,7 @@ test("typing and clearing template text changes only the bar in the native edito
         const editorPath = (window as any).sourceRoot + "/components/edit/editbox/EditboxLines.svelte"
         const stores = await import(storesPath)
         const { default: EditboxLines } = await import(editorPath)
+        const { mountLegacy } = await import((window as any).sourceRoot + "/../../config/testing/legacyMount.ts")
         const item = {
             type: "text",
             style: "",
@@ -135,7 +138,7 @@ test("typing and clearing template text changes only the bar in the native edito
         stores.activeEdit.set({ type: "template", id: "fixture", slide: 0, items: [0] })
         stores.templates.set({ fixture: { name: "Fixture", items: [item], settings: {} } })
         ;(window as any).templates = stores.templates
-        new EditboxLines({ target: document.querySelector("#fixture"), props: { item, ref: { type: "template", id: "fixture" }, index: 0 } })
+        mountLegacy(EditboxLines, { target: document.querySelector("#fixture"), props: { item, ref: { type: "template", id: "fixture" }, index: 0 } })
     })
 
     const lines = page.locator("#fixture .edit > .break")
