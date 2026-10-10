@@ -1,8 +1,7 @@
 # How FreeShow actually works (living document)
 
 Purpose: one place that says **what does what and why**, including the surprising connections found while testing.
-It is for people (and AI agents) who need to change the output/render code, hunt a bug, or one day port this to
-another stack (e.g. Rust). `AI_README.md` is the navigation map (where files are, commands); this file is the
+It is for people (and AI agents) who need to change the output/render code or hunt a bug. `AI_README.md` is the navigation map (where files are, commands); this file is the
 behaviour reference (how it flows, what depends on what, what is true but not obvious).
 
 ## Rules for keeping this file useful
@@ -292,11 +291,11 @@ send of the show/bible data or first template merge in the output window; confir
 **F-010 (2026-10-10) Stored `autoFontSize` is not trustworthy for the output.**
 Thumbnails/lyrics view stored `25.5625` for five different slides that render at 100 px / 73 px in the output.
 The output ignores it for display (it re-measures) and only uses it to decide whether to wait. [verified in the
-saved `.show` file vs probe font sizes] -> do not use it as a measured size in a rewrite.
+saved `.show` file vs probe font sizes] -> do not use it as a measured size.
 
 **F-011 (2026-10-10) Cheapest possible first showing = one `Textbox` `loaded` timeout.**
 Probe ready ~105-125 ms after mount in every run regardless of text; first showing costs +~110 ms over a plain
-slide. [verified] -> a rewrite that measures without the 100 ms `loaded` wait could remove it.
+slide. [verified] -> measuring without the 100 ms `loaded` wait would remove it.
 
 **F-012 (2026-10-10) Preview `Textbox` never hides while measuring.**
 `shouldHideUntilAutoSizeCompletes` returns false for preview, so the main-window preview can still show an
@@ -314,7 +313,7 @@ unmeasured size (the old 500 ms hold was the only protection there, and it is ke
 
 ---
 
-## 10. Behaviours a re-implementation (e.g. Rust) must keep
+## 10. Behaviours that must keep working
 
 1. New text is never visible at a size that differs from the one it keeps. Measure first, then show.
 2. Old text is not removed before the new text can appear (bounded wait, 500 ms), except with user timers.
