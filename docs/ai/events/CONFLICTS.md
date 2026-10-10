@@ -1,6 +1,6 @@
 # Key conflicts and observed outcomes
 
-[code] 25 key names have multiple handler candidates. These are potential overlaps, not 25 reproduced defects. DOM propagation, component mounting, key case, selection and early returns decide which path runs. preventDefault does not itself stop propagation.
+[code] 16 key names have multiple handler candidates. These are potential overlaps, not 16 reproduced defects. DOM propagation, component mounting, key case, selection and early returns decide which path runs. preventDefault does not itself stop propagation.
 
 | Situation | Observed outcome in fixture | Recording |
 | --- | --- | --- |
@@ -30,15 +30,6 @@
 - [Delete: 5 candidates](conflicts/Delete.md)
 - [Home: 2 candidates](conflicts/Home.md)
 - [End: 2 candidates](conflicts/End.md)
-- [width: 2 candidates](conflicts/width.md)
-- [left: 2 candidates](conflicts/left.md)
-- [height: 2 candidates](conflicts/height.md)
-- [top: 2 candidates](conflicts/top.md)
-- [box-shadow: 2 candidates](conflicts/box-shadow.md)
-- [text-shadow: 2 candidates](conflicts/text-shadow.md)
-- [shape-outside: 2 candidates](conflicts/shape-outside.md)
-- [color: 2 candidates](conflicts/color.md)
 - [Tab: 5 candidates](conflicts/Tab.md)
 - [Ctrl/Cmd+i: 2 candidates](conflicts/Ctrl_Cmd_i.md)
 - [F2: 2 candidates](conflicts/F2.md)
-- [number/custom: 5 candidates](conflicts/number_custom.md)

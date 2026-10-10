@@ -15,7 +15,7 @@
     "events": 2580,
     "functions": 15612,
     "activations": 21,
-    "conflictCandidates": 25,
+    "conflictCandidates": 16,
     "resolved": 1291
   },
   "entriesWithEffects": 1599,
@@ -30,49 +30,49 @@
         "key",
         "Space"
       ],
-      "seconds": 1.204
+      "seconds": 1.167
     },
     {
       "args": [
         "click",
         "ClearButtons.svelte"
       ],
-      "seconds": 1.163
+      "seconds": 1.193
     },
     {
       "args": [
         "menu",
         "duplicate"
       ],
-      "seconds": 1.198
+      "seconds": 1.179
     },
     {
       "args": [
         "action",
         "next_slide"
       ],
-      "seconds": 1.188
+      "seconds": 1.207
     },
     {
       "args": [
         "trigger",
         "slide_click"
       ],
-      "seconds": 1.171
+      "seconds": 1.159
     },
     {
       "args": [
         "trace",
         "space-live"
       ],
-      "seconds": 1.164
+      "seconds": 1.157
     },
     {
       "args": [
         "writes",
         "outputs"
       ],
-      "seconds": 1.169
+      "seconds": 1.16
     }
   ]
 }

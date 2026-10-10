@@ -1,5 +1,5 @@
 {
-  "measuredAt": "2026-10-10T19:33:17.051Z",
+  "measuredAt": "2026-10-10T19:41:42.183Z",
   "sourceRevision": "379e268046d7de3344b6fa1e7809116a7ba01856",
   "environment": {
     "node": "v22.23.3",
@@ -7,44 +7,44 @@
     "arch": "x64",
     "cpu": "Intel(R) Core(TM) i5-4590T CPU @ 2.00GHz"
   },
-  "mapSeconds": 27.142,
-  "checkSeconds": 33.944,
+  "mapSeconds": 26.066,
+  "checkSeconds": 33.75,
   "queries": [
     {
       "args": [
         "store",
         "outputs"
       ],
-      "seconds": 1.175
+      "seconds": 1.182
     },
     {
       "args": [
         "channel",
         "OUTPUT"
       ],
-      "seconds": 1.159
+      "seconds": 1.174
     },
     {
       "args": [
         "file",
         "src/frontend/components/output/Output.svelte"
       ],
-      "seconds": 1.164
+      "seconds": 1.178
     },
     {
       "args": [
         "why",
         "src/frontend/components/output/layers/SlideContent.svelte:226"
       ],
-      "seconds": 1.171
+      "seconds": 1.17
     },
     {
       "args": [
         "timers",
         "src/frontend/components/output"
       ],
-      "seconds": 1.182
+      "seconds": 1.171
     }
   ],
-  "testsSeconds": 3.437
+  "testsSeconds": 3.393
 }

@@ -375,7 +375,7 @@
     "events": 2580,
     "functions": 15612,
     "activations": 21,
-    "conflictCandidates": 25,
+    "conflictCandidates": 16,
     "resolved": 1291
   },
   "limits": [
@@ -447,16 +447,7 @@
       "indexes/conflicts-13.json",
       "indexes/conflicts-14.json",
       "indexes/conflicts-15.json",
-      "indexes/conflicts-16.json",
-      "indexes/conflicts-17.json",
-      "indexes/conflicts-18.json",
-      "indexes/conflicts-19.json",
-      "indexes/conflicts-20.json",
-      "indexes/conflicts-21.json",
-      "indexes/conflicts-22.json",
-      "indexes/conflicts-23.json",
-      "indexes/conflicts-24.json",
-      "indexes/conflicts-25.json"
+      "indexes/conflicts-16.json"
     ],
     "lookupTables": [
       "indexes/lookupTables-1.json",

@@ -8,7 +8,7 @@ const sources={
  'src/frontend/helper.ts':'import {outputs as out} from "./stores"\nexport function step(){ out.set({}); setTimeout(()=>out.update(v=>v),20) }',
  'src/frontend/Test.svelte':'<script lang="ts">\nimport {step as next} from "./helper"\nimport {outputs} from "./stores"\n</script>\n<button on:click={()=>next()}>Next</button>\n<button on:click={()=>outputs.set({})}>Inline</button>\n<button on:click={()=> $outputs.name="a"}>Assignment</button>\n<svelte:window on:keydown={(e)=>{if(e.key===" ")next()}}/>',
  'src/frontend/components/actions/api.ts':'import {step} from "../../helper"\nexport const API_ACTIONS={next_slide:()=>step(),other:()=>{}}\nexport function triggerAction(data){return API_ACTIONS[data.action](data)}',
- 'src/frontend/utils/shortcuts.ts':'import {step} from "../helper"\nconst previewShortcuts={" ":()=>step()}\nexport function keydown(e){if(e.key==="Enter")step()}'
+ 'src/frontend/utils/shortcuts.ts':'import {step} from "../helper"\nconst previewShortcuts={" ":()=>step()}\nexport function keydown(e){if(e.key==="Enter")step(); const input={key:"width"}; if(input.key==="width")step(); if(Number(e.key))step()}'
 }
 let data
 test.before(()=>{data=scan({files:Object.keys(sources),sources,analyze:analyzeEvents}).events;data.keyTables=[];data.traces=[]})
@@ -45,4 +45,9 @@ test('large conflict/table manifests retain independently readable index shards'
  assert(!index.conflicts)
  assert.equal(index.$parts.conflicts.length,31)
  assert(index.$parts.conflicts.every(file=>outputs.has('docs/ai/generated/events/'+file)))
+})
+
+test('keyboard detection excludes data fields named key',()=>{
+ assert(!data.events.filter(e=>e.kind==='keyboard').some(e=>e.detectedKeys?.includes('width')))
+ assert(!data.conflicts.some(c=>c.key==='number/custom'))
 })

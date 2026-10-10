@@ -17,7 +17,7 @@
 | drop-route | 27 |
 | menu | 179 |
 
-[code] 2580 total entries across 15612 indexed functions; 21 declared automatic activation IDs and 25 potential key conflicts. An automatic entry counts a timer/media/action event site, not a unique user command. Drag sources, target declarations, DOM drag/drop handlers and drop dispatch routes are distinct inventory types.
+[code] 2580 total entries across 15612 indexed functions; 21 declared automatic activation IDs and 16 potential key conflicts. An automatic entry counts a timer/media/action event site, not a unique user command. Drag sources, target declarations, DOM drag/drop handlers and drop dispatch routes are distinct inventory types.
 
 [code] 1291/2580 (50.0%) have no unresolved/deeper edge within the six-level bound. 1599 entries have at least one indexed terminal effect; 659/2580 (25.5% of all entries) both reach an indexed effect and resolve within the bound. Other resolved entries include UI/native/read-only operations with no indexed state effect. Neither percentage proves all runtime effects are found.
 
@@ -65,11 +65,11 @@
 
 ## Measured runtimes
 
-[verified] Latest measured ai:map: 27.142 s; ai:check: 33.944 s. Mean scenario preparation/action/observation interval: 3.125 s across 59 recordings, excluding cold Electron/Xvfb startup and JSON loading. A single ai:trace invocation additionally starts the app; batch all amortizes startup. A fresh single-scenario command (npm run ai:trace -- space-live) took 14.781 s including startup; [command measurement](trace-command-metrics.json). The action observation itself waits 1.8 s for transitions. These are this server’s measurements, not a guaranteed time budget.
+[verified] Latest measured ai:map: 26.066 s; ai:check: 33.75 s. Mean scenario preparation/action/observation interval: 3.125 s across 59 recordings, excluding cold Electron/Xvfb startup and JSON loading. A single ai:trace invocation additionally starts the app; batch all amortizes startup. A fresh single-scenario command (npm run ai:trace -- space-live) took 14.781 s including startup; [command measurement](trace-command-metrics.json). The action observation itself waits 1.8 s for transitions. These are this server’s measurements, not a guaranteed time budget.
 
 ### npm run ai:ask -- key Space
 
-[verified] 1.204 s.
+[verified] 1.167 s.
 
 ```text
 Key Space [code]; 44 handler candidates (modifier/DOM guards still apply)
@@ -103,7 +103,7 @@ DOM target handlers run before bubble window listeners unless capture. stopPropa
 
 ### npm run ai:ask -- click ClearButtons.svelte
 
-[verified] 1.163 s.
+[verified] 1.193 s.
 
 ```text
 Clicks in ClearButtons.svelte: 13
@@ -207,7 +207,7 @@ event-142afc74dae0040554 click src/frontend/components/output/preview/ClearButto
 
 ### npm run ai:ask -- menu duplicate
 
-[verified] 1.198 s.
+[verified] 1.179 s.
 
 ```text
 event-8e206b9ee500e3451f menu src/frontend/components/context/contextMenus.ts:105 duplicate
@@ -256,7 +256,7 @@ Definition: duplicate: { label: "actions.duplicate", icon: "duplicate", iconColo
 
 ### npm run ai:ask -- action next_slide
 
-[verified] 1.188 s.
+[verified] 1.207 s.
 
 ```text
 event-03cb90c5b0a80a92f7 action src/frontend/components/actions/api.ts:241 () => OutputHelper.advanceOutputs("next")
@@ -292,7 +292,7 @@ src/frontend/components/actions/api.ts:457 API_ACTIONS[id] (internal dispatcher)
 
 ### npm run ai:ask -- trigger slide_click
 
-[verified] 1.171 s.
+[verified] 1.159 s.
 
 ```text
 Activation slide_click src/frontend/components/actions/customActivation.ts:17
@@ -321,7 +321,7 @@ Enabled custom actions matching activation id run conditionally; their configure
 
 ### npm run ai:ask -- trace space-live
 
-[verified] 1.164 s.
+[verified] 1.157 s.
 
 ```text
 space-live [verified] docs/ai/traces/space-live.md
@@ -333,7 +333,7 @@ Evidence: docs/ai/traces/space-live.json
 
 ### npm run ai:ask -- writes outputs
 
-[verified] 1.169 s.
+[verified] 1.16 s.
 
 ```text
 Events with possible writes to outputs: 265 [code; branch/callback union]

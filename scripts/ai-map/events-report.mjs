@@ -1,5 +1,7 @@
 // Review/report generation consumes the maps and recordings; no GitHub mutations.
 import {spawnSync} from 'node:child_process'
+import fs from 'node:fs'
+import path from 'node:path'
 import {ROOT,readJson,write,json,sourceLink,slug} from './lib.mjs'
 import {loadEvents} from './event-load.mjs'
 import {scenarios} from './trace-scenarios.mjs'
@@ -11,6 +13,11 @@ const withEffects=data.events.filter(e=>e.effects.length),resolvedEffects=withEf
 const reasons=Object.entries(data.events.flatMap(e=>e.unresolved).reduce((a,e)=>{a[e.reason]=(a[e.reason]||0)+1;return a},{})).sort((a,b)=>b[1]-a[1])
 const cold=readJson('docs/ai/events/trace-command-metrics.json')
 const mean=verified.reduce((n,r)=>n+r.elapsedMs,0)/Math.max(1,verified.length)
+const conflictDirectory=path.join(ROOT,'docs/ai/events/conflicts')
+const conflictPages=new Set(data.conflicts.map(conflict=>`${slug(conflict.key)}.md`))
+if(fs.existsSync(conflictDirectory))for(const file of fs.readdirSync(conflictDirectory)){
+    if(file.endsWith('.md')&&!conflictPages.has(file))fs.unlinkSync(path.join(conflictDirectory,file))
+}
 const detailed=data.conflicts.map(conflict=>{
     const document=`docs/ai/events/conflicts/${slug(conflict.key)}.md`
     write(document,`# ${conflict.key}: potential overlapping handlers\n\n[code] ${conflict.precedence} Across desktop, output and browser-client files, repeated keys may belong to separate windows rather than a real conflict.\n\n${conflict.handlers.map(h=>`- [code] ${sourceLink(h,document)} — ${h.table||'listener'}: ${h.handler}. Guards: ${(h.conditions||[]).slice(0,6).map(g=>g.expression).join('; ')||'none extracted; mounting/focus may gate it'}.`).join('\n')}\n\n[Live key situations](../CONFLICTS.md); [query](../README.md): \`npm run ai:ask -- key "${conflict.key}"\`.\n`)
