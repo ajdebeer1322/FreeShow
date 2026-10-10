@@ -20,7 +20,8 @@
         "experimentalDecorators": true,
         "esModuleInterop": true,
         "isolatedModules": true,
-        "verbatimModuleSyntax": false
+        "verbatimModuleSyntax": false,
+        "allowJs": true
     },
     "include": ["."],
     "exclude": ["node_modules/*", "__sapper__/*", "public/*"]

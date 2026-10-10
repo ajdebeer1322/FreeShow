@@ -23,7 +23,7 @@
 {/if} -->
 
 {#if smartAction}
-    <div class="ticker-wrap" transition:fly={{ x: 45 + 62 / 2, duration: 200 }}>
+    <div class="ticker-wrap" transition:fly|global={{ x: 45 + 62 / 2, duration: 200 }}>
         <!-- border-radius: 50px 10px 10px 50px; -->
         <MaterialButton
             style="padding: 0;border-radius: 50px;"

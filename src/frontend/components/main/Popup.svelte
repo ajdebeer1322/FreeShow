@@ -47,8 +47,8 @@
 
 {#if popupId !== null}
     {#key popupId}
-        <div style={isWindows ? `height: calc(100% - ${MENU_BAR_HEIGHT}px);` : null} class="popup" class:isOptimized class:wide={popupId === "media_inspector"} transition:fade={{ duration: isOptimized ? 20 : 100 }} on:mousedown={mousedown}>
-            <div class="card" transition:scale={{ duration: isOptimized ? 50 : 200 }}>
+        <div style={isWindows ? `height: calc(100% - ${MENU_BAR_HEIGHT}px);` : null} class="popup" class:isOptimized class:wide={popupId === "media_inspector"} transition:fade|global={{ duration: isOptimized ? 20 : 100 }} on:mousedown={mousedown}>
+            <div class="card" transition:scale|global={{ duration: isOptimized ? 50 : 200 }}>
                 {#if popupId !== "alert"}
                     <div class="headerContent" style="border-bottom: 1px solid var(--primary-lighter);{scrolled ? 'box-shadow: 2px 2px 4px 5px rgb(0 0 0 / 0.1);' : ''}">
                         <div class="headerMargin">
@@ -200,7 +200,7 @@
         margin-top: 10px;
         margin-left: 10px;
     }
-    .card:has(.popup-back) h2 {
+    .card:has(:global(.popup-back)) h2 {
         margin-left: 35px;
     }
 

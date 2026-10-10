@@ -430,7 +430,7 @@
         {#if mirror}
             <p class="attributionString">{actualSlide.attributionString.slice(0, 135)}</p>
         {:else}
-            <p class="attributionString" transition:custom={textTransition}>{actualSlide.attributionString.slice(0, 135)}</p>
+            <p class="attributionString" transition:custom|global={textTransition}>{actualSlide.attributionString.slice(0, 135)}</p>
         {/if}
     {/if}
 

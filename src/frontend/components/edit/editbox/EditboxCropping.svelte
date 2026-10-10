@@ -36,7 +36,7 @@
             history({
                 id: "setItems",
                 newData: { style: { key: "cropping", values: [{ ...getCropValues(item.cropping), type: "clip" }] } },
-                location: { page: "edit", show: $activeShow, slide: ref.id, items: [index] }
+                location: { page: "edit", show: $activeShow!, slide: ref.id, items: [index] }
             })
         } else {
             history({
@@ -167,7 +167,7 @@
             history({
                 id: "setItems",
                 newData: { style: { key: "cropping", values: [{ ...nextCrop, type: nextType }] } },
-                location: { page: "edit", show: $activeShow, slide: ref.id, items: [index] }
+                location: { page: "edit", show: $activeShow!, slide: ref.id, items: [index] }
             })
         } else {
             history({

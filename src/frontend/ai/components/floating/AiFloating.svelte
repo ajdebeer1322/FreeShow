@@ -195,7 +195,7 @@
 <svelte:window on:keydown={(e) => isOpen && e.key === "Escape" && toggleExpand()} />
 
 {#if isOpen}
-    <div class="backdrop" on:mousedown|self={toggleExpand} transition:fade={{ duration: 250 }}></div>
+    <div class="backdrop" on:mousedown|self={toggleExpand} transition:fade|global={{ duration: 250 }}></div>
 {/if}
 
 {#if !isOpen && state !== "inactive"}
@@ -207,7 +207,7 @@
         {#if !isOpen}
             <AiVisual {state} on:click={toggleExpand} />
         {:else}
-            <div class="modal-view" transition:fade={{ duration: 100 }}>
+            <div class="modal-view" transition:fade|global={{ duration: 100 }}>
                 <div class="card-header">
                     <Tabs {tabs} bind:active={activeTab} />
 

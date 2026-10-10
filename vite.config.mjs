@@ -13,6 +13,9 @@ export default defineConfig({
             onwarn: (warning, handler) => {
                 // disable A11y warnings
                 if (warning.code.startsWith("a11y_")) return
+                // Svelte 5 warns about every self-closing non-void tag (e.g. <div />); the compiler still
+                // treats them as before. svelte-check keeps reporting them.
+                if (warning.code === "element_invalid_self_closing_tag") return
                 handler(warning)
             }
         })
