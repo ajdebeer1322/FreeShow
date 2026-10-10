@@ -76,7 +76,7 @@ export function getServerViteConfig(serverId, production = process.env.NODE_ENV 
                 },
                 onwarn: (warning, handler) => {
                     // disable A11y warnings
-                    if (warning.code.startsWith("a11y-")) return
+                    if (warning.code.startsWith("a11y_")) return
                     handler(warning)
                 }
             }),
