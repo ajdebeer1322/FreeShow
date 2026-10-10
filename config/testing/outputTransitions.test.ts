@@ -500,10 +500,10 @@ for (const transition of ["fade", "none"] as const) {
         }
     })
 
-    // Every slide is set to shrink to fit but has no stored size and the lyrics view has no thumbnails to measure it, so
-    // the output has to measure it. The preview in the main window stores the size of the slide that follows the current
-    // one, so only jumps to other slides show text with an unknown size.
-    test(`auto size text and ${transition} transition, no output style, stored size missing`, async () => {
+    // Every slide of the seeded show is set to shrink to fit and starts without a stored size, in the lyrics view. The slide
+    // cards store a size shortly after the show opens (see HOW_IT_WORKS.md, F-008), so this mostly measures the first
+    // activation of a session and jumps between slides, not a missing size.
+    test(`auto size text and ${transition} transition, no output style, lyrics view without stored sizes`, async () => {
         const seed: Seed = { transition, lyricsView: true, unmeasuredShow: PROBE_SLIDES }
         const running = await startApp(seed)
         try {

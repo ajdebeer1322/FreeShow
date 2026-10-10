@@ -1,6 +1,6 @@
 # FreeShow: repository reference for AI agents
 
-This is a source-navigation and change-planning reference, not end-user documentation. Paths below are repository-relative. Read the actual implementation before editing; this map describes the checkout at FreeShow `1.6.6-beta.4` (upstream tag commit `1ed8ffa3`) plus the continuous Show view and Messages changes documented below. Keep this file synchronized when architecture or behavior changes.
+This is a source-navigation and change-planning reference, not end-user documentation. Paths below are repository-relative. Read the actual implementation before editing; for how the output/render path and auto size *behave* (timings, caches, hidden dependencies) read [HOW_IT_WORKS.md](HOW_IT_WORKS.md) and keep its findings log updated; this map describes the checkout at FreeShow `1.6.6-beta.4` (upstream tag commit `1ed8ffa3`) plus the continuous Show view and Messages changes documented below. Keep this file synchronized when architecture or behavior changes.
 
 ## Identity and execution boundaries
 
