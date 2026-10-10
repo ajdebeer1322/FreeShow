@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:899 align_with_screen (depth
 Effects: src/frontend/components/context/menuClick.ts:899 ipc send(OUTPUT, &#91;"ALIGN_WITH_SCREEN"&#93;) ; src/frontend/components/helpers/debugLog.ts:47 ipc send(OUTPUT, &#91;"MAIN_DEBUG"&#93;, { time: Date.now(), category: outputWindowLabel(), message: '&#91;${category}&#93; ${message}', data: stringify(data) }) ; src/frontend/components/helpers/debugLog.ts:65 store-write src/frontend/components/helpers/debugLog.ts#debugEntries .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 1; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: output src/frontend/components/context/contextMenus.ts:259. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: src/frontend/components/main/Top.svelte:120; src/frontend/components/main/Top.svelte:137.

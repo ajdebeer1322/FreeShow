@@ -1,7 +1,7 @@
 {
-  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
-  "sourceFingerprint": "9f2de953d78c6bf930ab444b17eda2f02e5771257944d7c9f324467e90e2d43e",
-  "observedAt": "2026-10-10T17:27:25.437Z",
+  "sourceRevision": "379e268046d7de3344b6fa1e7809116a7ba01856",
+  "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+  "observedAt": "2026-10-10T19:27:33.662Z",
   "environment": {
     "node": "v22.23.3",
     "runtimeVersions": {
@@ -42,11 +42,11 @@
     "storeIsolation": true,
     "instrumentation": "Production test entry exposes existing helpers/stores; debug panel DOM hidden to avoid covering clicks; product source unchanged",
     "build": {
-      "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
-      "sourceFingerprint": "9f2de953d78c6bf930ab444b17eda2f02e5771257944d7c9f324467e90e2d43e",
+      "sourceRevision": "379e268046d7de3344b6fa1e7809116a7ba01856",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
       "destination": "<worktree>docs/ai/.cache/runtime-app",
       "node": "v22.23.3",
-      "built": "2026-10-10T17:26:51.884Z",
+      "built": "2026-10-10T18:23:14.390Z",
       "sourceModified": false,
       "port3000Used": false,
       "instrumentation": "test entries expose existing renderer stores/helpers and backend classes"
@@ -61,7 +61,7 @@
         "outputWindowURL": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
         "windowCount": 2
       },
-      "elapsedMs": 2776
+      "elapsedMs": 2770
     },
     {
       "id": "clicking-slide",
@@ -71,8 +71,8 @@
         "state": {
           "default": {
             "slide": {
-              "id": "5d73d4abbd0",
-              "layout": "8085d73d4ab",
+              "id": "9199bc04317",
+              "layout": "a789199bc04",
               "index": 0,
               "line": 0,
               "revealCount": 0,
@@ -84,7 +84,7 @@
         },
         "renderedText": " AI map first line"
       },
-      "elapsedMs": 2148
+      "elapsedMs": 2183
     },
     {
       "id": "next-space",
@@ -94,16 +94,16 @@
         "state": {
           "default": {
             "slide": {
-              "layout": "8085d73d4ab",
+              "layout": "a789199bc04",
               "index": 1,
-              "id": "5d73d4abbd0",
+              "id": "9199bc04317",
               "projectIndex": 0
             },
             "active": true
           }
         }
       },
-      "elapsedMs": 432
+      "elapsedMs": 506
     },
     {
       "id": "clearing-all",
@@ -118,7 +118,7 @@
           }
         }
       },
-      "elapsedMs": 944
+      "elapsedMs": 947
     },
     {
       "id": "video-background",
@@ -141,11 +141,11 @@
           {
             "readyState": 4,
             "paused": false,
-            "currentTime": 0.041798
+            "currentTime": 0.059866
           }
         ]
       },
-      "elapsedMs": 147
+      "elapsedMs": 131
     },
     {
       "id": "editing-textbox",
@@ -155,7 +155,7 @@
         "historyEntries": 3,
         "textChanged": true
       },
-      "elapsedMs": 430
+      "elapsedMs": 386
     },
     {
       "id": "saving",
@@ -165,7 +165,7 @@
         "savedEditedShow": true,
         "fixtureDataDirectory": "<fixture>"
       },
-      "elapsedMs": 1889
+      "elapsedMs": 1887
     },
     {
       "id": "showing-scripture",
@@ -304,7 +304,7 @@
         },
         "rendered": true
       },
-      "elapsedMs": 435
+      "elapsedMs": 448
     },
     {
       "id": "playing-audio",
@@ -315,7 +315,7 @@
         "clockAdvanced": true,
         "speakerAudibilityVerified": false
       },
-      "elapsedMs": 201
+      "elapsedMs": 185
     },
     {
       "id": "starting-ndi",
@@ -334,7 +334,7 @@
         },
         "externalReceiverVerified": false
       },
-      "elapsedMs": 922
+      "elapsedMs": 903
     }
   ],
   "errors": [],
@@ -343,9 +343,11 @@
     "%cElectron Security Warning (Disabled webSecurity) font-weight: bold; This renderer process has \"webSecurity\" disabled. This\n  exposes users of this app to severe security risks.\n\nFor more information and help, consult\nhttps://electronjs.org/docs/tutorial/security.\nThis warning will not show up\nonce the app is packaged.",
     "%cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security\n  Policy set or a policy with \"unsafe-eval\" enabled. This exposes users of\n  this app to unnecessary security risks.\n\nFor more information and help, consult\nhttps://electronjs.org/docs/tutorial/security.\nThis warning will not show up\nonce the app is packaged.",
     "RECEIVED UNKNOWN SETTINGS KEY: syncedOutputs",
-    "HISTORY INIT [UPDATE]: {id: UPDATE, location: Object, oldData: null, newData: null, time: 1791653233062}",
+    "HISTORY INIT [UPDATE]: {id: UPDATE, location: Object, oldData: null, newData: null, time: 1791660441290}",
     "Autofocus processing was blocked because a document already has a focused element.",
-    "HISTORY INIT [UPDATE]: {id: UPDATE, newData: Object, oldData: Object, location: Object, time: 1791653233667}",
+    "Bonjour: A service named 'freeshow-REMOTE-*' is already published on the network.\n",
+    "Bonjour: A service named 'freeshow-STAGE-*' is already published on the network.\n",
+    "HISTORY INIT [UPDATE]: {id: UPDATE, newData: Object, oldData: Object, location: Object, time: 1791660441896}",
     "HISTORY INIT [TEMPLATE]: {id: TEMPLATE, save: false, newData: Object, location: Object, oldData: null}",
     "HISTORY INIT [TEMPLATE]: {id: TEMPLATE, save: false, newData: Object, location: Object, oldData: null}",
     "%cElectron Security Warning (Disabled webSecurity) font-weight: bold; This renderer process has \"webSecurity\" disabled. This\n  exposes users of this app to severe security risks.\n\nFor more information and help, consult\nhttps://electronjs.org/docs/tutorial/security.\nThis warning will not show up\nonce the app is packaged.",
@@ -362,21 +364,19 @@
     "https://svelte.dev/e/derived_inert",
     "https://svelte.dev/e/derived_inert",
     "https://svelte.dev/e/derived_inert",
-    "Could not load local fonts: TypeError: window.queryLocalFonts is not a function\n    at PPe (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:171:64551)\n    at IPe (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:171:65664)\n    at file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:479:121607\n    at bae (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:644)\n    at Array.map (<anonymous>)\n    at file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:21:7413\n    at V (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:28209)\n    at file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:21:7403\n    at Yoe (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:25820)\n    at Bo (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:27005)\n    at doe (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:9285)\n    at #_ (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:11949)\n    at #_ (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:12187)\n    at e.flush (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:13530)\n    at Array.<anonymous> (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:15261)\n    at Wr (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:694)\n    at qae (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:5121)\n    at file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:5202",
-    "HISTORY INIT [SHOW_ITEMS]: {id: SHOW_ITEMS, newData: Object, location: Object, oldData: null, time: 1791653240734}",
+    "Could not load local fonts: TypeError: window.queryLocalFonts is not a function\n    at LPe (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:171:64563)\n    at zPe (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:171:65676)\n    at file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:479:121607\n    at xae (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:644)\n    at Array.map (<anonymous>)\n    at file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:21:7413\n    at V (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:28209)\n    at file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:21:7403\n    at Xoe (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:25820)\n    at zo (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:27005)\n    at foe (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:9285)\n    at #_ (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:11949)\n    at #_ (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:12187)\n    at e.flush (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:13530)\n    at Array.<anonymous> (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:15261)\n    at Ur (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:694)\n    at Jae (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:5121)\n    at file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:5202",
+    "HISTORY INIT [SHOW_ITEMS]: {id: SHOW_ITEMS, newData: Object, location: Object, oldData: null, time: 1791660449018}",
     "SAVING...",
     "SAVED!",
     "HISTORY INIT [TEMPLATE]: {id: TEMPLATE, save: false, newData: Object, location: Object, oldData: null}",
     "HISTORY INIT [TEMPLATE]: {id: TEMPLATE, save: false, newData: Object, location: Object, oldData: null}",
-    "ALSA lib confmisc.c:855:(parse_card) cannot find card '0'\nALSA lib conf.c:5208:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory\nALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings\nALSA lib conf.c:5208:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory\nALSA lib confmisc.c:1342:(snd_func_refer) error evaluating name\nALSA lib conf.c:5208:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory\nALSA lib conf.c:5731:(snd_config_expand) Evaluate error: No such file or directory\nALSA lib pcm.c:2721:(snd_pcm_open_noupdate) Unknown PCM default\n[47504:1010/172723.263477:ERROR:media/audio/alsa/alsa_util.cc:209] PcmOpen: default,No such file or directory\n",
-    "ALSA lib confmisc.c:855:(parse_card) cannot find card '0'\nALSA lib conf.c:5208:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory\nALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings\nALSA lib conf.c:5208:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory\nALSA lib confmisc.c:1342:(snd_func_refer) error evaluating name\nALSA lib conf.c:5208:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory\nALSA lib conf.c:5731:(snd_config_expand) Evaluate error: No such file or directory\nALSA lib pcm.c:2721:(snd_pcm_open_noupdate) Unknown PCM default\n[47504:1010/172723.265001:ERROR:media/audio/alsa/alsa_util.cc:209] PcmOpen: plug:default,No such file or directory\n",
+    "ALSA lib confmisc.c:855:(parse_card) cannot find card '0'\nALSA lib conf.c:5208:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory\nALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings\nALSA lib conf.c:5208:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory\nALSA lib confmisc.c:1342:(snd_func_refer) error evaluating name\nALSA lib conf.c:5208:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory\nALSA lib conf.c:5731:(snd_config_expand) Evaluate error: No such file or directory\nALSA lib pcm.c:2721:(snd_pcm_open_noupdate) Unknown PCM default\n[68914:1010/192731.567159:ERROR:media/audio/alsa/alsa_util.cc:209] PcmOpen: default,No such file or directory\n",
+    "ALSA lib confmisc.c:855:(parse_card) cannot find card '0'\nALSA lib conf.c:5208:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory\nALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings\nALSA lib conf.c:5208:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory\nALSA lib confmisc.c:1342:(snd_func_refer) error evaluating name\nALSA lib conf.c:5208:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory\nALSA lib conf.c:5731:(snd_config_expand) Evaluate error: No such file or directory\nALSA lib pcm.c:2721:(snd_pcm_open_noupdate) Unknown PCM default\n",
+    "[68914:1010/192731.569779:ERROR:media/audio/alsa/alsa_util.cc:209] PcmOpen: plug:default,No such file or directory\n",
     "Output default rendered 1919x1079 but is configured 1920x1080; resampling frames for NDI/OMT\n",
-    "Debugger ending on ws://127.0.0.1:39311/1c95f200-93a6-4cd0-ac2d-81c2a5415e3e\nFor help, see: https://nodejs.org/en/docs/inspector\n",
+    "Debugger ending on ws://127.0.0.1:34963/0e7587a0-90f3-4255-ad41-830477251894\nFor help, see: https://nodejs.org/en/docs/inspector\n",
     "SAVING...",
-    "libEGL warning: failed to open /dev/dri/renderD128: Permission denied\n\n",
-    "libEGL warning: failed to open /dev/dri/renderD128: Permission denied\n\n",
-    "libEGL warning: failed to open /dev/dri/card1: Permission denied\n\n",
-    "[osr-capture] linux readback backend: egl-gles3 (platform=surfaceless, modifiers=yes)\n",
-    "[47450:1010/172725.052400:ERROR:gpu/command_buffer/service/shared_image/shared_image_manager.cc:497] SharedImageManager::ProduceMemory: Trying to Produce a Memory representation from a non-existent mailbox.\n"
+    "libEGL warning: failed to open /dev/dri/renderD128: Permission denied\n\nlibEGL warning: failed to open /dev/dri/renderD128: Permission denied\n\nlibEGL warning: failed to open /dev/dri/card1: Permission denied\n\n",
+    "[osr-capture] linux readback backend: egl-gles3 (platform=surfaceless, modifiers=yes)\n"
   ]
 }

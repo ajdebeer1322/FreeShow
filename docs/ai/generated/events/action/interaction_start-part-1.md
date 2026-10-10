@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:357 interaction_start (depth 0); s
 Effects: src/frontend/components/drawer/pages/interactions.ts:26 store-write src/frontend/stores.ts#alertMessage ; src/frontend/components/drawer/pages/interactions.ts:27 store-write src/frontend/stores.ts#activePopup ; src/frontend/components/drawer/pages/interactions.ts:297 store-write src/frontend/stores.ts#interactions ; src/frontend/components/drawer/pages/interactions.ts:10 store-write src/frontend/stores.ts#activeInteractions .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 27; depth cutoffs: 8. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_id. [External/internal input routes](../inputs.json) retain transport and permission limits.

@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:1746 favourite (depth 0); sr
 Effects: src/frontend/components/context/menuClick.ts:1751 store-write src/frontend/stores.ts#scriptures ; src/frontend/components/context/menuClick.ts:1761 store-write src/frontend/stores.ts#media .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: category_scripture_button src/frontend/components/context/contextMenus.ts:281; media_card src/frontend/components/context/contextMenus.ts:307; audio_button src/frontend/components/context/contextMenus.ts:324. Loaders: none.
+
+[code] Visibility/disabled conditions: src/frontend/components/context/ContextItem.svelte:241 favourite: () => { if ($selected.id?.includes("category_scripture")) { let id = $selected.data&#91;0&#93; enabled = !!$scriptures&#91;id&#93;?.favorite } else { let path = $selected.data&#91;0&#93;?.path. Appears: src/frontend/components/drawer/media/MediaCard.svelte:208.

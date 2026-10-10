@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:381 toggle_log_song_usage (depth 0
 Effects: src/frontend/components/actions/apiHelper.ts:963 store-write src/frontend/stores.ts#special .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_toggle_specific. [External/internal input routes](../inputs.json) retain transport and permission limits.

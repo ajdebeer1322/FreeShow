@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:1153 unlink_pco (depth 0); s
 Effects: src/frontend/components/context/menuClick.ts:1156 store-write src/frontend/stores.ts#showsCache ; src/frontend/components/context/menuClick.ts:1163 store-write src/frontend/stores.ts#shows .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: pco_item src/frontend/components/context/contextMenus.ts:358. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: no literal appearance indexed; mounting may be dynamic.

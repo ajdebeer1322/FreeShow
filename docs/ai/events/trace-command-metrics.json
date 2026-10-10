@@ -1,0 +1,5 @@
+{
+  "command": "npm run ai:trace -- space-live",
+  "seconds": 14.781,
+  "exitCode": 0
+}

@@ -1,0 +1,78 @@
+{
+  "coverage": {
+    "byKind": {
+      "automatic": 724,
+      "keyboard": 194,
+      "click": 1158,
+      "trigger": 23,
+      "action": 162,
+      "drag-source": 65,
+      "drop-target": 18,
+      "drag-drop": 30,
+      "drop-route": 27,
+      "menu": 179
+    },
+    "events": 2580,
+    "functions": 15612,
+    "activations": 21,
+    "conflictCandidates": 25,
+    "resolved": 1291
+  },
+  "entriesWithEffects": 1599,
+  "resolvedEntriesWithEffects": 659,
+  "verifiedTraces": 59,
+  "scenarioCount": 59,
+  "coldTraceSeconds": 14.781,
+  "meanScenarioSeconds": 3.125,
+  "queries": [
+    {
+      "args": [
+        "key",
+        "Space"
+      ],
+      "seconds": 1.204
+    },
+    {
+      "args": [
+        "click",
+        "ClearButtons.svelte"
+      ],
+      "seconds": 1.163
+    },
+    {
+      "args": [
+        "menu",
+        "duplicate"
+      ],
+      "seconds": 1.198
+    },
+    {
+      "args": [
+        "action",
+        "next_slide"
+      ],
+      "seconds": 1.188
+    },
+    {
+      "args": [
+        "trigger",
+        "slide_click"
+      ],
+      "seconds": 1.171
+    },
+    {
+      "args": [
+        "trace",
+        "space-live"
+      ],
+      "seconds": 1.164
+    },
+    {
+      "args": [
+        "writes",
+        "outputs"
+      ],
+      "seconds": 1.169
+    }
+  ]
+}

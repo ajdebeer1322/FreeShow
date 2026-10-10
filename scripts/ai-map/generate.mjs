@@ -2,6 +2,7 @@ import fs from "node:fs"
 import path from "node:path"
 import { pathToFileURL } from "node:url"
 import { analyzeEvents, eventOutputs } from "./events.mjs"
+import { keyOutputs } from "./key-tables.mjs"
 import { scan } from "./scan.mjs"
 import { windowMap } from "./windows.mjs"
 import { ROOT, GENERATED, json, hash, slug, chunks, write, walk, sourceLink, escape, compact } from "./lib.mjs"
@@ -90,6 +91,7 @@ export function generate(model = scan({ analyze: analyzeEvents })) {
         put(`${table}/README.md`,heading(table)+links.join("\n")+"\n")
     }
     if (model.events) for (const [file, content] of eventOutputs(model.events)) outputs.set(file, content)
+    for (const [file, content] of keyOutputs()) outputs.set(file, content)
     return { outputs, model, manifest }
 }
 export function saveGenerated(result) {

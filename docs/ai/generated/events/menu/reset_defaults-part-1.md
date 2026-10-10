@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:559 reset_defaults (depth 0)
 Effects: src/frontend/utils/createData.ts:563 store-write src/frontend/stores.ts#templates ; src/frontend/utils/createData.ts:553 store-write src/frontend/stores.ts#deletedDefaults ; src/frontend/utils/createData.ts:558 store-write src/frontend/stores.ts#templateCategories ; src/frontend/utils/createData.ts:1394 store-write src/frontend/stores.ts#templates ; src/frontend/utils/createData.ts:117 store-write src/frontend/stores.ts#effects ; src/frontend/utils/createData.ts:112 store-write src/frontend/stores.ts#deletedDefaults ; src/frontend/utils/createData.ts:427 store-write src/frontend/stores.ts#overlays ; src/frontend/utils/createData.ts:422 store-write src/frontend/stores.ts#deletedDefaults .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: drawer_overlays src/frontend/components/context/contextMenus.ts:309; drawer_templates src/frontend/components/context/contextMenus.ts:316. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: src/frontend/components/drawer/pages/Overlays.svelte:138; src/frontend/components/drawer/pages/Templates.svelte:207.

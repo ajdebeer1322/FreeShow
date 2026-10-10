@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:900 choose_screen (depth 0).
 Effects: src/frontend/components/context/menuClick.ts:901 store-write src/frontend/stores.ts#popupData ; src/frontend/components/context/menuClick.ts:902 store-write src/frontend/stores.ts#activePopup .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: output src/frontend/components/context/contextMenus.ts:259. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: src/frontend/components/main/Top.svelte:120; src/frontend/components/main/Top.svelte:137.

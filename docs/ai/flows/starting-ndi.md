@@ -2,7 +2,7 @@
 
 ## Observed result
 
-[verified] Backend createSenderNDI and capture lifecycle; native sender status observed, external receiver/hardware not verified. Evidence: [observation data](observations.json), action ID `starting-ndi`, recorded 2026-10-10T17:27:25.437Z.
+[verified] Backend createSenderNDI and capture lifecycle; native sender status observed, external receiver/hardware not verified. Evidence: [observation data](observations.json), action ID `starting-ndi`, recorded 2026-10-10T19:27:33.662Z.
 
 [code] Verification scope: The backend sender and capture toggle were started directly; worker status reported unconnected with zero connections. No external receiver, delivered frames, NDI UI toggle, GPU OSR, OMT or Blackmagic hardware was verified.
 

@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:217 index_select_project (depth 0)
 Effects: src/frontend/components/actions/apiHelper.ts:109 store-write src/frontend/stores.ts#activeProject ; src/frontend/components/actions/apiHelper.ts:110 store-write src/frontend/stores.ts#activeShow ; src/frontend/utils/common.ts:28 store-write src/frontend/stores.ts#toastMessages .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 2; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_index. [External/internal input routes](../inputs.json) retain transport and permission limits.

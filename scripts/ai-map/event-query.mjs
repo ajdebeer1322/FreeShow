@@ -1,7 +1,7 @@
 // Pure functions: no IO, network, process state, or mutation.
 const ref=x=>`${x.file}:${x.line}`
 const brief=(rows,all,format)=>rows.slice(0,all?rows.length:10).map(format).join('\n')+(rows.length>10&&!all?`\n  … ${rows.length-10} more; add --all`:'')
-const normalize=key=>key.replace(/Command|Cmd|Control|Ctrl\/Cmd/gi,'Ctrl').replace(/^ $/,'Space').replace(/\+/g,'+').toLowerCase()
+const normalize=key=>key.replace(/Ctrl\/Cmd|Control|Command|Cmd/gi,'Ctrl').replace(/^ $/,'Space').toLowerCase()
 export function matchingKeys(data,key){
     const normalized=normalize(key),base=normalized.replace(/^shift\+/,'')
     return data.events.filter(e=>e.kind==='keyboard'&&(normalize(e.key||'')===normalized||normalize(e.key||'')===base||(e.detectedKeys||[]).some(k=>normalize(k)===base)))
@@ -16,7 +16,7 @@ export function summarizeEvent(e,{all=false}={}){
 export function keyQuery(data,key,options={}){
     const events=matchingKeys(data,key),tables=(data.keyTables||[]).filter(t=>t.keys.some(k=>normalize(k)===normalize(key))),traces=(data.traces||[]).filter(t=>t.keys?.some(k=>normalize(k)===normalize(key)))
     const conflicts=data.conflicts.filter(c=>normalize(c.key)===normalize(key)||normalize(c.key)===normalize(key).replace(/^shift\+/,''))
-    return [`Key ${key} [code]; ${events.length} handler candidates (modifier/DOM guards still apply)`,brief(events,options.all,e=>`${ref(e)} ${e.table||e.eventName||'listener'} -> ${e.handler}`),`Situation tables: ${tables.map(t=>t.document).join(', ')||'none indexed'}`,`Traces: ${traces.map(t=>`${t.id} [${t.status}] ${t.document}`).join('; ')||'none recorded'}`,`Conflict candidates: ${conflicts.length}`,brief(conflicts,options.all,c=>c.precedence)].join('\n')
+    return [`Key ${key} [code]; ${events.length} handler candidates (modifier/DOM guards still apply)`,brief(events,options.all,e=>`${ref(e)} ${e.table||e.eventName||'listener'} -> ${e.handler}`),`Situation tables: ${tables.map(t=>t.document).join(', ')||'none indexed'}`,brief(tables.flatMap(t=>t.rules),options.all,r=>`  ${r.situation} -> ${r.result} (${r.reference})`),`Traces: ${traces.map(t=>`${t.id} [${t.status}] ${t.document}`).join('; ')||'none recorded'}`,`Conflict candidates: ${conflicts.length}`,brief(conflicts,options.all,c=>c.precedence)].join('\n')
 }
 export function clickQuery(data,key,options={}){
     const events=data.events.filter(e=>e.kind==='click'&&(e.file===key||e.file.endsWith('/'+key)))
@@ -25,12 +25,15 @@ export function clickQuery(data,key,options={}){
 export function menuQuery(data,key,options={}){
     const e=data.events.find(e=>e.kind==='menu'&&e.menuId===key)
     if(!e)return `Unknown menu item: ${key}`
-    return [summarizeEvent(e,options),`Layouts: ${e.memberships.map(m=>m.layout+' '+ref(m)).join('; ')}`,`Loaders: ${e.loaders.map(l=>l.id+' '+ref(l)).join('; ')||'none'}`,`Appears (${e.appearances.length}):\n`+brief(e.appearances,options.all,a=>ref(a)+' '+a.expression),`Definition: ${e.definition}`].join('\n')
+    return [summarizeEvent(e,options),`Layouts: ${e.memberships.map(m=>m.layout+' '+ref(m)).join('; ')}`,`Loaders: ${e.loaders.map(l=>l.id+' '+ref(l)).join('; ')||'none'}`,`Visibility/disabled conditions:\n`+brief(e.visibility||[],options.all,g=>ref(g)+' '+g.expression),`Appears (${e.appearances.length}):\n`+brief(e.appearances,options.all,a=>ref(a)+' '+a.expression),`Definition: ${e.definition}`].join('\n')
 }
 export function actionQuery(data,key,options={}){
     const e=data.events.find(e=>e.kind==='action'&&e.command===key)
     if(!e)return `Unknown API command: ${key}`
-    return [summarizeEvent(e,options),`Payload: ${e.payloadType}`,`Input routes (${data.inputs.length}; runtime routing/permissions conditional):\n`+brief(data.inputs,options.all,r=>ref(r)+' '+r.expression+' ('+r.origin+')')].join('\n')
+    const routes=[...new Map(data.inputs.filter(r=>r.route!=='automatic activation'&&(!r.command||r.command===key)).map(r=>[(r.route||r.origin)+':'+r.file,r])).values()]
+    const priority=['remote','stage','controller','MIDI','OSC','REST/WebSocket/OSC'],rank=r=>priority.includes(r.route)?priority.indexOf(r.route):priority.length
+    routes.sort((a,b)=>rank(a)-rank(b)||a.file.localeCompare(b.file))
+    return [summarizeEvent(e,options),`Payload: ${e.payloadType}`,`Input routes (${routes.length}; runtime routing/permissions conditional):\n`+brief(routes,options.all,r=>ref(r)+' '+r.expression+' ('+(r.route||r.origin)+')')].join('\n')
 }
 export function triggerQuery(data,key,options={}){
     const definition=data.activations.find(a=>a.id===key),events=data.events.filter(e=>e.activationId===key)

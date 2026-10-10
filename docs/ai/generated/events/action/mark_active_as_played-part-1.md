@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:223 mark_active_as_played (depth 0
 Effects: src/frontend/converters/project.ts:247 store-write src/frontend/stores.ts#projects .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_toggle_specific. [External/internal input routes](../inputs.json) retain transport and permission limits.

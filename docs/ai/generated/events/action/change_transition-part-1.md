@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:297 change_transition (depth 0); s
 Effects: src/frontend/utils/transitions.ts:81 store-write src/frontend/stores.ts#transitionData .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_transition. [External/internal input routes](../inputs.json) retain transport and permission limits.

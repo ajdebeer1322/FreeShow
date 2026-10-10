@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:159 focus_mode (depth 0); sr
 Effects: src/frontend/components/context/menuClick.ts:166 store-write src/frontend/stores.ts#previousShow ; src/frontend/components/context/menuClick.ts:167 store-write src/frontend/stores.ts#activeShow ; src/frontend/components/context/menuClick.ts:168 store-write src/frontend/stores.ts#showRecentlyUsedProjects ; src/frontend/components/context/menuClick.ts:173 store-write src/frontend/stores.ts#drawer ; src/frontend/components/context/menuClick.ts:176 store-write src/frontend/stores.ts#activeFocus ; src/frontend/components/context/menuClick.ts:178 store-write src/frontend/stores.ts#activePage ; src/frontend/components/context/menuClick.ts:179 store-write src/frontend/stores.ts#focusMode ; src/frontend/components/context/menuClick.ts:182 store-write src/frontend/stores.ts#showsCache ; src/frontend/utils/common.ts:28 store-write src/frontend/stores.ts#toastMessages .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: view src/frontend/components/context/contextMenus.ts:247. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: no literal appearance indexed; mounting may be dynamic.

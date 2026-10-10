@@ -21,7 +21,7 @@ Start here before changing the code. Prefer generated facts and read the referen
 ## Roles of the documentation
 
 - [AI_README.md](../../AI_README.md): architecture and where things are.
-- `HOW_IT_WORKS.md`: measured output behavior and findings. It is absent at this branch's required source base. Consult the [later companion at a fixed revision](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md), but do not assume later behavior exists here. Findings F-001–F-019 belong to that snapshot.
+- [HOW_IT_WORKS.md](../../HOW_IT_WORKS.md): measured output behavior and findings F-001–F-019. Read the scope of each experiment before applying it to another configuration.
 - `docs/ai/`: generated dependency/state/message maps, sourced history, subsystem explanations and flow traces.
 
 ## Commands
@@ -61,3 +61,21 @@ Queries are read-only, plain text, and show at most 12 references per section by
 6. Document suspected bugs without changing product code. Check the companion finding IDs first.
 
 [code] External URLs are recorded but not fetched by `ai:check`; it does not validate remote link availability. Unregistered prose can be checked for a file and line's existence, but its meaning cannot be mechanically verified. `references.json` supplies stronger anchors for curated claims.
+
+## Events and triggers
+
+[code] The [event inventory](generated/events/README.md) maps keyboard, click, context-menu, drag/drop, API and automatic handlers with six-level conditional effects. Read the [situation tables](events/README.md) for keys and [live traces](traces/README.md) for observed IPC/output behavior. The [phase 7 report](events/REPORT.md) lists coverage, conflicts and limits.
+
+```bash
+npm run ai:ask -- key Space
+npm run ai:ask -- click ClearButtons.svelte
+npm run ai:ask -- menu duplicate
+npm run ai:ask -- action next_slide
+npm run ai:ask -- trigger slide_click
+npm run ai:ask -- trace space-live
+npm run ai:ask -- writes outputs
+npm run ai:trace -- list
+npm run ai:trace -- space-live
+```
+
+[code] Queries have pure functions in `scripts/ai-map/event-query.mjs`; loading JSON is a separate IO boundary. `ai:map` regenerates the event inventory and key tables. Refresh live recordings after source or recorder changes, then run `ai:check`. A static chain lists possible effects and unresolved branches; it does not establish an execution order or audience timing.

@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:1223 slide_transition (depth
 Effects: src/frontend/components/context/menuClick.ts:1226 store-write src/frontend/stores.ts#popupData ; src/frontend/components/context/menuClick.ts:1227 store-write src/frontend/stores.ts#activePopup .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: slide src/frontend/components/context/contextMenus.ts:384; slideChild src/frontend/components/context/contextMenus.ts:386. Loaders: none.
+
+[code] Visibility/disabled conditions: src/frontend/components/context/ContextItem.svelte:154 slide_transition: () => { if ($selected.id === "slide" && $activeShow) { let ref = getLayoutRef() enabled = !!(ref&#91;$selected.data&#91;0&#93;?.index&#93;?.data?.transition \|\| false) } }. Appears: src/server/remote/components/show/ShowSlide.svelte:63.

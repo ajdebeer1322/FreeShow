@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:717 variable_tag_filter (dep
 Effects: no indexed terminal effect.
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: variables src/frontend/components/context/contextMenus.ts:376; variables_readonly src/frontend/components/context/contextMenus.ts:377; variable src/frontend/components/context/contextMenus.ts:378; variable_readonly src/frontend/components/context/contextMenus.ts:379. Loaders: variable_tag_filter src/frontend/components/context/loadItems.ts:78.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: no literal appearance indexed; mounting may be dynamic.

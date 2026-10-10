@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:2079 backward_stage (depth 0
 Effects: src/frontend/components/edit/scripts/itemHelpers.ts:266 store-write src/frontend/stores.ts#refreshEditSlide ; src/frontend/components/edit/scripts/itemHelpers.ts:285 store-write src/frontend/stores.ts#stageShows ; src/frontend/components/edit/scripts/itemHelpers.ts:255 store-write src/frontend/stores.ts#stageShows ; src/frontend/components/edit/scripts/itemHelpers.ts:257 store-write src/frontend/stores.ts#activeStage ; src/frontend/components/edit/scripts/itemHelpers.ts:256 store-write src/frontend/stores.ts#activeStage ; src/frontend/components/edit/scripts/itemHelpers.ts:261 store-write src/frontend/stores.ts#activeStage .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: items_list_item_stage src/frontend/components/context/contextMenus.ts:415. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: src/frontend/components/stage/tools/StageItemsList.svelte:50.

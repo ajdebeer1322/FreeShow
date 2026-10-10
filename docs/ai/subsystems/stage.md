@@ -21,6 +21,10 @@
 4. [code] Selected layout/output and browser errors/connection state live in stage-local stores. ([src/server/stage/util/stores.ts:19](../../../src/server/stage/util/stores.ts#L19))
 5. [code] Stage layout updates are coalesced, filtered and sent to clients based on active layout. ([src/frontend/utils/listeners.ts:228](../../../src/frontend/utils/listeners.ts#L228))
 
+## Events and triggers
+
+[code] Query handlers and bounded effects with `npm run ai:ask -- file <file>` and the [event inventory](../generated/events/README.md), [key situation tables](../events/README.md), and [live recordings](../traces/README.md). Events are conditional call unions; a live trace records only the chosen fixture.
+
 ## Stores and messages
 
 [code] Static scope: 44 files, 53 referenced stores, 22 concrete message keys, 62 timing entries. [Complete dependency index](stage.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
@@ -76,4 +80,4 @@
 
 [code] All 70 related decision IDs and locations are included in the dependency JSON. Use `ai:ask -- why <file>:<line>` for exact records; generic commit intent is not an item-specific motive.
 
-[code] Companion references: [F-004](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These refer to a later source snapshot; they are contextual evidence, not runtime verification here.
+[code] Companion references: [F-004](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These are companion experiments; see each finding’s evidence and do not treat it as observation of every configuration.

@@ -2,7 +2,7 @@
 
 ## Observed result
 
-[verified] Seeded local Bible selection, native playScripture helper, output DOM; no external Bible API. Evidence: [observation data](observations.json), action ID `showing-scripture`, recorded 2026-10-10T17:27:25.437Z.
+[verified] Seeded local Bible selection, native playScripture helper, output DOM; no external Bible API. Evidence: [observation data](observations.json), action ID `showing-scripture`, recorded 2026-10-10T19:27:33.662Z.
 
 [code] Verification scope: A seeded local Bible and playScripture produced id=temp and rendered the verse. The drawer action, external Bible APIs, licensing attribution, multilingual templates and multiple selections were not exercised.
 
@@ -30,7 +30,7 @@
 
 10. [code] Output delays line/slide commits by 50 ms in an output renderer, 10 ms elsewhere; clearing uses the separate zero-delay branch. ([src/frontend/components/output/Output.svelte:227](../../../src/frontend/components/output/Output.svelte#L227))
 
-11. [code] SlideContent prepares item state and hidden auto-size probes before its show/transition state changes. ([src/frontend/components/output/layers/SlideContent.svelte:157](../../../src/frontend/components/output/layers/SlideContent.svelte#L157))
+11. [code] SlideContent prepares item state and hidden auto-size probes before its show/transition state changes. ([src/frontend/components/output/layers/SlideContent.svelte:175](../../../src/frontend/components/output/layers/SlideContent.svelte#L175))
 
 12. [code] Textbox renders the item and can signal auto-size readiness to the parent; this does not prove that every item uses auto-size. ([src/frontend/components/slide/Textbox.svelte:70](../../../src/frontend/components/slide/Textbox.svelte#L70))
 
@@ -47,12 +47,12 @@
 - [src/frontend/components/output/layers/SlideContent.svelte](../generated/files/src_frontend_components_output_layers_SlideContent.svelte.md)
 - [src/frontend/components/slide/Textbox.svelte](../generated/files/src_frontend_components_slide_Textbox.svelte.md)
 
-[code] 91 related decision records: [full IDs and locations](showing-scripture.dependencies.json); representative records:
+[code] 92 related decision records: [full IDs and locations](showing-scripture.dependencies.json); representative records:
 
 - [code] [D-timer-1740a1819cd38b97](../history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md).
 - [code] [D-timer-8303c02ad65c136f](../history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md).
 - [code] [D-timer-cf6a381999a4c4c9](../history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md).
-- [code] [D-timer-8093f55a2dd3b53d](../history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md).
 - [code] [D-timer-5a0884eced6ca67c](../history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md).
+- [code] [D-timer-24d1dc584a7d8c38](../history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md).
 
 [code] Companion findings [F-007](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md), [F-017](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md) refer to the later fixed snapshot; use them as context, not runtime evidence for this base. See the [evidence method](README.md) before reusing these observations.

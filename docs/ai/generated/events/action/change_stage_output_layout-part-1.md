@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:296 change_stage_output_layout (de
 Effects: src/frontend/components/helpers/output.ts:1191 store-write src/frontend/stores.ts#outputs .
 
 may change live output; inspect conditions/trace. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_stage_output_layout. [External/internal input routes](../inputs.json) retain transport and permission limits.

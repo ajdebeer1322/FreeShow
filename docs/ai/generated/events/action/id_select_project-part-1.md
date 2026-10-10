@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:216 id_select_project (depth 0); s
 Effects: src/frontend/components/actions/apiHelper.ts:96 store-write src/frontend/stores.ts#activeProject .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_id. [External/internal input routes](../inputs.json) retain transport and permission limits.

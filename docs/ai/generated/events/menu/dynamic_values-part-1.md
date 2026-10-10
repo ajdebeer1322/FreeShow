@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:2060 dynamic_values (depth 0
 Effects: src/frontend/components/context/menuClick.ts:2066 store-write src/frontend/stores.ts#popupData ; src/frontend/components/context/menuClick.ts:2067 store-write src/frontend/stores.ts#activePopup .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 5; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: dynamic src/frontend/components/context/contextMenus.ts:239. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: no literal appearance indexed; mounting may be dynamic.

@@ -20,6 +20,10 @@
 4. [code] Synchronization uses the dedicated correction helper; seek/nudge behavior belongs here. ([src/frontend/components/media/video/videoSync.ts:40](../../../src/frontend/components/media/video/videoSync.ts#L40))
 5. [code] End-of-media progression uses the shared output navigation path. ([src/frontend/components/helpers/showActions.ts:677](../../../src/frontend/components/helpers/showActions.ts#L677))
 
+## Events and triggers
+
+[code] Query handlers and bounded effects with `npm run ai:ask -- file <file>` and the [event inventory](../generated/events/README.md), [key situation tables](../events/README.md), and [live recordings](../traces/README.md). Events are conditional call unions; a live trace records only the chosen fixture.
+
 ## Stores and messages
 
 [code] Static scope: 11 files, 43 referenced stores, 16 concrete message keys, 49 timing entries. [Complete dependency index](media-video.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
@@ -78,4 +82,4 @@
 
 [code] All 71 related decision IDs and locations are included in the dependency JSON. Use `ai:ask -- why <file>:<line>` for exact records; generic commit intent is not an item-specific motive.
 
-[code] Companion references: [F-015](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md), [F-017](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These refer to a later source snapshot; they are contextual evidence, not runtime verification here.
+[code] Companion references: [F-015](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md), [F-017](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These are companion experiments; see each finding’s evidence and do not treat it as observation of every configuration.

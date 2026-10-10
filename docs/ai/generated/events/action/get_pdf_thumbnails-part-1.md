@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:438 get_pdf_thumbnails (depth 0); 
 Effects: src/frontend/components/actions/apiHelper.ts:1104 store-write src/frontend/stores.ts#pdfImports ; src/frontend/components/actions/apiHelper.ts:1145 store-write src/frontend/stores.ts#pdfImports ; src/frontend/components/actions/apiHelper.ts:1154 store-write src/frontend/stores.ts#pdfImports .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 7; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_media. [External/internal input routes](../inputs.json) retain transport and permission limits.

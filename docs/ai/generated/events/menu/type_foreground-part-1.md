@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:1836 type_foreground (depth 
 Effects: src/frontend/components/context/menuClick.ts:1840 store-write src/frontend/stores.ts#mediaFolders .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: none indexed. Loaders: none.
+
+[code] Visibility/disabled conditions: src/frontend/components/context/ContextItem.svelte:387 type_foreground: () => { const folderId = $selected.data&#91;0&#93; if (!folderId) return const folder = $mediaFolders&#91;folderId&#93; enabled = folder?.mediaType === "foreground" }. Appears: no literal appearance indexed; mounting may be dynamic.

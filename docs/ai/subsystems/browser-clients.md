@@ -23,6 +23,10 @@
 5. [code] Output-stream receives rendered stream data and separate audio buffers. ([src/server/output_stream/App.svelte:36](../../../src/server/output_stream/App.svelte#L36))
 6. [code] The camera client requires a secure/localhost media-device context and samples its canvas every 5 ms. ([src/server/cam/App.svelte:2](../../../src/server/cam/App.svelte#L2))
 
+## Events and triggers
+
+[code] Query handlers and bounded effects with `npm run ai:ask -- file <file>` and the [event inventory](../generated/events/README.md), [key situation tables](../events/README.md), and [live recordings](../traces/README.md). Events are conditional call unions; a live trace records only the chosen fixture.
+
 ## Stores and messages
 
 [code] Static scope: 128 files, 128 referenced stores, 113 concrete message keys, 122 timing entries. [Complete dependency index](browser-clients.dependencies.json) includes conditional and test paths. Runtime use can be narrower.

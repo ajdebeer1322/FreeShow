@@ -20,6 +20,10 @@
 4. [code] Full shows are loaded into showsCache lazily; the trimmed shows index is a different data structure. ([src/frontend/components/helpers/setShow.ts:229](../../../src/frontend/components/helpers/setShow.ts#L229))
 5. [code] Visible slide indexes come from expanded layout references, including children. ([src/frontend/components/show/Slides.svelte:118](../../../src/frontend/components/show/Slides.svelte#L118))
 
+## Events and triggers
+
+[code] Query handlers and bounded effects with `npm run ai:ask -- file <file>` and the [event inventory](../generated/events/README.md), [key situation tables](../events/README.md), and [live recordings](../traces/README.md). Events are conditional call unions; a live trace records only the chosen fixture.
+
 ## Stores and messages
 
 [code] Static scope: 7 files, 25 referenced stores, 1 concrete message keys, 4 timing entries. [Complete dependency index](show-model.dependencies.json) includes conditional and test paths. Runtime use can be narrower.

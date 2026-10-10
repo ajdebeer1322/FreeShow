@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:1578 overlay_actions (depth 
 Effects: src/frontend/components/context/menuClick.ts:1586 store-write src/frontend/stores.ts#activePopup ; src/frontend/components/context/menuClick.ts:1585 store-write src/frontend/stores.ts#popupData .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: overlay_card src/frontend/components/context/contextMenus.ts:310. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: no literal appearance indexed; mounting may be dynamic.

@@ -2,7 +2,7 @@
 
 ## Observed result
 
-[verified] Real keyboard Space through the built-in shortcut. Evidence: [observation data](observations.json), action ID `next-space`, recorded 2026-10-10T17:27:25.437Z.
+[verified] Real keyboard Space through the built-in shortcut. Evidence: [observation data](observations.json), action ID `next-space`, recorded 2026-10-10T19:27:33.662Z.
 
 [code] Verification scope: The second ordinary slide was observed. Linked-output holds, end-of-project behavior and timeline interception remain source-only.
 
@@ -28,7 +28,7 @@
 
 9. [code] Output delays line/slide commits by 50 ms in an output renderer, 10 ms elsewhere; clearing uses the separate zero-delay branch. ([src/frontend/components/output/Output.svelte:227](../../../src/frontend/components/output/Output.svelte#L227))
 
-10. [code] SlideContent prepares item state and hidden auto-size probes before its show/transition state changes. ([src/frontend/components/output/layers/SlideContent.svelte:157](../../../src/frontend/components/output/layers/SlideContent.svelte#L157))
+10. [code] SlideContent prepares item state and hidden auto-size probes before its show/transition state changes. ([src/frontend/components/output/layers/SlideContent.svelte:175](../../../src/frontend/components/output/layers/SlideContent.svelte#L175))
 
 11. [code] Textbox renders the item and can signal auto-size readiness to the parent; this does not prove that every item uses auto-size. ([src/frontend/components/slide/Textbox.svelte:70](../../../src/frontend/components/slide/Textbox.svelte#L70))
 
@@ -46,12 +46,12 @@
 - [src/frontend/components/output/layers/SlideContent.svelte](../generated/files/src_frontend_components_output_layers_SlideContent.svelte.md)
 - [src/frontend/components/slide/Textbox.svelte](../generated/files/src_frontend_components_slide_Textbox.svelte.md)
 
-[code] 96 related decision records: [full IDs and locations](next-space.dependencies.json); representative records:
+[code] 98 related decision records: [full IDs and locations](next-space.dependencies.json); representative records:
 
 - [code] [D-timer-cf6a381999a4c4c9](../history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md).
-- [code] [D-timer-8093f55a2dd3b53d](../history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md).
 - [code] [D-timer-5a0884eced6ca67c](../history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md).
 - [code] [D-timer-24d1dc584a7d8c38](../history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md).
 - [code] [D-timer-7e20e324eb39abdb](../history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md).
+- [code] [D-timer-02741a0b4a6cecaf](../history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md).
 
 [code] Companion findings [F-008](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md), [F-010](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md) refer to the later fixed snapshot; use them as context, not runtime evidence for this base. See the [evidence method](README.md) before reusing these observations.

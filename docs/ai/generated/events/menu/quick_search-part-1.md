@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:258 quick_search (depth 0).
 Effects: src/frontend/components/context/menuClick.ts:258 store-write src/frontend/stores.ts#quickSearchActive .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: help src/frontend/components/context/contextMenus.ts:248; default src/frontend/components/context/contextMenus.ts:251. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: no literal appearance indexed; mounting may be dynamic.

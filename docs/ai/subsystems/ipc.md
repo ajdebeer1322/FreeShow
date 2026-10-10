@@ -23,6 +23,10 @@
 5. [code] Outputs are coalesced over 1 ms before OUTPUTS/ALL_OUTPUTS and browser projections are sent. ([src/frontend/utils/listeners.ts:195](../../../src/frontend/utils/listeners.ts#L195))
 6. [code] Output handlers translate projected data into local stores. ([src/frontend/utils/receivers.ts:190](../../../src/frontend/utils/receivers.ts#L190))
 
+## Events and triggers
+
+[code] Query handlers and bounded effects with `npm run ai:ask -- file <file>` and the [event inventory](../generated/events/README.md), [key situation tables](../events/README.md), and [live recordings](../traces/README.md). Events are conditional call unions; a live trace records only the chosen fixture.
+
 ## Stores and messages
 
 [code] Static scope: 10 files, 94 referenced stores, 311 concrete message keys, 26 timing entries. [Complete dependency index](ipc.dependencies.json) includes conditional and test paths. Runtime use can be narrower.

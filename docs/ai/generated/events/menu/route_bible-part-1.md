@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:995 route_bible (depth 0); s
 Effects: src/frontend/components/drawer/bible/scripture.ts:2186 ipc sendMain(Main.URL, routeBibleURL) ; src/frontend/components/drawer/bible/scripture.ts:94 ipc requestMain(Main.BIBLE, { name: scriptureData.name, id }) ; src/frontend/IPC/main.ts:23 ipc sendMain(id, value, listenerId) ; src/frontend/components/drawer/bible/scripture.ts:98 store-write src/frontend/stores.ts#notFound ; src/frontend/components/drawer/bible/scripture.ts:111 store-write src/frontend/stores.ts#scripturesCache ; src/frontend/IPC/main.ts:72 ipc window.api.send(MAIN, { channel: id, data: value }, listenerId) .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 14; depth cutoffs: 6. Full edges/effects/conditions in JSON.
+
+Menu layouts: scripture_verse src/frontend/components/context/contextMenus.ts:335. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: src/frontend/components/drawer/bible/Scripture.svelte:1124; src/server/remote/components/pages/ScriptureContent.svelte:663.

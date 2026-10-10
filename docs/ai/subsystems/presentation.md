@@ -20,6 +20,10 @@
 4. [code] updateOut applies associated background, overlay, timer and action behavior. ([src/frontend/components/helpers/showActions.ts:310](../../../src/frontend/components/helpers/showActions.ts#L310))
 5. [code] Keyboard stepping groups linked cards, holds outputs still waiting for another output's reveal, then advances destinations. ([src/frontend/components/helpers/OutputHelper.ts:23](../../../src/frontend/components/helpers/OutputHelper.ts#L23))
 
+## Events and triggers
+
+[code] Query handlers and bounded effects with `npm run ai:ask -- file <file>` and the [event inventory](../generated/events/README.md), [key situation tables](../events/README.md), and [live recordings](../traces/README.md). Events are conditional call unions; a live trace records only the chosen fixture.
+
 ## Stores and messages
 
 [code] Static scope: 5 files, 82 referenced stores, 18 concrete message keys, 42 timing entries. [Complete dependency index](presentation.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
@@ -79,4 +83,4 @@
 
 [code] All 64 related decision IDs and locations are included in the dependency JSON. Use `ai:ask -- why <file>:<line>` for exact records; generic commit intent is not an item-specific motive.
 
-[code] Companion references: [F-009](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md), [F-014](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These refer to a later source snapshot; they are contextual evidence, not runtime verification here.
+[code] Companion references: [F-009](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md), [F-014](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These are companion experiments; see each finding’s evidence and do not treat it as observation of every configuration.

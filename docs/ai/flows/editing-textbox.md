@@ -2,7 +2,7 @@
 
 ## Observed result
 
-[verified] Real Edit view and contenteditable input; show cache/history observed. Evidence: [observation data](observations.json), action ID `editing-textbox`, recorded 2026-10-10T17:27:25.437Z.
+[verified] Real Edit view and contenteditable input; show cache/history observed. Evidence: [observation data](observations.json), action ID `editing-textbox`, recorded 2026-10-10T19:27:33.662Z.
 
 [code] Verification scope: Contenteditable input changed showsCache and created history entries. The ordinary text mutation was observed; undo/redo round trips, IME composition, splitting and styled selections remain source-only.
 

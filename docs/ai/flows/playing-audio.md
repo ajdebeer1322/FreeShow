@@ -2,7 +2,7 @@
 
 ## Observed result
 
-[verified] Native AudioPlayer.start with generated quiet WAV; media clock observed (speaker audibility not verified). Evidence: [observation data](observations.json), action ID `playing-audio`, recorded 2026-10-10T17:27:25.437Z.
+[verified] Native AudioPlayer.start with generated quiet WAV; media clock observed (speaker audibility not verified). Evidence: [observation data](observations.json), action ID `playing-audio`, recorded 2026-10-10T19:27:33.662Z.
 
 [code] Verification scope: AudioPlayer.start returned true and the HTMLAudioElement clock advanced beyond 0.1 s for a generated quiet WAV. The UI button and speaker audibility, hardware devices, multichannel routing and playlists were not tested.
 

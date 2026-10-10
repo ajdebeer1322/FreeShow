@@ -775,7 +775,7 @@
       ],
       "action": "Press Space in live",
       "status": "verified",
-      "elapsedMs": 3097,
+      "elapsedMs": 3292,
       "document": "docs/ai/traces/space-live.md",
       "recording": "docs/ai/traces/space-live.json",
       "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",

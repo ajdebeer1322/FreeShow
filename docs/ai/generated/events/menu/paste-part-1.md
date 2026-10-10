@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:252 paste (depth 0); src/fro
 Effects: src/frontend/components/helpers/clipboard.ts:1279 store-write src/frontend/stores.ts#media ; src/frontend/utils/common.ts:34 store-write src/frontend/stores.ts#statusIndicator ; src/frontend/utils/common.ts:40 store-write src/frontend/stores.ts#statusIndicator .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 1; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: edit src/frontend/components/context/contextMenus.ts:246; input src/frontend/components/context/contextMenus.ts:256; slide src/frontend/components/context/contextMenus.ts:384; slideChild src/frontend/components/context/contextMenus.ts:386; group src/frontend/components/context/contextMenus.ts:389. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: src/frontend/components/context/ContextMenu.svelte:59; src/frontend/components/show/tools/SlideGroups.svelte:83; src/server/remote/components/show/ShowSlide.svelte:63.

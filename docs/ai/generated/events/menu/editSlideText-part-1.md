@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:1304 editSlideText (depth 0)
 Effects: src/frontend/components/context/menuClick.ts:1308 store-write src/frontend/stores.ts#activeEdit ; src/frontend/components/context/menuClick.ts:1309 store-write src/frontend/stores.ts#activePage ; src/frontend/components/context/menuClick.ts:1310 store-write src/frontend/stores.ts#selected .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: slideFocus src/frontend/components/context/contextMenus.ts:388. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: no literal appearance indexed; mounting may be dynamic.

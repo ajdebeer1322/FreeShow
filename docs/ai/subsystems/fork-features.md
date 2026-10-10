@@ -22,6 +22,10 @@
 5. [code] WorshipTools uses an embedded view and validated IPC instead of importing private browser data directly into the renderer. ([src/electron/worshipTools/worshipTools.ts:5](../../../src/electron/worshipTools/worshipTools.ts#L5))
 6. [code] Imported charts are converted with the shared text converter and installed in show/project history. ([src/frontend/converters/worshipTools.ts:32](../../../src/frontend/converters/worshipTools.ts#L32))
 
+## Events and triggers
+
+[code] Query handlers and bounded effects with `npm run ai:ask -- file <file>` and the [event inventory](../generated/events/README.md), [key situation tables](../events/README.md), and [live recordings](../traces/README.md). Events are conditional call unions; a live trace records only the chosen fixture.
+
 ## Stores and messages
 
 [code] Static scope: 19 files, 58 referenced stores, 13 concrete message keys, 35 timing entries. [Complete dependency index](fork-features.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
@@ -81,4 +85,4 @@
 
 [code] All 51 related decision IDs and locations are included in the dependency JSON. Use `ai:ask -- why <file>:<line>` for exact records; generic commit intent is not an item-specific motive.
 
-[code] Companion references: [F-015](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md), [F-018](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These refer to a later source snapshot; they are contextual evidence, not runtime verification here.
+[code] Companion references: [F-015](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md), [F-018](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These are companion experiments; see each finding’s evidence and do not treat it as observation of every configuration.

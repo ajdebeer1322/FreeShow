@@ -21,6 +21,10 @@
 5. [code] The transmitter coordinates per-channel frame delivery and receiver capacity. ([src/electron/capture/helpers/CaptureTransmitter.ts:21](../../../src/electron/capture/helpers/CaptureTransmitter.ts#L21))
 6. [code] RTMP has its own streaming/reconnection lifecycle and FFmpeg integration. ([src/electron/streaming/RtmpStreamer.ts:104](../../../src/electron/streaming/RtmpStreamer.ts#L104))
 
+## Events and triggers
+
+[code] Query handlers and bounded effects with `npm run ai:ask -- file <file>` and the [event inventory](../generated/events/README.md), [key situation tables](../events/README.md), and [live recordings](../traces/README.md). Events are conditional call unions; a live trace records only the chosen fixture.
+
 ## Stores and messages
 
 [code] Static scope: 48 files, 0 referenced stores, 31 concrete message keys, 69 timing entries. [Complete dependency index](capture.dependencies.json) includes conditional and test paths. Runtime use can be narrower.

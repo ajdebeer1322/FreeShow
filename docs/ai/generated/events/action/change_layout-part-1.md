@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:229 change_layout (depth 0); src/f
 Effects: src/frontend/components/helpers/setShow.ts:235 store-write src/frontend/stores.ts#notFound ; src/frontend/components/helpers/setShow.ts:186 ipc requestMain(Main.SHOW, { name: get(shows)&#91;id&#93;?.name, id }) ; src/frontend/IPC/main.ts:23 ipc sendMain(id, value, listenerId) ; src/frontend/components/helpers/setShow.ts:189 store-write src/frontend/stores.ts#notFound ; src/frontend/components/helpers/setShow.ts:206 store-write src/frontend/stores.ts#notFound ; src/frontend/components/helpers/setShow.ts:247 store-write src/frontend/stores.ts#saved ; src/frontend/components/actions/apiHelper.ts:572 store-write src/frontend/stores.ts#showsCache .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 1; depth cutoffs: 11. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_layout. [External/internal input routes](../inputs.json) retain transport and permission limits.

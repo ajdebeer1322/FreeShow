@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:1919 move_connections (depth
 Effects: src/frontend/components/actions/apiHelper.ts:365 ipc send(STAGE, &#91;"SWITCH"&#93;, { id }) ; src/frontend/components/helpers/debugLog.ts:47 ipc send(OUTPUT, &#91;"MAIN_DEBUG"&#93;, { time: Date.now(), category: outputWindowLabel(), message: '&#91;${category}&#93; ${message}', data: stringify(data) }) .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 1; depth cutoffs: 1. Full edges/effects/conditions in JSON.
+
+Menu layouts: stage_slide src/frontend/components/context/contextMenus.ts:410; stage_slide_readonly src/frontend/components/context/contextMenus.ts:411. Loaders: none.
+
+[code] Visibility/disabled conditions: src/frontend/components/context/ContextItem.svelte:151 move_connections: () => { hide = $disabledServers.stage === true }. Appears: no literal appearance indexed; mounting may be dynamic.

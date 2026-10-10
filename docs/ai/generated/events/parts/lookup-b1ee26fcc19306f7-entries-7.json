@@ -1,0 +1,14 @@
+[
+  {"key":"get_playing_audio_data","file":"src/frontend/components/actions/api.ts","line":423,"target":"src/frontend/components/actions/api.ts:19261"},
+  {"key":"get_variables","file":"src/frontend/components/actions/api.ts","line":425,"target":"src/frontend/components/actions/api.ts:19310"},
+  {"key":"get_variable","file":"src/frontend/components/actions/api.ts","line":426,"target":"src/frontend/components/actions/api.ts:19350"},
+  {"key":"get_timers","file":"src/frontend/components/actions/api.ts","line":428,"target":"src/frontend/components/actions/api.ts:19428"},
+  {"key":"get_actions","file":"src/frontend/components/actions/api.ts","line":430,"target":"src/frontend/components/actions/api.ts:19473"},
+  {"key":"get_playlists","file":"src/frontend/components/actions/api.ts","line":432,"target":"src/frontend/components/actions/api.ts:19513"},
+  {"key":"get_playlist","file":"src/frontend/components/actions/api.ts","line":433,"target":"src/frontend/components/actions/api.ts:19553"},
+  {"key":"get_slide","file":"src/frontend/components/actions/api.ts","line":434,"target":"src/frontend/components/actions/api.ts:19621"},
+  {"key":"get_thumbnail","file":"src/frontend/components/actions/api.ts","line":436,"target":"src/frontend/components/actions/api.ts:19678"},
+  {"key":"get_slide_thumbnail","file":"src/frontend/components/actions/api.ts","line":437,"target":"src/frontend/components/actions/api.ts:19744"},
+  {"key":"get_pdf_thumbnails","file":"src/frontend/components/actions/api.ts","line":438,"target":"src/frontend/components/actions/api.ts:19824"},
+  {"key":"get_cleared","file":"src/frontend/components/actions/api.ts","line":439,"target":"src/frontend/components/actions/api.ts:19886"}
+]

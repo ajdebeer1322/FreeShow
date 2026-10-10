@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:439 get_cleared (depth 0); src/fro
 Effects: src/frontend/components/helpers/output.ts:1106 store-write src/frontend/stores.ts#outputs ; src/frontend/components/helpers/output.ts:1125 store-write src/frontend/stores.ts#currentOutputSettings ; src/frontend/components/helpers/output.ts:1127 store-write src/frontend/stores.ts#activeRename ; src/frontend/components/helpers/output.ts:1121 ipc send(OUTPUT, &#91;"CREATE"&#93;, { id, ...output&#91;id&#93; }) .
 
 may change live output; inspect conditions/trace. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 3; depth cutoffs: 5. Full edges/effects/conditions in JSON.
+
+[code] Payload type: none/inferred. [External/internal input routes](../inputs.json) retain transport and permission limits.

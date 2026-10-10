@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:363 obs_set_scene (depth 0); src/f
 Effects: src/frontend/utils/obsTalk.ts:122 store-write src/frontend/stores.ts#obsData ; src/frontend/utils/popup.ts:226 store-write src/frontend/stores.ts#popupData .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 14; depth cutoffs: 2. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_id. [External/internal input routes](../inputs.json) retain transport and permission limits.

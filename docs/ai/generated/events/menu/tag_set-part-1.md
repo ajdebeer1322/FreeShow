@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:573 tag_set (depth 0); src/f
 Effects: src/frontend/components/helpers/tags.ts:22 store-write src/frontend/stores.ts#popupData ; src/frontend/components/helpers/tags.ts:23 store-write src/frontend/stores.ts#activePopup ; src/frontend/utils/shortcuts.ts:456 store-write src/frontend/stores.ts#contextActive ; src/frontend/utils/shortcuts.ts:457 store-write src/frontend/stores.ts#spellcheck ; src/frontend/components/context/menuClick.ts:591 store-write src/frontend/stores.ts#shows ; src/frontend/components/context/menuClick.ts:596 store-write src/frontend/stores.ts#showsCache .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 2; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: drawer_show_button src/frontend/components/context/contextMenus.ts:290. Loaders: tag_set src/frontend/components/context/loadItems.ts:34.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: src/frontend/components/drawer/pages/Shows.svelte:275.

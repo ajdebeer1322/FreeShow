@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:692 action_tag_filter (depth
 Effects: no indexed terminal effect.
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: actions src/frontend/components/context/contextMenus.ts:331; actions_readonly src/frontend/components/context/contextMenus.ts:332; action src/frontend/components/context/contextMenus.ts:333; action_readonly src/frontend/components/context/contextMenus.ts:334. Loaders: action_tag_filter src/frontend/components/context/loadItems.ts:68.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: src/frontend/components/show/tools/Media.svelte:358.

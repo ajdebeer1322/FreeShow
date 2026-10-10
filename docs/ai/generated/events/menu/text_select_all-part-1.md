@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:1928 text_select_all (depth 
 Effects: no indexed terminal effect.
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 4; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: editbox_text src/frontend/components/context/contextMenus.ts:419. Loaders: none.
+
+[code] Visibility/disabled conditions: src/frontend/components/context/ContextItem.svelte:207 text_select_all: () => { setTimeout(() => { if ($spellcheck?.suggestions) hide = true }, 20) }. Appears: src/frontend/components/edit/editbox/EditboxLines.svelte:762; src/frontend/components/show/TextEditor.svelte:63.

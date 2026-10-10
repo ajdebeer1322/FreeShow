@@ -19,6 +19,10 @@
 4. [code] Desktop startup loads main/stored data, waits for loaded, subscribes stores and initializes browser/cloud/provider services. ([src/frontend/utils/startup.ts:60](../../../src/frontend/utils/startup.ts#L60))
 5. [code] Output startup registers output handlers, waits 200 ms and requests initial desktop data. ([src/frontend/utils/startup.ts:215](../../../src/frontend/utils/startup.ts#L215))
 
+## Events and triggers
+
+[code] Query handlers and bounded effects with `npm run ai:ask -- file <file>` and the [event inventory](../generated/events/README.md), [key situation tables](../events/README.md), and [live recordings](../traces/README.md). Events are conditional call unions; a live trace records only the chosen fixture.
+
 ## Stores and messages
 
 [code] Static scope: 5 files, 31 referenced stores, 29 concrete message keys, 21 timing entries. [Complete dependency index](startup.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
@@ -71,4 +75,4 @@
 
 [code] All 21 related decision IDs and locations are included in the dependency JSON. Use `ai:ask -- why <file>:<line>` for exact records; generic commit intent is not an item-specific motive.
 
-[code] Companion references: [F-014](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These refer to a later source snapshot; they are contextual evidence, not runtime verification here.
+[code] Companion references: [F-014](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These are companion experiments; see each finding’s evidence and do not treat it as observation of every configuration.

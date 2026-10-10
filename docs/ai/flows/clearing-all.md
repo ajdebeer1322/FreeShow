@@ -2,7 +2,7 @@
 
 ## Observed result
 
-[verified] Real keyboard Escape through clearAll. Evidence: [observation data](observations.json), action ID `clearing-all`, recorded 2026-10-10T17:27:25.437Z.
+[verified] Real keyboard Escape through clearAll. Evidence: [observation data](observations.json), action ID `clearing-all`, recorded 2026-10-10T19:27:33.662Z.
 
 [code] Verification scope: Escape cleared the live slide and background; old lyric text disappeared. Locked overlays, active microphones, restores and focus-mode cache semantics were not exercised.
 
@@ -40,7 +40,7 @@
 - [src/frontend/utils/receivers.ts](../generated/files/src_frontend_utils_receivers.ts.md)
 - [src/frontend/components/output/Output.svelte](../generated/files/src_frontend_components_output_Output.svelte.md)
 
-[code] 64 related decision records: [full IDs and locations](clearing-all.dependencies.json); representative records:
+[code] 65 related decision records: [full IDs and locations](clearing-all.dependencies.json); representative records:
 
 - [code] [D-timer-4094713e914b0c42](../history/records/src_frontend_utils_listeners.ts-1.md).
 - [guess] [D-hotspot-94b53592b6d592e8](../history/records/src_electron_output_helpers_OutputSend.ts-1.md).

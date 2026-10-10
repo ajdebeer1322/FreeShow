@@ -1,5 +1,6 @@
 // Curated situation rules anchored to the current source; no runtime claims here.
 import {read,write,json} from './lib.mjs'
+import {pathToFileURL} from 'node:url'
 const S='src/frontend/utils/shortcuts.ts',P='src/frontend/components/output/preview/Preview.svelte',O='src/frontend/components/helpers/OutputHelper.ts',C='src/frontend/components/output/clear.ts',B='src/frontend/components/helpers/clipboard.ts'
 const anchor=(file,needle)=>{const line=read(file).split('\n').findIndex(l=>l.includes(needle))+1;if(!line)throw Error(`Missing key-table anchor: ${file} ${needle}`);return `${file}:${line}`}
 const rows=[],table=(id,keys,purpose,rules)=>rows.push({id,keys,purpose,rules,document:`docs/ai/events/keys/${id}.md`})
@@ -86,6 +87,10 @@ table('debug',['Ctrl/Cmd+Shift+L'],'Toggle diagnostic panel',[
  rule('Text box editing / text input focused','L is not a typing passthrough exception, so the global typing-target gate may suppress the debug toggle.',S,'if (isTypingTarget(activeElem) && !passthrough.includes(key))'),
  rule('Popup open','Ctrl branch precedes plain popup handling; popup alone does not block the command.',S,'if (e.ctrlKey || e.metaKey)'),
  rule('Potential lock overlap','Preview ctrl shortcut l toggles outLocked, but lookup uses normalized key with original case. Shift-generated uppercase L can avoid that entry; live trace establishes actual state.',P,'const ctrlShortcut =')])
-for(const entry of rows){write(entry.document,`# ${entry.keys.join(' / ')}\n\n[code] ${entry.purpose}. Rows describe source guards, not runtime verification. Custom keys and mounted local components can add behavior.\n\n| Situation | What happens | Evidence |\n| --- | --- | --- |\n${entry.rules.map(r=>`| ${r.situation} | [code] ${r.result} | ${r.reference} |`).join('\n')}\n\n[Generated handlers](../../generated/events/README.md); [live traces](../../traces/README.md). Query: \`npm run ai:ask -- key "${entry.keys[0]}"\`.\n`)}
-write('docs/ai/events/keys/index.json',json(rows));write('docs/ai/events/README.md',`# Events and triggers\n\n[code] Start with the [generated inventory](../generated/events/README.md). Six-level effects are a conditional union; inspect unresolved edges before relying on a result.\n\n${rows.map(r=>`- [${r.keys.join(' / ')}](keys/${r.id}.md)`).join('\n')}\n\n[Trace recordings and method](../traces/README.md). Query commands: key, click, menu, action, trigger, trace, writes. Quotes are needed for combinations containing spaces; modifier spelling accepts Ctrl/Cmd.\n`)
-console.log(`Wrote ${rows.length} key tables (${rows.reduce((n,r)=>n+r.rules.length,0)} situation rows).`)
+export function keyOutputs(){
+const outputs=new Map(),put=(file,content)=>outputs.set(file,content)
+for(const entry of rows){put(entry.document,`# ${entry.keys.join(' / ')}\n\n[code] ${entry.purpose}. Rows describe source guards, not runtime verification. Custom keys and mounted local components can add behavior.\n\n| Situation | What happens | Evidence |\n| --- | --- | --- |\n${entry.rules.map(r=>`| ${r.situation} | [code] ${r.result} | ${r.reference} |`).join('\n')}\n\n[Generated handlers](../../generated/events/README.md); [live traces](../../traces/README.md). Query: \`npm run ai:ask -- key "${entry.keys[0]}"\`.\n`)}
+put('docs/ai/events/keys/index.json',json(rows));put('docs/ai/events/README.md',`# Events and triggers\n\n[code] Start with the [generated inventory](../generated/events/README.md). Six-level effects are a conditional union; inspect unresolved edges before relying on a result.\n\n${rows.map(r=>`- [${r.keys.join(' / ')}](keys/${r.id}.md)`).join('\n')}\n\n[Trace recordings and method](../traces/README.md). Query commands: key, click, menu, action, trigger, trace, writes. Quotes are needed for combinations containing spaces; modifier spelling accepts Ctrl/Cmd.\n`)
+return outputs
+}
+if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href){for(const[file,content]of keyOutputs())write(file,content);console.log(`Wrote ${rows.length} key tables (${rows.reduce((n,r)=>n+r.rules.length,0)} situation rows).`)}

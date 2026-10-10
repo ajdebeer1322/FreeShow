@@ -2,7 +2,7 @@
 
 ## Observed result
 
-[verified] Real Control+S; disk file content verified. Evidence: [observation data](observations.json), action ID `saving`, recorded 2026-10-10T17:27:25.437Z.
+[verified] Real Control+S; disk file content verified. Evidence: [observation data](observations.json), action ID `saving`, recorded 2026-10-10T19:27:33.662Z.
 
 [code] Verification scope: Control+S wrote a .show containing the edited text in the isolated data directory. A saved-status acknowledgement is not treated as a durability guarantee; crash recovery, cloud sync, backups and failure reporting were not exercised.
 

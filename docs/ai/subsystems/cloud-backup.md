@@ -20,6 +20,10 @@
 4. [code] Backup collects portable grouped stores and separately enumerates show files. ([src/electron/data/backup.ts:22](../../../src/electron/data/backup.ts#L22))
 5. [code] Cloud backups include Bible/media data through a distinct branch; ordinary local archives have different membership. ([src/electron/data/backup.ts:29](../../../src/electron/data/backup.ts#L29))
 
+## Events and triggers
+
+[code] Query handlers and bounded effects with `npm run ai:ask -- file <file>` and the [event inventory](../generated/events/README.md), [key situation tables](../events/README.md), and [live recordings](../traces/README.md). Events are conditional call unions; a live trace records only the chosen fixture.
+
 ## Stores and messages
 
 [code] Static scope: 11 files, 21 referenced stores, 13 concrete message keys, 15 timing entries. [Complete dependency index](cloud-backup.dependencies.json) includes conditional and test paths. Runtime use can be narrower.

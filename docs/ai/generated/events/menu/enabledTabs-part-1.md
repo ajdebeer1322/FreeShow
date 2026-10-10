@@ -11,3 +11,7 @@ Calls: no function target resolved.
 Effects: no indexed terminal effect.
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: drawer_top src/frontend/components/context/contextMenus.ts:266. Loaders: enabled_drawer_tabs src/frontend/components/context/loadItems.ts:22.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: src/frontend/components/context/ContextMenu.svelte:56; src/frontend/components/drawer/Drawer.svelte:260; src/frontend/components/drawer/Drawer.svelte:277; src/server/remote/components/tablet/layout/TabletDrawer.svelte:146.

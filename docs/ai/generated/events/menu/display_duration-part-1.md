@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:1914 display_duration (depth
 Effects: src/frontend/components/context/menuClick.ts:1915 store-write src/frontend/stores.ts#activePopup .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: overlay_card src/frontend/components/context/contextMenus.ts:310; effect_card src/frontend/components/context/contextMenus.ts:320. Loaders: none.
+
+[code] Visibility/disabled conditions: src/frontend/components/context/ContextItem.svelte:278 display_duration: () => { const subTab = $drawerTabsData.overlays?.activeSubTab let id = $selected.data&#91;0&#93; if (subTab === "effects") { if ($effects&#91;id&#93;?.displayDuration) enabled =. Appears: no literal appearance indexed; mounting may be dynamic.

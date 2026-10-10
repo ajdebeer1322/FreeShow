@@ -17,6 +17,10 @@
 4. [code] Scripture presentation uses the standard slide output path, not another rendering engine. ([src/frontend/components/drawer/bible/scripture.ts:341](../../../src/frontend/components/drawer/bible/scripture.ts#L341))
 5. [code] Verse text has an explicit sanitization path before rich rendering. ([src/frontend/components/drawer/bible/scripture.ts:1763](../../../src/frontend/components/drawer/bible/scripture.ts#L1763))
 
+## Events and triggers
+
+[code] Query handlers and bounded effects with `npm run ai:ask -- file <file>` and the [event inventory](../generated/events/README.md), [key situation tables](../events/README.md), and [live recordings](../traces/README.md). Events are conditional call unions; a live trace records only the chosen fixture.
+
 ## Stores and messages
 
 [code] Static scope: 4 files, 25 referenced stores, 2 concrete message keys, 18 timing entries. [Complete dependency index](scripture.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
@@ -71,4 +75,4 @@
 
 [code] All 25 related decision IDs and locations are included in the dependency JSON. Use `ai:ask -- why <file>:<line>` for exact records; generic commit intent is not an item-specific motive.
 
-[code] Companion references: [F-007](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md), [F-017](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These refer to a later source snapshot; they are contextual evidence, not runtime verification here.
+[code] Companion references: [F-007](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md), [F-017](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These are companion experiments; see each finding’s evidence and do not treat it as observation of every configuration.

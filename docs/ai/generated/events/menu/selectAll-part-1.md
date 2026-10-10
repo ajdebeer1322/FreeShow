@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:1927 selectAll (depth 0); sr
 Effects: no indexed terminal effect.
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 13; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: edit src/frontend/components/context/contextMenus.ts:246; drawer_show src/frontend/components/context/contextMenus.ts:286; scripture_verse src/frontend/components/context/contextMenus.ts:335; shows src/frontend/components/context/contextMenus.ts:368; group src/frontend/components/context/contextMenus.ts:389. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: src/frontend/components/drawer/bible/Scripture.svelte:1124; src/frontend/components/drawer/pages/Shows.svelte:245; src/frontend/components/show/tools/SlideGroups.svelte:83; src/server/remote/components/pages/ScriptureContent.svelte:663.

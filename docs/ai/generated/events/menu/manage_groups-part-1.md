@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:1463 manage_groups (depth 0)
 Effects: src/frontend/components/context/menuClick.ts:1466 store-write src/frontend/stores.ts#activePopup .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: global_group src/frontend/components/context/contextMenus.ts:390. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: src/frontend/components/show/tools/SlideGroups.svelte:155.

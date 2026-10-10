@@ -1,0 +1,3 @@
+[
+  {"key":"Space","precedence":"DOM target handlers run before bubble window listeners unless capture. stopPropagation stops propagation; preventDefault alone does not. Global and Preview both register window handlers; source registration/conditional returns determine outcome. Live recordings identify observed wins.","$parts":{"handlers":["parts/conflict-Space-handlers-1.json","parts/conflict-Space-handlers-2.json"]}}
+]

@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:908 move_to_front (depth 0);
 Effects: src/frontend/components/context/menuClick.ts:909 ipc send(OUTPUT, &#91;"TO_FRONT"&#93;, obj.contextElem?.id) ; src/frontend/components/helpers/debugLog.ts:47 ipc send(OUTPUT, &#91;"MAIN_DEBUG"&#93;, { time: Date.now(), category: outputWindowLabel(), message: '&#91;${category}&#93; ${message}', data: stringify(data) }) ; src/frontend/components/helpers/debugLog.ts:65 store-write src/frontend/components/helpers/debugLog.ts#debugEntries .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 1; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: output_active_button src/frontend/components/context/contextMenus.ts:263. Loaders: none.
+
+[code] Visibility/disabled conditions: src/frontend/components/context/ContextItem.svelte:292 move_to_front: () => { let previewOutputs = keysToID($outputs).filter((a) => a.enabled) // && !a.invisible // WIP check currently selected against the other outputs... if (previewO. Appears: src/frontend/components/output/preview/PreviewOutputs.svelte:63.

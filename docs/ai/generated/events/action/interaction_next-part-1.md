@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:359 interaction_next (depth 0); sr
 Effects: no indexed terminal effect.
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 8; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_id. [External/internal input routes](../inputs.json) retain transport and permission limits.

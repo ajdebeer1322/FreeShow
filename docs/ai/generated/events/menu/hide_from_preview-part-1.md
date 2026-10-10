@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:911 hide_from_preview (depth
 Effects: src/frontend/components/context/menuClick.ts:913 store-write src/frontend/stores.ts#toggleOutputEnabled ; src/frontend/components/context/menuClick.ts:915 store-write src/frontend/stores.ts#outputs ; src/frontend/utils/common.ts:28 store-write src/frontend/stores.ts#toastMessages .
 
 may change live output; inspect conditions/trace. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: output_active_button src/frontend/components/context/contextMenus.ts:263. Loaders: none.
+
+[code] Visibility/disabled conditions: src/frontend/components/context/ContextItem.svelte:311 hide_from_preview: () => { let isEnabled = false let outputId = contextElem?.id \|\| "" if ($outputs&#91;outputId&#93;?.hideFromPreview) isEnabled = true enabled = isEnabled menu.label = isE. Appears: src/frontend/components/output/preview/PreviewOutputs.svelte:63.

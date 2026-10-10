@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:350 recolor (depth 0); src/f
 Effects: src/frontend/components/context/menuClick.ts:352 store-write src/frontend/stores.ts#selected ; src/frontend/components/context/menuClick.ts:356 store-write src/frontend/stores.ts#selected ; src/frontend/components/context/menuClick.ts:360 store-write src/frontend/stores.ts#activePopup .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: rename_recolor src/frontend/components/context/contextMenus.ts:233; recolor src/frontend/components/context/contextMenus.ts:235; overlay_card src/frontend/components/context/contextMenus.ts:310; template_card src/frontend/components/context/contextMenus.ts:317; effect_card src/frontend/components/context/contextMenus.ts:320. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: no literal appearance indexed; mounting may be dynamic.

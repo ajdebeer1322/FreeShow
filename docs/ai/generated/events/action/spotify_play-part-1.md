@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:370 spotify_play (depth 0); src/fr
 Effects: src/frontend/components/output/preview/SpotifyManager.ts:152 store-write src/frontend/components/output/preview/SpotifyManager.ts#spotifyState ; src/frontend/components/output/preview/SpotifyManager.ts:142 ipc requestMain(Main.SPOTIFY_COMMAND, { command, value } as any) ; src/frontend/IPC/main.ts:23 ipc sendMain(id, value, listenerId) ; src/frontend/IPC/main.ts:72 ipc window.api.send(MAIN, { channel: id, data: value }, listenerId) .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 3; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+[code] Payload type: none/inferred. [External/internal input routes](../inputs.json) retain transport and permission limits.

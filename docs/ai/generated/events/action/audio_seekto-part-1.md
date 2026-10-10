@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:306 audio_seekto (depth 0); src/fr
 Effects: src/frontend/audio/audioPlayer.ts:674 store-write src/frontend/stores.ts#playingAudio .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 2; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_seek. [External/internal input routes](../inputs.json) retain transport and permission limits.

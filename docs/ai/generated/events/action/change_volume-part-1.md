@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:307 change_volume (depth 0); src/f
 Effects: src/frontend/components/actions/apiHelper.ts:850 store-write src/frontend/stores.ts#audioChannelsData ; src/frontend/audio/audioPlayer.ts:674 store-write src/frontend/stores.ts#playingAudio .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 3; depth cutoffs: 1. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_volume. [External/internal input routes](../inputs.json) retain transport and permission limits.

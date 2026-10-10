@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:868 use_as_archive (depth 0)
 Effects: src/frontend/components/context/menuClick.ts:870 store-write src/frontend/stores.ts#categories ; src/frontend/components/context/menuClick.ts:871 store-write src/frontend/stores.ts#overlayCategories ; src/frontend/components/context/menuClick.ts:872 store-write src/frontend/stores.ts#templateCategories .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 1; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: category_shows_button src/frontend/components/context/contextMenus.ts:275; category_overlays_button src/frontend/components/context/contextMenus.ts:277; category_templates_button src/frontend/components/context/contextMenus.ts:278. Loaders: none.
+
+[code] Visibility/disabled conditions: src/frontend/components/context/ContextItem.svelte:52 use_as_archive: () => { const categoryStores = { category_shows: () => $categories, category_overlays: () => $overlayCategories, category_templates: () => $templateCategories } con. Appears: no literal appearance indexed; mounting may be dynamic.

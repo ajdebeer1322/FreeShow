@@ -19,6 +19,10 @@
 4. [code] Slide handlers retain explicit show/layout destinations supplied by the caller. ([src/frontend/components/helpers/historyActions.ts:30](../../../src/frontend/components/helpers/historyActions.ts#L30))
 5. [code] Store collection edits use shared history/store helpers and related timestamp updates. ([src/frontend/components/helpers/historyStores.ts:21](../../../src/frontend/components/helpers/historyStores.ts#L21))
 
+## Events and triggers
+
+[code] Query handlers and bounded effects with `npm run ai:ask -- file <file>` and the [event inventory](../generated/events/README.md), [key situation tables](../events/README.md), and [live recordings](../traces/README.md). Events are conditional call unions; a live trace records only the chosen fixture.
+
 ## Stores and messages
 
 [code] Static scope: 59 files, 88 referenced stores, 3 concrete message keys, 60 timing entries. [Complete dependency index](editing-history.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
@@ -77,4 +81,4 @@
 
 [code] All 103 related decision IDs and locations are included in the dependency JSON. Use `ai:ask -- why <file>:<line>` for exact records; generic commit intent is not an item-specific motive.
 
-[code] Companion references: [F-018](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These refer to a later source snapshot; they are contextual evidence, not runtime verification here.
+[code] Companion references: [F-018](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These are companion experiments; see each finding’s evidence and do not treat it as observation of every configuration.

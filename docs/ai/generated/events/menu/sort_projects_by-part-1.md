@@ -11,3 +11,7 @@ Calls: no function target resolved.
 Effects: no indexed terminal effect.
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: projects src/frontend/components/context/contextMenus.ts:341; folder_readonly src/frontend/components/context/contextMenus.ts:348. Loaders: sort_projects src/frontend/components/context/loadItems.ts:96.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: src/frontend/components/show/Projects.svelte:463; src/frontend/components/show/Projects.svelte:514.

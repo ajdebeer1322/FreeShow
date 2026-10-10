@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:323 id_start_timer (depth 0); src/
 Effects: src/frontend/components/drawer/timers/timers.ts:178 store-write src/frontend/stores.ts#activeTimers ; src/frontend/components/actions/actions.ts:58 store-write src/frontend/stores.ts#runningActions ; src/frontend/utils/common.ts:28 store-write src/frontend/stores.ts#toastMessages .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 3; depth cutoffs: 29. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_id. [External/internal input routes](../inputs.json) retain transport and permission limits.

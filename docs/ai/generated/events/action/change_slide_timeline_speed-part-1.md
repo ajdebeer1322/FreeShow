@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:236 change_slide_timeline_speed (d
 Effects: src/frontend/components/actions/api.ts:236 store-write src/frontend/stores.ts#slideTimelineSpeedMultiplier .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_numval. [External/internal input routes](../inputs.json) retain transport and permission limits.

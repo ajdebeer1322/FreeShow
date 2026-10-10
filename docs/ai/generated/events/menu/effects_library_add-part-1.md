@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:1771 effects_library_add (de
 Effects: src/frontend/components/context/menuClick.ts:1777 store-write src/frontend/stores.ts#effectsLibrary .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: audio_button src/frontend/components/context/contextMenus.ts:324. Loaders: none.
+
+[code] Visibility/disabled conditions: src/frontend/components/context/ContextItem.svelte:250 effects_library_add: () => { let path = $selected.data&#91;0&#93;?.path \|\| $selected.data&#91;0&#93;?.id if (path) { const duration = AudioPlayer.getDurationSync(path) const isEffect = AudioPlayer. Appears: no literal appearance indexed; mounting may be dynamic.

@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:190 cut (depth 0); src/front
 Effects: src/frontend/components/helpers/clipboard.ts:186 file-write navigator.clipboard.writeText ; src/frontend/utils/shortcutsHelper.ts:9 file-write navigator.clipboard.writeText ; src/frontend/components/helpers/clipboard.ts:97 file-write navigator.clipboard.writeText ; src/frontend/components/helpers/clipboard.ts:124 store-write src/frontend/stores.ts#clipboard ; src/frontend/utils/common.ts:34 store-write src/frontend/stores.ts#statusIndicator ; src/frontend/utils/common.ts:40 store-write src/frontend/stores.ts#statusIndicator ; src/frontend/components/helpers/clipboard.ts:211 store-write src/frontend/stores.ts#selected .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 4; depth cutoffs: 13. Full edges/effects/conditions in JSON.
+
+Menu layouts: edit src/frontend/components/context/contextMenus.ts:246. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: no literal appearance indexed; mounting may be dynamic.

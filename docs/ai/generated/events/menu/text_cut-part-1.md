@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:213 text_cut (depth 0); src/
 Effects: no indexed terminal effect.
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 4; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: editbox_text src/frontend/components/context/contextMenus.ts:419. Loaders: none.
+
+[code] Visibility/disabled conditions: src/frontend/components/context/ContextItem.svelte:198 text_cut: () => { // $spellcheck?.suggestions \|\| if (!window.getSelection()?.toString()) hide = true }. Appears: src/frontend/components/edit/editbox/EditboxLines.svelte:762; src/frontend/components/show/TextEditor.svelte:63.

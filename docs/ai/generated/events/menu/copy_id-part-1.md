@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:192 copy_id (depth 0); src/f
 Effects: src/frontend/components/context/menuClick.ts:202 file-write navigator.clipboard.writeText ; src/frontend/utils/common.ts:28 store-write src/frontend/stores.ts#toastMessages .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: none indexed. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: no literal appearance indexed; mounting may be dynamic.

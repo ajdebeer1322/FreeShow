@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:436 get_thumbnail (depth 0); src/f
 Effects: src/frontend/components/helpers/media.ts:272 ipc requestMain(Main.LOCATE_MEDIA_FILE, { filePath: path, folders }) ; src/frontend/IPC/main.ts:23 ipc sendMain(id, value, listenerId) ; src/frontend/IPC/main.ts:72 ipc window.api.send(MAIN, { channel: id, data: value }, listenerId) .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 7; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_media. [External/internal input routes](../inputs.json) retain transport and permission limits.

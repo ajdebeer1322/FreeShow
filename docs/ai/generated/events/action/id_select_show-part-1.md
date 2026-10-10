@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:226 id_select_show (depth 0); src/
 Effects: src/frontend/components/actions/apiHelper.ts:40 store-write src/frontend/stores.ts#activeEdit ; src/frontend/components/actions/apiHelper.ts:41 store-write src/frontend/stores.ts#refreshEditSlide ; src/frontend/components/actions/apiHelper.ts:64 store-write src/frontend/stores.ts#activeShow .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_id. [External/internal input routes](../inputs.json) retain transport and permission limits.

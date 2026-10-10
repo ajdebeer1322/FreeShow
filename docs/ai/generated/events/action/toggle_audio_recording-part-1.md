@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:310 toggle_audio_recording (depth 
 Effects: src/frontend/audio/audioChannelRecorder.ts:39 ipc sendMain(Main.RECORDER, { blob: arraybuffer, name, path: customPath }) ; src/frontend/utils/common.ts:28 store-write src/frontend/stores.ts#toastMessages ; src/frontend/IPC/main.ts:72 ipc window.api.send(MAIN, { channel: id, data: value }, listenerId) ; src/frontend/audio/audioChannelRecorder.ts:50 store-write src/frontend/stores.ts#recordingChannels ; src/frontend/utils/common.ts:28 store-write src/frontend/stores.ts#toastMessages ; src/frontend/audio/audioChannelRecorder.ts:59 store-write src/frontend/stores.ts#recordingChannels .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 24; depth cutoffs: 17. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_toggle_id. [External/internal input routes](../inputs.json) retain transport and permission limits.

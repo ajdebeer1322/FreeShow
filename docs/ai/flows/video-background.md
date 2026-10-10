@@ -2,7 +2,7 @@
 
 ## Observed result
 
-[verified] Existing setOutput helper with the repository clipA.mp4 fixture; media DOM observed. Evidence: [observation data](observations.json), action ID `video-background`, recorded 2026-10-10T17:27:25.437Z.
+[verified] Existing setOutput helper with the repository clipA.mp4 fixture; media DOM observed. Evidence: [observation data](observations.json), action ID `video-background`, recorded 2026-10-10T19:27:33.662Z.
 
 [code] Verification scope: A muted local MP4 decoded in the output (readyState 4, not paused). The helper was invoked directly; drawer selection, network media, audible audio, drift across outputs and soft loops were not verified.
 
@@ -44,7 +44,7 @@
 - [src/frontend/components/output/layers/BackgroundMedia.svelte](../generated/files/src_frontend_components_output_layers_BackgroundMedia.svelte.md)
 - [src/frontend/components/media/Video.svelte](../generated/files/src_frontend_components_media_Video.svelte.md)
 
-[code] 82 related decision records: [full IDs and locations](video-background.dependencies.json); representative records:
+[code] 83 related decision records: [full IDs and locations](video-background.dependencies.json); representative records:
 
 - [code] [D-timer-7e64037759e23a26](../history/records/src_frontend_components_show_VideoShow.svelte-1.md).
 - [code] [D-timer-4094713e914b0c42](../history/records/src_frontend_utils_listeners.ts-1.md).

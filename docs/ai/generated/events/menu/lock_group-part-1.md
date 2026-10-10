@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:815 lock_group (depth 0); sr
 Effects: src/frontend/components/context/menuClick.ts:826 store-write src/frontend/stores.ts#showsCache .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: group src/frontend/components/context/contextMenus.ts:389. Loaders: none.
+
+[code] Visibility/disabled conditions: src/frontend/components/context/ContextItem.svelte:105 lock_group: () => { if ($selected.id !== "group") return const slideId = $selected.data?.&#91;0&#93;?.id const show = $showsCache&#91;$activeShow?.id \|\| ""&#93; const isLocked = show?.slides?.&#91;sli. Appears: src/frontend/components/show/tools/SlideGroups.svelte:83.

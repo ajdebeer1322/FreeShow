@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:1849 startup_activate (depth
 Effects: src/frontend/media/cameraManager.ts:261 store-write src/frontend/stores.ts#special ; src/frontend/media/cameraManager.ts:274 store-write src/frontend/stores.ts#special ; src/frontend/media/cameraManager.ts:134 ipc sendMain(Main.ACCESS_CAMERA_PERMISSION) ; src/frontend/IPC/main.ts:72 ipc window.api.send(MAIN, { channel: id, data: value }, listenerId) .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 6; depth cutoffs: 2. Full edges/effects/conditions in JSON.
+
+Menu layouts: camera_card src/frontend/components/context/contextMenus.ts:329. Loaders: none.
+
+[code] Visibility/disabled conditions: src/frontend/components/context/ContextItem.svelte:268 startup_activate: () => { const startupCameras = cameraManager.getStartupCameras() const camId = $selected.data&#91;0&#93;?.id enabled = camId && startupCameras.includes(camId) }. Appears: src/frontend/components/drawer/live/Cam.svelte:143.

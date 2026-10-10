@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:1891 place_under_slide (dept
 Effects: src/frontend/components/context/menuClick.ts:1894 store-write src/frontend/stores.ts#effects ; src/frontend/components/context/menuClick.ts:1906 store-write src/frontend/stores.ts#overlays .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: overlay_card src/frontend/components/context/contextMenus.ts:310; effect_card src/frontend/components/context/contextMenus.ts:320. Loaders: none.
+
+[code] Visibility/disabled conditions: src/frontend/components/context/ContextItem.svelte:327 place_under_slide: () => { let id = $selected.data&#91;0&#93; if ($overlays&#91;id&#93;?.placeUnderSlide \|\| $effects&#91;id&#93;?.placeUnderSlide) enabled = true }. Appears: no literal appearance indexed; mounting may be dynamic.

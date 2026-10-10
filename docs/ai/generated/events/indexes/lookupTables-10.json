@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/utils/shortcuts.ts","name":"keys","entries":[{"key":"Escape","file":"src/frontend/utils/shortcuts.ts","line":94,"target":"src/frontend/utils/shortcuts.ts:4750"},{"key":"Enter","file":"src/frontend/utils/shortcuts.ts","line":130,"target":"src/frontend/utils/shortcuts.ts:5896"},{"key":"Delete","file":"src/frontend/utils/shortcuts.ts","line":139,"target":"src/frontend/utils/shortcuts.ts:6266"},{"key":"Backspace","file":"src/frontend/utils/shortcuts.ts","line":140,"target":"src/frontend/utils/shortcuts.ts:6356"},{"key":"F2","file":"src/frontend/utils/shortcuts.ts","line":142,"target":"src/frontend/utils/shortcuts.ts:6426"},{"key":"F11","file":"src/frontend/utils/shortcuts.ts","line":144,"target":"src/frontend/utils/shortcuts.ts:6632"}]}
+]

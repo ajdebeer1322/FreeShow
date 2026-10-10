@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:152 settings (depth 0).
 Effects: src/frontend/components/context/menuClick.ts:153 store-write src/frontend/stores.ts#settingsTab ; src/frontend/components/context/menuClick.ts:154 store-write src/frontend/stores.ts#settingsTab ; src/frontend/components/context/menuClick.ts:155 store-write src/frontend/stores.ts#activePage .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: none indexed. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: no literal appearance indexed; mounting may be dynamic.

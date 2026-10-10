@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:432 get_playlists (depth 0); src/f
 Effects: no indexed terminal effect.
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+[code] Payload type: none/inferred. [External/internal input routes](../inputs.json) retain transport and permission limits.

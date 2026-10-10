@@ -20,6 +20,10 @@
 4. [code] Export uses main-process path/archive services instead of renderer Node access. ([src/electron/data/export.ts:3](../../../src/electron/data/export.ts#L3))
 5. [code] PDF has its own renderer branch while retaining native presentation data. ([src/frontend/App.svelte:69](../../../src/frontend/App.svelte#L69))
 
+## Events and triggers
+
+[code] Query handlers and bounded effects with `npm run ai:ask -- file <file>` and the [event inventory](../generated/events/README.md), [key situation tables](../events/README.md), and [live recordings](../traces/README.md). Events are conditional call unions; a live trace records only the chosen fixture.
+
 ## Stores and messages
 
 [code] Static scope: 41 files, 36 referenced stores, 14 concrete message keys, 27 timing entries. [Complete dependency index](import-export.dependencies.json) includes conditional and test paths. Runtime use can be narrower.

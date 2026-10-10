@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:338 pause_timeline (depth 0); src/
 Effects: src/frontend/components/timeline/TimelinePlayback.ts:134 store-write src/frontend/stores.ts#isTimelinePlaying ; src/frontend/components/timeline/TimelinePlayback.ts:136 ipc sendMain(Main.TIMECODE_STOP) ; src/frontend/audio/audioPlayer.ts:666 store-write src/frontend/stores.ts#playingAudio ; src/frontend/components/helpers/output.ts:649 store-write src/frontend/stores.ts#outputs ; src/frontend/audio/audioFading.ts:216 store-write src/frontend/stores.ts#isFadingOut ; src/frontend/components/helpers/setShow.ts:247 store-write src/frontend/stores.ts#saved ; src/frontend/IPC/main.ts:72 ipc window.api.send(MAIN, { channel: id, data: value }, listenerId) .
 
 may change live output; inspect conditions/trace. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 6; depth cutoffs: 15. Full edges/effects/conditions in JSON.
+
+[code] Payload type: none/inferred. [External/internal input routes](../inputs.json) retain transport and permission limits.

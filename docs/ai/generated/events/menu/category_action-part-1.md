@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:838 category_action (depth 0
 Effects: src/frontend/components/context/menuClick.ts:842 store-write src/frontend/stores.ts#popupData ; src/frontend/components/context/menuClick.ts:843 store-write src/frontend/stores.ts#activePopup .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: category_shows_button src/frontend/components/context/contextMenus.ts:275. Loaders: none.
+
+[code] Visibility/disabled conditions: src/frontend/components/context/ContextItem.svelte:361 category_action: () => { const categoryId = $selected.data&#91;0&#93; enabled = !!$categories&#91;categoryId&#93;?.action }. Appears: no literal appearance indexed; mounting may be dynamic.

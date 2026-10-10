@@ -3,6 +3,7 @@ import path from "node:path"
 import { pathToFileURL } from "node:url"
 import { generate } from "./generate.mjs"
 import { ROOT, GENERATED, read, readJson, walk, hash, json } from "./lib.mjs"
+import { scenarios } from "./trace-scenarios.mjs"
 
 export function validateReference(reference, model, source) {
     const file=model.files.find(file=>file.file===reference.file)
@@ -60,6 +61,22 @@ export function checkDocs(model) {
         if(flows.sourceRevision!==model.sourceRevision)errors.push("Flow source revision changed; review/regenerate traces")
         if(observations?.sourceFingerprint!==hash(json(model.files.map(file=>[file.file,file.hash]))))errors.push("Runtime flow evidence is absent or stale; repeat observations")
         for(const flow of flows.flows)if(flow.verified && !observations?.observations.some(item=>item.id===flow.id && item.status==="verified"))errors.push(`Verified flow lacks observation: ${flow.id}`)
+    }
+    const traces=readJson('docs/ai/traces/index.json')
+    if(traces){
+        const fingerprint=hash(['trace.mjs','trace-scenarios.mjs','runtime-entry.ts','runtime-build.mjs'].map(f=>read('scripts/ai-map/'+f)).join('\n'))
+        const sourceFingerprint=hash(json(model.files.map(file=>[file.file,file.hash])))
+        for(const scenario of scenarios){
+            const entry=traces.scenarios.find(s=>s.id===scenario.id)
+            if(!entry){errors.push(`Trace missing: ${scenario.id}`);continue}
+            const recording=readJson(entry.recording)
+            if(!recording || recording.sourceFingerprint!==sourceFingerprint)errors.push(`Trace source evidence stale: ${scenario.id}`)
+            if(recording?.runnerFingerprint!==fingerprint)errors.push(`Trace recorder changed: ${scenario.id}; repeat recording`)
+            if(recording?.status!==entry.status)errors.push(`Trace index status differs: ${scenario.id}`)
+            if(recording?.status!=='verified')errors.push(`Trace action not verified: ${scenario.id}`)
+            if(recording?.status==='verified'&&recording.outputs?.length!==2)errors.push(`Trace lacks both output windows: ${scenario.id}`)
+            if(!fs.existsSync(path.resolve(ROOT,entry.document)))errors.push(`Trace page missing: ${entry.document}`)
+        }
     }
     return [...new Set(errors)]
 }

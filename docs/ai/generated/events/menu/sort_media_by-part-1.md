@@ -11,3 +11,7 @@ Calls: no function target resolved.
 Effects: no indexed terminal effect.
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: media src/frontend/components/context/contextMenus.ts:306; media_card src/frontend/components/context/contextMenus.ts:307. Loaders: sort_media src/frontend/components/context/loadItems.ts:97.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: src/frontend/components/drawer/media/ContentLibraryBrowser.svelte:176; src/frontend/components/drawer/media/Media.svelte:595; src/frontend/components/drawer/media/Media.svelte:627; src/frontend/components/drawer/media/MediaCard.svelte:208.

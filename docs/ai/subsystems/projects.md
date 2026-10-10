@@ -18,6 +18,10 @@
 3. [code] The fork reuses FocusMode normalView for continuous project browsing while retaining normal editing and toolbars. ([src/frontend/components/show/Show.svelte:72](../../../src/frontend/components/show/Show.svelte#L72))
 4. [code] Continuous items reuse the native Slides renderer and activation path. ([src/frontend/components/show/focus/FocusItem.svelte:11](../../../src/frontend/components/show/focus/FocusItem.svelte#L11))
 
+## Events and triggers
+
+[code] Query handlers and bounded effects with `npm run ai:ask -- file <file>` and the [event inventory](../generated/events/README.md), [key situation tables](../events/README.md), and [live recordings](../traces/README.md). Events are conditional call unions; a live trace records only the chosen fixture.
+
 ## Stores and messages
 
 [code] Static scope: 10 files, 32 referenced stores, 3 concrete message keys, 15 timing entries. [Complete dependency index](projects.dependencies.json) includes conditional and test paths. Runtime use can be narrower.

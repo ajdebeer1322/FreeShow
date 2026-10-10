@@ -11,3 +11,7 @@ Calls: no function target resolved.
 Effects: no indexed terminal effect.
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: slide src/frontend/components/context/contextMenus.ts:384; slideChild src/frontend/components/context/contextMenus.ts:386. Loaders: bind_slide src/frontend/components/context/loadItems.ts:344.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: src/server/remote/components/show/ShowSlide.svelte:63.

@@ -1,50 +1,50 @@
 {
-  "measuredAt": "2026-10-10T17:38:38.693Z",
-  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "measuredAt": "2026-10-10T19:33:17.051Z",
+  "sourceRevision": "379e268046d7de3344b6fa1e7809116a7ba01856",
   "environment": {
     "node": "v22.23.3",
     "platform": "linux",
     "arch": "x64",
     "cpu": "Intel(R) Core(TM) i5-4590T CPU @ 2.00GHz"
   },
-  "mapSeconds": 16.374,
-  "checkSeconds": 21.857,
+  "mapSeconds": 27.142,
+  "checkSeconds": 33.944,
   "queries": [
     {
       "args": [
         "store",
         "outputs"
       ],
-      "seconds": 0.611
+      "seconds": 1.175
     },
     {
       "args": [
         "channel",
         "OUTPUT"
       ],
-      "seconds": 0.617
+      "seconds": 1.159
     },
     {
       "args": [
         "file",
         "src/frontend/components/output/Output.svelte"
       ],
-      "seconds": 0.605
+      "seconds": 1.164
     },
     {
       "args": [
         "why",
         "src/frontend/components/output/layers/SlideContent.svelte:226"
       ],
-      "seconds": 0.617
+      "seconds": 1.171
     },
     {
       "args": [
         "timers",
         "src/frontend/components/output"
       ],
-      "seconds": 0.604
+      "seconds": 1.182
     }
   ],
-  "testsSeconds": 2.415
+  "testsSeconds": 3.437
 }

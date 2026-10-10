@@ -2,7 +2,7 @@
 
 ## Observed result
 
-[verified] Existing toggleOutputs helper; renderer/window handshake observed. Evidence: [observation data](observations.json), action ID `opening-output`, recorded 2026-10-10T17:27:25.437Z.
+[verified] Existing toggleOutputs helper; renderer/window handshake observed. Evidence: [observation data](observations.json), action ID `opening-output`, recorded 2026-10-10T19:27:33.662Z.
 
 [code] Verification scope: A real output renderer and initial state handshake were observed through toggleOutputs. Physical monitor positioning, fullscreen, multiple displays, capture-only OSR and stage-output switching were not tested.
 
@@ -39,7 +39,7 @@
 - [src/frontend/utils/listeners.ts](../generated/files/src_frontend_utils_listeners.ts.md)
 - [src/frontend/MainOutput.svelte](../generated/files/src_frontend_MainOutput.svelte.md)
 
-[code] 65 related decision records: [full IDs and locations](opening-output.dependencies.json); representative records:
+[code] 66 related decision records: [full IDs and locations](opening-output.dependencies.json); representative records:
 
 - [code] [D-timer-6c606adee9f9fe54](../history/records/src_frontend_MainOutput.svelte-1.md).
 - [code] [D-timer-03ccf6b182b056ea](../history/records/src_frontend_components_main_Top.svelte-1.md).

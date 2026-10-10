@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:285 start_webrtc_stream (depth 0);
 Effects: src/frontend/components/helpers/output.ts:618 store-write src/frontend/stores.ts#outputs ; src/frontend/components/helpers/output.ts:649 store-write src/frontend/stores.ts#outputs ; src/frontend/components/helpers/output.ts:1019 ipc send(OUTPUT, &#91;"SET_VALUE"&#93;, { id: resolvedId, key: "webrtcData", value: newData }) ; src/frontend/components/helpers/output.ts:1008 store-write src/frontend/stores.ts#outputs ; src/frontend/components/helpers/debugLog.ts:47 ipc send(OUTPUT, &#91;"MAIN_DEBUG"&#93;, { time: Date.now(), category: outputWindowLabel(), message: '&#91;${category}&#93; ${message}', data: stringify(data) }) .
 
 may change live output; inspect conditions/trace. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 10; depth cutoffs: 26. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_id_optional. [External/internal input routes](../inputs.json) retain transport and permission limits.

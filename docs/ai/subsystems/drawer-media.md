@@ -19,6 +19,10 @@
 4. [code] Media lookup and cached thumbnails belong to the shared media helper. ([src/frontend/components/helpers/media.ts:247](../../../src/frontend/components/helpers/media.ts#L247))
 5. [code] Native thumbnail generation is requested through IPC. ([src/frontend/components/helpers/media.ts:104](../../../src/frontend/components/helpers/media.ts#L104))
 
+## Events and triggers
+
+[code] Query handlers and bounded effects with `npm run ai:ask -- file <file>` and the [event inventory](../generated/events/README.md), [key situation tables](../events/README.md), and [live recordings](../traces/README.md). Events are conditional call unions; a live trace records only the chosen fixture.
+
 ## Stores and messages
 
 [code] Static scope: 126 files, 128 referenced stores, 43 concrete message keys, 156 timing entries. [Complete dependency index](drawer-media.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
@@ -77,4 +81,4 @@
 
 [code] All 191 related decision IDs and locations are included in the dependency JSON. Use `ai:ask -- why <file>:<line>` for exact records; generic commit intent is not an item-specific motive.
 
-[code] Companion references: [F-017](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These refer to a later source snapshot; they are contextual evidence, not runtime verification here.
+[code] Companion references: [F-017](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These are companion experiments; see each finding’s evidence and do not treat it as observation of every configuration.

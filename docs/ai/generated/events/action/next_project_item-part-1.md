@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:219 next_project_item (depth 0); s
 Effects: src/frontend/components/helpers/showActions.ts:121 store-write src/frontend/stores.ts#activeFocus ; src/frontend/components/helpers/showActions.ts:122 store-write src/frontend/stores.ts#activeShow ; src/frontend/components/helpers/setShow.ts:235 store-write src/frontend/stores.ts#notFound ; src/frontend/components/helpers/setShow.ts:186 ipc requestMain(Main.SHOW, { name: get(shows)&#91;id&#93;?.name, id }) ; src/frontend/components/helpers/setShow.ts:247 store-write src/frontend/stores.ts#saved ; src/frontend/components/helpers/showActions.ts:136 store-write src/frontend/stores.ts#showsCache .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 2; depth cutoffs: 5. Full edges/effects/conditions in JSON.
+
+[code] Payload type: none/inferred. [External/internal input routes](../inputs.json) retain transport and permission limits.

@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:661 player_tag_filter (depth
 Effects: no indexed terminal effect.
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: player src/frontend/components/context/contextMenus.ts:322; player_button src/frontend/components/context/contextMenus.ts:323. Loaders: player_tag_filter src/frontend/components/context/loadItems.ts:59.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: src/frontend/components/drawer/media/Media.svelte:573; src/frontend/components/drawer/player/PlayerVideos.svelte:80.

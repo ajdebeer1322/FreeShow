@@ -21,6 +21,10 @@
 5. [code] Electron writes grouped stores and separate show/scripture files; saving is not just one settings write. ([src/electron/data/save.ts:21](../../../src/electron/data/save.ts#L21))
 6. [code] Store filenames/defaults/portable membership are declared centrally. ([src/electron/data/store.ts:30](../../../src/electron/data/store.ts#L30))
 
+## Events and triggers
+
+[code] Query handlers and bounded effects with `npm run ai:ask -- file <file>` and the [event inventory](../generated/events/README.md), [key situation tables](../events/README.md), and [live recordings](../traces/README.md). Events are conditional call unions; a live trace records only the chosen fixture.
+
 ## Stores and messages
 
 [code] Static scope: 5 files, 108 referenced stores, 75 concrete message keys, 25 timing entries. [Complete dependency index](stores-saving.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
@@ -78,4 +82,4 @@
 
 [code] All 34 related decision IDs and locations are included in the dependency JSON. Use `ai:ask -- why <file>:<line>` for exact records; generic commit intent is not an item-specific motive.
 
-[code] Companion references: [F-008](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md), [F-010](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These refer to a later source snapshot; they are contextual evidence, not runtime verification here.
+[code] Companion references: [F-008](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md), [F-010](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These are companion experiments; see each finding’s evidence and do not treat it as observation of every configuration.

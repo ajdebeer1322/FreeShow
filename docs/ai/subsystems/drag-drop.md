@@ -21,6 +21,10 @@
 5. [code] Type-specific handlers return history operations rather than building a parallel mutation system. ([src/frontend/components/helpers/dropActions.ts:49](../../../src/frontend/components/helpers/dropActions.ts#L49))
 6. [code] Cross-show transfer centralizes ID regeneration, lock/profile checks and explicit destination history. ([src/frontend/components/helpers/slideTransfer.ts:163](../../../src/frontend/components/helpers/slideTransfer.ts#L163))
 
+## Events and triggers
+
+[code] Query handlers and bounded effects with `npm run ai:ask -- file <file>` and the [event inventory](../generated/events/README.md), [key situation tables](../events/README.md), and [live recordings](../traces/README.md). Events are conditional call unions; a live trace records only the chosen fixture.
+
 ## Stores and messages
 
 [code] Static scope: 7 files, 42 referenced stores, 2 concrete message keys, 11 timing entries. [Complete dependency index](drag-drop.dependencies.json) includes conditional and test paths. Runtime use can be narrower.

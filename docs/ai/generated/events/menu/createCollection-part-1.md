@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:996 createCollection (depth 
 Effects: src/frontend/components/context/menuClick.ts:997 store-write src/frontend/stores.ts#activePopup .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: category_scripture src/frontend/components/context/contextMenus.ts:274. Loaders: none.
+
+[code] Visibility/disabled conditions: no item-specific condition extracted. Appears: no literal appearance indexed; mounting may be dynamic.

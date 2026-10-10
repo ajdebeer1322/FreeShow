@@ -11,3 +11,7 @@ Calls: src/frontend/components/context/menuClick.ts:752 display_tags (depth 0); 
 Effects: src/frontend/components/context/menuClick.ts:753 store-write src/frontend/stores.ts#special .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+Menu layouts: drawer_show src/frontend/components/context/contextMenus.ts:286. Loaders: none.
+
+[code] Visibility/disabled conditions: src/frontend/components/context/ContextItem.svelte:147 display_tags: () => { enabled = $special.displayTags hide = !Object.keys($globalTags).length }. Appears: src/frontend/components/drawer/pages/Shows.svelte:245.

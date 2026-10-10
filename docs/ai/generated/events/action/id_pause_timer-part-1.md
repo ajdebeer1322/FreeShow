@@ -11,3 +11,5 @@ Calls: src/frontend/components/actions/api.ts:330 id_pause_timer (depth 0); src/
 Effects: src/frontend/components/actions/apiHelper.ts:524 store-write src/frontend/stores.ts#activeTimers .
 
 no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.
+
+[code] Payload type: API_id. [External/internal input routes](../inputs.json) retain transport and permission limits.

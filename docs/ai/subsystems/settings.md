@@ -19,6 +19,10 @@
 3. [code] Some output setting changes require restarting output windows, not just modifying rendered CSS. ([src/frontend/utils/updateSettings.ts:149](../../../src/frontend/utils/updateSettings.ts#L149))
 4. [code] Persistence maps selected stores into settings; transient UI stores are not automatically saved. ([src/frontend/utils/save.ts:159](../../../src/frontend/utils/save.ts#L159))
 
+## Events and triggers
+
+[code] Query handlers and bounded effects with `npm run ai:ask -- file <file>` and the [event inventory](../generated/events/README.md), [key situation tables](../events/README.md), and [live recordings](../traces/README.md). Events are conditional call unions; a live trace records only the chosen fixture.
+
 ## Stores and messages
 
 [code] Static scope: 28 files, 120 referenced stores, 31 concrete message keys, 42 timing entries. [Complete dependency index](settings.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
@@ -77,4 +81,4 @@
 
 [code] All 56 related decision IDs and locations are included in the dependency JSON. Use `ai:ask -- why <file>:<line>` for exact records; generic commit intent is not an item-specific motive.
 
-[code] Companion references: [F-017](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These refer to a later source snapshot; they are contextual evidence, not runtime verification here.
+[code] Companion references: [F-017](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These are companion experiments; see each finding’s evidence and do not treat it as observation of every configuration.
