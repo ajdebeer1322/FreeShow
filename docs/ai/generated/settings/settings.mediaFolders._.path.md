@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/drawer/media/Media.svelte:62](../../../../src/frontend/components/drawer/media/Media.svelte#L62) — $mediaFolders[active!]?.path
+- [src/frontend/components/drawer/media/Media.svelte:62](../../../../src/frontend/components/drawer/media/Media.svelte#L62) — $mediaFolders&#91;active!&#93;?.path
 
 ## Writes
 

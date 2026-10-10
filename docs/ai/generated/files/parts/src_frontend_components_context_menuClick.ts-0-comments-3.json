@@ -1,0 +1,19 @@
+[
+  {"file":"src/frontend/components/context/menuClick.ts","line":2134,"endLine":2134,"text":"// .sort((a, b) => a.index - b.index) [merge based on selected order]","start":82263,"end":82332},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2138,"endLine":2138,"text":"// textbox","start":82538,"end":82548},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2147,"endLine":2147,"text":"// settings","start":82828,"end":82839},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2185,"endLine":2185,"text":"// don't reset these values","start":84178,"end":84205},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2289,"endLine":2289,"text":"// ONLY ONE","start":87858,"end":87869},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2317,"endLine":2317,"text":"// MULTIPLE","start":88571,"end":88582},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2358,"endLine":2358,"text":"// this is old and has to be stored as this","start":89883,"end":89926},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2379,"endLine":2379,"text":"// slides can be selected in several shows (continuous Show view), remove from each in its own show","start":90617,"end":90716},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2392,"endLine":2392,"text":"// remove locked slide groups","start":91132,"end":91161},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2417,"endLine":2417,"text":"// sort so the correct slide indexes are removed","start":92031,"end":92079},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2420,"endLine":2420,"text":"// remove parents and delete childs","start":92129,"end":92164},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2437,"endLine":2437,"text":"// don't do anything with the children if it's removing parents","start":92735,"end":92798},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2482,"endLine":2482,"text":"// select all slides","start":94438,"end":94458},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2498,"endLine":2498,"text":"// async update","start":94896,"end":94911},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2529,"endLine":2529,"text":"// don't check current","start":96036,"end":96058},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2533,"endLine":2533,"text":"// check if slide is added to any other layout","start":96235,"end":96281},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2565,"endLine":2565,"text":"// SORT","start":97265,"end":97272}
+]

@@ -14,4 +14,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/output/OutputHelper.ts:34](../../../../src/electron/output/OutputHelper.ts#L34) — renderer/client → electron; CAPTURE: (data: { id: string; captures: { [key: string]: boolean } }) => CaptureHelper.Lifecycle.startCapture(data.id, data.captures)
+- [src/electron/output/OutputHelper.ts:34](../../../../src/electron/output/OutputHelper.ts#L34) — renderer/client → electron; CAPTURE: (data: { id: string; captures: { &#91;key: string&#93;: boolean } }) => CaptureHelper.Lifecycle.startCapture(data.id, data.captures)

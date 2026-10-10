@@ -10,9 +10,9 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/drawer/pages/Actions.svelte:45](../../../../src/frontend/components/drawer/pages/Actions.svelte#L45) — $special[key]
-- [src/frontend/components/main/Tipbar.svelte:22](../../../../src/frontend/components/main/Tipbar.svelte#L22) — $special['${key}_closed']
-- [src/frontend/components/main/Tipbar.svelte:23](../../../../src/frontend/components/main/Tipbar.svelte#L23) — $special['${key}_interacted']
+- [src/frontend/components/drawer/pages/Actions.svelte:45](../../../../src/frontend/components/drawer/pages/Actions.svelte#L45) — $special&#91;key&#93;
+- [src/frontend/components/main/Tipbar.svelte:22](../../../../src/frontend/components/main/Tipbar.svelte#L22) — $special&#91;'${key}_closed'&#93;
+- [src/frontend/components/main/Tipbar.svelte:23](../../../../src/frontend/components/main/Tipbar.svelte#L23) — $special&#91;'${key}_interacted'&#93;
 
 ## Writes
 

@@ -167,4 +167,4 @@ No static evidence found.
 
 ## Workarounds
 
-No static evidence found.
+- [src/frontend/utils/common.ts:224](../../../../src/frontend/utils/common.ts#L224) — workaround-8c022b17524c35c6: // WIP similar to "secondary" in App.svelte

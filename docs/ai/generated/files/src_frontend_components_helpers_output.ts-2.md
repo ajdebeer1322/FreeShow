@@ -48,14 +48,20 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/helpers/output.ts:198](../../../../src/frontend/components/helpers/output.ts#L198) — timer-d0086bcfd0fe5a3e: setTimeout = 0 ms (omitted); 
-- [src/frontend/components/helpers/output.ts:202](../../../../src/frontend/components/helpers/output.ts#L202) — timer-6a6776591c6f13c0: setTimeout = 0 ms (omitted); 
-- [src/frontend/components/helpers/output.ts:228](../../../../src/frontend/components/helpers/output.ts#L228) — timer-d61e1db10e4232d4: setTimeout = 50 ms (50); 
-- [src/frontend/components/helpers/output.ts:465](../../../../src/frontend/components/helpers/output.ts#L465) — timer-1f9b8e69711ab128: setTimeout = 100 ms (100); 
+- [src/frontend/components/helpers/output.ts:198](../../../../src/frontend/components/helpers/output.ts#L198) — timer-d0086bcfd0fe5a3e: setTimeout = 0 ms (omitted); // timeout to activate after output has updated
+- [src/frontend/components/helpers/output.ts:202](../../../../src/frontend/components/helpers/output.ts#L202) — timer-6a6776591c6f13c0: setTimeout = 0 ms (omitted); // timeout to activate after output has updated // timeout to activate after output has updated // start recording time on brea
+- [src/frontend/components/helpers/output.ts:228](../../../../src/frontend/components/helpers/output.ts#L228) — timer-d61e1db10e4232d4: setTimeout = 50 ms (50); // reset slide cache (after update)
+- [src/frontend/components/helpers/output.ts:465](../../../../src/frontend/components/helpers/output.ts#L465) — timer-1f9b8e69711ab128: setTimeout = 100 ms (100); // update stage background if any
 - [src/frontend/components/helpers/output.ts:579](../../../../src/frontend/components/helpers/output.ts#L579) — timer-bb92282b1e49c938: setTimeout = dynamic ms (overlay.displayDuration! * 1000); 
 - [src/frontend/components/helpers/output.ts:744](../../../../src/frontend/components/helpers/output.ts#L744) — timer-3289ae6e2b7f01d5: setTimeout = 100 ms (100); 
 
 ## Workarounds
 
-No static evidence found.
+- [src/frontend/components/helpers/output.ts:391](../../../../src/frontend/components/helpers/output.ts#L391) — workaround-54e5a3124de0a074: // WIP timer loop does not work if project is changed (should be global for the folder instead of per project item)
+- [src/frontend/components/helpers/output.ts:402](../../../../src/frontend/components/helpers/output.ts#L402) — workaround-b5f5674d4434818f: // WIP smarter logging (based on time or based on percentage played)
+- [src/frontend/components/helpers/output.ts:974](../../../../src/frontend/components/helpers/output.ts#L974) — workaround-d6148c554c3c02e6: // WIP check that this stage layout is not disabled & used in a output or (web enabled (disabledServers) + has connection)!
+- [src/frontend/components/helpers/output.ts:1101](../../../../src/frontend/components/helpers/output.ts#L1101) — workaround-229f80072a307a8f: // WIP history
+- [src/frontend/components/helpers/output.ts:1155](../../../../src/frontend/components/helpers/output.ts#L1155) — workaround-1b750c909fa8ae17: // WIP history
+- [src/frontend/components/helpers/output.ts:1449](../../../../src/frontend/components/helpers/output.ts#L1449) — workaround-7f9dddc86d4745e0: // WIP some keys are probably missing here...
+- [src/frontend/components/helpers/output.ts:1570](../../../../src/frontend/components/helpers/output.ts#L1570) — workaround-7d2d98fea6e8561e: // WIP duplicate of getScriptureSlidesNew section in scripture.ts
 

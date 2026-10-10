@@ -13,7 +13,7 @@ Saved: yes, with the listed transformations.
 - [src/frontend/components/slide/views/Weather.svelte:71](../../../../src/frontend/components/slide/views/Weather.svelte#L71) — $timeFormat
 - [src/frontend/components/system/Clock.svelte:21](../../../../src/frontend/components/system/Clock.svelte#L21) — $timeFormat
 - [src/frontend/components/system/Clock.svelte:44](../../../../src/frontend/components/system/Clock.svelte#L44) — $timeFormat
-- [src/frontend/utils/listeners.ts:368](../../../../src/frontend/utils/listeners.ts#L368) — timeFormat.subscribe((a) => { send(OUTPUT, ["TIME_FORMAT"], a) // STAGE send(STAGE, ["DATA"], { timeFormat: a }) })
+- [src/frontend/utils/listeners.ts:368](../../../../src/frontend/utils/listeners.ts#L368) — timeFormat.subscribe((a) => { send(OUTPUT, &#91;"TIME_FORMAT"&#93;, a) // STAGE send(STAGE, &#91;"DATA"&#93;, { timeFormat: a }) })
 - [src/frontend/utils/save.ts:170](../../../../src/frontend/utils/save.ts#L170) — get(timeFormat)
 - [src/frontend/utils/stageTalk.ts:103](../../../../src/frontend/utils/stageTalk.ts#L103) — get(timeFormat)
 

@@ -10,8 +10,8 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/system/Resizeable.svelte:24](../../../../src/frontend/components/system/Resizeable.svelte#L24) — $resized[id]
-- [src/frontend/components/system/Resizeable.svelte:29](../../../../src/frontend/components/system/Resizeable.svelte#L29) — $resized[id]
+- [src/frontend/components/system/Resizeable.svelte:24](../../../../src/frontend/components/system/Resizeable.svelte#L24) — $resized&#91;id&#93;
+- [src/frontend/components/system/Resizeable.svelte:29](../../../../src/frontend/components/system/Resizeable.svelte#L29) — $resized&#91;id&#93;
 
 ## Writes
 

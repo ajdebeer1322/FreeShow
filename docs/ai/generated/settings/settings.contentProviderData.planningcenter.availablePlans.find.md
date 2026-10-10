@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/show/Projects.svelte:94](../../../../src/frontend/components/show/Projects.svelte#L94) — ($contentProviderData?.planningcenter?.availablePlans as { planId: string; serviceTypeId: string }[] \| undefined)?.find
+- [src/frontend/components/show/Projects.svelte:94](../../../../src/frontend/components/show/Projects.svelte#L94) — ($contentProviderData?.planningcenter?.availablePlans as { planId: string; serviceTypeId: string }&#91;&#93; \| undefined)?.find
 
 ## Writes
 

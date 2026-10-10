@@ -11,8 +11,8 @@
     "channels": 30,
     "messages": 468,
     "settings": 567,
-    "timers": 1025,
-    "workarounds": 240,
+    "timers": 1056,
+    "workarounds": 311,
     "components": 560,
     "diagnostics": 0,
     "windows": 9
@@ -1591,7 +1591,9 @@
       "timers/038.json",
       "timers/039.json",
       "timers/040.json",
-      "timers/041.json"
+      "timers/041.json",
+      "timers/042.json",
+      "timers/043.json"
     ],
     "workarounds": [
       "workarounds/001.json",
@@ -1603,7 +1605,10 @@
       "workarounds/007.json",
       "workarounds/008.json",
       "workarounds/009.json",
-      "workarounds/010.json"
+      "workarounds/010.json",
+      "workarounds/011.json",
+      "workarounds/012.json",
+      "workarounds/013.json"
     ],
     "components": [
       "components/src_frontend_App.svelte.json",

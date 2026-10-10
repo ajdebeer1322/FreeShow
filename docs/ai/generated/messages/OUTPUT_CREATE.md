@@ -8,8 +8,8 @@ No static evidence found.
 
 ## Senders
 
-- [src/frontend/components/helpers/output.ts:1121](../../../../src/frontend/components/helpers/output.ts#L1121) — renderer → electron/other renderer; { id, ...output[id] }
-- [src/frontend/components/helpers/output.ts:1172](../../../../src/frontend/components/helpers/output.ts#L1172) — renderer → electron/other renderer; { ...a[id], id }
+- [src/frontend/components/helpers/output.ts:1121](../../../../src/frontend/components/helpers/output.ts#L1121) — renderer → electron/other renderer; { id, ...output&#91;id&#93; }
+- [src/frontend/components/helpers/output.ts:1172](../../../../src/frontend/components/helpers/output.ts#L1172) — renderer → electron/other renderer; { ...a&#91;id&#93;, id }
 - [src/frontend/components/settings/tabs/Outputs.svelte:81](../../../../src/frontend/components/settings/tabs/Outputs.svelte#L81) — renderer → electron/other renderer; { id: outputId, ...out }
 - [src/frontend/components/settings/tabs/Outputs.svelte:92](../../../../src/frontend/components/settings/tabs/Outputs.svelte#L92) — renderer → electron/other renderer; { ...out, id: outputId }
 - [src/frontend/components/settings/tabs/OutputsTabs.svelte:66](../../../../src/frontend/components/settings/tabs/OutputsTabs.svelte#L66) — renderer → electron/other renderer; { ...out, id: outputId }

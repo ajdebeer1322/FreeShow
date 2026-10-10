@@ -22,7 +22,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 - [src/frontend/components/guide/guideSteps.ts:181](../../../../src/frontend/components/guide/guideSteps.ts#L181) — outputCache.set(null)
 - [src/frontend/components/output/clear.ts:39](../../../../src/frontend/components/output/clear.ts#L39) — outputCache.set({})
-- [src/frontend/components/output/clear.ts:43](../../../../src/frontend/components/output/clear.ts#L43) — outputCache.update((a) => { // only store active outputs activeOutputs.forEach(({ id }) => { const out = get(outputs)[id]?.out if (out) a[id] = clone(out) }) // audio a.playingAudi
+- [src/frontend/components/output/clear.ts:43](../../../../src/frontend/components/output/clear.ts#L43) — outputCache.update((a) => { // only store active outputs activeOutputs.forEach(({ id }) => { const out = get(outputs)&#91;id&#93;?.out if (out) a&#91;id&#93; = clone(out) }) // audio a.playingAudi
 - [src/frontend/components/output/clear.ts:85](../../../../src/frontend/components/output/clear.ts#L85) — outputCache.set(null)
 - [src/frontend/components/output/preview/ClearButtons.svelte:31](../../../../src/frontend/components/output/preview/ClearButtons.svelte#L31) — outputCache.set(null)
 

@@ -24,11 +24,11 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 ## Writes
 
-- [src/server/remote/components/pages/Scripture.svelte:24](../../../../src/server/remote/components/pages/Scripture.svelte#L24) — selectedVerses.set([])
+- [src/server/remote/components/pages/Scripture.svelte:24](../../../../src/server/remote/components/pages/Scripture.svelte#L24) — selectedVerses.set(&#91;&#93;)
 - [src/server/remote/components/pages/ScriptureContent.svelte:221](../../../../src/server/remote/components/pages/ScriptureContent.svelte#L221) — selectedVerses.update((verses) => { const chapterScoped = verses.filter((v) => v.startsWith(prefix)) if (chapterScoped.includes(verseRef)) { return chapterScoped.filter((v) => v !=
-- [src/server/remote/components/pages/ScriptureContent.svelte:252](../../../../src/server/remote/components/pages/ScriptureContent.svelte#L252) — selectedVerses.set([])
+- [src/server/remote/components/pages/ScriptureContent.svelte:252](../../../../src/server/remote/components/pages/ScriptureContent.svelte#L252) — selectedVerses.set(&#91;&#93;)
 - [src/server/remote/components/pages/ScriptureContentTablet.svelte:349](../../../../src/server/remote/components/pages/ScriptureContentTablet.svelte#L349) — selectedVerses.update((verses) => { const chapterScoped = verses.filter((v) => v.startsWith(prefix)) if (chapterScoped.includes(verseRef)) { return chapterScoped.filter((v) => v !=
-- [src/server/remote/components/pages/ScriptureContentTablet.svelte:401](../../../../src/server/remote/components/pages/ScriptureContentTablet.svelte#L401) — selectedVerses.set([])
+- [src/server/remote/components/pages/ScriptureContentTablet.svelte:401](../../../../src/server/remote/components/pages/ScriptureContentTablet.svelte#L401) — selectedVerses.set(&#91;&#93;)
 
 ## Transport
 

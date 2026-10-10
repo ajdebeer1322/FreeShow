@@ -10,10 +10,10 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/context/ContextItem.svelte:290](../../../../src/frontend/components/context/ContextItem.svelte#L290) — $outputs[outputId]?.invisible
-- [src/frontend/components/context/ContextItem.svelte:301](../../../../src/frontend/components/context/ContextItem.svelte#L301) — $outputs[outputId]?.invisible
-- [src/frontend/components/media/video/videoPlayer.ts:760](../../../../src/frontend/components/media/video/videoPlayer.ts#L760) — get(outputs)[outId]?.invisible
-- [src/frontend/utils/receivers.ts:132](../../../../src/frontend/utils/receivers.ts#L132) — get(outputs)[state.id]?.invisible
+- [src/frontend/components/context/ContextItem.svelte:290](../../../../src/frontend/components/context/ContextItem.svelte#L290) — $outputs&#91;outputId&#93;?.invisible
+- [src/frontend/components/context/ContextItem.svelte:301](../../../../src/frontend/components/context/ContextItem.svelte#L301) — $outputs&#91;outputId&#93;?.invisible
+- [src/frontend/components/media/video/videoPlayer.ts:760](../../../../src/frontend/components/media/video/videoPlayer.ts#L760) — get(outputs)&#91;outId&#93;?.invisible
+- [src/frontend/utils/receivers.ts:132](../../../../src/frontend/utils/receivers.ts#L132) — get(outputs)&#91;state.id&#93;?.invisible
 
 ## Writes
 

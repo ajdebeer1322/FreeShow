@@ -8,5 +8,5 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/components/main/popups/EffectItems.svelte:35](../../../../src/frontend/components/main/popups/EffectItems.svelte#L35) — Card → src/frontend/components/drawer/Card.svelte; label={translateText('effect.${effectItems[type].default?.type \|\| type}')}; width={100 / 4}; on:click={() => selectEffect(data)};
-- [src/frontend/components/main/popups/EffectItems.svelte:37](../../../../src/frontend/components/main/popups/EffectItems.svelte#L37) — Effect → src/frontend/components/output/effects/Effect.svelte; effect={{ name: "", style: "", background: "", color: null, items: [data] }}; preview
+- [src/frontend/components/main/popups/EffectItems.svelte:35](../../../../src/frontend/components/main/popups/EffectItems.svelte#L35) — Card → src/frontend/components/drawer/Card.svelte; label={translateText('effect.${effectItems&#91;type&#93;.default?.type \|\| type}')}; width={100 / 4}; on:click={() => selectEffect(data)};
+- [src/frontend/components/main/popups/EffectItems.svelte:37](../../../../src/frontend/components/main/popups/EffectItems.svelte#L37) — Effect → src/frontend/components/output/effects/Effect.svelte; effect={{ name: "", style: "", background: "", color: null, items: &#91;data&#93; }}; preview

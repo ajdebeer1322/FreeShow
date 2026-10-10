@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/ai/manager/AiManager.ts:186](../../../../src/frontend/ai/manager/AiManager.ts#L186) — get(ai)[match.type]
+- [src/frontend/ai/manager/AiManager.ts:186](../../../../src/frontend/ai/manager/AiManager.ts#L186) — get(ai)&#91;match.type&#93;
 
 ## Writes
 

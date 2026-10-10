@@ -58,4 +58,4 @@ No static evidence found.
 
 ## Workarounds
 
-No static evidence found.
+- [src/frontend/converters/txt.ts:390](../../../../src/frontend/converters/txt.ts#L390) — workaround-80c990f38982c1f3: // TODO: this sometimes splits all slides up with no children (when adding &#91;group&#93;)

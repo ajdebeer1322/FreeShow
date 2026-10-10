@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/inputs/ShowButton.svelte:229](../../../../src/frontend/components/inputs/ShowButton.svelte#L229) — $outputs[outputId]?.out?.slide?.layout
+- [src/frontend/components/inputs/ShowButton.svelte:229](../../../../src/frontend/components/inputs/ShowButton.svelte#L229) — $outputs&#91;outputId&#93;?.out?.slide?.layout
 
 ## Writes
 

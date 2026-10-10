@@ -49,10 +49,10 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 - [src/frontend/components/helpers/messages.test.ts:213](../../../../src/frontend/components/helpers/messages.test.ts#L213) — profiles.set({ operator: { access: { overlays: { global: "read" } } } } as any)
 - [src/frontend/components/helpers/messages.test.ts:216](../../../../src/frontend/components/helpers/messages.test.ts#L216) — profiles.set({ operator: { access: { overlays: { "": "none" } } } } as any)
-- [src/frontend/components/main/popups/Color.svelte:79](../../../../src/frontend/components/main/popups/Color.svelte#L79) — profiles.update((a) => { selection.data.forEach(({ id }) => { if (!a[id]) return a[id].color = value }) return a })
-- [src/frontend/components/settings/tabs/Profiles.svelte:187](../../../../src/frontend/components/settings/tabs/Profiles.svelte#L187) — profiles.update((a) => { if (!a.admin) a.admin = { name: "", color: "", image: "", access: {} } ;(a.admin as any)[key] = value return a })
-- [src/frontend/components/settings/tabs/Profiles.svelte:196](../../../../src/frontend/components/settings/tabs/Profiles.svelte#L196) — profiles.update((a) => { if (!a[profileId]) a[profileId] = clone(currentProfile) a[profileId][key] = value return a })
-- [src/frontend/components/settings/tabs/ProfilesTabs.svelte:36](../../../../src/frontend/components/settings/tabs/ProfilesTabs.svelte#L36) — profiles.update((a) => { if (!a[currentId]) a[currentId] = clone(currentProfile) return a })
+- [src/frontend/components/main/popups/Color.svelte:79](../../../../src/frontend/components/main/popups/Color.svelte#L79) — profiles.update((a) => { selection.data.forEach(({ id }) => { if (!a&#91;id&#93;) return a&#91;id&#93;.color = value }) return a })
+- [src/frontend/components/settings/tabs/Profiles.svelte:187](../../../../src/frontend/components/settings/tabs/Profiles.svelte#L187) — profiles.update((a) => { if (!a.admin) a.admin = { name: "", color: "", image: "", access: {} } ;(a.admin as any)&#91;key&#93; = value return a })
+- [src/frontend/components/settings/tabs/Profiles.svelte:196](../../../../src/frontend/components/settings/tabs/Profiles.svelte#L196) — profiles.update((a) => { if (!a&#91;profileId&#93;) a&#91;profileId&#93; = clone(currentProfile) a&#91;profileId&#93;&#91;key&#93; = value return a })
+- [src/frontend/components/settings/tabs/ProfilesTabs.svelte:36](../../../../src/frontend/components/settings/tabs/ProfilesTabs.svelte#L36) — profiles.update((a) => { if (!a&#91;currentId&#93;) a&#91;currentId&#93; = clone(currentProfile) return a })
 - [src/frontend/utils/updateSettings.ts:345](../../../../src/frontend/utils/updateSettings.ts#L345) — profiles.set(v)
 
 ## Transport

@@ -50,3 +50,4 @@ No static evidence found.
 ## Workarounds
 
 - [src/frontend/components/drawer/calendar/calendar.ts:58](../../../../src/frontend/components/drawer/calendar/calendar.ts#L58) — workaround-dd45f340e00e3792: // TODO: use template
+- [src/frontend/components/drawer/calendar/calendar.ts:112](../../../../src/frontend/components/drawer/calendar/calendar.ts#L112) — workaround-7e9a94391252aaab: // TODO: split in half if lines.length > 8

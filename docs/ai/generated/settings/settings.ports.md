@@ -21,5 +21,5 @@ Store: src/frontend/stores.ts#ports.
 
 ## Writes
 
-- [src/frontend/components/main/popups/Connect.svelte:83](../../../../src/frontend/components/main/popups/Connect.svelte#L83) — ports.update((a) => { a[id] = port return a })
+- [src/frontend/components/main/popups/Connect.svelte:83](../../../../src/frontend/components/main/popups/Connect.svelte#L83) — ports.update((a) => { a&#91;id&#93; = port return a })
 - [src/frontend/utils/updateSettings.ts:308](../../../../src/frontend/utils/updateSettings.ts#L308) — ports.set(v)

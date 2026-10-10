@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/context/loadItems.ts:416](../../../../src/frontend/components/context/loadItems.ts#L416) — get(sorted)[id]
+- [src/frontend/components/context/loadItems.ts:416](../../../../src/frontend/components/context/loadItems.ts#L416) — get(sorted)&#91;id&#93;
 
 ## Writes
 

@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/frontend/utils/receivers.ts:150](../../../../src/frontend/utils/receivers.ts#L150) — electron/other renderer → renderer; UPDATE_OUTPUTS_DATA: ({ key, value, id, autoSave }) => { outputs.update((a) => { const ids = id ? [id] : Object.keys(get(outputs)) ids.forEach((
+- [src/frontend/utils/receivers.ts:150](../../../../src/frontend/utils/receivers.ts#L150) — electron/other renderer → renderer; UPDATE_OUTPUTS_DATA: ({ key, value, id, autoSave }) => { outputs.update((a) => { const ids = id ? &#91;id&#93; : Object.keys(get(outputs)) ids.forEach((

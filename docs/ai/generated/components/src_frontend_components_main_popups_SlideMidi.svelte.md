@@ -9,4 +9,4 @@ No static evidence found.
 ## Rendered components and props
 
 - [src/frontend/components/main/popups/SlideMidi.svelte:58](../../../../src/frontend/components/main/popups/SlideMidi.svelte#L58) — Tip → src/frontend/components/main/Tip.svelte; type="info"; value="actions.play_on_midi_tip"; bottom={20}
-- [src/frontend/components/main/popups/SlideMidi.svelte:60](../../../../src/frontend/components/main/popups/SlideMidi.svelte#L60) — MidiValues → src/frontend/components/actions/MidiValues.svelte; value={clone(action.midi \|\| actionMidi)}; firstActionId={action.triggers?.[0]}; on:change={(e) => updateValue("midi"
+- [src/frontend/components/main/popups/SlideMidi.svelte:60](../../../../src/frontend/components/main/popups/SlideMidi.svelte#L60) — MidiValues → src/frontend/components/actions/MidiValues.svelte; value={clone(action.midi \|\| actionMidi)}; firstActionId={action.triggers?.&#91;0&#93;}; on:change={(e) => updateValue("midi"

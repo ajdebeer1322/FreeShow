@@ -21,5 +21,5 @@ Store: src/frontend/stores.ts#audioEffects.
 
 ## Writes
 
-- [src/frontend/audio/effects/audioEffectsHelpers.ts:65](../../../../src/frontend/audio/effects/audioEffectsHelpers.ts#L65) — audioEffects.update((all) => { const stack = [...(all[target]?.stack \|\| [])] mutator(stack) return { ...all, [target]: { stack } } })
+- [src/frontend/audio/effects/audioEffectsHelpers.ts:65](../../../../src/frontend/audio/effects/audioEffectsHelpers.ts#L65) — audioEffects.update((all) => { const stack = &#91;...(all&#91;target&#93;?.stack \|\| &#91;&#93;)&#93; mutator(stack) return { ...all, &#91;target&#93;: { stack } } })
 - [src/frontend/utils/updateSettings.ts:396](../../../../src/frontend/utils/updateSettings.ts#L396) — audioEffects.set(v)

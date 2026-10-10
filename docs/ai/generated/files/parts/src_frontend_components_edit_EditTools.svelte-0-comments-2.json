@@ -1,0 +1,18 @@
+[
+  {"file":"src/frontend/components/edit/EditTools.svelte","line":399,"endLine":399,"text":"//                 line.text.forEach((text) => {","start":16214,"end":16262},
+  {"file":"src/frontend/components/edit/EditTools.svelte","line":400,"endLine":400,"text":"//                     text.value = text.value ? (lineIndex + 1).toString() : \"\"","start":16267,"end":16347},
+  {"file":"src/frontend/components/edit/EditTools.svelte","line":401,"endLine":401,"text":"//                     text.style = text.style.replace(\"color:#FFFFFF;\", \"\")","start":16352,"end":16428},
+  {"file":"src/frontend/components/edit/EditTools.svelte","line":402,"endLine":402,"text":"//                 })","start":16433,"end":16454},
+  {"file":"src/frontend/components/edit/EditTools.svelte","line":403,"endLine":403,"text":"//             })","start":16459,"end":16476},
+  {"file":"src/frontend/components/edit/EditTools.svelte","line":404,"endLine":404,"text":"//         })","start":16481,"end":16494},
+  {"file":"src/frontend/components/edit/EditTools.svelte","line":405,"endLine":405,"text":"//         return items","start":16499,"end":16522},
+  {"file":"src/frontend/components/edit/EditTools.svelte","line":406,"endLine":406,"text":"//     }","start":16527,"end":16535},
+  {"file":"src/frontend/components/edit/EditTools.svelte","line":407,"endLine":407,"text":"// }","start":16540,"end":16544},
+  {"file":"src/frontend/components/edit/EditTools.svelte","line":409,"endLine":409,"text":"// custom local fonts (likely from PPT import)","start":16550,"end":16596},
+  {"file":"src/frontend/components/edit/EditTools.svelte","line":465,"endLine":465,"text":"<!-- <T id=\"actions.to_following\" /> -->","start":18812,"end":18852},
+  {"file":"src/frontend/components/edit/EditTools.svelte","line":483,"endLine":483,"text":"<!-- && !copiedStyleDifferent -->","start":19633,"end":19666},
+  {"file":"src/frontend/components/edit/EditTools.svelte","line":488,"endLine":488,"text":"<!-- {#if !isShow}<T id=\"actions.reset\" />{/if} -->","start":19974,"end":20025},
+  {"file":"src/frontend/components/edit/EditTools.svelte","line":494,"endLine":501,"text":"<!-- <span style=\"display: flex;flex-wrap: wrap;white-space: nowrap;\">\n            {#if $activeEdit.type === \"template\" || $activeEdit.type === \"overlay\"}\n                <Button style=\"flex: 1;\" title={translateText(\"actions.copy\")} on:click={copyToCreateData} dark center>\n                    <Icon id=\"copy\" right />\n                    DEV: Copy to \"createData\"\n                </Button>\n            {/if}\n        </span> -->","start":20139,"end":20568},
+  {"file":"src/frontend/components/edit/EditTools.svelte","line":531,"endLine":531,"text":"/* flex: 1; */","start":21183,"end":21197},
+  {"file":"src/frontend/components/edit/EditTools.svelte","line":532,"endLine":532,"text":"/* height: 100%; */","start":21206,"end":21225}
+]

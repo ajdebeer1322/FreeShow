@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:53](../../../../src/electron/IPC/responsesMain.ts#L53) — renderer/client → electron; [Main.IS_DEV]: () => !isProd
+- [src/electron/IPC/responsesMain.ts:53](../../../../src/electron/IPC/responsesMain.ts#L53) — renderer/client → electron; &#91;Main.IS_DEV&#93;: () => !isProd

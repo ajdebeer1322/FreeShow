@@ -62,7 +62,8 @@
         "lint:frontend": "eslint -c config/linting/eslint.frontend.json --ext .js,.ts src/frontend --fix",
         "lint:styles": "npx stylelint 'src/frontend/**/*.{css,scss,svelte}' --config config/linting/.stylelintrc.json",
         "ai:map": "node scripts/ai-map/generate.mjs",
-        "ai:ask": "node scripts/ai-map/ask.mjs"
+        "ai:ask": "node scripts/ai-map/ask.mjs",
+        "ai:check": "node scripts/ai-map/check.mjs"
     },
     "devDependencies": {
         "@mapbox/node-pre-gyp": "^2.0.0",

@@ -13,4 +13,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:102](../../../../src/electron/IPC/responsesMain.ts#L102) — renderer/client → electron; [Main.OPEN_LOG]: () => openInSystem(_store.ERROR_LOG?.path \|\| "")
+- [src/electron/IPC/responsesMain.ts:102](../../../../src/electron/IPC/responsesMain.ts#L102) — renderer/client → electron; &#91;Main.OPEN_LOG&#93;: () => openInSystem(_store.ERROR_LOG?.path \|\| "")

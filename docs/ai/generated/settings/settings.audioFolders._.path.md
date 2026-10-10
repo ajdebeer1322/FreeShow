@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/drawer/audio/Audio.svelte:42](../../../../src/frontend/components/drawer/audio/Audio.svelte#L42) — $audioFolders[active]?.path
+- [src/frontend/components/drawer/audio/Audio.svelte:42](../../../../src/frontend/components/drawer/audio/Audio.svelte#L42) — $audioFolders&#91;active&#93;?.path
 
 ## Writes
 

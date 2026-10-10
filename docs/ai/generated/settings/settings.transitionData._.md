@@ -10,8 +10,8 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/main/popups/Transition.svelte:88](../../../../src/frontend/components/main/popups/Transition.svelte#L88) — $transitionData[id]
-- [src/frontend/components/main/popups/Transition.svelte:257](../../../../src/frontend/components/main/popups/Transition.svelte#L257) — $transitionData[selectedType]
+- [src/frontend/components/main/popups/Transition.svelte:88](../../../../src/frontend/components/main/popups/Transition.svelte#L88) — $transitionData&#91;id&#93;
+- [src/frontend/components/main/popups/Transition.svelte:257](../../../../src/frontend/components/main/popups/Transition.svelte#L257) — $transitionData&#91;selectedType&#93;
 
 ## Writes
 

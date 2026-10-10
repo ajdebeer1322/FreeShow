@@ -52,3 +52,4 @@ No static evidence found.
 ## Workarounds
 
 - [src/frontend/components/edit/values/boxes.ts:334](../../../../src/frontend/components/edit/values/boxes.ts#L334) — workaround-dadb7f0e6b1470f0: // { name: "popup.media_fit", id: "fit", input: "popup", popup: "media_fit" }, // WIP
+- [src/frontend/components/edit/values/boxes.ts:662](../../../../src/frontend/components/edit/values/boxes.ts#L662) — workaround-f8c8f02dba4e6b8b: // WIP custom inputs for the css

@@ -6,8 +6,8 @@ Store: src/frontend/stores.ts#customFonts.
 
 ## Definitions
 
-- [src/electron/data/defaults.ts:56](../../../../src/electron/data/defaults.ts#L56) — []
-- [src/frontend/stores.ts:246](../../../../src/frontend/stores.ts#L246) — []
+- [src/electron/data/defaults.ts:56](../../../../src/electron/data/defaults.ts#L56) — &#91;&#93;
+- [src/frontend/stores.ts:246](../../../../src/frontend/stores.ts#L246) — &#91;&#93;
 
 ## Reads
 
@@ -20,6 +20,6 @@ Store: src/frontend/stores.ts#customFonts.
 
 ## Writes
 
-- [src/frontend/components/main/popups/ManageFonts.svelte:65](../../../../src/frontend/components/main/popups/ManageFonts.svelte#L65) — customFonts.set([...$customFonts, font])
+- [src/frontend/components/main/popups/ManageFonts.svelte:65](../../../../src/frontend/components/main/popups/ManageFonts.svelte#L65) — customFonts.set(&#91;...$customFonts, font&#93;)
 - [src/frontend/components/main/popups/ManageFonts.svelte:82](../../../../src/frontend/components/main/popups/ManageFonts.svelte#L82) — customFonts.set($customFonts.filter((_, i) => i !== index))
 - [src/frontend/utils/updateSettings.ts:302](../../../../src/frontend/utils/updateSettings.ts#L302) — customFonts.set(v)

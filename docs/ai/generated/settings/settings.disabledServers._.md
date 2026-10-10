@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/quicksearch/quicksearch.ts:558](../../../../src/frontend/components/quicksearch/quicksearch.ts#L558) — get(disabledServers)[id]
+- [src/frontend/components/quicksearch/quicksearch.ts:558](../../../../src/frontend/components/quicksearch/quicksearch.ts#L558) — get(disabledServers)&#91;id&#93;
 
 ## Writes
 

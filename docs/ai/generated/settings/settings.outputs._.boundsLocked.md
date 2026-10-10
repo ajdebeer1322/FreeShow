@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/MainOutput.svelte:29](../../../../src/frontend/MainOutput.svelte#L29) — $outputs[outputId]?.boundsLocked
+- [src/frontend/MainOutput.svelte:29](../../../../src/frontend/MainOutput.svelte#L29) — $outputs&#91;outputId&#93;?.boundsLocked
 
 ## Writes
 

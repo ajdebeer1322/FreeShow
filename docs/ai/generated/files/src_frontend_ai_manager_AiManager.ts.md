@@ -38,10 +38,11 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/ai/manager/AiManager.ts:214](../../../../src/frontend/ai/manager/AiManager.ts#L214) — timer-cb9b3c3e4ee36763: setTimeout = 500 ms (500); 
+- [src/frontend/ai/manager/AiManager.ts:214](../../../../src/frontend/ai/manager/AiManager.ts#L214) — timer-cb9b3c3e4ee36763: setTimeout = 500 ms (500); // reset output updates when not "manually" played
 - [src/frontend/ai/manager/AiManager.ts:233](../../../../src/frontend/ai/manager/AiManager.ts#L233) — timer-bc31274749159d34: setTimeout = dynamic ms (TIMEOUT); 
 - [src/frontend/ai/manager/AiManager.ts:265](../../../../src/frontend/ai/manager/AiManager.ts#L265) — timer-cc072b5ea7124701: setTimeout = 1000 ms (1000); 
 
 ## Workarounds
 
 - [src/frontend/ai/manager/AiManager.ts:129](../../../../src/frontend/ai/manager/AiManager.ts#L129) — workaround-96cc71ea74979e14: // WIP only scripture is implemented
+- [src/frontend/ai/manager/AiManager.ts:175](../../../../src/frontend/ai/manager/AiManager.ts#L175) — workaround-34d1959cc639c0b0: // WIP currently only auto-plays scripture matches

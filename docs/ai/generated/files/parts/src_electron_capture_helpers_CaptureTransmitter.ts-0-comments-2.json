@@ -1,0 +1,20 @@
+[
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":569,"endLine":569,"text":"// release immediately to prevent memory accumulation","start":26871,"end":26924},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":579,"endLine":579,"text":"// MAIN (STAGE OUTPUT)","start":27280,"end":27302},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":587,"endLine":587,"text":"// push compressed frames directly to connected web StageShow clients (\"current output\" mirrors)","start":27583,"end":27679},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":593,"endLine":593,"text":"/*  convert from ARGB/BGRA (Electron/Chromium capture output) to RGBA (Web canvas)  */","start":27854,"end":27940},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":600,"endLine":600,"text":"// push a downscaled JPEG frame to subscribed web StageShow clients","start":28121,"end":28188},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":601,"endLine":601,"text":"// clients without a visible \"current output\" mirror never subscribe, so text-only stage displays receive nothing","start":28193,"end":28306},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":614,"endLine":614,"text":"// 70% quality","start":28924,"end":28938},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":618,"endLine":618,"text":"// SERVER","start":29089,"end":29098},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":622,"endLine":622,"text":"// send output image size","start":29205,"end":29230},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":623,"endLine":623,"text":"// image = image.resize({ width: size.width / 3, height: size.height / 3, quality: \"good\" })","start":29239,"end":29331},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":624,"endLine":624,"text":"// image = this.resizeImage(image, size, { width: size.width / 3, height: size.height / 3 })","start":29340,"end":29432},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":626,"endLine":626,"text":"// {scaleFactor: 0.5}","start":29474,"end":29495},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":630,"endLine":630,"text":"/*  convert from ARGB/BGRA (Electron/Chromium capture output) to RGBA (Web canvas)  */","start":29639,"end":29725},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":635,"endLine":635,"text":"// WEBRTC","start":29883,"end":29892},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":643,"endLine":643,"text":"/*  convert from ARGB/BGRA (Electron/Chromium capture output) to RGBA (Web canvas)  */","start":30205,"end":30291},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":648,"endLine":648,"text":"// RTMP","start":30391,"end":30398},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":659,"endLine":659,"text":"// RECORDER","start":30781,"end":30792},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":686,"endLine":686,"text":"// prevent unbounded growth if requested frames never arrive (e.g. capture not running)","start":31878,"end":31965}
+]

@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/ai/stt/stt.ts:52](../../../../src/frontend/ai/stt/stt.ts#L52) — get(ai)?.stt?.engineOptions?.[engine]
+- [src/frontend/ai/stt/stt.ts:52](../../../../src/frontend/ai/stt/stt.ts#L52) — get(ai)?.stt?.engineOptions?.&#91;engine&#93;
 
 ## Writes
 

@@ -1,0 +1,8 @@
+[
+  {"file":"src/frontend/components/timeline/Timeline.svelte","line":1211,"endLine":1211,"text":"/* cursor: ew-resize; */","start":47895,"end":47919},
+  {"file":"src/frontend/components/timeline/Timeline.svelte","line":1245,"endLine":1245,"text":"/* align-items: center; */","start":48606,"end":48632},
+  {"file":"src/frontend/components/timeline/Timeline.svelte","line":1246,"endLine":1246,"text":"/* at bottom */","start":48664,"end":48679},
+  {"file":"src/frontend/components/timeline/Timeline.svelte","line":1280,"endLine":1280,"text":"/* CLOSED */","start":49453,"end":49465},
+  {"file":"src/frontend/components/timeline/Timeline.svelte","line":1302,"endLine":1302,"text":"/* header */","start":49846,"end":49858},
+  {"file":"src/frontend/components/timeline/Timeline.svelte","line":1313,"endLine":1320,"text":"/* .header .tag {\n        background-color: var(--secondary-opacity);\n        color: var(--secondary-text);\n        padding: 4px 8px;\n        border-radius: 4px;\n        font-size: 0.9em;\n        white-space: nowrap;\n    } */","start":50085,"end":50310}
+]

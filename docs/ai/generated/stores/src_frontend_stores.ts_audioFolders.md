@@ -23,8 +23,8 @@ Saved: yes, with the listed transformations.
 
 ## Writes
 
-- [src/frontend/components/drawer/media/Media.svelte:200](../../../../src/frontend/components/drawer/media/Media.svelte#L200) — audioFolders.update((a) => { a[uid()] = { name: getFileName(path), icon: "folder", path } return a })
-- [src/frontend/components/drawer/navigation/AudioTabs.svelte:100](../../../../src/frontend/components/drawer/navigation/AudioTabs.svelte#L100) — audioFolders.update((a) => { if (a[id].default) delete a[id].default a[id].name = value return a })
+- [src/frontend/components/drawer/media/Media.svelte:200](../../../../src/frontend/components/drawer/media/Media.svelte#L200) — audioFolders.update((a) => { a&#91;uid()&#93; = { name: getFileName(path), icon: "folder", path } return a })
+- [src/frontend/components/drawer/navigation/AudioTabs.svelte:100](../../../../src/frontend/components/drawer/navigation/AudioTabs.svelte#L100) — audioFolders.update((a) => { if (a&#91;id&#93;.default) delete a&#91;id&#93;.default a&#91;id&#93;.name = value return a })
 - [src/frontend/utils/createData.ts:65](../../../../src/frontend/utils/createData.ts#L65) — audioFolders.update((a) => { if (paths.music) a.music = { name: "category.music", icon: "folder", path: paths.music, default: true } return a })
 - [src/frontend/utils/updateSettings.ts:347](../../../../src/frontend/utils/updateSettings.ts#L347) — audioFolders.set(v)
 

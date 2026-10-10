@@ -10,9 +10,9 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/context/menuClick.ts:1805](../../../../src/frontend/components/context/menuClick.ts#L1805) — get(audioFolders)[data]
-- [src/frontend/components/drawer/audio/Audio.svelte:42](../../../../src/frontend/components/drawer/audio/Audio.svelte#L42) — $audioFolders[active]
-- [src/frontend/components/drawer/audio/Audio.svelte:44](../../../../src/frontend/components/drawer/audio/Audio.svelte#L44) — $audioFolders[active]
+- [src/frontend/components/context/menuClick.ts:1805](../../../../src/frontend/components/context/menuClick.ts#L1805) — get(audioFolders)&#91;data&#93;
+- [src/frontend/components/drawer/audio/Audio.svelte:42](../../../../src/frontend/components/drawer/audio/Audio.svelte#L42) — $audioFolders&#91;active&#93;
+- [src/frontend/components/drawer/audio/Audio.svelte:44](../../../../src/frontend/components/drawer/audio/Audio.svelte#L44) — $audioFolders&#91;active&#93;
 
 ## Writes
 

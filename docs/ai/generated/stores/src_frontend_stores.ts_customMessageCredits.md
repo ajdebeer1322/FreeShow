@@ -9,7 +9,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 ## Reads
 
 - [src/frontend/components/helpers/output.ts:2050](../../../../src/frontend/components/helpers/output.ts#L2050) — get(customMessageCredits)
-- [src/frontend/utils/listeners.ts:293](../../../../src/frontend/utils/listeners.ts#L293) — customMessageCredits.subscribe((data) => { send(OUTPUT, ["CUSTOM_CREDITS"], data) })
+- [src/frontend/utils/listeners.ts:293](../../../../src/frontend/utils/listeners.ts#L293) — customMessageCredits.subscribe((data) => { send(OUTPUT, &#91;"CUSTOM_CREDITS"&#93;, data) })
 
 ## Writes
 

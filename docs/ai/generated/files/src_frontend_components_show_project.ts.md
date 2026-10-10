@@ -43,7 +43,7 @@ No static evidence found.
 ## Timing
 
 - [src/frontend/components/show/project.ts:26](../../../../src/frontend/components/show/project.ts#L26) — timer-44d942e19b54b9ac: setTimeout = 300 ms (300); // set back to saved if opening, as project used time is changed // set last used
-- [src/frontend/components/show/project.ts:57](../../../../src/frontend/components/show/project.ts#L57) — timer-0cc66d4445cf5198: setTimeout = 50 ms (50); 
+- [src/frontend/components/show/project.ts:57](../../../../src/frontend/components/show/project.ts#L57) — timer-0cc66d4445cf5198: setTimeout = 50 ms (50); // open stored layout // wait until loaded
 
 ## Workarounds
 

@@ -20,14 +20,14 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 - [src/frontend/components/inputs/ShowButton.svelte:81](../../../../src/frontend/components/inputs/ShowButton.svelte#L81) — $overlayCategories
 - [src/frontend/components/main/popups/ChangeIcon.svelte:19](../../../../src/frontend/components/main/popups/ChangeIcon.svelte#L19) — $overlayCategories
 - [src/frontend/components/settings/tabs/Profiles.svelte:117](../../../../src/frontend/components/settings/tabs/Profiles.svelte#L117) — $overlayCategories
-- [src/frontend/utils/listeners.ts:166](../../../../src/frontend/utils/listeners.ts#L166) — overlayCategories.subscribe(async (data) => { if (await hasNewerUpdate("LISTENER_OVERLAY_CATEGORIES", 50)) return send(REMOTE, ["OVERLAY_CATEGORIES"], data) })
+- [src/frontend/utils/listeners.ts:166](../../../../src/frontend/utils/listeners.ts#L166) — overlayCategories.subscribe(async (data) => { if (await hasNewerUpdate("LISTENER_OVERLAY_CATEGORIES", 50)) return send(REMOTE, &#91;"OVERLAY_CATEGORIES"&#93;, data) })
 - [src/frontend/utils/remoteTalk.ts:304](../../../../src/frontend/utils/remoteTalk.ts#L304) — get(overlayCategories)
 
 ## Writes
 
 - [src/frontend/components/context/menuClick.ts:871](../../../../src/frontend/components/context/menuClick.ts#L871) — overlayCategories.update(toggleArchive)
-- [src/frontend/components/drawer/navigation/OverlaysTabs.svelte:50](../../../../src/frontend/components/drawer/navigation/OverlaysTabs.svelte#L50) — overlayCategories.update((a) => { if (a[id].default) delete a[id].default a[id].name = value return a })
-- [src/frontend/components/drawer/pages/Overlays.svelte:92](../../../../src/frontend/components/drawer/pages/Overlays.svelte#L92) — overlayCategories.update((a) => { nonexistentCategories.forEach((id) => { if (a[id]) return a[id] = { name: translateText("main.unnamed") } }) return a })
+- [src/frontend/components/drawer/navigation/OverlaysTabs.svelte:50](../../../../src/frontend/components/drawer/navigation/OverlaysTabs.svelte#L50) — overlayCategories.update((a) => { if (a&#91;id&#93;.default) delete a&#91;id&#93;.default a&#91;id&#93;.name = value return a })
+- [src/frontend/components/drawer/pages/Overlays.svelte:92](../../../../src/frontend/components/drawer/pages/Overlays.svelte#L92) — overlayCategories.update((a) => { nonexistentCategories.forEach((id) => { if (a&#91;id&#93;) return a&#91;id&#93; = { name: translateText("main.unnamed") } }) return a })
 - [src/frontend/components/main/popups/ChangeIcon.svelte:12](../../../../src/frontend/components/main/popups/ChangeIcon.svelte#L12) — overlayCategories.update((a) => changeIcon(a, icon))
 - [src/frontend/utils/updateSettings.ts:365](../../../../src/frontend/utils/updateSettings.ts#L365) — overlayCategories.set(v)
 

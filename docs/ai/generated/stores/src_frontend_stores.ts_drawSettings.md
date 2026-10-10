@@ -20,14 +20,14 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 - [src/frontend/components/main/Top.svelte:115](../../../../src/frontend/components/main/Top.svelte#L115) — $drawSettings
 - [src/frontend/components/output/Output.svelte:337](../../../../src/frontend/components/output/Output.svelte#L337) — $drawSettings
 - [src/frontend/utils/controllerTalk.ts:48](../../../../src/frontend/utils/controllerTalk.ts#L48) — get(drawSettings)
-- [src/frontend/utils/listeners.ts:264](../../../../src/frontend/utils/listeners.ts#L264) — drawSettings.subscribe((data) => { const activeOutputIds = getAllActiveOutputIds() getAllNormalOutputs().forEach(({ id }) => { if (activeOutputIds.includes(id)) send(OUTPUT, ["DRAW
+- [src/frontend/utils/listeners.ts:264](../../../../src/frontend/utils/listeners.ts#L264) — drawSettings.subscribe((data) => { const activeOutputIds = getAllActiveOutputIds() getAllNormalOutputs().forEach(({ id }) => { if (activeOutputIds.includes(id)) send(OUTPUT, &#91;"DRAW
 
 ## Writes
 
 - [src/frontend/components/actions/apiHelper.ts:1175](../../../../src/frontend/components/actions/apiHelper.ts#L1175) — drawSettings.update((a) => { if (!a.zoom) a.zoom = {} a.zoom.size = size return a })
-- [src/frontend/components/draw/DrawSettings.svelte:65](../../../../src/frontend/components/draw/DrawSettings.svelte#L65) — drawSettings.update((a) => { a[tool][key] = value return a })
-- [src/frontend/components/draw/DrawSettings.svelte:72](../../../../src/frontend/components/draw/DrawSettings.svelte#L72) — drawSettings.update((a) => { a[tool] = clone(defaults[tool] \|\| {}) return a })
-- [src/frontend/components/draw/DrawSettings.svelte:81](../../../../src/frontend/components/draw/DrawSettings.svelte#L81) — drawSettings.update((a) => { if (!a[tool]) a[tool] = clone(defaults[tool]) else { Object.entries(defaults[tool]).forEach(([key, value]) => { if (a[tool][key] === undefined) a[tool]
+- [src/frontend/components/draw/DrawSettings.svelte:65](../../../../src/frontend/components/draw/DrawSettings.svelte#L65) — drawSettings.update((a) => { a&#91;tool&#93;&#91;key&#93; = value return a })
+- [src/frontend/components/draw/DrawSettings.svelte:72](../../../../src/frontend/components/draw/DrawSettings.svelte#L72) — drawSettings.update((a) => { a&#91;tool&#93; = clone(defaults&#91;tool&#93; \|\| {}) return a })
+- [src/frontend/components/draw/DrawSettings.svelte:81](../../../../src/frontend/components/draw/DrawSettings.svelte#L81) — drawSettings.update((a) => { if (!a&#91;tool&#93;) a&#91;tool&#93; = clone(defaults&#91;tool&#93;) else { Object.entries(defaults&#91;tool&#93;).forEach((&#91;key, value&#93;) => { if (a&#91;tool&#93;&#91;key&#93; === undefined) a&#91;tool&#93;
 - [src/frontend/components/draw/Paint.svelte:81](../../../../src/frontend/components/draw/Paint.svelte#L81) — drawSettings.update((a) => { if (a.paint?.clear) delete a.paint.clear return a })
 - [src/frontend/components/draw/Slide.svelte:74](../../../../src/frontend/components/draw/Slide.svelte#L74) — drawSettings.update((a) => { let newSize = 10 if (e.altKey) newSize = 1 if (e.ctrlKey \|\| e.metaKey) newSize = 25 let direction: number = e.deltaY > 0 ? 1 : -1 const previousSize = 
 - [src/frontend/components/main/popups/ResetAll.svelte:46](../../../../src/frontend/components/main/popups/ResetAll.svelte#L46) — drawSettings.set({})

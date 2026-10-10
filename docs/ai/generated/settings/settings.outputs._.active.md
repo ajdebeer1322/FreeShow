@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/actions/apiHelper.ts:341](../../../../src/frontend/components/actions/apiHelper.ts#L341) — get(outputs)[outputIds[0]]?.active
+- [src/frontend/components/actions/apiHelper.ts:341](../../../../src/frontend/components/actions/apiHelper.ts#L341) — get(outputs)&#91;outputIds&#91;0&#93;&#93;?.active
 
 ## Writes
 

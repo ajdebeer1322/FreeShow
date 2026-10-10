@@ -47,20 +47,20 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 - [src/frontend/converters/importHelpers.ts:23](../../../../src/frontend/converters/importHelpers.ts#L23) — get(categories)
 - [src/frontend/converters/importHelpers.ts:91](../../../../src/frontend/converters/importHelpers.ts#L91) — get(categories)
 - [src/frontend/converters/songbeamer.ts:96](../../../../src/frontend/converters/songbeamer.ts#L96) — get(categories)
-- [src/frontend/utils/listeners.ts:124](../../../../src/frontend/utils/listeners.ts#L124) — categories.subscribe(async (data) => { if (await hasNewerUpdate("LISTENER_CATEGORIES", 50)) return send(OUTPUT, ["CATEGORIES"], data) })
+- [src/frontend/utils/listeners.ts:124](../../../../src/frontend/utils/listeners.ts#L124) — categories.subscribe(async (data) => { if (await hasNewerUpdate("LISTENER_CATEGORIES", 50)) return send(OUTPUT, &#91;"CATEGORIES"&#93;, data) })
 - [src/frontend/utils/remoteTalk.ts:374](../../../../src/frontend/utils/remoteTalk.ts#L374) — get(categories)
 - [src/frontend/utils/search.ts:89](../../../../src/frontend/utils/search.ts#L89) — get(categories)
 
 ## Writes
 
-- [src/frontend/components/context/menuClick.ts:855](../../../../src/frontend/components/context/menuClick.ts#L855) — categories.update((a) => { a[id].template = templateId return a })
+- [src/frontend/components/context/menuClick.ts:855](../../../../src/frontend/components/context/menuClick.ts#L855) — categories.update((a) => { a&#91;id&#93;.template = templateId return a })
 - [src/frontend/components/context/menuClick.ts:870](../../../../src/frontend/components/context/menuClick.ts#L870) — categories.update(toggleArchive)
-- [src/frontend/components/drawer/navigation/ShowsTabs.svelte:64](../../../../src/frontend/components/drawer/navigation/ShowsTabs.svelte#L64) — categories.update((a) => { if (a[id].default) delete a[id].default a[id].name = value return a })
-- [src/frontend/components/drawer/pages/Shows.svelte:224](../../../../src/frontend/components/drawer/pages/Shows.svelte#L224) — categories.update((a) => { nonexistentCategories.forEach((id) => { if (a[id]) return a[id] = { name: translateText("main.unnamed") } }) return a })
-- [src/frontend/components/main/popups/CategoryAction.svelte:21](../../../../src/frontend/components/main/popups/CategoryAction.svelte#L21) — categories.update((a) => { if (!a[selectedCategory]) return a a[selectedCategory].action = id return a })
+- [src/frontend/components/drawer/navigation/ShowsTabs.svelte:64](../../../../src/frontend/components/drawer/navigation/ShowsTabs.svelte#L64) — categories.update((a) => { if (a&#91;id&#93;.default) delete a&#91;id&#93;.default a&#91;id&#93;.name = value return a })
+- [src/frontend/components/drawer/pages/Shows.svelte:224](../../../../src/frontend/components/drawer/pages/Shows.svelte#L224) — categories.update((a) => { nonexistentCategories.forEach((id) => { if (a&#91;id&#93;) return a&#91;id&#93; = { name: translateText("main.unnamed") } }) return a })
+- [src/frontend/components/main/popups/CategoryAction.svelte:21](../../../../src/frontend/components/main/popups/CategoryAction.svelte#L21) — categories.update((a) => { if (!a&#91;selectedCategory&#93;) return a a&#91;selectedCategory&#93;.action = id return a })
 - [src/frontend/components/main/popups/ChangeIcon.svelte:10](../../../../src/frontend/components/main/popups/ChangeIcon.svelte#L10) — categories.update((a) => changeIcon(a, icon))
-- [src/frontend/components/main/popups/MetadataDisplay.svelte:68](../../../../src/frontend/components/main/popups/MetadataDisplay.svelte#L68) — categories.update((a) => { ids.forEach((id) => { if (!a[id]) return if (key === "display" && value === "never") { delete a[id].metadata return } if (!a[id].metadata) a[id].metadata
-- [src/frontend/converters/project.ts:30](../../../../src/frontend/converters/project.ts#L30) — categoriesStore.update((a) => { Object.entries(categories).forEach(([id, cat]: any) => { if (!a[id]) a[id] = { name: cat.name, icon: cat.icon ?? null } }) return a })
+- [src/frontend/components/main/popups/MetadataDisplay.svelte:68](../../../../src/frontend/components/main/popups/MetadataDisplay.svelte#L68) — categories.update((a) => { ids.forEach((id) => { if (!a&#91;id&#93;) return if (key === "display" && value === "never") { delete a&#91;id&#93;.metadata return } if (!a&#91;id&#93;.metadata) a&#91;id&#93;.metadata
+- [src/frontend/converters/project.ts:30](../../../../src/frontend/converters/project.ts#L30) — categoriesStore.update((a) => { Object.entries(categories).forEach((&#91;id, cat&#93;: any) => { if (!a&#91;id&#93;) a&#91;id&#93; = { name: cat.name, icon: cat.icon ?? null } }) return a })
 - [src/frontend/utils/receivers.ts:240](../../../../src/frontend/utils/receivers.ts#L240) — categories.set(a)
 - [src/frontend/utils/updateSettings.ts:348](../../../../src/frontend/utils/updateSettings.ts#L348) — categories.set(v)
 

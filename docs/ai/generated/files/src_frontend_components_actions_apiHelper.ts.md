@@ -99,3 +99,5 @@ No static evidence found.
 - [src/frontend/components/actions/apiHelper.ts:44](../../../../src/frontend/components/actions/apiHelper.ts#L44) — workaround-8e12bba664b236fe: // WIP combine with click() in ShowButton.svelte
 - [src/frontend/components/actions/apiHelper.ts:67](../../../../src/frontend/components/actions/apiHelper.ts#L67) — workaround-27653ca53cd4ad6f: // WIP duplicate of Preview.svelte checkGroupShortcuts()
 - [src/frontend/components/actions/apiHelper.ts:157](../../../../src/frontend/components/actions/apiHelper.ts#L157) — workaround-3cfebaae2dc5604f: // WIP duplicate of ShowButton.svelte doubleClick() & missing other types
+- [src/frontend/components/actions/apiHelper.ts:241](../../../../src/frontend/components/actions/apiHelper.ts#L241) — workaround-9f62dcd116f7157c: // WIP duplicate of Slides.svelte:57 (slideClick)
+- [src/frontend/components/actions/apiHelper.ts:1062](../../../../src/frontend/components/actions/apiHelper.ts#L1062) — workaround-6f0a5978d70c1e31: // WIP duplicate of files.ts

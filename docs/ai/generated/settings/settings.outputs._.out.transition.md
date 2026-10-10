@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/output/clear.ts:159](../../../../src/frontend/components/output/clear.ts#L159) — get(outputs)[specificOutputId]?.out?.transition
+- [src/frontend/components/output/clear.ts:159](../../../../src/frontend/components/output/clear.ts#L159) — get(outputs)&#91;specificOutputId&#93;?.out?.transition
 
 ## Writes
 

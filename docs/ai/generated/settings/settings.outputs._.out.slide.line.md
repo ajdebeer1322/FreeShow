@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/helpers/showActions.ts:348](../../../../src/frontend/components/helpers/showActions.ts#L348) — get(outputs)[id]?.out?.slide?.line
+- [src/frontend/components/helpers/showActions.ts:348](../../../../src/frontend/components/helpers/showActions.ts#L348) — get(outputs)&#91;id&#93;?.out?.slide?.line
 
 ## Writes
 

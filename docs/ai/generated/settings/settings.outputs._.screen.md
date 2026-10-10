@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/settings/Screens.svelte:116](../../../../src/frontend/components/settings/Screens.svelte#L116) — $outputs[screenId]?.screen
+- [src/frontend/components/settings/Screens.svelte:116](../../../../src/frontend/components/settings/Screens.svelte#L116) — $outputs&#91;screenId&#93;?.screen
 
 ## Writes
 

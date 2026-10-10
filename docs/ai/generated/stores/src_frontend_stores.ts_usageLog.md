@@ -15,8 +15,8 @@ Saved: yes, with the listed transformations.
 ## Writes
 
 - [src/frontend/IPC/responsesMain.ts:159](../../../../src/frontend/IPC/responsesMain.ts#L159) — usageLog.set(a)
-- [src/frontend/components/drawer/info/ShowInfo.svelte:93](../../../../src/frontend/components/drawer/info/ShowInfo.svelte#L93) — usageLog.set({ all: [] })
-- [src/frontend/components/helpers/output.ts:415](../../../../src/frontend/components/helpers/output.ts#L415) — usageLog.update((a) => { const metadata = show.meta \|\| {} // remove empty values Object.keys(metadata).forEach((key) => { if (!metadata[key]) delete metadata[key] }) if (!a.all) a.
+- [src/frontend/components/drawer/info/ShowInfo.svelte:93](../../../../src/frontend/components/drawer/info/ShowInfo.svelte#L93) — usageLog.set({ all: &#91;&#93; })
+- [src/frontend/components/helpers/output.ts:415](../../../../src/frontend/components/helpers/output.ts#L415) — usageLog.update((a) => { const metadata = show.meta \|\| {} // remove empty values Object.keys(metadata).forEach((key) => { if (!metadata&#91;key&#93;) delete metadata&#91;key&#93; }) if (!a.all) a.
 
 ## Transport
 

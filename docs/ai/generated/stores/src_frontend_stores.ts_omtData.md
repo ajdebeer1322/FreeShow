@@ -12,8 +12,8 @@ No static evidence found.
 
 ## Writes
 
-- [src/frontend/components/settings/tabs/Outputs.svelte:66](../../../../src/frontend/components/settings/tabs/Outputs.svelte#L66) — omtData.update((n) => { delete n[outputId] return n })
-- [src/frontend/utils/receivers.ts:318](../../../../src/frontend/utils/receivers.ts#L318) — omtData.update((a) => { a[msg.id] = msg return a })
+- [src/frontend/components/settings/tabs/Outputs.svelte:66](../../../../src/frontend/components/settings/tabs/Outputs.svelte#L66) — omtData.update((n) => { delete n&#91;outputId&#93; return n })
+- [src/frontend/utils/receivers.ts:318](../../../../src/frontend/utils/receivers.ts#L318) — omtData.update((a) => { a&#91;msg.id&#93; = msg return a })
 
 ## Transport
 

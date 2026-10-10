@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/frontend/IPC/responsesMain.ts:571](../../../../src/frontend/IPC/responsesMain.ts#L571) — electron/other renderer → renderer; powerkey: () => addToProject("ppt", mainData as string[])
+- [src/frontend/IPC/responsesMain.ts:571](../../../../src/frontend/IPC/responsesMain.ts#L571) — electron/other renderer → renderer; powerkey: () => addToProject("ppt", mainData as string&#91;&#93;)

@@ -28,6 +28,6 @@ Store: src/frontend/stores.ts#disabledServers.
 
 ## Writes
 
-- [src/frontend/components/quicksearch/quicksearch.ts:561](../../../../src/frontend/components/quicksearch/quicksearch.ts#L561) — disabledServers.set({ ...get(disabledServers), [id]: false })
-- [src/frontend/components/settings/tabs/Connection.svelte:42](../../../../src/frontend/components/settings/tabs/Connection.svelte#L42) — disabledServers.update((a) => { a[id] = !value return a })
+- [src/frontend/components/quicksearch/quicksearch.ts:561](../../../../src/frontend/components/quicksearch/quicksearch.ts#L561) — disabledServers.set({ ...get(disabledServers), &#91;id&#93;: false })
+- [src/frontend/components/settings/tabs/Connection.svelte:42](../../../../src/frontend/components/settings/tabs/Connection.svelte#L42) — disabledServers.update((a) => { a&#91;id&#93; = !value return a })
 - [src/frontend/utils/updateSettings.ts:309](../../../../src/frontend/utils/updateSettings.ts#L309) — disabledServers.set(v)

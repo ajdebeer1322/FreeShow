@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:104](../../../../src/electron/IPC/responsesMain.ts#L104) — renderer/client → electron; [Main.OPEN_APPDATA]: () => openInSystem(appDataPath, true)
+- [src/electron/IPC/responsesMain.ts:104](../../../../src/electron/IPC/responsesMain.ts#L104) — renderer/client → electron; &#91;Main.OPEN_APPDATA&#93;: () => openInSystem(appDataPath, true)

@@ -36,8 +36,8 @@ None detected.
 
 ## Timing
 
-- [src/electron/cloud/syncManager.ts:465](../../../../src/electron/cloud/syncManager.ts#L465) — timer-3933b26e0f44e54a: setTimeout = 1000 ms (1000); 
+- [src/electron/cloud/syncManager.ts:465](../../../../src/electron/cloud/syncManager.ts#L465) — timer-3933b26e0f44e54a: setTimeout = 1000 ms (1000); // silently backup in the background, this is skipped when the program is being closed
 
 ## Workarounds
 
-No static evidence found.
+- [src/electron/cloud/syncManager.ts:81](../../../../src/electron/cloud/syncManager.ts#L81) — workaround-0275d34cb219c0fa: // WIP write changes

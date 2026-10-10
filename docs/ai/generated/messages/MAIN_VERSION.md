@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:56](../../../../src/electron/IPC/responsesMain.ts#L56) — renderer/client → electron; [Main.VERSION]: () => getVersion()
+- [src/electron/IPC/responsesMain.ts:56](../../../../src/electron/IPC/responsesMain.ts#L56) — renderer/client → electron; &#91;Main.VERSION&#93;: () => getVersion()

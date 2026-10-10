@@ -15,7 +15,7 @@ Store: src/frontend/stores.ts#metronome.
 - [src/frontend/components/drawer/audio/MetronomeVisualizer.svelte:6](../../../../src/frontend/components/drawer/audio/MetronomeVisualizer.svelte#L6) — $metronome
 - [src/frontend/components/drawer/audio/metronome.ts:33](../../../../src/frontend/components/drawer/audio/metronome.ts#L33) — get(metronome)
 - [src/frontend/components/output/tools/Audio.svelte:148](../../../../src/frontend/components/output/tools/Audio.svelte#L148) — $metronome
-- [src/frontend/utils/listeners.ts:359](../../../../src/frontend/utils/listeners.ts#L359) — metronome.subscribe((data) => { send(OUTPUT, ["METRONOME"], data) send(STAGE, ["METRONOME"], data) })
+- [src/frontend/utils/listeners.ts:359](../../../../src/frontend/utils/listeners.ts#L359) — metronome.subscribe((data) => { send(OUTPUT, &#91;"METRONOME"&#93;, data) send(STAGE, &#91;"METRONOME"&#93;, data) })
 - [src/frontend/utils/save.ts:201](../../../../src/frontend/utils/save.ts#L201) — get(metronome)
 - [src/frontend/utils/stageTalk.ts:101](../../../../src/frontend/utils/stageTalk.ts#L101) — get(metronome)
 

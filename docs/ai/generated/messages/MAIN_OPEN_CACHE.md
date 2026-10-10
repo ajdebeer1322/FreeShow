@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:103](../../../../src/electron/IPC/responsesMain.ts#L103) — renderer/client → electron; [Main.OPEN_CACHE]: () => openInSystem(getThumbnailFolderPath(), true)
+- [src/electron/IPC/responsesMain.ts:103](../../../../src/electron/IPC/responsesMain.ts#L103) — renderer/client → electron; &#91;Main.OPEN_CACHE&#93;: () => openInSystem(getThumbnailFolderPath(), true)

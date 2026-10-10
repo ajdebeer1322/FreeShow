@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:52](../../../../src/electron/IPC/responsesMain.ts#L52) — renderer/client → electron; [Main.LOG]: (data) => console.info(data)
+- [src/electron/IPC/responsesMain.ts:52](../../../../src/electron/IPC/responsesMain.ts#L52) — renderer/client → electron; &#91;Main.LOG&#93;: (data) => console.info(data)

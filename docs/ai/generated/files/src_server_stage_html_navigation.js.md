@@ -21,9 +21,9 @@ None detected.
 ## Timing
 
 - [src/server/stage/html/navigation.js:27](../../../../src/server/stage/html/navigation.js#L27) — timer-8984a59732965214: setTimeout = dynamic ms (nextTimer * 1000); // Timer ended - advance to next slide (matching desktop app behavior)
-- [src/server/stage/html/navigation.js:167](../../../../src/server/stage/html/navigation.js#L167) — timer-c8483c86c4c15213: setTimeout = 100 ms (100); 
-- [src/server/stage/html/navigation.js:263](../../../../src/server/stage/html/navigation.js#L263) — timer-60675aa1d31e349f: setTimeout = 500 ms (500); 
-- [src/server/stage/html/navigation.js:268](../../../../src/server/stage/html/navigation.js#L268) — timer-778e9932eff640f2: setTimeout = 100 ms (100); 
+- [src/server/stage/html/navigation.js:167](../../../../src/server/stage/html/navigation.js#L167) — timer-c8483c86c4c15213: setTimeout = 100 ms (100); // Preload adjacent slides // Start timer for new slide if it has nextTimer configured
+- [src/server/stage/html/navigation.js:263](../../../../src/server/stage/html/navigation.js#L263) — timer-60675aa1d31e349f: setTimeout = 500 ms (500); // Preload adjacent slides after a short delay // Start timer for current slide if configured
+- [src/server/stage/html/navigation.js:268](../../../../src/server/stage/html/navigation.js#L268) — timer-778e9932eff640f2: setTimeout = 100 ms (100); // Start timer for current slide if configured // Small delay to ensure page is fully loaded
 
 ## Workarounds
 

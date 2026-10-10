@@ -28,7 +28,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 ## Writes
 
-- [src/frontend/components/output/messages/MessagesPanel.svelte:29](../../../../src/frontend/components/output/messages/MessagesPanel.svelte#L29) — activeMessage.set(definitions[0]?.[0] \|\| "")
+- [src/frontend/components/output/messages/MessagesPanel.svelte:29](../../../../src/frontend/components/output/messages/MessagesPanel.svelte#L29) — activeMessage.set(definitions&#91;0&#93;?.&#91;0&#93; \|\| "")
 - [src/frontend/components/output/messages/MessagesPanel.svelte:68](../../../../src/frontend/components/output/messages/MessagesPanel.svelte#L68) — activeMessage.set(id)
 - [src/frontend/components/output/messages/MessagesPanel.svelte:145](../../../../src/frontend/components/output/messages/MessagesPanel.svelte#L145) — bind:value={$activeMessage}
 

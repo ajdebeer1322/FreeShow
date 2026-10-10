@@ -10,8 +10,8 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/actions/apiHelper.ts:865](../../../../src/frontend/components/actions/apiHelper.ts#L865) — get(audioChannelsData)[channelId]?.isMuted
-- [src/frontend/components/drawer/audio/AudioMeter.svelte:13](../../../../src/frontend/components/drawer/audio/AudioMeter.svelte#L13) — $audioChannelsData[channelId]?.isMuted
+- [src/frontend/components/actions/apiHelper.ts:865](../../../../src/frontend/components/actions/apiHelper.ts#L865) — get(audioChannelsData)&#91;channelId&#93;?.isMuted
+- [src/frontend/components/drawer/audio/AudioMeter.svelte:13](../../../../src/frontend/components/drawer/audio/AudioMeter.svelte#L13) — $audioChannelsData&#91;channelId&#93;?.isMuted
 
 ## Writes
 

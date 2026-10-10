@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/server/remote/util/receiver.ts:51](../../../../src/server/remote/util/receiver.ts#L51) — desktop → browser client; LANGUAGE: (data: any) => { _.dictionary.update((a) => { Object.keys(a).forEach((i) => { Object.keys(a[i] \|\| {}).forEach((j) => { if (data.strings[i]?.[j] 
+- [src/server/remote/util/receiver.ts:51](../../../../src/server/remote/util/receiver.ts#L51) — desktop → browser client; LANGUAGE: (data: any) => { _.dictionary.update((a) => { Object.keys(a).forEach((i) => { Object.keys(a&#91;i&#93; \|\| {}).forEach((j) => { if (data.strings&#91;i&#93;?.&#91;j&#93; 

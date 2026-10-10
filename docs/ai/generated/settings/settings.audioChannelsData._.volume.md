@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/actions/apiHelper.ts:837](../../../../src/frontend/components/actions/apiHelper.ts#L837) — get(audioChannelsData)[chId]?.volume
+- [src/frontend/components/actions/apiHelper.ts:837](../../../../src/frontend/components/actions/apiHelper.ts#L837) — get(audioChannelsData)&#91;chId&#93;?.volume
 
 ## Writes
 

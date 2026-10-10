@@ -92,8 +92,8 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 ## Writes
 
-- [src/frontend/components/drawer/info/ScriptureInfo.svelte:60](../../../../src/frontend/components/drawer/info/ScriptureInfo.svelte#L60) — scriptureSettings.update((a) => { a.template = $templates[newTemplateId] ? newTemplateId : "scripture" return a })
-- [src/frontend/components/drawer/info/ScriptureInfo.svelte:77](../../../../src/frontend/components/drawer/info/ScriptureInfo.svelte#L77) — scriptureSettings.update((a) => { a[id] = value return a })
+- [src/frontend/components/drawer/info/ScriptureInfo.svelte:60](../../../../src/frontend/components/drawer/info/ScriptureInfo.svelte#L60) — scriptureSettings.update((a) => { a.template = $templates&#91;newTemplateId&#93; ? newTemplateId : "scripture" return a })
+- [src/frontend/components/drawer/info/ScriptureInfo.svelte:77](../../../../src/frontend/components/drawer/info/ScriptureInfo.svelte#L77) — scriptureSettings.update((a) => { a&#91;id&#93; = value return a })
 - [src/frontend/components/main/popups/DrawerSearchOptions.svelte:10](../../../../src/frontend/components/main/popups/DrawerSearchOptions.svelte#L10) — scriptureSettings.update((s) => { s.enterSwapped = !s.enterSwapped return s })
 - [src/frontend/utils/updateSettings.ts:369](../../../../src/frontend/utils/updateSettings.ts#L369) — scriptureSettings.set(v)
 

@@ -13,4 +13,4 @@ No static evidence found.
 ## Handlers
 
 - [src/electron/output/OutputHelper.ts:24](../../../../src/electron/output/OutputHelper.ts#L24) — renderer/client → electron; MOVE: (data: { enabled: boolean }) => { OutputHelper.Bounds.moveEnabled = data.enabled OutputHelper.getKeys().forEach((id) => OutputHelper.Lifecycle.upd
-- [src/frontend/utils/receivers.ts:141](../../../../src/frontend/utils/receivers.ts#L141) — electron/other renderer → renderer; MOVE: (data) => { outputs.update((a) => { if (!a[data.id] \|\| a[data.id].boundsLocked) return a a[data.id].bounds = data.bounds if (data.screen) 
+- [src/frontend/utils/receivers.ts:141](../../../../src/frontend/utils/receivers.ts#L141) — electron/other renderer → renderer; MOVE: (data) => { outputs.update((a) => { if (!a&#91;data.id&#93; \|\| a&#91;data.id&#93;.boundsLocked) return a a&#91;data.id&#93;.bounds = data.bounds if (data.screen) 

@@ -76,7 +76,7 @@ None detected.
 
 - [src/electron/index.ts:111](../../../../src/electron/index.ts#L111) — timer-51ac636915599bca: setTimeout = 10000 ms (10_000); // getGPUFeatureStatus() at app-ready is premature (GPU process still initializing, reports // disabled_software defaults) —
 - [src/electron/index.ts:112](../../../../src/electron/index.ts#L112) — timer-3fc1a9fe04ea67e0: setTimeout = 25000 ms (25_000); // getGPUFeatureStatus() at app-ready is premature (GPU process still initializing, reports // disabled_software defaults) —
-- [src/electron/index.ts:152](../../../../src/electron/index.ts#L152) — timer-5db0bffd18569125: setTimeout = 0 ms (omitted); 
+- [src/electron/index.ts:152](../../../../src/electron/index.ts#L152) — timer-5db0bffd18569125: setTimeout = 0 ms (omitted); // } catch (err) { // console.warn("Failed to initialize Widevine CDM components:", err) // }
 
 ## Workarounds
 

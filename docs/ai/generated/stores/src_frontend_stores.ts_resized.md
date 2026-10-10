@@ -30,7 +30,7 @@ Saved: yes, with the listed transformations.
 ## Writes
 
 - [src/frontend/components/show/Show.svelte:65](../../../../src/frontend/components/show/Show.svelte#L65) — resized.update((a) => ({ ...a, timeline: open ? 40 : DEFAULT_WIDTH }))
-- [src/frontend/components/system/Resizeable.svelte:116](../../../../src/frontend/components/system/Resizeable.svelte#L116) — resized.update((a) => { a[id] = width return a })
+- [src/frontend/components/system/Resizeable.svelte:116](../../../../src/frontend/components/system/Resizeable.svelte#L116) — resized.update((a) => { a&#91;id&#93; = width return a })
 - [src/frontend/utils/common.ts:201](../../../../src/frontend/utils/common.ts#L201) — resized.set({ ...get(resized), leftPanel: minPanelWidth, rightPanel: minPanelWidth })
 - [src/frontend/utils/common.ts:208](../../../../src/frontend/utils/common.ts#L208) — resized.set({ ...get(resized), leftPanel: leftPanelIsOpened ? get(resized).leftPanel : DEFAULT_WIDTH, rightPanel: rightPanelIsOpened ? get(resized).rightPanel : DEFAULT_WIDTH })
 - [src/frontend/utils/updateSettings.ts:367](../../../../src/frontend/utils/updateSettings.ts#L367) — resized.set(v)

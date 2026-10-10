@@ -139,3 +139,4 @@ No static evidence found.
 - [src/frontend/components/helpers/showActions.ts:382](../../../../src/frontend/components/helpers/showActions.ts#L382) — workaround-9749ee5a7db30206: // WIP getMediaLayerType - use what is set in show only
 - [src/frontend/components/helpers/showActions.ts:409](../../../../src/frontend/components/helpers/showActions.ts#L409) — workaround-f71816d45dd52a40: // WIP getMediaLayerType - use what is set in show only
 - [src/frontend/components/helpers/showActions.ts:650](../../../../src/frontend/components/helpers/showActions.ts#L650) — workaround-d074f7d32ea3d598: // WIP duplicate of "slideClick" in Slides.svelte
+- [src/frontend/components/helpers/showActions.ts:813](../../../../src/frontend/components/helpers/showActions.ts#L813) — workaround-48b69393e2634acd: // WIP sort by type?

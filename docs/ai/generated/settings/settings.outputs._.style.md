@@ -10,15 +10,15 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/context/ContextItem.svelte:73](../../../../src/frontend/components/context/ContextItem.svelte#L73) — $outputs[outputId]?.style
-- [src/frontend/components/context/ContextItem.svelte:91](../../../../src/frontend/components/context/ContextItem.svelte#L91) — $outputs[outputId]?.style
-- [src/frontend/components/helpers/showActions.ts:404](../../../../src/frontend/components/helpers/showActions.ts#L404) — get(outputs)[outputId]?.style
-- [src/frontend/components/helpers/showActions.ts:545](../../../../src/frontend/components/helpers/showActions.ts#L545) — get(outputs)[outputId]?.style
-- [src/frontend/components/helpers/showActions.ts:1122](../../../../src/frontend/components/helpers/showActions.ts#L1122) — get(outputs)[oId].style
-- [src/frontend/components/main/popups/MediaInspector.svelte:61](../../../../src/frontend/components/main/popups/MediaInspector.svelte#L61) — $outputs[outputId]?.style
-- [src/frontend/components/show/tools/Media.svelte:30](../../../../src/frontend/components/show/tools/Media.svelte#L30) — $outputs[outputId]?.style
-- [src/frontend/components/slide/Zoomed.svelte:42](../../../../src/frontend/components/slide/Zoomed.svelte#L42) — $outputs[outputId]?.style
-- [src/frontend/components/slide/views/MediaItem.svelte:27](../../../../src/frontend/components/slide/views/MediaItem.svelte#L27) — $outputs[outputId]?.style
+- [src/frontend/components/context/ContextItem.svelte:73](../../../../src/frontend/components/context/ContextItem.svelte#L73) — $outputs&#91;outputId&#93;?.style
+- [src/frontend/components/context/ContextItem.svelte:91](../../../../src/frontend/components/context/ContextItem.svelte#L91) — $outputs&#91;outputId&#93;?.style
+- [src/frontend/components/helpers/showActions.ts:404](../../../../src/frontend/components/helpers/showActions.ts#L404) — get(outputs)&#91;outputId&#93;?.style
+- [src/frontend/components/helpers/showActions.ts:545](../../../../src/frontend/components/helpers/showActions.ts#L545) — get(outputs)&#91;outputId&#93;?.style
+- [src/frontend/components/helpers/showActions.ts:1122](../../../../src/frontend/components/helpers/showActions.ts#L1122) — get(outputs)&#91;oId&#93;.style
+- [src/frontend/components/main/popups/MediaInspector.svelte:61](../../../../src/frontend/components/main/popups/MediaInspector.svelte#L61) — $outputs&#91;outputId&#93;?.style
+- [src/frontend/components/show/tools/Media.svelte:30](../../../../src/frontend/components/show/tools/Media.svelte#L30) — $outputs&#91;outputId&#93;?.style
+- [src/frontend/components/slide/Zoomed.svelte:42](../../../../src/frontend/components/slide/Zoomed.svelte#L42) — $outputs&#91;outputId&#93;?.style
+- [src/frontend/components/slide/views/MediaItem.svelte:27](../../../../src/frontend/components/slide/views/MediaItem.svelte#L27) — $outputs&#91;outputId&#93;?.style
 
 ## Writes
 

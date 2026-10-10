@@ -6,7 +6,7 @@ Store: src/frontend/stores.ts#contentProviderData.
 
 ## Definitions
 
-- [src/electron/data/defaults.ts:81](../../../../src/electron/data/defaults.ts#L81) — { planningcenter: { localAlways: false }, churchApps: { syncCategories: ["song"] } }
+- [src/electron/data/defaults.ts:81](../../../../src/electron/data/defaults.ts#L81) — { planningcenter: { localAlways: false }, churchApps: { syncCategories: &#91;"song"&#93; } }
 - [src/frontend/stores.ts:406](../../../../src/frontend/stores.ts#L406) — {}
 
 ## Reads
@@ -38,10 +38,10 @@ Store: src/frontend/stores.ts#contentProviderData.
 
 ## Writes
 
-- [src/frontend/IPC/responsesMain.ts:536](../../../../src/frontend/IPC/responsesMain.ts#L536) — contentProviderData.update((a) => { if (!a.planningcenter) a.planningcenter = {} const existing = a.planningcenter.availablePlans \|\| [] a.planningcenter.availablePlans = [...existi
-- [src/frontend/components/main/popups/ChurchAppsSyncCategories.svelte:21](../../../../src/frontend/components/main/popups/ChurchAppsSyncCategories.svelte#L21) — contentProviderData.update((a) => { if (currentlySelected.indexOf(id) === -1) { a.churchApps = { ...a.churchApps, syncCategories: [...currentlySelected, id] } } else { a.churchApps
-- [src/frontend/components/main/popups/SyncFolders.svelte:21](../../../../src/frontend/components/main/popups/SyncFolders.svelte#L21) — contentProviderData.update((a) => { if (!a.planningcenter) a.planningcenter = {} a.planningcenter[key] = value return a })
-- [src/frontend/components/settings/tabs/Connection.svelte:153](../../../../src/frontend/components/settings/tabs/Connection.svelte#L153) — contentProviderData.update((a) => { if (!a[id]) a[id] = {} a[id][key] = value return a })
+- [src/frontend/IPC/responsesMain.ts:536](../../../../src/frontend/IPC/responsesMain.ts#L536) — contentProviderData.update((a) => { if (!a.planningcenter) a.planningcenter = {} const existing = a.planningcenter.availablePlans \|\| &#91;&#93; a.planningcenter.availablePlans = &#91;...existi
+- [src/frontend/components/main/popups/ChurchAppsSyncCategories.svelte:21](../../../../src/frontend/components/main/popups/ChurchAppsSyncCategories.svelte#L21) — contentProviderData.update((a) => { if (currentlySelected.indexOf(id) === -1) { a.churchApps = { ...a.churchApps, syncCategories: &#91;...currentlySelected, id&#93; } } else { a.churchApps
+- [src/frontend/components/main/popups/SyncFolders.svelte:21](../../../../src/frontend/components/main/popups/SyncFolders.svelte#L21) — contentProviderData.update((a) => { if (!a.planningcenter) a.planningcenter = {} a.planningcenter&#91;key&#93; = value return a })
+- [src/frontend/components/settings/tabs/Connection.svelte:153](../../../../src/frontend/components/settings/tabs/Connection.svelte#L153) — contentProviderData.update((a) => { if (!a&#91;id&#93;) a&#91;id&#93; = {} a&#91;id&#93;&#91;key&#93; = value return a })
 - [src/frontend/utils/updateSettings.ts:427](../../../../src/frontend/utils/updateSettings.ts#L427) — contentProviderData.update((a) => ({ ...a, planningcenter: { localAlways: true } }))
 - [src/frontend/utils/updateSettings.ts:462](../../../../src/frontend/utils/updateSettings.ts#L462) — contentProviderData.set({ ...get(contentProviderData), churchApps: { syncCategories: v } })
 - [src/frontend/utils/updateSettings.ts:464](../../../../src/frontend/utils/updateSettings.ts#L464) — contentProviderData.set(v)

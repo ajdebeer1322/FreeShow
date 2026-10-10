@@ -33,7 +33,8 @@ No static evidence found.
 
 ## Timing
 
-No static evidence found.
+- [src/frontend/audio/routing/audioRoutingInit.ts:39](../../../../src/frontend/audio/routing/audioRoutingInit.ts#L39) — poll-interval-e1c9f567f16d54f5: poll-interval = 50 ms (50); // wait for data // const outputEntries = Object.entries(get(outputs) \|\| {})
+- [src/frontend/audio/routing/audioRoutingInit.ts:39](../../../../src/frontend/audio/routing/audioRoutingInit.ts#L39) — poll-timeout-f679a6bd0a5b855e: poll-timeout = 5000 ms (5000); // wait for data // const outputEntries = Object.entries(get(outputs) \|\| {})
 
 ## Workarounds
 

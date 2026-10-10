@@ -10,22 +10,22 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/draw/Paint.svelte:19](../../../../src/frontend/components/draw/Paint.svelte#L19) — $outputs[outputId]?.out?.slide
-- [src/frontend/components/helpers/OutputHelper.linked.test.ts:109](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L109) — get(outputs)[id].out?.slide
-- [src/frontend/components/helpers/OutputHelper.linked.test.ts:230](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L230) — get(outputs)[id].out?.slide
-- [src/frontend/components/helpers/OutputHelper.linked.test.ts:395](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L395) — get(outputs)[id].out?.slide
-- [src/frontend/components/helpers/OutputHelper.ts:86](../../../../src/frontend/components/helpers/OutputHelper.ts#L86) — get(outputs)[member.id]?.out?.slide
-- [src/frontend/components/helpers/OutputHelper.ts:266](../../../../src/frontend/components/helpers/OutputHelper.ts#L266) — get(outputs)[id]?.out?.slide
-- [src/frontend/components/helpers/output.ts:196](../../../../src/frontend/components/helpers/output.ts#L196) — get(outputs)[outs[0]]?.out?.slide
-- [src/frontend/components/helpers/output.ts:230](../../../../src/frontend/components/helpers/output.ts#L230) — get(outputs)[outs?.[0]]?.out?.slide
-- [src/frontend/components/helpers/output.ts:360](../../../../src/frontend/components/helpers/output.ts#L360) — get(outputs)[outs?.[0]]?.out?.slide
-- [src/frontend/components/helpers/showActions.ts:348](../../../../src/frontend/components/helpers/showActions.ts#L348) — get(outputs)[id]?.out?.slide
-- [src/frontend/components/inputs/ShowButton.svelte:229](../../../../src/frontend/components/inputs/ShowButton.svelte#L229) — $outputs[outputId]?.out?.slide
-- [src/frontend/components/show/ArrangementBar.svelte:89](../../../../src/frontend/components/show/ArrangementBar.svelte#L89) — $outputs[outputId]?.out?.slide
-- [src/frontend/components/show/pdf/PdfPreview.svelte:36](../../../../src/frontend/components/show/pdf/PdfPreview.svelte#L36) — $outputs[activeOutput].out?.slide
-- [src/frontend/components/show/ppt/PowerPointPreview.svelte:59](../../../../src/frontend/components/show/ppt/PowerPointPreview.svelte#L59) — $outputs[outputId]?.out?.slide
-- [src/frontend/utils/stageTalk.ts:142](../../../../src/frontend/utils/stageTalk.ts#L142) — get(outputs)[outputId \|\| ""]?.out?.slide
-- [src/frontend/utils/stageTalk.ts:162](../../../../src/frontend/utils/stageTalk.ts#L162) — get(outputs)[outputId]?.out?.slide
+- [src/frontend/components/draw/Paint.svelte:19](../../../../src/frontend/components/draw/Paint.svelte#L19) — $outputs&#91;outputId&#93;?.out?.slide
+- [src/frontend/components/helpers/OutputHelper.linked.test.ts:109](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L109) — get(outputs)&#91;id&#93;.out?.slide
+- [src/frontend/components/helpers/OutputHelper.linked.test.ts:230](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L230) — get(outputs)&#91;id&#93;.out?.slide
+- [src/frontend/components/helpers/OutputHelper.linked.test.ts:395](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L395) — get(outputs)&#91;id&#93;.out?.slide
+- [src/frontend/components/helpers/OutputHelper.ts:86](../../../../src/frontend/components/helpers/OutputHelper.ts#L86) — get(outputs)&#91;member.id&#93;?.out?.slide
+- [src/frontend/components/helpers/OutputHelper.ts:266](../../../../src/frontend/components/helpers/OutputHelper.ts#L266) — get(outputs)&#91;id&#93;?.out?.slide
+- [src/frontend/components/helpers/output.ts:196](../../../../src/frontend/components/helpers/output.ts#L196) — get(outputs)&#91;outs&#91;0&#93;&#93;?.out?.slide
+- [src/frontend/components/helpers/output.ts:230](../../../../src/frontend/components/helpers/output.ts#L230) — get(outputs)&#91;outs?.&#91;0&#93;&#93;?.out?.slide
+- [src/frontend/components/helpers/output.ts:360](../../../../src/frontend/components/helpers/output.ts#L360) — get(outputs)&#91;outs?.&#91;0&#93;&#93;?.out?.slide
+- [src/frontend/components/helpers/showActions.ts:348](../../../../src/frontend/components/helpers/showActions.ts#L348) — get(outputs)&#91;id&#93;?.out?.slide
+- [src/frontend/components/inputs/ShowButton.svelte:229](../../../../src/frontend/components/inputs/ShowButton.svelte#L229) — $outputs&#91;outputId&#93;?.out?.slide
+- [src/frontend/components/show/ArrangementBar.svelte:89](../../../../src/frontend/components/show/ArrangementBar.svelte#L89) — $outputs&#91;outputId&#93;?.out?.slide
+- [src/frontend/components/show/pdf/PdfPreview.svelte:36](../../../../src/frontend/components/show/pdf/PdfPreview.svelte#L36) — $outputs&#91;activeOutput&#93;.out?.slide
+- [src/frontend/components/show/ppt/PowerPointPreview.svelte:59](../../../../src/frontend/components/show/ppt/PowerPointPreview.svelte#L59) — $outputs&#91;outputId&#93;?.out?.slide
+- [src/frontend/utils/stageTalk.ts:142](../../../../src/frontend/utils/stageTalk.ts#L142) — get(outputs)&#91;outputId \|\| ""&#93;?.out?.slide
+- [src/frontend/utils/stageTalk.ts:162](../../../../src/frontend/utils/stageTalk.ts#L162) — get(outputs)&#91;outputId&#93;?.out?.slide
 
 ## Writes
 

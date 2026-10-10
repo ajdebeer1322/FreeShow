@@ -37,8 +37,8 @@ None detected.
 
 ## Timing
 
-- [src/electron/servers.ts:193](../../../../src/electron/servers.ts#L193) — timer-3b0f679e4b7bc042: setTimeout = 2000 ms (2000); 
-- [src/electron/servers.ts:199](../../../../src/electron/servers.ts#L199) — timer-f500510c1c15f7b8: setTimeout = 0 ms (0); 
+- [src/electron/servers.ts:193](../../../../src/electron/servers.ts#L193) — timer-3b0f679e4b7bc042: setTimeout = 2000 ms (2000); // a server that never started (disabled) has no port to wait for // keep-alive connections would otherwise hold the close back
+- [src/electron/servers.ts:199](../../../../src/electron/servers.ts#L199) — timer-f500510c1c15f7b8: setTimeout = 0 ms (0); // close socket.io (disconnects clients and closes the underlying http server, which happens asynchronously)
 
 ## Workarounds
 

@@ -56,9 +56,9 @@ No static evidence found.
 ## Timing
 
 - [src/frontend/components/helpers/OutputHelper.ts:107](../../../../src/frontend/components/helpers/OutputHelper.ts#L107) — timer-7e3fa0f5a6daab8a: setTimeout = 1500 ms (1500); 
-- [src/frontend/components/helpers/OutputHelper.ts:376](../../../../src/frontend/components/helpers/OutputHelper.ts#L376) — timer-f635a8c6373dace3: setTimeout = 10 ms (10); 
-- [src/frontend/components/helpers/OutputHelper.ts:701](../../../../src/frontend/components/helpers/OutputHelper.ts#L701) — timer-c7515519ab245f5b: setTimeout = 0 ms (omitted); 
-- [src/frontend/components/helpers/OutputHelper.ts:725](../../../../src/frontend/components/helpers/OutputHelper.ts#L725) — timer-4d6c34e19e747079: setTimeout = 0 ms (omitted); 
+- [src/frontend/components/helpers/OutputHelper.ts:376](../../../../src/frontend/components/helpers/OutputHelper.ts#L376) — timer-f635a8c6373dace3: setTimeout = 10 ms (10); // play the first (or last) slide of a project show once it has loaded. A show without any slides is skipped. // allow show to load
+- [src/frontend/components/helpers/OutputHelper.ts:701](../../../../src/frontend/components/helpers/OutputHelper.ts#L701) — timer-c7515519ab245f5b: setTimeout = 0 ms (omitted); // allow custom actions to trigger first
+- [src/frontend/components/helpers/OutputHelper.ts:725](../../../../src/frontend/components/helpers/OutputHelper.ts#L725) — timer-4d6c34e19e747079: setTimeout = 0 ms (omitted); // Media (Background & Audio)
 
 ## Workarounds
 

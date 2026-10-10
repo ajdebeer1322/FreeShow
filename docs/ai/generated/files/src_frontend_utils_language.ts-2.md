@@ -82,7 +82,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/utils/language.ts:74](../../../../src/frontend/utils/language.ts#L74) — timer-ea29845f0b9b1dbd: setTimeout = 3000 ms (3000); // remoteTalk.ts sends this // send(REMOTE, ["LANGUAGE"], msg) // wait until loaded
+- [src/frontend/utils/language.ts:74](../../../../src/frontend/utils/language.ts#L74) — timer-ea29845f0b9b1dbd: setTimeout = 3000 ms (3000); // remoteTalk.ts sends this // send(REMOTE, &#91;"LANGUAGE"&#93;, msg) // wait until loaded
 
 ## Workarounds
 

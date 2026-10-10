@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/frontend/IPC/responsesMain.ts:597](../../../../src/frontend/IPC/responsesMain.ts#L597) — electron/other renderer → renderer; propresenter: () => convertProPresenter(data as { content: any; name: string; extension: string }[])
+- [src/frontend/IPC/responsesMain.ts:597](../../../../src/frontend/IPC/responsesMain.ts#L597) — electron/other renderer → renderer; propresenter: () => convertProPresenter(data as { content: any; name: string; extension: string }&#91;&#93;)

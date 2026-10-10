@@ -34,7 +34,7 @@ Saved: yes, with the listed transformations.
 ## Writes
 
 - [src/frontend/IPC/responsesMain.ts:136](../../../../src/frontend/IPC/responsesMain.ts#L136) — projectTemplates.set(a.projectTemplates \|\| {})
-- [src/frontend/components/helpers/clipboard.ts:1059](../../../../src/frontend/components/helpers/clipboard.ts#L1059) — projectTemplates.update((a) => { if (!a[projectId]?.shows) return a a[projectId].shows.push(...data) a[projectId].modified = Date.now() return a })
+- [src/frontend/components/helpers/clipboard.ts:1059](../../../../src/frontend/components/helpers/clipboard.ts#L1059) — projectTemplates.update((a) => { if (!a&#91;projectId&#93;?.shows) return a a&#91;projectId&#93;.shows.push(...data) a&#91;projectId&#93;.modified = Date.now() return a })
 
 ## Transport
 

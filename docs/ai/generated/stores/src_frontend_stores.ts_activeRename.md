@@ -51,7 +51,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 - [src/frontend/components/inputs/HiddenInput.svelte:99](../../../../src/frontend/components/inputs/HiddenInput.svelte#L99) — activeRename.set(null)
 - [src/frontend/components/show/Projects.svelte:107](../../../../src/frontend/components/show/Projects.svelte#L107) — activeRename.set("project_" + id)
 - [src/frontend/components/show/Projects.svelte:180](../../../../src/frontend/components/show/Projects.svelte#L180) — activeRename.set("project_" + projectId)
-- [src/frontend/components/show/VideoShow.svelte:266](../../../../src/frontend/components/show/VideoShow.svelte#L266) — activeRename.set("subtitle_" + (a[mediaPath].tracks!.length - 1))
+- [src/frontend/components/show/VideoShow.svelte:266](../../../../src/frontend/components/show/VideoShow.svelte#L266) — activeRename.set("subtitle_" + (a&#91;mediaPath&#93;.tracks!.length - 1))
 - [src/frontend/components/show/VideoShow.svelte:304](../../../../src/frontend/components/show/VideoShow.svelte#L304) — activeRename.set("marker_" + markerIndex)
 - [src/frontend/components/show/tools/Arrangements.svelte:122](../../../../src/frontend/components/show/tools/Arrangements.svelte#L122) — activeRename.set(null)
 - [src/frontend/converters/importHelpers.ts:32](../../../../src/frontend/converters/importHelpers.ts#L32) — activeRename.set(null)

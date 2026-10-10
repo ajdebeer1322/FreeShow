@@ -72,7 +72,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/utils/remoteTalk.ts:361](../../../../src/frontend/utils/remoteTalk.ts#L361) — timer-e1091f413dedb672: setTimeout = 0 ms (omitted); 
+- [src/frontend/utils/remoteTalk.ts:361](../../../../src/frontend/utils/remoteTalk.ts#L361) — timer-e1091f413dedb672: setTimeout = 0 ms (omitted); // Output & thumbnail // Send slide thumbnails asynchronously
 
 ## Workarounds
 

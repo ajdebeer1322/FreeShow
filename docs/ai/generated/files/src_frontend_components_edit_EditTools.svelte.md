@@ -83,3 +83,4 @@ No static evidence found.
 ## Workarounds
 
 - [src/frontend/components/edit/EditTools.svelte:45](../../../../src/frontend/components/edit/EditTools.svelte#L45) — workaround-d778cfa73751bced: // TODO: set filters in template / overlay ? ( && $activeEdit.type !== "template")
+- [src/frontend/components/edit/EditTools.svelte:312](../../../../src/frontend/components/edit/EditTools.svelte#L312) — workaround-f4d49647f7003ed7: // WIP refresh edit tools after resetting

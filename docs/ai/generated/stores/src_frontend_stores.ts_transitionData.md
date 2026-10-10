@@ -20,14 +20,14 @@ Saved: yes, with the listed transformations.
 - [src/frontend/components/media/video/videoPlayer.ts:337](../../../../src/frontend/components/media/video/videoPlayer.ts#L337) — get(transitionData)
 - [src/frontend/components/media/video/videoPlayer.ts:458](../../../../src/frontend/components/media/video/videoPlayer.ts#L458) — get(transitionData)
 - [src/frontend/components/output/Output.svelte:209](../../../../src/frontend/components/output/Output.svelte#L209) — $transitionData
-- [src/frontend/utils/listeners.ts:275](../../../../src/frontend/utils/listeners.ts#L275) — transitionData.subscribe((data) => { send(OUTPUT, ["TRANSITION"], data) })
+- [src/frontend/utils/listeners.ts:275](../../../../src/frontend/utils/listeners.ts#L275) — transitionData.subscribe((data) => { send(OUTPUT, &#91;"TRANSITION"&#93;, data) })
 - [src/frontend/utils/save.ts:194](../../../../src/frontend/utils/save.ts#L194) — get(transitionData)
 
 ## Writes
 
-- [src/frontend/components/main/popups/Transition.svelte:106](../../../../src/frontend/components/main/popups/Transition.svelte#L106) — transitionData.update((a: any) => { a[id] = updateSpecific(a[id], key, value, reset) return a })
+- [src/frontend/components/main/popups/Transition.svelte:106](../../../../src/frontend/components/main/popups/Transition.svelte#L106) — transitionData.update((a: any) => { a&#91;id&#93; = updateSpecific(a&#91;id&#93;, key, value, reset) return a })
 - [src/frontend/utils/receivers.ts:233](../../../../src/frontend/utils/receivers.ts#L233) — transitionData.set(a)
-- [src/frontend/utils/transitions.ts:81](../../../../src/frontend/utils/transitions.ts#L81) — transitionData.update((a) => { a[data.id \|\| "text"] = { type: data.type \|\| "fade", duration: data.duration ?? 500, easing: data.easing \|\| "sine" } return a })
+- [src/frontend/utils/transitions.ts:81](../../../../src/frontend/utils/transitions.ts#L81) — transitionData.update((a) => { a&#91;data.id \|\| "text"&#93; = { type: data.type \|\| "fade", duration: data.duration ?? 500, easing: data.easing \|\| "sine" } return a })
 - [src/frontend/utils/updateSettings.ts:380](../../../../src/frontend/utils/updateSettings.ts#L380) — transitionData.set(v)
 
 ## Transport

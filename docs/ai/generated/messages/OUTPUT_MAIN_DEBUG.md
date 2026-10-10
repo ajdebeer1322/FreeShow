@@ -8,7 +8,7 @@ No static evidence found.
 
 ## Senders
 
-- [src/frontend/components/helpers/debugLog.ts:47](../../../../src/frontend/components/helpers/debugLog.ts#L47) — renderer → electron/other renderer; { time: Date.now(), category: outputWindowLabel(), message: '[${category}] ${message}', data: stringify(data) }
+- [src/frontend/components/helpers/debugLog.ts:47](../../../../src/frontend/components/helpers/debugLog.ts#L47) — renderer → electron/other renderer; { time: Date.now(), category: outputWindowLabel(), message: '&#91;${category}&#93; ${message}', data: stringify(data) }
 
 ## Handlers
 

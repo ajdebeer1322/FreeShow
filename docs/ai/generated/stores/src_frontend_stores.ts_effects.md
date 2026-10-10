@@ -40,21 +40,21 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 - [src/frontend/components/slide/Slide.svelte:392](../../../../src/frontend/components/slide/Slide.svelte#L392) — $effects
 - [src/frontend/utils/createData.ts:117](../../../../src/frontend/utils/createData.ts#L117) — get(effects)
 - [src/frontend/utils/createData.ts:1462](../../../../src/frontend/utils/createData.ts#L1462) — get(effects)
-- [src/frontend/utils/listeners.ts:297](../../../../src/frontend/utils/listeners.ts#L297) — effects.subscribe(async (data) => { if (await hasNewerUpdate("LISTENER_EFFECTS", 50)) return send(OUTPUT, ["EFFECTS"], data) })
+- [src/frontend/utils/listeners.ts:297](../../../../src/frontend/utils/listeners.ts#L297) — effects.subscribe(async (data) => { if (await hasNewerUpdate("LISTENER_EFFECTS", 50)) return send(OUTPUT, &#91;"EFFECTS"&#93;, data) })
 
 ## Writes
 
-- [src/frontend/components/context/menuClick.ts:1894](../../../../src/frontend/components/context/menuClick.ts#L1894) — effects.update((a) => { obj.sel!.data.forEach((id: string) => { a[id].placeUnderSlide = placeUnder }) return a })
-- [src/frontend/components/context/menuClick.ts:2234](../../../../src/frontend/components/context/menuClick.ts#L2234) — effects.update((a) => { if (!a[effectId]?.items) return a callback(a[effectId].items, index) return a })
+- [src/frontend/components/context/menuClick.ts:1894](../../../../src/frontend/components/context/menuClick.ts#L1894) — effects.update((a) => { obj.sel!.data.forEach((id: string) => { a&#91;id&#93;.placeUnderSlide = placeUnder }) return a })
+- [src/frontend/components/context/menuClick.ts:2234](../../../../src/frontend/components/context/menuClick.ts#L2234) — effects.update((a) => { if (!a&#91;effectId&#93;?.items) return a callback(a&#91;effectId&#93;.items, index) return a })
 - [src/frontend/components/drawer/Label.svelte:35](../../../../src/frontend/components/drawer/Label.svelte#L35) — effects.update((a) => setName(a, c))
-- [src/frontend/components/drawer/effects/EffectIcons.svelte:15](../../../../src/frontend/components/drawer/effects/EffectIcons.svelte#L15) — effects.update((a) => { delete a[effectId][actionId] return a })
-- [src/frontend/components/edit/EffectTools.svelte:31](../../../../src/frontend/components/edit/EffectTools.svelte#L31) — effects.update((a) => { a[effectId].items[itemIndex][input.id] = input.values.value return a })
-- [src/frontend/components/edit/EffectTools.svelte:46](../../../../src/frontend/components/edit/EffectTools.svelte#L46) — effects.update((a) => { const item = a[effectId].items.splice(index, 1) a[effectId].items = addToPos(a[effectId].items, item, newIndex) return a })
-- [src/frontend/components/main/popups/EffectItems.svelte:12](../../../../src/frontend/components/main/popups/EffectItems.svelte#L12) — effects.update((a) => { if (!a[effectId]) return a a[effectId].items.push(data) return a })
-- [src/frontend/components/output/effects/Effect.svelte:94](../../../../src/frontend/components/output/effects/Effect.svelte#L94) — effects.update((a) => { const item: any = a[effect?.id \|\| ""].items[movedIndex] if (basicMove.includes(item.type)) { item.x = x item.y = y } else if (item.type === "wave") { if (it
-- [src/frontend/converters/project.ts:51](../../../../src/frontend/converters/project.ts#L51) — effectsStores.update((a) => { Object.entries(effects).forEach(([id, effect]: any) => { // create new or replace existing a[id] = effect }) return a })
+- [src/frontend/components/drawer/effects/EffectIcons.svelte:15](../../../../src/frontend/components/drawer/effects/EffectIcons.svelte#L15) — effects.update((a) => { delete a&#91;effectId&#93;&#91;actionId&#93; return a })
+- [src/frontend/components/edit/EffectTools.svelte:31](../../../../src/frontend/components/edit/EffectTools.svelte#L31) — effects.update((a) => { a&#91;effectId&#93;.items&#91;itemIndex&#93;&#91;input.id&#93; = input.values.value return a })
+- [src/frontend/components/edit/EffectTools.svelte:46](../../../../src/frontend/components/edit/EffectTools.svelte#L46) — effects.update((a) => { const item = a&#91;effectId&#93;.items.splice(index, 1) a&#91;effectId&#93;.items = addToPos(a&#91;effectId&#93;.items, item, newIndex) return a })
+- [src/frontend/components/main/popups/EffectItems.svelte:12](../../../../src/frontend/components/main/popups/EffectItems.svelte#L12) — effects.update((a) => { if (!a&#91;effectId&#93;) return a a&#91;effectId&#93;.items.push(data) return a })
+- [src/frontend/components/output/effects/Effect.svelte:94](../../../../src/frontend/components/output/effects/Effect.svelte#L94) — effects.update((a) => { const item: any = a&#91;effect?.id \|\| ""&#93;.items&#91;movedIndex&#93; if (basicMove.includes(item.type)) { item.x = x item.y = y } else if (item.type === "wave") { if (it
+- [src/frontend/converters/project.ts:51](../../../../src/frontend/converters/project.ts#L51) — effectsStores.update((a) => { Object.entries(effects).forEach((&#91;id, effect&#93;: any) => { // create new or replace existing a&#91;id&#93; = effect }) return a })
 - [src/frontend/utils/createData.ts:117](../../../../src/frontend/utils/createData.ts#L117) — effects.set({ ...get(effects), ...getDefaultEffects() })
-- [src/frontend/utils/createData.ts:124](../../../../src/frontend/utils/createData.ts#L124) — effects.update((a) => { Object.keys(defaultEffects).forEach((id) => { // if deleted or exists, skip if (deletedIds.includes(id) \|\| a[id]) return a[id] = defaultEffects[id] }) retur
+- [src/frontend/utils/createData.ts:124](../../../../src/frontend/utils/createData.ts#L124) — effects.update((a) => { Object.keys(defaultEffects).forEach((id) => { // if deleted or exists, skip if (deletedIds.includes(id) \|\| a&#91;id&#93;) return a&#91;id&#93; = defaultEffects&#91;id&#93; }) retur
 - [src/frontend/utils/receivers.ts:255](../../../../src/frontend/utils/receivers.ts#L255) — effects.set(clone(a))
 - [src/frontend/utils/updateSettings.ts:466](../../../../src/frontend/utils/updateSettings.ts#L466) — effects.set(a)
 

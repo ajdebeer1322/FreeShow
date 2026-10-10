@@ -19,14 +19,14 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 - [src/frontend/components/helpers/historyHelpers.ts:315](../../../../src/frontend/components/helpers/historyHelpers.ts#L315) — get(templateCategories)
 - [src/frontend/components/main/popups/ChangeIcon.svelte:19](../../../../src/frontend/components/main/popups/ChangeIcon.svelte#L19) — $templateCategories
 - [src/frontend/components/settings/tabs/Profiles.svelte:122](../../../../src/frontend/components/settings/tabs/Profiles.svelte#L122) — $templateCategories
-- [src/frontend/utils/listeners.ts:155](../../../../src/frontend/utils/listeners.ts#L155) — templateCategories.subscribe(async (data) => { if (await hasNewerUpdate("LISTENER_TEMPLATE_CATEGORIES", 50)) return send(REMOTE, ["TEMPLATE_CATEGORIES"], data) })
+- [src/frontend/utils/listeners.ts:155](../../../../src/frontend/utils/listeners.ts#L155) — templateCategories.subscribe(async (data) => { if (await hasNewerUpdate("LISTENER_TEMPLATE_CATEGORIES", 50)) return send(REMOTE, &#91;"TEMPLATE_CATEGORIES"&#93;, data) })
 - [src/frontend/utils/remoteTalk.ts:308](../../../../src/frontend/utils/remoteTalk.ts#L308) — get(templateCategories)
 
 ## Writes
 
 - [src/frontend/components/context/menuClick.ts:872](../../../../src/frontend/components/context/menuClick.ts#L872) — templateCategories.update(toggleArchive)
-- [src/frontend/components/drawer/navigation/TemplatesTabs.svelte:47](../../../../src/frontend/components/drawer/navigation/TemplatesTabs.svelte#L47) — templateCategories.update((a) => { if (a[id].default) delete a[id].default a[id].name = value return a })
-- [src/frontend/components/drawer/pages/Templates.svelte:99](../../../../src/frontend/components/drawer/pages/Templates.svelte#L99) — templateCategories.update((a) => { nonexistentCategories.forEach((id) => { if (a[id]) return a[id] = { name: translateText("main.unnamed") } }) return a })
+- [src/frontend/components/drawer/navigation/TemplatesTabs.svelte:47](../../../../src/frontend/components/drawer/navigation/TemplatesTabs.svelte#L47) — templateCategories.update((a) => { if (a&#91;id&#93;.default) delete a&#91;id&#93;.default a&#91;id&#93;.name = value return a })
+- [src/frontend/components/drawer/pages/Templates.svelte:99](../../../../src/frontend/components/drawer/pages/Templates.svelte#L99) — templateCategories.update((a) => { nonexistentCategories.forEach((id) => { if (a&#91;id&#93;) return a&#91;id&#93; = { name: translateText("main.unnamed") } }) return a })
 - [src/frontend/components/main/popups/ChangeIcon.svelte:13](../../../../src/frontend/components/main/popups/ChangeIcon.svelte#L13) — templateCategories.update((a) => changeIcon(a, icon))
 - [src/frontend/utils/createData.ts:558](../../../../src/frontend/utils/createData.ts#L558) — templateCategories.update((a) => { a.scripture = { default: true, name: "category.scripture", icon: "scripture" } return a })
 - [src/frontend/utils/createData.ts:575](../../../../src/frontend/utils/createData.ts#L575) — templateCategories.update((a) => { a.scripture = { default: true, name: "category.scripture", icon: "scripture" } return a })

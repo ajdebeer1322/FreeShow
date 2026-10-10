@@ -22,7 +22,7 @@ No static evidence found.
 - [src/frontend/components/edit/Editor.svelte:106](../../../../src/frontend/components/edit/Editor.svelte#L106) — AudioEditor → src/frontend/components/edit/editors/AudioEditor.svelte; 
 - [src/frontend/components/edit/Editor.svelte:112](../../../../src/frontend/components/edit/Editor.svelte#L112) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; variant="outlined"; icon="check"; on:click={() => (hideCloudConflict = true)}
 - [src/frontend/components/edit/Editor.svelte:118](../../../../src/frontend/components/edit/Editor.svelte#L118) — Tabs → src/frontend/components/main/Tabs.svelte; tabs={editTabs}; bind:active={$editMode}
-- [src/frontend/components/edit/Editor.svelte:123](../../../../src/frontend/components/edit/Editor.svelte#L123) — TextEditor → src/frontend/components/show/TextEditor.svelte; currentShow={$showsCache[$activeShow?.id \|\| ""]}
+- [src/frontend/components/edit/Editor.svelte:123](../../../../src/frontend/components/edit/Editor.svelte#L123) — TextEditor → src/frontend/components/show/TextEditor.svelte; currentShow={$showsCache&#91;$activeShow?.id \|\| ""&#93;}
 - [src/frontend/components/edit/Editor.svelte:125](../../../../src/frontend/components/edit/Editor.svelte#L125) — SlideEditor → src/frontend/components/edit/editors/SlideEditor.svelte; 
 - [src/frontend/components/edit/Editor.svelte:128](../../../../src/frontend/components/edit/Editor.svelte#L128) — ItemAddMenu → src/frontend/components/edit/ItemAddMenu.svelte; {isLocked}
 - [src/frontend/components/edit/Editor.svelte:133](../../../../src/frontend/components/edit/Editor.svelte#L133) — Splash → src/frontend/components/main/Splash.svelte; 

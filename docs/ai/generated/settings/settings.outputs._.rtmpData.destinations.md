@@ -10,9 +10,9 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/helpers/output.ts:1068](../../../../src/frontend/components/helpers/output.ts#L1068) — get(outputs)[outputId]?.rtmpData?.destinations
-- [src/frontend/components/helpers/output.ts:1073](../../../../src/frontend/components/helpers/output.ts#L1073) — get(outputs)[outputId]?.rtmpData?.destinations
-- [src/frontend/components/helpers/output.ts:1082](../../../../src/frontend/components/helpers/output.ts#L1082) — get(outputs)[outputId]?.rtmpData?.destinations
+- [src/frontend/components/helpers/output.ts:1068](../../../../src/frontend/components/helpers/output.ts#L1068) — get(outputs)&#91;outputId&#93;?.rtmpData?.destinations
+- [src/frontend/components/helpers/output.ts:1073](../../../../src/frontend/components/helpers/output.ts#L1073) — get(outputs)&#91;outputId&#93;?.rtmpData?.destinations
+- [src/frontend/components/helpers/output.ts:1082](../../../../src/frontend/components/helpers/output.ts#L1082) — get(outputs)&#91;outputId&#93;?.rtmpData?.destinations
 
 ## Writes
 

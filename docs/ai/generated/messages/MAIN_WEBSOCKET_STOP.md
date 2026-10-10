@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:151](../../../../src/electron/IPC/responsesMain.ts#L151) — renderer/client → electron; [Main.WEBSOCKET_STOP]: () => stopApiListener()
+- [src/electron/IPC/responsesMain.ts:151](../../../../src/electron/IPC/responsesMain.ts#L151) — renderer/client → electron; &#91;Main.WEBSOCKET_STOP&#93;: () => stopApiListener()

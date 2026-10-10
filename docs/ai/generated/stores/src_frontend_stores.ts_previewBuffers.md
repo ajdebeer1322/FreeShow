@@ -12,8 +12,8 @@ No static evidence found.
 
 ## Writes
 
-- [src/frontend/utils/receivers.ts:112](../../../../src/frontend/utils/receivers.ts#L112) — previewBuffers.update((a) => { a[id] = { buffer, size } return a })
-- [src/frontend/utils/receivers.ts:224](../../../../src/frontend/utils/receivers.ts#L224) — previewBuffers.update((a) => { a[id] = { buffer, size } return a })
+- [src/frontend/utils/receivers.ts:112](../../../../src/frontend/utils/receivers.ts#L112) — previewBuffers.update((a) => { a&#91;id&#93; = { buffer, size } return a })
+- [src/frontend/utils/receivers.ts:224](../../../../src/frontend/utils/receivers.ts#L224) — previewBuffers.update((a) => { a&#91;id&#93; = { buffer, size } return a })
 
 ## Transport
 

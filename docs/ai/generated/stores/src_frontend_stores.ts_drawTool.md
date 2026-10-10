@@ -33,8 +33,8 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 - [src/frontend/components/actions/apiHelper.ts:1183](../../../../src/frontend/components/actions/apiHelper.ts#L1183) — drawTool.set("focus")
 - [src/frontend/components/actions/apiHelper.ts:1189](../../../../src/frontend/components/actions/apiHelper.ts#L1189) — drawTool.set("zoom")
-- [src/frontend/components/draw/DrawTabs.svelte:23](../../../../src/frontend/components/draw/DrawTabs.svelte#L23) — drawTool.set(tools[nextTab])
-- [src/frontend/components/draw/Slide.svelte:84](../../../../src/frontend/components/draw/Slide.svelte#L84) — a[$drawTool].size = newSize
+- [src/frontend/components/draw/DrawTabs.svelte:23](../../../../src/frontend/components/draw/DrawTabs.svelte#L23) — drawTool.set(tools&#91;nextTab&#93;)
+- [src/frontend/components/draw/Slide.svelte:84](../../../../src/frontend/components/draw/Slide.svelte#L84) — a&#91;$drawTool&#93;.size = newSize
 - [src/frontend/utils/controllerTalk.ts:38](../../../../src/frontend/utils/controllerTalk.ts#L38) — drawTool.set(data.tool \|\| "focus")
 - [src/frontend/utils/controllerTalk.ts:55](../../../../src/frontend/utils/controllerTalk.ts#L55) — drawTool.set(tool)
 - [src/frontend/utils/receivers.ts:248](../../../../src/frontend/utils/receivers.ts#L248) — drawTool.set(a.data)

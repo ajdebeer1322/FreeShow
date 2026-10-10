@@ -1,0 +1,10 @@
+[
+  {"file":"src/electron/cloud/syncManager.ts","line":713,"endLine":713,"text":"// if found locally, but marked as \"deleted\" in cloud: delete locally","start":30855,"end":30924},
+  {"file":"src/electron/cloud/syncManager.ts","line":714,"endLine":714,"text":"// if found locally and in cloud: use newest version","start":30925,"end":30977},
+  {"file":"src/electron/cloud/syncManager.ts","line":715,"endLine":715,"text":"// if marked as deleted locally in cloud, but exists locally: unmark as deleted and mark as created","start":30978,"end":31077},
+  {"file":"src/electron/cloud/syncManager.ts","line":724,"endLine":724,"text":"// the per-item created/deleted ledger lives in the pure, unit-tested SyncLedger module (syncLedger.ts).","start":31366,"end":31470},
+  {"file":"src/electron/cloud/syncManager.ts","line":725,"endLine":725,"text":"// it's rebuilt once per sync run (see syncData), so checkCloudEntry/checkLocalEntry delegate to it.","start":31471,"end":31571},
+  {"file":"src/electron/cloud/syncManager.ts","line":730,"endLine":730,"text":"// keep track of last changed time so we can know which devices to ignore eventually","start":31703,"end":31787},
+  {"file":"src/electron/cloud/syncManager.ts","line":748,"endLine":748,"text":"// remove deleted/created when it's connected again after being disconnected","start":32143,"end":32219},
+  {"file":"src/electron/cloud/syncManager.ts","line":763,"endLine":763,"text":"// For testing","start":32645,"end":32659}
+]

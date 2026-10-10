@@ -10,9 +10,9 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/actions/CreateAction.svelte:232](../../../../src/frontend/components/actions/CreateAction.svelte#L232) — $outputs[actionValue.outputId]?.name
-- [src/frontend/components/actions/CreateAction.svelte:233](../../../../src/frontend/components/actions/CreateAction.svelte#L233) — $outputs[actionValue.outputId]?.name
-- [src/frontend/components/main/popups/MediaInspector.svelte:49](../../../../src/frontend/components/main/popups/MediaInspector.svelte#L49) — $outputs[id]?.name
+- [src/frontend/components/actions/CreateAction.svelte:232](../../../../src/frontend/components/actions/CreateAction.svelte#L232) — $outputs&#91;actionValue.outputId&#93;?.name
+- [src/frontend/components/actions/CreateAction.svelte:233](../../../../src/frontend/components/actions/CreateAction.svelte#L233) — $outputs&#91;actionValue.outputId&#93;?.name
+- [src/frontend/components/main/popups/MediaInspector.svelte:49](../../../../src/frontend/components/main/popups/MediaInspector.svelte#L49) — $outputs&#91;id&#93;?.name
 
 ## Writes
 

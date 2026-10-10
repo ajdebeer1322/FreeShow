@@ -19,6 +19,6 @@ Store: src/frontend/stores.ts#audioEffectPresets.
 
 ## Writes
 
-- [src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte:127](../../../../src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte#L127) — audioEffectPresets.update((all) => { const effects = all[effectKey] ? { ...all[effectKey] } : {} effects[id] = { name, config: clone(currentConfig) } return { ...all, [effectKey]: 
-- [src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte:147](../../../../src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte#L147) — audioEffectPresets.update((all) => { const effects = all[effectKey] ? { ...all[effectKey] } : {} delete effects[selectedPreset] return { ...all, [effectKey]: effects } })
+- [src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte:127](../../../../src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte#L127) — audioEffectPresets.update((all) => { const effects = all&#91;effectKey&#93; ? { ...all&#91;effectKey&#93; } : {} effects&#91;id&#93; = { name, config: clone(currentConfig) } return { ...all, &#91;effectKey&#93;: 
+- [src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte:147](../../../../src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte#L147) — audioEffectPresets.update((all) => { const effects = all&#91;effectKey&#93; ? { ...all&#91;effectKey&#93; } : {} delete effects&#91;selectedPreset&#93; return { ...all, &#91;effectKey&#93;: effects } })
 - [src/frontend/utils/updateSettings.ts:397](../../../../src/frontend/utils/updateSettings.ts#L397) — audioEffectPresets.set(v)

@@ -1,5 +1,4 @@
 [
-  {"file":"src/frontend/components/export/projectLink.ts","line":242,"endLine":242,"text":"//     await writer.close()","start":8243,"end":8270},
   {"file":"src/frontend/components/export/projectLink.ts","line":244,"endLine":244,"text":"//     const decompressedText = await new Response(decompressionStream.readable).text()","start":8272,"end":8359},
   {"file":"src/frontend/components/export/projectLink.ts","line":245,"endLine":245,"text":"//     return JSON.parse(decompressedText)","start":8360,"end":8402},
   {"file":"src/frontend/components/export/projectLink.ts","line":246,"endLine":246,"text":"// }","start":8403,"end":8407},

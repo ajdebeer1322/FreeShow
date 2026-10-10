@@ -150,5 +150,4 @@ No static evidence found.
 ## Workarounds
 
 - [src/frontend/components/helpers/history.ts:197](../../../../src/frontend/components/helpers/history.ts#L197) — workaround-5bc335f05b9739dc: // TODO: go to location
-- [src/frontend/components/helpers/history.ts:199](../../../../src/frontend/components/helpers/history.ts#L199) — workaround-0cb50bb80053b7bd: // TODO: open drawer
 - [src/frontend/components/helpers/history.ts:226](../../../../src/frontend/components/helpers/history.ts#L226) — workaround-e58f78a2ac28825e: // override, but keep previousData!!!

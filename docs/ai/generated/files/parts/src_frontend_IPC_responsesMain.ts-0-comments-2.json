@@ -1,0 +1,20 @@
+[
+  {"file":"src/frontend/IPC/responsesMain.ts","line":503,"endLine":503,"text":"// CREATE PROJECT FOLDER","start":22012,"end":22036},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":509,"endLine":509,"text":"// CREATE PROJECT","start":22399,"end":22416},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":513,"endLine":513,"text":"// show on top in last used list","start":22586,"end":22618},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":520,"endLine":520,"text":"// REPLACE IDS","start":22841,"end":22855},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":527,"endLine":527,"text":"// open closest to today","start":23157,"end":23181},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":534,"endLine":534,"text":"// store available PCO plans for Live timer setup","start":23407,"end":23456},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":546,"endLine":546,"text":"// menuClick","start":24042,"end":24054},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":547,"endLine":547,"text":"// menuClick","start":24108,"end":24120},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":557,"endLine":557,"text":"// Media","start":24336,"end":24344},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":562,"endLine":562,"text":"// remove any PDFs with the same name from the Recommended project items list","start":24527,"end":24604},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":582,"endLine":582,"text":"// FreeShow","start":25517,"end":25528},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":590,"endLine":590,"text":"// Text","start":25932,"end":25939},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":596,"endLine":596,"text":"// Other programs","start":26186,"end":26203},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":608,"endLine":608,"text":"// Media","start":26875,"end":26883},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":610,"endLine":610,"text":"// Other","start":26957,"end":26965},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":612,"endLine":612,"text":"// Bibles","start":27029,"end":27038},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":619,"endLine":619,"text":"// Timecode","start":27186,"end":27197},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":624,"endLine":624,"text":"// AI","start":27405,"end":27410}
+]

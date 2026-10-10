@@ -41,7 +41,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 ## Writes
 
 - [src/frontend/components/actions/apiHelper.ts:727](../../../../src/frontend/components/actions/apiHelper.ts#L727) — activeDrawerTab.set("scripture")
-- [src/frontend/components/drawer/Drawer.svelte:102](../../../../src/frontend/components/drawer/Drawer.svelte#L102) — a[$activeDrawerTab].activeSubTab = "all"
+- [src/frontend/components/drawer/Drawer.svelte:102](../../../../src/frontend/components/drawer/Drawer.svelte#L102) — a&#91;$activeDrawerTab&#93;.activeSubTab = "all"
 - [src/frontend/components/drawer/Drawer.svelte:142](../../../../src/frontend/components/drawer/Drawer.svelte#L142) — activeDrawerTab.set(newId)
 - [src/frontend/components/drawer/Drawer.svelte:178](../../../../src/frontend/components/drawer/Drawer.svelte#L178) — activeDrawerTab.set("shows")
 - [src/frontend/components/drawer/audio/AudioMeter.svelte:153](../../../../src/frontend/components/drawer/audio/AudioMeter.svelte#L153) — activeDrawerTab.set("audio")

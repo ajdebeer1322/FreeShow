@@ -31,7 +31,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 - [src/server/remote/components/pages/Project.svelte:77](../../../../src/server/remote/components/pages/Project.svelte#L77) — activeProject.update((current) => (current ? { ...current, name } : current))
 - [src/server/remote/components/pages/Project.svelte:86](../../../../src/server/remote/components/pages/Project.svelte#L86) — activeProject.set(null)
 - [src/server/remote/components/pages/Projects.svelte:120](../../../../src/server/remote/components/pages/Projects.svelte#L120) — _set("activeProject", proj)
-- [src/server/remote/components/tablet/layout/TabletCenter.svelte:127](../../../../src/server/remote/components/tablet/layout/TabletCenter.svelte#L127) — activeProject.set({ id: projectId, name, parent: "/", shows: [] } as any)
+- [src/server/remote/components/tablet/layout/TabletCenter.svelte:127](../../../../src/server/remote/components/tablet/layout/TabletCenter.svelte#L127) — activeProject.set({ id: projectId, name, parent: "/", shows: &#91;&#93; } as any)
 - [src/server/remote/util/receiver.ts:139](../../../../src/server/remote/util/receiver.ts#L139) — _set("activeProject", project)
 - [src/server/remote/util/receiver.ts:146](../../../../src/server/remote/util/receiver.ts#L146) — _set("activeProject", project)
 

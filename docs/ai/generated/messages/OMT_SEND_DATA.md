@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/frontend/utils/receivers.ts:315](../../../../src/frontend/utils/receivers.ts#L315) — electron/other renderer → renderer; SEND_DATA: (msg) => { if (!msg?.id) return omtData.update((a) => { a[msg.id] = msg return a }) }
+- [src/frontend/utils/receivers.ts:315](../../../../src/frontend/utils/receivers.ts#L315) — electron/other renderer → renderer; SEND_DATA: (msg) => { if (!msg?.id) return omtData.update((a) => { a&#91;msg.id&#93; = msg return a }) }

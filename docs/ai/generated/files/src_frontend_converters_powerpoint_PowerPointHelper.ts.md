@@ -29,4 +29,5 @@ No static evidence found.
 
 ## Workarounds
 
-No static evidence found.
+- [src/frontend/converters/powerpoint/PowerPointHelper.ts:810](../../../../src/frontend/converters/powerpoint/PowerPointHelper.ts#L810) — workaround-905e7ef4f95303b1: // WIP split "a:br" properly as it breaks when style is changed
+- [src/frontend/converters/powerpoint/PowerPointHelper.ts:1021](../../../../src/frontend/converters/powerpoint/PowerPointHelper.ts#L1021) — workaround-0f6ce3304e5eb800: // WIP stroke is overflowing outside of item

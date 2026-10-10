@@ -25,4 +25,4 @@ No static evidence found.
 
 ## Workarounds
 
-No static evidence found.
+- [src/frontend/components/output/effects/effectRenderer.ts:629](../../../../src/frontend/components/output/effects/effectRenderer.ts#L629) — workaround-df6e80871c42cf91: // WIP color range? / specific color with different brightness

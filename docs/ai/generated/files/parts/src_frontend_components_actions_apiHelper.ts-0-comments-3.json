@@ -1,0 +1,6 @@
+[
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1208,"endLine":1208,"text":"// CREATE","start":43524,"end":43533},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1215,"endLine":1215,"text":"// DELETE","start":43923,"end":43932},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1222,"endLine":1222,"text":"// open altered project in the app","start":44144,"end":44178},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1233,"endLine":1233,"text":"// EDIT","start":44497,"end":44504}
+]

@@ -30,6 +30,6 @@ Store: src/frontend/stores.ts#serverData.
 
 ## Writes
 
-- [src/frontend/components/main/popups/Connect.svelte:123](../../../../src/frontend/components/main/popups/Connect.svelte#L123) — serverData.update((a) => { if (!a[id]) a[id] = {} a[id][key] = value return a })
+- [src/frontend/components/main/popups/Connect.svelte:123](../../../../src/frontend/components/main/popups/Connect.svelte#L123) — serverData.update((a) => { if (!a&#91;id&#93;) a&#91;id&#93; = {} a&#91;id&#93;&#91;key&#93; = value return a })
 - [src/frontend/components/settings/tabs/Connection.svelte:54](../../../../src/frontend/components/settings/tabs/Connection.svelte#L54) — serverData.update((a) => { delete a.output_stream.outputId return a })
 - [src/frontend/utils/updateSettings.ts:310](../../../../src/frontend/utils/updateSettings.ts#L310) — serverData.set(v)

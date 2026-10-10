@@ -1,3 +1,25 @@
 [
-  {"file":"src/frontend/show/slides.ts","line":672,"endLine":672,"text":"// set child","start":27138,"end":27150}
+  {"file":"src/frontend/show/slides.ts","line":672,"endLine":672,"text":"// set child","start":27138,"end":27150},
+  {"file":"src/frontend/show/slides.ts","line":754,"endLine":754,"text":"// merge in slide order, instead of selection order","start":30599,"end":30650},
+  {"file":"src/frontend/show/slides.ts","line":801,"endLine":801,"text":"// add textbox","start":32432,"end":32446},
+  {"file":"src/frontend/show/slides.ts","line":815,"endLine":815,"text":"// add to layout if child","start":32901,"end":32926},
+  {"file":"src/frontend/show/slides.ts","line":823,"endLine":823,"text":"// delete parents child refs","start":33293,"end":33321},
+  {"file":"src/frontend/show/slides.ts","line":840,"endLine":840,"text":"// delete layout slides (except for first one)","start":33887,"end":33933},
+  {"file":"src/frontend/show/slides.ts","line":849,"endLine":849,"text":"// delete slides","start":34323,"end":34339},
+  {"file":"src/frontend/show/slides.ts","line":851,"endLine":851,"text":"// only delete if no children or they are selected!","start":34388,"end":34439},
+  {"file":"src/frontend/show/slides.ts","line":853,"endLine":853,"text":"// return if at least one children is not selected","start":34508,"end":34558},
+  {"file":"src/frontend/show/slides.ts","line":858,"endLine":858,"text":"// remove extra children","start":34856,"end":34880},
+  {"file":"src/frontend/show/slides.ts","line":867,"endLine":867,"text":"// add new slide","start":35012,"end":35028},
+  {"file":"src/frontend/show/slides.ts","line":868,"endLine":868,"text":"// delete old id if it's there","start":35052,"end":35082},
+  {"file":"src/frontend/show/slides.ts","line":871,"endLine":871,"text":"// something went wrong!","start":35238,"end":35262},
+  {"file":"src/frontend/show/slides.ts","line":874,"endLine":874,"text":"// , override: \"merge_slides\"","start":35491,"end":35520},
+  {"file":"src/frontend/show/slides.ts","line":894,"endLine":894,"text":"// add all lines into one","start":36185,"end":36210},
+  {"file":"src/frontend/show/slides.ts","line":900,"endLine":900,"text":"// create new textbox","start":36338,"end":36359},
+  {"file":"src/frontend/show/slides.ts","line":904,"endLine":904,"text":"// set new item & remove old ones","start":36450,"end":36483},
+  {"file":"src/frontend/show/slides.ts","line":910,"endLine":910,"text":"// update","start":36607,"end":36616},
+  {"file":"src/frontend/show/slides.ts","line":919,"endLine":919,"text":"// BREAK LONG LINES","start":36922,"end":36941},
+  {"file":"src/frontend/show/slides.ts","line":930,"endLine":930,"text":"// merge all text styles into one, if multiple!","start":37332,"end":37379},
+  {"file":"src/frontend/show/slides.ts","line":974,"endLine":974,"text":"// SPLIT AT PUNCTUATION","start":38993,"end":39016},
+  {"file":"src/frontend/show/slides.ts","line":1003,"endLine":1003,"text":"// Ensure the second half isn't just punctuation","start":40150,"end":40198},
+  {"file":"src/frontend/show/slides.ts","line":1035,"endLine":1035,"text":"// replace & remove spaces","start":41148,"end":41174}
 ]

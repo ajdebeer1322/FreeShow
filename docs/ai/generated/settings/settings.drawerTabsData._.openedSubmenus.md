@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/drawer/MaterialDrawerTab.svelte:80](../../../../src/frontend/components/drawer/MaterialDrawerTab.svelte#L80) — $drawerTabsData[drawerId]?.openedSubmenus
+- [src/frontend/components/drawer/MaterialDrawerTab.svelte:80](../../../../src/frontend/components/drawer/MaterialDrawerTab.svelte#L80) — $drawerTabsData&#91;drawerId&#93;?.openedSubmenus
 
 ## Writes
 

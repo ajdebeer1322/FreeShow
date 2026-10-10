@@ -10,9 +10,9 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/main/popups/Color.svelte:31](../../../../src/frontend/components/main/popups/Color.svelte#L31) — $outputs[data.id]?.color
-- [src/frontend/components/show/Slides.svelte:355](../../../../src/frontend/components/show/Slides.svelte#L355) — $outputs[a].color
-- [src/frontend/components/show/pdf/PdfPreview.svelte:41](../../../../src/frontend/components/show/pdf/PdfPreview.svelte#L41) — $outputs[activeOutput].color
+- [src/frontend/components/main/popups/Color.svelte:31](../../../../src/frontend/components/main/popups/Color.svelte#L31) — $outputs&#91;data.id&#93;?.color
+- [src/frontend/components/show/Slides.svelte:355](../../../../src/frontend/components/show/Slides.svelte#L355) — $outputs&#91;a&#93;.color
+- [src/frontend/components/show/pdf/PdfPreview.svelte:41](../../../../src/frontend/components/show/pdf/PdfPreview.svelte#L41) — $outputs&#91;activeOutput&#93;.color
 
 ## Writes
 

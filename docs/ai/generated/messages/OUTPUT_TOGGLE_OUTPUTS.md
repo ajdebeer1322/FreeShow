@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/output/OutputHelper.ts:21](../../../../src/electron/output/OutputHelper.ts#L21) — renderer/client → electron; TOGGLE_OUTPUTS: (data: { outputs: (Output & { id: string })[]; state: boolean; autoStartup?: boolean; autoPosition?: boolean }) => OutputHelper.Visibili
+- [src/electron/output/OutputHelper.ts:21](../../../../src/electron/output/OutputHelper.ts#L21) — renderer/client → electron; TOGGLE_OUTPUTS: (data: { outputs: (Output & { id: string })&#91;&#93;; state: boolean; autoStartup?: boolean; autoPosition?: boolean }) => OutputHelper.Visibili

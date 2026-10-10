@@ -119,7 +119,7 @@ Saved: yes, with the listed transformations.
 - [src/frontend/components/show/VideoShow.svelte:180](../../../../src/frontend/components/show/VideoShow.svelte#L180) — $activeProject
 - [src/frontend/components/show/VideoShow.svelte:221](../../../../src/frontend/components/show/VideoShow.svelte#L221) — $activeProject
 - [src/frontend/components/show/arrangementBar.ts:7](../../../../src/frontend/components/show/arrangementBar.ts#L7) — get(activeProject)
-- [src/frontend/components/show/arrangementBar.ts:8](../../../../src/frontend/components/show/arrangementBar.ts#L8) — activeProject.subscribe((id) => { if (id === currentProject) return currentProject = id openArrangementBars.set([]) })
+- [src/frontend/components/show/arrangementBar.ts:8](../../../../src/frontend/components/show/arrangementBar.ts#L8) — activeProject.subscribe((id) => { if (id === currentProject) return currentProject = id openArrangementBars.set(&#91;&#93;) })
 - [src/frontend/components/show/focus/FocusMode.svelte:26](../../../../src/frontend/components/show/focus/FocusMode.svelte#L26) — $activeProject
 - [src/frontend/components/show/folder/FolderShow.svelte:28](../../../../src/frontend/components/show/folder/FolderShow.svelte#L28) — $activeProject
 - [src/frontend/components/show/pdf/PdfPreview.svelte:24](../../../../src/frontend/components/show/pdf/PdfPreview.svelte#L24) — $activeProject
@@ -145,7 +145,7 @@ Saved: yes, with the listed transformations.
 - [src/frontend/converters/worshipTools.ts:60](../../../../src/frontend/converters/worshipTools.ts#L60) — get(activeProject)
 - [src/frontend/utils/cloudSync.ts:288](../../../../src/frontend/utils/cloudSync.ts#L288) — activeProject.subscribe(() => broadcastPresence())
 - [src/frontend/utils/cloudSync.ts:308](../../../../src/frontend/utils/cloudSync.ts#L308) — get(activeProject)
-- [src/frontend/utils/listeners.ts:384](../../../../src/frontend/utils/listeners.ts#L384) — activeProject.subscribe((a) => { send(REMOTE, ["PROJECT"], a) // dynamic values send(OUTPUT, ["ACTIVE_PROJECT"], a) })
+- [src/frontend/utils/listeners.ts:384](../../../../src/frontend/utils/listeners.ts#L384) — activeProject.subscribe((a) => { send(REMOTE, &#91;"PROJECT"&#93;, a) // dynamic values send(OUTPUT, &#91;"ACTIVE_PROJECT"&#93;, a) })
 - [src/frontend/utils/pcoLiveSync.ts:61](../../../../src/frontend/utils/pcoLiveSync.ts#L61) — get(activeProject)
 - [src/frontend/utils/remoteTalk.ts:341](../../../../src/frontend/utils/remoteTalk.ts#L341) — get(activeProject)
 - [src/frontend/utils/save.ts:161](../../../../src/frontend/utils/save.ts#L161) — get(activeProject)
@@ -169,17 +169,17 @@ Saved: yes, with the listed transformations.
 - [src/frontend/components/helpers/OutputHelper.linked.test.ts:115](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L115) — activeProject.set("p")
 - [src/frontend/components/helpers/OutputHelper.linked.test.ts:222](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L222) — activeProject.set("p")
 - [src/frontend/components/helpers/OutputHelper.linked.test.ts:391](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L391) — activeProject.set("p")
-- [src/frontend/components/helpers/OutputHelper.ts:319](../../../../src/frontend/components/helpers/OutputHelper.ts#L319) — a[get(activeProject)!].shows[projectItemIndex].played = next ? true : false
+- [src/frontend/components/helpers/OutputHelper.ts:319](../../../../src/frontend/components/helpers/OutputHelper.ts#L319) — a&#91;get(activeProject)!&#93;.shows&#91;projectItemIndex&#93;.played = next ? true : false
 - [src/frontend/components/helpers/historyHelpers.ts:72](../../../../src/frontend/components/helpers/historyHelpers.ts#L72) — activeProject.set(id)
 - [src/frontend/components/helpers/historyHelpers.ts:100](../../../../src/frontend/components/helpers/historyHelpers.ts#L100) — activeProject.set(null)
 - [src/frontend/components/main/Splash.svelte:15](../../../../src/frontend/components/main/Splash.svelte#L15) — activeProject.set(null)
 - [src/frontend/components/main/Top.svelte:67](../../../../src/frontend/components/main/Top.svelte#L67) — activeProject.set(user.activeProject)
 - [src/frontend/components/quicksearch/quicksearch.ts:371](../../../../src/frontend/components/quicksearch/quicksearch.ts#L371) — activeProject.set(id)
 - [src/frontend/components/show/ProjectContentList.svelte:60](../../../../src/frontend/components/show/ProjectContentList.svelte#L60) — activeProject.set(null)
-- [src/frontend/components/show/ProjectContentList.svelte:170](../../../../src/frontend/components/show/ProjectContentList.svelte#L170) — a[$activeProject!].shows = a[$activeProject!].shows.map((item) => { if (item.type !== "section") return item // prefixed clock time, like "12:00 Title" const regex = /^(\d{1,2}:\d{
+- [src/frontend/components/show/ProjectContentList.svelte:170](../../../../src/frontend/components/show/ProjectContentList.svelte#L170) — a&#91;$activeProject!&#93;.shows = a&#91;$activeProject!&#93;.shows.map((item) => { if (item.type !== "section") return item // prefixed clock time, like "12:00 Title" const regex = /^(\d{1,2}:\d{
 - [src/frontend/components/show/Projects.svelte:191](../../../../src/frontend/components/show/Projects.svelte#L191) — activeProject.set(null)
-- [src/frontend/components/show/VideoShow.svelte:221](../../../../src/frontend/components/show/VideoShow.svelte#L221) — a[$activeProject \|\| ""].shows[show.index][key] = value
-- [src/frontend/components/show/ppt/ScreenCapture.svelte:77](../../../../src/frontend/components/show/ppt/ScreenCapture.svelte#L77) — a[$activeProject!].shows[projectIndex].data = { screenName: chosenWindow.name }
+- [src/frontend/components/show/VideoShow.svelte:221](../../../../src/frontend/components/show/VideoShow.svelte#L221) — a&#91;$activeProject \|\| ""&#93;.shows&#91;show.index&#93;&#91;key&#93; = value
+- [src/frontend/components/show/ppt/ScreenCapture.svelte:77](../../../../src/frontend/components/show/ppt/ScreenCapture.svelte#L77) — a&#91;$activeProject!&#93;.shows&#91;projectIndex&#93;.data = { screenName: chosenWindow.name }
 - [src/frontend/components/show/project.ts:18](../../../../src/frontend/components/show/project.ts#L18) — activeProject.set(id)
 - [src/frontend/converters/lessonsChurch.ts:102](../../../../src/frontend/converters/lessonsChurch.ts#L102) — activeProject.set("lessons")
 - [src/frontend/converters/project.ts:118](../../../../src/frontend/converters/project.ts#L118) — activeProject.set(projectId)

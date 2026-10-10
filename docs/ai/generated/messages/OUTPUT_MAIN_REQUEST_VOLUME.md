@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/frontend/utils/receivers.ts:181](../../../../src/frontend/utils/receivers.ts#L181) — electron/other renderer → renderer; MAIN_REQUEST_VOLUME: (data: { deviceId: string }) => { if (!data?.deviceId) return const chData = (get(audioChannelsData) \|\| {})[data.deviceId] 
+- [src/frontend/utils/receivers.ts:181](../../../../src/frontend/utils/receivers.ts#L181) — electron/other renderer → renderer; MAIN_REQUEST_VOLUME: (data: { deviceId: string }) => { if (!data?.deviceId) return const chData = (get(audioChannelsData) \|\| {})&#91;data.deviceId&#93; 

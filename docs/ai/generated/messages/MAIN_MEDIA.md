@@ -12,6 +12,6 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:70](../../../../src/electron/IPC/responsesMain.ts#L70) — renderer/client → electron; [Main.MEDIA]: () => getStore("MEDIA")
-- [src/frontend/IPC/responsesMain.ts:141](../../../../src/frontend/IPC/responsesMain.ts#L141) — electron/other renderer → renderer; [Main.MEDIA]: (a) => media.set(a)
+- [src/electron/IPC/responsesMain.ts:70](../../../../src/electron/IPC/responsesMain.ts#L70) — renderer/client → electron; &#91;Main.MEDIA&#93;: () => getStore("MEDIA")
+- [src/frontend/IPC/responsesMain.ts:141](../../../../src/frontend/IPC/responsesMain.ts#L141) — electron/other renderer → renderer; &#91;Main.MEDIA&#93;: (a) => media.set(a)
 - [src/frontend/IPC/responsesMain.ts:546](../../../../src/frontend/IPC/responsesMain.ts#L546) — electron/other renderer → renderer; MEDIA: () => addDrawerFolder(a, "media")

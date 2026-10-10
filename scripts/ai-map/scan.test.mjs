@@ -31,3 +31,10 @@ test("component bindings and payload contracts",()=>{
     assert.equal(msg.senders.length,1)
     assert.equal(msg.payloads[0].type,"{verbose:boolean}")
 })
+
+test("finds comments following interpolated templates and regex literals",()=>{
+    const file="src/frontend/A.ts", source='const pattern=/\\w+/; const str=`${1}`;\n// workaround: prevent stale content\nsetTimeout(()=>{},25)'
+    const result=scan({files:[file],sources:{[file]:source}})
+    assert.equal(result.workarounds.length,1)
+    assert.match(result.timers[0].nearbyComments[0],/stale content/)
+})

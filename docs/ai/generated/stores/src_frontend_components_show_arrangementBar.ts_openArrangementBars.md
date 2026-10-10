@@ -14,8 +14,8 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 ## Writes
 
-- [src/frontend/components/show/arrangementBar.ts:11](../../../../src/frontend/components/show/arrangementBar.ts#L11) — openArrangementBars.set([])
-- [src/frontend/components/show/arrangementBar.ts:15](../../../../src/frontend/components/show/arrangementBar.ts#L15) — openArrangementBars.update((a) => (a.includes(key) ? a.filter((id) => id !== key) : [...a, key]))
+- [src/frontend/components/show/arrangementBar.ts:11](../../../../src/frontend/components/show/arrangementBar.ts#L11) — openArrangementBars.set(&#91;&#93;)
+- [src/frontend/components/show/arrangementBar.ts:15](../../../../src/frontend/components/show/arrangementBar.ts#L15) — openArrangementBars.update((a) => (a.includes(key) ? a.filter((id) => id !== key) : &#91;...a, key&#93;))
 
 ## Transport
 

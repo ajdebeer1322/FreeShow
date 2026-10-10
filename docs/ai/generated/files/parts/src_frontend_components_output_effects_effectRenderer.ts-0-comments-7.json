@@ -1,0 +1,15 @@
+[
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2873,"endLine":2873,"text":"// Day","start":112268,"end":112274},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2874,"endLine":2874,"text":"// Sunset","start":112320,"end":112329},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2875,"endLine":2875,"text":"// Night","start":112384,"end":112392},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2878,"endLine":2878,"text":"// there must be color values at stop 0 & 1","start":112412,"end":112455},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2891,"endLine":2891,"text":"// seconds","start":112891,"end":112901},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2893,"endLine":2893,"text":"// Update time (normalized to seconds with a ~60 FPS scale factor)","start":112982,"end":113048},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2897,"endLine":2897,"text":"// const time = data.cycleTime / cycleLength // 0 → 1","start":113152,"end":113205},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2898,"endLine":2898,"text":"// const isNight = time > 0.9 || time < 0.1","start":113214,"end":113257},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2899,"endLine":2899,"text":"// this.nightTime = time > 0.5 ? (time - 0.5) * 2 : 1 - time * 2","start":113266,"end":113330},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2909,"endLine":2909,"text":"// 0 → 1","start":113631,"end":113639},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2913,"endLine":2913,"text":"// Find active phase range","start":113685,"end":113711},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2923,"endLine":2923,"text":"// Sky gradient","start":114076,"end":114091},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2966,"endLine":2966,"text":"/// ASSET ///","start":115764,"end":115777}
+]

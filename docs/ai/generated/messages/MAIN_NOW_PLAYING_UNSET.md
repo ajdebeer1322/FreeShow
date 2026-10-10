@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:133](../../../../src/electron/IPC/responsesMain.ts#L133) — renderer/client → electron; [Main.NOW_PLAYING_UNSET]: () => unsetPlayingAudio()
+- [src/electron/IPC/responsesMain.ts:133](../../../../src/electron/IPC/responsesMain.ts#L133) — renderer/client → electron; &#91;Main.NOW_PLAYING_UNSET&#93;: () => unsetPlayingAudio()

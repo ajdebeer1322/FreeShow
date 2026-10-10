@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:139](../../../../src/electron/IPC/responsesMain.ts#L139) — renderer/client → electron; [Main.ACCESS_SCREEN_PERMISSION]: () => getPermission("screen")
+- [src/electron/IPC/responsesMain.ts:139](../../../../src/electron/IPC/responsesMain.ts#L139) — renderer/client → electron; &#91;Main.ACCESS_SCREEN_PERMISSION&#93;: () => getPermission("screen")

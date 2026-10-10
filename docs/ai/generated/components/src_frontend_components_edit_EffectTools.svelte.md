@@ -9,7 +9,7 @@ No static evidence found.
 ## Rendered components and props
 
 - [src/frontend/components/edit/EffectTools.svelte:79](../../../../src/frontend/components/edit/EffectTools.svelte#L79) — Tabs → src/frontend/components/main/Tabs.svelte; {tabs}; bind:active
-- [src/frontend/components/edit/EffectTools.svelte:91](../../../../src/frontend/components/edit/EffectTools.svelte#L91) — InputRow → src/frontend/components/input/InputRow.svelte; arrow={!!editContent}; bind:open={openedMenus[index]}
+- [src/frontend/components/edit/EffectTools.svelte:91](../../../../src/frontend/components/edit/EffectTools.svelte#L91) — InputRow → src/frontend/components/input/InputRow.svelte; arrow={!!editContent}; bind:open={openedMenus&#91;index&#93;}
 - [src/frontend/components/edit/EffectTools.svelte:93](../../../../src/frontend/components/edit/EffectTools.svelte#L93) — T → src/frontend/components/helpers/T.svelte; id="effect.{item.type === 'shape' ? item.shape : item.type}"
 - [src/frontend/components/edit/EffectTools.svelte:97](../../../../src/frontend/components/edit/EffectTools.svelte#L97) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; class="down"; icon="down"; on:click={() => move(index, index - 1)}
 - [src/frontend/components/edit/EffectTools.svelte:100](../../../../src/frontend/components/edit/EffectTools.svelte#L100) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; class="up"; icon="up"; on:click={() => move(index, index + 1)}

@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:147](../../../../src/electron/IPC/responsesMain.ts#L147) — renderer/client → electron; [Main.STOP]: () => closeServers()
+- [src/electron/IPC/responsesMain.ts:147](../../../../src/electron/IPC/responsesMain.ts#L147) — renderer/client → electron; &#91;Main.STOP&#93;: () => closeServers()

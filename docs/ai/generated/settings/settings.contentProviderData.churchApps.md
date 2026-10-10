@@ -6,7 +6,7 @@ Store: none identified.
 
 ## Definitions
 
-- [src/electron/data/defaults.ts:85](../../../../src/electron/data/defaults.ts#L85) — { syncCategories: ["song"] }
+- [src/electron/data/defaults.ts:85](../../../../src/electron/data/defaults.ts#L85) — { syncCategories: &#91;"song"&#93; }
 
 ## Reads
 

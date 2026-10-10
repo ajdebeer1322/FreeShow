@@ -8,7 +8,7 @@ No static evidence found.
 
 ## Senders
 
-- [src/frontend/components/slide/views/Website.svelte:136](../../../../src/frontend/components/slide/views/Website.svelte#L136) — renderer → electron/other renderer; { id: Object.keys($outputs)[0] }
+- [src/frontend/components/slide/views/Website.svelte:136](../../../../src/frontend/components/slide/views/Website.svelte#L136) — renderer → electron/other renderer; { id: Object.keys($outputs)&#91;0&#93; }
 
 ## Handlers
 

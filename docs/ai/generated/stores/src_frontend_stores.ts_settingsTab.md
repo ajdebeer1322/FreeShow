@@ -38,7 +38,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 - [src/frontend/components/quicksearch/quicksearch.ts:453](../../../../src/frontend/components/quicksearch/quicksearch.ts#L453) — settingsTab.set(id as any)
 - [src/frontend/components/quicksearch/quicksearch.ts:459](../../../../src/frontend/components/quicksearch/quicksearch.ts#L459) — settingsTab.set("connection")
 - [src/frontend/components/settings/SettingsTabs.svelte:27](../../../../src/frontend/components/settings/SettingsTabs.svelte#L27) — settingsTab.set("profiles")
-- [src/frontend/components/settings/SettingsTabs.svelte:37](../../../../src/frontend/components/settings/SettingsTabs.svelte#L37) — settingsTab.set(activeTabs[nextTab] \|\| "profiles")
+- [src/frontend/components/settings/SettingsTabs.svelte:37](../../../../src/frontend/components/settings/SettingsTabs.svelte#L37) — settingsTab.set(activeTabs&#91;nextTab&#93; \|\| "profiles")
 - [src/frontend/components/settings/tabs/Outputs.svelte:108](../../../../src/frontend/components/settings/tabs/Outputs.svelte#L108) — settingsTab.set("styles")
 - [src/frontend/components/stage/StageLayout.svelte:141](../../../../src/frontend/components/stage/StageLayout.svelte#L141) — settingsTab.set("display_settings")
 

@@ -1,0 +1,23 @@
+[
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":609,"endLine":609,"text":"// media","start":20858,"end":20866},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":612,"endLine":612,"text":"// audio","start":21063,"end":21071},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":614,"endLine":614,"text":"// overlays","start":21197,"end":21208},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":616,"endLine":616,"text":"// calendar","start":21274,"end":21285},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":618,"endLine":618,"text":"// functions","start":21363,"end":21375},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":626,"endLine":626,"text":"// WIP categories etc.?","start":21679,"end":21702},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":631,"endLine":631,"text":"// general manage","start":21769,"end":21786},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":637,"endLine":637,"text":"//","start":22175,"end":22177},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":640,"endLine":640,"text":"// CREATE NEW","start":22365,"end":22378},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":652,"endLine":652,"text":"// custom (no popup)","start":23524,"end":23544},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":658,"endLine":658,"text":"// logs","start":24070,"end":24077},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":689,"endLine":689,"text":"// { id: \"other\", name: \"settings.other\", icon: \"other\" }","start":25730,"end":25787},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":697,"endLine":697,"text":"// Docs About","start":25873,"end":25886},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":704,"endLine":704,"text":"// Docs Help","start":26447,"end":26459},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":721,"endLine":721,"text":"// GitHub","start":28893,"end":28902},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":727,"endLine":727,"text":"// Videos (Garry B Jr.)","start":29774,"end":29797},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":833,"endLine":833,"text":"// return translateNames(faq)","start":40033,"end":40062},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":837,"endLine":837,"text":"// { id: \"verse\", name: \"new.slide\", icon: \"add\", data: { globalGroup: { group: \"\", color: null, globalGroup: \"verse\", settings: {}, notes: \"\", items: [] } } },","start":40092,"end":40252},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":842,"endLine":842,"text":"// { id: \"media\", name: \"tools.media\", icon: \"media\", data: { toolsTab: \"media\" } },","start":40532,"end":40616},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":865,"endLine":865,"text":"// templates ?","start":42005,"end":42019},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":875,"endLine":875,"text":"// edit page specific: chords, dynamic values, conditions","start":42288,"end":42345}
+]

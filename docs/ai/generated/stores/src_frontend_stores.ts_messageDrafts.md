@@ -13,7 +13,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 ## Writes
 
-- [src/frontend/components/output/messages/MessagesPanel.svelte:73](../../../../src/frontend/components/output/messages/MessagesPanel.svelte#L73) — messageDrafts.update((drafts) => ({ ...drafts, [$activeMessage]: { ...drafts[$activeMessage], [id]: value } }))
+- [src/frontend/components/output/messages/MessagesPanel.svelte:73](../../../../src/frontend/components/output/messages/MessagesPanel.svelte#L73) — messageDrafts.update((drafts) => ({ ...drafts, &#91;$activeMessage&#93;: { ...drafts&#91;$activeMessage&#93;, &#91;id&#93;: value } }))
 
 ## Transport
 

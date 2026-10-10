@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/settings/tabs/AudioRouting.svelte:163](../../../../src/frontend/components/settings/tabs/AudioRouting.svelte#L163) — $audioEffects[m.id]
+- [src/frontend/components/settings/tabs/AudioRouting.svelte:163](../../../../src/frontend/components/settings/tabs/AudioRouting.svelte#L163) — $audioEffects&#91;m.id&#93;
 
 ## Writes
 

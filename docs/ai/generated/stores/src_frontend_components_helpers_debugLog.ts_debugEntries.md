@@ -17,7 +17,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 ## Writes
 
 - [src/frontend/components/helpers/debugLog.ts:65](../../../../src/frontend/components/helpers/debugLog.ts#L65) — debugEntries.set(buffer.slice().sort((a, b) => a.time - b.time))
-- [src/frontend/components/helpers/debugLog.ts:71](../../../../src/frontend/components/helpers/debugLog.ts#L71) — debugEntries.set([])
+- [src/frontend/components/helpers/debugLog.ts:71](../../../../src/frontend/components/helpers/debugLog.ts#L71) — debugEntries.set(&#91;&#93;)
 
 ## Transport
 

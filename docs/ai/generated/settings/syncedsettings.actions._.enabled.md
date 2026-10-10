@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/context/menuClick.ts:1289](../../../../src/frontend/components/context/menuClick.ts#L1289) — get(actions)[obj.sel.data[0]?.id].enabled
+- [src/frontend/components/context/menuClick.ts:1289](../../../../src/frontend/components/context/menuClick.ts#L1289) — get(actions)&#91;obj.sel.data&#91;0&#93;?.id&#93;.enabled
 
 ## Writes
 

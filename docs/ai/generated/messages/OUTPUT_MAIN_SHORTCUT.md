@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/frontend/utils/receivers.ts:170](../../../../src/frontend/utils/receivers.ts#L170) — electron/other renderer → renderer; MAIN_SHORTCUT: (data: { key: string }) => { if (previewShortcuts[data.key]) { previewShortcuts[data.key]({ ...data, preventDefault: () => "" }) 
+- [src/frontend/utils/receivers.ts:170](../../../../src/frontend/utils/receivers.ts#L170) — electron/other renderer → renderer; MAIN_SHORTCUT: (data: { key: string }) => { if (previewShortcuts&#91;data.key&#93;) { previewShortcuts&#91;data.key&#93;({ ...data, preventDefault: () => "" }) 

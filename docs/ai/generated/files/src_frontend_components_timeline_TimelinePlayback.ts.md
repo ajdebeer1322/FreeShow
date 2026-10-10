@@ -53,8 +53,8 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/timeline/TimelinePlayback.ts:92](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L92) — timer-a34ef49c0d3e1d70: setTimeout = 0 ms (omitted); 
+- [src/frontend/components/timeline/TimelinePlayback.ts:92](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L92) — timer-a34ef49c0d3e1d70: setTimeout = 0 ms (omitted); // update item styles to state 0 // opening a slide timeline will reset the playing timeline because of this
 
 ## Workarounds
 
-No static evidence found.
+- [src/frontend/components/timeline/TimelinePlayback.ts:226](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L226) — workaround-35364f4fbb849c4d: // WIP set max duration to audio length if any (and no futher actions)

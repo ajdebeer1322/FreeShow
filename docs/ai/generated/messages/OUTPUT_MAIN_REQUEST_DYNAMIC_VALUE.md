@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/frontend/utils/receivers.ts:177](../../../../src/frontend/utils/receivers.ts#L177) — electron/other renderer → renderer; MAIN_REQUEST_DYNAMIC_VALUE: (data: { dynamicId: string }) => { if (!data?.dynamicId) return send(OUTPUT, ["REQUEST_DYNAMIC_VALUE"], { dynamicId:
+- [src/frontend/utils/receivers.ts:177](../../../../src/frontend/utils/receivers.ts#L177) — electron/other renderer → renderer; MAIN_REQUEST_DYNAMIC_VALUE: (data: { dynamicId: string }) => { if (!data?.dynamicId) return send(OUTPUT, &#91;"REQUEST_DYNAMIC_VALUE"&#93;, { dynamicId:

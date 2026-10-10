@@ -14,8 +14,8 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 ## Writes
 
-- [src/frontend/components/edit/EditTools.svelte:121](../../../../src/frontend/components/edit/EditTools.svelte#L121) — copyPasteEdit.update((a) => { a[type] = styles return a })
-- [src/frontend/components/edit/EditTools.svelte:130](../../../../src/frontend/components/edit/EditTools.svelte#L130) — copyPasteEdit.update((a) => { delete a[type] return a })
+- [src/frontend/components/edit/EditTools.svelte:121](../../../../src/frontend/components/edit/EditTools.svelte#L121) — copyPasteEdit.update((a) => { a&#91;type&#93; = styles return a })
+- [src/frontend/components/edit/EditTools.svelte:130](../../../../src/frontend/components/edit/EditTools.svelte#L130) — copyPasteEdit.update((a) => { delete a&#91;type&#93; return a })
 
 ## Transport
 

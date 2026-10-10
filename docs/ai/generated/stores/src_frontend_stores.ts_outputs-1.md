@@ -150,7 +150,7 @@ Saved: yes, with the listed transformations.
 - [src/frontend/components/helpers/debugLog.ts:200](../../../../src/frontend/components/helpers/debugLog.ts#L200) — get(outputs)
 - [src/frontend/components/helpers/debugLog.ts:216](../../../../src/frontend/components/helpers/debugLog.ts#L216) — get(outputs)
 - [src/frontend/components/helpers/debugLog.ts:296](../../../../src/frontend/components/helpers/debugLog.ts#L296) — get(outputs)
-- [src/frontend/components/helpers/debugLog.ts:300](../../../../src/frontend/components/helpers/debugLog.ts#L300) — outputs.subscribe((all) => { Object.keys(all \|\| {}).forEach((id) => { if (all[id].stageOutput) return const now = snapshot(id) if (previous[id] === now) return if (previous[id] !==
+- [src/frontend/components/helpers/debugLog.ts:300](../../../../src/frontend/components/helpers/debugLog.ts#L300) — outputs.subscribe((all) => { Object.keys(all \|\| {}).forEach((id) => { if (all&#91;id&#93;.stageOutput) return const now = snapshot(id) if (previous&#91;id&#93; === now) return if (previous&#91;id&#93; !==
 - [src/frontend/components/helpers/debugState.ts:62](../../../../src/frontend/components/helpers/debugState.ts#L62) — get(outputs)
 - [src/frontend/components/helpers/drop.test.ts:96](../../../../src/frontend/components/helpers/drop.test.ts#L96) — get(outputs)
 - [src/frontend/components/helpers/drop.test.ts:102](../../../../src/frontend/components/helpers/drop.test.ts#L102) — get(outputs)
@@ -163,7 +163,7 @@ Saved: yes, with the listed transformations.
 - [src/frontend/components/helpers/messageOutput.ts:14](../../../../src/frontend/components/helpers/messageOutput.ts#L14) — get(outputs)
 - [src/frontend/components/helpers/messageOutput.ts:19](../../../../src/frontend/components/helpers/messageOutput.ts#L19) — get(outputs)
 - [src/frontend/components/helpers/messageOutput.ts:25](../../../../src/frontend/components/helpers/messageOutput.ts#L25) — get(outputs)
-- [src/frontend/components/helpers/messageOutput.ts:43](../../../../src/frontend/components/helpers/messageOutput.ts#L43) — outputs.subscribe((outs) => { const current = new Set<string>() Object.entries(outs).forEach(([outputId, output]) => { Object.entries(output.out?.messages \|\| {}).forEach(([id, mess
+- [src/frontend/components/helpers/messageOutput.ts:43](../../../../src/frontend/components/helpers/messageOutput.ts#L43) — outputs.subscribe((outs) => { const current = new Set<string>() Object.entries(outs).forEach((&#91;outputId, output&#93;) => { Object.entries(output.out?.messages \|\| {}).forEach((&#91;id, mess
 - [src/frontend/components/helpers/messageOutput.ts:55](../../../../src/frontend/components/helpers/messageOutput.ts#L55) — get(outputs)
 - [src/frontend/components/helpers/messageOutput.ts:56](../../../../src/frontend/components/helpers/messageOutput.ts#L56) — get(outputs)
 - [src/frontend/components/helpers/messages.test.ts:169](../../../../src/frontend/components/helpers/messages.test.ts#L169) — get(outputs)

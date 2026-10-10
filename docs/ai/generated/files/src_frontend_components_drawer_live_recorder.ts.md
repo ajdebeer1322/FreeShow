@@ -40,7 +40,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/drawer/live/recorder.ts:139](../../../../src/frontend/components/drawer/live/recorder.ts#L139) — timer-5f62799f6bff8b0d: setInterval = 100 ms (100); 
+- [src/frontend/components/drawer/live/recorder.ts:139](../../../../src/frontend/components/drawer/live/recorder.ts#L139) — timer-5f62799f6bff8b0d: setInterval = 100 ms (100); // Start capture in Electron // Redraw keepalive interval so MediaRecorder receives frames smoothly even on static slides
 
 ## Workarounds
 

@@ -10,10 +10,10 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/context/ContextItem.svelte:74](../../../../src/frontend/components/context/ContextItem.svelte#L74) — $outputs[outputId]?.stageOutput
-- [src/frontend/components/context/ContextItem.svelte:92](../../../../src/frontend/components/context/ContextItem.svelte#L92) — $outputs[outputId]?.stageOutput
-- [src/frontend/components/output/preview/MultiOutputs.svelte:108](../../../../src/frontend/components/output/preview/MultiOutputs.svelte#L108) — $outputs[outputId]?.stageOutput
-- [src/frontend/components/output/preview/PreviewOutput.svelte:22](../../../../src/frontend/components/output/preview/PreviewOutput.svelte#L22) — $outputs[outputId]?.stageOutput
+- [src/frontend/components/context/ContextItem.svelte:74](../../../../src/frontend/components/context/ContextItem.svelte#L74) — $outputs&#91;outputId&#93;?.stageOutput
+- [src/frontend/components/context/ContextItem.svelte:92](../../../../src/frontend/components/context/ContextItem.svelte#L92) — $outputs&#91;outputId&#93;?.stageOutput
+- [src/frontend/components/output/preview/MultiOutputs.svelte:108](../../../../src/frontend/components/output/preview/MultiOutputs.svelte#L108) — $outputs&#91;outputId&#93;?.stageOutput
+- [src/frontend/components/output/preview/PreviewOutput.svelte:22](../../../../src/frontend/components/output/preview/PreviewOutput.svelte#L22) — $outputs&#91;outputId&#93;?.stageOutput
 
 ## Writes
 

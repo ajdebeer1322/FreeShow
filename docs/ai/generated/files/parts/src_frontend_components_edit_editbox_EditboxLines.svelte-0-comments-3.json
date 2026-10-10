@@ -1,0 +1,4 @@
+[
+  {"file":"src/frontend/components/edit/editbox/EditboxLines.svelte","line":920,"endLine":922,"text":"/* min-height: 100px;\n  min-width: 100px;\n  display: inline-table; */","start":37464,"end":37533},
+  {"file":"src/frontend/components/edit/editbox/EditboxLines.svelte","line":925,"endLine":925,"text":"/* bible parts */","start":37545,"end":37562}
+]

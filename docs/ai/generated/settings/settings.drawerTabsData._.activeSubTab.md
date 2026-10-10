@@ -10,9 +10,9 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/drawer/Content.svelte:22](../../../../src/frontend/components/drawer/Content.svelte#L22) — $drawerTabsData[id]?.activeSubTab
-- [src/frontend/components/helpers/dropActions.ts:503](../../../../src/frontend/components/helpers/dropActions.ts#L503) — get(drawerTabsData)[get(activeDrawerTab)]?.activeSubTab
-- [src/frontend/components/helpers/historyHelpers.ts:26](../../../../src/frontend/components/helpers/historyHelpers.ts#L26) — get(drawerTabsData)[tabId]?.activeSubTab
+- [src/frontend/components/drawer/Content.svelte:22](../../../../src/frontend/components/drawer/Content.svelte#L22) — $drawerTabsData&#91;id&#93;?.activeSubTab
+- [src/frontend/components/helpers/dropActions.ts:503](../../../../src/frontend/components/helpers/dropActions.ts#L503) — get(drawerTabsData)&#91;get(activeDrawerTab)&#93;?.activeSubTab
+- [src/frontend/components/helpers/historyHelpers.ts:26](../../../../src/frontend/components/helpers/historyHelpers.ts#L26) — get(drawerTabsData)&#91;tabId&#93;?.activeSubTab
 
 ## Writes
 

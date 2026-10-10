@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:58](../../../../src/electron/IPC/responsesMain.ts#L58) — renderer/client → electron; [Main.DEVICE_ID]: () => getMachineId()
+- [src/electron/IPC/responsesMain.ts:58](../../../../src/electron/IPC/responsesMain.ts#L58) — renderer/client → electron; &#91;Main.DEVICE_ID&#93;: () => getMachineId()

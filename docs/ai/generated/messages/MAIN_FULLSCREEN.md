@@ -13,4 +13,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:81](../../../../src/electron/IPC/responsesMain.ts#L81) — renderer/client → electron; [Main.FULLSCREEN]: () => getMainWindow()?.setFullScreen(!getMainWindow()?.isFullScreen())
+- [src/electron/IPC/responsesMain.ts:81](../../../../src/electron/IPC/responsesMain.ts#L81) — renderer/client → electron; &#91;Main.FULLSCREEN&#93;: () => getMainWindow()?.setFullScreen(!getMainWindow()?.isFullScreen())

@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:120](../../../../src/electron/IPC/responsesMain.ts#L120) — renderer/client → electron; [Main.OUTPUT]: (_, e) => (e.sender.id === getMainWindow()?.webContents.id ? "false" : "true")
+- [src/electron/IPC/responsesMain.ts:120](../../../../src/electron/IPC/responsesMain.ts#L120) — renderer/client → electron; &#91;Main.OUTPUT&#93;: (_, e) => (e.sender.id === getMainWindow()?.webContents.id ? "false" : "true")

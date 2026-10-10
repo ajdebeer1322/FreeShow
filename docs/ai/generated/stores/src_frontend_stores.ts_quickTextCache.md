@@ -15,7 +15,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 ## Writes
 
-- [src/frontend/components/drawer/Drawer.svelte:195](../../../../src/frontend/components/drawer/Drawer.svelte#L195) — quickTextCache.set({ name: name[0]?.toUpperCase() + name.slice(1), text: "", fromSearch: true })
+- [src/frontend/components/drawer/Drawer.svelte:195](../../../../src/frontend/components/drawer/Drawer.svelte#L195) — quickTextCache.set({ name: name&#91;0&#93;?.toUpperCase() + name.slice(1), text: "", fromSearch: true })
 - [src/frontend/components/main/popups/createShow/CreateShow.svelte:28](../../../../src/frontend/components/main/popups/createShow/CreateShow.svelte#L28) — quickTextCache.set({ name: values.name, text: values.text })
 - [src/frontend/components/main/popups/createShow/CreateShow.svelte:36](../../../../src/frontend/components/main/popups/createShow/CreateShow.svelte#L36) — quickTextCache.set({ name: values.name, text: values.text })
 - [src/frontend/components/main/popups/createShow/CreateShow.svelte:159](../../../../src/frontend/components/main/popups/createShow/CreateShow.svelte#L159) — quickTextCache.set({ name: "", text: "" })

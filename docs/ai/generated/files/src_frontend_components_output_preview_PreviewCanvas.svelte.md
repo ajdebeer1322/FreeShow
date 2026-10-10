@@ -20,7 +20,7 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/output/preview/PreviewCanvas.svelte:27](../../../../src/frontend/components/output/preview/PreviewCanvas.svelte#L27) — timer-274e846139f7ad26: setTimeout = 100 ms (100); // send(OUTPUT, ["PREVIEW_RESOLUTION"], { id, size: { width: canvas.width, height: canvas.height } })
+- [src/frontend/components/output/preview/PreviewCanvas.svelte:27](../../../../src/frontend/components/output/preview/PreviewCanvas.svelte#L27) — timer-274e846139f7ad26: setTimeout = 100 ms (100); // send(OUTPUT, &#91;"PREVIEW_RESOLUTION"&#93;, { id, size: { width: canvas.width, height: canvas.height } })
 
 ## Workarounds
 

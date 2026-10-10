@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/frontend/IPC/responsesMain.ts:558](../../../../src/frontend/IPC/responsesMain.ts#L558) — electron/other renderer → renderer; pdf: () => { const paths = mainData as string[] paths.forEach((path) => sendMain(Main.PDF_TO_IMAGE, { filePath: path })) // remove any PDFs with
+- [src/frontend/IPC/responsesMain.ts:558](../../../../src/frontend/IPC/responsesMain.ts#L558) — electron/other renderer → renderer; pdf: () => { const paths = mainData as string&#91;&#93; paths.forEach((path) => sendMain(Main.PDF_TO_IMAGE, { filePath: path })) // remove any PDFs with

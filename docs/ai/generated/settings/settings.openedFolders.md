@@ -6,8 +6,8 @@ Store: src/frontend/stores.ts#openedFolders.
 
 ## Definitions
 
-- [src/electron/data/defaults.ts:32](../../../../src/electron/data/defaults.ts#L32) — ["default"]
-- [src/frontend/stores.ts:249](../../../../src/frontend/stores.ts#L249) — []
+- [src/electron/data/defaults.ts:32](../../../../src/electron/data/defaults.ts#L32) — &#91;"default"&#93;
+- [src/frontend/stores.ts:249](../../../../src/frontend/stores.ts#L249) — &#91;&#93;
 
 ## Reads
 
@@ -31,10 +31,10 @@ Store: src/frontend/stores.ts#openedFolders.
 
 ## Writes
 
-- [src/frontend/components/helpers/historyHelpers.ts:83](../../../../src/frontend/components/helpers/historyHelpers.ts#L83) — openedFolders.update((a) => { let parentFolder = data.parent while (parentFolder !== "/" && get(folders)[parentFolder]) { if (!a.includes(parentFolder)) a.push(parentFolder) parent
-- [src/frontend/components/helpers/historyHelpers.ts:113](../../../../src/frontend/components/helpers/historyHelpers.ts#L113) — openedFolders.update((a) => { let parentFolder = data.parent while (parentFolder !== "/" && get(folders)[parentFolder]) { if (!a.includes(parentFolder)) a.push(parentFolder) parent
+- [src/frontend/components/helpers/historyHelpers.ts:83](../../../../src/frontend/components/helpers/historyHelpers.ts#L83) — openedFolders.update((a) => { let parentFolder = data.parent while (parentFolder !== "/" && get(folders)&#91;parentFolder&#93;) { if (!a.includes(parentFolder)) a.push(parentFolder) parent
+- [src/frontend/components/helpers/historyHelpers.ts:113](../../../../src/frontend/components/helpers/historyHelpers.ts#L113) — openedFolders.update((a) => { let parentFolder = data.parent while (parentFolder !== "/" && get(folders)&#91;parentFolder&#93;) { if (!a.includes(parentFolder)) a.push(parentFolder) parent
 - [src/frontend/components/helpers/historyHelpers.ts:145](../../../../src/frontend/components/helpers/historyHelpers.ts#L145) — openedFolders.update((a) => { a.splice(a.indexOf(id), 1) return a })
-- [src/frontend/components/show/ProjectList.svelte:32](../../../../src/frontend/components/show/ProjectList.svelte#L32) — openedFolders.set([...new Set($openedFolders.filter((id) => $folders[id]))])
+- [src/frontend/components/show/ProjectList.svelte:32](../../../../src/frontend/components/show/ProjectList.svelte#L32) — openedFolders.set(&#91;...new Set($openedFolders.filter((id) => $folders&#91;id&#93;))&#93;)
 - [src/frontend/components/show/ProjectList.svelte:117](../../../../src/frontend/components/show/ProjectList.svelte#L117) — openedFolders.set(spliced)
-- [src/frontend/components/show/ProjectList.svelte:120](../../../../src/frontend/components/show/ProjectList.svelte#L120) — openedFolders.set([...$openedFolders, project.id])
+- [src/frontend/components/show/ProjectList.svelte:120](../../../../src/frontend/components/show/ProjectList.svelte#L120) — openedFolders.set(&#91;...$openedFolders, project.id&#93;)
 - [src/frontend/utils/updateSettings.ts:363](../../../../src/frontend/utils/updateSettings.ts#L363) — openedFolders.set(v)

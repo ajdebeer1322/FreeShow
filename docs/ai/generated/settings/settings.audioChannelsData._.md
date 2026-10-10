@@ -10,15 +10,15 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/audio/routing/audioRoutingManager.ts:216](../../../../src/frontend/audio/routing/audioRoutingManager.ts#L216) — get(audioChannelsData)[id]
-- [src/frontend/audio/routing/audioRoutingManager.ts:262](../../../../src/frontend/audio/routing/audioRoutingManager.ts#L262) — get(audioChannelsData)[id]
-- [src/frontend/audio/routing/audioRoutingManager.ts:748](../../../../src/frontend/audio/routing/audioRoutingManager.ts#L748) — get(audioChannelsData)[channelId]
-- [src/frontend/components/actions/apiHelper.ts:837](../../../../src/frontend/components/actions/apiHelper.ts#L837) — get(audioChannelsData)[chId]
-- [src/frontend/components/actions/apiHelper.ts:865](../../../../src/frontend/components/actions/apiHelper.ts#L865) — get(audioChannelsData)[channelId]
-- [src/frontend/components/drawer/audio/AudioChannelMixer.svelte:16](../../../../src/frontend/components/drawer/audio/AudioChannelMixer.svelte#L16) — $audioChannelsData[channelId]
-- [src/frontend/components/drawer/audio/AudioMeter.svelte:13](../../../../src/frontend/components/drawer/audio/AudioMeter.svelte#L13) — $audioChannelsData[channelId]
-- [src/frontend/components/main/popups/NodeOptions.svelte:18](../../../../src/frontend/components/main/popups/NodeOptions.svelte#L18) — $audioChannelsData[nodeId]
-- [src/frontend/components/settings/tabs/AudioRouting.svelte:161](../../../../src/frontend/components/settings/tabs/AudioRouting.svelte#L161) — get(audioChannelsData)[m.id]
+- [src/frontend/audio/routing/audioRoutingManager.ts:216](../../../../src/frontend/audio/routing/audioRoutingManager.ts#L216) — get(audioChannelsData)&#91;id&#93;
+- [src/frontend/audio/routing/audioRoutingManager.ts:262](../../../../src/frontend/audio/routing/audioRoutingManager.ts#L262) — get(audioChannelsData)&#91;id&#93;
+- [src/frontend/audio/routing/audioRoutingManager.ts:748](../../../../src/frontend/audio/routing/audioRoutingManager.ts#L748) — get(audioChannelsData)&#91;channelId&#93;
+- [src/frontend/components/actions/apiHelper.ts:837](../../../../src/frontend/components/actions/apiHelper.ts#L837) — get(audioChannelsData)&#91;chId&#93;
+- [src/frontend/components/actions/apiHelper.ts:865](../../../../src/frontend/components/actions/apiHelper.ts#L865) — get(audioChannelsData)&#91;channelId&#93;
+- [src/frontend/components/drawer/audio/AudioChannelMixer.svelte:16](../../../../src/frontend/components/drawer/audio/AudioChannelMixer.svelte#L16) — $audioChannelsData&#91;channelId&#93;
+- [src/frontend/components/drawer/audio/AudioMeter.svelte:13](../../../../src/frontend/components/drawer/audio/AudioMeter.svelte#L13) — $audioChannelsData&#91;channelId&#93;
+- [src/frontend/components/main/popups/NodeOptions.svelte:18](../../../../src/frontend/components/main/popups/NodeOptions.svelte#L18) — $audioChannelsData&#91;nodeId&#93;
+- [src/frontend/components/settings/tabs/AudioRouting.svelte:161](../../../../src/frontend/components/settings/tabs/AudioRouting.svelte#L161) — get(audioChannelsData)&#91;m.id&#93;
 
 ## Writes
 

@@ -36,16 +36,16 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 - [src/frontend/components/slide/Slide.svelte:100](../../../../src/frontend/components/slide/Slide.svelte#L100) — $playerVideos
 - [src/frontend/components/system/Player.svelte:14](../../../../src/frontend/components/system/Player.svelte#L14) — $playerVideos
 - [src/frontend/components/system/Player.svelte:22](../../../../src/frontend/components/system/Player.svelte#L22) — $playerVideos
-- [src/frontend/utils/listeners.ts:224](../../../../src/frontend/utils/listeners.ts#L224) — playerVideos.subscribe((data) => { send(OUTPUT, ["PLAYER_VIDEOS"], data) })
+- [src/frontend/utils/listeners.ts:224](../../../../src/frontend/utils/listeners.ts#L224) — playerVideos.subscribe((data) => { send(OUTPUT, &#91;"PLAYER_VIDEOS"&#93;, data) })
 - [src/frontend/utils/remoteTalk.ts:151](../../../../src/frontend/utils/remoteTalk.ts#L151) — get(playerVideos)
 
 ## Writes
 
-- [src/frontend/components/context/menuClick.ts:654](../../../../src/frontend/components/context/menuClick.ts#L654) — playerVideos.update((a) => { if (a[id]) a[id].tags = tags return a })
+- [src/frontend/components/context/menuClick.ts:654](../../../../src/frontend/components/context/menuClick.ts#L654) — playerVideos.update((a) => { if (a&#91;id&#93;) a&#91;id&#93;.tags = tags return a })
 - [src/frontend/components/drawer/Label.svelte:37](../../../../src/frontend/components/drawer/Label.svelte#L37) — playerVideos.update((a) => setName(a, c))
-- [src/frontend/components/drawer/player/PlayerVideos.svelte:62](../../../../src/frontend/components/drawer/player/PlayerVideos.svelte#L62) — playerVideos.update((a) => { if (!a[id]) return a if (key === "tags") { a[id].tags = [] } return a })
-- [src/frontend/components/helpers/dropActions.ts:691](../../../../src/frontend/components/helpers/dropActions.ts#L691) — playerVideos.update((a) => { a[rid!] = { id: videoId, name, type: videoType! } return a })
-- [src/frontend/components/main/popups/CreatePlayer.svelte:21](../../../../src/frontend/components/main/popups/CreatePlayer.svelte#L21) — playerVideos.update((a) => { a[currentId] = newData return a })
+- [src/frontend/components/drawer/player/PlayerVideos.svelte:62](../../../../src/frontend/components/drawer/player/PlayerVideos.svelte#L62) — playerVideos.update((a) => { if (!a&#91;id&#93;) return a if (key === "tags") { a&#91;id&#93;.tags = &#91;&#93; } return a })
+- [src/frontend/components/helpers/dropActions.ts:691](../../../../src/frontend/components/helpers/dropActions.ts#L691) — playerVideos.update((a) => { a&#91;rid!&#93; = { id: videoId, name, type: videoType! } return a })
+- [src/frontend/components/main/popups/CreatePlayer.svelte:21](../../../../src/frontend/components/main/popups/CreatePlayer.svelte#L21) — playerVideos.update((a) => { a&#91;currentId&#93; = newData return a })
 - [src/frontend/utils/receivers.ts:265](../../../../src/frontend/utils/receivers.ts#L265) — playerVideos.set(a)
 - [src/frontend/utils/updateSettings.ts:366](../../../../src/frontend/utils/updateSettings.ts#L366) — playerVideos.set(v)
 

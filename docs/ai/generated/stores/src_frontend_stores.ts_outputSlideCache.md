@@ -13,7 +13,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 - [src/frontend/components/show/Slides.svelte:322](../../../../src/frontend/components/show/Slides.svelte#L322) — $outputSlideCache
 - [src/frontend/components/stage/Stagebox.svelte:221](../../../../src/frontend/components/stage/Stagebox.svelte#L221) — $outputSlideCache
 - [src/frontend/components/stage/stage.ts:155](../../../../src/frontend/components/stage/stage.ts#L155) — get(outputSlideCache)
-- [src/frontend/utils/listeners.ts:283](../../../../src/frontend/utils/listeners.ts#L283) — outputSlideCache.subscribe(async (a) => { if (await hasNewerUpdate("LISTENER_SLIDE_CACHE", 50)) return send(OUTPUT, ["OUT_SLIDE_CACHE"], a) send(STAGE, ["OUT_SLIDE_CACHE"], a) })
+- [src/frontend/utils/listeners.ts:283](../../../../src/frontend/utils/listeners.ts#L283) — outputSlideCache.subscribe(async (a) => { if (await hasNewerUpdate("LISTENER_SLIDE_CACHE", 50)) return send(OUTPUT, &#91;"OUT_SLIDE_CACHE"&#93;, a) send(STAGE, &#91;"OUT_SLIDE_CACHE"&#93;, a) })
 
 ## Writes
 

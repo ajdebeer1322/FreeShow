@@ -82,3 +82,8 @@ No static evidence found.
 ## Workarounds
 
 - [src/frontend/components/helpers/dropActions.ts:224](../../../../src/frontend/components/helpers/dropActions.ts#L224) — workaround-3bb671b00db17792: // WIP no URLs for now!
+- [src/frontend/components/helpers/dropActions.ts:609](../../../../src/frontend/components/helpers/dropActions.ts#L609) — workaround-9580f7a0bce1cbe0: // WIP drop .show/.json into show categories???
+- [src/frontend/components/helpers/dropActions.ts:610](../../../../src/frontend/components/helpers/dropActions.ts#L610) — workaround-e0c951643ed827ba: // WIP drop .template
+- [src/frontend/components/helpers/dropActions.ts:611](../../../../src/frontend/components/helpers/dropActions.ts#L611) — workaround-24648a056c3dc244: // WIP drop bibles??
+- [src/frontend/components/helpers/dropActions.ts:1039](../../../../src/frontend/components/helpers/dropActions.ts#L1039) — workaround-73af15c929afb0d4: // WIP duplicate of global_group
+- [src/frontend/components/helpers/dropActions.ts:1145](../../../../src/frontend/components/helpers/dropActions.ts#L1145) — workaround-d37a5b5c7c33a829: // WIP not in use:

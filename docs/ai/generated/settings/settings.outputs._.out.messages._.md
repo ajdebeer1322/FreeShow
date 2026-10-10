@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/helpers/messageOutput.ts:55](../../../../src/frontend/components/helpers/messageOutput.ts#L55) — get(outputs)[outputId]?.out?.messages?.[id]
+- [src/frontend/components/helpers/messageOutput.ts:55](../../../../src/frontend/components/helpers/messageOutput.ts#L55) — get(outputs)&#91;outputId&#93;?.out?.messages?.&#91;id&#93;
 
 ## Writes
 

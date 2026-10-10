@@ -47,10 +47,10 @@ Store: src/frontend/stores.ts#cloudSyncData.
 
 ## Writes
 
-- [src/frontend/components/main/popups/CloudMethod.svelte:24](../../../../src/frontend/components/main/popups/CloudMethod.svelte#L24) — cloudSyncData.update((a) => { a[key] = value return a })
+- [src/frontend/components/main/popups/CloudMethod.svelte:24](../../../../src/frontend/components/main/popups/CloudMethod.svelte#L24) — cloudSyncData.update((a) => { a&#91;key&#93; = value return a })
 - [src/frontend/components/main/popups/CloudMethod.svelte:37](../../../../src/frontend/components/main/popups/CloudMethod.svelte#L37) — cloudSyncData.set({})
 - [src/frontend/components/settings/tabs/Connection.svelte:119](../../../../src/frontend/components/settings/tabs/Connection.svelte#L119) — cloudSyncData.set({ enabled: false, id: "churchApps" })
-- [src/frontend/components/settings/tabs/Files.svelte:183](../../../../src/frontend/components/settings/tabs/Files.svelte#L183) — cloudSyncData.update((a) => { a[key] = value return a })
+- [src/frontend/components/settings/tabs/Files.svelte:183](../../../../src/frontend/components/settings/tabs/Files.svelte#L183) — cloudSyncData.update((a) => { a&#91;key&#93; = value return a })
 - [src/frontend/components/settings/tabs/Files.svelte:194](../../../../src/frontend/components/settings/tabs/Files.svelte#L194) — cloudSyncData.set({})
 - [src/frontend/components/settings/tabs/Files.svelte:204](../../../../src/frontend/components/settings/tabs/Files.svelte#L204) — cloudSyncData.set({ enabled, id: "churchApps" })
 - [src/frontend/components/settings/tabs/Files.svelte:220](../../../../src/frontend/components/settings/tabs/Files.svelte#L220) — cloudSyncData.set({})

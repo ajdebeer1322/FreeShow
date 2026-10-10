@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:78](../../../../src/electron/IPC/responsesMain.ts#L78) — renderer/client → electron; [Main.MAXIMIZE]: () => maximizeMain()
+- [src/electron/IPC/responsesMain.ts:78](../../../../src/electron/IPC/responsesMain.ts#L78) — renderer/client → electron; &#91;Main.MAXIMIZE&#93;: () => maximizeMain()

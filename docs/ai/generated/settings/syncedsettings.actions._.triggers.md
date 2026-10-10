@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/actions/actions.ts:228](../../../../src/frontend/components/actions/actions.ts#L228) — get(actions)[id]?.triggers
+- [src/frontend/components/actions/actions.ts:228](../../../../src/frontend/components/actions/actions.ts#L228) — get(actions)&#91;id&#93;?.triggers
 
 ## Writes
 

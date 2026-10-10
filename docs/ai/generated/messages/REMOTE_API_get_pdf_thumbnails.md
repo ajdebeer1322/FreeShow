@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/server/remote/util/receiver.ts:396](../../../../src/server/remote/util/receiver.ts#L396) — desktop → browser client; "API:get_pdf_thumbnails": (data: { path: string; pages: string[] }) => { _update("pdfPages", data.path, data.pages) }
+- [src/server/remote/util/receiver.ts:396](../../../../src/server/remote/util/receiver.ts#L396) — desktop → browser client; "API:get_pdf_thumbnails": (data: { path: string; pages: string&#91;&#93; }) => { _update("pdfPages", data.path, data.pages) }

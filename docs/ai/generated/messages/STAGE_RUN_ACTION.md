@@ -13,4 +13,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/frontend/utils/stageTalk.ts:212](../../../../src/frontend/utils/stageTalk.ts#L212) — electron/other renderer → renderer; RUN_ACTION: (a: { id: string }, connectionId: string) => { const stageId = get(connections).STAGE?.[connectionId]?.active const hasPassword = Ob
+- [src/frontend/utils/stageTalk.ts:212](../../../../src/frontend/utils/stageTalk.ts#L212) — electron/other renderer → renderer; RUN_ACTION: (a: { id: string }, connectionId: string) => { const stageId = get(connections).STAGE?.&#91;connectionId&#93;?.active const hasPassword = Ob

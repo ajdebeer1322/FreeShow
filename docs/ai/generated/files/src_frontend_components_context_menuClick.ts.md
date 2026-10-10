@@ -152,15 +152,16 @@ No static evidence found.
 ## Timing
 
 - [src/frontend/components/context/menuClick.ts:372](../../../../src/frontend/components/context/menuClick.ts#L372) — timer-37237cf4320ad1d0: setTimeout = 0 ms (omitted); // delete shows from project // wait to delete until after they are removed from project
-- [src/frontend/components/context/menuClick.ts:914](../../../../src/frontend/components/context/menuClick.ts#L914) — timer-19ff709c91345446: setTimeout = 100 ms (100); 
+- [src/frontend/components/context/menuClick.ts:914](../../../../src/frontend/components/context/menuClick.ts#L914) — timer-19ff709c91345446: setTimeout = 100 ms (100); // disable preview output transitions (to prevent visual svelte bug) // should match the outputs list in MultiOutputs.svelte
 - [src/frontend/components/context/menuClick.ts:1027](../../../../src/frontend/components/context/menuClick.ts#L1027) — timer-1ae4d96edb9b2c80: setTimeout = 0 ms (omitted); 
 - [src/frontend/components/context/menuClick.ts:1310](../../../../src/frontend/components/context/menuClick.ts#L1310) — timer-7e3569ede345e12d: setTimeout = 0 ms (omitted); 
 - [src/frontend/components/context/menuClick.ts:1323](../../../../src/frontend/components/context/menuClick.ts#L1323) — timer-ce13f7f9b9b9997a: setTimeout = 0 ms (omitted); 
-- [src/frontend/components/context/menuClick.ts:1357](../../../../src/frontend/components/context/menuClick.ts#L1357) — timer-a05f3e7a6e9ee719: setTimeout = 0 ms (omitted); 
-- [src/frontend/components/context/menuClick.ts:1364](../../../../src/frontend/components/context/menuClick.ts#L1364) — timer-11be31527116f406: setTimeout = 0 ms (omitted); 
+- [src/frontend/components/context/menuClick.ts:1357](../../../../src/frontend/components/context/menuClick.ts#L1357) — timer-a05f3e7a6e9ee719: setTimeout = 0 ms (omitted); // properly set content when edit set to same type as preview, but different id // e.g. overlay opened in preview, then edited,
+- [src/frontend/components/context/menuClick.ts:1364](../../../../src/frontend/components/context/menuClick.ts#L1364) — timer-11be31527116f406: setTimeout = 0 ms (omitted); // should already be "edit"
 - [src/frontend/components/context/menuClick.ts:2517](../../../../src/frontend/components/context/menuClick.ts#L2517) — timer-75ccd6b9c301186d: wait = 10 ms (10); 
 
 ## Workarounds
 
 - [src/frontend/components/context/menuClick.ts:503](../../../../src/frontend/components/context/menuClick.ts#L503) — workaround-a6ece9248d8bae6c: // WIP history
 - [src/frontend/components/context/menuClick.ts:760](../../../../src/frontend/components/context/menuClick.ts#L760) — workaround-a1c5cbd2dd4dc832: // WIP replaced by convertToShow
+- [src/frontend/components/context/menuClick.ts:913](../../../../src/frontend/components/context/menuClick.ts#L913) — workaround-be168cfcf86f7641: // disable preview output transitions (to prevent visual svelte bug)

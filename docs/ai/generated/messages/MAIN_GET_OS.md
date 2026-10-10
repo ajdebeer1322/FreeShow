@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:57](../../../../src/electron/IPC/responsesMain.ts#L57) — renderer/client → electron; [Main.GET_OS]: () => getOS()
+- [src/electron/IPC/responsesMain.ts:57](../../../../src/electron/IPC/responsesMain.ts#L57) — renderer/client → electron; &#91;Main.GET_OS&#93;: () => getOS()

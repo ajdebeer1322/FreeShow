@@ -1,0 +1,18 @@
+[
+  {"file":"src/frontend/components/helpers/show.ts","line":340,"endLine":340,"text":"// update if global group","start":12823,"end":12848},
+  {"file":"src/frontend/components/helpers/show.ts","line":345,"endLine":345,"text":"// get translated name","start":13070,"end":13092},
+  {"file":"src/frontend/components/helpers/show.ts","line":349,"endLine":349,"text":"// update local group","start":13292,"end":13313},
+  {"file":"src/frontend/components/helpers/show.ts","line":362,"endLine":362,"text":"// add numbers to different slides with same name","start":13814,"end":13863},
+  {"file":"src/frontend/components/helpers/show.ts","line":369,"endLine":369,"text":"// find all groups with same name","start":14072,"end":14105},
+  {"file":"src/frontend/components/helpers/show.ts","line":376,"endLine":376,"text":"// sort groups by name","start":14344,"end":14366},
+  {"file":"src/frontend/components/helpers/show.ts","line":388,"endLine":388,"text":"// remove show template","start":14716,"end":14739},
+  {"file":"src/frontend/components/helpers/show.ts","line":397,"endLine":397,"text":"// remove slide template","start":15121,"end":15145},
+  {"file":"src/frontend/components/helpers/show.ts","line":407,"endLine":407,"text":"// remove any slide templates","start":15419,"end":15448},
+  {"file":"src/frontend/components/helpers/show.ts","line":422,"endLine":422,"text":"// a child slide has no \"locked\" state of its own, so check its parent (group) slide","start":15854,"end":15938},
+  {"file":"src/frontend/components/helpers/show.ts","line":429,"endLine":429,"text":"// child slides are stored in the parent slide's \"children\" array","start":16204,"end":16269},
+  {"file":"src/frontend/components/helpers/show.ts","line":455,"endLine":455,"text":"// link two neighbouring slides so they show as one card & activate together (see helpers/slideLinks.ts)","start":17268,"end":17372},
+  {"file":"src/frontend/components/helpers/show.ts","line":465,"endLine":465,"text":"// can't be part of another link","start":17698,"end":17730},
+  {"file":"src/frontend/components/helpers/show.ts","line":480,"endLine":480,"text":"// the outputs a layout slide goes to (its own, otherwise the show's), empty = all outputs","start":18261,"end":18351},
+  {"file":"src/frontend/components/helpers/show.ts","line":485,"endLine":485,"text":"/** Linking needs two slides that go to different outputs, see `haveDifferentOutputs` */","start":18525,"end":18613},
+  {"file":"src/frontend/components/helpers/show.ts","line":512,"endLine":512,"text":"// WIP should be merged with existing functions instead","start":19727,"end":19782}
+]

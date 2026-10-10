@@ -161,3 +161,4 @@ No static evidence found.
 ## Workarounds
 
 - [src/frontend/components/helpers/show.ts:49](../../../../src/frontend/components/helpers/show.ts#L49) — workaround-2e8c8028cceda221: // TODO: disallow chars in labels: #:;!.,- ??
+- [src/frontend/components/helpers/show.ts:512](../../../../src/frontend/components/helpers/show.ts#L512) — workaround-000a55efea267ad2: // WIP should be merged with existing functions instead

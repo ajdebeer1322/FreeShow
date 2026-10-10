@@ -36,7 +36,7 @@ export function json(value) {
     return JSON.stringify(value, null, 2) + "\n"
 }
 export const compact = (value, length = 180) => String(value ?? "").replace(/\s+/g, " ").slice(0, length)
-export const escape = (value) => compact(value).replaceAll("|", "\\|").replaceAll("`", "'")
+export const escape = (value) => compact(value).replaceAll("|", "\\|").replaceAll("`", "'").replaceAll("[", "&#91;").replaceAll("]", "&#93;")
 export function sourceLink(ref, document) {
     const target = slash(path.relative(path.dirname(document), ref.file))
     return `[${ref.file}:${ref.line}](${target}#L${ref.line})`

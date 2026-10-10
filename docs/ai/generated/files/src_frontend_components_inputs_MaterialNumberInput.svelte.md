@@ -74,7 +74,7 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/inputs/MaterialNumberInput.svelte:103](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L103) — timer-f8714876192268c0: setTimeout = 500 ms (500); 
+- [src/frontend/components/inputs/MaterialNumberInput.svelte:103](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L103) — timer-f8714876192268c0: setTimeout = 500 ms (500); // don't start timeout if scrolling with mouse
 - [src/frontend/components/inputs/MaterialNumberInput.svelte:135](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L135) — timer-faac5895caac5d24: setTimeout = 3000 ms (3000); 
 - [src/frontend/components/inputs/MaterialNumberInput.svelte:264](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L264) — css-transition-1946594794be3a7c: css-transition = 100 ms (0.1s opacity ease); 
 - [src/frontend/components/inputs/MaterialNumberInput.svelte:282](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L282) — css-transition-4b1ff45abc523a4a: css-transition = 150 ms (0.15s opacity ease); 

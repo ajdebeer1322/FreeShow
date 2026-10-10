@@ -14,4 +14,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:138](../../../../src/electron/IPC/responsesMain.ts#L138) — renderer/client → electron; [Main.ACCESS_MICROPHONE_PERMISSION]: () => getPermission("microphone")
+- [src/electron/IPC/responsesMain.ts:138](../../../../src/electron/IPC/responsesMain.ts#L138) — renderer/client → electron; &#91;Main.ACCESS_MICROPHONE_PERMISSION&#93;: () => getPermission("microphone")

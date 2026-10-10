@@ -23,7 +23,7 @@ Store: src/frontend/stores.ts#theme.
 - [src/frontend/components/helpers/output.ts:1109](../../../../src/frontend/components/helpers/output.ts#L1109) — get(theme)
 - [src/frontend/components/quicksearch/QuickSearch.svelte:137](../../../../src/frontend/components/quicksearch/QuickSearch.svelte#L137) — $theme
 - [src/frontend/components/quicksearch/QuickSearch.svelte:139](../../../../src/frontend/components/quicksearch/QuickSearch.svelte#L139) — $theme
-- [src/frontend/components/settings/tabs/Theme.svelte:27](../../../../src/frontend/components/settings/tabs/Theme.svelte#L27) — theme.subscribe((a: string) => { if (!$themes[a]) return updateThemeValues($themes[a]) })
+- [src/frontend/components/settings/tabs/Theme.svelte:27](../../../../src/frontend/components/settings/tabs/Theme.svelte#L27) — theme.subscribe((a: string) => { if (!$themes&#91;a&#93;) return updateThemeValues($themes&#91;a&#93;) })
 - [src/frontend/components/settings/tabs/Theme.svelte:36](../../../../src/frontend/components/settings/tabs/Theme.svelte#L36) — $theme
 - [src/frontend/components/settings/tabs/Theme.svelte:74](../../../../src/frontend/components/settings/tabs/Theme.svelte#L74) — $theme
 - [src/frontend/components/settings/tabs/Theme.svelte:75](../../../../src/frontend/components/settings/tabs/Theme.svelte#L75) — $theme
@@ -35,7 +35,7 @@ Store: src/frontend/stores.ts#theme.
 - [src/frontend/components/settings/tabs/ThemeTabs.svelte:71](../../../../src/frontend/components/settings/tabs/ThemeTabs.svelte#L71) — $theme
 - [src/frontend/components/stage/tools/BoxStyle.svelte:108](../../../../src/frontend/components/stage/tools/BoxStyle.svelte#L108) — $theme
 - [src/frontend/utils/common.ts:226](../../../../src/frontend/utils/common.ts#L226) — get(theme)
-- [src/frontend/utils/listeners.ts:423](../../../../src/frontend/utils/listeners.ts#L423) — theme.subscribe(async (currentTheme) => { if (await hasNewerUpdate("LISTENER_THEME_REMOTE", 30)) return const themeObj = get(themes)[currentTheme] if (themeObj?.colors) send(REMOTE
+- [src/frontend/utils/listeners.ts:423](../../../../src/frontend/utils/listeners.ts#L423) — theme.subscribe(async (currentTheme) => { if (await hasNewerUpdate("LISTENER_THEME_REMOTE", 30)) return const themeObj = get(themes)&#91;currentTheme&#93; if (themeObj?.colors) send(REMOTE
 - [src/frontend/utils/listeners.ts:432](../../../../src/frontend/utils/listeners.ts#L432) — get(theme)
 - [src/frontend/utils/remoteTalk.ts:380](../../../../src/frontend/utils/remoteTalk.ts#L380) — get(theme)
 - [src/frontend/utils/save.ts:193](../../../../src/frontend/utils/save.ts#L193) — get(theme)

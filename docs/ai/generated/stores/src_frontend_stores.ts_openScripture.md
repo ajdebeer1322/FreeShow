@@ -17,11 +17,11 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 ## Writes
 
 - [src/frontend/components/actions/apiHelper.ts:729](../../../../src/frontend/components/actions/apiHelper.ts#L729) — openScripture.set({ ...ref, play: true })
-- [src/frontend/components/context/menuClick.ts:992](../../../../src/frontend/components/context/menuClick.ts#L992) — openScripture.set({ book, chapter, verses: [[verse]], play: false })
+- [src/frontend/components/context/menuClick.ts:992](../../../../src/frontend/components/context/menuClick.ts#L992) — openScripture.set({ book, chapter, verses: &#91;&#91;verse&#93;&#93;, play: false })
 - [src/frontend/components/drawer/bible/Scripture.svelte:445](../../../../src/frontend/components/drawer/bible/Scripture.svelte#L445) — openScripture.set(null)
 - [src/frontend/components/drawer/bible/Scripture.svelte:459](../../../../src/frontend/components/drawer/bible/Scripture.svelte#L459) — openScripture.set(null)
 - [src/frontend/components/drawer/bible/Scripture.svelte:484](../../../../src/frontend/components/drawer/bible/Scripture.svelte#L484) — openScripture.set({ book: item.book, chapter: item.chapter, verses: item.verse, play: true })
-- [src/frontend/components/drawer/navigation/ScriptureTabs.svelte:37](../../../../src/frontend/components/drawer/navigation/ScriptureTabs.svelte#L37) — openScripture.set({ play: true, book: Number($activeScripture.reference?.book \|\| 1), chapter: $activeScripture.reference?.chapters[0], verses: $activeScripture.reference?.verses })
+- [src/frontend/components/drawer/navigation/ScriptureTabs.svelte:37](../../../../src/frontend/components/drawer/navigation/ScriptureTabs.svelte#L37) — openScripture.set({ play: true, book: Number($activeScripture.reference?.book \|\| 1), chapter: $activeScripture.reference?.chapters&#91;0&#93;, verses: $activeScripture.reference?.verses })
 - [src/frontend/components/quicksearch/quicksearch.ts:494](../../../../src/frontend/components/quicksearch/quicksearch.ts#L494) — openScripture.set({ ...data.reference, play: data.play })
 - [src/frontend/components/slide/Reference.svelte:42](../../../../src/frontend/components/slide/Reference.svelte#L42) — openScripture.set(show.reference!.data)
 

@@ -1,5 +1,4 @@
 [
-  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":358,"endLine":358,"text":"<!-- background -->","start":14564,"end":14583},
   {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":365,"endLine":365,"text":"<!-- overlays -->","start":15012,"end":15029},
   {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":378,"endLine":378,"text":"<!-- edit -->","start":15667,"end":15680},
   {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":385,"endLine":385,"text":"<!-- filter={layoutSlide.filterEnabled?.includes(\"foreground\") ? layoutSlide.filter : \"\"} -->","start":15986,"end":16079},

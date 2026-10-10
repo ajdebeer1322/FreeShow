@@ -34,10 +34,10 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/edit/scripts/itemClipboard.ts:112](../../../../src/frontend/components/edit/scripts/itemClipboard.ts#L112) — timer-b6fc8e623ce0ed10: wait = 10 ms (10); 
-- [src/frontend/components/edit/scripts/itemClipboard.ts:237](../../../../src/frontend/components/edit/scripts/itemClipboard.ts#L237) — timer-6569bf27be4a7e34: wait = 10 ms (10); 
-- [src/frontend/components/edit/scripts/itemClipboard.ts:290](../../../../src/frontend/components/edit/scripts/itemClipboard.ts#L290) — timer-61d33c09865b8834: wait = 10 ms (10); 
+- [src/frontend/components/edit/scripts/itemClipboard.ts:112](../../../../src/frontend/components/edit/scripts/itemClipboard.ts#L112) — timer-b6fc8e623ce0ed10: wait = 10 ms (10); // prevent lag when updating many slides
+- [src/frontend/components/edit/scripts/itemClipboard.ts:237](../../../../src/frontend/components/edit/scripts/itemClipboard.ts#L237) — timer-6569bf27be4a7e34: wait = 10 ms (10); // prevent lag when updating many slides
+- [src/frontend/components/edit/scripts/itemClipboard.ts:290](../../../../src/frontend/components/edit/scripts/itemClipboard.ts#L290) — timer-61d33c09865b8834: wait = 10 ms (10); // prevent lag when updating many slides
 
 ## Workarounds
 
-No static evidence found.
+- [src/frontend/components/edit/scripts/itemClipboard.ts:229](../../../../src/frontend/components/edit/scripts/itemClipboard.ts#L229) — workaround-7760e0a8c0ace22c: // TODO: pasting to multiple items will move around the text lines content

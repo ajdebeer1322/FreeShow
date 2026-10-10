@@ -9,7 +9,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 ## Reads
 
 - [src/frontend/components/drawer/audio/MetronomeVisualizer.svelte:7](../../../../src/frontend/components/drawer/audio/MetronomeVisualizer.svelte#L7) — $metronomeTimer
-- [src/frontend/utils/listeners.ts:363](../../../../src/frontend/utils/listeners.ts#L363) — metronomeTimer.subscribe((data) => { send(OUTPUT, ["METRONOME_TIMER"], data) send(STAGE, ["METRONOME_TIMER"], data) })
+- [src/frontend/utils/listeners.ts:363](../../../../src/frontend/utils/listeners.ts#L363) — metronomeTimer.subscribe((data) => { send(OUTPUT, &#91;"METRONOME_TIMER"&#93;, data) send(STAGE, &#91;"METRONOME_TIMER"&#93;, data) })
 - [src/frontend/utils/stageTalk.ts:102](../../../../src/frontend/utils/stageTalk.ts#L102) — get(metronomeTimer)
 
 ## Writes

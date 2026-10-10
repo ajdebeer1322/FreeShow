@@ -30,10 +30,10 @@ Store: src/frontend/stores.ts#mediaFolders.
 
 ## Writes
 
-- [src/frontend/components/context/menuClick.ts:1818](../../../../src/frontend/components/context/menuClick.ts#L1818) — mediaFolders.update((a) => { if (!a[folderId]) return a delete a[folderId].mediaType return a })
-- [src/frontend/components/context/menuClick.ts:1829](../../../../src/frontend/components/context/menuClick.ts#L1829) — mediaFolders.update((a) => { if (!a[folderId]) return a a[folderId].mediaType = "background" return a })
-- [src/frontend/components/context/menuClick.ts:1840](../../../../src/frontend/components/context/menuClick.ts#L1840) — mediaFolders.update((a) => { if (!a[folderId]) return a a[folderId].mediaType = "foreground" return a })
-- [src/frontend/components/drawer/navigation/MediaTabs.svelte:94](../../../../src/frontend/components/drawer/navigation/MediaTabs.svelte#L94) — mediaFolders.update((a) => { if (a[id].default) delete a[id].default a[id].name = value return a })
+- [src/frontend/components/context/menuClick.ts:1818](../../../../src/frontend/components/context/menuClick.ts#L1818) — mediaFolders.update((a) => { if (!a&#91;folderId&#93;) return a delete a&#91;folderId&#93;.mediaType return a })
+- [src/frontend/components/context/menuClick.ts:1829](../../../../src/frontend/components/context/menuClick.ts#L1829) — mediaFolders.update((a) => { if (!a&#91;folderId&#93;) return a a&#91;folderId&#93;.mediaType = "background" return a })
+- [src/frontend/components/context/menuClick.ts:1840](../../../../src/frontend/components/context/menuClick.ts#L1840) — mediaFolders.update((a) => { if (!a&#91;folderId&#93;) return a a&#91;folderId&#93;.mediaType = "foreground" return a })
+- [src/frontend/components/drawer/navigation/MediaTabs.svelte:94](../../../../src/frontend/components/drawer/navigation/MediaTabs.svelte#L94) — mediaFolders.update((a) => { if (a&#91;id&#93;.default) delete a&#91;id&#93;.default a&#91;id&#93;.name = value return a })
 - [src/frontend/components/main/popups/ChangeIcon.svelte:11](../../../../src/frontend/components/main/popups/ChangeIcon.svelte#L11) — mediaFolders.update((a) => changeIcon(a, icon))
 - [src/frontend/utils/createData.ts:60](../../../../src/frontend/utils/createData.ts#L60) — mediaFolders.update((a) => { if (paths.pictures) a.pictures = { name: "category.pictures", icon: "folder", path: paths.pictures, default: true } if (paths.videos) a.videos = { name
 - [src/frontend/utils/updateSettings.ts:361](../../../../src/frontend/utils/updateSettings.ts#L361) — mediaFolders.set(v)

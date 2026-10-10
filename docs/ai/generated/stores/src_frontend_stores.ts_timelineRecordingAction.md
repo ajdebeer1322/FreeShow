@@ -8,7 +8,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 ## Reads
 
-- [src/frontend/components/timeline/ShowTimeline.ts:106](../../../../src/frontend/components/timeline/ShowTimeline.ts#L106) — timelineRecordingAction.subscribe(({ id, data }) => { if (!id) return if (id === "run_action") { const action = clone(get(actions)[data.id]) if (action && callback) callback({ type
+- [src/frontend/components/timeline/ShowTimeline.ts:106](../../../../src/frontend/components/timeline/ShowTimeline.ts#L106) — timelineRecordingAction.subscribe(({ id, data }) => { if (!id) return if (id === "run_action") { const action = clone(get(actions)&#91;data.id&#93;) if (action && callback) callback({ type
 
 ## Writes
 

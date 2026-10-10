@@ -10,13 +10,13 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/context/ContextItem.svelte:378](../../../../src/frontend/components/context/ContextItem.svelte#L378) — $mediaFolders[folderId]
-- [src/frontend/components/context/ContextItem.svelte:384](../../../../src/frontend/components/context/ContextItem.svelte#L384) — $mediaFolders[folderId]
-- [src/frontend/components/context/ContextItem.svelte:390](../../../../src/frontend/components/context/ContextItem.svelte#L390) — $mediaFolders[folderId]
-- [src/frontend/components/context/menuClick.ts:1804](../../../../src/frontend/components/context/menuClick.ts#L1804) — get(mediaFolders)[data]
-- [src/frontend/components/drawer/media/Media.svelte:61](../../../../src/frontend/components/drawer/media/Media.svelte#L61) — $mediaFolders[active]
-- [src/frontend/components/drawer/media/Media.svelte:62](../../../../src/frontend/components/drawer/media/Media.svelte#L62) — $mediaFolders[active!]
-- [src/frontend/components/drawer/media/Media.svelte:84](../../../../src/frontend/components/drawer/media/Media.svelte#L84) — $mediaFolders[active]
+- [src/frontend/components/context/ContextItem.svelte:378](../../../../src/frontend/components/context/ContextItem.svelte#L378) — $mediaFolders&#91;folderId&#93;
+- [src/frontend/components/context/ContextItem.svelte:384](../../../../src/frontend/components/context/ContextItem.svelte#L384) — $mediaFolders&#91;folderId&#93;
+- [src/frontend/components/context/ContextItem.svelte:390](../../../../src/frontend/components/context/ContextItem.svelte#L390) — $mediaFolders&#91;folderId&#93;
+- [src/frontend/components/context/menuClick.ts:1804](../../../../src/frontend/components/context/menuClick.ts#L1804) — get(mediaFolders)&#91;data&#93;
+- [src/frontend/components/drawer/media/Media.svelte:61](../../../../src/frontend/components/drawer/media/Media.svelte#L61) — $mediaFolders&#91;active&#93;
+- [src/frontend/components/drawer/media/Media.svelte:62](../../../../src/frontend/components/drawer/media/Media.svelte#L62) — $mediaFolders&#91;active!&#93;
+- [src/frontend/components/drawer/media/Media.svelte:84](../../../../src/frontend/components/drawer/media/Media.svelte#L84) — $mediaFolders&#91;active&#93;
 
 ## Writes
 

@@ -6,7 +6,7 @@ Store: none identified.
 
 ## Definitions
 
-- [src/electron/data/defaults.ts:168](../../../../src/electron/data/defaults.ts#L168) — []
+- [src/electron/data/defaults.ts:168](../../../../src/electron/data/defaults.ts#L168) — &#91;&#93;
 
 ## Reads
 

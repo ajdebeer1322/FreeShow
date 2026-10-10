@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/helpers/OutputHelper.linked.test.ts:109](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L109) — get(outputs)[id].out?.slide?.index
+- [src/frontend/components/helpers/OutputHelper.linked.test.ts:109](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L109) — get(outputs)&#91;id&#93;.out?.slide?.index
 
 ## Writes
 

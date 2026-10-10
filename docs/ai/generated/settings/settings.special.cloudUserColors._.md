@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/utils/cloudSync.ts:349](../../../../src/frontend/utils/cloudSync.ts#L349) — get(special).cloudUserColors?.[name]
+- [src/frontend/utils/cloudSync.ts:349](../../../../src/frontend/utils/cloudSync.ts#L349) — get(special).cloudUserColors?.&#91;name&#93;
 
 ## Writes
 

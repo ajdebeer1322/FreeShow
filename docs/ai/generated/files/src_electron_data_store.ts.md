@@ -55,8 +55,8 @@ None detected.
 
 ## Timing
 
-- [src/electron/data/store.ts:192](../../../../src/electron/data/store.ts#L192) — timer-05352472f2800dcb: wait = 100 ms (100); 
-- [src/electron/data/store.ts:198](../../../../src/electron/data/store.ts#L198) — timer-61e65cfbe8841e0a: wait = dynamic ms (200 * Math.pow(2, attempt)); 
+- [src/electron/data/store.ts:192](../../../../src/electron/data/store.ts#L192) — timer-05352472f2800dcb: wait = 100 ms (100); // store file, retry if failed
+- [src/electron/data/store.ts:198](../../../../src/electron/data/store.ts#L198) — timer-61e65cfbe8841e0a: wait = dynamic ms (200 * Math.pow(2, attempt)); // Windows permission error, likely due to permission set to read-only
 
 ## Workarounds
 

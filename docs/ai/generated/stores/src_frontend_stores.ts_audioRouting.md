@@ -10,7 +10,7 @@ Saved: yes, with the listed transformations.
 
 - [src/frontend/audio/audioSender.ts:243](../../../../src/frontend/audio/audioSender.ts#L243) — get(audioRouting)
 - [src/frontend/audio/audioSender.ts:340](../../../../src/frontend/audio/audioSender.ts#L340) — get(audioRouting)
-- [src/frontend/audio/audioSidechain.ts:43](../../../../src/frontend/audio/audioSidechain.ts#L43) — audioRouting.subscribe((config) => { const hasSidechain = (config?.connections \|\| []).some((c) => c.type === "sidechain") if (hasSidechain) this.start() else this.stop() })
+- [src/frontend/audio/audioSidechain.ts:43](../../../../src/frontend/audio/audioSidechain.ts#L43) — audioRouting.subscribe((config) => { const hasSidechain = (config?.connections \|\| &#91;&#93;).some((c) => c.type === "sidechain") if (hasSidechain) this.start() else this.stop() })
 - [src/frontend/audio/audioSidechain.ts:73](../../../../src/frontend/audio/audioSidechain.ts#L73) — get(audioRouting)
 - [src/frontend/audio/routing/audioRoutingInit.ts:97](../../../../src/frontend/audio/routing/audioRoutingInit.ts#L97) — get(audioRouting)
 - [src/frontend/audio/routing/audioRoutingManager.ts:97](../../../../src/frontend/audio/routing/audioRoutingManager.ts#L97) — audioRouting.subscribe((a) => { if (!a) return a.connections = deduplicateConnections(a.connections) this.config = a this.updateRoutingNodes() AudioAnalyser.recorderActivate() if (
@@ -27,7 +27,7 @@ Saved: yes, with the listed transformations.
 - [src/frontend/components/main/popups/NodeOptions.svelte:15](../../../../src/frontend/components/main/popups/NodeOptions.svelte#L15) — $audioRouting
 - [src/frontend/components/main/popups/Rename.svelte:45](../../../../src/frontend/components/main/popups/Rename.svelte#L45) — $audioRouting
 - [src/frontend/components/settings/tabs/AudioRouting.svelte:103](../../../../src/frontend/components/settings/tabs/AudioRouting.svelte#L103) — $audioRouting
-- [src/frontend/utils/listeners.ts:348](../../../../src/frontend/utils/listeners.ts#L348) — audioRouting.subscribe(() => { send(REMOTE, ["AUDIO_ROUTING"], getFilteredAudioChannels()) })
+- [src/frontend/utils/listeners.ts:348](../../../../src/frontend/utils/listeners.ts#L348) — audioRouting.subscribe(() => { send(REMOTE, &#91;"AUDIO_ROUTING"&#93;, getFilteredAudioChannels()) })
 - [src/frontend/utils/remoteTalk.ts:23](../../../../src/frontend/utils/remoteTalk.ts#L23) — get(audioRouting)
 - [src/frontend/utils/save.ts:196](../../../../src/frontend/utils/save.ts#L196) — get(audioRouting)
 
@@ -35,15 +35,15 @@ Saved: yes, with the listed transformations.
 
 - [src/frontend/audio/routing/audioRoutingInit.ts:34](../../../../src/frontend/audio/routing/audioRoutingInit.ts#L34) — audioRouting.set(data)
 - [src/frontend/audio/routing/audioRoutingInit.ts:81](../../../../src/frontend/audio/routing/audioRoutingInit.ts#L81) — audioRouting.set({ channels, connections })
-- [src/frontend/audio/routing/audioRoutingInit.ts:101](../../../../src/frontend/audio/routing/audioRoutingInit.ts#L101) — audioRouting.update((a) => { if (!a) return a a.connections.push({ from: outputInputs[0], to: "main" }) return a })
-- [src/frontend/audio/routing/audioRoutingInit.ts:124](../../../../src/frontend/audio/routing/audioRoutingInit.ts#L124) — audioRouting.update((a) => { const channels = a?.channels \|\| [] const connections = a?.connections \|\| [] const channelId = 'channel_${outputId}' if (channels.some((c) => c.id === c
-- [src/frontend/audio/routing/audioRoutingInit.ts:141](../../../../src/frontend/audio/routing/audioRoutingInit.ts#L141) — audioRouting.update((a) => { a?.channels?.forEach((c) => { const out = c.outputLink ? outs[c.outputLink] : null if (!out) return if (out.name) c.name = out.name c.color = out.color
+- [src/frontend/audio/routing/audioRoutingInit.ts:101](../../../../src/frontend/audio/routing/audioRoutingInit.ts#L101) — audioRouting.update((a) => { if (!a) return a a.connections.push({ from: outputInputs&#91;0&#93;, to: "main" }) return a })
+- [src/frontend/audio/routing/audioRoutingInit.ts:124](../../../../src/frontend/audio/routing/audioRoutingInit.ts#L124) — audioRouting.update((a) => { const channels = a?.channels \|\| &#91;&#93; const connections = a?.connections \|\| &#91;&#93; const channelId = 'channel_${outputId}' if (channels.some((c) => c.id === c
+- [src/frontend/audio/routing/audioRoutingInit.ts:141](../../../../src/frontend/audio/routing/audioRoutingInit.ts#L141) — audioRouting.update((a) => { a?.channels?.forEach((c) => { const out = c.outputLink ? outs&#91;c.outputLink&#93; : null if (!out) return if (out.name) c.name = out.name c.color = out.color
 - [src/frontend/audio/routing/audioRoutingInit.ts:154](../../../../src/frontend/audio/routing/audioRoutingInit.ts#L154) — audioRouting.update((a) => { if (!a) return a const channelId = 'channel_${outputId}' const channels = a.channels.filter((c) => c.id !== channelId) const connections = a.connection
 - [src/frontend/components/helpers/clipboard.ts:983](../../../../src/frontend/components/helpers/clipboard.ts#L983) — audioRouting.update((c) => { if (!c?.channels?.length) return c const list = c.channels const index = list.findIndex((m) => m.id === channelId) if (index <= 0) return c // First ch
-- [src/frontend/components/main/popups/Color.svelte:113](../../../../src/frontend/components/main/popups/Color.svelte#L113) — audioRouting.update((a) => { const index = (a?.channels \|\| []).findIndex((c) => c.id === id) if (index !== -1) { a!.channels[index].color = value delete a!.channels[index].outputLi
-- [src/frontend/components/main/popups/Rename.svelte:175](../../../../src/frontend/components/main/popups/Rename.svelte#L175) — audioRouting.update((c) => { const list = c?.channels \|\| [] const channel = list.find((m) => m.id === channelId) if (channel) { channel.name = groupName delete channel.outputLink }
+- [src/frontend/components/main/popups/Color.svelte:113](../../../../src/frontend/components/main/popups/Color.svelte#L113) — audioRouting.update((a) => { const index = (a?.channels \|\| &#91;&#93;).findIndex((c) => c.id === id) if (index !== -1) { a!.channels&#91;index&#93;.color = value delete a!.channels&#91;index&#93;.outputLi
+- [src/frontend/components/main/popups/Rename.svelte:175](../../../../src/frontend/components/main/popups/Rename.svelte#L175) — audioRouting.update((c) => { const list = c?.channels \|\| &#91;&#93; const channel = list.find((m) => m.id === channelId) if (channel) { channel.name = groupName delete channel.outputLink }
 - [src/frontend/components/settings/tabs/AudioRouting.svelte:249](../../../../src/frontend/components/settings/tabs/AudioRouting.svelte#L249) — audioRouting.update((a) => a && AudioRoutingManager.sortChannels(a))
-- [src/frontend/components/settings/tabs/AudioRouting.svelte:277](../../../../src/frontend/components/settings/tabs/AudioRouting.svelte#L277) — audioRouting.update((c) => { const copy: AudioRoutingConfig = { ...c, channels: [...(c?.channels \|\| [])], connections: [...(c?.connections \|\| [])] } fn(copy) copy.connections = ded
+- [src/frontend/components/settings/tabs/AudioRouting.svelte:277](../../../../src/frontend/components/settings/tabs/AudioRouting.svelte#L277) — audioRouting.update((c) => { const copy: AudioRoutingConfig = { ...c, channels: &#91;...(c?.channels \|\| &#91;&#93;)&#93;, connections: &#91;...(c?.connections \|\| &#91;&#93;)&#93; } fn(copy) copy.connections = ded
 
 ## Transport
 

@@ -1,0 +1,23 @@
+[
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1135,"endLine":1135,"text":"// 4. Device B modifies the project with an older change (modified = 5000) and syncs","start":54107,"end":54191},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1145,"endLine":1145,"text":"// 5. Device C modifies the project with a newer change (modified = 10000) and syncs","start":54715,"end":54799},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1155,"endLine":1155,"text":"// 6. Device A and B sync again to receive the newest modification (from C)","start":55333,"end":55408},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1176,"endLine":1176,"text":"// Register devices in the ledger","start":56409,"end":56442},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1191,"endLine":1191,"text":"// 1. Device A creates show-A and syncs","start":57147,"end":57186},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1201,"endLine":1201,"text":"// 2. Device B syncs (downloads show-A), creates show-B, and syncs","start":57689,"end":57755},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1214,"endLine":1214,"text":"// 3. Device C syncs. It should download both show-A and show-B","start":58453,"end":58516},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1224,"endLine":1224,"text":"// 4. Device A syncs again and downloads show-B","start":58972,"end":59019},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1249,"endLine":1249,"text":"// 1. Device A: Future mtime, no real edit tracked. Fix ensures mtime no longer wins.","start":60254,"end":60339},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1261,"endLine":1261,"text":"// 2. Device B: Real, tracked edit (earlier than A's mtime).","start":60871,"end":60931},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1275,"endLine":1275,"text":"// 3. Device A: Re-syncs and must pick up B's real edit.","start":61529,"end":61585},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1299,"endLine":1299,"text":"// 1. Device A: Old mtime, no real edit tracked. Uses mtime-based comparison.","start":62743,"end":62820},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1310,"endLine":1310,"text":"// 2. Device B: Future mtime, also untracked. Must win by mtime.","start":63281,"end":63345},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1322,"endLine":1322,"text":"// 3. Device A: Syncs again and adopts B's content (newer by mtime).","start":63875,"end":63943},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1334,"endLine":1334,"text":"// Documenting an accepted tradeoff: updated clients prioritize tracked edit times over file mtime.","start":64484,"end":64583},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1335,"endLine":1335,"text":"// Old clients (untracked) can have edits discarded in mixed fleets to fix #3434 for updated fleets.","start":64596,"end":64696},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1348,"endLine":1348,"text":"// 1. Updated device: Tracked edit in the past.","start":65322,"end":65369},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1359,"endLine":1359,"text":"// 2. Old client: Real edit now, but untracked (no concept of fileModified).","start":65819,"end":65895},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1369,"endLine":1369,"text":"// Old client's edit is discarded for the cloud's tracked value (accepted cost).","start":66291,"end":66371},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1429,"endLine":1429,"text":"// Local received cloud item","start":69397,"end":69425},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1432,"endLine":1432,"text":"// Cloud zip was NOT updated with local-ro-only","start":69533,"end":69580}
+]

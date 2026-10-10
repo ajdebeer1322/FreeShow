@@ -6,8 +6,8 @@ Store: src/frontend/stores.ts#effectsLibrary.
 
 ## Definitions
 
-- [src/electron/data/defaults.ts:77](../../../../src/electron/data/defaults.ts#L77) — []
-- [src/frontend/stores.ts:289](../../../../src/frontend/stores.ts#L289) — []
+- [src/electron/data/defaults.ts:77](../../../../src/electron/data/defaults.ts#L77) — &#91;&#93;
+- [src/frontend/stores.ts:289](../../../../src/frontend/stores.ts#L289) — &#91;&#93;
 
 ## Reads
 
@@ -25,5 +25,5 @@ Store: src/frontend/stores.ts#effectsLibrary.
 - [src/frontend/components/context/menuClick.ts:1777](../../../../src/frontend/components/context/menuClick.ts#L1777) — effectsLibrary.update((a) => { obj.sel!.data.forEach((audio) => { const currentPath = audio.path \|\| audio.id const index = a.findIndex((effect) => effect.path === currentPath) if (
 - [src/frontend/components/helpers/dropActions.ts:448](../../../../src/frontend/components/helpers/dropActions.ts#L448) — effectsLibrary.update((effects) => { rawFiles.forEach((file) => { const path = file.path \|\| file.id if (!path) return const ext = getExtension(file.name \|\| path) if (getMediaType(e
 - [src/frontend/components/helpers/dropActions.ts:576](../../../../src/frontend/components/helpers/dropActions.ts#L576) — effectsLibrary.update((effects) => { rawFiles.forEach((file) => { const path = file.path \|\| file.id if (!path) return const ext = getExtension(file.name \|\| path) if (getMediaType(e
-- [src/frontend/components/main/popups/Rename.svelte:187](../../../../src/frontend/components/main/popups/Rename.svelte#L187) — effectsLibrary.update((a) => { let index = a.findIndex((a) => a.path === selectedPath) if (index > -1) a[index].name = groupName return a })
+- [src/frontend/components/main/popups/Rename.svelte:187](../../../../src/frontend/components/main/popups/Rename.svelte#L187) — effectsLibrary.update((a) => { let index = a.findIndex((a) => a.path === selectedPath) if (index > -1) a&#91;index&#93;.name = groupName return a })
 - [src/frontend/utils/updateSettings.ts:398](../../../../src/frontend/utils/updateSettings.ts#L398) — effectsLibrary.set(v)

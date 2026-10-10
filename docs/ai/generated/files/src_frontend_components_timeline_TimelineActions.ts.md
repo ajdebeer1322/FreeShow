@@ -41,6 +41,8 @@ No static evidence found.
 
 ## Timing
 
+- [src/frontend/components/timeline/TimelineActions.ts:72](../../../../src/frontend/components/timeline/TimelineActions.ts#L72) — poll-interval-e68f0b148fc799a1: poll-interval = 50 ms (50); // allow show to load
+- [src/frontend/components/timeline/TimelineActions.ts:72](../../../../src/frontend/components/timeline/TimelineActions.ts#L72) — poll-timeout-9288ee6e896d6cfe: poll-timeout = 5000 ms (5000); // allow show to load
 - [src/frontend/components/timeline/TimelineActions.ts:116](../../../../src/frontend/components/timeline/TimelineActions.ts#L116) — timer-415a35374bb167c0: hasNewerUpdate = 2000 ms (2000); // auto save from time to time
 
 ## Workarounds

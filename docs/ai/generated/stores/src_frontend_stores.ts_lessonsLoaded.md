@@ -14,7 +14,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 ## Writes
 
-- [src/frontend/IPC/responsesMain.ts:245](../../../../src/frontend/IPC/responsesMain.ts#L245) — lessonsLoaded.set({ ...get(lessonsLoaded), [data.showId]: data.status })
+- [src/frontend/IPC/responsesMain.ts:245](../../../../src/frontend/IPC/responsesMain.ts#L245) — lessonsLoaded.set({ ...get(lessonsLoaded), &#91;data.showId&#93;: data.status })
 - [src/frontend/components/show/Slides.svelte:459](../../../../src/frontend/components/show/Slides.svelte#L459) — lessonsLoaded.set({})
 
 ## Transport

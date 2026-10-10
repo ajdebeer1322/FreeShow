@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/server/stage/util/receiver.ts:92](../../../../src/server/stage/util/receiver.ts#L92) — desktop → browser client; STREAM_FRAME: (data: any) => { if (!data?.id \|\| !data.jpeg) return stream.update((a) => { a[data.id] = { jpeg: data.jpeg, size: data.size } return a }) }
+- [src/server/stage/util/receiver.ts:92](../../../../src/server/stage/util/receiver.ts#L92) — desktop → browser client; STREAM_FRAME: (data: any) => { if (!data?.id \|\| !data.jpeg) return stream.update((a) => { a&#91;data.id&#93; = { jpeg: data.jpeg, size: data.size } return a }) }

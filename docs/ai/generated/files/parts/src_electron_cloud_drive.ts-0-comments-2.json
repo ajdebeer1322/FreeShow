@@ -1,0 +1,13 @@
+[
+  {"file":"src/electron/cloud/drive.ts","line":449,"endLine":449,"text":"// if a show is deleted, synced and undone it can't be restored unless a duplicate is created with new ID!","start":16254,"end":16360},
+  {"file":"src/electron/cloud/drive.ts","line":450,"endLine":450,"text":"// but it can be restored when deleted before it's synced","start":16377,"end":16434},
+  {"file":"src/electron/cloud/drive.ts","line":451,"endLine":451,"text":"// deleted in cloud","start":16451,"end":16470},
+  {"file":"src/electron/cloud/drive.ts","line":475,"endLine":475,"text":"// \"download\" show","start":17349,"end":17367},
+  {"file":"src/electron/cloud/drive.ts","line":480,"endLine":480,"text":"// renamed","start":17736,"end":17746},
+  {"file":"src/electron/cloud/drive.ts","line":498,"endLine":498,"text":"// \"upload\" show","start":18228,"end":18244},
+  {"file":"src/electron/cloud/drive.ts","line":504,"endLine":504,"text":"// something is wrong with the file","start":18357,"end":18392},
+  {"file":"src/electron/cloud/drive.ts","line":518,"endLine":518,"text":"// upload shows","start":18981,"end":18996},
+  {"file":"src/electron/cloud/drive.ts","line":549,"endLine":549,"text":"// combine local & cloud based on modified","start":20167,"end":20209},
+  {"file":"src/electron/cloud/drive.ts","line":562,"endLine":562,"text":"// a custom drive media folder is not planned as discussed here:","start":20693,"end":20757},
+  {"file":"src/electron/cloud/drive.ts","line":563,"endLine":563,"text":"// https://github.com/ChurchApps/FreeShow/issues/402","start":20758,"end":20810}
+]

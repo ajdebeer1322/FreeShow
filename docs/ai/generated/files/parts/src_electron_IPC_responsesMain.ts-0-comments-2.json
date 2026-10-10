@@ -1,0 +1,17 @@
+[
+  {"file":"src/electron/IPC/responsesMain.ts","line":500,"endLine":500,"text":"// chromium crashes","start":23000,"end":23019},
+  {"file":"src/electron/IPC/responsesMain.ts","line":501,"endLine":501,"text":"// internet disconnected","start":23053,"end":23077},
+  {"file":"src/electron/IPC/responsesMain.ts","line":502,"endLine":502,"text":"// mp4box issue","start":23146,"end":23161},
+  {"file":"src/electron/IPC/responsesMain.ts","line":527,"endLine":527,"text":"// prevent random forks from sending error reports","start":23782,"end":23832},
+  {"file":"src/electron/IPC/responsesMain.ts","line":528,"endLine":528,"text":"// dots to prevent auto find/replace","start":23837,"end":23873},
+  {"file":"src/electron/IPC/responsesMain.ts","line":537,"endLine":537,"text":"// filter out known non-critical errors","start":24205,"end":24244},
+  {"file":"src/electron/IPC/responsesMain.ts","line":545,"endLine":545,"text":"// STORE MEDIA AS BASE64","start":24481,"end":24505},
+  {"file":"src/electron/IPC/responsesMain.ts","line":546,"endLine":546,"text":"// function storeMedia(files: { id: string; path: string }[]) {","start":24506,"end":24569},
+  {"file":"src/electron/IPC/responsesMain.ts","line":547,"endLine":547,"text":"//     let encodedFiles: { id: string; content: string }[] = []","start":24570,"end":24633},
+  {"file":"src/electron/IPC/responsesMain.ts","line":548,"endLine":548,"text":"//     files.forEach(({ id, path }) => {","start":24634,"end":24674},
+  {"file":"src/electron/IPC/responsesMain.ts","line":549,"endLine":549,"text":"//         let content = readFile(path, \"base64\")","start":24675,"end":24724},
+  {"file":"src/electron/IPC/responsesMain.ts","line":550,"endLine":550,"text":"//         encodedFiles.push({ id, content })","start":24725,"end":24770},
+  {"file":"src/electron/IPC/responsesMain.ts","line":551,"endLine":551,"text":"//     })","start":24771,"end":24780},
+  {"file":"src/electron/IPC/responsesMain.ts","line":552,"endLine":552,"text":"//     return encodedFiles","start":24781,"end":24807},
+  {"file":"src/electron/IPC/responsesMain.ts","line":553,"endLine":553,"text":"// }","start":24808,"end":24812}
+]

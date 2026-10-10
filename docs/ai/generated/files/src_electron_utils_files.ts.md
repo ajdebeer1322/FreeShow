@@ -64,8 +64,8 @@ None detected.
 
 ## Timing
 
-- [src/electron/utils/files.ts:1035](../../../../src/electron/utils/files.ts#L1035) — timer-8a7ffda211ccd35a: setTimeout = 2000 ms (WRITE_WAIT_MS); 
+- [src/electron/utils/files.ts:1035](../../../../src/electron/utils/files.ts#L1035) — timer-8a7ffda211ccd35a: setTimeout = 2000 ms (WRITE_WAIT_MS); // treat as potential new download after a short write-wait
 
 ## Workarounds
 
-No static evidence found.
+- [src/electron/utils/files.ts:970](../../../../src/electron/utils/files.ts#L970) — workaround-ae7309eb3dd2b17b: // - WIP extract & import zip files with media content

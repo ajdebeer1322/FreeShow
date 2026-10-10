@@ -14,5 +14,5 @@ No static evidence found.
 
 ## Handlers
 
-- [src/frontend/utils/stageTalk.ts:81](../../../../src/frontend/utils/stageTalk.ts#L81) — electron/other renderer → renderer; LAYOUT: (data: { id: string; password?: string }, connectionId: string) => { let layout = get(stageShows)[data.id] if (!layout \|\| layout.disable
+- [src/frontend/utils/stageTalk.ts:81](../../../../src/frontend/utils/stageTalk.ts#L81) — electron/other renderer → renderer; LAYOUT: (data: { id: string; password?: string }, connectionId: string) => { let layout = get(stageShows)&#91;data.id&#93; if (!layout \|\| layout.disable
 - [src/server/stage/util/receiver.ts:43](../../../../src/server/stage/util/receiver.ts#L43) — desktop → browser client; LAYOUT: (data: StageLayout & { id?: string }) => { if (data.disabled) { _set("selectedLayout", "") return } const id = data.id \|\| _get("selectedLayout") \|

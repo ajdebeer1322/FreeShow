@@ -10,8 +10,8 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/helpers/output.ts:566](../../../../src/frontend/components/helpers/output.ts#L566) — get(outputs)[outputId]?.out?.[type]
-- [src/frontend/components/helpers/output.ts:581](../../../../src/frontend/components/helpers/output.ts#L581) — get(outputs)[outputId]?.out?.[type]
+- [src/frontend/components/helpers/output.ts:566](../../../../src/frontend/components/helpers/output.ts#L566) — get(outputs)&#91;outputId&#93;?.out?.&#91;type&#93;
+- [src/frontend/components/helpers/output.ts:581](../../../../src/frontend/components/helpers/output.ts#L581) — get(outputs)&#91;outputId&#93;?.out?.&#91;type&#93;
 
 ## Writes
 

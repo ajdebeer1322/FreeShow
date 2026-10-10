@@ -10,8 +10,8 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/helpers/output.ts:230](../../../../src/frontend/components/helpers/output.ts#L230) — get(outputs)[outs?.[0]]?.out?.slide?.id
-- [src/frontend/utils/stageTalk.ts:142](../../../../src/frontend/utils/stageTalk.ts#L142) — get(outputs)[outputId \|\| ""]?.out?.slide?.id
+- [src/frontend/components/helpers/output.ts:230](../../../../src/frontend/components/helpers/output.ts#L230) — get(outputs)&#91;outs?.&#91;0&#93;&#93;?.out?.slide?.id
+- [src/frontend/utils/stageTalk.ts:142](../../../../src/frontend/utils/stageTalk.ts#L142) — get(outputs)&#91;outputId \|\| ""&#93;?.out?.slide?.id
 
 ## Writes
 

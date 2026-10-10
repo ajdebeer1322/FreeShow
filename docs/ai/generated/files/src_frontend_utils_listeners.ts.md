@@ -90,12 +90,12 @@ No static evidence found.
 ## Timing
 
 - [src/frontend/utils/listeners.ts:76](../../../../src/frontend/utils/listeners.ts#L76) — timer-1f9d8d350248523a: hasNewerUpdate = 800 ms (800); // sendData(REMOTE, { channel: "SHOWS", data })
-- [src/frontend/utils/listeners.ts:88](../../../../src/frontend/utils/listeners.ts#L88) — timer-91237ea1937c25d4: hasNewerUpdate = 0 ms (0); // send(OUTPUT, ["SHOWS_DATA"], data) // TIMELINE style updates everytime unless set to 20ms // update "shows" with new "showsCac
+- [src/frontend/utils/listeners.ts:88](../../../../src/frontend/utils/listeners.ts#L88) — timer-91237ea1937c25d4: hasNewerUpdate = 0 ms (0); // send(OUTPUT, &#91;"SHOWS_DATA"&#93;, data) // TIMELINE style updates everytime unless set to 20ms // update "shows" with new "showsCac
 - [src/frontend/utils/listeners.ts:96](../../../../src/frontend/utils/listeners.ts#L96) — timer-f1182f79d2ac9331: hasNewerUpdate = 50 ms (50); // needs to be sent before output data // STAGE
 - [src/frontend/utils/listeners.ts:125](../../../../src/frontend/utils/listeners.ts#L125) — timer-30c6cdc96dd587ad: hasNewerUpdate = 50 ms (50); // show category metadata display
 - [src/frontend/utils/listeners.ts:131](../../../../src/frontend/utils/listeners.ts#L131) — timer-f2496c195fbf5d2d: hasNewerUpdate = 50 ms (50); 
 - [src/frontend/utils/listeners.ts:136](../../../../src/frontend/utils/listeners.ts#L136) — timer-78a49b00f2489896: hasNewerUpdate = 50 ms (50); 
-- [src/frontend/utils/listeners.ts:156](../../../../src/frontend/utils/listeners.ts#L156) — timer-d36c909e79ba2d5a: hasNewerUpdate = 50 ms (50); // Object.keys(get(cachedShowsData)).forEach(id => { // if (get(showsCache)[id]?.settings?.template === id) // set false // });
+- [src/frontend/utils/listeners.ts:156](../../../../src/frontend/utils/listeners.ts#L156) — timer-d36c909e79ba2d5a: hasNewerUpdate = 50 ms (50); // Object.keys(get(cachedShowsData)).forEach(id => { // if (get(showsCache)&#91;id&#93;?.settings?.template === id) // set false // });
 - [src/frontend/utils/listeners.ts:161](../../../../src/frontend/utils/listeners.ts#L161) — timer-35661c215f79ee35: hasNewerUpdate = 50 ms (50); 
 - [src/frontend/utils/listeners.ts:167](../../../../src/frontend/utils/listeners.ts#L167) — timer-f7dbfded530d6376: hasNewerUpdate = 50 ms (50); 
 - [src/frontend/utils/listeners.ts:184](../../../../src/frontend/utils/listeners.ts#L184) — timer-4094713e914b0c42: hasNewerUpdate = 120 ms (120); // Debounce and filter ACTIVE_SCRIPTURE to avoid sending partial states (book-only/chapter-only)

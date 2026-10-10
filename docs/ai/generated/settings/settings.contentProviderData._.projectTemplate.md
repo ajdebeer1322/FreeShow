@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/IPC/responsesMain.ts:482](../../../../src/frontend/IPC/responsesMain.ts#L482) — get(contentProviderData)[providerId]?.projectTemplate
+- [src/frontend/IPC/responsesMain.ts:482](../../../../src/frontend/IPC/responsesMain.ts#L482) — get(contentProviderData)&#91;providerId&#93;?.projectTemplate
 
 ## Writes
 

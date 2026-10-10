@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/IPC/responsesMain.ts:371](../../../../src/frontend/IPC/responsesMain.ts#L371) — get(contentProviderData)[data.providerId]?.songOrigin
+- [src/frontend/IPC/responsesMain.ts:371](../../../../src/frontend/IPC/responsesMain.ts#L371) — get(contentProviderData)&#91;data.providerId&#93;?.songOrigin
 
 ## Writes
 

@@ -1,0 +1,15 @@
+[
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1724,"endLine":1724,"text":"// decoration first","start":77144,"end":77163},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1755,"endLine":1755,"text":"// luminance modifications","start":78963,"end":78989},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1759,"endLine":1759,"text":"// parse from percentages of 100,000","start":79216,"end":79252},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1766,"endLine":1766,"text":"// HSL functions scale by 100","start":79476,"end":79505},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1769,"endLine":1769,"text":"// apply the transformation to the Luminance channel","start":79542,"end":79594},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1770,"endLine":1770,"text":"// NewL = (OldL * mod) + off","start":79607,"end":79635},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1773,"endLine":1773,"text":"// clamp between 0 and 100","start":79679,"end":79705},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1786,"endLine":1786,"text":"// if (!srgb.startsWith(\"#\")) return \"#\" + srgb","start":80098,"end":80145},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1853,"endLine":1853,"text":"// DrawingML direct effects","start":82564,"end":82591},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1861,"endLine":1861,"text":"// a:duotone effect","start":82978,"end":82997},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1887,"endLine":1887,"text":"// Extension image effects (a14 / a15 / a16 / any namespace)","start":83903,"end":83963},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1917,"endLine":1917,"text":"///// XML","start":85297,"end":85306},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1963,"endLine":1963,"text":"// [slide, layout, master]","start":86646,"end":86672}
+]

@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/frontend/utils/receivers.ts:290](../../../../src/frontend/utils/receivers.ts#L290) — electron/other renderer → renderer; REQUEST_VOLUME: (data: { deviceId: string; value: number }) => { AudioMicrophone.volumes[data.deviceId] = data.value }
+- [src/frontend/utils/receivers.ts:290](../../../../src/frontend/utils/receivers.ts#L290) — electron/other renderer → renderer; REQUEST_VOLUME: (data: { deviceId: string; value: number }) => { AudioMicrophone.volumes&#91;data.deviceId&#93; = data.value }

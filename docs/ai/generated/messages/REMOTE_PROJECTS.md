@@ -14,4 +14,4 @@ No static evidence found.
 ## Handlers
 
 - [src/frontend/utils/remoteTalk.ts:159](../../../../src/frontend/utils/remoteTalk.ts#L159) — electron/other renderer → renderer; PROJECTS: (msg: any) => { msg.data = removeDeleted(keysToID(clone(get(projects)))) // get names msg.data.forEach((project) => { project.shows.fo
-- [src/server/remote/util/receiver.ts:131](../../../../src/server/remote/util/receiver.ts#L131) — desktop → browser client; PROJECTS: (data: any) => { if (!_get("isConnected")) return // Sort once before setting to avoid double store update const sortedProjects = [...data].sort
+- [src/server/remote/util/receiver.ts:131](../../../../src/server/remote/util/receiver.ts#L131) — desktop → browser client; PROJECTS: (data: any) => { if (!_get("isConnected")) return // Sort once before setting to avoid double store update const sortedProjects = &#91;...data&#93;.sort

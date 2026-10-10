@@ -36,9 +36,9 @@ Store: src/frontend/stores.ts#ai.
 
 ## Writes
 
-- [src/frontend/ai/components/popups/AiModelManager.svelte:20](../../../../src/frontend/ai/components/popups/AiModelManager.svelte#L20) — ai.update((a) => { const keys = key.toString().split(".") if (keys.length === 1) { a[key] = value return a } if (!a[keys[0]]) a[keys[0]] = {} a[keys[0]][keys[1]] = value return a }
-- [src/frontend/ai/components/popups/LlmOptions.svelte:17](../../../../src/frontend/ai/components/popups/LlmOptions.svelte#L17) — ai.update((a) => { if (!a.llm) a.llm = {} a.llm[key] = value return a })
-- [src/frontend/ai/components/settings/AutoScriptureOptions.svelte:10](../../../../src/frontend/ai/components/settings/AutoScriptureOptions.svelte#L10) — ai.update((a) => { if (!a.scripture) a.scripture = {} a.scripture[key] = value return a })
-- [src/frontend/ai/components/settings/STTOptions.svelte:15](../../../../src/frontend/ai/components/settings/STTOptions.svelte#L15) — ai.update((a) => { if (!a.stt) a.stt = {} a.stt[key] = value return a })
-- [src/frontend/ai/components/settings/SmartSettings.svelte:12](../../../../src/frontend/ai/components/settings/SmartSettings.svelte#L12) — ai.update((a) => { a[key] = value return a })
+- [src/frontend/ai/components/popups/AiModelManager.svelte:20](../../../../src/frontend/ai/components/popups/AiModelManager.svelte#L20) — ai.update((a) => { const keys = key.toString().split(".") if (keys.length === 1) { a&#91;key&#93; = value return a } if (!a&#91;keys&#91;0&#93;&#93;) a&#91;keys&#91;0&#93;&#93; = {} a&#91;keys&#91;0&#93;&#93;&#91;keys&#91;1&#93;&#93; = value return a }
+- [src/frontend/ai/components/popups/LlmOptions.svelte:17](../../../../src/frontend/ai/components/popups/LlmOptions.svelte#L17) — ai.update((a) => { if (!a.llm) a.llm = {} a.llm&#91;key&#93; = value return a })
+- [src/frontend/ai/components/settings/AutoScriptureOptions.svelte:10](../../../../src/frontend/ai/components/settings/AutoScriptureOptions.svelte#L10) — ai.update((a) => { if (!a.scripture) a.scripture = {} a.scripture&#91;key&#93; = value return a })
+- [src/frontend/ai/components/settings/STTOptions.svelte:15](../../../../src/frontend/ai/components/settings/STTOptions.svelte#L15) — ai.update((a) => { if (!a.stt) a.stt = {} a.stt&#91;key&#93; = value return a })
+- [src/frontend/ai/components/settings/SmartSettings.svelte:12](../../../../src/frontend/ai/components/settings/SmartSettings.svelte#L12) — ai.update((a) => { a&#91;key&#93; = value return a })
 - [src/frontend/utils/updateSettings.ts:469](../../../../src/frontend/utils/updateSettings.ts#L469) — ai.set(a)

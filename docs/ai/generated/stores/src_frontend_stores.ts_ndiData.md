@@ -13,8 +13,8 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 ## Writes
 
-- [src/frontend/components/settings/tabs/Outputs.svelte:61](../../../../src/frontend/components/settings/tabs/Outputs.svelte#L61) — ndiData.update((n) => { delete n[outputId] return n })
-- [src/frontend/utils/receivers.ts:304](../../../../src/frontend/utils/receivers.ts#L304) — ndiData.update((a) => { a[msg.id] = msg return a })
+- [src/frontend/components/settings/tabs/Outputs.svelte:61](../../../../src/frontend/components/settings/tabs/Outputs.svelte#L61) — ndiData.update((n) => { delete n&#91;outputId&#93; return n })
+- [src/frontend/utils/receivers.ts:304](../../../../src/frontend/utils/receivers.ts#L304) — ndiData.update((a) => { a&#91;msg.id&#93; = msg return a })
 
 ## Transport
 

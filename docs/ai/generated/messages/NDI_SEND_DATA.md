@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/frontend/utils/receivers.ts:301](../../../../src/frontend/utils/receivers.ts#L301) — electron/other renderer → renderer; SEND_DATA: (msg) => { if (!msg?.id) return ndiData.update((a) => { a[msg.id] = msg return a }) }
+- [src/frontend/utils/receivers.ts:301](../../../../src/frontend/utils/receivers.ts#L301) — electron/other renderer → renderer; SEND_DATA: (msg) => { if (!msg?.id) return ndiData.update((a) => { a&#91;msg.id&#93; = msg return a }) }

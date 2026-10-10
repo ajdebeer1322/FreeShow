@@ -76,4 +76,6 @@ No static evidence found.
 
 ## Workarounds
 
+- [src/frontend/components/drawer/bible/scripture.ts:210](../../../../src/frontend/components/drawer/bible/scripture.ts#L210) — workaround-36d19c6d91518976: // WIP if 1_1, 1_2, 1_3 all add up to over the splitted verse length combined, then merge into "1"
 - [src/frontend/components/drawer/bible/scripture.ts:311](../../../../src/frontend/components/drawer/bible/scripture.ts#L311) — workaround-5b2058a647a16f64: // WIP multiple verses, play from another version
+- [src/frontend/components/drawer/bible/scripture.ts:2106](../../../../src/frontend/components/drawer/bible/scripture.ts#L2106) — workaround-68939d49d1b56f7f: // WIP similar to array.ts rangeSelect

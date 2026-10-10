@@ -34,12 +34,12 @@ None detected.
 ## Timing
 
 - [src/electron/blackmagic/BlackmagicSender.ts:98](../../../../src/electron/blackmagic/BlackmagicSender.ts#L98) — timer-322e1a1d9bbc9fe9: setInterval = dynamic ms (this.CLEANUP_INTERVAL); // Start global memory cleanup
-- [src/electron/blackmagic/BlackmagicSender.ts:167](../../../../src/electron/blackmagic/BlackmagicSender.ts#L167) — timer-2e38a23fc7573d7b: wait = 2000 ms (2000); 
-- [src/electron/blackmagic/BlackmagicSender.ts:187](../../../../src/electron/blackmagic/BlackmagicSender.ts#L187) — timer-1f5d74ec1269c927: setTimeout = 10000 ms (10000); 
-- [src/electron/blackmagic/BlackmagicSender.ts:325](../../../../src/electron/blackmagic/BlackmagicSender.ts#L325) — timer-5876dbcae2723310: wait = dynamic ms (waitTime); 
-- [src/electron/blackmagic/BlackmagicSender.ts:606](../../../../src/electron/blackmagic/BlackmagicSender.ts#L606) — timer-1bbbbca048a4ae02: setTimeout = 0 ms (0); 
-- [src/electron/blackmagic/BlackmagicSender.ts:779](../../../../src/electron/blackmagic/BlackmagicSender.ts#L779) — timer-aa5dfb77d2429b6f: setTimeout = 2000 ms (2000); 
-- [src/electron/blackmagic/BlackmagicSender.ts:821](../../../../src/electron/blackmagic/BlackmagicSender.ts#L821) — timer-1de53c178343e108: wait = 1000 ms (1000); 
+- [src/electron/blackmagic/BlackmagicSender.ts:167](../../../../src/electron/blackmagic/BlackmagicSender.ts#L167) — timer-2e38a23fc7573d7b: wait = 2000 ms (2000); // Add a small delay to ensure hardware has time to reset // Extra long delay
+- [src/electron/blackmagic/BlackmagicSender.ts:187](../../../../src/electron/blackmagic/BlackmagicSender.ts#L187) — timer-1f5d74ec1269c927: setTimeout = 10000 ms (10000); // Use completely isolated promise with timeout for macadam initialization // This is critical to prevent segfaults during ha
+- [src/electron/blackmagic/BlackmagicSender.ts:325](../../../../src/electron/blackmagic/BlackmagicSender.ts#L325) — timer-5876dbcae2723310: wait = dynamic ms (waitTime); // Wait longer between each attempt // Longer delays between attempts
+- [src/electron/blackmagic/BlackmagicSender.ts:606](../../../../src/electron/blackmagic/BlackmagicSender.ts#L606) — timer-1bbbbca048a4ae02: setTimeout = 0 ms (0); // Use setTimeout to completely isolate each frame scheduling operation // This prevents a crash in one frame from affecting others /
+- [src/electron/blackmagic/BlackmagicSender.ts:779](../../../../src/electron/blackmagic/BlackmagicSender.ts#L779) — timer-aa5dfb77d2429b6f: setTimeout = 2000 ms (2000); // Mark for reinitialization // Schedule recovery with longer delay
+- [src/electron/blackmagic/BlackmagicSender.ts:821](../../../../src/electron/blackmagic/BlackmagicSender.ts#L821) — timer-1de53c178343e108: wait = 1000 ms (1000); // Release the device index before deleting playbackData so initializeDevice
 - [src/electron/blackmagic/BlackmagicSender.ts:839](../../../../src/electron/blackmagic/BlackmagicSender.ts#L839) — timer-777bfa3059430d70: setTimeout = 3000 ms (3000); 
 
 ## Workarounds

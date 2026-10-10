@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/frontend/utils/receivers.ts:175](../../../../src/frontend/utils/receivers.ts#L175) — electron/other renderer → renderer; MAIN_SHOWS_DATA: () => send(OUTPUT, ["SHOWS_DATA"], get(shows))
+- [src/frontend/utils/receivers.ts:175](../../../../src/frontend/utils/receivers.ts#L175) — electron/other renderer → renderer; MAIN_SHOWS_DATA: () => send(OUTPUT, &#91;"SHOWS_DATA"&#93;, get(shows))

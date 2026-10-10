@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/helpers/output.ts:581](../../../../src/frontend/components/helpers/output.ts#L581) — get(outputs)[outputId]?.out?.[type]?.includes
+- [src/frontend/components/helpers/output.ts:581](../../../../src/frontend/components/helpers/output.ts#L581) — get(outputs)&#91;outputId&#93;?.out?.&#91;type&#93;?.includes
 
 ## Writes
 

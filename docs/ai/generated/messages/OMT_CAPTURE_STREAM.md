@@ -8,7 +8,7 @@ No static evidence found.
 
 ## Senders
 
-- [src/frontend/components/drawer/live/OMTStream.svelte:28](../../../../src/frontend/components/drawer/live/OMTStream.svelte#L28) — renderer → electron/other renderer; { source: screen, outputId: outputId \|\| Object.keys($outputs)[0] }
+- [src/frontend/components/drawer/live/OMTStream.svelte:28](../../../../src/frontend/components/drawer/live/OMTStream.svelte#L28) — renderer → electron/other renderer; { source: screen, outputId: outputId \|\| Object.keys($outputs)&#91;0&#93; }
 
 ## Handlers
 

@@ -9,11 +9,11 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 ## Reads
 
 - [src/frontend/components/helpers/output.ts:79](../../../../src/frontend/components/helpers/output.ts#L79) — get(syncedOutputs)
-- [src/frontend/utils/listeners.ts:218](../../../../src/frontend/utils/listeners.ts#L218) — syncedOutputs.subscribe((data) => { send(OUTPUT, ["SYNCED_OUTPUTS"], data) })
+- [src/frontend/utils/listeners.ts:218](../../../../src/frontend/utils/listeners.ts#L218) — syncedOutputs.subscribe((data) => { send(OUTPUT, &#91;"SYNCED_OUTPUTS"&#93;, data) })
 
 ## Writes
 
-- [src/frontend/components/helpers/output.ts:115](../../../../src/frontend/components/helpers/output.ts#L115) — syncedOutputs.update((synced = {}) => { let changed = false const updated = { ...synced } for (const [id, out] of Object.entries(outs)) { if (out?.name && updated[id] !== out.name)
+- [src/frontend/components/helpers/output.ts:115](../../../../src/frontend/components/helpers/output.ts#L115) — syncedOutputs.update((synced = {}) => { let changed = false const updated = { ...synced } for (const &#91;id, out&#93; of Object.entries(outs)) { if (out?.name && updated&#91;id&#93; !== out.name)
 - [src/frontend/utils/receivers.ts:260](../../../../src/frontend/utils/receivers.ts#L260) — syncedOutputs.set(a)
 
 ## Transport

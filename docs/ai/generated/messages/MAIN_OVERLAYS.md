@@ -12,5 +12,5 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:67](../../../../src/electron/IPC/responsesMain.ts#L67) — renderer/client → electron; [Main.OVERLAYS]: () => getStore("OVERLAYS")
-- [src/frontend/IPC/responsesMain.ts:138](../../../../src/frontend/IPC/responsesMain.ts#L138) — electron/other renderer → renderer; [Main.OVERLAYS]: (a) => overlays.set(a)
+- [src/electron/IPC/responsesMain.ts:67](../../../../src/electron/IPC/responsesMain.ts#L67) — renderer/client → electron; &#91;Main.OVERLAYS&#93;: () => getStore("OVERLAYS")
+- [src/frontend/IPC/responsesMain.ts:138](../../../../src/frontend/IPC/responsesMain.ts#L138) — electron/other renderer → renderer; &#91;Main.OVERLAYS&#93;: (a) => overlays.set(a)

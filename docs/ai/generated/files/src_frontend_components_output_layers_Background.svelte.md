@@ -26,11 +26,13 @@ None detected.
 ## Timing
 
 - [src/frontend/components/output/layers/Background.svelte:48](../../../../src/frontend/components/output/layers/Background.svelte#L48) — timer-fe3553171eefaaf5: setTimeout = dynamic ms (duration / 2); 
-- [src/frontend/components/output/layers/Background.svelte:95](../../../../src/frontend/components/output/layers/Background.svelte#L95) — timer-32131be162076e13: setTimeout = dynamic ms (mountDelay); 
-- [src/frontend/components/output/layers/Background.svelte:111](../../../../src/frontend/components/output/layers/Background.svelte#L111) — timer-1ea9fa8d2ca7787d: setTimeout = dynamic ms (maxLoadTimeout); 
-- [src/frontend/components/output/layers/Background.svelte:124](../../../../src/frontend/components/output/layers/Background.svelte#L124) — timer-54f2a6c7918ee167: setTimeout = 0 ms (omitted); 
-- [src/frontend/components/output/layers/Background.svelte:148](../../../../src/frontend/components/output/layers/Background.svelte#L148) — timer-bee4a460e0391e4d: setTimeout = dynamic ms (duration / 4 + 60); 
+- [src/frontend/components/output/layers/Background.svelte:95](../../../../src/frontend/components/output/layers/Background.svelte#L95) — timer-32131be162076e13: setTimeout = dynamic ms (mountDelay); // && background2?.path ? background2?.path !== data.path : background2?.id !== data.id
+- [src/frontend/components/output/layers/Background.svelte:111](../../../../src/frontend/components/output/layers/Background.svelte#L111) — timer-1ea9fa8d2ca7787d: setTimeout = dynamic ms (maxLoadTimeout); // max loading time fallback
+- [src/frontend/components/output/layers/Background.svelte:124](../../../../src/frontend/components/output/layers/Background.svelte#L124) — timer-54f2a6c7918ee167: setTimeout = 0 ms (omitted); // allow firstActive to trigger first
+- [src/frontend/components/output/layers/Background.svelte:148](../../../../src/frontend/components/output/layers/Background.svelte#L148) — timer-bee4a460e0391e4d: setTimeout = dynamic ms (duration / 4 + 60); // don't "refresh" animation when chaning slide
 
 ## Workarounds
 
-No static evidence found.
+- [src/frontend/components/output/layers/Background.svelte:28](../../../../src/frontend/components/output/layers/Background.svelte#L28) — workaround-50747b0c19846f4b: // WIP changing media while another transitions is not smooth
+- [src/frontend/components/output/layers/Background.svelte:29](../../../../src/frontend/components/output/layers/Background.svelte#L29) — workaround-7cb390e9f0474f0a: // WIP changing quicly between media might make it not receive updates
+- [src/frontend/components/output/layers/Background.svelte:41](../../../../src/frontend/components/output/layers/Background.svelte#L41) — workaround-743511ce00359c38: // prevent svelte bug creating multiple items if creating new while old clears

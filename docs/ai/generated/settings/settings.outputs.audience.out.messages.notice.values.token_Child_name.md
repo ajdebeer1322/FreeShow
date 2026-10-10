@@ -10,8 +10,8 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/helpers/messages.test.ts:198](../../../../src/frontend/components/helpers/messages.test.ts#L198) — get(outputs).audience.out?.messages?.notice.values["token:Child name"]
-- [src/frontend/components/helpers/messages.test.ts:230](../../../../src/frontend/components/helpers/messages.test.ts#L230) — get(outputs).audience.out?.messages?.notice.values["token:Child name"]
+- [src/frontend/components/helpers/messages.test.ts:198](../../../../src/frontend/components/helpers/messages.test.ts#L198) — get(outputs).audience.out?.messages?.notice.values&#91;"token:Child name"&#93;
+- [src/frontend/components/helpers/messages.test.ts:230](../../../../src/frontend/components/helpers/messages.test.ts#L230) — get(outputs).audience.out?.messages?.notice.values&#91;"token:Child name"&#93;
 
 ## Writes
 

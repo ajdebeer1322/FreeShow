@@ -9,7 +9,7 @@ No static evidence found.
 ## Rendered components and props
 
 - [src/frontend/components/main/popups/DeleteDuplicatedShows.svelte:194](../../../../src/frontend/components/main/popups/DeleteDuplicatedShows.svelte#L194) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; class="popup-back"; icon="back"; iconSize={1.3}; title="actions.back"; on:click={() => (manualDeletion = fals
-- [src/frontend/components/main/popups/DeleteDuplicatedShows.svelte:207](../../../../src/frontend/components/main/popups/DeleteDuplicatedShows.svelte#L207) — MaterialTextarea → src/frontend/components/inputs/MaterialTextarea.svelte; label="edit.text"; rows={5}; value={loadedTexts[i]}; disabled
+- [src/frontend/components/main/popups/DeleteDuplicatedShows.svelte:207](../../../../src/frontend/components/main/popups/DeleteDuplicatedShows.svelte#L207) — MaterialTextarea → src/frontend/components/inputs/MaterialTextarea.svelte; label="edit.text"; rows={5}; value={loadedTexts&#91;i&#93;}; disabled
 - [src/frontend/components/main/popups/DeleteDuplicatedShows.svelte:210](../../../../src/frontend/components/main/popups/DeleteDuplicatedShows.svelte#L210) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; icon="delete"; style="padding: 5px;"; on:click={() => deleteAtIndex(i)}; white; red
 - [src/frontend/components/main/popups/DeleteDuplicatedShows.svelte:211](../../../../src/frontend/components/main/popups/DeleteDuplicatedShows.svelte#L211) — T → src/frontend/components/helpers/T.svelte; id="actions.delete"
 - [src/frontend/components/main/popups/DeleteDuplicatedShows.svelte:215](../../../../src/frontend/components/main/popups/DeleteDuplicatedShows.svelte#L215) — HRule → src/frontend/components/input/HRule.svelte; 

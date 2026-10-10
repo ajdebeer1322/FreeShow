@@ -13,4 +13,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:112](../../../../src/electron/IPC/responsesMain.ts#L112) — renderer/client → electron; [Main.REFRESH_SHOWS]: () => refreshAllShows()
+- [src/electron/IPC/responsesMain.ts:112](../../../../src/electron/IPC/responsesMain.ts#L112) — renderer/client → electron; &#91;Main.REFRESH_SHOWS&#93;: () => refreshAllShows()

@@ -10,11 +10,11 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/context/loadItems.ts:26](../../../../src/frontend/components/context/loadItems.ts#L26) — get(drawerTabsData)[a.id]
-- [src/frontend/components/drawer/Content.svelte:22](../../../../src/frontend/components/drawer/Content.svelte#L22) — $drawerTabsData[id]
-- [src/frontend/components/drawer/MaterialDrawerTab.svelte:80](../../../../src/frontend/components/drawer/MaterialDrawerTab.svelte#L80) — $drawerTabsData[drawerId]
-- [src/frontend/components/helpers/dropActions.ts:503](../../../../src/frontend/components/helpers/dropActions.ts#L503) — get(drawerTabsData)[get(activeDrawerTab)]
-- [src/frontend/components/helpers/historyHelpers.ts:26](../../../../src/frontend/components/helpers/historyHelpers.ts#L26) — get(drawerTabsData)[tabId]
+- [src/frontend/components/context/loadItems.ts:26](../../../../src/frontend/components/context/loadItems.ts#L26) — get(drawerTabsData)&#91;a.id&#93;
+- [src/frontend/components/drawer/Content.svelte:22](../../../../src/frontend/components/drawer/Content.svelte#L22) — $drawerTabsData&#91;id&#93;
+- [src/frontend/components/drawer/MaterialDrawerTab.svelte:80](../../../../src/frontend/components/drawer/MaterialDrawerTab.svelte#L80) — $drawerTabsData&#91;drawerId&#93;
+- [src/frontend/components/helpers/dropActions.ts:503](../../../../src/frontend/components/helpers/dropActions.ts#L503) — get(drawerTabsData)&#91;get(activeDrawerTab)&#93;
+- [src/frontend/components/helpers/historyHelpers.ts:26](../../../../src/frontend/components/helpers/historyHelpers.ts#L26) — get(drawerTabsData)&#91;tabId&#93;
 
 ## Writes
 

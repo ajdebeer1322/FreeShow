@@ -6,7 +6,7 @@ Store: none identified.
 
 ## Definitions
 
-- [src/electron/data/defaults.ts:86](../../../../src/electron/data/defaults.ts#L86) — ["song"]
+- [src/electron/data/defaults.ts:86](../../../../src/electron/data/defaults.ts#L86) — &#91;"song"&#93;
 
 ## Reads
 

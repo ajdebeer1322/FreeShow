@@ -122,9 +122,15 @@ No static evidence found.
 
 ## Timing
 
+- [src/frontend/components/helpers/media.ts:192](../../../../src/frontend/components/helpers/media.ts#L192) — poll-interval-ee3a3da5ffa25bab: poll-interval = 50 ms (50); 
+- [src/frontend/components/helpers/media.ts:192](../../../../src/frontend/components/helpers/media.ts#L192) — poll-timeout-3bbf13c026ed486a: poll-timeout = 10000 ms (10000); 
+- [src/frontend/components/helpers/media.ts:254](../../../../src/frontend/components/helpers/media.ts#L254) — poll-interval-14af15f8d9be4a0b: poll-interval = 50 ms (50); 
+- [src/frontend/components/helpers/media.ts:254](../../../../src/frontend/components/helpers/media.ts#L254) — poll-timeout-27a2e8088ebee51a: poll-timeout = 10000 ms (10000); 
 - [src/frontend/components/helpers/media.ts:519](../../../../src/frontend/components/helpers/media.ts#L519) — timer-c9aa03a0bc012d07: wait = dynamic ms (500 * iteration); 
+- [src/frontend/components/helpers/media.ts:635](../../../../src/frontend/components/helpers/media.ts#L635) — poll-interval-9aea957a500b4301: poll-interval = 20 ms (20); // wait until loaded
+- [src/frontend/components/helpers/media.ts:635](../../../../src/frontend/components/helpers/media.ts#L635) — poll-timeout-40d26b0f5ebcb0a8: poll-timeout = 5000 ms (5000); // wait until loaded
 - [src/frontend/components/helpers/media.ts:650](../../../../src/frontend/components/helpers/media.ts#L650) — timer-65d342a86751dc8c: setTimeout = 3000 ms (3000); 
-- [src/frontend/components/helpers/media.ts:663](../../../../src/frontend/components/helpers/media.ts#L663) — timer-e8b7794a60cb9b55: wait = dynamic ms (loading); 
+- [src/frontend/components/helpers/media.ts:663](../../../../src/frontend/components/helpers/media.ts#L663) — timer-e8b7794a60cb9b55: wait = dynamic ms (loading); // ensure lessons are downloaded and loaded before capturing
 
 ## Workarounds
 

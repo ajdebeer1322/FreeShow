@@ -13,4 +13,4 @@ No static evidence found.
 ## Handlers
 
 - [src/frontend/utils/stageTalk.ts:76](../../../../src/frontend/utils/stageTalk.ts#L76) — electron/other renderer → renderer; LAYOUTS: () => { return keysToID(get(stageShows)) .filter((a) => !a.disabled) .map((a) => ({ id: a.id, name: a.name, password: !!a.password })) 
-- [src/server/stage/util/receiver.ts:10](../../../../src/server/stage/util/receiver.ts#L10) — desktop → browser client; LAYOUTS: (data: { id: string; name: string; password: boolean }[]) => { _set("layouts", data) if (!data.length) return const urlParams = new URLSearchPara
+- [src/server/stage/util/receiver.ts:10](../../../../src/server/stage/util/receiver.ts#L10) — desktop → browser client; LAYOUTS: (data: { id: string; name: string; password: boolean }&#91;&#93;) => { _set("layouts", data) if (!data.length) return const urlParams = new URLSearchPara

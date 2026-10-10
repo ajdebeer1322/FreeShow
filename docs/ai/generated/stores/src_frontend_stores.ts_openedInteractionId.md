@@ -17,7 +17,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 ## Writes
 
-- [src/frontend/components/context/menuClick.ts:1387](../../../../src/frontend/components/context/menuClick.ts#L1387) — openedInteractionId.set(obj.sel.data[0]?.id)
+- [src/frontend/components/context/menuClick.ts:1387](../../../../src/frontend/components/context/menuClick.ts#L1387) — openedInteractionId.set(obj.sel.data&#91;0&#93;?.id)
 - [src/frontend/components/drawer/pages/Interactions.svelte:46](../../../../src/frontend/components/drawer/pages/Interactions.svelte#L46) — openedInteractionId.set(id)
 - [src/frontend/components/slide/Reference.svelte:53](../../../../src/frontend/components/slide/Reference.svelte#L53) — openedInteractionId.set(data.id)
 

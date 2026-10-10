@@ -10,9 +10,9 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/context/loadItems.ts:65](../../../../src/frontend/components/context/loadItems.ts#L65) — get(actions)[item.id \|\| ""]?.tags
-- [src/frontend/components/context/menuClick.ts:674](../../../../src/frontend/components/context/menuClick.ts#L674) — get(actions)[get(selected).data[0]?.id]?.tags
-- [src/frontend/components/context/menuClick.ts:680](../../../../src/frontend/components/context/menuClick.ts#L680) — get(actions)[id]?.tags
+- [src/frontend/components/context/loadItems.ts:65](../../../../src/frontend/components/context/loadItems.ts#L65) — get(actions)&#91;item.id \|\| ""&#93;?.tags
+- [src/frontend/components/context/menuClick.ts:674](../../../../src/frontend/components/context/menuClick.ts#L674) — get(actions)&#91;get(selected).data&#91;0&#93;?.id&#93;?.tags
+- [src/frontend/components/context/menuClick.ts:680](../../../../src/frontend/components/context/menuClick.ts#L680) — get(actions)&#91;id&#93;?.tags
 
 ## Writes
 

@@ -42,7 +42,7 @@ Saved: yes, with the listed transformations.
 - [src/frontend/components/edit/editbox/EditboxPlain.svelte:86](../../../../src/frontend/components/edit/editbox/EditboxPlain.svelte#L86) — $overlays
 - [src/frontend/components/edit/editors/OverlayEditor.svelte:23](../../../../src/frontend/components/edit/editors/OverlayEditor.svelte#L23) — $overlays
 - [src/frontend/components/edit/editors/OverlayEditor.svelte:26](../../../../src/frontend/components/edit/editors/OverlayEditor.svelte#L26) — $overlays
-- [src/frontend/components/edit/editors/OverlayEditor.svelte:27](../../../../src/frontend/components/edit/editors/OverlayEditor.svelte#L27) — overlays.subscribe((a) => clone((Slide = a[currentId])))
+- [src/frontend/components/edit/editors/OverlayEditor.svelte:27](../../../../src/frontend/components/edit/editors/OverlayEditor.svelte#L27) — overlays.subscribe((a) => clone((Slide = a&#91;currentId&#93;)))
 - [src/frontend/components/edit/editors/OverlayEditor.svelte:72](../../../../src/frontend/components/edit/editors/OverlayEditor.svelte#L72) — $overlays
 - [src/frontend/components/edit/editors/SlideEditor.svelte:369](../../../../src/frontend/components/edit/editors/SlideEditor.svelte#L369) — $overlays
 - [src/frontend/components/edit/editors/SlideEditor.svelte:370](../../../../src/frontend/components/edit/editors/SlideEditor.svelte#L370) — $overlays
@@ -105,7 +105,7 @@ Saved: yes, with the listed transformations.
 - [src/frontend/components/slide/Textbox.svelte:670](../../../../src/frontend/components/slide/Textbox.svelte#L670) — $overlays
 - [src/frontend/utils/createData.ts:427](../../../../src/frontend/utils/createData.ts#L427) — get(overlays)
 - [src/frontend/utils/createData.ts:1451](../../../../src/frontend/utils/createData.ts#L1451) — get(overlays)
-- [src/frontend/utils/listeners.ts:160](../../../../src/frontend/utils/listeners.ts#L160) — overlays.subscribe(async (data) => { if (await hasNewerUpdate("LISTENER_OVERLAYS", 50)) return send(OUTPUT, ["OVERLAYS"], data) send(REMOTE, ["OVERLAYS"], data) })
+- [src/frontend/utils/listeners.ts:160](../../../../src/frontend/utils/listeners.ts#L160) — overlays.subscribe(async (data) => { if (await hasNewerUpdate("LISTENER_OVERLAYS", 50)) return send(OUTPUT, &#91;"OVERLAYS"&#93;, data) send(REMOTE, &#91;"OVERLAYS"&#93;, data) })
 - [src/frontend/utils/remoteTalk.ts:165](../../../../src/frontend/utils/remoteTalk.ts#L165) — get(overlays)
 - [src/frontend/utils/remoteTalk.ts:304](../../../../src/frontend/utils/remoteTalk.ts#L304) — get(overlays)
 - [src/frontend/utils/save.ts:227](../../../../src/frontend/utils/save.ts#L227) — get(overlays)
@@ -115,28 +115,28 @@ Saved: yes, with the listed transformations.
 ## Writes
 
 - [src/frontend/IPC/responsesMain.ts:138](../../../../src/frontend/IPC/responsesMain.ts#L138) — overlays.set(a)
-- [src/frontend/ai/manager/ChatAction.ts:66](../../../../src/frontend/ai/manager/ChatAction.ts#L66) — overlays.set({ ...get(overlays), [uid()]: overlay })
-- [src/frontend/components/context/menuClick.ts:1883](../../../../src/frontend/components/context/menuClick.ts#L1883) — overlays.update((a) => { obj.sel!.data.forEach((id: string) => { a[id].locked = setLocked a[id].modified = Date.now() }) return a })
-- [src/frontend/components/context/menuClick.ts:1906](../../../../src/frontend/components/context/menuClick.ts#L1906) — overlays.update((a) => { obj.sel!.data.forEach((id: string) => { a[id].placeUnderSlide = setUnder a[id].modified = Date.now() }) return a })
+- [src/frontend/ai/manager/ChatAction.ts:66](../../../../src/frontend/ai/manager/ChatAction.ts#L66) — overlays.set({ ...get(overlays), &#91;uid()&#93;: overlay })
+- [src/frontend/components/context/menuClick.ts:1883](../../../../src/frontend/components/context/menuClick.ts#L1883) — overlays.update((a) => { obj.sel!.data.forEach((id: string) => { a&#91;id&#93;.locked = setLocked a&#91;id&#93;.modified = Date.now() }) return a })
+- [src/frontend/components/context/menuClick.ts:1906](../../../../src/frontend/components/context/menuClick.ts#L1906) — overlays.update((a) => { obj.sel!.data.forEach((id: string) => { a&#91;id&#93;.placeUnderSlide = setUnder a&#91;id&#93;.modified = Date.now() }) return a })
 - [src/frontend/components/drawer/Label.svelte:23](../../../../src/frontend/components/drawer/Label.svelte#L23) — overlays.update((a) => setName(a, c, true))
-- [src/frontend/components/drawer/pages/OverlayActions.svelte:20](../../../../src/frontend/components/drawer/pages/OverlayActions.svelte#L20) — overlays.update((a) => { delete a[overlayId][actionId] a[overlayId].modified = Date.now() return a })
+- [src/frontend/components/drawer/pages/OverlayActions.svelte:20](../../../../src/frontend/components/drawer/pages/OverlayActions.svelte#L20) — overlays.update((a) => { delete a&#91;overlayId&#93;&#91;actionId&#93; a&#91;overlayId&#93;.modified = Date.now() return a })
 - [src/frontend/components/edit/EditTools.svelte:213](../../../../src/frontend/components/edit/EditTools.svelte#L213) — overlays.update(updateItemValues)
-- [src/frontend/components/edit/SceneTools.svelte:65](../../../../src/frontend/components/edit/SceneTools.svelte#L65) — overlays.update((a) => { if (scene.name && a[overlayId] && !a[overlayId].name) { a[overlayId].name = scene.name } return a })
+- [src/frontend/components/edit/SceneTools.svelte:65](../../../../src/frontend/components/edit/SceneTools.svelte#L65) — overlays.update((a) => { if (scene.name && a&#91;overlayId&#93; && !a&#91;overlayId&#93;.name) { a&#91;overlayId&#93;.name = scene.name } return a })
 - [src/frontend/components/edit/editbox/EditboxLines.svelte:262](../../../../src/frontend/components/edit/editbox/EditboxLines.svelte#L262) — overlays.update(setNewLines)
 - [src/frontend/components/edit/tools/BoxStyle.svelte:419](../../../../src/frontend/components/edit/tools/BoxStyle.svelte#L419) — overlays.update(updateItemValues)
 - [src/frontend/components/edit/tools/BoxStyle.svelte:468](../../../../src/frontend/components/edit/tools/BoxStyle.svelte#L468) — overlays.update(updateAutoSize)
 - [src/frontend/components/helpers/messages.test.ts:154](../../../../src/frontend/components/helpers/messages.test.ts#L154) — overlays.set({ notice: createMessage(), second: createMessage() })
-- [src/frontend/components/helpers/messages.test.ts:178](../../../../src/frontend/components/helpers/messages.test.ts#L178) — overlays.update((defs) => { defs.notice.message!.outputIds = ["Lobby", "stage", "disabled", "removed"] return defs })
-- [src/frontend/components/helpers/messages.test.ts:193](../../../../src/frontend/components/helpers/messages.test.ts#L193) — overlays.update((defs) => { defs.notice.message!.outputIds = ["lobby"] return defs })
+- [src/frontend/components/helpers/messages.test.ts:178](../../../../src/frontend/components/helpers/messages.test.ts#L178) — overlays.update((defs) => { defs.notice.message!.outputIds = &#91;"Lobby", "stage", "disabled", "removed"&#93; return defs })
+- [src/frontend/components/helpers/messages.test.ts:193](../../../../src/frontend/components/helpers/messages.test.ts#L193) — overlays.update((defs) => { defs.notice.message!.outputIds = &#91;"lobby"&#93; return defs })
 - [src/frontend/components/helpers/messages.test.ts:221](../../../../src/frontend/components/helpers/messages.test.ts#L221) — overlays.update((defs) => { defs.notice.message!.duration = 2 return defs })
 - [src/frontend/components/helpers/messages.test.ts:238](../../../../src/frontend/components/helpers/messages.test.ts#L238) — overlays.update((defs) => { defs.notice.message!.duration = 2 return defs })
-- [src/frontend/components/main/popups/Conditions.svelte:114](../../../../src/frontend/components/main/popups/Conditions.svelte#L114) — overlays.update((a) => { if (!a[edit.id!]?.items?.[itemIndex]) return a a[edit.id!].items[itemIndex].conditions = conditions a[edit.id!].modified = Date.now() return a })
-- [src/frontend/components/main/popups/DynamicValues.svelte:151](../../../../src/frontend/components/main/popups/DynamicValues.svelte#L151) — overlays.update((a) => { a[edit.id!].items = updateItemText(a[edit.id!].items) a[edit.id!].modified = Date.now() return a })
-- [src/frontend/components/slide/Textbox.svelte:643](../../../../src/frontend/components/slide/Textbox.svelte#L643) — overlays.update((a) => { a[ref.id].items[itemIndex].autoFontSize = fontSize return a })
-- [src/frontend/components/slide/Textbox.svelte:673](../../../../src/frontend/components/slide/Textbox.svelte#L673) — overlays.update((a) => { a[ref.id].items[itemIndex].previewAutoFontSize = fontSize return a })
-- [src/frontend/converters/project.ts:40](../../../../src/frontend/converters/project.ts#L40) — overlayStores.update((a) => { Object.entries(overlays).forEach(([id, overlay]: any) => { // create new or replace existing a[id] = overlay }) return a })
+- [src/frontend/components/main/popups/Conditions.svelte:114](../../../../src/frontend/components/main/popups/Conditions.svelte#L114) — overlays.update((a) => { if (!a&#91;edit.id!&#93;?.items?.&#91;itemIndex&#93;) return a a&#91;edit.id!&#93;.items&#91;itemIndex&#93;.conditions = conditions a&#91;edit.id!&#93;.modified = Date.now() return a })
+- [src/frontend/components/main/popups/DynamicValues.svelte:151](../../../../src/frontend/components/main/popups/DynamicValues.svelte#L151) — overlays.update((a) => { a&#91;edit.id!&#93;.items = updateItemText(a&#91;edit.id!&#93;.items) a&#91;edit.id!&#93;.modified = Date.now() return a })
+- [src/frontend/components/slide/Textbox.svelte:643](../../../../src/frontend/components/slide/Textbox.svelte#L643) — overlays.update((a) => { a&#91;ref.id&#93;.items&#91;itemIndex&#93;.autoFontSize = fontSize return a })
+- [src/frontend/components/slide/Textbox.svelte:673](../../../../src/frontend/components/slide/Textbox.svelte#L673) — overlays.update((a) => { a&#91;ref.id&#93;.items&#91;itemIndex&#93;.previewAutoFontSize = fontSize return a })
+- [src/frontend/converters/project.ts:40](../../../../src/frontend/converters/project.ts#L40) — overlayStores.update((a) => { Object.entries(overlays).forEach((&#91;id, overlay&#93;: any) => { // create new or replace existing a&#91;id&#93; = overlay }) return a })
 - [src/frontend/utils/createData.ts:427](../../../../src/frontend/utils/createData.ts#L427) — overlays.set({ ...get(overlays), ...getDefaultOverlays() })
-- [src/frontend/utils/createData.ts:434](../../../../src/frontend/utils/createData.ts#L434) — overlays.update((a) => { Object.keys(defaultOverlays).forEach((id) => { // if deleted or exists, skip if (deletedIds.includes(id) \|\| a[id]) return a[id] = defaultOverlays[id] }) re
+- [src/frontend/utils/createData.ts:434](../../../../src/frontend/utils/createData.ts#L434) — overlays.update((a) => { Object.keys(defaultOverlays).forEach((id) => { // if deleted or exists, skip if (deletedIds.includes(id) \|\| a&#91;id&#93;) return a&#91;id&#93; = defaultOverlays&#91;id&#93; }) re
 - [src/frontend/utils/receivers.ts:243](../../../../src/frontend/utils/receivers.ts#L243) — overlays.set(clone(a))
 
 ## Transport

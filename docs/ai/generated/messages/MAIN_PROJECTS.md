@@ -12,5 +12,5 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:66](../../../../src/electron/IPC/responsesMain.ts#L66) — renderer/client → electron; [Main.PROJECTS]: () => getStore("PROJECTS")
-- [src/frontend/IPC/responsesMain.ts:124](../../../../src/frontend/IPC/responsesMain.ts#L124) — electron/other renderer → renderer; [Main.PROJECTS]: (a) => { const projectsList = a.projects \|\| {} // remove "Mark as played" on startup Object.values(projectsList).forEach((proje
+- [src/electron/IPC/responsesMain.ts:66](../../../../src/electron/IPC/responsesMain.ts#L66) — renderer/client → electron; &#91;Main.PROJECTS&#93;: () => getStore("PROJECTS")
+- [src/frontend/IPC/responsesMain.ts:124](../../../../src/frontend/IPC/responsesMain.ts#L124) — electron/other renderer → renderer; &#91;Main.PROJECTS&#93;: (a) => { const projectsList = a.projects \|\| {} // remove "Mark as played" on startup Object.values(projectsList).forEach((proje

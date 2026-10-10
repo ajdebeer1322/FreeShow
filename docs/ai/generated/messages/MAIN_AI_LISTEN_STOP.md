@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:292](../../../../src/electron/IPC/responsesMain.ts#L292) — renderer/client → electron; [Main.AI_LISTEN_STOP]: () => SpeechToText.stop()
+- [src/electron/IPC/responsesMain.ts:292](../../../../src/electron/IPC/responsesMain.ts#L292) — renderer/client → electron; &#91;Main.AI_LISTEN_STOP&#93;: () => SpeechToText.stop()

@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:170](../../../../src/electron/IPC/responsesMain.ts#L170) — renderer/client → electron; [Main.WORSHIPTOOLS_CANCEL]: () => cancelImport()
+- [src/electron/IPC/responsesMain.ts:170](../../../../src/electron/IPC/responsesMain.ts#L170) — renderer/client → electron; &#91;Main.WORSHIPTOOLS_CANCEL&#93;: () => cancelImport()

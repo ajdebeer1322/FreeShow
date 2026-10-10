@@ -34,14 +34,14 @@ Saved: yes, with the listed transformations.
 - [src/frontend/components/show/Projects.svelte:212](../../../../src/frontend/components/show/Projects.svelte#L212) — $folders
 - [src/frontend/converters/project.ts:23](../../../../src/frontend/converters/project.ts#L23) — get(folders)
 - [src/frontend/converters/project.ts:175](../../../../src/frontend/converters/project.ts#L175) — get(folders)
-- [src/frontend/utils/listeners.ts:381](../../../../src/frontend/utils/listeners.ts#L381) — folders.subscribe((data) => { send(REMOTE, ["FOLDERS"], { folders: data, opened: get(openedFolders) }) })
+- [src/frontend/utils/listeners.ts:381](../../../../src/frontend/utils/listeners.ts#L381) — folders.subscribe((data) => { send(REMOTE, &#91;"FOLDERS"&#93;, { folders: data, opened: get(openedFolders) }) })
 - [src/frontend/utils/remoteTalk.ts:340](../../../../src/frontend/utils/remoteTalk.ts#L340) — get(folders)
 - [src/frontend/utils/save.ts:226](../../../../src/frontend/utils/save.ts#L226) — get(folders)
 
 ## Writes
 
 - [src/frontend/IPC/responsesMain.ts:135](../../../../src/frontend/IPC/responsesMain.ts#L135) — folders.set(a.folders \|\| {})
-- [src/frontend/components/helpers/clipboard.ts:1114](../../../../src/frontend/components/helpers/clipboard.ts#L1114) — folders.update((a) => { data.forEach((folder) => { const id = folder.id folder = a[id] const parent = Object.values(a).find((a1) => a1.parent === a1.id) \|\| folder.parent const newI
+- [src/frontend/components/helpers/clipboard.ts:1114](../../../../src/frontend/components/helpers/clipboard.ts#L1114) — folders.update((a) => { data.forEach((folder) => { const id = folder.id folder = a&#91;id&#93; const parent = Object.values(a).find((a1) => a1.parent === a1.id) \|\| folder.parent const newI
 - [src/frontend/components/helpers/historyHelpers.ts:132](../../../../src/frontend/components/helpers/historyHelpers.ts#L132) — folders.update((a) => addBackParents(a, "folder"))
 - [src/frontend/components/helpers/historyHelpers.ts:157](../../../../src/frontend/components/helpers/historyHelpers.ts#L157) — folders.update((a) => findAllParents(a, "folder"))
 - [src/frontend/utils/createData.ts:45](../../../../src/frontend/utils/createData.ts#L45) — folders.update((a) => { a.default = { name: translateText("example.meetings"), parent: "/" } return a })

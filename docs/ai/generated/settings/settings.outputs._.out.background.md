@@ -10,22 +10,22 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/actions/apiHelper.ts:769](../../../../src/frontend/components/actions/apiHelper.ts#L769) — get(outputs)[outputId]?.out?.background
-- [src/frontend/components/actions/apiHelper.ts:782](../../../../src/frontend/components/actions/apiHelper.ts#L782) — get(outputs)[activeOutput.id]?.out?.background
-- [src/frontend/components/actions/apiHelper.ts:793](../../../../src/frontend/components/actions/apiHelper.ts#L793) — get(outputs)[activeOutput.id]?.out?.background
-- [src/frontend/components/actions/apiHelper.ts:803](../../../../src/frontend/components/actions/apiHelper.ts#L803) — get(outputs)[activeOutput.id]?.out?.background
-- [src/frontend/components/helpers/mediaInspector.ts:144](../../../../src/frontend/components/helpers/mediaInspector.ts#L144) — get(outputs)[outputId]?.out?.background
-- [src/frontend/components/helpers/output.ts:248](../../../../src/frontend/components/helpers/output.ts#L248) — get(outputs)[outs?.[0]]?.out?.background
-- [src/frontend/components/helpers/output.ts:347](../../../../src/frontend/components/helpers/output.ts#L347) — get(outputs)[outputId]?.out?.background
-- [src/frontend/components/helpers/output.ts:370](../../../../src/frontend/components/helpers/output.ts#L370) — get(outputs)[allOutputIds?.[0]]?.out?.background
-- [src/frontend/components/helpers/showActions.ts:395](../../../../src/frontend/components/helpers/showActions.ts#L395) — get(outputs)[outputId]?.out?.background
-- [src/frontend/components/media/video/videoPlayer.ts:351](../../../../src/frontend/components/media/video/videoPlayer.ts#L351) — get(outputs)[outputIds?.[0] \|\| ""]?.out?.background
-- [src/frontend/components/media/video/videoPlayer.ts:371](../../../../src/frontend/components/media/video/videoPlayer.ts#L371) — get(outputs)[outputId]?.out?.background
-- [src/frontend/components/output/preview/Preview.svelte:35](../../../../src/frontend/components/output/preview/Preview.svelte#L35) — $outputs[id]?.out?.background
-- [src/frontend/components/timeline/TimelinePlayback.ts:431](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L431) — get(outputs)[outputId]?.out?.background
-- [src/frontend/components/timeline/TimelinePlayback.ts:448](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L448) — get(outputs)[outputId]?.out?.background
-- [src/frontend/components/timeline/TimelinePlayback.ts:486](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L486) — get(outputs)[outputId]?.out?.background
-- [src/frontend/components/timeline/TimelinePlayback.ts:518](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L518) — get(outputs)[outputId]?.out?.background
+- [src/frontend/components/actions/apiHelper.ts:769](../../../../src/frontend/components/actions/apiHelper.ts#L769) — get(outputs)&#91;outputId&#93;?.out?.background
+- [src/frontend/components/actions/apiHelper.ts:782](../../../../src/frontend/components/actions/apiHelper.ts#L782) — get(outputs)&#91;activeOutput.id&#93;?.out?.background
+- [src/frontend/components/actions/apiHelper.ts:793](../../../../src/frontend/components/actions/apiHelper.ts#L793) — get(outputs)&#91;activeOutput.id&#93;?.out?.background
+- [src/frontend/components/actions/apiHelper.ts:803](../../../../src/frontend/components/actions/apiHelper.ts#L803) — get(outputs)&#91;activeOutput.id&#93;?.out?.background
+- [src/frontend/components/helpers/mediaInspector.ts:144](../../../../src/frontend/components/helpers/mediaInspector.ts#L144) — get(outputs)&#91;outputId&#93;?.out?.background
+- [src/frontend/components/helpers/output.ts:248](../../../../src/frontend/components/helpers/output.ts#L248) — get(outputs)&#91;outs?.&#91;0&#93;&#93;?.out?.background
+- [src/frontend/components/helpers/output.ts:347](../../../../src/frontend/components/helpers/output.ts#L347) — get(outputs)&#91;outputId&#93;?.out?.background
+- [src/frontend/components/helpers/output.ts:370](../../../../src/frontend/components/helpers/output.ts#L370) — get(outputs)&#91;allOutputIds?.&#91;0&#93;&#93;?.out?.background
+- [src/frontend/components/helpers/showActions.ts:395](../../../../src/frontend/components/helpers/showActions.ts#L395) — get(outputs)&#91;outputId&#93;?.out?.background
+- [src/frontend/components/media/video/videoPlayer.ts:351](../../../../src/frontend/components/media/video/videoPlayer.ts#L351) — get(outputs)&#91;outputIds?.&#91;0&#93; \|\| ""&#93;?.out?.background
+- [src/frontend/components/media/video/videoPlayer.ts:371](../../../../src/frontend/components/media/video/videoPlayer.ts#L371) — get(outputs)&#91;outputId&#93;?.out?.background
+- [src/frontend/components/output/preview/Preview.svelte:35](../../../../src/frontend/components/output/preview/Preview.svelte#L35) — $outputs&#91;id&#93;?.out?.background
+- [src/frontend/components/timeline/TimelinePlayback.ts:431](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L431) — get(outputs)&#91;outputId&#93;?.out?.background
+- [src/frontend/components/timeline/TimelinePlayback.ts:448](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L448) — get(outputs)&#91;outputId&#93;?.out?.background
+- [src/frontend/components/timeline/TimelinePlayback.ts:486](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L486) — get(outputs)&#91;outputId&#93;?.out?.background
+- [src/frontend/components/timeline/TimelinePlayback.ts:518](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L518) — get(outputs)&#91;outputId&#93;?.out?.background
 
 ## Writes
 

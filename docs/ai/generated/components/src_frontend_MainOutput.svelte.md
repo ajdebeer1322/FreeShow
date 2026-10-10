@@ -8,5 +8,5 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/MainOutput.svelte:63](../../../../src/frontend/MainOutput.svelte#L63) — StageLayout → src/frontend/components/stage/StageLayout.svelte; {outputId}; stageId={$outputs[outputId].stageOutput}; edit={false}
+- [src/frontend/MainOutput.svelte:63](../../../../src/frontend/MainOutput.svelte#L63) — StageLayout → src/frontend/components/stage/StageLayout.svelte; {outputId}; stageId={$outputs&#91;outputId&#93;.stageOutput}; edit={false}
 - [src/frontend/MainOutput.svelte:65](../../../../src/frontend/MainOutput.svelte#L65) — Output → src/frontend/components/output/Output.svelte; {outputId}; style={getStyleResolution(resolution, width, height, "fit")}

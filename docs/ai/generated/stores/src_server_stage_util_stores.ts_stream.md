@@ -12,7 +12,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 ## Writes
 
-- [src/server/stage/util/receiver.ts:94](../../../../src/server/stage/util/receiver.ts#L94) — stream.update((a) => { a[data.id] = { jpeg: data.jpeg, size: data.size } return a })
+- [src/server/stage/util/receiver.ts:94](../../../../src/server/stage/util/receiver.ts#L94) — stream.update((a) => { a&#91;data.id&#93; = { jpeg: data.jpeg, size: data.size } return a })
 
 ## Transport
 

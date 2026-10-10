@@ -8,7 +8,7 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/ai/components/settings/SmartSettings.svelte:27](../../../../src/frontend/ai/components/settings/SmartSettings.svelte#L27) — MaterialToggleSwitch → src/frontend/components/inputs/MaterialToggleSwitch.svelte; label={translateText("actions.enable_specific", null, ["settings.ai"])}; checked={isEnabled}; on:
+- [src/frontend/ai/components/settings/SmartSettings.svelte:27](../../../../src/frontend/ai/components/settings/SmartSettings.svelte#L27) — MaterialToggleSwitch → src/frontend/components/inputs/MaterialToggleSwitch.svelte; label={translateText("actions.enable_specific", null, &#91;"settings.ai"&#93;)}; checked={isEnabled}; on:
 - [src/frontend/ai/components/settings/SmartSettings.svelte:30](../../../../src/frontend/ai/components/settings/SmartSettings.svelte#L30) — STTOptions → src/frontend/ai/components/settings/STTOptions.svelte; 
 - [src/frontend/ai/components/settings/SmartSettings.svelte:32](../../../../src/frontend/ai/components/settings/SmartSettings.svelte#L32) — AutoScriptureOptions → src/frontend/ai/components/settings/AutoScriptureOptions.svelte; 
 - [src/frontend/ai/components/settings/SmartSettings.svelte:36](../../../../src/frontend/ai/components/settings/SmartSettings.svelte#L36) — Tip → src/frontend/components/main/Tip.svelte; type="info"; value="ai.hint"; top={20}

@@ -1,0 +1,13 @@
+[
+  {"file":"src/frontend/components/settings/tabs/AudioRouting.svelte","line":533,"endLine":533,"text":"// Multi-channel speaker dropped on card (audio only)","start":24351,"end":24404},
+  {"file":"src/frontend/components/settings/tabs/AudioRouting.svelte","line":549,"endLine":549,"text":"// Specific channel pin or single-channel node","start":25577,"end":25623},
+  {"file":"src/frontend/components/settings/tabs/AudioRouting.svelte","line":724,"endLine":724,"text":"<!-- MAIN OVERFLOW CONTAINER & CHECKERED CANVAS -->","start":33605,"end":33656},
+  {"file":"src/frontend/components/settings/tabs/AudioRouting.svelte","line":725,"endLine":725,"text":"<!-- on:wheel={handleWheel}  -->","start":33661,"end":33693},
+  {"file":"src/frontend/components/settings/tabs/AudioRouting.svelte","line":728,"endLine":728,"text":"<!-- SVG Connections Layer -->","start":34007,"end":34037},
+  {"file":"src/frontend/components/settings/tabs/AudioRouting.svelte","line":765,"endLine":765,"text":"<!-- Nodes Grid Inside Moveable Space -->","start":37538,"end":37579},
+  {"file":"src/frontend/components/settings/tabs/AudioRouting.svelte","line":849,"endLine":855,"text":"<!-- <div class=\"zoom-controls\">\n            <MaterialButton variant=\"outlined\" icon=\"zoomOut\" style=\"padding: 4px;\" title=\"Zoom Out\" on:click={zoomOut} white />\n            <button class=\"zoom-percentage\" on:click={resetZoom} title=\"Reset Zoom\">\n                {Math.round(zoom * 100)}%\n            </button>\n            <MaterialButton variant=\"outlined\" icon=\"zoomIn\" style=\"padding: 4px;\" title=\"Zoom In\" on:click={zoomIn} white />\n        </div> -->","start":43682,"end":44137},
+  {"file":"src/frontend/components/settings/tabs/AudioRouting.svelte","line":868,"endLine":868,"text":"/* Outer Viewport Container */","start":44333,"end":44363},
+  {"file":"src/frontend/components/settings/tabs/AudioRouting.svelte","line":885,"endLine":885,"text":"/* Inner Moveable Canvas */","start":44726,"end":44753},
+  {"file":"src/frontend/components/settings/tabs/AudioRouting.svelte","line":975,"endLine":975,"text":"/* background: rgba(0, 0, 0, 0.3); */","start":46618,"end":46655},
+  {"file":"src/frontend/components/settings/tabs/AudioRouting.svelte","line":1004,"endLine":1007,"text":"/* .node-card-group.has-subnodes {\n        background: rgba(255, 255, 255, 0.03);\n        border-radius: 6px;\n    } */","start":47222,"end":47340}
+]

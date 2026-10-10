@@ -13,4 +13,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:212](../../../../src/electron/IPC/responsesMain.ts#L212) — renderer/client → electron; [Main.PCO_PUSHER_AUTH]: (data) => ContentProviderRegistry.getPcoPusherAuth(data.socketId, data.channelName, data.serviceTypeId)
+- [src/electron/IPC/responsesMain.ts:212](../../../../src/electron/IPC/responsesMain.ts#L212) — renderer/client → electron; &#91;Main.PCO_PUSHER_AUTH&#93;: (data) => ContentProviderRegistry.getPcoPusherAuth(data.socketId, data.channelName, data.serviceTypeId)

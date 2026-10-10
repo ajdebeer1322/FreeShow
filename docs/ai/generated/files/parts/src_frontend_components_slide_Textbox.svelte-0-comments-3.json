@@ -1,0 +1,11 @@
+[
+  {"file":"src/frontend/components/slide/Textbox.svelte","line":859,"endLine":859,"text":"/* WIP this is for scrolling, but hides overflow text even on scroll */","start":36847,"end":36918},
+  {"file":"src/frontend/components/slide/Textbox.svelte","line":862,"endLine":862,"text":"/* click events */","start":36954,"end":36972},
+  {"file":"src/frontend/components/slide/Textbox.svelte","line":865,"endLine":865,"text":"/* WIP custom time based on transition duration */","start":37015,"end":37065},
+  {"file":"src/frontend/components/slide/Textbox.svelte","line":866,"endLine":866,"text":"/* filter & dynamic CSS variable transition */","start":37074,"end":37120},
+  {"file":"src/frontend/components/slide/Textbox.svelte","line":869,"endLine":869,"text":"/* not supported */","start":37179,"end":37198},
+  {"file":"src/frontend/components/slide/Textbox.svelte","line":870,"endLine":870,"text":"/* all 0.1s; */","start":37230,"end":37245},
+  {"file":"src/frontend/components/slide/Textbox.svelte","line":870,"endLine":870,"text":"/* with slide timeline items should not have a transition */","start":37246,"end":37306},
+  {"file":"src/frontend/components/slide/Textbox.svelte","line":900,"endLine":900,"text":"/* filter: brightness(30); */","start":37838,"end":37867},
+  {"file":"src/frontend/components/slide/Textbox.svelte","line":907,"endLine":909,"text":"/* .height {\n        height: 1em;\n    } */","start":37971,"end":38013}
+]

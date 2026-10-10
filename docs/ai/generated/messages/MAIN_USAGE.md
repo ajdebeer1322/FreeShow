@@ -12,5 +12,5 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:74](../../../../src/electron/IPC/responsesMain.ts#L74) — renderer/client → electron; [Main.USAGE]: () => getStore("USAGE")
-- [src/frontend/IPC/responsesMain.ts:159](../../../../src/frontend/IPC/responsesMain.ts#L159) — electron/other renderer → renderer; [Main.USAGE]: (a) => usageLog.set(a)
+- [src/electron/IPC/responsesMain.ts:74](../../../../src/electron/IPC/responsesMain.ts#L74) — renderer/client → electron; &#91;Main.USAGE&#93;: () => getStore("USAGE")
+- [src/frontend/IPC/responsesMain.ts:159](../../../../src/frontend/IPC/responsesMain.ts#L159) — electron/other renderer → renderer; &#91;Main.USAGE&#93;: (a) => usageLog.set(a)

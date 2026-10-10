@@ -78,9 +78,9 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/quicksearch/quicksearch.ts:423](../../../../src/frontend/components/quicksearch/quicksearch.ts#L423) — timer-e51b3c96f1664f70: setTimeout = 0 ms (omitted); 
-- [src/frontend/components/quicksearch/quicksearch.ts:464](../../../../src/frontend/components/quicksearch/quicksearch.ts#L464) — timer-d186687ca7643e64: setTimeout = 110 ms (110); 
+- [src/frontend/components/quicksearch/quicksearch.ts:423](../../../../src/frontend/components/quicksearch/quicksearch.ts#L423) — timer-e51b3c96f1664f70: setTimeout = 0 ms (omitted); // make sure tab is opened before creating so rename input gets focused
+- [src/frontend/components/quicksearch/quicksearch.ts:464](../../../../src/frontend/components/quicksearch/quicksearch.ts#L464) — timer-d186687ca7643e64: setTimeout = 110 ms (110); // let popup close first
 
 ## Workarounds
 
-No static evidence found.
+- [src/frontend/components/quicksearch/quicksearch.ts:626](../../../../src/frontend/components/quicksearch/quicksearch.ts#L626) — workaround-1c09dfdf83a44d7f: // WIP categories etc.?

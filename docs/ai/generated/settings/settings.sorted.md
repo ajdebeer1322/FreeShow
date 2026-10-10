@@ -22,6 +22,6 @@ Store: src/frontend/stores.ts#sorted.
 
 ## Writes
 
-- [src/frontend/components/context/menuClick.ts:2570](../../../../src/frontend/components/context/menuClick.ts#L2570) — sorted.update((a) => { if (!a[id]) a[id] = {} a[id].type = type return a })
+- [src/frontend/components/context/menuClick.ts:2570](../../../../src/frontend/components/context/menuClick.ts#L2570) — sorted.update((a) => { if (!a&#91;id&#93;) a&#91;id&#93; = {} a&#91;id&#93;.type = type return a })
 - [src/frontend/components/drawer/pages/Shows.svelte:191](../../../../src/frontend/components/drawer/pages/Shows.svelte#L191) — sorted.update((state) => { if (!state.shows) state.shows = {} state.shows.type = nextType return state })
 - [src/frontend/utils/updateSettings.ts:329](../../../../src/frontend/utils/updateSettings.ts#L329) — sorted.set(v)

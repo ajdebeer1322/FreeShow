@@ -13,4 +13,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:192](../../../../src/electron/IPC/responsesMain.ts#L192) — renderer/client → electron; [Main.CLOUD_CHANGED]: (data) => hasDataChanged(data)
+- [src/electron/IPC/responsesMain.ts:192](../../../../src/electron/IPC/responsesMain.ts#L192) — renderer/client → electron; &#91;Main.CLOUD_CHANGED&#93;: (data) => hasDataChanged(data)

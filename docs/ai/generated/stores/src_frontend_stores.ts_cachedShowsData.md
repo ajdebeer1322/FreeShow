@@ -17,12 +17,12 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 ## Writes
 
-- [src/frontend/components/helpers/historyActions.ts:667](../../../../src/frontend/components/helpers/historyActions.ts#L667) — cachedShowsData.update((a) => { const customId = getShowCacheId(data.remember.showId, null, data.remember.layout) if (a[customId]?.template?.slidesUpdated) a[customId].template.sli
-- [src/frontend/components/helpers/setShow.ts:87](../../../../src/frontend/components/helpers/setShow.ts#L87) — cachedShowsData.update((a) => { const customId = getShowCacheId(id, get(showsCache)[id]) a[customId] = updateCachedShow(id, value) return a })
+- [src/frontend/components/helpers/historyActions.ts:667](../../../../src/frontend/components/helpers/historyActions.ts#L667) — cachedShowsData.update((a) => { const customId = getShowCacheId(data.remember.showId, null, data.remember.layout) if (a&#91;customId&#93;?.template?.slidesUpdated) a&#91;customId&#93;.template.sli
+- [src/frontend/components/helpers/setShow.ts:87](../../../../src/frontend/components/helpers/setShow.ts#L87) — cachedShowsData.update((a) => { const customId = getShowCacheId(id, get(showsCache)&#91;id&#93;) a&#91;customId&#93; = updateCachedShow(id, value) return a })
 - [src/frontend/components/helpers/show.ts:290](../../../../src/frontend/components/helpers/show.ts#L290) — cachedShowsData.set(cachedShows)
-- [src/frontend/components/helpers/show.ts:306](../../../../src/frontend/components/helpers/show.ts#L306) — cachedShowsData.update((a) => { a[customId] = cachedShow return a })
-- [src/frontend/utils/listeners.ts:142](../../../../src/frontend/utils/listeners.ts#L142) — cachedShowsData.update((a) => { Object.keys(a).forEach((id) => { const customId = getShowCacheId(id, get(showsCache)[id]) if (!a[customId]?.template) return a[customId].template.sl
-- [src/frontend/utils/listeners.ts:446](../../../../src/frontend/utils/listeners.ts#L446) — cachedShowsData.update((a) => { const customId = getShowCacheId(data.id, show) a[customId] = updateCachedShow(data.id, show) return a })
+- [src/frontend/components/helpers/show.ts:306](../../../../src/frontend/components/helpers/show.ts#L306) — cachedShowsData.update((a) => { a&#91;customId&#93; = cachedShow return a })
+- [src/frontend/utils/listeners.ts:142](../../../../src/frontend/utils/listeners.ts#L142) — cachedShowsData.update((a) => { Object.keys(a).forEach((id) => { const customId = getShowCacheId(id, get(showsCache)&#91;id&#93;) if (!a&#91;customId&#93;?.template) return a&#91;customId&#93;.template.sl
+- [src/frontend/utils/listeners.ts:446](../../../../src/frontend/utils/listeners.ts#L446) — cachedShowsData.update((a) => { const customId = getShowCacheId(data.id, show) a&#91;customId&#93; = updateCachedShow(data.id, show) return a })
 
 ## Transport
 

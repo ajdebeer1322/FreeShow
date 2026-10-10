@@ -29,7 +29,9 @@ None detected.
 
 ## Timing
 
-- [src/electron/utils/api.ts:235](../../../../src/electron/utils/api.ts#L235) — timer-8a69682f280e1e3f: setTimeout = 100 ms (100); 
+- [src/electron/utils/api.ts:235](../../../../src/electron/utils/api.ts#L235) — timer-8a69682f280e1e3f: setTimeout = 100 ms (100); // ensure message is sent
+- [src/electron/utils/api.ts:267](../../../../src/electron/utils/api.ts#L267) — poll-interval-eb4a264814ce4fa8: poll-interval = 50 ms (50); 
+- [src/electron/utils/api.ts:267](../../../../src/electron/utils/api.ts#L267) — poll-timeout-65f5c567c201dea3: poll-timeout = 10000 ms (10000); 
 
 ## Workarounds
 

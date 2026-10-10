@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/context/ContextItem.svelte:314](../../../../src/frontend/components/context/ContextItem.svelte#L314) — $outputs[outputId]?.hideFromPreview
+- [src/frontend/components/context/ContextItem.svelte:314](../../../../src/frontend/components/context/ContextItem.svelte#L314) — $outputs&#91;outputId&#93;?.hideFromPreview
 
 ## Writes
 

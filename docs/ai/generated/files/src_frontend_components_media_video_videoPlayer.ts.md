@@ -54,15 +54,15 @@ No static evidence found.
 ## Timing
 
 - [src/frontend/components/media/video/videoPlayer.ts:179](../../../../src/frontend/components/media/video/videoPlayer.ts#L179) — timer-855d0e06b24148fe: setTimeout = dynamic ms (delayMs); 
-- [src/frontend/components/media/video/videoPlayer.ts:365](../../../../src/frontend/components/media/video/videoPlayer.ts#L365) — timer-712b236861bb0c31: setTimeout = 200 ms (200); 
-- [src/frontend/components/media/video/videoPlayer.ts:445](../../../../src/frontend/components/media/video/videoPlayer.ts#L445) — timer-9acfa5efccaef862: setTimeout = 20 ms (20); 
-- [src/frontend/components/media/video/videoPlayer.ts:467](../../../../src/frontend/components/media/video/videoPlayer.ts#L467) — timer-88afe0d0358f6192: setTimeout = dynamic ms (durationMs); 
+- [src/frontend/components/media/video/videoPlayer.ts:365](../../../../src/frontend/components/media/video/videoPlayer.ts#L365) — timer-712b236861bb0c31: setTimeout = 200 ms (200); // check and execute next after media regardless of loop
+- [src/frontend/components/media/video/videoPlayer.ts:445](../../../../src/frontend/components/media/video/videoPlayer.ts#L445) — timer-9acfa5efccaef862: setTimeout = 20 ms (20); // multiple outputs at once
+- [src/frontend/components/media/video/videoPlayer.ts:467](../../../../src/frontend/components/media/video/videoPlayer.ts#L467) — timer-88afe0d0358f6192: setTimeout = dynamic ms (durationMs); // silent / video-only files use a virtual clock — no audio to fade, but we still // need to hold off pausing the vide
 - [src/frontend/components/media/video/videoPlayer.ts:525](../../../../src/frontend/components/media/video/videoPlayer.ts#L525) — timer-ee6d648cb5a47588: setTimeout = dynamic ms (durationMs); 
 - [src/frontend/components/media/video/videoPlayer.ts:558](../../../../src/frontend/components/media/video/videoPlayer.ts#L558) — timer-50d96301ef560df0: setTimeout = dynamic ms (durationMs); 
-- [src/frontend/components/media/video/videoPlayer.ts:737](../../../../src/frontend/components/media/video/videoPlayer.ts#L737) — timer-19871648cec0be99: setInterval = dynamic ms (get(special).optimizedMode ? 500 : 100); 
+- [src/frontend/components/media/video/videoPlayer.ts:737](../../../../src/frontend/components/media/video/videoPlayer.ts#L737) — timer-19871648cec0be99: setInterval = dynamic ms (get(special).optimizedMode ? 500 : 100); // update immediately
 - [src/frontend/components/media/video/videoPlayer.ts:890](../../../../src/frontend/components/media/video/videoPlayer.ts#L890) — timer-245cd5f7c05a73d0: setTimeout = 300 ms (300); 
 - [src/frontend/components/media/video/videoPlayer.ts:909](../../../../src/frontend/components/media/video/videoPlayer.ts#L909) — timer-6719b9b5acd92dc1: setTimeout = 0 ms (omitted); 
 
 ## Workarounds
 
-No static evidence found.
+- [src/frontend/components/media/video/videoPlayer.ts:518](../../../../src/frontend/components/media/video/videoPlayer.ts#L518) — workaround-d5b1b732917a8eb2: // WIP account for transition offset

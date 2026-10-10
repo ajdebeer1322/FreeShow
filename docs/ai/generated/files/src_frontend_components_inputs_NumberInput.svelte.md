@@ -28,9 +28,9 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/inputs/NumberInput.svelte:45](../../../../src/frontend/components/inputs/NumberInput.svelte#L45) — timer-c83c02844a171f37: setTimeout = 500 ms (500); 
-- [src/frontend/components/inputs/NumberInput.svelte:52](../../../../src/frontend/components/inputs/NumberInput.svelte#L52) — timer-f158a6142d482b8b: setInterval = 100 ms (100); 
-- [src/frontend/components/inputs/NumberInput.svelte:82](../../../../src/frontend/components/inputs/NumberInput.svelte#L82) — timer-b479f794569256ab: setTimeout = 500 ms (500); 
+- [src/frontend/components/inputs/NumberInput.svelte:45](../../../../src/frontend/components/inputs/NumberInput.svelte#L45) — timer-c83c02844a171f37: setTimeout = 500 ms (500); // auto change when holding value // slow updates in edit caused this to create infinite loops (value didn't update)
+- [src/frontend/components/inputs/NumberInput.svelte:52](../../../../src/frontend/components/inputs/NumberInput.svelte#L52) — timer-f158a6142d482b8b: setInterval = 100 ms (100); // stop after 50 updates
+- [src/frontend/components/inputs/NumberInput.svelte:82](../../../../src/frontend/components/inputs/NumberInput.svelte#L82) — timer-b479f794569256ab: setTimeout = 500 ms (500); // don't start timeout if scrolling with mouse
 - [src/frontend/components/inputs/NumberInput.svelte:128](../../../../src/frontend/components/inputs/NumberInput.svelte#L128) — css-transition-89ef8c8a63ab4093: css-transition = 300 ms (opacity 0.3s); /* align-items: center; */
 
 ## Workarounds

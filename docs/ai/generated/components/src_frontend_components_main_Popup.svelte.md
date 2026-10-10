@@ -10,5 +10,5 @@ No static evidence found.
 
 - [src/frontend/components/main/Popup.svelte:61](../../../../src/frontend/components/main/Popup.svelte#L61) — T → src/frontend/components/helpers/T.svelte; id={EFFECTS_LIST.find((a) => a.id === $popupData.effect)?.label \|\| "popup.audio_effect"}
 - [src/frontend/components/main/Popup.svelte:63](../../../../src/frontend/components/main/Popup.svelte#L63) — T → src/frontend/components/helpers/T.svelte; id="popup.{popupId}"
-- [src/frontend/components/main/Popup.svelte:69](../../../../src/frontend/components/main/Popup.svelte#L69) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; class="popup-close"; icon="close"; iconSize={1.3}; title="actions.close [esc]"; on:click={() => activePopup.s
+- [src/frontend/components/main/Popup.svelte:69](../../../../src/frontend/components/main/Popup.svelte#L69) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; class="popup-close"; icon="close"; iconSize={1.3}; title="actions.close &#91;esc&#93;"; on:click={() => activePopup.s
 - [src/frontend/components/main/Popup.svelte:76](../../../../src/frontend/components/main/Popup.svelte#L76) — svelte:component → dynamic; 

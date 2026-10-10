@@ -36,10 +36,10 @@ No static evidence found.
 ## Timing
 
 - [src/frontend/components/slide/TextboxLines.svelte:75](../../../../src/frontend/components/slide/TextboxLines.svelte#L75) — timer-607cd06f61c0a80b: setTimeout = 0 ms (omitted); 
-- [src/frontend/components/slide/TextboxLines.svelte:223](../../../../src/frontend/components/slide/TextboxLines.svelte#L223) — timer-c2e87b6bc4bb5c8b: setTimeout = 0 ms (omitted); 
+- [src/frontend/components/slide/TextboxLines.svelte:223](../../../../src/frontend/components/slide/TextboxLines.svelte#L223) — timer-c2e87b6bc4bb5c8b: setTimeout = 0 ms (omitted); // CHORDS
 - [src/frontend/components/slide/TextboxLines.svelte:356](../../../../src/frontend/components/slide/TextboxLines.svelte#L356) — timer-853b7b28abe3b43a: setInterval = 1000 ms (1000); 
-- [src/frontend/components/slide/TextboxLines.svelte:364](../../../../src/frontend/components/slide/TextboxLines.svelte#L364) — timer-a76c6f59b58c0868: setTimeout = 0 ms (omitted); 
-- [src/frontend/components/slide/TextboxLines.svelte:365](../../../../src/frontend/components/slide/TextboxLines.svelte#L365) — timer-d27d19d6f63624af: setTimeout = dynamic ms (isStage ? 250 : 0); 
+- [src/frontend/components/slide/TextboxLines.svelte:364](../../../../src/frontend/components/slide/TextboxLines.svelte#L364) — timer-a76c6f59b58c0868: setTimeout = 0 ms (omitted); // time with auto size
+- [src/frontend/components/slide/TextboxLines.svelte:365](../../../../src/frontend/components/slide/TextboxLines.svelte#L365) — timer-d27d19d6f63624af: setTimeout = dynamic ms (isStage ? 250 : 0); // time with auto size
 - [src/frontend/components/slide/TextboxLines.svelte:373](../../../../src/frontend/components/slide/TextboxLines.svelte#L373) — timer-daef93546f8b8dea: setTimeout = 0 ms (omitted); 
 - [src/frontend/components/slide/TextboxLines.svelte:544](../../../../src/frontend/components/slide/TextboxLines.svelte#L544) — css-transition-7b3a0ca31398650d: css-transition = dynamic ms (var(--transition)); 
 - [src/frontend/components/slide/TextboxLines.svelte:593](../../../../src/frontend/components/slide/TextboxLines.svelte#L593) — css-transition-3d7ade87dd39700b: css-transition = dynamic ms (var(--transition)); /* display: inline-block; */

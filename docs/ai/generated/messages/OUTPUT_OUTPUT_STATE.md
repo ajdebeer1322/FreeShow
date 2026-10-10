@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/frontend/utils/receivers.ts:123](../../../../src/frontend/utils/receivers.ts#L123) — electron/other renderer → renderer; OUTPUT_STATE: (newStates: { id: string; active: boolean \| "invisible" }[]) => { outputState.update((a) => { newStates.forEach((newState) => { co
+- [src/frontend/utils/receivers.ts:123](../../../../src/frontend/utils/receivers.ts#L123) — electron/other renderer → renderer; OUTPUT_STATE: (newStates: { id: string; active: boolean \| "invisible" }&#91;&#93;) => { outputState.update((a) => { newStates.forEach((newState) => { co

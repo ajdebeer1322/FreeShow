@@ -15,4 +15,4 @@ No static evidence found.
 ## Handlers
 
 - [src/frontend/utils/receivers.ts:120](../../../../src/frontend/utils/receivers.ts#L120) — electron/other renderer → renderer; OUTPUTS: (a: any) => outputs.set(a)
-- [src/frontend/utils/receivers.ts:191](../../../../src/frontend/utils/receivers.ts#L191) — electron/other renderer → renderer; OUTPUTS: (a: any) => { // output.ts - only current output data is sent const id = Object.keys(a)[0] if (!id) { outputs.set(a) return } const act
+- [src/frontend/utils/receivers.ts:191](../../../../src/frontend/utils/receivers.ts#L191) — electron/other renderer → renderer; OUTPUTS: (a: any) => { // output.ts - only current output data is sent const id = Object.keys(a)&#91;0&#93; if (!id) { outputs.set(a) return } const act

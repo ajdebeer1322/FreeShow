@@ -13,4 +13,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/output/OutputHelper.ts:36](../../../../src/electron/output/OutputHelper.ts#L36) — renderer/client → electron; IDENTIFY_SCREENS: (data: { bounds: Rectangle }[]) => OutputHelper.Identify.identifyScreens(data)
+- [src/electron/output/OutputHelper.ts:36](../../../../src/electron/output/OutputHelper.ts#L36) — renderer/client → electron; IDENTIFY_SCREENS: (data: { bounds: Rectangle }&#91;&#93;) => OutputHelper.Identify.identifyScreens(data)

@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:137](../../../../src/electron/IPC/responsesMain.ts#L137) — renderer/client → electron; [Main.ACCESS_CAMERA_PERMISSION]: () => getPermission("camera")
+- [src/electron/IPC/responsesMain.ts:137](../../../../src/electron/IPC/responsesMain.ts#L137) — renderer/client → electron; &#91;Main.ACCESS_CAMERA_PERMISSION&#93;: () => getPermission("camera")

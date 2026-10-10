@@ -22,7 +22,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 ## Writes
 
-- [src/frontend/utils/receivers.ts:135](../../../../src/frontend/utils/receivers.ts#L135) — outputDisplay.set(getVisibleState[0])
+- [src/frontend/utils/receivers.ts:135](../../../../src/frontend/utils/receivers.ts#L135) — outputDisplay.set(getVisibleState&#91;0&#93;)
 
 ## Transport
 

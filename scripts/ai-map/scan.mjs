@@ -285,12 +285,21 @@ export function scan(options = {}) {
     }
     // Comments are lexical trivia, not keyword matches inside strings or executable code.
     for (const context of contexts.values()) {
-        const scanner = ts.createScanner(ts.ScriptTarget.Latest, false, ts.LanguageVariant.Standard, context.script)
-        let token
-        while ((token = scanner.scan()) !== ts.SyntaxKind.EndOfFileToken) if (token === ts.SyntaxKind.SingleLineCommentTrivia || token === ts.SyntaxKind.MultiLineCommentTrivia) {
-            const start = scanner.getTokenPos(), end = scanner.getTextPos()
-            context.comments.push({ ...ref(context, start), endLine: context.sf.getLineAndCharacterOfPosition(end).line + 1, text: context.source.slice(start, end), start, end })
+        const comments = new Map()
+        const add = range => {
+            if (!range) return
+            const start = range.pos, end = range.end
+            comments.set(start, { ...ref(context, start), endLine: context.sf.getLineAndCharacterOfPosition(end).line + 1, text: context.source.slice(start, end), start, end })
         }
+        // Parser node boundaries handle regex and interpolated templates correctly;
+        // a bare token scanner needs parser-driven rescans and can miss later comments.
+        visit(context.sf, node => {
+            for (const position of [node.pos, node.end]) {
+                for (const range of ts.getLeadingCommentRanges(context.script, position) || []) add(range)
+                for (const range of ts.getTrailingCommentRanges(context.script, position) || []) add(range)
+            }
+        })
+        context.comments.push(...comments.values())
         if (context.template) {
             visitTemplate(context.template.fragment, (node) => {
                 if (node.type === "Comment") context.comments.push({ ...ref(context, node.start), endLine: context.sf.getLineAndCharacterOfPosition(node.end).line + 1, text: context.source.slice(node.start, node.end), start: node.start, end: node.end })
@@ -308,6 +317,10 @@ export function scan(options = {}) {
     }
     for (const context of contexts.values()) {
         visit(context.sf, (node) => {
+            if (ts.isVariableDeclaration(node) && node.initializer && /^(waitToShow|waitToHide|inDelay|outDelay)$/.test(name(node.name) || "")) {
+                const value = staticValue(context, node.initializer)
+                context.timers.push({ id: factId(context, "delay-variable", node.getText(context.sf)), ...ref(context, node), kind: "delay-variable", expression: node.initializer.getText(context.sf), valueMs: typeof value === "number" ? value : null, code: compact(node.getText(context.sf)), nearbyComments: nearby(context, ref(context, node).line), confidence: "code" })
+            }
             // Public channel and typed payload declarations.
             if (context.file === "src/types/Channels.ts" && ts.isVariableDeclaration(node) && CHANNELS.includes(name(node.name))) channels.get(name(node.name)).definitions.push(ref(context, node))
             if (ts.isEnumDeclaration(node) && ["Main", "ToMain"].includes(node.name.text) && context.file.startsWith("src/types/IPC/")) for (const member of node.members) {
@@ -359,6 +372,13 @@ export function scan(options = {}) {
                     const key = staticValue(context, args[0])
                     const target = context.bindings.get(method)?.target
                     recordStore(context, stores.find((store) => store.file === target && store.name === key), node, { _get: "keyed-get", _set: "keyed-set", _update: "keyed-update" }[imported])
+                }
+                if (imported === "waitUntilValueIsDefined") {
+                    for (const [index, kind] of [[1, "poll-interval"], [2, "poll-timeout"]]) {
+                        const argument = args[index], defaultValue = symbolDefault(context, node.expression, index)
+                        const value = argument ? staticValue(context, argument) : defaultValue?.value
+                        context.timers.push({ id: factId(context, kind, node.getText(context.sf)), ...ref(context, node), kind, expression: argument?.getText(context.sf) || defaultValue?.expression || "unknown", valueMs: typeof value === "number" ? value : null, default: defaultValue, symbol: functionName(node), code: compact(node.getText(context.sf), 500), nearbyComments: nearby(context, ref(context, node).line), confidence: "code" })
+                    }
                 }
                 if (TIMER_NAMES.has(imported)) {
                     const index = TIMER_NAMES.get(imported), argument = args[index]

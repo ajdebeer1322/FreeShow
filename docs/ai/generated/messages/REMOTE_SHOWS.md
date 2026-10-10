@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/server/remote/util/receiver.ts:72](../../../../src/server/remote/util/receiver.ts#L72) — desktop → browser client; SHOWS: (data: any) => { const shows = Object.keys(data).map((id) => ({ id, ...data[id] })) _set("shows", shows) if (_get("quickPlay")) _set("activeTab", "
+- [src/server/remote/util/receiver.ts:72](../../../../src/server/remote/util/receiver.ts#L72) — desktop → browser client; SHOWS: (data: any) => { const shows = Object.keys(data).map((id) => ({ id, ...data&#91;id&#93; })) _set("shows", shows) if (_get("quickPlay")) _set("activeTab", "

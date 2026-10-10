@@ -98,6 +98,5 @@ No static evidence found.
 
 - [src/frontend/components/helpers/historyHelpers.ts:30](../../../../src/frontend/components/helpers/historyHelpers.ts#L30) — workaround-f00f478e00a6b235: // TODO: set overlays/templates to unlabeled??
 - [src/frontend/components/helpers/historyHelpers.ts:217](../../../../src/frontend/components/helpers/historyHelpers.ts#L217) — workaround-18dd47975640ab38: // WIP set name / notes when moved while active
-- [src/frontend/components/helpers/historyHelpers.ts:340](../../../../src/frontend/components/helpers/historyHelpers.ts#L340) — workaround-f34ba2e5825ac4ca: // TODO: delete repeated...
 - [src/frontend/components/helpers/historyHelpers.ts:361](../../../../src/frontend/components/helpers/historyHelpers.ts#L361) — workaround-88e59d4d03ff323c: // TODO: set default template from settings!
-- [src/frontend/components/helpers/historyHelpers.ts:524](../../../../src/frontend/components/helpers/historyHelpers.ts#L524) — workaround-d78cae508b34ebfe: // TODO: remove default if name change; if (a[obj.location!.theme!].default) groupValue
+- [src/frontend/components/helpers/historyHelpers.ts:524](../../../../src/frontend/components/helpers/historyHelpers.ts#L524) — workaround-d78cae508b34ebfe: // TODO: remove default if name change; if (a&#91;obj.location!.theme!&#93;.default) groupValue

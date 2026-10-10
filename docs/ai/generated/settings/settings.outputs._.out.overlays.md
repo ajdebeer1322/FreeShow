@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/output/clear.ts:148](../../../../src/frontend/components/output/clear.ts#L148) — get(outputs)[outputId]?.out?.overlays
+- [src/frontend/components/output/clear.ts:148](../../../../src/frontend/components/output/clear.ts#L148) — get(outputs)&#91;outputId&#93;?.out?.overlays
 
 ## Writes
 

@@ -9,7 +9,7 @@
   {"file":"src/frontend/components/export/projectLink.ts","line":164,"endLine":164,"text":"// remove any style values without any values","start":5369,"end":5414},
   {"file":"src/frontend/components/export/projectLink.ts","line":165,"endLine":165,"text":"// example: \"font-size:100px;color:;\" -> \"font-size:100px;\"","start":5419,"end":5478},
   {"file":"src/frontend/components/export/projectLink.ts","line":168,"endLine":168,"text":"// replace common keys with _{shortkey}_","start":5530,"end":5570},
-  {"file":"src/frontend/components/export/projectLink.ts","line":184,"endLine":184,"text":"//freeshow.net/project#data=${compressed}`","start":6021,"end":6063},
+  {"file":"src/frontend/components/export/projectLink.ts","line":176,"endLine":176,"text":"// SHARE","start":5721,"end":5729},
   {"file":"src/frontend/components/export/projectLink.ts","line":186,"endLine":186,"text":"// We could shorten the URL: https://ulvis.net/","start":6073,"end":6120},
   {"file":"src/frontend/components/export/projectLink.ts","line":196,"endLine":196,"text":"// export async function importFromLink() {","start":6348,"end":6391},
   {"file":"src/frontend/components/export/projectLink.ts","line":197,"endLine":197,"text":"//     const linkOrCode = await promptCustom(\"Paste Shareable Link or Code\", \"text\")","start":6392,"end":6476},
@@ -33,10 +33,10 @@
   {"file":"src/frontend/components/export/projectLink.ts","line":215,"endLine":215,"text":"//     }","start":7205,"end":7213},
   {"file":"src/frontend/components/export/projectLink.ts","line":216,"endLine":216,"text":"// }","start":7214,"end":7218},
   {"file":"src/frontend/components/export/projectLink.ts","line":218,"endLine":218,"text":"// COMPRESSION","start":7220,"end":7234},
-  {"file":"src/frontend/components/export/projectLink.ts","line":234,"endLine":234,"text":"//g, \"_\").replace(/=+$/, \"\")","start":7897,"end":7925},
   {"file":"src/frontend/components/export/projectLink.ts","line":237,"endLine":237,"text":"// async function decompressFromUrlSafeBase64(base64Url: string): Promise<any> {","start":7929,"end":8009},
   {"file":"src/frontend/components/export/projectLink.ts","line":238,"endLine":238,"text":"//     const compressedBytes = fromUrlSafeBase64(base64Url)","start":8010,"end":8069},
   {"file":"src/frontend/components/export/projectLink.ts","line":239,"endLine":239,"text":"//     const decompressionStream = new DecompressionStream(\"gzip\")","start":8070,"end":8136},
   {"file":"src/frontend/components/export/projectLink.ts","line":240,"endLine":240,"text":"//     const writer = decompressionStream.writable.getWriter()","start":8137,"end":8199},
-  {"file":"src/frontend/components/export/projectLink.ts","line":241,"endLine":241,"text":"//     await writer.write(compressedBytes)","start":8200,"end":8242}
+  {"file":"src/frontend/components/export/projectLink.ts","line":241,"endLine":241,"text":"//     await writer.write(compressedBytes)","start":8200,"end":8242},
+  {"file":"src/frontend/components/export/projectLink.ts","line":242,"endLine":242,"text":"//     await writer.close()","start":8243,"end":8270}
 ]

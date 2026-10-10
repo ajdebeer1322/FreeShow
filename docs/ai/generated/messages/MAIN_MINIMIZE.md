@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:80](../../../../src/electron/IPC/responsesMain.ts#L80) — renderer/client → electron; [Main.MINIMIZE]: () => getMainWindow()?.minimize()
+- [src/electron/IPC/responsesMain.ts:80](../../../../src/electron/IPC/responsesMain.ts#L80) — renderer/client → electron; &#91;Main.MINIMIZE&#93;: () => getMainWindow()?.minimize()

@@ -9,7 +9,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 ## Reads
 
 - [src/frontend/MainLayout.svelte:168](../../../../src/frontend/MainLayout.svelte#L168) — $debugPanelOpen
-- [src/frontend/components/helpers/debugLog.ts:409](../../../../src/frontend/components/helpers/debugLog.ts#L409) — debugPanelOpen.subscribe((open) => { if (open === enabled) return enabled = open // the output windows record too and send their lines here try { send(OUTPUT, ["DEBUG_ENABLED"], op
+- [src/frontend/components/helpers/debugLog.ts:409](../../../../src/frontend/components/helpers/debugLog.ts#L409) — debugPanelOpen.subscribe((open) => { if (open === enabled) return enabled = open // the output windows record too and send their lines here try { send(OUTPUT, &#91;"DEBUG_ENABLED"&#93;, op
 
 ## Writes
 

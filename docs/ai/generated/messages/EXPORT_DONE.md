@@ -8,8 +8,8 @@ No static evidence found.
 
 ## Senders
 
-- [src/frontend/components/export/Pdf.svelte:21](../../../../src/frontend/components/export/Pdf.svelte#L21) — renderer → electron/other renderer; { name: options.name \|\| shows[0]?.name \|\| "Export" }
-- [src/frontend/components/export/Pdf.svelte:25](../../../../src/frontend/components/export/Pdf.svelte#L25) — renderer → electron/other renderer; { name: shows[index - 1]?.name \|\| "" }
+- [src/frontend/components/export/Pdf.svelte:21](../../../../src/frontend/components/export/Pdf.svelte#L21) — renderer → electron/other renderer; { name: options.name \|\| shows&#91;0&#93;?.name \|\| "Export" }
+- [src/frontend/components/export/Pdf.svelte:25](../../../../src/frontend/components/export/Pdf.svelte#L25) — renderer → electron/other renderer; { name: shows&#91;index - 1&#93;?.name \|\| "" }
 
 ## Handlers
 

@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/context/loadItems.ts:26](../../../../src/frontend/components/context/loadItems.ts#L26) — get(drawerTabsData)[a.id]?.enabled
+- [src/frontend/components/context/loadItems.ts:26](../../../../src/frontend/components/context/loadItems.ts#L26) — get(drawerTabsData)&#91;a.id&#93;?.enabled
 
 ## Writes
 

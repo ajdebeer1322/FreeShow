@@ -38,7 +38,7 @@ Saved: yes, with the listed transformations.
 - [src/frontend/components/edit/editbox/EditboxPlain.svelte:87](../../../../src/frontend/components/edit/editbox/EditboxPlain.svelte#L87) — $templates
 - [src/frontend/components/edit/editors/TemplateEditor.svelte:18](../../../../src/frontend/components/edit/editors/TemplateEditor.svelte#L18) — $templates
 - [src/frontend/components/edit/editors/TemplateEditor.svelte:21](../../../../src/frontend/components/edit/editors/TemplateEditor.svelte#L21) — $templates
-- [src/frontend/components/edit/editors/TemplateEditor.svelte:22](../../../../src/frontend/components/edit/editors/TemplateEditor.svelte#L22) — templates.subscribe((a) => clone((Slide = a[currentId])))
+- [src/frontend/components/edit/editors/TemplateEditor.svelte:22](../../../../src/frontend/components/edit/editors/TemplateEditor.svelte#L22) — templates.subscribe((a) => clone((Slide = a&#91;currentId&#93;)))
 - [src/frontend/components/edit/scripts/itemHelpers.ts:46](../../../../src/frontend/components/edit/scripts/itemHelpers.ts#L46) — get(templates)
 - [src/frontend/components/edit/scripts/itemHelpers.ts:182](../../../../src/frontend/components/edit/scripts/itemHelpers.ts#L182) — get(templates)
 - [src/frontend/components/edit/tools/BoxStyle.svelte:385](../../../../src/frontend/components/edit/tools/BoxStyle.svelte#L385) — $templates
@@ -127,7 +127,7 @@ Saved: yes, with the listed transformations.
 - [src/frontend/utils/createData.ts:563](../../../../src/frontend/utils/createData.ts#L563) — get(templates)
 - [src/frontend/utils/createData.ts:580](../../../../src/frontend/utils/createData.ts#L580) — get(templates)
 - [src/frontend/utils/createData.ts:1440](../../../../src/frontend/utils/createData.ts#L1440) — get(templates)
-- [src/frontend/utils/listeners.ts:135](../../../../src/frontend/utils/listeners.ts#L135) — templates.subscribe(async (data) => { if (await hasNewerUpdate("LISTENER_TEMPLATES", 50)) return send(OUTPUT, ["TEMPLATES"], data) send(REMOTE, ["TEMPLATES"], data) // set all load
+- [src/frontend/utils/listeners.ts:135](../../../../src/frontend/utils/listeners.ts#L135) — templates.subscribe(async (data) => { if (await hasNewerUpdate("LISTENER_TEMPLATES", 50)) return send(OUTPUT, &#91;"TEMPLATES"&#93;, data) send(REMOTE, &#91;"TEMPLATES"&#93;, data) // set all load
 - [src/frontend/utils/remoteTalk.ts:308](../../../../src/frontend/utils/remoteTalk.ts#L308) — get(templates)
 - [src/frontend/utils/save.ts:228](../../../../src/frontend/utils/save.ts#L228) — get(templates)
 - [src/frontend/utils/templates.ts:15](../../../../src/frontend/utils/templates.ts#L15) — get(templates)
@@ -135,21 +135,21 @@ Saved: yes, with the listed transformations.
 ## Writes
 
 - [src/frontend/IPC/responsesMain.ts:139](../../../../src/frontend/IPC/responsesMain.ts#L139) — templates.set(a)
-- [src/frontend/ai/manager/ChatAction.ts:92](../../../../src/frontend/ai/manager/ChatAction.ts#L92) — templates.set({ ...get(templates), [uid()]: template })
+- [src/frontend/ai/manager/ChatAction.ts:92](../../../../src/frontend/ai/manager/ChatAction.ts#L92) — templates.set({ ...get(templates), &#91;uid()&#93;: template })
 - [src/frontend/components/drawer/Label.svelte:27](../../../../src/frontend/components/drawer/Label.svelte#L27) — templates.update((a) => setName(a, c, true))
 - [src/frontend/components/edit/EditTools.svelte:214](../../../../src/frontend/components/edit/EditTools.svelte#L214) — templates.update(updateItemValues)
 - [src/frontend/components/edit/editbox/EditboxLines.svelte:263](../../../../src/frontend/components/edit/editbox/EditboxLines.svelte#L263) — templates.update(setNewLines)
 - [src/frontend/components/edit/tools/BoxStyle.svelte:420](../../../../src/frontend/components/edit/tools/BoxStyle.svelte#L420) — templates.update(updateItemValues)
 - [src/frontend/components/edit/tools/BoxStyle.svelte:469](../../../../src/frontend/components/edit/tools/BoxStyle.svelte#L469) — templates.update(updateAutoSize)
-- [src/frontend/components/main/popups/Conditions.svelte:121](../../../../src/frontend/components/main/popups/Conditions.svelte#L121) — templates.update((a) => { if (!a[edit.id!]?.items?.[itemIndex]) return a a[edit.id!].items[itemIndex].conditions = conditions a[edit.id!].modified = Date.now() return a })
-- [src/frontend/components/main/popups/DynamicValues.svelte:157](../../../../src/frontend/components/main/popups/DynamicValues.svelte#L157) — templates.update((a) => { a[edit.id!].items = updateItemText(a[edit.id!].items) a[edit.id!].modified = Date.now() return a })
-- [src/frontend/components/main/popups/TemplateStyleOverrides.svelte:73](../../../../src/frontend/components/main/popups/TemplateStyleOverrides.svelte#L73) — templates.update((a) => { a[templateId] = newTemplate return a })
-- [src/frontend/components/slide/Textbox.svelte:651](../../../../src/frontend/components/slide/Textbox.svelte#L651) — templates.update((a) => { a[ref.id].items[itemIndex].autoFontSize = fontSize return a })
-- [src/frontend/components/slide/Textbox.svelte:681](../../../../src/frontend/components/slide/Textbox.svelte#L681) — templates.update((a) => { a[ref.id].items[itemIndex].previewAutoFontSize = fontSize return a })
+- [src/frontend/components/main/popups/Conditions.svelte:121](../../../../src/frontend/components/main/popups/Conditions.svelte#L121) — templates.update((a) => { if (!a&#91;edit.id!&#93;?.items?.&#91;itemIndex&#93;) return a a&#91;edit.id!&#93;.items&#91;itemIndex&#93;.conditions = conditions a&#91;edit.id!&#93;.modified = Date.now() return a })
+- [src/frontend/components/main/popups/DynamicValues.svelte:157](../../../../src/frontend/components/main/popups/DynamicValues.svelte#L157) — templates.update((a) => { a&#91;edit.id!&#93;.items = updateItemText(a&#91;edit.id!&#93;.items) a&#91;edit.id!&#93;.modified = Date.now() return a })
+- [src/frontend/components/main/popups/TemplateStyleOverrides.svelte:73](../../../../src/frontend/components/main/popups/TemplateStyleOverrides.svelte#L73) — templates.update((a) => { a&#91;templateId&#93; = newTemplate return a })
+- [src/frontend/components/slide/Textbox.svelte:651](../../../../src/frontend/components/slide/Textbox.svelte#L651) — templates.update((a) => { a&#91;ref.id&#93;.items&#91;itemIndex&#93;.autoFontSize = fontSize return a })
+- [src/frontend/components/slide/Textbox.svelte:681](../../../../src/frontend/components/slide/Textbox.svelte#L681) — templates.update((a) => { a&#91;ref.id&#93;.items&#91;itemIndex&#93;.previewAutoFontSize = fontSize return a })
 - [src/frontend/utils/createData.ts:563](../../../../src/frontend/utils/createData.ts#L563) — templates.set({ ...get(templates), ...getDefaultTemplates() })
 - [src/frontend/utils/createData.ts:580](../../../../src/frontend/utils/createData.ts#L580) — templates.set({ ...get(templates), ...templatesList })
-- [src/frontend/utils/createData.ts:587](../../../../src/frontend/utils/createData.ts#L587) — templates.update((a) => { Object.keys(defaultTemplates).forEach((id) => { // if deleted or exists, skip if (deletedIds.includes(id) \|\| a[id]) return a[id] = defaultTemplates[id] })
-- [src/frontend/utils/createData.ts:1394](../../../../src/frontend/utils/createData.ts#L1394) — templates.update((a) => { a.double = { isDefault: true, name: "Double", color: null, // "#FF6543", category: "song", items: [ { style: "top: 550px;left: 30px;width: 1860px;height: 
+- [src/frontend/utils/createData.ts:587](../../../../src/frontend/utils/createData.ts#L587) — templates.update((a) => { Object.keys(defaultTemplates).forEach((id) => { // if deleted or exists, skip if (deletedIds.includes(id) \|\| a&#91;id&#93;) return a&#91;id&#93; = defaultTemplates&#91;id&#93; })
+- [src/frontend/utils/createData.ts:1394](../../../../src/frontend/utils/createData.ts#L1394) — templates.update((a) => { a.double = { isDefault: true, name: "Double", color: null, // "#FF6543", category: "song", items: &#91; { style: "top: 550px;left: 30px;width: 1860px;height: 
 - [src/frontend/utils/receivers.ts:242](../../../../src/frontend/utils/receivers.ts#L242) — templates.set(a)
 
 ## Transport

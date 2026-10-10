@@ -13,4 +13,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:254](../../../../src/electron/IPC/responsesMain.ts#L254) — renderer/client → electron; [Main.TIMECODE_STOP]: () => timecodeStop()
+- [src/electron/IPC/responsesMain.ts:254](../../../../src/electron/IPC/responsesMain.ts#L254) — renderer/client → electron; &#91;Main.TIMECODE_STOP&#93;: () => timecodeStop()

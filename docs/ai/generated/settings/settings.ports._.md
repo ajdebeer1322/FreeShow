@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/main/popups/Connect.svelte:57](../../../../src/frontend/components/main/popups/Connect.svelte#L57) — $ports[id]
+- [src/frontend/components/main/popups/Connect.svelte:57](../../../../src/frontend/components/main/popups/Connect.svelte#L57) — $ports&#91;id&#93;
 
 ## Writes
 

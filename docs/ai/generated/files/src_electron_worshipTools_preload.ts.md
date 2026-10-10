@@ -23,7 +23,7 @@ None detected.
 ## Timing
 
 - [src/electron/worshipTools/preload.ts:21](../../../../src/electron/worshipTools/preload.ts#L21) — timer-adc28eff333a4031: setTimeout = dynamic ms (ms); // polls with the same problem in a chart that is on the page (for example an image chart) before giving up
-- [src/electron/worshipTools/preload.ts:61](../../../../src/electron/worshipTools/preload.ts#L61) — timer-9b503a5ac8ee541f: wait = 200 ms (POLL_MS); 
+- [src/electron/worshipTools/preload.ts:61](../../../../src/electron/worshipTools/preload.ts#L61) — timer-9b503a5ac8ee541f: wait = 200 ms (POLL_MS); // some menus only react to their inner button
 - [src/electron/worshipTools/preload.ts:99](../../../../src/electron/worshipTools/preload.ts#L99) — timer-8c35b6537611fbbb: setInterval = 1000 ms (1000); 
 
 ## Workarounds

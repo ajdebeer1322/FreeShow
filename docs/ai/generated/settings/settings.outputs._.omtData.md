@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/settings/tabs/Outputs.svelte:151](../../../../src/frontend/components/settings/tabs/Outputs.svelte#L151) — $outputs[id]?.omtData
+- [src/frontend/components/settings/tabs/Outputs.svelte:151](../../../../src/frontend/components/settings/tabs/Outputs.svelte#L151) — $outputs&#91;id&#93;?.omtData
 
 ## Writes
 

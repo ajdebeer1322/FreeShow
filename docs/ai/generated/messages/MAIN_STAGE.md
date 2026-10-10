@@ -12,5 +12,5 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:65](../../../../src/electron/IPC/responsesMain.ts#L65) — renderer/client → electron; [Main.STAGE]: () => getStore("STAGE")
-- [src/frontend/IPC/responsesMain.ts:123](../../../../src/frontend/IPC/responsesMain.ts#L123) — electron/other renderer → renderer; [Main.STAGE]: (a) => stageShows.set(a)
+- [src/electron/IPC/responsesMain.ts:65](../../../../src/electron/IPC/responsesMain.ts#L65) — renderer/client → electron; &#91;Main.STAGE&#93;: () => getStore("STAGE")
+- [src/frontend/IPC/responsesMain.ts:123](../../../../src/frontend/IPC/responsesMain.ts#L123) — electron/other renderer → renderer; &#91;Main.STAGE&#93;: (a) => stageShows.set(a)

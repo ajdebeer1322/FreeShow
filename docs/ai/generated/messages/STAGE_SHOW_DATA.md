@@ -15,5 +15,5 @@ No static evidence found.
 
 ## Handlers
 
-- [src/frontend/utils/stageTalk.ts:136](../../../../src/frontend/utils/stageTalk.ts#L136) — electron/other renderer → renderer; SHOW_DATA: (data: any, connectionId: string = "") => { let outSlideId = data?.id if (!outSlideId) { const stageId = get(connections).STAGE?.[con
+- [src/frontend/utils/stageTalk.ts:136](../../../../src/frontend/utils/stageTalk.ts#L136) — electron/other renderer → renderer; SHOW_DATA: (data: any, connectionId: string = "") => { let outSlideId = data?.id if (!outSlideId) { const stageId = get(connections).STAGE?.&#91;con
 - [src/server/stage/util/receiver.ts:75](../../../../src/server/stage/util/receiver.ts#L75) — desktop → browser client; SHOW_DATA: (data: { id: string; show: Show }) => { if (!data.id \|\| !data.show) return _update("showsCache", data.id, data.show) }

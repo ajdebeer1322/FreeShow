@@ -12,4 +12,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:106](../../../../src/electron/IPC/responsesMain.ts#L106) — renderer/client → electron; [Main.OPEN_NOW_PLAYING]: () => openNowPlaying()
+- [src/electron/IPC/responsesMain.ts:106](../../../../src/electron/IPC/responsesMain.ts#L106) — renderer/client → electron; &#91;Main.OPEN_NOW_PLAYING&#93;: () => openNowPlaying()

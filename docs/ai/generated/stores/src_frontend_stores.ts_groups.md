@@ -56,14 +56,14 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 - [src/frontend/converters/propresenter.ts:212](../../../../src/frontend/converters/propresenter.ts#L212) — get(groups)
 - [src/frontend/converters/txt.ts:764](../../../../src/frontend/converters/txt.ts#L764) — get(groups)
 - [src/frontend/converters/videopsalm.ts:317](../../../../src/frontend/converters/videopsalm.ts#L317) — get(groups)
-- [src/frontend/utils/listeners.ts:130](../../../../src/frontend/utils/listeners.ts#L130) — groups.subscribe(async (data) => { if (await hasNewerUpdate("LISTENER_GROUPS", 50)) return send(OUTPUT, ["GROUPS"], data) })
+- [src/frontend/utils/listeners.ts:130](../../../../src/frontend/utils/listeners.ts#L130) — groups.subscribe(async (data) => { if (await hasNewerUpdate("LISTENER_GROUPS", 50)) return send(OUTPUT, &#91;"GROUPS"&#93;, data) })
 - [src/frontend/utils/listeners.ts:453](../../../../src/frontend/utils/listeners.ts#L453) — groups.subscribe(() => { // TODO: only update groups, not all the other values updateCachedShows(get(showsCache)) })
 - [src/frontend/utils/stageTalk.ts:178](../../../../src/frontend/utils/stageTalk.ts#L178) — get(groups)
 - [src/frontend/utils/stageTalk.ts:179](../../../../src/frontend/utils/stageTalk.ts#L179) — get(groups)
 
 ## Writes
 
-- [src/frontend/components/main/popups/ManageGroups.svelte:27](../../../../src/frontend/components/main/popups/ManageGroups.svelte#L27) — groups.update((a) => { delete a[id].default return a })
+- [src/frontend/components/main/popups/ManageGroups.svelte:27](../../../../src/frontend/components/main/popups/ManageGroups.svelte#L27) — groups.update((a) => { delete a&#91;id&#93;.default return a })
 - [src/frontend/components/main/popups/ManageGroups.svelte:76](../../../../src/frontend/components/main/popups/ManageGroups.svelte#L76) — groups.set(clone(defaultGroups))
 - [src/frontend/utils/receivers.ts:245](../../../../src/frontend/utils/receivers.ts#L245) — groups.set(a)
 - [src/frontend/utils/updateSettings.ts:358](../../../../src/frontend/utils/updateSettings.ts#L358) — groups.set(v)

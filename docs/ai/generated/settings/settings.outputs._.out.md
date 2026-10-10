@@ -10,53 +10,53 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/MainOutput.svelte:16](../../../../src/frontend/MainOutput.svelte#L16) — $outputs[outputId]?.out
-- [src/frontend/components/actions/apiHelper.ts:769](../../../../src/frontend/components/actions/apiHelper.ts#L769) — get(outputs)[outputId]?.out
-- [src/frontend/components/actions/apiHelper.ts:782](../../../../src/frontend/components/actions/apiHelper.ts#L782) — get(outputs)[activeOutput.id]?.out
-- [src/frontend/components/actions/apiHelper.ts:793](../../../../src/frontend/components/actions/apiHelper.ts#L793) — get(outputs)[activeOutput.id]?.out
-- [src/frontend/components/actions/apiHelper.ts:803](../../../../src/frontend/components/actions/apiHelper.ts#L803) — get(outputs)[activeOutput.id]?.out
-- [src/frontend/components/draw/Paint.svelte:19](../../../../src/frontend/components/draw/Paint.svelte#L19) — $outputs[outputId]?.out
-- [src/frontend/components/drawer/pages/ScenePreview.svelte:17](../../../../src/frontend/components/drawer/pages/ScenePreview.svelte#L17) — $outputs[firstOutputId]?.out
-- [src/frontend/components/helpers/OutputHelper.linked.test.ts:109](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L109) — get(outputs)[id].out
-- [src/frontend/components/helpers/OutputHelper.linked.test.ts:230](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L230) — get(outputs)[id].out
-- [src/frontend/components/helpers/OutputHelper.linked.test.ts:395](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L395) — get(outputs)[id].out
-- [src/frontend/components/helpers/OutputHelper.ts:86](../../../../src/frontend/components/helpers/OutputHelper.ts#L86) — get(outputs)[member.id]?.out
-- [src/frontend/components/helpers/OutputHelper.ts:266](../../../../src/frontend/components/helpers/OutputHelper.ts#L266) — get(outputs)[id]?.out
-- [src/frontend/components/helpers/debugLog.ts:296](../../../../src/frontend/components/helpers/debugLog.ts#L296) — get(outputs)[id]?.out
-- [src/frontend/components/helpers/mediaInspector.ts:144](../../../../src/frontend/components/helpers/mediaInspector.ts#L144) — get(outputs)[outputId]?.out
-- [src/frontend/components/helpers/messageOutput.ts:19](../../../../src/frontend/components/helpers/messageOutput.ts#L19) — get(outputs)[outputId].out
-- [src/frontend/components/helpers/messageOutput.ts:55](../../../../src/frontend/components/helpers/messageOutput.ts#L55) — get(outputs)[outputId]?.out
-- [src/frontend/components/helpers/messageOutput.ts:56](../../../../src/frontend/components/helpers/messageOutput.ts#L56) — get(outputs)[outputId].out
-- [src/frontend/components/helpers/output.ts:196](../../../../src/frontend/components/helpers/output.ts#L196) — get(outputs)[outs[0]]?.out
-- [src/frontend/components/helpers/output.ts:230](../../../../src/frontend/components/helpers/output.ts#L230) — get(outputs)[outs?.[0]]?.out
-- [src/frontend/components/helpers/output.ts:248](../../../../src/frontend/components/helpers/output.ts#L248) — get(outputs)[outs?.[0]]?.out
-- [src/frontend/components/helpers/output.ts:347](../../../../src/frontend/components/helpers/output.ts#L347) — get(outputs)[outputId]?.out
-- [src/frontend/components/helpers/output.ts:360](../../../../src/frontend/components/helpers/output.ts#L360) — get(outputs)[outs?.[0]]?.out
-- [src/frontend/components/helpers/output.ts:370](../../../../src/frontend/components/helpers/output.ts#L370) — get(outputs)[allOutputIds?.[0]]?.out
-- [src/frontend/components/helpers/output.ts:566](../../../../src/frontend/components/helpers/output.ts#L566) — get(outputs)[outputId]?.out
-- [src/frontend/components/helpers/output.ts:581](../../../../src/frontend/components/helpers/output.ts#L581) — get(outputs)[outputId]?.out
-- [src/frontend/components/helpers/showActions.ts:348](../../../../src/frontend/components/helpers/showActions.ts#L348) — get(outputs)[id]?.out
-- [src/frontend/components/helpers/showActions.ts:395](../../../../src/frontend/components/helpers/showActions.ts#L395) — get(outputs)[outputId]?.out
-- [src/frontend/components/inputs/ShowButton.svelte:229](../../../../src/frontend/components/inputs/ShowButton.svelte#L229) — $outputs[outputId]?.out
-- [src/frontend/components/main/popups/SelectStyle.svelte:53](../../../../src/frontend/components/main/popups/SelectStyle.svelte#L53) — $outputs[outputId]?.out
-- [src/frontend/components/media/video/videoPlayer.ts:351](../../../../src/frontend/components/media/video/videoPlayer.ts#L351) — get(outputs)[outputIds?.[0] \|\| ""]?.out
-- [src/frontend/components/media/video/videoPlayer.ts:371](../../../../src/frontend/components/media/video/videoPlayer.ts#L371) — get(outputs)[outputId]?.out
-- [src/frontend/components/output/clear.ts:46](../../../../src/frontend/components/output/clear.ts#L46) — get(outputs)[id]?.out
-- [src/frontend/components/output/clear.ts:148](../../../../src/frontend/components/output/clear.ts#L148) — get(outputs)[outputId]?.out
-- [src/frontend/components/output/clear.ts:159](../../../../src/frontend/components/output/clear.ts#L159) — get(outputs)[specificOutputId]?.out
-- [src/frontend/components/output/preview/Preview.svelte:35](../../../../src/frontend/components/output/preview/Preview.svelte#L35) — $outputs[id]?.out
-- [src/frontend/components/output/preview/PreviewOutput.svelte:16](../../../../src/frontend/components/output/preview/PreviewOutput.svelte#L16) — $outputs[outputId]?.out
-- [src/frontend/components/show/ArrangementBar.svelte:89](../../../../src/frontend/components/show/ArrangementBar.svelte#L89) — $outputs[outputId]?.out
-- [src/frontend/components/show/pdf/PdfPreview.svelte:36](../../../../src/frontend/components/show/pdf/PdfPreview.svelte#L36) — $outputs[activeOutput].out
-- [src/frontend/components/show/ppt/PowerPointPreview.svelte:59](../../../../src/frontend/components/show/ppt/PowerPointPreview.svelte#L59) — $outputs[outputId]?.out
-- [src/frontend/components/timeline/TimelinePlayback.ts:431](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L431) — get(outputs)[outputId]?.out
-- [src/frontend/components/timeline/TimelinePlayback.ts:448](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L448) — get(outputs)[outputId]?.out
-- [src/frontend/components/timeline/TimelinePlayback.ts:486](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L486) — get(outputs)[outputId]?.out
-- [src/frontend/components/timeline/TimelinePlayback.ts:518](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L518) — get(outputs)[outputId]?.out
-- [src/frontend/utils/shortcuts.ts:156](../../../../src/frontend/utils/shortcuts.ts#L156) — get(outputs)[Object.keys(get(outputs))[0]]?.out
-- [src/frontend/utils/stageTalk.ts:142](../../../../src/frontend/utils/stageTalk.ts#L142) — get(outputs)[outputId \|\| ""]?.out
-- [src/frontend/utils/stageTalk.ts:162](../../../../src/frontend/utils/stageTalk.ts#L162) — get(outputs)[outputId]?.out
-- [src/frontend/utils/stageTalk.ts:194](../../../../src/frontend/utils/stageTalk.ts#L194) — get(outputs)[outputId]?.out
+- [src/frontend/MainOutput.svelte:16](../../../../src/frontend/MainOutput.svelte#L16) — $outputs&#91;outputId&#93;?.out
+- [src/frontend/components/actions/apiHelper.ts:769](../../../../src/frontend/components/actions/apiHelper.ts#L769) — get(outputs)&#91;outputId&#93;?.out
+- [src/frontend/components/actions/apiHelper.ts:782](../../../../src/frontend/components/actions/apiHelper.ts#L782) — get(outputs)&#91;activeOutput.id&#93;?.out
+- [src/frontend/components/actions/apiHelper.ts:793](../../../../src/frontend/components/actions/apiHelper.ts#L793) — get(outputs)&#91;activeOutput.id&#93;?.out
+- [src/frontend/components/actions/apiHelper.ts:803](../../../../src/frontend/components/actions/apiHelper.ts#L803) — get(outputs)&#91;activeOutput.id&#93;?.out
+- [src/frontend/components/draw/Paint.svelte:19](../../../../src/frontend/components/draw/Paint.svelte#L19) — $outputs&#91;outputId&#93;?.out
+- [src/frontend/components/drawer/pages/ScenePreview.svelte:17](../../../../src/frontend/components/drawer/pages/ScenePreview.svelte#L17) — $outputs&#91;firstOutputId&#93;?.out
+- [src/frontend/components/helpers/OutputHelper.linked.test.ts:109](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L109) — get(outputs)&#91;id&#93;.out
+- [src/frontend/components/helpers/OutputHelper.linked.test.ts:230](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L230) — get(outputs)&#91;id&#93;.out
+- [src/frontend/components/helpers/OutputHelper.linked.test.ts:395](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L395) — get(outputs)&#91;id&#93;.out
+- [src/frontend/components/helpers/OutputHelper.ts:86](../../../../src/frontend/components/helpers/OutputHelper.ts#L86) — get(outputs)&#91;member.id&#93;?.out
+- [src/frontend/components/helpers/OutputHelper.ts:266](../../../../src/frontend/components/helpers/OutputHelper.ts#L266) — get(outputs)&#91;id&#93;?.out
+- [src/frontend/components/helpers/debugLog.ts:296](../../../../src/frontend/components/helpers/debugLog.ts#L296) — get(outputs)&#91;id&#93;?.out
+- [src/frontend/components/helpers/mediaInspector.ts:144](../../../../src/frontend/components/helpers/mediaInspector.ts#L144) — get(outputs)&#91;outputId&#93;?.out
+- [src/frontend/components/helpers/messageOutput.ts:19](../../../../src/frontend/components/helpers/messageOutput.ts#L19) — get(outputs)&#91;outputId&#93;.out
+- [src/frontend/components/helpers/messageOutput.ts:55](../../../../src/frontend/components/helpers/messageOutput.ts#L55) — get(outputs)&#91;outputId&#93;?.out
+- [src/frontend/components/helpers/messageOutput.ts:56](../../../../src/frontend/components/helpers/messageOutput.ts#L56) — get(outputs)&#91;outputId&#93;.out
+- [src/frontend/components/helpers/output.ts:196](../../../../src/frontend/components/helpers/output.ts#L196) — get(outputs)&#91;outs&#91;0&#93;&#93;?.out
+- [src/frontend/components/helpers/output.ts:230](../../../../src/frontend/components/helpers/output.ts#L230) — get(outputs)&#91;outs?.&#91;0&#93;&#93;?.out
+- [src/frontend/components/helpers/output.ts:248](../../../../src/frontend/components/helpers/output.ts#L248) — get(outputs)&#91;outs?.&#91;0&#93;&#93;?.out
+- [src/frontend/components/helpers/output.ts:347](../../../../src/frontend/components/helpers/output.ts#L347) — get(outputs)&#91;outputId&#93;?.out
+- [src/frontend/components/helpers/output.ts:360](../../../../src/frontend/components/helpers/output.ts#L360) — get(outputs)&#91;outs?.&#91;0&#93;&#93;?.out
+- [src/frontend/components/helpers/output.ts:370](../../../../src/frontend/components/helpers/output.ts#L370) — get(outputs)&#91;allOutputIds?.&#91;0&#93;&#93;?.out
+- [src/frontend/components/helpers/output.ts:566](../../../../src/frontend/components/helpers/output.ts#L566) — get(outputs)&#91;outputId&#93;?.out
+- [src/frontend/components/helpers/output.ts:581](../../../../src/frontend/components/helpers/output.ts#L581) — get(outputs)&#91;outputId&#93;?.out
+- [src/frontend/components/helpers/showActions.ts:348](../../../../src/frontend/components/helpers/showActions.ts#L348) — get(outputs)&#91;id&#93;?.out
+- [src/frontend/components/helpers/showActions.ts:395](../../../../src/frontend/components/helpers/showActions.ts#L395) — get(outputs)&#91;outputId&#93;?.out
+- [src/frontend/components/inputs/ShowButton.svelte:229](../../../../src/frontend/components/inputs/ShowButton.svelte#L229) — $outputs&#91;outputId&#93;?.out
+- [src/frontend/components/main/popups/SelectStyle.svelte:53](../../../../src/frontend/components/main/popups/SelectStyle.svelte#L53) — $outputs&#91;outputId&#93;?.out
+- [src/frontend/components/media/video/videoPlayer.ts:351](../../../../src/frontend/components/media/video/videoPlayer.ts#L351) — get(outputs)&#91;outputIds?.&#91;0&#93; \|\| ""&#93;?.out
+- [src/frontend/components/media/video/videoPlayer.ts:371](../../../../src/frontend/components/media/video/videoPlayer.ts#L371) — get(outputs)&#91;outputId&#93;?.out
+- [src/frontend/components/output/clear.ts:46](../../../../src/frontend/components/output/clear.ts#L46) — get(outputs)&#91;id&#93;?.out
+- [src/frontend/components/output/clear.ts:148](../../../../src/frontend/components/output/clear.ts#L148) — get(outputs)&#91;outputId&#93;?.out
+- [src/frontend/components/output/clear.ts:159](../../../../src/frontend/components/output/clear.ts#L159) — get(outputs)&#91;specificOutputId&#93;?.out
+- [src/frontend/components/output/preview/Preview.svelte:35](../../../../src/frontend/components/output/preview/Preview.svelte#L35) — $outputs&#91;id&#93;?.out
+- [src/frontend/components/output/preview/PreviewOutput.svelte:16](../../../../src/frontend/components/output/preview/PreviewOutput.svelte#L16) — $outputs&#91;outputId&#93;?.out
+- [src/frontend/components/show/ArrangementBar.svelte:89](../../../../src/frontend/components/show/ArrangementBar.svelte#L89) — $outputs&#91;outputId&#93;?.out
+- [src/frontend/components/show/pdf/PdfPreview.svelte:36](../../../../src/frontend/components/show/pdf/PdfPreview.svelte#L36) — $outputs&#91;activeOutput&#93;.out
+- [src/frontend/components/show/ppt/PowerPointPreview.svelte:59](../../../../src/frontend/components/show/ppt/PowerPointPreview.svelte#L59) — $outputs&#91;outputId&#93;?.out
+- [src/frontend/components/timeline/TimelinePlayback.ts:431](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L431) — get(outputs)&#91;outputId&#93;?.out
+- [src/frontend/components/timeline/TimelinePlayback.ts:448](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L448) — get(outputs)&#91;outputId&#93;?.out
+- [src/frontend/components/timeline/TimelinePlayback.ts:486](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L486) — get(outputs)&#91;outputId&#93;?.out
+- [src/frontend/components/timeline/TimelinePlayback.ts:518](../../../../src/frontend/components/timeline/TimelinePlayback.ts#L518) — get(outputs)&#91;outputId&#93;?.out
+- [src/frontend/utils/shortcuts.ts:156](../../../../src/frontend/utils/shortcuts.ts#L156) — get(outputs)&#91;Object.keys(get(outputs))&#91;0&#93;&#93;?.out
+- [src/frontend/utils/stageTalk.ts:142](../../../../src/frontend/utils/stageTalk.ts#L142) — get(outputs)&#91;outputId \|\| ""&#93;?.out
+- [src/frontend/utils/stageTalk.ts:162](../../../../src/frontend/utils/stageTalk.ts#L162) — get(outputs)&#91;outputId&#93;?.out
+- [src/frontend/utils/stageTalk.ts:194](../../../../src/frontend/utils/stageTalk.ts#L194) — get(outputs)&#91;outputId&#93;?.out
 
 ## Writes
 

@@ -22,16 +22,16 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 ## Writes
 
-- [src/frontend/IPC/responsesMain.ts:170](../../../../src/frontend/IPC/responsesMain.ts#L170) — currentOutputSettings.set(outputIds[0])
+- [src/frontend/IPC/responsesMain.ts:170](../../../../src/frontend/IPC/responsesMain.ts#L170) — currentOutputSettings.set(outputIds&#91;0&#93;)
 - [src/frontend/components/context/menuClick.ts:1402](../../../../src/frontend/components/context/menuClick.ts#L1402) — currentOutputSettings.set(obj.contextElem.id)
-- [src/frontend/components/helpers/clipboard.ts:973](../../../../src/frontend/components/helpers/clipboard.ts#L973) — currentOutputSettings.set(Object.keys(get(outputs))[0])
+- [src/frontend/components/helpers/clipboard.ts:973](../../../../src/frontend/components/helpers/clipboard.ts#L973) — currentOutputSettings.set(Object.keys(get(outputs))&#91;0&#93;)
 - [src/frontend/components/helpers/historyHelpers.ts:569](../../../../src/frontend/components/helpers/historyHelpers.ts#L569) — currentOutputSettings.set(id)
 - [src/frontend/components/helpers/output.ts:1125](../../../../src/frontend/components/helpers/output.ts#L1125) — currentOutputSettings.set(id)
 - [src/frontend/components/helpers/output.ts:1175](../../../../src/frontend/components/helpers/output.ts#L1175) — currentOutputSettings.set(id)
 - [src/frontend/components/main/popups/OutputSelector.svelte:76](../../../../src/frontend/components/main/popups/OutputSelector.svelte#L76) — currentOutputSettings.set(outputId)
 - [src/frontend/components/quicksearch/quicksearch.ts:340](../../../../src/frontend/components/quicksearch/quicksearch.ts#L340) — currentOutputSettings.set(id)
-- [src/frontend/components/settings/Screens.svelte:24](../../../../src/frontend/components/settings/Screens.svelte#L24) — currentOutputSettings.set(options[0].id)
-- [src/frontend/components/settings/tabs/OutputsTabs.svelte:43](../../../../src/frontend/components/settings/tabs/OutputsTabs.svelte#L43) — currentOutputSettings.set(outputsList.find((a) => a.enabled)?.id \|\| outputsList[0].id \|\| "")
+- [src/frontend/components/settings/Screens.svelte:24](../../../../src/frontend/components/settings/Screens.svelte#L24) — currentOutputSettings.set(options&#91;0&#93;.id)
+- [src/frontend/components/settings/tabs/OutputsTabs.svelte:43](../../../../src/frontend/components/settings/tabs/OutputsTabs.svelte#L43) — currentOutputSettings.set(outputsList.find((a) => a.enabled)?.id \|\| outputsList&#91;0&#93;.id \|\| "")
 - [src/frontend/components/stage/StageLayout.svelte:140](../../../../src/frontend/components/stage/StageLayout.svelte#L140) — currentOutputSettings.set(id)
 
 ## Transport

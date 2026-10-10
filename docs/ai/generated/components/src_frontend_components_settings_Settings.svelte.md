@@ -8,7 +8,7 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/components/settings/Settings.svelte:54](../../../../src/frontend/components/settings/Settings.svelte#L54) — Tip → src/frontend/components/main/Tip.svelte; type="info"; value={translateText(hints[tabId])}; style="opacity: 0.7;"; hiddenText; white
+- [src/frontend/components/settings/Settings.svelte:54](../../../../src/frontend/components/settings/Settings.svelte#L54) — Tip → src/frontend/components/main/Tip.svelte; type="info"; value={translateText(hints&#91;tabId&#93;)}; style="opacity: 0.7;"; hiddenText; white
 - [src/frontend/components/settings/Settings.svelte:58](../../../../src/frontend/components/settings/Settings.svelte#L58) — StylesButtons → src/frontend/components/settings/tabs/StylesButtons.svelte; 
 - [src/frontend/components/settings/Settings.svelte:60](../../../../src/frontend/components/settings/Settings.svelte#L60) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; title="actions.reset"; icon="reset"; on:click={resetAudioRouting}
 - [src/frontend/components/settings/Settings.svelte:62](../../../../src/frontend/components/settings/Settings.svelte#L62) — ProfilesButtons → src/frontend/components/settings/tabs/ProfilesButtons.svelte; 

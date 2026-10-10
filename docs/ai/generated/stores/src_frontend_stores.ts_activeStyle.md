@@ -24,7 +24,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 - [src/frontend/components/output/preview/MultiOutputs.svelte:36](../../../../src/frontend/components/output/preview/MultiOutputs.svelte#L36) — activeStyle.set(output?.style \|\| "")
 - [src/frontend/components/quicksearch/quicksearch.ts:345](../../../../src/frontend/components/quicksearch/quicksearch.ts#L345) — activeStyle.set(id)
 - [src/frontend/components/settings/tabs/Outputs.svelte:107](../../../../src/frontend/components/settings/tabs/Outputs.svelte#L107) — activeStyle.set(styleId)
-- [src/frontend/components/settings/tabs/StylesTabs.svelte:17](../../../../src/frontend/components/settings/tabs/StylesTabs.svelte#L17) — activeStyle.set($styles.default ? "default" : Object.keys($styles)[0])
+- [src/frontend/components/settings/tabs/StylesTabs.svelte:17](../../../../src/frontend/components/settings/tabs/StylesTabs.svelte#L17) — activeStyle.set($styles.default ? "default" : Object.keys($styles)&#91;0&#93;)
 - [src/frontend/components/settings/tabs/StylesTabs.svelte:75](../../../../src/frontend/components/settings/tabs/StylesTabs.svelte#L75) — activeStyle.set(styleId)
 
 ## Transport

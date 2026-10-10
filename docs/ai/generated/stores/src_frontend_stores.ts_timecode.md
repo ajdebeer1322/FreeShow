@@ -39,7 +39,7 @@ Saved: yes, with the listed transformations.
 
 ## Writes
 
-- [src/frontend/components/main/popups/Timecode.svelte:26](../../../../src/frontend/components/main/popups/Timecode.svelte#L26) — timecode.update((a) => { a[key] = value return a })
+- [src/frontend/components/main/popups/Timecode.svelte:26](../../../../src/frontend/components/main/popups/Timecode.svelte#L26) — timecode.update((a) => { a&#91;key&#93; = value return a })
 - [src/frontend/utils/updateSettings.ts:459](../../../../src/frontend/utils/updateSettings.ts#L459) — timecode.set(v)
 
 ## Transport

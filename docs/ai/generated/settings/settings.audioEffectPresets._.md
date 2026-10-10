@@ -10,10 +10,10 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte:34](../../../../src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte#L34) — $audioEffectPresets?.[effectKey]
-- [src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte:62](../../../../src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte#L62) — $audioEffectPresets?.[effectKey]
-- [src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte:76](../../../../src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte#L76) — $audioEffectPresets?.[effectKey]
-- [src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte:113](../../../../src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte#L113) — $audioEffectPresets?.[effectKey]
+- [src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte:34](../../../../src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte#L34) — $audioEffectPresets?.&#91;effectKey&#93;
+- [src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte:62](../../../../src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte#L62) — $audioEffectPresets?.&#91;effectKey&#93;
+- [src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte:76](../../../../src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte#L76) — $audioEffectPresets?.&#91;effectKey&#93;
+- [src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte:113](../../../../src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte#L113) — $audioEffectPresets?.&#91;effectKey&#93;
 
 ## Writes
 

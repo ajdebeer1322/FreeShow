@@ -8,7 +8,7 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/components/output/messages/MessagesPanel.svelte:137](../../../../src/frontend/components/output/messages/MessagesPanel.svelte#L137) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; small; title="New message"; disabled={profile.global === "read" \|\| profile.global === "none" \|\| profile[""] =
+- [src/frontend/components/output/messages/MessagesPanel.svelte:137](../../../../src/frontend/components/output/messages/MessagesPanel.svelte#L137) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; small; title="New message"; disabled={profile.global === "read" \|\| profile.global === "none" \|\| profile&#91;""&#93; =
 - [src/frontend/components/output/messages/MessagesPanel.svelte:142](../../../../src/frontend/components/output/messages/MessagesPanel.svelte#L142) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; small; disabled={$outLocked}; on:click={() => hideMessage(message.id)}
 - [src/frontend/components/output/messages/MessagesPanel.svelte:150](../../../../src/frontend/components/output/messages/MessagesPanel.svelte#L150) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; small; disabled={readOnly}; on:click={() => (editing = !editing)}
 - [src/frontend/components/output/messages/MessagesPanel.svelte:157](../../../../src/frontend/components/output/messages/MessagesPanel.svelte#L157) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; small; title="Preview message"; on:click={() => (previewOpen = !previewOpen)}

@@ -1,0 +1,22 @@
+[
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":563,"endLine":563,"text":"/* preserve special spaces from Text edit */","start":30353,"end":30397},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":566,"endLine":566,"text":"/* normal wrap if \"Text on one line (nowrap)\" or Justify aligned */","start":30409,"end":30476},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":581,"endLine":585,"text":"/* span {\n    display: inline;\n    white-space: initial;\n    color: white;\n  } */","start":30708,"end":30789},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":587,"endLine":587,"text":"/* not sure what this is used for? */","start":30795,"end":30832},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":591,"endLine":591,"text":"/* display: inline-block; */","start":30952,"end":30980},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":596,"endLine":596,"text":"/* font-size: 30px; */","start":31076,"end":31098},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":600,"endLine":600,"text":"/* bible parts */","start":31158,"end":31175},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":606,"endLine":606,"text":"/* a block here would give the line's leading space its own line */","start":31299,"end":31366},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":614,"endLine":616,"text":"/* .height {\n        height: 1em;\n    } */","start":31527,"end":31569},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":618,"endLine":618,"text":"/* Cutout Shape */","start":31575,"end":31593},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":635,"endLine":635,"text":"/* it gives a warning, but float must be used with the shape-outside property */","start":32083,"end":32163},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":643,"endLine":643,"text":"/* scrolling */","start":32367,"end":32382},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":645,"endLine":645,"text":"/* scroll will always show overflowing text */","start":32408,"end":32454},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":772,"endLine":772,"text":"/* chords */","start":36214,"end":36226},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":775,"endLine":775,"text":"/* line-height: 0; */","start":36295,"end":36316},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":780,"endLine":780,"text":"/* top: 0; */","start":36432,"end":36445},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":787,"endLine":787,"text":"/* WIP chords goes over other (stage) items */","start":36648,"end":36694},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":790,"endLine":792,"text":"/* .align.isStage .break.chords :global(.chord.end) {\n        line-height: 0px;\n    } */","start":36725,"end":36813},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":803,"endLine":803,"text":"/* reset */","start":37114,"end":37125},
+  {"file":"src/frontend/components/slide/TextboxLines.svelte","line":807,"endLine":809,"text":"/* .break.chords.first {\n        line-height: 0 !important;\n    } */","start":37193,"end":37261}
+]

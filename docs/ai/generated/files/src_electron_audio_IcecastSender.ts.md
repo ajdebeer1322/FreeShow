@@ -24,7 +24,7 @@ None detected.
 ## Timing
 
 - [src/electron/audio/IcecastSender.ts:142](../../../../src/electron/audio/IcecastSender.ts#L142) — timer-5cbdc2c6e0896b2d: setTimeout = 3000 ms (3000); 
-- [src/electron/audio/IcecastSender.ts:172](../../../../src/electron/audio/IcecastSender.ts#L172) — timer-0b706ea96cddfdab: setInterval = 20 ms (20); 
+- [src/electron/audio/IcecastSender.ts:172](../../../../src/electron/audio/IcecastSender.ts#L172) — timer-0b706ea96cddfdab: setInterval = 20 ms (20); // Keep-alive timer fires every 20ms. // If real audio starves for > 1000ms, this maintains continuous 20ms Opus stream pacing wit
 
 ## Workarounds
 

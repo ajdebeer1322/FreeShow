@@ -57,3 +57,4 @@ No static evidence found.
 ## Workarounds
 
 - [src/frontend/audio/audioAnalyser.ts:13](../../../../src/frontend/audio/audioAnalyser.ts#L13) — workaround-bdf041b6b932624f: // NOTE: we don't have access to analyse audio from Website/YouTube/Vimeo (But the "Desktop audio" input is a good workaround)
+- [src/frontend/audio/audioAnalyser.ts:493](../../../../src/frontend/audio/audioAnalyser.ts#L493) — workaround-4cbcf23d06c2c9f7: // WIP per item capture for visualizer (audio file playback preview) ?

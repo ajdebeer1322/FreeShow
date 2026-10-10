@@ -13,4 +13,4 @@ No static evidence found.
 
 ## Handlers
 
-- [src/frontend/utils/receivers.ts:140](../../../../src/frontend/utils/receivers.ts#L140) — electron/other renderer → renderer; ACTION_MAIN: (a: { id: string }) => runAction(get(actions)[a.id], { source: "remote" })
+- [src/frontend/utils/receivers.ts:140](../../../../src/frontend/utils/receivers.ts#L140) — electron/other renderer → renderer; ACTION_MAIN: (a: { id: string }) => runAction(get(actions)&#91;a.id&#93;, { source: "remote" })

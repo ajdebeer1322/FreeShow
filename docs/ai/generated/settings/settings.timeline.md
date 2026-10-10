@@ -21,5 +21,5 @@ Store: src/frontend/stores.ts#timeline.
 
 ## Writes
 
-- [src/frontend/components/main/popups/TimelineSettings.svelte:10](../../../../src/frontend/components/main/popups/TimelineSettings.svelte#L10) — timeline.update((a) => { a[key] = value return a })
+- [src/frontend/components/main/popups/TimelineSettings.svelte:10](../../../../src/frontend/components/main/popups/TimelineSettings.svelte#L10) — timeline.update((a) => { a&#91;key&#93; = value return a })
 - [src/frontend/utils/updateSettings.ts:458](../../../../src/frontend/utils/updateSettings.ts#L458) — timeline.set(v)

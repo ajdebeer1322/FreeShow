@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/context/menuClick.ts:674](../../../../src/frontend/components/context/menuClick.ts#L674) — get(actions)[get(selected).data[0]?.id]?.tags?.includes
+- [src/frontend/components/context/menuClick.ts:674](../../../../src/frontend/components/context/menuClick.ts#L674) — get(actions)&#91;get(selected).data&#91;0&#93;?.id&#93;?.tags?.includes
 
 ## Writes
 

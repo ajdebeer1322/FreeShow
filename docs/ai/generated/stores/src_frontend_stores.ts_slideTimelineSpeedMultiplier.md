@@ -9,7 +9,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 ## Reads
 
 - [src/frontend/components/output/layers/SlideContent.svelte:371](../../../../src/frontend/components/output/layers/SlideContent.svelte#L371) — $slideTimelineSpeedMultiplier
-- [src/frontend/utils/listeners.ts:344](../../../../src/frontend/utils/listeners.ts#L344) — slideTimelineSpeedMultiplier.subscribe((data) => { send(OUTPUT, ["SLIDE_TIMELINE_SPEED_MULTIPLIER"], data) })
+- [src/frontend/utils/listeners.ts:344](../../../../src/frontend/utils/listeners.ts#L344) — slideTimelineSpeedMultiplier.subscribe((data) => { send(OUTPUT, &#91;"SLIDE_TIMELINE_SPEED_MULTIPLIER"&#93;, data) })
 
 ## Writes
 

@@ -12,5 +12,5 @@ No static evidence found.
 
 ## Handlers
 
-- [src/electron/IPC/responsesMain.ts:72](../../../../src/electron/IPC/responsesMain.ts#L72) — renderer/client → electron; [Main.DRIVE_API_KEY]: () => getStore("DRIVE_API_KEY")
-- [src/frontend/IPC/responsesMain.ts:150](../../../../src/frontend/IPC/responsesMain.ts#L150) — electron/other renderer → renderer; [Main.DRIVE_API_KEY]: (a) => driveKeys.set(a)
+- [src/electron/IPC/responsesMain.ts:72](../../../../src/electron/IPC/responsesMain.ts#L72) — renderer/client → electron; &#91;Main.DRIVE_API_KEY&#93;: () => getStore("DRIVE_API_KEY")
+- [src/frontend/IPC/responsesMain.ts:150](../../../../src/frontend/IPC/responsesMain.ts#L150) — electron/other renderer → renderer; &#91;Main.DRIVE_API_KEY&#93;: (a) => driveKeys.set(a)

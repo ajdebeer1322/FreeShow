@@ -10,8 +10,8 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/MainOutput.svelte:16](../../../../src/frontend/MainOutput.svelte#L16) — $outputs[outputId]?.out?.scene?.style
-- [src/frontend/components/output/preview/PreviewOutput.svelte:16](../../../../src/frontend/components/output/preview/PreviewOutput.svelte#L16) — $outputs[outputId]?.out?.scene?.style
+- [src/frontend/MainOutput.svelte:16](../../../../src/frontend/MainOutput.svelte#L16) — $outputs&#91;outputId&#93;?.out?.scene?.style
+- [src/frontend/components/output/preview/PreviewOutput.svelte:16](../../../../src/frontend/components/output/preview/PreviewOutput.svelte#L16) — $outputs&#91;outputId&#93;?.out?.scene?.style
 
 ## Writes
 

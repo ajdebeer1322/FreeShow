@@ -5,7 +5,6 @@
   {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":69,"endLine":69,"text":"// get ghost background","start":3574,"end":3597},
   {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":85,"endLine":85,"text":"// $: slideOverlays = layoutSlide.overlays || []","start":4609,"end":4657},
   {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":87,"endLine":87,"text":"// LOAD BACKGROUND","start":4663,"end":4681},
-  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":102,"endLine":102,"text":"//vumbnail.com/${playerVid.id}_medium.jpg`","start":5359,"end":5401},
   {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":154,"endLine":154,"text":"// focus mode","start":7046,"end":7059},
   {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":165,"endLine":165,"text":"// recalculate auto size","start":7465,"end":7489},
   {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":188,"endLine":188,"text":"// e.preventDefault()","start":8243,"end":8264},
@@ -38,5 +37,6 @@
   {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":302,"endLine":302,"text":"// && $editMode !== \"chords\"","start":12152,"end":12180},
   {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":306,"endLine":306,"text":"// BACKGROUND","start":12273,"end":12286},
   {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":311,"endLine":311,"text":"// add behind all other items","start":12502,"end":12531},
-  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":334,"endLine":334,"text":"// NOTES","start":13491,"end":13499}
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":334,"endLine":334,"text":"// NOTES","start":13491,"end":13499},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":358,"endLine":358,"text":"<!-- background -->","start":14564,"end":14583}
 ]

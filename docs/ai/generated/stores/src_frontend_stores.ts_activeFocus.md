@@ -30,7 +30,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 - [src/frontend/components/helpers/OutputHelper.ts:332](../../../../src/frontend/components/helpers/OutputHelper.ts#L332) — activeFocus.set({ id: newItem.id, index: newIndex, type: newItem.type \|\| "show" })
 - [src/frontend/components/helpers/drop.test.ts:85](../../../../src/frontend/components/helpers/drop.test.ts#L85) — activeFocus.set({ id: "other", index: 0, type: "show" })
 - [src/frontend/components/helpers/show.ts:83](../../../../src/frontend/components/helpers/show.ts#L83) — activeFocus.set({ id: showId, index: pos ?? undefined })
-- [src/frontend/components/helpers/showActions.ts:121](../../../../src/frontend/components/helpers/showActions.ts#L121) — activeFocus.set({ id: items[newIndex].id, index: newIndex, type: items[newIndex].type })
+- [src/frontend/components/helpers/showActions.ts:121](../../../../src/frontend/components/helpers/showActions.ts#L121) — activeFocus.set({ id: items&#91;newIndex&#93;.id, index: newIndex, type: items&#91;newIndex&#93;.type })
 - [src/frontend/components/inputs/ShowButton.svelte:117](../../../../src/frontend/components/inputs/ShowButton.svelte#L117) — activeFocus.set({ id, index: pos ?? undefined, type })
 - [src/frontend/components/output/tools/Audio.svelte:79](../../../../src/frontend/components/output/tools/Audio.svelte#L79) — activeFocus.set({ id, type: "audio" })
 - [src/frontend/components/output/tools/MediaControls.svelte:93](../../../../src/frontend/components/output/tools/MediaControls.svelte#L93) — activeFocus.set({ id: path, type: type as ShowType })

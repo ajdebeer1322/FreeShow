@@ -53,5 +53,5 @@ Store: src/frontend/stores.ts#slidesOptions.
 - [src/frontend/components/context/menuClick.ts:1216](../../../../src/frontend/components/context/menuClick.ts#L1216) — slidesOptions.set({ ...get(slidesOptions), mode: "list" })
 - [src/frontend/components/context/menuClick.ts:1219](../../../../src/frontend/components/context/menuClick.ts#L1219) — slidesOptions.set({ ...get(slidesOptions), mode: "lyrics" })
 - [src/frontend/components/quicksearch/quicksearch.ts:319](../../../../src/frontend/components/quicksearch/quicksearch.ts#L319) — slidesOptions.set({ ...get(slidesOptions), mode: data.view })
-- [src/frontend/show/slides.ts:16](../../../../src/frontend/show/slides.ts#L16) — slidesOptions.set({ ...get(slidesOptions), mode: slidesViews[get(slidesOptions).mode] })
+- [src/frontend/show/slides.ts:16](../../../../src/frontend/show/slides.ts#L16) — slidesOptions.set({ ...get(slidesOptions), mode: slidesViews&#91;get(slidesOptions).mode&#93; })
 - [src/frontend/utils/updateSettings.ts:370](../../../../src/frontend/utils/updateSettings.ts#L370) — slidesOptions.set(v)

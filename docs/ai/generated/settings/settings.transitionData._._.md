@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/main/popups/Transition.svelte:257](../../../../src/frontend/components/main/popups/Transition.svelte#L257) — $transitionData[selectedType][key]
+- [src/frontend/components/main/popups/Transition.svelte:257](../../../../src/frontend/components/main/popups/Transition.svelte#L257) — $transitionData&#91;selectedType&#93;&#91;key&#93;
 
 ## Writes
 

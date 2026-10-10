@@ -30,8 +30,8 @@ Store: src/frontend/stores.ts#driveData.
 ## Writes
 
 - [src/frontend/components/settings/tabs/Files.svelte:125](../../../../src/frontend/components/settings/tabs/Files.svelte#L125) — driveData.set({ mainFolderId: null, disabled: false, initializeMethod: null, disableUpload: false })
-- [src/frontend/components/settings/tabs/Files.svelte:141](../../../../src/frontend/components/settings/tabs/Files.svelte#L141) — driveData.update((a) => { a[key] = value return a })
-- [src/frontend/components/settings/tabs/Files.svelte:148](../../../../src/frontend/components/settings/tabs/Files.svelte#L148) — driveData.update((a) => { a[key] = invert ? !checked : checked return a })
+- [src/frontend/components/settings/tabs/Files.svelte:141](../../../../src/frontend/components/settings/tabs/Files.svelte#L141) — driveData.update((a) => { a&#91;key&#93; = value return a })
+- [src/frontend/components/settings/tabs/Files.svelte:148](../../../../src/frontend/components/settings/tabs/Files.svelte#L148) — driveData.update((a) => { a&#91;key&#93; = invert ? !checked : checked return a })
 - [src/frontend/utils/drive.ts:26](../../../../src/frontend/utils/drive.ts#L26) — driveData.update((a) => { if (!a.mediaId \|\| a.mediaId === "default") a.mediaId = uid(8) return a })
 - [src/frontend/utils/receivers.ts:339](../../../../src/frontend/utils/receivers.ts#L339) — driveData.update((a) => { a.initializeMethod = "done" return a })
 - [src/frontend/utils/receivers.ts:357](../../../../src/frontend/utils/receivers.ts#L357) — driveData.update((a) => { a.mainFolderId = id return a })

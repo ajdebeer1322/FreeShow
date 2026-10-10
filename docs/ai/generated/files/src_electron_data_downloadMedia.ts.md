@@ -31,6 +31,8 @@ None detected.
 
 ## Timing
 
+- [src/electron/data/downloadMedia.ts:112](../../../../src/electron/data/downloadMedia.ts#L112) — poll-interval-d0932f006462df60: poll-interval = 50 ms (50); // generate a max amount at the same time
+- [src/electron/data/downloadMedia.ts:112](../../../../src/electron/data/downloadMedia.ts#L112) — poll-timeout-3f6ecd4f70c1b24e: poll-timeout = 5000 ms (5000); // generate a max amount at the same time
 - [src/electron/data/downloadMedia.ts:171](../../../../src/electron/data/downloadMedia.ts#L171) — timer-24d2df11aa53a979: setTimeout = 480000 ms (60 * 8 * 1000); 
 
 ## Workarounds

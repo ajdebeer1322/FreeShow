@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/settings/tabs/Outputs.svelte:122](../../../../src/frontend/components/settings/tabs/Outputs.svelte#L122) — $outputs[id]?.ndiData
+- [src/frontend/components/settings/tabs/Outputs.svelte:122](../../../../src/frontend/components/settings/tabs/Outputs.svelte#L122) — $outputs&#91;id&#93;?.ndiData
 
 ## Writes
 

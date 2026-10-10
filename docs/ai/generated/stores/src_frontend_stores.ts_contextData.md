@@ -20,7 +20,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 ## Writes
 
-- [src/frontend/components/context/loadItems.ts:409](../../../../src/frontend/components/context/loadItems.ts#L409) — contextData.update((a) => { a[key] = data return a })
+- [src/frontend/components/context/loadItems.ts:409](../../../../src/frontend/components/context/loadItems.ts#L409) — contextData.update((a) => { a&#91;key&#93; = data return a })
 
 ## Transport
 

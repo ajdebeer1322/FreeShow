@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/settings/tabs/Outputs.svelte:253](../../../../src/frontend/components/settings/tabs/Outputs.svelte#L253) — $outputs[id]?.blackmagicData
+- [src/frontend/components/settings/tabs/Outputs.svelte:253](../../../../src/frontend/components/settings/tabs/Outputs.svelte#L253) — $outputs&#91;id&#93;?.blackmagicData
 
 ## Writes
 

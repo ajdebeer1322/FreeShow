@@ -16,5 +16,5 @@ No static evidence found.
 
 ## Handlers
 
-- [src/frontend/utils/remoteTalk.ts:71](../../../../src/frontend/utils/remoteTalk.ts#L71) — electron/other renderer → renderer; SHOW: async (msg: any) => { // msg.data = filterObjectArray(get(shows)[msg.data], [""]) const showID: string = msg.data if (msg.id) { setConnect
+- [src/frontend/utils/remoteTalk.ts:71](../../../../src/frontend/utils/remoteTalk.ts#L71) — electron/other renderer → renderer; SHOW: async (msg: any) => { // msg.data = filterObjectArray(get(shows)&#91;msg.data&#93;, &#91;""&#93;) const showID: string = msg.data if (msg.id) { setConnect
 - [src/server/remote/util/receiver.ts:80](../../../../src/server/remote/util/receiver.ts#L80) — desktop → browser client; SHOW: (data: any) => { if (!_get("isConnected")) return if (!_get("activeShow") && !_get("quickPlay")) _set("activeTab", "show") // if (activeTab === "sho

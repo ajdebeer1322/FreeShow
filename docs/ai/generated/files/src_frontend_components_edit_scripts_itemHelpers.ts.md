@@ -103,7 +103,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/edit/scripts/itemHelpers.ts:166](../../../../src/frontend/components/edit/scripts/itemHelpers.ts#L166) — timer-4821e55884bb5650: setTimeout = 0 ms (omitted); 
+- [src/frontend/components/edit/scripts/itemHelpers.ts:166](../../../../src/frontend/components/edit/scripts/itemHelpers.ts#L166) — timer-4821e55884bb5650: setTimeout = 0 ms (omitted); // set caret ready for typing // wait for elem to be created // get item elem
 
 ## Workarounds
 

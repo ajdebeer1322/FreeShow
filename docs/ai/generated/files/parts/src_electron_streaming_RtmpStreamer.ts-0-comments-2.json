@@ -1,0 +1,13 @@
+[
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":580,"endLine":580,"text":"// ----- inputs -----","start":23447,"end":23468},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":586,"endLine":586,"text":"// -f rawvideo has no framing, so a buffer that disagrees with the declared -video_size would","start":23663,"end":23756},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":587,"endLine":587,"text":"// silently shear the broadcast diagonally rather than fail","start":23765,"end":23824},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":597,"endLine":597,"text":"// an encoder restart is already scheduled; do not race it","start":24191,"end":24249},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":607,"endLine":607,"text":"// the capture resolution changed under us, so the encoder's -video_size no longer matches","start":24533,"end":24623},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":644,"endLine":644,"text":"// ----- status -----","start":26073,"end":26094},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":648,"endLine":648,"text":"// a healthy relay must never carry a stale error, or the UI shows a red notice under a green dot","start":26260,"end":26357},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":681,"endLine":681,"text":"// HELPERS","start":27480,"end":27490},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":683,"endLine":683,"text":"/** Destination changes are relay-only; anything here means the encoder has to be respawned. */","start":27492,"end":27587},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":689,"endLine":689,"text":"// remove trailing slashes","start":27959,"end":27985},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":694,"endLine":694,"text":"/** Close stdin and give the process time to flush/finalize containers before SIGTERM */","start":28104,"end":28192}
+]

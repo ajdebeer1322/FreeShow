@@ -10,7 +10,7 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/actions/CustomInput.svelte:131](../../../../src/frontend/components/actions/CustomInput.svelte#L131) — $actions[a.value]?.actionValues
+- [src/frontend/components/actions/CustomInput.svelte:131](../../../../src/frontend/components/actions/CustomInput.svelte#L131) — $actions&#91;a.value&#93;?.actionValues
 
 ## Writes
 

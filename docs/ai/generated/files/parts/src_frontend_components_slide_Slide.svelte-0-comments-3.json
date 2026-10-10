@@ -1,0 +1,16 @@
+[
+  {"file":"src/frontend/components/slide/Slide.svelte","line":555,"endLine":555,"text":"/* this z-index causes the button title to show behind! */","start":27208,"end":27266},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":556,"endLine":556,"text":"/* z-index: 2; */","start":27275,"end":27292},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":577,"endLine":577,"text":"/* background-color: var(--primary-lighter); */","start":27589,"end":27636},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":578,"endLine":578,"text":"/* filter: brightness(1.1); */","start":27645,"end":27675},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":617,"endLine":617,"text":"/* opacity: 0.8; */","start":28475,"end":28494},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":619,"endLine":620,"text":"/* border-bottom-left-radius: 4px;\n        border-bottom-right-radius: 4px; */","start":28504,"end":28582},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":633,"endLine":633,"text":"/* opacity: 0.8; */","start":28818,"end":28837},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":694,"endLine":694,"text":"/* Allow text to take available space */","start":30098,"end":30138},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":695,"endLine":695,"text":"/* Keep existing left margin if needed | Space between text and button */","start":30172,"end":30245},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":696,"endLine":696,"text":"/* width: 100%; */","start":30254,"end":30272},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":696,"endLine":696,"text":"/* Potentially remove or adjust this if flex-grow is used */","start":30273,"end":30333},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":697,"endLine":697,"text":"/* Keep existing right margin if needed, or adjust for button */","start":30367,"end":30431},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":704,"endLine":716,"text":"/* .open-in-browser-btn {\n        background: none;\n        border: none;\n        color: inherit;\n        cursor: pointer;\n        padding: 0 4px;\n        margin-inline-start: auto;\n        display: flex;\n        align-items: center;\n    }\n    .open-in-browser-btn:hover {\n        opacity: 0.7;\n    } */","start":30561,"end":30864},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":749,"endLine":749,"text":"/* font-size: 1.5em; */","start":31517,"end":31540}
+]

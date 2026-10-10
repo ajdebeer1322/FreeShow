@@ -13,5 +13,5 @@ No static evidence found.
 
 ## Handlers
 
-- [src/frontend/utils/stageTalk.ts:113](../../../../src/frontend/utils/stageTalk.ts#L113) — electron/other renderer → renderer; OUT: (data: any, connectionId: string = "") => { let stageId = data?.id \|\| get(connections).STAGE?.[connectionId]?.active \|\| Object.values(get(c
+- [src/frontend/utils/stageTalk.ts:113](../../../../src/frontend/utils/stageTalk.ts#L113) — electron/other renderer → renderer; OUT: (data: any, connectionId: string = "") => { let stageId = data?.id \|\| get(connections).STAGE?.&#91;connectionId&#93;?.active \|\| Object.values(get(c
 - [src/server/stage/util/receiver.ts:60](../../../../src/server/stage/util/receiver.ts#L60) — desktop → browser client; OUT: (data: Output) => { _set("output", data) let outputId = data?.id if (outputId) send("REQUEST_PROGRESS", { outputId }) const slideId = data?.out?.slid

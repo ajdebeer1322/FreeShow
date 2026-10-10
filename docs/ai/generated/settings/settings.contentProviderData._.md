@@ -10,8 +10,8 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/IPC/responsesMain.ts:371](../../../../src/frontend/IPC/responsesMain.ts#L371) — get(contentProviderData)[data.providerId]
-- [src/frontend/IPC/responsesMain.ts:482](../../../../src/frontend/IPC/responsesMain.ts#L482) — get(contentProviderData)[providerId]
+- [src/frontend/IPC/responsesMain.ts:371](../../../../src/frontend/IPC/responsesMain.ts#L371) — get(contentProviderData)&#91;data.providerId&#93;
+- [src/frontend/IPC/responsesMain.ts:482](../../../../src/frontend/IPC/responsesMain.ts#L482) — get(contentProviderData)&#91;providerId&#93;
 
 ## Writes
 

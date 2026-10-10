@@ -10,8 +10,8 @@ No static evidence found.
 
 ## Reads
 
-- [src/frontend/components/helpers/historyHelpers.ts:580](../../../../src/frontend/components/helpers/historyHelpers.ts#L580) — get(outputs)[id].enabled
-- [src/frontend/utils/receivers.ts:132](../../../../src/frontend/utils/receivers.ts#L132) — get(outputs)[state.id]?.enabled
+- [src/frontend/components/helpers/historyHelpers.ts:580](../../../../src/frontend/components/helpers/historyHelpers.ts#L580) — get(outputs)&#91;id&#93;.enabled
+- [src/frontend/utils/receivers.ts:132](../../../../src/frontend/utils/receivers.ts#L132) — get(outputs)&#91;state.id&#93;?.enabled
 
 ## Writes
 

@@ -1,0 +1,20 @@
+[
+  {"file":"src/electron/contentProviders/canva/CanvaConnect.ts","line":178,"endLine":178,"text":"//     })","start":7427,"end":7436},
+  {"file":"src/electron/contentProviders/canva/CanvaConnect.ts","line":180,"endLine":180,"text":"//     // Set a timeout in case user doesn't complete OAuth","start":7446,"end":7505},
+  {"file":"src/electron/contentProviders/canva/CanvaConnect.ts","line":181,"endLine":181,"text":"//     setTimeout(","start":7514,"end":7532},
+  {"file":"src/electron/contentProviders/canva/CanvaConnect.ts","line":182,"endLine":182,"text":"//         () => {","start":7541,"end":7559},
+  {"file":"src/electron/contentProviders/canva/CanvaConnect.ts","line":183,"endLine":183,"text":"//             this.oauthServer?.close()","start":7568,"end":7608},
+  {"file":"src/electron/contentProviders/canva/CanvaConnect.ts","line":184,"endLine":184,"text":"//             this.oauthServer = null","start":7617,"end":7655},
+  {"file":"src/electron/contentProviders/canva/CanvaConnect.ts","line":185,"endLine":185,"text":"//             reject(new Error(\"OAuth authentication timeout\"))","start":7664,"end":7728},
+  {"file":"src/electron/contentProviders/canva/CanvaConnect.ts","line":186,"endLine":186,"text":"//         },","start":7737,"end":7750},
+  {"file":"src/electron/contentProviders/canva/CanvaConnect.ts","line":187,"endLine":187,"text":"//         10 * 60 * 1000","start":7759,"end":7784},
+  {"file":"src/electron/contentProviders/canva/CanvaConnect.ts","line":188,"endLine":188,"text":"//     ) // 10 minute timeout","start":7793,"end":7822},
+  {"file":"src/electron/contentProviders/canva/CanvaConnect.ts","line":189,"endLine":189,"text":"// })","start":7831,"end":7836},
+  {"file":"src/electron/contentProviders/canva/CanvaConnect.ts","line":192,"endLine":192,"text":"// https","start":7864,"end":7872},
+  {"file":"src/electron/contentProviders/canva/CanvaConnect.ts","line":193,"endLine":193,"text":"// // Open authorization URL","start":7885,"end":7913},
+  {"file":"src/electron/contentProviders/canva/CanvaConnect.ts","line":194,"endLine":194,"text":"// this.oauthHelper.authorize(scope)","start":7926,"end":7962},
+  {"file":"src/electron/contentProviders/canva/CanvaConnect.ts","line":195,"endLine":195,"text":"// // Wait for callback to complete","start":7975,"end":8010},
+  {"file":"src/electron/contentProviders/canva/CanvaConnect.ts","line":196,"endLine":196,"text":"// const authData = await authCompleted","start":8023,"end":8062},
+  {"file":"src/electron/contentProviders/canva/CanvaConnect.ts","line":211,"endLine":211,"text":"// this.oauthServer?.close()","start":8520,"end":8548},
+  {"file":"src/electron/contentProviders/canva/CanvaConnect.ts","line":212,"endLine":212,"text":"// this.oauthServer = null","start":8561,"end":8587}
+]

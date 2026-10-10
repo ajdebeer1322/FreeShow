@@ -39,3 +39,4 @@ No static evidence found.
 
 - [src/frontend/components/timeline/SlideTimeline.ts:85](../../../../src/frontend/components/timeline/SlideTimeline.ts#L85) — workaround-f1f70dd7fa9d80e8: // WIP too many updates to showsCache at once with many actions!!
 - [src/frontend/components/timeline/SlideTimeline.ts:116](../../../../src/frontend/components/timeline/SlideTimeline.ts#L116) — workaround-95fd9e44b3d3881e: // WIP add back other transforms
+- [src/frontend/components/timeline/SlideTimeline.ts:134](../../../../src/frontend/components/timeline/SlideTimeline.ts#L134) — workaround-3c206e850b639f26: // WIP currently only using style from first text part

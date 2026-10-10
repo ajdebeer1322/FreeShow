@@ -8,7 +8,7 @@ No static evidence found.
 
 ## Senders
 
-- [src/frontend/components/drawer/live/BMDStream.svelte:30](../../../../src/frontend/components/drawer/live/BMDStream.svelte#L30) — renderer → electron/other renderer; { source: screen, outputId: outputId \|\| Object.keys($outputs)[0] }
+- [src/frontend/components/drawer/live/BMDStream.svelte:30](../../../../src/frontend/components/drawer/live/BMDStream.svelte#L30) — renderer → electron/other renderer; { source: screen, outputId: outputId \|\| Object.keys($outputs)&#91;0&#93; }
 
 ## Handlers
 

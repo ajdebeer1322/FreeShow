@@ -1,0 +1,17 @@
+[
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2114,"endLine":2114,"text":"// When clicking a base verse without modifier keys, select all parts of that verse","start":94811,"end":94894},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2118,"endLine":2118,"text":"// If this verse has multiple parts, return all of them; otherwise just the clicked verse","start":95072,"end":95161},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2134,"endLine":2134,"text":"// Helper function to convert verse IDs to sortable numbers","start":95702,"end":95761},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2137,"endLine":2137,"text":"// Check if it's a split verse (contains underscore)","start":95884,"end":95936},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2142,"endLine":2142,"text":"// Regular verse number","start":96116,"end":96139},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2147,"endLine":2147,"text":"// Convert to sortable numbers","start":96236,"end":96266},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2151,"endLine":2151,"text":"// Only proceed if both conversions were successful","start":96431,"end":96482},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2153,"endLine":2153,"text":"// Get all verse numbers in the range","start":96559,"end":96596},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2157,"endLine":2157,"text":"// Find all verses in the range from available verses","start":96746,"end":96799},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2165,"endLine":2165,"text":"// Always include the new selection (the end point)","start":97105,"end":97156},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2170,"endLine":2170,"text":"// remove duplicates","start":97298,"end":97318},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2189,"endLine":2189,"text":"// buildRouteBibleUrl(\"John 3:16\") = \"https://route.bible/?q=John+3%3A16&utm_source=freeshow&utm_medium=link\"","start":97814,"end":97923},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2207,"endLine":2207,"text":"// convert text reference (e.g., \"John 3:16\") to actual reference (e.g., { book: \"John\", chapter: 3, verses: [16] })","start":98442,"end":98558},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2214,"endLine":2214,"text":"// if collection of scriptures, use the first one","start":98841,"end":98890},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2271,"endLine":2271,"text":"// open the scripture location in the drawer","start":101150,"end":101194}
+]
