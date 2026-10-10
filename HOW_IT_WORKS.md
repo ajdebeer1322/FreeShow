@@ -70,6 +70,10 @@ Layer order inside `Zoomed` (Output.svelte): style background, scene media, back
 underlay overlays, **slide** (PDF / PPT / SlideContent + metadata `Overlay`), effects over, overlays, messages,
 attribution, draw.
 
+`MainOutput.svelte` (the output window's root) only renders `<Output>` **2000 ms after the output window itself mounted**
+(`loaded`, while it shows a hidden `.fontPreload` element). Anything activated before that waits for the rest of the
+2 s (F-014). **[code + verified]**
+
 ### Where the item list comes from **[code]**
 
 - Normal slide: `_show(id).slides([slideId])` -> clone -> `setTemplateStyle(outSlide, currentStyle, items, outputId,
@@ -127,8 +131,26 @@ t+0     transitioningBetween = false
 `showKey` (bumped by `setShow`) is the `{#key}` value, not the boolean, because Svelte 5 would otherwise revive the
 fading-out branch (see AI_README, "Svelte 5 legacy mode").
 
-Plain slide, fade 500/50 %: old leaves from ~0, new mounted at ~250, fully visible at ~795 ms after the key press
-**[verified, N=many]**. With transition "none": ~80-100 ms (50 ms output wait + frame + render).
+### Measured phase timeline (ms after the key press, medians, fade 500 / 50 %, output window warm) **[verified, F-015]**
+
+| Phase | Svelte 3 | Svelte 5 | What happens |
+| --- | --- | --- | --- |
+| `outputs` store changes (main window) | 10 | 12 | key handler -> `setOutput` |
+| IPC sent / arrives in the output window | 14 / 15 | 18 / 18 | `listeners.ts` -> main process -> output window `OUTPUTS` |
+| `Output.svelte` `slide` set | 16 | 18 | `updateOutData("slide")` |
+| `actualSlide` set, `SlideContent.updateItems` runs | 72 | 75 | after the 50 ms output wait |
+| `setShow(false)` / items swapped | 72 / 72 | 75 / 76 | timers of 0 ms |
+| `setShow(true)` | 325 | 328 | `waitToShow` = 250 ms after the swap |
+| new `OutputTransition` mounted, in transition starts | 326 | 332 | |
+| text visible (opacity > 0.02) | 378 | 383 | about 55 ms into the sine ease |
+| text fully visible (opacity > 0.98) | 791 | 799 | 465 ms after mount |
+
+Auto sized slide (stored size): first visible 449 / 456, fully visible 782 / 793 (the text box is hidden for ~110 ms
+after mount, so it is first visible ~70 ms later than a plain slide, mid-fade).
+Clear (Escape): text invisible (opacity <= 0.02) after 475 / 491 ms; the element leaves the DOM at 486 / 539 ms
+(recorder `lastChange`).
+
+Transition "none": ~80-100 ms (50 ms output wait + frame + render).
 
 ---
 
@@ -217,6 +239,19 @@ The probe and the visible Textbox must compute the same key from the same conten
 `|global` transitions, counter `{#key}` (branch revival), `derived_inert` warning from `out:custom`, store shadowing.
 New in this file: **transition params are read once at start** (section 3).
 
+**How much slower is Svelte 5 really?** Measured against a Svelte 3 build of `main` on the same machine, runs
+alternated, 5 x per build (F-013, F-015, F-016):
+
+- slide change (text, fade 500): **+0 to +16 ms** end to end, spread over every phase (main window handler +2,
+  IPC +3, output window +2-4, in transition +2..13). No single phase is slow.
+- clearing: text invisible **+16 ms** later, removed from the DOM **+35-55 ms** later (invisible).
+- background image/video changes: old layer removed **+35-65 ms** later (invisible).
+- nothing close to 250 ms. The 250 ms figure came from golden values that cannot be reproduced (F-013).
+
+Ruled out as causes (F-017): `|global` (only a flag at runtime), `{#key showKey}` vs `{#key show}` (same timing, and
+`{#key show}` brings back the stacking bug), the dummy Web Animation frame at transition start (patched out: no
+change), the 0 ms timer chain and `$:` order (same millisecond in both builds), the double template merge (0.1 ms).
+
 ---
 
 ## 8. Test harness and how to measure
@@ -227,15 +262,33 @@ New in this file: **transition params are read once at start** (section 3).
   same wall clock as the output window's `performance.timeOrigin + now()`).
 - Metrics: `firstVisible` (opacity > 0.02), `fullyVisible` (> 0.98), `sizes` (font sizes while visible; more than
   one = wrong-size flash), `maxBoxes` / `finalBoxes` (stacking).
-- `FS_PROBE_OUT=file.json` appends results; `FS_RECORD_GOLDEN=1` rewrites golden entries (only on trusted builds).
+- `FS_PROBE_OUT=file.json` appends probe results; `FS_TIMELINE_OUT=file.json` appends the golden-style recordings
+  (`lastChange`, layer sets) of the old tests, so runs and builds can be compared; `FS_RECORD_GOLDEN=1` rewrites
+  golden entries (only on trusted builds; it also skips the comparison, which is useful to just collect numbers).
+- The golden compare fails a scenario that is more than 15 % or 75 ms (the larger) slower than the golden; faster is
+  never a failure. Compare builds with **alternating** runs, 3-5 each: single runs vary by 10-20 ms, the first
+  activation by much more (F-014). `startApp` waits until the output is mounted before any test continues.
 - Seeding without UI: `FS_MOCK_STORE_PATH` makes every store file live in `<dataPath>/settings/` (`settings.json`,
   `settings_synced.json` for `styles`/`scriptures`/`scriptureSettings`, `templates.json`, `shows.json`);
   show files are `<dataPath>/Shows/<name>.show` = `[id, show]`; Bibles `<dataPath>/Bibles/<name>.fsb` =
   `[id, bible]` plus a `scriptures` entry `{name, id}`. Default output id is `default` with style `default`.
-- Needs a production build (`npm run build`; for frontend-only changes `npm run build:frontend:prod`, ~4 s) and
-  `unset ELECTRON_RUN_AS_NODE`. `npm run build` rewrites `public/index.html`: revert before committing.
-- Temporary instrumentation recipe: `console.log("[AS] ...")` in the code + `output.on("console", ...)` in
-  `startApp`; remove both afterwards.
+- Needs a production build and `unset ELECTRON_RUN_AS_NODE`. **Build gotchas:** `npm run build` (via
+  `scripts/preBuild.js`, which also deletes `public/build` and `build/`) is what points `public/index.html` at the
+  production bundle; `npm run build:frontend:prod` alone (~4 s with Vite 8) does not, so after
+  `git checkout public/index.html` the Electron tests fail with "main window not found" until a full build ran.
+  Revert `public/index.html` before committing.
+- **Svelte 3 baseline:** `main` is the pre-upgrade source. `git worktree add ../freeshow-svelte3 main --detach`,
+  `cp -Rc node_modules` from the main checkout (APFS clone), `npm install --ignore-scripts --no-audit` there (it
+  swaps svelte/vite/typescript to the `main` lockfile in seconds), `npm run build`, copy the test files in. Run both
+  trees alternately.
+- **Phase tracing** (throwaway, in a worktree): push `[label, Date.now()]` into `window.__tr` at: main
+  `listeners.ts` (`outputs.subscribe` start, before `send(OUTPUT, ["OUTPUTS"])`), output `receivers.ts` `OUTPUTS`,
+  `Output.svelte` (`slide = clone(...)`, `actualSlide = ...`), `SlideContent` (`updateItems`, hide, swap, show),
+  `utils/transitions.ts::custom`, `OutputTransition` `onMount`, `Textbox` (`calculateAutosize`, `markAutoSizeReady`).
+  Read the arrays with `page.evaluate` after each step and subtract the key press time. A statement that starts with
+  `(` needs a leading `;` (a previous line without a semicolon turns it into a call).
+- Quick instrumentation: `console.log("[AS] ...")` in the code + `output.on("console", ...)` in `startApp`; remove
+  both afterwards.
 
 ---
 
@@ -277,21 +330,21 @@ ever reused between slides. [verified by logging: alternating slides always `kno
 A show seeded with `auto: true` items and no `autoFontSize`, opened in the lyrics view, had a stored size on
 **all five** slides at the end of the run, so even jumps to never-shown slides did not hold. Only
 `Slide.svelte` passes `itemIndex` to `Textbox` [code], so the slide cards are the writer (the preview panel cannot
-write). The same value (`25.5625`) was stored for every slide, see F-010. [verified: saved `.show` file]. It is
-not known whether the lyrics view renders a card `Textbox` or something else writes it (open question), so a
-truly unmeasured first showing could not be produced with a normal show view; the wait path was exercised
-through output style and scripture items, which never have a stored size.
+write). The same value (`25.5625`) was stored for every slide, see F-010. [verified: saved `.show` file]. The
+lyrics view does render a card `Textbox` (answered in F-018). A truly unmeasured first showing could therefore not
+be produced with a normal show view; the wait path was exercised through output style and scripture items, which
+never have a stored size.
 
 **F-009 (2026-10-10) First activation of a session is slow before SlideContent even starts.**
 Activation -> first `updateItems` took ~730 ms the first time, ~80 ms afterwards (output style case); total first
-visible 1.2-2.7 s depending on case. Not the auto size wait. [verified with timestamps]. Cause **[guess]**: first
-send of the show/bible data or first template merge in the output window; confirm by timing `SHOWS` receive vs
-`Output.updateSlideData`.
+visible 1.2-2.7 s depending on case. Not the auto size wait. [verified with timestamps]. The suspected cause in
+the first version of this entry (show/bible data sent, template merge) was wrong: it is the 2 s mount timer of the
+output, see F-014.
 
 **F-010 (2026-10-10) Stored `autoFontSize` is not trustworthy for the output.**
 Thumbnails/lyrics view stored `25.5625` for five different slides that render at 100 px / 73 px in the output.
 The output ignores it for display (it re-measures) and only uses it to decide whether to wait. [verified in the
-saved `.show` file vs probe font sizes] -> do not use it as a measured size.
+saved `.show` file vs probe font sizes] -> do not use it as a measured size. Cause and scale: F-018, F-019.
 
 **F-011 (2026-10-10) Cheapest possible first showing = one `Textbox` `loaded` timeout.**
 Probe ready ~105-125 ms after mount in every run regardless of text; first showing costs +~110 ms over a plain
@@ -301,10 +354,70 @@ slide. [verified] -> measuring without the 100 ms `loaded` wait would remove it.
 `shouldHideUntilAutoSizeCompletes` returns false for preview, so the main-window preview can still show an
 unmeasured size (the old 500 ms hold was the only protection there, and it is kept). [code]
 
+**F-013 (2026-10-10) The golden's first click and auto size entries cannot be reproduced; Svelte 3 = Svelte 5 today.**
+`config/testing/golden/...` said 521-616 ms for the six `autosize/*` scenarios and 789 ms for `text/click-slide-1`.
+A Svelte 3 build of `main` (the exact source the golden claims), built and run on this machine, gives 720-892 ms
+(median of 9 runs: 769, 769, 770, 745, 723, 892) for the auto size scenarios and the Svelte 5 build gives the same
+within 0-20 ms (5 alternating runs each, spread 10-20 ms). All other golden entries (text, backgrounds) reproduce on
+Svelte 3 within +-34 ms. So the "+250 ms on Svelte 5" was a recording artefact, not a regression: the golden could
+not have been produced by the build and test it names (the layer sequences do match). Why the golden differed is
+unknown **[guess]**: a different settings/data state or a run against a development server. [verified]
+-> the six `autosize/*` entries were re-recorded from the Svelte 3 build (medians); `text/click-slide-1` was kept
+(F-014 explains the number it had).
+
+**F-014 (2026-10-10) The first activation waits for the output's 2 s mount timer.**
+`MainOutput.svelte` renders `<Output>` only 2000 ms after the output window mounted (`setTimeout(..., 2000)`).
+`out:ipc` arrives after ~17 ms, but `Output` applies the slide 570-960 ms later when the click comes soon after
+the window opened. [verified: first click with 0 / 1000 / 3000 ms wait before it: 1461 / 809 / 811 ms on Svelte 5,
+1728 / 810 / 794 ms on Svelte 3] -> not Svelte 5, not the auto size wait; a test that clicks right after startup
+measures the timer. `startApp` now waits for the output to mount. Supersedes the guess in F-009.
+
+**F-015 (2026-10-10) Phase breakdown Svelte 3 vs Svelte 5: no slow phase.**
+See the table in section 3: every phase is within +0..+5 ms, cumulative +8..+16 ms at fully visible. The 50 ms output
+wait and the 253 ms `waitToShow` are identical. [verified: 3 alternating runs of 33 activations per build]
+
+**F-016 (2026-10-10) Svelte 5 outros finish and remove elements later.**
+Clearing: invisible +16 ms, removed from the DOM +35-55 ms (golden compare: `text/escape-clear` +53,
+`background/bg-escape-clear` +51). Background changes: `bg-click-3`, `bg-click-4` +66/+67 ms, `bg-click-2` +34,
+`bg-arrow-left-*` +20/+49. Only the DOM removal of already transparent elements is late, so it is invisible; it is
+the reason the old golden's 1.5x + 300 ms tolerance hid a real 50-65 ms difference. [verified, 3 alternating runs]
+Where exactly the time goes inside Svelte 5's transition engine is **[guess]**: the outro `finish` event and the
+following effect flush are dispatched a frame or two after the animation ends.
+
+**F-017 (2026-10-10) Suspects that were tested and ruled out.**
+(a) `|global` on the text path: runtime only sets a flag [code]. (b) `{#key showKey}` vs `{#key show}` in a Svelte 5
+lab copy: show/mount/fully visible within 3 ms; `{#key show}` makes the new text "fully visible" after 8 ms
+(the revived old branch, i.e. the stacking bug). (c) Svelte 5 starts every transition through a dummy Web Animation
+and the real one in its `onfinish` (one frame): patched `svelte/src/internal/client/dom/elements/transitions.js`
+to start at once when `delay === 0`: 797.5 vs 799 ms, clear 493 vs 491 ms, so not the cause. (d) 0 ms timer chain /
+`$:` order in `updateItems`: hide, swap at the same millisecond in both builds, show at +253 in both. (e) template
+merged twice per change: `setTemplateStyle` is called once from `updateSlideData` (`formatSlide`) and once from
+`setTemplateItems`; 0.1 ms per call, 0.2-0.3 ms per slide on both builds. All [verified].
+
+**F-018 (2026-10-10) Who stores `autoFontSize` for every slide, and at what scale.**
+`slide/Slide.svelte` (the slide cards of the Show view, `<Textbox preview itemIndex={i} ...>`) via
+`Textbox.setItemAutoFontSize`. Grid cards render inside a scaled `Zoomed`, so `autosize()` measures in 1920 px
+space and stores real values: 100, 100, 100, 73.09375, 100 for the probe show. The lyrics view renders the same
+`Textbox` with `smallFontSize`, `style={false}` and an unscaled `Zoomed relative` row, so it measures against the
+small row box and stores **25.5625 for every slide** (including the 4-line one), in the unit of the card, not
+of the 1920 px output. [verified: saved `.show` files from grid and lyrics runs]
+
+**F-019 (2026-10-10) A wrongly scaled stored size does not reach the output's first frame.**
+Seeded `autoFontSize: 7` (and `previewAutoFontSize: 7`), grid and lyrics view, both builds, activations right after
+opening: visible font sizes were only ever the final ones (100, 73). [verified] Reason [code]: the output `Textbox`
+resets to `fontSize = 0` and starts hidden (the cache signature at init lacks the container size, so it never
+matches) and measures itself; the stored value is only used to decide whether to wait (`itemNeedsAutoSize`) and,
+since the pre-measure change, to skip the probe. Consequences: (1) in the lyrics view every auto sized slide has a
+truthy stored size, so it skips the wait and the pre-measure and the text appears when its own measurement ends,
+mid-fade (first visible ~70 ms later than a plain slide, F-015); (2) the main window **preview** uses
+`previewAutoFontSize || autoFontSize || 100` for its first frame [code], so there a wrong stored size would show
+first and then jump (not tested).
+
 ### Open questions (move to the log with evidence when answered)
 
-- What exactly is slow on the first activation (F-009)?
-- Who stores `autoFontSize` for every slide in the lyrics view (F-008), and at what scale (F-010)?
+- Where inside Svelte 5's transition engine do the +35-55 ms of outro removal come from (F-016)?
+- Does the main-window preview really flash a wrongly scaled stored size first (F-019, code only)?
+- Why was the original golden faster (F-013)? Which environment produced it?
 - `Textbox` stability loop (`ratio < 0.5`) only runs for small output windows; is it ever needed at full size?
 - Does a custom-font load after the measurement change the size (probe measured with fallback font)?
 - Why does `Output.svelte` re-merge items in place after `updateSlideData` (two passes)? Can one be dropped?
