@@ -21,19 +21,27 @@
 
     let currentItems: Item[] = []
     let show = false
+    // Svelte 5 reuses a {#key} branch when its key comes back while the branch is still fading out (Svelte 3 always
+    // created a new one). Each change of show must give a new key, so the old SlideItemTransition is never revived.
+    let showKey = 0
+    function setShow(value: boolean) {
+        if (show === value) return
+        show = value
+        showKey++
+    }
 
     $: if (overlay?.items !== undefined && JSON.stringify(overlay.items) !== JSON.stringify(currentItems)) updateItems()
 
     // WIP similar to SlideContent.svelte
     let timeout: NodeJS.Timeout | null = null
     function updateItems() {
-        show = false
+        setShow(false)
 
         // wait for previous items to start fading out (svelte will keep them until the transition is done!)
         if (timeout) clearTimeout(timeout)
         timeout = setTimeout(() => {
             currentItems = clone(overlay.items || [])
-            show = true
+            setShow(true)
         })
     }
 
@@ -59,7 +67,7 @@
     })
 </script>
 
-{#key show}
+{#key showKey}
     {#each currentItems as item}
         {#if show && shouldItemBeShown(item, [], showItemRef, conditionsUpdater)}
             <SlideItemTransition {transitionEnabled} {isClearing} globalTransition={transition} {item} let:customItem>

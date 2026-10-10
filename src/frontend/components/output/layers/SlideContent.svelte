@@ -51,6 +51,14 @@
     let currentItems: Item[] = []
     let current: any = {}
     let show = false
+    // Svelte 5 reuses a {#key} branch when its key comes back while the branch is still fading out (Svelte 3 always
+    // created a new one). Each change of show must give a new key, so the old SlideItemTransition is never revived.
+    let showKey = 0
+    function setShow(value: boolean) {
+        if (show === value) return
+        show = value
+        showKey++
+    }
 
     // Track items that are unchanged between slides and have no transition (to avoid redraw flicker)
     let persistentItems: Item[] = []
@@ -308,7 +316,7 @@
         timeout = setTimeout(() => {
             if (gen !== updateGeneration) return
             debugRender("slide content hidden (show = false)")
-            show = false
+            setShow(false)
 
             // wait for previous items to start fading out (svelte will keep them until the transition is done!)
             timeout = setTimeout(() => {
@@ -329,7 +337,7 @@
                 timeout = setTimeout(() => {
                     if (gen !== updateGeneration) return
                     debugRender("slide content shown again (show = true)")
-                    show = true
+                    setShow(true)
 
                     // wait for between to set in transition
                     timeout = setTimeout(() => {
@@ -457,7 +465,7 @@
             />
         {:else}
             <!-- Transitioning item: render with animation wrapper inside {#key} -->
-            {#key show}
+            {#key showKey}
                 {#if show}
                     <SlideItemTransition {preview} {transitionEnabled} {transitioningBetween} {isClearing} {incomingNeedsAutoSize} globalTransition={transition} currentSlide={current.currentSlide} {item} outSlide={current.outSlide} lines={current.lines} currentStyle={current.currentStyle} let:customSlide let:customItem let:customLines let:customOut let:transition>
                         <Textbox

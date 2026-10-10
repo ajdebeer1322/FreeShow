@@ -109,6 +109,11 @@ export function getServerViteConfig(serverId, production = process.env.NODE_ENV 
             minify: production ? "terser" : false,
             sourcemap: !production
         },
+        // Vite 8 (rolldown) no longer polyfills import.meta.url in the IIFE bundles, which broke the
+        // new URL("/import-logos/...", import.meta.url) public asset logos of the dev builds (Invalid URL)
+        define: {
+            "import.meta.url": "document.baseURI"
+        },
         resolve: {
             dedupe: ["svelte"],
             alias: {
