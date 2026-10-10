@@ -1,3 +1,4 @@
+import { eventQuery } from "./event-query.mjs"
 // No filesystem, process state, network or mutation: reusable by a future MCP adapter.
 const ref = item => `${item.file}:${item.line}`
 function refs(label, items = [], all = false, describe = item => item.kind || item.symbol || "") {
@@ -38,6 +39,7 @@ export function timersQuery(model,key,{all = false} = {}) {
 }
 export function query(model,args=[]) {
     const [kind,key]=args.filter(arg=>arg!=="--all"), options={all:args.includes("--all")}
+    if(["key","click","menu","action","trigger","trace","writes"].includes(kind)&&key)return eventQuery(model.events,kind,key,options)
     const handler={store:storeQuery,channel:channelQuery,file:fileQuery,why:whyQuery,timers:timersQuery}[kind]
-    return handler && key ? handler(model,key,options) : "Usage: ai:ask -- store <name|file#name> | channel <ID> | file <path> | why <file>:<line> | timers <folder|file> [--all]"
+    return handler && key ? handler(model,key,options) : "Usage: ai:ask -- store <name|file#name> | channel <ID> | file <path> | why <file>:<line> | timers <folder|file> | key <key> | click <component> | menu <id> | action <command> | trigger <id> | trace <scenario> | writes <store> [--all]"
 }

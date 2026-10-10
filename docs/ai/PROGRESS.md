@@ -11,15 +11,17 @@ Phase 7 source base: `a3cdd7f576480f842077c233c79f6f4c3238fd07` (local `main-tes
 
 ## Snapshot limits
 
-- [code] `HOW_IT_WORKS.md` is absent at this base. The [later companion](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md) has F-001–F-019. Links to findings describe that later snapshot, not observed behavior of this branch.
+- [code] `HOW_IT_WORKS.md` exists at the phase 7 main-tests base. Some inherited phase 1–6 documentation and runtime fingerprints still describe the earlier snapshot; refresh them in steps 3–4 before declaring phase 7 complete.
 - [verified] GitHub CLI is authenticated as ajdebeer1322. All needed release PRs and directly relevant linked issue records are cached; release PR bodies are empty, and local squash messages retain bundled bullets. No GitHub writes or push occurred.
 - [code] No dependency changes; an ignored local node_modules directory contains links to existing installed packages. Never rebuild the shared dependency directory. Runtime build files and GitHub/blame responses live only in the ignored cache.
 
 ## Phase 7 — events and triggers
 
 - [x] Step 1: refreshed main-tests maps/history/subsystems; inventory includes keyboard, clicks, menu declarations/loaders, drag sources/targets/routes, API commands, activations and timers. Six-level conditional effects, unresolved edges and source offsets regression-tested. Inherited runtime evidence will be refreshed in step 3.
-- [ ] Step 2: pure event queries and context-sensitive key tables.
+- [x] Step 2: pure event queries (`key`, `click`, `menu`, `action`, `trigger`, `trace`, `writes`) and 18 key guides with 160 situation rows. Four event regression tests pass. Trace links are reserved for step 3; recordings are not available yet.
 - [ ] Step 3: isolated Electron timeline recorder and scenario recordings.
 - [ ] Step 4: documentation, findings, coverage report and validation.
 
 The checkout has independent Git refs at `/home/andre/FreeShow-ai-map-isolated.git`; another folder can commit to its own main-tests without moving this branch. No pull, rebase or push.
+
+Checkpoint before T3 authentication mode change: step 2 committed; step 3 runtime build succeeds in the ignored cache. Runtime-entry test exports are pending step 3. Existing flow observations and final check need refresh; phase 7 is incomplete.
