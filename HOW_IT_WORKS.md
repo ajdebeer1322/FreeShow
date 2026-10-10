@@ -413,11 +413,49 @@ mid-fade (first visible ~70 ms later than a plain slide, F-015); (2) the main wi
 `previewAutoFontSize || autoFontSize || 100` for its first frame [code], so there a wrong stored size would show
 first and then jump (not tested).
 
+**F-020 (2026-10-10) Baseline of the classic engine: blank frames.**
+Per-frame probe on the Svelte 5 classic build, 4 s per run. Fade 500 / 50 %: single slide changes show **0** frames
+without text, rapid presses (3-4 x 100 ms) **3 / 14**. Transition "none": plain slides 0, auto sized slides **7-8
+blank frames (~120 ms)** (the old text is removed at once, the new one appears after its ~110 ms measurement),
+rapid presses **6 / 20**. At most 2 text boxes visible at once, 1 left after settling. [verified]
+-> the redesign target in `TEXT_LAYER_DESIGN.md`.
+
+**F-021 (2026-10-10) A line window step is a full crossfade, not an accumulating state.**
+Output style `lines: 2`, one 4-line slide: `ArrowRight` shows `[Alpha Bravo]` -> `[Alpha Bravo | Charlie Delta]` at
++398 ms -> `[Charlie Delta]` at +548 ms and ends with one box; with `lines: 0` the same key moves to the next
+slide. `SlideItemTransition.currentlyTransitioning` never deletes states, but it lives inside the `{#key showKey}`
+branch that every `lines` change recreates, so it does not stack. [verified]
+
+**F-022 (2026-10-10) Interop legacy <-> runes works as needed for a runes text layer.**
+Real `Textbox` in Chromium via a scratch Vite server: props from a legacy parent into a `$props()` child (and
+`$set` updates), `on:autosizeReady` from `createEventDispatcher` received in a runes component (Svelte accepts
+`on:` on components in runes mode), callback props back to the legacy parent, `let:` slot props of a legacy child
+inside a runes component, and a `$state` proxy passed as `item` (`clone()` falls back to JSON; prefer
+`$state.raw`). `Textbox` has no `loaded` event, only `autosizeReady`. [verified]
+
+**F-023 (2026-10-10) `Textbox` readiness facts the new layer depends on.**
+`autosizeReady` is dispatched from `markAutoSizeReady()` only; `calculateAutosize` returns **without** it for
+`media`, `camera`, `icon` items and when there is no element; non-text types always use `growToFit` (even with
+`auto: false`); `textFit === "none"` reports ready immediately after `loaded` (100 ms after mount); after the event
+the content is unhidden one rAF later (`hideUntilAutosized`), so a swap in the same frame as the event can still
+show a hidden box; `noTransition` is computed once at creation from the `transition` prop; `item.id` is only part
+of `stateSignature` (and the fallback cache key). [code]
+
+**F-024 (2026-10-10) `custom()` calls each Svelte transition with its default parameters.**
+`custom(node, {type, duration, easing, delay, custom})` runs `transitions[type](node, custom)` and then overrides
+`duration`, `easing`, `delay`: blur uses `amount 5`, scale `start 0`, `fly` has `x = y = 0` (opacity only),
+`crossfade` is the factory and has no visual effect; only `slide` reads `custom.direction`. Types `fly` and
+`crossfade` are not selectable in the UI. Svelte 5 samples `css(t, u)` at `ceil(duration / 16.67) + 1` points with
+`t = t1 + (t2 - t1) * easing(i / n)` (out: `t = 1 - easing(p)`), so the same functions can be sampled into
+keyframes. [code]
+
 ### Open questions (move to the log with evidence when answered)
 
 - Where inside Svelte 5's transition engine do the +35-55 ms of outro removal come from (F-016)?
 - Does the main-window preview really flash a wrongly scaled stored size first (F-019, code only)?
 - Why was the original golden faster (F-013)? Which environment produced it?
+- Can a long-lived, prop-updated `Textbox` (fresh `item.id` per use) re-measure and re-emit `autosizeReady`, so the 100 ms `loaded` floor disappears without editing `Textbox` (`TEXT_LAYER_DESIGN.md` R-01 b)?
+- Do animations/rAF stop in a hidden or occluded output window, and do timers keep running (R-03)?
 - `Textbox` stability loop (`ratio < 0.5`) only runs for small output windows; is it ever needed at full size?
 - Does a custom-font load after the measurement change the size (probe measured with fallback font)?
 - Why does `Output.svelte` re-merge items in place after `updateSlideData` (two passes)? Can one be dropped?
@@ -436,3 +474,12 @@ first and then jump (not tested).
 6. A burst of activations ends in the last slide with exactly one box (no stacked old slides).
 7. The output window renders from copied state; it must not write measured sizes back.
 8. Clear (Escape) while waiting must cancel the pending change.
+
+---
+
+## 11. Text layer redesign (runes, crossfade)
+
+The planned replacement of `SlideContent` + `SlideItemTransition` is designed in `TEXT_LAYER_DESIGN.md`: the full list
+of behaviours to keep with their locations and tests (B-01..B-55), the layer lifecycle, the timing rule
+`new.start = max(t0 + fadeInOffset, ready)`, the transition sampling, interruption rules, the switch
+`special.textEngine`, the test plan (T-01..T-19), risks and a 13-day estimate. Findings behind it: F-020 to F-024.
