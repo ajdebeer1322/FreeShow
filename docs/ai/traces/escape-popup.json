@@ -1,0 +1,1402 @@
+{
+  "id": "escape-popup",
+  "status": "verified",
+  "error": null,
+  "action": "Press Escape in popup",
+  "context": "popup",
+  "keys": [
+    "Escape"
+  ],
+  "elapsedMs": 3025,
+  "actionEpoch": 1791660298016,
+  "observedAt": "2026-10-10T19:24:59.865Z",
+  "sourceRevision": "379e268046d7de3344b6fa1e7809116a7ba01856",
+  "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+  "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad",
+  "environment": {
+    "electron": "37.10.3",
+    "display": ":99",
+    "ports": [
+      58510,
+      58511,
+      58512,
+      58513
+    ],
+    "isolated": true,
+    "productSourceModified": false,
+    "fixture": "Four slides in two groups, shrinkToFit items, looped fixture video, overlay, two active outputs. Test input injected for input contexts. State restored before each scenario."
+  },
+  "before": {
+    "outputs": {
+      "default": {
+        "enabled": true,
+        "active": true,
+        "name": "Primary",
+        "color": "#3E7DCB",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 960,
+          "height": 540
+        },
+        "screen": null,
+        "style": "default",
+        "show": {},
+        "out": {
+          "slide": {
+            "id": "ac4e3f731c8",
+            "layout": "4893cac4e3f",
+            "index": 0,
+            "line": 0,
+            "projectIndex": 0
+          },
+          "background": {
+            "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "type": "video",
+            "loop": true,
+            "muted": true
+          },
+          "overlays": [
+            "trace-overlay"
+          ]
+        }
+      },
+      "second": {
+        "enabled": true,
+        "active": true,
+        "name": "Trace second output",
+        "color": "#3E7DCB",
+        "bounds": {
+          "x": 960,
+          "y": 0,
+          "width": 960,
+          "height": 540
+        },
+        "screen": null,
+        "style": "default",
+        "show": {},
+        "id": "second",
+        "out": {
+          "slide": {
+            "id": "ac4e3f731c8",
+            "layout": "4893cac4e3f",
+            "index": 0,
+            "line": 0,
+            "projectIndex": 0
+          },
+          "background": {
+            "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "type": "video",
+            "loop": true,
+            "muted": true
+          },
+          "overlays": [
+            "trace-overlay"
+          ]
+        }
+      }
+    },
+    "activeShow": {
+      "id": "ac4e3f731c8",
+      "type": "show",
+      "index": 0
+    },
+    "page": "show",
+    "selected": {
+      "id": null,
+      "data": []
+    },
+    "popup": "next_timer",
+    "focus": false,
+    "undoCount": 0,
+    "redoCount": 0,
+    "debugOpen": true,
+    "playingAudio": []
+  },
+  "after": {
+    "outputs": {
+      "default": {
+        "enabled": true,
+        "active": true,
+        "name": "Primary",
+        "color": "#3E7DCB",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 960,
+          "height": 540
+        },
+        "screen": null,
+        "style": "default",
+        "show": {},
+        "out": {
+          "slide": {
+            "id": "ac4e3f731c8",
+            "layout": "4893cac4e3f",
+            "index": 0,
+            "line": 0,
+            "projectIndex": 0
+          },
+          "background": {
+            "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "type": "video",
+            "loop": true,
+            "muted": true
+          },
+          "overlays": [
+            "trace-overlay"
+          ]
+        }
+      },
+      "second": {
+        "enabled": true,
+        "active": true,
+        "name": "Trace second output",
+        "color": "#3E7DCB",
+        "bounds": {
+          "x": 960,
+          "y": 0,
+          "width": 960,
+          "height": 540
+        },
+        "screen": null,
+        "style": "default",
+        "show": {},
+        "id": "second",
+        "out": {
+          "slide": {
+            "id": "ac4e3f731c8",
+            "layout": "4893cac4e3f",
+            "index": 0,
+            "line": 0,
+            "projectIndex": 0
+          },
+          "background": {
+            "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "type": "video",
+            "loop": true,
+            "muted": true
+          },
+          "overlays": [
+            "trace-overlay"
+          ]
+        }
+      }
+    },
+    "activeShow": {
+      "id": "ac4e3f731c8",
+      "type": "show",
+      "index": 0
+    },
+    "page": "show",
+    "selected": {
+      "id": null,
+      "data": []
+    },
+    "popup": null,
+    "focus": false,
+    "undoCount": 0,
+    "redoCount": 0,
+    "debugOpen": true,
+    "playingAudio": []
+  },
+  "ipc": [
+    {
+      "t": 12,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 1.002,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 1.002,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 12,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 1.002,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 1.002,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 13,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 1.002,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 1.002,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 13,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660298028,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 13,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660298028,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 13,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660298028,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 14,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660298029,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 14,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660298029,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 14,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660298029,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 512,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 1.5018999999985099,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 1.5018999999985099,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 512,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 1.5018999999985099,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 1.5018999999985099,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 512,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 1.5018999999985099,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 1.5018999999985099,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 513,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660298528,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 513,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660298528,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 513,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660298528,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 513,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660298529,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 513,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660298529,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 513,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660298529,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 761,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "SPOTIFY_GET_STATE"
+        },
+        "SPOTIFY_GET_STATEd2934"
+      ]
+    },
+    {
+      "t": 1016,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 2.006099999997765,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 2.006099999997765,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1017,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 2.006099999997765,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 2.006099999997765,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 1017,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 2.006099999997765,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 2.006099999997765,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 1018,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660299033,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1018,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660299033,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1018,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660299033,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1018,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660299034,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1018,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660299034,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1018,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660299034,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1512,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 2.50189999999851,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 2.50189999999851,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1512,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 2.50189999999851,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 2.50189999999851,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 1512,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 2.50189999999851,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 2.50189999999851,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 1513,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660299528,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1513,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660299528,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1513,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660299528,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1513,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660299529,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1513,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660299529,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1513,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660299529,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1766,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "SPOTIFY_GET_STATE"
+        },
+        "SPOTIFY_GET_STATE2934c"
+      ]
+    }
+  ],
+  "storeTimeline": [
+    {
+      "t": 27,
+      "store": "activePopup"
+    }
+  ],
+  "outputs": [
+    {
+      "window": "second",
+      "url": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "timeline": [
+        {
+          "t": -8,
+          "tokens": [
+            "VID:clipA.mp4@1.0 loop",
+            "T:Trace verse first line@1.0",
+            "T:Trace overlay@1.0"
+          ]
+        }
+      ],
+      "finalText": " Trace verse first line\n Trace overlay",
+      "finalState": {
+        "outputs": {
+          "second": {
+            "enabled": true,
+            "name": "Trace second output",
+            "color": "#3E7DCB",
+            "bounds": {
+              "x": 960,
+              "y": 0,
+              "width": 960,
+              "height": 540
+            },
+            "screen": null,
+            "style": "default",
+            "show": {},
+            "id": "second",
+            "out": {
+              "slide": {
+                "id": "ac4e3f731c8",
+                "layout": "4893cac4e3f",
+                "index": 0,
+                "line": 0,
+                "projectIndex": 0
+              },
+              "background": {
+                "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+                "type": "video",
+                "loop": true,
+                "muted": true
+              },
+              "overlays": [
+                "trace-overlay"
+              ]
+            },
+            "active": true
+          }
+        },
+        "videos": [
+          {
+            "readyState": 4,
+            "paused": false,
+            "currentTime": 2.852089
+          }
+        ],
+        "textBoxes": [
+          {
+            "text": "Trace verse first line",
+            "fontSize": "100px"
+          },
+          {
+            "text": "Trace overlay",
+            "fontSize": "50px"
+          }
+        ]
+      }
+    },
+    {
+      "window": "default",
+      "url": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "timeline": [
+        {
+          "t": -4,
+          "tokens": [
+            "VID:clipA.mp4@1.0 loop",
+            "T:Trace verse first line@1.0",
+            "T:Trace overlay@1.0"
+          ]
+        }
+      ],
+      "finalText": " Trace verse first line\n Trace overlay",
+      "finalState": {
+        "outputs": {
+          "default": {
+            "enabled": true,
+            "name": "Primary",
+            "color": "#3E7DCB",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 960,
+              "height": 540
+            },
+            "screen": null,
+            "style": "default",
+            "show": {},
+            "out": {
+              "slide": {
+                "id": "ac4e3f731c8",
+                "layout": "4893cac4e3f",
+                "index": 0,
+                "line": 0,
+                "projectIndex": 0
+              },
+              "background": {
+                "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+                "type": "video",
+                "loop": true,
+                "muted": true
+              },
+              "overlays": [
+                "trace-overlay"
+              ]
+            },
+            "active": true
+          }
+        },
+        "videos": [
+          {
+            "readyState": 4,
+            "paused": false,
+            "currentTime": 2.859144
+          }
+        ],
+        "textBoxes": [
+          {
+            "text": "Trace verse first line",
+            "fontSize": "100px"
+          },
+          {
+            "text": "Trace overlay",
+            "fontSize": "50px"
+          }
+        ]
+      }
+    }
+  ],
+  "console": [],
+  "errors": [],
+  "debug": [
+    {
+      "time": 1791660298028,
+      "category": "SENT",
+      "message": "to output windows: PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660298028,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660298029,
+      "category": "output window Primary",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660298162,
+      "category": "UI",
+      "message": "window part rebuilt: 43 elements removed, 0 added within 60ms\n    removed: div.popup.svelte-zoc1zt.isOptimized (43) from main.svelte-b9uajb\n    added: -"
+    },
+    {
+      "time": 1791660298528,
+      "category": "SENT",
+      "message": "to output windows: PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660298528,
+      "category": "output window Primary",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660298529,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660299032,
+      "category": "SENT",
+      "message": "to output windows: PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660299033,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660299034,
+      "category": "output window Primary",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660299528,
+      "category": "SENT",
+      "message": "to output windows: PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660299528,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660299529,
+      "category": "output window Primary",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    }
+  ],
+  "comparison": {
+    "eventIds": [
+      "event-385ba88825318bf5d5",
+      "event-cba580d80cff6f6ee3",
+      "event-0e8b434be15700cda6",
+      "event-c625690b4376ae278e",
+      "event-f05b69929dcf32b3c9",
+      "event-de475fdfe798523b50",
+      "event-b014b2cbe05346b345",
+      "event-0795921483e551e06d",
+      "event-538b9f0d63a1b78ab0",
+      "event-fb2b33c7ecccbcfc08",
+      "event-fbbf709d750c34dc64",
+      "event-c8383d44ceac97ad0b",
+      "event-ccb00bc34854a94fe4",
+      "event-5b9e11cb19e431a3f3",
+      "event-1573adb34641559185",
+      "event-9528ccc04cd142a993",
+      "event-291ba23b2128386b47",
+      "event-d92f9d09e4ac0f51e4",
+      "event-0556cad4b2da7772ff",
+      "event-4d37fd6e064de6ec2b",
+      "event-5af11379b1fc9aa6be"
+    ],
+    "staticStores": [
+      "actionHistory",
+      "activeDrawerTab",
+      "activeEdit",
+      "activePage",
+      "activePlaylist",
+      "activePopup",
+      "activeRename",
+      "activeScenes",
+      "activeScripture",
+      "activeShow",
+      "activeStage",
+      "activeTimers",
+      "aiSmartAction",
+      "alertMessage",
+      "audioLevelStore",
+      "cachedShowsData",
+      "contextActive",
+      "currentOutputSettings",
+      "customMessageCredits",
+      "debugEntries",
+      "deletedShows",
+      "drawer",
+      "guideActive",
+      "isFadingOut",
+      "lockedOverlays",
+      "metronomeTimer",
+      "notFound",
+      "outputSlideCache",
+      "outputs",
+      "playingAudio",
+      "playingMetronome",
+      "playingVideoState",
+      "playingVideos",
+      "projects",
+      "quickSearchActive",
+      "redoHistory",
+      "refreshEditSlide",
+      "renamedShows",
+      "runningActions",
+      "saved",
+      "scriptureHistory",
+      "scripturesCache",
+      "selected",
+      "shows",
+      "showsCache",
+      "special",
+      "spellcheck",
+      "statusIndicator",
+      "toastMessages",
+      "topContextActive",
+      "undoHistory",
+      "usageLog"
+    ],
+    "observedStores": [
+      "activePopup"
+    ],
+    "unindexedObservedStores": [],
+    "staticIPC": [
+      "CONTROLLER/ACTION",
+      "MAIN/ACCESS_MICROPHONE_PERMISSION",
+      "MAIN/AI_AUDIO_DATA",
+      "MAIN/AI_LISTEN_START",
+      "MAIN/BIBLE",
+      "MAIN/GET_THUMBNAIL",
+      "MAIN/LOCATE_MEDIA_FILE",
+      "MAIN/MEDIA_DOWNLOAD",
+      "MAIN/MEDIA_FOLDER_COPY",
+      "MAIN/MEDIA_IS_DOWNLOADED",
+      "MAIN/NOW_PLAYING",
+      "MAIN/NOW_PLAYING_UNSET",
+      "MAIN/PRESENTATION_CONTROL",
+      "MAIN/READ_AUDIO_METADATA",
+      "MAIN/SAVE",
+      "OUTPUT/ACTIVE_TIMERS",
+      "OUTPUT/ALL_OUTPUTS",
+      "OUTPUT/CREATE",
+      "OUTPUT/CUSTOM_CREDITS",
+      "OUTPUT/MAIN_DEBUG",
+      "OUTPUT/MAIN_SHORTCUT",
+      "OUTPUT/METRONOME_TIMER",
+      "OUTPUT/OUTPUTS",
+      "OUTPUT/OUT_SLIDE_CACHE",
+      "OUTPUT/OVERLAYS",
+      "OUTPUT/PLAYING_AUDIO",
+      "OUTPUT/PLAYING_VIDEO_STATE",
+      "OUTPUT/PROJECTS",
+      "OUTPUT/SHOWS",
+      "OUTPUT/SPECIAL",
+      "OUTPUT/TOGGLE_OUTPUTS",
+      "REMOTE/ACTIVE_SCRIPTURE",
+      "REMOTE/ACTIVE_TIMERS",
+      "REMOTE/API:clear_all",
+      "REMOTE/API:next_slide",
+      "REMOTE/API:previous_slide",
+      "REMOTE/AUDIO_ROUTING",
+      "REMOTE/OUT",
+      "REMOTE/OUT_DATA",
+      "REMOTE/PROJECTS",
+      "REMOTE/RUNNING_ACTIONS",
+      "REMOTE/SHOW",
+      "STAGE/METRONOME_TIMER",
+      "STAGE/OUT",
+      "STAGE/OUT_SLIDE_CACHE",
+      "STAGE/SHOW_DATA"
+    ],
+    "observedIPC": [
+      "OUTPUT/PLAYING_VIDEO_STATE",
+      "OUTPUT/MAIN_DEBUG",
+      "MAIN/SPOTIFY_GET_STATE"
+    ],
+    "unindexedObservedIPC": [
+      "MAIN/SPOTIFY_GET_STATE"
+    ],
+    "verdict": "Observed store names are covered by the static candidate union.",
+    "limits": "May-call unions do not predict order or require all effects to execute. IPC/DOM timelines are recorded, not proof of exact function calls; background subscriptions can add effects. No-op keys are observed outcomes."
+  }
+}

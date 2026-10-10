@@ -1,0 +1,3135 @@
+{
+  "id": "clear-button-all",
+  "status": "verified",
+  "error": null,
+  "action": "Click clear all",
+  "context": "live",
+  "keys": [],
+  "elapsedMs": 3225,
+  "actionEpoch": 1791660385025,
+  "observedAt": "2026-10-10T19:26:27.075Z",
+  "sourceRevision": "379e268046d7de3344b6fa1e7809116a7ba01856",
+  "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+  "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad",
+  "environment": {
+    "electron": "37.10.3",
+    "display": ":99",
+    "ports": [
+      58510,
+      58511,
+      58512,
+      58513
+    ],
+    "isolated": true,
+    "productSourceModified": false,
+    "fixture": "Four slides in two groups, shrinkToFit items, looped fixture video, overlay, two active outputs. Test input injected for input contexts. State restored before each scenario."
+  },
+  "before": {
+    "outputs": {
+      "default": {
+        "enabled": true,
+        "active": true,
+        "name": "Primary",
+        "color": "#3E7DCB",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 960,
+          "height": 540
+        },
+        "screen": null,
+        "style": "default",
+        "show": {},
+        "out": {
+          "slide": {
+            "id": "ac4e3f731c8",
+            "layout": "4893cac4e3f",
+            "index": 0,
+            "line": 0,
+            "projectIndex": 0
+          },
+          "background": {
+            "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "type": "video",
+            "loop": true,
+            "muted": true
+          },
+          "overlays": [
+            "trace-overlay"
+          ]
+        }
+      },
+      "second": {
+        "enabled": true,
+        "active": true,
+        "name": "Trace second output",
+        "color": "#3E7DCB",
+        "bounds": {
+          "x": 960,
+          "y": 0,
+          "width": 960,
+          "height": 540
+        },
+        "screen": null,
+        "style": "default",
+        "show": {},
+        "id": "second",
+        "out": {
+          "slide": {
+            "id": "ac4e3f731c8",
+            "layout": "4893cac4e3f",
+            "index": 0,
+            "line": 0,
+            "projectIndex": 0
+          },
+          "background": {
+            "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "type": "video",
+            "loop": true,
+            "muted": true
+          },
+          "overlays": [
+            "trace-overlay"
+          ]
+        }
+      }
+    },
+    "activeShow": {
+      "id": "ac4e3f731c8",
+      "type": "show",
+      "index": 0
+    },
+    "page": "show",
+    "selected": {
+      "id": null,
+      "data": []
+    },
+    "popup": null,
+    "focus": false,
+    "undoCount": 0,
+    "redoCount": 0,
+    "debugOpen": true,
+    "playingAudio": []
+  },
+  "after": {
+    "outputs": {
+      "default": {
+        "enabled": true,
+        "active": true,
+        "name": "Primary",
+        "color": "#3E7DCB",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 960,
+          "height": 540
+        },
+        "screen": null,
+        "style": "default",
+        "show": {},
+        "out": {
+          "slide": null,
+          "background": null,
+          "overlays": [],
+          "transition": null,
+          "effects": [],
+          "messages": {}
+        }
+      },
+      "second": {
+        "enabled": true,
+        "active": true,
+        "name": "Trace second output",
+        "color": "#3E7DCB",
+        "bounds": {
+          "x": 960,
+          "y": 0,
+          "width": 960,
+          "height": 540
+        },
+        "screen": null,
+        "style": "default",
+        "show": {},
+        "id": "second",
+        "out": {
+          "slide": null,
+          "background": null,
+          "overlays": [],
+          "transition": null,
+          "effects": [],
+          "messages": {}
+        }
+      }
+    },
+    "activeShow": {
+      "id": "ac4e3f731c8",
+      "type": "show",
+      "index": 0
+    },
+    "page": "show",
+    "selected": {
+      "id": null,
+      "data": []
+    },
+    "popup": null,
+    "focus": false,
+    "undoCount": 0,
+    "redoCount": 0,
+    "debugOpen": true,
+    "playingAudio": []
+  },
+  "ipc": [
+    {
+      "t": 59,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.084,\"category\":\"ui.click\",\"message\":\"div.clear.svelte-wznk56 > span > button.text.clearAll.svelte-qnjars.red\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 69,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "METRONOME_TIMER",
+          "data": {
+            "beat": 0,
+            "timeToNext": 0
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 69,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "METRONOME_TIMER",
+          "data": {
+            "beat": 0,
+            "timeToNext": 0
+          }
+        }
+      ]
+    },
+    {
+      "t": 69,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "METRONOME_TIMER",
+          "data": {
+            "beat": 0,
+            "timeToNext": 0
+          }
+        }
+      ]
+    },
+    {
+      "t": 69,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "STAGE",
+      "args": [
+        {
+          "channel": "METRONOME_TIMER",
+          "data": {
+            "beat": 0,
+            "timeToNext": 0
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 69,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385094,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] METRONOME_TIMER"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 69,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385094,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] METRONOME_TIMER"
+          }
+        }
+      ]
+    },
+    {
+      "t": 69,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385094,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] METRONOME_TIMER"
+          }
+        }
+      ]
+    },
+    {
+      "t": 71,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385096,
+            "category": "output window Primary",
+            "message": "[RECEIVED] METRONOME_TIMER"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 71,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385096,
+            "category": "output window Primary",
+            "message": "[RECEIVED] METRONOME_TIMER"
+          }
+        }
+      ]
+    },
+    {
+      "t": 71,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385096,
+            "category": "output window Primary",
+            "message": "[RECEIVED] METRONOME_TIMER"
+          }
+        }
+      ]
+    },
+    {
+      "t": 95,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.117,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 96,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.118,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 96,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.118,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 96,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.119,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 96,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.12,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 96,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.12,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 116,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.127,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 116,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.129,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 118,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.129,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 118,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.134,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 119,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.135,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 119,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.135,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 120,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "OUTPUTS",
+          "data": {
+            "default": {
+              "enabled": true,
+              "active": true,
+              "name": "Primary",
+              "color": "#3E7DCB",
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "width": 960,
+                "height": 540
+              },
+              "screen": null,
+              "style": "default",
+              "show": {},
+              "out": {
+                "slide": null,
+                "background": null,
+                "overlays": [],
+                "transition": null,
+                "effects": [],
+                "messages": {}
+              }
+            },
+            "second": {
+              "enabled": true,
+              "active": true,
+              "name": "Trace second output",
+              "color": "#3E7DCB",
+              "bounds": {
+                "x": 960,
+                "y": 0,
+                "width": 960,
+                "height": 540
+              },
+              "screen": null,
+              "style": "default",
+              "show": {},
+              "id": "second",
+              "out": {
+                "slide": null,
+                "background": null,
+                "overlays": [],
+                "transition": null,
+                "effects": [],
+                "messages": {}
+              }
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 120,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "OUTPUTS",
+          "data": {
+            "second": {
+              "enabled": true,
+              "active": true,
+              "name": "Trace second output",
+              "color": "#3E7DCB",
+              "bounds": {
+                "x": 960,
+                "y": 0,
+                "width": 960,
+                "height": 540
+              },
+              "screen": null,
+              "style": "default",
+              "show": {},
+              "id": "second",
+              "out": {
+                "slide": null,
+                "background": null,
+                "overlays": [],
+                "transition": null,
+                "effects": [],
+                "messages": {}
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 120,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "OUTPUTS",
+          "data": {
+            "default": {
+              "enabled": true,
+              "active": true,
+              "name": "Primary",
+              "color": "#3E7DCB",
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "width": 960,
+                "height": 540
+              },
+              "screen": null,
+              "style": "default",
+              "show": {},
+              "out": {
+                "slide": null,
+                "background": null,
+                "overlays": [],
+                "transition": null,
+                "effects": [],
+                "messages": {}
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 120,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "ALL_OUTPUTS",
+          "data": {
+            "default": {
+              "enabled": true,
+              "active": true,
+              "name": "Primary",
+              "color": "#3E7DCB",
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "width": 960,
+                "height": 540
+              },
+              "screen": null,
+              "style": "default",
+              "show": {},
+              "out": {
+                "slide": null,
+                "background": null,
+                "overlays": [],
+                "transition": null,
+                "effects": [],
+                "messages": {}
+              }
+            },
+            "second": {
+              "enabled": true,
+              "active": true,
+              "name": "Trace second output",
+              "color": "#3E7DCB",
+              "bounds": {
+                "x": 960,
+                "y": 0,
+                "width": 960,
+                "height": 540
+              },
+              "screen": null,
+              "style": "default",
+              "show": {},
+              "id": "second",
+              "out": {
+                "slide": null,
+                "background": null,
+                "overlays": [],
+                "transition": null,
+                "effects": [],
+                "messages": {}
+              }
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 120,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "ALL_OUTPUTS",
+          "data": {
+            "default": {
+              "enabled": true,
+              "active": true,
+              "name": "Primary",
+              "color": "#3E7DCB",
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "width": 960,
+                "height": 540
+              },
+              "screen": null,
+              "style": "default",
+              "show": {},
+              "out": {
+                "slide": null,
+                "background": null,
+                "overlays": [],
+                "transition": null,
+                "effects": [],
+                "messages": {}
+              }
+            },
+            "second": {
+              "enabled": true,
+              "active": true,
+              "name": "Trace second output",
+              "color": "#3E7DCB",
+              "bounds": {
+                "x": 960,
+                "y": 0,
+                "width": 960,
+                "height": 540
+              },
+              "screen": null,
+              "style": "default",
+              "show": {},
+              "id": "second",
+              "out": {
+                "slide": null,
+                "background": null,
+                "overlays": [],
+                "transition": null,
+                "effects": [],
+                "messages": {}
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 120,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "ALL_OUTPUTS",
+          "data": {
+            "default": {
+              "enabled": true,
+              "active": true,
+              "name": "Primary",
+              "color": "#3E7DCB",
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "width": 960,
+                "height": 540
+              },
+              "screen": null,
+              "style": "default",
+              "show": {},
+              "out": {
+                "slide": null,
+                "background": null,
+                "overlays": [],
+                "transition": null,
+                "effects": [],
+                "messages": {}
+              }
+            },
+            "second": {
+              "enabled": true,
+              "active": true,
+              "name": "Trace second output",
+              "color": "#3E7DCB",
+              "bounds": {
+                "x": 960,
+                "y": 0,
+                "width": 960,
+                "height": 540
+              },
+              "screen": null,
+              "style": "default",
+              "show": {},
+              "id": "second",
+              "out": {
+                "slide": null,
+                "background": null,
+                "overlays": [],
+                "transition": null,
+                "effects": [],
+                "messages": {}
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 120,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "REMOTE",
+      "args": [
+        {
+          "channel": "AUDIO_ROUTING",
+          "data": {
+            "channels": [
+              {
+                "id": "main",
+                "name": "Main"
+              },
+              {
+                "id": "channel_metronome",
+                "name": "Metronome"
+              }
+            ],
+            "connections": [
+              {
+                "from": "drawer_audio",
+                "to": "main"
+              },
+              {
+                "from": "playlists_default",
+                "to": "main"
+              },
+              {
+                "from": "mic_default",
+                "to": "main"
+              },
+              {
+                "from": "metronome",
+                "to": "channel_metronome"
+              },
+              {
+                "from": "main",
+                "to": "speaker_default"
+              },
+              {
+                "from": "channel_metronome",
+                "to": "speaker_default"
+              },
+              {
+                "from": "output_win_sub_default",
+                "to": "main"
+              }
+            ]
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 120,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "SYNCED_OUTPUTS",
+          "data": {
+            "default": "Primary",
+            "second": "Trace second output"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 120,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "SYNCED_OUTPUTS",
+          "data": {
+            "default": "Primary",
+            "second": "Trace second output"
+          }
+        }
+      ]
+    },
+    {
+      "t": 121,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "SYNCED_OUTPUTS",
+          "data": {
+            "default": "Primary",
+            "second": "Trace second output"
+          }
+        }
+      ]
+    },
+    {
+      "t": 147,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "REMOTE",
+      "args": [
+        {
+          "channel": "OUT",
+          "data": {
+            "slide": null,
+            "layout": null
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 147,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "REMOTE",
+      "args": [
+        {
+          "channel": "OUT_DATA",
+          "data": {
+            "slide": null,
+            "background": null,
+            "overlays": [],
+            "transition": null,
+            "effects": [],
+            "messages": {}
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 147,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "OUT_SLIDE_CACHE",
+          "data": {}
+        },
+        null
+      ]
+    },
+    {
+      "t": 147,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "OUT_SLIDE_CACHE",
+          "data": {}
+        }
+      ]
+    },
+    {
+      "t": 151,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "OUT_SLIDE_CACHE",
+          "data": {}
+        }
+      ]
+    },
+    {
+      "t": 151,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "STAGE",
+      "args": [
+        {
+          "channel": "OUT_SLIDE_CACHE",
+          "data": {}
+        },
+        null
+      ]
+    },
+    {
+      "t": 151,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385147,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] OUTPUTS: Trace second output: slide -, bg -"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 151,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385147,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] OUTPUTS: Trace second output: slide -, bg -"
+          }
+        }
+      ]
+    },
+    {
+      "t": 151,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385147,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] OUTPUTS: Trace second output: slide -, bg -"
+          }
+        }
+      ]
+    },
+    {
+      "t": 151,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385147,
+            "category": "output window Primary",
+            "message": "[RECEIVED] OUTPUTS: Primary: slide -, bg -"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 151,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385147,
+            "category": "output window Primary",
+            "message": "[RECEIVED] OUTPUTS: Primary: slide -, bg -"
+          }
+        }
+      ]
+    },
+    {
+      "t": 151,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385147,
+            "category": "output window Primary",
+            "message": "[RECEIVED] OUTPUTS: Primary: slide -, bg -"
+          }
+        }
+      ]
+    },
+    {
+      "t": 151,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.153,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"cd96e866e9f44c049ba3843c176aa1ce\",\"sampleRand\":0.9683675075873655},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 153,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.156,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"83fa86e1aac2448c84fcb64acf12bfc2\",\"sampleRand\":0.5516270241893209},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 153,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.157,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"83fa86e1aac2448c84fcb64acf12bfc2\",\"sampleRand\":0.5516270241893209},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 153,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.156,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"cd96e866e9f44c049ba3843c176aa1ce\",\"sampleRand\":0.9683675075873655},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 161,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.157,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"cd96e866e9f44c049ba3843c176aa1ce\",\"sampleRand\":0.9683675075873655},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 161,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.157,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"83fa86e1aac2448c84fcb64acf12bfc2\",\"sampleRand\":0.5516270241893209},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 161,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.16,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"cd96e866e9f44c049ba3843c176aa1ce\",\"sampleRand\":0.9683675075873655},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 161,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.161,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"cd96e866e9f44c049ba3843c176aa1ce\",\"sampleRand\":0.9683675075873655},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 162,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.162,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"cd96e866e9f44c049ba3843c176aa1ce\",\"sampleRand\":0.9683675075873655},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 162,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385163,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] ALL_OUTPUTS"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 162,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385163,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] ALL_OUTPUTS"
+          }
+        }
+      ]
+    },
+    {
+      "t": 162,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385163,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] ALL_OUTPUTS"
+          }
+        }
+      ]
+    },
+    {
+      "t": 162,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385164,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] SYNCED_OUTPUTS"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 162,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385164,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] SYNCED_OUTPUTS"
+          }
+        }
+      ]
+    },
+    {
+      "t": 162,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385164,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] SYNCED_OUTPUTS"
+          }
+        }
+      ]
+    },
+    {
+      "t": 162,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.158,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"83fa86e1aac2448c84fcb64acf12bfc2\",\"sampleRand\":0.5516270241893209},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 162,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.168,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"83fa86e1aac2448c84fcb64acf12bfc2\",\"sampleRand\":0.5516270241893209},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 163,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.168,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"83fa86e1aac2448c84fcb64acf12bfc2\",\"sampleRand\":0.5516270241893209},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 163,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385169,
+            "category": "output window Primary",
+            "message": "[RECEIVED] ALL_OUTPUTS"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 163,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385169,
+            "category": "output window Primary",
+            "message": "[RECEIVED] ALL_OUTPUTS"
+          }
+        }
+      ]
+    },
+    {
+      "t": 163,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385169,
+            "category": "output window Primary",
+            "message": "[RECEIVED] ALL_OUTPUTS"
+          }
+        }
+      ]
+    },
+    {
+      "t": 163,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385169,
+            "category": "output window Primary",
+            "message": "[RECEIVED] SYNCED_OUTPUTS"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 163,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385169,
+            "category": "output window Primary",
+            "message": "[RECEIVED] SYNCED_OUTPUTS"
+          }
+        }
+      ]
+    },
+    {
+      "t": 163,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385169,
+            "category": "output window Primary",
+            "message": "[RECEIVED] SYNCED_OUTPUTS"
+          }
+        }
+      ]
+    },
+    {
+      "t": 196,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385175,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] OUT_SLIDE_CACHE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 196,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385175,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] OUT_SLIDE_CACHE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 196,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385175,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] OUT_SLIDE_CACHE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 197,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385182,
+            "category": "output window Primary",
+            "message": "[RECEIVED] OUT_SLIDE_CACHE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 197,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385182,
+            "category": "output window Primary",
+            "message": "[RECEIVED] OUT_SLIDE_CACHE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 197,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385182,
+            "category": "output window Primary",
+            "message": "[RECEIVED] OUT_SLIDE_CACHE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 382,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 5.246,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": true
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 5.246,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": true
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 383,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 5.246,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": true
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 5.246,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 383,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 5.246,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": true
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 5.246,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 383,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.406,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 384,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.406,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 384,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.407,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 384,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.407,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 384,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385408,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 384,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385408,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 384,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385408,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 399,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385410,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 400,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385410,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 400,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385410,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 400,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.41,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"cd96e866e9f44c049ba3843c176aa1ce\",\"sampleRand\":0.9683675075873655},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 401,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.41,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"83fa86e1aac2448c84fcb64acf12bfc2\",\"sampleRand\":0.5516270241893209},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 429,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.452,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"cd96e866e9f44c049ba3843c176aa1ce\",\"sampleRand\":0.9683675075873655},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 437,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660385.462,\"category\":\"console\",\"data\":{\"arguments\":[\"https://svelte.dev/e/derived_inert\"],\"logger\":\"console\"},\"level\":\"warning\",\"message\":\"https://svelte.dev/e/derived_inert\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"83fa86e1aac2448c84fcb64acf12bfc2\",\"sampleRand\":0.5516270241893209},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 626,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "SPOTIFY_GET_STATE"
+        },
+        "SPOTIFY_GET_STATE51ee5"
+      ]
+    },
+    {
+      "t": 864,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 5.728400000002235,
+              "duration": 6,
+              "paused": true,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 5.728400000002235,
+              "duration": 6,
+              "paused": true,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 864,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 5.728400000002235,
+              "duration": 6,
+              "paused": true,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 5.728400000002235,
+              "duration": 6,
+              "paused": true,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 864,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 5.728400000002235,
+              "duration": 6,
+              "paused": true,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 5.728400000002235,
+              "duration": 6,
+              "paused": true,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 865,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {}
+        },
+        null
+      ]
+    },
+    {
+      "t": 865,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {}
+        }
+      ]
+    },
+    {
+      "t": 865,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {}
+        }
+      ]
+    },
+    {
+      "t": 866,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385890,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 866,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385890,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 866,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385890,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 866,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385890,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 866,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385890,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 866,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385890,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 866,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385891,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 866,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385891,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 866,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385891,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 868,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385892,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 868,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385892,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 868,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660385892,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1364,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {}
+        },
+        null
+      ]
+    },
+    {
+      "t": 1364,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {}
+        }
+      ]
+    },
+    {
+      "t": 1364,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {}
+        }
+      ]
+    },
+    {
+      "t": 1365,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660386389,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1365,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660386389,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1365,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660386389,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1365,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660386390,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1365,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660386390,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1365,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660386390,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1626,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "SPOTIFY_GET_STATE"
+        },
+        "SPOTIFY_GET_STATE1ee50"
+      ]
+    }
+  ],
+  "storeTimeline": [
+    {
+      "t": 62,
+      "store": "outputs"
+    },
+    {
+      "t": 62,
+      "store": "outputs"
+    },
+    {
+      "t": 63,
+      "store": "outputs"
+    },
+    {
+      "t": 63,
+      "store": "outputs"
+    },
+    {
+      "t": 64,
+      "store": "outputs"
+    },
+    {
+      "t": 65,
+      "store": "outputs"
+    },
+    {
+      "t": 66,
+      "store": "outputs"
+    },
+    {
+      "t": 66,
+      "store": "outputs"
+    },
+    {
+      "t": 66,
+      "store": "outputs"
+    },
+    {
+      "t": 66,
+      "store": "outputs"
+    }
+  ],
+  "outputs": [
+    {
+      "window": "second",
+      "url": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "timeline": [
+        {
+          "t": -7,
+          "tokens": [
+            "VID:clipA.mp4@1.0 loop",
+            "T:Trace verse first line@1.0",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 240,
+          "tokens": [
+            "VID:clipA.mp4@1.0 loop",
+            "T:Trace verse first line@0.8",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 300,
+          "tokens": [
+            "VID:clipA.mp4@0.8 loop",
+            "T:Trace verse first line@0.8",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 320,
+          "tokens": [
+            "VID:clipA.mp4@0.8 loop",
+            "T:Trace verse first line@0.6",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 386,
+          "tokens": [
+            "VID:clipA.mp4@0.8 loop",
+            "T:Trace verse first line@0.4",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 432,
+          "tokens": [
+            "VID:clipA.mp4@0.6 loop",
+            "T:Trace verse first line@0.4",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 451,
+          "tokens": [
+            "VID:clipA.mp4@0.6 loop",
+            "T:Trace verse first line@0.2",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 534,
+          "tokens": [
+            "VID:clipA.mp4@0.6 loop",
+            "T:Trace verse first line@0.0",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 536,
+          "tokens": [
+            "VID:clipA.mp4@0.4 loop",
+            "T:Trace verse first line@0.0",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 638,
+          "tokens": [
+            "VID:clipA.mp4@0.4 loop",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 642,
+          "tokens": [
+            "VID:clipA.mp4@0.2 loop",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 739,
+          "tokens": [
+            "VID:clipA.mp4@0.2 loop",
+            "T:Trace overlay@0.8"
+          ]
+        },
+        {
+          "t": 773,
+          "tokens": [
+            "VID:clipA.mp4@0.0 loop",
+            "T:Trace overlay@0.8"
+          ]
+        },
+        {
+          "t": 821,
+          "tokens": [
+            "VID:clipA.mp4@0.0 loop",
+            "T:Trace overlay@0.6"
+          ]
+        },
+        {
+          "t": 886,
+          "tokens": [
+            "VID:clipA.mp4@0.0 loop",
+            "T:Trace overlay@0.4"
+          ]
+        },
+        {
+          "t": 937,
+          "tokens": [
+            "T:Trace overlay@0.4"
+          ]
+        },
+        {
+          "t": 952,
+          "tokens": [
+            "T:Trace overlay@0.2"
+          ]
+        },
+        {
+          "t": 1034,
+          "tokens": [
+            "T:Trace overlay@0.0"
+          ]
+        },
+        {
+          "t": 1138,
+          "tokens": []
+        }
+      ],
+      "finalText": "",
+      "finalState": {
+        "outputs": {
+          "second": {
+            "enabled": true,
+            "name": "Trace second output",
+            "color": "#3E7DCB",
+            "bounds": {
+              "x": 960,
+              "y": 0,
+              "width": 960,
+              "height": 540
+            },
+            "screen": null,
+            "style": "default",
+            "show": {},
+            "id": "second",
+            "out": {
+              "slide": null,
+              "background": null,
+              "overlays": [],
+              "transition": null,
+              "effects": [],
+              "messages": {}
+            },
+            "active": true
+          }
+        },
+        "videos": [],
+        "textBoxes": []
+      }
+    },
+    {
+      "window": "default",
+      "url": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "timeline": [
+        {
+          "t": -3,
+          "tokens": [
+            "VID:clipA.mp4@1.0 loop",
+            "T:Trace verse first line@1.0",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 256,
+          "tokens": [
+            "VID:clipA.mp4@1.0 loop",
+            "T:Trace verse first line@0.8",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 318,
+          "tokens": [
+            "VID:clipA.mp4@0.8 loop",
+            "T:Trace verse first line@0.8",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 339,
+          "tokens": [
+            "VID:clipA.mp4@0.8 loop",
+            "T:Trace verse first line@0.6",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 405,
+          "tokens": [
+            "VID:clipA.mp4@0.8 loop",
+            "T:Trace verse first line@0.4",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 448,
+          "tokens": [
+            "VID:clipA.mp4@0.6 loop",
+            "T:Trace verse first line@0.4",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 469,
+          "tokens": [
+            "VID:clipA.mp4@0.6 loop",
+            "T:Trace verse first line@0.2",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 551,
+          "tokens": [
+            "VID:clipA.mp4@0.6 loop",
+            "T:Trace verse first line@0.0",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 553,
+          "tokens": [
+            "VID:clipA.mp4@0.4 loop",
+            "T:Trace verse first line@0.0",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 654,
+          "tokens": [
+            "VID:clipA.mp4@0.4 loop",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 659,
+          "tokens": [
+            "VID:clipA.mp4@0.2 loop",
+            "T:Trace overlay@1.0"
+          ]
+        },
+        {
+          "t": 756,
+          "tokens": [
+            "VID:clipA.mp4@0.2 loop",
+            "T:Trace overlay@0.8"
+          ]
+        },
+        {
+          "t": 789,
+          "tokens": [
+            "VID:clipA.mp4@0.0 loop",
+            "T:Trace overlay@0.8"
+          ]
+        },
+        {
+          "t": 838,
+          "tokens": [
+            "VID:clipA.mp4@0.0 loop",
+            "T:Trace overlay@0.6"
+          ]
+        },
+        {
+          "t": 903,
+          "tokens": [
+            "VID:clipA.mp4@0.0 loop",
+            "T:Trace overlay@0.4"
+          ]
+        },
+        {
+          "t": 955,
+          "tokens": [
+            "T:Trace overlay@0.4"
+          ]
+        },
+        {
+          "t": 970,
+          "tokens": [
+            "T:Trace overlay@0.2"
+          ]
+        },
+        {
+          "t": 1052,
+          "tokens": [
+            "T:Trace overlay@0.0"
+          ]
+        },
+        {
+          "t": 1153,
+          "tokens": []
+        }
+      ],
+      "finalText": "",
+      "finalState": {
+        "outputs": {
+          "default": {
+            "enabled": true,
+            "name": "Primary",
+            "color": "#3E7DCB",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 960,
+              "height": 540
+            },
+            "screen": null,
+            "style": "default",
+            "show": {},
+            "out": {
+              "slide": null,
+              "background": null,
+              "overlays": [],
+              "transition": null,
+              "effects": [],
+              "messages": {}
+            },
+            "active": true
+          }
+        },
+        "videos": [],
+        "textBoxes": []
+      }
+    }
+  ],
+  "console": [
+    {
+      "t": 100,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 103,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 103,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 105,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 105,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 108,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 117,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 118,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 119,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 119,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 134,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 136,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 152,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 155,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 159,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 166,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 167,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 171,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 172,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 178,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 179,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 180,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 184,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 186,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 387,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 390,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 391,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 391,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 402,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 402,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 433,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    },
+    {
+      "t": 441,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "warning",
+      "text": "https://svelte.dev/e/derived_inert"
+    }
+  ],
+  "errors": [],
+  "debug": [
+    {
+      "time": 1791660385086,
+      "category": "SET",
+      "message": "background -> Primary (asked for Primary): cleared  from: bundle.js:108:203872 < Array.forEach < kH < DH"
+    },
+    {
+      "time": 1791660385087,
+      "category": "OUTPUT",
+      "message": "Primary: \"AI trace fixture\" #0 (Verse) ->all project#0"
+    },
+    {
+      "time": 1791660385087,
+      "category": "SET",
+      "message": "background -> Trace second output (asked for Trace second output): cleared  from: bundle.js:108:203872 < Array.forEach < kH < DH"
+    },
+    {
+      "time": 1791660385087,
+      "category": "OUTPUT",
+      "message": "Trace second output: \"AI trace fixture\" #0 (Verse) ->all project#0"
+    },
+    {
+      "time": 1791660385087,
+      "category": "SET",
+      "message": "transition -> Primary, Trace second output (all active outputs): timer cleared  from: MH < AH < DH < click"
+    },
+    {
+      "time": 1791660385088,
+      "category": "SET",
+      "message": "slide -> Primary, Trace second output (all active outputs): -  from: AH < DH < click < bundle.js:21:13128"
+    },
+    {
+      "time": 1791660385088,
+      "category": "OUTPUT",
+      "message": "Primary: -"
+    },
+    {
+      "time": 1791660385088,
+      "category": "OUTPUT",
+      "message": "Trace second output: -"
+    },
+    {
+      "time": 1791660385089,
+      "category": "SET",
+      "message": "overlays -> Primary (asked for Primary): []  from: bundle.js:108:204545 < Array.forEach < jH < DH"
+    },
+    {
+      "time": 1791660385090,
+      "category": "SET",
+      "message": "effects -> Primary (asked for Primary): []  from: bundle.js:108:204567 < Array.forEach < jH < DH"
+    },
+    {
+      "time": 1791660385090,
+      "category": "SET",
+      "message": "overlays -> Trace second output (asked for Trace second output): []  from: bundle.js:108:204545 < Array.forEach < jH < DH"
+    },
+    {
+      "time": 1791660385091,
+      "category": "SET",
+      "message": "effects -> Trace second output (asked for Trace second output): []  from: bundle.js:108:204567 < Array.forEach < jH < DH"
+    },
+    {
+      "time": 1791660385092,
+      "category": "SENT",
+      "message": "to output windows: METRONOME_TIMER"
+    },
+    {
+      "time": 1791660385092,
+      "category": "SET",
+      "message": "transition -> Primary, Trace second output (all active outputs): timer cleared  from: MH < DH < click < bundle.js:21:13128"
+    },
+    {
+      "time": 1791660385094,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] METRONOME_TIMER"
+    },
+    {
+      "time": 1791660385138,
+      "category": "SENT",
+      "message": "to output windows: OUTPUTS"
+    },
+    {
+      "time": 1791660385139,
+      "category": "WINDOW",
+      "message": "output windows received OUTPUTS\n    Primary: out.slide, out.background, out.overlays, out.transition, out.effects, out.messages\n    Trace second output: out.slide, out.background, out.overlays, out.transition, out.effects, out.messages"
+    },
+    {
+      "time": 1791660385139,
+      "category": "SENT",
+      "message": "to output windows: ALL_OUTPUTS"
+    },
+    {
+      "time": 1791660385139,
+      "category": "SENT",
+      "message": "to output windows: SYNCED_OUTPUTS"
+    },
+    {
+      "time": 1791660385096,
+      "category": "output window Primary",
+      "message": "[RECEIVED] METRONOME_TIMER"
+    },
+    {
+      "time": 1791660385143,
+      "category": "SENT",
+      "message": "to output windows: OUT_SLIDE_CACHE"
+    },
+    {
+      "time": 1791660385147,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] OUTPUTS: Trace second output: slide -, bg -"
+    },
+    {
+      "time": 1791660385147,
+      "category": "output window Primary",
+      "message": "[RECEIVED] OUTPUTS: Primary: slide -, bg -"
+    },
+    {
+      "time": 1791660385181,
+      "category": "UI",
+      "message": "window part rebuilt: 27 elements removed, 13 added within 60ms\n    removed: button.text.svelte-qnjars (10) from span.group.svelte-8113w7 | button.text.clearAll.svelte-qnjars (5) from span | button.text.svelte-qnjars.isActive (4) from div.combinedButton.svelte-wznk56\n    added: button.text.clearAll.svelte-qnjars (8) in span | button.text.svelte-qnjars (4) in span.group.svelte-8113w7 | span.ripple.svelte-qnjars (1) in button.text.clearAll.svelte-qnjars"
+    },
+    {
+      "time": 1791660385163,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] ALL_OUTPUTS"
+    },
+    {
+      "time": 1791660385164,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] SYNCED_OUTPUTS"
+    },
+    {
+      "time": 1791660385169,
+      "category": "output window Primary",
+      "message": "[RECEIVED] ALL_OUTPUTS"
+    },
+    {
+      "time": 1791660385169,
+      "category": "output window Primary",
+      "message": "[RECEIVED] SYNCED_OUTPUTS"
+    },
+    {
+      "time": 1791660385175,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] OUT_SLIDE_CACHE"
+    },
+    {
+      "time": 1791660385182,
+      "category": "output window Primary",
+      "message": "[RECEIVED] OUT_SLIDE_CACHE"
+    },
+    {
+      "time": 1791660385406,
+      "category": "SENT",
+      "message": "to output windows: PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660385408,
+      "category": "output window Primary",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660385410,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660385888,
+      "category": "SENT",
+      "message": "to output windows: PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660385889,
+      "category": "SENT",
+      "message": "to output windows: PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660385890,
+      "category": "output window Primary",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660385890,
+      "category": "output window Primary",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660385891,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660385892,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660386388,
+      "category": "SENT",
+      "message": "to output windows: PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660386389,
+      "category": "output window Primary",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660386390,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    }
+  ],
+  "comparison": {
+    "eventIds": [
+      "event-dc493109b36a48d56b",
+      "event-7b794fb30877c846cb",
+      "event-a5a37b430918de661d",
+      "event-ab5399b7ae6fd3d423",
+      "event-39c8aaa6a4d0b592c9",
+      "event-b71212f3e8f32e246a",
+      "event-c73701cd1a13f890f3",
+      "event-163e0174b2a925f3d1",
+      "event-f197b5498ba61cfe84",
+      "event-142afc74dae0040554",
+      "event-0e71fc9628fe0c2ee8",
+      "event-7c0cc32ab477eb8f9e",
+      "event-42f1821330d1414e76"
+    ],
+    "staticStores": [
+      "activeEdit",
+      "activePlaylist",
+      "activeRename",
+      "activeScenes",
+      "activeTimers",
+      "currentOutputSettings",
+      "customMessageCredits",
+      "isFadingOut",
+      "isTimelinePlaying",
+      "lockedOverlays",
+      "metronome",
+      "metronomeTimer",
+      "outputCache",
+      "outputSlideCache",
+      "outputs",
+      "overlayTimers",
+      "playingAudio",
+      "playingMetronome",
+      "playingVideos",
+      "runningActions",
+      "saved",
+      "showsCache",
+      "timelineRecordingAction",
+      "toastMessages",
+      "usageLog"
+    ],
+    "observedStores": [
+      "outputs"
+    ],
+    "unindexedObservedStores": [],
+    "staticIPC": [
+      "MAIN/LOCATE_MEDIA_FILE",
+      "MAIN/MEDIA_DOWNLOAD",
+      "MAIN/MEDIA_FOLDER_COPY",
+      "MAIN/MEDIA_IS_DOWNLOADED",
+      "MAIN/NOW_PLAYING",
+      "MAIN/NOW_PLAYING_UNSET",
+      "MAIN/PRESENTATION_CONTROL",
+      "MAIN/READ_AUDIO_METADATA",
+      "MAIN/TIMECODE_STOP",
+      "MAIN/TIMECODE_VALUE",
+      "OUTPUT/ACTIVE_TIMERS",
+      "OUTPUT/ALL_OUTPUTS",
+      "OUTPUT/CREATE",
+      "OUTPUT/CUSTOM_CREDITS",
+      "OUTPUT/MAIN_DEBUG",
+      "OUTPUT/METRONOME",
+      "OUTPUT/METRONOME_TIMER",
+      "OUTPUT/OUTPUTS",
+      "OUTPUT/OUT_SLIDE_CACHE",
+      "OUTPUT/PLAYING_AUDIO",
+      "OUTPUT/SHOWS",
+      "REMOTE/ACTIVE_TIMERS",
+      "REMOTE/AUDIO_ROUTING",
+      "REMOTE/OUT",
+      "REMOTE/OUT_DATA",
+      "REMOTE/RUNNING_ACTIONS",
+      "REMOTE/SHOW",
+      "STAGE/METRONOME",
+      "STAGE/METRONOME_TIMER",
+      "STAGE/OUT",
+      "STAGE/OUT_SLIDE_CACHE",
+      "STAGE/SHOW_DATA"
+    ],
+    "observedIPC": [
+      "OUTPUT/METRONOME_TIMER",
+      "STAGE/METRONOME_TIMER",
+      "OUTPUT/MAIN_DEBUG",
+      "OUTPUT/OUTPUTS",
+      "OUTPUT/ALL_OUTPUTS",
+      "REMOTE/AUDIO_ROUTING",
+      "OUTPUT/SYNCED_OUTPUTS",
+      "REMOTE/OUT",
+      "REMOTE/OUT_DATA",
+      "OUTPUT/OUT_SLIDE_CACHE",
+      "STAGE/OUT_SLIDE_CACHE",
+      "OUTPUT/PLAYING_VIDEO_STATE",
+      "MAIN/SPOTIFY_GET_STATE"
+    ],
+    "unindexedObservedIPC": [
+      "OUTPUT/SYNCED_OUTPUTS",
+      "OUTPUT/PLAYING_VIDEO_STATE",
+      "MAIN/SPOTIFY_GET_STATE"
+    ],
+    "verdict": "Observed store names are covered by the static candidate union.",
+    "limits": "May-call unions do not predict order or require all effects to execute. IPC/DOM timelines are recorded, not proof of exact function calls; background subscriptions can add effects. No-op keys are observed outcomes."
+  }
+}

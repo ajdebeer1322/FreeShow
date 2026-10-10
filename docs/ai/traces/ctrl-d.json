@@ -1,0 +1,2942 @@
+{
+  "id": "ctrl-d",
+  "status": "verified",
+  "error": null,
+  "action": "Press Ctrl+D in selected",
+  "context": "selected",
+  "keys": [
+    "Ctrl+D"
+  ],
+  "elapsedMs": 3039,
+  "actionEpoch": 1791660350930,
+  "observedAt": "2026-10-10T19:25:52.807Z",
+  "sourceRevision": "379e268046d7de3344b6fa1e7809116a7ba01856",
+  "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+  "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad",
+  "environment": {
+    "electron": "37.10.3",
+    "display": ":99",
+    "ports": [
+      58510,
+      58511,
+      58512,
+      58513
+    ],
+    "isolated": true,
+    "productSourceModified": false,
+    "fixture": "Four slides in two groups, shrinkToFit items, looped fixture video, overlay, two active outputs. Test input injected for input contexts. State restored before each scenario."
+  },
+  "before": {
+    "outputs": {
+      "default": {
+        "enabled": true,
+        "active": true,
+        "name": "Primary",
+        "color": "#3E7DCB",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 960,
+          "height": 540
+        },
+        "screen": null,
+        "style": "default",
+        "show": {},
+        "out": {
+          "slide": {
+            "id": "ac4e3f731c8",
+            "layout": "4893cac4e3f",
+            "index": 0,
+            "line": 0,
+            "projectIndex": 0
+          },
+          "background": {
+            "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "type": "video",
+            "loop": true,
+            "muted": true
+          },
+          "overlays": [
+            "trace-overlay"
+          ]
+        }
+      },
+      "second": {
+        "enabled": true,
+        "active": true,
+        "name": "Trace second output",
+        "color": "#3E7DCB",
+        "bounds": {
+          "x": 960,
+          "y": 0,
+          "width": 960,
+          "height": 540
+        },
+        "screen": null,
+        "style": "default",
+        "show": {},
+        "id": "second",
+        "out": {
+          "slide": {
+            "id": "ac4e3f731c8",
+            "layout": "4893cac4e3f",
+            "index": 0,
+            "line": 0,
+            "projectIndex": 0
+          },
+          "background": {
+            "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "type": "video",
+            "loop": true,
+            "muted": true
+          },
+          "overlays": [
+            "trace-overlay"
+          ]
+        }
+      }
+    },
+    "activeShow": {
+      "id": "ac4e3f731c8",
+      "type": "show",
+      "index": 0
+    },
+    "page": "show",
+    "selected": {
+      "id": "slide",
+      "data": [
+        {
+          "id": "893cac4e3f7",
+          "index": 0,
+          "showId": "ac4e3f731c8",
+          "layout": "4893cac4e3f"
+        }
+      ]
+    },
+    "popup": null,
+    "focus": false,
+    "undoCount": 0,
+    "redoCount": 0,
+    "debugOpen": true,
+    "playingAudio": []
+  },
+  "after": {
+    "outputs": {
+      "default": {
+        "enabled": true,
+        "active": true,
+        "name": "Primary",
+        "color": "#3E7DCB",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 960,
+          "height": 540
+        },
+        "screen": null,
+        "style": "default",
+        "show": {},
+        "out": {
+          "slide": {
+            "id": "ac4e3f731c8",
+            "layout": "4893cac4e3f",
+            "index": 0,
+            "line": 0,
+            "projectIndex": 0
+          },
+          "background": {
+            "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "type": "video",
+            "loop": true,
+            "muted": true
+          },
+          "overlays": [
+            "trace-overlay"
+          ]
+        }
+      },
+      "second": {
+        "enabled": true,
+        "active": true,
+        "name": "Trace second output",
+        "color": "#3E7DCB",
+        "bounds": {
+          "x": 960,
+          "y": 0,
+          "width": 960,
+          "height": 540
+        },
+        "screen": null,
+        "style": "default",
+        "show": {},
+        "id": "second",
+        "out": {
+          "slide": {
+            "id": "ac4e3f731c8",
+            "layout": "4893cac4e3f",
+            "index": 0,
+            "line": 0,
+            "projectIndex": 0
+          },
+          "background": {
+            "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "type": "video",
+            "loop": true,
+            "muted": true
+          },
+          "overlays": [
+            "trace-overlay"
+          ]
+        }
+      }
+    },
+    "activeShow": {
+      "id": "ac4e3f731c8",
+      "type": "show",
+      "index": 0
+    },
+    "page": "show",
+    "selected": {
+      "id": null,
+      "data": []
+    },
+    "popup": null,
+    "focus": false,
+    "undoCount": 1,
+    "redoCount": 0,
+    "debugOpen": true,
+    "playingAudio": []
+  },
+  "ipc": [
+    {
+      "t": 29,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660350.958,\"category\":\"console\",\"data\":{\"arguments\":[\"HISTORY INIT [SLIDES]:\",{\"id\":\"SLIDES\",\"newData\":{\"data\":[{\"group\":\"Verse\",\"color\":\"#3b82c4\",\"settings\":{},\"notes\":\"\",\"items\":[{\"type\":\"text\",\"lines\":[{\"align\":\"\",\"text\":[{\"value\":\"Trace verse first line\",\"style\":\"font-size: 100px;\"}]}],\"style\":\"top:88px;left:50px;height:904px;width:1820px;\",\"textFit\":\"shrinkToFit\",\"autoFontSize\":100}],\"globalGroup\":\"verse\",\"children\":[],\"id\":\"e2c3dcc385d\"}],\"layouts\":[{\"id\":\"893cac4e3f7\"}],\"media\":{},\"index\":1},\"location\":{\"page\":\"show\",\"show\":{\"id\":\"ac4e3f731c8\"},\"layout\":\"4893cac4e3f\"},\"oldData\":null,\"time\":1791660350958}],\"logger\":\"console\"},\"level\":\"info\",\"message\":\"HISTORY INIT [SLIDES]: [object Object]\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 31,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660350.96,\"category\":\"console\",\"data\":{\"arguments\":[\"PASTED:\",{\"id\":\"slide\",\"data\":{\"slides\":[{\"group\":\"Verse\",\"color\":\"#3b82c4\",\"settings\":{},\"notes\":\"\",\"items\":[{\"type\":\"text\",\"lines\":[{\"align\":\"\",\"text\":[{\"value\":\"Trace verse first line\",\"style\":\"font-size: 100px;\"}]}],\"style\":\"top:88px;left:50px;height:904px;width:1820px;\",\"textFit\":\"shrinkToFit\",\"autoFontSize\":100}],\"globalGroup\":\"verse\",\"children\":[\"93cac4e3f73\"],\"id\":\"893cac4e3f7\"}],\"layouts\":[{\"id\":\"893cac4e3f7\"}],\"media\":{},\"source\":{\"showId\":\"ac4e3f731c8\",\"layout\":\"4893cac4e3f\"}}}],\"logger\":\"console\"},\"level\":\"info\",\"message\":\"PASTED: [object Object]\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 33,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660350.96,\"category\":\"console\",\"data\":{\"arguments\":[\"DUPLICATED:\",{\"id\":null,\"data\":{\"id\":\"slide\",\"data\":{\"slides\":[{\"group\":\"Verse\",\"color\":\"#3b82c4\",\"settings\":{},\"notes\":\"\",\"items\":[{\"type\":\"text\",\"lines\":[{\"align\":\"\",\"text\":[{\"value\":\"Trace verse first line\",\"style\":\"font-size: 100px;\"}]}],\"style\":\"top:88px;left:50px;height:904px;width:1820px;\",\"textFit\":\"shrinkToFit\",\"autoFontSize\":100}],\"globalGroup\":\"verse\",\"children\":[\"93cac4e3f73\"],\"id\":\"893cac4e3f7\"}],\"layouts\":[{\"id\":\"893cac4e3f7\"}],\"media\":{},\"source\":{\"showId\":\"ac4e3f731c8\",\"layout\":\"4893cac4e3f\"}}},\"index\":0,\"showId\":\"ac4e3f731c8\",\"layout\":\"4893cac4e3f\"}],\"logger\":\"console\"},\"level\":\"info\",\"message\":\"DUPLICATED: [object Object]\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 40,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "SHOWS",
+          "data": {
+            "ac4e3f731c8": {
+              "name": "AI trace fixture",
+              "private": false,
+              "category": "song",
+              "settings": {
+                "activeLayout": "4893cac4e3f",
+                "template": null
+              },
+              "timestamps": {
+                "created": 1791660243956,
+                "modified": 1791660350959,
+                "used": null
+              },
+              "quickAccess": {},
+              "meta": {},
+              "slides": {
+                "893cac4e3f7": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": [
+                    "93cac4e3f73"
+                  ]
+                },
+                "93cac4e3f73": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse second line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ]
+                },
+                "3cac4e3f731": {
+                  "group": "Chorus",
+                  "color": "#d1605f",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus long auto-size line for the audience",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "chorus",
+                  "children": [
+                    "cac4e3f731c"
+                  ]
+                },
+                "cac4e3f731c": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus final line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ]
+                },
+                "e2c3dcc385d": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": []
+                }
+              },
+              "layouts": {
+                "4893cac4e3f": {
+                  "name": "Default",
+                  "notes": "",
+                  "slides": [
+                    {
+                      "id": "893cac4e3f7"
+                    },
+                    {
+                      "id": "e2c3dcc385d"
+                    },
+                    {
+                      "id": "3cac4e3f731"
+                    }
+                  ]
+                }
+              },
+              "media": {}
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 41,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "SHOWS",
+          "data": {
+            "ac4e3f731c8": {
+              "name": "AI trace fixture",
+              "private": false,
+              "category": "song",
+              "settings": {
+                "activeLayout": "4893cac4e3f",
+                "template": null
+              },
+              "timestamps": {
+                "created": 1791660243956,
+                "modified": 1791660350959,
+                "used": null
+              },
+              "quickAccess": {},
+              "meta": {},
+              "slides": {
+                "893cac4e3f7": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": [
+                    "93cac4e3f73"
+                  ]
+                },
+                "93cac4e3f73": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse second line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ]
+                },
+                "3cac4e3f731": {
+                  "group": "Chorus",
+                  "color": "#d1605f",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus long auto-size line for the audience",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "chorus",
+                  "children": [
+                    "cac4e3f731c"
+                  ]
+                },
+                "cac4e3f731c": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus final line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ]
+                },
+                "e2c3dcc385d": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": []
+                }
+              },
+              "layouts": {
+                "4893cac4e3f": {
+                  "name": "Default",
+                  "notes": "",
+                  "slides": [
+                    {
+                      "id": "893cac4e3f7"
+                    },
+                    {
+                      "id": "e2c3dcc385d"
+                    },
+                    {
+                      "id": "3cac4e3f731"
+                    }
+                  ]
+                }
+              },
+              "media": {}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 41,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "SHOWS",
+          "data": {
+            "ac4e3f731c8": {
+              "name": "AI trace fixture",
+              "private": false,
+              "category": "song",
+              "settings": {
+                "activeLayout": "4893cac4e3f",
+                "template": null
+              },
+              "timestamps": {
+                "created": 1791660243956,
+                "modified": 1791660350959,
+                "used": null
+              },
+              "quickAccess": {},
+              "meta": {},
+              "slides": {
+                "893cac4e3f7": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": [
+                    "93cac4e3f73"
+                  ]
+                },
+                "93cac4e3f73": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse second line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ]
+                },
+                "3cac4e3f731": {
+                  "group": "Chorus",
+                  "color": "#d1605f",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus long auto-size line for the audience",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "chorus",
+                  "children": [
+                    "cac4e3f731c"
+                  ]
+                },
+                "cac4e3f731c": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus final line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ]
+                },
+                "e2c3dcc385d": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": []
+                }
+              },
+              "layouts": {
+                "4893cac4e3f": {
+                  "name": "Default",
+                  "notes": "",
+                  "slides": [
+                    {
+                      "id": "893cac4e3f7"
+                    },
+                    {
+                      "id": "e2c3dcc385d"
+                    },
+                    {
+                      "id": "3cac4e3f731"
+                    }
+                  ]
+                }
+              },
+              "media": {}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 42,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660350971,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] SHOWS (1 shows)"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 42,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660350971,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] SHOWS (1 shows)"
+          }
+        }
+      ]
+    },
+    {
+      "t": 42,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660350971,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] SHOWS (1 shows)"
+          }
+        }
+      ]
+    },
+    {
+      "t": 43,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660350972,
+            "category": "output window Primary",
+            "message": "[RECEIVED] SHOWS (1 shows)"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 43,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660350972,
+            "category": "output window Primary",
+            "message": "[RECEIVED] SHOWS (1 shows)"
+          }
+        }
+      ]
+    },
+    {
+      "t": 43,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660350972,
+            "category": "output window Primary",
+            "message": "[RECEIVED] SHOWS (1 shows)"
+          }
+        }
+      ]
+    },
+    {
+      "t": 99,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "STAGE",
+      "args": [
+        {
+          "channel": "SHOW_DATA",
+          "data": {
+            "id": "ac4e3f731c8",
+            "show": {
+              "name": "AI trace fixture",
+              "private": false,
+              "category": "song",
+              "settings": {
+                "activeLayout": "4893cac4e3f",
+                "template": null
+              },
+              "timestamps": {
+                "created": 1791660243956,
+                "modified": 1791660350959,
+                "used": null
+              },
+              "quickAccess": {},
+              "meta": {},
+              "slides": {
+                "893cac4e3f7": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": [
+                    "93cac4e3f73"
+                  ]
+                },
+                "93cac4e3f73": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse second line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ]
+                },
+                "3cac4e3f731": {
+                  "group": "Chorus",
+                  "color": "#d1605f",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus long auto-size line for the audience",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "chorus",
+                  "children": [
+                    "cac4e3f731c"
+                  ]
+                },
+                "cac4e3f731c": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus final line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ]
+                },
+                "e2c3dcc385d": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": []
+                }
+              },
+              "layouts": {
+                "4893cac4e3f": {
+                  "name": "Default",
+                  "notes": "",
+                  "slides": [
+                    {
+                      "id": "893cac4e3f7"
+                    },
+                    {
+                      "id": "e2c3dcc385d"
+                    },
+                    {
+                      "id": "3cac4e3f731"
+                    }
+                  ]
+                }
+              },
+              "media": {}
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 132,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "SHOWS",
+          "data": {
+            "ac4e3f731c8": {
+              "name": "AI trace fixture",
+              "private": false,
+              "category": "song",
+              "settings": {
+                "activeLayout": "4893cac4e3f",
+                "template": null
+              },
+              "timestamps": {
+                "created": 1791660243956,
+                "modified": 1791660350959,
+                "used": null
+              },
+              "quickAccess": {},
+              "meta": {},
+              "slides": {
+                "893cac4e3f7": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": [
+                    "93cac4e3f73"
+                  ]
+                },
+                "93cac4e3f73": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse second line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ]
+                },
+                "3cac4e3f731": {
+                  "group": "Chorus",
+                  "color": "#d1605f",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus long auto-size line for the audience",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "chorus",
+                  "children": [
+                    "cac4e3f731c"
+                  ]
+                },
+                "cac4e3f731c": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus final line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ]
+                },
+                "e2c3dcc385d": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100,
+                      "previewAutoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": []
+                }
+              },
+              "layouts": {
+                "4893cac4e3f": {
+                  "name": "Default",
+                  "notes": "",
+                  "slides": [
+                    {
+                      "id": "893cac4e3f7"
+                    },
+                    {
+                      "id": "e2c3dcc385d"
+                    },
+                    {
+                      "id": "3cac4e3f731"
+                    }
+                  ]
+                }
+              },
+              "media": {}
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 132,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "SHOWS",
+          "data": {
+            "ac4e3f731c8": {
+              "name": "AI trace fixture",
+              "private": false,
+              "category": "song",
+              "settings": {
+                "activeLayout": "4893cac4e3f",
+                "template": null
+              },
+              "timestamps": {
+                "created": 1791660243956,
+                "modified": 1791660350959,
+                "used": null
+              },
+              "quickAccess": {},
+              "meta": {},
+              "slides": {
+                "893cac4e3f7": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": [
+                    "93cac4e3f73"
+                  ]
+                },
+                "93cac4e3f73": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse second line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ]
+                },
+                "3cac4e3f731": {
+                  "group": "Chorus",
+                  "color": "#d1605f",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus long auto-size line for the audience",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "chorus",
+                  "children": [
+                    "cac4e3f731c"
+                  ]
+                },
+                "cac4e3f731c": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus final line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ]
+                },
+                "e2c3dcc385d": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100,
+                      "previewAutoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": []
+                }
+              },
+              "layouts": {
+                "4893cac4e3f": {
+                  "name": "Default",
+                  "notes": "",
+                  "slides": [
+                    {
+                      "id": "893cac4e3f7"
+                    },
+                    {
+                      "id": "e2c3dcc385d"
+                    },
+                    {
+                      "id": "3cac4e3f731"
+                    }
+                  ]
+                }
+              },
+              "media": {}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 132,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "SHOWS",
+          "data": {
+            "ac4e3f731c8": {
+              "name": "AI trace fixture",
+              "private": false,
+              "category": "song",
+              "settings": {
+                "activeLayout": "4893cac4e3f",
+                "template": null
+              },
+              "timestamps": {
+                "created": 1791660243956,
+                "modified": 1791660350959,
+                "used": null
+              },
+              "quickAccess": {},
+              "meta": {},
+              "slides": {
+                "893cac4e3f7": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": [
+                    "93cac4e3f73"
+                  ]
+                },
+                "93cac4e3f73": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse second line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ]
+                },
+                "3cac4e3f731": {
+                  "group": "Chorus",
+                  "color": "#d1605f",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus long auto-size line for the audience",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "chorus",
+                  "children": [
+                    "cac4e3f731c"
+                  ]
+                },
+                "cac4e3f731c": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus final line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ]
+                },
+                "e2c3dcc385d": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100,
+                      "previewAutoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": []
+                }
+              },
+              "layouts": {
+                "4893cac4e3f": {
+                  "name": "Default",
+                  "notes": "",
+                  "slides": [
+                    {
+                      "id": "893cac4e3f7"
+                    },
+                    {
+                      "id": "e2c3dcc385d"
+                    },
+                    {
+                      "id": "3cac4e3f731"
+                    }
+                  ]
+                }
+              },
+              "media": {}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 133,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660351063,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] SHOWS (1 shows)"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 133,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660351063,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] SHOWS (1 shows)"
+          }
+        }
+      ]
+    },
+    {
+      "t": 133,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660351063,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] SHOWS (1 shows)"
+          }
+        }
+      ]
+    },
+    {
+      "t": 133,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660351063,
+            "category": "output window Primary",
+            "message": "[RECEIVED] SHOWS (1 shows)"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 133,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660351063,
+            "category": "output window Primary",
+            "message": "[RECEIVED] SHOWS (1 shows)"
+          }
+        }
+      ]
+    },
+    {
+      "t": 133,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660351063,
+            "category": "output window Primary",
+            "message": "[RECEIVED] SHOWS (1 shows)"
+          }
+        }
+      ]
+    },
+    {
+      "t": 190,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "STAGE",
+      "args": [
+        {
+          "channel": "SHOW_DATA",
+          "data": {
+            "id": "ac4e3f731c8",
+            "show": {
+              "name": "AI trace fixture",
+              "private": false,
+              "category": "song",
+              "settings": {
+                "activeLayout": "4893cac4e3f",
+                "template": null
+              },
+              "timestamps": {
+                "created": 1791660243956,
+                "modified": 1791660350959,
+                "used": null
+              },
+              "quickAccess": {},
+              "meta": {},
+              "slides": {
+                "893cac4e3f7": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": [
+                    "93cac4e3f73"
+                  ]
+                },
+                "93cac4e3f73": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse second line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ]
+                },
+                "3cac4e3f731": {
+                  "group": "Chorus",
+                  "color": "#d1605f",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus long auto-size line for the audience",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "chorus",
+                  "children": [
+                    "cac4e3f731c"
+                  ]
+                },
+                "cac4e3f731c": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus final line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100
+                    }
+                  ]
+                },
+                "e2c3dcc385d": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit",
+                      "autoFontSize": 100,
+                      "previewAutoFontSize": 100
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": []
+                }
+              },
+              "layouts": {
+                "4893cac4e3f": {
+                  "name": "Default",
+                  "notes": "",
+                  "slides": [
+                    {
+                      "id": "893cac4e3f7"
+                    },
+                    {
+                      "id": "e2c3dcc385d"
+                    },
+                    {
+                      "id": "3cac4e3f731"
+                    }
+                  ]
+                }
+              },
+              "media": {}
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 204,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660351.131,\"category\":\"console\",\"data\":{\"arguments\":[\"HISTORY INIT [TEMPLATE]:\",{\"id\":\"TEMPLATE\",\"save\":false,\"newData\":{\"id\":\"\",\"data\":{\"createItems\":false}},\"location\":{\"page\":\"show\",\"show\":{\"id\":\"ac4e3f731c8\"},\"layout\":\"4893cac4e3f\"},\"oldData\":null,\"time\":1791660351131}],\"logger\":\"console\"},\"level\":\"info\",\"message\":\"HISTORY INIT [TEMPLATE]: [object Object]\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 368,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 2.0977999999970196,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 2.0977999999970196,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 368,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 2.0977999999970196,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 2.0977999999970196,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 368,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 2.0977999999970196,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 2.0977999999970196,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 369,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660351298,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 369,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660351298,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 369,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660351298,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 369,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660351299,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 369,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660351299,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 369,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660351299,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 548,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "SPOTIFY_GET_STATE"
+        },
+        "SPOTIFY_GET_STATE3dcc3"
+      ]
+    },
+    {
+      "t": 868,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 2.5975,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 2.5975,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 868,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 2.5975,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 2.5975,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 868,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 2.5975,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 2.5975,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 869,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660351798,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 869,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660351798,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 869,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660351798,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 869,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660351798,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 869,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660351798,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 869,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660351798,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1372,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 3.101699999999255,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 3.101699999999255,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1372,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 3.101699999999255,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 3.101699999999255,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 1372,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 3.101699999999255,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 3.101699999999255,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 1373,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660352302,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1373,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660352302,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1373,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660352302,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1373,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660352302,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1373,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660352302,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1373,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660352302,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1552,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "SPOTIFY_GET_STATE"
+        },
+        "SPOTIFY_GET_STATEdcc38"
+      ]
+    }
+  ],
+  "storeTimeline": [
+    {
+      "t": 29,
+      "store": "showsCache"
+    },
+    {
+      "t": 29,
+      "store": "showsCache"
+    },
+    {
+      "t": 29,
+      "store": "showsCache"
+    },
+    {
+      "t": 30,
+      "store": "undoHistory"
+    },
+    {
+      "t": 30,
+      "store": "selected"
+    },
+    {
+      "t": 40,
+      "store": "shows"
+    },
+    {
+      "t": 41,
+      "store": "activeEdit"
+    },
+    {
+      "t": 120,
+      "store": "showsCache"
+    }
+  ],
+  "outputs": [
+    {
+      "window": "second",
+      "url": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "timeline": [
+        {
+          "t": -7,
+          "tokens": [
+            "VID:clipA.mp4@1.0 loop",
+            "T:Trace verse first line@1.0",
+            "T:Trace overlay@1.0"
+          ]
+        }
+      ],
+      "finalText": " Trace verse first line\n Trace overlay",
+      "finalState": {
+        "outputs": {
+          "second": {
+            "enabled": true,
+            "name": "Trace second output",
+            "color": "#3E7DCB",
+            "bounds": {
+              "x": 960,
+              "y": 0,
+              "width": 960,
+              "height": 540
+            },
+            "screen": null,
+            "style": "default",
+            "show": {},
+            "id": "second",
+            "out": {
+              "slide": {
+                "id": "ac4e3f731c8",
+                "layout": "4893cac4e3f",
+                "index": 0,
+                "line": 0,
+                "projectIndex": 0
+              },
+              "background": {
+                "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+                "type": "video",
+                "loop": true,
+                "muted": true
+              },
+              "overlays": [
+                "trace-overlay"
+              ]
+            },
+            "active": true
+          }
+        },
+        "videos": [
+          {
+            "readyState": 4,
+            "paused": false,
+            "currentTime": 3.573387
+          }
+        ],
+        "textBoxes": [
+          {
+            "text": "Trace verse first line",
+            "fontSize": "100px"
+          },
+          {
+            "text": "Trace overlay",
+            "fontSize": "50px"
+          }
+        ]
+      }
+    },
+    {
+      "window": "default",
+      "url": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "timeline": [
+        {
+          "t": -3,
+          "tokens": [
+            "VID:clipA.mp4@1.0 loop",
+            "T:Trace verse first line@1.0",
+            "T:Trace overlay@1.0"
+          ]
+        }
+      ],
+      "finalText": " Trace verse first line\n Trace overlay",
+      "finalState": {
+        "outputs": {
+          "default": {
+            "enabled": true,
+            "name": "Primary",
+            "color": "#3E7DCB",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 960,
+              "height": 540
+            },
+            "screen": null,
+            "style": "default",
+            "show": {},
+            "out": {
+              "slide": {
+                "id": "ac4e3f731c8",
+                "layout": "4893cac4e3f",
+                "index": 0,
+                "line": 0,
+                "projectIndex": 0
+              },
+              "background": {
+                "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+                "type": "video",
+                "loop": true,
+                "muted": true
+              },
+              "overlays": [
+                "trace-overlay"
+              ]
+            },
+            "active": true
+          }
+        },
+        "videos": [
+          {
+            "readyState": 4,
+            "paused": false,
+            "currentTime": 3.582203
+          }
+        ],
+        "textBoxes": [
+          {
+            "text": "Trace verse first line",
+            "fontSize": "100px"
+          },
+          {
+            "text": "Trace overlay",
+            "fontSize": "50px"
+          }
+        ]
+      }
+    }
+  ],
+  "console": [
+    {
+      "t": 31,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "info",
+      "text": "HISTORY INIT [SLIDES]: {id: SLIDES, newData: Object, location: Object, oldData: null, time: 1791660350958}"
+    },
+    {
+      "t": 33,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "info",
+      "text": "PASTED: {id: slide, data: Object}"
+    },
+    {
+      "t": 34,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "info",
+      "text": "DUPLICATED: {id: null, data: Object, index: 0, showId: ac4e3f731c8, layout: 4893cac4e3f}"
+    },
+    {
+      "t": 205,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "info",
+      "text": "HISTORY INIT [TEMPLATE]: {id: TEMPLATE, save: false, newData: Object, location: Object, oldData: null}"
+    }
+  ],
+  "errors": [],
+  "debug": [
+    {
+      "time": 1791660350970,
+      "category": "SENT",
+      "message": "to output windows: SHOWS"
+    },
+    {
+      "time": 1791660350971,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] SHOWS (1 shows)"
+    },
+    {
+      "time": 1791660350972,
+      "category": "output window Primary",
+      "message": "[RECEIVED] SHOWS (1 shows)"
+    },
+    {
+      "time": 1791660351061,
+      "category": "SENT",
+      "message": "to output windows: SHOWS"
+    },
+    {
+      "time": 1791660351063,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] SHOWS (1 shows)"
+    },
+    {
+      "time": 1791660351063,
+      "category": "output window Primary",
+      "message": "[RECEIVED] SHOWS (1 shows)"
+    },
+    {
+      "time": 1791660351298,
+      "category": "SENT",
+      "message": "to output windows: PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660351298,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660351299,
+      "category": "output window Primary",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660351797,
+      "category": "SENT",
+      "message": "to output windows: PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660351798,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660351798,
+      "category": "output window Primary",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660352301,
+      "category": "SENT",
+      "message": "to output windows: PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660352302,
+      "category": "output window Primary",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660352302,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    }
+  ],
+  "comparison": {
+    "eventIds": [
+      "event-385ba88825318bf5d5",
+      "event-c8383d44ceac97ad0b",
+      "event-bb748e1a699cb8b04a"
+    ],
+    "staticStores": [
+      "actionHistory",
+      "activeDrawerTab",
+      "activeEdit",
+      "activePage",
+      "activePlaylist",
+      "activeRename",
+      "activeScenes",
+      "activeTimers",
+      "clipboard",
+      "currentOutputSettings",
+      "customMessageCredits",
+      "debugEntries",
+      "drawer",
+      "isFadingOut",
+      "lockedOverlays",
+      "media",
+      "metronomeTimer",
+      "notFound",
+      "outputSlideCache",
+      "outputs",
+      "playingAudio",
+      "playingMetronome",
+      "playingVideoState",
+      "playingVideos",
+      "refreshEditSlide",
+      "runningActions",
+      "saved",
+      "showsCache",
+      "statusIndicator",
+      "toastMessages",
+      "usageLog"
+    ],
+    "observedStores": [
+      "activeEdit",
+      "selected",
+      "shows",
+      "showsCache",
+      "undoHistory"
+    ],
+    "unindexedObservedStores": [
+      "undoHistory",
+      "selected",
+      "shows"
+    ],
+    "staticIPC": [
+      "MAIN/ACCESS_MICROPHONE_PERMISSION",
+      "MAIN/GET_THUMBNAIL",
+      "MAIN/LOCATE_MEDIA_FILE",
+      "MAIN/MEDIA_DOWNLOAD",
+      "MAIN/MEDIA_FOLDER_COPY",
+      "MAIN/MEDIA_IS_DOWNLOADED",
+      "MAIN/NOW_PLAYING",
+      "MAIN/NOW_PLAYING_UNSET",
+      "MAIN/PRESENTATION_CONTROL",
+      "MAIN/READ_AUDIO_METADATA",
+      "OUTPUT/ACTIVE_TIMERS",
+      "OUTPUT/ALL_OUTPUTS",
+      "OUTPUT/CREATE",
+      "OUTPUT/CUSTOM_CREDITS",
+      "OUTPUT/MAIN_DEBUG",
+      "OUTPUT/MAIN_SHORTCUT",
+      "OUTPUT/MEDIA",
+      "OUTPUT/METRONOME_TIMER",
+      "OUTPUT/OUTPUTS",
+      "OUTPUT/OUT_SLIDE_CACHE",
+      "OUTPUT/OVERLAYS",
+      "OUTPUT/PLAYING_AUDIO",
+      "OUTPUT/PLAYING_VIDEO_STATE",
+      "OUTPUT/SHOWS",
+      "OUTPUT/TOGGLE_OUTPUTS",
+      "REMOTE/ACTIVE_TIMERS",
+      "REMOTE/AUDIO_ROUTING",
+      "REMOTE/OUT",
+      "REMOTE/OUT_DATA",
+      "REMOTE/RUNNING_ACTIONS",
+      "REMOTE/SHOW",
+      "STAGE/METRONOME_TIMER",
+      "STAGE/OUT",
+      "STAGE/OUT_SLIDE_CACHE",
+      "STAGE/SHOW_DATA"
+    ],
+    "observedIPC": [
+      "OUTPUT/SHOWS",
+      "OUTPUT/MAIN_DEBUG",
+      "STAGE/SHOW_DATA",
+      "OUTPUT/PLAYING_VIDEO_STATE",
+      "MAIN/SPOTIFY_GET_STATE"
+    ],
+    "unindexedObservedIPC": [
+      "MAIN/SPOTIFY_GET_STATE"
+    ],
+    "verdict": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+    "limits": "May-call unions do not predict order or require all effects to execute. IPC/DOM timelines are recorded, not proof of exact function calls; background subscriptions can add effects. No-op keys are observed outcomes."
+  }
+}

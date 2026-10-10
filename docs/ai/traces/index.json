@@ -1,0 +1,800 @@
+{
+  "scenarios": [
+    {
+      "id": "arrowdown-live",
+      "keys": [
+        "ArrowDown"
+      ],
+      "action": "Press ArrowDown in live",
+      "status": "verified",
+      "elapsedMs": 2999,
+      "document": "docs/ai/traces/arrowdown-live.md",
+      "recording": "docs/ai/traces/arrowdown-live.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "arrowleft-live",
+      "keys": [
+        "ArrowLeft"
+      ],
+      "action": "Press ArrowLeft in live",
+      "status": "verified",
+      "elapsedMs": 3019,
+      "document": "docs/ai/traces/arrowleft-live.md",
+      "recording": "docs/ai/traces/arrowleft-live.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "arrowright-editor",
+      "keys": [
+        "ArrowRight"
+      ],
+      "action": "Press ArrowRight in editor",
+      "status": "verified",
+      "elapsedMs": 3103,
+      "document": "docs/ai/traces/arrowright-editor.md",
+      "recording": "docs/ai/traces/arrowright-editor.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "arrowright-live",
+      "keys": [
+        "ArrowRight"
+      ],
+      "action": "Press ArrowRight in live",
+      "status": "verified",
+      "elapsedMs": 3076,
+      "document": "docs/ai/traces/arrowright-live.md",
+      "recording": "docs/ai/traces/arrowright-live.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "arrowup-live",
+      "keys": [
+        "ArrowUp"
+      ],
+      "action": "Press ArrowUp in live",
+      "status": "verified",
+      "elapsedMs": 2984,
+      "document": "docs/ai/traces/arrowup-live.md",
+      "recording": "docs/ai/traces/arrowup-live.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "backspace-input",
+      "keys": [
+        "Backspace"
+      ],
+      "action": "Press Backspace in input",
+      "status": "verified",
+      "elapsedMs": 2997,
+      "document": "docs/ai/traces/backspace-input.md",
+      "recording": "docs/ai/traces/backspace-input.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "clear-button-all",
+      "keys": [],
+      "action": "Click clear all",
+      "status": "verified",
+      "elapsedMs": 3225,
+      "document": "docs/ai/traces/clear-button-all.md",
+      "recording": "docs/ai/traces/clear-button-all.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "clear-button-background",
+      "keys": [],
+      "action": "Click clear background",
+      "status": "verified",
+      "elapsedMs": 3110,
+      "document": "docs/ai/traces/clear-button-background.md",
+      "recording": "docs/ai/traces/clear-button-background.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "clear-button-overlays",
+      "keys": [],
+      "action": "Click clear overlays",
+      "status": "verified",
+      "elapsedMs": 3131,
+      "document": "docs/ai/traces/clear-button-overlays.md",
+      "recording": "docs/ai/traces/clear-button-overlays.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "clear-button-slide",
+      "keys": [],
+      "action": "Click clear slide",
+      "status": "verified",
+      "elapsedMs": 3114,
+      "document": "docs/ai/traces/clear-button-slide.md",
+      "recording": "docs/ai/traces/clear-button-slide.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "click-linked-slide",
+      "keys": [],
+      "action": "Click linked slide card",
+      "status": "verified",
+      "elapsedMs": 3165,
+      "document": "docs/ai/traces/click-linked-slide.md",
+      "recording": "docs/ai/traces/click-linked-slide.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "click-project-item",
+      "keys": [],
+      "action": "Click current show in project",
+      "status": "verified",
+      "elapsedMs": 3066,
+      "document": "docs/ai/traces/click-project-item.md",
+      "recording": "docs/ai/traces/click-project-item.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "click-slide",
+      "keys": [],
+      "action": "Click second slide thumbnail",
+      "status": "verified",
+      "elapsedMs": 3155,
+      "document": "docs/ai/traces/click-slide.md",
+      "recording": "docs/ai/traces/click-slide.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "ctrl-a",
+      "keys": [
+        "Ctrl+A"
+      ],
+      "action": "Press Ctrl+A in selected",
+      "status": "verified",
+      "elapsedMs": 3001,
+      "document": "docs/ai/traces/ctrl-a.md",
+      "recording": "docs/ai/traces/ctrl-a.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "ctrl-c",
+      "keys": [
+        "Ctrl+C"
+      ],
+      "action": "Press Ctrl+C in selected",
+      "status": "verified",
+      "elapsedMs": 3061,
+      "document": "docs/ai/traces/ctrl-c.md",
+      "recording": "docs/ai/traces/ctrl-c.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "ctrl-c-input",
+      "keys": [
+        "Ctrl+C"
+      ],
+      "action": "Press Ctrl+C in input",
+      "status": "verified",
+      "elapsedMs": 3044,
+      "document": "docs/ai/traces/ctrl-c-input.md",
+      "recording": "docs/ai/traces/ctrl-c-input.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "ctrl-d",
+      "keys": [
+        "Ctrl+D"
+      ],
+      "action": "Press Ctrl+D in selected",
+      "status": "verified",
+      "elapsedMs": 3039,
+      "document": "docs/ai/traces/ctrl-d.md",
+      "recording": "docs/ai/traces/ctrl-d.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "ctrl-f",
+      "keys": [
+        "Ctrl+F"
+      ],
+      "action": "Press Ctrl+F in editor",
+      "status": "verified",
+      "elapsedMs": 3094,
+      "document": "docs/ai/traces/ctrl-f.md",
+      "recording": "docs/ai/traces/ctrl-f.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "ctrl-number-drawer",
+      "keys": [
+        "Ctrl+2"
+      ],
+      "action": "Press Ctrl+2 in drawer",
+      "status": "verified",
+      "elapsedMs": 3128,
+      "document": "docs/ai/traces/ctrl-number-drawer.md",
+      "recording": "docs/ai/traces/ctrl-number-drawer.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "ctrl-s",
+      "keys": [
+        "Ctrl+S"
+      ],
+      "action": "Press Ctrl+S in selected",
+      "status": "verified",
+      "elapsedMs": 3035,
+      "document": "docs/ai/traces/ctrl-s.md",
+      "recording": "docs/ai/traces/ctrl-s.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "ctrl-s-popup",
+      "keys": [
+        "Ctrl+S"
+      ],
+      "action": "Press Ctrl+S in popup",
+      "status": "verified",
+      "elapsedMs": 3051,
+      "document": "docs/ai/traces/ctrl-s-popup.md",
+      "recording": "docs/ai/traces/ctrl-s-popup.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "ctrl-v",
+      "keys": [
+        "Ctrl+V"
+      ],
+      "action": "Press Ctrl+V in selected",
+      "status": "verified",
+      "elapsedMs": 3182,
+      "document": "docs/ai/traces/ctrl-v.md",
+      "recording": "docs/ai/traces/ctrl-v.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "ctrl-x",
+      "keys": [
+        "Ctrl+X"
+      ],
+      "action": "Press Ctrl+X in selected",
+      "status": "verified",
+      "elapsedMs": 3086,
+      "document": "docs/ai/traces/ctrl-x.md",
+      "recording": "docs/ai/traces/ctrl-x.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "ctrl-y",
+      "keys": [
+        "Ctrl+Y"
+      ],
+      "action": "Press Ctrl+Y in editor",
+      "status": "verified",
+      "elapsedMs": 3476,
+      "document": "docs/ai/traces/ctrl-y.md",
+      "recording": "docs/ai/traces/ctrl-y.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "ctrl-z",
+      "keys": [
+        "Ctrl+Z"
+      ],
+      "action": "Press Ctrl+Z in editor",
+      "status": "verified",
+      "elapsedMs": 3342,
+      "document": "docs/ai/traces/ctrl-z.md",
+      "recording": "docs/ai/traces/ctrl-z.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "ctrl-z-textbox",
+      "keys": [
+        "Ctrl+Z"
+      ],
+      "action": "Press Ctrl+Z in textbox",
+      "status": "verified",
+      "elapsedMs": 3369,
+      "document": "docs/ai/traces/ctrl-z-textbox.md",
+      "recording": "docs/ai/traces/ctrl-z-textbox.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "debug-toggle",
+      "keys": [
+        "Ctrl+Shift+L"
+      ],
+      "action": "Press Ctrl+Shift+L in live",
+      "status": "verified",
+      "elapsedMs": 3091,
+      "document": "docs/ai/traces/debug-toggle.md",
+      "recording": "docs/ai/traces/debug-toggle.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "delete-slide",
+      "keys": [
+        "Delete"
+      ],
+      "action": "Press Delete in selected",
+      "status": "verified",
+      "elapsedMs": 3020,
+      "document": "docs/ai/traces/delete-slide.md",
+      "recording": "docs/ai/traces/delete-slide.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "drop-media-slide",
+      "keys": [],
+      "action": "Dispatch media drop on first slide with real selected-media state",
+      "status": "verified",
+      "elapsedMs": 3030,
+      "document": "docs/ai/traces/drop-media-slide.md",
+      "recording": "docs/ai/traces/drop-media-slide.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "enter-popup",
+      "keys": [
+        "Enter"
+      ],
+      "action": "Press Enter in popup",
+      "status": "verified",
+      "elapsedMs": 3062,
+      "document": "docs/ai/traces/enter-popup.md",
+      "recording": "docs/ai/traces/enter-popup.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "enter-project",
+      "keys": [
+        "Enter"
+      ],
+      "action": "Press Enter in project",
+      "status": "verified",
+      "elapsedMs": 3113,
+      "document": "docs/ai/traces/enter-project.md",
+      "recording": "docs/ai/traces/enter-project.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "escape-input",
+      "keys": [
+        "Escape"
+      ],
+      "action": "Press Escape in input",
+      "status": "verified",
+      "elapsedMs": 3003,
+      "document": "docs/ai/traces/escape-input.md",
+      "recording": "docs/ai/traces/escape-input.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "escape-live",
+      "keys": [
+        "Escape"
+      ],
+      "action": "Press Escape in live",
+      "status": "verified",
+      "elapsedMs": 3101,
+      "document": "docs/ai/traces/escape-live.md",
+      "recording": "docs/ai/traces/escape-live.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "escape-popup",
+      "keys": [
+        "Escape"
+      ],
+      "action": "Press Escape in popup",
+      "status": "verified",
+      "elapsedMs": 3025,
+      "document": "docs/ai/traces/escape-popup.md",
+      "recording": "docs/ai/traces/escape-popup.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "f1-live",
+      "keys": [
+        "F1"
+      ],
+      "action": "Press F1 in live",
+      "status": "verified",
+      "elapsedMs": 3091,
+      "document": "docs/ai/traces/f1-live.md",
+      "recording": "docs/ai/traces/f1-live.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "f2-live",
+      "keys": [
+        "F2"
+      ],
+      "action": "Press F2 in live",
+      "status": "verified",
+      "elapsedMs": 3049,
+      "document": "docs/ai/traces/f2-live.md",
+      "recording": "docs/ai/traces/f2-live.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "f2-selected",
+      "keys": [
+        "F2"
+      ],
+      "action": "Press F2 in selected",
+      "status": "verified",
+      "elapsedMs": 3057,
+      "document": "docs/ai/traces/f2-selected.md",
+      "recording": "docs/ai/traces/f2-selected.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "f3-live",
+      "keys": [
+        "F3"
+      ],
+      "action": "Press F3 in live",
+      "status": "verified",
+      "elapsedMs": 3047,
+      "document": "docs/ai/traces/f3-live.md",
+      "recording": "docs/ai/traces/f3-live.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "f4-live",
+      "keys": [
+        "F4"
+      ],
+      "action": "Press F4 in live",
+      "status": "verified",
+      "elapsedMs": 3147,
+      "document": "docs/ai/traces/f4-live.md",
+      "recording": "docs/ai/traces/f4-live.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "f5-live",
+      "keys": [
+        "F5"
+      ],
+      "action": "Press F5 in live",
+      "status": "verified",
+      "elapsedMs": 3052,
+      "document": "docs/ai/traces/f5-live.md",
+      "recording": "docs/ai/traces/f5-live.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "menu-drawer-show-delete",
+      "keys": [],
+      "action": "Right click drawer show then delete",
+      "status": "verified",
+      "elapsedMs": 3243,
+      "document": "docs/ai/traces/menu-drawer-show-delete.md",
+      "recording": "docs/ai/traces/menu-drawer-show-delete.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "menu-drawer-show-duplicate",
+      "keys": [],
+      "action": "Right click drawer show then duplicate",
+      "status": "verified",
+      "elapsedMs": 3252,
+      "document": "docs/ai/traces/menu-drawer-show-duplicate.md",
+      "recording": "docs/ai/traces/menu-drawer-show-duplicate.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "menu-project-remove",
+      "keys": [],
+      "action": "Right click project item then remove",
+      "status": "verified",
+      "elapsedMs": 3241,
+      "document": "docs/ai/traces/menu-project-remove.md",
+      "recording": "docs/ai/traces/menu-project-remove.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "menu-project-rename",
+      "keys": [],
+      "action": "Right click project item then rename",
+      "status": "verified",
+      "elapsedMs": 3122,
+      "document": "docs/ai/traces/menu-project-rename.md",
+      "recording": "docs/ai/traces/menu-project-rename.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "menu-selected-delete",
+      "keys": [],
+      "action": "Right click slide then delete",
+      "status": "verified",
+      "elapsedMs": 3162,
+      "document": "docs/ai/traces/menu-selected-delete.md",
+      "recording": "docs/ai/traces/menu-selected-delete.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "menu-selected-duplicate",
+      "keys": [],
+      "action": "Right click slide then duplicate",
+      "status": "verified",
+      "elapsedMs": 3266,
+      "document": "docs/ai/traces/menu-selected-duplicate.md",
+      "recording": "docs/ai/traces/menu-selected-duplicate.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "number-show",
+      "keys": [
+        "2"
+      ],
+      "action": "Press 2 in numbers",
+      "status": "verified",
+      "elapsedMs": 3036,
+      "document": "docs/ai/traces/number-show.md",
+      "recording": "docs/ai/traces/number-show.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "number-tabs",
+      "keys": [
+        "2"
+      ],
+      "action": "Press 2 in live",
+      "status": "verified",
+      "elapsedMs": 3111,
+      "document": "docs/ai/traces/number-tabs.md",
+      "recording": "docs/ai/traces/number-tabs.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "pagedown-live",
+      "keys": [
+        "PageDown"
+      ],
+      "action": "Press PageDown in live",
+      "status": "verified",
+      "elapsedMs": 3024,
+      "document": "docs/ai/traces/pagedown-live.md",
+      "recording": "docs/ai/traces/pagedown-live.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "pageup-live",
+      "keys": [
+        "PageUp"
+      ],
+      "action": "Press PageUp in live",
+      "status": "verified",
+      "elapsedMs": 3004,
+      "document": "docs/ai/traces/pageup-live.md",
+      "recording": "docs/ai/traces/pageup-live.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "remote-action-next",
+      "keys": [],
+      "action": "Remote Socket.IO API:next_slide advances both outputs",
+      "status": "verified",
+      "elapsedMs": 3690,
+      "document": "docs/ai/traces/remote-action-next.md",
+      "recording": "docs/ai/traces/remote-action-next.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "shift-space-live",
+      "keys": [
+        "Shift+Space"
+      ],
+      "action": "Press Shift+Space in live",
+      "status": "verified",
+      "elapsedMs": 3111,
+      "document": "docs/ai/traces/shift-space-live.md",
+      "recording": "docs/ai/traces/shift-space-live.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "space-editor",
+      "keys": [
+        "Space"
+      ],
+      "action": "Press Space in editor",
+      "status": "verified",
+      "elapsedMs": 3142,
+      "document": "docs/ai/traces/space-editor.md",
+      "recording": "docs/ai/traces/space-editor.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "space-empty",
+      "keys": [
+        "Space"
+      ],
+      "action": "Press Space in empty",
+      "status": "verified",
+      "elapsedMs": 3305,
+      "document": "docs/ai/traces/space-empty.md",
+      "recording": "docs/ai/traces/space-empty.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "space-focus",
+      "keys": [
+        "Space"
+      ],
+      "action": "Press Space in focus",
+      "status": "verified",
+      "elapsedMs": 3134,
+      "document": "docs/ai/traces/space-focus.md",
+      "recording": "docs/ai/traces/space-focus.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "space-input",
+      "keys": [
+        "Space"
+      ],
+      "action": "Press Space in input",
+      "status": "verified",
+      "elapsedMs": 3071,
+      "document": "docs/ai/traces/space-input.md",
+      "recording": "docs/ai/traces/space-input.json",
+      "comparison": "Observed store names are covered by the static candidate union.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "space-linked",
+      "keys": [
+        "Space"
+      ],
+      "action": "Press Space in linked",
+      "status": "verified",
+      "elapsedMs": 3111,
+      "document": "docs/ai/traces/space-linked.md",
+      "recording": "docs/ai/traces/space-linked.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "space-live",
+      "keys": [
+        "Space"
+      ],
+      "action": "Press Space in live",
+      "status": "verified",
+      "elapsedMs": 3097,
+      "document": "docs/ai/traces/space-live.md",
+      "recording": "docs/ai/traces/space-live.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    },
+    {
+      "id": "space-textbox",
+      "keys": [
+        "Space"
+      ],
+      "action": "Press Space in textbox",
+      "status": "verified",
+      "elapsedMs": 3126,
+      "document": "docs/ai/traces/space-textbox.md",
+      "recording": "docs/ai/traces/space-textbox.json",
+      "comparison": "Observed stores extend the bounded candidate union; review subscriptions, DOM bindings and unresolved calls.",
+      "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+      "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad"
+    }
+  ]
+}

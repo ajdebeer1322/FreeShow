@@ -1,0 +1,2440 @@
+{
+  "id": "drop-media-slide",
+  "status": "verified",
+  "error": null,
+  "action": "Dispatch media drop on first slide with real selected-media state",
+  "context": "live",
+  "keys": [],
+  "elapsedMs": 3030,
+  "actionEpoch": 1791660426320,
+  "observedAt": "2026-10-10T19:27:08.204Z",
+  "sourceRevision": "379e268046d7de3344b6fa1e7809116a7ba01856",
+  "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
+  "runnerFingerprint": "a2229d9fff86f9c764261e3388dbf4ddfae77403b54542af93dbf2513692adad",
+  "environment": {
+    "electron": "37.10.3",
+    "display": ":99",
+    "ports": [
+      58510,
+      58511,
+      58512,
+      58513
+    ],
+    "isolated": true,
+    "productSourceModified": false,
+    "fixture": "Four slides in two groups, shrinkToFit items, looped fixture video, overlay, two active outputs. Test input injected for input contexts. State restored before each scenario."
+  },
+  "before": {
+    "outputs": {
+      "default": {
+        "enabled": true,
+        "active": true,
+        "name": "Primary",
+        "color": "#3E7DCB",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 960,
+          "height": 540
+        },
+        "screen": null,
+        "style": "default",
+        "show": {},
+        "out": {
+          "slide": {
+            "id": "ac4e3f731c8",
+            "layout": "4893cac4e3f",
+            "index": 0,
+            "line": 0,
+            "projectIndex": 0
+          },
+          "background": {
+            "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "type": "video",
+            "loop": true,
+            "muted": true
+          },
+          "overlays": [
+            "trace-overlay"
+          ]
+        }
+      },
+      "second": {
+        "enabled": true,
+        "active": true,
+        "name": "Trace second output",
+        "color": "#3E7DCB",
+        "bounds": {
+          "x": 960,
+          "y": 0,
+          "width": 960,
+          "height": 540
+        },
+        "screen": null,
+        "style": "default",
+        "show": {},
+        "id": "second",
+        "out": {
+          "slide": {
+            "id": "ac4e3f731c8",
+            "layout": "4893cac4e3f",
+            "index": 0,
+            "line": 0,
+            "projectIndex": 0
+          },
+          "background": {
+            "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "type": "video",
+            "loop": true,
+            "muted": true
+          },
+          "overlays": [
+            "trace-overlay"
+          ]
+        }
+      }
+    },
+    "activeShow": {
+      "id": "ac4e3f731c8",
+      "type": "show",
+      "index": 0
+    },
+    "page": "show",
+    "selected": {
+      "id": null,
+      "data": []
+    },
+    "popup": null,
+    "focus": false,
+    "undoCount": 0,
+    "redoCount": 0,
+    "debugOpen": true,
+    "playingAudio": []
+  },
+  "after": {
+    "outputs": {
+      "default": {
+        "enabled": true,
+        "active": true,
+        "name": "Primary",
+        "color": "#3E7DCB",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 960,
+          "height": 540
+        },
+        "screen": null,
+        "style": "default",
+        "show": {},
+        "out": {
+          "slide": {
+            "id": "ac4e3f731c8",
+            "layout": "4893cac4e3f",
+            "index": 0,
+            "line": 0,
+            "projectIndex": 0
+          },
+          "background": {
+            "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "type": "video",
+            "loop": true,
+            "muted": true
+          },
+          "overlays": [
+            "trace-overlay"
+          ]
+        }
+      },
+      "second": {
+        "enabled": true,
+        "active": true,
+        "name": "Trace second output",
+        "color": "#3E7DCB",
+        "bounds": {
+          "x": 960,
+          "y": 0,
+          "width": 960,
+          "height": 540
+        },
+        "screen": null,
+        "style": "default",
+        "show": {},
+        "id": "second",
+        "out": {
+          "slide": {
+            "id": "ac4e3f731c8",
+            "layout": "4893cac4e3f",
+            "index": 0,
+            "line": 0,
+            "projectIndex": 0
+          },
+          "background": {
+            "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "type": "video",
+            "loop": true,
+            "muted": true
+          },
+          "overlays": [
+            "trace-overlay"
+          ]
+        }
+      }
+    },
+    "activeShow": {
+      "id": "ac4e3f731c8",
+      "type": "show",
+      "index": 0
+    },
+    "page": "show",
+    "selected": {
+      "id": null,
+      "data": []
+    },
+    "popup": null,
+    "focus": false,
+    "undoCount": 1,
+    "redoCount": 0,
+    "debugOpen": true,
+    "playingAudio": []
+  },
+  "ipc": [
+    {
+      "t": 16,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660426.335,\"category\":\"console\",\"data\":{\"arguments\":[\"media\",\"=>\",\"slides\"],\"logger\":\"console\"},\"level\":\"log\",\"message\":\"media => slides\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 18,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660426.336,\"category\":\"console\",\"data\":{\"arguments\":[\"DRAG: \",{\"id\":\"media\",\"data\":[{\"path\":\"<worktree>config/testing/fixtures/output/clipA.mp4\",\"name\":\"Trace video\",\"type\":\"video\"}]}],\"logger\":\"console\"},\"level\":\"info\",\"message\":\"DRAG:  [object Object]\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 23,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660426.337,\"category\":\"console\",\"data\":{\"arguments\":[\"DROP: \",{\"id\":\"slides\",\"data\":{\"showId\":\"ac4e3f731c8\",\"layout\":\"4893cac4e3f\"},\"center\":false}],\"logger\":\"console\"},\"level\":\"info\",\"message\":\"DROP:  [object Object]\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 24,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660426.338,\"category\":\"console\",\"data\":{\"arguments\":[\"media\",\"=>\",\"all_slides\"],\"logger\":\"console\"},\"level\":\"log\",\"message\":\"media => all_slides\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 25,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660426.339,\"category\":\"console\",\"data\":{\"arguments\":[\"HISTORY INIT [SLIDES]:\",{\"id\":\"SLIDES\",\"location\":{\"page\":\"show\",\"show\":{\"id\":\"ac4e3f731c8\"},\"layout\":\"4893cac4e3f\"},\"newData\":{\"data\":[{\"id\":\"8f56b1d5bfb\",\"group\":\"Trace video\",\"color\":null,\"settings\":{},\"notes\":\"\",\"items\":[]}],\"layout\":{\"backgrounds\":[{\"path\":\"<worktree>config/testing/fixtures/output/clipA.mp4\",\"name\":\"Trace video\",\"type\":\"video\",\"muted\":true,\"loop\":true}]}},\"oldData\":null,\"time\":1791660426339}],\"logger\":\"console\"},\"level\":\"info\",\"message\":\"HISTORY INIT [SLIDES]: [object Object]\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 29,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "SHOWS",
+          "data": {
+            "ac4e3f731c8": {
+              "name": "AI trace fixture",
+              "private": false,
+              "category": "song",
+              "settings": {
+                "activeLayout": "4893cac4e3f",
+                "template": null
+              },
+              "timestamps": {
+                "created": 1791660243956,
+                "modified": 1791660426340,
+                "used": null
+              },
+              "quickAccess": {},
+              "meta": {},
+              "slides": {
+                "893cac4e3f7": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit"
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": [
+                    "93cac4e3f73"
+                  ]
+                },
+                "93cac4e3f73": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse second line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit"
+                    }
+                  ]
+                },
+                "3cac4e3f731": {
+                  "group": "Chorus",
+                  "color": "#d1605f",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus long auto-size line for the audience",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit"
+                    }
+                  ],
+                  "globalGroup": "chorus",
+                  "children": [
+                    "cac4e3f731c"
+                  ]
+                },
+                "cac4e3f731c": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus final line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit"
+                    }
+                  ]
+                },
+                "8f56b1d5bfb": {
+                  "group": "Trace video",
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": []
+                }
+              },
+              "layouts": {
+                "4893cac4e3f": {
+                  "name": "Default",
+                  "notes": "",
+                  "slides": [
+                    {
+                      "id": "893cac4e3f7"
+                    },
+                    {
+                      "id": "3cac4e3f731"
+                    },
+                    {
+                      "id": "8f56b1d5bfb",
+                      "background": "f56b1d5bfb7"
+                    }
+                  ]
+                }
+              },
+              "media": {
+                "f56b1d5bfb7": {
+                  "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+                  "name": "Trace video",
+                  "type": "video",
+                  "muted": true,
+                  "loop": true
+                }
+              }
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 30,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "SHOWS",
+          "data": {
+            "ac4e3f731c8": {
+              "name": "AI trace fixture",
+              "private": false,
+              "category": "song",
+              "settings": {
+                "activeLayout": "4893cac4e3f",
+                "template": null
+              },
+              "timestamps": {
+                "created": 1791660243956,
+                "modified": 1791660426340,
+                "used": null
+              },
+              "quickAccess": {},
+              "meta": {},
+              "slides": {
+                "893cac4e3f7": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit"
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": [
+                    "93cac4e3f73"
+                  ]
+                },
+                "93cac4e3f73": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse second line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit"
+                    }
+                  ]
+                },
+                "3cac4e3f731": {
+                  "group": "Chorus",
+                  "color": "#d1605f",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus long auto-size line for the audience",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit"
+                    }
+                  ],
+                  "globalGroup": "chorus",
+                  "children": [
+                    "cac4e3f731c"
+                  ]
+                },
+                "cac4e3f731c": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus final line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit"
+                    }
+                  ]
+                },
+                "8f56b1d5bfb": {
+                  "group": "Trace video",
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": []
+                }
+              },
+              "layouts": {
+                "4893cac4e3f": {
+                  "name": "Default",
+                  "notes": "",
+                  "slides": [
+                    {
+                      "id": "893cac4e3f7"
+                    },
+                    {
+                      "id": "3cac4e3f731"
+                    },
+                    {
+                      "id": "8f56b1d5bfb",
+                      "background": "f56b1d5bfb7"
+                    }
+                  ]
+                }
+              },
+              "media": {
+                "f56b1d5bfb7": {
+                  "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+                  "name": "Trace video",
+                  "type": "video",
+                  "muted": true,
+                  "loop": true
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 30,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "SHOWS",
+          "data": {
+            "ac4e3f731c8": {
+              "name": "AI trace fixture",
+              "private": false,
+              "category": "song",
+              "settings": {
+                "activeLayout": "4893cac4e3f",
+                "template": null
+              },
+              "timestamps": {
+                "created": 1791660243956,
+                "modified": 1791660426340,
+                "used": null
+              },
+              "quickAccess": {},
+              "meta": {},
+              "slides": {
+                "893cac4e3f7": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit"
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": [
+                    "93cac4e3f73"
+                  ]
+                },
+                "93cac4e3f73": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse second line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit"
+                    }
+                  ]
+                },
+                "3cac4e3f731": {
+                  "group": "Chorus",
+                  "color": "#d1605f",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus long auto-size line for the audience",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit"
+                    }
+                  ],
+                  "globalGroup": "chorus",
+                  "children": [
+                    "cac4e3f731c"
+                  ]
+                },
+                "cac4e3f731c": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus final line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit"
+                    }
+                  ]
+                },
+                "8f56b1d5bfb": {
+                  "group": "Trace video",
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": []
+                }
+              },
+              "layouts": {
+                "4893cac4e3f": {
+                  "name": "Default",
+                  "notes": "",
+                  "slides": [
+                    {
+                      "id": "893cac4e3f7"
+                    },
+                    {
+                      "id": "3cac4e3f731"
+                    },
+                    {
+                      "id": "8f56b1d5bfb",
+                      "background": "f56b1d5bfb7"
+                    }
+                  ]
+                }
+              },
+              "media": {
+                "f56b1d5bfb7": {
+                  "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+                  "name": "Trace video",
+                  "type": "video",
+                  "muted": true,
+                  "loop": true
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 32,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660426350,
+            "category": "output window Primary",
+            "message": "[RECEIVED] SHOWS (1 shows)"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 32,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660426350,
+            "category": "output window Primary",
+            "message": "[RECEIVED] SHOWS (1 shows)"
+          }
+        }
+      ]
+    },
+    {
+      "t": 32,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660426350,
+            "category": "output window Primary",
+            "message": "[RECEIVED] SHOWS (1 shows)"
+          }
+        }
+      ]
+    },
+    {
+      "t": 32,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660426350,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] SHOWS (1 shows)"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 32,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660426350,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] SHOWS (1 shows)"
+          }
+        }
+      ]
+    },
+    {
+      "t": 32,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660426350,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] SHOWS (1 shows)"
+          }
+        }
+      ]
+    },
+    {
+      "t": 78,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "GET_THUMBNAIL",
+          "data": {
+            "input": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "size": 900
+          }
+        },
+        "GET_THUMBNAIL56b1d"
+      ]
+    },
+    {
+      "t": 79,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "STAGE",
+      "args": [
+        {
+          "channel": "SHOW_DATA",
+          "data": {
+            "id": "ac4e3f731c8",
+            "show": {
+              "name": "AI trace fixture",
+              "private": false,
+              "category": "song",
+              "settings": {
+                "activeLayout": "4893cac4e3f",
+                "template": null
+              },
+              "timestamps": {
+                "created": 1791660243956,
+                "modified": 1791660426340,
+                "used": null
+              },
+              "quickAccess": {},
+              "meta": {},
+              "slides": {
+                "893cac4e3f7": {
+                  "group": "Verse",
+                  "color": "#3b82c4",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse first line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit"
+                    }
+                  ],
+                  "globalGroup": "verse",
+                  "children": [
+                    "93cac4e3f73"
+                  ]
+                },
+                "93cac4e3f73": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace verse second line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit"
+                    }
+                  ]
+                },
+                "3cac4e3f731": {
+                  "group": "Chorus",
+                  "color": "#d1605f",
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus long auto-size line for the audience",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit"
+                    }
+                  ],
+                  "globalGroup": "chorus",
+                  "children": [
+                    "cac4e3f731c"
+                  ]
+                },
+                "cac4e3f731c": {
+                  "group": null,
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": [
+                    {
+                      "type": "text",
+                      "lines": [
+                        {
+                          "align": "",
+                          "text": [
+                            {
+                              "value": "Trace chorus final line",
+                              "style": "font-size: 100px;"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": "top:88px;left:50px;height:904px;width:1820px;",
+                      "textFit": "shrinkToFit"
+                    }
+                  ]
+                },
+                "8f56b1d5bfb": {
+                  "group": "Trace video",
+                  "color": null,
+                  "settings": {},
+                  "notes": "",
+                  "items": []
+                }
+              },
+              "layouts": {
+                "4893cac4e3f": {
+                  "name": "Default",
+                  "notes": "",
+                  "slides": [
+                    {
+                      "id": "893cac4e3f7"
+                    },
+                    {
+                      "id": "3cac4e3f731"
+                    },
+                    {
+                      "id": "8f56b1d5bfb",
+                      "background": "f56b1d5bfb7"
+                    }
+                  ]
+                }
+              },
+              "media": {
+                "f56b1d5bfb7": {
+                  "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+                  "name": "Trace video",
+                  "type": "video",
+                  "muted": true,
+                  "loop": true
+                }
+              }
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 81,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "CAPTURE_CANVAS",
+          "data": {
+            "input": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "output": "<fixture>/settings/media-cache/i1058145415-900.png",
+            "size": {
+              "width": 900
+            },
+            "extension": "mp4",
+            "config": {
+              "seek": 0.5
+            },
+            "id": "<worktree>config/testing/fixtures/output/clipA.mp4-900"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 81,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "CAPTURE_CANVAS",
+          "data": {
+            "input": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "output": "<fixture>/settings/media-cache/i1058145415-900.png",
+            "size": {
+              "width": 900
+            },
+            "extension": "mp4",
+            "config": {
+              "seek": 0.5
+            },
+            "id": "<worktree>config/testing/fixtures/output/clipA.mp4-900"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 92,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "GET_THUMBNAIL",
+          "data": {
+            "input": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "size": 250
+          }
+        },
+        "GET_THUMBNAILd5bfb"
+      ]
+    },
+    {
+      "t": 92,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "GET_THUMBNAIL",
+          "data": {
+            "input": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "size": 100
+          }
+        },
+        "GET_THUMBNAIL5bfb7"
+      ]
+    },
+    {
+      "t": 92,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "GET_THUMBNAIL",
+          "data": {
+            "input": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "size": 500
+          }
+        },
+        "GET_THUMBNAILbfb75"
+      ]
+    },
+    {
+      "t": 94,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "CAPTURE_CANVAS",
+          "data": {
+            "input": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "output": "<fixture>/settings/media-cache/i1058145415-250.png",
+            "size": {
+              "width": 250
+            },
+            "extension": "mp4",
+            "config": {
+              "seek": 0.5
+            },
+            "id": "<worktree>config/testing/fixtures/output/clipA.mp4-250"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 94,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "CAPTURE_CANVAS",
+          "data": {
+            "input": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "output": "<fixture>/settings/media-cache/i1058145415-250.png",
+            "size": {
+              "width": 250
+            },
+            "extension": "mp4",
+            "config": {
+              "seek": 0.5
+            },
+            "id": "<worktree>config/testing/fixtures/output/clipA.mp4-250"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 94,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "CAPTURE_CANVAS",
+          "data": {
+            "input": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "output": "<fixture>/settings/media-cache/i1058145415-100.png",
+            "size": {
+              "width": 100
+            },
+            "extension": "mp4",
+            "config": {
+              "seek": 0.5
+            },
+            "id": "<worktree>config/testing/fixtures/output/clipA.mp4-100"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 94,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "CAPTURE_CANVAS",
+          "data": {
+            "input": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "output": "<fixture>/settings/media-cache/i1058145415-100.png",
+            "size": {
+              "width": 100
+            },
+            "extension": "mp4",
+            "config": {
+              "seek": 0.5
+            },
+            "id": "<worktree>config/testing/fixtures/output/clipA.mp4-100"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 95,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "CAPTURE_CANVAS",
+          "data": {
+            "input": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "output": "<fixture>/settings/media-cache/i1058145415-500.png",
+            "size": {
+              "width": 500
+            },
+            "extension": "mp4",
+            "config": {
+              "seek": 0.5
+            },
+            "id": "<worktree>config/testing/fixtures/output/clipA.mp4-500"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 95,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "CAPTURE_CANVAS",
+          "data": {
+            "input": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "output": "<fixture>/settings/media-cache/i1058145415-500.png",
+            "size": {
+              "width": 500
+            },
+            "extension": "mp4",
+            "config": {
+              "seek": 0.5
+            },
+            "id": "<worktree>config/testing/fixtures/output/clipA.mp4-500"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 180,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660426.499,\"category\":\"console\",\"data\":{\"arguments\":[\"HISTORY INIT [TEMPLATE]:\",{\"id\":\"TEMPLATE\",\"save\":false,\"newData\":{\"id\":\"\",\"data\":{\"createItems\":false}},\"location\":{\"page\":\"show\",\"show\":{\"id\":\"ac4e3f731c8\"},\"layout\":\"4893cac4e3f\"},\"oldData\":null,\"time\":1791660426499}],\"logger\":\"console\"},\"level\":\"info\",\"message\":\"HISTORY INIT [TEMPLATE]: [object Object]\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 331,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "SPOTIFY_GET_STATE"
+        },
+        "SPOTIFY_GET_STATEfb75b"
+      ]
+    },
+    {
+      "t": 377,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 5.35810000000149,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 5.35810000000149,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 377,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 5.35810000000149,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 5.35810000000149,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 378,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 5.35810000000149,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 5.35810000000149,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 379,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660426698,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 379,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660426698,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 379,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660426698,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 379,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660426698,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 379,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660426698,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 379,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660426698,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 884,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 5.865,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 5.865,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 884,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 5.865,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 5.865,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 884,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 5.865,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 5.865,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 885,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660427205,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 885,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660427205,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 885,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660427205,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 885,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660427205,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 885,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660427205,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 885,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660427205,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1241,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "SAVE_IMAGE",
+          "data": {
+            "id": "<worktree>config/testing/fixtures/output/clipA.mp4-900",
+            "path": "<fixture>/settings/media-cache/i1058145415-900.png",
+            "buffer": {}
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1279,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "SAVE_IMAGE",
+          "data": {
+            "id": "<worktree>config/testing/fixtures/output/clipA.mp4-250",
+            "path": "<fixture>/settings/media-cache/i1058145415-250.png",
+            "buffer": {}
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1283,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "SAVE_IMAGE",
+          "data": {
+            "id": "<worktree>config/testing/fixtures/output/clipA.mp4-100",
+            "path": "<fixture>/settings/media-cache/i1058145415-100.png",
+            "buffer": {}
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1284,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "SAVE_IMAGE",
+          "data": {
+            "id": "<worktree>config/testing/fixtures/output/clipA.mp4-500",
+            "path": "<fixture>/settings/media-cache/i1058145415-500.png",
+            "buffer": {}
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1334,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "DOES_MEDIA_EXIST",
+          "data": {
+            "path": "<fixture>/settings/media-cache/i1058145415-900.png",
+            "noCache": true
+          }
+        },
+        "DOES_MEDIA_EXISTb75b6"
+      ]
+    },
+    {
+      "t": 1337,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "MAIN",
+      "args": [
+        {
+          "channel": "SPOTIFY_GET_STATE"
+        },
+        "SPOTIFY_GET_STATE75b65"
+      ]
+    },
+    {
+      "t": 1382,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "sentry-ipc.scope",
+      "args": [
+        "{\"breadcrumbs\":[{\"timestamp\":1791660427.689,\"category\":\"xhr\",\"data\":{\"method\":\"GET\",\"url\":\"<fixture>/settings/media-cache/i1058145415-900.png\",\"status_code\":200},\"type\":\"http\"}],\"attachments\":[],\"contexts\":{},\"tags\":{},\"attributes\":{},\"extra\":{},\"user\":{},\"fingerprint\":[],\"eventProcessors\":[],\"propagationContext\":{\"traceId\":\"e959a3972843440bab7927d04a7bead8\",\"sampleRand\":0.6170219580497104},\"sdkProcessingMetadata\":{}}"
+      ]
+    },
+    {
+      "t": 1383,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "STAGE",
+      "args": [
+        {
+          "channel": "MEDIA",
+          "data": {
+            "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+            "value": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA4QAAAH6CAIAAADQmxX0AAAAAXNSR0IArs4c6QAACT5JREFUeJzt1kEBADAIACE1+aIvxn0gBbvvBgAACiYKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEBGRgEAyMgoAAAZGQUAICOjAABkZBQAgIyMAgCQkVEAADIyCgBARkYBAMjIKAAAGRkFACAjowAAZGQUAICMjAIAkJFRAAAyMgoAQEZGAQDIyCgAABkZBQAgI6MAAGRkFACAjIwCAJCRUQAAMjIKAEDmAxJZBHcCUKulAAAAAElFTkSuQmCC"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1383,
+      "direction": "renderer-to-main",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 0,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 0,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1383,
+      "direction": "main-to-renderer",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 0,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 0,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 1385,
+      "direction": "main-to-renderer",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "PLAYING_VIDEO_STATE",
+          "data": {
+            "<worktree>config/testing/fixtures/output/clipA.mp4_default": {
+              "currentTime": 0,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            },
+            "<worktree>config/testing/fixtures/output/clipA.mp4_second": {
+              "currentTime": 0,
+              "duration": 6,
+              "paused": false,
+              "loop": true,
+              "muted": true,
+              "softLoop": 0,
+              "softLoopOpacity": 0,
+              "type": "background",
+              "isFadingOut": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "t": 1387,
+      "direction": "renderer-to-main",
+      "window": 5,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660427703,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1387,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660427703,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1387,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660427703,
+            "category": "output window Trace second output",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1387,
+      "direction": "renderer-to-main",
+      "window": 6,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660427705,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "t": 1387,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660427705,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    },
+    {
+      "t": 1387,
+      "direction": "main-to-renderer",
+      "window": 1,
+      "channel": "OUTPUT",
+      "args": [
+        {
+          "channel": "MAIN_DEBUG",
+          "data": {
+            "time": 1791660427705,
+            "category": "output window Primary",
+            "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+          }
+        }
+      ]
+    }
+  ],
+  "storeTimeline": [
+    {
+      "t": 15,
+      "store": "selected"
+    },
+    {
+      "t": 20,
+      "store": "showsCache"
+    },
+    {
+      "t": 20,
+      "store": "showsCache"
+    },
+    {
+      "t": 20,
+      "store": "showsCache"
+    },
+    {
+      "t": 20,
+      "store": "undoHistory"
+    },
+    {
+      "t": 20,
+      "store": "selected"
+    },
+    {
+      "t": 25,
+      "store": "shows"
+    },
+    {
+      "t": 30,
+      "store": "activeEdit"
+    }
+  ],
+  "outputs": [
+    {
+      "window": "second",
+      "url": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "timeline": [
+        {
+          "t": -6,
+          "tokens": [
+            "VID:clipA.mp4@1.0 loop",
+            "T:Trace verse first line@1.0",
+            "T:Trace overlay@1.0"
+          ]
+        }
+      ],
+      "finalText": " Trace verse first line\n Trace overlay",
+      "finalState": {
+        "outputs": {
+          "second": {
+            "enabled": true,
+            "name": "Trace second output",
+            "color": "#3E7DCB",
+            "bounds": {
+              "x": 960,
+              "y": 0,
+              "width": 960,
+              "height": 540
+            },
+            "screen": null,
+            "style": "default",
+            "show": {},
+            "id": "second",
+            "out": {
+              "slide": {
+                "id": "ac4e3f731c8",
+                "layout": "4893cac4e3f",
+                "index": 0,
+                "line": 0,
+                "projectIndex": 0
+              },
+              "background": {
+                "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+                "type": "video",
+                "loop": true,
+                "muted": true
+              },
+              "overlays": [
+                "trace-overlay"
+              ]
+            },
+            "active": true
+          }
+        },
+        "videos": [
+          {
+            "readyState": 4,
+            "paused": false,
+            "currentTime": 0.724441
+          }
+        ],
+        "textBoxes": [
+          {
+            "text": "Trace verse first line",
+            "fontSize": "100px"
+          },
+          {
+            "text": "Trace overlay",
+            "fontSize": "50px"
+          }
+        ]
+      }
+    },
+    {
+      "window": "default",
+      "url": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "timeline": [
+        {
+          "t": -3,
+          "tokens": [
+            "VID:clipA.mp4@1.0 loop",
+            "T:Trace verse first line@1.0",
+            "T:Trace overlay@1.0"
+          ]
+        }
+      ],
+      "finalText": " Trace verse first line\n Trace overlay",
+      "finalState": {
+        "outputs": {
+          "default": {
+            "enabled": true,
+            "name": "Primary",
+            "color": "#3E7DCB",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 960,
+              "height": 540
+            },
+            "screen": null,
+            "style": "default",
+            "show": {},
+            "out": {
+              "slide": {
+                "id": "ac4e3f731c8",
+                "layout": "4893cac4e3f",
+                "index": 0,
+                "line": 0,
+                "projectIndex": 0
+              },
+              "background": {
+                "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+                "type": "video",
+                "loop": true,
+                "muted": true
+              },
+              "overlays": [
+                "trace-overlay"
+              ]
+            },
+            "active": true
+          }
+        },
+        "videos": [
+          {
+            "readyState": 4,
+            "paused": false,
+            "currentTime": 0.729167
+          }
+        ],
+        "textBoxes": [
+          {
+            "text": "Trace verse first line",
+            "fontSize": "100px"
+          },
+          {
+            "text": "Trace overlay",
+            "fontSize": "50px"
+          }
+        ]
+      }
+    }
+  ],
+  "console": [
+    {
+      "t": 19,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "log",
+      "text": "media => slides"
+    },
+    {
+      "t": 23,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "info",
+      "text": "DRAG:  {id: media, data: Array(1)}"
+    },
+    {
+      "t": 24,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "info",
+      "text": "DROP:  {id: slides, data: Object, trigger: undefined, center: false, index: undefined}"
+    },
+    {
+      "t": 27,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "log",
+      "text": "media => all_slides"
+    },
+    {
+      "t": 29,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "info",
+      "text": "HISTORY INIT [SLIDES]: {id: SLIDES, location: Object, newData: Object, oldData: null, time: 1791660426339}"
+    },
+    {
+      "t": 183,
+      "window": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+      "type": "info",
+      "text": "HISTORY INIT [TEMPLATE]: {id: TEMPLATE, save: false, newData: Object, location: Object, oldData: null}"
+    }
+  ],
+  "errors": [],
+  "debug": [
+    {
+      "time": 1791660426345,
+      "category": "SENT",
+      "message": "to output windows: SHOWS"
+    },
+    {
+      "time": 1791660426350,
+      "category": "output window Primary",
+      "message": "[RECEIVED] SHOWS (1 shows)"
+    },
+    {
+      "time": 1791660426350,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] SHOWS (1 shows)"
+    },
+    {
+      "time": 1791660426697,
+      "category": "SENT",
+      "message": "to output windows: PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660426698,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660426698,
+      "category": "output window Primary",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660427204,
+      "category": "SENT",
+      "message": "to output windows: PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660427205,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660427205,
+      "category": "output window Primary",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660427702,
+      "category": "SENT",
+      "message": "to output windows: PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660427703,
+      "category": "output window Trace second output",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    },
+    {
+      "time": 1791660427705,
+      "category": "output window Primary",
+      "message": "[RECEIVED] PLAYING_VIDEO_STATE"
+    }
+  ],
+  "comparison": {
+    "eventIds": [
+      "event-e497fbdb77be01cc03",
+      "event-982e1116b879d9cb61",
+      "event-54a94a20f874166338",
+      "event-c1a5f9120313ade9c8",
+      "event-7c1dea6e5ae6430929",
+      "event-3b6545ab42fb3bac4a",
+      "event-78e1681ef029841ea1",
+      "event-6344d727ff2536a012",
+      "event-27f79bb5dc5c4e4640",
+      "event-b7bfed56e91f917543",
+      "event-d6231a822a26acd75e",
+      "event-88d73c5f20e831a672",
+      "event-d91d60c1eeef61ff1f",
+      "event-5acd93328c8cc40569",
+      "event-c3415ab9190ab9bed2",
+      "event-67b1ddf662047348c6",
+      "event-2b98d96b9648b0a28b",
+      "event-5c3265ac9341371568",
+      "event-3690cca5e02bcdfa2b",
+      "event-268294c33984edb845",
+      "event-9286f8659408a7fcbb",
+      "event-f7159f68d5751ae25e",
+      "event-e801f59e540012c90e",
+      "event-cefd914acbb6e18e7f",
+      "event-8637fb5fc7f47ecfc3",
+      "event-209456e155832982d2",
+      "event-4028b12420887d9bef",
+      "event-1b3352a743cabbf4dc",
+      "event-d8b25bfd114a74f4a3",
+      "event-9df6064aecc8435083",
+      "event-96b2267e5a22ab729d"
+    ],
+    "staticStores": [
+      "activeEdit",
+      "activePage",
+      "activePopup",
+      "activeRename",
+      "activeShow",
+      "activeStage",
+      "alertMessage",
+      "cachedShowsData",
+      "currentOutputSettings",
+      "deletedShows",
+      "effectsLibrary",
+      "media",
+      "notFound",
+      "outputs",
+      "playerVideos",
+      "projects",
+      "redoHistory",
+      "refreshEditSlide",
+      "renamedShows",
+      "saved",
+      "scripturesCache",
+      "selected",
+      "shows",
+      "showsCache",
+      "special",
+      "stageShows",
+      "statusIndicator",
+      "timers",
+      "toastMessages",
+      "undoHistory"
+    ],
+    "observedStores": [
+      "activeEdit",
+      "selected",
+      "shows",
+      "showsCache",
+      "undoHistory"
+    ],
+    "unindexedObservedStores": [],
+    "staticIPC": [
+      "MAIN/BIBLE",
+      "MAIN/CHECK_MEDIA_LICENSE",
+      "MAIN/FILE_INFO",
+      "MAIN/IMPORT_FILES",
+      "MAIN/MEDIA_DOWNLOAD",
+      "MAIN/MEDIA_IS_DOWNLOADED",
+      "MAIN/SAVE",
+      "MAIN/SHOW",
+      "OUTPUT/ALL_OUTPUTS",
+      "OUTPUT/CREATE",
+      "OUTPUT/MEDIA",
+      "OUTPUT/OUTPUTS",
+      "OUTPUT/PLAYER_VIDEOS",
+      "OUTPUT/PROJECTS",
+      "OUTPUT/SHOWS",
+      "OUTPUT/SPECIAL",
+      "OUTPUT/STAGE",
+      "OUTPUT/TIMERS",
+      "REMOTE/AUDIO_ROUTING",
+      "REMOTE/OUT",
+      "REMOTE/OUT_DATA",
+      "REMOTE/PROJECTS",
+      "REMOTE/SHOW",
+      "REMOTE/TIMERS",
+      "STAGE/LAYOUT",
+      "STAGE/OUT",
+      "STAGE/SHOW_DATA",
+      "STAGE/TIMERS"
+    ],
+    "observedIPC": [
+      "OUTPUT/SHOWS",
+      "OUTPUT/MAIN_DEBUG",
+      "MAIN/GET_THUMBNAIL",
+      "STAGE/SHOW_DATA",
+      "MAIN/CAPTURE_CANVAS",
+      "MAIN/SPOTIFY_GET_STATE",
+      "OUTPUT/PLAYING_VIDEO_STATE",
+      "MAIN/SAVE_IMAGE",
+      "MAIN/DOES_MEDIA_EXIST",
+      "STAGE/MEDIA"
+    ],
+    "unindexedObservedIPC": [
+      "OUTPUT/MAIN_DEBUG",
+      "MAIN/GET_THUMBNAIL",
+      "MAIN/CAPTURE_CANVAS",
+      "MAIN/SPOTIFY_GET_STATE",
+      "OUTPUT/PLAYING_VIDEO_STATE",
+      "MAIN/SAVE_IMAGE",
+      "MAIN/DOES_MEDIA_EXIST",
+      "STAGE/MEDIA"
+    ],
+    "verdict": "Observed store names are covered by the static candidate union.",
+    "limits": "May-call unions do not predict order or require all effects to execute. IPC/DOM timelines are recorded, not proof of exact function calls; background subscriptions can add effects. No-op keys are observed outcomes."
+  }
+}
