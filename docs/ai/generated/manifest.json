@@ -9,9 +9,9 @@
     "files": 1066,
     "stores": 384,
     "channels": 30,
-    "messages": 468,
+    "messages": 463,
     "settings": 567,
-    "timers": 1056,
+    "timers": 1158,
     "workarounds": 311,
     "components": 560,
     "diagnostics": 0,
@@ -1593,7 +1593,11 @@
       "timers/040.json",
       "timers/041.json",
       "timers/042.json",
-      "timers/043.json"
+      "timers/043.json",
+      "timers/044.json",
+      "timers/045.json",
+      "timers/046.json",
+      "timers/047.json"
     ],
     "workarounds": [
       "workarounds/001.json",

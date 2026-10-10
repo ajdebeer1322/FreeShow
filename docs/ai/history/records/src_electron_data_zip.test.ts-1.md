@@ -1,0 +1,21 @@
+# Decision records: src/electron/data/zip.test.ts
+
+Evidence for the mapped source snapshot. [code] Provenance traces source text; [guess] marks uncertain intent.
+
+## D-timer-2d8a1a3a9a96d361
+
+[guess] setTimeout: 100 (100 ms)
+
+Location: [src/electron/data/zip.test.ts:107](../../../../src/electron/data/zip.test.ts#L107). Category: timing.
+
+Added/traced: [6b1113ca](https://github.com/ChurchApps/FreeShow/commit/6b1113ca15e1fa33d06e4bfd45a9b89dac2d0a0f) on 2026-08-14; git log -S --follow (earliest exact-text occurrence in file lineage).
+
+Unresolved: local history identifies an addition/edit but gives no item-specific motive.
+
+Sources:
+
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/6b1113ca15e1fa33d06e4bfd45a9b89dac2d0a0f): “1.6.5-beta.3 (#3610) * Updated Norwegian language * Don't show network output node if no network outputs * Reset sync state if failed * Updated languages * Fixed videos with modifi”
+
+Later line edits: 0; latest 6b1113ca. Full commit messages and lineage: JSON query data.
+
+GitHub: [pr #3610](https://github.com/ChurchApps/FreeShow/pull/3610) (read; no item-specific matching bullet); [pr #3610](https://github.com/ChurchApps/FreeShow/pull/3610) (read; no item-specific matching bullet)

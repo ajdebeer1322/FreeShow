@@ -32,6 +32,7 @@ No static evidence found.
 
 - [src/frontend/utils/pcoLiveSync.ts:134](../../../../src/frontend/utils/pcoLiveSync.ts#L134) — timer-15715f6d97c419c5: setInterval = 1000 ms (TICK_INTERVAL_MS); 
 - [src/frontend/utils/pcoLiveSync.ts:230](../../../../src/frontend/utils/pcoLiveSync.ts#L230) — timer-d9dde3fb3f198420: setTimeout = 500 ms (RECOVERY_POLL_DEBOUNCE_MS); 
+- [src/frontend/utils/pcoLiveSync.ts:247](../../../../src/frontend/utils/pcoLiveSync.ts#L247) — request-budget-43b9cbc0bf9cf158: request-budget = 15000 ms (15000); 
 
 ## Workarounds
 

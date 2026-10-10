@@ -30,7 +30,7 @@ None detected.
 
 ## Timing
 
-No static evidence found.
+- [src/frontend/ai/components/popups/LlmFiles.svelte:13](../../../../src/frontend/ai/components/popups/LlmFiles.svelte#L13) — request-budget-b692d5e207194203: request-budget = 15000 ms (15000); 
 
 ## Workarounds
 

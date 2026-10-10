@@ -8,7 +8,7 @@ Start here before changing the code. Prefer generated facts and read the referen
 | Who sends or handles a message? | `npm run ai:ask -- channel OUTPUT`; [channel index](generated/channels/README.md) |
 | What imports a file; which components, props and stores does it use? | `npm run ai:ask -- file src/frontend/components/output/Output.svelte`; [files](generated/files/README.md), [components](generated/components/README.md) |
 | Which process/window owns something? | [Window/process map](generated/windows/README.md) |
-| Why is a delay or workaround here? | `npm run ai:ask -- why <file>:<line>`; history phase tracked in [progress](PROGRESS.md) |
+| Why is a delay or workaround here? | `npm run ai:ask -- why <file>:<line>`; [sourced records and coverage](history/README.md) |
 | Where are delays in an area? | `npm run ai:ask -- timers src/frontend/components/output`; [timing index](generated/timers/README.md) |
 | Which settings are used where? | [Settings index](generated/settings/README.md) |
 | Which comments call out unfinished work or bugs? | [Workaround index](generated/workarounds/README.md) |

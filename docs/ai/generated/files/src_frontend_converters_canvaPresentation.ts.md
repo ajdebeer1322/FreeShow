@@ -33,7 +33,10 @@ No static evidence found.
 
 ## Timing
 
-No static evidence found.
+- [src/frontend/converters/canvaPresentation.ts:45](../../../../src/frontend/converters/canvaPresentation.ts#L45) — request-budget-87c6696e00b30371: request-budget = 60000 ms (CANVA_PREVIEW_TIMEOUT); 
+- [src/frontend/converters/canvaPresentation.ts:98](../../../../src/frontend/converters/canvaPresentation.ts#L98) — request-budget-8be7018f3f77454a: request-budget = 60000 ms (CANVA_PREVIEW_TIMEOUT); 
+- [src/frontend/converters/canvaPresentation.ts:102](../../../../src/frontend/converters/canvaPresentation.ts#L102) — request-budget-d9a23edf72e7bee0: request-budget = 120000 ms (CANVA_EXPORT_TIMEOUT); 
+- [src/frontend/converters/canvaPresentation.ts:200](../../../../src/frontend/converters/canvaPresentation.ts#L200) — request-budget-534c7009d300d95a: request-budget = 60000 ms (CANVA_PREVIEW_TIMEOUT); 
 
 ## Workarounds
 

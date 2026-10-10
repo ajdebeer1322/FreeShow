@@ -79,6 +79,7 @@ No static evidence found.
 
 ## Timing
 
+- [src/frontend/components/helpers/setShow.ts:186](../../../../src/frontend/components/helpers/setShow.ts#L186) — request-budget-cbbb22bcf02d3c62: request-budget = 15000 ms (15000); 
 - [src/frontend/components/helpers/setShow.ts:247](../../../../src/frontend/components/helpers/setShow.ts#L247) — timer-0afe36641d41c302: setTimeout = 200 ms (200); 
 - [src/frontend/components/helpers/setShow.ts:262](../../../../src/frontend/components/helpers/setShow.ts#L262) — timer-e8573623c5988ae6: setTimeout = 1000 ms (1000); // prevent rapid updates
 

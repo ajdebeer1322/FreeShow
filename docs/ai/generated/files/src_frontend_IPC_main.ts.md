@@ -129,6 +129,7 @@ No static evidence found.
 
 ## Timing
 
+- [src/frontend/IPC/main.ts:13](../../../../src/frontend/IPC/main.ts#L13) — request-budget-4a7d3df3f747e143: request-budget = 15000 ms (15000); // @ts-ignore // T extends keyof typeof Main
 - [src/frontend/IPC/main.ts:37](../../../../src/frontend/IPC/main.ts#L37) — timer-1c2d045c0df0ef2e: setTimeout = dynamic ms (waitingTimeout); 
 
 ## Workarounds

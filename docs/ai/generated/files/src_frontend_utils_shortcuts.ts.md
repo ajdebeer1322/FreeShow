@@ -111,6 +111,7 @@ No static evidence found.
 - [src/frontend/utils/shortcuts.ts:125](../../../../src/frontend/utils/shortcuts.ts#L125) — timer-851791bf1a8c5445: setTimeout = 20 ms (20); // give time so output don't clear also
 - [src/frontend/utils/shortcuts.ts:142](../../../../src/frontend/utils/shortcuts.ts#L142) — timer-19c301648459c9bd: setTimeout = 0 ms (omitted); // give time so it don't clear slide // default menu "togglefullscreen" role not working in production on Windows/Linux
 - [src/frontend/utils/shortcuts.ts:355](../../../../src/frontend/utils/shortcuts.ts#L355) — timer-49cc82e274a964e9: setTimeout = 0 ms (omitted); // presenter controller keys // WIP if (allCleared) fullscreen = false
+- [src/frontend/utils/shortcuts.ts:552](../../../../src/frontend/utils/shortcuts.ts#L552) — request-budget-8f3ea1ff0f1850b2: request-budget = 15000 ms (15000); 
 
 ## Workarounds
 

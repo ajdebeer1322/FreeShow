@@ -1,6 +1,4 @@
 [
-  "MAIN/AI_LLM_COMPLETE",
-  "MAIN/TOAST",
   "MAIN/AI_STATUS",
   "MAIN/AI_TRANSCRIPT",
   "MAIN/AUDIO_METADATA",
@@ -38,5 +36,7 @@
   "MAIN/origin",
   "MAIN/AUDIO",
   "MAIN/pdf",
-  "MAIN/powerkey"
+  "MAIN/powerkey",
+  "MAIN/freeshow",
+  "MAIN/freeshow_project"
 ]

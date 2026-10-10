@@ -40,7 +40,7 @@ No static evidence found.
 
 ## Timing
 
-No static evidence found.
+- [src/frontend/components/helpers/drop.ts:81](../../../../src/frontend/components/helpers/drop.ts#L81) — request-budget-5e3d9ebc61b5c4a2: request-budget = 15000 ms (15000); 
 
 ## Workarounds
 

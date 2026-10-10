@@ -72,6 +72,7 @@ No static evidence found.
 
 - [src/frontend/audio/audioPlayer.ts:324](../../../../src/frontend/audio/audioPlayer.ts#L324) — timer-9807349814ea2248: setTimeout = dynamic ms (waitToPlay * 1000); 
 - [src/frontend/audio/audioPlayer.ts:346](../../../../src/frontend/audio/audioPlayer.ts#L346) — timer-20c98931bc13a4a6: setInterval = 1000 ms (1000); 
+- [src/frontend/audio/audioPlayer.ts:654](../../../../src/frontend/audio/audioPlayer.ts#L654) — request-budget-d2c4392b834275a6: request-budget = 15000 ms (15000); 
 
 ## Workarounds
 

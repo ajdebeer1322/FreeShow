@@ -30,7 +30,7 @@ None detected.
 
 ## Timing
 
-No static evidence found.
+- [src/frontend/components/drawer/live/Windows.svelte:16](../../../../src/frontend/components/drawer/live/Windows.svelte#L16) — request-budget-7e2cb521bc469124: request-budget = 15000 ms (15000); 
 
 ## Workarounds
 

@@ -33,7 +33,7 @@ No static evidence found.
 
 ## Timing
 
-No static evidence found.
+- [src/frontend/components/quicksearch/quicksearchData.ts:24](../../../../src/frontend/components/quicksearch/quicksearchData.ts#L24) — request-budget-65234f0bc86b2a64: request-budget = 15000 ms (15000); 
 
 ## Workarounds
 

@@ -386,7 +386,16 @@ export function scan(options = {}) {
                     const defaultValue = symbolDefault(context, node.expression, index)
                     context.timers.push({ id: factId(context, "timer", node.getText(context.sf)), ...ref(context, node), endLine: context.sf.getLineAndCharacterOfPosition(node.end).line + 1, kind: imported, expression: argument?.getText(context.sf) || defaultValue?.expression || "omitted", valueMs: typeof explicit === "number" && Number.isFinite(explicit) ? explicit : !argument && typeof defaultValue?.value === "number" ? defaultValue.value : !argument && ["setTimeout", "setInterval"].includes(imported) ? 0 : null, default: defaultValue, symbol: functionName(node), code: compact(node.getText(context.sf), 500), nearbyComments: nearby(context, ref(context, node).line), confidence: "code" })
                 }
-                if (["sendMain", "requestMain", "receiveMain", "sendToMain", "requestToMain", "receiveToMain"].includes(imported) && args[0]) endpoint(context, node, "MAIN", [staticValue(context, args[0]) || name(args[0])], imported.startsWith("receive") ? "receive" : "send", args[1])
+                if (["sendMainMultiple", "requestMainMultiple"].includes(imported) && args[0]) {
+                    const keys = ts.isArrayLiteralExpression(args[0]) ? args[0].elements.map(arg => staticValue(context, arg)) : ts.isObjectLiteralExpression(args[0]) ? args[0].properties.map(prop => ts.isComputedPropertyName(prop.name) ? staticValue(context, prop.name.expression) : name(prop.name)) : []
+                    endpoint(context, node, "MAIN", keys, "send", null)
+                }
+                if (["requestMain", "requestToMain"].includes(imported)) {
+                    const index = imported === "requestMain" ? 3 : 4, argument = args[index], defaultValue = symbolDefault(context, node.expression, index)
+                    const value = argument ? staticValue(context, argument) : defaultValue?.value
+                    context.timers.push({ id: factId(context, "request-budget", node.getText(context.sf)), ...ref(context, node), kind: "request-budget", expression: argument?.getText(context.sf) || defaultValue?.expression || "unknown", valueMs: typeof value === "number" ? value : null, default: defaultValue, code: compact(node.getText(context.sf), 500), nearbyComments: nearby(context, ref(context, node).line), confidence: "code" })
+                }
+                if (["sendMain", "requestMain", "receiveMain", "sendToMain", "requestToMain", "receiveToMain"].includes(imported) && args[0]) endpoint(context, node, "MAIN", [staticValue(context, args[0])], imported.startsWith("receive") ? "receive" : "send", args[1])
                 else if (["send", "receive", "sendData", "timedout", "on", "handle", "emit", "reply", "sendToOutput"].includes(imported) && args[0]) {
                     const binding = context.bindings.get(method)
                     const qualified = ts.isPropertyAccessExpression(node.expression) ? node.expression.expression.getText(context.sf) : ""
@@ -398,7 +407,7 @@ export function scan(options = {}) {
                         else if (args[1] && ts.isObjectLiteralExpression(args[1])) {
                             const keyProperty = args[1].properties.find((property) => name(property.name) === "channel")
                             const dataProperty = args[1].properties.find((property) => name(property.name) === "data")
-                            keys = keyProperty ? [staticValue(context, keyProperty.initializer) || name(keyProperty.initializer)] : []
+                            keys = keyProperty ? [staticValue(context, keyProperty.initializer)] : []
                             payload = dataProperty?.initializer || args[1]
                             if (imported === "receive" && !keyProperty) keys = args[1].properties.map((property) => name(property.name)).filter(Boolean)
                         }

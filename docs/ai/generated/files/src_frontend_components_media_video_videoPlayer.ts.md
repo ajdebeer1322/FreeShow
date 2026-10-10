@@ -59,6 +59,7 @@ No static evidence found.
 - [src/frontend/components/media/video/videoPlayer.ts:467](../../../../src/frontend/components/media/video/videoPlayer.ts#L467) — timer-88afe0d0358f6192: setTimeout = dynamic ms (durationMs); // silent / video-only files use a virtual clock — no audio to fade, but we still // need to hold off pausing the vide
 - [src/frontend/components/media/video/videoPlayer.ts:525](../../../../src/frontend/components/media/video/videoPlayer.ts#L525) — timer-ee6d648cb5a47588: setTimeout = dynamic ms (durationMs); 
 - [src/frontend/components/media/video/videoPlayer.ts:558](../../../../src/frontend/components/media/video/videoPlayer.ts#L558) — timer-50d96301ef560df0: setTimeout = dynamic ms (durationMs); 
+- [src/frontend/components/media/video/videoPlayer.ts:705](../../../../src/frontend/components/media/video/videoPlayer.ts#L705) — request-budget-0b4bc13cfa359851: request-budget = 15000 ms (15000); 
 - [src/frontend/components/media/video/videoPlayer.ts:737](../../../../src/frontend/components/media/video/videoPlayer.ts#L737) — timer-19871648cec0be99: setInterval = dynamic ms (get(special).optimizedMode ? 500 : 100); // update immediately
 - [src/frontend/components/media/video/videoPlayer.ts:890](../../../../src/frontend/components/media/video/videoPlayer.ts#L890) — timer-245cd5f7c05a73d0: setTimeout = 300 ms (300); 
 - [src/frontend/components/media/video/videoPlayer.ts:909](../../../../src/frontend/components/media/video/videoPlayer.ts#L909) — timer-6719b9b5acd92dc1: setTimeout = 0 ms (omitted); 

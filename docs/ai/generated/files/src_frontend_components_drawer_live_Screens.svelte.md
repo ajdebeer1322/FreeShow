@@ -24,7 +24,7 @@ None detected.
 
 ## Timing
 
-No static evidence found.
+- [src/frontend/components/drawer/live/Screens.svelte:11](../../../../src/frontend/components/drawer/live/Screens.svelte#L11) — request-budget-73e51a4a9c438d0b: request-budget = 15000 ms (15000); 
 
 ## Workarounds
 

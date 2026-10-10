@@ -70,6 +70,7 @@ No static evidence found.
 - [src/frontend/utils/startup.ts:91](../../../../src/frontend/utils/startup.ts#L91) — timer-e3cfcb6d5a1e1624: wait = 3000 ms (3000); // }
 - [src/frontend/utils/startup.ts:102](../../../../src/frontend/utils/startup.ts#L102) — timer-3c917e7b669ba507: setTimeout = 10000 ms (10000); // CHECK LISTENERS // console.log(window.api.getListeners()) // RAM MONITOR (every 10 minutes)
 - [src/frontend/utils/startup.ts:103](../../../../src/frontend/utils/startup.ts#L103) — timer-317a6f025267735b: setInterval = 600000 ms (600000); // CHECK LISTENERS // console.log(window.api.getListeners()) // RAM MONITOR (every 10 minutes)
+- [src/frontend/utils/startup.ts:121](../../../../src/frontend/utils/startup.ts#L121) — request-budget-5a2fe375e793011f: request-budget = 15000 ms (15000); 
 - [src/frontend/utils/startup.ts:167](../../../../src/frontend/utils/startup.ts#L167) — timer-3d52cd3cdb47a56a: setTimeout = 2000 ms (2000); 
 - [src/frontend/utils/startup.ts:206](../../../../src/frontend/utils/startup.ts#L206) — poll-interval-0a7ff818a353030e: poll-interval = 200 ms (200); 
 - [src/frontend/utils/startup.ts:206](../../../../src/frontend/utils/startup.ts#L206) — poll-timeout-e1287cb444cf94aa: poll-timeout = 8000 ms (8000); 

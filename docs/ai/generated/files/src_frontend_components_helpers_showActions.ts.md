@@ -130,6 +130,7 @@ No static evidence found.
 - [src/frontend/components/helpers/showActions.ts:659](../../../../src/frontend/components/helpers/showActions.ts#L659) — timer-306169a1b680e355: setTimeout = 10 ms (10); // defocus search input
 - [src/frontend/components/helpers/showActions.ts:720](../../../../src/frontend/components/helpers/showActions.ts#L720) — timer-740c1f8368df9e9e: setTimeout = 600 ms (600); // MAKE SURE NEXT SLIDE HAS TRANSITIONED
 - [src/frontend/components/helpers/showActions.ts:931](../../../../src/frontend/components/helpers/showActions.ts#L931) — timer-1e0c03ac8679480d: setTimeout = 3000 ms (3000); 
+- [src/frontend/components/helpers/showActions.ts:1506](../../../../src/frontend/components/helpers/showActions.ts#L1506) — request-budget-a06b3c813a5e0f6b: request-budget = 15000 ms (15000); 
 
 ## Workarounds
 
