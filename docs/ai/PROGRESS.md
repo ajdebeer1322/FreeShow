@@ -24,4 +24,6 @@ Phase 7 source base: `a3cdd7f576480f842077c233c79f6f4c3238fd07` (local `main-tes
 
 The checkout has independent Git refs at `/home/andre/FreeShow-ai-map-isolated.git`; another folder can commit to its own main-tests without moving this branch. No pull, rebase or push.
 
-Checkpoint before T3 authentication mode change: step 2 committed; step 3 runtime build succeeds in the ignored cache. Runtime-entry test exports are pending step 3. Existing flow observations and final check need refresh; phase 7 is incomplete.
+Checkpoint before T3 authentication mode change: step 2 committed; step 3 runtime build succeeds in the ignored cache. Runtime-entry test exports are saved for step 3. Existing flow observations and final check need refresh; phase 7 is incomplete.
+
+User-authorized publishing checkpoint: 16 map regression tests pass; the ignored runtime app builds. Step 3 exposes existing action/menu/drop/clear helpers only through the test entry. No product source or companion guides changed. Phase 7 live recordings, trace links and inherited stale-evidence checks remain pending. Push is authorized for this checkpoint; future pushes require user instruction.
