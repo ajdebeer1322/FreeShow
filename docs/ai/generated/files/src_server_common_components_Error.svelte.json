@@ -1,0 +1,3 @@
+[
+  {"file":"src/server/common/components/Error.svelte","area":"server","hash":"62c82457a8de019643f955423721933fe9cbd1d4d7ad2dcfd92ef5d1db130d11","lineCount":26,"imports":[],"symbols":[{"file":"src/server/common/components/Error.svelte","line":2,"name":"errors","kind":"VariableDeclaration","endLine":2}],"stores":[],"components":[],"timers":[],"workarounds":[],"settings":[],"ipc":[],"comments":[]}
+]

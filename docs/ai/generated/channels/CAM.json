@@ -1,0 +1,3 @@
+[
+  {"name":"CAM","definitions":[],"messages":["CAM/STREAM"],"endpoints":[{"file":"src/server/cam/App.svelte","line":29,"endLine":32,"channel":"CAM","keys":["STREAM"],"role":"send","direction":"browser client → desktop","symbol":"viewVideo","payload":"canvas.toDataURL(\"image/webp\")","expression":"socket.emit(\"CAM\", { channel: \"STREAM\", data: canvas.toDataURL(\"image/webp\") })","dynamic":false}]}
+]

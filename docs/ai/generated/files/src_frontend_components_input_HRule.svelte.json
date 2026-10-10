@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/input/HRule.svelte","area":"frontend","hash":"73b3ae184395ff0fb76efc33c4898b284ebf83ac546a3403902185a9dfc58c36","lineCount":40,"imports":[{"file":"src/frontend/components/input/HRule.svelte","line":2,"specifier":"../../utils/language","target":"src/frontend/utils/language.ts","kind":"static","typeOnly":false,"bindings":[{"local":"translateText","imported":"translateText","typeOnly":false}]}],"symbols":[{"file":"src/frontend/components/input/HRule.svelte","line":4,"name":"title","kind":"VariableDeclaration","endLine":4}],"stores":[],"components":[],"timers":[],"workarounds":[],"settings":[],"ipc":[],"comments":[]}
+]

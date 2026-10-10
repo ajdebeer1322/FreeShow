@@ -1,0 +1,21 @@
+[
+  {"file":"src/electron/utils/gpu.ts","line":210,"name":"allLinuxGpuVendors","kind":"FunctionDeclaration","endLine":218},
+  {"file":"src/electron/utils/gpu.ts","line":211,"name":"nodes","kind":"VariableDeclaration","endLine":211},
+  {"file":"src/electron/utils/gpu.ts","line":220,"name":"runGpuHealthCheck","kind":"FunctionDeclaration","endLine":273},
+  {"file":"src/electron/utils/gpu.ts","line":223,"name":"status","kind":"VariableDeclaration","endLine":223},
+  {"file":"src/electron/utils/gpu.ts","line":226,"name":"err","kind":"VariableDeclaration","endLine":226},
+  {"file":"src/electron/utils/gpu.ts","line":231,"name":"compositingHw","kind":"VariableDeclaration","endLine":231},
+  {"file":"src/electron/utils/gpu.ts","line":232,"name":"statusDecodeHw","kind":"VariableDeclaration","endLine":232},
+  {"file":"src/electron/utils/gpu.ts","line":233,"name":"hwDecodeProbe","kind":"VariableDeclaration","endLine":233},
+  {"file":"src/electron/utils/gpu.ts","line":235,"name":"videoDecodeHw","kind":"VariableDeclaration","endLine":235},
+  {"file":"src/electron/utils/gpu.ts","line":243,"name":"vendorName","kind":"VariableDeclaration","endLine":243},
+  {"file":"src/electron/utils/gpu.ts","line":245,"name":"info","kind":"VariableDeclaration","endLine":245},
+  {"file":"src/electron/utils/gpu.ts","line":246,"name":"d","kind":"VariableDeclaration","endLine":246},
+  {"file":"src/electron/utils/gpu.ts","line":254,"name":"issue","kind":"VariableDeclaration","endLine":254},
+  {"file":"src/electron/utils/gpu.ts","line":258,"name":"vaDriverMissing","kind":"VariableDeclaration","endLine":258},
+  {"file":"src/electron/utils/gpu.ts","line":259,"name":"packages","kind":"VariableDeclaration","endLine":259},
+  {"file":"src/electron/utils/gpu.ts","line":261,"name":"drivers","kind":"VariableDeclaration","endLine":261},
+  {"file":"src/electron/utils/gpu.ts","line":262,"name":"configuredNode","kind":"VariableDeclaration","endLine":262},
+  {"file":"src/electron/utils/gpu.ts","line":263,"name":"candidateVendors","kind":"VariableDeclaration","endLine":263},
+  {"file":"src/electron/utils/gpu.ts","line":264,"name":"missingVendors","kind":"VariableDeclaration","endLine":264}
+]

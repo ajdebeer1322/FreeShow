@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/output/preview/PreviewCanvas.svelte","renders":[],"props":[{"name":"capture","file":"src/frontend/components/output/preview/PreviewCanvas.svelte","line":6},{"name":"fullscreen","file":"src/frontend/components/output/preview/PreviewCanvas.svelte","line":7},{"name":"disabled","file":"src/frontend/components/output/preview/PreviewCanvas.svelte","line":8},{"name":"id","file":"src/frontend/components/output/preview/PreviewCanvas.svelte","line":9},{"name":"style","file":"src/frontend/components/output/preview/PreviewCanvas.svelte","line":10}]}
+]

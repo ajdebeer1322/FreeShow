@@ -1,0 +1,3 @@
+[
+  {"id":"src/server/stage/util/stores.ts#layout","name":"layout","file":"src/server/stage/util/stores.ts","line":35,"type":"Writable<any[] | null>","factory":"writable","initial":"null","exported":true,"reads":[],"writes":[],"references":[],"transports":[],"persistence":[],"confidence":"code"}
+]

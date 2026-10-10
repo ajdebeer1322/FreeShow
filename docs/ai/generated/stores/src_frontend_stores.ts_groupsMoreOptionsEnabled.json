@@ -1,0 +1,3 @@
+[
+  {"id":"src/frontend/stores.ts#groupsMoreOptionsEnabled","name":"groupsMoreOptionsEnabled","file":"src/frontend/stores.ts","line":172,"type":"Writable<boolean>","factory":"writable","initial":"false","exported":true,"reads":[{"file":"src/frontend/components/main/popups/ManageGroups.svelte","line":80,"store":"src/frontend/stores.ts#groupsMoreOptionsEnabled","kind":"dollar","symbol":null,"expression":"$groupsMoreOptionsEnabled"}],"writes":[],"references":[],"transports":[],"persistence":[],"confidence":"code"}
+]

@@ -1,0 +1,3 @@
+[
+  {"file":"src/server/remote/components/pages/PdfPreview.svelte","renders":[{"file":"src/server/remote/components/pages/PdfPreview.svelte","line":34,"name":"Loader","target":"src/server/common/components/Loader.svelte","lazyTargets":[],"props":[],"dynamic":false,"confidence":"code"}],"props":[{"name":"active","file":"src/server/remote/components/pages/PdfPreview.svelte","line":7},{"name":"tablet","file":"src/server/remote/components/pages/PdfPreview.svelte","line":8}]}
+]

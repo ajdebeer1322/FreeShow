@@ -1,0 +1,3 @@
+[
+  {"id":"src/frontend/stores.ts#projectToolSize","name":"projectToolSize","file":"src/frontend/stores.ts","line":193,"type":"Writable<number>","factory":"writable","initial":"150","exported":true,"reads":[],"writes":[],"references":[],"transports":[],"persistence":[],"confidence":"code"}
+]

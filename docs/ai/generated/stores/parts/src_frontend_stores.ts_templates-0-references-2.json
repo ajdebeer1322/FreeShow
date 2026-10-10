@@ -1,0 +1,23 @@
+[
+  {"file":"src/frontend/components/helpers/output.ts","line":1869,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"getStyleTemplate","expression":"templates"},
+  {"file":"src/frontend/components/helpers/output.ts","line":1874,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"getStyleTemplate","expression":"templates"},
+  {"file":"src/frontend/components/helpers/output.ts","line":2006,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"getMetadata","expression":"templates"},
+  {"file":"src/frontend/components/helpers/output.ts","line":2043,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"getMetadata","expression":"templates"},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":551,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"playOutputStyleTemplateActions","expression":"templates"},
+  {"file":"src/frontend/components/main/popups/Conditions.svelte","line":121,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"updateItem","expression":"templates"},
+  {"file":"src/frontend/components/main/popups/DynamicValues.svelte","line":157,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"applyValue","expression":"templates"},
+  {"file":"src/frontend/components/main/popups/TemplateStyleOverrides.svelte","line":73,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"createTemplate","expression":"templates"},
+  {"file":"src/frontend/components/main/popups/localization/translation.ts","line":104,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"translateShow","expression":"templates"},
+  {"file":"src/frontend/components/slide/Textbox.svelte","line":651,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"setItemAutoFontSize","expression":"templates"},
+  {"file":"src/frontend/components/slide/Textbox.svelte","line":681,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"setItemPreviewAutoFontSize","expression":"templates"},
+  {"file":"src/frontend/utils/createData.ts","line":563,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"setExampleTemplates","expression":"templates"},
+  {"file":"src/frontend/utils/createData.ts","line":580,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"setDefaultScriptureTemplates","expression":"templates"},
+  {"file":"src/frontend/utils/createData.ts","line":587,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"createDefaultTemplates","expression":"templates"},
+  {"file":"src/frontend/utils/createData.ts","line":1394,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"createDoubleTemplate","expression":"templates"},
+  {"file":"src/frontend/utils/createData.ts","line":1440,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"getDeletedTemplates","expression":"templates"},
+  {"file":"src/frontend/utils/listeners.ts","line":135,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"storeSubscriber","expression":"templates"},
+  {"file":"src/frontend/utils/receivers.ts","line":242,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"TEMPLATES","expression":"templates"},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":308,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"GET_TEMPLATES","expression":"templates"},
+  {"file":"src/frontend/utils/save.ts","line":228,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"save","expression":"templates"},
+  {"file":"src/frontend/utils/templates.ts","line":15,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":null,"expression":"templates"}
+]

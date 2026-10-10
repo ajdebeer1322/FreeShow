@@ -1,0 +1,13 @@
+[
+  {"file":"src/electron/audio/processAudio.ts","line":151,"name":"frac","kind":"VariableDeclaration","endLine":151},
+  {"file":"src/electron/audio/processAudio.ts","line":153,"name":"l0","kind":"VariableDeclaration","endLine":153},
+  {"file":"src/electron/audio/processAudio.ts","line":154,"name":"r0","kind":"VariableDeclaration","endLine":154},
+  {"file":"src/electron/audio/processAudio.ts","line":155,"name":"l1","kind":"VariableDeclaration","endLine":155},
+  {"file":"src/electron/audio/processAudio.ts","line":156,"name":"r1","kind":"VariableDeclaration","endLine":156},
+  {"file":"src/electron/audio/processAudio.ts","line":164,"name":"pos0","kind":"VariableDeclaration","endLine":164},
+  {"file":"src/electron/audio/processAudio.ts","line":169,"name":"pos1","kind":"VariableDeclaration","endLine":169},
+  {"file":"src/electron/audio/processAudio.ts","line":178,"name":"lSample","kind":"VariableDeclaration","endLine":178},
+  {"file":"src/electron/audio/processAudio.ts","line":179,"name":"rSample","kind":"VariableDeclaration","endLine":179},
+  {"file":"src/electron/audio/processAudio.ts","line":181,"name":"clampedL","kind":"VariableDeclaration","endLine":181},
+  {"file":"src/electron/audio/processAudio.ts","line":182,"name":"clampedR","kind":"VariableDeclaration","endLine":182}
+]

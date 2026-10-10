@@ -1,0 +1,16 @@
+[
+  {"file":"src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte","line":354,"name":"i","kind":"VariableDeclaration","endLine":354},
+  {"file":"src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte","line":355,"name":"x","kind":"VariableDeclaration","endLine":355},
+  {"file":"src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte","line":356,"name":"frequency","kind":"VariableDeclaration","endLine":356},
+  {"file":"src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte","line":357,"name":"response","kind":"VariableDeclaration","endLine":357},
+  {"file":"src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte","line":358,"name":"y","kind":"VariableDeclaration","endLine":358},
+  {"file":"src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte","line":381,"name":"calculateFrequencyResponse","kind":"FunctionDeclaration","endLine":402},
+  {"file":"src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte","line":382,"name":"points","kind":"VariableDeclaration","endLine":382},
+  {"file":"src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte","line":383,"name":"numPoints","kind":"VariableDeclaration","endLine":383},
+  {"file":"src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte","line":385,"name":"i","kind":"VariableDeclaration","endLine":385},
+  {"file":"src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte","line":387,"name":"x","kind":"VariableDeclaration","endLine":387},
+  {"file":"src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte","line":388,"name":"frequency","kind":"VariableDeclaration","endLine":388},
+  {"file":"src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte","line":391,"name":"totalGain","kind":"VariableDeclaration","endLine":391},
+  {"file":"src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte","line":392,"name":"y","kind":"VariableDeclaration","endLine":392},
+  {"file":"src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte","line":404,"name":"formatFrequency","kind":"FunctionDeclaration","endLine":409}
+]

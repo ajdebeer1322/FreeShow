@@ -1,0 +1,19 @@
+[
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":696,"name":"getDefaultProjectName","kind":"FunctionDeclaration","endLine":721},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":698,"name":"locale","kind":"VariableDeclaration","endLine":698},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":699,"name":"formatter","kind":"VariableDeclaration","endLine":699},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":700,"name":"parts","kind":"VariableDeclaration","endLine":700},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":702,"name":"format","kind":"VariableDeclaration","endLine":715},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":722,"name":"getProjectName","kind":"FunctionDeclaration","endLine":749},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":723,"name":"defaultName","kind":"VariableDeclaration","endLine":723},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":724,"name":"date","kind":"VariableDeclaration","endLine":724},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":727,"name":"dNumMatch","kind":"VariableDeclaration","endLine":727},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":728,"name":"dNum","kind":"VariableDeclaration","endLine":728},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":731,"name":"replaceDate","kind":"VariableDeclaration","endLine":731},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":732,"name":"name","kind":"VariableDeclaration","endLine":732},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":735,"name":"projectsInFolder","kind":"VariableDeclaration","endLine":735},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":736,"name":"names","kind":"VariableDeclaration","endLine":736},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":743,"name":"num","kind":"VariableDeclaration","endLine":743},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":751,"name":"clearOverlayOutput","kind":"FunctionDeclaration","endLine":762},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":764,"name":"setDrawerTabData","kind":"FunctionDeclaration","endLine":771}
+]

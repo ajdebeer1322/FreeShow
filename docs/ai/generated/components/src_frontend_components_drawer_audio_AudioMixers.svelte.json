@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/drawer/audio/AudioMixers.svelte","renders":[{"file":"src/frontend/components/drawer/audio/AudioMixers.svelte","line":23,"name":"AudioChannelMixer","target":"src/frontend/components/drawer/audio/AudioChannelMixer.svelte","lazyTargets":[],"props":[{"name":"channelId","kind":"Attribute","value":"channelId={channel.id}","file":"src/frontend/components/drawer/audio/AudioMixers.svelte","line":23},{"name":"label","kind":"Attribute","value":"label={channel.name}","file":"src/frontend/components/drawer/audio/AudioMixers.svelte","line":23},{"name":"color","kind":"Attribute","value":"color={channel.color}","file":"src/frontend/components/drawer/audio/AudioMixers.svelte","line":23}],"dynamic":false,"confidence":"code"}],"props":[]}
+]

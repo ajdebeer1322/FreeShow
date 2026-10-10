@@ -1,0 +1,3 @@
+[
+  {"id":"src/frontend/stores.ts#triggerAutoSplit","name":"triggerAutoSplit","file":"src/frontend/stores.ts","line":179,"type":"Writable<boolean>","factory":"writable","initial":"false","exported":true,"reads":[],"writes":[],"references":[],"transports":[],"persistence":[],"confidence":"code"}
+]

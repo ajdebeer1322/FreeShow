@@ -1,0 +1,23 @@
+[
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":298,"store":"src/frontend/stores.ts#activeStage","kind":"dollar","symbol":"removeConditions","expression":"$activeStage"},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":299,"store":"src/frontend/stores.ts#activeStage","kind":"dollar","symbol":"removeConditions","expression":"$activeStage"},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":300,"store":"src/frontend/stores.ts#activeStage","kind":"assignment","symbol":"removeConditions","expression":"a[$activeStage.id!].modified = Date.now()"},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":300,"store":"src/frontend/stores.ts#activeStage","kind":"dollar","symbol":"removeConditions","expression":"$activeStage"},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":329,"store":"src/frontend/stores.ts#variables","kind":"dollar","symbol":null,"expression":"$variables"},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":329,"store":"src/frontend/stores.ts#outputs","kind":"dollar","symbol":null,"expression":"$outputs"},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":343,"store":"src/frontend/stores.ts#variables","kind":"dollar","symbol":null,"expression":"$variables"},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":359,"store":"src/frontend/stores.ts#activeStage","kind":"dollar-template","expression":"$activeStage","symbol":null},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":361,"store":"src/frontend/stores.ts#currentWindow","kind":"dollar-template","expression":"$currentWindow","symbol":null},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":367,"store":"src/frontend/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":378,"store":"src/frontend/stores.ts#activeStage","kind":"dollar-template","expression":"$activeStage","symbol":null},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":409,"store":"src/frontend/stores.ts#outputs","kind":"dollar-template","expression":"$outputs","symbol":null},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":409,"store":"src/frontend/stores.ts#allOutputs","kind":"dollar-template","expression":"$allOutputs","symbol":null},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":411,"store":"src/frontend/stores.ts#outputs","kind":"dollar-template","expression":"$outputs","symbol":null},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":411,"store":"src/frontend/stores.ts#allOutputs","kind":"dollar-template","expression":"$allOutputs","symbol":null},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":419,"store":"src/frontend/stores.ts#outputs","kind":"dollar-template","expression":"$outputs","symbol":null},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":419,"store":"src/frontend/stores.ts#allOutputs","kind":"dollar-template","expression":"$allOutputs","symbol":null},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":443,"store":"src/frontend/stores.ts#refreshEditSlide","kind":"dollar-template","expression":"$refreshEditSlide","symbol":null},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":465,"store":"src/frontend/stores.ts#timers","kind":"dollar-template","expression":"$timers","symbol":null},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":469,"store":"src/frontend/stores.ts#variables","kind":"dollar-template","expression":"$variables","symbol":null},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":470,"store":"src/frontend/stores.ts#currentWindow","kind":"dollar-template","expression":"$currentWindow","symbol":null}
+]

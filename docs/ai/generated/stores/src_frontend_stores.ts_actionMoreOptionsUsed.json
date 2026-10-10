@@ -1,0 +1,3 @@
+[
+  {"id":"src/frontend/stores.ts#actionMoreOptionsUsed","name":"actionMoreOptionsUsed","file":"src/frontend/stores.ts","line":170,"type":"Writable<boolean>","factory":"writable","initial":"false","exported":true,"reads":[{"file":"src/frontend/components/main/popups/Action.svelte","line":387,"store":"src/frontend/stores.ts#actionMoreOptionsUsed","kind":"dollar","symbol":null,"expression":"$actionMoreOptionsUsed"}],"writes":[],"references":[],"transports":[],"persistence":[],"confidence":"code"}
+]

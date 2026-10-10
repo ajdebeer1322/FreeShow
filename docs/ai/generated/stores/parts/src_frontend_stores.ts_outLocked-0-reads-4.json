@@ -1,0 +1,7 @@
+[
+  {"file":"src/frontend/utils/shortcuts.ts","line":361,"store":"src/frontend/stores.ts#outLocked","kind":"get","symbol":"F1","expression":"get(outLocked)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":367,"store":"src/frontend/stores.ts#outLocked","kind":"get","symbol":"F2","expression":"get(outLocked)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":375,"store":"src/frontend/stores.ts#outLocked","kind":"get","symbol":"F3","expression":"get(outLocked)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":381,"store":"src/frontend/stores.ts#outLocked","kind":"get","symbol":"F4","expression":"get(outLocked)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":488,"store":"src/frontend/stores.ts#outLocked","kind":"get","symbol":"togglePlayingMedia","expression":"get(outLocked)"}
+]

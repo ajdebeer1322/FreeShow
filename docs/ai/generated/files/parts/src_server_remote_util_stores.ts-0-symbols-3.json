@@ -1,0 +1,6 @@
+[
+  {"file":"src/server/remote/util/stores.ts","line":202,"name":"_set","kind":"FunctionDeclaration","endLine":206},
+  {"file":"src/server/remote/util/stores.ts","line":208,"name":"UpdateKey","kind":"TypeAliasDeclaration","endLine":208},
+  {"file":"src/server/remote/util/stores.ts","line":209,"name":"UpdateValue","kind":"TypeAliasDeclaration","endLine":209},
+  {"file":"src/server/remote/util/stores.ts","line":215,"name":"_update","kind":"FunctionDeclaration","endLine":219}
+]

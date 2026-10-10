@@ -1,0 +1,20 @@
+[
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":101,"name":"dv","kind":"VariableDeclaration","endLine":101},
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":119,"name":"endCurvePinDrag","kind":"FunctionDeclaration","endLine":124},
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":126,"name":"setCurvePinLinear","kind":"FunctionDeclaration","endLine":134},
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":128,"name":"p","kind":"VariableDeclaration","endLine":128},
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":137,"name":"applyCurvePinPreset","kind":"FunctionDeclaration","endLine":169},
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":138,"name":"value","kind":"VariableDeclaration","endLine":138},
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":142,"name":"targetActionIndexes","kind":"VariableDeclaration","endLine":142},
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":146,"name":"pinVisible","kind":"VariableDeclaration","endLine":146},
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":151,"name":"fallbackIndex","kind":"VariableDeclaration","endLine":151},
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":158,"name":"p","kind":"VariableDeclaration","endLine":158},
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":171,"name":"handleGlobalKeydown","kind":"FunctionDeclaration","endLine":175},
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":177,"name":"handleGlobalClick","kind":"FunctionDeclaration","endLine":184},
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":179,"name":"menu","kind":"VariableDeclaration","endLine":179},
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":193,"name":"getLineStyle","kind":"FunctionDeclaration","endLine":199},
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":194,"name":"dx","kind":"VariableDeclaration","endLine":194},
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":195,"name":"dy","kind":"VariableDeclaration","endLine":195},
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":196,"name":"distance","kind":"VariableDeclaration","endLine":196},
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":197,"name":"angle","kind":"VariableDeclaration","endLine":197}
+]

@@ -1,0 +1,3 @@
+[
+  {"file":"src/server/stage/items/SlideNotes.svelte","renders":[],"props":[{"name":"currentSlide","file":"src/server/stage/items/SlideNotes.svelte","line":6},{"name":"slideOffset","file":"src/server/stage/items/SlideNotes.svelte","line":7},{"name":"autoSize","file":"src/server/stage/items/SlideNotes.svelte","line":8}]}
+]

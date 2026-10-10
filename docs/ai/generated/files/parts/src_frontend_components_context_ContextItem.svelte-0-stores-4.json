@@ -1,0 +1,22 @@
+[
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":378,"store":"src/frontend/stores.ts#mediaFolders","kind":"dollar","symbol":"type_default","expression":"$mediaFolders"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":382,"store":"src/frontend/stores.ts#selected","kind":"dollar","symbol":"type_background","expression":"$selected"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":384,"store":"src/frontend/stores.ts#mediaFolders","kind":"dollar","symbol":"type_background","expression":"$mediaFolders"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":388,"store":"src/frontend/stores.ts#selected","kind":"dollar","symbol":"type_foreground","expression":"$selected"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":390,"store":"src/frontend/stores.ts#mediaFolders","kind":"dollar","symbol":"type_foreground","expression":"$mediaFolders"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":412,"store":"src/frontend/stores.ts#showsCache","kind":"dollar","symbol":"isNotMultiGroupSlide","expression":"$showsCache"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":412,"store":"src/frontend/stores.ts#activeShow","kind":"dollar","symbol":"isNotMultiGroupSlide","expression":"$activeShow"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":436,"store":"src/frontend/stores.ts#slideDeleteHighlight","kind":"set","symbol":"contextItemClick","expression":"slideDeleteHighlight.set(null)"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":436,"store":"src/frontend/stores.ts#slideDeleteHighlight","kind":"reference","symbol":"contextItemClick","expression":"slideDeleteHighlight"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":439,"store":"src/frontend/stores.ts#selected","kind":"dollar","symbol":"contextItemClick","expression":"$selected"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":452,"store":"src/frontend/stores.ts#topContextActive","kind":"set","symbol":"contextItemClick","expression":"topContextActive.set(false)"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":452,"store":"src/frontend/stores.ts#topContextActive","kind":"reference","symbol":"contextItemClick","expression":"topContextActive"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":460,"store":"src/frontend/stores.ts#slideDeleteHighlight","kind":"set","symbol":"updateHighlight","expression":"slideDeleteHighlight.set(null)"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":460,"store":"src/frontend/stores.ts#slideDeleteHighlight","kind":"reference","symbol":"updateHighlight","expression":"slideDeleteHighlight"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":465,"store":"src/frontend/stores.ts#selected","kind":"dollar","symbol":"updateHighlight","expression":"$selected"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":466,"store":"src/frontend/stores.ts#selected","kind":"dollar","symbol":"updateHighlight","expression":"$selected"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":470,"store":"src/frontend/stores.ts#slideDeleteHighlight","kind":"set","symbol":"updateHighlight","expression":"slideDeleteHighlight.set(indexes.length ? { indexes, color: color, icon: icon } : null)"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":470,"store":"src/frontend/stores.ts#slideDeleteHighlight","kind":"reference","symbol":"updateHighlight","expression":"slideDeleteHighlight"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":488,"store":"src/frontend/stores.ts#os","kind":"dollar","symbol":"getShortcuts","expression":"$os"},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":511,"store":"src/frontend/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null}
+]

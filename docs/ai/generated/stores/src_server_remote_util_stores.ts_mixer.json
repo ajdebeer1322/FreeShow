@@ -1,0 +1,3 @@
+[
+  {"id":"src/server/remote/util/stores.ts#mixer","name":"mixer","file":"src/server/remote/util/stores.ts","line":116,"type":"Writable<any>","factory":"writable","initial":"null","exported":true,"reads":[],"writes":[],"references":[],"transports":[],"persistence":[],"confidence":"code"}
+]

@@ -1,0 +1,13 @@
+[
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1110,"endLine":1110,"text":"// intentionally no undo: the recursive tree duplication has no batch history entry,","start":40727,"end":40811},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1111,"endLine":1111,"text":"// and per-item entries could partially undo into orphaned children (deleting the copy has undo)","start":40820,"end":40916},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1202,"endLine":1202,"text":"// newAction.name = data.length === 1 ? \"\" : newAction.name + \" 2\"","start":44542,"end":44608},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1223,"endLine":1223,"text":"// newTimer.name = data.length === 1 ? \"\" : newTimer.name + \" 2\"","start":45161,"end":45225},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1242,"endLine":1242,"text":"// add name (can't rename currently)","start":45732,"end":45768},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1243,"endLine":1243,"text":"// newVariable.name = newVariable.name + \" 2\"","start":45785,"end":45830},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1281,"endLine":1281,"text":"// only paste on media with same type (if mixed selection) & don't paste back on itself","start":47121,"end":47208},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1296,"endLine":1296,"text":"// HELPER FUNCTIONS","start":47625,"end":47644},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1302,"endLine":1302,"text":"// set as deleted (for defaults)","start":47878,"end":47910},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1313,"endLine":1313,"text":"// only defaults","start":48405,"end":48421},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1321,"endLine":1321,"text":"// remove any duplicates","start":48797,"end":48821}
+]

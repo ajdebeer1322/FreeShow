@@ -1,0 +1,12 @@
+[
+  {"file":"src/frontend/utils/remoteTalk.ts","line":380,"store":"src/frontend/stores.ts#theme","kind":"get","symbol":"sendThemeToRemote","expression":"get(theme)"},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":380,"store":"src/frontend/stores.ts#theme","kind":"reference","symbol":"sendThemeToRemote","expression":"theme"},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":406,"store":"src/frontend/stores.ts#connections","kind":"get","symbol":"convertBackgrounds","expression":"get(connections)"},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":406,"store":"src/frontend/stores.ts#connections","kind":"reference","symbol":"convertBackgrounds","expression":"connections"},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":425,"store":"src/frontend/stores.ts#activePage","kind":"get","symbol":"openShow","expression":"get(activePage)"},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":425,"store":"src/frontend/stores.ts#activePage","kind":"reference","symbol":"openShow","expression":"activePage"},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":426,"store":"src/frontend/stores.ts#shows","kind":"get","symbol":"openShow","expression":"get(shows)"},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":426,"store":"src/frontend/stores.ts#shows","kind":"reference","symbol":"openShow","expression":"shows"},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":430,"store":"src/frontend/stores.ts#activeShow","kind":"set","symbol":"openShow","expression":"activeShow.set({ id })"},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":430,"store":"src/frontend/stores.ts#activeShow","kind":"reference","symbol":"openShow","expression":"activeShow"}
+]

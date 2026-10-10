@@ -1,0 +1,20 @@
+[
+  {"file":"src/electron/audio/IcecastSender.ts","line":224,"name":"i","kind":"VariableDeclaration","endLine":224},
+  {"file":"src/electron/audio/IcecastSender.ts","line":232,"name":"crc","kind":"VariableDeclaration","endLine":232},
+  {"file":"src/electron/audio/IcecastSender.ts","line":244,"name":"err","kind":"VariableDeclaration","endLine":244},
+  {"file":"src/electron/audio/IcecastSender.ts","line":250,"name":"updateMetadata","kind":"MethodDeclaration","endLine":266},
+  {"file":"src/electron/audio/IcecastSender.ts","line":262,"name":"err","kind":"VariableDeclaration","endLine":262},
+  {"file":"src/electron/audio/IcecastSender.ts","line":268,"name":"disconnect","kind":"MethodDeclaration","endLine":288},
+  {"file":"src/electron/audio/IcecastSender.ts","line":291,"name":"parseArtistAndTitle","kind":"FunctionDeclaration","endLine":300},
+  {"file":"src/electron/audio/IcecastSender.ts","line":292,"name":"artist","kind":"VariableDeclaration","endLine":292},
+  {"file":"src/electron/audio/IcecastSender.ts","line":293,"name":"title","kind":"VariableDeclaration","endLine":293},
+  {"file":"src/electron/audio/IcecastSender.ts","line":295,"name":"parts","kind":"VariableDeclaration","endLine":295},
+  {"file":"src/electron/audio/IcecastSender.ts","line":302,"name":"createOpusTagsPacket","kind":"FunctionDeclaration","endLine":336},
+  {"file":"src/electron/audio/IcecastSender.ts","line":303,"name":"vendor","kind":"VariableDeclaration","endLine":303},
+  {"file":"src/electron/audio/IcecastSender.ts","line":304,"name":"comments","kind":"VariableDeclaration","endLine":304},
+  {"file":"src/electron/audio/IcecastSender.ts","line":309,"name":"size","kind":"VariableDeclaration","endLine":309},
+  {"file":"src/electron/audio/IcecastSender.ts","line":310,"name":"c","kind":"VariableDeclaration","endLine":310},
+  {"file":"src/electron/audio/IcecastSender.ts","line":314,"name":"buf","kind":"VariableDeclaration","endLine":314},
+  {"file":"src/electron/audio/IcecastSender.ts","line":315,"name":"offset","kind":"VariableDeclaration","endLine":315},
+  {"file":"src/electron/audio/IcecastSender.ts","line":328,"name":"c","kind":"VariableDeclaration","endLine":328}
+]

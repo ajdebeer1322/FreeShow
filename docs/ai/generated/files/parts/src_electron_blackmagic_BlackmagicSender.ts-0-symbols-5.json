@@ -1,0 +1,5 @@
+[
+  {"file":"src/electron/blackmagic/BlackmagicSender.ts","line":1108,"name":"stopAll","kind":"MethodDeclaration","endLine":1132},
+  {"file":"src/electron/blackmagic/BlackmagicSender.ts","line":1118,"name":"outputIds","kind":"VariableDeclaration","endLine":1118},
+  {"file":"src/electron/blackmagic/BlackmagicSender.ts","line":1135,"name":"shutdown","kind":"MethodDeclaration","endLine":1138}
+]

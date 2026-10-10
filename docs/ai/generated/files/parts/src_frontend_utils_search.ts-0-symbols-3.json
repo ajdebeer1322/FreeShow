@@ -1,0 +1,14 @@
+[
+  {"file":"src/frontend/utils/search.ts","line":289,"name":"end","kind":"VariableDeclaration","endLine":289},
+  {"file":"src/frontend/utils/search.ts","line":297,"name":"countBoundaryPhrase","kind":"FunctionDeclaration","endLine":306},
+  {"file":"src/frontend/utils/search.ts","line":299,"name":"count","kind":"VariableDeclaration","endLine":299},
+  {"file":"src/frontend/utils/search.ts","line":300,"name":"i","kind":"VariableDeclaration","endLine":300},
+  {"file":"src/frontend/utils/search.ts","line":309,"name":"titleAdjacency","kind":"FunctionDeclaration","endLine":320},
+  {"file":"src/frontend/utils/search.ts","line":310,"name":"adjacentPairs","kind":"VariableDeclaration","endLine":310},
+  {"file":"src/frontend/utils/search.ts","line":311,"name":"q","kind":"VariableDeclaration","endLine":311},
+  {"file":"src/frontend/utils/search.ts","line":312,"name":"t","kind":"VariableDeclaration","endLine":312},
+  {"file":"src/frontend/utils/search.ts","line":323,"name":"contentAdjacency","kind":"FunctionDeclaration","endLine":330},
+  {"file":"src/frontend/utils/search.ts","line":325,"name":"adjacentPairs","kind":"VariableDeclaration","endLine":325},
+  {"file":"src/frontend/utils/search.ts","line":326,"name":"q","kind":"VariableDeclaration","endLine":326},
+  {"file":"src/frontend/utils/search.ts","line":332,"name":"removeShortWords","kind":"FunctionDeclaration","endLine":337}
+]

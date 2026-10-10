@@ -1,0 +1,3 @@
+[
+  {"id":"src/server/stage/util/stores.ts#outShow","name":"outShow","file":"src/server/stage/util/stores.ts","line":34,"type":"Writable<any>","factory":"writable","initial":"null","exported":true,"reads":[],"writes":[],"references":[],"transports":[],"persistence":[],"confidence":"code"}
+]

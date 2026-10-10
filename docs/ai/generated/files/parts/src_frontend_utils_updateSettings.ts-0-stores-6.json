@@ -1,0 +1,11 @@
+[
+  {"file":"src/frontend/utils/updateSettings.ts","line":465,"store":"src/frontend/stores.ts#obsData","kind":"set","symbol":"obsData","expression":"obsData.set(v)"},
+  {"file":"src/frontend/utils/updateSettings.ts","line":465,"store":"src/frontend/stores.ts#obsData","kind":"reference","symbol":"obsData","expression":"obsData"},
+  {"file":"src/frontend/utils/updateSettings.ts","line":466,"store":"src/frontend/stores.ts#effects","kind":"set","symbol":"effects","expression":"effects.set(a)"},
+  {"file":"src/frontend/utils/updateSettings.ts","line":466,"store":"src/frontend/stores.ts#effects","kind":"reference","symbol":"effects","expression":"effects"},
+  {"file":"src/frontend/utils/updateSettings.ts","line":467,"store":"src/frontend/stores.ts#deletedDefaults","kind":"set","symbol":"deletedDefaults","expression":"deletedDefaults.set({ ...get(deletedDefaults), ...a })"},
+  {"file":"src/frontend/utils/updateSettings.ts","line":467,"store":"src/frontend/stores.ts#deletedDefaults","kind":"reference","symbol":"deletedDefaults","expression":"deletedDefaults"},
+  {"file":"src/frontend/utils/updateSettings.ts","line":467,"store":"src/frontend/stores.ts#deletedDefaults","kind":"get","symbol":"deletedDefaults","expression":"get(deletedDefaults)"},
+  {"file":"src/frontend/utils/updateSettings.ts","line":469,"store":"src/frontend/stores.ts#ai","kind":"set","symbol":"ai","expression":"ai.set(a)"},
+  {"file":"src/frontend/utils/updateSettings.ts","line":469,"store":"src/frontend/stores.ts#ai","kind":"reference","symbol":"ai","expression":"ai"}
+]

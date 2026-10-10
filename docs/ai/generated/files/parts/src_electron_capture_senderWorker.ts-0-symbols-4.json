@@ -1,0 +1,11 @@
+[
+  {"file":"src/electron/capture/senderWorker.ts","line":554,"name":"cpuCores","kind":"VariableDeclaration","endLine":554},
+  {"file":"src/electron/capture/senderWorker.ts","line":557,"name":"rb","kind":"VariableDeclaration","endLine":557},
+  {"file":"src/electron/capture/senderWorker.ts","line":560,"name":"sends","kind":"VariableDeclaration","endLine":560},
+  {"file":"src/electron/capture/senderWorker.ts","line":561,"name":"avg","kind":"VariableDeclaration","endLine":561},
+  {"file":"src/electron/capture/senderWorker.ts","line":562,"name":"gapMean","kind":"VariableDeclaration","endLine":562},
+  {"file":"src/electron/capture/senderWorker.ts","line":563,"name":"gapP95","kind":"VariableDeclaration","endLine":563},
+  {"file":"src/electron/capture/senderWorker.ts","line":564,"name":"gaps","kind":"VariableDeclaration","endLine":564},
+  {"file":"src/electron/capture/senderWorker.ts","line":567,"name":"sorted","kind":"VariableDeclaration","endLine":567},
+  {"file":"src/electron/capture/senderWorker.ts","line":587,"name":"runSenderWorker","kind":"FunctionDeclaration","endLine":613}
+]

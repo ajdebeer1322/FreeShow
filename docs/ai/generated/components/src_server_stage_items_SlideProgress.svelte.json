@@ -1,0 +1,3 @@
+[
+  {"file":"src/server/stage/items/SlideProgress.svelte","renders":[],"props":[{"name":"tracker","file":"src/server/stage/items/SlideProgress.svelte","line":4},{"name":"autoSize","file":"src/server/stage/items/SlideProgress.svelte","line":5}]}
+]

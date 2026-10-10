@@ -1,0 +1,18 @@
+[
+  {"file":"src/frontend/components/helpers/messages.test.ts","line":216,"store":"src/frontend/stores.ts#profiles","kind":"set","symbol":null,"expression":"profiles.set({ operator: { access: { overlays: { \"\": \"none\" } } } } as any)"},
+  {"file":"src/frontend/components/helpers/messages.test.ts","line":216,"store":"src/frontend/stores.ts#profiles","kind":"reference","symbol":null,"expression":"profiles"},
+  {"file":"src/frontend/components/helpers/messages.test.ts","line":221,"store":"src/frontend/stores.ts#overlays","kind":"update","symbol":null,"expression":"overlays.update((defs) => { defs.notice.message!.duration = 2 return defs })"},
+  {"file":"src/frontend/components/helpers/messages.test.ts","line":221,"store":"src/frontend/stores.ts#overlays","kind":"reference","symbol":null,"expression":"overlays"},
+  {"file":"src/frontend/components/helpers/messages.test.ts","line":230,"store":"src/frontend/stores.ts#outputs","kind":"get","symbol":null,"expression":"get(outputs)"},
+  {"file":"src/frontend/components/helpers/messages.test.ts","line":230,"store":"src/frontend/stores.ts#outputs","kind":"reference","symbol":null,"expression":"outputs"},
+  {"file":"src/frontend/components/helpers/messages.test.ts","line":232,"store":"src/frontend/stores.ts#outputs","kind":"get","symbol":null,"expression":"get(outputs)"},
+  {"file":"src/frontend/components/helpers/messages.test.ts","line":232,"store":"src/frontend/stores.ts#outputs","kind":"reference","symbol":null,"expression":"outputs"},
+  {"file":"src/frontend/components/helpers/messages.test.ts","line":233,"store":"src/frontend/stores.ts#outputs","kind":"get","symbol":null,"expression":"get(outputs)"},
+  {"file":"src/frontend/components/helpers/messages.test.ts","line":233,"store":"src/frontend/stores.ts#outputs","kind":"reference","symbol":null,"expression":"outputs"},
+  {"file":"src/frontend/components/helpers/messages.test.ts","line":234,"store":"src/frontend/stores.ts#outputs","kind":"get","symbol":null,"expression":"get(outputs)"},
+  {"file":"src/frontend/components/helpers/messages.test.ts","line":234,"store":"src/frontend/stores.ts#outputs","kind":"reference","symbol":null,"expression":"outputs"},
+  {"file":"src/frontend/components/helpers/messages.test.ts","line":238,"store":"src/frontend/stores.ts#overlays","kind":"update","symbol":null,"expression":"overlays.update((defs) => { defs.notice.message!.duration = 2 return defs })"},
+  {"file":"src/frontend/components/helpers/messages.test.ts","line":238,"store":"src/frontend/stores.ts#overlays","kind":"reference","symbol":null,"expression":"overlays"},
+  {"file":"src/frontend/components/helpers/messages.test.ts","line":250,"store":"src/frontend/stores.ts#outputs","kind":"update","symbol":null,"expression":"outputs.update((outs) => { delete outs.audience return outs })"},
+  {"file":"src/frontend/components/helpers/messages.test.ts","line":250,"store":"src/frontend/stores.ts#outputs","kind":"reference","symbol":null,"expression":"outputs"}
+]

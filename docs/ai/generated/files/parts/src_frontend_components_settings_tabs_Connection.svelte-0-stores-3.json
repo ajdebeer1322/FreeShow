@@ -1,0 +1,11 @@
+[
+  {"file":"src/frontend/components/settings/tabs/Connection.svelte","line":356,"store":"src/frontend/stores.ts#contentProviderData","kind":"dollar-template","expression":"$contentProviderData","symbol":null},
+  {"file":"src/frontend/components/settings/tabs/Connection.svelte","line":358,"store":"src/frontend/stores.ts#cloudSyncData","kind":"dollar-template","expression":"$cloudSyncData","symbol":null},
+  {"file":"src/frontend/components/settings/tabs/Connection.svelte","line":361,"store":"src/frontend/stores.ts#providerConnections","kind":"dollar-template","expression":"$providerConnections","symbol":null},
+  {"file":"src/frontend/components/settings/tabs/Connection.svelte","line":374,"store":"src/frontend/stores.ts#providerConnections","kind":"dollar-template","expression":"$providerConnections","symbol":null},
+  {"file":"src/frontend/components/settings/tabs/Connection.svelte","line":390,"store":"src/frontend/stores.ts#contentProviderData","kind":"dollar-template","expression":"$contentProviderData","symbol":null},
+  {"file":"src/frontend/components/settings/tabs/Connection.svelte","line":396,"store":"src/frontend/stores.ts#contentProviderData","kind":"dollar-template","expression":"$contentProviderData","symbol":null},
+  {"file":"src/frontend/components/settings/tabs/Connection.svelte","line":402,"store":"src/frontend/stores.ts#obsData","kind":"dollar-template","expression":"$obsData","symbol":null},
+  {"file":"src/frontend/components/settings/tabs/Connection.svelte","line":406,"store":"src/frontend/stores.ts#obsData","kind":"dollar-template","expression":"$obsData","symbol":null},
+  {"file":"src/frontend/components/settings/tabs/Connection.svelte","line":420,"store":"src/frontend/stores.ts#obsData","kind":"dollar-template","expression":"$obsData","symbol":null}
+]

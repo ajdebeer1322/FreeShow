@@ -1,0 +1,3 @@
+[
+  {"id":"src/frontend/components/drawer/media/MediaCard.svelte#currentStyle","name":"currentStyle","file":"src/frontend/components/drawer/media/MediaCard.svelte","line":159,"type":"inferred","factory":"derived","initial":"[currentOutput, styles], ([$currentOutput, $styles]) => $styles[$currentOutput?.style || \"\"] || {}","exported":false,"reads":[{"file":"src/frontend/components/drawer/media/MediaCard.svelte","line":164,"store":"src/frontend/components/drawer/media/MediaCard.svelte#currentStyle","kind":"dollar","symbol":null,"expression":"$currentStyle"}],"writes":[],"references":[],"transports":[],"persistence":[],"confidence":"code"}
+]

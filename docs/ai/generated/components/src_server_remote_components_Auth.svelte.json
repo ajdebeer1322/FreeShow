@@ -1,0 +1,3 @@
+[
+  {"file":"src/server/remote/components/Auth.svelte","renders":[{"file":"src/server/remote/components/Auth.svelte","line":29,"name":"Icon","target":"src/server/common/components/Icon.svelte","lazyTargets":[],"props":[{"name":"id","kind":"Attribute","value":"id=\"locked\"","file":"src/server/remote/components/Auth.svelte","line":29},{"name":"size","kind":"Attribute","value":"size={1.1}","file":"src/server/remote/components/Auth.svelte","line":29},{"name":"white","kind":"Attribute","value":"white","file":"src/server/remote/components/Auth.svelte","line":29}],"dynamic":false,"confidence":"code"}],"props":[]}
+]

@@ -1,0 +1,11 @@
+[
+  {"file":"src/frontend/ai/scripture/BibleSearchDetector.ts","line":399,"name":"mishearingsNormalized","kind":"VariableDeclaration","endLine":399},
+  {"file":"src/frontend/ai/scripture/BibleSearchDetector.ts","line":404,"name":"refMatch","kind":"VariableDeclaration","endLine":404},
+  {"file":"src/frontend/ai/scripture/BibleSearchDetector.ts","line":411,"name":"activeRawPromise","kind":"VariableDeclaration","endLine":411},
+  {"file":"src/frontend/ai/scripture/BibleSearchDetector.ts","line":412,"name":"activeMishearingPromise","kind":"VariableDeclaration","endLine":412},
+  {"file":"src/frontend/ai/scripture/BibleSearchDetector.ts","line":414,"name":"freshRawPromise","kind":"VariableDeclaration","endLine":414},
+  {"file":"src/frontend/ai/scripture/BibleSearchDetector.ts","line":415,"name":"freshMishearingPromise","kind":"VariableDeclaration","endLine":415},
+  {"file":"src/frontend/ai/scripture/BibleSearchDetector.ts","line":421,"name":"activeMatch","kind":"VariableDeclaration","endLine":421},
+  {"file":"src/frontend/ai/scripture/BibleSearchDetector.ts","line":423,"name":"freshMatch","kind":"VariableDeclaration","endLine":423},
+  {"file":"src/frontend/ai/scripture/BibleSearchDetector.ts","line":425,"name":"bestContentMatch","kind":"VariableDeclaration","endLine":425}
+]

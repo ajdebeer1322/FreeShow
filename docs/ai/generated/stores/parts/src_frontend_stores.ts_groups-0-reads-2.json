@@ -1,0 +1,14 @@
+[
+  {"file":"src/frontend/converters/easyworship.ts","line":250,"store":"src/frontend/stores.ts#groups","kind":"get","symbol":"createSlides","expression":"get(groups)"},
+  {"file":"src/frontend/converters/easyworship.ts","line":251,"store":"src/frontend/stores.ts#groups","kind":"get","symbol":"createSlides","expression":"get(groups)"},
+  {"file":"src/frontend/converters/openlp.ts","line":144,"store":"src/frontend/stores.ts#groups","kind":"get","symbol":"createSlides","expression":"get(groups)"},
+  {"file":"src/frontend/converters/opensong.ts","line":218,"store":"src/frontend/stores.ts#groups","kind":"get","symbol":"createSlides","expression":"get(groups)"},
+  {"file":"src/frontend/converters/propresenter.ts","line":171,"store":"src/frontend/stores.ts#groups","kind":"get","symbol":"convertJSONBundleToSlides","expression":"get(groups)"},
+  {"file":"src/frontend/converters/propresenter.ts","line":212,"store":"src/frontend/stores.ts#groups","kind":"get","symbol":"convertJSONToSlides","expression":"get(groups)"},
+  {"file":"src/frontend/converters/txt.ts","line":764,"store":"src/frontend/stores.ts#groups","kind":"get","symbol":"findGroupMatch","expression":"get(groups)"},
+  {"file":"src/frontend/converters/videopsalm.ts","line":317,"store":"src/frontend/stores.ts#groups","kind":"get","symbol":"createSlides","expression":"get(groups)"},
+  {"file":"src/frontend/utils/listeners.ts","line":130,"store":"src/frontend/stores.ts#groups","kind":"subscribe","symbol":"storeSubscriber","expression":"groups.subscribe(async (data) => { if (await hasNewerUpdate(\"LISTENER_GROUPS\", 50)) return send(OUTPUT, [\"GROUPS\"], data) })"},
+  {"file":"src/frontend/utils/listeners.ts","line":453,"store":"src/frontend/stores.ts#groups","kind":"subscribe","symbol":"storeSubscriber","expression":"groups.subscribe(() => { // TODO: only update groups, not all the other values updateCachedShows(get(showsCache)) })"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":178,"store":"src/frontend/stores.ts#groups","kind":"get","symbol":null,"expression":"get(groups)"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":179,"store":"src/frontend/stores.ts#groups","kind":"get","symbol":null,"expression":"get(groups)"}
+]

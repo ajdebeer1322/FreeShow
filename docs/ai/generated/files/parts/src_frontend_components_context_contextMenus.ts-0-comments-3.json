@@ -1,0 +1,11 @@
+[
+  {"file":"src/frontend/components/context/contextMenus.ts","line":418,"endLine":418,"text":"// \"copy\", \"paste\" (shortcut or top menubar) // \"GROUP_duplicate_delete\"","start":28628,"end":28700},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":425,"endLine":425,"text":"// TIMELINE","start":29068,"end":29079},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":428,"endLine":428,"text":"// CALENDAR","start":29116,"end":29127},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":431,"endLine":431,"text":"// SETTINGS","start":29197,"end":29208},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":432,"endLine":432,"text":"// \"GROUP_rename\"","start":29317,"end":29334},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":433,"endLine":433,"text":"// \"GROUP_rename\"","start":29414,"end":29431},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":434,"endLine":434,"text":"// \"GROUP_rename_color\"","start":29520,"end":29543},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":436,"endLine":436,"text":"// , \"SEPARATOR\", \"reset\" // \"GROUP_rename_color\"","start":29639,"end":29688},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":437,"endLine":437,"text":"// , \"SEPARATOR\", \"reset\" // \"GROUP_rename_color\"","start":29763,"end":29812}
+]

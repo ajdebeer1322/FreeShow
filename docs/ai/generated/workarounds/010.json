@@ -1,0 +1,17 @@
+[
+  {"id":"workaround-01a5f72d87ec97b6","file":"src/server/remote/components/Main.svelte","line":55,"endLine":55,"text":"// WIP keyboard shortcuts same as main app","start":2575,"end":2617,"markers":["WIP"],"confidence":"code"},
+  {"id":"workaround-bf46db40abe251fb","file":"src/server/remote/components/Main.svelte","line":91,"endLine":91,"text":"// WIP open show","start":3790,"end":3806,"markers":["WIP"],"confidence":"code"},
+  {"id":"workaround-f6252f1e8a1df9e4","file":"src/server/remote/components/pages/Lyrics.svelte","line":19,"endLine":19,"text":"// WIP this does not work","start":613,"end":638,"markers":["WIP"],"confidence":"code"},
+  {"id":"workaround-889a55c81e9988dc","file":"src/server/remote/components/show/Clear.svelte","line":32,"endLine":32,"text":"<!-- WIP get state -->","start":1097,"end":1119,"markers":["WIP"],"confidence":"code"},
+  {"id":"workaround-160da893b7786dae","file":"src/server/remote/components/show/OverlayPreview.svelte","line":27,"endLine":27,"text":"<!-- WIP width overflow -->","start":868,"end":895,"markers":["WIP"],"confidence":"code"},
+  {"id":"workaround-b43d0a80e6f0e0a6","file":"src/server/remote/components/show/ShowSlide.svelte","line":26,"endLine":26,"text":"// WIP get layout resolution","start":791,"end":819,"markers":["WIP"],"confidence":"code"},
+  {"id":"workaround-5127f7fc6513ba81","file":"src/server/remote/components/show/ShowSlide.svelte","line":57,"endLine":57,"text":"<!-- TODO: disabled -->","start":2261,"end":2284,"markers":["TODO"],"confidence":"code"},
+  {"id":"workaround-cc4b3e9bce478952","file":"src/server/remote/components/show/ShowSlide.svelte","line":72,"endLine":72,"text":"<!-- TODO: check if showid exists in shows -->","start":3262,"end":3308,"markers":["TODO"],"confidence":"code"},
+  {"id":"workaround-388ebf8f91d39c4b","file":"src/server/remote/components/show/ShowSlide.svelte","line":91,"endLine":91,"text":"<!-- TODO: BG: white, color: black -->","start":3974,"end":4012,"markers":["TODO"],"confidence":"code"},
+  {"id":"workaround-abeb12ac8410a3c8","file":"src/server/remote/components/show/Slide.svelte","line":33,"endLine":33,"text":"// WIP get layout resolution","start":1541,"end":1569,"markers":["WIP"],"confidence":"code"},
+  {"id":"workaround-9cafe008732363a5","file":"src/server/remote/components/show/Slide.svelte","line":60,"endLine":60,"text":"<!-- WIP show overlays / layers... -->","start":2716,"end":2754,"markers":["WIP"],"confidence":"code"},
+  {"id":"workaround-f1811e1620e79249","file":"src/server/remote/components/tablet/layout/drawer/VirtualList.svelte","line":164,"endLine":164,"text":"// TODO if we overestimated the space these","start":4580,"end":4623,"markers":["TODO"],"confidence":"code"},
+  {"id":"workaround-cd5354eac8ae73f6","file":"src/server/stage/helpers/textStyle.ts","line":258,"endLine":258,"text":"// get caret pos (WIP)","start":8740,"end":8762,"markers":["WIP"],"confidence":"code"},
+  {"id":"workaround-1b4951dfa1b92378","file":"src/types/History.ts","line":13,"endLine":13,"text":"// TODO: remove/update these:","start":303,"end":332,"markers":["TODO"],"confidence":"code"},
+  {"id":"workaround-08e321bd47a027b7","file":"src/types/ai/AiSettings.ts","line":27,"endLine":27,"text":"// WIP interpretationMode","start":490,"end":515,"markers":["WIP"],"confidence":"code"}
+]

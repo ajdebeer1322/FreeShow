@@ -1,0 +1,5 @@
+[
+  {"file":"src/electron/data/thumbnails.ts","line":403,"name":"window","kind":"VariableDeclaration","endLine":403},
+  {"file":"src/electron/data/thumbnails.ts","line":420,"name":"page","kind":"VariableDeclaration","endLine":420},
+  {"file":"src/electron/data/thumbnails.ts","line":421,"name":"base64","kind":"VariableDeclaration","endLine":421}
+]

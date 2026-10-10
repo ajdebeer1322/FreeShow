@@ -1,0 +1,8 @@
+[
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":558,"store":"src/frontend/stores.ts#disabledServers","kind":"reference","symbol":"enableConnection","expression":"disabledServers"},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":561,"store":"src/frontend/stores.ts#disabledServers","kind":"set","symbol":"enableConnection","expression":"disabledServers.set({ ...get(disabledServers), [id]: false })"},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":561,"store":"src/frontend/stores.ts#disabledServers","kind":"reference","symbol":"enableConnection","expression":"disabledServers"},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":561,"store":"src/frontend/stores.ts#disabledServers","kind":"get","symbol":"enableConnection","expression":"get(disabledServers)"},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":858,"store":"src/frontend/stores.ts#groups","kind":"get","symbol":"getShowActions","expression":"get(groups)"},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":858,"store":"src/frontend/stores.ts#groups","kind":"reference","symbol":"getShowActions","expression":"groups"}
+]

@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/output/transitions/OutputTransition.svelte","renders":[],"props":[{"name":"transition","file":"src/frontend/components/output/transitions/OutputTransition.svelte","line":5},{"name":"inTransition","file":"src/frontend/components/output/transitions/OutputTransition.svelte","line":6},{"name":"outTransition","file":"src/frontend/components/output/transitions/OutputTransition.svelte","line":7}]}
+]

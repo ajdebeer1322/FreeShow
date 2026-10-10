@@ -1,0 +1,21 @@
+[
+  {"file":"src/frontend/utils/listeners.ts","line":309,"endLine":309,"text":"// REMOTE","start":10388,"end":10397},
+  {"file":"src/frontend/utils/listeners.ts","line":315,"endLine":315,"text":"// REMOTE","start":10538,"end":10547},
+  {"file":"src/frontend/utils/listeners.ts","line":321,"endLine":321,"text":"// STAGE","start":10688,"end":10696},
+  {"file":"src/frontend/utils/listeners.ts","line":324,"endLine":324,"text":"// REMOTE","start":10747,"end":10756},
+  {"file":"src/frontend/utils/listeners.ts","line":328,"endLine":328,"text":"// REMOTE","start":10853,"end":10862},
+  {"file":"src/frontend/utils/listeners.ts","line":332,"endLine":332,"text":"// REMOTE","start":10960,"end":10969},
+  {"file":"src/frontend/utils/listeners.ts","line":371,"endLine":371,"text":"// STAGE","start":11997,"end":12005},
+  {"file":"src/frontend/utils/listeners.ts","line":378,"endLine":378,"text":"// dynamic values","start":12160,"end":12177},
+  {"file":"src/frontend/utils/listeners.ts","line":387,"endLine":387,"text":"// dynamic values","start":12428,"end":12445},
+  {"file":"src/frontend/utils/listeners.ts","line":391,"endLine":391,"text":"// dynamic values","start":12502,"end":12519},
+  {"file":"src/frontend/utils/listeners.ts","line":406,"endLine":406,"text":"//","start":12880,"end":12882},
+  {"file":"src/frontend/utils/listeners.ts","line":411,"endLine":411,"text":"// REMOTE","start":12950,"end":12959},
+  {"file":"src/frontend/utils/listeners.ts","line":415,"endLine":415,"text":"// REMOTE","start":13052,"end":13061},
+  {"file":"src/frontend/utils/listeners.ts","line":419,"endLine":419,"text":"// REMOTE","start":13162,"end":13171},
+  {"file":"src/frontend/utils/listeners.ts","line":442,"endLine":442,"text":"// load new show on show change","start":13926,"end":13957},
+  {"file":"src/frontend/utils/listeners.ts","line":454,"endLine":454,"text":"// TODO: only update groups, not all the other values","start":14268,"end":14321},
+  {"file":"src/frontend/utils/listeners.ts","line":499,"endLine":499,"text":"// for dynamic values","start":15279,"end":15300},
+  {"file":"src/frontend/utils/listeners.ts","line":506,"endLine":506,"text":"// received by Output","start":15477,"end":15498},
+  {"file":"src/frontend/utils/listeners.ts","line":524,"endLine":524,"text":"// used for stage mirror data","start":15985,"end":16014}
+]

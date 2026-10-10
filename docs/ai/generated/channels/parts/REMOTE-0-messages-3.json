@@ -1,0 +1,11 @@
+[
+  "REMOTE/API:set_template",
+  "REMOTE/ERROR",
+  "REMOTE/API:get_output",
+  "REMOTE/books",
+  "REMOTE/GET_AUDIO",
+  "REMOTE/MEDIA",
+  "REMOTE/API:get_playing_video_time",
+  "REMOTE/API:get_playing_video_duration",
+  "REMOTE/API:get_media_loop_state"
+]

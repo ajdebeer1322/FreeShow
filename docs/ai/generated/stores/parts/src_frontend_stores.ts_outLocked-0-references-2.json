@@ -1,0 +1,15 @@
+[
+  {"file":"src/frontend/components/output/clear.ts","line":15,"store":"src/frontend/stores.ts#outLocked","kind":"reference","symbol":"clearAll","expression":"outLocked"},
+  {"file":"src/frontend/components/output/clear.ts","line":62,"store":"src/frontend/stores.ts#outLocked","kind":"reference","symbol":"restoreOutput","expression":"outLocked"},
+  {"file":"src/frontend/components/output/clear.ts","line":192,"store":"src/frontend/stores.ts#outLocked","kind":"reference","symbol":"clearScene","expression":"outLocked"},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":91,"store":"src/frontend/stores.ts#outLocked","kind":"reference","symbol":"OUT","expression":"outLocked"},
+  {"file":"src/frontend/utils/save.ts","line":185,"store":"src/frontend/stores.ts#outLocked","kind":"reference","symbol":"save","expression":"outLocked"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":344,"store":"src/frontend/stores.ts#outLocked","kind":"reference","symbol":"l","expression":"outLocked"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":346,"store":"src/frontend/stores.ts#outLocked","kind":"reference","symbol":"r","expression":"outLocked"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":361,"store":"src/frontend/stores.ts#outLocked","kind":"reference","symbol":"F1","expression":"outLocked"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":367,"store":"src/frontend/stores.ts#outLocked","kind":"reference","symbol":"F2","expression":"outLocked"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":375,"store":"src/frontend/stores.ts#outLocked","kind":"reference","symbol":"F3","expression":"outLocked"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":381,"store":"src/frontend/stores.ts#outLocked","kind":"reference","symbol":"F4","expression":"outLocked"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":488,"store":"src/frontend/stores.ts#outLocked","kind":"reference","symbol":"togglePlayingMedia","expression":"outLocked"},
+  {"file":"src/frontend/utils/updateSettings.ts","line":364,"store":"src/frontend/stores.ts#outLocked","kind":"reference","symbol":"outLocked","expression":"outLocked"}
+]

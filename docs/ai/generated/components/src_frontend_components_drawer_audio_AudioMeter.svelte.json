@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/drawer/audio/AudioMeter.svelte","renders":[{"file":"src/frontend/components/drawer/audio/AudioMeter.svelte","line":187,"name":"AudioSidechain","target":"src/frontend/components/drawer/audio/AudioSidechain.svelte","lazyTargets":[],"props":[{"name":"channelId","kind":"Attribute","value":"{channelId}","file":"src/frontend/components/drawer/audio/AudioMeter.svelte","line":187}],"dynamic":false,"confidence":"code"}],"props":[{"name":"channelId","file":"src/frontend/components/drawer/audio/AudioMeter.svelte","line":9},{"name":"detailed","file":"src/frontend/components/drawer/audio/AudioMeter.svelte","line":10},{"name":"preview","file":"src/frontend/components/drawer/audio/AudioMeter.svelte","line":11}]}
+]

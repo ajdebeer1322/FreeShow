@@ -1,0 +1,7 @@
+[
+  {"file":"src/frontend/utils/shortcuts.ts","line":445,"store":"src/frontend/stores.ts#activePage","kind":"get","symbol":"isTimelineActive","expression":"get(activePage)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":446,"store":"src/frontend/stores.ts#activePage","kind":"get","symbol":"isTimelineActive","expression":"get(activePage)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":464,"store":"src/frontend/stores.ts#activePage","kind":"get","symbol":"createNew","expression":"get(activePage)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":478,"store":"src/frontend/stores.ts#activePage","kind":"get","symbol":"createNew","expression":"get(activePage)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":479,"store":"src/frontend/stores.ts#activePage","kind":"get","symbol":"createNew","expression":"get(activePage)"}
+]

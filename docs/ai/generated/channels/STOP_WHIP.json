@@ -1,0 +1,3 @@
+[
+  {"name":"STOP_WHIP","definitions":[],"messages":[],"endpoints":[{"file":"src/electron/streaming/WebRtcHost.ts","line":155,"endLine":155,"channel":"STOP_WHIP","keys":[],"role":"send","direction":"electron → renderer/client","symbol":"stopWhip","payload":"{ outputId }","expression":"this.window!.webContents.send(\"STOP_WHIP\", { outputId })","dynamic":true}]}
+]

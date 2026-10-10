@@ -1,0 +1,20 @@
+[
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":412,"name":"data","kind":"VariableDeclaration","endLine":412},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":413,"name":"dataValue","kind":"VariableDeclaration","endLine":413},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":418,"name":"value","kind":"VariableDeclaration","endLine":418},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":422,"name":"val","kind":"VariableDeclaration","endLine":422},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":427,"name":"chData","kind":"VariableDeclaration","endLine":427},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":457,"name":"getFirstActiveTimer","kind":"FunctionDeclaration","endLine":462},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":458,"name":"firstTimerId","kind":"VariableDeclaration","endLine":458},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":464,"name":"getTimerValue","kind":"FunctionDeclaration","endLine":468},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":465,"name":"timer","kind":"VariableDeclaration","endLine":465},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":470,"name":"isTimerRunning","kind":"FunctionDeclaration","endLine":480},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":471,"name":"timer","kind":"VariableDeclaration","endLine":471},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":475,"name":"value","kind":"VariableDeclaration","endLine":475},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":482,"name":"_getVariableValue","kind":"FunctionDeclaration","endLine":494},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":483,"name":"variable","kind":"VariableDeclaration","endLine":483},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":496,"name":"getDynamicValue","kind":"FunctionDeclaration","endLine":510},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":498,"name":"outSlide","kind":"VariableDeclaration","endLine":498},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":500,"name":"ref","kind":"VariableDeclaration","endLine":506},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":508,"name":"value","kind":"VariableDeclaration","endLine":508}
+]

@@ -1,0 +1,23 @@
+[
+  {"file":"src/frontend/utils/receivers.ts","line":387,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"SYNC_DATA","expression":"activePopup.set(\"cloud_update\")"},
+  {"file":"src/frontend/utils/receivers.ts","line":405,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"SYNC_DATA","expression":"activePopup.set(null)"},
+  {"file":"src/frontend/utils/remoteController.ts","line":33,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"startRemoteController","expression":"activePopup.set(\"alert\")"},
+  {"file":"src/frontend/utils/save.ts","line":139,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"save","expression":"activePopup.set(\"alert\")"},
+  {"file":"src/frontend/utils/save.ts","line":308,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"saveComplete","expression":"activePopup.set(\"alert\")"},
+  {"file":"src/frontend/utils/save.ts","line":341,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"initializeClosing","expression":"activePopup.set(\"unsaved\")"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":41,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"f","expression":"activePopup.set(\"find_replace\")"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":46,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"e","expression":"activePopup.set(\"export\")"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":47,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"i","expression":"activePopup.set(\"import\")"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":49,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"h","expression":"activePopup.set(\"history\")"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":61,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"?","expression":"activePopup.set(\"shortcuts\")"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":65,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"d","expression":"activePopup.set(\"next_timer\")"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":82,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"n","expression":"activePopup.set(\"show\")"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":126,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":null,"expression":"activePopup.set(null)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":471,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"createNew","expression":"activePopup.set(\"import_scripture\")"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":472,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"createNew","expression":"activePopup.set(\"import_calendar\")"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":476,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"createNew","expression":"activePopup.set(\"timer\")"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":477,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"createNew","expression":"activePopup.set(selectId as any)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":482,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"createNew","expression":"activePopup.set(\"show\")"},
+  {"file":"src/frontend/utils/startup.ts","line":173,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"contentProviderSync","expression":"activePopup.set(\"alert\")"},
+  {"file":"src/frontend/utils/updateSettings.ts","line":262,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"initialized","expression":"activePopup.set(\"initialize\")"}
+]

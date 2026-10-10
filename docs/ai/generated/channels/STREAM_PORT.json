@@ -1,0 +1,3 @@
+[
+  {"name":"STREAM_PORT","definitions":[],"messages":[],"endpoints":[{"file":"src/electron/preload.ts","line":63,"endLine":66,"channel":"STREAM_PORT","keys":[],"role":"receive","direction":"renderer/client → electron","symbol":null,"payload":"(event) => { if (!event.ports?.length) return window.postMessage({ type: \"STREAM_PORT\" }, \"*\", [event.ports[0]]) }","expression":"ipcRenderer.on(\"STREAM_PORT\", (event) => { if (!event.ports?.length) return window.postMessage({ type: \"STREAM_PORT\" }, \"*\", [event.ports[0]]) })","dynamic":true}]}
+]

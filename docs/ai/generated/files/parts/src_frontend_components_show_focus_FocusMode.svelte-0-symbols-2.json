@@ -1,0 +1,15 @@
+[
+  {"file":"src/frontend/components/show/focus/FocusMode.svelte","line":206,"name":"previousProjectItems","kind":"VariableDeclaration","endLine":206},
+  {"file":"src/frontend/components/show/focus/FocusMode.svelte","line":207,"name":"logProjectItemsChange","kind":"FunctionDeclaration","endLine":220},
+  {"file":"src/frontend/components/show/focus/FocusMode.svelte","line":210,"name":"before","kind":"VariableDeclaration","endLine":210},
+  {"file":"src/frontend/components/show/focus/FocusMode.svelte","line":211,"name":"after","kind":"VariableDeclaration","endLine":211},
+  {"file":"src/frontend/components/show/focus/FocusMode.svelte","line":212,"name":"changes","kind":"VariableDeclaration","endLine":212},
+  {"file":"src/frontend/components/show/focus/FocusMode.svelte","line":213,"name":"i","kind":"VariableDeclaration","endLine":213},
+  {"file":"src/frontend/components/show/focus/FocusMode.svelte","line":214,"name":"keys","kind":"VariableDeclaration","endLine":214},
+  {"file":"src/frontend/components/show/focus/FocusMode.svelte","line":223,"name":"projectList","kind":"VariableDeclaration","endLine":223},
+  {"file":"src/frontend/components/show/focus/FocusMode.svelte","line":224,"name":"loadToken","kind":"VariableDeclaration","endLine":224},
+  {"file":"src/frontend/components/show/focus/FocusMode.svelte","line":226,"name":"loadProjectList","kind":"FunctionDeclaration","endLine":233},
+  {"file":"src/frontend/components/show/focus/FocusMode.svelte","line":227,"name":"token","kind":"VariableDeclaration","endLine":227},
+  {"file":"src/frontend/components/show/focus/FocusMode.svelte","line":228,"name":"started","kind":"VariableDeclaration","endLine":228},
+  {"file":"src/frontend/components/show/focus/FocusMode.svelte","line":229,"name":"result","kind":"VariableDeclaration","endLine":229}
+]

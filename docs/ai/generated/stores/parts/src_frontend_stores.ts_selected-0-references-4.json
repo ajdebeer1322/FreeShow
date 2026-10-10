@@ -1,0 +1,10 @@
+[
+  {"file":"src/frontend/utils/shortcuts.ts","line":89,"store":"src/frontend/stores.ts#selected","kind":"reference","symbol":"Enter","expression":"selected"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":117,"store":"src/frontend/stores.ts#selected","kind":"reference","symbol":"Escape","expression":"selected"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":117,"store":"src/frontend/stores.ts#selected","kind":"reference","symbol":null,"expression":"selected"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":127,"store":"src/frontend/stores.ts#selected","kind":"reference","symbol":null,"expression":"selected"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":139,"store":"src/frontend/stores.ts#selected","kind":"reference","symbol":"Delete","expression":"selected"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":142,"store":"src/frontend/stores.ts#selected","kind":"reference","symbol":null,"expression":"selected"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":367,"store":"src/frontend/stores.ts#selected","kind":"reference","symbol":"F2","expression":"selected"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":462,"store":"src/frontend/stores.ts#selected","kind":"reference","symbol":"createNew","expression":"selected"}
+]

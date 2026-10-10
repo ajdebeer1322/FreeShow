@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/utils/shortcuts.ts","line":266,"store":"src/frontend/stores.ts#activeEdit","kind":"set","symbol":"keydown","expression":"activeEdit.set({ slide: 0, items: [], showId: get(activeShow)?.id })"}
+]

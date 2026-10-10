@@ -1,0 +1,7 @@
+[
+  {"file":"src/frontend/components/media/video/videoPlayer.ts","line":876,"name":"oldAudio","kind":"VariableDeclaration","endLine":876},
+  {"file":"src/frontend/components/media/video/videoPlayer.ts","line":884,"name":"linkedOutputIds","kind":"VariableDeclaration","endLine":884},
+  {"file":"src/frontend/components/media/video/videoPlayer.ts","line":899,"name":"SCENE_FADE_DURATION","kind":"VariableDeclaration","endLine":899},
+  {"file":"src/frontend/components/media/video/videoPlayer.ts","line":908,"name":"videoEnding","kind":"FunctionDeclaration","endLine":912},
+  {"file":"src/frontend/components/media/video/videoPlayer.ts","line":913,"name":"videoStarting","kind":"FunctionDeclaration","endLine":918}
+]

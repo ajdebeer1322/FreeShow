@@ -1,0 +1,3 @@
+[
+  {"id":"src/server/stage/util/stores.ts#playingAudioTime","name":"playingAudioTime","file":"src/server/stage/util/stores.ts","line":42,"type":"Writable<number>","factory":"writable","initial":"0","exported":true,"reads":[],"writes":[],"references":[],"transports":[],"persistence":[],"confidence":"code"}
+]

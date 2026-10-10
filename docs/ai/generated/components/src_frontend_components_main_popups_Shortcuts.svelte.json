@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/main/popups/Shortcuts.svelte","renders":[{"file":"src/frontend/components/main/popups/Shortcuts.svelte","line":100,"name":"HRule","target":"src/frontend/components/input/HRule.svelte","lazyTargets":[],"props":[{"name":"title","kind":"Attribute","value":"title={id.includes(\".\") ? translateText(id) : \"\"}","file":"src/frontend/components/main/popups/Shortcuts.svelte","line":100}],"dynamic":false,"confidence":"code"}],"props":[]}
+]

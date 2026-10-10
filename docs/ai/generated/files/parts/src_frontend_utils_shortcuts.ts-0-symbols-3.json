@@ -1,0 +1,5 @@
+[
+  {"file":"src/frontend/utils/shortcuts.ts","line":559,"name":"allFilesIndex","kind":"VariableDeclaration","endLine":559},
+  {"file":"src/frontend/utils/shortcuts.ts","line":566,"name":"outputStyle","kind":"VariableDeclaration","endLine":566},
+  {"file":"src/frontend/utils/shortcuts.ts","line":567,"name":"mediaStyle","kind":"VariableDeclaration","endLine":567}
+]

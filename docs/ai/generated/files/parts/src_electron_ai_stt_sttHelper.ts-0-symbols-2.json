@@ -1,0 +1,18 @@
+[
+  {"file":"src/electron/ai/stt/sttHelper.ts","line":138,"name":"repeats","kind":"VariableDeclaration","endLine":138},
+  {"file":"src/electron/ai/stt/sttHelper.ts","line":139,"name":"start","kind":"VariableDeclaration","endLine":139},
+  {"file":"src/electron/ai/stt/sttHelper.ts","line":142,"name":"previous","kind":"VariableDeclaration","endLine":145},
+  {"file":"src/electron/ai/stt/sttHelper.ts","line":160,"name":"segmentConfidence","kind":"FunctionDeclaration","endLine":185},
+  {"file":"src/electron/ai/stt/sttHelper.ts","line":163,"name":"joined","kind":"VariableDeclaration","endLine":163},
+  {"file":"src/electron/ai/stt/sttHelper.ts","line":166,"name":"lead","kind":"VariableDeclaration","endLine":166},
+  {"file":"src/electron/ai/stt/sttHelper.ts","line":167,"name":"start","kind":"VariableDeclaration","endLine":167},
+  {"file":"src/electron/ai/stt/sttHelper.ts","line":168,"name":"end","kind":"VariableDeclaration","endLine":168},
+  {"file":"src/electron/ai/stt/sttHelper.ts","line":170,"name":"sum","kind":"VariableDeclaration","endLine":170},
+  {"file":"src/electron/ai/stt/sttHelper.ts","line":171,"name":"count","kind":"VariableDeclaration","endLine":171},
+  {"file":"src/electron/ai/stt/sttHelper.ts","line":172,"name":"cursor","kind":"VariableDeclaration","endLine":172},
+  {"file":"src/electron/ai/stt/sttHelper.ts","line":174,"name":"i","kind":"VariableDeclaration","endLine":174},
+  {"file":"src/electron/ai/stt/sttHelper.ts","line":175,"name":"next","kind":"VariableDeclaration","endLine":175},
+  {"file":"src/electron/ai/stt/sttHelper.ts","line":190,"name":"MUSIC_WORDS","kind":"VariableDeclaration","endLine":190},
+  {"file":"src/electron/ai/stt/sttHelper.ts","line":192,"name":"isMusicAnnotation","kind":"FunctionDeclaration","endLine":199},
+  {"file":"src/electron/ai/stt/sttHelper.ts","line":196,"name":"labels","kind":"VariableDeclaration","endLine":196}
+]

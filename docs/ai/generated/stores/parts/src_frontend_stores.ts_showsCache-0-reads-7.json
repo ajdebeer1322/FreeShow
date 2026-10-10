@@ -1,0 +1,9 @@
+[
+  {"file":"src/frontend/utils/remoteTalk.ts","line":82,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":"SHOW","expression":"get(showsCache)"},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":133,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":"OUT","expression":"get(showsCache)"},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":357,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":"initializeRemote","expression":"get(showsCache)"},
+  {"file":"src/frontend/utils/save.ts","line":234,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":"save","expression":"get(showsCache)"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":128,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":"OUT","expression":"get(showsCache)"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":146,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":"SHOW_DATA","expression":"get(showsCache)"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":196,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":"REQUEST_PROGRESS","expression":"get(showsCache)"}
+]

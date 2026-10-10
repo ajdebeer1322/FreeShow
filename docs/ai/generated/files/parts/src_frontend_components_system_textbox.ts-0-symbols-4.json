@@ -1,0 +1,13 @@
+[
+  {"file":"src/frontend/components/system/textbox.ts","line":378,"name":"radiusSliderOffset","kind":"VariableDeclaration","endLine":378},
+  {"file":"src/frontend/components/system/textbox.ts","line":379,"name":"radiusSliderRatio","kind":"VariableDeclaration","endLine":379},
+  {"file":"src/frontend/components/system/textbox.ts","line":380,"name":"radiusHandleSize","kind":"VariableDeclaration","endLine":380},
+  {"file":"src/frontend/components/system/textbox.ts","line":381,"name":"getRadius","kind":"FunctionDeclaration","endLine":394},
+  {"file":"src/frontend/components/system/textbox.ts","line":382,"name":"itemElem","kind":"VariableDeclaration","endLine":382},
+  {"file":"src/frontend/components/system/textbox.ts","line":383,"name":"slideRect","kind":"VariableDeclaration","endLine":383},
+  {"file":"src/frontend/components/system/textbox.ts","line":386,"name":"rot","kind":"VariableDeclaration","endLine":386},
+  {"file":"src/frontend/components/system/textbox.ts","line":387,"name":"dx","kind":"VariableDeclaration","endLine":387},
+  {"file":"src/frontend/components/system/textbox.ts","line":388,"name":"dy","kind":"VariableDeclaration","endLine":388},
+  {"file":"src/frontend/components/system/textbox.ts","line":390,"name":"localX","kind":"VariableDeclaration","endLine":390},
+  {"file":"src/frontend/components/system/textbox.ts","line":391,"name":"relativeX","kind":"VariableDeclaration","endLine":391}
+]

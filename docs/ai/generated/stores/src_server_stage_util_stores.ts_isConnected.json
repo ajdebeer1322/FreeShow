@@ -1,0 +1,3 @@
+[
+  {"id":"src/server/stage/util/stores.ts#isConnected","name":"isConnected","file":"src/server/stage/util/stores.ts","line":16,"type":"inferred","factory":"writable","initial":"false","exported":true,"reads":[],"writes":[],"references":[],"transports":[],"persistence":[],"confidence":"code"}
+]

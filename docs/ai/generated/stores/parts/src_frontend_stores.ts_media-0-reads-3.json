@@ -1,0 +1,15 @@
+[
+  {"file":"src/frontend/components/slide/Slide.svelte","line":74,"store":"src/frontend/stores.ts#media","kind":"dollar","symbol":"checkGhostBackground","expression":"$media"},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":146,"store":"src/frontend/stores.ts#media","kind":"dollar","symbol":null,"expression":"$media"},
+  {"file":"src/frontend/components/slide/views/MediaItem.svelte","line":172,"store":"src/frontend/stores.ts#media","kind":"dollar","symbol":null,"expression":"$media"},
+  {"file":"src/frontend/components/slide/views/MediaItem.svelte","line":173,"store":"src/frontend/stores.ts#media","kind":"dollar","symbol":null,"expression":"$media"},
+  {"file":"src/frontend/components/slide/views/MediaItem.svelte","line":174,"store":"src/frontend/stores.ts#media","kind":"dollar","symbol":null,"expression":"$media"},
+  {"file":"src/frontend/utils/listeners.ts","line":280,"store":"src/frontend/stores.ts#media","kind":"subscribe","symbol":"storeSubscriber","expression":"media.subscribe((data) => { send(OUTPUT, [\"MEDIA\"], data) })"},
+  {"file":"src/frontend/utils/save.ts","line":230,"store":"src/frontend/stores.ts#media","kind":"get","symbol":"save","expression":"get(media)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":524,"store":"src/frontend/stores.ts#media","kind":"get","symbol":"togglePlayingMedia","expression":"get(media)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":567,"store":"src/frontend/stores.ts#media","kind":"get","symbol":"playFolder","expression":"get(media)"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":27,"store":"src/frontend/stores.ts#media","kind":"get","symbol":"sendBackgroundToStage","expression":"get(media)"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":38,"store":"src/frontend/stores.ts#media","kind":"get","symbol":"sendBackgroundToStage","expression":"get(media)"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":68,"store":"src/frontend/stores.ts#media","kind":"get","symbol":"getNextBackground","expression":"get(media)"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":72,"store":"src/frontend/stores.ts#media","kind":"get","symbol":"getNextBackground","expression":"get(media)"}
+]

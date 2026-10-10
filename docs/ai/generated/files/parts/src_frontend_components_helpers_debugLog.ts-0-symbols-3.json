@@ -1,0 +1,17 @@
+[
+  {"file":"src/frontend/components/helpers/debugLog.ts","line":347,"name":"domObserver","kind":"VariableDeclaration","endLine":347},
+  {"file":"src/frontend/components/helpers/debugLog.ts","line":348,"name":"DOM_BURST_MIN","kind":"VariableDeclaration","endLine":348},
+  {"file":"src/frontend/components/helpers/debugLog.ts","line":350,"name":"describeElement","kind":"FunctionDeclaration","endLine":357},
+  {"file":"src/frontend/components/helpers/debugLog.ts","line":351,"name":"classes","kind":"VariableDeclaration","endLine":355},
+  {"file":"src/frontend/components/helpers/debugLog.ts","line":359,"name":"watchDom","kind":"FunctionDeclaration","endLine":400},
+  {"file":"src/frontend/components/helpers/debugLog.ts","line":362,"name":"added","kind":"VariableDeclaration","endLine":362},
+  {"file":"src/frontend/components/helpers/debugLog.ts","line":363,"name":"removed","kind":"VariableDeclaration","endLine":363},
+  {"file":"src/frontend/components/helpers/debugLog.ts","line":364,"name":"biggestAdded","kind":"VariableDeclaration","endLine":364},
+  {"file":"src/frontend/components/helpers/debugLog.ts","line":365,"name":"biggestRemoved","kind":"VariableDeclaration","endLine":365},
+  {"file":"src/frontend/components/helpers/debugLog.ts","line":366,"name":"timer","kind":"VariableDeclaration","endLine":366},
+  {"file":"src/frontend/components/helpers/debugLog.ts","line":367,"name":"top","kind":"VariableDeclaration","endLine":367},
+  {"file":"src/frontend/components/helpers/debugLog.ts","line":372,"name":"parent","kind":"VariableDeclaration","endLine":372},
+  {"file":"src/frontend/components/helpers/debugLog.ts","line":375,"name":"size","kind":"VariableDeclaration","endLine":375},
+  {"file":"src/frontend/components/helpers/debugLog.ts","line":381,"name":"size","kind":"VariableDeclaration","endLine":381},
+  {"file":"src/frontend/components/helpers/debugLog.ts","line":402,"name":"stopWatchers","kind":"FunctionDeclaration","endLine":407}
+]

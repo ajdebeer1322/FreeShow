@@ -1,0 +1,5 @@
+[
+  {"file":"src/frontend/utils/remoteTalk.ts","line":308,"store":"src/frontend/stores.ts#templates","kind":"get","symbol":"GET_TEMPLATES","expression":"get(templates)"},
+  {"file":"src/frontend/utils/save.ts","line":228,"store":"src/frontend/stores.ts#templates","kind":"get","symbol":"save","expression":"get(templates)"},
+  {"file":"src/frontend/utils/templates.ts","line":15,"store":"src/frontend/stores.ts#templates","kind":"get","symbol":null,"expression":"get(templates)"}
+]

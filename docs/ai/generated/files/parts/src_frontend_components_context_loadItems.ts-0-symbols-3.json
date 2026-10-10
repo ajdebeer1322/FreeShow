@@ -1,0 +1,17 @@
+[
+  {"file":"src/frontend/components/context/loadItems.ts","line":379,"name":"currentBindings","kind":"VariableDeclaration","endLine":379},
+  {"file":"src/frontend/components/context/loadItems.ts","line":391,"name":"outputList","kind":"VariableDeclaration","endLine":391},
+  {"file":"src/frontend/components/context/loadItems.ts","line":392,"name":"contextOutputList","kind":"VariableDeclaration","endLine":392},
+  {"file":"src/frontend/components/context/loadItems.ts","line":394,"name":"sceneId","kind":"VariableDeclaration","endLine":394},
+  {"file":"src/frontend/components/context/loadItems.ts","line":395,"name":"currentBindings","kind":"VariableDeclaration","endLine":395},
+  {"file":"src/frontend/components/context/loadItems.ts","line":408,"name":"setContextData","kind":"FunctionDeclaration","endLine":413},
+  {"file":"src/frontend/components/context/loadItems.ts","line":415,"name":"sortItems","kind":"FunctionDeclaration","endLine":429},
+  {"file":"src/frontend/components/context/loadItems.ts","line":416,"name":"type","kind":"VariableDeclaration","endLine":416},
+  {"file":"src/frontend/components/context/loadItems.ts","line":431,"name":"sortItemsByLabel","kind":"FunctionDeclaration","endLine":438},
+  {"file":"src/frontend/components/context/loadItems.ts","line":433,"name":"aName","kind":"VariableDeclaration","endLine":433},
+  {"file":"src/frontend/components/context/loadItems.ts","line":434,"name":"bName","kind":"VariableDeclaration","endLine":434},
+  {"file":"src/frontend/components/context/loadItems.ts","line":440,"name":"loadItems","kind":"FunctionDeclaration","endLine":447},
+  {"file":"src/frontend/components/context/loadItems.ts","line":443,"name":"items","kind":"VariableDeclaration","endLine":443},
+  {"file":"src/frontend/components/context/loadItems.ts","line":444,"name":"menuItems","kind":"VariableDeclaration","endLine":444},
+  {"file":"src/frontend/components/context/loadItems.ts","line":449,"name":"quickLoadItems","kind":"FunctionDeclaration","endLine":452}
+]

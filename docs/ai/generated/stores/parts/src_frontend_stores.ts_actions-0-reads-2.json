@@ -1,0 +1,21 @@
+[
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":189,"store":"src/frontend/stores.ts#actions","kind":"get","symbol":"quicksearch","expression":"get(actions)"},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":376,"store":"src/frontend/stores.ts#actions","kind":"get","symbol":"action","expression":"get(actions)"},
+  {"file":"src/frontend/components/settings/tabs/Profiles.svelte","line":206,"store":"src/frontend/stores.ts#actions","kind":"dollar","symbol":null,"expression":"$actions"},
+  {"file":"src/frontend/components/settings/tabs/Profiles.svelte","line":245,"store":"src/frontend/stores.ts#actions","kind":"dollar-template","expression":"$actions","symbol":null},
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":326,"store":"src/frontend/stores.ts#actions","kind":"dollar-template","expression":"$actions","symbol":null},
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":327,"store":"src/frontend/stores.ts#actions","kind":"dollar-template","expression":"$actions","symbol":null},
+  {"file":"src/frontend/components/show/Section.svelte","line":61,"store":"src/frontend/stores.ts#actions","kind":"dollar","symbol":null,"expression":"$actions"},
+  {"file":"src/frontend/components/show/Section.svelte","line":91,"store":"src/frontend/stores.ts#actions","kind":"dollar","symbol":null,"expression":"$actions"},
+  {"file":"src/frontend/components/show/Section.svelte","line":102,"store":"src/frontend/stores.ts#actions","kind":"dollar-template","expression":"$actions","symbol":null},
+  {"file":"src/frontend/components/slide/SlideBar.svelte","line":42,"store":"src/frontend/stores.ts#actions","kind":"dollar","symbol":null,"expression":"$actions"},
+  {"file":"src/frontend/components/slide/SlideBar.svelte","line":49,"store":"src/frontend/stores.ts#actions","kind":"dollar","symbol":"runCustomAction","expression":"$actions"},
+  {"file":"src/frontend/components/slide/SlideBar.svelte","line":67,"store":"src/frontend/stores.ts#actions","kind":"dollar-template","expression":"$actions","symbol":null},
+  {"file":"src/frontend/components/slide/SlideBar.svelte","line":69,"store":"src/frontend/stores.ts#actions","kind":"dollar-template","expression":"$actions","symbol":null},
+  {"file":"src/frontend/components/slide/SlideBar.svelte","line":71,"store":"src/frontend/stores.ts#actions","kind":"dollar-template","expression":"$actions","symbol":null},
+  {"file":"src/frontend/components/timeline/ShowTimeline.ts","line":110,"store":"src/frontend/stores.ts#actions","kind":"get","symbol":"outputListener","expression":"get(actions)"},
+  {"file":"src/frontend/utils/listeners.ts","line":408,"store":"src/frontend/stores.ts#actions","kind":"subscribe","symbol":"storeSubscriber","expression":"actions.subscribe((data) => { midiInListen() // REMOTE send(REMOTE, [\"ACTIONS\"], data) })"},
+  {"file":"src/frontend/utils/receivers.ts","line":140,"store":"src/frontend/stores.ts#actions","kind":"get","symbol":"ACTION_MAIN","expression":"get(actions)"},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":313,"store":"src/frontend/stores.ts#actions","kind":"get","symbol":"GET_FUNCTIONS","expression":"get(actions)"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":217,"store":"src/frontend/stores.ts#actions","kind":"get","symbol":"RUN_ACTION","expression":"get(actions)"}
+]

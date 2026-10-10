@@ -1,0 +1,22 @@
+[
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":458,"store":"src/frontend/stores.ts#activeTimers","kind":"get","symbol":"getFirstActiveTimer","expression":"get(activeTimers)"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":458,"store":"src/frontend/stores.ts#activeTimers","kind":"reference","symbol":"getFirstActiveTimer","expression":"activeTimers"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":459,"store":"src/frontend/stores.ts#timers","kind":"get","symbol":"getFirstActiveTimer","expression":"get(timers)"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":459,"store":"src/frontend/stores.ts#timers","kind":"reference","symbol":"getFirstActiveTimer","expression":"timers"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":465,"store":"src/frontend/stores.ts#timers","kind":"get","symbol":"getTimerValue","expression":"get(timers)"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":465,"store":"src/frontend/stores.ts#timers","kind":"reference","symbol":"getTimerValue","expression":"timers"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":471,"store":"src/frontend/stores.ts#timers","kind":"get","symbol":"isTimerRunning","expression":"get(timers)"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":471,"store":"src/frontend/stores.ts#timers","kind":"reference","symbol":"isTimerRunning","expression":"timers"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":479,"store":"src/frontend/stores.ts#activeTimers","kind":"get","symbol":"isTimerRunning","expression":"get(activeTimers)"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":479,"store":"src/frontend/stores.ts#activeTimers","kind":"reference","symbol":"isTimerRunning","expression":"activeTimers"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":483,"store":"src/frontend/stores.ts#variables","kind":"get","symbol":"_getVariableValue","expression":"get(variables)"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":483,"store":"src/frontend/stores.ts#variables","kind":"reference","symbol":"_getVariableValue","expression":"variables"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":501,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":"getDynamicValue","expression":"get(activeShow)"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":501,"store":"src/frontend/stores.ts#activeShow","kind":"reference","symbol":"getDynamicValue","expression":"activeShow"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":503,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"getDynamicValue","expression":"get(activeEdit)"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":503,"store":"src/frontend/stores.ts#activeEdit","kind":"reference","symbol":"getDynamicValue","expression":"activeEdit"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":504,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"getDynamicValue","expression":"get(activeEdit)"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":504,"store":"src/frontend/stores.ts#activeEdit","kind":"reference","symbol":"getDynamicValue","expression":"activeEdit"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":505,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"getDynamicValue","expression":"get(activeEdit)"},
+  {"file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":505,"store":"src/frontend/stores.ts#activeEdit","kind":"reference","symbol":"getDynamicValue","expression":"activeEdit"}
+]

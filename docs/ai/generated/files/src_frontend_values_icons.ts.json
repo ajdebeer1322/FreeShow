@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/values/icons.ts","area":"frontend","hash":"2a54f8bcbf404213bfd798b815c23b7e357a8a4ddbf13265179907e05089946a","lineCount":386,"imports":[],"symbols":[{"file":"src/frontend/values/icons.ts","line":3,"name":"icons","kind":"VariableDeclaration","endLine":383}],"stores":[],"components":[],"timers":[],"workarounds":[{"id":"workaround-84a65bb833f19e0b","file":"src/frontend/values/icons.ts","line":318,"endLine":318,"text":"// WIP","start":64770,"end":64776,"markers":["WIP"],"confidence":"code"}],"settings":[],"ipc":[],"$parts":{"comments":["files/parts/src_frontend_values_icons.ts-0-comments-1.json","files/parts/src_frontend_values_icons.ts-0-comments-2.json"]}}
+]

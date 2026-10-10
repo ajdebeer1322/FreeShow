@@ -1,0 +1,22 @@
+[
+  {"file":"src/types/Main.ts","line":294,"endLine":294,"text":"// text","start":6694,"end":6701},
+  {"file":"src/types/Main.ts","line":298,"endLine":298,"text":"// text set","start":6747,"end":6758},
+  {"file":"src/types/Main.ts","line":312,"endLine":312,"text":"// default = true","start":7212,"end":7229},
+  {"file":"src/types/Main.ts","line":313,"endLine":313,"text":"// default = false","start":7256,"end":7274},
+  {"file":"src/types/Main.ts","line":314,"endLine":314,"text":"// default = false","start":7299,"end":7317},
+  {"file":"src/types/Main.ts","line":315,"endLine":315,"text":"// seconds, default = no limit","start":7339,"end":7369},
+  {"file":"src/types/Main.ts","line":316,"endLine":316,"text":"// default = \"incremental\"","start":7424,"end":7450},
+  {"file":"src/types/Main.ts","line":317,"endLine":317,"text":"// default for incremental = 1, falloff = 10, speed = 100","start":7476,"end":7533},
+  {"file":"src/types/Main.ts","line":331,"endLine":331,"text":"// \"textarea\"","start":7853,"end":7866},
+  {"file":"src/types/Main.ts","line":332,"endLine":332,"text":"// text does not need a precise answer","start":7887,"end":7925},
+  {"file":"src/types/Main.ts","line":339,"endLine":339,"text":"// 0","start":8126,"end":8130},
+  {"file":"src/types/Main.ts","line":340,"endLine":340,"text":"// 1000","start":8148,"end":8155},
+  {"file":"src/types/Main.ts","line":370,"endLine":370,"text":"// currently admin only","start":8754,"end":8777},
+  {"file":"src/types/Main.ts","line":371,"endLine":371,"text":"// admin only","start":8809,"end":8822},
+  {"file":"src/types/Main.ts","line":374,"endLine":374,"text":"// action that triggers each time this profile is selected","start":8922,"end":8980},
+  {"file":"src/types/Main.ts","line":483,"endLine":483,"text":"// export type DropIds = \"slide\" | \"slide_group\" | \"show\" | \"show_drawer\" | \"project\" | \"folder\" | \"file\"","start":11215,"end":11320},
+  {"file":"src/types/Main.ts","line":484,"endLine":484,"text":"// export interface Drop {","start":11321,"end":11347},
+  {"file":"src/types/Main.ts","line":485,"endLine":485,"text":"//   id: null | SelectIds","start":11348,"end":11373},
+  {"file":"src/types/Main.ts","line":486,"endLine":486,"text":"//   data: null | number","start":11374,"end":11398},
+  {"file":"src/types/Main.ts","line":487,"endLine":487,"text":"// }","start":11399,"end":11403}
+]

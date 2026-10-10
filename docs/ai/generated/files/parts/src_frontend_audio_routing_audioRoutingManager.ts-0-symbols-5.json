@@ -1,0 +1,22 @@
+[
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":708,"name":"unregisterInputNode","kind":"MethodDeclaration","endLine":724},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":709,"name":"nodes","kind":"VariableDeclaration","endLine":709},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":713,"name":"n","kind":"VariableDeclaration","endLine":713},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":726,"name":"registerChannelRecorder","kind":"MethodDeclaration","endLine":730},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":728,"name":"outNode","kind":"VariableDeclaration","endLine":728},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":732,"name":"unregisterChannelRecorder","kind":"MethodDeclaration","endLine":741},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":733,"name":"current","kind":"VariableDeclaration","endLine":733},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":743,"name":"getChannelOutputNode","kind":"MethodDeclaration","endLine":745},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":747,"name":"getChannelVolume","kind":"MethodDeclaration","endLine":756},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":748,"name":"channel","kind":"VariableDeclaration","endLine":748},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":751,"name":"volume","kind":"VariableDeclaration","endLine":751},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":758,"name":"sortChannels","kind":"MethodDeclaration","endLine":777},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":761,"name":"outputsMap","kind":"VariableDeclaration","endLine":761},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":762,"name":"isLinkedToOutput","kind":"VariableDeclaration","endLine":762},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":764,"name":"main","kind":"VariableDeclaration","endLine":764},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":765,"name":"unlinked","kind":"VariableDeclaration","endLine":765},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":766,"name":"outputLinked","kind":"VariableDeclaration","endLine":766},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":768,"name":"i","kind":"VariableDeclaration","endLine":768},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":769,"name":"ch","kind":"VariableDeclaration","endLine":769},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":775,"name":"sortByName","kind":"VariableDeclaration","endLine":775}
+]

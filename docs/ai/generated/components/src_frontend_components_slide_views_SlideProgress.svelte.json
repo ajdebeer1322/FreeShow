@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/slide/views/SlideProgress.svelte","renders":[],"props":[{"name":"tracker","file":"src/frontend/components/slide/views/SlideProgress.svelte","line":10},{"name":"outputId","file":"src/frontend/components/slide/views/SlideProgress.svelte","line":11},{"name":"item","file":"src/frontend/components/slide/views/SlideProgress.svelte","line":12},{"name":"autoSize","file":"src/frontend/components/slide/views/SlideProgress.svelte","line":13}]}
+]

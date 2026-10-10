@@ -1,0 +1,23 @@
+[
+  {"file":"src/frontend/components/output/clear.ts","line":16,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"clearAll","expression":"get(activeEdit)"},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":114,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"quicksearch","expression":"get(activeEdit)"},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":118,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"quicksearch","expression":"get(activeEdit)"},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":325,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"add_item_edit","expression":"get(activeEdit)"},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":328,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"add_item_edit","expression":"get(activeEdit)"},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":477,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"show","expression":"get(activeEdit)"},
+  {"file":"src/frontend/components/show/project.ts","line":75,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"openProjectItem","expression":"get(activeEdit)"},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":280,"store":"src/frontend/stores.ts#activeEdit","kind":"dollar","symbol":null,"expression":"$activeEdit"},
+  {"file":"src/frontend/components/slide/views/Table.svelte","line":40,"store":"src/frontend/stores.ts#activeEdit","kind":"dollar","symbol":"updateItem","expression":"$activeEdit"},
+  {"file":"src/frontend/components/timeline/SlideTimeline.ts","line":19,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"addKeyframe","expression":"get(activeEdit)"},
+  {"file":"src/frontend/components/timeline/Timeline.svelte","line":695,"store":"src/frontend/stores.ts#activeEdit","kind":"dollar","symbol":null,"expression":"$activeEdit"},
+  {"file":"src/frontend/components/timeline/TimelineActions.ts","line":46,"store":"src/frontend/stores.ts#activeEdit","kind":"subscribe","symbol":null,"expression":"activeEdit.subscribe((a) => { if (!a) return const type = a.type || \"show\" const slideIndex = a.slide if (type !== \"show\" || typeof slideIndex !== \"number\") return const showId = g"},
+  {"file":"src/frontend/components/timeline/TimelineActions.ts","line":86,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"updateRef","expression":"get(activeEdit)"},
+  {"file":"src/frontend/components/timeline/TimelinePlayback.ts","line":87,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":null,"expression":"get(activeEdit)"},
+  {"file":"src/frontend/show/slides.ts","line":878,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"mergeTextboxes","expression":"get(activeEdit)"},
+  {"file":"src/frontend/show/slides.ts","line":889,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"mergeTextboxes","expression":"get(activeEdit)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":75,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"t","expression":"get(activeEdit)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":148,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"shouldOpenReplace","expression":"get(activeEdit)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":265,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"keydown","expression":"get(activeEdit)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":401,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"ArrowRight","expression":"get(activeEdit)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":408,"store":"src/frontend/stores.ts#activeEdit","kind":"get","symbol":"ArrowLeft","expression":"get(activeEdit)"}
+]

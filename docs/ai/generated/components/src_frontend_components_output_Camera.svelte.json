@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/output/Camera.svelte","renders":[],"props":[{"name":"id","file":"src/frontend/components/output/Camera.svelte","line":8},{"name":"groupId","file":"src/frontend/components/output/Camera.svelte","line":9},{"name":"preview","file":"src/frontend/components/output/Camera.svelte","line":10},{"name":"videoElem","file":"src/frontend/components/output/Camera.svelte","line":11}]}
+]

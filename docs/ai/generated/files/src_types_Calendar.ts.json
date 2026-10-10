@@ -1,0 +1,3 @@
+[
+  {"file":"src/types/Calendar.ts","area":"types","hash":"2b08d1f380b844daf0e1c58721f46215c9bc313fb14b720c58c88f28f5d9a3b9","lineCount":29,"imports":[],"symbols":[{"file":"src/types/Calendar.ts","line":1,"name":"Event","kind":"InterfaceDeclaration","endLine":28}],"stores":[],"components":[],"timers":[],"workarounds":[],"settings":[],"ipc":[],"comments":[{"file":"src/types/Calendar.ts","line":9,"endLine":9,"text":"// <= 1.1.7","start":207,"end":218},{"file":"src/types/Calendar.ts","line":27,"endLine":27,"text":"// .ics origin name","start":664,"end":683}]}
+]

@@ -60,7 +60,8 @@
         "lint": "npm-run-all -s lint:electron lint:frontend lint:styles",
         "lint:electron": "eslint -c config/linting/eslint.electron.json --ext .js,.ts src/electron --fix",
         "lint:frontend": "eslint -c config/linting/eslint.frontend.json --ext .js,.ts src/frontend --fix",
-        "lint:styles": "npx stylelint 'src/frontend/**/*.{css,scss,svelte}' --config config/linting/.stylelintrc.json"
+        "lint:styles": "npx stylelint 'src/frontend/**/*.{css,scss,svelte}' --config config/linting/.stylelintrc.json",
+        "ai:map": "node scripts/ai-map/generate.mjs"
     },
     "devDependencies": {
         "@mapbox/node-pre-gyp": "^2.0.0",

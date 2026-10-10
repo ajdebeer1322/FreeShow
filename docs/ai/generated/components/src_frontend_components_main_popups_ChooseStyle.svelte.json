@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/main/popups/ChooseStyle.svelte","renders":[{"file":"src/frontend/components/main/popups/ChooseStyle.svelte","line":16,"name":"MaterialMultiChoice","target":"src/frontend/components/inputs/MaterialMultiChoice.svelte","lazyTargets":[],"props":[{"name":"options","kind":"Attribute","value":"options={styleTypes}","file":"src/frontend/components/main/popups/ChooseStyle.svelte","line":16},{"name":"click","kind":"OnDirective","value":"on:click={(e) => selectStyle(e.detail)}","file":"src/frontend/components/main/popups/ChooseStyle.svelte","line":16}],"dynamic":false,"confidence":"code"}],"props":[]}
+]

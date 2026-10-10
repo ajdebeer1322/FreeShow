@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/values/autosave.ts","area":"frontend","hash":"c5b900687bbd6f1489be93ea543d6829b3f0f840139230d1544b89d3d3442535","lineCount":10,"imports":[],"symbols":[{"file":"src/frontend/values/autosave.ts","line":1,"name":"convertAutosave","kind":"VariableDeclaration","endLine":9}],"stores":[],"components":[],"timers":[],"workarounds":[],"settings":[],"ipc":[],"comments":[]}
+]

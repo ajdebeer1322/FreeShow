@@ -1,0 +1,23 @@
+[
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":245,"name":"firstTimerId","kind":"VariableDeclaration","endLine":245},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":252,"name":"itemStyle","kind":"VariableDeclaration","endLine":252},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":253,"name":"textStyle","kind":"VariableDeclaration","endLine":253},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":255,"name":"updateStyles","kind":"FunctionDeclaration","endLine":272},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":256,"name":"styles","kind":"VariableDeclaration","endLine":256},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":257,"name":"textStyleKeys","kind":"VariableDeclaration","endLine":257},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":260,"name":"isSlideTextWithAutosize","kind":"VariableDeclaration","endLine":260},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":296,"name":"removeConditions","kind":"FunctionDeclaration","endLine":303},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":307,"name":"conditionsUpdater","kind":"VariableDeclaration","endLine":307},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":308,"name":"updateTrigger","kind":"VariableDeclaration","endLine":308},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":309,"name":"updaterInterval","kind":"VariableDeclaration","endLine":309},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":310,"name":"cssInterval","kind":"VariableDeclaration","endLine":310},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":312,"name":"intervalTime","kind":"VariableDeclaration","endLine":312},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":313,"name":"condIntervalTime","kind":"VariableDeclaration","endLine":313},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":335,"name":"value","kind":"VariableDeclaration","endLine":335},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":339,"name":"getLayoutMounted","kind":"VariableDeclaration","endLine":339},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":340,"name":"lastText","kind":"VariableDeclaration","endLine":340},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":341,"name":"flashTriggerId","kind":"VariableDeclaration","endLine":341},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":343,"name":"evaluatedText","kind":"VariableDeclaration","endLine":343},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":344,"name":"currentText","kind":"VariableDeclaration","endLine":344},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":345,"name":"parentIsMounting","kind":"VariableDeclaration","endLine":345}
+]

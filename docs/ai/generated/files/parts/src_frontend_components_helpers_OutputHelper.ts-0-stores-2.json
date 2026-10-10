@@ -1,0 +1,15 @@
+[
+  {"file":"src/frontend/components/helpers/OutputHelper.ts","line":654,"store":"src/frontend/stores.ts#projects","kind":"reference","symbol":"getProjectItems","expression":"projects"},
+  {"file":"src/frontend/components/helpers/OutputHelper.ts","line":654,"store":"src/frontend/stores.ts#activeProject","kind":"get","symbol":"getProjectItems","expression":"get(activeProject)"},
+  {"file":"src/frontend/components/helpers/OutputHelper.ts","line":654,"store":"src/frontend/stores.ts#activeProject","kind":"reference","symbol":"getProjectItems","expression":"activeProject"},
+  {"file":"src/frontend/components/helpers/OutputHelper.ts","line":663,"store":"src/frontend/stores.ts#focusMode","kind":"get","symbol":"getActiveItem","expression":"get(focusMode)"},
+  {"file":"src/frontend/components/helpers/OutputHelper.ts","line":663,"store":"src/frontend/stores.ts#focusMode","kind":"reference","symbol":"getActiveItem","expression":"focusMode"},
+  {"file":"src/frontend/components/helpers/OutputHelper.ts","line":663,"store":"src/frontend/stores.ts#activeFocus","kind":"get","symbol":"getActiveItem","expression":"get(activeFocus)"},
+  {"file":"src/frontend/components/helpers/OutputHelper.ts","line":663,"store":"src/frontend/stores.ts#activeFocus","kind":"reference","symbol":"getActiveItem","expression":"activeFocus"},
+  {"file":"src/frontend/components/helpers/OutputHelper.ts","line":663,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":"getActiveItem","expression":"get(activeShow)"},
+  {"file":"src/frontend/components/helpers/OutputHelper.ts","line":663,"store":"src/frontend/stores.ts#activeShow","kind":"reference","symbol":"getActiveItem","expression":"activeShow"},
+  {"file":"src/frontend/components/helpers/OutputHelper.ts","line":670,"store":"src/frontend/stores.ts#outputs","kind":"get","symbol":"getOut","expression":"get(outputs)"},
+  {"file":"src/frontend/components/helpers/OutputHelper.ts","line":670,"store":"src/frontend/stores.ts#outputs","kind":"reference","symbol":"getOut","expression":"outputs"},
+  {"file":"src/frontend/components/helpers/OutputHelper.ts","line":678,"store":"src/frontend/stores.ts#outputSlideCache","kind":"get","symbol":"getOut","expression":"get(outputSlideCache)"},
+  {"file":"src/frontend/components/helpers/OutputHelper.ts","line":678,"store":"src/frontend/stores.ts#outputSlideCache","kind":"reference","symbol":"getOut","expression":"outputSlideCache"}
+]

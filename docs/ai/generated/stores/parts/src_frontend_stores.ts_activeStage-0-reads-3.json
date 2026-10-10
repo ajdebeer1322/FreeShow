@@ -1,0 +1,15 @@
+[
+  {"file":"src/frontend/components/stage/tools/BoxStyle.svelte","line":233,"store":"src/frontend/stores.ts#activeStage","kind":"dollar","symbol":"updateStyle","expression":"$activeStage"},
+  {"file":"src/frontend/components/stage/tools/ItemStyle.svelte","line":14,"store":"src/frontend/stores.ts#activeStage","kind":"dollar","symbol":null,"expression":"$activeStage"},
+  {"file":"src/frontend/components/stage/tools/ItemStyle.svelte","line":15,"store":"src/frontend/stores.ts#activeStage","kind":"dollar","symbol":null,"expression":"$activeStage"},
+  {"file":"src/frontend/components/stage/tools/ItemStyle.svelte","line":85,"store":"src/frontend/stores.ts#activeStage","kind":"dollar","symbol":"updateStyle","expression":"$activeStage"},
+  {"file":"src/frontend/components/stage/tools/ItemStyle.svelte","line":86,"store":"src/frontend/stores.ts#activeStage","kind":"dollar","symbol":"updateStyle","expression":"$activeStage"},
+  {"file":"src/frontend/components/stage/tools/SlideStyle.svelte","line":13,"store":"src/frontend/stores.ts#activeStage","kind":"dollar","symbol":null,"expression":"$activeStage"},
+  {"file":"src/frontend/components/stage/tools/SlideStyle.svelte","line":20,"store":"src/frontend/stores.ts#activeStage","kind":"dollar","symbol":"updateStageSettings","expression":"$activeStage"},
+  {"file":"src/frontend/components/stage/tools/SlideStyle.svelte","line":27,"store":"src/frontend/stores.ts#activeStage","kind":"dollar","symbol":"updateStagePassword","expression":"$activeStage"},
+  {"file":"src/frontend/components/stage/tools/StageItemsList.svelte","line":15,"store":"src/frontend/stores.ts#activeStage","kind":"dollar","symbol":null,"expression":"$activeStage"},
+  {"file":"src/frontend/components/stage/tools/StageItemsList.svelte","line":56,"store":"src/frontend/stores.ts#activeStage","kind":"dollar-template","expression":"$activeStage","symbol":null},
+  {"file":"src/frontend/components/stage/tools/StageItemsList.svelte","line":68,"store":"src/frontend/stores.ts#activeStage","kind":"dollar-template","expression":"$activeStage","symbol":null},
+  {"file":"src/frontend/utils/shortcuts.ts","line":401,"store":"src/frontend/stores.ts#activeStage","kind":"get","symbol":"ArrowRight","expression":"get(activeStage)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":408,"store":"src/frontend/stores.ts#activeStage","kind":"get","symbol":"ArrowLeft","expression":"get(activeStage)"}
+]

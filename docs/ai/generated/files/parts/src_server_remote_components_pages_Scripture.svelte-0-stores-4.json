@@ -1,0 +1,13 @@
+[
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":1040,"store":"src/server/remote/util/stores.ts#scriptureViewList","kind":"dollar-template","expression":"$scriptureViewList","symbol":null},
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":1040,"store":"src/server/remote/util/stores.ts#scriptureMultiSelect","kind":"dollar-template","expression":"$scriptureMultiSelect","symbol":null},
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":1040,"store":"src/server/remote/util/stores.ts#selectedVerses","kind":"dollar-template","expression":"$selectedVerses","symbol":null},
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":1041,"store":"src/server/remote/util/stores.ts#selectedVerses","kind":"dollar-template","expression":"$selectedVerses","symbol":null},
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":1045,"store":"src/server/remote/util/stores.ts#scriptureViewList","kind":"dollar-template","expression":"$scriptureViewList","symbol":null},
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":1046,"store":"src/server/remote/util/stores.ts#scriptureViewList","kind":"dollar-template","expression":"$scriptureViewList","symbol":null},
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":1051,"store":"src/server/remote/util/stores.ts#isCleared","kind":"dollar-template","expression":"$isCleared","symbol":null},
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":1060,"store":"src/server/remote/util/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null},
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":1065,"store":"src/server/remote/util/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null},
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":1071,"store":"src/server/remote/util/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null},
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":1087,"store":"src/server/remote/util/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null}
+]

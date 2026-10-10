@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/edit/tools/SlideFilters.svelte","renders":[{"file":"src/frontend/components/edit/tools/SlideFilters.svelte","line":49,"name":"EditValues","target":"src/frontend/components/edit/tools/EditValues.svelte","lazyTargets":[],"props":[{"name":"sections","kind":"Attribute","value":"sections={currentSlideFilterSections}","file":"src/frontend/components/edit/tools/SlideFilters.svelte","line":49},{"name":"item","kind":"Attribute","value":"item={filterData}","file":"src/frontend/components/edit/tools/SlideFilters.svelte","line":49},{"name":"change","kind":"OnDirective","value":"on:change={(e) => valueChanged(e.detail)}","file":"src/frontend/components/edit/tools/SlideFilters.svelte","line":49}],"dynamic":false,"confidence":"code"}],"props":[]}
+]

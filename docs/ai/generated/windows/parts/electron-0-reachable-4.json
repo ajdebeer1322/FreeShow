@@ -1,0 +1,16 @@
+[
+  "src/electron/utils/keys.ts",
+  "src/electron/utils/menuTemplate.ts",
+  "src/electron/utils/midi.ts",
+  "src/electron/utils/oscPatch.ts",
+  "src/electron/utils/requests.ts",
+  "src/electron/utils/shows.ts",
+  "src/electron/utils/spellcheck.ts",
+  "src/electron/utils/spotify.ts",
+  "src/electron/utils/windowOptions.ts",
+  "src/electron/worshipTools/channels.ts",
+  "src/electron/worshipTools/worshipTools.ts",
+  "src/types/Channels.ts",
+  "src/types/IPC/Main.ts",
+  "src/types/IPC/ToMain.ts"
+]

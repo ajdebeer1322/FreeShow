@@ -1,0 +1,16 @@
+[
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":704,"name":"input","kind":"VariableDeclaration","endLine":704},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":716,"name":"id","kind":"VariableDeclaration","endLine":716},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":726,"name":"loaded","kind":"VariableDeclaration","endLine":726},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":727,"name":"hasLoaded","kind":"VariableDeclaration","endLine":727},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":734,"name":"changes","kind":"VariableDeclaration","endLine":734},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":736,"name":"shownTemplateTip","kind":"VariableDeclaration","endLine":736},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":737,"name":"checkChanges","kind":"FunctionDeclaration","endLine":780},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":740,"name":"categoryId","kind":"VariableDeclaration","endLine":740},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":741,"name":"categoryTemplate","kind":"VariableDeclaration","endLine":741},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":752,"name":"outputsHasStyleTemplate","kind":"VariableDeclaration","endLine":754},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":765,"name":"SLIDES","kind":"VariableDeclaration","endLine":765},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":766,"name":"allValues","kind":"VariableDeclaration","endLine":766},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":767,"name":"valueCounts","kind":"VariableDeclaration","endLine":767},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":773,"name":"duplicates","kind":"VariableDeclaration","endLine":773}
+]

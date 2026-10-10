@@ -1,0 +1,21 @@
+[
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":229,"name":"title","kind":"VariableDeclaration","endLine":229},
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":236,"name":"sanitizeChart","kind":"FunctionDeclaration","endLine":264},
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":239,"name":"sections","kind":"VariableDeclaration","endLine":239},
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":241,"name":"lines","kind":"VariableDeclaration","endLine":241},
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":244,"name":"lineText","kind":"VariableDeclaration","endLine":244},
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":268,"name":"pending","kind":"VariableDeclaration","endLine":268},
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":269,"name":"activeRun","kind":"VariableDeclaration","endLine":269},
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":271,"name":"requestRead","kind":"FunctionDeclaration","endLine":290},
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":278,"name":"requestId","kind":"VariableDeclaration","endLine":278},
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":279,"name":"done","kind":"VariableDeclaration","endLine":283},
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":284,"name":"timeout","kind":"VariableDeclaration","endLine":284},
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":287,"name":"request","kind":"VariableDeclaration","endLine":287},
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":292,"name":"importSongs","kind":"FunctionDeclaration","endLine":324},
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":294,"name":"list","kind":"VariableDeclaration","endLine":294},
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":300,"name":"run","kind":"VariableDeclaration","endLine":300},
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":304,"name":"song","kind":"VariableDeclaration","endLine":304},
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":311,"name":"result","kind":"VariableDeclaration","endLine":311},
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":317,"name":"chart","kind":"VariableDeclaration","endLine":317},
+  {"file":"src/electron/worshipTools/worshipTools.ts","line":326,"name":"cancelImport","kind":"FunctionDeclaration","endLine":330}
+]

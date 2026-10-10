@@ -1,0 +1,16 @@
+[
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":421,"name":"slideGroups","kind":"VariableDeclaration","endLine":421},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":422,"name":"currentIndex","kind":"VariableDeclaration","endLine":422},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":435,"name":"textItems","kind":"VariableDeclaration","endLine":435},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":439,"name":"reversed","kind":"VariableDeclaration","endLine":439},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":449,"name":"textContent","kind":"VariableDeclaration","endLine":449},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":450,"name":"chords","kind":"VariableDeclaration","endLine":450},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":458,"name":"fullOldSlideText","kind":"VariableDeclaration","endLine":458},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":463,"name":"linesLength","kind":"VariableDeclaration","endLine":463},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":470,"name":"getTextboxesIndexes","kind":"FunctionDeclaration","endLine":485},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":471,"name":"indexes","kind":"VariableDeclaration","endLine":471},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":478,"name":"empty","kind":"VariableDeclaration","endLine":478},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":487,"name":"removeEmptyTextboxes","kind":"FunctionDeclaration","endLine":492},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":494,"name":"getTextboxes","kind":"FunctionDeclaration","endLine":497},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":495,"name":"indexes","kind":"VariableDeclaration","endLine":495}
+]

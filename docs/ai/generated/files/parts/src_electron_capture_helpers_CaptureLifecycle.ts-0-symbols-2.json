@@ -1,0 +1,14 @@
+[
+  {"file":"src/electron/capture/helpers/CaptureLifecycle.ts","line":221,"name":"wasRunning","kind":"VariableDeclaration","endLine":221},
+  {"file":"src/electron/capture/helpers/CaptureLifecycle.ts","line":224,"name":"sendStartSignals","kind":"VariableDeclaration","endLine":239},
+  {"file":"src/electron/capture/helpers/CaptureLifecycle.ts","line":229,"name":"url","kind":"VariableDeclaration","endLine":229},
+  {"file":"src/electron/capture/helpers/CaptureLifecycle.ts","line":230,"name":"token","kind":"VariableDeclaration","endLine":230},
+  {"file":"src/electron/capture/helpers/CaptureLifecycle.ts","line":231,"name":"fps","kind":"VariableDeclaration","endLine":231},
+  {"file":"src/electron/capture/helpers/CaptureLifecycle.ts","line":232,"name":"bitrate","kind":"VariableDeclaration","endLine":232},
+  {"file":"src/electron/capture/helpers/CaptureLifecycle.ts","line":252,"name":"updateRtmpState","kind":"MethodDeclaration","endLine":278},
+  {"file":"src/electron/capture/helpers/CaptureLifecycle.ts","line":253,"name":"allOutputs","kind":"VariableDeclaration","endLine":253},
+  {"file":"src/electron/capture/helpers/CaptureLifecycle.ts","line":262,"name":"destinations","kind":"VariableDeclaration","endLine":262},
+  {"file":"src/electron/capture/helpers/CaptureLifecycle.ts","line":270,"name":"bounds","kind":"VariableDeclaration","endLine":270},
+  {"file":"src/electron/capture/helpers/CaptureLifecycle.ts","line":271,"name":"fps","kind":"VariableDeclaration","endLine":271},
+  {"file":"src/electron/capture/helpers/CaptureLifecycle.ts","line":272,"name":"bitrate","kind":"VariableDeclaration","endLine":272}
+]

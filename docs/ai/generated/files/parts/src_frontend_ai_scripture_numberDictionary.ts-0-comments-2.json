@@ -1,0 +1,15 @@
+[
+  {"file":"src/frontend/ai/scripture/numberDictionary.ts","line":442,"endLine":442,"text":"// French","start":7568,"end":7577},
+  {"file":"src/frontend/ai/scripture/numberDictionary.ts","line":446,"endLine":446,"text":"// Spanish","start":7614,"end":7624},
+  {"file":"src/frontend/ai/scripture/numberDictionary.ts","line":458,"endLine":458,"text":"// German","start":7838,"end":7847},
+  {"file":"src/frontend/ai/scripture/numberDictionary.ts","line":461,"endLine":461,"text":"// Portuguese","start":7871,"end":7884},
+  {"file":"src/frontend/ai/scripture/numberDictionary.ts","line":469,"endLine":469,"text":"// Italian","start":8003,"end":8013},
+  {"file":"src/frontend/ai/scripture/numberDictionary.ts","line":475,"endLine":475,"text":"// Dutch","start":8102,"end":8110},
+  {"file":"src/frontend/ai/scripture/numberDictionary.ts","line":478,"endLine":478,"text":"// Norwegian","start":8134,"end":8146},
+  {"file":"src/frontend/ai/scripture/numberDictionary.ts","line":489,"endLine":489,"text":"// German","start":8458,"end":8467},
+  {"file":"src/frontend/ai/scripture/numberDictionary.ts","line":502,"endLine":502,"text":"// Dutch","start":8607,"end":8615},
+  {"file":"src/frontend/ai/scripture/numberDictionary.ts","line":510,"endLine":510,"text":"// Norwegian","start":8693,"end":8705},
+  {"file":"src/frontend/ai/scripture/numberDictionary.ts","line":526,"endLine":526,"text":"// German","start":8882,"end":8891},
+  {"file":"src/frontend/ai/scripture/numberDictionary.ts","line":537,"endLine":537,"text":"// Dutch","start":9033,"end":9041},
+  {"file":"src/frontend/ai/scripture/numberDictionary.ts","line":547,"endLine":547,"text":"// Norwegian","start":9167,"end":9179}
+]

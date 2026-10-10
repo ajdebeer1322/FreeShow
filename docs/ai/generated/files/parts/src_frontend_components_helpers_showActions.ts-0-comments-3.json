@@ -1,0 +1,12 @@
+[
+  {"file":"src/frontend/components/helpers/showActions.ts","line":747,"endLine":747,"text":"// find all timers in current slide & any overlay placed on the slide","start":30011,"end":30080},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":763,"endLine":763,"text":"// DYNAMIC VALUES","start":30550,"end":30567},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":769,"endLine":769,"text":"// dynamic values that should also display +1 variants","start":31152,"end":31206},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":897,"endLine":897,"text":"// Dynamic value replacement regular expression:","start":37472,"end":37520},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":898,"endLine":898,"text":"// \\{             -> Opening brace","start":37521,"end":37555},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":899,"endLine":899,"text":"// (${safeId})    -> Full variable ID matching non-greedily before offsets/index/fallbacks","start":37556,"end":37646},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":900,"endLine":900,"text":"// (?:([+-]\\d+))? -> Optional offset (+num or -num)","start":37647,"end":37698},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":901,"endLine":901,"text":"// (?:#(\\d+))?    -> Optional index (#num)","start":37699,"end":37741},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":902,"endLine":902,"text":"// (?:[|?](.*?))? -> Optional fallback (|default or ?default)","start":37742,"end":37803},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":903,"endLine":903,"text":"// \\}             -> Closing brace","start":37804,"end":37838}
+]

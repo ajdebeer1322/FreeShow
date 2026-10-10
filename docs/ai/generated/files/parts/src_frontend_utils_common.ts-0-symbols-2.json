@@ -1,0 +1,13 @@
+[
+  {"file":"src/frontend/utils/common.ts","line":195,"name":"leftPanelIsOpened","kind":"VariableDeclaration","endLine":195},
+  {"file":"src/frontend/utils/common.ts","line":196,"name":"rightPanelIsOpened","kind":"VariableDeclaration","endLine":196},
+  {"file":"src/frontend/utils/common.ts","line":212,"name":"triggerTimeout","kind":"VariableDeclaration","endLine":212},
+  {"file":"src/frontend/utils/common.ts","line":213,"name":"triggerFunction","kind":"FunctionDeclaration","endLine":221},
+  {"file":"src/frontend/utils/common.ts","line":225,"name":"isDarkTheme","kind":"FunctionDeclaration","endLine":228},
+  {"file":"src/frontend/utils/common.ts","line":226,"name":"contrastColor","kind":"VariableDeclaration","endLine":226},
+  {"file":"src/frontend/utils/common.ts","line":231,"name":"escapeRegExp","kind":"FunctionDeclaration","endLine":233},
+  {"file":"src/frontend/utils/common.ts","line":235,"name":"throttled","kind":"VariableDeclaration","endLine":235},
+  {"file":"src/frontend/utils/common.ts","line":236,"name":"throttle","kind":"FunctionDeclaration","endLine":251},
+  {"file":"src/frontend/utils/common.ts","line":253,"name":"limited","kind":"VariableDeclaration","endLine":253},
+  {"file":"src/frontend/utils/common.ts","line":254,"name":"hasNewerUpdate","kind":"FunctionDeclaration","endLine":270}
+]

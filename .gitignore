@@ -22,3 +22,6 @@ test-results/
 *.ipr
 *.iws
 .serena
+
+# Generated history fetch/blame cache
+/docs/ai/.cache/

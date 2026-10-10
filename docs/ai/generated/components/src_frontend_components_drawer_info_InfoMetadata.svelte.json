@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/drawer/info/InfoMetadata.svelte","renders":[{"file":"src/frontend/components/drawer/info/InfoMetadata.svelte","line":40,"name":"Link","target":"src/frontend/components/inputs/Link.svelte","lazyTargets":[],"props":[{"name":"url","kind":"Attribute","value":"url={data.value}","file":"src/frontend/components/drawer/info/InfoMetadata.svelte","line":40}],"dynamic":false,"confidence":"code"}],"props":[{"name":"title","file":"src/frontend/components/drawer/info/InfoMetadata.svelte","line":6},{"name":"info","file":"src/frontend/components/drawer/info/InfoMetadata.svelte","line":7}]}
+]

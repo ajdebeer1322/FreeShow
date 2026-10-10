@@ -1,0 +1,23 @@
+[
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":144,"name":"barHeight","kind":"VariableDeclaration","endLine":144},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":152,"name":"lastTime","kind":"VariableDeclaration","endLine":152},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":153,"name":"frameCounter","kind":"VariableDeclaration","endLine":153},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":155,"name":"startLoop","kind":"FunctionDeclaration","endLine":222},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":158,"name":"renderFrame","kind":"FunctionDeclaration","endLine":219},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":172,"name":"cCtx","kind":"VariableDeclaration","endLine":172},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":175,"name":"WIDTH","kind":"VariableDeclaration","endLine":175},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":176,"name":"HEIGHT","kind":"VariableDeclaration","endLine":176},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":177,"name":"bufferLength","kind":"VariableDeclaration","endLine":177},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":178,"name":"maxHeightValue","kind":"VariableDeclaration","endLine":178},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":179,"name":"barWidth","kind":"VariableDeclaration","endLine":179},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":181,"name":"shouldDraw","kind":"VariableDeclaration","endLine":181},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":186,"name":"dataArrays","kind":"VariableDeclaration","endLine":186},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":189,"name":"bars","kind":"VariableDeclaration","endLine":189},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":190,"name":"x","kind":"VariableDeclaration","endLine":190},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":191,"name":"activeColor","kind":"VariableDeclaration","endLine":191},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":193,"name":"i","kind":"VariableDeclaration","endLine":193},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":194,"name":"sum","kind":"VariableDeclaration","endLine":194},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":195,"name":"percentage","kind":"VariableDeclaration","endLine":195},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":196,"name":"barHeight","kind":"VariableDeclaration","endLine":196},
+  {"file":"src/frontend/components/slide/views/Visualizer.svelte","line":201,"name":"r","kind":"VariableDeclaration","endLine":201}
+]

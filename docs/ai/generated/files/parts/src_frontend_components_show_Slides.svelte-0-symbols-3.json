@@ -1,0 +1,19 @@
+[
+  {"file":"src/frontend/components/show/Slides.svelte","line":398,"name":"lazyLoading","kind":"VariableDeclaration","endLine":398},
+  {"file":"src/frontend/components/show/Slides.svelte","line":399,"name":"startLazyLoader","kind":"FunctionDeclaration","endLine":478},
+  {"file":"src/frontend/components/show/Slides.svelte","line":414,"name":"count","kind":"VariableDeclaration","endLine":414},
+  {"file":"src/frontend/components/show/Slides.svelte","line":418,"name":"mediaId","kind":"VariableDeclaration","endLine":418},
+  {"file":"src/frontend/components/show/Slides.svelte","line":419,"name":"mediaPath","kind":"VariableDeclaration","endLine":419},
+  {"file":"src/frontend/components/show/Slides.svelte","line":420,"name":"exists","kind":"VariableDeclaration","endLine":420},
+  {"file":"src/frontend/components/show/Slides.svelte","line":443,"name":"downloaded","kind":"VariableDeclaration","endLine":443},
+  {"file":"src/frontend/components/show/Slides.svelte","line":468,"name":"next","kind":"FunctionDeclaration","endLine":477},
+  {"file":"src/frontend/components/show/Slides.svelte","line":472,"name":"currentBatch","kind":"VariableDeclaration","endLine":472},
+  {"file":"src/frontend/components/show/Slides.svelte","line":480,"name":"checkImage","kind":"FunctionDeclaration","endLine":502},
+  {"file":"src/frontend/components/show/Slides.svelte","line":481,"name":"isVideo","kind":"VariableDeclaration","endLine":481},
+  {"file":"src/frontend/components/show/Slides.svelte","line":482,"name":"media","kind":"VariableDeclaration","endLine":482},
+  {"file":"src/frontend/components/show/Slides.svelte","line":486,"name":"hasLoaded","kind":"VariableDeclaration","endLine":486},
+  {"file":"src/frontend/components/show/Slides.svelte","line":497,"name":"onLoaded","kind":"FunctionDeclaration","endLine":500},
+  {"file":"src/frontend/components/show/Slides.svelte","line":504,"name":"loading","kind":"VariableDeclaration","endLine":504},
+  {"file":"src/frontend/components/show/Slides.svelte","line":507,"name":"loadingTimeout","kind":"VariableDeclaration","endLine":507},
+  {"file":"src/frontend/components/show/Slides.svelte","line":508,"name":"startLoading","kind":"FunctionDeclaration","endLine":514}
+]

@@ -1,0 +1,21 @@
+[
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":157,"store":"src/frontend/stores.ts#selected","kind":"dollar","symbol":"mousedown","expression":"$selected"},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":176,"store":"src/frontend/stores.ts#selected","kind":"dollar","symbol":"mousedown","expression":"$selected"},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":241,"store":"src/frontend/stores.ts#selected","kind":"dollar","symbol":"mousedown","expression":"$selected"},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":254,"store":"src/frontend/stores.ts#selected","kind":"dollar","symbol":"mousedown","expression":"$selected"},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":257,"store":"src/frontend/stores.ts#selected","kind":"dollar","symbol":"mousedown","expression":"$selected"},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":258,"store":"src/frontend/stores.ts#selected","kind":"dollar","symbol":"mousedown","expression":"$selected"},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":277,"store":"src/frontend/stores.ts#selected","kind":"dollar","symbol":"remainSelected","expression":"$selected"},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":278,"store":"src/frontend/stores.ts#selected","kind":"dollar","symbol":"remainSelected","expression":"$selected"},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":295,"store":"src/frontend/stores.ts#selected","kind":"dollar","symbol":"endDrag","expression":"$selected"},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":331,"store":"src/frontend/stores.ts#selected","kind":"dollar-template","expression":"$selected","symbol":null},
+  {"file":"src/frontend/components/timeline/TimelineActions.ts","line":254,"store":"src/frontend/stores.ts#selected","kind":"get","symbol":"handleDrop","expression":"get(selected)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":44,"store":"src/frontend/stores.ts#selected","kind":"get","symbol":null,"expression":"get(selected)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":89,"store":"src/frontend/stores.ts#selected","kind":"get","symbol":"Enter","expression":"get(selected)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":117,"store":"src/frontend/stores.ts#selected","kind":"get","symbol":"Escape","expression":"get(selected)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":127,"store":"src/frontend/stores.ts#selected","kind":"get","symbol":null,"expression":"get(selected)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":139,"store":"src/frontend/stores.ts#selected","kind":"get","symbol":"Delete","expression":"get(selected)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":142,"store":"src/frontend/stores.ts#selected","kind":"get","symbol":null,"expression":"get(selected)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":367,"store":"src/frontend/stores.ts#selected","kind":"get","symbol":"F2","expression":"get(selected)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":462,"store":"src/frontend/stores.ts#selected","kind":"get","symbol":"createNew","expression":"get(selected)"}
+]

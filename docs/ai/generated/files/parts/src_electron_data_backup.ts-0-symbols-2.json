@@ -1,0 +1,21 @@
+[
+  {"file":"src/electron/data/backup.ts","line":178,"name":"initialPath","kind":"VariableDeclaration","endLine":178},
+  {"file":"src/electron/data/backup.ts","line":179,"name":"selectedPaths","kind":"VariableDeclaration","endLine":179},
+  {"file":"src/electron/data/backup.ts","line":182,"name":"p","kind":"VariableDeclaration","endLine":182},
+  {"file":"src/electron/data/backup.ts","line":184,"name":"decompressed","kind":"VariableDeclaration","endLine":184},
+  {"file":"src/electron/data/backup.ts","line":196,"name":"showsPath","kind":"VariableDeclaration","endLine":196},
+  {"file":"src/electron/data/backup.ts","line":197,"name":"portableStoreFiles","kind":"VariableDeclaration","endLine":199},
+  {"file":"src/electron/data/backup.ts","line":201,"name":"showsRestored","kind":"VariableDeclaration","endLine":201},
+  {"file":"src/electron/data/backup.ts","line":204,"name":"filePath","kind":"VariableDeclaration","endLine":204},
+  {"file":"src/electron/data/backup.ts","line":223,"name":"storeId","kind":"VariableDeclaration","endLine":223},
+  {"file":"src/electron/data/backup.ts","line":236,"name":"restoreStore","kind":"FunctionDeclaration","endLine":249},
+  {"file":"src/electron/data/backup.ts","line":239,"name":"data","kind":"VariableDeclaration","endLine":239},
+  {"file":"src/electron/data/backup.ts","line":251,"name":"restoreShows","kind":"FunctionDeclaration","endLine":265},
+  {"file":"src/electron/data/backup.ts","line":254,"name":"shows","kind":"VariableDeclaration","endLine":254},
+  {"file":"src/electron/data/backup.ts","line":260,"name":"saveShow","kind":"FunctionDeclaration","endLine":264},
+  {"file":"src/electron/data/backup.ts","line":262,"name":"showPath","kind":"VariableDeclaration","endLine":262},
+  {"file":"src/electron/data/backup.ts","line":267,"name":"restoreSingleShow","kind":"FunctionDeclaration","endLine":275},
+  {"file":"src/electron/data/backup.ts","line":270,"name":"fileName","kind":"VariableDeclaration","endLine":270},
+  {"file":"src/electron/data/backup.ts","line":271,"name":"showPath","kind":"VariableDeclaration","endLine":271},
+  {"file":"src/electron/data/backup.ts","line":278,"name":"isValidJSON","kind":"FunctionDeclaration","endLine":285}
+]

@@ -1,0 +1,21 @@
+[
+  {"file":"src/frontend/components/show/Slides.svelte","line":454,"store":"src/frontend/stores.ts#alertMessage","kind":"set","symbol":"startLazyLoader","expression":"alertMessage.set(`Downloaded ${layoutSlides.length} files!`)"},
+  {"file":"src/frontend/components/show/Slides.svelte","line":454,"store":"src/frontend/stores.ts#alertMessage","kind":"reference","symbol":"startLazyLoader","expression":"alertMessage"},
+  {"file":"src/frontend/components/show/Slides.svelte","line":455,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"startLazyLoader","expression":"activePopup.set(\"alert\")"},
+  {"file":"src/frontend/components/show/Slides.svelte","line":455,"store":"src/frontend/stores.ts#activePopup","kind":"reference","symbol":"startLazyLoader","expression":"activePopup"},
+  {"file":"src/frontend/components/show/Slides.svelte","line":459,"store":"src/frontend/stores.ts#lessonsLoaded","kind":"set","symbol":"startLazyLoader","expression":"lessonsLoaded.set({})"},
+  {"file":"src/frontend/components/show/Slides.svelte","line":459,"store":"src/frontend/stores.ts#lessonsLoaded","kind":"reference","symbol":"startLazyLoader","expression":"lessonsLoaded"},
+  {"file":"src/frontend/components/show/Slides.svelte","line":472,"store":"src/frontend/stores.ts#focusMode","kind":"dollar","symbol":"next","expression":"$focusMode"},
+  {"file":"src/frontend/components/show/Slides.svelte","line":506,"store":"src/frontend/stores.ts#notFound","kind":"dollar","symbol":null,"expression":"$notFound"},
+  {"file":"src/frontend/components/show/Slides.svelte","line":516,"store":"src/frontend/stores.ts#slidesOptions","kind":"dollar","symbol":null,"expression":"$slidesOptions"},
+  {"file":"src/frontend/components/show/Slides.svelte","line":523,"store":"src/frontend/stores.ts#focusMode","kind":"dollar-template","expression":"$focusMode","symbol":null},
+  {"file":"src/frontend/components/show/Slides.svelte","line":524,"store":"src/frontend/stores.ts#focusMode","kind":"dollar-template","expression":"$focusMode","symbol":null},
+  {"file":"src/frontend/components/show/Slides.svelte","line":527,"store":"src/frontend/stores.ts#focusMode","kind":"dollar-template","expression":"$focusMode","symbol":null},
+  {"file":"src/frontend/components/show/Slides.svelte","line":531,"store":"src/frontend/stores.ts#showsCache","kind":"dollar-template","expression":"$showsCache","symbol":null},
+  {"file":"src/frontend/components/show/Slides.svelte","line":540,"store":"src/frontend/stores.ts#focusMode","kind":"dollar-template","expression":"$focusMode","symbol":null},
+  {"file":"src/frontend/components/show/Slides.svelte","line":545,"store":"src/frontend/stores.ts#slidesOptions","kind":"dollar-template","expression":"$slidesOptions","symbol":null},
+  {"file":"src/frontend/components/show/Slides.svelte","line":552,"store":"src/frontend/stores.ts#slidesOptions","kind":"dollar-template","expression":"$slidesOptions","symbol":null},
+  {"file":"src/frontend/components/show/Slides.svelte","line":555,"store":"src/frontend/stores.ts#slidesOptions","kind":"dollar-template","expression":"$slidesOptions","symbol":null},
+  {"file":"src/frontend/components/show/Slides.svelte","line":569,"store":"src/frontend/stores.ts#slidesOptions","kind":"dollar-template","expression":"$slidesOptions","symbol":null},
+  {"file":"src/frontend/components/show/Slides.svelte","line":572,"store":"src/frontend/stores.ts#slidesOptions","kind":"dollar-template","expression":"$slidesOptions","symbol":null}
+]

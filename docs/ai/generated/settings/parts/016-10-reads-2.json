@@ -1,0 +1,16 @@
+[
+  {"file":"src/frontend/components/settings/tabs/OutputsGeneral.svelte","line":7,"expression":"special.update"},
+  {"file":"src/frontend/components/settings/tabs/ProfilesButtons.svelte","line":34,"expression":"special.update"},
+  {"file":"src/frontend/components/show/Projects.svelte","line":291,"expression":"special.update"},
+  {"file":"src/frontend/components/show/Section.svelte","line":64,"expression":"special.update"},
+  {"file":"src/frontend/components/show/Show.svelte","line":63,"expression":"special.update"},
+  {"file":"src/frontend/components/timeline/TimelinePlayback.ts","line":40,"expression":"special.update"},
+  {"file":"src/frontend/media/cameraManager.ts","line":261,"expression":"special.update"},
+  {"file":"src/frontend/media/cameraManager.ts","line":274,"expression":"special.update"},
+  {"file":"src/frontend/utils/cloudSync.ts","line":352,"expression":"special.update"},
+  {"file":"src/frontend/utils/remoteController.ts","line":36,"expression":"special.update"},
+  {"file":"src/frontend/utils/remoteController.ts","line":53,"expression":"special.update"},
+  {"file":"src/frontend/utils/remoteController.ts","line":79,"expression":"special.update"},
+  {"file":"src/frontend/utils/save.ts","line":144,"expression":"special.update"},
+  {"file":"src/frontend/utils/updateSettings.ts","line":204,"expression":"special.update"}
+]

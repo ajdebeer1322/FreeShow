@@ -1,0 +1,3 @@
+[
+  {"file":"src/server/common/util/getStyleResolution.ts","area":"server","hash":"c72510bfc9c7e2fa62e6bb97ce01d40b16e29f8b2760374813c088d8bc7dbfba","lineCount":21,"imports":[],"symbols":[{"file":"src/server/common/util/getStyleResolution.ts","line":1,"name":"getStyleResolution","kind":"FunctionDeclaration","endLine":20},{"file":"src/server/common/util/getStyleResolution.ts","line":2,"name":"style","kind":"VariableDeclaration","endLine":2}],"stores":[],"components":[],"timers":[],"workarounds":[],"settings":[],"ipc":[],"comments":[]}
+]

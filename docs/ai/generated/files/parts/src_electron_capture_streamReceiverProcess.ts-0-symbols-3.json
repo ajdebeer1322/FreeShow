@@ -1,0 +1,21 @@
+[
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":449,"name":"frameLoop","kind":"MethodDeclaration","endLine":487},
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":450,"name":"consecutiveErrors","kind":"VariableDeclaration","endLine":450},
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":461,"name":"frame","kind":"VariableDeclaration","endLine":461},
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":470,"name":"err","kind":"VariableDeclaration","endLine":470},
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":489,"name":"destroyInstance","kind":"MethodDeclaration","endLine":498},
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":490,"name":"receiver","kind":"VariableDeclaration","endLine":490},
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":495,"name":"err","kind":"VariableDeclaration","endLine":495},
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":500,"name":"sendBuffer","kind":"MethodDeclaration","endLine":508},
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":503,"name":"format","kind":"VariableDeclaration","endLine":503},
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":504,"name":"packed","kind":"VariableDeclaration","endLine":504},
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":510,"name":"stop","kind":"MethodDeclaration","endLine":524},
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":513,"name":"refs","kind":"VariableDeclaration","endLine":513},
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":518,"name":"loop","kind":"VariableDeclaration","endLine":518},
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":529,"name":"HANDLERS","kind":"VariableDeclaration","endLine":538},
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":541,"name":"message","kind":"VariableDeclaration","endLine":541},
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":545,"name":"port","kind":"VariableDeclaration","endLine":545},
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":560,"name":"handler","kind":"VariableDeclaration","endLine":560},
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":564,"name":"value","kind":"VariableDeclaration","endLine":564},
+  {"file":"src/electron/capture/streamReceiverProcess.ts","line":566,"name":"err","kind":"VariableDeclaration","endLine":566}
+]

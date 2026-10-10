@@ -1,0 +1,12 @@
+[
+  {"file":"src/frontend/components/edit/scripts/textStyle.ts","line":394,"name":"currentEndTextLength","kind":"VariableDeclaration","endLine":394},
+  {"file":"src/frontend/components/edit/scripts/textStyle.ts","line":396,"name":"startChild","kind":"VariableDeclaration","endLine":396},
+  {"file":"src/frontend/components/edit/scripts/textStyle.ts","line":397,"name":"startElem","kind":"VariableDeclaration","endLine":397},
+  {"file":"src/frontend/components/edit/scripts/textStyle.ts","line":398,"name":"endElem","kind":"VariableDeclaration","endLine":398},
+  {"file":"src/frontend/components/edit/scripts/textStyle.ts","line":406,"name":"offset","kind":"VariableDeclaration","endLine":406},
+  {"file":"src/frontend/components/edit/scripts/textStyle.ts","line":407,"name":"startElemLength","kind":"VariableDeclaration","endLine":407},
+  {"file":"src/frontend/components/edit/scripts/textStyle.ts","line":420,"name":"safeEndOffset","kind":"VariableDeclaration","endLine":420},
+  {"file":"src/frontend/components/edit/scripts/textStyle.ts","line":437,"name":"setCaretAtEnd","kind":"FunctionDeclaration","endLine":447},
+  {"file":"src/frontend/components/edit/scripts/textStyle.ts","line":438,"name":"range","kind":"VariableDeclaration","endLine":438},
+  {"file":"src/frontend/components/edit/scripts/textStyle.ts","line":442,"name":"sel","kind":"VariableDeclaration","endLine":442}
+]

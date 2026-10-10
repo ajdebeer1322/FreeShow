@@ -1,0 +1,19 @@
+[
+  {"file":"src/frontend/components/output/preview/SpotifyManager.ts","line":131,"name":"d","kind":"VariableDeclaration","endLine":131},
+  {"file":"src/frontend/components/output/preview/SpotifyManager.ts","line":141,"name":"runCmd","kind":"VariableDeclaration","endLine":143},
+  {"file":"src/frontend/components/output/preview/SpotifyManager.ts","line":145,"name":"togglePlay","kind":"VariableDeclaration","endLine":148},
+  {"file":"src/frontend/components/output/preview/SpotifyManager.ts","line":150,"name":"spotifyPlay","kind":"FunctionDeclaration","endLine":154},
+  {"file":"src/frontend/components/output/preview/SpotifyManager.ts","line":155,"name":"spotifyPause","kind":"FunctionDeclaration","endLine":159},
+  {"file":"src/frontend/components/output/preview/SpotifyManager.ts","line":161,"name":"skip","kind":"VariableDeclaration","endLine":165},
+  {"file":"src/frontend/components/output/preview/SpotifyManager.ts","line":167,"name":"skipNext","kind":"VariableDeclaration","endLine":167},
+  {"file":"src/frontend/components/output/preview/SpotifyManager.ts","line":168,"name":"skipPrev","kind":"VariableDeclaration","endLine":168},
+  {"file":"src/frontend/components/output/preview/SpotifyManager.ts","line":170,"name":"seekTo","kind":"FunctionDeclaration","endLine":174},
+  {"file":"src/frontend/components/output/preview/SpotifyManager.ts","line":176,"name":"fadePause","kind":"FunctionDeclaration","endLine":200},
+  {"file":"src/frontend/components/output/preview/SpotifyManager.ts","line":180,"name":"startVol","kind":"VariableDeclaration","endLine":180},
+  {"file":"src/frontend/components/output/preview/SpotifyManager.ts","line":181,"name":"fresh","kind":"VariableDeclaration","endLine":181},
+  {"file":"src/frontend/components/output/preview/SpotifyManager.ts","line":187,"name":"duration_s","kind":"VariableDeclaration","endLine":187},
+  {"file":"src/frontend/components/output/preview/SpotifyManager.ts","line":188,"name":"duration","kind":"VariableDeclaration","endLine":188},
+  {"file":"src/frontend/components/output/preview/SpotifyManager.ts","line":189,"name":"stepMs","kind":"VariableDeclaration","endLine":189},
+  {"file":"src/frontend/components/output/preview/SpotifyManager.ts","line":190,"name":"steps","kind":"VariableDeclaration","endLine":190},
+  {"file":"src/frontend/components/output/preview/SpotifyManager.ts","line":191,"name":"i","kind":"VariableDeclaration","endLine":191}
+]

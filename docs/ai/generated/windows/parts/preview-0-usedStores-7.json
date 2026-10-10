@@ -1,0 +1,8 @@
+[
+  "src/frontend/stores.ts#variableTags",
+  "src/frontend/stores.ts#variables",
+  "src/frontend/stores.ts#version",
+  "src/frontend/stores.ts#videoMarkers",
+  "src/frontend/stores.ts#visualizerData",
+  "src/frontend/stores.ts#windowState"
+]

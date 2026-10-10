@@ -1,0 +1,14 @@
+[
+  {"file":"src/frontend/components/drawer/audio/metronome.ts","line":181,"name":"contextTime","kind":"VariableDeclaration","endLine":181},
+  {"file":"src/frontend/components/drawer/audio/metronome.ts","line":182,"name":"delayMs","kind":"VariableDeclaration","endLine":182},
+  {"file":"src/frontend/components/drawer/audio/metronome.ts","line":184,"name":"timer","kind":"VariableDeclaration","endLine":186},
+  {"file":"src/frontend/components/drawer/audio/metronome.ts","line":192,"name":"playNoteAtTime","kind":"FunctionDeclaration","endLine":220},
+  {"file":"src/frontend/components/drawer/audio/metronome.ts","line":193,"name":"audioContext","kind":"VariableDeclaration","endLine":193},
+  {"file":"src/frontend/components/drawer/audio/metronome.ts","line":194,"name":"source","kind":"VariableDeclaration","endLine":194},
+  {"file":"src/frontend/components/drawer/audio/metronome.ts","line":195,"name":"clickSound","kind":"VariableDeclaration","endLine":195},
+  {"file":"src/frontend/components/drawer/audio/metronome.ts","line":196,"name":"bufferId","kind":"VariableDeclaration","endLine":196},
+  {"file":"src/frontend/components/drawer/audio/metronome.ts","line":197,"name":"audioBuffer","kind":"VariableDeclaration","endLine":197},
+  {"file":"src/frontend/components/drawer/audio/metronome.ts","line":201,"name":"gainNode","kind":"VariableDeclaration","endLine":201},
+  {"file":"src/frontend/components/drawer/audio/metronome.ts","line":212,"name":"idx","kind":"VariableDeclaration","endLine":212},
+  {"file":"src/frontend/components/drawer/audio/metronome.ts","line":216,"name":"volume","kind":"VariableDeclaration","endLine":216}
+]

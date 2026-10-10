@@ -1,0 +1,3 @@
+[
+  {"id":"electron","kind":"main process","entry":"src/electron/index.ts","roots":["src/electron/index.ts"],"prefix":"src/electron/","channels":[],"note":"Native services and IPC; Svelte stores do not cross this process directly.","entryExists":true,"usedStores":[],"receivedStores":[],"receives":[],"confidence":"code","limits":"Reachability includes conditional imports. Receiver registration shared by main/output is an upper bound; inspect startup guards for runtime selection.","$parts":{"reachable":["windows/parts/electron-0-reachable-1.json","windows/parts/electron-0-reachable-2.json","windows/parts/electron-0-reachable-3.json","windows/parts/electron-0-reachable-4.json"]}}
+]

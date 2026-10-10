@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/system/AnalogClock.svelte","renders":[],"props":[{"name":"date","file":"src/frontend/components/system/AnalogClock.svelte","line":5},{"name":"h","file":"src/frontend/components/system/AnalogClock.svelte","line":6},{"name":"m","file":"src/frontend/components/system/AnalogClock.svelte","line":7},{"name":"s","file":"src/frontend/components/system/AnalogClock.svelte","line":8},{"name":"seconds","file":"src/frontend/components/system/AnalogClock.svelte","line":9}]}
+]

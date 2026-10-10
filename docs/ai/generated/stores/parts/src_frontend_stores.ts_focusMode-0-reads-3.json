@@ -1,0 +1,4 @@
+[
+  {"file":"src/frontend/utils/shortcuts.ts","line":367,"store":"src/frontend/stores.ts#focusMode","kind":"get","symbol":"F2","expression":"get(focusMode)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":490,"store":"src/frontend/stores.ts#focusMode","kind":"get","symbol":"togglePlayingMedia","expression":"get(focusMode)"}
+]

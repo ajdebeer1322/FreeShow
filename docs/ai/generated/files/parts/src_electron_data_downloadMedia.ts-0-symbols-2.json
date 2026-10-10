@@ -1,0 +1,19 @@
+[
+  {"file":"src/electron/data/downloadMedia.ts","line":228,"name":"provider","kind":"VariableDeclaration","endLine":228},
+  {"file":"src/electron/data/downloadMedia.ts","line":230,"name":"encryptionKey","kind":"VariableDeclaration","endLine":230},
+  {"file":"src/electron/data/downloadMedia.ts","line":242,"name":"downloadedSize","kind":"VariableDeclaration","endLine":242},
+  {"file":"src/electron/data/downloadMedia.ts","line":243,"name":"totalSize","kind":"VariableDeclaration","endLine":243},
+  {"file":"src/electron/data/downloadMedia.ts","line":253,"name":"err","kind":"VariableDeclaration","endLine":253},
+  {"file":"src/electron/data/downloadMedia.ts","line":260,"name":"checkIfMediaDownloaded","kind":"FunctionDeclaration","endLine":285},
+  {"file":"src/electron/data/downloadMedia.ts","line":264,"name":"outputPath","kind":"VariableDeclaration","endLine":264},
+  {"file":"src/electron/data/downloadMedia.ts","line":268,"name":"provider","kind":"VariableDeclaration","endLine":268},
+  {"file":"src/electron/data/downloadMedia.ts","line":271,"name":"protectedUrl","kind":"VariableDeclaration","endLine":275},
+  {"file":"src/electron/data/downloadMedia.ts","line":277,"name":"err","kind":"VariableDeclaration","endLine":277},
+  {"file":"src/electron/data/downloadMedia.ts","line":287,"name":"getMediaThumbnailPath","kind":"FunctionDeclaration","endLine":300},
+  {"file":"src/electron/data/downloadMedia.ts","line":290,"name":"provider","kind":"VariableDeclaration","endLine":290},
+  {"file":"src/electron/data/downloadMedia.ts","line":294,"name":"urlWithoutQuery","kind":"VariableDeclaration","endLine":294},
+  {"file":"src/electron/data/downloadMedia.ts","line":295,"name":"extension","kind":"VariableDeclaration","endLine":295},
+  {"file":"src/electron/data/downloadMedia.ts","line":296,"name":"fileName","kind":"VariableDeclaration","endLine":296},
+  {"file":"src/electron/data/downloadMedia.ts","line":297,"name":"outputFolder","kind":"VariableDeclaration","endLine":297},
+  {"file":"src/electron/data/downloadMedia.ts","line":302,"name":"getMimeTypeFromContentFile","kind":"FunctionDeclaration","endLine":307}
+]

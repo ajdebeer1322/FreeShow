@@ -1,0 +1,12 @@
+[
+  {"file":"src/frontend/audio/audioPlayer.ts","line":654,"name":"audioMetadata","kind":"VariableDeclaration","endLine":654},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":655,"name":"mult","kind":"VariableDeclaration","endLine":655},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":658,"name":"e","kind":"VariableDeclaration","endLine":658},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":665,"name":"updatePlayingStore","kind":"FunctionDeclaration","endLine":671},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":673,"name":"updateAudioStore","kind":"FunctionDeclaration","endLine":680},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":682,"name":"loadAudioFile","kind":"FunctionDeclaration","endLine":700},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":684,"name":"audio","kind":"VariableDeclaration","endLine":684},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":689,"name":"resolved","kind":"VariableDeclaration","endLine":689},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":690,"name":"loaded","kind":"FunctionDeclaration","endLine":693},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":694,"name":"error","kind":"FunctionDeclaration","endLine":698}
+]

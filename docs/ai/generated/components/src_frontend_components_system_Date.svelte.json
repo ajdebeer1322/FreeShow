@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/system/Date.svelte","renders":[{"file":"src/frontend/components/system/Date.svelte","line":34,"name":"T","target":"src/frontend/components/helpers/T.svelte","lazyTargets":[],"props":[{"name":"id","kind":"Attribute","value":"id={data[key].slice(3, data[key].length)}","file":"src/frontend/components/system/Date.svelte","line":34}],"dynamic":false,"confidence":"code"}],"props":[{"name":"format","file":"src/frontend/components/system/Date.svelte","line":7}]}
+]

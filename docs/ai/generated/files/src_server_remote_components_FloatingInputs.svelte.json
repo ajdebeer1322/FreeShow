@@ -1,0 +1,3 @@
+[
+  {"file":"src/server/remote/components/FloatingInputs.svelte","area":"server","hash":"07448f41bfb490f32301be61f472643613f80e49d462fc35a1cf4d574076931c","lineCount":75,"imports":[],"symbols":[{"file":"src/server/remote/components/FloatingInputs.svelte","line":2,"name":"side","kind":"VariableDeclaration","endLine":2},{"file":"src/server/remote/components/FloatingInputs.svelte","line":3,"name":"bottom","kind":"VariableDeclaration","endLine":3}],"stores":[],"components":[],"timers":[],"workarounds":[],"settings":[],"ipc":[],"comments":[{"file":"src/server/remote/components/FloatingInputs.svelte","line":68,"endLine":68,"text":"/* Mobile - account for bottom navigation bar */","start":1444,"end":1492}]}
+]

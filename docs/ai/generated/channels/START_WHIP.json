@@ -1,0 +1,3 @@
+[
+  {"name":"START_WHIP","definitions":[],"messages":[],"endpoints":[{"file":"src/electron/streaming/WebRtcHost.ts","line":149,"endLine":149,"channel":"START_WHIP","keys":[],"role":"send","direction":"electron → renderer/client","symbol":"startWhip","payload":"{ outputId, url, token, fps: options?.fps || 30, bitrate: options?.bitrate || 2500 }","expression":"this.window!.webContents.send(\"START_WHIP\", { outputId, url, token, fps: options?.fps || 30, bitrate: options?.bitrate || 2500 })","dynamic":true}]}
+]

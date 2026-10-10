@@ -1,0 +1,3 @@
+[
+  {"file":"src/server/stage/components/Zoomed.svelte","renders":[],"props":[{"name":"show","file":"src/server/stage/components/Zoomed.svelte","line":4},{"name":"disableStyle","file":"src/server/stage/components/Zoomed.svelte","line":5},{"name":"dynamicResolution","file":"src/server/stage/components/Zoomed.svelte","line":6},{"name":"relative","file":"src/server/stage/components/Zoomed.svelte","line":7}]}
+]

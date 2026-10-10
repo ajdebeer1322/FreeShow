@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/show/tools/HighlightedNotes.svelte","renders":[],"props":[{"name":"value","file":"src/frontend/components/show/tools/HighlightedNotes.svelte","line":7},{"name":"placeholder","file":"src/frontend/components/show/tools/HighlightedNotes.svelte","line":8},{"name":"disabled","file":"src/frontend/components/show/tools/HighlightedNotes.svelte","line":9},{"name":"lines","file":"src/frontend/components/show/tools/HighlightedNotes.svelte","line":10},{"name":"autofocus","file":"src/frontend/components/show/tools/HighlightedNotes.svelte","line":11}]}
+]

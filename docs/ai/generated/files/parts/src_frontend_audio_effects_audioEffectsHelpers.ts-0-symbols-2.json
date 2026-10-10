@@ -1,0 +1,18 @@
+[
+  {"file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":222,"name":"node","kind":"VariableDeclaration","endLine":222},
+  {"file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":230,"name":"getEffectStack","kind":"FunctionDeclaration","endLine":234},
+  {"file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":231,"name":"target","kind":"VariableDeclaration","endLine":231},
+  {"file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":232,"name":"all","kind":"VariableDeclaration","endLine":232},
+  {"file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":236,"name":"addEffectToStack","kind":"FunctionDeclaration","endLine":245},
+  {"file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":237,"name":"newInstance","kind":"VariableDeclaration","endLine":242},
+  {"file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":247,"name":"removeEffectFromStack","kind":"FunctionDeclaration","endLine":252},
+  {"file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":249,"name":"idx","kind":"VariableDeclaration","endLine":249},
+  {"file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":254,"name":"duplicateEffectInStack","kind":"FunctionDeclaration","endLine":272},
+  {"file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":255,"name":"duplicated","kind":"VariableDeclaration","endLine":255},
+  {"file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":258,"name":"idx","kind":"VariableDeclaration","endLine":258},
+  {"file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":260,"name":"original","kind":"VariableDeclaration","endLine":260},
+  {"file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":274,"name":"moveEffectInStack","kind":"FunctionDeclaration","endLine":281},
+  {"file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":283,"name":"toggleEffectInStack","kind":"FunctionDeclaration","endLine":292},
+  {"file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":285,"name":"idx","kind":"VariableDeclaration","endLine":285},
+  {"file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":286,"name":"item","kind":"VariableDeclaration","endLine":286}
+]

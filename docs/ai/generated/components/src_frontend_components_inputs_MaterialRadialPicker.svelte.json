@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/inputs/MaterialRadialPicker.svelte","renders":[],"props":[{"name":"value","file":"src/frontend/components/inputs/MaterialRadialPicker.svelte","line":5},{"name":"label","file":"src/frontend/components/inputs/MaterialRadialPicker.svelte","line":6},{"name":"id","file":"src/frontend/components/inputs/MaterialRadialPicker.svelte","line":7},{"name":"placeholder","file":"src/frontend/components/inputs/MaterialRadialPicker.svelte","line":8},{"name":"disabled","file":"src/frontend/components/inputs/MaterialRadialPicker.svelte","line":9},{"name":"autofocus","file":"src/frontend/components/inputs/MaterialRadialPicker.svelte","line":10},{"name":"step","file":"src/frontend/components/inputs/MaterialRadialPicker.svelte","line":11}]}
+]

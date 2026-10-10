@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/slide/views/Timer.svelte","renders":[],"props":[{"name":"item","file":"src/frontend/components/slide/views/Timer.svelte","line":12},{"name":"id","file":"src/frontend/components/slide/views/Timer.svelte","line":15},{"name":"today","file":"src/frontend/components/slide/views/Timer.svelte","line":16},{"name":"style","file":"src/frontend/components/slide/views/Timer.svelte","line":17},{"name":"edit","file":"src/frontend/components/slide/views/Timer.svelte","line":18},{"name":"showMs","file":"src/frontend/components/slide/views/Timer.svelte","line":19}]}
+]

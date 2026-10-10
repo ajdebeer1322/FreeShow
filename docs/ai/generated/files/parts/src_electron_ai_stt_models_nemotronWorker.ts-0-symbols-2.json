@@ -1,0 +1,21 @@
+[
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":212,"name":"candidate","kind":"VariableDeclaration","endLine":212},
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":213,"name":"confidence","kind":"VariableDeclaration","endLine":213},
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":214,"name":"glue","kind":"VariableDeclaration","endLine":214},
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":217,"name":"from","kind":"VariableDeclaration","endLine":217},
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":230,"name":"resetDecoder","kind":"MethodDeclaration","endLine":234},
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":236,"name":"closeUtterance","kind":"MethodDeclaration","endLine":239},
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":241,"name":"splitUtterance","kind":"MethodDeclaration","endLine":245},
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":247,"name":"emitText","kind":"MethodDeclaration","endLine":258},
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":248,"name":"endMs","kind":"VariableDeclaration","endLine":248},
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":249,"name":"segment","kind":"VariableDeclaration","endLine":249},
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":261,"name":"int16ToFloat32","kind":"FunctionDeclaration","endLine":269},
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":262,"name":"count","kind":"VariableDeclaration","endLine":262},
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":263,"name":"samples","kind":"VariableDeclaration","endLine":263},
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":264,"name":"view","kind":"VariableDeclaration","endLine":264},
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":265,"name":"i","kind":"VariableDeclaration","endLine":265},
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":272,"name":"parentPort","kind":"VariableDeclaration","endLine":272},
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":274,"name":"driver","kind":"VariableDeclaration","endLine":274},
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":275,"name":"post","kind":"VariableDeclaration","endLine":275},
+  {"file":"src/electron/ai/stt/models/nemotronWorker.ts","line":299,"name":"err","kind":"VariableDeclaration","endLine":299}
+]

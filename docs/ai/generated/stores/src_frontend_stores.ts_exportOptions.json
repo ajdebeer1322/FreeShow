@@ -1,0 +1,3 @@
+[
+  {"id":"src/frontend/stores.ts#exportOptions","name":"exportOptions","file":"src/frontend/stores.ts","line":157,"type":"Writable<any>","factory":"writable","initial":"{ pdf: { rows: 5, columns: 2, slide: true, text: true } }","exported":true,"reads":[],"writes":[],"references":[],"transports":[],"persistence":[],"confidence":"code"}
+]

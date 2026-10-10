@@ -1,0 +1,7 @@
+[
+  {"file":"src/server/remote/components/tablet/layout/drawer/TabletDrawerNavigation.svelte","line":283,"store":"src/server/remote/util/stores.ts#collectionId","kind":"dollar-template","expression":"$collectionId","symbol":null},
+  {"file":"src/server/remote/components/tablet/layout/drawer/TabletDrawerNavigation.svelte","line":283,"store":"src/server/remote/util/stores.ts#openedScripture","kind":"dollar-template","expression":"$openedScripture","symbol":null},
+  {"file":"src/server/remote/components/tablet/layout/drawer/TabletDrawerNavigation.svelte","line":287,"store":"src/server/remote/util/stores.ts#collectionId","kind":"dollar-template","expression":"$collectionId","symbol":null},
+  {"file":"src/server/remote/components/tablet/layout/drawer/TabletDrawerNavigation.svelte","line":287,"store":"src/server/remote/util/stores.ts#openedScripture","kind":"dollar-template","expression":"$openedScripture","symbol":null},
+  {"file":"src/server/remote/components/tablet/layout/drawer/TabletDrawerNavigation.svelte","line":303,"store":"src/server/remote/util/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null}
+]

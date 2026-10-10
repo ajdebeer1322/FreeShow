@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/slide/SkeletonSlide.svelte","renders":[],"props":[{"name":"slide","file":"src/frontend/components/slide/SkeletonSlide.svelte","line":5},{"name":"index","file":"src/frontend/components/slide/SkeletonSlide.svelte","line":6},{"name":"color","file":"src/frontend/components/slide/SkeletonSlide.svelte","line":7},{"name":"columns","file":"src/frontend/components/slide/SkeletonSlide.svelte","line":8},{"name":"widthPercent","file":"src/frontend/components/slide/SkeletonSlide.svelte","line":9},{"name":"active","file":"src/frontend/components/slide/SkeletonSlide.svelte","line":10}]}
+]

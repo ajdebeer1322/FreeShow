@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/system/Center.svelte","renders":[],"props":[{"name":"faded","file":"src/frontend/components/system/Center.svelte","line":2},{"name":"absolute","file":"src/frontend/components/system/Center.svelte","line":3},{"name":"padding","file":"src/frontend/components/system/Center.svelte","line":4},{"name":"size","file":"src/frontend/components/system/Center.svelte","line":5},{"name":"style","file":"src/frontend/components/system/Center.svelte","line":6}]}
+]

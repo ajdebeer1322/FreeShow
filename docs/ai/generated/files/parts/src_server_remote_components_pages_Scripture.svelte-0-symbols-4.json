@@ -1,0 +1,11 @@
+[
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":779,"name":"verseNumber","kind":"VariableDeclaration","endLine":779},
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":781,"name":"book","kind":"VariableDeclaration","endLine":781},
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":787,"name":"chapter","kind":"VariableDeclaration","endLine":787},
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":790,"name":"requestKey","kind":"VariableDeclaration","endLine":790},
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":804,"name":"requestKey","kind":"VariableDeclaration","endLine":804},
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":810,"name":"verse","kind":"VariableDeclaration","endLine":810},
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":833,"name":"updatedResult","kind":"VariableDeclaration","endLine":833},
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":843,"name":"highlightSearchTerm","kind":"FunctionDeclaration","endLine":851},
+  {"file":"src/server/remote/components/pages/Scripture.svelte","line":849,"name":"regex","kind":"VariableDeclaration","endLine":849}
+]

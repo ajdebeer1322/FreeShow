@@ -1,0 +1,16 @@
+[
+  {"file":"src/frontend/components/main/popups/ImportScripture.svelte","line":132,"store":"src/frontend/stores.ts#scriptures","kind":"dollar-template","expression":"$scriptures","symbol":null},
+  {"file":"src/frontend/components/main/popups/ImportScripture.svelte","line":143,"store":"src/frontend/stores.ts#scriptures","kind":"dollar-template","expression":"$scriptures","symbol":null},
+  {"file":"src/frontend/components/main/popups/SelectTemplate.svelte","line":39,"store":"src/frontend/stores.ts#scriptures","kind":"dollar","symbol":null,"expression":"$scriptures"},
+  {"file":"src/frontend/components/main/popups/SelectTemplate.svelte","line":132,"store":"src/frontend/stores.ts#scriptures","kind":"dollar","symbol":"trimScriptureTemplates","expression":"$scriptures"},
+  {"file":"src/frontend/components/quicksearch/quicksearchData.ts","line":126,"store":"src/frontend/stores.ts#scriptures","kind":"get","symbol":"getBibleResults","expression":"get(scriptures)"},
+  {"file":"src/frontend/components/slide/Reference.svelte","line":39,"store":"src/frontend/stores.ts#scriptures","kind":"dollar","symbol":"openTab","expression":"$scriptures"},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":215,"store":"src/frontend/stores.ts#scriptures","kind":"dollar","symbol":"mousedown","expression":"$scriptures"},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":216,"store":"src/frontend/stores.ts#scriptures","kind":"dollar","symbol":"mousedown","expression":"$scriptures"},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":219,"store":"src/frontend/stores.ts#scriptures","kind":"dollar","symbol":"mousedown","expression":"$scriptures"},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":220,"store":"src/frontend/stores.ts#scriptures","kind":"dollar","symbol":"mousedown","expression":"$scriptures"},
+  {"file":"src/frontend/utils/listeners.ts","line":179,"store":"src/frontend/stores.ts#scriptures","kind":"subscribe","symbol":"storeSubscriber","expression":"scriptures.subscribe((data) => { send(REMOTE, [\"SCRIPTURE\"], data) })"},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":180,"store":"src/frontend/stores.ts#scriptures","kind":"get","symbol":"GET_SCRIPTURE","expression":"get(scriptures)"},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":238,"store":"src/frontend/stores.ts#scriptures","kind":"get","symbol":"SEARCH_SCRIPTURE","expression":"get(scriptures)"},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":373,"store":"src/frontend/stores.ts#scriptures","kind":"get","symbol":"initializeRemote","expression":"get(scriptures)"}
+]

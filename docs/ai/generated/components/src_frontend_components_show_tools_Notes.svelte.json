@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/show/tools/Notes.svelte","renders":[],"props":[{"name":"value","file":"src/frontend/components/show/tools/Notes.svelte","line":5},{"name":"placeholder","file":"src/frontend/components/show/tools/Notes.svelte","line":6},{"name":"disabled","file":"src/frontend/components/show/tools/Notes.svelte","line":7},{"name":"lines","file":"src/frontend/components/show/tools/Notes.svelte","line":8},{"name":"autofocus","file":"src/frontend/components/show/tools/Notes.svelte","line":9}]}
+]

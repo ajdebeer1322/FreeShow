@@ -1,0 +1,15 @@
+[
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1198,"store":"src/frontend/stores.ts#projects","kind":"reference","symbol":"addToProject","expression":"projects"},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1205,"store":"src/frontend/stores.ts#projects","kind":"get","symbol":"addToProject","expression":"get(projects)"},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1205,"store":"src/frontend/stores.ts#projects","kind":"reference","symbol":"addToProject","expression":"projects"},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1211,"store":"src/frontend/stores.ts#folders","kind":"get","symbol":"createProject","expression":"get(folders)"},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1211,"store":"src/frontend/stores.ts#folders","kind":"reference","symbol":"createProject","expression":"folders"},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1211,"store":"src/frontend/stores.ts#projects","kind":"get","symbol":"createProject","expression":"get(projects)"},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1211,"store":"src/frontend/stores.ts#projects","kind":"reference","symbol":"createProject","expression":"projects"},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1211,"store":"src/frontend/stores.ts#activeProject","kind":"get","symbol":"createProject","expression":"get(activeProject)"},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1211,"store":"src/frontend/stores.ts#activeProject","kind":"reference","symbol":"createProject","expression":"activeProject"},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1223,"store":"src/frontend/stores.ts#activeProject","kind":"set","symbol":"removeProjectItem","expression":"activeProject.set(data.id)"},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1223,"store":"src/frontend/stores.ts#activeProject","kind":"reference","symbol":"removeProjectItem","expression":"activeProject"},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1225,"store":"src/frontend/stores.ts#projects","kind":"get","symbol":"removeProjectItem","expression":"get(projects)"},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1225,"store":"src/frontend/stores.ts#projects","kind":"reference","symbol":"removeProjectItem","expression":"projects"}
+]

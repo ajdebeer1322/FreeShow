@@ -1,0 +1,17 @@
+[
+  {"file":"src/frontend/components/show/VideoShow.svelte","line":251,"name":"extension","kind":"VariableDeclaration","endLine":251},
+  {"file":"src/frontend/components/show/VideoShow.svelte","line":262,"name":"name","kind":"VariableDeclaration","endLine":262},
+  {"file":"src/frontend/components/show/VideoShow.svelte","line":263,"name":"id","kind":"VariableDeclaration","endLine":263},
+  {"file":"src/frontend/components/show/VideoShow.svelte","line":272,"name":"setActiveSubtitle","kind":"FunctionDeclaration","endLine":284},
+  {"file":"src/frontend/components/show/VideoShow.svelte","line":291,"name":"addMarker","kind":"FunctionDeclaration","endLine":308},
+  {"file":"src/frontend/components/show/VideoShow.svelte","line":293,"name":"newMarker","kind":"VariableDeclaration","endLine":293},
+  {"file":"src/frontend/components/show/VideoShow.svelte","line":303,"name":"markerIndex","kind":"VariableDeclaration","endLine":303},
+  {"file":"src/frontend/components/show/VideoShow.svelte","line":310,"name":"changeName","kind":"FunctionDeclaration","endLine":320},
+  {"file":"src/frontend/components/show/VideoShow.svelte","line":311,"name":"currentMarker","kind":"VariableDeclaration","endLine":311},
+  {"file":"src/frontend/components/show/VideoShow.svelte","line":322,"name":"pausedByEdit","kind":"VariableDeclaration","endLine":322},
+  {"file":"src/frontend/components/show/VideoShow.svelte","line":336,"name":"blurVideo","kind":"VariableDeclaration","endLine":336},
+  {"file":"src/frontend/components/show/VideoShow.svelte","line":342,"name":"cleanupVideo","kind":"VariableDeclaration","endLine":351},
+  {"file":"src/frontend/components/show/VideoShow.svelte","line":348,"name":"e","kind":"VariableDeclaration","endLine":348},
+  {"file":"src/frontend/components/show/VideoShow.svelte","line":365,"name":"softLoopSync","kind":"VariableDeclaration","endLine":365},
+  {"file":"src/frontend/components/show/VideoShow.svelte","line":368,"name":"softLoopAudioTime","kind":"VariableDeclaration","endLine":368}
+]

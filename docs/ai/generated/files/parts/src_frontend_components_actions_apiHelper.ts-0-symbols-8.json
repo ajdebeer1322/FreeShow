@@ -1,0 +1,10 @@
+[
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1174,"name":"size","kind":"VariableDeclaration","endLine":1174},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1194,"name":"addToProject","kind":"FunctionDeclaration","endLine":1206},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1210,"name":"createProject","kind":"FunctionDeclaration","endLine":1213},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1211,"name":"parentFolder","kind":"VariableDeclaration","endLine":1211},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1217,"name":"deleteProject","kind":"FunctionDeclaration","endLine":1219},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1221,"name":"removeProjectItem","kind":"FunctionDeclaration","endLine":1231},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1225,"name":"projectItems","kind":"VariableDeclaration","endLine":1225},
+  {"file":"src/frontend/components/actions/apiHelper.ts","line":1235,"name":"renameProject","kind":"FunctionDeclaration","endLine":1237}
+]

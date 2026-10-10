@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/system/Movebox.svelte","renders":[],"props":[{"name":"ratio","file":"src/frontend/components/system/Movebox.svelte","line":6},{"name":"itemStyle","file":"src/frontend/components/system/Movebox.svelte","line":7},{"name":"active","file":"src/frontend/components/system/Movebox.svelte","line":8},{"name":"onlyCorners","file":"src/frontend/components/system/Movebox.svelte","line":9}]}
+]

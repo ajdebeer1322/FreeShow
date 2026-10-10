@@ -1,0 +1,16 @@
+[
+  {"file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerOverlays.svelte","line":123,"store":"src/server/remote/util/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null},
+  {"file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerShows.svelte","line":122,"store":"src/server/remote/util/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null},
+  {"file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerShows.svelte","line":123,"store":"src/server/remote/util/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null},
+  {"file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerShows.svelte","line":142,"store":"src/server/remote/util/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null},
+  {"file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerShows.svelte","line":143,"store":"src/server/remote/util/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null},
+  {"file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerShows.svelte","line":182,"store":"src/server/remote/util/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null},
+  {"file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerShows.svelte","line":185,"store":"src/server/remote/util/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null},
+  {"file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerTemplates.svelte","line":73,"store":"src/server/remote/util/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null},
+  {"file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerTemplates.svelte","line":86,"store":"src/server/remote/util/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null},
+  {"file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerTemplates.svelte","line":93,"store":"src/server/remote/util/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null},
+  {"file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerTemplates.svelte","line":96,"store":"src/server/remote/util/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null},
+  {"file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerTemplates.svelte","line":98,"store":"src/server/remote/util/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null},
+  {"file":"src/server/remote/util/helpers.ts","line":16,"store":"src/server/remote/util/stores.ts#dictionary","kind":"keyed-get","symbol":"translate","expression":"_get(\"dictionary\")"},
+  {"file":"src/server/remote/util/helpers.ts","line":81,"store":"src/server/remote/util/stores.ts#dictionary","kind":"get","symbol":"dateToString","expression":"get(dictionary)"}
+]

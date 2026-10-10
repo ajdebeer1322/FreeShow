@@ -1,0 +1,3 @@
+[
+  {"file":"src/server/stage/components/Timer.svelte","renders":[],"props":[{"name":"item","file":"src/server/stage/components/Timer.svelte","line":8},{"name":"id","file":"src/server/stage/components/Timer.svelte","line":11},{"name":"today","file":"src/server/stage/components/Timer.svelte","line":12},{"name":"style","file":"src/server/stage/components/Timer.svelte","line":13}]}
+]

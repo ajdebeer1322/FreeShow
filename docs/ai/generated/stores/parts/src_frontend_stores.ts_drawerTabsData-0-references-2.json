@@ -1,0 +1,17 @@
+[
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":765,"store":"src/frontend/stores.ts#drawerTabsData","kind":"reference","symbol":"setDrawerTabData","expression":"drawerTabsData"},
+  {"file":"src/frontend/components/main/votd.ts","line":32,"store":"src/frontend/stores.ts#drawerTabsData","kind":"reference","symbol":"getVOTD","expression":"drawerTabsData"},
+  {"file":"src/frontend/components/quicksearch/quicksearch.ts","line":499,"store":"src/frontend/stores.ts#drawerTabsData","kind":"reference","symbol":"audio_playlist","expression":"drawerTabsData"},
+  {"file":"src/frontend/components/quicksearch/quicksearchData.ts","line":52,"store":"src/frontend/stores.ts#drawerTabsData","kind":"reference","symbol":"getBibleResults","expression":"drawerTabsData"},
+  {"file":"src/frontend/converters/bible.ts","line":99,"store":"src/frontend/stores.ts#drawerTabsData","kind":"reference","symbol":"setActiveScripture","expression":"drawerTabsData"},
+  {"file":"src/frontend/converters/chordpro.ts","line":225,"store":"src/frontend/stores.ts#drawerTabsData","kind":"reference","symbol":"createShow","expression":"drawerTabsData"},
+  {"file":"src/frontend/converters/csv.ts","line":50,"store":"src/frontend/stores.ts#drawerTabsData","kind":"reference","symbol":"createShow","expression":"drawerTabsData"},
+  {"file":"src/frontend/converters/importHelpers.ts","line":15,"store":"src/frontend/stores.ts#drawerTabsData","kind":"reference","symbol":"createCategory","expression":"drawerTabsData"},
+  {"file":"src/frontend/converters/importHelpers.ts","line":91,"store":"src/frontend/stores.ts#drawerTabsData","kind":"reference","symbol":"loadShow","expression":"drawerTabsData"},
+  {"file":"src/frontend/converters/importHelpers.ts","line":231,"store":"src/frontend/stores.ts#drawerTabsData","kind":"reference","symbol":"importFromClipboard","expression":"drawerTabsData"},
+  {"file":"src/frontend/converters/powerpoint/powerpointImporter.ts","line":20,"store":"src/frontend/stores.ts#drawerTabsData","kind":"reference","symbol":"convertPowerpoint","expression":"drawerTabsData"},
+  {"file":"src/frontend/converters/txt.ts","line":35,"store":"src/frontend/stores.ts#drawerTabsData","kind":"reference","symbol":"convertTexts","expression":"drawerTabsData"},
+  {"file":"src/frontend/utils/save.ts","line":175,"store":"src/frontend/stores.ts#drawerTabsData","kind":"reference","symbol":"save","expression":"drawerTabsData"},
+  {"file":"src/frontend/utils/search.ts","line":90,"store":"src/frontend/stores.ts#drawerTabsData","kind":"reference","symbol":"showSearch","expression":"drawerTabsData"},
+  {"file":"src/frontend/utils/updateSettings.ts","line":350,"store":"src/frontend/stores.ts#drawerTabsData","kind":"reference","symbol":"drawerTabsData","expression":"drawerTabsData"}
+]

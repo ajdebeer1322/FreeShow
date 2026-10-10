@@ -1,0 +1,13 @@
+[
+  {"file":"src/frontend/utils/createData.ts","line":1205,"endLine":1205,"text":"// textFit: \"shrinkToFit\",","start":51302,"end":51328},
+  {"file":"src/frontend/utils/createData.ts","line":1219,"endLine":1219,"text":"// textFit: \"shrinkToFit\",","start":51989,"end":52015},
+  {"file":"src/frontend/utils/createData.ts","line":1233,"endLine":1233,"text":"// textFit: \"shrinkToFit\",","start":52677,"end":52703},
+  {"file":"src/frontend/utils/createData.ts","line":1247,"endLine":1247,"text":"// textFit: \"shrinkToFit\",","start":53365,"end":53391},
+  {"file":"src/frontend/utils/createData.ts","line":1361,"endLine":1361,"text":"// new Date(\"2022-01-01\").getTime(),","start":58419,"end":58455},
+  {"file":"src/frontend/utils/createData.ts","line":1398,"endLine":1398,"text":"// \"#FF6543\",","start":59485,"end":59498},
+  {"file":"src/frontend/utils/createData.ts","line":1418,"endLine":1418,"text":"// DELETED","start":60101,"end":60111},
+  {"file":"src/frontend/utils/createData.ts","line":1423,"endLine":1423,"text":"// deleted default elements are now logged, but were not previously","start":60207,"end":60274},
+  {"file":"src/frontend/utils/createData.ts","line":1424,"endLine":1424,"text":"// this will get & store the deleted elements from pre 1.5.3","start":60279,"end":60339},
+  {"file":"src/frontend/utils/createData.ts","line":1429,"endLine":1429,"text":"// check if there's any missing element that should be added, that is not deleted","start":60420,"end":60501},
+  {"file":"src/frontend/utils/createData.ts","line":1435,"endLine":1435,"text":"// \"message\" is removed","start":60589,"end":60612}
+]

@@ -1,0 +1,3 @@
+[
+  {"name":"WEBRTC_FRAME","definitions":[],"messages":[],"endpoints":[{"file":"src/electron/streaming/WebRtcHost.ts","line":134,"endLine":134,"channel":"WEBRTC_FRAME","keys":[],"role":"send","direction":"electron → renderer/client","symbol":"sendFrame","payload":"{ outputId, buffer, size }","expression":"this.window!.webContents.send(\"WEBRTC_FRAME\", { outputId, buffer, size })","dynamic":true}]}
+]

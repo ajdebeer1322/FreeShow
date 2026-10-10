@@ -1,0 +1,17 @@
+[
+  {"file":"src/frontend/utils/remoteTalk.ts","line":276,"name":"filteredResults","kind":"VariableDeclaration","endLine":283},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":296,"name":"err","kind":"VariableDeclaration","endLine":296},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":332,"name":"oldOutSlide","kind":"VariableDeclaration","endLine":332},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":334,"name":"initializeRemote","kind":"FunctionDeclaration","endLine":377},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":344,"name":"currentOutput","kind":"VariableDeclaration","endLine":344},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":345,"name":"styleRes","kind":"VariableDeclaration","endLine":345},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":347,"name":"outSlide","kind":"VariableDeclaration","endLine":347},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":348,"name":"out","kind":"VariableDeclaration","endLine":352},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":379,"name":"sendThemeToRemote","kind":"FunctionDeclaration","endLine":384},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":380,"name":"currentThemeObj","kind":"VariableDeclaration","endLine":380},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":386,"name":"convertBackgrounds","kind":"FunctionDeclaration","endLine":415},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":390,"name":"mediaIds","kind":"VariableDeclaration","endLine":390},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":398,"name":"path","kind":"VariableDeclaration","endLine":398},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":406,"name":"remoteConnections","kind":"VariableDeclaration","endLine":406},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":424,"name":"openShow","kind":"FunctionDeclaration","endLine":431}
+]

@@ -1,0 +1,17 @@
+[
+  {"file":"src/frontend/media/cameraManager.ts","line":286,"name":"clearBadCamera","kind":"MethodDeclaration","endLine":289},
+  {"file":"src/frontend/media/cameraManager.ts","line":291,"name":"initializeCameraWarming","kind":"MethodDeclaration","endLine":324},
+  {"file":"src/frontend/media/cameraManager.ts","line":292,"name":"allCameras","kind":"VariableDeclaration","endLine":292},
+  {"file":"src/frontend/media/cameraManager.ts","line":293,"name":"selectedCameraIds","kind":"VariableDeclaration","endLine":293},
+  {"file":"src/frontend/media/cameraManager.ts","line":312,"name":"camera","kind":"VariableDeclaration","endLine":312},
+  {"file":"src/frontend/media/cameraManager.ts","line":314,"name":"res","kind":"VariableDeclaration","endLine":314},
+  {"file":"src/frontend/media/cameraManager.ts","line":328,"name":"startKeepaliveMonitor","kind":"MethodDeclaration","endLine":331},
+  {"file":"src/frontend/media/cameraManager.ts","line":333,"name":"stopKeepaliveMonitor","kind":"MethodDeclaration","endLine":337},
+  {"file":"src/frontend/media/cameraManager.ts","line":339,"name":"checkAndRestartDeadCameras","kind":"MethodDeclaration","endLine":354},
+  {"file":"src/frontend/media/cameraManager.ts","line":340,"name":"startupIds","kind":"VariableDeclaration","endLine":340},
+  {"file":"src/frontend/media/cameraManager.ts","line":341,"name":"id","kind":"VariableDeclaration","endLine":341},
+  {"file":"src/frontend/media/cameraManager.ts","line":342,"name":"entry","kind":"VariableDeclaration","endLine":342},
+  {"file":"src/frontend/media/cameraManager.ts","line":345,"name":"camera","kind":"VariableDeclaration","endLine":345},
+  {"file":"src/frontend/media/cameraManager.ts","line":347,"name":"res","kind":"VariableDeclaration","endLine":347},
+  {"file":"src/frontend/media/cameraManager.ts","line":357,"name":"cameraManager","kind":"VariableDeclaration","endLine":357}
+]

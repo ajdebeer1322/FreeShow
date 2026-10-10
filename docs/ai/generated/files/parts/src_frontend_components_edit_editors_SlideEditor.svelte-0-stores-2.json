@@ -1,0 +1,19 @@
+[
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":357,"store":"src/frontend/stores.ts#special","kind":"dollar-template","expression":"$special","symbol":null},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":369,"store":"src/frontend/stores.ts#overlays","kind":"dollar-template","expression":"$overlays","symbol":null},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":370,"store":"src/frontend/stores.ts#overlays","kind":"dollar-template","expression":"$overlays","symbol":null},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":383,"store":"src/frontend/stores.ts#activeEdit","kind":"dollar-template","expression":"$activeEdit","symbol":null},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":387,"store":"src/frontend/stores.ts#editMode","kind":"dollar-template","expression":"$editMode","symbol":null},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":399,"store":"src/frontend/stores.ts#slideNotesActive","kind":"dollar-template","expression":"$slideNotesActive","symbol":null},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":405,"store":"src/frontend/stores.ts#slideNotesActive","kind":"assignment-template","expression":"$slideNotesActive = false","symbol":null},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":405,"store":"src/frontend/stores.ts#slideNotesActive","kind":"dollar-template","expression":"$slideNotesActive","symbol":null},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":416,"store":"src/frontend/stores.ts#focusMode","kind":"dollar-template","expression":"$focusMode","symbol":null},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":416,"store":"src/frontend/stores.ts#slideNotesActive","kind":"dollar-template","expression":"$slideNotesActive","symbol":null},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":416,"store":"src/frontend/stores.ts#special","kind":"dollar-template","expression":"$special","symbol":null},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":417,"store":"src/frontend/stores.ts#editMode","kind":"dollar-template","expression":"$editMode","symbol":null},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":418,"store":"src/frontend/stores.ts#editMode","kind":"dollar-template","expression":"$editMode","symbol":null},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":444,"store":"src/frontend/stores.ts#editMode","kind":"dollar-template","expression":"$editMode","symbol":null},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":448,"store":"src/frontend/stores.ts#special","kind":"dollar-template","expression":"$special","symbol":null},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":452,"store":"src/frontend/stores.ts#activeEdit","kind":"dollar-template","expression":"$activeEdit","symbol":null},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":453,"store":"src/frontend/stores.ts#resized","kind":"dollar-template","expression":"$resized","symbol":null}
+]

@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/slide/BreakCountdown.svelte","renders":[],"props":[{"name":"activeKey","file":"src/frontend/components/slide/BreakCountdown.svelte","line":4},{"name":"breakDuration","file":"src/frontend/components/slide/BreakCountdown.svelte","line":5},{"name":"ratio","file":"src/frontend/components/slide/BreakCountdown.svelte","line":6}]}
+]

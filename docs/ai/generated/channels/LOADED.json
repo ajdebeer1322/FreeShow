@@ -1,0 +1,3 @@
+[
+  {"name":"LOADED","definitions":[],"messages":[],"endpoints":[{"file":"src/frontend/utils/updateSettings.ts","line":190,"endLine":190,"channel":"LOADED","keys":[],"role":"send","direction":"renderer → electron/other renderer","symbol":"updateSettings","payload":null,"expression":"window.api.send(\"LOADED\")","dynamic":true}]}
+]

@@ -1,0 +1,4 @@
+[
+  {"file":"src/frontend/utils/shortcuts.ts","line":117,"store":"src/frontend/stores.ts#selected","kind":"set","symbol":null,"expression":"selected.set({ id: null, data: [] })"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":127,"store":"src/frontend/stores.ts#selected","kind":"set","symbol":null,"expression":"selected.set({ id: null, data: [] })"}
+]

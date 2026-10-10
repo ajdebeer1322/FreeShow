@@ -1,0 +1,8 @@
+[
+  {"file":"src/frontend/audio/audioAnalyser.ts","line":480,"name":"len","kind":"VariableDeclaration","endLine":480},
+  {"file":"src/frontend/audio/audioAnalyser.ts","line":481,"name":"i","kind":"VariableDeclaration","endLine":481},
+  {"file":"src/frontend/audio/audioAnalyser.ts","line":482,"name":"sample","kind":"VariableDeclaration","endLine":482},
+  {"file":"src/frontend/audio/audioAnalyser.ts","line":486,"name":"rms","kind":"VariableDeclaration","endLine":486},
+  {"file":"src/frontend/audio/audioAnalyser.ts","line":490,"name":"getAnalysers","kind":"MethodDeclaration","endLine":497},
+  {"file":"src/frontend/audio/audioAnalyser.ts","line":491,"name":"nodeId","kind":"VariableDeclaration","endLine":491}
+]

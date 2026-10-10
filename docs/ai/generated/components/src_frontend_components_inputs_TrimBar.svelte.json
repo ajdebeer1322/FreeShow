@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/inputs/TrimBar.svelte","renders":[],"props":[{"name":"duration","file":"src/frontend/components/inputs/TrimBar.svelte","line":5},{"name":"from","file":"src/frontend/components/inputs/TrimBar.svelte","line":7},{"name":"to","file":"src/frontend/components/inputs/TrimBar.svelte","line":9},{"name":"current","file":"src/frontend/components/inputs/TrimBar.svelte","line":11}]}
+]

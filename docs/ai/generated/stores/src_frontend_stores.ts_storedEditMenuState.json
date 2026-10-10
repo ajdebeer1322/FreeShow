@@ -1,0 +1,3 @@
+[
+  {"id":"src/frontend/stores.ts#storedEditMenuState","name":"storedEditMenuState","file":"src/frontend/stores.ts","line":180,"type":"Writable<any>","factory":"writable","initial":"{}","exported":true,"reads":[],"writes":[{"file":"src/frontend/components/edit/EditTools.svelte","line":240,"store":"src/frontend/stores.ts#storedEditMenuState","kind":"set","symbol":"reset","expression":"storedEditMenuState.set({})"}],"references":[{"file":"src/frontend/components/edit/EditTools.svelte","line":240,"store":"src/frontend/stores.ts#storedEditMenuState","kind":"reference","symbol":"reset","expression":"storedEditMenuState"}],"transports":[],"persistence":[],"confidence":"code"}
+]

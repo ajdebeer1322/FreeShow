@@ -1,0 +1,3 @@
+[
+  {"file":"src/server/stage/util/dictionary.ts","area":"server","hash":"d45e96c7c4cd9f447148234afb0b0f7ed5271e3404c71f387748c3185ee284a0","lineCount":22,"imports":[],"symbols":[{"file":"src/server/stage/util/dictionary.ts","line":1,"name":"DEFAULT_DICTIONARY","kind":"VariableDeclaration","endLine":21}],"stores":[],"components":[],"timers":[],"workarounds":[],"settings":[],"ipc":[],"comments":[]}
+]

@@ -1,0 +1,19 @@
+[
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":734,"store":"src/frontend/stores.ts#groups","kind":"reference","symbol":"updateSlidesWithTemplate","expression":"groups"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":743,"store":"src/frontend/stores.ts#templates","kind":"get","symbol":"updateSlidesWithTemplate","expression":"get(templates)"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":743,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"updateSlidesWithTemplate","expression":"templates"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":761,"store":"src/frontend/stores.ts#templates","kind":"get","symbol":"updateSlidesWithTemplate","expression":"get(templates)"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":761,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"updateSlidesWithTemplate","expression":"templates"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":796,"store":"src/frontend/stores.ts#templates","kind":"get","symbol":"updateSlidesWithTemplate","expression":"get(templates)"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":796,"store":"src/frontend/stores.ts#templates","kind":"reference","symbol":"updateSlidesWithTemplate","expression":"templates"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":805,"store":"src/frontend/stores.ts#showsCache","kind":"update","symbol":"updateSlidesWithTemplate","expression":"showsCache.update((a) => { a[data.remember.showId] = show return a })"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":805,"store":"src/frontend/stores.ts#showsCache","kind":"reference","symbol":"updateSlidesWithTemplate","expression":"showsCache"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":818,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":"handleShowLayout","expression":"get(activeShow)"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":818,"store":"src/frontend/stores.ts#activeShow","kind":"reference","symbol":"handleShowLayout","expression":"activeShow"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":827,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":"handleShowLayout","expression":"get(showsCache)"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":827,"store":"src/frontend/stores.ts#showsCache","kind":"reference","symbol":"handleShowLayout","expression":"showsCache"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":837,"store":"src/frontend/stores.ts#showsCache","kind":"update","symbol":"updateLayoutSlides","expression":"showsCache.update((a) => { if (!a[data.remember.showId]) return a const layoutSlides: SlideData[] = a[data.remember.showId].layouts?.[data.remember.layout].slides || [] let current"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":837,"store":"src/frontend/stores.ts#showsCache","kind":"reference","symbol":"updateLayoutSlides","expression":"showsCache"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":888,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":"handleShowItems","expression":"get(activeShow)"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":888,"store":"src/frontend/stores.ts#activeShow","kind":"reference","symbol":"handleShowItems","expression":"activeShow"}
+]

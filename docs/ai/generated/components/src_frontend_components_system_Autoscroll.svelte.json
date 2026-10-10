@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/system/Autoscroll.svelte","renders":[],"props":[{"name":"scrollElem","file":"src/frontend/components/system/Autoscroll.svelte","line":4},{"name":"timeout","file":"src/frontend/components/system/Autoscroll.svelte","line":5},{"name":"smoothTimeout","file":"src/frontend/components/system/Autoscroll.svelte","line":6},{"name":"offset","file":"src/frontend/components/system/Autoscroll.svelte","line":7},{"name":"shouldSkipSmooth","file":"src/frontend/components/system/Autoscroll.svelte","line":8},{"name":"disabled","file":"src/frontend/components/system/Autoscroll.svelte","line":9}]}
+]

@@ -1,0 +1,12 @@
+[
+  {"file":"src/frontend/utils/remoteController.ts","line":77,"store":"src/frontend/stores.ts#special","kind":"get","symbol":"autoDisableRemoteController","expression":"getStore(special)"},
+  {"file":"src/frontend/utils/save.ts","line":205,"store":"src/frontend/stores.ts#special","kind":"get","symbol":"save","expression":"get(special)"},
+  {"file":"src/frontend/utils/save.ts","line":341,"store":"src/frontend/stores.ts#special","kind":"get","symbol":"initializeClosing","expression":"get(special)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":261,"store":"src/frontend/stores.ts#special","kind":"get","symbol":"keydown","expression":"get(special)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":445,"store":"src/frontend/stores.ts#special","kind":"get","symbol":"isTimelineActive","expression":"get(special)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":446,"store":"src/frontend/stores.ts#special","kind":"get","symbol":"isTimelineActive","expression":"get(special)"},
+  {"file":"src/frontend/utils/startup.ts","line":122,"store":"src/frontend/stores.ts#special","kind":"get","symbol":"checkRamUsage","expression":"get(special)"},
+  {"file":"src/frontend/utils/startup.ts","line":126,"store":"src/frontend/stores.ts#special","kind":"get","symbol":"autoBackup","expression":"get(special)"},
+  {"file":"src/frontend/utils/startup.ts","line":130,"store":"src/frontend/stores.ts#special","kind":"get","symbol":"autoBackup","expression":"get(special)"},
+  {"file":"src/frontend/utils/startup.ts","line":163,"store":"src/frontend/stores.ts#special","kind":"get","symbol":"contentProviderSync","expression":"get(special)"}
+]

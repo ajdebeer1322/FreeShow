@@ -1,0 +1,17 @@
+[
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":358,"endLine":358,"text":"<!-- background -->","start":14564,"end":14583},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":365,"endLine":365,"text":"<!-- overlays -->","start":15012,"end":15029},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":378,"endLine":378,"text":"<!-- edit -->","start":15667,"end":15680},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":385,"endLine":385,"text":"<!-- filter={layoutSlide.filterEnabled?.includes(\"foreground\") ? layoutSlide.filter : \"\"} -->","start":15986,"end":16079},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":386,"endLine":386,"text":"<!-- backdropFilter={layoutSlide.filterEnabled?.includes(\"foreground\") ? layoutSlide[\"backdrop-filter\"] : \"\"} -->","start":16108,"end":16221},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":472,"endLine":473,"text":"/* justify-content: center;\n        align-items: center; */","start":19932,"end":19991},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":474,"endLine":474,"text":"/* padding: 10px; */","start":20000,"end":20020},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":476,"endLine":476,"text":"/* WIP try to fix scrollbar content flickering */","start":20030,"end":20079},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":477,"endLine":477,"text":"/* setting .slide elem to overflow: hidden; works... */","start":20088,"end":20143},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":478,"endLine":479,"text":"/* overflow: overlay;\n        z-index: 1; */","start":20152,"end":20196},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":480,"endLine":480,"text":"/* scrollbar-gutter: stable both-edges; */","start":20205,"end":20247},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":483,"endLine":483,"text":"/* disable \"glitchy\" scroll bars */","start":20259,"end":20294},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":488,"endLine":497,"text":"/* .chordsButton {\n        position: absolute;\n        top: 0;\n        right: 0;\n        background-color: var(--focus);\n    }\n    .chordsButton :global(button) {\n        padding: 10px !important;\n        z-index: 3;\n    } */","start":20376,"end":20601},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":508,"endLine":508,"text":"/* position: absolute;bottom: 0;transform: translateY(-100%); */","start":20888,"end":20952},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":515,"endLine":515,"text":"/* justify-content: center; */","start":21096,"end":21126}
+]

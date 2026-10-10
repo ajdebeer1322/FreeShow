@@ -1,0 +1,9 @@
+[
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":929,"name":"bounds","kind":"VariableDeclaration","endLine":929},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":934,"name":"updateWindowConstraints","kind":"MethodDeclaration","endLine":952},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":935,"name":"output","kind":"VariableDeclaration","endLine":935},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":938,"name":"locked","kind":"VariableDeclaration","endLine":938},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":939,"name":"movable","kind":"VariableDeclaration","endLine":939},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":945,"name":"bounds","kind":"VariableDeclaration","endLine":945},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":954,"name":"closeAllOutputs","kind":"MethodDeclaration","endLine":956}
+]

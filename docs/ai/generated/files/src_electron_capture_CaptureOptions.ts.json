@@ -1,0 +1,3 @@
+[
+  {"file":"src/electron/capture/CaptureOptions.ts","area":"electron","hash":"698322c3e00e6accb47bc44c502d7b4e0e1d968fd48dff4784c6bdadaa861708","lineCount":11,"imports":[{"file":"src/electron/capture/CaptureOptions.ts","line":1,"specifier":"electron","target":null,"kind":"static","typeOnly":true,"bindings":[{"local":"BrowserWindow","imported":"BrowserWindow","typeOnly":true}]}],"symbols":[{"file":"src/electron/capture/CaptureOptions.ts","line":3,"name":"CaptureOptions","kind":"TypeAliasDeclaration","endLine":10}],"stores":[],"components":[],"timers":[],"workarounds":[],"settings":[],"ipc":[],"comments":[]}
+]

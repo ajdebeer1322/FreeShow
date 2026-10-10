@@ -1,0 +1,3 @@
+[
+  {"file":"src/server/stage/components/PreviewCanvas.svelte","renders":[],"props":[{"name":"outputId","file":"src/server/stage/components/PreviewCanvas.svelte","line":6},{"name":"capture","file":"src/server/stage/components/PreviewCanvas.svelte","line":7}]}
+]

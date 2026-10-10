@@ -1,0 +1,14 @@
+[
+  {"file":"src/frontend/components/helpers/slideTransfer.test.ts","line":359,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":null,"expression":"get(showsCache)"},
+  {"file":"src/frontend/components/helpers/slideTransfer.test.ts","line":359,"store":"src/frontend/stores.ts#showsCache","kind":"reference","symbol":null,"expression":"showsCache"},
+  {"file":"src/frontend/components/helpers/slideTransfer.test.ts","line":360,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":null,"expression":"get(showsCache)"},
+  {"file":"src/frontend/components/helpers/slideTransfer.test.ts","line":360,"store":"src/frontend/stores.ts#showsCache","kind":"reference","symbol":null,"expression":"showsCache"},
+  {"file":"src/frontend/components/helpers/slideTransfer.test.ts","line":364,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":null,"expression":"get(showsCache)"},
+  {"file":"src/frontend/components/helpers/slideTransfer.test.ts","line":364,"store":"src/frontend/stores.ts#showsCache","kind":"reference","symbol":null,"expression":"showsCache"},
+  {"file":"src/frontend/components/helpers/slideTransfer.test.ts","line":367,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":null,"expression":"get(showsCache)"},
+  {"file":"src/frontend/components/helpers/slideTransfer.test.ts","line":367,"store":"src/frontend/stores.ts#showsCache","kind":"reference","symbol":null,"expression":"showsCache"},
+  {"file":"src/frontend/components/helpers/slideTransfer.test.ts","line":369,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":null,"expression":"get(showsCache)"},
+  {"file":"src/frontend/components/helpers/slideTransfer.test.ts","line":369,"store":"src/frontend/stores.ts#showsCache","kind":"reference","symbol":null,"expression":"showsCache"},
+  {"file":"src/frontend/components/helpers/slideTransfer.test.ts","line":375,"store":"src/frontend/stores.ts#showsCache","kind":"update","symbol":null,"expression":"showsCache.update((cache) => ({ ...cache, b: { ...cache.b, locked: true } }))"},
+  {"file":"src/frontend/components/helpers/slideTransfer.test.ts","line":375,"store":"src/frontend/stores.ts#showsCache","kind":"reference","symbol":null,"expression":"showsCache"}
+]

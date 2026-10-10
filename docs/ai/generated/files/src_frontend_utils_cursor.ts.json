@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/utils/cursor.ts","area":"frontend","hash":"532b0f49b72fef41b733514f7dd84e0ca10ff478a4b28cdd559aa09c13438d8a","lineCount":18,"imports":[],"symbols":[{"file":"src/frontend/utils/cursor.ts","line":1,"name":"startResizing","kind":"FunctionDeclaration","endLine":5},{"file":"src/frontend/utils/cursor.ts","line":7,"name":"stopResizing","kind":"FunctionDeclaration","endLine":11}],"stores":[],"components":[],"timers":[],"workarounds":[],"settings":[],"ipc":[],"comments":[]}
+]

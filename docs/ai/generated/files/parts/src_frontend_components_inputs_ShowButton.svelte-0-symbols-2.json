@@ -1,0 +1,15 @@
+[
+  {"file":"src/frontend/components/inputs/ShowButton.svelte","line":201,"name":"value","kind":"VariableDeclaration","endLine":201},
+  {"file":"src/frontend/components/inputs/ShowButton.svelte","line":204,"name":"projectId","kind":"VariableDeclaration","endLine":204},
+  {"file":"src/frontend/components/inputs/ShowButton.svelte","line":207,"name":"project","kind":"VariableDeclaration","endLine":207},
+  {"file":"src/frontend/components/inputs/ShowButton.svelte","line":210,"name":"newShows","kind":"VariableDeclaration","endLine":210},
+  {"file":"src/frontend/components/inputs/ShowButton.svelte","line":217,"name":"name","kind":"VariableDeclaration","endLine":217},
+  {"file":"src/frontend/components/inputs/ShowButton.svelte","line":221,"name":"activeOutput","kind":"VariableDeclaration","endLine":221},
+  {"file":"src/frontend/components/inputs/ShowButton.svelte","line":227,"name":"outputId","kind":"VariableDeclaration","endLine":227},
+  {"file":"src/frontend/components/inputs/ShowButton.svelte","line":228,"name":"selectedLayoutId","kind":"VariableDeclaration","endLine":228},
+  {"file":"src/frontend/components/inputs/ShowButton.svelte","line":235,"name":"thumbnailPath","kind":"VariableDeclaration","endLine":235},
+  {"file":"src/frontend/components/inputs/ShowButton.svelte","line":236,"name":"duration","kind":"VariableDeclaration","endLine":236},
+  {"file":"src/frontend/components/inputs/ShowButton.svelte","line":245,"name":"getThumbnail","kind":"FunctionDeclaration","endLine":271},
+  {"file":"src/frontend/components/inputs/ShowButton.svelte","line":250,"name":"player","kind":"VariableDeclaration","endLine":250},
+  {"file":"src/frontend/components/inputs/ShowButton.svelte","line":262,"name":"media","kind":"VariableDeclaration","endLine":262}
+]

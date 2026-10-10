@@ -1,0 +1,21 @@
+[
+  {"file":"src/server/stage/util/itemHelpers.ts","line":170,"name":"value","kind":"VariableDeclaration","endLine":170},
+  {"file":"src/server/stage/util/itemHelpers.ts","line":177,"name":"_getVariableValue","kind":"FunctionDeclaration","endLine":189},
+  {"file":"src/server/stage/util/itemHelpers.ts","line":178,"name":"variable","kind":"VariableDeclaration","endLine":178},
+  {"file":"src/server/stage/util/itemHelpers.ts","line":191,"name":"dynamicValueText","kind":"VariableDeclaration","endLine":191},
+  {"file":"src/server/stage/util/itemHelpers.ts","line":192,"name":"_getDynamicValue","kind":"FunctionDeclaration","endLine":196},
+  {"file":"src/server/stage/util/itemHelpers.ts","line":200,"name":"getVariableNameId","kind":"FunctionDeclaration","endLine":203},
+  {"file":"src/server/stage/util/itemHelpers.ts","line":205,"name":"getSetChars","kind":"FunctionDeclaration","endLine":217},
+  {"file":"src/server/stage/util/itemHelpers.ts","line":206,"name":"chars","kind":"VariableDeclaration","endLine":206},
+  {"file":"src/server/stage/util/itemHelpers.ts","line":210,"name":"minChars","kind":"VariableDeclaration","endLine":210},
+  {"file":"src/server/stage/util/itemHelpers.ts","line":211,"name":"maxChars","kind":"VariableDeclaration","endLine":211},
+  {"file":"src/server/stage/util/itemHelpers.ts","line":219,"name":"getVariableValue","kind":"FunctionDeclaration","endLine":253},
+  {"file":"src/server/stage/util/itemHelpers.ts","line":221,"name":"nameId","kind":"VariableDeclaration","endLine":221},
+  {"file":"src/server/stage/util/itemHelpers.ts","line":222,"name":"variable","kind":"VariableDeclaration","endLine":222},
+  {"file":"src/server/stage/util/itemHelpers.ts","line":229,"name":"nameId","kind":"VariableDeclaration","endLine":229},
+  {"file":"src/server/stage/util/itemHelpers.ts","line":230,"name":"variable","kind":"VariableDeclaration","endLine":230},
+  {"file":"src/server/stage/util/itemHelpers.ts","line":233,"name":"textSetId","kind":"VariableDeclaration","endLine":233},
+  {"file":"src/server/stage/util/itemHelpers.ts","line":241,"name":"currentSet","kind":"VariableDeclaration","endLine":241},
+  {"file":"src/server/stage/util/itemHelpers.ts","line":242,"name":"setId","kind":"VariableDeclaration","endLine":242},
+  {"file":"src/server/stage/util/itemHelpers.ts","line":243,"name":"setName","kind":"VariableDeclaration","endLine":243}
+]

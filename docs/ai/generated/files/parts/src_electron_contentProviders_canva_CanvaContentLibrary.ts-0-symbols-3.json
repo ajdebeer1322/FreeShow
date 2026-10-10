@@ -1,0 +1,12 @@
+[
+  {"file":"src/electron/contentProviders/canva/CanvaContentLibrary.ts","line":440,"name":"cached","kind":"VariableDeclaration","endLine":440},
+  {"file":"src/electron/contentProviders/canva/CanvaContentLibrary.ts","line":443,"name":"exportBody","kind":"VariableDeclaration","endLine":450},
+  {"file":"src/electron/contentProviders/canva/CanvaContentLibrary.ts","line":453,"name":"exportResponse","kind":"VariableDeclaration","endLine":453},
+  {"file":"src/electron/contentProviders/canva/CanvaContentLibrary.ts","line":454,"name":"jobId","kind":"VariableDeclaration","endLine":454},
+  {"file":"src/electron/contentProviders/canva/CanvaContentLibrary.ts","line":457,"name":"urls","kind":"VariableDeclaration","endLine":457},
+  {"file":"src/electron/contentProviders/canva/CanvaContentLibrary.ts","line":458,"name":"i","kind":"VariableDeclaration","endLine":458},
+  {"file":"src/electron/contentProviders/canva/CanvaContentLibrary.ts","line":461,"name":"pollPath","kind":"VariableDeclaration","endLine":461},
+  {"file":"src/electron/contentProviders/canva/CanvaContentLibrary.ts","line":462,"name":"pollResponse","kind":"VariableDeclaration","endLine":462},
+  {"file":"src/electron/contentProviders/canva/CanvaContentLibrary.ts","line":465,"name":"e","kind":"VariableDeclaration","endLine":465},
+  {"file":"src/electron/contentProviders/canva/CanvaContentLibrary.ts","line":469,"name":"job","kind":"VariableDeclaration","endLine":469}
+]

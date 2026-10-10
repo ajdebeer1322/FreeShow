@@ -1,0 +1,14 @@
+[
+  {"file":"src/frontend/components/main/popups/Timer.svelte","line":112,"store":"src/frontend/stores.ts#timers","kind":"dollar","symbol":"changeName","expression":"$timers"},
+  {"file":"src/frontend/components/slide/views/Timer.svelte","line":22,"store":"src/frontend/stores.ts#timers","kind":"dollar","symbol":null,"expression":"$timers"},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":247,"store":"src/frontend/stores.ts#timers","kind":"dollar","symbol":null,"expression":"$timers"},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":465,"store":"src/frontend/stores.ts#timers","kind":"dollar-template","expression":"$timers","symbol":null},
+  {"file":"src/frontend/components/stage/stage.ts","line":85,"store":"src/frontend/stores.ts#timers","kind":"get","symbol":"getCustomStageLabel","expression":"get(timers)"},
+  {"file":"src/frontend/components/stage/stage.ts","line":99,"store":"src/frontend/stores.ts#timers","kind":"get","symbol":"getCustomStageLabel","expression":"get(timers)"},
+  {"file":"src/frontend/components/stage/tools/StageItemsList.svelte","line":30,"store":"src/frontend/stores.ts#timers","kind":"dollar","symbol":"timer","expression":"$timers"},
+  {"file":"src/frontend/utils/listeners.ts","line":303,"store":"src/frontend/stores.ts#timers","kind":"subscribe","symbol":"storeSubscriber","expression":"timers.subscribe((data) => { send(OUTPUT, [\"TIMERS\"], data) // STAGE send(STAGE, [\"TIMERS\"], data) // REMOTE send(REMOTE, [\"TIMERS\"], data) })"},
+  {"file":"src/frontend/utils/pcoLiveSync.ts","line":141,"store":"src/frontend/stores.ts#timers","kind":"get","symbol":"tickPcoTimers","expression":"get(timers)"},
+  {"file":"src/frontend/utils/pcoLiveSync.ts","line":240,"store":"src/frontend/stores.ts#timers","kind":"get","symbol":"pollTimer","expression":"get(timers)"},
+  {"file":"src/frontend/utils/remoteTalk.ts","line":317,"store":"src/frontend/stores.ts#timers","kind":"get","symbol":"GET_FUNCTIONS","expression":"get(timers)"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":98,"store":"src/frontend/stores.ts#timers","kind":"get","symbol":"LAYOUT","expression":"get(timers)"}
+]

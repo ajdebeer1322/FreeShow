@@ -1,0 +1,18 @@
+[
+  {"file":"src/server/remote/util/helpers.ts","line":166,"name":"timer","kind":"VariableDeclaration","endLine":166},
+  {"file":"src/server/remote/util/helpers.ts","line":167,"name":"startX","kind":"VariableDeclaration","endLine":167},
+  {"file":"src/server/remote/util/helpers.ts","line":168,"name":"startY","kind":"VariableDeclaration","endLine":168},
+  {"file":"src/server/remote/util/helpers.ts","line":169,"name":"lastLongPressAt","kind":"VariableDeclaration","endLine":169},
+  {"file":"src/server/remote/util/helpers.ts","line":171,"name":"clear","kind":"FunctionDeclaration","endLine":176},
+  {"file":"src/server/remote/util/helpers.ts","line":178,"name":"isAllowedPointerType","kind":"FunctionDeclaration","endLine":181},
+  {"file":"src/server/remote/util/helpers.ts","line":202,"name":"dx","kind":"VariableDeclaration","endLine":202},
+  {"file":"src/server/remote/util/helpers.ts","line":203,"name":"dy","kind":"VariableDeclaration","endLine":203},
+  {"file":"src/server/remote/util/helpers.ts","line":218,"name":"CategoryData","kind":"TypeAliasDeclaration","endLine":225},
+  {"file":"src/server/remote/util/helpers.ts","line":228,"name":"buildCategoryData","kind":"FunctionDeclaration","endLine":244},
+  {"file":"src/server/remote/util/helpers.ts","line":229,"name":"categoriesList","kind":"VariableDeclaration","endLine":229},
+  {"file":"src/server/remote/util/helpers.ts","line":230,"name":"unarchivedCategories","kind":"VariableDeclaration","endLine":230},
+  {"file":"src/server/remote/util/helpers.ts","line":231,"name":"archivedCategories","kind":"VariableDeclaration","endLine":231},
+  {"file":"src/server/remote/util/helpers.ts","line":232,"name":"allItems","kind":"VariableDeclaration","endLine":232},
+  {"file":"src/server/remote/util/helpers.ts","line":233,"name":"unarchivedItems","kind":"VariableDeclaration","endLine":233},
+  {"file":"src/server/remote/util/helpers.ts","line":234,"name":"uncategorizedCount","kind":"VariableDeclaration","endLine":234}
+]

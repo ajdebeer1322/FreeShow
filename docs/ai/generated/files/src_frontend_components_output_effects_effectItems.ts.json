@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/output/effects/effectItems.ts","area":"frontend","hash":"2bca501c0bcc64b84085d77f7c3f35ef7bdb2eef730d90fa8ecae9c3bdd1693b","lineCount":56,"imports":[],"symbols":[{"file":"src/frontend/components/output/effects/effectItems.ts","line":1,"name":"effectItems","kind":"VariableDeclaration","endLine":55}],"stores":[],"components":[],"timers":[],"workarounds":[],"settings":[],"ipc":[],"comments":[]}
+]

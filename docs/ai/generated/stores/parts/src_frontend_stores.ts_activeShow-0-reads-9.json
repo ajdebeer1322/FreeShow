@@ -1,0 +1,15 @@
+[
+  {"file":"src/frontend/show/slides.ts","line":911,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":"mergeTextboxes","expression":"get(activeShow)"},
+  {"file":"src/frontend/utils/cloudSync.ts","line":200,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":"syncWithCloud","expression":"get(activeShow)"},
+  {"file":"src/frontend/utils/cloudSync.ts","line":287,"store":"src/frontend/stores.ts#activeShow","kind":"subscribe","symbol":"setupStoreListeners","expression":"activeShow.subscribe(() => broadcastPresence())"},
+  {"file":"src/frontend/utils/cloudSync.ts","line":305,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":"broadcastPresence","expression":"get(activeShow)"},
+  {"file":"src/frontend/utils/cloudSync.ts","line":321,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":"isActiveShowInUseByCloudUser","expression":"get(activeShow)"},
+  {"file":"src/frontend/utils/listeners.ts","line":437,"store":"src/frontend/stores.ts#activeShow","kind":"subscribe","symbol":"storeSubscriber","expression":"activeShow.subscribe((data) => { if (!data?.id) return const type = data?.type || \"show\" if (type !== \"show\") return // load new show on show change loadShows([data.id]) const show"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":65,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":"d","expression":"get(activeShow)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":69,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":"t","expression":"get(activeShow)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":75,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":"t","expression":"get(activeShow)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":134,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":"Enter","expression":"get(activeShow)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":266,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":"keydown","expression":"get(activeShow)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":490,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":"togglePlayingMedia","expression":"get(activeShow)"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":191,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":"REQUEST_PROGRESS","expression":"get(activeShow)"}
+]

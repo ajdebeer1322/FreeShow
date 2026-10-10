@@ -1,0 +1,19 @@
+[
+  {"file":"src/frontend/audio/routing/audioInputCapture.ts","line":175,"name":"entry","kind":"VariableDeclaration","endLine":175},
+  {"file":"src/frontend/audio/routing/audioInputCapture.ts","line":178,"name":"s","kind":"VariableDeclaration","endLine":178},
+  {"file":"src/frontend/audio/routing/audioInputCapture.ts","line":186,"name":"i","kind":"VariableDeclaration","endLine":186},
+  {"file":"src/frontend/audio/routing/audioInputCapture.ts","line":196,"name":"getAnalysers","kind":"MethodDeclaration","endLine":199},
+  {"file":"src/frontend/audio/routing/audioInputCapture.ts","line":201,"name":"getVisualizerData","kind":"MethodDeclaration","endLine":248},
+  {"file":"src/frontend/audio/routing/audioInputCapture.ts","line":202,"name":"now","kind":"VariableDeclaration","endLine":202},
+  {"file":"src/frontend/audio/routing/audioInputCapture.ts","line":205,"name":"entry","kind":"VariableDeclaration","endLine":205},
+  {"file":"src/frontend/audio/routing/audioInputCapture.ts","line":208,"name":"cachedResult","kind":"VariableDeclaration","endLine":208},
+  {"file":"src/frontend/audio/routing/audioInputCapture.ts","line":215,"name":"buffers","kind":"VariableDeclaration","endLine":215},
+  {"file":"src/frontend/audio/routing/audioInputCapture.ts","line":218,"name":"i","kind":"VariableDeclaration","endLine":218},
+  {"file":"src/frontend/audio/routing/audioInputCapture.ts","line":226,"name":"channelsData","kind":"VariableDeclaration","endLine":226},
+  {"file":"src/frontend/audio/routing/audioInputCapture.ts","line":227,"name":"i","kind":"VariableDeclaration","endLine":227},
+  {"file":"src/frontend/audio/routing/audioInputCapture.ts","line":234,"name":"maxDb","kind":"VariableDeclaration","endLine":234},
+  {"file":"src/frontend/audio/routing/audioInputCapture.ts","line":235,"name":"len","kind":"VariableDeclaration","endLine":235},
+  {"file":"src/frontend/audio/routing/audioInputCapture.ts","line":237,"name":"i","kind":"VariableDeclaration","endLine":237},
+  {"file":"src/frontend/audio/routing/audioInputCapture.ts","line":238,"name":"buf","kind":"VariableDeclaration","endLine":238},
+  {"file":"src/frontend/audio/routing/audioInputCapture.ts","line":241,"name":"db","kind":"VariableDeclaration","endLine":241}
+]

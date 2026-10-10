@@ -1,0 +1,18 @@
+[
+  {"file":"src/frontend/components/settings/tabs/Outputs.svelte","line":253,"name":"newData","kind":"VariableDeclaration","endLine":253},
+  {"file":"src/frontend/components/settings/tabs/Outputs.svelte","line":255,"name":"value","kind":"VariableDeclaration","endLine":255},
+  {"file":"src/frontend/components/settings/tabs/Outputs.svelte","line":258,"name":"usedIds","kind":"VariableDeclaration","endLine":258},
+  {"file":"src/frontend/components/settings/tabs/Outputs.svelte","line":273,"name":"device","kind":"VariableDeclaration","endLine":273},
+  {"file":"src/frontend/components/settings/tabs/Outputs.svelte","line":276,"name":"displayModes","kind":"VariableDeclaration","endLine":276},
+  {"file":"src/frontend/components/settings/tabs/Outputs.svelte","line":283,"name":"device","kind":"VariableDeclaration","endLine":283},
+  {"file":"src/frontend/components/settings/tabs/Outputs.svelte","line":286,"name":"displayModes","kind":"VariableDeclaration","endLine":286},
+  {"file":"src/frontend/components/settings/tabs/Outputs.svelte","line":287,"name":"modeData","kind":"VariableDeclaration","endLine":287},
+  {"file":"src/frontend/components/settings/tabs/Outputs.svelte","line":291,"name":"pixelFormats","kind":"VariableDeclaration","endLine":291},
+  {"file":"src/frontend/components/settings/tabs/Outputs.svelte","line":319,"name":"listenerId","kind":"VariableDeclaration","endLine":319},
+  {"file":"src/frontend/components/settings/tabs/Outputs.svelte","line":321,"name":"receiveBMD","kind":"VariableDeclaration","endLine":340},
+  {"file":"src/frontend/components/settings/tabs/Outputs.svelte","line":323,"name":"parsedData","kind":"VariableDeclaration","endLine":323},
+  {"file":"src/frontend/components/settings/tabs/Outputs.svelte","line":335,"name":"usedIds","kind":"VariableDeclaration","endLine":335},
+  {"file":"src/frontend/components/settings/tabs/Outputs.svelte","line":336,"name":"availableDevice","kind":"VariableDeclaration","endLine":336},
+  {"file":"src/frontend/components/settings/tabs/Outputs.svelte","line":344,"name":"isAlphaSupported","kind":"FunctionDeclaration","endLine":348},
+  {"file":"src/frontend/components/settings/tabs/Outputs.svelte","line":345,"name":"device","kind":"VariableDeclaration","endLine":345}
+]

@@ -1,0 +1,22 @@
+[
+  {"file":"src/frontend/audio/audioPlayer.ts","line":531,"store":"src/frontend/stores.ts#playingAudio","kind":"get","symbol":"getPlaying","expression":"get(playingAudio)"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":531,"store":"src/frontend/stores.ts#playingAudio","kind":"reference","symbol":"getPlaying","expression":"playingAudio"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":532,"store":"src/frontend/stores.ts#playingAudio","kind":"get","symbol":"getPlaying","expression":"get(playingAudio)"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":532,"store":"src/frontend/stores.ts#playingAudio","kind":"reference","symbol":"getPlaying","expression":"playingAudio"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":536,"store":"src/frontend/stores.ts#playingAudioPaths","kind":"get","symbol":"getAllPlaying","expression":"get(playingAudioPaths)"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":536,"store":"src/frontend/stores.ts#playingAudioPaths","kind":"reference","symbol":"getAllPlaying","expression":"playingAudioPaths"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":537,"store":"src/frontend/stores.ts#playingAudioPaths","kind":"get","symbol":"getAllPlaying","expression":"get(playingAudioPaths)"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":537,"store":"src/frontend/stores.ts#playingAudioPaths","kind":"reference","symbol":"getAllPlaying","expression":"playingAudioPaths"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":538,"store":"src/frontend/stores.ts#playingAudio","kind":"get","symbol":"getAllPlaying","expression":"get(playingAudio)"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":538,"store":"src/frontend/stores.ts#playingAudio","kind":"reference","symbol":"getAllPlaying","expression":"playingAudio"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":539,"store":"src/frontend/stores.ts#playingAudio","kind":"get","symbol":"getAllPlaying","expression":"get(playingAudio)"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":539,"store":"src/frontend/stores.ts#playingAudio","kind":"reference","symbol":"getAllPlaying","expression":"playingAudio"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":584,"store":"src/frontend/stores.ts#media","kind":"get","symbol":"getVolume","expression":"get(media)"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":584,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"getVolume","expression":"media"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":589,"store":"src/frontend/stores.ts#media","kind":"get","symbol":"getGlobalOptions","expression":"get(media)"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":589,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"getGlobalOptions","expression":"media"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":666,"store":"src/frontend/stores.ts#playingAudio","kind":"update","symbol":"updatePlayingStore","expression":"playingAudio.update((a) => { if (!a[id]) return a a[id][key] = value return a })"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":666,"store":"src/frontend/stores.ts#playingAudio","kind":"reference","symbol":"updatePlayingStore","expression":"playingAudio"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":674,"store":"src/frontend/stores.ts#playingAudio","kind":"update","symbol":"updateAudioStore","expression":"playingAudio.update((a) => { if (!a[id]?.audio) return a a[id].audio[key] = key === \"volume\" ? Math.min(1, Math.max(0, value)) : value if (key === \"volume\") AudioAnalyser.setSource"},
+  {"file":"src/frontend/audio/audioPlayer.ts","line":674,"store":"src/frontend/stores.ts#playingAudio","kind":"reference","symbol":"updateAudioStore","expression":"playingAudio"}
+]

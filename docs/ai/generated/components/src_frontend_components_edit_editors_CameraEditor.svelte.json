@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/edit/editors/CameraEditor.svelte","renders":[{"file":"src/frontend/components/edit/editors/CameraEditor.svelte","line":20,"name":"Cam","target":"src/frontend/components/drawer/live/Cam.svelte","lazyTargets":[],"props":[{"name":"cam","kind":"Attribute","value":"cam={data}","file":"src/frontend/components/edit/editors/CameraEditor.svelte","line":20},{"name":"item","kind":"Attribute","value":"item","file":"src/frontend/components/edit/editors/CameraEditor.svelte","line":20},{"name":"style","kind":"Attribute","value":"style={cameraStyleString}","file":"src/frontend/components/edit/editors/CameraEditor.svelte","line":20}],"dynamic":false,"confidence":"code"}],"props":[]}
+]

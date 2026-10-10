@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/inputs/HiddenInput.svelte","renders":[],"props":[{"name":"value","file":"src/frontend/components/inputs/HiddenInput.svelte","line":6},{"name":"style","file":"src/frontend/components/inputs/HiddenInput.svelte","line":7},{"name":"id","file":"src/frontend/components/inputs/HiddenInput.svelte","line":8},{"name":"allowEmpty","file":"src/frontend/components/inputs/HiddenInput.svelte","line":9},{"name":"allowEdit","file":"src/frontend/components/inputs/HiddenInput.svelte","line":10},{"name":"edit","file":"src/frontend/components/inputs/HiddenInput.svelte","line":15}]}
+]

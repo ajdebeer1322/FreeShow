@@ -1,0 +1,21 @@
+[
+  {"file":"src/server/stage/components/Textbox.svelte","line":321,"name":"blockTimeout","kind":"VariableDeclaration","endLine":321},
+  {"file":"src/server/stage/components/Textbox.svelte","line":324,"name":"isMobileBrowser","kind":"VariableDeclaration","endLine":324},
+  {"file":"src/server/stage/components/Textbox.svelte","line":326,"name":"clearEventType","kind":"FunctionDeclaration","endLine":328},
+  {"file":"src/server/stage/components/Textbox.svelte","line":330,"name":"setEventType","kind":"FunctionDeclaration","endLine":335},
+  {"file":"src/server/stage/components/Textbox.svelte","line":337,"name":"blockEvents","kind":"FunctionDeclaration","endLine":344},
+  {"file":"src/server/stage/components/Textbox.svelte","line":347,"name":"handleTouchStart","kind":"FunctionDeclaration","endLine":364},
+  {"file":"src/server/stage/components/Textbox.svelte","line":366,"name":"handleTouchEnd","kind":"FunctionDeclaration","endLine":380},
+  {"file":"src/server/stage/components/Textbox.svelte","line":383,"name":"handleMouseDown","kind":"FunctionDeclaration","endLine":392},
+  {"file":"src/server/stage/components/Textbox.svelte","line":394,"name":"handleMouseUp","kind":"FunctionDeclaration","endLine":401},
+  {"file":"src/server/stage/components/Textbox.svelte","line":404,"name":"handlePointerDown","kind":"FunctionDeclaration","endLine":427},
+  {"file":"src/server/stage/components/Textbox.svelte","line":429,"name":"handlePointerUp","kind":"FunctionDeclaration","endLine":439},
+  {"file":"src/server/stage/components/Textbox.svelte","line":442,"name":"handleKeyDown","kind":"FunctionDeclaration","endLine":447},
+  {"file":"src/server/stage/components/Textbox.svelte","line":449,"name":"handleKeyUp","kind":"FunctionDeclaration","endLine":454},
+  {"file":"src/server/stage/components/Textbox.svelte","line":456,"name":"getVariableNameId","kind":"FunctionDeclaration","endLine":459},
+  {"file":"src/server/stage/components/Textbox.svelte","line":461,"name":"createCSSVariables","kind":"FunctionDeclaration","endLine":471},
+  {"file":"src/server/stage/components/Textbox.svelte","line":463,"name":"numberVariables","kind":"VariableDeclaration","endLine":463},
+  {"file":"src/server/stage/components/Textbox.svelte","line":464,"name":"css","kind":"VariableDeclaration","endLine":464},
+  {"file":"src/server/stage/components/Textbox.svelte","line":473,"name":"updateTrigger","kind":"VariableDeclaration","endLine":473},
+  {"file":"src/server/stage/components/Textbox.svelte","line":474,"name":"cssInterval","kind":"VariableDeclaration","endLine":474}
+]

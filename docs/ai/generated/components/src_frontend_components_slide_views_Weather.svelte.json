@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/slide/views/Weather.svelte","renders":[{"file":"src/frontend/components/slide/views/Weather.svelte","line":109,"name":"T","target":"src/frontend/components/helpers/T.svelte","lazyTargets":[],"props":[{"name":"id","kind":"Attribute","value":"id=\"remote.loading\"","file":"src/frontend/components/slide/views/Weather.svelte","line":109}],"dynamic":false,"confidence":"code"}],"props":[{"name":"data","file":"src/frontend/components/slide/views/Weather.svelte","line":8}]}
+]

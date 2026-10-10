@@ -1,0 +1,3 @@
+[
+  {"name":"NUMBER","definitions":[],"messages":[],"endpoints":[{"file":"src/electron/output/helpers/OutputIdentify.ts","line":30,"endLine":30,"channel":"NUMBER","keys":[],"role":"send","direction":"electron → renderer/client","symbol":"sendNumberToScreen","payload":"i + 1","expression":"window.webContents.send(\"NUMBER\", i + 1)","dynamic":true}]}
+]

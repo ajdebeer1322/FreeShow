@@ -1,0 +1,16 @@
+[
+  {"file":"src/server/cam/App.svelte","line":78,"endLine":78,"text":"// Set up canvas for livestreaming","start":2270,"end":2304},
+  {"file":"src/server/cam/App.svelte","line":79,"endLine":79,"text":"// canvas = document.getElementById('facecanvas');","start":2313,"end":2363},
+  {"file":"src/server/cam/App.svelte","line":94,"endLine":94,"text":"// Find the video element on our HTML page","start":2743,"end":2785},
+  {"file":"src/server/cam/App.svelte","line":95,"endLine":95,"text":"// video = document.getElementById('video');","start":2794,"end":2838},
+  {"file":"src/server/cam/App.svelte","line":97,"endLine":97,"text":"// Request the front-facing camera of the device","start":2848,"end":2896},
+  {"file":"src/server/cam/App.svelte","line":112,"endLine":112,"text":"// Handle the video stream once it loads.","start":3284,"end":3325},
+  {"file":"src/server/cam/App.svelte","line":135,"endLine":135,"text":"<!-- <svelte:window on:click={click} /> -->","start":3815,"end":3858},
+  {"file":"src/server/cam/App.svelte","line":137,"endLine":143,"text":"<!-- {#if errors.length}\n  <div class=\"error\">\n    {#each errors as error}\n      <span>{error}</span>\n    {/each}\n  </div>\n{/if} -->","start":3860,"end":3992},
+  {"file":"src/server/cam/App.svelte","line":145,"endLine":145,"text":"<!-- web -->","start":3994,"end":4006},
+  {"file":"src/server/cam/App.svelte","line":164,"endLine":164,"text":"/* transition: background-color 0.5s; */","start":4356,"end":4396},
+  {"file":"src/server/cam/App.svelte","line":170,"endLine":171,"text":"/* width: 100vw;\n  height: 100vh; */","start":4487,"end":4523},
+  {"file":"src/server/cam/App.svelte","line":187,"endLine":187,"text":"/* --active: rgb(230 52 156 / .8); */","start":4945,"end":4982},
+  {"file":"src/server/cam/App.svelte","line":189,"endLine":189,"text":"/* --navigation-width: 18vw; */","start":4992,"end":5023},
+  {"file":"src/server/cam/App.svelte","line":206,"endLine":266,"text":"/* .error {\n    color: red;\n    position: absolute;\n    margin: 10px;\n    padding: 10px;\n    width: calc(100% - 20px);\n    text-align: center;\n    background-color: var(--primary-darker);\n    display: flex;\n    flex-direction: column;\n  }\n\n  .center {\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .card {\n    display: flex;\n    flex-direction: column;\n    gap: 10px;\n    padding: 20px;\n    width: 100%;\n  }\n\n  h1 {\n    color: var(--secondary);\n    text-align: center;\n    padding-bottom: 20px;\n  }\n\n  .input {\n    background-color: rgb(0 0 0 / 0.2);\n    color: var(--text);\n    padding: 10px 18px;\n    border: none;\n    font-size: inherit;\n  }\n  .input:active,\n  .input:focus {\n    outline: 2px solid var(--secondary);\n  }\n  .input::placeholder {\n    color: inherit;\n    opacity: 0.4;\n  }\n\n  .clicked {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    width: calc(100% - 20px);\n    margin: 10px;\n    padding: 10px;\n    display: flex;\n    flex-direction: column;\n    gap: 10px;\n    background-color: var(--primary);\n  } */","start":5309,"end":6390}
+]

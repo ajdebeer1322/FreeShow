@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/inputs/Slider.svelte","renders":[],"props":[{"name":"value","file":"src/frontend/components/inputs/Slider.svelte","line":2},{"name":"min","file":"src/frontend/components/inputs/Slider.svelte","line":3},{"name":"max","file":"src/frontend/components/inputs/Slider.svelte","line":4},{"name":"invert","file":"src/frontend/components/inputs/Slider.svelte","line":5}]}
+]

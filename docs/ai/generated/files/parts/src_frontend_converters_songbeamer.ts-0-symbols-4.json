@@ -1,0 +1,19 @@
+[
+  {"file":"src/frontend/converters/songbeamer.ts","line":643,"name":"isChildSlide","kind":"VariableDeclaration","endLine":643},
+  {"file":"src/frontend/converters/songbeamer.ts","line":650,"name":"lineObjects","kind":"VariableDeclaration","endLine":670},
+  {"file":"src/frontend/converters/songbeamer.ts","line":651,"name":"line","kind":"VariableDeclaration","endLine":659},
+  {"file":"src/frontend/converters/songbeamer.ts","line":661,"name":"chords","kind":"VariableDeclaration","endLine":661},
+  {"file":"src/frontend/converters/songbeamer.ts","line":662,"name":"chord","kind":"VariableDeclaration","endLine":662},
+  {"file":"src/frontend/converters/songbeamer.ts","line":672,"name":"slide","kind":"VariableDeclaration","endLine":683},
+  {"file":"src/frontend/converters/songbeamer.ts","line":686,"name":"globalGroup","kind":"VariableDeclaration","endLine":686},
+  {"file":"src/frontend/converters/songbeamer.ts","line":692,"name":"group","kind":"VariableDeclaration","endLine":692},
+  {"file":"src/frontend/converters/songbeamer.ts","line":694,"name":"lastSlide","kind":"VariableDeclaration","endLine":694},
+  {"file":"src/frontend/converters/songbeamer.ts","line":700,"name":"layoutParentSlideIndex","kind":"VariableDeclaration","endLine":700},
+  {"file":"src/frontend/converters/songbeamer.ts","line":705,"name":"slideData","kind":"VariableDeclaration","endLine":705},
+  {"file":"src/frontend/converters/songbeamer.ts","line":712,"name":"slideData","kind":"VariableDeclaration","endLine":712},
+  {"file":"src/frontend/converters/songbeamer.ts","line":728,"name":"createSlides","kind":"FunctionDeclaration","endLine":767},
+  {"file":"src/frontend/converters/songbeamer.ts","line":729,"name":"slides","kind":"VariableDeclaration","endLine":729},
+  {"file":"src/frontend/converters/songbeamer.ts","line":730,"name":"layouts","kind":"VariableDeclaration","endLine":730},
+  {"file":"src/frontend/converters/songbeamer.ts","line":735,"name":"slidesMultiLang","kind":"VariableDeclaration","endLine":735},
+  {"file":"src/frontend/converters/songbeamer.ts","line":745,"name":"language","kind":"VariableDeclaration","endLine":745}
+]

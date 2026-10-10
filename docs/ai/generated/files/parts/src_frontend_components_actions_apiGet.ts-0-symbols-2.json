@@ -1,0 +1,18 @@
+[
+  {"file":"src/frontend/components/actions/apiGet.ts","line":91,"name":"audio","kind":"VariableDeclaration","endLine":91},
+  {"file":"src/frontend/components/actions/apiGet.ts","line":95,"name":"getPlayingAudioTime","kind":"FunctionDeclaration","endLine":98},
+  {"file":"src/frontend/components/actions/apiGet.ts","line":96,"name":"audio","kind":"VariableDeclaration","endLine":96},
+  {"file":"src/frontend/components/actions/apiGet.ts","line":100,"name":"getPlayingAudioData","kind":"FunctionDeclaration","endLine":106},
+  {"file":"src/frontend/components/actions/apiGet.ts","line":101,"name":"audioId","kind":"VariableDeclaration","endLine":101},
+  {"file":"src/frontend/components/actions/apiGet.ts","line":102,"name":"audio","kind":"VariableDeclaration","endLine":102},
+  {"file":"src/frontend/components/actions/apiGet.ts","line":108,"name":"getPlaylists","kind":"FunctionDeclaration","endLine":110},
+  {"file":"src/frontend/components/actions/apiGet.ts","line":112,"name":"getPlayingPlaylist","kind":"FunctionDeclaration","endLine":115},
+  {"file":"src/frontend/components/actions/apiGet.ts","line":113,"name":"id","kind":"VariableDeclaration","endLine":113},
+  {"file":"src/frontend/components/actions/apiGet.ts","line":117,"name":"getSlide","kind":"FunctionDeclaration","endLine":121},
+  {"file":"src/frontend/components/actions/apiGet.ts","line":118,"name":"slides","kind":"VariableDeclaration","endLine":118},
+  {"file":"src/frontend/components/actions/apiGet.ts","line":119,"name":"slide","kind":"VariableDeclaration","endLine":119},
+  {"file":"src/frontend/components/actions/apiGet.ts","line":123,"name":"getVariables","kind":"FunctionDeclaration","endLine":135},
+  {"file":"src/frontend/components/actions/apiGet.ts","line":124,"name":"variableStore","kind":"VariableDeclaration","endLine":124},
+  {"file":"src/frontend/components/actions/apiGet.ts","line":137,"name":"getVariable","kind":"FunctionDeclaration","endLine":147},
+  {"file":"src/frontend/components/actions/apiGet.ts","line":149,"name":"getActions","kind":"FunctionDeclaration","endLine":151}
+]

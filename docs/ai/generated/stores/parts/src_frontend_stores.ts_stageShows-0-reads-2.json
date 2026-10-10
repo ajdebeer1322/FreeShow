@@ -1,0 +1,23 @@
+[
+  {"file":"src/frontend/components/stage/StageSlide.svelte","line":43,"store":"src/frontend/stores.ts#stageShows","kind":"dollar","symbol":null,"expression":"$stageShows"},
+  {"file":"src/frontend/components/stage/StageTools.svelte","line":31,"store":"src/frontend/stores.ts#stageShows","kind":"dollar","symbol":null,"expression":"$stageShows"},
+  {"file":"src/frontend/components/stage/StageTools.svelte","line":77,"store":"src/frontend/stores.ts#stageShows","kind":"dollar","symbol":"resetStageStyle","expression":"$stageShows"},
+  {"file":"src/frontend/components/stage/StageTools.svelte","line":81,"store":"src/frontend/stores.ts#stageShows","kind":"dollar","symbol":"resetStageStyle","expression":"$stageShows"},
+  {"file":"src/frontend/components/stage/StageTools.svelte","line":158,"store":"src/frontend/stores.ts#stageShows","kind":"dollar","symbol":"keydown","expression":"$stageShows"},
+  {"file":"src/frontend/components/stage/Stagebox.svelte","line":39,"store":"src/frontend/stores.ts#stageShows","kind":"dollar","symbol":null,"expression":"$stageShows"},
+  {"file":"src/frontend/components/stage/stage.ts","line":65,"store":"src/frontend/stores.ts#stageShows","kind":"get","symbol":"addStageItem","expression":"get(stageShows)"},
+  {"file":"src/frontend/components/stage/stage.ts","line":74,"store":"src/frontend/stores.ts#stageShows","kind":"get","symbol":"updateStageShow","expression":"get(stageShows)"},
+  {"file":"src/frontend/components/stage/stage.ts","line":150,"store":"src/frontend/stores.ts#stageShows","kind":"get","symbol":"getSlideTextItems","expression":"get(stageShows)"},
+  {"file":"src/frontend/components/stage/tools/BoxStyle.svelte","line":17,"store":"src/frontend/stores.ts#stageShows","kind":"dollar","symbol":null,"expression":"$stageShows"},
+  {"file":"src/frontend/components/stage/tools/ItemStyle.svelte","line":15,"store":"src/frontend/stores.ts#stageShows","kind":"dollar","symbol":null,"expression":"$stageShows"},
+  {"file":"src/frontend/components/stage/tools/SlideStyle.svelte","line":13,"store":"src/frontend/stores.ts#stageShows","kind":"dollar","symbol":null,"expression":"$stageShows"},
+  {"file":"src/frontend/components/stage/tools/StageItemsList.svelte","line":36,"store":"src/frontend/stores.ts#stageShows","kind":"dollar","symbol":null,"expression":"$stageShows"},
+  {"file":"src/frontend/utils/listeners.ts","line":227,"store":"src/frontend/stores.ts#stageShows","kind":"subscribe","symbol":"storeSubscriber","expression":"stageShows.subscribe(async (data) => { if (await hasNewerUpdate(\"LISTENER_STAGE\", 50)) return send(OUTPUT, [\"STAGE\"], data) // STAGE data = arrayToObject(filterObjectArray(data, [\""},
+  {"file":"src/frontend/utils/save.ts","line":224,"store":"src/frontend/stores.ts#stageShows","kind":"get","symbol":"save","expression":"get(stageShows)"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":77,"store":"src/frontend/stores.ts#stageShows","kind":"get","symbol":"LAYOUTS","expression":"get(stageShows)"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":82,"store":"src/frontend/stores.ts#stageShows","kind":"get","symbol":"LAYOUT","expression":"get(stageShows)"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":87,"store":"src/frontend/stores.ts#stageShows","kind":"get","symbol":"LAYOUT","expression":"get(stageShows)"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":117,"store":"src/frontend/stores.ts#stageShows","kind":"get","symbol":"OUT","expression":"get(stageShows)"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":140,"store":"src/frontend/stores.ts#stageShows","kind":"get","symbol":"SHOW_DATA","expression":"get(stageShows)"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":214,"store":"src/frontend/stores.ts#stageShows","kind":"get","symbol":"RUN_ACTION","expression":"get(stageShows)"}
+]

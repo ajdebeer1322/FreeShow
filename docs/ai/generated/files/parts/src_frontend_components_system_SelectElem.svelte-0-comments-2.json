@@ -1,0 +1,13 @@
+[
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":253,"endLine":253,"text":"// remove currently selected","start":10747,"end":10775},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":256,"endLine":256,"text":"// && $selected.id === id","start":10932,"end":10957},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":303,"endLine":303,"text":"// TODO: allow dropping over borders (edges)","start":12585,"end":12629},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":304,"endLine":304,"text":"// if (e.target?.closest(\".selectElem\") === elem) return","start":12638,"end":12694},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":332,"endLine":333,"text":"<!-- on:mouseup={mouseup}\n    on:contextmenu={contextmenu} -->","start":13540,"end":13602},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":334,"endLine":334,"text":"<!-- TODO: validateDrop(id, $selected.id, true) -->","start":13607,"end":13658},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":352,"endLine":352,"text":"<!-- center drop -->","start":14587,"end":14607},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":365,"endLine":366,"text":"/* outline: 2px solid red;\n    outline-offset: 2px; */","start":14810,"end":14864},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":373,"endLine":373,"text":"/* filter: invert(1); */","start":15005,"end":15029},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":374,"endLine":374,"text":"/* filter: sepia(1); */","start":15038,"end":15061},
+  {"file":"src/frontend/components/system/SelectElem.svelte","line":375,"endLine":375,"text":"/* filter: saturate(5); */","start":15070,"end":15096}
+]

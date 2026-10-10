@@ -1,0 +1,22 @@
+[
+  {"file":"src/frontend/components/slide/Slide.svelte","line":300,"store":"src/frontend/stores.ts#slideDeleteHighlight","kind":"dollar-template","expression":"$slideDeleteHighlight","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":306,"store":"src/frontend/stores.ts#focusMode","kind":"dollar-template","expression":"$focusMode","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":316,"store":"src/frontend/stores.ts#special","kind":"dollar-template","expression":"$special","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":317,"store":"src/frontend/stores.ts#special","kind":"dollar-template","expression":"$special","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":327,"store":"src/frontend/stores.ts#refreshSlideThumbnails","kind":"dollar-template","expression":"$refreshSlideThumbnails","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":338,"store":"src/frontend/stores.ts#effects","kind":"dollar-template","expression":"$effects","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":339,"store":"src/frontend/stores.ts#effects","kind":"dollar-template","expression":"$effects","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":347,"store":"src/frontend/stores.ts#overlays","kind":"dollar-template","expression":"$overlays","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":348,"store":"src/frontend/stores.ts#overlays","kind":"dollar-template","expression":"$overlays","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":391,"store":"src/frontend/stores.ts#effects","kind":"dollar-template","expression":"$effects","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":392,"store":"src/frontend/stores.ts#effects","kind":"dollar-template","expression":"$effects","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":400,"store":"src/frontend/stores.ts#overlays","kind":"dollar-template","expression":"$overlays","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":401,"store":"src/frontend/stores.ts#overlays","kind":"dollar-template","expression":"$overlays","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":429,"store":"src/frontend/stores.ts#fullColors","kind":"dollar-template","expression":"$fullColors","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":430,"store":"src/frontend/stores.ts#fullColors","kind":"dollar-template","expression":"$fullColors","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":430,"store":"src/frontend/stores.ts#activePage","kind":"dollar-template","expression":"$activePage","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":432,"store":"src/frontend/stores.ts#fullColors","kind":"dollar-template","expression":"$fullColors","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":453,"store":"src/frontend/stores.ts#fullColors","kind":"dollar-template","expression":"$fullColors","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":474,"store":"src/frontend/stores.ts#slidesOptions","kind":"dollar-template","expression":"$slidesOptions","symbol":null},
+  {"file":"src/frontend/components/slide/Slide.svelte","line":475,"store":"src/frontend/stores.ts#refreshListBoxes","kind":"dollar-template","expression":"$refreshListBoxes","symbol":null}
+]

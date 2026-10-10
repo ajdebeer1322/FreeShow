@@ -1,0 +1,19 @@
+[
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":260,"store":"src/frontend/stores.ts#activeFocus","kind":"dollar","symbol":null,"expression":"$activeFocus"},
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":260,"store":"src/frontend/stores.ts#activeShow","kind":"dollar","symbol":null,"expression":"$activeShow"},
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":261,"store":"src/frontend/stores.ts#focusMode","kind":"dollar","symbol":null,"expression":"$focusMode"},
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":261,"store":"src/frontend/stores.ts#activeFocus","kind":"dollar","symbol":null,"expression":"$activeFocus"},
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":261,"store":"src/frontend/stores.ts#activeShow","kind":"dollar","symbol":null,"expression":"$activeShow"},
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":277,"store":"src/frontend/stores.ts#special","kind":"dollar-template","expression":"$special","symbol":null},
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":278,"store":"src/frontend/stores.ts#shows","kind":"dollar-template","expression":"$shows","symbol":null},
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":283,"store":"src/frontend/stores.ts#focusMode","kind":"dollar-template","expression":"$focusMode","symbol":null},
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":283,"store":"src/frontend/stores.ts#activeFocus","kind":"dollar-template","expression":"$activeFocus","symbol":null},
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":283,"store":"src/frontend/stores.ts#activeShow","kind":"dollar-template","expression":"$activeShow","symbol":null},
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":296,"store":"src/frontend/stores.ts#fullColors","kind":"dollar-template","expression":"$fullColors","symbol":null},
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":299,"store":"src/frontend/stores.ts#focusMode","kind":"dollar-template","expression":"$focusMode","symbol":null},
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":326,"store":"src/frontend/stores.ts#actions","kind":"dollar-template","expression":"$actions","symbol":null},
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":327,"store":"src/frontend/stores.ts#actions","kind":"dollar-template","expression":"$actions","symbol":null},
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":429,"store":"src/frontend/stores.ts#projectView","kind":"dollar-template","expression":"$projectView","symbol":null},
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":429,"store":"src/frontend/stores.ts#focusMode","kind":"dollar-template","expression":"$focusMode","symbol":null},
+  {"file":"src/frontend/components/show/ProjectContentList.svelte","line":453,"store":"src/frontend/stores.ts#drawerTabsData","kind":"dollar-template","expression":"$drawerTabsData","symbol":null}
+]

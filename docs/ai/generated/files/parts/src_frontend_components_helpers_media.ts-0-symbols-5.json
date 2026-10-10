@@ -1,0 +1,23 @@
+[
+  {"file":"src/frontend/components/helpers/media.ts","line":817,"name":"existing","kind":"VariableDeclaration","endLine":817},
+  {"file":"src/frontend/components/helpers/media.ts","line":820,"name":"promise","kind":"VariableDeclaration","endLine":842},
+  {"file":"src/frontend/components/helpers/media.ts","line":821,"name":"license","kind":"VariableDeclaration","endLine":821},
+  {"file":"src/frontend/components/helpers/media.ts","line":848,"name":"getMediaFileFromClipboard","kind":"FunctionDeclaration","endLine":869},
+  {"file":"src/frontend/components/helpers/media.ts","line":849,"name":"items","kind":"VariableDeclaration","endLine":849},
+  {"file":"src/frontend/components/helpers/media.ts","line":853,"name":"item","kind":"VariableDeclaration","endLine":853},
+  {"file":"src/frontend/components/helpers/media.ts","line":856,"name":"file","kind":"VariableDeclaration","endLine":856},
+  {"file":"src/frontend/components/helpers/media.ts","line":859,"name":"reader","kind":"VariableDeclaration","endLine":859},
+  {"file":"src/frontend/components/helpers/media.ts","line":862,"name":"dataUrl","kind":"VariableDeclaration","endLine":862},
+  {"file":"src/frontend/components/helpers/media.ts","line":863,"name":"compressed","kind":"VariableDeclaration","endLine":863},
+  {"file":"src/frontend/components/helpers/media.ts","line":871,"name":"compressImage","kind":"FunctionDeclaration","endLine":903},
+  {"file":"src/frontend/components/helpers/media.ts","line":873,"name":"img","kind":"VariableDeclaration","endLine":873},
+  {"file":"src/frontend/components/helpers/media.ts","line":881,"name":"ratio","kind":"VariableDeclaration","endLine":881},
+  {"file":"src/frontend/components/helpers/media.ts","line":886,"name":"canvas","kind":"VariableDeclaration","endLine":886},
+  {"file":"src/frontend/components/helpers/media.ts","line":890,"name":"ctx","kind":"VariableDeclaration","endLine":890},
+  {"file":"src/frontend/components/helpers/media.ts","line":894,"name":"imageData","kind":"VariableDeclaration","endLine":894},
+  {"file":"src/frontend/components/helpers/media.ts","line":895,"name":"hasTransparency","kind":"VariableDeclaration","endLine":895},
+  {"file":"src/frontend/components/helpers/media.ts","line":905,"name":"countFolderMediaItems","kind":"FunctionDeclaration","endLine":924},
+  {"file":"src/frontend/components/helpers/media.ts","line":906,"name":"folderFiles","kind":"VariableDeclaration","endLine":906},
+  {"file":"src/frontend/components/helpers/media.ts","line":907,"name":"count","kind":"VariableDeclaration","endLine":907},
+  {"file":"src/frontend/components/helpers/media.ts","line":912,"name":"file","kind":"VariableDeclaration","endLine":912}
+]

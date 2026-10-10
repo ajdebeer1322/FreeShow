@@ -1,0 +1,23 @@
+[
+  {"file":"src/frontend/components/actions/actions.ts","line":210,"name":"action","kind":"VariableDeclaration","endLine":210},
+  {"file":"src/frontend/components/actions/actions.ts","line":213,"name":"data","kind":"VariableDeclaration","endLine":213},
+  {"file":"src/frontend/components/actions/actions.ts","line":214,"name":"canAddMultiple","kind":"VariableDeclaration","endLine":214},
+  {"file":"src/frontend/components/actions/actions.ts","line":216,"name":"existingIndex","kind":"VariableDeclaration","endLine":216},
+  {"file":"src/frontend/components/actions/actions.ts","line":223,"name":"slideHasAction","kind":"FunctionDeclaration","endLine":225},
+  {"file":"src/frontend/components/actions/actions.ts","line":227,"name":"getActionIcon","kind":"FunctionDeclaration","endLine":233},
+  {"file":"src/frontend/components/actions/actions.ts","line":228,"name":"actionTriggers","kind":"VariableDeclaration","endLine":228},
+  {"file":"src/frontend/components/actions/actions.ts","line":231,"name":"trigger","kind":"VariableDeclaration","endLine":231},
+  {"file":"src/frontend/components/actions/actions.ts","line":235,"name":"getActionTriggerId","kind":"FunctionDeclaration","endLine":239},
+  {"file":"src/frontend/components/actions/actions.ts","line":236,"name":"trigger","kind":"VariableDeclaration","endLine":236},
+  {"file":"src/frontend/components/actions/actions.ts","line":243,"name":"namedObjects","kind":"VariableDeclaration","endLine":252},
+  {"file":"src/frontend/components/actions/actions.ts","line":253,"name":"getActionName","kind":"FunctionDeclaration","endLine":285},
+  {"file":"src/frontend/components/actions/actions.ts","line":261,"name":"beats","kind":"VariableDeclaration","endLine":261},
+  {"file":"src/frontend/components/actions/actions.ts","line":267,"name":"chName","kind":"VariableDeclaration","endLine":267},
+  {"file":"src/frontend/components/actions/actions.ts","line":268,"name":"rawVolume","kind":"VariableDeclaration","endLine":268},
+  {"file":"src/frontend/components/actions/actions.ts","line":269,"name":"volumeValue","kind":"VariableDeclaration","endLine":269},
+  {"file":"src/frontend/components/actions/actions.ts","line":270,"name":"dbValue","kind":"VariableDeclaration","endLine":270},
+  {"file":"src/frontend/components/actions/actions.ts","line":275,"name":"channelId","kind":"VariableDeclaration","endLine":275},
+  {"file":"src/frontend/components/actions/actions.ts","line":276,"name":"ch","kind":"VariableDeclaration","endLine":276},
+  {"file":"src/frontend/components/actions/actions.ts","line":277,"name":"chName","kind":"VariableDeclaration","endLine":277},
+  {"file":"src/frontend/components/actions/actions.ts","line":278,"name":"state","kind":"VariableDeclaration","endLine":278}
+]

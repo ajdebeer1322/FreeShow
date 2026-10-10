@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/drawer/player/Vimeo.svelte","renders":[],"props":[{"name":"videoData","file":"src/frontend/components/drawer/player/Vimeo.svelte","line":6},{"name":"videoTime","file":"src/frontend/components/drawer/player/Vimeo.svelte","line":7},{"name":"actualVideoTime","file":"src/frontend/components/drawer/player/Vimeo.svelte","line":8},{"name":"id","file":"src/frontend/components/drawer/player/Vimeo.svelte","line":9},{"name":"preview","file":"src/frontend/components/drawer/player/Vimeo.svelte","line":11}]}
+]

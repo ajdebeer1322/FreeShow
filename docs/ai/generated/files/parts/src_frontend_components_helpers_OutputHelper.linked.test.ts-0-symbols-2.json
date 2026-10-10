@@ -1,0 +1,17 @@
+[
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":312,"name":"show","kind":"VariableDeclaration","endLine":312},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":317,"name":"holy","kind":"VariableDeclaration","endLine":317},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":333,"name":"states","kind":"VariableDeclaration","endLine":333},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":334,"name":"queued","kind":"VariableDeclaration","endLine":334},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":335,"name":"stop","kind":"VariableDeclaration","endLine":342},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":344,"name":"seen","kind":"VariableDeclaration","endLine":344},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":345,"name":"centreBackgrounds","kind":"VariableDeclaration","endLine":345},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":346,"name":"i","kind":"VariableDeclaration","endLine":346},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":374,"name":"song","kind":"VariableDeclaration","endLine":378},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":375,"name":"slideMap","kind":"VariableDeclaration","endLine":375},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":379,"name":"out","kind":"VariableDeclaration","endLine":379},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":388,"name":"project","kind":"FunctionDeclaration","endLine":393},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":394,"name":"slideOf","kind":"VariableDeclaration","endLine":397},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":395,"name":"slide","kind":"VariableDeclaration","endLine":395},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":442,"name":"mixed","kind":"VariableDeclaration","endLine":442}
+]

@@ -1,0 +1,3 @@
+[
+  {"file":"src/server/remote/components/show/Overlay.svelte","renders":[{"file":"src/server/remote/components/show/Overlay.svelte","line":35,"name":"Textbox","target":"src/server/remote/components/show/Textbox.svelte","lazyTargets":[],"props":[{"name":"item","kind":"Attribute","value":"{item}","file":"src/server/remote/components/show/Overlay.svelte","line":35}],"dynamic":false,"confidence":"code"}],"props":[{"name":"id","file":"src/server/remote/components/show/Overlay.svelte","line":7},{"name":"overlays","file":"src/server/remote/components/show/Overlay.svelte","line":8}]}
+]

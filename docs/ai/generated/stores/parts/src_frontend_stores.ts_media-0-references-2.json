@@ -1,0 +1,23 @@
+[
+  {"file":"src/frontend/components/helpers/media.ts","line":824,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"refreshMediaLicense","expression":"media"},
+  {"file":"src/frontend/components/helpers/media.ts","line":832,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"refreshMediaLicense","expression":"media"},
+  {"file":"src/frontend/components/helpers/mediaInspector.ts","line":83,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"duplicateBackground","expression":"media"},
+  {"file":"src/frontend/components/helpers/mediaInspector.ts","line":84,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"duplicateBackground","expression":"media"},
+  {"file":"src/frontend/components/helpers/output.ts","line":249,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"setOutput","expression":"media"},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":381,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"activateActions","expression":"media"},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":399,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"activateActions","expression":"media"},
+  {"file":"src/frontend/components/media/video/videoPlayer.ts","line":639,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"getGlobalOptions","expression":"media"},
+  {"file":"src/frontend/components/show/VideoShow.svelte","line":237,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"changeSubtitleName","expression":"media"},
+  {"file":"src/frontend/components/show/VideoShow.svelte","line":258,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"subtitlePicked","expression":"media"},
+  {"file":"src/frontend/components/show/VideoShow.svelte","line":275,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"setActiveSubtitle","expression":"media"},
+  {"file":"src/frontend/converters/project.ts","line":73,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"importProject","expression":"mediaStores"},
+  {"file":"src/frontend/utils/listeners.ts","line":280,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"storeSubscriber","expression":"media"},
+  {"file":"src/frontend/utils/receivers.ts","line":251,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"MEDIA","expression":"media"},
+  {"file":"src/frontend/utils/save.ts","line":230,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"save","expression":"media"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":524,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"togglePlayingMedia","expression":"media"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":567,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"playFolder","expression":"media"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":27,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"sendBackgroundToStage","expression":"media"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":38,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"sendBackgroundToStage","expression":"media"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":68,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"getNextBackground","expression":"media"},
+  {"file":"src/frontend/utils/stageTalk.ts","line":72,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"getNextBackground","expression":"media"}
+]

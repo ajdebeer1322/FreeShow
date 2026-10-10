@@ -1,0 +1,5 @@
+[
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1977,"name":"index","kind":"VariableDeclaration","endLine":1977},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1982,"name":"fixValue","kind":"FunctionDeclaration","endLine":1986},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1989,"name":"getAttributes","kind":"FunctionDeclaration","endLine":1992}
+]

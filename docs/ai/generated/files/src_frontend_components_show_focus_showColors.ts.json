@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/show/focus/showColors.ts","area":"frontend","hash":"cef29a41d99328bc435eb08d3a97507fb2f59965e823d6ba68a0f18a58cb3e82","lineCount":10,"imports":[],"symbols":[{"file":"src/frontend/components/show/focus/showColors.ts","line":2,"name":"SHOW_COLORS","kind":"VariableDeclaration","endLine":9}],"stores":[],"components":[],"timers":[],"workarounds":[],"settings":[],"ipc":[],"comments":[{"file":"src/frontend/components/show/focus/showColors.ts","line":1,"endLine":1,"text":"// Soft pastel colors for the header of a project item (right click on the header).","start":0,"end":83}]}
+]

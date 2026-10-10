@@ -1,0 +1,20 @@
+[
+  {"file":"src/frontend/components/drawer/pages/Shows.svelte","line":307,"store":"src/frontend/stores.ts#labelsDisabled","kind":"dollar-template","expression":"$labelsDisabled","symbol":null},
+  {"file":"src/frontend/components/drawer/pages/Templates.svelte","line":251,"store":"src/frontend/stores.ts#labelsDisabled","kind":"dollar-template","expression":"$labelsDisabled","symbol":null},
+  {"file":"src/frontend/components/drawer/pages/Variables.svelte","line":270,"store":"src/frontend/stores.ts#labelsDisabled","kind":"dollar-template","expression":"$labelsDisabled","symbol":null},
+  {"file":"src/frontend/components/drawer/timers/Timers.svelte","line":187,"store":"src/frontend/stores.ts#labelsDisabled","kind":"dollar-template","expression":"$labelsDisabled","symbol":null},
+  {"file":"src/frontend/components/edit/Navigation.svelte","line":168,"store":"src/frontend/stores.ts#labelsDisabled","kind":"dollar-template","expression":"$labelsDisabled","symbol":null},
+  {"file":"src/frontend/components/inputs/TopButton.svelte","line":13,"store":"src/frontend/stores.ts#labelsDisabled","kind":"dollar","symbol":null,"expression":"$labelsDisabled"},
+  {"file":"src/frontend/components/main/Tabs.svelte","line":11,"store":"src/frontend/stores.ts#labelsDisabled","kind":"dollar","symbol":null,"expression":"$labelsDisabled"},
+  {"file":"src/frontend/components/output/preview/ClearButtons.svelte","line":130,"store":"src/frontend/stores.ts#labelsDisabled","kind":"dollar-template","expression":"$labelsDisabled","symbol":null},
+  {"file":"src/frontend/components/output/preview/ClearButtons.svelte","line":136,"store":"src/frontend/stores.ts#labelsDisabled","kind":"dollar-template","expression":"$labelsDisabled","symbol":null},
+  {"file":"src/frontend/components/settings/tabs/General.svelte","line":44,"store":"src/frontend/stores.ts#labelsDisabled","kind":"dollar-template","expression":"$labelsDisabled","symbol":null},
+  {"file":"src/frontend/components/show/ProjectList.svelte","line":204,"store":"src/frontend/stores.ts#labelsDisabled","kind":"dollar-template","expression":"$labelsDisabled","symbol":null},
+  {"file":"src/frontend/components/show/ShowTools.svelte","line":44,"store":"src/frontend/stores.ts#labelsDisabled","kind":"dollar-template","expression":"$labelsDisabled","symbol":null},
+  {"file":"src/frontend/components/show/pdf/PdfPreview.svelte","line":220,"store":"src/frontend/stores.ts#labelsDisabled","kind":"dollar-template","expression":"$labelsDisabled","symbol":null},
+  {"file":"src/frontend/components/slide/Reference.svelte","line":94,"store":"src/frontend/stores.ts#labelsDisabled","kind":"dollar-template","expression":"$labelsDisabled","symbol":null},
+  {"file":"src/frontend/components/slide/Reference.svelte","line":103,"store":"src/frontend/stores.ts#labelsDisabled","kind":"dollar-template","expression":"$labelsDisabled","symbol":null},
+  {"file":"src/frontend/components/slide/Reference.svelte","line":140,"store":"src/frontend/stores.ts#labelsDisabled","kind":"dollar-template","expression":"$labelsDisabled","symbol":null},
+  {"file":"src/frontend/components/stage/StageLayouts.svelte","line":132,"store":"src/frontend/stores.ts#labelsDisabled","kind":"dollar-template","expression":"$labelsDisabled","symbol":null},
+  {"file":"src/frontend/utils/save.ts","line":179,"store":"src/frontend/stores.ts#labelsDisabled","kind":"get","symbol":"save","expression":"get(labelsDisabled)"}
+]

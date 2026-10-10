@@ -1,0 +1,14 @@
+[
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1316,"store":"src/frontend/stores.ts#overlays","kind":"get","symbol":"getDeletedArray","expression":"get(overlays)"},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1316,"store":"src/frontend/stores.ts#overlays","kind":"reference","symbol":"getDeletedArray","expression":"overlays"},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1317,"store":"src/frontend/stores.ts#effects","kind":"get","symbol":"getDeletedArray","expression":"get(effects)"},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1317,"store":"src/frontend/stores.ts#effects","kind":"reference","symbol":"getDeletedArray","expression":"effects"},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1329,"store":"src/frontend/stores.ts#activePage","kind":"get","symbol":"historyDelete","expression":"get(activePage)"},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1329,"store":"src/frontend/stores.ts#activePage","kind":"reference","symbol":"historyDelete","expression":"activePage"},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1335,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":"duplicateShows","expression":"get(showsCache)"},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1335,"store":"src/frontend/stores.ts#showsCache","kind":"reference","symbol":"duplicateShows","expression":"showsCache"},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1342,"store":"src/frontend/stores.ts#activeProject","kind":"get","symbol":"duplicateShows","expression":"get(activeProject)"},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1342,"store":"src/frontend/stores.ts#activeProject","kind":"reference","symbol":"duplicateShows","expression":"activeProject"},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1345,"store":"src/frontend/stores.ts#activeRename","kind":"set","symbol":"duplicateShows","expression":"activeRename.set(\"show_drawer_\" + newId)"},
+  {"file":"src/frontend/components/helpers/clipboard.ts","line":1345,"store":"src/frontend/stores.ts#activeRename","kind":"reference","symbol":"duplicateShows","expression":"activeRename"}
+]

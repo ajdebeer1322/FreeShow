@@ -1,0 +1,8 @@
+[
+  {"file":"src/frontend/components/show/Projects.svelte","line":510,"store":"src/frontend/stores.ts#special","kind":"dollar-template","expression":"$special","symbol":null},
+  {"file":"src/frontend/components/show/Projects.svelte","line":511,"store":"src/frontend/stores.ts#special","kind":"dollar-template","expression":"$special","symbol":null},
+  {"file":"src/frontend/components/show/Projects.svelte","line":555,"store":"src/frontend/stores.ts#providerConnections","kind":"dollar-template","expression":"$providerConnections","symbol":null},
+  {"file":"src/frontend/components/show/Projects.svelte","line":571,"store":"src/frontend/stores.ts#dictionary","kind":"dollar-template","expression":"$dictionary","symbol":null},
+  {"file":"src/frontend/components/show/Projects.svelte","line":574,"store":"src/frontend/stores.ts#activeProject","kind":"dollar-template","expression":"$activeProject","symbol":null},
+  {"file":"src/frontend/components/show/Projects.svelte","line":575,"store":"src/frontend/stores.ts#projects","kind":"dollar-template","expression":"$projects","symbol":null}
+]

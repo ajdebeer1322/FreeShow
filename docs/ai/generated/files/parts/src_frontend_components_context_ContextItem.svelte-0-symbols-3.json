@@ -1,0 +1,21 @@
+[
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":399,"name":"getParentId","kind":"VariableDeclaration","endLine":399},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":403,"name":"firstGroupId","kind":"VariableDeclaration","endLine":403},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":409,"name":"currentSlideId","kind":"VariableDeclaration","endLine":409},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":412,"name":"show","kind":"VariableDeclaration","endLine":412},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":415,"name":"isParent","kind":"VariableDeclaration","endLine":415},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":421,"name":"currentSlideInstances","kind":"VariableDeclaration","endLine":424},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":433,"name":"contextItemClick","kind":"FunctionDeclaration","endLine":454},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":438,"name":"actionItem","kind":"VariableDeclaration","endLine":438},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":439,"name":"sel","kind":"VariableDeclaration","endLine":439},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":444,"name":"keepOpen","kind":"VariableDeclaration","endLine":444},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":446,"name":"keepOpenToggle","kind":"VariableDeclaration","endLine":446},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":457,"name":"updateHighlight","kind":"FunctionDeclaration","endLine":472},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":466,"name":"indexes","kind":"VariableDeclaration","endLine":466},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":467,"name":"color","kind":"VariableDeclaration","endLine":467},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":468,"name":"icon","kind":"VariableDeclaration","endLine":468},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":475,"name":"keydown","kind":"FunctionDeclaration","endLine":480},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":482,"name":"shortcut","kind":"VariableDeclaration","endLine":482},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":484,"name":"getShortcuts","kind":"FunctionDeclaration","endLine":491},
+  {"file":"src/frontend/components/context/ContextItem.svelte","line":487,"name":"s","kind":"VariableDeclaration","endLine":487}
+]

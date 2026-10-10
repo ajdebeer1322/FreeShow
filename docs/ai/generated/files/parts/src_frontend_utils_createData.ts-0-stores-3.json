@@ -1,0 +1,8 @@
+[
+  {"file":"src/frontend/utils/createData.ts","line":1460,"store":"src/frontend/stores.ts#deletedDefaults","kind":"get","symbol":"getDeletedEffects","expression":"get(deletedDefaults)"},
+  {"file":"src/frontend/utils/createData.ts","line":1460,"store":"src/frontend/stores.ts#deletedDefaults","kind":"reference","symbol":"getDeletedEffects","expression":"deletedDefaults"},
+  {"file":"src/frontend/utils/createData.ts","line":1462,"store":"src/frontend/stores.ts#effects","kind":"get","symbol":"getDeletedEffects","expression":"get(effects)"},
+  {"file":"src/frontend/utils/createData.ts","line":1462,"store":"src/frontend/stores.ts#effects","kind":"reference","symbol":"getDeletedEffects","expression":"effects"},
+  {"file":"src/frontend/utils/createData.ts","line":1463,"store":"src/frontend/stores.ts#deletedDefaults","kind":"update","symbol":"getDeletedEffects","expression":"deletedDefaults.update((a) => { a.effects = deletedIds return a })"},
+  {"file":"src/frontend/utils/createData.ts","line":1463,"store":"src/frontend/stores.ts#deletedDefaults","kind":"reference","symbol":"getDeletedEffects","expression":"deletedDefaults"}
+]

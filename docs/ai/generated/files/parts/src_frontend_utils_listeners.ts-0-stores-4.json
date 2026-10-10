@@ -1,0 +1,14 @@
+[
+  {"file":"src/frontend/utils/listeners.ts","line":455,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":"storeSubscriber","expression":"get(showsCache)"},
+  {"file":"src/frontend/utils/listeners.ts","line":455,"store":"src/frontend/stores.ts#showsCache","kind":"reference","symbol":"storeSubscriber","expression":"showsCache"},
+  {"file":"src/frontend/utils/listeners.ts","line":458,"store":"src/frontend/stores.ts#driveKeys","kind":"subscribe","symbol":"storeSubscriber","expression":"driveKeys.subscribe(driveConnect)"},
+  {"file":"src/frontend/utils/listeners.ts","line":458,"store":"src/frontend/stores.ts#driveKeys","kind":"reference","symbol":"storeSubscriber","expression":"driveKeys"},
+  {"file":"src/frontend/utils/listeners.ts","line":460,"store":"src/frontend/stores.ts#refreshSlideThumbnails","kind":"subscribe","symbol":"storeSubscriber","expression":"refreshSlideThumbnails.subscribe(() => { setTimeout(() => { refreshSlideThumbnails.set(false) }) })"},
+  {"file":"src/frontend/utils/listeners.ts","line":460,"store":"src/frontend/stores.ts#refreshSlideThumbnails","kind":"reference","symbol":"storeSubscriber","expression":"refreshSlideThumbnails"},
+  {"file":"src/frontend/utils/listeners.ts","line":462,"store":"src/frontend/stores.ts#refreshSlideThumbnails","kind":"set","symbol":"storeSubscriber","expression":"refreshSlideThumbnails.set(false)"},
+  {"file":"src/frontend/utils/listeners.ts","line":462,"store":"src/frontend/stores.ts#refreshSlideThumbnails","kind":"reference","symbol":"storeSubscriber","expression":"refreshSlideThumbnails"},
+  {"file":"src/frontend/utils/listeners.ts","line":523,"store":"src/frontend/stores.ts#outputs","kind":"get","symbol":"sendInitialOutputData","expression":"get(outputs)"},
+  {"file":"src/frontend/utils/listeners.ts","line":523,"store":"src/frontend/stores.ts#outputs","kind":"reference","symbol":"sendInitialOutputData","expression":"outputs"},
+  {"file":"src/frontend/utils/listeners.ts","line":525,"store":"src/frontend/stores.ts#outputs","kind":"get","symbol":"sendInitialOutputData","expression":"get(outputs)"},
+  {"file":"src/frontend/utils/listeners.ts","line":525,"store":"src/frontend/stores.ts#outputs","kind":"reference","symbol":"sendInitialOutputData","expression":"outputs"}
+]

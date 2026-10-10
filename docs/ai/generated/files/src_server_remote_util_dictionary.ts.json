@@ -1,0 +1,3 @@
+[
+  {"file":"src/server/remote/util/dictionary.ts","area":"server","hash":"472d4cf179da47d31df8e1ed42c33663bbd69442fdfafad3796bd590cb03fad5","lineCount":123,"imports":[],"symbols":[{"file":"src/server/remote/util/dictionary.ts","line":1,"name":"DEFAULT_DICTIONARY","kind":"VariableDeclaration","endLine":122}],"stores":[],"components":[],"timers":[],"workarounds":[],"settings":[],"ipc":[],"comments":[]}
+]

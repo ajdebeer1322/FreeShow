@@ -1,0 +1,14 @@
+[
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1970,"store":"src/frontend/stores.ts#styles","kind":"get","symbol":"getScriptureTemplateId","expression":"get(styles)"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1970,"store":"src/frontend/stores.ts#styles","kind":"reference","symbol":"getScriptureTemplateId","expression":"styles"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2093,"store":"src/frontend/stores.ts#scriptures","kind":"get","symbol":"swapPreviewBible","expression":"get(scriptures)"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2093,"store":"src/frontend/stores.ts#scriptures","kind":"reference","symbol":"swapPreviewBible","expression":"scriptures"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2099,"store":"src/frontend/stores.ts#scriptures","kind":"update","symbol":"swapPreviewBible","expression":"scriptures.update((a) => { const newIndex = (currentPreviewIndex + 1) % versions.length a[collectionId].collection!.previewIndex = newIndex return a })"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2099,"store":"src/frontend/stores.ts#scriptures","kind":"reference","symbol":"swapPreviewBible","expression":"scriptures"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2211,"store":"src/frontend/stores.ts#drawerTabsData","kind":"get","symbol":"resolveScriptureReference","expression":"get(drawerTabsData)"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2211,"store":"src/frontend/stores.ts#drawerTabsData","kind":"reference","symbol":"resolveScriptureReference","expression":"drawerTabsData"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2215,"store":"src/frontend/stores.ts#scriptures","kind":"get","symbol":"resolveScriptureReference","expression":"get(scriptures)"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2215,"store":"src/frontend/stores.ts#scriptures","kind":"reference","symbol":"resolveScriptureReference","expression":"scriptures"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2272,"store":"src/frontend/stores.ts#activeScripture","kind":"set","symbol":"generateScriptureShowFromReference","expression":"activeScripture.set({ id: resolved.id, reference: { book: resolved.book, chapters: [resolved.chapter], verses: [resolved.verses] } })"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":2272,"store":"src/frontend/stores.ts#activeScripture","kind":"reference","symbol":"generateScriptureShowFromReference","expression":"activeScripture"}
+]

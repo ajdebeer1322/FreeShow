@@ -1,0 +1,22 @@
+[
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":130,"store":"src/frontend/stores.ts#showsCache","kind":"update","symbol":null,"expression":"showsCache.update((cache) => ({ ...cache, target: { ...cache.target, locked: true } }))"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":130,"store":"src/frontend/stores.ts#showsCache","kind":"reference","symbol":null,"expression":"showsCache"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":134,"store":"src/frontend/stores.ts#undoHistory","kind":"get","symbol":null,"expression":"get(undoHistory)"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":134,"store":"src/frontend/stores.ts#undoHistory","kind":"reference","symbol":null,"expression":"undoHistory"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":138,"store":"src/frontend/stores.ts#activeShow","kind":"set","symbol":null,"expression":"activeShow.set({ id: \"other\", type: \"show\" })"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":138,"store":"src/frontend/stores.ts#activeShow","kind":"reference","symbol":null,"expression":"activeShow"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":140,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":null,"expression":"get(showsCache)"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":140,"store":"src/frontend/stores.ts#showsCache","kind":"reference","symbol":null,"expression":"showsCache"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":141,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":null,"expression":"get(showsCache)"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":141,"store":"src/frontend/stores.ts#showsCache","kind":"reference","symbol":null,"expression":"showsCache"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":142,"store":"src/frontend/stores.ts#undoHistory","kind":"get","symbol":null,"expression":"get(undoHistory)"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":142,"store":"src/frontend/stores.ts#undoHistory","kind":"reference","symbol":null,"expression":"undoHistory"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":146,"store":"src/frontend/stores.ts#focusMode","kind":"set","symbol":null,"expression":"focusMode.set(false)"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":146,"store":"src/frontend/stores.ts#focusMode","kind":"reference","symbol":null,"expression":"focusMode"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":147,"store":"src/frontend/stores.ts#activeShow","kind":"set","symbol":null,"expression":"activeShow.set({ id: \"target\", type: \"show\" })"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":147,"store":"src/frontend/stores.ts#activeShow","kind":"reference","symbol":null,"expression":"activeShow"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":149,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":null,"expression":"get(showsCache)"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":149,"store":"src/frontend/stores.ts#showsCache","kind":"reference","symbol":null,"expression":"showsCache"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":150,"store":"src/frontend/stores.ts#showsCache","kind":"get","symbol":null,"expression":"get(showsCache)"},
+  {"file":"src/frontend/components/helpers/drop.test.ts","line":150,"store":"src/frontend/stores.ts#showsCache","kind":"reference","symbol":null,"expression":"showsCache"}
+]

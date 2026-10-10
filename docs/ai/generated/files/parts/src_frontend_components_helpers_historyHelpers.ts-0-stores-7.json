@@ -1,0 +1,7 @@
+[
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":735,"store":"src/frontend/stores.ts#projects","kind":"reference","symbol":"getProjectName","expression":"projects"},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":753,"store":"src/frontend/stores.ts#outputs","kind":"update","symbol":"clearOverlayOutput","expression":"outputs.update((a) => { Object.entries(a).forEach(([id, output]) => { if (output.out?.overlays?.includes(slideId)) { a[id].out!.overlays = a[id].out!.overlays!.filter((overlayId) ="},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":753,"store":"src/frontend/stores.ts#outputs","kind":"reference","symbol":"clearOverlayOutput","expression":"outputs"},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":765,"store":"src/frontend/stores.ts#drawerTabsData","kind":"update","symbol":"setDrawerTabData","expression":"drawerTabsData.update((a) => { if (!a[tabId]) a[tabId] = { enabled: true, activeSubTab: \"\" } a[tabId].activeSubTab = data return a })"},
+  {"file":"src/frontend/components/helpers/historyHelpers.ts","line":765,"store":"src/frontend/stores.ts#drawerTabsData","kind":"reference","symbol":"setDrawerTabData","expression":"drawerTabsData"}
+]

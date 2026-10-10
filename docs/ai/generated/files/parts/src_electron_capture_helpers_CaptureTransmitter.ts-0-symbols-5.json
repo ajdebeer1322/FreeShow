@@ -1,0 +1,13 @@
+[
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":652,"name":"buffer","kind":"VariableDeclaration","endLine":652},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":653,"name":"size","kind":"VariableDeclaration","endLine":653},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":660,"name":"sendRawToRecorder","kind":"MethodDeclaration","endLine":671},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":668,"name":"owned","kind":"VariableDeclaration","endLine":668},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":673,"name":"sendBufferToRecorder","kind":"MethodDeclaration","endLine":682},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":676,"name":"buffer","kind":"VariableDeclaration","endLine":676},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":677,"name":"size","kind":"VariableDeclaration","endLine":677},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":684,"name":"requestPreview","kind":"MethodDeclaration","endLine":688},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":690,"name":"removeAllChannels","kind":"MethodDeclaration","endLine":695},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":691,"name":"keysToRemove","kind":"VariableDeclaration","endLine":691},
+  {"file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":692,"name":"key","kind":"VariableDeclaration","endLine":692}
+]

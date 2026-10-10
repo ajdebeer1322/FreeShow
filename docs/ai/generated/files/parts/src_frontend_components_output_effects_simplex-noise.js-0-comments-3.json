@@ -1,0 +1,23 @@
+[
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":328,"endLine":328,"text":"// of the four coordinates, and the results are used to rank the numbers.","start":13382,"end":13455},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":357,"endLine":357,"text":"// simplex[c] is a 4-vector with the numbers 0, 1, 2 and 3 in some order.","start":14012,"end":14085},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":358,"endLine":358,"text":"// Many values of c will never occur, since e.g. x>y>z>w makes x<z, y<w and x<w","start":14094,"end":14173},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":359,"endLine":359,"text":"// impossible. Only the 24 indices which have non-zero entries make any sense.","start":14182,"end":14260},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":360,"endLine":360,"text":"// We use a thresholding to set the coordinates in turn from the largest magnitude.","start":14269,"end":14352},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":361,"endLine":361,"text":"// Rank 3 denotes the largest coordinate.","start":14361,"end":14402},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":362,"endLine":362,"text":"// Rank 2 denotes the second largest coordinate.","start":14411,"end":14459},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":363,"endLine":363,"text":"// Rank 1 denotes the second smallest coordinate.","start":14468,"end":14517},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":364,"endLine":364,"text":"// The integer offsets for the second simplex corner","start":14526,"end":14578},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":369,"endLine":369,"text":"// The integer offsets for the third simplex corner","start":14743,"end":14794},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":374,"endLine":374,"text":"// The integer offsets for the fourth simplex corner","start":14959,"end":15011},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":379,"endLine":379,"text":"// The fifth corner has all coordinate offsets = 1, so no need to compute that.","start":15176,"end":15255},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":380,"endLine":380,"text":"// Offsets for second corner in (x,y,z,w) coords","start":15289,"end":15337},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":384,"endLine":384,"text":"// Offsets for third corner in (x,y,z,w) coords","start":15476,"end":15523},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":388,"endLine":388,"text":"// Offsets for fourth corner in (x,y,z,w) coords","start":15680,"end":15728},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":392,"endLine":392,"text":"// Offsets for last corner in (x,y,z,w) coords","start":15886,"end":15932},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":396,"endLine":396,"text":"// Work out the hashed gradient indices of the five simplex corners","start":16061,"end":16128},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":401,"endLine":401,"text":"// Calculate the contribution from the five corners","start":16249,"end":16300},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":442,"endLine":442,"text":"// Sum up and scale the result to cover the range [-1,1]","start":18045,"end":18101},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":446,"endLine":452,"text":"/**\n * Builds a random permutation table.\n * This is exported only for (internal) testing purposes.\n * Do not rely on this export.\n *\n * @private\n */","start":18159,"end":18308},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":470,"endLine":470,"text":"// # sourceMappingURL=simplex-noise.js.map","start":18759,"end":18801}
+]

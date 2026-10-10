@@ -1,0 +1,3 @@
+[
+  {"name":"WEBRTC_AUDIO","definitions":[],"messages":[],"endpoints":[{"file":"src/electron/streaming/WebRtcHost.ts","line":140,"endLine":140,"channel":"WEBRTC_AUDIO","keys":[],"role":"send","direction":"electron → renderer/client","symbol":"sendAudio","payload":"{ buffer, sampleRate, channelCount }","expression":"this.window!.webContents.send(\"WEBRTC_AUDIO\", { buffer, sampleRate, channelCount })","dynamic":true}]}
+]

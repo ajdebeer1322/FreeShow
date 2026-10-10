@@ -1,0 +1,23 @@
+[
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":565,"name":"stdin","kind":"VariableDeclaration","endLine":565},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":582,"name":"updateFrame","kind":"MethodDeclaration","endLine":612},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":583,"name":"streamer","kind":"VariableDeclaration","endLine":583},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":588,"name":"expected","kind":"VariableDeclaration","endLine":588},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":602,"name":"relay","kind":"VariableDeclaration","endLine":602},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":614,"name":"updateAudio","kind":"MethodDeclaration","endLine":642},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":615,"name":"writeToStreamer","kind":"VariableDeclaration","endLine":632},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":618,"name":"audioStream","kind":"VariableDeclaration","endLine":618},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":629,"name":"err","kind":"VariableDeclaration","endLine":629},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":635,"name":"streamer","kind":"VariableDeclaration","endLine":635},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":638,"name":"streamer","kind":"VariableDeclaration","endLine":638},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":646,"name":"setRelayState","kind":"MethodDeclaration","endLine":651},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":653,"name":"getStatus","kind":"MethodDeclaration","endLine":666},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":654,"name":"streamer","kind":"VariableDeclaration","endLine":654},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":657,"name":"status","kind":"VariableDeclaration","endLine":657},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":668,"name":"pushStatus","kind":"MethodDeclaration","endLine":678},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":684,"name":"configRequiresRestart","kind":"FunctionDeclaration","endLine":686},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":688,"name":"buildDestinationUrl","kind":"FunctionDeclaration","endLine":692},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":690,"name":"url","kind":"VariableDeclaration","endLine":690},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":695,"name":"killGracefully","kind":"FunctionDeclaration","endLine":710},
+  {"file":"src/electron/streaming/RtmpStreamer.ts","line":704,"name":"killTimer","kind":"VariableDeclaration","endLine":708}
+]

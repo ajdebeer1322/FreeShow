@@ -1,0 +1,3 @@
+[
+  {"name":"STAGE","definitions":[{"file":"src/types/Channels.ts","line":8}],"messages":["STAGE/SWITCH","STAGE/ACTIVE_TIMERS","STAGE/LAYOUT","STAGE/SHOW_DATA","STAGE/EVENTS","STAGE/OUT","STAGE/OUT_SLIDE_CACHE","STAGE/TIMERS","STAGE/VARIABLES","STAGE/METRONOME","STAGE/METRONOME_TIMER","STAGE/DATA","STAGE/BACKGROUND","STAGE/LAYOUTS","STAGE/show","STAGE/REQUEST_PROGRESS","STAGE/currentShowSlide","STAGE/slidesLength","STAGE/layoutGroups","STAGE/projectItems","STAGE/currentProjectIndexes","STAGE/STREAM_SUBSCRIBE","STAGE/STREAM_UNSUBSCRIBE","STAGE/RUN_ACTION","STAGE/MEDIA","STAGE/outputId","STAGE/STREAM_FRAME","STAGE/ERROR","STAGE/LANGUAGE"],"$parts":{"endpoints":["channels/parts/STAGE-0-endpoints-1.json","channels/parts/STAGE-0-endpoints-2.json"]}}
+]

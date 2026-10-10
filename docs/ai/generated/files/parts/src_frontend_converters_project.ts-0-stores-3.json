@@ -1,0 +1,6 @@
+[
+  {"file":"src/frontend/converters/project.ts","line":242,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":"markItemsAsPlayed","expression":"get(activeShow)"},
+  {"file":"src/frontend/converters/project.ts","line":242,"store":"src/frontend/stores.ts#activeShow","kind":"reference","symbol":"markItemsAsPlayed","expression":"activeShow"},
+  {"file":"src/frontend/converters/project.ts","line":247,"store":"src/frontend/stores.ts#projects","kind":"update","symbol":"markItemsAsPlayed","expression":"projects.update((a) => { if (!a[projectId]?.shows) return a const newState = customNewState === undefined ? !a[projectId].shows[indexes[0]]?.played : customNewState indexes.forEach"},
+  {"file":"src/frontend/converters/project.ts","line":247,"store":"src/frontend/stores.ts#projects","kind":"reference","symbol":"markItemsAsPlayed","expression":"projects"}
+]

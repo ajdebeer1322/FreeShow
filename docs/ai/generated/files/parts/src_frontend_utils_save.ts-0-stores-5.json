@@ -1,0 +1,21 @@
+[
+  {"file":"src/frontend/utils/save.ts","line":329,"store":"src/frontend/stores.ts#driveData","kind":"reference","symbol":"saveComplete","expression":"driveData"},
+  {"file":"src/frontend/utils/save.ts","line":330,"store":"src/frontend/stores.ts#driveData","kind":"get","symbol":"saveComplete","expression":"get(driveData)"},
+  {"file":"src/frontend/utils/save.ts","line":330,"store":"src/frontend/stores.ts#driveData","kind":"reference","symbol":"saveComplete","expression":"driveData"},
+  {"file":"src/frontend/utils/save.ts","line":330,"store":"src/frontend/stores.ts#driveKeys","kind":"get","symbol":"saveComplete","expression":"get(driveKeys)"},
+  {"file":"src/frontend/utils/save.ts","line":330,"store":"src/frontend/stores.ts#driveKeys","kind":"reference","symbol":"saveComplete","expression":"driveKeys"},
+  {"file":"src/frontend/utils/save.ts","line":341,"store":"src/frontend/stores.ts#special","kind":"get","symbol":"initializeClosing","expression":"get(special)"},
+  {"file":"src/frontend/utils/save.ts","line":341,"store":"src/frontend/stores.ts#special","kind":"reference","symbol":"initializeClosing","expression":"special"},
+  {"file":"src/frontend/utils/save.ts","line":341,"store":"src/frontend/stores.ts#errorHasOccurred","kind":"get","symbol":"initializeClosing","expression":"get(errorHasOccurred)"},
+  {"file":"src/frontend/utils/save.ts","line":341,"store":"src/frontend/stores.ts#errorHasOccurred","kind":"reference","symbol":"initializeClosing","expression":"errorHasOccurred"},
+  {"file":"src/frontend/utils/save.ts","line":341,"store":"src/frontend/stores.ts#activePopup","kind":"set","symbol":"initializeClosing","expression":"activePopup.set(\"unsaved\")"},
+  {"file":"src/frontend/utils/save.ts","line":341,"store":"src/frontend/stores.ts#activePopup","kind":"reference","symbol":"initializeClosing","expression":"activePopup"},
+  {"file":"src/frontend/utils/save.ts","line":343,"store":"src/frontend/stores.ts#saved","kind":"get","symbol":"initializeClosing","expression":"get(saved)"},
+  {"file":"src/frontend/utils/save.ts","line":343,"store":"src/frontend/stores.ts#saved","kind":"reference","symbol":"initializeClosing","expression":"saved"},
+  {"file":"src/frontend/utils/save.ts","line":392,"store":"src/frontend/stores.ts#saved","kind":"set","symbol":"unsavedUpdater","expression":"saved.set(false)"},
+  {"file":"src/frontend/utils/save.ts","line":392,"store":"src/frontend/stores.ts#saved","kind":"reference","symbol":"unsavedUpdater","expression":"saved"},
+  {"file":"src/frontend/utils/save.ts","line":394,"store":"src/frontend/stores.ts#saved","kind":"set","symbol":"unsavedUpdater","expression":"saved.set(false)"},
+  {"file":"src/frontend/utils/save.ts","line":394,"store":"src/frontend/stores.ts#saved","kind":"reference","symbol":"unsavedUpdater","expression":"saved"},
+  {"file":"src/frontend/utils/save.ts","line":497,"store":"src/frontend/stores.ts#actions","kind":"reference","symbol":null,"expression":"actions"},
+  {"file":"src/frontend/utils/save.ts","line":528,"store":"src/frontend/stores.ts#ai","kind":"reference","symbol":null,"expression":"ai"}
+]

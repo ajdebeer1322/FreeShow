@@ -1,0 +1,12 @@
+[
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":428,"store":"src/frontend/stores.ts#outputs","kind":"set","symbol":null,"expression":"outputs.set({ main: out(\"main\", \"b\", 0, 1) } as never)"},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":428,"store":"src/frontend/stores.ts#outputs","kind":"reference","symbol":null,"expression":"outputs"},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":432,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":null,"expression":"get(activeShow)"},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":432,"store":"src/frontend/stores.ts#activeShow","kind":"reference","symbol":null,"expression":"activeShow"},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":444,"store":"src/frontend/stores.ts#outputs","kind":"set","symbol":null,"expression":"outputs.set({ side: out(\"side\", \"mixed\", 0, 0), centre: out(\"centre\", \"mixed\", 0, 0) } as never)"},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":444,"store":"src/frontend/stores.ts#outputs","kind":"reference","symbol":null,"expression":"outputs"},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":451,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":null,"expression":"get(activeShow)"},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":451,"store":"src/frontend/stores.ts#activeShow","kind":"reference","symbol":null,"expression":"activeShow"},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":455,"store":"src/frontend/stores.ts#activeShow","kind":"get","symbol":null,"expression":"get(activeShow)"},
+  {"file":"src/frontend/components/helpers/OutputHelper.linked.test.ts","line":455,"store":"src/frontend/stores.ts#activeShow","kind":"reference","symbol":null,"expression":"activeShow"}
+]

@@ -1,0 +1,3 @@
+[
+  {"file":"src/types/Bible.ts","area":"types","hash":"ed3a2414ee47aabded5a68f23cd902397976fb81f7201c31d051454fc5417918","lineCount":21,"imports":[],"symbols":[{"file":"src/types/Bible.ts","line":1,"name":"Bible","kind":"InterfaceDeclaration","endLine":20}],"stores":[],"components":[],"timers":[],"workarounds":[],"settings":[],"ipc":[],"comments":[{"file":"src/types/Bible.ts","line":5,"endLine":5,"text":"// displayed in the drawer","start":122,"end":148},{"file":"src/types/Bible.ts","line":8,"endLine":8,"text":"// many XML book names are not correct","start":213,"end":251}]}
+]

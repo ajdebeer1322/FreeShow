@@ -1,0 +1,14 @@
+[
+  {"file":"src/frontend/components/helpers/shows.ts","line":523,"name":"a","kind":"VariableDeclaration","endLine":523},
+  {"file":"src/frontend/components/helpers/shows.ts","line":527,"name":"indexesDefined","kind":"VariableDeclaration","endLine":527},
+  {"file":"src/frontend/components/helpers/shows.ts","line":540,"name":"prev","kind":"VariableDeclaration","endLine":540},
+  {"file":"src/frontend/components/helpers/shows.ts","line":546,"name":"indexesDefined","kind":"VariableDeclaration","endLine":546},
+  {"file":"src/frontend/components/helpers/shows.ts","line":566,"name":"removeId","kind":"VariableDeclaration","endLine":569},
+  {"file":"src/frontend/components/helpers/shows.ts","line":575,"name":"indexesDefined","kind":"VariableDeclaration","endLine":575},
+  {"file":"src/frontend/components/helpers/shows.ts","line":579,"name":"slides","kind":"VariableDeclaration","endLine":579},
+  {"file":"src/frontend/components/helpers/shows.ts","line":613,"name":"prev","kind":"VariableDeclaration","endLine":613},
+  {"file":"src/frontend/components/helpers/shows.ts","line":646,"name":"prev","kind":"VariableDeclaration","endLine":646},
+  {"file":"src/frontend/components/helpers/shows.ts","line":651,"name":"indexesDefined","kind":"VariableDeclaration","endLine":651},
+  {"file":"src/frontend/components/helpers/shows.ts","line":678,"name":"a","kind":"VariableDeclaration","endLine":678},
+  {"file":"src/frontend/components/helpers/shows.ts","line":721,"name":"media","kind":"VariableDeclaration","endLine":721}
+]

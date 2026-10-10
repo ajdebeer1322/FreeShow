@@ -1,0 +1,6 @@
+[
+  {"file":"src/frontend/converters/calendar.ts","line":361,"name":"currentKey","kind":"VariableDeclaration","endLine":361},
+  {"file":"src/frontend/converters/calendar.ts","line":363,"name":"line","kind":"VariableDeclaration","endLine":363},
+  {"file":"src/frontend/converters/calendar.ts","line":364,"name":"currentValue","kind":"VariableDeclaration","endLine":364},
+  {"file":"src/frontend/converters/calendar.ts","line":369,"name":"splitAt","kind":"VariableDeclaration","endLine":369}
+]

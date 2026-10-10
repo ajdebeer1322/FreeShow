@@ -1,0 +1,3 @@
+[
+  {"id":"src/frontend/stores.ts#lastSavedCache","name":"lastSavedCache","file":"src/frontend/stores.ts","line":195,"type":"Writable<any>","factory":"writable","initial":"null","exported":true,"reads":[],"writes":[],"references":[],"transports":[],"persistence":[],"confidence":"code"}
+]

@@ -1,0 +1,14 @@
+[
+  {"file":"src/frontend/utils/shortcuts.ts","line":523,"store":"src/frontend/stores.ts#styles","kind":"get","symbol":"togglePlayingMedia","expression":"get(styles)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":523,"store":"src/frontend/stores.ts#styles","kind":"reference","symbol":"togglePlayingMedia","expression":"styles"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":524,"store":"src/frontend/stores.ts#media","kind":"get","symbol":"togglePlayingMedia","expression":"get(media)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":524,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"togglePlayingMedia","expression":"media"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":528,"store":"src/frontend/stores.ts#projects","kind":"get","symbol":"togglePlayingMedia","expression":"get(projects)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":528,"store":"src/frontend/stores.ts#projects","kind":"reference","symbol":"togglePlayingMedia","expression":"projects"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":528,"store":"src/frontend/stores.ts#activeProject","kind":"get","symbol":"togglePlayingMedia","expression":"get(activeProject)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":528,"store":"src/frontend/stores.ts#activeProject","kind":"reference","symbol":"togglePlayingMedia","expression":"activeProject"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":566,"store":"src/frontend/stores.ts#styles","kind":"get","symbol":"playFolder","expression":"get(styles)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":566,"store":"src/frontend/stores.ts#styles","kind":"reference","symbol":"playFolder","expression":"styles"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":567,"store":"src/frontend/stores.ts#media","kind":"get","symbol":"playFolder","expression":"get(media)"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":567,"store":"src/frontend/stores.ts#media","kind":"reference","symbol":"playFolder","expression":"media"}
+]

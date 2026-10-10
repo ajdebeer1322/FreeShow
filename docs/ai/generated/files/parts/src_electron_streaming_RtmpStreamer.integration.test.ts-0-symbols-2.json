@@ -1,0 +1,16 @@
+[
+  {"file":"src/electron/streaming/RtmpStreamer.integration.test.ts","line":210,"name":"video","kind":"VariableDeclaration","endLine":210},
+  {"file":"src/electron/streaming/RtmpStreamer.integration.test.ts","line":225,"name":"out","kind":"VariableDeclaration","endLine":225},
+  {"file":"src/electron/streaming/RtmpStreamer.integration.test.ts","line":227,"name":"starting","kind":"VariableDeclaration","endLine":227},
+  {"file":"src/electron/streaming/RtmpStreamer.integration.test.ts","line":235,"name":"destA","kind":"VariableDeclaration","endLine":235},
+  {"file":"src/electron/streaming/RtmpStreamer.integration.test.ts","line":236,"name":"destB","kind":"VariableDeclaration","endLine":236},
+  {"file":"src/electron/streaming/RtmpStreamer.integration.test.ts","line":237,"name":"config","kind":"VariableDeclaration","endLine":237},
+  {"file":"src/electron/streaming/RtmpStreamer.integration.test.ts","line":239,"name":"starting","kind":"VariableDeclaration","endLine":239},
+  {"file":"src/electron/streaming/RtmpStreamer.integration.test.ts","line":245,"name":"status","kind":"VariableDeclaration","endLine":245},
+  {"file":"src/electron/streaming/RtmpStreamer.integration.test.ts","line":250,"name":"outA","kind":"VariableDeclaration","endLine":250},
+  {"file":"src/electron/streaming/RtmpStreamer.integration.test.ts","line":251,"name":"outB","kind":"VariableDeclaration","endLine":251},
+  {"file":"src/electron/streaming/RtmpStreamer.integration.test.ts","line":252,"name":"destA","kind":"VariableDeclaration","endLine":252},
+  {"file":"src/electron/streaming/RtmpStreamer.integration.test.ts","line":253,"name":"destB","kind":"VariableDeclaration","endLine":253},
+  {"file":"src/electron/streaming/RtmpStreamer.integration.test.ts","line":257,"name":"feeding","kind":"VariableDeclaration","endLine":257},
+  {"file":"src/electron/streaming/RtmpStreamer.integration.test.ts","line":264,"name":"status","kind":"VariableDeclaration","endLine":264}
+]

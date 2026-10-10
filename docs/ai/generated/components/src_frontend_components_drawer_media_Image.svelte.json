@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/drawer/media/Image.svelte","renders":[],"props":[{"name":"src","file":"src/frontend/components/drawer/media/Image.svelte","line":5},{"name":"updater","file":"src/frontend/components/drawer/media/Image.svelte","line":6},{"name":"alt","file":"src/frontend/components/drawer/media/Image.svelte","line":7},{"name":"transition","file":"src/frontend/components/drawer/media/Image.svelte","line":8}]}
+]

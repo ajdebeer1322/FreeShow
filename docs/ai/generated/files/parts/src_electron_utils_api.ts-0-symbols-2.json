@@ -1,0 +1,18 @@
+[
+  {"file":"src/electron/utils/api.ts","line":228,"name":"data","kind":"VariableDeclaration","endLine":228},
+  {"file":"src/electron/utils/api.ts","line":229,"name":"address","kind":"VariableDeclaration","endLine":229},
+  {"file":"src/electron/utils/api.ts","line":230,"name":"message","kind":"VariableDeclaration","endLine":230},
+  {"file":"src/electron/utils/api.ts","line":238,"name":"err","kind":"VariableDeclaration","endLine":238},
+  {"file":"src/electron/utils/api.ts","line":245,"name":"convertToType","kind":"FunctionDeclaration","endLine":252},
+  {"file":"src/electron/utils/api.ts","line":249,"name":"num","kind":"VariableDeclaration","endLine":249},
+  {"file":"src/electron/utils/api.ts","line":256,"name":"receivedData","kind":"FunctionDeclaration","endLine":271},
+  {"file":"src/electron/utils/api.ts","line":260,"name":"get","kind":"VariableDeclaration","endLine":260},
+  {"file":"src/electron/utils/api.ts","line":267,"name":"returnData","kind":"VariableDeclaration","endLine":267},
+  {"file":"src/electron/utils/api.ts","line":273,"name":"returnDataObj","kind":"VariableDeclaration","endLine":273},
+  {"file":"src/electron/utils/api.ts","line":274,"name":"apiReturnData","kind":"FunctionDeclaration","endLine":280},
+  {"file":"src/electron/utils/api.ts","line":275,"name":"id","kind":"VariableDeclaration","endLine":275},
+  {"file":"src/electron/utils/api.ts","line":284,"name":"stopApiListener","kind":"FunctionDeclaration","endLine":314},
+  {"file":"src/electron/utils/api.ts","line":293,"name":"stop","kind":"FunctionDeclaration","endLine":304},
+  {"file":"src/electron/utils/api.ts","line":301,"name":"err","kind":"VariableDeclaration","endLine":301},
+  {"file":"src/electron/utils/api.ts","line":306,"name":"closeIoServer","kind":"FunctionDeclaration","endLine":313}
+]

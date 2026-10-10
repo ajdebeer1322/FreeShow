@@ -1,0 +1,14 @@
+[
+  {"id":"settings.audioEffects.set","file":"src/frontend/utils/updateSettings.ts","line":396,"expression":"audioEffects.set"},
+  {"id":"settings.audioEffectPresets.set","file":"src/frontend/utils/updateSettings.ts","line":397,"expression":"audioEffectPresets.set"},
+  {"id":"settings.effectsLibrary.set","file":"src/frontend/utils/updateSettings.ts","line":398,"expression":"effectsLibrary.set"},
+  {"id":"settings.ports.companion","file":"src/frontend/utils/updateSettings.ts","line":407,"expression":"get(ports).companion"},
+  {"id":"settings.contentProviderData.update","file":"src/frontend/utils/updateSettings.ts","line":427,"expression":"contentProviderData.update"},
+  {"id":"settings.special.set","file":"src/frontend/utils/updateSettings.ts","line":456,"expression":"special.set"},
+  {"id":"settings.timeline.set","file":"src/frontend/utils/updateSettings.ts","line":458,"expression":"timeline.set"},
+  {"id":"settings.timecode.set","file":"src/frontend/utils/updateSettings.ts","line":459,"expression":"timecode.set"},
+  {"id":"settings.contentProviderData.set","file":"src/frontend/utils/updateSettings.ts","line":462,"expression":"contentProviderData.set"},
+  {"id":"settings.contentProviderData.set","file":"src/frontend/utils/updateSettings.ts","line":464,"expression":"contentProviderData.set"},
+  {"id":"settings.obsData.set","file":"src/frontend/utils/updateSettings.ts","line":465,"expression":"obsData.set"},
+  {"id":"settings.ai.set","file":"src/frontend/utils/updateSettings.ts","line":469,"expression":"ai.set"}
+]

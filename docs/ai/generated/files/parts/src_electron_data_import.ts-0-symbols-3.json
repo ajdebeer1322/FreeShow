@@ -1,0 +1,15 @@
+[
+  {"file":"src/electron/data/import.ts","line":325,"name":"unixPath","kind":"VariableDeclaration","endLine":325},
+  {"file":"src/electron/data/import.ts","line":326,"name":"escapedWindowsPath","kind":"VariableDeclaration","endLine":326},
+  {"file":"src/electron/data/import.ts","line":328,"name":"pathVariants","kind":"VariableDeclaration","endLine":328},
+  {"file":"src/electron/data/import.ts","line":332,"name":"escapedPattern","kind":"VariableDeclaration","endLine":332},
+  {"file":"src/electron/data/import.ts","line":333,"name":"replacementPath","kind":"VariableDeclaration","endLine":333},
+  {"file":"src/electron/data/import.ts","line":334,"name":"regex","kind":"VariableDeclaration","endLine":334},
+  {"file":"src/electron/data/import.ts","line":348,"name":"decodeProto","kind":"FunctionDeclaration","endLine":358},
+  {"file":"src/electron/data/import.ts","line":349,"name":"dir","kind":"VariableDeclaration","endLine":349},
+  {"file":"src/electron/data/import.ts","line":350,"name":"root","kind":"VariableDeclaration","endLine":350},
+  {"file":"src/electron/data/import.ts","line":352,"name":"Presentation","kind":"VariableDeclaration","endLine":352},
+  {"file":"src/electron/data/import.ts","line":354,"name":"buffer","kind":"VariableDeclaration","endLine":354},
+  {"file":"src/electron/data/import.ts","line":355,"name":"message","kind":"VariableDeclaration","endLine":355},
+  {"file":"src/electron/data/import.ts","line":360,"name":"checkSpecial","kind":"FunctionDeclaration","endLine":363}
+]

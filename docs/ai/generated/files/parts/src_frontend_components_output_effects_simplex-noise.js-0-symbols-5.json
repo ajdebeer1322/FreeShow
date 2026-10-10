@@ -1,0 +1,14 @@
+[
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":426,"name":"t3","kind":"VariableDeclaration","endLine":426},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":430,"name":"gi3","kind":"VariableDeclaration","endLine":430},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":434,"name":"t4","kind":"VariableDeclaration","endLine":434},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":438,"name":"gi4","kind":"VariableDeclaration","endLine":438},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":453,"name":"buildPermutationTable","kind":"FunctionDeclaration","endLine":469},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":454,"name":"tableSize","kind":"VariableDeclaration","endLine":454},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":455,"name":"p","kind":"VariableDeclaration","endLine":455},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":456,"name":"i","kind":"VariableDeclaration","endLine":456},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":459,"name":"i","kind":"VariableDeclaration","endLine":459},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":460,"name":"r","kind":"VariableDeclaration","endLine":460},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":461,"name":"aux","kind":"VariableDeclaration","endLine":461},
+  {"file":"src/frontend/components/output/effects/simplex-noise.js","line":465,"name":"i","kind":"VariableDeclaration","endLine":465}
+]

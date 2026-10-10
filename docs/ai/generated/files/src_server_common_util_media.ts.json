@@ -1,0 +1,3 @@
+[
+  {"file":"src/server/common/util/media.ts","area":"server","hash":"9df9b0222e93293b2abd8ae0f16d060989e3878f7a925e5e337689e422532c9d","lineCount":12,"imports":[],"symbols":[{"file":"src/server/common/util/media.ts","line":1,"name":"removeExtension","kind":"FunctionDeclaration","endLine":4},{"file":"src/server/common/util/media.ts","line":6,"name":"getFileName","kind":"FunctionDeclaration","endLine":11}],"stores":[],"components":[],"timers":[],"workarounds":[],"settings":[],"ipc":[],"comments":[]}
+]

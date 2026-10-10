@@ -1,0 +1,23 @@
+[
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":217,"name":"updateZoom","kind":"FunctionDeclaration","endLine":222},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":219,"name":"origin","kind":"VariableDeclaration","endLine":219},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":225,"name":"usedChords","kind":"VariableDeclaration","endLine":225},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":233,"name":"chordsAction","kind":"VariableDeclaration","endLine":233},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":234,"name":"setDefaultChordsAction","kind":"FunctionDeclaration","endLine":241},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":244,"name":"transposeUp","kind":"FunctionDeclaration","endLine":247},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":245,"name":"text","kind":"VariableDeclaration","endLine":245},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":248,"name":"transposeDown","kind":"FunctionDeclaration","endLine":251},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":249,"name":"text","kind":"VariableDeclaration","endLine":249},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":261,"name":"elem","kind":"VariableDeclaration","endLine":261},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":270,"name":"profile","kind":"VariableDeclaration","endLine":270},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":275,"name":"hideOverflow","kind":"VariableDeclaration","endLine":275},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":299,"name":"bottomHeight","kind":"VariableDeclaration","endLine":299},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":310,"name":"convertBackgroundToMedia","kind":"FunctionDeclaration","endLine":332},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":315,"name":"currentRef","kind":"VariableDeclaration","endLine":315},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":318,"name":"layoutId","kind":"VariableDeclaration","endLine":318},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":319,"name":"layoutSlides","kind":"VariableDeclaration","endLine":319},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":323,"name":"parentSlide","kind":"VariableDeclaration","endLine":323},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":336,"name":"note","kind":"VariableDeclaration","endLine":336},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":339,"name":"edit","kind":"FunctionDeclaration","endLine":344},
+  {"file":"src/frontend/components/edit/editors/SlideEditor.svelte","line":340,"name":"slideId","kind":"VariableDeclaration","endLine":340}
+]

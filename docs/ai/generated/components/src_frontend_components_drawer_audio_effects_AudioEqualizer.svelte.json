@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte","renders":[],"props":[{"name":"effectId","file":"src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte","line":8},{"name":"channelId","file":"src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte","line":9}]}
+]

@@ -1,0 +1,23 @@
+[
+  {"id":"settings.disabledServers.output_stream","file":"src/frontend/components/helpers/output.ts","line":948,"expression":"get(disabledServers).output_stream"},
+  {"id":"settings.serverData.output_stream.outputId","file":"src/frontend/components/helpers/output.ts","line":948,"expression":"get(serverData)?.output_stream?.outputId"},
+  {"id":"settings.serverData.output_stream","file":"src/frontend/components/helpers/output.ts","line":948,"expression":"get(serverData)?.output_stream"},
+  {"id":"settings.disabledServers.stage","file":"src/frontend/components/helpers/output.ts","line":950,"expression":"get(disabledServers).stage"},
+  {"id":"settings.outputs.*","file":"src/frontend/components/helpers/output.ts","line":1001,"expression":"get(outputs)[resolvedId]"},
+  {"id":"settings.outputs.update","file":"src/frontend/components/helpers/output.ts","line":1008,"expression":"outputs.update"},
+  {"id":"settings.outputs.*","file":"src/frontend/components/helpers/output.ts","line":1041,"expression":"get(outputs)[outputId]"},
+  {"id":"settings.outputs.update","file":"src/frontend/components/helpers/output.ts","line":1048,"expression":"outputs.update"},
+  {"id":"settings.outputs.*.rtmpData.destinations","file":"src/frontend/components/helpers/output.ts","line":1068,"expression":"get(outputs)[outputId]?.rtmpData?.destinations"},
+  {"id":"settings.outputs.*.rtmpData","file":"src/frontend/components/helpers/output.ts","line":1068,"expression":"get(outputs)[outputId]?.rtmpData"},
+  {"id":"settings.outputs.*","file":"src/frontend/components/helpers/output.ts","line":1068,"expression":"get(outputs)[outputId]"},
+  {"id":"settings.outputs.*.rtmpData.destinations","file":"src/frontend/components/helpers/output.ts","line":1073,"expression":"get(outputs)[outputId]?.rtmpData?.destinations"},
+  {"id":"settings.outputs.*.rtmpData","file":"src/frontend/components/helpers/output.ts","line":1073,"expression":"get(outputs)[outputId]?.rtmpData"},
+  {"id":"settings.outputs.*","file":"src/frontend/components/helpers/output.ts","line":1073,"expression":"get(outputs)[outputId]"},
+  {"id":"settings.outputs.*.rtmpData.destinations","file":"src/frontend/components/helpers/output.ts","line":1082,"expression":"get(outputs)[outputId]?.rtmpData?.destinations"},
+  {"id":"settings.outputs.*.rtmpData","file":"src/frontend/components/helpers/output.ts","line":1082,"expression":"get(outputs)[outputId]?.rtmpData"},
+  {"id":"settings.outputs.*","file":"src/frontend/components/helpers/output.ts","line":1082,"expression":"get(outputs)[outputId]"},
+  {"id":"settings.outputs.update","file":"src/frontend/components/helpers/output.ts","line":1106,"expression":"outputs.update"},
+  {"id":"settings.outputs.update","file":"src/frontend/components/helpers/output.ts","line":1160,"expression":"outputs.update"},
+  {"id":"settings.outputs.update","file":"src/frontend/components/helpers/output.ts","line":1191,"expression":"outputs.update"},
+  {"id":"settings.transitionData.media","file":"src/frontend/components/helpers/output.ts","line":1243,"expression":"get(transitionData).media"}
+]

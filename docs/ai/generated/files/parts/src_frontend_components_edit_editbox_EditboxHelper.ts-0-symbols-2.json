@@ -1,0 +1,20 @@
+[
+  {"file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":187,"name":"lines","kind":"VariableDeclaration","endLine":187},
+  {"file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":190,"name":"align","kind":"VariableDeclaration","endLine":190},
+  {"file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":192,"name":"style","kind":"VariableDeclaration","endLine":192},
+  {"file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":194,"name":"normalWrap","kind":"VariableDeclaration","endLine":194},
+  {"file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":203,"name":"currentChords","kind":"VariableDeclaration","endLine":203},
+  {"file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":204,"name":"textIndex","kind":"VariableDeclaration","endLine":204},
+  {"file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":211,"name":"isLastSegment","kind":"VariableDeclaration","endLine":211},
+  {"file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":212,"name":"textEnd","kind":"VariableDeclaration","endLine":212},
+  {"file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":213,"name":"textChords","kind":"VariableDeclaration","endLine":213},
+  {"file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":216,"name":"textStyle","kind":"VariableDeclaration","endLine":216},
+  {"file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":217,"name":"value","kind":"VariableDeclaration","endLine":217},
+  {"file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":230,"name":"getTextStyle","kind":"MethodDeclaration","endLine":234},
+  {"file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":232,"name":"style","kind":"VariableDeclaration","endLine":232},
+  {"file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":236,"name":"getCustomTextStyle","kind":"MethodDeclaration","endLine":271},
+  {"file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":257,"name":"fontSize","kind":"VariableDeclaration","endLine":257},
+  {"file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":260,"name":"currentOutput","kind":"VariableDeclaration","endLine":260},
+  {"file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":261,"name":"outputStyle","kind":"VariableDeclaration","endLine":261},
+  {"file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":264,"name":"customFontSizeRatio","kind":"VariableDeclaration","endLine":264}
+]

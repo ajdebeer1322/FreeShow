@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/helpers/T.svelte","renders":[],"props":[{"name":"id","file":"src/frontend/components/helpers/T.svelte","line":4},{"name":"index","file":"src/frontend/components/helpers/T.svelte","line":5},{"name":"lowercase","file":"src/frontend/components/helpers/T.svelte","line":6},{"name":"replace","file":"src/frontend/components/helpers/T.svelte","line":7}]}
+]

@@ -1,0 +1,13 @@
+[
+  {"file":"src/frontend/utils/shortcuts.ts","line":77,"store":"src/frontend/stores.ts#activePage","kind":"reference","symbol":"t","expression":"activePage"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":89,"store":"src/frontend/stores.ts#activePage","kind":"reference","symbol":"Enter","expression":"activePage"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":134,"store":"src/frontend/stores.ts#activePage","kind":"reference","symbol":"Enter","expression":"activePage"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":148,"store":"src/frontend/stores.ts#activePage","kind":"reference","symbol":"shouldOpenReplace","expression":"activePage"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":228,"store":"src/frontend/stores.ts#activePage","kind":"reference","symbol":"invokeCtrlShortcut","expression":"activePage"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":262,"store":"src/frontend/stores.ts#activePage","kind":"reference","symbol":"keydown","expression":"activePage"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":445,"store":"src/frontend/stores.ts#activePage","kind":"reference","symbol":"isTimelineActive","expression":"activePage"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":446,"store":"src/frontend/stores.ts#activePage","kind":"reference","symbol":"isTimelineActive","expression":"activePage"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":464,"store":"src/frontend/stores.ts#activePage","kind":"reference","symbol":"createNew","expression":"activePage"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":478,"store":"src/frontend/stores.ts#activePage","kind":"reference","symbol":"createNew","expression":"activePage"},
+  {"file":"src/frontend/utils/shortcuts.ts","line":479,"store":"src/frontend/stores.ts#activePage","kind":"reference","symbol":"createNew","expression":"activePage"}
+]

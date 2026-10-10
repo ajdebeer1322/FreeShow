@@ -1,0 +1,16 @@
+[
+  {"file":"src/types/Effects.ts","line":173,"endLine":173,"text":"/** How far the control points travel, as a fraction of the frame. */","start":4571,"end":4640},
+  {"file":"src/types/Effects.ts","line":175,"endLine":175,"text":"/** Gaussian spread / softness multiplier. Higher = softer and smoother color blending. */","start":4665,"end":4755},
+  {"file":"src/types/Effects.ts","line":177,"endLine":177,"text":"/** Grid density (number of control points along width and height, e.g. 4 for 4x4). */","start":4780,"end":4866},
+  {"file":"src/types/Effects.ts","line":179,"endLine":179,"text":"/** Film-grain overlay, 0 disables it. */","start":4892,"end":4933},
+  {"file":"src/types/Effects.ts","line":190,"endLine":190,"text":"// number of fog clouds","start":5153,"end":5176},
+  {"file":"src/types/Effects.ts","line":191,"endLine":191,"text":"// base size of each fog cloud","start":5194,"end":5224},
+  {"file":"src/types/Effects.ts","line":192,"endLine":192,"text":"// horizontal movement speed","start":5243,"end":5271},
+  {"file":"src/types/Effects.ts","line":193,"endLine":193,"text":"// default: 0.1","start":5293,"end":5308},
+  {"file":"src/types/Effects.ts","line":194,"endLine":194,"text":"// default: 50","start":5327,"end":5341},
+  {"file":"src/types/Effects.ts","line":207,"endLine":207,"text":"// 0 to 1 (chance per window per frame to toggle)","start":5605,"end":5654},
+  {"file":"src/types/Effects.ts","line":251,"endLine":251,"text":"// how much the grass sways (0-1, default: 0.5)","start":6549,"end":6596},
+  {"file":"src/types/Effects.ts","line":252,"endLine":252,"text":"// height variation (0-1, default: 0.3)","start":6626,"end":6665},
+  {"file":"src/types/Effects.ts","line":256,"endLine":256,"text":"// average strikes per second","start":6756,"end":6785},
+  {"file":"src/types/Effects.ts","line":257,"endLine":257,"text":"// flash duration in frames","start":6807,"end":6834}
+]

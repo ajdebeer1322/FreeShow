@@ -1,0 +1,21 @@
+[
+  {"file":"src/types/Show.ts","line":547,"name":"Overlay","kind":"InterfaceDeclaration","endLine":559},
+  {"file":"src/types/Show.ts","line":561,"name":"Templates","kind":"InterfaceDeclaration","endLine":563},
+  {"file":"src/types/Show.ts","line":564,"name":"Template","kind":"InterfaceDeclaration","endLine":572},
+  {"file":"src/types/Show.ts","line":573,"name":"TemplateStyleOverride","kind":"InterfaceDeclaration","endLine":578},
+  {"file":"src/types/Show.ts","line":579,"name":"TemplateSettings","kind":"InterfaceDeclaration","endLine":591},
+  {"file":"src/types/Show.ts","line":593,"name":"Scenes","kind":"InterfaceDeclaration","endLine":595},
+  {"file":"src/types/Show.ts","line":596,"name":"Scene","kind":"InterfaceDeclaration","endLine":605},
+  {"file":"src/types/Show.ts","line":606,"name":"SceneContent","kind":"InterfaceDeclaration","endLine":611},
+  {"file":"src/types/Show.ts","line":615,"name":"OutBackground","kind":"InterfaceDeclaration","endLine":635},
+  {"file":"src/types/Show.ts","line":637,"name":"OutSlide","kind":"InterfaceDeclaration","endLine":659},
+  {"file":"src/types/Show.ts","line":661,"name":"OutTransition","kind":"InterfaceDeclaration","endLine":666},
+  {"file":"src/types/Show.ts","line":668,"name":"OutScene","kind":"InterfaceDeclaration","endLine":671},
+  {"file":"src/types/Show.ts","line":673,"name":"SlideTimer","kind":"InterfaceDeclaration","endLine":683},
+  {"file":"src/types/Show.ts","line":685,"name":"Tag","kind":"InterfaceDeclaration","endLine":688},
+  {"file":"src/types/Show.ts","line":692,"name":"ID","kind":"TypeAliasDeclaration","endLine":692},
+  {"file":"src/types/Show.ts","line":693,"name":"ItemType","kind":"TypeAliasDeclaration","endLine":693},
+  {"file":"src/types/Show.ts","line":694,"name":"ShowType","kind":"TypeAliasDeclaration","endLine":694},
+  {"file":"src/types/Show.ts","line":695,"name":"TransitionType","kind":"TypeAliasDeclaration","endLine":695},
+  {"file":"src/types/Show.ts","line":696,"name":"MediaType","kind":"TypeAliasDeclaration","endLine":696}
+]

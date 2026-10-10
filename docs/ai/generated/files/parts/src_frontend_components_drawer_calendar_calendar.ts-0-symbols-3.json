@@ -1,0 +1,16 @@
+[
+  {"file":"src/frontend/components/drawer/calendar/calendar.ts","line":254,"name":"currentSpecial","kind":"VariableDeclaration","endLine":254},
+  {"file":"src/frontend/components/drawer/calendar/calendar.ts","line":258,"name":"thisDay","kind":"VariableDeclaration","endLine":258},
+  {"file":"src/frontend/components/drawer/calendar/calendar.ts","line":263,"name":"fromDate","kind":"VariableDeclaration","endLine":263},
+  {"file":"src/frontend/components/drawer/calendar/calendar.ts","line":264,"name":"toDate","kind":"VariableDeclaration","endLine":264},
+  {"file":"src/frontend/components/drawer/calendar/calendar.ts","line":265,"name":"startingAtSameDate","kind":"VariableDeclaration","endLine":265},
+  {"file":"src/frontend/components/drawer/calendar/calendar.ts","line":268,"name":"endingAtSameDate","kind":"VariableDeclaration","endLine":268},
+  {"file":"src/frontend/components/drawer/calendar/calendar.ts","line":276,"name":"sortDayAndOnlyKeepNormalEvents","kind":"FunctionDeclaration","endLine":279},
+  {"file":"src/frontend/components/drawer/calendar/calendar.ts","line":288,"name":"getWeekNumber","kind":"FunctionDeclaration","endLine":304},
+  {"file":"src/frontend/components/drawer/calendar/calendar.ts","line":292,"name":"firstDayInYear","kind":"VariableDeclaration","endLine":292},
+  {"file":"src/frontend/components/drawer/calendar/calendar.ts","line":293,"name":"daysPassedCurrentYear","kind":"VariableDeclaration","endLine":293},
+  {"file":"src/frontend/components/drawer/calendar/calendar.ts","line":294,"name":"weekNumber","kind":"VariableDeclaration","endLine":294},
+  {"file":"src/frontend/components/drawer/calendar/calendar.ts","line":299,"name":"getNearestThursday","kind":"FunctionDeclaration","endLine":303},
+  {"file":"src/frontend/components/drawer/calendar/calendar.ts","line":300,"name":"todaysWeekday","kind":"VariableDeclaration","endLine":300},
+  {"file":"src/frontend/components/drawer/calendar/calendar.ts","line":301,"name":"nearestThursday","kind":"VariableDeclaration","endLine":301}
+]

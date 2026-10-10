@@ -1,0 +1,20 @@
+[
+  {"file":"src/frontend/components/edit/tools/EditValues.svelte","line":214,"name":"hasChangedValues","kind":"FunctionDeclaration","endLine":229},
+  {"file":"src/frontend/components/edit/tools/EditValues.svelte","line":217,"name":"allInputsToCheck","kind":"VariableDeclaration","endLine":217},
+  {"file":"src/frontend/components/edit/tools/EditValues.svelte","line":218,"name":"filterOut","kind":"VariableDeclaration","endLine":218},
+  {"file":"src/frontend/components/edit/tools/EditValues.svelte","line":226,"name":"hasChanged","kind":"VariableDeclaration","endLine":226},
+  {"file":"src/frontend/components/edit/tools/EditValues.svelte","line":231,"name":"isDefaultValue","kind":"FunctionDeclaration","endLine":242},
+  {"file":"src/frontend/components/edit/tools/EditValues.svelte","line":233,"name":"currentValue","kind":"VariableDeclaration","endLine":233},
+  {"file":"src/frontend/components/edit/tools/EditValues.svelte","line":244,"name":"resetSection","kind":"FunctionDeclaration","endLine":263},
+  {"file":"src/frontend/components/edit/tools/EditValues.svelte","line":247,"name":"customDefaultValue","kind":"VariableDeclaration","endLine":247},
+  {"file":"src/frontend/components/edit/tools/EditValues.svelte","line":250,"name":"defaultValue","kind":"VariableDeclaration","endLine":250},
+  {"file":"src/frontend/components/edit/tools/EditValues.svelte","line":265,"name":"openedSections","kind":"VariableDeclaration","endLine":265},
+  {"file":"src/frontend/components/edit/tools/EditValues.svelte","line":266,"name":"toggleSection","kind":"FunctionDeclaration","endLine":295},
+  {"file":"src/frontend/components/edit/tools/EditValues.svelte","line":267,"name":"activeIndex","kind":"VariableDeclaration","endLine":267},
+  {"file":"src/frontend/components/edit/tools/EditValues.svelte","line":271,"name":"input","kind":"VariableDeclaration","endLine":271},
+  {"file":"src/frontend/components/edit/tools/EditValues.svelte","line":301,"name":"getOptions","kind":"FunctionDeclaration","endLine":315},
+  {"file":"src/frontend/components/edit/tools/EditValues.svelte","line":317,"name":"getValues","kind":"FunctionDeclaration","endLine":324},
+  {"file":"src/frontend/components/edit/tools/EditValues.svelte","line":318,"name":"values","kind":"VariableDeclaration","endLine":318},
+  {"file":"src/frontend/components/edit/tools/EditValues.svelte","line":327,"name":"timelineUpdater","kind":"VariableDeclaration","endLine":327},
+  {"file":"src/frontend/components/edit/tools/EditValues.svelte","line":328,"name":"updaterInterval","kind":"VariableDeclaration","endLine":328}
+]

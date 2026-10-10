@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/helpers/LazyLoad.svelte","renders":[{"file":"src/frontend/components/helpers/LazyLoad.svelte","line":15,"name":"svelte:component","target":null,"lazyTargets":[],"props":[],"dynamic":true,"confidence":"code"}],"props":[{"name":"component","file":"src/frontend/components/helpers/LazyLoad.svelte","line":2},{"name":"show","file":"src/frontend/components/helpers/LazyLoad.svelte","line":3}]}
+]

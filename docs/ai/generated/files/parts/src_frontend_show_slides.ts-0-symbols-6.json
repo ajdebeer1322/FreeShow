@@ -1,0 +1,20 @@
+[
+  {"file":"src/frontend/show/slides.ts","line":982,"name":"findBestBreak","kind":"FunctionDeclaration","endLine":1015},
+  {"file":"src/frontend/show/slides.ts","line":983,"name":"best","kind":"VariableDeclaration","endLine":983},
+  {"file":"src/frontend/show/slides.ts","line":984,"name":"bestDist","kind":"VariableDeclaration","endLine":984},
+  {"file":"src/frontend/show/slides.ts","line":986,"name":"start","kind":"VariableDeclaration","endLine":986},
+  {"file":"src/frontend/show/slides.ts","line":987,"name":"end","kind":"VariableDeclaration","endLine":987},
+  {"file":"src/frontend/show/slides.ts","line":989,"name":"i","kind":"VariableDeclaration","endLine":989},
+  {"file":"src/frontend/show/slides.ts","line":990,"name":"char","kind":"VariableDeclaration","endLine":990},
+  {"file":"src/frontend/show/slides.ts","line":991,"name":"isPunc","kind":"VariableDeclaration","endLine":991},
+  {"file":"src/frontend/show/slides.ts","line":992,"name":"isSpace","kind":"VariableDeclaration","endLine":992},
+  {"file":"src/frontend/show/slides.ts","line":995,"name":"dist","kind":"VariableDeclaration","endLine":995},
+  {"file":"src/frontend/show/slides.ts","line":996,"name":"score","kind":"VariableDeclaration","endLine":996},
+  {"file":"src/frontend/show/slides.ts","line":999,"name":"pos","kind":"VariableDeclaration","endLine":999},
+  {"file":"src/frontend/show/slides.ts","line":1004,"name":"remaining","kind":"VariableDeclaration","endLine":1004},
+  {"file":"src/frontend/show/slides.ts","line":1005,"name":"hasContent","kind":"VariableDeclaration","endLine":1005},
+  {"file":"src/frontend/show/slides.ts","line":1017,"name":"VIRTUAL_BREAK_CHAR","kind":"VariableDeclaration","endLine":1017},
+  {"file":"src/frontend/show/slides.ts","line":1018,"name":"createVirtualBreaks","kind":"FunctionDeclaration","endLine":1033},
+  {"file":"src/frontend/show/slides.ts","line":1021,"name":"replaceWith","kind":"VariableDeclaration","endLine":1021},
+  {"file":"src/frontend/show/slides.ts","line":1034,"name":"replaceVirtualBreaks","kind":"FunctionDeclaration","endLine":1037}
+]

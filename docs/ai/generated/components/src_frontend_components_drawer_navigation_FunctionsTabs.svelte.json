@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/drawer/navigation/FunctionsTabs.svelte","renders":[{"file":"src/frontend/components/drawer/navigation/FunctionsTabs.svelte","line":104,"name":"NavigationSections","target":"src/frontend/components/drawer/navigation/NavigationSections.svelte","lazyTargets":[],"props":[{"name":"sections","kind":"Attribute","value":"{sections}","file":"src/frontend/components/drawer/navigation/FunctionsTabs.svelte","line":104},{"name":"active","kind":"Attribute","value":"active={activeSubTab}","file":"src/frontend/components/drawer/navigation/FunctionsTabs.svelte","line":104}],"dynamic":false,"confidence":"code"}],"props":[]}
+]

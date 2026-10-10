@@ -1,0 +1,3 @@
+[
+  {"file":"src/server/remote/main.ts","area":"server","hash":"2b98e4673faf318504ed7a5460e3d3f7acea3f0ba68d4d5803101d307d814534","lineCount":10,"imports":[{"file":"src/server/remote/main.ts","line":1,"specifier":"svelte","target":null,"kind":"static","typeOnly":false,"bindings":[{"local":"mount","imported":"mount","typeOnly":false}]},{"file":"src/server/remote/main.ts","line":2,"specifier":"./App.svelte","target":"src/server/remote/App.svelte","kind":"static","typeOnly":false,"bindings":[{"local":"App","imported":"default","typeOnly":false}]}],"symbols":[{"file":"src/server/remote/main.ts","line":4,"name":"app","kind":"VariableDeclaration","endLine":7}],"stores":[],"components":[],"timers":[],"workarounds":[],"settings":[],"ipc":[],"comments":[]}
+]

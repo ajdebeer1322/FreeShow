@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/main/Tooltip.svelte","renders":[],"props":[{"name":"x","file":"src/frontend/components/main/Tooltip.svelte","line":5},{"name":"y","file":"src/frontend/components/main/Tooltip.svelte","line":6},{"name":"visible","file":"src/frontend/components/main/Tooltip.svelte","line":7},{"name":"style","file":"src/frontend/components/main/Tooltip.svelte","line":8},{"name":"parsed","file":"src/frontend/components/main/Tooltip.svelte","line":9}]}
+]

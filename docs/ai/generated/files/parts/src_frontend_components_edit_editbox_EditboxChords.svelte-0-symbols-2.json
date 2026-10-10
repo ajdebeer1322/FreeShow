@@ -1,0 +1,16 @@
+[
+  {"file":"src/frontend/components/edit/editbox/EditboxChords.svelte","line":176,"name":"id","kind":"VariableDeclaration","endLine":176},
+  {"file":"src/frontend/components/edit/editbox/EditboxChords.svelte","line":177,"name":"parts","kind":"VariableDeclaration","endLine":177},
+  {"file":"src/frontend/components/edit/editbox/EditboxChords.svelte","line":178,"name":"toLine","kind":"VariableDeclaration","endLine":178},
+  {"file":"src/frontend/components/edit/editbox/EditboxChords.svelte","line":179,"name":"toPos","kind":"VariableDeclaration","endLine":179},
+  {"file":"src/frontend/components/edit/editbox/EditboxChords.svelte","line":181,"name":"sourceIdStr","kind":"VariableDeclaration","endLine":181},
+  {"file":"src/frontend/components/edit/editbox/EditboxChords.svelte","line":184,"name":"err","kind":"VariableDeclaration","endLine":184},
+  {"file":"src/frontend/components/edit/editbox/EditboxChords.svelte","line":185,"name":"sourceIndex","kind":"VariableDeclaration","endLine":185},
+  {"file":"src/frontend/components/edit/editbox/EditboxChords.svelte","line":199,"name":"moveChord","kind":"FunctionDeclaration","endLine":224},
+  {"file":"src/frontend/components/edit/editbox/EditboxChords.svelte","line":200,"name":"data","kind":"VariableDeclaration","endLine":200},
+  {"file":"src/frontend/components/edit/editbox/EditboxChords.svelte","line":202,"name":"chord","kind":"VariableDeclaration","endLine":202},
+  {"file":"src/frontend/components/edit/editbox/EditboxChords.svelte","line":203,"name":"fromLine","kind":"VariableDeclaration","endLine":203},
+  {"file":"src/frontend/components/edit/editbox/EditboxChords.svelte","line":206,"name":"fromChords","kind":"VariableDeclaration","endLine":206},
+  {"file":"src/frontend/components/edit/editbox/EditboxChords.svelte","line":207,"name":"idx","kind":"VariableDeclaration","endLine":207},
+  {"file":"src/frontend/components/edit/editbox/EditboxChords.svelte","line":223,"name":"err","kind":"VariableDeclaration","endLine":223}
+]
