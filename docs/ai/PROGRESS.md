@@ -3,7 +3,7 @@
 Source base: `96078ca1fdd5d34864da9e793c9a48a984b00ce3` (`origin/upgrade/svelte-5`). Branch: `ai-map`; isolated worktree `/home/andre/FreeShow-ai-map`. Never push. Product source and companion guides remain untouched.
 
 - [x] Phase 1 — generated maps: 1,066 files; 560 components; 384 stores (270 central); 30 transport channels; 468 messages; 1,025 timing entries; 240 workaround comments. Zero parser errors. Compiler fixture tests pass.
-- [ ] Phase 2 — pure queries and CLI
+- [x] Phase 2 — pure query functions and read-only CLI; bounded plain-text results, `--all`, qualified duplicate store names, inclusive decision ranges; query tests pass.
 - [ ] Phase 3 — index, reference validation and freshness checks
 - [ ] Phase 4 — history with explicit motive/source confidence
 - [ ] Phase 5 — subsystem explanations and suspected bugs
