@@ -1,0 +1,8 @@
+[
+  {"target":"src/frontend/components/actions/actions.ts:2680","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/utils/stageTalk.ts:1202","via":"sendBackgroundToStage","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:23206","via":"getEffectFullscreenTypes","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:24040","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:24601","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:14840","via":"<callback>","reason":"six-level depth limit"}
+]

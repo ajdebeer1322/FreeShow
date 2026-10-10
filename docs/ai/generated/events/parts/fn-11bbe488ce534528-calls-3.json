@@ -1,0 +1,13 @@
+[
+  {"file":"src/frontend/converters/chordpro.ts","line":166,"expression":"line.replaceAll(\"[/]\", \" \").replaceAll","args":["\"[|]\"","\"\""],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/converters/chordpro.ts","line":166,"expression":"line.replaceAll","args":["\"[/]\"","\" \""],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/converters/chordpro.ts","line":167,"expression":"line.trim().startsWith","args":["\"{\""],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/converters/chordpro.ts","line":167,"expression":"line.trim","args":[],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/converters/chordpro.ts","line":167,"expression":"line.includes","args":["\":\""],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/converters/chordpro.ts","line":168,"expression":"line.split(\"\").forEach","args":["(char) => { if ((char === \"[\" || char === \"]\") && !isDirectiveLine) { isChord = char === \"[\" if (isChord) chords.push({ id: uid(5), pos: letterIndex, key: \"\" }) return } if (isChord) { chords[chords.length - 1].key += char return } text += char letterIndex++ }"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/converters/chordpro.ts","line":168,"expression":"line.split","args":["\"\""],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/converters/chordpro.ts","line":168,"expression":"<callback>","targets":["src/frontend/converters/chordpro.ts:7349"],"kind":"callback","reason":"callback may run later or conditionally"},
+  {"file":"src/frontend/converters/chordpro.ts","line":184,"expression":"text.replaceAll","args":["\"\\r\"","\"\""],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/converters/chordpro.ts","line":187,"expression":"slideItems.push","args":["{ lines: [], style: DEFAULT_ITEM_STYLE }"],"targets":[],"kind":"call","conditions":[{"file":"src/frontend/converters/chordpro.ts","line":187,"expression":"!slideItems.length","branch":"then"}],"terminal":"platform/read"},
+  {"file":"src/frontend/converters/chordpro.ts","line":188,"expression":"slideItems[slideItems.length - 1].lines!.push","args":["{ align: \"\", text: [{ value: text, style: \"\" }], chords }"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"}
+]

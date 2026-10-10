@@ -1,0 +1,13 @@
+[
+  {"target":"src/frontend/components/output/clear.ts:6333","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/utils/common.ts:1810","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/actions/actions.ts:2680","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/utils/common.ts:1844","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/timeline/easingHelper.ts:319","via":"getActionEasing","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/timeline/easingHelper.ts:2221","via":"sampleCurve","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/timeline/easingHelper.ts:2458","via":"sampleCurveDerivative","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/timeline/SlideTimeline.ts:4303","via":"this.updateStyle","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/media/video/videoPlayer.ts:24350","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioFading.ts:8003","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioFading.ts:8215","via":"fadeinAudio","reason":"six-level depth limit"}
+]

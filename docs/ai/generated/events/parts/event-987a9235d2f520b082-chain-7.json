@@ -1,0 +1,4 @@
+[
+  {"id":"src/frontend/components/helpers/history.ts:9415","name":"<callback>","file":"src/frontend/components/helpers/history.ts","line":219,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/select.ts:724","name":"deselect","file":"src/frontend/components/helpers/select.ts","line":22,"depth":4,"via":"deselect"}
+]

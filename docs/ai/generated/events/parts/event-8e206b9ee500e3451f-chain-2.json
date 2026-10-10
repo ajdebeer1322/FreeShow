@@ -1,0 +1,17 @@
+[
+  {"id":"src/frontend/components/helpers/clipboard.ts:47005","name":"<callback>","file":"src/frontend/components/helpers/clipboard.ts","line":1277,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/clipboard.ts:47048","name":"<callback>","file":"src/frontend/components/helpers/clipboard.ts","line":1279,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/clipboard.ts:47087","name":"<callback>","file":"src/frontend/components/helpers/clipboard.ts","line":1280,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/clipboard.ts:47367","name":"<callback>","file":"src/frontend/components/helpers/clipboard.ts","line":1285,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/audio/effects/audioEffectsHelpers.ts:10863","name":"duplicateEffectInStack","file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":254,"depth":1,"via":"duplicateEffectInStack"},
+  {"id":"src/frontend/audio/effects/audioEffectsHelpers.ts:3184","name":"updateStack","file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":63,"depth":2,"via":"updateStack"},
+  {"id":"src/frontend/audio/effects/audioEffectsHelpers.ts:2882","name":"getActiveChannelId","file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":55,"depth":3,"via":"getActiveChannelId"},
+  {"id":"src/frontend/audio/effects/audioEffectsHelpers.ts:3370","name":"<callback>","file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":65,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/audio/effects/audioEffectsHelpers.ts:11062","name":"<callback>","file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":257,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/audio/effects/audioEffectsHelpers.ts:11155","name":"<callback>","file":"src/frontend/audio/effects/audioEffectsHelpers.ts","line":258,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/context/menuClick.ts:85601","name":"updateEffectItem","file":"src/frontend/components/context/menuClick.ts","line":2226,"depth":1,"via":"updateEffectItem"},
+  {"id":"src/frontend/components/context/menuClick.ts:86052","name":"<callback>","file":"src/frontend/components/context/menuClick.ts","line":2234,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/context/menuClick.ts:19564","name":"<callback>","file":"src/frontend/components/context/menuClick.ts","line":468,"depth":1,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/array.ts:6534","name":"clone","file":"src/frontend/components/helpers/array.ts","line":181,"depth":2,"via":"clone"},
+  {"id":"src/frontend/components/context/menuClick.ts:20084","name":"<callback>","file":"src/frontend/components/context/menuClick.ts","line":480,"depth":1,"via":"<callback>"}
+]

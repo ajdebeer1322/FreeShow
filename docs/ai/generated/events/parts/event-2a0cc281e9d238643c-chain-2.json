@@ -1,0 +1,15 @@
+[
+  {"id":"src/frontend/ai/stt/stt.ts:8167","name":"stopCapture","file":"src/frontend/ai/stt/stt.ts","line":235,"depth":3,"via":"this.stopCapture"},
+  {"id":"src/frontend/ai/stt/stt.ts:8401","name":"<callback>","file":"src/frontend/ai/stt/stt.ts","line":241,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/ai/stt/stt.ts:8646","name":"<callback>","file":"src/frontend/ai/stt/stt.ts","line":249,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/ai/stt/stt.ts:8890","name":"<callback>","file":"src/frontend/ai/stt/stt.ts","line":258,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/ai/stt/stt.ts:7977","name":"emitAudioLevel","file":"src/frontend/ai/stt/stt.ts","line":229,"depth":4,"via":"this.emitAudioLevel"},
+  {"id":"src/frontend/ai/stt/stt.ts:8137","name":"<callback>","file":"src/frontend/ai/stt/stt.ts","line":232,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/ai/stt/stt.ts:1517","name":"restartEngine","file":"src/frontend/ai/stt/stt.ts","line":49,"depth":3,"via":"this.restartEngine"},
+  {"id":"src/frontend/ai/stt/stt.ts:236","name":"resolveSttEngine","file":"src/frontend/ai/stt/stt.ts","line":8,"depth":4,"via":"resolveSttEngine"},
+  {"id":"src/frontend/IPC/main.ts:761","name":"requestMain","file":"src/frontend/IPC/main.ts","line":19,"depth":4,"via":"requestMain"},
+  {"id":"src/frontend/IPC/main.ts:1178","name":"cleanup","file":"src/frontend/IPC/main.ts","line":28,"depth":5,"via":"cleanup"},
+  {"id":"src/frontend/IPC/main.ts:1476","name":"<callback>","file":"src/frontend/IPC/main.ts","line":36,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/IPC/main.ts:1520","name":"<callback>","file":"src/frontend/IPC/main.ts","line":37,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/IPC/main.ts:1801","name":"<callback>","file":"src/frontend/IPC/main.ts","line":48,"depth":6,"via":"<callback>"}
+]

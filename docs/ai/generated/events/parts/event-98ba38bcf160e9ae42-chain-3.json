@@ -1,0 +1,16 @@
+[
+  {"id":"src/frontend/ai/manager/AiManager.ts:9271","name":"addSuggestion","file":"src/frontend/ai/manager/AiManager.ts","line":241,"depth":4,"via":"this.addSuggestion"},
+  {"id":"src/frontend/ai/manager/AiManager.ts:8646","name":"setSmartAction","file":"src/frontend/ai/manager/AiManager.ts","line":224,"depth":5,"via":"this.setSmartAction"},
+  {"id":"src/frontend/ai/manager/AiManager.ts:9008","name":"<callback>","file":"src/frontend/ai/manager/AiManager.ts","line":233,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/ai/manager/AiManager.ts:9392","name":"<callback>","file":"src/frontend/ai/manager/AiManager.ts","line":244,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/ai/manager/AiManager.ts:9521","name":"<callback>","file":"src/frontend/ai/manager/AiManager.ts","line":248,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/ai/manager/AiManager.ts:9653","name":"<callback>","file":"src/frontend/ai/manager/AiManager.ts","line":251,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/ai/llm/llmManager.ts:813","name":"getLLMManager","file":"src/frontend/ai/llm/llmManager.ts","line":28,"depth":3,"via":"getLLMManager"},
+  {"id":"src/frontend/ai/llm/llmManager.ts:2439","name":"stop","file":"src/frontend/ai/llm/llmManager.ts","line":80,"depth":4,"via":"llmManager.stop"},
+  {"id":"src/frontend/ai/llm/llmManager.ts:2748","name":"detectMatch","file":"src/frontend/ai/llm/llmManager.ts","line":91,"depth":3,"via":"llmManager.detectMatch"},
+  {"id":"src/frontend/ai/llm/llmManager.ts:1542","name":"request","file":"src/frontend/ai/llm/llmManager.ts","line":53,"depth":4,"via":"this.request"},
+  {"id":"src/frontend/IPC/main.ts:761","name":"requestMain","file":"src/frontend/IPC/main.ts","line":19,"depth":5,"via":"requestMain"},
+  {"id":"src/frontend/IPC/main.ts:2279","name":"sendMain","file":"src/frontend/IPC/main.ts","line":68,"depth":6,"via":"sendMain"},
+  {"id":"src/frontend/IPC/main.ts:1178","name":"cleanup","file":"src/frontend/IPC/main.ts","line":28,"depth":6,"via":"cleanup"},
+  {"id":"src/frontend/IPC/main.ts:1476","name":"<callback>","file":"src/frontend/IPC/main.ts","line":36,"depth":6,"via":"<callback>"}
+]

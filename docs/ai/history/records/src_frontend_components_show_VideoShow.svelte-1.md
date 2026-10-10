@@ -68,7 +68,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c49202065eb31b67cb66d102806195d7039b62a5): “v1.2.5 (#756) * 📄 Option to not disable Hardware Acceleration - Updated languages - Unsplash UTM links - Fixed HTTP output media - More optimized .json cache storage - Fixed fade ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c49202065eb31b67cb66d102806195d7039b62a5): “v1.2.5 (#756) * 📄 Option to not disable Hardware Acceleration - Updated languages - Unsplash UTM links - Fixed HTTP output media - More optimized .json cache storage - Fixed fade”
 
 Later line edits: 0; latest c4920206. Full commit messages and lineage: JSON query data.
 
@@ -86,7 +86,7 @@ Code comment: “// timeout for loading, because if the video is not loaded in t
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c49202065eb31b67cb66d102806195d7039b62a5): “v1.2.5 (#756) * 📄 Option to not disable Hardware Acceleration - Updated languages - Unsplash UTM links - Fixed HTTP output media - More optimized .json cache storage - Fixed fade ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c49202065eb31b67cb66d102806195d7039b62a5): “v1.2.5 (#756) * 📄 Option to not disable Hardware Acceleration - Updated languages - Unsplash UTM links - Fixed HTTP output media - More optimized .json cache storage - Fixed fade”
 - [code] src/frontend/components/show/VideoShow.svelte:162: “// timeout for loading, because if the video is not loaded in time it will start playing, but that's fine”
 
 Later line edits: 0; latest c4920206. Full commit messages and lineage: JSON query data.

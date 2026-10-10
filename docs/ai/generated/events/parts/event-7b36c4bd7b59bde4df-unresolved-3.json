@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/drawer/calendar/event.ts","line":99,"expression":"endingDate.getTime","args":[],"targets":[],"kind":"call","conditions":[{"file":"src/frontend/components/drawer/calendar/event.ts","line":99,"expression":"currentFromDate.getTime() <= endingDate.getTime()","branch":"else/enclosing"},{"file":"src/frontend/components/drawer/calendar/event.ts","line":95,"expression":"data.ending === \"date\"","branch":"then"}],"reason":"unresolved receiver, alias, callback parameter or external implementation"}
+]

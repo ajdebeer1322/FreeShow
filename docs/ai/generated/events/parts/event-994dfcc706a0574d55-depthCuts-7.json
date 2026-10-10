@@ -1,0 +1,6 @@
+[
+  {"target":"src/frontend/components/actions/actions.ts:1477","via":"runAction","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/media.ts:14406","via":"getMediaLayerType","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/output/clear.ts:3232","via":"clearBackground","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:12279","via":"<callback>","reason":"six-level depth limit"}
+]

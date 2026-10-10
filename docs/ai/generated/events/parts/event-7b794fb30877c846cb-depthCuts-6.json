@@ -1,0 +1,13 @@
+[
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:16719","via":"this.routeOutputNodes","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:20762","via":"this.connectSpeakerSinks","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:22066","via":"this.routeInputNodes","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingInit.ts:637","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioInputCapture.ts:3630","via":"this.captureInput","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:25806","via":"AudioRoutingManager.getInstance().registerInputNode","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioInputCapture.ts:6324","via":"this.removeInput","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:7085","via":"this.applyGain","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/drawer/audio/metronome.ts:486","via":"getAudioContext","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/drawer/audio/metronome.ts:7362","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:26122","via":"AudioRoutingManager.getInstance().unregisterInputNode","reason":"six-level depth limit"}
+]

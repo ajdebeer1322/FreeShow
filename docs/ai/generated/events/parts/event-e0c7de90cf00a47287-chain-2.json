@@ -1,0 +1,21 @@
+[
+  {"id":"src/frontend/components/helpers/update.ts:195","name":"updateStore","file":"src/frontend/components/helpers/update.ts","line":10,"depth":3,"via":"updateStore"},
+  {"id":"src/frontend/components/helpers/array.ts:6534","name":"clone","file":"src/frontend/components/helpers/array.ts","line":181,"depth":4,"via":"clone"},
+  {"id":"src/frontend/components/helpers/update.ts:385","name":"<callback>","file":"src/frontend/components/helpers/update.ts","line":14,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/update.ts:666","name":"splitKeys","file":"src/frontend/components/helpers/update.ts","line":30,"depth":5,"via":"splitKeys"},
+  {"id":"src/frontend/components/helpers/array.ts:6534","name":"clone","file":"src/frontend/components/helpers/array.ts","line":181,"depth":1,"via":"clone"},
+  {"id":"src/frontend/components/edit/AudioTools.svelte:797","name":"getAudioDuration","file":"src/frontend/components/edit/AudioTools.svelte","line":19,"depth":1,"via":"getAudioDuration"},
+  {"id":"src/frontend/audio/audioPlayer.ts:18936","name":"getDuration","file":"src/frontend/audio/audioPlayer.ts","line":553,"depth":2,"via":"AudioPlayer.getDuration"},
+  {"id":"src/frontend/audio/audioPlayer.ts:1956","name":"getPath","file":"src/frontend/audio/audioPlayer.ts","line":53,"depth":3,"via":"AudioPlayer.getPath"},
+  {"id":"src/frontend/audio/audioPlayer.ts:23558","name":"loadAudioFile","file":"src/frontend/audio/audioPlayer.ts","line":682,"depth":3,"via":"loadAudioFile"},
+  {"id":"src/frontend/audio/audioPlayer.ts:23667","name":"<callback>","file":"src/frontend/audio/audioPlayer.ts","line":683,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/media.ts:3213","name":"encodeFilePath","file":"src/frontend/components/helpers/media.ts","line":74,"depth":5,"via":"encodeFilePath"},
+  {"id":"src/frontend/components/helpers/media.ts:2842","name":"isLocalFile","file":"src/frontend/components/helpers/media.ts","line":67,"depth":6,"via":"isLocalFile"},
+  {"id":"src/frontend/components/helpers/media.ts:2435","name":"splitPath","file":"src/frontend/components/helpers/media.ts","line":54,"depth":6,"via":"splitPath"},
+  {"id":"src/frontend/components/helpers/media.ts:3815","name":"<callback>","file":"src/frontend/components/helpers/media.ts","line":87,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/media.ts:2713","name":"joinPath","file":"src/frontend/components/helpers/media.ts","line":62,"depth":6,"via":"joinPath"},
+  {"id":"src/frontend/audio/audioPlayer.ts:23911","name":"loaded","file":"src/frontend/audio/audioPlayer.ts","line":690,"depth":5,"via":"loaded"},
+  {"id":"src/frontend/audio/audioPlayer.ts:24004","name":"error","file":"src/frontend/audio/audioPlayer.ts","line":694,"depth":5,"via":"error"},
+  {"id":"src/frontend/components/edit/values/boxes.ts:439","name":"setBoxInputValue","file":"src/frontend/components/edit/values/boxes.ts","line":13,"depth":2,"via":"setBoxInputValue"},
+  {"id":"src/frontend/components/edit/values/boxes.ts:870","name":"<callback>","file":"src/frontend/components/edit/values/boxes.ts","line":20,"depth":3,"via":"<callback>"}
+]

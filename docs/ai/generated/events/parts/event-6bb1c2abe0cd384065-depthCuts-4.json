@@ -1,0 +1,9 @@
+[
+  {"target":"src/frontend/components/timeline/TimelinePlayback.ts:16055","via":"this.checkMediaPause","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/timeline/timecode.ts:2356","via":"stopListeningLTC","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/timeline/TimelinePlayback.ts:8672","via":"this.stopLoop","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/timeline/TimelinePlayback.ts:27744","via":"this.stopListeners","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/timeline/TimelinePlayback.ts:27929","via":"this.runCallbacks","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/timeline/TimelinePlayback.ts:9367","via":"this.tick","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/timeline/TimelinePlayback.ts:8571","via":"this.next","reason":"six-level depth limit"}
+]

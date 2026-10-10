@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/audio/audioPlayer.ts","line":524,"endLine":524,"channel":"MAIN","keys":["NOW_PLAYING"],"role":"send","direction":"renderer → electron/other renderer","symbol":"nowPlaying","payload":"{ filePath: path, name, unknownLang, format, duration }","expression":"sendMain(Main.NOW_PLAYING, { filePath: path, name, unknownLang, format, duration })","dynamic":false,"kind":"ipc","depth":3,"via":"src/frontend/audio/audioPlayer.ts:17498"}
+]

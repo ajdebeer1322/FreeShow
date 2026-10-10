@@ -1,0 +1,7 @@
+[
+  {"id":"src/frontend/components/actions/actions.ts:8898","name":"getActionTriggerId","file":"src/frontend/components/actions/actions.ts","line":235,"depth":3,"via":"getActionTriggerId"},
+  {"id":"src/frontend/components/helpers/dropActions.ts:50834","name":"<callback>","file":"src/frontend/components/helpers/dropActions.ts","line":1181,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/actions.ts:8898","name":"getActionTriggerId","file":"src/frontend/components/actions/actions.ts","line":235,"depth":2,"via":"getActionTriggerId"},
+  {"id":"src/frontend/components/helpers/dropActions.ts:51693","name":"<callback>","file":"src/frontend/components/helpers/dropActions.ts","line":1197,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/actions.ts:6032","name":"isMatchingSlideAction","file":"src/frontend/components/actions/actions.ts","line":174,"depth":3,"via":"isMatchingSlideAction"}
+]

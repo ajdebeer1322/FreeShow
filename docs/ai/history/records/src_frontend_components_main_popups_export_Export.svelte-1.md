@@ -32,7 +32,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/27a85a5769aee9968abfe0381b961235d653ce33): “1.3.3 (#1117) * ✔️ Fixed playwright Linux fontconfig issue * ✔️ Fixed playwright Linux fontconfig issue * ✨ Get slide output thumbnail from API - Drop timer & variable on slide in ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/27a85a5769aee9968abfe0381b961235d653ce33): “1.3.3 (#1117) * ✔️ Fixed playwright Linux fontconfig issue * ✔️ Fixed playwright Linux fontconfig issue * ✨ Get slide output thumbnail from API - Drop timer & variable on slide in”
 
 Later line edits: 17; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 

@@ -1,0 +1,8 @@
+[
+  {"file":"src/electron/cloud/syncManager.test.ts","line":459,"expression":"expect","args":["fs.existsSync(path.join(scripturesDir, \"Bible-B.txt\"))"],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":459,"expression":"fs.existsSync","args":["path.join(scripturesDir, \"Bible-B.txt\")"],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":459,"expression":"path.join","args":["scripturesDir","\"Bible-B.txt\""],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":462,"expression":"fs.readdirSync","args":["showsDir"],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":463,"expression":"expect(localShows).toContain","args":["\"show-B.show\""],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":463,"expression":"expect","args":["localShows"],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"}
+]

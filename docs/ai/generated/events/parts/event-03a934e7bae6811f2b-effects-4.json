@@ -1,0 +1,5 @@
+[
+  {"file":"src/frontend/components/helpers/shows.ts","line":128,"store":"src/frontend/stores.ts#showsCache","kind":"store-write","symbol":"add","expression":"showsCache.update((a) => { if (!a[id]) return a if (!a[id].slides) a[id].slides = {} slideIds.forEach((slideId: string, i: number) => { a[id].slides[slideId] = slides![i] || slides","depth":4,"via":"src/frontend/components/helpers/shows.ts:4927"},
+  {"file":"src/frontend/components/helpers/shows.ts","line":144,"store":"src/frontend/stores.ts#showsCache","kind":"store-write","symbol":"remove","expression":"showsCache.update((a) => { if (!a[id]) return a if (!slideIds.length) slideIds = Object.keys(a[id].slides) slideIds.forEach((slideId) => { if (!a[id].slides) return slides.ids.push","depth":4,"via":"src/frontend/components/helpers/shows.ts:5500"},
+  {"file":"src/frontend/components/helpers/shows.ts","line":61,"store":"src/frontend/stores.ts#showsCache","kind":"store-write","symbol":"remove","expression":"showsCache.update((a) => { if (!a[id]) return a prev = a[id][key] delete a[id][key] touchShowModified(a[id]) return a })","depth":4,"via":"src/frontend/components/helpers/shows.ts:2321"}
+]

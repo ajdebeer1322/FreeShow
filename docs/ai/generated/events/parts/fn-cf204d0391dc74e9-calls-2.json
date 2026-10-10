@@ -1,0 +1,11 @@
+[
+  {"file":"src/frontend/components/edit/scripts/autoPosition.ts","line":154,"expression":"findPositionForSize","args":["s.w","s.h"],"targets":["src/frontend/components/edit/scripts/autoPosition.ts:6895"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/edit/scripts/autoPosition.ts","line":158,"expression":"findPositionForSize","args":["s.w","defaultH"],"targets":["src/frontend/components/edit/scripts/autoPosition.ts:6895"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/edit/scripts/autoPosition.ts","line":162,"expression":"findPositionForSize","args":["defaultW","s.h"],"targets":["src/frontend/components/edit/scripts/autoPosition.ts:6895"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/edit/scripts/autoPosition.ts","line":167,"expression":"Math.max","args":["margin","Math.floor((SLIDE_WIDTH - defaultW) / 2)"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/edit/scripts/autoPosition.ts","line":167,"expression":"Math.floor","args":["(SLIDE_WIDTH - defaultW) / 2"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/edit/scripts/autoPosition.ts","line":168,"expression":"Math.max","args":["margin","Math.floor((SLIDE_HEIGHT - defaultH) / 2)"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/edit/scripts/autoPosition.ts","line":168,"expression":"Math.floor","args":["(SLIDE_HEIGHT - defaultH) / 2"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/edit/scripts/autoPosition.ts","line":169,"expression":"overlaps","args":["centerX","centerY","defaultW","defaultH"],"targets":["src/frontend/components/edit/scripts/autoPosition.ts:1708"],"kind":"call","conditions":[{"file":"src/frontend/components/edit/scripts/autoPosition.ts","line":169,"expression":"!overlaps(centerX, centerY, defaultW, defaultH)","branch":"else/enclosing"}]},
+  {"file":"src/frontend/components/edit/scripts/autoPosition.ts","line":171,"expression":"findPositionForSize","args":["defaultW","defaultH"],"targets":["src/frontend/components/edit/scripts/autoPosition.ts:6895"],"kind":"call","conditions":[]}
+]

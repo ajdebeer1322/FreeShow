@@ -1,0 +1,10 @@
+[
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2333,"expression":"Math.min","args":["255","Math.round(b + (255 - b) * 0.48)"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2333,"expression":"Math.round","args":["b + (255 - b) * 0.48"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2334,"expression":"Math.min","args":["255","Math.round(r + (255 - r) * 0.7)"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2334,"expression":"Math.round","args":["r + (255 - r) * 0.7"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2334,"expression":"Math.min","args":["255","Math.round(g + (255 - g) * 0.7)"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2334,"expression":"Math.round","args":["g + (255 - g) * 0.7"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2334,"expression":"Math.min","args":["255","Math.round(b + (255 - b) * 0.7)"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/output/effects/effectRenderer.ts","line":2334,"expression":"Math.round","args":["b + (255 - b) * 0.7"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"}
+]

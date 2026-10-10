@@ -1,0 +1,8 @@
+[
+  {"id":"src/electron/blackmagic/BlackmagicSender.ts:20707","name":"getDimensionsForDisplayMode","file":"src/electron/blackmagic/BlackmagicSender.ts","line":448,"depth":3,"via":"this.getDimensionsForDisplayMode"},
+  {"id":"src/electron/blackmagic/BlackmagicSender.ts:18910","name":"getExpectedVideoFrameSize","file":"src/electron/blackmagic/BlackmagicSender.ts","line":403,"depth":3,"via":"this.getExpectedVideoFrameSize"},
+  {"id":"src/electron/blackmagic/BlackmagicSender.ts:18722","name":"getAccurateFrameRate","file":"src/electron/blackmagic/BlackmagicSender.ts","line":398,"depth":3,"via":"BlackmagicSender.getAccurateFrameRate"},
+  {"id":"src/electron/blackmagic/BlackmagicSender.ts:17260","name":"resolveFrameRates","file":"src/electron/blackmagic/BlackmagicSender.ts","line":373,"depth":4,"via":"this.resolveFrameRates"},
+  {"id":"src/electron/blackmagic/BlackmagicSender.ts:14243","name":"<callback>","file":"src/electron/blackmagic/BlackmagicSender.ts","line":303,"depth":3,"via":"<callback>"},
+  {"id":"src/electron/blackmagic/BlackmagicSender.ts:41975","name":"<callback>","file":"src/electron/blackmagic/BlackmagicSender.ts","line":840,"depth":1,"via":"<callback>"}
+]

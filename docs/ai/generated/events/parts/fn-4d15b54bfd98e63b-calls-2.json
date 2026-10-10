@@ -1,0 +1,9 @@
+[
+  {"file":"src/electron/cloud/syncManager.test.ts","line":990,"expression":"path.join","args":["showsDirA","\"scenario-6.show\""],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":990,"expression":"JSON.stringify","args":["[\"scen-6\", { name: \"Scen 6 Version A Modified\", slides: [], timestamps: { modified: 2000 } }]"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":993,"expression":"syncData","args":["{ id: \"churchApps\", churchId: \"test-church\", teamId: \"test-team\", method: \"merge\" }"],"targets":["src/electron/cloud/syncManager.ts:3421"],"kind":"call","conditions":[]},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":994,"expression":"fs.readFileSync","args":["path.join(showsDirA, \"scenario-6.show\")","\"utf8\""],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":994,"expression":"path.join","args":["showsDirA","\"scenario-6.show\""],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":995,"expression":"expect(content).toContain","args":["\"Scen 6 Version B\""],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":995,"expression":"expect","args":["content"],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"}
+]

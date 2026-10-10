@@ -1,0 +1,7 @@
+[
+  {"id":"src/frontend/components/helpers/shows.ts:35819","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":688,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:36561","name":"add","file":"src/frontend/components/helpers/shows.ts","line":706,"depth":5,"via":"add"},
+  {"id":"src/frontend/components/helpers/shows.ts:36665","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":708,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:37007","name":"remove","file":"src/frontend/components/helpers/shows.ts","line":720,"depth":5,"via":"remove"},
+  {"id":"src/frontend/components/helpers/shows.ts:37089","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":722,"depth":6,"via":"<callback>"}
+]

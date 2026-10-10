@@ -1,0 +1,10 @@
+[
+  {"id":"src/frontend/components/helpers/history.ts:1015","name":"isNoDataChange","file":"src/frontend/components/helpers/history.ts","line":26,"depth":2,"via":"isNoDataChange"},
+  {"id":"src/frontend/components/helpers/array.ts:9431","name":"areObjectsEqual","file":"src/frontend/components/helpers/array.ts","line":274,"depth":3,"via":"areObjectsEqual"},
+  {"id":"src/frontend/components/helpers/history.ts:9199","name":"<callback>","file":"src/frontend/components/helpers/history.ts","line":210,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/history.ts:9415","name":"<callback>","file":"src/frontend/components/helpers/history.ts","line":219,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/select.ts:724","name":"deselect","file":"src/frontend/components/helpers/select.ts","line":22,"depth":2,"via":"deselect"},
+  {"id":"src/frontend/components/main/popups/SelectStyle.svelte:1159","name":"select","file":"src/frontend/components/main/popups/SelectStyle.svelte","line":24,"depth":1,"via":"select"},
+  {"id":"src/frontend/components/main/popups/SelectStyle.svelte:1399","name":"<callback>","file":"src/frontend/components/main/popups/SelectStyle.svelte","line":33,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/main/popups/SelectStyle.svelte:1430","name":"<callback>","file":"src/frontend/components/main/popups/SelectStyle.svelte","line":34,"depth":3,"via":"<callback>"}
+]

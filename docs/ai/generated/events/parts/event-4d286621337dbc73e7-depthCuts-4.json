@@ -1,0 +1,5 @@
+[
+  {"target":"src/frontend/components/helpers/array.ts:9431","via":"areObjectsEqual","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/style.ts:592","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/edit/scripts/itemClipboard.ts:6992","via":"<callback>","reason":"six-level depth limit"}
+]

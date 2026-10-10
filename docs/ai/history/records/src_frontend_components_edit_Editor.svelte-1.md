@@ -28,7 +28,7 @@ Location: [src/frontend/components/edit/Editor.svelte:46](../../../../src/fronte
 
 Added/traced: [df5c41a5](https://github.com/ChurchApps/FreeShow/commit/df5c41a5335daaf9b0ca401cffa7f75092c9f221) on 2026-07-16; git log -S --follow (earliest exact-text occurrence in file lineage).
 
-Unresolved: local history identifies an addition/edit but gives no item-specific motive. Possible bundled commit bullet &#91;guess&#93;: “* Edit mode tabs”. Possible bundled commit bullet 
+Unresolved: local history identifies an addition/edit but gives no item-specific motive. Possible bundled commit bullet &#91;guess&#93;: “* Edit mode tabs”. Possible bundled commit bullet
 
 Sources:
 

@@ -32,7 +32,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/78bf809d4e1a3e44cbba5d2489d6e17dcc7c65c8): “1.5.1-beta.1 (#2238) * lnxarm wait longer * - Fixed video start time not working - Updated French language * Action tags are shown if multiple - Updated Chinese language - Removed ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/78bf809d4e1a3e44cbba5d2489d6e17dcc7c65c8): “1.5.1-beta.1 (#2238) * lnxarm wait longer * - Fixed video start time not working - Updated French language * Action tags are shown if multiple - Updated Chinese language - Removed”
 
 Later line edits: 5; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 

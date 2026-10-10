@@ -1,0 +1,21 @@
+[
+  {"target":"src/frontend/components/helpers/shows.ts:626","via":"_show","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:35306","via":"_show(slideOut.id).media().get","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:35228","via":"_show(slideOut.id).media","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/media.ts:27450","via":"downloadOnlineMedia","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:28658","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:1118","via":"_show(slideOut.id).get","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:28882","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:29166","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/OutputHelper.ts:5988","via":"OutputHelper.advanceOutput","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/media/video/videoPlayer.ts:14497","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/media/video/videoPlayer.ts:7965","via":"this.updateVolume","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/media/video/videoPlayer.ts:32877","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/media/video/videoPlayer.ts:33172","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/media/video/videoPlayer.ts:33211","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/media/video/videoPlayer.ts:24792","via":"this.getVolume","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/media/video/videoPlayer.ts:33764","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/media/video/videoPlayer.ts:34411","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/media/video/videoPlayer.ts:34669","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/media/video/videoPlayer.ts:34852","via":"<callback>","reason":"six-level depth limit"}
+]

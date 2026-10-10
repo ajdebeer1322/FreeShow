@@ -1,0 +1,9 @@
+[
+  {"id":"src/frontend/components/helpers/output.ts:15091","name":"saveActiveScenes","file":"src/frontend/components/helpers/output.ts","line":326,"depth":5,"via":"saveActiveScenes"},
+  {"id":"src/frontend/components/helpers/output.ts:15212","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":328,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/bible/scripture.ts:15476","name":"<callback>","file":"src/frontend/components/drawer/bible/scripture.ts","line":345,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/utils/analytics.ts:1816","name":"trackScriptureUsage","file":"src/frontend/utils/analytics.ts","line":64,"depth":3,"via":"trackScriptureUsage"},
+  {"id":"src/frontend/utils/analytics.ts:262","name":"trackEvent","file":"src/frontend/utils/analytics.ts","line":8,"depth":4,"via":"trackEvent"},
+  {"id":"src/frontend/components/helpers/media.ts:13571","name":"getMediaStyle","file":"src/frontend/components/helpers/media.ts","line":370,"depth":2,"via":"getMediaStyle"},
+  {"id":"src/frontend/components/helpers/media.ts:14285","name":"<callback>","file":"src/frontend/components/helpers/media.ts","line":395,"depth":3,"via":"<callback>"}
+]

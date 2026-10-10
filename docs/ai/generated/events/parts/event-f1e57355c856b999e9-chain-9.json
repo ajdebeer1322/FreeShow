@@ -1,0 +1,13 @@
+[
+  {"id":"src/frontend/components/helpers/showActions.ts:14410","name":"<callback>","file":"src/frontend/components/helpers/showActions.ts","line":348,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/showActions.ts:14690","name":"activateActions","file":"src/frontend/components/helpers/showActions.ts","line":358,"depth":6,"via":"activateActions"},
+  {"id":"src/frontend/components/helpers/timerTick.ts:2065","name":"stopTimers","file":"src/frontend/components/helpers/timerTick.ts","line":57,"depth":6,"via":"stopTimers"},
+  {"id":"src/frontend/audio/audioFading.ts:693","name":"clearAudio","file":"src/frontend/audio/audioFading.ts","line":22,"depth":6,"via":"clearAudio"},
+  {"id":"src/frontend/audio/audioPlayer.ts:2751","name":"start","file":"src/frontend/audio/audioPlayer.ts","line":81,"depth":6,"via":"AudioPlayer.start"},
+  {"id":"src/frontend/components/helpers/showActions.ts:23576","name":"changeOutputStyle","file":"src/frontend/components/helpers/showActions.ts","line":585,"depth":6,"via":"changeOutputStyle"},
+  {"id":"src/frontend/components/helpers/showActions.ts:29422","name":"playSlideTimers","file":"src/frontend/components/helpers/showActions.ts","line":731,"depth":6,"via":"playSlideTimers"},
+  {"id":"src/frontend/components/helpers/showActions.ts:20692","name":"<callback>","file":"src/frontend/components/helpers/showActions.ts","line":498,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/showActions.ts:22133","name":"playOutputStyleTemplateActions","file":"src/frontend/components/helpers/showActions.ts","line":543,"depth":6,"via":"playOutputStyleTemplateActions"},
+  {"id":"src/frontend/components/helpers/showActions.ts:20860","name":"nextSlideTimers","file":"src/frontend/components/helpers/showActions.ts","line":503,"depth":6,"via":"nextSlideTimers"},
+  {"id":"src/frontend/components/helpers/showActions.ts:26317","name":"<callback>","file":"src/frontend/components/helpers/showActions.ts","line":659,"depth":4,"via":"<callback>"}
+]

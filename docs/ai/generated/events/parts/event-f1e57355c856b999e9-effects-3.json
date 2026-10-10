@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/helpers/showActions.ts","line":511,"expression":"setOutput","args":["\"transition\"","{ duration }","false","outputId"],"targets":["src/frontend/components/helpers/output.ts:6608"],"kind":"presentation","conditions":[{"file":"src/frontend/components/helpers/showActions.ts","line":509,"expression":"(duration || 0) > 0","branch":"then"}],"depth":6,"via":"src/frontend/components/helpers/showActions.ts:20860"}
+]

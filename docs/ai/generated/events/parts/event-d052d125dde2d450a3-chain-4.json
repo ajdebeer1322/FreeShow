@@ -1,0 +1,17 @@
+[
+  {"id":"src/frontend/components/helpers/media.ts:14406","name":"getMediaLayerType","file":"src/frontend/components/helpers/media.ts","line":403,"depth":6,"via":"getMediaLayerType"},
+  {"id":"src/frontend/components/helpers/output.ts:12279","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":255,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/actions.ts:5342","name":"customActionActivation","file":"src/frontend/components/actions/actions.ts","line":157,"depth":5,"via":"customActionActivation"},
+  {"id":"src/frontend/components/actions/actions.ts:5497","name":"<callback>","file":"src/frontend/components/actions/actions.ts","line":159,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/common.ts:1175","name":"newToast","file":"src/frontend/utils/common.ts","line":26,"depth":6,"via":"newToast"},
+  {"id":"src/frontend/components/actions/actions.ts:5342","name":"customActionActivation","file":"src/frontend/components/actions/actions.ts","line":157,"depth":3,"via":"customActionActivation"},
+  {"id":"src/frontend/components/actions/actions.ts:5497","name":"<callback>","file":"src/frontend/components/actions/actions.ts","line":159,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/actions.ts:1477","name":"runAction","file":"src/frontend/components/actions/actions.ts","line":33,"depth":5,"via":"runAction"},
+  {"id":"src/frontend/components/actions/midi.ts:6001","name":"convertOldMidiToNewAction","file":"src/frontend/components/actions/midi.ts","line":153,"depth":6,"via":"convertOldMidiToNewAction"},
+  {"id":"src/frontend/components/actions/actions.ts:2191","name":"<callback>","file":"src/frontend/components/actions/actions.ts","line":49,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/actions.ts:2835","name":"runTrigger","file":"src/frontend/components/actions/actions.ts","line":74,"depth":6,"via":"runTrigger"},
+  {"id":"src/frontend/components/actions/actions.ts:2588","name":"<callback>","file":"src/frontend/components/actions/actions.ts","line":65,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/common.ts:1175","name":"newToast","file":"src/frontend/utils/common.ts","line":26,"depth":4,"via":"newToast"},
+  {"id":"src/frontend/components/helpers/array.ts:335","name":"removeDuplicates","file":"src/frontend/components/helpers/array.ts","line":10,"depth":5,"via":"removeDuplicates"},
+  {"id":"src/frontend/components/media/video/videoPlayer.ts:14948","name":"finish","file":"src/frontend/components/media/video/videoPlayer.ts","line":379,"depth":1,"via":"finish"}
+]

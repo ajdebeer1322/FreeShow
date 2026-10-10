@@ -47,7 +47,7 @@ Location: [src/electron/servers.ts:114](../../../../src/electron/servers.ts#L114
 
 Added/traced: [5da19dcf](https://github.com/ajdebeer1322/FreeShow/commit/5da19dcfbe7ca7a9576610c4b5dfd84d594ad5ed) on 2026-10-09; Explicit fork commit; source anchor is representative, not the full feature boundary.
 
-Fork decision: “Keep linked slides together when stepping, add a debug panel, stop the project view flashing Linked slides - A linked card shares one next slide timer and moves on 
+Fork decision: “Keep linked slides together when stepping, add a debug panel, stop the project view flashing Linked slides - A linked card shares one next slide timer and moves on
 
 Sources:
 

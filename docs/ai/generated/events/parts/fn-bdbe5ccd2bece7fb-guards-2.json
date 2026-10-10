@@ -1,0 +1,23 @@
+[
+  {"file":"src/electron/cloud/syncManager.ts","line":306,"expression":"data.method === \"replace\" || !MERGE_INDIVIDUAL.includes(id)","then":"{ const localPath = localStore.path // Prefer real edit time (fileModified) over file mtime. // mtime bumps on sync writes, which can falsely flag devices as newer. const cloudFile"},
+  {"file":"src/electron/cloud/syncManager.ts","line":316,"expression":"cloudIsNewer","then":"{ // try to set store directly first, otherwise move the file if (cloudFileData) { await safeStoreSet(localStore, cloudFileData, id) } else if (!(file as any).isTemp) { await moveF"},
+  {"file":"src/electron/cloud/syncManager.ts","line":318,"expression":"cloudFileData","then":"{ await safeStoreSet(localStore, cloudFileData, id) }"},
+  {"file":"src/electron/cloud/syncManager.ts","line":320,"expression":"!(file as any).isTemp","then":"{ await moveFileAsync(cloudPath, localPath) }"},
+  {"file":"src/electron/cloud/syncManager.ts","line":325,"expression":"cloudFileModified","then":"await setLocalFileModified(id, cloudFileModified)"},
+  {"file":"src/electron/cloud/syncManager.ts","line":331,"expression":"localFileModified","then":"{ // Local wins: carry real edit time into ledger for other devices. if (!CHANGES.fileModified) CHANGES.fileModified = {} CHANGES.fileModified[id] = Math.max(CHANGES.fileModified[i"},
+  {"file":"src/electron/cloud/syncManager.ts","line":333,"expression":"!CHANGES.fileModified","then":"CHANGES.fileModified = {}"},
+  {"file":"src/electron/cloud/syncManager.ts","line":342,"expression":"id === \"PROJECTS\"","then":"{ const fileData = cloudFileData as { projects: Projects; folders: Folders; projectTemplates?: Projects } // promises not needed here, but keeps the code consistent await Promise.a"},
+  {"file":"src/electron/cloud/syncManager.ts","line":348,"expression":"!localData[type]","then":"localData[type] = {}"},
+  {"file":"src/electron/cloud/syncManager.ts","line":352,"expression":"value.deleted","then":"{ // from old cloud sync delete localData[type][key] return }"},
+  {"file":"src/electron/cloud/syncManager.ts","line":362,"expression":"result.action === \"delete\"","then":"delete localData[type][key]"},
+  {"file":"src/electron/cloud/syncManager.ts","line":363,"expression":"result.action === \"create\" || result.action === \"download\"","then":"localData[type][key] = value"},
+  {"file":"src/electron/cloud/syncManager.ts","line":372,"expression":"result.action === \"delete\"","then":"delete localData[type][key]"},
+  {"file":"src/electron/cloud/syncManager.ts","line":376,"expression":"id === \"SYNCED_SETTINGS\"","then":"{ // Merge item-collections per-item via ledger: additions/deletions never overwrite the other // device's items (see #3335). Items present on both sides have no per-item \"modified"},
+  {"file":"src/electron/cloud/syncManager.ts","line":383,"expression":"!isCollection","then":"{ // atomic setting (e.g. drawSettings): keep newest-file-wins if (cloudFileIsNewer) localData[type] = object continue }"},
+  {"file":"src/electron/cloud/syncManager.ts","line":385,"expression":"cloudFileIsNewer","then":"localData[type] = object"},
+  {"file":"src/electron/cloud/syncManager.ts","line":389,"expression":"!localData[type] || typeof localData[type] !== \"object\"","then":"localData[type] = {}"},
+  {"file":"src/electron/cloud/syncManager.ts","line":399,"expression":"result.action === \"delete\"","then":"delete localData[key]"},
+  {"file":"src/electron/cloud/syncManager.ts","line":400,"expression":"result.action === \"create\" || result.action === \"download\"","then":"localData[key] = value"},
+  {"file":"src/electron/cloud/syncManager.ts","line":408,"expression":"result.action === \"delete\"","then":"delete localData[key]"},
+  {"file":"src/electron/cloud/syncManager.ts","line":414,"expression":"hasNoChange","then":"return"}
+]

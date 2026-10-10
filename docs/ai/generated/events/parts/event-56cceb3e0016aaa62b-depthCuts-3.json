@@ -1,0 +1,12 @@
+[
+  {"target":"src/electron/utils/helpers.ts:888","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/electron/blackmagic/BlackmagicManager.ts:814","via":"this.getDevices","reason":"six-level depth limit"},
+  {"target":"src/electron/blackmagic/BlackmagicManager.ts:1306","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/electron/blackmagic/BlackmagicSender.ts:3792","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/electron/blackmagic/BlackmagicSender.ts:4328","via":"this.initializeDevice","reason":"six-level depth limit"},
+  {"target":"src/electron/capture/CaptureHelper.ts:5873","via":"this.getWindowScreen","reason":"six-level depth limit"},
+  {"target":"src/electron/capture/StreamReceiverHost.ts:2176","via":"this.getWindow","reason":"six-level depth limit"},
+  {"target":"src/electron/capture/StreamReceiverHost.ts:3401","via":"drop","reason":"six-level depth limit"},
+  {"target":"src/electron/capture/StreamReceiverHost.ts:3767","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/electron/utils/files.ts:1108","via":"actionComplete","reason":"six-level depth limit"}
+]

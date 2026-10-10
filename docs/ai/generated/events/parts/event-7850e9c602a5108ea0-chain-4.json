@@ -1,0 +1,19 @@
+[
+  {"id":"src/frontend/audio/audioSender.ts:1454","name":"<callback>","file":"src/frontend/audio/audioSender.ts","line":34,"depth":6,"via":"(async () => { try { await ac.audioWorklet.addModule(\"./assets/pcm-worklet.js\") this.registeredContexts.add(ac) console.info(\"[AudioSender] AudioWorklet loaded\") return true } catch (err: any) { if (this.registeredContexts.has(ac)) return true if (err?.name !== \"AbortError\") { console.error(\"[AudioSender] Failed to load pcmWorklet module:\", err) } return false } finally { this.workletLoadingPromises.delete(ac) } })"},
+  {"id":"src/frontend/audio/audioSender.ts:2874","name":"updateProcessors","file":"src/frontend/audio/audioSender.ts","line":80,"depth":5,"via":"this.updateProcessors"},
+  {"id":"src/frontend/audio/audioSender.ts:9234","name":"getActiveTargets","file":"src/frontend/audio/audioSender.ts","line":240,"depth":6,"via":"this.getActiveTargets"},
+  {"id":"src/frontend/audio/audioSender.ts:10251","name":"removeTarget","file":"src/frontend/audio/audioSender.ts","line":270,"depth":6,"via":"this.removeTarget"},
+  {"id":"src/frontend/audio/audioSender.ts:4536","name":"createProcessor","file":"src/frontend/audio/audioSender.ts","line":127,"depth":6,"via":"this.createProcessor"},
+  {"id":"src/frontend/audio/audioSender.ts:765","name":"getSilentGain","file":"src/frontend/audio/audioSender.ts","line":16,"depth":6,"via":"this.getSilentGain"},
+  {"id":"src/frontend/audio/audioAnalyser.ts:1831","name":"getAudioContext","file":"src/frontend/audio/audioAnalyser.ts","line":35,"depth":4,"via":"this.getAudioContext"},
+  {"id":"src/frontend/audio/audioAnalyser.ts:1938","name":"<callback>","file":"src/frontend/audio/audioAnalyser.ts","line":36,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/audio/routing/audioRoutingManager.ts:3973","name":"setAudioContext","file":"src/frontend/audio/routing/audioRoutingManager.ts","line":116,"depth":5,"via":"AudioRoutingManager.getInstance().setAudioContext"},
+  {"id":"src/frontend/audio/routing/audioRoutingManager.ts:4365","name":"cleanup","file":"src/frontend/audio/routing/audioRoutingManager.ts","line":130,"depth":6,"via":"this.cleanup"},
+  {"id":"src/frontend/audio/routing/audioRoutingManager.ts:12229","name":"updateRoutingNodes","file":"src/frontend/audio/routing/audioRoutingManager.ts","line":350,"depth":6,"via":"this.updateRoutingNodes"},
+  {"id":"src/frontend/audio/routing/audioRoutingManager.ts:1877","name":"getInstance","file":"src/frontend/audio/routing/audioRoutingManager.ts","line":60,"depth":5,"via":"AudioRoutingManager.getInstance"},
+  {"id":"src/frontend/audio/routing/audioRoutingManager.ts:3038","name":"init","file":"src/frontend/audio/routing/audioRoutingManager.ts","line":87,"depth":6,"via":"AudioRoutingManager.instance.init"},
+  {"id":"src/frontend/audio/audioAnalyser.ts:17768","name":"<callback>","file":"src/frontend/audio/audioAnalyser.ts","line":461,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/audio/audioAnalyser.ts:17127","name":"getOrCreateDestinationNode","file":"src/frontend/audio/audioAnalyser.ts","line":448,"depth":5,"via":"this.getOrCreateDestinationNode"},
+  {"id":"src/frontend/audio/audioMultichannel.ts:3965","name":"createMultichannelGainNode","file":"src/frontend/audio/audioMultichannel.ts","line":101,"depth":6,"via":"AudioMultichannel.createMultichannelGainNode"},
+  {"id":"src/frontend/audio/routing/audioRoutingManager.ts:4149","name":"setDestinationNode","file":"src/frontend/audio/routing/audioRoutingManager.ts","line":124,"depth":6,"via":"AudioRoutingManager.getInstance().setDestinationNode"}
+]

@@ -14,7 +14,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/acb9d55790fadf72bf8f987fc72792c03dff07fc): “v1.2.1 (#689) * ✔ Fixed edit undo/redo on some devices - Fixed scripture content search - Dynamic value video time - Fixed freeze issues - Updated languages * ✔ Fixed metronome in ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/acb9d55790fadf72bf8f987fc72792c03dff07fc): “v1.2.1 (#689) * ✔ Fixed edit undo/redo on some devices - Fixed scripture content search - Dynamic value video time - Fixed freeze issues - Updated languages * ✔ Fixed metronome in”
 
 Later line edits: 0; latest acb9d557. Full commit messages and lineage: JSON query data.
 
@@ -32,7 +32,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/acb9d55790fadf72bf8f987fc72792c03dff07fc): “v1.2.1 (#689) * ✔ Fixed edit undo/redo on some devices - Fixed scripture content search - Dynamic value video time - Fixed freeze issues - Updated languages * ✔ Fixed metronome in ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/acb9d55790fadf72bf8f987fc72792c03dff07fc): “v1.2.1 (#689) * ✔ Fixed edit undo/redo on some devices - Fixed scripture content search - Dynamic value video time - Fixed freeze issues - Updated languages * ✔ Fixed metronome in”
 
 Later line edits: 0; latest acb9d557. Full commit messages and lineage: JSON query data.
 

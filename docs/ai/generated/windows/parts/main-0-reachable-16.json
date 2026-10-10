@@ -1,5 +1,4 @@
 [
-  "src/frontend/components/stage/StageTools.svelte",
   "src/frontend/components/stage/Stagebox.svelte",
   "src/frontend/components/stage/items/SlideNotes.svelte",
   "src/frontend/components/stage/items/SlideText.svelte",
@@ -38,5 +37,6 @@
   "src/frontend/converters/chordpro.ts",
   "src/frontend/converters/csv.ts",
   "src/frontend/converters/easyslides.ts",
-  "src/frontend/converters/easyworship.ts"
+  "src/frontend/converters/easyworship.ts",
+  "src/frontend/converters/imageShow.ts"
 ]

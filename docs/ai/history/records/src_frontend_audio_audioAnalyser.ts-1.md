@@ -28,7 +28,7 @@ Location: [src/frontend/audio/audioAnalyser.ts:13](../../../../src/frontend/audi
 
 Added/traced: [bbfe9807](https://github.com/ChurchApps/FreeShow/commit/bbfe98072aefe0c6311c5044e1ac63152f45a204) on 2026-08-07; git log -S --follow (earliest exact-text occurrence in file lineage).
 
-Unresolved: local history identifies an addition/edit but gives no item-specific motive. Possible bundled commit bullet &#91;guess&#93;: “* Desktop audio capture”. Possible bundled commit 
+Unresolved: local history identifies an addition/edit but gives no item-specific motive. Possible bundled commit bullet &#91;guess&#93;: “* Desktop audio capture”. Possible bundled commit
 
 Sources:
 
@@ -57,3 +57,21 @@ Sources:
 Later line edits: 0; latest 13879edf. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3786](https://github.com/ChurchApps/FreeShow/pull/3786) (read; no item-specific matching bullet); [pr #3786](https://github.com/ChurchApps/FreeShow/pull/3786) (read; no item-specific matching bullet)
+
+## D-fork-a22ec4a7fd8398e1
+
+[code] Use type-only imports for types in .ts files
+
+Location: [src/frontend/audio/audioAnalyser.ts:1](../../../../src/frontend/audio/audioAnalyser.ts#L1). Category: fork-feature; fork feature.
+
+Added/traced: [a22ec4a7](https://github.com/ajdebeer1322/FreeShow/commit/a22ec4a7fd8398e1f214ab270ce97b407d51e7e6) on 2026-10-10; Explicit fork commit; source anchor is representative, not the full feature boundary.
+
+Fork decision: “Use type-only imports for types in .ts files These imports only bring in types. Marking them keeps the files correct without relying on verbatimModuleSyntax being o
+
+Sources:
+
+- [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/a22ec4a7fd8398e1f214ab270ce97b407d51e7e6): “Use type-only imports for types in .ts files These imports only bring in types. Marking them keeps the files correct without relying on verbatimModuleSyntax being off. Co-Authored-”
+
+Later line edits: 0; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+
+GitHub: [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)

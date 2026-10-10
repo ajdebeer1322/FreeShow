@@ -1,0 +1,20 @@
+[
+  {"id":"src/frontend/components/helpers/debugState.ts:1231","name":"<callback>","file":"src/frontend/components/helpers/debugState.ts","line":19,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/debugState.ts:1269","name":"<callback>","file":"src/frontend/components/helpers/debugState.ts","line":20,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:4476","name":"getLinkedSlides","file":"src/frontend/components/helpers/output.ts","line":107,"depth":4,"via":"getLinkedSlides"},
+  {"id":"src/frontend/components/helpers/output.ts:4634","name":"outputIds","file":"src/frontend/components/helpers/output.ts","line":108,"depth":5,"via":"outputIds"},
+  {"id":"src/frontend/components/helpers/output.ts:3294","name":"resolveOutputIds","file":"src/frontend/components/helpers/output.ts","line":87,"depth":6,"via":"resolveOutputIds"},
+  {"id":"src/frontend/components/helpers/output.ts:4127","name":"getSlideBindings","file":"src/frontend/components/helpers/output.ts","line":100,"depth":6,"via":"getSlideBindings"},
+  {"id":"src/frontend/components/helpers/slideLinks.ts:1963","name":"getLinkGroup","file":"src/frontend/components/helpers/slideLinks.ts","line":41,"depth":5,"via":"getLinkGroup"},
+  {"id":"src/frontend/components/helpers/slideLinks.ts:511","name":"getSlideLinkGroups","file":"src/frontend/components/helpers/slideLinks.ts","line":10,"depth":6,"via":"getSlideLinkGroups"},
+  {"id":"src/frontend/components/helpers/slideLinks.ts:2165","name":"<callback>","file":"src/frontend/components/helpers/slideLinks.ts","line":42,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:4775","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":109,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/slideLinks.ts:1667","name":"haveDifferentOutputs","file":"src/frontend/components/helpers/slideLinks.ts","line":35,"depth":6,"via":"haveDifferentOutputs"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:6383","name":"describeSlide","file":"src/frontend/components/helpers/debugLog.ts","line":152,"depth":2,"via":"describeSlide"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:7731","name":"flattenedRef","file":"src/frontend/components/helpers/debugLog.ts","line":180,"depth":3,"via":"flattenedRef"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:4829","name":"formatDebugEntries","file":"src/frontend/components/helpers/debugLog.ts","line":113,"depth":1,"via":"formatDebugEntries"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:4635","name":"getAreaEntries","file":"src/frontend/components/helpers/debugLog.ts","line":109,"depth":1,"via":"getAreaEntries"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:4785","name":"<callback>","file":"src/frontend/components/helpers/debugLog.ts","line":110,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:4387","name":"getDebugArea","file":"src/frontend/components/helpers/debugLog.ts","line":104,"depth":3,"via":"getDebugArea"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:4565","name":"<callback>","file":"src/frontend/components/helpers/debugLog.ts","line":106,"depth":4,"via":"<callback>"}
+]

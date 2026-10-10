@@ -1,0 +1,20 @@
+[
+  {"id":"src/frontend/components/helpers/showActions.ts:41893","name":"getDynamicValueText","file":"src/frontend/components/helpers/showActions.ts","line":987,"depth":6,"via":"getDynamicValueText"},
+  {"id":"src/frontend/components/helpers/showActions.ts:41653","name":"replaceDynamicValueWithFallback","file":"src/frontend/components/helpers/showActions.ts","line":982,"depth":6,"via":"replaceDynamicValueWithFallback"},
+  {"id":"src/frontend/components/helpers/showActions.ts:31521","name":"dynamicValueText","file":"src/frontend/components/helpers/showActions.ts","line":780,"depth":5,"via":"dynamicValueText"},
+  {"id":"src/frontend/components/actions/actions.ts:5342","name":"customActionActivation","file":"src/frontend/components/actions/actions.ts","line":157,"depth":2,"via":"customActionActivation"},
+  {"id":"src/frontend/components/actions/actions.ts:5497","name":"<callback>","file":"src/frontend/components/actions/actions.ts","line":159,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/actions.ts:1477","name":"runAction","file":"src/frontend/components/actions/actions.ts","line":33,"depth":4,"via":"runAction"},
+  {"id":"src/frontend/components/actions/midi.ts:6001","name":"convertOldMidiToNewAction","file":"src/frontend/components/actions/midi.ts","line":153,"depth":5,"via":"convertOldMidiToNewAction"},
+  {"id":"src/frontend/components/helpers/array.ts:6534","name":"clone","file":"src/frontend/components/helpers/array.ts","line":181,"depth":6,"via":"clone"},
+  {"id":"src/frontend/components/actions/actions.ts:2191","name":"<callback>","file":"src/frontend/components/actions/actions.ts","line":49,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/actions.ts:2835","name":"runTrigger","file":"src/frontend/components/actions/actions.ts","line":74,"depth":5,"via":"runTrigger"},
+  {"id":"src/frontend/components/actions/actions.ts:8898","name":"getActionTriggerId","file":"src/frontend/components/actions/actions.ts","line":235,"depth":6,"via":"getActionTriggerId"},
+  {"id":"src/frontend/utils/common.ts:1752","name":"wait","file":"src/frontend/utils/common.ts","line":46,"depth":6,"via":"wait"},
+  {"id":"src/frontend/components/helpers/shows.ts:19320","name":"ref","file":"src/frontend/components/helpers/shows.ts","line":389,"depth":6,"via":"_show(showId) .layouts(outputRef?.layout ? [outputRef.layout] : \"active\") .ref"},
+  {"id":"src/frontend/components/actions/actions.ts:4195","name":"<callback>","file":"src/frontend/components/actions/actions.ts","line":110,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/actions.ts:2588","name":"<callback>","file":"src/frontend/components/actions/actions.ts","line":65,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/actions.ts:2626","name":"<callback>","file":"src/frontend/components/actions/actions.ts","line":66,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/common.ts:1175","name":"newToast","file":"src/frontend/utils/common.ts","line":26,"depth":3,"via":"newToast"},
+  {"id":"src/frontend/components/helpers/array.ts:335","name":"removeDuplicates","file":"src/frontend/components/helpers/array.ts","line":10,"depth":4,"via":"removeDuplicates"}
+]

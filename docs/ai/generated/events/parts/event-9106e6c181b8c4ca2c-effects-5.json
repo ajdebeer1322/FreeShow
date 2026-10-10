@@ -1,0 +1,5 @@
+[
+  {"file":"src/frontend/components/helpers/output.ts","line":1121,"endLine":1121,"channel":"OUTPUT","keys":["CREATE"],"role":"send","direction":"renderer → electron/other renderer","symbol":"addOutput","payload":"{ id, ...output[id] }","expression":"send(OUTPUT, [\"CREATE\"], { id, ...output[id] })","dynamic":false,"kind":"ipc","depth":6,"via":"src/frontend/components/helpers/output.ts:44791"},
+  {"file":"src/frontend/converters/importHelpers.ts","line":29,"expression":"history","args":["{ id: \"UPDATE\", newData: { data }, oldData: { id }, location: { page: \"drawer\", id: \"category_shows\" } }"],"targets":["src/frontend/components/helpers/history.ts:1696"],"kind":"history","conditions":[],"historyType":"UPDATE","depth":3,"via":"src/frontend/converters/importHelpers.ts:634"},
+  {"file":"src/frontend/converters/importHelpers.ts","line":32,"store":"src/frontend/stores.ts#activeRename","kind":"store-write","symbol":"createCategory","expression":"activeRename.set(null)","depth":4,"via":"src/frontend/converters/importHelpers.ts:1710"}
+]

@@ -1,0 +1,20 @@
+[
+  {"target":"src/frontend/components/media/video/videoPlayer.ts:16767","via":"this.stop","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:19133","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:11154","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:20606","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:23889","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:24184","via":"startOverlayTimer","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:25237","via":"clearOverlayTimer","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:25185","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:14781","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:15212","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioAnalyser.ts:11434","via":"this.getActiveAudio","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioAnalyser.ts:11639","via":"this.getActiveVideos","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioAnalyser.ts:12054","via":"this.sendOutputShowAudio","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioAnalyser.ts:15412","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:1877","via":"AudioRoutingManager.getInstance","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:26122","via":"manager.unregisterInputNode","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioSender.ts:2743","via":"AudioSender.deactivate","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioPlayer.ts:14886","via":"<callback>","reason":"six-level depth limit"}
+]

@@ -1,0 +1,18 @@
+[
+  {"target":"src/frontend/components/helpers/showActions.ts:24262","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:30184","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:30369","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:25802","via":"getAllEnabledOutputs","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:26238","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:24627","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:26157","via":"getAllNormalOutputs","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/drawer/timers/timers.ts:5990","via":"playPauseGlobal","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:21573","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:21858","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:22133","via":"playOutputStyleTemplateActions","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:22648","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/output/clear.ts:6149","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/output/clear.ts:6333","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:26826","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:26910","via":"<callback>","reason":"six-level depth limit"}
+]

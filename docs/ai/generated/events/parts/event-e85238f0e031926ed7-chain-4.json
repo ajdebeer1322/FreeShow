@@ -1,0 +1,5 @@
+[
+  {"id":"src/frontend/IPC/main.ts:2279","name":"sendMain","file":"src/frontend/IPC/main.ts","line":68,"depth":4,"via":"sendMain"},
+  {"id":"src/frontend/utils/common.ts:1175","name":"newToast","file":"src/frontend/utils/common.ts","line":26,"depth":1,"via":"newToast"},
+  {"id":"src/frontend/components/helpers/array.ts:335","name":"removeDuplicates","file":"src/frontend/components/helpers/array.ts","line":10,"depth":2,"via":"removeDuplicates"}
+]

@@ -1,0 +1,5 @@
+[
+  {"file":"src/electron/cloud/syncManager.ts","line":506,"expression":"stats.mtime.getTime","args":[],"targets":[],"kind":"call","conditions":[{"file":"src/electron/cloud/syncManager.ts","line":506,"expression":"stats && now - stats.mtime.getTime() < oneWeek","branch":"else/enclosing"}],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/utils/files.ts","line":82,"expression":"fs.rm","args":["filePath","{ recursive: true, force: true }","(err) => { if (err) actionComplete(err, \"Error when deleting folder\") resolve() }"],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/utils/files.ts","line":84,"expression":"resolve","args":[],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"}
+]

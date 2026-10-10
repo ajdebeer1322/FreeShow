@@ -1,0 +1,4 @@
+[
+  {"id":"src/frontend/components/drawer/live/recorder.ts:2689","name":"getRecordingFileName","file":"src/frontend/components/drawer/live/recorder.ts","line":74,"depth":5,"via":"getRecordingFileName"},
+  {"id":"src/frontend/IPC/main.ts:2279","name":"sendMain","file":"src/frontend/IPC/main.ts","line":68,"depth":5,"via":"sendMain"}
+]

@@ -1,0 +1,16 @@
+[
+  {"id":"src/frontend/utils/request.ts:141","name":"send","file":"src/frontend/utils/request.ts","line":4,"depth":4,"via":"send"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:10836","name":"debugSentToOutput","file":"src/frontend/components/helpers/debugLog.ts","line":252,"depth":5,"via":"debugSentToOutput"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:1154","name":"isOutputWindow","file":"src/frontend/components/helpers/debugLog.ts","line":31,"depth":6,"via":"isOutputWindow"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:10971","name":"<callback>","file":"src/frontend/components/helpers/debugLog.ts","line":254,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:1476","name":"debugLog","file":"src/frontend/components/helpers/debugLog.ts","line":41,"depth":6,"via":"debugLog"},
+  {"id":"src/frontend/utils/request.ts:295","name":"<callback>","file":"src/frontend/utils/request.ts","line":6,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:41942","name":"startRtmpStreaming","file":"src/frontend/components/helpers/output.ts","line":1023,"depth":1,"via":"startRtmpStreaming"},
+  {"id":"src/frontend/components/helpers/output.ts:42175","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":1026,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:40712","name":"stopStreaming","file":"src/frontend/components/helpers/output.ts","line":987,"depth":1,"via":"stopStreaming"},
+  {"id":"src/frontend/components/helpers/output.ts:41122","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":996,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:41181","name":"updateOutputWebrtcData","file":"src/frontend/components/helpers/output.ts","line":999,"depth":3,"via":"updateOutputWebrtcData"},
+  {"id":"src/frontend/components/helpers/output.ts:41576","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":1008,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:40424","name":"startStreaming","file":"src/frontend/components/helpers/output.ts","line":980,"depth":1,"via":"startStreaming"},
+  {"id":"src/frontend/components/helpers/output.ts:40654","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":984,"depth":2,"via":"<callback>"}
+]

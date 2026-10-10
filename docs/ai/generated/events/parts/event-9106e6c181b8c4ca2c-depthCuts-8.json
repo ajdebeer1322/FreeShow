@@ -1,0 +1,4 @@
+[
+  {"target":"src/frontend/components/drawer/bible/scripture.ts:47859","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/drawer/bible/scripture.ts:87824","via":"<callback>","reason":"six-level depth limit"}
+]

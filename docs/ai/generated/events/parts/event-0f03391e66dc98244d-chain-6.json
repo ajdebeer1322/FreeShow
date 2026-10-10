@@ -1,0 +1,21 @@
+[
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:8120","name":"<callback>","file":"src/frontend/components/helpers/OutputHelper.ts","line":148,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:8270","name":"<callback>","file":"src/frontend/components/helpers/OutputHelper.ts","line":153,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:9151","name":"<callback>","file":"src/frontend/components/helpers/OutputHelper.ts","line":166,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:9453","name":"playFirstSlide","file":"src/frontend/components/helpers/OutputHelper.ts","line":177,"depth":4,"via":"this.playFirstSlide"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:33923","name":"playSlide","file":"src/frontend/components/helpers/OutputHelper.ts","line":689,"depth":5,"via":"this.playSlide"},
+  {"id":"src/frontend/components/helpers/showActions.ts:8935","name":"checkActionTrigger","file":"src/frontend/components/helpers/showActions.ts","line":226,"depth":6,"via":"checkActionTrigger"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:34289","name":"<callback>","file":"src/frontend/components/helpers/OutputHelper.ts","line":698,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:34417","name":"<callback>","file":"src/frontend/components/helpers/OutputHelper.ts","line":701,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:9746","name":"playLastSlide","file":"src/frontend/components/helpers/OutputHelper.ts","line":187,"depth":4,"via":"this.playLastSlide"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:10054","name":"playPrevious","file":"src/frontend/components/helpers/OutputHelper.ts","line":197,"depth":4,"via":"this.playPrevious"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:10291","name":"play","file":"src/frontend/components/helpers/OutputHelper.ts","line":205,"depth":5,"via":"this.play"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:10795","name":"<callback>","file":"src/frontend/components/helpers/OutputHelper.ts","line":212,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:11073","name":"<callback>","file":"src/frontend/components/helpers/OutputHelper.ts","line":215,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:15770","name":"changeProjectItem","file":"src/frontend/components/helpers/OutputHelper.ts","line":305,"depth":6,"via":"this.changeProjectItem"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:15107","name":"quickChangeBack","file":"src/frontend/components/helpers/OutputHelper.ts","line":293,"depth":6,"via":"this.quickChangeBack"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:23273","name":"getItem","file":"src/frontend/components/helpers/OutputHelper.ts","line":453,"depth":6,"via":"this.getItem"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:14412","name":"toggleActiveMedia","file":"src/frontend/components/helpers/OutputHelper.ts","line":276,"depth":6,"via":"this.toggleActiveMedia"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:34700","name":"playItem","file":"src/frontend/components/helpers/OutputHelper.ts","line":711,"depth":6,"via":"this.playItem"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:10175","name":"playNext","file":"src/frontend/components/helpers/OutputHelper.ts","line":201,"depth":4,"via":"this.playNext"}
+]

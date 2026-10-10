@@ -1,0 +1,8 @@
+[
+  {"id":"src/frontend/components/helpers/array.ts:9431","name":"areObjectsEqual","file":"src/frontend/components/helpers/array.ts","line":274,"depth":3,"via":"areObjectsEqual"},
+  {"id":"src/frontend/components/helpers/history.ts:9199","name":"<callback>","file":"src/frontend/components/helpers/history.ts","line":210,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/history.ts:9415","name":"<callback>","file":"src/frontend/components/helpers/history.ts","line":219,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/select.ts:724","name":"deselect","file":"src/frontend/components/helpers/select.ts","line":22,"depth":2,"via":"deselect"},
+  {"id":"src/frontend/components/helpers/array.ts:6534","name":"clone","file":"src/frontend/components/helpers/array.ts","line":181,"depth":1,"via":"clone"},
+  {"id":"src/frontend/components/edit/editbox/EditboxLines.svelte:16007","name":"setNewLines","file":"src/frontend/components/edit/editbox/EditboxLines.svelte","line":365,"depth":1,"via":"setNewLines"}
+]

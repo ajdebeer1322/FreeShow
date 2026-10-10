@@ -1,0 +1,9 @@
+[
+  {"id":"src/frontend/components/drawer/pages/Shows.svelte:5356","name":"<callback>","file":"src/frontend/components/drawer/pages/Shows.svelte","line":126,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/pages/Shows.svelte:5395","name":"<callback>","file":"src/frontend/components/drawer/pages/Shows.svelte","line":127,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/pages/Shows.svelte:5050","name":"clearSearchSelection","file":"src/frontend/components/drawer/pages/Shows.svelte","line":115,"depth":2,"via":"clearSearchSelection"},
+  {"id":"src/frontend/components/drawer/pages/Shows.svelte:5162","name":"<callback>","file":"src/frontend/components/drawer/pages/Shows.svelte","line":117,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/pages/Shows.svelte:4184","name":"<callback>","file":"src/frontend/components/drawer/pages/Shows.svelte","line":93,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/pages/Shows.svelte:4742","name":"<callback>","file":"src/frontend/components/drawer/pages/Shows.svelte","line":106,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/array.ts:6534","name":"clone","file":"src/frontend/components/helpers/array.ts","line":181,"depth":2,"via":"clone"}
+]

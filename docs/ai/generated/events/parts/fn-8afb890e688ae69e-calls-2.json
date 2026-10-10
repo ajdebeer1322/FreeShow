@@ -1,0 +1,11 @@
+[
+  {"file":"src/frontend/components/helpers/output.ts","line":1544,"expression":"templateItems.filter","args":["(item) => !newSlideItems.find((a) => { const currentItem = clone(a) delete currentItem.align delete currentItem.auto delete currentItem.autoFontSize delete currentItem.fromTemplate return areObjectsEqual(currentItem, item) })"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/helpers/output.ts","line":1545,"expression":"<callback>","targets":["src/frontend/components/helpers/output.ts:62072"],"kind":"callback","reason":"callback may run later or conditionally"},
+  {"file":"src/frontend/components/helpers/output.ts","line":1558,"expression":"Object.values(sortedTemplateItems).reduce","args":["(value, items) => (value += items.length)","0"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/helpers/output.ts","line":1558,"expression":"Object.values","args":["sortedTemplateItems"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/helpers/output.ts","line":1558,"expression":"<callback>","targets":["src/frontend/components/helpers/output.ts:62560"],"kind":"callback","reason":"callback may run later or conditionally"},
+  {"file":"src/frontend/components/helpers/output.ts","line":1559,"expression":"templateItems.slice","args":["remainingCount * -1"],"targets":[],"kind":"call","conditions":[{"file":"src/frontend/components/helpers/output.ts","line":1559,"expression":"remainingCount","branch":"conditional"}],"terminal":"platform/read"},
+  {"file":"src/frontend/components/helpers/output.ts","line":1561,"expression":"remainingTemplateItems.map","args":["(a) => ({ ...a, fromTemplate: true })"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/helpers/output.ts","line":1561,"expression":"<callback>","targets":["src/frontend/components/helpers/output.ts:62785"],"kind":"callback","reason":"callback may run later or conditionally"},
+  {"file":"src/frontend/components/helpers/output.ts","line":1565,"expression":"replaceScriptureValues","args":["newSlideItems","originalTemplateItems","customDynamicValues"],"targets":["src/frontend/components/helpers/output.ts:63256"],"kind":"call","conditions":[]}
+]

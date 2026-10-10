@@ -1,0 +1,22 @@
+[
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":204,"expression":"!b","then":"return"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":206,"expression":"b.align","then":"item.align = b.align"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":207,"expression":"b.style","then":"item.style = b.style ;"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":210,"expression":"c?.align","then":"line.align = c?.align"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":214,"expression":"filteredText[0]?.style && line.text?.[0]","then":"{ line.text[0].style = filteredText[0].style // store style for new children if (i === 0 && j === 0) { slide.children?.forEach((id) => { parentItemAlign[id] = b.align || \"\" parentS"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":218,"expression":"i === 0 && j === 0","then":"{ slide.children?.forEach((id) => { parentItemAlign[id] = b.align || \"\" parentStyles[id] = filteredText[0].style parentAlign[id] = line.align }) }"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":231,"expression":"b[key]","then":"item[key] = b[key]"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":235,"expression":"show.slides?.[slideId] && itemIndex === 0","then":"{ // add back full old slide including its style // only if text content is the same ?? // skip when itemIndex > 0: the newly parsed items must be preserved slide = clone(show.slid"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":241,"expression":"parentStyles[slideId]","then":"{ // newly split and created slide // add same style as parent slide.items.forEach((item) => { item.align = parentItemAlign[slideId] item.lines?.forEach((line) => { line.align = pa"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":260,"expression":"!oldItems.length","then":"return"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":264,"expression":"newItems.length","then":"{ // let textboxItemIndex = getFirstNormalTextboxIndex(oldItems) const textboxItemIndexes = getTextboxesIndexes(oldItems) if (!textboxItemIndexes.length) { items = [...removeEmptyT"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":267,"expression":"!textboxItemIndexes.length","then":"{ items = [...removeEmptyTextboxes(oldItems).filter((a) => (a.type || \"text\") === \"text\"), ...newItems] }"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":269,"expression":"itemIndex > 0","then":"{ // when targeting a specific textbox itemIndex (the items are reversed) const sortedIndexes = textboxItemIndexes.sort((a, b) => a - b).reverse() const targetIndex = sortedIndexes"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":273,"expression":"targetIndex !== undefined","then":"{ items[targetIndex] = newItems[0] || clone(defaultItem) }"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":285,"expression":"newItems.length","then":"{ items = items.concat(newItems) // remove empty items items = items.filter((item) => (item.type || \"text\") !== \"text\" || getItemText(item).length) }"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":298,"expression":"!text && Object.keys(newSlides).length === 1","then":"{ const textItem = Object.values(newSlides)[0]?.items?.find((a) => (a.type || \"text\") === \"text\") if (textItem) { const fullOldSlideText = getItemText(textItem) if (!fullOldSlideTe"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":300,"expression":"textItem","then":"{ const fullOldSlideText = getItemText(textItem) if (!fullOldSlideText) { newSlides = {} show.layouts[layoutId].slides = [] } }"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":302,"expression":"!fullOldSlideText","then":"{ newSlides = {} show.layouts[layoutId].slides = [] }"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":313,"expression":"newSlides[id]","then":"newSlidesOrdered[id] = newSlides[id]"},
+  {"file":"src/frontend/components/show/formatTextEditor.ts","line":316,"expression":"!newSlidesOrdered[id] && newSlides[id]","then":"newSlidesOrdered[id] = newSlides[id]"}
+]

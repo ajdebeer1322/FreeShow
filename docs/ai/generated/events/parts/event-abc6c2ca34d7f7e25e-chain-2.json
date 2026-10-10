@@ -1,0 +1,16 @@
+[
+  {"id":"src/frontend/components/drawer/pages/OBS.svelte:7141","name":"handleInputListResponse","file":"src/frontend/components/drawer/pages/OBS.svelte","line":162,"depth":2,"via":"handleInputListResponse"},
+  {"id":"src/frontend/components/drawer/pages/OBS.svelte:7241","name":"<callback>","file":"src/frontend/components/drawer/pages/OBS.svelte","line":163,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/pages/OBS.svelte:7277","name":"<callback>","file":"src/frontend/components/drawer/pages/OBS.svelte","line":163,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/pages/OBS.svelte:7362","name":"<callback>","file":"src/frontend/components/drawer/pages/OBS.svelte","line":164,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/pages/OBS.svelte:7936","name":"<callback>","file":"src/frontend/components/drawer/pages/OBS.svelte","line":173,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/pages/OBS.svelte:8021","name":"<callback>","file":"src/frontend/components/drawer/pages/OBS.svelte","line":174,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/pages/OBS.svelte:8332","name":"handleInputMuteResponse","file":"src/frontend/components/drawer/pages/OBS.svelte","line":186,"depth":2,"via":"handleInputMuteResponse"},
+  {"id":"src/frontend/components/drawer/pages/OBS.svelte:8641","name":"<callback>","file":"src/frontend/components/drawer/pages/OBS.svelte","line":192,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/pages/OBS.svelte:8959","name":"<callback>","file":"src/frontend/components/drawer/pages/OBS.svelte","line":199,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/pages/OBS.svelte:4396","name":"<callback>","file":"src/frontend/components/drawer/pages/OBS.svelte","line":113,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/pages/OBS.svelte:5044","name":"<callback>","file":"src/frontend/components/drawer/pages/OBS.svelte","line":124,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/pages/OBS.svelte:5308","name":"<callback>","file":"src/frontend/components/drawer/pages/OBS.svelte","line":128,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/pages/OBS.svelte:5394","name":"<callback>","file":"src/frontend/components/drawer/pages/OBS.svelte","line":129,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/pages/OBS.svelte:5639","name":"<callback>","file":"src/frontend/components/drawer/pages/OBS.svelte","line":132,"depth":3,"via":"<callback>"}
+]

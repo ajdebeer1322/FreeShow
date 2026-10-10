@@ -1,0 +1,23 @@
+[
+  {"id":"src/frontend/components/context/menuClick.ts:49714","name":"<callback>","file":"src/frontend/components/context/menuClick.ts","line":1277,"depth":1,"via":"<callback>"},
+  {"id":"src/frontend/components/context/menuClick.ts:49825","name":"<callback>","file":"src/frontend/components/context/menuClick.ts","line":1279,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/context/menuClick.ts:50237","name":"<callback>","file":"src/frontend/components/context/menuClick.ts","line":1291,"depth":1,"via":"<callback>"},
+  {"id":"src/frontend/components/context/menuClick.ts:50284","name":"<callback>","file":"src/frontend/components/context/menuClick.ts","line":1292,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/midi.ts:539","name":"midiInListen","file":"src/frontend/components/actions/midi.ts","line":14,"depth":1,"via":"midiInListen"},
+  {"id":"src/frontend/components/actions/midi.ts:613","name":"<callback>","file":"src/frontend/components/actions/midi.ts","line":15,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/midi.ts:6001","name":"convertOldMidiToNewAction","file":"src/frontend/components/actions/midi.ts","line":153,"depth":3,"via":"convertOldMidiToNewAction"},
+  {"id":"src/frontend/components/helpers/array.ts:6534","name":"clone","file":"src/frontend/components/helpers/array.ts","line":181,"depth":4,"via":"clone"},
+  {"id":"src/frontend/IPC/main.ts:2279","name":"sendMain","file":"src/frontend/IPC/main.ts","line":68,"depth":3,"via":"sendMain"},
+  {"id":"src/frontend/components/actions/midi.ts:970","name":"<callback>","file":"src/frontend/components/actions/midi.ts","line":26,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/setShow.ts:7918","name":"loadShows","file":"src/frontend/components/helpers/setShow.ts","line":229,"depth":4,"via":"loadShows"},
+  {"id":"src/frontend/components/helpers/setShow.ts:8094","name":"<callback>","file":"src/frontend/components/helpers/setShow.ts","line":233,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/setShow.ts:8163","name":"<callback>","file":"src/frontend/components/helpers/setShow.ts","line":235,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/setShow.ts:6207","name":"loadSingleShow","file":"src/frontend/components/helpers/setShow.ts","line":175,"depth":6,"via":"loadSingleShow"},
+  {"id":"src/frontend/components/helpers/setShow.ts:8532","name":"<callback>","file":"src/frontend/components/helpers/setShow.ts","line":247,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:18572","name":"get","file":"src/frontend/components/helpers/shows.ts","line":375,"depth":4,"via":"_show(show.id).layouts().get"},
+  {"id":"src/frontend/components/helpers/shows.ts:18919","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":379,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/midi.ts:1278","name":"<callback>","file":"src/frontend/components/actions/midi.ts","line":34,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/midi.ts:1330","name":"<callback>","file":"src/frontend/components/actions/midi.ts","line":35,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/midi.ts:1520","name":"<callback>","file":"src/frontend/components/actions/midi.ts","line":39,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/midi.ts:1790","name":"<callback>","file":"src/frontend/components/actions/midi.ts","line":48,"depth":4,"via":"<callback>"}
+]

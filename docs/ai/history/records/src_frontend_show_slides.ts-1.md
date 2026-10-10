@@ -30,7 +30,7 @@ Location: [src/frontend/show/slides.ts:214](../../../../src/frontend/show/slides
 
 Added/traced: [80a0ddad](https://github.com/ChurchApps/FreeShow/commit/80a0ddad82eea290395d1886b404c9b917e8e272) on 2023-05-14; git log -S --follow (earliest exact-text occurrence in file lineage).
 
-Unresolved: local history identifies an addition/edit but gives no item-specific motive. Possible bundled commit bullet &#91;guess&#93;: “- Changing group on multiple slides will preserve 
+Unresolved: local history identifies an addition/edit but gives no item-specific motive. Possible bundled commit bullet &#91;guess&#93;: “- Changing group on multiple slides will preserve
 
 Sources:
 

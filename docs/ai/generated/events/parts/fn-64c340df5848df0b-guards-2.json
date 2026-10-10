@@ -1,0 +1,16 @@
+[
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":325,"expression":"show.private","then":"a[id].private = true"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":326,"expression":"a[id].private","then":"delete a[id].private"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":327,"expression":"show.locked","then":"a[id].locked = true"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":328,"expression":"a[id].locked","then":"delete a[id].locked"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":330,"expression":"newShow?.timestamps","then":"delete (newShow as any).timestamps.used"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":331,"expression":"initializing && !replace && oldShow && JSON.stringify(oldShow) !== JSON.stringify(newShow)","then":"duplicates.push(show.name)"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":337,"expression":"renamedIds.length","then":"{ const newRenamed = get(renamedShows).filter((a) => !renamedIds.includes(a.id)) const newRenamedList = keysToID(rename).map((a) => { const previous = get(renamedShows).find((r) =>"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":341,"expression":"!previous","then":"return a"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":347,"expression":"initializing && duplicates.length","then":"{ let text = \"Overwritten \" + duplicates.length + \" show\" if (duplicates.length > 1) text += \"s\" setTimeout(() => { alertMessage.set(text + \":<br>- \" + duplicates.join(\"<br>- \")) a"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":349,"expression":"duplicates.length > 1","then":"text += \"s\""},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":356,"expression":"!deleting && Object.keys(get(showsCache)).length >= 100","then":"{ if (initializing) save() setTimeout(() => { showsCache.set({}) activeShow.set(null) }, 2000) }"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":357,"expression":"initializing","then":"save()"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":364,"expression":"deleting && initializing && get(activeProject)","then":"{ const projectItems = get(projects)[get(activeProject)!]?.shows || [] let newShows = projectItems showsList.forEach(({ id }) => { newShows = newShows.filter((a) => a.id !== id) })"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":370,"expression":"showsList.length < projectItems.length","then":"{ history({ id: \"UPDATE\", newData: { key: \"shows\", data: newShows }, oldData: { id: get(activeProject) }, location: { page: \"show\", id: \"project_key\" } }) }"}
+]

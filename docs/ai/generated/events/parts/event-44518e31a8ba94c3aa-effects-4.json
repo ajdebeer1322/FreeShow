@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/main/popups/DeleteDuplicatedShows.svelte","line":119,"store":"src/frontend/stores.ts#activePopup","kind":"store-write","symbol":"close","expression":"activePopup.set(null)","depth":2,"via":"src/frontend/components/main/popups/DeleteDuplicatedShows.svelte:3415"}
+]

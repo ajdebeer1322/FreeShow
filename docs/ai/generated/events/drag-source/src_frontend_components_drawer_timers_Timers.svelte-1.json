@@ -1,0 +1,3 @@
+[
+  {"id":"event-8f619ec08c0bce3cae","file":"src/frontend/components/drawer/timers/Timers.svelte","line":123,"kind":"drag-source","handler":"draggable={!onlyPlaying}","conditions":[],"attributes":["id=\"global_timer\"","data={timer}","draggable={!onlyPlaying}","selectable={!onlyPlaying}"],"roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

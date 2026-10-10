@@ -1,0 +1,9 @@
+[
+  {"file":"src/frontend/components/helpers/slideTransfer.ts","line":271,"expression":"clone(targetSlides).slice","args":["layoutIndex"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/helpers/slideTransfer.ts","line":271,"expression":"clone","args":["targetSlides"],"targets":["src/frontend/components/helpers/array.ts:6534"],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/helpers/slideTransfer.ts","line":272,"expression":"clone","args":["show.slides"],"targets":["src/frontend/components/helpers/array.ts:6534"],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/helpers/slideTransfer.ts","line":273,"expression":"clone","args":["show.media || {}"],"targets":["src/frontend/components/helpers/array.ts:6534"],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/helpers/slideTransfer.ts","line":275,"expression":"history","args":["{ id: \"slide\", oldData: { layout: clone(targetSlides), slides, media }, newData: { layout: newLayout, slides, media }, location: { page: get(activePage) as HistoryPages, show: { id: showId }, layout: targetLayoutId } }"],"targets":["src/frontend/components/helpers/history.ts:1696"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/helpers/slideTransfer.ts","line":277,"expression":"clone","args":["targetSlides"],"targets":["src/frontend/components/helpers/array.ts:6534"],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/helpers/slideTransfer.ts","line":279,"expression":"get","args":["activePage"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"}
+]

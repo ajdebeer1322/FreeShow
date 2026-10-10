@@ -50,7 +50,7 @@ Fork decision: “Switch between Messages and show tools with icons in the right
 
 Sources:
 
-- [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/8f95ffa855b6282ac2d5dd870dbbd9d16ee73f9a): “Switch between Messages and show tools with icons in the right panel - Two icon buttons at the top of the lower right area show either Messages or the groups/metadata/media tools, ”
+- [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/8f95ffa855b6282ac2d5dd870dbbd9d16ee73f9a): “Switch between Messages and show tools with icons in the right panel - Two icon buttons at the top of the lower right area show either Messages or the groups/metadata/media tools,”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/8f95ffa855b6282ac2d5dd870dbbd9d16ee73f9a): “- Two icon buttons at the top of the lower right area show either Messages or the groups/metadata/media tools, instead of stacking them”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/8f95ffa855b6282ac2d5dd870dbbd9d16ee73f9a): “- Two icon buttons at the top of the lower right area show either Messages or the groups/metadata/media tools, instead of stacking them”
 

@@ -1,0 +1,11 @@
+[
+  {"id":"src/frontend/components/output/clear.ts:3627","name":"clearSlide","file":"src/frontend/components/output/clear.ts","line":100,"depth":6,"via":"clearSlide"},
+  {"id":"src/frontend/components/helpers/output.ts:20513","name":"changeOutputBackground","file":"src/frontend/components/helpers/output.ts","line":463,"depth":6,"via":"changeOutputBackground"},
+  {"id":"src/frontend/components/helpers/output.ts:23615","name":"clearDuplicateFullscreenEffects","file":"src/frontend/components/helpers/output.ts","line":550,"depth":6,"via":"clearDuplicateFullscreenEffects"},
+  {"id":"src/frontend/components/helpers/output.ts:13775","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":287,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:25084","name":"clearOverlayTimers","file":"src/frontend/components/helpers/output.ts","line":591,"depth":6,"via":"clearOverlayTimers"},
+  {"id":"src/frontend/components/helpers/output.ts:14654","name":"saveLockedOverlays","file":"src/frontend/components/helpers/output.ts","line":314,"depth":6,"via":"saveLockedOverlays"},
+  {"id":"src/frontend/components/helpers/output.ts:15091","name":"saveActiveScenes","file":"src/frontend/components/helpers/output.ts","line":326,"depth":6,"via":"saveActiveScenes"},
+  {"id":"src/frontend/components/actions/actions.ts:5342","name":"customActionActivation","file":"src/frontend/components/actions/actions.ts","line":157,"depth":4,"via":"customActionActivation"},
+  {"id":"src/frontend/components/actions/actions.ts:5497","name":"<callback>","file":"src/frontend/components/actions/actions.ts","line":159,"depth":5,"via":"<callback>"}
+]

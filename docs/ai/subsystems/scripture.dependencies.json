@@ -1,5 +1,5 @@
 {
-  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "sourceRevision": "379e268046d7de3344b6fa1e7809116a7ba01856",
   "files": [
     "src/frontend/components/drawer/bible/Scripture.svelte",
     "src/frontend/components/drawer/bible/scripture.ts",

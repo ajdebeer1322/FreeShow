@@ -1,0 +1,11 @@
+[
+  {"target":"src/frontend/audio/audioAnalyser.ts:8589","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioAnalyser.ts:8731","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioAnalyser.ts:13286","via":"this.updateChannelCount","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:12489","via":"this.executeRoutingUpdate","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:3113","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:3360","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:3802","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:3874","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioSidechain.ts:644","via":"AudioSidechain.getInstance","reason":"six-level depth limit"}
+]

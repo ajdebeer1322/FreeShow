@@ -1,0 +1,15 @@
+[
+  {"id":"src/frontend/components/helpers/debugLog.ts:1235","name":"outputWindowLabel","file":"src/frontend/components/helpers/debugLog.ts","line":35,"depth":5,"via":"outputWindowLabel"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:5901","name":"outputName","file":"src/frontend/components/helpers/debugLog.ts","line":137,"depth":6,"via":"outputName"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:2683","name":"stringify","file":"src/frontend/components/helpers/debugLog.ts","line":78,"depth":5,"via":"stringify"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:2082","name":"addDebugEntry","file":"src/frontend/components/helpers/debugLog.ts","line":55,"depth":5,"via":"addDebugEntry"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:2338","name":"<callback>","file":"src/frontend/components/helpers/debugLog.ts","line":62,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/request.ts:295","name":"<callback>","file":"src/frontend/utils/request.ts","line":6,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/show.ts:1675","name":"formatToFileName","file":"src/frontend/components/helpers/show.ts","line":33,"depth":2,"via":"formatToFileName"},
+  {"id":"src/frontend/components/export/project.ts:5666","name":"getItem","file":"src/frontend/components/export/project.ts","line":151,"depth":2,"via":"getItem"},
+  {"id":"src/frontend/components/export/project.ts:5930","name":"getFile","file":"src/frontend/components/export/project.ts","line":162,"depth":2,"via":"getFile"},
+  {"id":"src/frontend/components/export/project.ts:6037","name":"getOverlay","file":"src/frontend/components/export/project.ts","line":167,"depth":2,"via":"getOverlay"},
+  {"id":"src/frontend/components/export/project.ts:6285","name":"<callback>","file":"src/frontend/components/export/project.ts","line":173,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/export/project.ts:6420","name":"getEffect","file":"src/frontend/components/export/project.ts","line":180,"depth":2,"via":"getEffect"},
+  {"id":"src/frontend/components/export/project.ts:6576","name":"getAction","file":"src/frontend/components/export/project.ts","line":186,"depth":2,"via":"getAction"}
+]

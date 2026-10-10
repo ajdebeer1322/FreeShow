@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/output/preview/ClearButtons.svelte","line":133,"expression":"clearAll","args":["true"],"targets":["src/frontend/components/output/clear.ts:940"],"kind":"presentation","conditions":[]}
+]

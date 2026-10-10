@@ -14,7 +14,7 @@ Fork decision: “Copy instead of move when dragging song slides to another show
 
 Sources:
 
-- [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/b8784f3f034095ef9e4152124155be7e67c1f00a): “Copy instead of move when dragging song slides to another show Slides from a song always copy so its arrangements stay intact; shows without lyric text (images, media) still move. ”
+- [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/b8784f3f034095ef9e4152124155be7e67c1f00a): “Copy instead of move when dragging song slides to another show Slides from a song always copy so its arrangements stay intact; shows without lyric text (images, media) still move.”
 
 Later line edits: 0; latest b8784f3f. Full commit messages and lineage: JSON query data.
 

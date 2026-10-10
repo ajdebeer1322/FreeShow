@@ -1,0 +1,5 @@
+# menu/link_slides
+
+[code] Generated event and six-level may-call inventory.
+
+- [Entries 1–1](link_slides-part-1.md)

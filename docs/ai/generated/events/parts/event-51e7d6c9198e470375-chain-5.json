@@ -1,0 +1,6 @@
+[
+  {"id":"src/frontend/components/helpers/output.ts:12279","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":255,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/actions.ts:5342","name":"customActionActivation","file":"src/frontend/components/actions/actions.ts","line":157,"depth":5,"via":"customActionActivation"},
+  {"id":"src/frontend/components/actions/actions.ts:5497","name":"<callback>","file":"src/frontend/components/actions/actions.ts","line":159,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/common.ts:1175","name":"newToast","file":"src/frontend/utils/common.ts","line":26,"depth":6,"via":"newToast"}
+]

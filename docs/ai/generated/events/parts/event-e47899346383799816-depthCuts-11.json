@@ -1,0 +1,9 @@
+[
+  {"target":"src/frontend/components/helpers/media.ts:17355","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/IPC/main.ts:1520","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/IPC/main.ts:1801","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/setShow.ts:6780","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/setShow.ts:7315","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/converters/importHelpers.ts:8782","via":"fixShowIssues","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/setShow.ts:652","via":"setShow","reason":"six-level depth limit"}
+]

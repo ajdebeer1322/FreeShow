@@ -1,0 +1,13 @@
+# keyboard/src_frontend_components_main_popups_DynamicValues.svelte (1)
+
+## dynamic — event-f6db7afcb773396882
+
+[code] [src/frontend/components/main/popups/DynamicValues.svelte:255](../../../../../src/frontend/components/main/popups/DynamicValues.svelte#L255); triggerClickOnEnterSpace. partial.
+
+Conditions: src/frontend/components/main/popups/DynamicValues.svelte:245 Object.values(searchedValues)&#91;0&#93;?.length; src/frontend/utils/clickable.ts:2 event.target?.classList.contains("edit") \|\| (event.target as any)?.nodeName === "INPUT" \|\| (event.target as any)?.nodeName === "TEXTAREA"; src/frontend/utils/clickable.ts:4 event.key === "Enter" \|\| event.key === " "; src/frontend/utils/clickable.ts:5 event.key === " " && event.target?.closest(".slide").
+
+Calls: src/frontend/utils/clickable.ts:1 triggerClickOnEnterSpace (depth 0).
+
+Effects: no indexed terminal effect.
+
+no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 1; depth cutoffs: 0. Full edges/effects/conditions in JSON.

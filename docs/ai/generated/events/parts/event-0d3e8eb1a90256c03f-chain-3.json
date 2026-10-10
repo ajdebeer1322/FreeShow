@@ -1,0 +1,7 @@
+[
+  {"id":"src/frontend/components/helpers/debugLog.ts:10971","name":"<callback>","file":"src/frontend/components/helpers/debugLog.ts","line":254,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:1476","name":"debugLog","file":"src/frontend/components/helpers/debugLog.ts","line":41,"depth":6,"via":"debugLog"},
+  {"id":"src/frontend/utils/request.ts:295","name":"<callback>","file":"src/frontend/utils/request.ts","line":6,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:40424","name":"startStreaming","file":"src/frontend/components/helpers/output.ts","line":980,"depth":1,"via":"startStreaming"},
+  {"id":"src/frontend/components/helpers/output.ts:40654","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":984,"depth":2,"via":"<callback>"}
+]

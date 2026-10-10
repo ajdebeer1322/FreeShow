@@ -1,0 +1,5 @@
+[
+  {"id":"src/frontend/components/helpers/select.ts:724","name":"deselect","file":"src/frontend/components/helpers/select.ts","line":22,"depth":3,"via":"deselect"},
+  {"id":"src/frontend/components/main/popups/DeleteDuplicatedShows.svelte:3301","name":"close","file":"src/frontend/components/main/popups/DeleteDuplicatedShows.svelte","line":114,"depth":1,"via":"close"},
+  {"id":"src/frontend/components/main/popups/DeleteDuplicatedShows.svelte:3415","name":"<callback>","file":"src/frontend/components/main/popups/DeleteDuplicatedShows.svelte","line":118,"depth":2,"via":"<callback>"}
+]

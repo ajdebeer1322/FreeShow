@@ -1,0 +1,10 @@
+[
+  {"id":"src/frontend/components/drawer/calendar/event.ts:2821","name":"year","file":"src/frontend/components/drawer/calendar/event.ts","line":61,"depth":6,"via":"year"},
+  {"id":"src/frontend/components/drawer/calendar/event.ts:2962","name":"advanceDates","file":"src/frontend/components/drawer/calendar/event.ts","line":64,"depth":6,"via":"advanceDates"},
+  {"id":"src/frontend/components/drawer/calendar/event.ts:4092","name":"getISO","file":"src/frontend/components/drawer/calendar/event.ts","line":88,"depth":6,"via":"getISO"},
+  {"id":"src/frontend/components/drawer/calendar/event.ts:5408","name":"<callback>","file":"src/frontend/components/drawer/calendar/event.ts","line":128,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/history.ts:1696","name":"history","file":"src/frontend/components/helpers/history.ts","line":39,"depth":6,"via":"history"},
+  {"id":"src/frontend/components/helpers/array.ts:6534","name":"clone","file":"src/frontend/components/helpers/array.ts","line":181,"depth":5,"via":"clone"},
+  {"id":"src/frontend/utils/common.ts:1175","name":"newToast","file":"src/frontend/utils/common.ts","line":26,"depth":1,"via":"newToast"},
+  {"id":"src/frontend/components/helpers/array.ts:335","name":"removeDuplicates","file":"src/frontend/components/helpers/array.ts","line":10,"depth":2,"via":"removeDuplicates"}
+]

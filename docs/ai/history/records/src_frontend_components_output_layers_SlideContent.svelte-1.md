@@ -6,7 +6,7 @@ Evidence for the mapped source snapshot. [code] Provenance traces source text; [
 
 [guess] setInterval: isMic ? 100 : 300 (dynamic ms)
 
-Location: [src/frontend/components/output/layers/SlideContent.svelte:99](../../../../src/frontend/components/output/layers/SlideContent.svelte#L99). Category: timing.
+Location: [src/frontend/components/output/layers/SlideContent.svelte:102](../../../../src/frontend/components/output/layers/SlideContent.svelte#L102). Category: timing.
 
 Added/traced: [d6d4b4bf](https://github.com/ChurchApps/FreeShow/commit/d6d4b4bf026e58b44fabd0bbe37be90189656001) on 2025-09-11; git log -S --follow (earliest exact-text occurrence in file lineage).
 
@@ -20,11 +20,29 @@ Later line edits: 6; latest c9f83b17. Full commit messages and lineage: JSON que
 
 GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (read; no item-specific matching bullet); [pr #3450](https://github.com/ChurchApps/FreeShow/pull/3450) (read; no item-specific matching bullet)
 
+## D-timer-b042c8c4f6d462fd
+
+[guess] setTimeout: AUTO_SIZE_MAX_WAIT (500 ms)
+
+Location: [src/frontend/components/output/layers/SlideContent.svelte:229](../../../../src/frontend/components/output/layers/SlideContent.svelte#L229). Category: timing; fork feature.
+
+Added/traced: [379e2680](https://github.com/ajdebeer1322/FreeShow/commit/379e268046d7de3344b6fa1e7809116a7ba01856) on 2026-10-10; git log -S --follow (earliest exact-text occurrence in file lineage).
+
+Fork commit states: “End the auto size wait when the size is measured The output held the outgoing text for a fixed 500 ms and delayed the new text by 490 ms for every slide of an
+
+Sources:
+
+- [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/379e268046d7de3344b6fa1e7809116a7ba01856): “End the auto size wait when the size is measured The output held the outgoing text for a fixed 500 ms and delayed the new text by 490 ms for every slide of an output style or scrip”
+
+Later line edits: 0; latest 379e2680. Full commit messages and lineage: JSON query data.
+
+GitHub: No release/issue number in the traced commits.
+
 ## D-timer-cf6a381999a4c4c9
 
 [code] setTimeout: betweenClearingTransition.duration (dynamic ms)
 
-Location: [src/frontend/components/output/layers/SlideContent.svelte:229](../../../../src/frontend/components/output/layers/SlideContent.svelte#L229). Category: timing.
+Location: [src/frontend/components/output/layers/SlideContent.svelte:307](../../../../src/frontend/components/output/layers/SlideContent.svelte#L307). Category: timing.
 
 Added/traced: [f9161201](https://github.com/ChurchApps/FreeShow/commit/f9161201693820a1ff0bdf79f1c283df674de721) on 2026-02-25; git log -S --follow (earliest exact-text occurrence in file lineage).
 
@@ -33,7 +51,7 @@ Code comment: “// if changing quickly from text to empty to text again, the fi
 Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/f9161201693820a1ff0bdf79f1c283df674de721): “1.5.9-beta.1 (#2912) * Reverted timeout change * Fixed stage media not centered * Fixed stage icon not centered * PPT import enhancements - Custom image svg clip - Slide gradient c”
-- [code] src/frontend/components/output/layers/SlideContent.svelte:226: “// if changing quickly from text to empty to text again, the first text will be displayed again (due to Svelte transition bug)”
+- [code] src/frontend/components/output/layers/SlideContent.svelte:304: “// if changing quickly from text to empty to text again, the first text will be displayed again (due to Svelte transition bug)”
 
 Later line edits: 0; latest f9161201. Full commit messages and lineage: JSON query data.
 
@@ -43,7 +61,7 @@ GitHub: [pr #2912](https://github.com/ChurchApps/FreeShow/pull/2912) (read; no i
 
 [guess] poll-interval: 10 (10 ms)
 
-Location: [src/frontend/components/output/layers/SlideContent.svelte:234](../../../../src/frontend/components/output/layers/SlideContent.svelte#L234). Category: timing.
+Location: [src/frontend/components/output/layers/SlideContent.svelte:312](../../../../src/frontend/components/output/layers/SlideContent.svelte#L312). Category: timing.
 
 Added/traced: [f9161201](https://github.com/ChurchApps/FreeShow/commit/f9161201693820a1ff0bdf79f1c283df674de721) on 2026-02-25; git log -S --follow (earliest exact-text occurrence in file lineage).
 
@@ -61,7 +79,7 @@ GitHub: [pr #2912](https://github.com/ChurchApps/FreeShow/pull/2912) (read; no i
 
 [guess] poll-timeout: betweenClearingTransition.duration (dynamic ms)
 
-Location: [src/frontend/components/output/layers/SlideContent.svelte:234](../../../../src/frontend/components/output/layers/SlideContent.svelte#L234). Category: timing.
+Location: [src/frontend/components/output/layers/SlideContent.svelte:312](../../../../src/frontend/components/output/layers/SlideContent.svelte#L312). Category: timing.
 
 Added/traced: [f9161201](https://github.com/ChurchApps/FreeShow/commit/f9161201693820a1ff0bdf79f1c283df674de721) on 2026-02-25; git log -S --follow (earliest exact-text occurrence in file lineage).
 
@@ -79,7 +97,7 @@ GitHub: [pr #2912](https://github.com/ChurchApps/FreeShow/pull/2912) (read; no i
 
 [guess] delay-variable: currentTransitionDuration * ((currentTransition?.fadeInOffset ?? 50) / 100) (dynamic ms)
 
-Location: [src/frontend/components/output/layers/SlideContent.svelte:253](../../../../src/frontend/components/output/layers/SlideContent.svelte#L253). Category: timing.
+Location: [src/frontend/components/output/layers/SlideContent.svelte:331](../../../../src/frontend/components/output/layers/SlideContent.svelte#L331). Category: timing.
 
 Added/traced: [b5946b2d](https://github.com/ChurchApps/FreeShow/commit/b5946b2dafb6207a5372eec5f9943ce283e3a508) on 2026-02-11; git log -S --follow (earliest exact-text occurrence in file lineage).
 
@@ -93,30 +111,11 @@ Later line edits: 0; latest b5946b2d. Full commit messages and lineage: JSON que
 
 GitHub: [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet); [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet)
 
-## D-timer-8093f55a2dd3b53d
-
-[code] setTimeout: omitted (0 ms)
-
-Location: [src/frontend/components/output/layers/SlideContent.svelte:316](../../../../src/frontend/components/output/layers/SlideContent.svelte#L316). Category: timing.
-
-Added/traced: [c5a960bc](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b) on 2024-03-27; git log -L (earliest tracked source-line ancestor).
-
-Code comment: “// wait for between to update out transition”
-
-Sources:
-
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing ”
-- [code] src/frontend/components/output/layers/SlideContent.svelte:315: “// wait for between to update out transition”
-
-Later line edits: 3; latest 48650ae1. Full commit messages and lineage: JSON query data.
-
-GitHub: [pr #452](https://github.com/ChurchApps/FreeShow/pull/452) (read; no item-specific matching bullet); [pr #789](https://github.com/ChurchApps/FreeShow/pull/789) (read; no item-specific matching bullet)
-
 ## D-timer-5a0884eced6ca67c
 
 [code] setTimeout: omitted (0 ms)
 
-Location: [src/frontend/components/output/layers/SlideContent.svelte:322](../../../../src/frontend/components/output/layers/SlideContent.svelte#L322). Category: timing.
+Location: [src/frontend/components/output/layers/SlideContent.svelte:400](../../../../src/frontend/components/output/layers/SlideContent.svelte#L400). Category: timing.
 
 Added/traced: [c5a960bc](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b) on 2024-03-27; git log -L (earliest tracked source-line ancestor).
 
@@ -124,8 +123,8 @@ Code comment: “// wait for previous items to start fading out (svelte will kee
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing ”
-- [code] src/frontend/components/output/layers/SlideContent.svelte:321: “// wait for previous items to start fading out (svelte will keep them until the transition is done!)”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing”
+- [code] src/frontend/components/output/layers/SlideContent.svelte:399: “// wait for previous items to start fading out (svelte will keep them until the transition is done!)”
 
 Later line edits: 3; latest b3951afd. Full commit messages and lineage: JSON query data.
 
@@ -135,7 +134,7 @@ GitHub: [pr #452](https://github.com/ChurchApps/FreeShow/pull/452) (read; no ite
 
 [code] setTimeout: waitToShow (dynamic ms)
 
-Location: [src/frontend/components/output/layers/SlideContent.svelte:337](../../../../src/frontend/components/output/layers/SlideContent.svelte#L337). Category: timing.
+Location: [src/frontend/components/output/layers/SlideContent.svelte:415](../../../../src/frontend/components/output/layers/SlideContent.svelte#L415). Category: timing.
 
 Added/traced: [c5a960bc](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b) on 2024-03-27; git log -L (earliest tracked source-line ancestor).
 
@@ -143,8 +142,8 @@ Code comment: “// wait until half transition duration of previous items have p
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing ”
-- [code] src/frontend/components/output/layers/SlideContent.svelte:336: “// wait until half transition duration of previous items have passed as it looks better visually”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing”
+- [code] src/frontend/components/output/layers/SlideContent.svelte:414: “// wait until half transition duration of previous items have passed as it looks better visually”
 
 Later line edits: 4; latest 48650ae1. Full commit messages and lineage: JSON query data.
 
@@ -154,7 +153,7 @@ GitHub: [pr #452](https://github.com/ChurchApps/FreeShow/pull/452) (read; no ite
 
 [code] setTimeout: omitted (0 ms)
 
-Location: [src/frontend/components/output/layers/SlideContent.svelte:343](../../../../src/frontend/components/output/layers/SlideContent.svelte#L343). Category: timing.
+Location: [src/frontend/components/output/layers/SlideContent.svelte:421](../../../../src/frontend/components/output/layers/SlideContent.svelte#L421). Category: timing.
 
 Added/traced: [c5a960bc](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b) on 2024-03-27; git log -L (earliest tracked source-line ancestor).
 
@@ -162,18 +161,37 @@ Code comment: “// wait for between to set in transition”
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing ”
-- [code] src/frontend/components/output/layers/SlideContent.svelte:342: “// wait for between to set in transition”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing”
+- [code] src/frontend/components/output/layers/SlideContent.svelte:420: “// wait for between to set in transition”
 
 Later line edits: 4; latest 48650ae1. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #452](https://github.com/ChurchApps/FreeShow/pull/452) (read; no item-specific matching bullet); [pr #789](https://github.com/ChurchApps/FreeShow/pull/789) (read; no item-specific matching bullet)
 
+## D-timer-02741a0b4a6cecaf
+
+[code] setTimeout: omitted (0 ms)
+
+Location: [src/frontend/components/output/layers/SlideContent.svelte:430](../../../../src/frontend/components/output/layers/SlideContent.svelte#L430). Category: timing; fork feature.
+
+Added/traced: [379e2680](https://github.com/ajdebeer1322/FreeShow/commit/379e268046d7de3344b6fa1e7809116a7ba01856) on 2026-10-10; git log -L (earliest tracked source-line ancestor).
+
+Code comment: “// wait for between to update out transition”
+
+Sources:
+
+- [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/379e268046d7de3344b6fa1e7809116a7ba01856): “End the auto size wait when the size is measured The output held the outgoing text for a fixed 500 ms and delayed the new text by 490 ms for every slide of an output style or scrip”
+- [code] src/frontend/components/output/layers/SlideContent.svelte:429: “// wait for between to update out transition”
+
+Later line edits: 0; latest 379e2680. Full commit messages and lineage: JSON query data.
+
+GitHub: No release/issue number in the traced commits.
+
 ## D-timer-15659966c137e66b
 
 [guess] setTimeout: omitted (0 ms)
 
-Location: [src/frontend/components/output/layers/SlideContent.svelte:365](../../../../src/frontend/components/output/layers/SlideContent.svelte#L365). Category: timing.
+Location: [src/frontend/components/output/layers/SlideContent.svelte:450](../../../../src/frontend/components/output/layers/SlideContent.svelte#L450). Category: timing.
 
 Added/traced: [5c94f232](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055) on 2026-03-26; git log -S --follow (earliest exact-text occurrence in file lineage).
 
@@ -181,7 +199,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055): “1.6.0-beta.2 (#3090) * Updated languages * Better media item cropping #2856 * Corrected beta changelog #3015 * Item resize works better when rotated #2999 * Refactor chord parsing ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055): “1.6.0-beta.2 (#3090) * Updated languages * Better media item cropping #2856 * Corrected beta changelog #3015 * Item resize works better when rotated #2999 * Refactor chord parsing”
 
 Later line edits: 0; latest 5c94f232. Full commit messages and lineage: JSON query data.
 
@@ -191,7 +209,7 @@ GitHub: [pr #3090](https://github.com/ChurchApps/FreeShow/pull/3090) (read; no i
 
 [guess] setInterval: 15 (15 ms)
 
-Location: [src/frontend/components/output/layers/SlideContent.svelte:368](../../../../src/frontend/components/output/layers/SlideContent.svelte#L368). Category: timing.
+Location: [src/frontend/components/output/layers/SlideContent.svelte:453](../../../../src/frontend/components/output/layers/SlideContent.svelte#L453). Category: timing.
 
 Added/traced: [5c94f232](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055) on 2026-03-26; git log -S --follow (earliest exact-text occurrence in file lineage).
 
@@ -199,7 +217,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055): “1.6.0-beta.2 (#3090) * Updated languages * Better media item cropping #2856 * Corrected beta changelog #3015 * Item resize works better when rotated #2999 * Refactor chord parsing ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055): “1.6.0-beta.2 (#3090) * Updated languages * Better media item cropping #2856 * Corrected beta changelog #3015 * Item resize works better when rotated #2999 * Refactor chord parsing”
 
 Later line edits: 0; latest 5c94f232. Full commit messages and lineage: JSON query data.
 
@@ -209,7 +227,7 @@ GitHub: [pr #3090](https://github.com/ChurchApps/FreeShow/pull/3090) (read; no i
 
 [code] // if changing quickly from text to empty to text again, the first text will be displayed again (due to Svelte transition bug)
 
-Location: [src/frontend/components/output/layers/SlideContent.svelte:226](../../../../src/frontend/components/output/layers/SlideContent.svelte#L226). Category: workaround.
+Location: [src/frontend/components/output/layers/SlideContent.svelte:304](../../../../src/frontend/components/output/layers/SlideContent.svelte#L304). Category: workaround.
 
 Added/traced: [f9161201](https://github.com/ChurchApps/FreeShow/commit/f9161201693820a1ff0bdf79f1c283df674de721) on 2026-02-25; git log -S --follow (earliest exact-text occurrence in file lineage).
 
@@ -218,7 +236,7 @@ Code comment: “// if changing quickly from text to empty to text again, the fi
 Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/f9161201693820a1ff0bdf79f1c283df674de721): “1.5.9-beta.1 (#2912) * Reverted timeout change * Fixed stage media not centered * Fixed stage icon not centered * PPT import enhancements - Custom image svg clip - Slide gradient c”
-- [code] src/frontend/components/output/layers/SlideContent.svelte:226: “// if changing quickly from text to empty to text again, the first text will be displayed again (due to Svelte transition bug)”
+- [code] src/frontend/components/output/layers/SlideContent.svelte:304: “// if changing quickly from text to empty to text again, the first text will be displayed again (due to Svelte transition bug)”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/f9161201693820a1ff0bdf79f1c283df674de721): “* Fixed slide text being incorrect if changing to empty slide and to another slide while transitioning”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/f9161201693820a1ff0bdf79f1c283df674de721): “* Fixed slide text being incorrect if changing to empty slide and to another slide while transitioning”
 
@@ -230,7 +248,7 @@ GitHub: [pr #2912](https://github.com/ChurchApps/FreeShow/pull/2912) (read; no i
 
 [guess] // timelineItems = new Set<Item&#91;&#93;>() // WIP reset eventually?
 
-Location: [src/frontend/components/output/layers/SlideContent.svelte:364](../../../../src/frontend/components/output/layers/SlideContent.svelte#L364). Category: workaround.
+Location: [src/frontend/components/output/layers/SlideContent.svelte:449](../../../../src/frontend/components/output/layers/SlideContent.svelte#L449). Category: workaround.
 
 Added/traced: [5c94f232](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055) on 2026-03-26; git log -S --follow (earliest exact-text occurrence in file lineage).
 
@@ -238,7 +256,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055): “1.6.0-beta.2 (#3090) * Updated languages * Better media item cropping #2856 * Corrected beta changelog #3015 * Item resize works better when rotated #2999 * Refactor chord parsing ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055): “1.6.0-beta.2 (#3090) * Updated languages * Better media item cropping #2856 * Corrected beta changelog #3015 * Item resize works better when rotated #2999 * Refactor chord parsing”
 
 Later line edits: 0; latest 5c94f232. Full commit messages and lineage: JSON query data.
 
@@ -248,7 +266,7 @@ GitHub: [pr #3090](https://github.com/ChurchApps/FreeShow/pull/3090) (read; no i
 
 [guess] // WIP use actual slide timeline pos when available?
 
-Location: [src/frontend/components/output/layers/SlideContent.svelte:370](../../../../src/frontend/components/output/layers/SlideContent.svelte#L370). Category: workaround.
+Location: [src/frontend/components/output/layers/SlideContent.svelte:455](../../../../src/frontend/components/output/layers/SlideContent.svelte#L455). Category: workaround.
 
 Added/traced: [5c94f232](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055) on 2026-03-26; git log -S --follow (earliest exact-text occurrence in file lineage).
 
@@ -256,7 +274,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055): “1.6.0-beta.2 (#3090) * Updated languages * Better media item cropping #2856 * Corrected beta changelog #3015 * Item resize works better when rotated #2999 * Refactor chord parsing ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055): “1.6.0-beta.2 (#3090) * Updated languages * Better media item cropping #2856 * Corrected beta changelog #3015 * Item resize works better when rotated #2999 * Refactor chord parsing”
 
 Later line edits: 0; latest 5c94f232. Full commit messages and lineage: JSON query data.
 

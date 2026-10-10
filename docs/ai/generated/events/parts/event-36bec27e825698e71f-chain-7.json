@@ -1,0 +1,6 @@
+[
+  {"id":"src/frontend/components/helpers/history.ts:9199","name":"<callback>","file":"src/frontend/components/helpers/history.ts","line":210,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/history.ts:9415","name":"<callback>","file":"src/frontend/components/helpers/history.ts","line":219,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/select.ts:724","name":"deselect","file":"src/frontend/components/helpers/select.ts","line":22,"depth":4,"via":"deselect"},
+  {"id":"src/frontend/components/main/popups/localization/Translate.svelte:1488","name":"<callback>","file":"src/frontend/components/main/popups/localization/Translate.svelte","line":42,"depth":2,"via":"<callback>"}
+]

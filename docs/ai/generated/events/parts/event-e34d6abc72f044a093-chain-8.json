@@ -1,0 +1,6 @@
+[
+  {"id":"src/frontend/components/actions/actions.ts:2588","name":"<callback>","file":"src/frontend/components/actions/actions.ts","line":65,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/actions.ts:2626","name":"<callback>","file":"src/frontend/components/actions/actions.ts","line":66,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/common.ts:1175","name":"newToast","file":"src/frontend/utils/common.ts","line":26,"depth":3,"via":"newToast"},
+  {"id":"src/frontend/components/helpers/array.ts:335","name":"removeDuplicates","file":"src/frontend/components/helpers/array.ts","line":10,"depth":4,"via":"removeDuplicates"}
+]

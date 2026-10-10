@@ -1,0 +1,11 @@
+[
+  {"id":"src/frontend/ai/stt/stt.ts:8646","name":"<callback>","file":"src/frontend/ai/stt/stt.ts","line":249,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/ai/stt/stt.ts:8890","name":"<callback>","file":"src/frontend/ai/stt/stt.ts","line":258,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/ai/stt/stt.ts:7977","name":"emitAudioLevel","file":"src/frontend/ai/stt/stt.ts","line":229,"depth":5,"via":"this.emitAudioLevel"},
+  {"id":"src/frontend/ai/stt/stt.ts:8137","name":"<callback>","file":"src/frontend/ai/stt/stt.ts","line":232,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/ai/stt/stt.ts:1517","name":"restartEngine","file":"src/frontend/ai/stt/stt.ts","line":49,"depth":4,"via":"this.restartEngine"},
+  {"id":"src/frontend/ai/stt/stt.ts:236","name":"resolveSttEngine","file":"src/frontend/ai/stt/stt.ts","line":8,"depth":5,"via":"resolveSttEngine"},
+  {"id":"src/frontend/IPC/main.ts:761","name":"requestMain","file":"src/frontend/IPC/main.ts","line":19,"depth":5,"via":"requestMain"},
+  {"id":"src/frontend/IPC/main.ts:1178","name":"cleanup","file":"src/frontend/IPC/main.ts","line":28,"depth":6,"via":"cleanup"},
+  {"id":"src/frontend/IPC/main.ts:1476","name":"<callback>","file":"src/frontend/IPC/main.ts","line":36,"depth":6,"via":"<callback>"}
+]

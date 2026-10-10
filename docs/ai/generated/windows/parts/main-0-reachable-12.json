@@ -1,5 +1,4 @@
 [
-  "src/frontend/components/main/popups/Transition.svelte",
   "src/frontend/components/main/popups/Unsaved.svelte",
   "src/frontend/components/main/popups/Variable.svelte",
   "src/frontend/components/main/popups/createShow/CreateShow.svelte",
@@ -38,5 +37,6 @@
   "src/frontend/components/output/layers/MessageInstance.svelte",
   "src/frontend/components/output/layers/Messages.svelte",
   "src/frontend/components/output/layers/Overlay.svelte",
-  "src/frontend/components/output/layers/Overlays.svelte"
+  "src/frontend/components/output/layers/Overlays.svelte",
+  "src/frontend/components/output/layers/PdfOutput.svelte"
 ]

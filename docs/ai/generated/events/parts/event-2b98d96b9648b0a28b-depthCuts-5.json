@@ -1,0 +1,8 @@
+[
+  {"target":"src/frontend/components/helpers/shows.ts:26887","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:27667","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:29201","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:33599","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:27911","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:34225","via":"<callback>","reason":"six-level depth limit"}
+]

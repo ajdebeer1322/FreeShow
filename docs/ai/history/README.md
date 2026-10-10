@@ -1,6 +1,6 @@
 # Why and provenance
 
-1613 records: every 1158 timing entry and 311 workaround comment, plus 115 hotspot modules.
+1616 records: every 1159 timing entry and 311 workaround comment, plus 115 hotspot modules.
 
 16/311 workaround motives (5.1%) have an explicit causal code comment. Release-bullet candidates and generic fork commit messages do not count as item-specific sourced motives.
 
@@ -577,6 +577,7 @@ Run `node scripts/ai-map/history.mjs` to rebuild, then review guesses. Query wit
 - [src_frontend_components_slide_autosizeCache.ts-1.md](records/src_frontend_components_slide_autosizeCache.ts-1.md)
 - [src_frontend_utils_request.ts-1.md](records/src_frontend_utils_request.ts-1.md)
 - [src_frontend_components_context_contextMenus.ts-1.md](records/src_frontend_components_context_contextMenus.ts-1.md)
+- [src_frontend_components_helpers_output.ts-2.md](records/src_frontend_components_helpers_output.ts-2.md)
 - [src_electron_worshipTools_extract.ts-1.md](records/src_electron_worshipTools_extract.ts-1.md)
 - [src_frontend_components_show_tools_SlideGroups.svelte-1.md](records/src_frontend_components_show_tools_SlideGroups.svelte-1.md)
 - [src_electron_contentProviders_base_ContentProvider.ts-1.md](records/src_electron_contentProviders_base_ContentProvider.ts-1.md)

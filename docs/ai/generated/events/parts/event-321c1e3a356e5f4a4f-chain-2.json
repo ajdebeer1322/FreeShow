@@ -1,0 +1,16 @@
+[
+  {"id":"src/frontend/components/helpers/showActions.ts:33585","name":"<callback>","file":"src/frontend/components/helpers/showActions.ts","line":816,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/showActions.ts:33713","name":"<callback>","file":"src/frontend/components/helpers/showActions.ts","line":817,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/showActions.ts:33752","name":"<callback>","file":"src/frontend/components/helpers/showActions.ts","line":817,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/showActions.ts:33887","name":"<callback>","file":"src/frontend/components/helpers/showActions.ts","line":821,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/showActions.ts:33934","name":"<callback>","file":"src/frontend/components/helpers/showActions.ts","line":822,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/showActions.ts:34135","name":"<callback>","file":"src/frontend/components/helpers/showActions.ts","line":825,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/main/popups/DynamicValues.svelte:1828","name":"<callback>","file":"src/frontend/components/main/popups/DynamicValues.svelte","line":39,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/main/popups/DynamicValues.svelte:2420","name":"<callback>","file":"src/frontend/components/main/popups/DynamicValues.svelte","line":49,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/main/popups/DynamicValues.svelte:2471","name":"<callback>","file":"src/frontend/components/main/popups/DynamicValues.svelte","line":49,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/main/popups/DynamicValues.svelte:2531","name":"<callback>","file":"src/frontend/components/main/popups/DynamicValues.svelte","line":50,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/main/popups/DynamicValues.svelte:2585","name":"<callback>","file":"src/frontend/components/main/popups/DynamicValues.svelte","line":50,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/main/popups/DynamicValues.svelte:2993","name":"<callback>","file":"src/frontend/components/main/popups/DynamicValues.svelte","line":57,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/main/popups/DynamicValues.svelte:3052","name":"<callback>","file":"src/frontend/components/main/popups/DynamicValues.svelte","line":58,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/array.ts:6534","name":"clone","file":"src/frontend/components/helpers/array.ts","line":181,"depth":1,"via":"clone"}
+]

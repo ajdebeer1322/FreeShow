@@ -1,0 +1,11 @@
+[
+  {"file":"src/frontend/components/helpers/output.ts","line":1484,"expression":"(!text.value?.length || text.value?.includes(\"{\")) && templateItemHasDynamicValue && templateItem?.lines?.[j]","then":"{ text.value = templateText!.value }"},
+  {"file":"src/frontend/components/helpers/output.ts","line":1488,"expression":"!text.value?.[0]","then":"return"},
+  {"file":"src/frontend/components/helpers/output.ts","line":1491,"expression":"firstChar === \"•\" || firstChar === \"-\"","then":"{ if (text.value[0] === firstChar) return line.text[k].value = `${firstChar} ${text.value.trim()}` }"},
+  {"file":"src/frontend/components/helpers/output.ts","line":1492,"expression":"text.value[0] === firstChar","then":"return"},
+  {"file":"src/frontend/components/helpers/output.ts","line":1494,"expression":"addOverflowTemplateItems && (text.value[0] === \"•\" || text.value[0] === \"-\")","then":"{ // remove bullets line.text[k].value = text.value.replace(text.value[0], \"\").trim() }"},
+  {"file":"src/frontend/components/helpers/output.ts","line":1510,"expression":"addOverflowTemplateItems || hasScriptureDynamicValue","then":"{ const remainingTextTemplateItems = !templateClicked || hasScriptureDynamicValue ? sorted.text?.slice(slideTextboxes) || [] : sortedTemplateItems.text || [] if (hasScriptureDynami"},
+  {"file":"src/frontend/components/helpers/output.ts","line":1513,"expression":"hasScriptureDynamicValue","then":"{ remainingTextTemplateItems.forEach((item) => { // check if item has scripture value (and not {scripture_text}) const regex = /\\{scripture(?:\\d+)?_[^}]*\\}/g const text = getItemTe"},
+  {"file":"src/frontend/components/helpers/output.ts","line":1520,"expression":"!matches","then":"return false"},
+  {"file":"src/frontend/components/helpers/output.ts","line":1523,"expression":"isDecoration","then":"{ // prevent easy edit item.decoration = true }"}
+]

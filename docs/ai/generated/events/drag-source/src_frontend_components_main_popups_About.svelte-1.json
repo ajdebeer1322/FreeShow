@@ -1,0 +1,3 @@
+[
+  {"id":"event-43c281f9d9bda1a455","file":"src/frontend/components/main/popups/About.svelte","line":26,"kind":"drag-source","handler":"draggable={false}","conditions":[],"attributes":["style=\"height: 35px;\"","src=\"./import-logos/freeshow.webp\"","alt=\"FreeShow-logo\"","draggable={false}"],"roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

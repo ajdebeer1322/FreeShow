@@ -1,0 +1,22 @@
+[
+  {"file":"src/frontend/components/slide/Actions.svelte","line":153,"expression":"changeAction","args":["\"slide_shortcut\""],"targets":["src/frontend/components/slide/Actions.svelte:3680"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/Actions.svelte","line":167,"expression":"changeAction","args":["action.id"],"targets":["src/frontend/components/slide/Actions.svelte:3680"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/Actions.svelte","line":185,"expression":"deleteSlideAction","args":["e","action.id || actionId"],"targets":["src/frontend/components/slide/Actions.svelte:4110"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/Icons.svelte","line":115,"expression":"removeLayout","args":["\"disabled\""],"targets":["src/frontend/components/slide/Icons.svelte:2203"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/Icons.svelte","line":125,"expression":"resetTimer","args":[],"targets":["src/frontend/components/slide/Icons.svelte:2743"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/Icons.svelte","line":137,"expression":"removeLayout","args":["\"nextTimer\""],"targets":["src/frontend/components/slide/Icons.svelte:2203"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/Icons.svelte","line":148,"expression":"removeLayout","args":["\"end\""],"targets":["src/frontend/components/slide/Icons.svelte:2203"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/Icons.svelte","line":163,"expression":"removeLayout","args":["\"transition\""],"targets":["src/frontend/components/slide/Icons.svelte:2203"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/Icons.svelte","line":164,"expression":"removeLayout","args":["\"mediaTransition\""],"targets":["src/frontend/components/slide/Icons.svelte:2203"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/Icons.svelte","line":176,"expression":"removeLayout","args":["\"bindings\""],"targets":["src/frontend/components/slide/Icons.svelte:2203"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/Icons.svelte","line":191,"expression":"removeLayout","args":["\"background\""],"targets":["src/frontend/components/slide/Icons.svelte:2203"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/Icons.svelte","line":203,"expression":"mute","args":[],"targets":["src/frontend/components/slide/Icons.svelte:2381"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/Icons.svelte","line":212,"expression":"removeLoop","args":[],"targets":["src/frontend/components/slide/Icons.svelte:2559"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/Icons.svelte","line":221,"expression":"removeLayout","args":["\"mics\""],"targets":["src/frontend/components/slide/Icons.svelte:2203"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/Icons.svelte","line":235,"expression":"removeLayout","args":["\"audio\""],"targets":["src/frontend/components/slide/Icons.svelte:2203"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/Icons.svelte","line":259,"expression":"removeLayout","args":["\"effects\""],"targets":["src/frontend/components/slide/Icons.svelte:2203"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/Icons.svelte","line":271,"expression":"removeLayout","args":["\"overlays\""],"targets":["src/frontend/components/slide/Icons.svelte:2203"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/Icons.svelte","line":284,"expression":"removeSlideSetting","args":["\"template\""],"targets":["src/frontend/components/slide/Icons.svelte:2995"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/views/Website.svelte","line":205,"expression":"navigate","args":["true"],"targets":["src/frontend/components/slide/views/Website.svelte:4827"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/slide/views/Website.svelte","line":208,"expression":"navigate","args":["false"],"targets":["src/frontend/components/slide/views/Website.svelte:4827"],"kind":"call","conditions":[]}
+]

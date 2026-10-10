@@ -1,5 +1,4 @@
 [
-  "src/frontend/components/main/popups/ManageColors.svelte",
   "src/frontend/components/main/popups/ManageDynamicValues.svelte",
   "src/frontend/components/main/popups/ManageFonts.svelte",
   "src/frontend/components/main/popups/ManageGroups.svelte",
@@ -38,5 +37,6 @@
   "src/frontend/components/main/popups/TemplateStyleOverrides.svelte",
   "src/frontend/components/main/popups/Timecode.svelte",
   "src/frontend/components/main/popups/TimelineSettings.svelte",
-  "src/frontend/components/main/popups/Timer.svelte"
+  "src/frontend/components/main/popups/Timer.svelte",
+  "src/frontend/components/main/popups/Transition.svelte"
 ]

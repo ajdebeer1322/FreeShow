@@ -1,0 +1,15 @@
+[
+  {"id":"src/frontend/components/timeline/TimelinePlayback.ts:24885","name":"sendTimecode","file":"src/frontend/components/timeline/TimelinePlayback.ts","line":688,"depth":3,"via":"this.sendTimecode"},
+  {"id":"src/frontend/IPC/main.ts:2279","name":"sendMain","file":"src/frontend/IPC/main.ts","line":68,"depth":4,"via":"sendMain"},
+  {"id":"src/frontend/components/timeline/TimelinePlayback.ts:4492","name":"pause","file":"src/frontend/components/timeline/TimelinePlayback.ts","line":125,"depth":3,"via":"this.pause"},
+  {"id":"src/frontend/components/timeline/TimelinePlayback.ts:16055","name":"checkMediaPause","file":"src/frontend/components/timeline/TimelinePlayback.ts","line":472,"depth":4,"via":"this.checkMediaPause"},
+  {"id":"src/frontend/components/timeline/TimelinePlayback.ts:16637","name":"<callback>","file":"src/frontend/components/timeline/TimelinePlayback.ts","line":485,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/media/video/videoPlayer.ts:15915","name":"pause","file":"src/frontend/components/media/video/videoPlayer.ts","line":412,"depth":6,"via":"VideoPlayer.pause"},
+  {"id":"src/frontend/components/timeline/timecode.ts:2356","name":"stopListeningLTC","file":"src/frontend/components/timeline/timecode.ts","line":75,"depth":4,"via":"stopListeningLTC"},
+  {"id":"src/frontend/components/timeline/timecode.ts:2468","name":"<callback>","file":"src/frontend/components/timeline/timecode.ts","line":77,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/timeline/TimelinePlayback.ts:8672","name":"stopLoop","file":"src/frontend/components/timeline/TimelinePlayback.ts","line":269,"depth":4,"via":"this.stopLoop"},
+  {"id":"src/frontend/components/timeline/TimelinePlayback.ts:27744","name":"stopListeners","file":"src/frontend/components/timeline/TimelinePlayback.ts","line":756,"depth":4,"via":"this.stopListeners"},
+  {"id":"src/frontend/components/timeline/TimelinePlayback.ts:27929","name":"runCallbacks","file":"src/frontend/components/timeline/TimelinePlayback.ts","line":765,"depth":4,"via":"this.runCallbacks"},
+  {"id":"src/frontend/utils/common.ts:7776","name":"triggerFunction","file":"src/frontend/utils/common.ts","line":213,"depth":2,"via":"triggerFunction"},
+  {"id":"src/frontend/utils/common.ts:7942","name":"<callback>","file":"src/frontend/utils/common.ts","line":217,"depth":3,"via":"<callback>"}
+]

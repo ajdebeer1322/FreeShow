@@ -1,0 +1,9 @@
+[
+  {"file":"src/frontend/components/helpers/showActions.ts","line":1125,"expression":"dynamicId === \"output_windows_active\"","then":"{ return get(outputDisplay) ? \"true\" : \"false\" }"},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":1127,"expression":"dynamicId === \"outputs_locked\"","then":"{ return get(outLocked) ? \"true\" : \"false\" }"},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":1129,"expression":"dynamicId === \"stage_output_layout\"","then":"{ const stageOutputId = getAllStageOutputs()?.[0]?.stageOutput || \"\" const stageLayoutName = get(stageShows)[stageOutputId]?.name || \"\" return stageLayoutName }"},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":1133,"expression":"dynamicId === \"log_song_usage\"","then":"{ return get(special).logSongUsage ? \"true\" : \"false\" }"},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":1137,"expression":"scriptureDynamicValues[dynamicId]","then":"{ return scriptureDynamicValues[dynamicId]() || \"\" }"},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":1141,"expression":"!dynamicValues[dynamicId]","then":"return \"\""},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":1148,"expression":"sendToOutput.includes(dynamicId) && isMainWindow()","then":"{ send(OUTPUT, [\"DYNAMIC_VALUE_DATA\"], { audioTime, audioDuration }) }"}
+]

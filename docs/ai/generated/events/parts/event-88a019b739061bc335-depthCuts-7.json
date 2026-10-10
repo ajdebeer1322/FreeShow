@@ -1,0 +1,12 @@
+[
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:14918","via":"this.indexActiveNodesAndConnections","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:15974","via":"this.buildSubSpeakers","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:16719","via":"this.routeOutputNodes","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:20762","via":"this.connectSpeakerSinks","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingInit.ts:466","via":"deduplicateConnections","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioAnalyser.ts:17687","via":"AudioAnalyser.recorderActivate","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioInputCapture.ts:1567","via":"AudioInputCapture.getInstance().captureDesktopAudio","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioInputCapture.ts:3236","via":"AudioInputCapture.getInstance().stopDesktopAudio","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:9683","via":"this.updateAllGains","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioAnalyser.ts:14377","via":"this.applyProcessorProperty","reason":"six-level depth limit"}
+]

@@ -1,0 +1,3 @@
+[
+  {"id":"event-7e27c9f8df046b3674","file":"src/frontend/components/drawer/live/Cam.svelte","line":161,"kind":"drag-source","handler":"draggable","conditions":[],"attributes":["id=\"camera\"","data={{ id: cam.id, type: \"camera\", name: cam.name, cameraGroup: cam.group }}","draggable"],"roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

@@ -1,0 +1,3 @@
+[
+  {"id":"event-5876e0fde613148202","file":"src/electron/data/protected.ts","line":284,"kind":"automatic","handler":"() => decryptedCache.delete(id)","conditions":[],"eventName":"setTimeout","delay":"CACHE_TTL","origin":"<callback>","roots":["src/electron/data/protected.ts:10318"],"calls":[],"effects":[],"unresolved":[],"chain":[{"id":"src/electron/data/protected.ts:10318","name":"<callback>","file":"src/electron/data/protected.ts","line":284,"depth":0,"via":"event"}],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

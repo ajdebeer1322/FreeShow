@@ -1,0 +1,17 @@
+[
+  {"target":"src/frontend/components/helpers/shows.ts:5667","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:6528","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:7685","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:10032","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:10772","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:11622","via":"get","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:12909","via":"set","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:16025","via":"add","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:17003","via":"remove","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:36040","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:37310","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/array.ts:335","via":"removeDuplicates","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:3493","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:1118","via":"_show(showId).get","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/slideLinks.ts:1827","via":"<callback>","reason":"six-level depth limit"}
+]

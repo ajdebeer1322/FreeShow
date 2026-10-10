@@ -1,0 +1,4 @@
+[
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":219,"expression":"index !== undefined && Array.isArray(keyData[id][key])","then":"{ if (index === -1) keyData[id][key].push(newValue) else keyData[id][key].splice(index, 0, newValue) return keyData }"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":220,"expression":"index === -1","then":"keyData[id][key].push(newValue)"}
+]

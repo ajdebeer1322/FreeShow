@@ -1,0 +1,22 @@
+[
+  {"id":"src/frontend/components/helpers/output.ts:23206","name":"getEffectFullscreenTypes","file":"src/frontend/components/helpers/output.ts","line":544,"depth":6,"via":"getEffectFullscreenTypes"},
+  {"id":"src/frontend/components/helpers/output.ts:24040","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":557,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:25237","name":"clearOverlayTimer","file":"src/frontend/components/helpers/output.ts","line":595,"depth":6,"via":"clearOverlayTimer"},
+  {"id":"src/frontend/components/helpers/output.ts:13775","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":287,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:24184","name":"startOverlayTimer","file":"src/frontend/components/helpers/output.ts","line":565,"depth":5,"via":"startOverlayTimer"},
+  {"id":"src/frontend/components/helpers/output.ts:24601","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":572,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:25237","name":"clearOverlayTimer","file":"src/frontend/components/helpers/output.ts","line":595,"depth":5,"via":"clearOverlayTimer"},
+  {"id":"src/frontend/components/helpers/output.ts:25335","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":596,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:25084","name":"clearOverlayTimers","file":"src/frontend/components/helpers/output.ts","line":591,"depth":4,"via":"clearOverlayTimers"},
+  {"id":"src/frontend/components/helpers/output.ts:25185","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":592,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:14654","name":"saveLockedOverlays","file":"src/frontend/components/helpers/output.ts","line":314,"depth":4,"via":"saveLockedOverlays"},
+  {"id":"src/frontend/components/helpers/output.ts:14781","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":316,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:14840","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":317,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:15091","name":"saveActiveScenes","file":"src/frontend/components/helpers/output.ts","line":326,"depth":4,"via":"saveActiveScenes"},
+  {"id":"src/frontend/components/helpers/output.ts:15212","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":328,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/bible/scripture.ts:15476","name":"<callback>","file":"src/frontend/components/drawer/bible/scripture.ts","line":345,"depth":1,"via":"<callback>"},
+  {"id":"src/frontend/utils/analytics.ts:1816","name":"trackScriptureUsage","file":"src/frontend/utils/analytics.ts","line":64,"depth":2,"via":"trackScriptureUsage"},
+  {"id":"src/frontend/utils/analytics.ts:262","name":"trackEvent","file":"src/frontend/utils/analytics.ts","line":8,"depth":3,"via":"trackEvent"},
+  {"id":"src/frontend/components/helpers/media.ts:13571","name":"getMediaStyle","file":"src/frontend/components/helpers/media.ts","line":370,"depth":1,"via":"getMediaStyle"},
+  {"id":"src/frontend/components/helpers/media.ts:14285","name":"<callback>","file":"src/frontend/components/helpers/media.ts","line":395,"depth":2,"via":"<callback>"}
+]

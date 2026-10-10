@@ -1,0 +1,21 @@
+[
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1329,"expression":"!disableReference && bibleIndex + 1 >= biblesContent.length","then":"{ const remainder = onlyOne ? currentVerseNumbers.length : currentVerseNumbers.length % get(scriptureSettings).versesPerSlide let range: any[] = currentVerseNumbers.slice(currentVe"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1332,"expression":"get(scriptureSettings).splitReference === false || get(scriptureSettings).firstSlideReference","then":"range = currentVerseNumbers"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1334,"expression":"combineWithText","then":"indexes = [...Array(biblesContent.length)].map((_, i) => i)"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1338,"expression":"selectedChapters.length === 1","then":"return selectedChapters[0]"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1341,"expression":"chapterMatch","then":"return Number(chapterMatch[1])"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1345,"expression":"remainder","then":"indexes.forEach((i) => addMeta(clone(get(scriptureSettings)), joinRange(range), currentChapterNumber, { slideIndex, itemIndex: i }))"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1352,"expression":"templateTextItems[j]?.bindings","then":"slides[i][j].bindings = templateTextItems[j].bindings"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1355,"expression":"!templateTextItems[j]?.auto || !slides[i][j].lines?.[0]?.text","then":"return"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1358,"expression":"templateTextItems[j]?.textFit","then":"slides[i][j].textFit = templateTextItems[j]?.textFit"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1370,"expression":"get(scriptureSettings).invertItems","then":"slides[i].reverse()"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1376,"expression":"!biblesContent[0]","then":"return"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1390,"expression":"biblesContent.find((a) => a?.attributionRequired)","then":"{ showVersion = true if (!customText.includes(textKeys.showVersion)) customText += textKeys.showVersion }"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1392,"expression":"!customText.includes(textKeys.showVersion)","then":"customText += textKeys.showVersion"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1397,"expression":"!showVersion && !showVerse","then":"return"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1402,"expression":"!line.trim()","then":"return"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1406,"expression":"lines.length","then":"{ // add reference to the main text if just one item or it's enabled! if (combineWithText) { if (!slides[slideIndex][itemIndex]) slides[slideIndex][itemIndex] = { lines: [], style:"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1408,"expression":"combineWithText","then":"{ if (!slides[slideIndex][itemIndex]) slides[slideIndex][itemIndex] = { lines: [], style: \"\" } if (get(scriptureSettings).referenceAtBottom && slides[slideIndex][itemIndex].lines) "},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1409,"expression":"!slides[slideIndex][itemIndex]","then":"slides[slideIndex][itemIndex] = { lines: [], style: \"\" }"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1410,"expression":"get(scriptureSettings).referenceAtBottom && slides[slideIndex][itemIndex].lines","then":"slides[slideIndex][itemIndex].lines!.push(...lines)"}
+]

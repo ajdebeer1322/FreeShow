@@ -1,0 +1,11 @@
+[
+  {"target":"src/frontend/components/helpers/shows.ts:33599","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:20199","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:20884","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:3837","via":"_show().slides([layoutSlide.id]).set","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:2623","via":"_show().slides","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:21546","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/edit/scripts/textStyle.ts:11218","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:27911","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:34225","via":"<callback>","reason":"six-level depth limit"}
+]

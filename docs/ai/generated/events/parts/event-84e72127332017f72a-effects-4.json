@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/helpers/select.ts","line":23,"store":"src/frontend/stores.ts#selected","kind":"store-write","symbol":"deselect","expression":"selected.set({ id: null, data: [] })","depth":3,"via":"src/frontend/components/helpers/select.ts:724"}
+]

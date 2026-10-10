@@ -1,0 +1,16 @@
+[
+  {"id":"src/frontend/media/cameraManager.ts:8419","name":"<callback>","file":"src/frontend/media/cameraManager.ts","line":242,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/media/cameraManager.ts:8530","name":"<callback>","file":"src/frontend/media/cameraManager.ts","line":247,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/media/cameraManager.ts:5318","name":"play","file":"src/frontend/media/cameraManager.ts","line":151,"depth":2,"via":"this.play"},
+  {"id":"src/frontend/media/cameraManager.ts:5451","name":"<callback>","file":"src/frontend/media/cameraManager.ts","line":153,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/media/cameraManager.ts:7489","name":"<callback>","file":"src/frontend/media/cameraManager.ts","line":215,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/media/cameraManager.ts:5648","name":"setupPreview","file":"src/frontend/media/cameraManager.ts","line":163,"depth":2,"via":"this.setupPreview"},
+  {"id":"src/frontend/media/cameraManager.ts:5865","name":"pauseVideo","file":"src/frontend/media/cameraManager.ts","line":167,"depth":3,"via":"pauseVideo"},
+  {"id":"src/frontend/media/cameraManager.ts:5908","name":"<callback>","file":"src/frontend/media/cameraManager.ts","line":168,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/media/cameraManager.ts:5472","name":"pause","file":"src/frontend/media/cameraManager.ts","line":156,"depth":5,"via":"this.pause"},
+  {"id":"src/frontend/media/cameraManager.ts:6246","name":"<callback>","file":"src/frontend/media/cameraManager.ts","line":177,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/media/cameraManager.ts:6339","name":"<callback>","file":"src/frontend/media/cameraManager.ts","line":179,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/media/cameraManager.ts:6405","name":"<callback>","file":"src/frontend/media/cameraManager.ts","line":182,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/live/Cam.svelte:2320","name":"isHovered","file":"src/frontend/components/drawer/live/Cam.svelte","line":58,"depth":1,"via":"isHovered"},
+  {"id":"src/frontend/components/drawer/live/Cam.svelte:2362","name":"isDestroyed","file":"src/frontend/components/drawer/live/Cam.svelte","line":59,"depth":1,"via":"isDestroyed"}
+]

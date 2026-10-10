@@ -1,0 +1,3 @@
+[
+  {"id":"event-b8d8955508070e194e","file":"src/frontend/components/drawer/live/AudioStreams.svelte","line":32,"kind":"drag-source","handler":"draggable","conditions":[],"attributes":["id=\"audio_stream\"","data={{ id: stream.id, type: \"audio_stream\" }}","draggable"],"roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

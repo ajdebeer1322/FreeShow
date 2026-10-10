@@ -1,0 +1,5 @@
+[
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":316,"expression":"instance.dispose","args":[],"targets":[],"kind":"call","conditions":[{"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":315,"expression":"instance.input && instance.output","branch":"then"}],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":337,"expression":"chain[i].dispose","args":[],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":171,"expression":"(ctx as any).setSinkId","args":["deviceId"],"targets":[],"kind":"call","conditions":[{"file":"src/frontend/audio/routing/audioRoutingManager.ts","line":171,"expression":"\"setSinkId\" in ctx","branch":"then"}],"reason":"unresolved receiver, alias, callback parameter or external implementation"}
+]

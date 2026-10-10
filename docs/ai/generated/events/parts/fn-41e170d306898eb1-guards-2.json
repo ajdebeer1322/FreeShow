@@ -1,0 +1,13 @@
+[
+  {"file":"src/frontend/converters/chordpro.ts","line":142,"expression":"groupId","then":"{ slides[slides.length - 1].globalGroup = groupId return }"},
+  {"file":"src/frontend/converters/chordpro.ts","line":152,"expression":"!line.trim()","then":"{ if (slides[slides.length - 1].items.length) { slides.push(clone(defaultSlide)) newSection = true } return }"},
+  {"file":"src/frontend/converters/chordpro.ts","line":153,"expression":"slides[slides.length - 1].items.length","then":"{ slides.push(clone(defaultSlide)) newSection = true }"},
+  {"file":"src/frontend/converters/chordpro.ts","line":169,"expression":"(char === \"[\" || char === \"]\") && !isDirectiveLine","then":"{ isChord = char === \"[\" if (isChord) chords.push({ id: uid(5), pos: letterIndex, key: \"\" }) return }"},
+  {"file":"src/frontend/converters/chordpro.ts","line":171,"expression":"isChord","then":"chords.push({ id: uid(5), pos: letterIndex, key: \"\" })"},
+  {"file":"src/frontend/converters/chordpro.ts","line":175,"expression":"isChord","then":"{ chords[chords.length - 1].key += char return }"},
+  {"file":"src/frontend/converters/chordpro.ts","line":187,"expression":"!slideItems.length","then":"slideItems.push({ lines: [], style: DEFAULT_ITEM_STYLE })"},
+  {"file":"src/frontend/converters/chordpro.ts","line":191,"expression":"extraMetadata.length","then":"{ if (notes.length) notes += \"\\n\\n\" notes += extraMetadata.join(\"\\n\") }"},
+  {"file":"src/frontend/converters/chordpro.ts","line":192,"expression":"notes.length","then":"notes += \"\\n\\n\""},
+  {"file":"src/frontend/converters/chordpro.ts","line":204,"expression":"!slide.items.length","then":"{ const matching = slides.find((a) => a.group === slide.group && a.items) slide.items = matching?.items || [] if (matching?.id) slide.id = matching.id }"},
+  {"file":"src/frontend/converters/chordpro.ts","line":207,"expression":"matching?.id","then":"slide.id = matching.id"}
+]

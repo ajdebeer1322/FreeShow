@@ -1,0 +1,4 @@
+[
+  {"id":"src/frontend/components/helpers/output.ts:15091","name":"saveActiveScenes","file":"src/frontend/components/helpers/output.ts","line":326,"depth":4,"via":"saveActiveScenes"},
+  {"id":"src/frontend/components/helpers/output.ts:15212","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":328,"depth":5,"via":"<callback>"}
+]

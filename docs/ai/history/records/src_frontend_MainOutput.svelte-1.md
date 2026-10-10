@@ -14,7 +14,7 @@ Code comment: “// make sure it's loaded to prevent output not changing to stag
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing”
 - [code] src/frontend/MainOutput.svelte:35: “// make sure it's loaded to prevent output not changing to stage output because of Svelte transition bug”
 
 Later line edits: 0; latest c5a960bc. Full commit messages and lineage: JSON query data.
@@ -51,7 +51,7 @@ Code comment: “// make sure it's loaded to prevent output not changing to stag
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing”
 - [code] src/frontend/MainOutput.svelte:35: “// make sure it's loaded to prevent output not changing to stage output because of Svelte transition bug”
 
 Later line edits: 0; latest c5a960bc. Full commit messages and lineage: JSON query data.

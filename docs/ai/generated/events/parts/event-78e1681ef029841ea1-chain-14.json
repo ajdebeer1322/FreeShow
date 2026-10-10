@@ -1,0 +1,10 @@
+[
+  {"id":"src/frontend/components/helpers/shows.ts:18919","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":379,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:18496","name":"layouts","file":"src/frontend/components/helpers/shows.ts","line":373,"depth":1,"via":"_show(showId).layouts"},
+  {"id":"src/frontend/components/helpers/shows.ts:25284","name":"add","file":"src/frontend/components/helpers/shows.ts","line":494,"depth":2,"via":"add"},
+  {"id":"src/frontend/components/helpers/shows.ts:25370","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":495,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:25733","name":"remove","file":"src/frontend/components/helpers/shows.ts","line":506,"depth":2,"via":"remove"},
+  {"id":"src/frontend/components/helpers/shows.ts:25830","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":508,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/dropActions.ts:17882","name":"<callback>","file":"src/frontend/components/helpers/dropActions.ts","line":374,"depth":1,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/mover.ts:645","name":"addToPos","file":"src/frontend/components/helpers/mover.ts","line":25,"depth":2,"via":"addToPos"}
+]

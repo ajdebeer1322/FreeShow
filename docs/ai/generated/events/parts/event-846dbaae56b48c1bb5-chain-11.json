@@ -1,0 +1,5 @@
+[
+  {"id":"src/frontend/utils/updateSettings.ts:7350","name":"updateThemeValues","file":"src/frontend/utils/updateSettings.ts","line":242,"depth":2,"via":"updateThemeValues"},
+  {"id":"src/frontend/utils/updateSettings.ts:7498","name":"<callback>","file":"src/frontend/utils/updateSettings.ts","line":245,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/utils/updateSettings.ts:7630","name":"<callback>","file":"src/frontend/utils/updateSettings.ts","line":246,"depth":3,"via":"<callback>"}
+]

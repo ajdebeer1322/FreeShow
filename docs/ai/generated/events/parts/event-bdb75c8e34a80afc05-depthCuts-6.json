@@ -1,0 +1,3 @@
+[
+  {"target":"src/frontend/components/helpers/output.ts:14840","via":"<callback>","reason":"six-level depth limit"}
+]

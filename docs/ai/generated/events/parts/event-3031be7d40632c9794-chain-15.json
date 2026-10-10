@@ -1,0 +1,13 @@
+[
+  {"id":"src/frontend/components/helpers/showActions.ts:9685","name":"playPdf","file":"src/frontend/components/helpers/showActions.ts","line":246,"depth":5,"via":"playPdf"},
+  {"id":"src/frontend/components/helpers/media.ts:3213","name":"encodeFilePath","file":"src/frontend/components/helpers/media.ts","line":74,"depth":6,"via":"encodeFilePath"},
+  {"id":"src/frontend/components/output/clear.ts:3232","name":"clearBackground","file":"src/frontend/components/output/clear.ts","line":88,"depth":6,"via":"clearBackground"},
+  {"id":"src/frontend/components/helpers/output.ts:17875","name":"startFolderTimer","file":"src/frontend/components/helpers/output.ts","line":390,"depth":6,"via":"startFolderTimer"},
+  {"id":"src/frontend/utils/shortcuts.ts:22189","name":"playFolder","file":"src/frontend/utils/shortcuts.ts","line":547,"depth":5,"via":"playFolder"},
+  {"id":"src/frontend/utils/shortcuts.ts:22587","name":"<callback>","file":"src/frontend/utils/shortcuts.ts","line":553,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/shortcuts.ts:22646","name":"<callback>","file":"src/frontend/utils/shortcuts.ts","line":553,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/shortcuts.ts:22809","name":"<callback>","file":"src/frontend/utils/shortcuts.ts","line":556,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/shortcuts.ts:22882","name":"<callback>","file":"src/frontend/utils/shortcuts.ts","line":557,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/shortcuts.ts:23112","name":"<callback>","file":"src/frontend/utils/shortcuts.ts","line":559,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:10175","name":"playNext","file":"src/frontend/components/helpers/OutputHelper.ts","line":201,"depth":2,"via":"this.playNext"}
+]

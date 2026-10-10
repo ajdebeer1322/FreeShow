@@ -14,7 +14,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/79df8c39775897a8c90d753e2f73a5dc6c1defe1): “🌟 Many minor tweaks - Drag output window around manually. - Changed default easing from linear to sine. - Toast message - Progress bar for divided lines in output - Going back to ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/79df8c39775897a8c90d753e2f73a5dc6c1defe1): “🌟 Many minor tweaks - Drag output window around manually. - Changed default easing from linear to sine. - Toast message - Progress bar for divided lines in output - Going back to”
 
 Later line edits: 0; latest 79df8c39. Full commit messages and lineage: JSON query data.
 

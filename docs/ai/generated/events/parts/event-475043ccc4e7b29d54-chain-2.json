@@ -1,0 +1,8 @@
+[
+  {"id":"src/frontend/components/show/focus/FocusMode.svelte:5002","name":"<callback>","file":"src/frontend/components/show/focus/FocusMode.svelte","line":109,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/show/focus/FocusMode.svelte:5401","name":"getProjectItemIndex","file":"src/frontend/components/show/focus/FocusMode.svelte","line":119,"depth":1,"via":"getProjectItemIndex"},
+  {"id":"src/frontend/components/show/focus/FocusMode.svelte:5624","name":"<callback>","file":"src/frontend/components/show/focus/FocusMode.svelte","line":123,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/show/focus/FocusMode.svelte:5863","name":"<callback>","file":"src/frontend/components/show/focus/FocusMode.svelte","line":127,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/show/focus/FocusMode.svelte:5994","name":"<callback>","file":"src/frontend/components/show/focus/FocusMode.svelte","line":130,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/show/focus/FocusMode.svelte:6130","name":"<callback>","file":"src/frontend/components/show/focus/FocusMode.svelte","line":133,"depth":2,"via":"<callback>"}
+]

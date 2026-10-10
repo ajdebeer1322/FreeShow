@@ -1,0 +1,3 @@
+[
+  {"id":"event-5c65b8865f6938c10f","file":"src/server/common/components/Reordable.svelte","line":75,"kind":"drag-source","handler":"draggable=\"true\"","conditions":[],"attributes":["id={i.toString()}","draggable=\"true\"","style=\"-webkit-user-drag: element;\""],"roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

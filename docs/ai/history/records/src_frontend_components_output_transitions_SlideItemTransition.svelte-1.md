@@ -42,7 +42,7 @@ GitHub: [pr #789](https://github.com/ChurchApps/FreeShow/pull/789) (read; no ite
 
 [guess] delay-property: Math.max(0, (transition.delay \|\| 0) - transitioning.autoSizeDelay) (dynamic ms)
 
-Location: [src/frontend/components/output/transitions/SlideItemTransition.svelte:150](../../../../src/frontend/components/output/transitions/SlideItemTransition.svelte#L150). Category: timing.
+Location: [src/frontend/components/output/transitions/SlideItemTransition.svelte:152](../../../../src/frontend/components/output/transitions/SlideItemTransition.svelte#L152). Category: timing.
 
 Added/traced: [687575a3](https://github.com/ChurchApps/FreeShow/commit/687575a35ad2f42a29638aa6751701b262e245de) on 2026-08-26; git log -S --follow (earliest exact-text occurrence in file lineage).
 
@@ -116,7 +116,7 @@ GitHub: [pr #789](https://github.com/ChurchApps/FreeShow/pull/789) (read; no ite
 
 [guess] // WIP having outDelay on just 1 item will cause all other items to not clear until that is finished!
 
-Location: [src/frontend/components/output/transitions/SlideItemTransition.svelte:115](../../../../src/frontend/components/output/transitions/SlideItemTransition.svelte#L115). Category: workaround.
+Location: [src/frontend/components/output/transitions/SlideItemTransition.svelte:117](../../../../src/frontend/components/output/transitions/SlideItemTransition.svelte#L117). Category: workaround.
 
 Added/traced: [8ee66b7b](https://github.com/ChurchApps/FreeShow/commit/8ee66b7b5f95581e00c26e42d9da8fd6015eaea9) on 2024-11-21; git log -S --follow (earliest exact-text occurrence in file lineage).
 

@@ -1,0 +1,15 @@
+[
+  {"target":"src/frontend/components/helpers/shows.ts:18496","via":"_show(showId) .layouts","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/actions/actions.ts:4195","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/actions/actions.ts:2626","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:27610","via":"getActiveOutputs","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/output/clear.ts:3874","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/output/clear.ts:5729","via":"clearTimers","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:20606","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:23889","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:24184","via":"startOverlayTimer","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:25237","via":"clearOverlayTimer","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:25185","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:14781","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:15212","via":"<callback>","reason":"six-level depth limit"}
+]

@@ -1,0 +1,9 @@
+[
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":787,"expression":"clone","args":["newItems"],"targets":["src/frontend/components/helpers/array.ts:6534"],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":793,"expression":"updateSlideFromTemplate","args":["show.slides[id]","slideTemplate","isFirst","changeOverflowItems","firstTemplateForUpdate"],"targets":["src/frontend/components/helpers/output.ts:68129"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":795,"expression":"ref.filter","args":["(a) => a.id === id"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":795,"expression":"<callback>","targets":["src/frontend/components/helpers/historyActions.ts:34592"],"kind":"callback","reason":"callback may run later or conditionally"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":796,"expression":"get","args":["templates"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":797,"expression":"slideRefs.forEach","args":["(slideRef) => { const newLayoutData = updateLayoutsFromTemplate(show.layouts, show.media, slideTemplate, oldTemplate, data.remember.layout, slideRef, templateMode, changeOverflowItems) show.layouts = newLayoutData.layouts show.media = newLayoutData.media }"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":797,"expression":"<callback>","targets":["src/frontend/components/helpers/historyActions.ts:34721"],"kind":"callback","reason":"callback may run later or conditionally"}
+]

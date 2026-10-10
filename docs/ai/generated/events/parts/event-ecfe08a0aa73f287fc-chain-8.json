@@ -1,0 +1,12 @@
+[
+  {"id":"src/frontend/components/drawer/audio/metronome.ts:3824","name":"<callback>","file":"src/frontend/components/drawer/audio/metronome.ts","line":106,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/audio/metronome.ts:4068","name":"<callback>","file":"src/frontend/components/drawer/audio/metronome.ts","line":112,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/audio/metronome.ts:4118","name":"<callback>","file":"src/frontend/components/drawer/audio/metronome.ts","line":113,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/audio/metronome.ts:4976","name":"<callback>","file":"src/frontend/components/drawer/audio/metronome.ts","line":141,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/audio/metronome.ts:5019","name":"scheduler","file":"src/frontend/components/drawer/audio/metronome.ts","line":146,"depth":5,"via":"scheduler"},
+  {"id":"src/frontend/components/drawer/audio/metronome.ts:6163","name":"scheduleNote","file":"src/frontend/components/drawer/audio/metronome.ts","line":180,"depth":6,"via":"scheduleNote"},
+  {"id":"src/frontend/components/drawer/audio/metronome.ts:5019","name":"scheduler","file":"src/frontend/components/drawer/audio/metronome.ts","line":146,"depth":4,"via":"scheduler"},
+  {"id":"src/frontend/components/drawer/audio/metronome.ts:6163","name":"scheduleNote","file":"src/frontend/components/drawer/audio/metronome.ts","line":180,"depth":5,"via":"scheduleNote"},
+  {"id":"src/frontend/components/drawer/audio/metronome.ts:6368","name":"<callback>","file":"src/frontend/components/drawer/audio/metronome.ts","line":184,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/audio/metronome.ts:6547","name":"playNoteAtTime","file":"src/frontend/components/drawer/audio/metronome.ts","line":192,"depth":6,"via":"playNoteAtTime"}
+]

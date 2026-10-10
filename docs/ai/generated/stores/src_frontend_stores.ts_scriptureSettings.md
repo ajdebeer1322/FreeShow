@@ -86,7 +86,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 - [src/frontend/components/helpers/dropActions.ts:1030](../../../../src/frontend/components/helpers/dropActions.ts#L1030) — get(scriptureSettings)
 - [src/frontend/components/helpers/output.ts:1575](../../../../src/frontend/components/helpers/output.ts#L1575) — get(scriptureSettings)
 - [src/frontend/components/main/popups/DrawerSearchOptions.svelte:7](../../../../src/frontend/components/main/popups/DrawerSearchOptions.svelte#L7) — $scriptureSettings
-- [src/frontend/components/output/layers/SlideContent.svelte:199](../../../../src/frontend/components/output/layers/SlideContent.svelte#L199) — $scriptureSettings
+- [src/frontend/components/output/layers/SlideContent.svelte:276](../../../../src/frontend/components/output/layers/SlideContent.svelte#L276) — $scriptureSettings
 - [src/frontend/components/output/transitions/SlideItemTransition.svelte:98](../../../../src/frontend/components/output/transitions/SlideItemTransition.svelte#L98) — $scriptureSettings
 - [src/frontend/components/slide/Textbox.svelte:223](../../../../src/frontend/components/slide/Textbox.svelte#L223) — $scriptureSettings
 

@@ -1,0 +1,22 @@
+[
+  {"target":"src/frontend/components/helpers/media.ts:3815","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioPlayer.ts:16246","via":"AudioPlayer.checkIfEnding","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioPlayer.ts:10430","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioAnalyser.ts:6575","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioPlayer.ts:12689","via":"this.play","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioAnalyser.ts:3791","via":"AudioAnalyser.attach","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:12229","via":"AudioRoutingManager.getInstance().updateRoutingNodes","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:1877","via":"AudioRoutingManager.getInstance","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioPlayer.ts:11734","via":"this.applyProcessing","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:30231","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:30120","via":"refreshOut","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:25922","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:26008","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/drawer/timers/timers.ts:6198","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/drawer/timers/timers.ts:6243","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:21640","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:8740","via":"runPerOutputAction","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:8286","via":"shouldTriggerBefore","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:22218","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/output/clear.ts:6399","via":"<callback>","reason":"six-level depth limit"}
+]

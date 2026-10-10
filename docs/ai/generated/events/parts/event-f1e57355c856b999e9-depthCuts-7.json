@@ -1,0 +1,18 @@
+[
+  {"target":"src/frontend/audio/audioPlayer.ts:17498","via":"this.nowPlaying","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:24083","via":"changeStyle","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:30120","via":"refreshOut","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:2805","via":"resolveOutputId","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:26157","via":"getAllNormalOutputs","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:24560","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:24592","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:26368","via":"getFirstOutput","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:19320","via":"_show(showId).layouts([outSlide.layout]).ref","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:18496","via":"_show(showId).layouts","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:30165","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:30287","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:21308","via":"playSlideActions","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:22218","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:20984","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/output/clear.ts:5729","via":"clearTimers","reason":"six-level depth limit"}
+]

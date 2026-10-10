@@ -1,0 +1,18 @@
+[
+  {"id":"src/frontend/components/edit/tools/EditValues.svelte:7081","name":"<callback>","file":"src/frontend/components/edit/tools/EditValues.svelte","line":151,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/tools/EditValues.svelte:7162","name":"<callback>","file":"src/frontend/components/edit/tools/EditValues.svelte","line":152,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/edit.ts:1396","name":"parseShadowValue","file":"src/frontend/components/edit/scripts/edit.ts","line":36,"depth":4,"via":"parseShadowValue"},
+  {"id":"src/frontend/components/edit/scripts/shapeOutside.ts:546","name":"parseShapeOutsideValue","file":"src/frontend/components/edit/scripts/shapeOutside.ts","line":14,"depth":4,"via":"parseShapeOutsideValue"},
+  {"id":"src/frontend/components/edit/scripts/shapeOutside.ts:49","name":"parseInset","file":"src/frontend/components/edit/scripts/shapeOutside.ts","line":3,"depth":5,"via":"parseInset"},
+  {"id":"src/frontend/components/edit/tools/EditValues.svelte:9988","name":"hasChangedValues","file":"src/frontend/components/edit/tools/EditValues.svelte","line":214,"depth":4,"via":"hasChangedValues"},
+  {"id":"src/frontend/components/edit/tools/EditValues.svelte:10205","name":"<callback>","file":"src/frontend/components/edit/tools/EditValues.svelte","line":220,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/tools/EditValues.svelte:10452","name":"<callback>","file":"src/frontend/components/edit/tools/EditValues.svelte","line":226,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/tools/EditValues.svelte:10632","name":"isDefaultValue","file":"src/frontend/components/edit/tools/EditValues.svelte","line":231,"depth":6,"via":"isDefaultValue"},
+  {"id":"src/frontend/components/edit/scripts/itemClipboard.ts:2411","name":"mergeWithStyle","file":"src/frontend/components/edit/scripts/itemClipboard.ts","line":76,"depth":4,"via":"mergeWithStyle"},
+  {"id":"src/frontend/components/edit/scripts/itemClipboard.ts:1954","name":"filterItemStyle","file":"src/frontend/components/edit/scripts/itemClipboard.ts","line":61,"depth":5,"via":"filterItemStyle"},
+  {"id":"src/frontend/components/edit/scripts/itemClipboard.ts:10043","name":"getItemKeys","file":"src/frontend/components/edit/scripts/itemClipboard.ts","line":315,"depth":6,"via":"getItemKeys"},
+  {"id":"src/frontend/components/edit/scripts/itemClipboard.ts:2232","name":"<callback>","file":"src/frontend/components/edit/scripts/itemClipboard.ts","line":69,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/common.ts:8507","name":"throttle","file":"src/frontend/utils/common.ts","line":236,"depth":4,"via":"throttle"},
+  {"id":"src/frontend/utils/common.ts:8801","name":"<callback>","file":"src/frontend/utils/common.ts","line":247,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/tools/EditValues.svelte:9882","name":"<callback>","file":"src/frontend/components/edit/tools/EditValues.svelte","line":209,"depth":4,"via":"<callback>"}
+]

@@ -1,0 +1,12 @@
+[
+  {"id":"src/frontend/audio/routing/audioInputCapture.ts:6324","name":"removeInput","file":"src/frontend/audio/routing/audioInputCapture.ts","line":174,"depth":6,"via":"AudioInputCapture.getInstance().removeInput"},
+  {"id":"src/frontend/audio/routing/audioInputCapture.ts:758","name":"getInstance","file":"src/frontend/audio/routing/audioInputCapture.ts","line":28,"depth":6,"via":"AudioInputCapture.getInstance"},
+  {"id":"src/frontend/audio/audioAnalyser.ts:17835","name":"recorderDeactivate","file":"src/frontend/audio/audioAnalyser.ts","line":463,"depth":6,"via":"this.recorderDeactivate"},
+  {"id":"src/frontend/audio/audioPlayer.ts:13535","name":"<callback>","file":"src/frontend/audio/audioPlayer.ts","line":400,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/audio/audioPlayer.ts:14757","name":"stopStream","file":"src/frontend/audio/audioPlayer.ts","line":435,"depth":6,"via":"this.stopStream"},
+  {"id":"src/frontend/audio/audioPlayer.ts:14047","name":"updateNowPlaying","file":"src/frontend/audio/audioPlayer.ts","line":420,"depth":5,"via":"this.updateNowPlaying"},
+  {"id":"src/frontend/audio/audioPlayer.ts:14144","name":"<callback>","file":"src/frontend/audio/audioPlayer.ts","line":421,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/audio/audioPlayer.ts:14483","name":"<callback>","file":"src/frontend/audio/audioPlayer.ts","line":428,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/audio/audioPlayer.ts:17498","name":"nowPlaying","file":"src/frontend/audio/audioPlayer.ts","line":518,"depth":6,"via":"this.nowPlaying"},
+  {"id":"src/frontend/IPC/main.ts:2279","name":"sendMain","file":"src/frontend/IPC/main.ts","line":68,"depth":6,"via":"sendMain"}
+]

@@ -1,0 +1,19 @@
+[
+  {"id":"src/frontend/utils/popup.ts:9946","name":"<callback>","file":"src/frontend/utils/popup.ts","line":198,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/utils/popup.ts:10084","name":"finish","file":"src/frontend/utils/popup.ts","line":204,"depth":5,"via":"finish"},
+  {"id":"src/frontend/utils/popup.ts:10211","name":"<callback>","file":"src/frontend/utils/popup.ts","line":207,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/cloudSync.ts:3497","name":"chooseTeam","file":"src/frontend/utils/cloudSync.ts","line":91,"depth":2,"via":"chooseTeam"},
+  {"id":"src/frontend/utils/cloudSync.ts:8198","name":"socketDisconnect","file":"src/frontend/utils/cloudSync.ts","line":252,"depth":3,"via":"socketDisconnect"},
+  {"id":"src/frontend/utils/cloudSync.ts:9445","name":"clearStoreListeners","file":"src/frontend/utils/cloudSync.ts","line":293,"depth":4,"via":"clearStoreListeners"},
+  {"id":"src/frontend/utils/cloudSync.ts:9512","name":"<callback>","file":"src/frontend/utils/cloudSync.ts","line":294,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/utils/cloudSync.ts:14029","name":"clearSettingsListeners","file":"src/frontend/utils/cloudSync.ts","line":421,"depth":5,"via":"clearSettingsListeners"},
+  {"id":"src/frontend/utils/cloudSync.ts:14093","name":"<callback>","file":"src/frontend/utils/cloudSync.ts","line":422,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/cloudSync.ts:10592","name":"cloudSyncMessage","file":"src/frontend/utils/cloudSync.ts","line":325,"depth":4,"via":"cloudSyncMessage"},
+  {"id":"src/frontend/utils/cloudSync.ts:7452","name":"getCloudSocket","file":"src/frontend/utils/cloudSync.ts","line":230,"depth":5,"via":"getCloudSocket"},
+  {"id":"src/frontend/utils/common.ts:1752","name":"wait","file":"src/frontend/utils/common.ts","line":46,"depth":4,"via":"wait"},
+  {"id":"src/frontend/utils/common.ts:1810","name":"<callback>","file":"src/frontend/utils/common.ts","line":47,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/utils/common.ts:1844","name":"<callback>","file":"src/frontend/utils/common.ts","line":48,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/cloudSync.ts:3778","name":"<callback>","file":"src/frontend/utils/cloudSync.ts","line":97,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/utils/cloudSync.ts:4140","name":"<callback>","file":"src/frontend/utils/cloudSync.ts","line":106,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/utils/cloudSync.ts:2875","name":"<callback>","file":"src/frontend/utils/cloudSync.ts","line":76,"depth":2,"via":"<callback>"}
+]

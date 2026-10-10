@@ -1,0 +1,3 @@
+[
+  {"id":"event-1ca5fb6d890e838c1c","file":"src/server/stage/components/TtsSettings.svelte","line":72,"kind":"keyboard","handler":"() => {}","conditions":[],"eventName":"keydown","element":"div","modifiers":[],"key":"dynamic","attributes":["class=\"overlay\""],"componentTarget":null,"forwarded":false,"roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability","detectedKeys":[]}
+]

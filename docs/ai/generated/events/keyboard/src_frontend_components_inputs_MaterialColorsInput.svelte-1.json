@@ -1,0 +1,3 @@
+[
+  {"id":"event-862072b309bf388f06","file":"src/frontend/components/inputs/MaterialColorsInput.svelte","line":84,"kind":"keyboard","handler":"(e) => e.key === \"Enter\" && (open = !open)","conditions":[],"eventName":"keydown","element":"div","modifiers":[],"key":"dynamic","attributes":["class=\"main-bar\"","role=\"button\"","tabindex=\"0\""],"componentTarget":null,"forwarded":false,"roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability","detectedKeys":["Enter"]}
+]

@@ -1,0 +1,6 @@
+[
+  {"file":"src/electron/utils/close.ts","line":59,"expression":"ipcMain.removeAllListeners","args":[],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/utils/close.ts","line":65,"expression":"powerSaveBlocker.stop","args":["powerSaveBlockerId"],"targets":[],"kind":"call","conditions":[{"file":"src/electron/utils/close.ts","line":64,"expression":"powerSaveBlockerId !== null","branch":"then"}],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/utils/close.ts","line":69,"expression":"app.quit","args":[],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/utils/close.ts","line":73,"expression":"app.exit","args":[],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"}
+]

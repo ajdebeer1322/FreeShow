@@ -1,0 +1,23 @@
+[
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":695,"expression":"tl && tl.enq && seg","then":"{ // clean-path frame: split its whole rtt into the seven hops (sum ≈ rtt by construction) sTl.fwdRecv.push(tl.recv - fwd.t) sTl.recvCons.push(tl.cS - tl.recv) sTl.consume.push(seg"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":710,"expression":"STATS","then":"{ sDone++ if (lastDoneTime) sGaps.push(now - lastDoneTime) lastDoneTime = now }"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":712,"expression":"lastDoneTime","then":"sGaps.push(now - lastDoneTime)"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":724,"expression":"!info","then":"{ if (image && !image.isEmpty()) { if (!cpuFallback) { cpuFallback = true console.warn(`[OSR ${id}] paint carries no GPU shared texture — falling back to CPU capture`) } lastCpuIma"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":725,"expression":"image && !image.isEmpty()","then":"{ if (!cpuFallback) { cpuFallback = true console.warn(`[OSR ${id}] paint carries no GPU shared texture — falling back to CPU capture`) } lastCpuImage = image }"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":726,"expression":"!cpuFallback","then":"{ cpuFallback = true console.warn(`[OSR ${id}] paint carries no GPU shared texture — falling back to CPU capture`) }"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":734,"expression":"STATS","then":"{ sPaints++ const nowP = Date.now() if (lastPaintTime && nowP - lastPaintTime < 5) sBurstPaints++ lastPaintTime = nowP }"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":737,"expression":"lastPaintTime && nowP - lastPaintTime < 5","then":"sBurstPaints++"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":750,"expression":"canOffMain","then":"{ OutputLifecycle.noteFrameSize(id, width * height) if (pendingFrame) { if (STATS) sDropInterval++ releaseTex(pendingFrame.tex) } pendingFrame = { tex, source, width, height } tryA"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":752,"expression":"pendingFrame","then":"{ if (STATS) sDropInterval++ releaseTex(pendingFrame.tex) }"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":753,"expression":"STATS","then":"sDropInterval++"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":761,"expression":"inFlight >= this.OSR_MAX_INFLIGHT_READBACKS || Date.now() - lastReadback < this.getOsrSendInterval(id)","then":"{ releaseTex(tex) return }"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":767,"expression":"STATS","then":"sReadback++"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":772,"expression":"seq < appliedSeq","then":"return"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":784,"expression":"lastRaw","then":"CaptureHelper.Transmitter.transmitFrame(id, null, undefined, lastRaw)"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":785,"expression":"lastCpuImage","then":"CaptureHelper.Transmitter.transmitFrame(id, lastCpuImage)"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":790,"expression":"toreDown","then":"return"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":792,"expression":"statsTimer","then":"{ clearInterval(statsTimer) statsTimer = null }"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":796,"expression":"admitTimer","then":"{ clearTimeout(admitTimer) admitTimer = null }"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":800,"expression":"pendingFrame","then":"{ releaseTex(pendingFrame.tex) pendingFrame = null }"},
+  {"file":"src/electron/output/helpers/OutputLifecycle.ts","line":813,"expression":"OutputLifecycle.osrTextureCleanup[id] === teardown","then":"delete OutputLifecycle.osrTextureCleanup[id]"}
+]

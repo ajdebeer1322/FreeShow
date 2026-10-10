@@ -1,0 +1,5 @@
+[
+  {"id":"src/frontend/components/helpers/shows.ts:25830","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":508,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/dropActions.ts:45914","name":"<callback>","file":"src/frontend/components/helpers/dropActions.ts","line":1055,"depth":1,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/mover.ts:645","name":"addToPos","file":"src/frontend/components/helpers/mover.ts","line":25,"depth":2,"via":"addToPos"}
+]

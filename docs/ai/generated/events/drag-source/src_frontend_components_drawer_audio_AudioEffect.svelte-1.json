@@ -1,0 +1,3 @@
+[
+  {"id":"event-b38631cbd21d864ff3","file":"src/frontend/components/drawer/audio/AudioEffect.svelte","line":44,"kind":"drag-source","handler":"draggable","conditions":[],"attributes":["id=\"audio_effect\"","data={{ path, name }}","style=\"width: calc(20% - 5px);\"","draggable"],"roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

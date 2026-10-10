@@ -1,0 +1,15 @@
+[
+  {"id":"src/electron/blackmagic/BlackmagicSender.ts:7951","name":"<callback>","file":"src/electron/blackmagic/BlackmagicSender.ts","line":187,"depth":6,"via":"<callback>"},
+  {"id":"src/electron/blackmagic/BlackmagicManager.ts:2007","name":"getDisplayMode","file":"src/electron/blackmagic/BlackmagicManager.ts","line":62,"depth":6,"via":"BlackmagicManager.getDisplayMode"},
+  {"id":"src/electron/blackmagic/BlackmagicManager.ts:2959","name":"getPixelFormat","file":"src/electron/blackmagic/BlackmagicManager.ts","line":89,"depth":6,"via":"BlackmagicManager.getPixelFormat"},
+  {"id":"src/electron/blackmagic/BlackmagicSender.ts:9273","name":"<callback>","file":"src/electron/blackmagic/BlackmagicSender.ts","line":211,"depth":6,"via":"<callback>"},
+  {"id":"src/electron/blackmagic/BlackmagicSender.ts:9427","name":"<callback>","file":"src/electron/blackmagic/BlackmagicSender.ts","line":216,"depth":6,"via":"<callback>"},
+  {"id":"src/electron/blackmagic/BlackmagicSender.ts:11420","name":"<callback>","file":"src/electron/blackmagic/BlackmagicSender.ts","line":246,"depth":6,"via":"<callback>"},
+  {"id":"src/electron/blackmagic/BlackmagicSender.ts:11675","name":"<callback>","file":"src/electron/blackmagic/BlackmagicSender.ts","line":251,"depth":6,"via":"<callback>"},
+  {"id":"src/electron/blackmagic/BufferManager.ts:664","name":"calculateOptimalBufferSize","file":"src/electron/blackmagic/BufferManager.ts","line":26,"depth":5,"via":"BufferManager.calculateOptimalBufferSize"},
+  {"id":"src/electron/blackmagic/BlackmagicSender.ts:20707","name":"getDimensionsForDisplayMode","file":"src/electron/blackmagic/BlackmagicSender.ts","line":448,"depth":5,"via":"this.getDimensionsForDisplayMode"},
+  {"id":"src/electron/blackmagic/BlackmagicSender.ts:18910","name":"getExpectedVideoFrameSize","file":"src/electron/blackmagic/BlackmagicSender.ts","line":403,"depth":5,"via":"this.getExpectedVideoFrameSize"},
+  {"id":"src/electron/blackmagic/BlackmagicSender.ts:14243","name":"<callback>","file":"src/electron/blackmagic/BlackmagicSender.ts","line":303,"depth":5,"via":"<callback>"},
+  {"id":"src/electron/blackmagic/BlackmagicSender.ts:41846","name":"<callback>","file":"src/electron/blackmagic/BlackmagicSender.ts","line":839,"depth":3,"via":"<callback>"},
+  {"id":"src/electron/blackmagic/BlackmagicSender.ts:41975","name":"<callback>","file":"src/electron/blackmagic/BlackmagicSender.ts","line":840,"depth":4,"via":"<callback>"}
+]

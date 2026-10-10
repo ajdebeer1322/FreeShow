@@ -34,9 +34,9 @@
   {"file":"src/frontend/components/helpers/output.ts","line":1859,"endLine":1859,"text":"// scripture","start":75378,"end":75390},
   {"file":"src/frontend/components/helpers/output.ts","line":1861,"endLine":1861,"text":"// also check per-slide customDynamicValues so slides in non-scripture shows are detected correctly","start":75454,"end":75553},
   {"file":"src/frontend/components/helpers/output.ts","line":1871,"endLine":1871,"text":"// use custom first slide template on first slide","start":76249,"end":76298},
-  {"file":"src/frontend/components/helpers/output.ts","line":1888,"endLine":1888,"text":"// the auto size text size has to be calculated if it is not stored yet","start":76787,"end":76858},
-  {"file":"src/frontend/components/helpers/output.ts","line":1905,"endLine":1905,"text":"// console.log(\"[DEBUG - setTemplateStyle]\", {","start":77586,"end":77632},
-  {"file":"src/frontend/components/helpers/output.ts","line":1906,"endLine":1906,"text":"//     outSlideId: outSlide?.id,","start":77637,"end":77669},
-  {"file":"src/frontend/components/helpers/output.ts","line":1907,"endLine":1907,"text":"//     templateId: currentStyle?.template,","start":77674,"end":77716},
-  {"file":"src/frontend/components/helpers/output.ts","line":1908,"endLine":1908,"text":"//     templateMode: mode,","start":77721,"end":77747}
+  {"file":"src/frontend/components/helpers/output.ts","line":1888,"endLine":1888,"text":"// the auto size text size has to be calculated if it is not stored yet","start":76794,"end":76865},
+  {"file":"src/frontend/components/helpers/output.ts","line":1905,"endLine":1905,"text":"// console.log(\"[DEBUG - setTemplateStyle]\", {","start":77593,"end":77639},
+  {"file":"src/frontend/components/helpers/output.ts","line":1906,"endLine":1906,"text":"//     outSlideId: outSlide?.id,","start":77644,"end":77676},
+  {"file":"src/frontend/components/helpers/output.ts","line":1907,"endLine":1907,"text":"//     templateId: currentStyle?.template,","start":77681,"end":77723},
+  {"file":"src/frontend/components/helpers/output.ts","line":1908,"endLine":1908,"text":"//     templateMode: mode,","start":77728,"end":77754}
 ]

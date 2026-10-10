@@ -32,7 +32,7 @@ Fork decision: “Only remove from the arrangement when deleting a group in the 
 
 Sources:
 
-- [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/ffe8bc8f3ca8f97a14cae5940c0b5d3d2330e40b): “Only remove from the arrangement when deleting a group in the arrangement bar Right clicking a group in the arrangement order had no menu, and Delete went through the normal slide ”
+- [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/ffe8bc8f3ca8f97a14cae5940c0b5d3d2330e40b): “Only remove from the arrangement when deleting a group in the arrangement bar Right clicking a group in the arrangement order had no menu, and Delete went through the normal slide”
 
 Later line edits: 0; latest ffe8bc8f. Full commit messages and lineage: JSON query data.
 

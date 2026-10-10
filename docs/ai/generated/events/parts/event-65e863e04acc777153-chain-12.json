@@ -1,0 +1,18 @@
+[
+  {"id":"src/frontend/components/timeline/TimelineActions.ts:4063","name":"setChanged","file":"src/frontend/components/timeline/TimelineActions.ts","line":111,"depth":3,"via":"this.setChanged"},
+  {"id":"src/frontend/utils/common.ts:9036","name":"hasNewerUpdate","file":"src/frontend/utils/common.ts","line":254,"depth":4,"via":"hasNewerUpdate"},
+  {"id":"src/frontend/utils/common.ts:9315","name":"<callback>","file":"src/frontend/utils/common.ts","line":261,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/utils/common.ts:9386","name":"<callback>","file":"src/frontend/utils/common.ts","line":263,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/timeline/TimelineActions.ts:4366","name":"saveState","file":"src/frontend/components/timeline/TimelineActions.ts","line":120,"depth":4,"via":"this.saveState"},
+  {"id":"src/frontend/components/timeline/TimelineActions.ts:4664","name":"<callback>","file":"src/frontend/components/timeline/TimelineActions.ts","line":129,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/timeline/TimelineActions.ts:5092","name":"<callback>","file":"src/frontend/components/timeline/TimelineActions.ts","line":140,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/timeline/TimelineActions.ts:5506","name":"<callback>","file":"src/frontend/components/timeline/TimelineActions.ts","line":152,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/timeline/Timeline.svelte:9826","name":"updateSelection","file":"src/frontend/components/timeline/Timeline.svelte","line":272,"depth":1,"via":"updateSelection"},
+  {"id":"src/frontend/components/timeline/timeline.ts:3616","name":"getActionsAtPosition","file":"src/frontend/components/timeline/timeline.ts","line":109,"depth":2,"via":"getActionsAtPosition"},
+  {"id":"src/frontend/components/timeline/timeline.ts:5176","name":"getActionBaseY","file":"src/frontend/components/timeline/timeline.ts","line":149,"depth":3,"via":"getActionBaseY"},
+  {"id":"src/frontend/components/timeline/timeline.ts:5457","name":"<callback>","file":"src/frontend/components/timeline/timeline.ts","line":154,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/timeline/Timeline.svelte:11241","name":"selectOnlyActiveActions","file":"src/frontend/components/timeline/Timeline.svelte","line":309,"depth":2,"via":"selectOnlyActiveActions"},
+  {"id":"src/frontend/components/timeline/Timeline.svelte:11331","name":"<callback>","file":"src/frontend/components/timeline/Timeline.svelte","line":310,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/timeline/Timeline.svelte:11381","name":"<callback>","file":"src/frontend/components/timeline/Timeline.svelte","line":311,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/timeline/Timeline.svelte:11655","name":"<callback>","file":"src/frontend/components/timeline/Timeline.svelte","line":317,"depth":4,"via":"<callback>"}
+]

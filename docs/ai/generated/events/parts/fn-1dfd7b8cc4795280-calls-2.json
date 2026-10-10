@@ -1,0 +1,13 @@
+[
+  {"file":"src/frontend/components/context/menuClick.ts","line":2500,"expression":"_show().slides([slide]).items","args":["get(activeEdit).items"],"targets":["src/frontend/components/helpers/shows.ts:6116"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2500,"expression":"_show().slides","args":["[slide]"],"targets":["src/frontend/components/helpers/shows.ts:2623"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2500,"expression":"_show","args":[],"targets":["src/frontend/components/helpers/shows.ts:626"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2500,"expression":"get","args":["activeEdit"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2504,"expression":"slideItems.forEach","args":["(item) => { item.lines?.forEach((line, j: number) => { line.text?.forEach((text, k: number) => { if (typeof text !== \"object\" || text === null) return if (item.lines?.[j]?.text?.[k]) item.lines[j].text[k].value = formatting[id](text.value, data) }) }) newItems.push(item) }"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2504,"expression":"<callback>","targets":["src/frontend/components/context/menuClick.ts:95170"],"kind":"callback","reason":"callback may run later or conditionally"},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2515,"expression":"history","args":["{ id: \"setItems\", newData, location: { page: get(activePage) as any, show: get(activeShow)!, items, slide } }"],"targets":["src/frontend/components/helpers/history.ts:1696"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2515,"expression":"get","args":["activePage"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2515,"expression":"get","args":["activeShow"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2517,"expression":"wait","args":["10"],"targets":["src/frontend/utils/common.ts:1752"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/context/menuClick.ts","line":2520,"expression":"refreshEditSlide.set","args":["true"],"targets":[],"kind":"call","conditions":[],"terminal":"store"}
+]

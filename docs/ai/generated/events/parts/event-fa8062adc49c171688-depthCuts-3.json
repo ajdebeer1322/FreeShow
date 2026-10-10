@@ -1,0 +1,20 @@
+[
+  {"target":"src/frontend/components/helpers/showActions.ts:33934","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/randomValue.ts:5118","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/edit/scripts/itemHelpers.ts:20825","via":"getDynamicValue","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/array.ts:5153","via":"keysToID","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/drawer/timers/timers.ts:5109","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/drawer/timers/timers.ts:5281","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/time.ts:3470","via":"padString","reason":"six-level depth limit"},
+  {"target":"src/frontend/converters/xml.ts:263","via":"xml2json","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:26157","via":"getAllNormalOutputs","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:30886","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:31793","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/debugLog.ts:1154","via":"isOutputWindow","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/debugLog.ts:10971","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/debugLog.ts:1476","via":"debugLog","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/actions/midi.ts:6001","via":"convertOldMidiToNewAction","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/actions/actions.ts:2191","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/actions/actions.ts:2835","via":"runTrigger","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/actions/actions.ts:2588","via":"<callback>","reason":"six-level depth limit"}
+]

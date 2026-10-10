@@ -1,0 +1,21 @@
+[
+  {"id":"src/frontend/components/helpers/shows.ts:27305","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":541,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:27667","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":547,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:27911","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":550,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:33483","name":"set","file":"src/frontend/components/helpers/shows.ts","line":645,"depth":2,"via":"_show(showID).layouts([obj.location.layout!]).slides([layoutRefSlide.parent?.index]).children([layoutRefSlide.id]).set"},
+  {"id":"src/frontend/components/helpers/shows.ts:33599","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":647,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:33969","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":652,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:34225","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":655,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:34299","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":656,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:33358","name":"children","file":"src/frontend/components/helpers/shows.ts","line":643,"depth":2,"via":"_show(showID).layouts([obj.location.layout!]).slides([layoutRefSlide.parent?.index]).children"},
+  {"id":"src/frontend/components/helpers/history.ts:6850","name":"<callback>","file":"src/frontend/components/helpers/history.ts","line":149,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/history.ts:1015","name":"isNoDataChange","file":"src/frontend/components/helpers/history.ts","line":26,"depth":2,"via":"isNoDataChange"},
+  {"id":"src/frontend/components/helpers/array.ts:9431","name":"areObjectsEqual","file":"src/frontend/components/helpers/array.ts","line":274,"depth":3,"via":"areObjectsEqual"},
+  {"id":"src/frontend/components/helpers/history.ts:9199","name":"<callback>","file":"src/frontend/components/helpers/history.ts","line":210,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/history.ts:9415","name":"<callback>","file":"src/frontend/components/helpers/history.ts","line":219,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/select.ts:724","name":"deselect","file":"src/frontend/components/helpers/select.ts","line":22,"depth":2,"via":"deselect"},
+  {"id":"src/frontend/components/helpers/arrangements.ts:2657","name":"masterIsUpToDate","file":"src/frontend/components/helpers/arrangements.ts","line":57,"depth":1,"via":"masterIsUpToDate"},
+  {"id":"src/frontend/components/show/tools/Arrangements.svelte:3606","name":"setLayout","file":"src/frontend/components/show/tools/Arrangements.svelte","line":76,"depth":1,"via":"setLayout"},
+  {"id":"src/frontend/components/show/tools/Arrangements.svelte:3722","name":"<callback>","file":"src/frontend/components/show/tools/Arrangements.svelte","line":79,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/show/tools/Arrangements.svelte:4270","name":"<callback>","file":"src/frontend/components/show/tools/Arrangements.svelte","line":91,"depth":2,"via":"<callback>"}
+]

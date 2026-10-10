@@ -1,0 +1,9 @@
+[
+  {"file":"src/frontend/IPC/responsesMain.ts","line":605,"expression":"songbeamer","targets":["src/frontend/IPC/responsesMain.ts:26715"],"kind":"callback","reason":"callback may run later or conditionally"},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":606,"expression":"easyslides","targets":["src/frontend/IPC/responsesMain.ts:26779"],"kind":"callback","reason":"callback may run later or conditionally"},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":607,"expression":"verseview","targets":["src/frontend/IPC/responsesMain.ts:26833"],"kind":"callback","reason":"callback may run later or conditionally"},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":609,"expression":"lessons","targets":["src/frontend/IPC/responsesMain.ts:26905"],"kind":"callback","reason":"callback may run later or conditionally"},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":611,"expression":"calendar","targets":["src/frontend/IPC/responsesMain.ts:26988"],"kind":"callback","reason":"callback may run later or conditionally"},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":613,"expression":"BIBLE","targets":["src/frontend/IPC/responsesMain.ts:27058"],"kind":"callback","reason":"callback may run later or conditionally"},
+  {"file":"src/frontend/IPC/responsesMain.ts","line":617,"expression":"receiveIMPORT[a.channel]","args":[],"targets":[],"kind":"call","conditions":[],"lookupTable":"src/frontend/IPC/responsesMain.ts#receiveIMPORT","lookupEntryCount":26,"reason":"runtime lookup key; concrete entries separately inventoried"}
+]

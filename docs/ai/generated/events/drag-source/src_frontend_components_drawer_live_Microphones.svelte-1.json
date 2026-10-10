@@ -1,0 +1,3 @@
+[
+  {"id":"event-ab6c46ee50f1391df1","file":"src/frontend/components/drawer/live/Microphones.svelte","line":28,"kind":"drag-source","handler":"draggable","conditions":[],"attributes":["id=\"microphone\"","data={{ id, type: \"microphone\", name }}","draggable"],"roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

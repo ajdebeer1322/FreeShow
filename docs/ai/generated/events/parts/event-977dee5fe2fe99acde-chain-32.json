@@ -1,0 +1,5 @@
+[
+  {"id":"src/frontend/components/helpers/history.ts:9415","name":"<callback>","file":"src/frontend/components/helpers/history.ts","line":219,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/select.ts:724","name":"deselect","file":"src/frontend/components/helpers/select.ts","line":22,"depth":3,"via":"deselect"},
+  {"id":"src/frontend/components/drawer/media/Media.svelte:17946","name":"<callback>","file":"src/frontend/components/drawer/media/Media.svelte","line":443,"depth":1,"via":"<callback>"}
+]

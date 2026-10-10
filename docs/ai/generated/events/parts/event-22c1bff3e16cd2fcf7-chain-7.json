@@ -1,0 +1,9 @@
+[
+  {"id":"src/frontend/components/timeline/SlideTimeline.ts:5776","name":"interpolateValue","file":"src/frontend/components/timeline/SlideTimeline.ts","line":145,"depth":6,"via":"SlideTimeline.interpolateValue"},
+  {"id":"src/frontend/components/timeline/SlideTimeline.ts:3505","name":"triggerAction","file":"src/frontend/components/timeline/SlideTimeline.ts","line":83,"depth":6,"via":"SlideTimeline.triggerAction"},
+  {"id":"src/frontend/components/timeline/TimelinePlayback.ts:10816","name":"<callback>","file":"src/frontend/components/timeline/TimelinePlayback.ts","line":343,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/timeline/TimelinePlayback.ts:24885","name":"sendTimecode","file":"src/frontend/components/timeline/TimelinePlayback.ts","line":688,"depth":4,"via":"this.sendTimecode"},
+  {"id":"src/frontend/components/timeline/TimelinePlayback.ts:4492","name":"pause","file":"src/frontend/components/timeline/TimelinePlayback.ts","line":125,"depth":4,"via":"this.pause"},
+  {"id":"src/frontend/components/timeline/TimelinePlayback.ts:16055","name":"checkMediaPause","file":"src/frontend/components/timeline/TimelinePlayback.ts","line":472,"depth":5,"via":"this.checkMediaPause"},
+  {"id":"src/frontend/components/timeline/TimelinePlayback.ts:16637","name":"<callback>","file":"src/frontend/components/timeline/TimelinePlayback.ts","line":485,"depth":6,"via":"<callback>"}
+]

@@ -1,0 +1,5 @@
+[
+  {"id":"src/frontend/components/helpers/array.ts:1428","name":"<callback>","file":"src/frontend/components/helpers/array.ts","line":45,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/array.ts:1477","name":"<callback>","file":"src/frontend/components/helpers/array.ts","line":46,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/show.ts:14430","name":"<callback>","file":"src/frontend/components/helpers/show.ts","line":378,"depth":5,"via":"<callback>"}
+]

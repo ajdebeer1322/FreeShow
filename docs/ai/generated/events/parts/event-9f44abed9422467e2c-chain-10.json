@@ -1,0 +1,8 @@
+[
+  {"id":"src/frontend/components/helpers/shows.ts:1508","name":"set","file":"src/frontend/components/helpers/shows.ts","line":38,"depth":2,"via":"_show(showId).set"},
+  {"id":"src/frontend/components/helpers/shows.ts:1622","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":40,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:367","name":"touchShowModified","file":"src/frontend/components/helpers/shows.ts","line":10,"depth":4,"via":"touchShowModified"},
+  {"id":"src/frontend/components/helpers/show.ts:15172","name":"<callback>","file":"src/frontend/components/helpers/show.ts","line":398,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/show.ts:15475","name":"<callback>","file":"src/frontend/components/helpers/show.ts","line":408,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/show.ts:15572","name":"<callback>","file":"src/frontend/components/helpers/show.ts","line":410,"depth":3,"via":"<callback>"}
+]

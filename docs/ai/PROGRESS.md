@@ -1,6 +1,6 @@
 # AI map progress
 
-Source base: `96078ca1fdd5d34864da9e793c9a48a984b00ce3` (`origin/upgrade/svelte-5`). Branch: `ai-map`; isolated worktree `/home/andre/FreeShow-ai-map`. Never push. Product source and companion guides remain untouched.
+Phase 7 source base: `a3cdd7f576480f842077c233c79f6f4c3238fd07` (local `main-tests`). Phases 1–6 originally used `origin/upgrade/svelte-5`. Branch: `main-tests`; independent Git metadata with local checkout `/home/andre/FreeShow-ai-map`. Never push. Product source and companion guides remain untouched.
 
 - [x] Phase 1 — generated maps: 1,066 files; 560 components; 384 stores (270 central); 30 transport channels; 441 message keys; 1,158 timing entries; 311 workaround comments. Zero parser errors. Final verification excludes nested IPC payload fields from keys and preserves explicit handler payload types.
 - [x] Phase 2 — pure query functions and read-only CLI; bounded plain-text results, `--all`, qualified duplicate store names, inclusive decision ranges; query tests pass.
@@ -14,3 +14,12 @@ Source base: `96078ca1fdd5d34864da9e793c9a48a984b00ce3` (`origin/upgrade/svelte-
 - [code] `HOW_IT_WORKS.md` is absent at this base. The [later companion](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md) has F-001–F-019. Links to findings describe that later snapshot, not observed behavior of this branch.
 - [verified] GitHub CLI is authenticated as ajdebeer1322. All needed release PRs and directly relevant linked issue records are cached; release PR bodies are empty, and local squash messages retain bundled bullets. No GitHub writes or push occurred.
 - [code] No dependency changes; an ignored local node_modules directory contains links to existing installed packages. Never rebuild the shared dependency directory. Runtime build files and GitHub/blame responses live only in the ignored cache.
+
+## Phase 7 — events and triggers
+
+- [x] Step 1: refreshed main-tests maps/history/subsystems; inventory includes keyboard, clicks, menu declarations/loaders, drag sources/targets/routes, API commands, activations and timers. Six-level conditional effects, unresolved edges and source offsets regression-tested. Inherited runtime evidence will be refreshed in step 3.
+- [ ] Step 2: pure event queries and context-sensitive key tables.
+- [ ] Step 3: isolated Electron timeline recorder and scenario recordings.
+- [ ] Step 4: documentation, findings, coverage report and validation.
+
+The checkout has independent Git refs at `/home/andre/FreeShow-ai-map-isolated.git`; another folder can commit to its own main-tests without moving this branch. No pull, rebase or push.

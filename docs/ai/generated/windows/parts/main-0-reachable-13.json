@@ -1,5 +1,4 @@
 [
-  "src/frontend/components/output/layers/PdfOutput.svelte",
   "src/frontend/components/output/layers/SceneMedia.svelte",
   "src/frontend/components/output/layers/SlideContent.svelte",
   "src/frontend/components/output/messages/MessageWordingEditor.svelte",
@@ -38,5 +37,6 @@
   "src/frontend/components/settings/tabs/Profiles.svelte",
   "src/frontend/components/settings/tabs/ProfilesButtons.svelte",
   "src/frontend/components/settings/tabs/ProfilesTabs.svelte",
-  "src/frontend/components/settings/tabs/Styles.svelte"
+  "src/frontend/components/settings/tabs/Styles.svelte",
+  "src/frontend/components/settings/tabs/StylesButtons.svelte"
 ]

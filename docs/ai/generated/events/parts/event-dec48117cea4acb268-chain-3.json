@@ -1,0 +1,11 @@
+[
+  {"id":"src/frontend/components/media/video/videoPlayer.ts:24232","name":"getPlaying","file":"src/frontend/components/media/video/videoPlayer.ts","line":629,"depth":2,"via":"this.getPlaying"},
+  {"id":"src/frontend/components/media/video/videoPlayer.ts:24350","name":"<callback>","file":"src/frontend/components/media/video/videoPlayer.ts","line":630,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/media/video/videoPlayer.ts:24412","name":"<callback>","file":"src/frontend/components/media/video/videoPlayer.ts","line":630,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/audio/audioFading.ts:7655","name":"fadeinAllPlayingAudio","file":"src/frontend/audio/audioFading.ts","line":214,"depth":2,"via":"fadeinAllPlayingAudio"},
+  {"id":"src/frontend/audio/audioFading.ts:8003","name":"<callback>","file":"src/frontend/audio/audioFading.ts","line":224,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/audio/audioFading.ts:8215","name":"fadeinAudio","file":"src/frontend/audio/audioFading.ts","line":232,"depth":4,"via":"fadeinAudio"},
+  {"id":"src/frontend/audio/audioFading.ts:8374","name":"<callback>","file":"src/frontend/audio/audioFading.ts","line":234,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/audio/audioFading.ts:8215","name":"fadeinAudio","file":"src/frontend/audio/audioFading.ts","line":232,"depth":3,"via":"fadeinAudio"},
+  {"id":"src/frontend/audio/audioFading.ts:8374","name":"<callback>","file":"src/frontend/audio/audioFading.ts","line":234,"depth":4,"via":"<callback>"}
+]

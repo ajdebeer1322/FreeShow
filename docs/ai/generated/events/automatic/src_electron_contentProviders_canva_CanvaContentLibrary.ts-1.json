@@ -1,0 +1,3 @@
+[
+  {"id":"event-de19f8ae751fe13fa5","file":"src/electron/contentProviders/canva/CanvaContentLibrary.ts","line":459,"kind":"automatic","handler":"res","conditions":[],"eventName":"setTimeout","delay":"1000","origin":"<callback>","roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

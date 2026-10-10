@@ -1,0 +1,8 @@
+[
+  {"id":"src/frontend/components/helpers/debugLog.ts:2683","name":"stringify","file":"src/frontend/components/helpers/debugLog.ts","line":78,"depth":6,"via":"stringify"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:2082","name":"addDebugEntry","file":"src/frontend/components/helpers/debugLog.ts","line":55,"depth":6,"via":"addDebugEntry"},
+  {"id":"src/frontend/utils/request.ts:295","name":"<callback>","file":"src/frontend/utils/request.ts","line":6,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/showActions.ts:41653","name":"replaceDynamicValueWithFallback","file":"src/frontend/components/helpers/showActions.ts","line":982,"depth":2,"via":"replaceDynamicValueWithFallback"},
+  {"id":"src/frontend/components/helpers/showActions.ts:38074","name":"replaceTokens","file":"src/frontend/components/helpers/showActions.ts","line":910,"depth":3,"via":"replaceTokens"},
+  {"id":"src/frontend/components/helpers/showActions.ts:38168","name":"<callback>","file":"src/frontend/components/helpers/showActions.ts","line":911,"depth":4,"via":"<callback>"}
+]

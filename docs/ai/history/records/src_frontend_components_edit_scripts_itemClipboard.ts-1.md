@@ -14,7 +14,7 @@ Code comment: “// prevent lag when updating many slides”
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/fbc4ae8a15fead1dff9263c56ec733fd8b5c4465): “v1.2.8-beta.1 (#845) * Fix a few English grammar mistakes (#824) * ✔ Fixed files not dropping - Fixed output not cleared when resetting app - Fixed video controls not working from ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/fbc4ae8a15fead1dff9263c56ec733fd8b5c4465): “v1.2.8-beta.1 (#845) * Fix a few English grammar mistakes (#824) * ✔ Fixed files not dropping - Fixed output not cleared when resetting app - Fixed video controls not working from”
 - [code] src/frontend/components/edit/scripts/itemClipboard.ts:111: “// prevent lag when updating many slides”
 
 Later line edits: 1; latest 1f661639. Full commit messages and lineage: JSON query data.
@@ -33,7 +33,7 @@ Code comment: “// prevent lag when updating many slides”
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/fbc4ae8a15fead1dff9263c56ec733fd8b5c4465): “v1.2.8-beta.1 (#845) * Fix a few English grammar mistakes (#824) * ✔ Fixed files not dropping - Fixed output not cleared when resetting app - Fixed video controls not working from ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/fbc4ae8a15fead1dff9263c56ec733fd8b5c4465): “v1.2.8-beta.1 (#845) * Fix a few English grammar mistakes (#824) * ✔ Fixed files not dropping - Fixed output not cleared when resetting app - Fixed video controls not working from”
 - [code] src/frontend/components/edit/scripts/itemClipboard.ts:236: “// prevent lag when updating many slides”
 
 Later line edits: 1; latest 1f661639. Full commit messages and lineage: JSON query data.
@@ -52,7 +52,7 @@ Code comment: “// prevent lag when updating many slides”
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/fbc4ae8a15fead1dff9263c56ec733fd8b5c4465): “v1.2.8-beta.1 (#845) * Fix a few English grammar mistakes (#824) * ✔ Fixed files not dropping - Fixed output not cleared when resetting app - Fixed video controls not working from ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/fbc4ae8a15fead1dff9263c56ec733fd8b5c4465): “v1.2.8-beta.1 (#845) * Fix a few English grammar mistakes (#824) * ✔ Fixed files not dropping - Fixed output not cleared when resetting app - Fixed video controls not working from”
 - [code] src/frontend/components/edit/scripts/itemClipboard.ts:289: “// prevent lag when updating many slides”
 
 Later line edits: 1; latest 1f661639. Full commit messages and lineage: JSON query data.

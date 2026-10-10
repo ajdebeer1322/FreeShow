@@ -1,0 +1,3 @@
+[
+  {"id":"event-f4fec1962119595d94","file":"src/frontend/components/show/ProjectList.svelte","line":164,"kind":"drag-source","handler":"draggable={!isReadOnly && !noEditing}","conditions":[],"attributes":["id={project.type || \"project\"}","data={{ type: project.type || \"project\", id: project.id }}","draggable={!isReadOnly && !noEditing}","trigger=\"column\"","borders=\"center\""],"roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

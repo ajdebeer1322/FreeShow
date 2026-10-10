@@ -1,0 +1,3 @@
+[
+  {"id":"event-ed7c9721f56fa8ab17","file":"src/frontend/ai/scripture/BibleSearchDetector.ts","line":205,"kind":"automatic","handler":"resolve","conditions":[{"file":"src/frontend/ai/scripture/BibleSearchDetector.ts","line":204,"expression":"i > 0","branch":"then"}],"eventName":"setTimeout","delay":"0","origin":"<callback>","roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

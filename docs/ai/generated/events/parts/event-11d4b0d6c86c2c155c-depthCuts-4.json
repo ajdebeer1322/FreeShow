@@ -1,0 +1,5 @@
+[
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:3038","via":"AudioRoutingManager.instance.init","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioPlayer.ts:15715","via":"this.setPitch","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioPlayer.ts:15813","via":"this.setTempo","reason":"six-level depth limit"}
+]

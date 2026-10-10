@@ -32,7 +32,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/a36080086b1dc0ea56ac71e9cddac9c1847dc2ab): “1.4.3 (#1623) * 🎵 NowPlayingCover not removed when fading between songs - Removing duplicate artists from NowPlaying file - Audio metadata dynamic value now remains when audio is ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/a36080086b1dc0ea56ac71e9cddac9c1847dc2ab): “1.4.3 (#1623) * 🎵 NowPlayingCover not removed when fading between songs - Removing duplicate artists from NowPlaying file - Audio metadata dynamic value now remains when audio is”
 
 Later line edits: 0; latest a3608008. Full commit messages and lineage: JSON query data.
 
@@ -50,7 +50,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/f8d43d175b7cde4a36813a0632776df218ed9b13): “1.6.2-beta.2 (#3364) * Show Style custom First slide template in preview * More uniform tips * Updated Chinese language * Moved Log song usage to Shows drawer - Clock visible more ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/f8d43d175b7cde4a36813a0632776df218ed9b13): “1.6.2-beta.2 (#3364) * Show Style custom First slide template in preview * More uniform tips * Updated Chinese language * Moved Log song usage to Shows drawer - Clock visible more”
 
 Later line edits: 0; latest f8d43d17. Full commit messages and lineage: JSON query data.
 

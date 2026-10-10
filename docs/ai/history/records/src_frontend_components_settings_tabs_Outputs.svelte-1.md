@@ -32,7 +32,7 @@ Code comment: “// disable preview output transitions (to prevent visual svelte
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/425a7419e5db66843009702d4b88a66d7241d811): “1.4.9-beta.2 (#1975) * ✔️ Fixed freeze when playing PDF files * ✨ UI updates * 🎨 Color update * 🎨 Updated General settings * 🚩 Updated Chinese language * Feature/quicksearch UI ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/425a7419e5db66843009702d4b88a66d7241d811): “1.4.9-beta.2 (#1975) * ✔️ Fixed freeze when playing PDF files * ✨ UI updates * 🎨 Color update * 🎨 Updated General settings * 🚩 Updated Chinese language * Feature/quicksearch UI”
 - [code] src/frontend/components/settings/tabs/Outputs.svelte:98: “// disable preview output transitions (to prevent visual svelte bug)”
 
 Later line edits: 0; latest 425a7419. Full commit messages and lineage: JSON query data.

@@ -1,0 +1,18 @@
+[
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1317,"expression":"pos.left","then":"pos.left *= ctx.scale.x ?? 1"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1318,"expression":"pos.top","then":"pos.top *= ctx.scale.y ?? 1"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1319,"expression":"pos.width","then":"pos.width *= ctx.scale.x ?? 1"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1320,"expression":"pos.height","then":"pos.height *= ctx.scale.y ?? 1"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1321,"expression":"pos.width + pos.height + pos.left + pos.top === 0","then":"pos = getPosition(shape.layoutShape, ctx.scale)"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1322,"expression":"pos.width + pos.height + pos.left + pos.top === 0","then":"pos = getPosition(shape.masterShape, ctx.scale)"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1323,"expression":"pos.width === 0 && pos.height === 0","then":"pos = { left: 80, top: 200, width: 1760, height: 680 }"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1326,"expression":"svgShape","then":"{ const lnW = getAttribute(spPr, \"w\", \"a:ln\") || \"0\" const strokeWidth = emuToPixels(lnW) if (!pos.height) { const size = Math.max(strokeWidth, 4) pos.top -= size / 2 pos.height = "},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1329,"expression":"!pos.height","then":"{ const size = Math.max(strokeWidth, 4) pos.top -= size / 2 pos.height = size }"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1334,"expression":"!pos.width","then":"{ const size = Math.max(strokeWidth, 4) pos.left -= size / 2 pos.width = size }"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1347,"expression":"!svgShape && !svgText","then":"{ const l = getAttribute(blipFill, \"l\", \"a:srcRect\") const t = getAttribute(blipFill, \"t\", \"a:srcRect\") const r = getAttribute(blipFill, \"r\", \"a:srcRect\") const b = getAttribute(bl"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1354,"expression":"l !== \"\" || t !== \"\" || r !== \"\" || b !== \"\"","then":"{ item.cropping = { left: toFract(l), // , emuToPixels(pos.width || 0)), top: toFract(t), // , emuToPixels(pos.height || 0)), right: toFract(r), // , emuToPixels(pos.width || 0)), "},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1362,"expression":"item.cropping.left + item.cropping.right + item.cropping.top + item.cropping.bottom === 0","then":"delete item.cropping"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1367,"expression":"!v","then":"return 0"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1369,"expression":"isNaN(n)","then":"return 0"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1373,"expression":"rounded < 0.05 && rounded > -0.05","then":"rounded = 0"}
+]

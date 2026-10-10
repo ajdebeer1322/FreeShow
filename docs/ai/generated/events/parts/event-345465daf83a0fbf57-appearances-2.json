@@ -1,0 +1,8 @@
+[
+  {"file":"src/frontend/components/show/tools/Media.svelte","line":358,"expression":" <SelectElem id=\"action\" data={action} draggable> <!-- class=\"context #action\" --> <Button on:click={() => runAction(action, { source: \"click\" })} style=\"padding: 8px;width: 100%;\""},
+  {"file":"src/frontend/components/timeline/Timeline.svelte","line":735,"expression":" {#if duration} <div class=\"action-clip context #timeline_node\" class:selected={selectedActionIds.includes(action.id)} style=\"left: {(action.time / 1000) * zoomLevel}px; width: {du"},
+  {"file":"src/frontend/components/timeline/Timeline.svelte","line":741,"expression":" {:else} <div class=\"action-marker {action.type} context #timeline_node\" class:selected={selectedActionIds.includes(action.id)} style=\"left: {(action.time / 1000) * zoomLevel}px; t"},
+  {"file":"src/frontend/components/timeline/Timeline.svelte","line":859,"expression":" {#if duration} <div class=\"action-clip context #timeline_node\" class:selected={selectedActionIds.includes(action.id)} style=\"left: {(action.time / 1000) * zoomLevel}px; width: {du"},
+  {"file":"src/frontend/components/timeline/Timeline.svelte","line":869,"expression":" <div class=\"action-marker {action.type} context #timeline_node\" class:selected={selectedActionIds.includes(action.id)} class"},
+  {"file":"src/frontend/components/timeline/TimelineEasing.svelte","line":280,"expression":" {#each points as p} <div class=\"action-marker {p.action.type} context #timeline_node\" class:selected={selectedActionIds.includes(p.action.id)} style=\"left: {p.x}px;top: {p.y}px;tr"}
+]

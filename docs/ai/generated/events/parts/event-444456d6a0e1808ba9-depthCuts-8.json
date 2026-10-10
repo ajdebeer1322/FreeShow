@@ -1,0 +1,12 @@
+[
+  {"target":"src/frontend/components/actions/actions.ts:5497","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/utils/common.ts:1175","via":"newToast","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:25501","via":"getAllOutputs","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:25922","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:26008","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/utils/language.ts:3505","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/utils/language.ts:3700","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/debugLog.ts:10836","via":"debugSentToOutput","reason":"six-level depth limit"},
+  {"target":"src/frontend/utils/request.ts:295","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:5304","via":"toggleOutputs","reason":"six-level depth limit"}
+]

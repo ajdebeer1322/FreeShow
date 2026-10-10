@@ -1,0 +1,23 @@
+[
+  {"id":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte:3958","name":"resetVariable","file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte","line":88,"depth":1,"via":"resetVariable"},
+  {"id":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte:3189","name":"updateVariable","file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte","line":68,"depth":2,"via":"updateVariable"},
+  {"id":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte:3640","name":"decrementVariable","file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte","line":80,"depth":1,"via":"decrementVariable"},
+  {"id":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte:3319","name":"incrementVariable","file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte","line":72,"depth":1,"via":"incrementVariable"},
+  {"id":"src/server/stage/components/Textbox.svelte:8578","name":"transpose","file":"src/server/stage/components/Textbox.svelte","line":217,"depth":1,"via":"transpose"},
+  {"id":"src/server/stage/components/Textbox.svelte:9182","name":"<callback>","file":"src/server/stage/components/Textbox.svelte","line":230,"depth":2,"via":"<callback>"},
+  {"id":"src/server/stage/components/Textbox.svelte:9353","name":"<callback>","file":"src/server/stage/components/Textbox.svelte","line":234,"depth":3,"via":"<callback>"},
+  {"id":"src/server/stage/components/Textbox.svelte:9893","name":"transposeChord","file":"src/server/stage/components/Textbox.svelte","line":254,"depth":4,"via":"transposeChord"},
+  {"id":"src/server/stage/components/Textbox.svelte:10272","name":"transposeNote","file":"src/server/stage/components/Textbox.svelte","line":261,"depth":5,"via":"transposeNote"},
+  {"id":"src/server/stage/components/Textbox.svelte:3843","name":"createChordLines","file":"src/server/stage/components/Textbox.svelte","line":96,"depth":2,"via":"createChordLines"},
+  {"id":"src/server/stage/components/Textbox.svelte:4001","name":"<callback>","file":"src/server/stage/components/Textbox.svelte","line":101,"depth":3,"via":"<callback>"},
+  {"id":"src/server/stage/components/Textbox.svelte:4152","name":"<callback>","file":"src/server/stage/components/Textbox.svelte","line":104,"depth":4,"via":"<callback>"},
+  {"id":"src/server/stage/components/Textbox.svelte:6534","name":"getLineText","file":"src/server/stage/components/Textbox.svelte","line":156,"depth":4,"via":"getLineText"},
+  {"id":"src/server/stage/components/Textbox.svelte:6601","name":"<callback>","file":"src/server/stage/components/Textbox.svelte","line":157,"depth":5,"via":"<callback>"},
+  {"id":"src/server/stage/components/Textbox.svelte:7247","name":"getChordSizeRatio","file":"src/server/stage/components/Textbox.svelte","line":173,"depth":4,"via":"getChordSizeRatio"},
+  {"id":"src/server/stage/components/Textbox.svelte:6681","name":"getChordOnlyHtml","file":"src/server/stage/components/Textbox.svelte","line":160,"depth":4,"via":"getChordOnlyHtml"},
+  {"id":"src/server/stage/components/Textbox.svelte:6814","name":"<callback>","file":"src/server/stage/components/Textbox.svelte","line":163,"depth":5,"via":"<callback>"},
+  {"id":"src/server/stage/components/Textbox.svelte:6856","name":"<callback>","file":"src/server/stage/components/Textbox.svelte","line":164,"depth":5,"via":"<callback>"},
+  {"id":"src/server/stage/components/Textbox.svelte:4599","name":"<callback>","file":"src/server/stage/components/Textbox.svelte","line":118,"depth":4,"via":"<callback>"},
+  {"id":"src/server/stage/components/Textbox.svelte:4790","name":"<callback>","file":"src/server/stage/components/Textbox.svelte","line":122,"depth":5,"via":"<callback>"},
+  {"id":"src/server/stage/components/Textbox.svelte:5988","name":"<callback>","file":"src/server/stage/components/Textbox.svelte","line":143,"depth":4,"via":"<callback>"}
+]

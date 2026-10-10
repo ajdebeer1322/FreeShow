@@ -1,0 +1,18 @@
+[
+  {"id":"src/frontend/audio/routing/audioRoutingManager.ts:1877","name":"getInstance","file":"src/frontend/audio/routing/audioRoutingManager.ts","line":60,"depth":4,"via":"AudioRoutingManager.getInstance"},
+  {"id":"src/frontend/audio/routing/audioRoutingManager.ts:3038","name":"init","file":"src/frontend/audio/routing/audioRoutingManager.ts","line":87,"depth":5,"via":"AudioRoutingManager.instance.init"},
+  {"id":"src/frontend/audio/routing/audioRoutingManager.ts:3113","name":"<callback>","file":"src/frontend/audio/routing/audioRoutingManager.ts","line":89,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/audio/routing/audioRoutingManager.ts:3360","name":"<callback>","file":"src/frontend/audio/routing/audioRoutingManager.ts","line":97,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/audio/routing/audioRoutingManager.ts:3802","name":"<callback>","file":"src/frontend/audio/routing/audioRoutingManager.ts","line":110,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/audio/routing/audioRoutingManager.ts:3874","name":"<callback>","file":"src/frontend/audio/routing/audioRoutingManager.ts","line":111,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/audio/audioSidechain.ts:644","name":"getInstance","file":"src/frontend/audio/audioSidechain.ts","line":17,"depth":6,"via":"AudioSidechain.getInstance"},
+  {"id":"src/frontend/audio/audioPlayer.ts:11734","name":"applyProcessing","file":"src/frontend/audio/audioPlayer.ts","line":330,"depth":4,"via":"this.applyProcessing"},
+  {"id":"src/frontend/audio/audioPlayer.ts:15715","name":"setPitch","file":"src/frontend/audio/audioPlayer.ts","line":463,"depth":5,"via":"this.setPitch"},
+  {"id":"src/frontend/audio/audioAnalyser.ts:14865","name":"setPitch","file":"src/frontend/audio/audioAnalyser.ts","line":392,"depth":6,"via":"AudioAnalyser.setPitch"},
+  {"id":"src/frontend/audio/audioPlayer.ts:15813","name":"setTempo","file":"src/frontend/audio/audioPlayer.ts","line":467,"depth":5,"via":"this.setTempo"},
+  {"id":"src/frontend/audio/audioAnalyser.ts:15005","name":"setTempo","file":"src/frontend/audio/audioAnalyser.ts","line":395,"depth":6,"via":"AudioAnalyser.setTempo"},
+  {"id":"src/frontend/components/helpers/media.ts:1315","name":"removeExtension","file":"src/frontend/components/helpers/media.ts","line":26,"depth":2,"via":"removeExtension"},
+  {"id":"src/frontend/components/helpers/media.ts:2136","name":"getFileName","file":"src/frontend/components/helpers/media.ts","line":46,"depth":2,"via":"getFileName"},
+  {"id":"src/frontend/audio/audioPlayer.ts:17498","name":"nowPlaying","file":"src/frontend/audio/audioPlayer.ts","line":518,"depth":2,"via":"this.nowPlaying"},
+  {"id":"src/frontend/audio/audioPlayer.ts:19787","name":"getDurationSync","file":"src/frontend/audio/audioPlayer.ts","line":578,"depth":3,"via":"this.getDurationSync"}
+]

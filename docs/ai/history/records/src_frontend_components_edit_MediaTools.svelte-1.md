@@ -50,7 +50,7 @@ Fork decision: “Rebuild the inspector settings panel and fit the popup to the 
 
 Sources:
 
-- [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/846d90984dd65100413d0b06336cd1c611f00aa5): “Rebuild the inspector settings panel and fit the popup to the window - ProPresenter-style colour sliders (hue, saturation, brightness, contrast, blur) with value boxes and per-row ”
+- [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/846d90984dd65100413d0b06336cd1c611f00aa5): “Rebuild the inspector settings panel and fit the popup to the window - ProPresenter-style colour sliders (hue, saturation, brightness, contrast, blur) with value boxes and per-row”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/846d90984dd65100413d0b06336cd1c611f00aa5): “- The inspector popup now uses the whole window so nothing is cut off”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/846d90984dd65100413d0b06336cd1c611f00aa5): “- The inspector popup now uses the whole window so nothing is cut off”
 

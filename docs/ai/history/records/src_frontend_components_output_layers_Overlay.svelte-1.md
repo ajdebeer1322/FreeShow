@@ -69,7 +69,7 @@ Code comment: “// created a new one). Each change of show must give a new key,
 
 Sources:
 
-- [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/d3b3f77519612260851f8e5e63ef0d18b7de5a86): “Phase 4: fix regressions found while checking the running app - Output slide changes stacked every previous slide on the output. Svelte 5 revives a {#key} branch when the same key ”
+- [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/d3b3f77519612260851f8e5e63ef0d18b7de5a86): “Phase 4: fix regressions found while checking the running app - Output slide changes stacked every previous slide on the output. Svelte 5 revives a {#key} branch when the same key”
 - [code] src/frontend/components/output/layers/Overlay.svelte:25: “// created a new one). Each change of show must give a new key, so the old SlideItemTransition is never revived.”
 
 Later line edits: 0; latest d3b3f775. Full commit messages and lineage: JSON query data.
@@ -88,7 +88,7 @@ Fork decision: “Phase 4: fix regressions found while checking the running app 
 
 Sources:
 
-- [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/d3b3f77519612260851f8e5e63ef0d18b7de5a86): “Phase 4: fix regressions found while checking the running app - Output slide changes stacked every previous slide on the output. Svelte 5 revives a {#key} branch when the same key ”
+- [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/d3b3f77519612260851f8e5e63ef0d18b7de5a86): “Phase 4: fix regressions found while checking the running app - Output slide changes stacked every previous slide on the output. Svelte 5 revives a {#key} branch when the same key”
 - [code] src/frontend/components/output/layers/Overlay.svelte:25: “// created a new one). Each change of show must give a new key, so the old SlideItemTransition is never revived.”
 
 Later line edits: 0; latest d3b3f775. Full commit messages and lineage: JSON query data.

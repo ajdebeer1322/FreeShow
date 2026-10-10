@@ -1,0 +1,9 @@
+[
+  {"file":"src/frontend/components/context/menuClick.ts","line":1386,"expression":"obj.sel.id === \"interaction\"","then":"{ openedInteractionId.set(obj.sel.data[0]?.id) }"},
+  {"file":"src/frontend/components/context/menuClick.ts","line":1388,"expression":"obj.contextElem?.classList?.contains(\"#interaction_input\")","then":"{ const id = (obj.contextElem.id || \"\").slice(1) popupData.set({ id: get(openedInteractionId), inputIndex: Number(id) }) activePopup.set(\"interaction_input\") }"},
+  {"file":"src/frontend/components/context/menuClick.ts","line":1392,"expression":"obj.sel.id === \"audio_stream\"","then":"{ activePopup.set(\"audio_stream\") }"},
+  {"file":"src/frontend/components/context/menuClick.ts","line":1394,"expression":"obj.contextElem?.classList?.contains(\"#project_template\")","then":"{ activeProject.set(null) editingProjectTemplate.set(obj.contextElem.id) projectView.set(false) }"},
+  {"file":"src/frontend/components/context/menuClick.ts","line":1398,"expression":"obj.contextElem?.classList.value.includes(\"#event\")","then":"{ eventEdit.set(obj.contextElem.id) activePopup.set(\"edit_event\") }"},
+  {"file":"src/frontend/components/context/menuClick.ts","line":1401,"expression":"obj.contextElem?.classList.value.includes(\"output_button\")","then":"{ currentOutputSettings.set(obj.contextElem.id) settingsTab.set(\"display_settings\") activePage.set(\"settings\") }"},
+  {"file":"src/frontend/components/context/menuClick.ts","line":1405,"expression":"obj.contextElem?.classList.value.includes(\"#edit_custom_action\")","then":"{ activePopup.set(\"custom_action\") }"}
+]

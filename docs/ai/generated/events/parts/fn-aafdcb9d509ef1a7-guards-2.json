@@ -1,0 +1,21 @@
+[
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":956,"expression":"j === 0","then":"{ const mergedBooks = removeDuplicates(biblesContent.map((a) => a?.book).filter(Boolean)).join(\" / \") const mergedReference = `${mergedBooks} ${verses}`.trim() slideDynamicValues[i"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":975,"expression":"j === 0","then":"groupNames.push(reference)"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":996,"expression":"biblesContent[i - 1]?.attributionRequired && !biblesContent[i - 1]?.attributionString && !slidesString.includes(\"_name}\")","then":"{ attributions.push(bibleVersions[i - 1] || \"\") }"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1025,"expression":"disableReference","then":"return \"\""},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1048,"expression":"contentIndex < scriptureVerseContent.length - 1","then":"{ slideDynamicValues[contentIndex].scripture_reference_last = \"\" }"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1052,"expression":"valueName","then":"{ delete slideDynamicValues[contentIndex][itemKey] const content = bibleVerses.map((v, i) => { const formattedText = formatBibleText(v.text) const text = i < bibleVerses.length - 1"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1060,"expression":"valueName === \"scripture1_text\"","then":"slideDynamicValues[contentIndex].scripture_text = content"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1067,"expression":"!line?.text","then":"return"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1071,"expression":"keyIndex === -1","then":"return"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1085,"expression":"parts[0]","then":"newLineText.push({ ...keyTextObj, value: parts[0] })"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1091,"expression":"title","then":"{ let value = formatBibleText(title) if (titleStyle) value = value.replace('\">', `\" style=\"${titleStyle}\">`) newLineText.push({ ...keyTextObj, value, sourceDynamicKey: `${valueName"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1093,"expression":"titleStyle","then":"value = value.replace('\">', `\" style=\"${titleStyle}\">`)"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1098,"expression":"verseNumbers && verse.number","then":"{ const size = verseNumberSize * (i === 0 ? 1.2 : 1) const numberStyle = `;${verseNumberStyles[bibleIndex + 1] || verseNumberStyles[0] || verseNumberStyle}font-size: ${size}px;marg"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1110,"expression":"get(scriptureSettings).redJesus && verseText.includes(\"!{\")","then":"{ verseText.split(/(!?\\{[^}]*\\}!?)/g).forEach((seg) => { if (!seg) return const isJesusWords = seg.startsWith(\"!{\") && seg.endsWith(\"}!\") const inner = isJesusWords ? seg.slice(2, "},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1112,"expression":"!seg","then":"return"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1120,"expression":"!value","then":"return"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1134,"expression":"i < bibleVerses.length - 1","then":"{ const sep = getVerseSeparator(verse, bibleVerses[i + 1], versesOnIndividualLines) newLineText.push({ ...keyTextObj, value: sep, sourceDynamicKey: `${valueName}:${i}` }) }"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1141,"expression":"parts[1]","then":"newLineText.push({ ...keyTextObj, value: parts[1] })"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":1157,"expression":"_template.getSetting(\"firstSlideTemplate\") && !onlyOne","then":"{ // Pad with globalCustomDynamicValues + scripture_text/scripture1_text as the full reference // string, so outputs whose template uses {scripture_text} (e.g. a secondary OBS outp"}
+]

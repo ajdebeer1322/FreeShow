@@ -38,5 +38,5 @@
   "src/types/Channels.ts",
   "src/types/IPC/Main.ts",
   "src/types/IPC/ToMain.ts",
-  "src/types/Show.ts"
+  "src/types/Songbeamer.ts"
 ]

@@ -14,7 +14,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/db5c44bf4fdaabea3d1a8b1e5fcd2f61d9b10336): “1.2.9 (#886) * ✔ Fixed last lines of Hymnary lyrics sometimes removed - Audio starting/ending actions - Fixed mac online video input paste not setting value - Fixed default folder ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/db5c44bf4fdaabea3d1a8b1e5fcd2f61d9b10336): “1.2.9 (#886) * ✔ Fixed last lines of Hymnary lyrics sometimes removed - Audio starting/ending actions - Fixed mac online video input paste not setting value - Fixed default folder”
 
 Later line edits: 0; latest db5c44bf. Full commit messages and lineage: JSON query data.
 

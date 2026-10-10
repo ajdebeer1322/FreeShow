@@ -32,7 +32,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing”
 
 Later line edits: 4; latest 6d9caa19. Full commit messages and lineage: JSON query data.
 
@@ -50,7 +50,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing”
 
 Later line edits: 4; latest 6d9caa19. Full commit messages and lineage: JSON query data.
 
@@ -68,7 +68,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing”
 
 Later line edits: 1; latest 0dc519a8. Full commit messages and lineage: JSON query data.
 
@@ -86,7 +86,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/3b0affd6907867aa46e1f0743ddd322b7a97fdbd): “1.3.1 (#1019) * ✔ Fixed stage zoom showing up in output - Fixed animation easing not working - Fixed animation background zoom transform - Fixed locked show also locking templates ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/3b0affd6907867aa46e1f0743ddd322b7a97fdbd): “1.3.1 (#1019) * ✔ Fixed stage zoom showing up in output - Fixed animation easing not working - Fixed animation background zoom transform - Fixed locked show also locking templates”
 
 Later line edits: 0; latest 3b0affd6. Full commit messages and lineage: JSON query data.
 
@@ -144,7 +144,7 @@ Code comment: “// prevent svelte bug creating multiple items if creating new w
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing”
 - [code] src/frontend/components/output/layers/Background.svelte:41: “// prevent svelte bug creating multiple items if creating new while old clears”
 
 Later line edits: 1; latest 0dc519a8. Full commit messages and lineage: JSON query data.
@@ -163,7 +163,7 @@ Code comment: “// prevent svelte bug creating multiple items if creating new w
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c5a960bced866af80c673921866af0800b48320b): “v1.1.5 (#452) * 🚩 Updated languages * 🔍 Case insensitive search in drawer - OpenLyrics import working for files with xml instructions - Next slide text stage preview not showing”
 - [code] src/frontend/components/output/layers/Background.svelte:41: “// prevent svelte bug creating multiple items if creating new while old clears”
 
 Later line edits: 0; latest c5a960bc. Full commit messages and lineage: JSON query data.

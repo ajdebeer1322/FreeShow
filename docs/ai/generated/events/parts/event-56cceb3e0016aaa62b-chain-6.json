@@ -1,0 +1,14 @@
+[
+  {"id":"src/electron/servers.ts:4189","name":"enqueue","file":"src/electron/servers.ts","line":117,"depth":2,"via":"enqueue"},
+  {"id":"src/electron/servers.ts:4289","name":"<callback>","file":"src/electron/servers.ts","line":118,"depth":3,"via":"<callback>"},
+  {"id":"src/electron/utils/api.ts:9301","name":"stopApiListener","file":"src/electron/utils/api.ts","line":284,"depth":1,"via":"stopApiListener"},
+  {"id":"src/electron/utils/api.ts:9861","name":"closeIoServer","file":"src/electron/utils/api.ts","line":306,"depth":2,"via":"closeIoServer"},
+  {"id":"src/electron/utils/api.ts:9546","name":"stop","file":"src/electron/utils/api.ts","line":293,"depth":2,"via":"stop"},
+  {"id":"src/electron/utils/midi.ts:4472","name":"stopMidi","file":"src/electron/utils/midi.ts","line":115,"depth":1,"via":"stopMidi"},
+  {"id":"src/electron/utils/midi.ts:4872","name":"closeMidiInPorts","file":"src/electron/utils/midi.ts","line":133,"depth":2,"via":"closeMidiInPorts"},
+  {"id":"src/electron/utils/midi.ts:5201","name":"<callback>","file":"src/electron/utils/midi.ts","line":144,"depth":3,"via":"<callback>"},
+  {"id":"src/electron/utils/midi.ts:4577","name":"closeMidiOutPorts","file":"src/electron/utils/midi.ts","line":121,"depth":2,"via":"closeMidiOutPorts"},
+  {"id":"src/electron/utils/midi.ts:4654","name":"<callback>","file":"src/electron/utils/midi.ts","line":122,"depth":3,"via":"<callback>"},
+  {"id":"src/electron/index.ts:11616","name":"resetMainWindow","file":"src/electron/index.ts","line":292,"depth":1,"via":"resetMainWindow"},
+  {"id":"src/electron/utils/close.ts:1983","name":"<callback>","file":"src/electron/utils/close.ts","line":72,"depth":1,"via":"<callback>"}
+]

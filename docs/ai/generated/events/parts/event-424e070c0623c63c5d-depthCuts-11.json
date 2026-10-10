@@ -1,0 +1,12 @@
+[
+  {"target":"src/frontend/audio/audioPlaylist.ts:4624","via":"AudioPlaylist.nextInternal","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioPlayer.ts:13381","via":"AudioPlayer.stop","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:12489","via":"this.executeRoutingUpdate","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:3113","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:3360","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:3802","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:3874","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioSidechain.ts:644","via":"AudioSidechain.getInstance","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioAnalyser.ts:14865","via":"AudioAnalyser.setPitch","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioAnalyser.ts:15005","via":"AudioAnalyser.setTempo","reason":"six-level depth limit"}
+]

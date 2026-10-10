@@ -1,0 +1,3 @@
+[
+  {"id":"event-dfa79f9e552496ee4a","file":"src/electron/utils/api.ts","line":235,"kind":"automatic","handler":"() => { try { OSC_SENDER.close() } catch (err) { // already closed } }","conditions":[],"eventName":"setTimeout","delay":"100","origin":"<callback>","roots":["src/electron/utils/api.ts:8075"],"calls":[],"effects":[],"unresolved":[],"chain":[{"id":"src/electron/utils/api.ts:8075","name":"<callback>","file":"src/electron/utils/api.ts","line":235,"depth":0,"via":"event"}],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

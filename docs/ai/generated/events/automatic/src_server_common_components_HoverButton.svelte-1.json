@@ -1,0 +1,3 @@
+[
+  {"id":"event-2199ca64404267e275","file":"src/server/common/components/HoverButton.svelte","line":12,"kind":"automatic","handler":"() => { reveal = false }","conditions":[],"eventName":"setTimeout","delay":"800","origin":"<callback>","roots":["src/server/common/components/HoverButton.svelte:279"],"calls":[],"effects":[],"unresolved":[],"chain":[{"id":"src/server/common/components/HoverButton.svelte:279","name":"<callback>","file":"src/server/common/components/HoverButton.svelte","line":12,"depth":0,"via":"event"}],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

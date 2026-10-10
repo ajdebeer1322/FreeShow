@@ -1,5 +1,4 @@
 [
-  "src/frontend/components/helpers/messageOutput.ts",
   "src/frontend/components/helpers/messageShapes.ts",
   "src/frontend/components/helpers/messages.ts",
   "src/frontend/components/helpers/mover.ts",
@@ -38,5 +37,6 @@
   "src/frontend/components/inputs/HoverButton.svelte",
   "src/frontend/components/inputs/Link.svelte",
   "src/frontend/components/inputs/MaterialButton.svelte",
-  "src/frontend/components/inputs/MaterialCheckbox.svelte"
+  "src/frontend/components/inputs/MaterialCheckbox.svelte",
+  "src/frontend/components/inputs/MaterialColorInput.svelte"
 ]

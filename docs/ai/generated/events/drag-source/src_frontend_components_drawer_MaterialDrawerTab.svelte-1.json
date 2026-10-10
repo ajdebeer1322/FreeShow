@@ -1,0 +1,3 @@
+[
+  {"id":"event-d87700e18a3b650fd3","file":"src/frontend/components/drawer/MaterialDrawerTab.svelte","line":102,"kind":"drag-source","handler":"{draggable}","conditions":[],"attributes":["style=\"width: 100%;\"","id={selectId}","selectable={!noEdit}","{draggable}","borders=\"center\"","trigger=\"column\"","data={id}"],"roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

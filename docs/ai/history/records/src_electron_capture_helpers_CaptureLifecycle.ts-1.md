@@ -32,7 +32,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/f8d43d175b7cde4a36813a0632776df218ed9b13): “1.6.2-beta.2 (#3364) * Show Style custom First slide template in preview * More uniform tips * Updated Chinese language * Moved Log song usage to Shows drawer - Clock visible more ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/f8d43d175b7cde4a36813a0632776df218ed9b13): “1.6.2-beta.2 (#3364) * Show Style custom First slide template in preview * More uniform tips * Updated Chinese language * Moved Log song usage to Shows drawer - Clock visible more”
 
 Later line edits: 0; latest f8d43d17. Full commit messages and lineage: JSON query data.
 

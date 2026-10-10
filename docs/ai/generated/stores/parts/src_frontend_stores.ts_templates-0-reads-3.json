@@ -12,7 +12,7 @@
   {"file":"src/frontend/components/main/popups/Transition.svelte","line":178,"store":"src/frontend/stores.ts#templates","kind":"dollar","symbol":null,"expression":"$templates"},
   {"file":"src/frontend/components/main/popups/localization/translation.ts","line":104,"store":"src/frontend/stores.ts#templates","kind":"get","symbol":"translateShow","expression":"get(templates)"},
   {"file":"src/frontend/components/output/Output.svelte","line":238,"store":"src/frontend/stores.ts#templates","kind":"dollar","symbol":null,"expression":"$templates"},
-  {"file":"src/frontend/components/output/layers/SlideContent.svelte","line":199,"store":"src/frontend/stores.ts#templates","kind":"dollar","symbol":"slideNeedsAutoSize","expression":"$templates"},
+  {"file":"src/frontend/components/output/layers/SlideContent.svelte","line":276,"store":"src/frontend/stores.ts#templates","kind":"dollar","symbol":"slideNeedsAutoSize","expression":"$templates"},
   {"file":"src/frontend/components/output/preview/MultiOutputs.svelte","line":220,"store":"src/frontend/stores.ts#templates","kind":"dollar-template","expression":"$templates","symbol":null},
   {"file":"src/frontend/components/output/preview/MultiOutputs.svelte","line":223,"store":"src/frontend/stores.ts#templates","kind":"dollar-template","expression":"$templates","symbol":null},
   {"file":"src/frontend/components/output/transitions/SlideItemTransition.svelte","line":98,"store":"src/frontend/stores.ts#templates","kind":"dollar","symbol":"startTransition","expression":"$templates"},

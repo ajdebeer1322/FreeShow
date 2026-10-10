@@ -72,7 +72,8 @@
 - [code] [D-poll-timeout-f679a6bd0a5b855e](../history/records/src_frontend_audio_routing_audioRoutingInit.ts-1.md): poll-timeout: 5000 (5000 ms).
 - [code] [D-workaround-24932ccfa7cdf39e](../history/records/src_electron_audio_IcecastSender.ts-1.md): // Separated real audio time tracking to fix the silence pacing bug.
 - [guess] [D-hotspot-4f6da6366e4a661b](../history/records/src_frontend_components_output_tools_Audio.svelte-1.md): Module hotspot: src/frontend/components/output/tools/Audio.svelte.
+- [code] [D-fork-a22ec4a7fd8398e1](../history/records/src_frontend_audio_audioAnalyser.ts-1.md): Use type-only imports for types in .ts files.
 
-[code] All 55 related decision IDs and locations are included in the dependency JSON. Use `ai:ask -- why <file>:<line>` for exact records; generic commit intent is not an item-specific motive.
+[code] All 56 related decision IDs and locations are included in the dependency JSON. Use `ai:ask -- why <file>:<line>` for exact records; generic commit intent is not an item-specific motive.
 
 [code] Companion references: [F-017](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These refer to a later source snapshot; they are contextual evidence, not runtime verification here.

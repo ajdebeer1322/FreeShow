@@ -1,0 +1,3 @@
+[
+  {"id":"event-033c5068db437a57de","file":"src/frontend/components/drawer/info/CanvaInfo.svelte","line":24,"kind":"drag-source","handler":"draggable=\"false\"","conditions":[],"attributes":["class=\"thumbnail\"","src={selectedPresentation.thumbnail}","alt={selectedPresentation.presentationName}","draggable=\"false\""],"roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

@@ -1,0 +1,12 @@
+[
+  {"id":"src/frontend/components/drawer/bible/scripture.ts:91296","name":"<callback>","file":"src/frontend/components/drawer/bible/scripture.ts","line":2020,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/bible/scripture.ts:91539","name":"<callback>","file":"src/frontend/components/drawer/bible/scripture.ts","line":2025,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/bible/scripture.ts:91805","name":"<callback>","file":"src/frontend/components/drawer/bible/scripture.ts","line":2032,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/bible/scripture.ts:91829","name":"<callback>","file":"src/frontend/components/drawer/bible/scripture.ts","line":2032,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/bible/scripture.ts:92052","name":"<callback>","file":"src/frontend/components/drawer/bible/scripture.ts","line":2037,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/bible/scripture.ts:92289","name":"<callback>","file":"src/frontend/components/drawer/bible/scripture.ts","line":2044,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/bible/scripture.ts:92649","name":"<callback>","file":"src/frontend/components/drawer/bible/scripture.ts","line":2051,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/bible/scripture.ts:92949","name":"<callback>","file":"src/frontend/components/drawer/bible/scripture.ts","line":2057,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/bible/Scripture.svelte:14279","name":"openBook","file":"src/frontend/components/drawer/bible/Scripture.svelte","line":321,"depth":2,"via":"openBook"},
+  {"id":"src/frontend/components/drawer/bible/Scripture.svelte:15711","name":"openChapter","file":"src/frontend/components/drawer/bible/Scripture.svelte","line":358,"depth":3,"via":"openChapter"}
+]

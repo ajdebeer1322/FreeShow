@@ -1,0 +1,10 @@
+[
+  {"id":"src/frontend/components/quicksearch/quicksearch.ts:39972","name":"getFaq","file":"src/frontend/components/quicksearch/quicksearch.ts","line":831,"depth":6,"via":"getFaq"},
+  {"id":"src/frontend/components/quicksearch/quicksearch.ts:7445","name":"<callback>","file":"src/frontend/components/quicksearch/quicksearch.ts","line":221,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/search.ts:3016","name":"showSearch","file":"src/frontend/utils/search.ts","line":87,"depth":6,"via":"showSearch"},
+  {"id":"src/frontend/components/quicksearch/quicksearch.ts:7691","name":"<callback>","file":"src/frontend/components/quicksearch/quicksearch.ts","line":224,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/quicksearch/quicksearch.ts:7911","name":"<callback>","file":"src/frontend/components/quicksearch/quicksearch.ts","line":230,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/quicksearch/quicksearchData.ts:834","name":"getMediaResults","file":"src/frontend/components/quicksearch/quicksearchData.ts","line":18,"depth":6,"via":"getMediaResults"},
+  {"id":"src/frontend/components/quicksearch/quicksearch.ts:8377","name":"<callback>","file":"src/frontend/components/quicksearch/quicksearch.ts","line":242,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/quicksearch/QuickSearch.svelte:1683","name":"<callback>","file":"src/frontend/components/quicksearch/QuickSearch.svelte","line":46,"depth":4,"via":"<callback>"}
+]

@@ -50,7 +50,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/e577bc820b34002b85c1909e2724d7e37c2b8900): “📅 Calendar - Repeat events - Delete & duplicate events - New create event popup - Better scripture menu - Shift & Alt textbox resize working again - Copy and paste slides working ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/e577bc820b34002b85c1909e2724d7e37c2b8900): “📅 Calendar - Repeat events - Delete & duplicate events - New create event popup - Better scripture menu - Shift & Alt textbox resize working again - Copy and paste slides working”
 
 Later line edits: 3; latest 256b8c79. Full commit messages and lineage: JSON query data.
 
@@ -68,7 +68,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/e577bc820b34002b85c1909e2724d7e37c2b8900): “📅 Calendar - Repeat events - Delete & duplicate events - New create event popup - Better scripture menu - Shift & Alt textbox resize working again - Copy and paste slides working ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/e577bc820b34002b85c1909e2724d7e37c2b8900): “📅 Calendar - Repeat events - Delete & duplicate events - New create event popup - Better scripture menu - Shift & Alt textbox resize working again - Copy and paste slides working”
 
 Later line edits: 3; latest 256b8c79. Full commit messages and lineage: JSON query data.
 
@@ -105,7 +105,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/e577bc820b34002b85c1909e2724d7e37c2b8900): “📅 Calendar - Repeat events - Delete & duplicate events - New create event popup - Better scripture menu - Shift & Alt textbox resize working again - Copy and paste slides working ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/e577bc820b34002b85c1909e2724d7e37c2b8900): “📅 Calendar - Repeat events - Delete & duplicate events - New create event popup - Better scripture menu - Shift & Alt textbox resize working again - Copy and paste slides working”
 
 Later line edits: 1; latest c193fda7. Full commit messages and lineage: JSON query data.
 
@@ -123,7 +123,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/e577bc820b34002b85c1909e2724d7e37c2b8900): “📅 Calendar - Repeat events - Delete & duplicate events - New create event popup - Better scripture menu - Shift & Alt textbox resize working again - Copy and paste slides working ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/e577bc820b34002b85c1909e2724d7e37c2b8900): “📅 Calendar - Repeat events - Delete & duplicate events - New create event popup - Better scripture menu - Shift & Alt textbox resize working again - Copy and paste slides working”
 
 Later line edits: 11; latest c193fda7. Full commit messages and lineage: JSON query data.
 

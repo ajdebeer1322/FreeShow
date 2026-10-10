@@ -1,0 +1,11 @@
+[
+  {"id":"src/frontend/components/export/projectLink.ts:3478","name":"<callback>","file":"src/frontend/components/export/projectLink.ts","line":95,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/export/projectLink.ts:3387","name":"mapSlideItems","file":"src/frontend/components/export/projectLink.ts","line":94,"depth":4,"via":"mapSlideItems"},
+  {"id":"src/frontend/components/export/projectLink.ts:3478","name":"<callback>","file":"src/frontend/components/export/projectLink.ts","line":95,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/export/projectLink.ts:5170","name":"encodeStyle","file":"src/frontend/components/export/projectLink.ts","line":159,"depth":6,"via":"encodeStyle"},
+  {"id":"src/frontend/components/export/projectLink.ts:3754","name":"<callback>","file":"src/frontend/components/export/projectLink.ts","line":102,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/export/projectLink.ts:7241","name":"compressToUrlSafeBase64","file":"src/frontend/components/export/projectLink.ts","line":220,"depth":2,"via":"compressToUrlSafeBase64"},
+  {"id":"src/frontend/components/export/projectLink.ts:7708","name":"toUrlSafeBase64","file":"src/frontend/components/export/projectLink.ts","line":231,"depth":3,"via":"toUrlSafeBase64"},
+  {"id":"src/frontend/utils/common.ts:1175","name":"newToast","file":"src/frontend/utils/common.ts","line":26,"depth":2,"via":"newToast"},
+  {"id":"src/frontend/components/helpers/array.ts:335","name":"removeDuplicates","file":"src/frontend/components/helpers/array.ts","line":10,"depth":3,"via":"removeDuplicates"}
+]

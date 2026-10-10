@@ -1,0 +1,12 @@
+[
+  {"file":"src/frontend/components/helpers/shows.ts","line":620,"expression":"!indexes[i]?.length && deleteAll","then":"indexes[i] = Object.keys(shows[id].layouts[layoutId]?.slides || {})"},
+  {"file":"src/frontend/components/helpers/shows.ts","line":624,"expression":"!a[id].layouts[layoutId].slides[index]","then":"return"},
+  {"file":"src/frontend/components/helpers/shows.ts","line":627,"expression":"key","then":"{ prev[layoutId].layouts.push(a[id].layouts[layoutId].slides[index][key]) delete a[id].layouts[layoutId].slides[index][key] }"},
+  {"file":"src/frontend/components/helpers/shows.ts","line":648,"expression":"!a[id]","then":"return a"},
+  {"file":"src/frontend/components/helpers/shows.ts","line":649,"expression":"layoutIds === \"active\"","then":"layoutIds = [shows[id].settings.activeLayout]"},
+  {"file":"src/frontend/components/helpers/shows.ts","line":650,"expression":"!layoutIds.length","then":"layoutIds = Object.keys(a[id].layouts)"},
+  {"file":"src/frontend/components/helpers/shows.ts","line":653,"expression":"i === 0","then":"prev[i] = []"},
+  {"file":"src/frontend/components/helpers/shows.ts","line":654,"expression":"!indexesDefined","then":"indexes = Object.keys(shows[id].layouts[layoutId]?.slides || {})"},
+  {"file":"src/frontend/components/helpers/shows.ts","line":657,"expression":"!a[id].layouts[layoutId].slides[index].children","then":"a[id].layouts[layoutId].slides[index].children = {}"},
+  {"file":"src/frontend/components/helpers/shows.ts","line":658,"expression":"!a[id].layouts[layoutId].slides[index].children![child]","then":"a[id].layouts[layoutId].slides[index].children![child] = {}"}
+]

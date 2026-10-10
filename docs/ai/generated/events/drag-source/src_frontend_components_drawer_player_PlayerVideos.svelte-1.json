@@ -1,0 +1,3 @@
+[
+  {"id":"event-b45b85fc38c21805da","file":"src/frontend/components/drawer/player/PlayerVideos.svelte","line":123,"kind":"drag-source","handler":"draggable","conditions":[],"attributes":["id=\"player\"","data={video.rid}","style=\"width: 100%;\"","draggable"],"roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

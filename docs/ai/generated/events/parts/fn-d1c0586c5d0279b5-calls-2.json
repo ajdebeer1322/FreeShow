@@ -1,0 +1,9 @@
+[
+  {"file":"src/frontend/audio/audioWaveform.ts","line":116,"expression":"container.appendChild","args":["svg"],"targets":[],"kind":"call","conditions":[{"file":"src/frontend/audio/audioWaveform.ts","line":88,"expression":"settings.type === \"line\"","branch":"then"}],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/frontend/audio/audioWaveform.ts","line":124,"expression":"document.createElement","args":["\"div\""],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/audio/audioWaveform.ts","line":125,"expression":"bar.classList.add","args":["\"wave-bar\""],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/audio/audioWaveform.ts","line":128,"expression":"container.appendChild","args":["bar"],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/frontend/audio/audioWaveform.ts","line":129,"expression":"bars.push","args":["bar"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/audio/audioWaveform.ts","line":132,"expression":"requestAnimationFrame","args":["() => { bars.forEach((bar) => (bar.style.height = \"5px\")) // set correct height (after previous render) requestAnimationFrame(() => { bars.forEach((bar, i) => { bar.style.height = `${waveform[i] * 100 * (settings.height || 1)}%` }) }) }"],"targets":[],"kind":"call","conditions":[],"terminal":"scheduler"},
+  {"file":"src/frontend/audio/audioWaveform.ts","line":132,"expression":"<callback>","targets":["src/frontend/audio/audioWaveform.ts:4415"],"kind":"callback","reason":"callback may run later or conditionally"}
+]

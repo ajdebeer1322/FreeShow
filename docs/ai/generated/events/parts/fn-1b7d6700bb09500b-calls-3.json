@@ -1,0 +1,4 @@
+[
+  {"file":"src/frontend/components/helpers/showActions.ts","line":886,"expression":"replaceDynamicValues","args":["variable.text || \"\"","ref"],"targets":["src/frontend/components/helpers/showActions.ts:39392"],"kind":"call","conditions":[{"file":"src/frontend/components/helpers/showActions.ts","line":845,"expression":"dynamicId.includes(\"$\") || dynamicId.includes(\"variable_\")","branch":"then"}]},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":887,"expression":"resolvingVariables.delete","args":["dynamicId"],"targets":[],"kind":"call","conditions":[{"file":"src/frontend/components/helpers/showActions.ts","line":845,"expression":"dynamicId.includes(\"$\") || dynamicId.includes(\"variable_\")","branch":"then"}],"terminal":"platform/read"}
+]

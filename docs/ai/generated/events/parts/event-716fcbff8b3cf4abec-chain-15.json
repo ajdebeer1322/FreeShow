@@ -1,0 +1,11 @@
+[
+  {"id":"src/frontend/components/helpers/output.ts:25185","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":592,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:14654","name":"saveLockedOverlays","file":"src/frontend/components/helpers/output.ts","line":314,"depth":4,"via":"saveLockedOverlays"},
+  {"id":"src/frontend/components/helpers/output.ts:14781","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":316,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:14840","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":317,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:15091","name":"saveActiveScenes","file":"src/frontend/components/helpers/output.ts","line":326,"depth":4,"via":"saveActiveScenes"},
+  {"id":"src/frontend/components/helpers/output.ts:15212","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":328,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/actions.ts:5342","name":"customActionActivation","file":"src/frontend/components/actions/actions.ts","line":157,"depth":2,"via":"customActionActivation"},
+  {"id":"src/frontend/components/actions/actions.ts:5497","name":"<callback>","file":"src/frontend/components/actions/actions.ts","line":159,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/utils/common.ts:1175","name":"newToast","file":"src/frontend/utils/common.ts","line":26,"depth":3,"via":"newToast"}
+]

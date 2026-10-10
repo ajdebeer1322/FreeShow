@@ -1,0 +1,3 @@
+[
+  {"id":"event-2e2fe1256fe7a5f526","file":"src/electron/data/zip.test.ts","line":107,"kind":"automatic","handler":"resolve","conditions":[],"eventName":"setTimeout","delay":"100","origin":"<callback>","roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

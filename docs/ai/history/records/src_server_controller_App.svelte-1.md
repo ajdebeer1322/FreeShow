@@ -14,7 +14,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/d51401b1c00218abdbf1f6b2a2f6b122786ae7b4): “1.5.2-beta.1 (#2310) * Fixed freeze when playing scripture from RemoteShow - Updated languages * Updated Chinese language * Fixed freeze with deleted action tag * Removed bad code ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/d51401b1c00218abdbf1f6b2a2f6b122786ae7b4): “1.5.2-beta.1 (#2310) * Fixed freeze when playing scripture from RemoteShow - Updated languages * Updated Chinese language * Fixed freeze with deleted action tag * Removed bad code”
 
 Later line edits: 0; latest d51401b1. Full commit messages and lineage: JSON query data.
 

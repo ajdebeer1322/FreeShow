@@ -1,0 +1,3 @@
+[
+  {"id":"event-5f18a6746939134347","file":"src/frontend/components/helpers/debugLog.test.ts","line":43,"kind":"automatic","handler":"resolve","conditions":[],"eventName":"setTimeout","delay":"80","origin":"<callback>","roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

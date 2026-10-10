@@ -1,5 +1,4 @@
 [
-  "src/frontend/components/main/popups/AudioStream.svelte",
   "src/frontend/components/main/popups/CategoryAction.svelte",
   "src/frontend/components/main/popups/ChangeIcon.svelte",
   "src/frontend/components/main/popups/ChangeOutputValues.svelte",
@@ -38,5 +37,6 @@
   "src/frontend/components/main/popups/ImportCalendar.svelte",
   "src/frontend/components/main/popups/ImportScripture.svelte",
   "src/frontend/components/main/popups/Initialize.svelte",
-  "src/frontend/components/main/popups/InteractionInput.svelte"
+  "src/frontend/components/main/popups/InteractionInput.svelte",
+  "src/frontend/components/main/popups/ManageColors.svelte"
 ]

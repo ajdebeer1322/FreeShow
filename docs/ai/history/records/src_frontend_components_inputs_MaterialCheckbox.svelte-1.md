@@ -50,7 +50,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/425a7419e5db66843009702d4b88a66d7241d811): “1.4.9-beta.2 (#1975) * ✔️ Fixed freeze when playing PDF files * ✨ UI updates * 🎨 Color update * 🎨 Updated General settings * 🚩 Updated Chinese language * Feature/quicksearch UI ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/425a7419e5db66843009702d4b88a66d7241d811): “1.4.9-beta.2 (#1975) * ✔️ Fixed freeze when playing PDF files * ✨ UI updates * 🎨 Color update * 🎨 Updated General settings * 🚩 Updated Chinese language * Feature/quicksearch UI”
 
 Later line edits: 1; latest 18a621be. Full commit messages and lineage: JSON query data.
 
@@ -68,7 +68,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/425a7419e5db66843009702d4b88a66d7241d811): “1.4.9-beta.2 (#1975) * ✔️ Fixed freeze when playing PDF files * ✨ UI updates * 🎨 Color update * 🎨 Updated General settings * 🚩 Updated Chinese language * Feature/quicksearch UI ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/425a7419e5db66843009702d4b88a66d7241d811): “1.4.9-beta.2 (#1975) * ✔️ Fixed freeze when playing PDF files * ✨ UI updates * 🎨 Color update * 🎨 Updated General settings * 🚩 Updated Chinese language * Feature/quicksearch UI”
 
 Later line edits: 1; latest 18a621be. Full commit messages and lineage: JSON query data.
 

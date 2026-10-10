@@ -1,0 +1,6 @@
+[
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:9453","name":"playFirstSlide","file":"src/frontend/components/helpers/OutputHelper.ts","line":177,"depth":6,"via":"this.playFirstSlide"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:9746","name":"playLastSlide","file":"src/frontend/components/helpers/OutputHelper.ts","line":187,"depth":6,"via":"this.playLastSlide"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:10054","name":"playPrevious","file":"src/frontend/components/helpers/OutputHelper.ts","line":197,"depth":6,"via":"this.playPrevious"},
+  {"id":"src/frontend/components/helpers/OutputHelper.ts:10175","name":"playNext","file":"src/frontend/components/helpers/OutputHelper.ts","line":201,"depth":6,"via":"this.playNext"}
+]

@@ -14,7 +14,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/514646b44c0f64eeb7dae944156f16a848ab56f6): “1.4.8-beta.2 (#1867) * ✔️ List points are now colored - Fixed child slide backgrounds not rendering in RemoteShow - Fixed media thumbnails not loading temporarily in RemoteShow if ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/514646b44c0f64eeb7dae944156f16a848ab56f6): “1.4.8-beta.2 (#1867) * ✔️ List points are now colored - Fixed child slide backgrounds not rendering in RemoteShow - Fixed media thumbnails not loading temporarily in RemoteShow if”
 
 Later line edits: 0; latest 514646b4. Full commit messages and lineage: JSON query data.
 

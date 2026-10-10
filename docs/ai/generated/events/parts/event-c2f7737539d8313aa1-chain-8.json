@@ -1,0 +1,12 @@
+[
+  {"id":"src/frontend/components/helpers/array.ts:7242","name":"shuffleArray","file":"src/frontend/components/helpers/array.ts","line":211,"depth":4,"via":"shuffleArray"},
+  {"id":"src/frontend/audio/audioPlaylist.ts:7404","name":"<callback>","file":"src/frontend/audio/audioPlaylist.ts","line":191,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/audio/audioFading.ts:6939","name":"audioIsFading","file":"src/frontend/audio/audioFading.ts","line":191,"depth":3,"via":"audioIsFading"},
+  {"id":"src/frontend/audio/audioPlaylist.ts:5525","name":"<callback>","file":"src/frontend/audio/audioPlaylist.ts","line":147,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/actions.ts:5342","name":"customActionActivation","file":"src/frontend/components/actions/actions.ts","line":157,"depth":4,"via":"customActionActivation"},
+  {"id":"src/frontend/components/actions/actions.ts:5497","name":"<callback>","file":"src/frontend/components/actions/actions.ts","line":159,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/actions.ts:1477","name":"runAction","file":"src/frontend/components/actions/actions.ts","line":33,"depth":6,"via":"runAction"},
+  {"id":"src/frontend/utils/common.ts:1175","name":"newToast","file":"src/frontend/utils/common.ts","line":26,"depth":5,"via":"newToast"},
+  {"id":"src/frontend/components/helpers/array.ts:335","name":"removeDuplicates","file":"src/frontend/components/helpers/array.ts","line":10,"depth":6,"via":"removeDuplicates"},
+  {"id":"src/frontend/audio/audioPlaylist.ts:6014","name":"<callback>","file":"src/frontend/audio/audioPlaylist.ts","line":160,"depth":3,"via":"<callback>"}
+]

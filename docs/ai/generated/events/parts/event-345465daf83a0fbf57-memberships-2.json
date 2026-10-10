@@ -1,0 +1,23 @@
+[
+  {"file":"src/frontend/components/context/contextMenus.ts","line":381,"layout":"audio_stream","items":"[\"GROUP_edit\", \"delete\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":396,"layout":"tag","items":"[\"GROUP_rename_recolor\", \"delete\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":397,"layout":"chord","items":"[\"set_key\", \"chord_list\", \"custom_key\", \"SEPARATOR\", \"delete\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":401,"layout":"video_subtitle","items":"[\"GROUP_rename_only\", \"delete\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":403,"layout":"video_marker","items":"[\"GROUP_rename_only\", \"delete\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":410,"layout":"stage_slide","items":"[\"GROUP_rename_only\", \"move_connections\", \"disable\", \"SEPARATOR\", \"export\", \"SEPARATOR\", \"duplicate\", \"delete\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":412,"layout":"stage_item","items":"[\"GROUP_conditions\", \"rearrange_stage\", \"SEPARATOR\", \"duplicate\", \"delete\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":413,"layout":"stage_item_output","items":"[\"GROUP_conditions\", \"rearrange_stage\", \"SEPARATOR\", \"delete\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":414,"layout":"stage_text_item","items":"[\"GROUP_dynamic\", \"rearrange_stage\", \"SEPARATOR\", \"duplicate\", \"delete\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":418,"layout":"edit_box","items":"[\"GROUP_dynamic\", \"item_actions\", \"item_bind_to\", \"format\", \"rearrange\", \"transition\", \"SEPARATOR\", \"duplicate\", \"delete\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":421,"layout":"effect_item","items":"[\"hide\", \"SEPARATOR\", \"duplicate\", \"delete\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":422,"layout":"scene_overlay","items":"[\"GROUP_edit\", \"hide\", \"SEPARATOR\", \"delete\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":426,"layout":"timeline_node","items":"[\"delete\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":429,"layout":"event","items":"[\"GROUP_edit\", \"duplicate\", \"delete\", \"delete_all\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":432,"layout":"theme","items":"[\"GROUP_rename_only\", \"duplicate\", \"delete\", \"SEPARATOR\", \"export\", \"SEPARATOR\", \"reset_theme\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":433,"layout":"style","items":"[\"GROUP_rename_only\", \"duplicate\", \"delete\", \"SEPARATOR\", \"reset\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":434,"layout":"profile_tab","items":"[\"GROUP_rename_recolor\", \"duplicate\", \"delete\", \"SEPARATOR\", \"reset\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":436,"layout":"output_screen","items":"[\"GROUP_rename_recolor\", \"duplicate\", \"delete\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":437,"layout":"output_screen_stage","items":"[\"GROUP_rename_recolor\", \"duplicate\", \"delete\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":438,"layout":"audio_channel","items":"[\"GROUP_rename_recolor\", \"delete\"]"},
+  {"file":"src/frontend/components/context/contextMenus.ts","line":441,"layout":"audio_effect_item","items":"[\"duplicate\", \"delete\"]"}
+]

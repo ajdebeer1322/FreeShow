@@ -1,0 +1,8 @@
+[
+  {"id":"src/frontend/components/helpers/shows.ts:37007","name":"remove","file":"src/frontend/components/helpers/shows.ts","line":720,"depth":3,"via":"remove"},
+  {"id":"src/frontend/components/helpers/shows.ts:37089","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":722,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:37310","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":727,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/slide/Slide.svelte:6169","name":"<callback>","file":"src/frontend/components/slide/Slide.svelte","line":128,"depth":1,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/media.ts:13571","name":"getMediaStyle","file":"src/frontend/components/helpers/media.ts","line":370,"depth":1,"via":"getMediaStyle"},
+  {"id":"src/frontend/components/helpers/media.ts:14285","name":"<callback>","file":"src/frontend/components/helpers/media.ts","line":395,"depth":2,"via":"<callback>"}
+]

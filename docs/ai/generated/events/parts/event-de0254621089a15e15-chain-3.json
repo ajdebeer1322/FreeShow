@@ -1,0 +1,10 @@
+[
+  {"id":"src/frontend/components/media/video/videoPlayer.ts:32877","name":"<callback>","file":"src/frontend/components/media/video/videoPlayer.ts","line":845,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/media/video/videoPlayer.ts:33172","name":"<callback>","file":"src/frontend/components/media/video/videoPlayer.ts","line":853,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/media/video/videoPlayer.ts:33211","name":"<callback>","file":"src/frontend/components/media/video/videoPlayer.ts","line":854,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/media/video/videoPlayer.ts:24792","name":"getVolume","file":"src/frontend/components/media/video/videoPlayer.ts","line":642,"depth":6,"via":"this.getVolume"},
+  {"id":"src/frontend/components/media/video/videoPlayer.ts:33764","name":"<callback>","file":"src/frontend/components/media/video/videoPlayer.ts","line":865,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/media/video/videoPlayer.ts:34411","name":"<callback>","file":"src/frontend/components/media/video/videoPlayer.ts","line":879,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/media/video/videoPlayer.ts:34669","name":"<callback>","file":"src/frontend/components/media/video/videoPlayer.ts","line":885,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/media/video/videoPlayer.ts:34852","name":"<callback>","file":"src/frontend/components/media/video/videoPlayer.ts","line":890,"depth":6,"via":"<callback>"}
+]

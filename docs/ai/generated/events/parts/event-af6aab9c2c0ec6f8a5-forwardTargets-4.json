@@ -1,0 +1,9 @@
+[
+  {"id":"event-006ad48b2b20083204","file":"src/server/stage/App.svelte","line":221},
+  {"id":"event-fa86a52790ad31aae6","file":"src/server/stage/App.svelte","line":224},
+  {"id":"event-0e1244842ea10749f4","file":"src/server/stage/App.svelte","line":227},
+  {"id":"event-8164cf69b2c4790f83","file":"src/server/stage/components/Textbox.svelte","line":508},
+  {"id":"event-924c08b0605714f441","file":"src/server/stage/components/Textbox.svelte","line":509},
+  {"id":"event-259af807c47fe08bb2","file":"src/server/stage/components/Textbox.svelte","line":510},
+  {"id":"event-44d257951516411b87","file":"src/server/stage/components/TtsSettings.svelte","line":115}
+]

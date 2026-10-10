@@ -1,0 +1,7 @@
+[
+  {"id":"src/frontend/components/helpers/history.ts:9415","name":"<callback>","file":"src/frontend/components/helpers/history.ts","line":219,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/select.ts:724","name":"deselect","file":"src/frontend/components/helpers/select.ts","line":22,"depth":3,"via":"deselect"},
+  {"id":"src/frontend/components/helpers/show.ts:18018","name":"getSelectedSlideIndexes","file":"src/frontend/components/helpers/show.ts","line":474,"depth":1,"via":"getSelectedSlideIndexes"},
+  {"id":"src/frontend/components/helpers/show.ts:18172","name":"<callback>","file":"src/frontend/components/helpers/show.ts","line":477,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/show.ts:18215","name":"<callback>","file":"src/frontend/components/helpers/show.ts","line":477,"depth":2,"via":"<callback>"}
+]

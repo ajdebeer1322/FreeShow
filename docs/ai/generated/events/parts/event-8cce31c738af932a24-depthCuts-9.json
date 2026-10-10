@@ -1,0 +1,21 @@
+[
+  {"target":"src/frontend/components/media/video/videoPlayer.ts:35373","via":"videoStarting","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/media.ts:14285","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/media.ts:14798","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/media.ts:14848","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/media.ts:15144","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/media.ts:15358","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/output/clear.ts:3874","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/utils/common.ts:1948","via":"waitUntilValueIsDefined","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/media.ts:7505","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/media.ts:9000","via":"finish","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/media.ts:2842","via":"isLocalFile","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/media.ts:16246","via":"getThumbnailPath","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/media.ts:15634","via":"loadThumbnail","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/media.ts:2435","via":"splitPath","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/media.ts:3815","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/media.ts:2713","via":"joinPath","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:27056","via":"getAllActiveOutputIds","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/output/clear.ts:3398","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:18277","via":"<callback>","reason":"six-level depth limit"}
+]

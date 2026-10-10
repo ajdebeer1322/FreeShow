@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/converters/txt.ts","line":176,"expression":"get","args":["activeProject"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"}
+]

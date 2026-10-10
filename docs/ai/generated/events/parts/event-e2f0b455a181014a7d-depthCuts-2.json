@@ -1,0 +1,11 @@
+[
+  {"target":"src/electron/streaming/RtmpStreamer.ts:26100","via":"this.setRelayState","reason":"six-level depth limit"},
+  {"target":"src/electron/streaming/RtmpStreamer.ts:21075","via":"this.scheduleRelayRestart","reason":"six-level depth limit"},
+  {"target":"src/electron/streaming/RtmpStreamer.ts:18116","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/electron/streaming/RtmpStreamer.ts:18159","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/electron/streaming/RtmpStreamer.ts:18851","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/electron/streaming/RtmpStreamer.ts:19144","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/electron/streaming/RtmpStreamer.ts:19646","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/electron/streaming/RtmpStreamer.ts:27235","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/electron/capture/helpers/CaptureTransmitter.ts:14063","via":"this.transmitFrameBody","reason":"six-level depth limit"}
+]

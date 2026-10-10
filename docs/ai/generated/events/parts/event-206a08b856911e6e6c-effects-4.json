@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/utils/analytics.ts","line":26,"expression":"fetch","args":["`https://www.google-analytics.com/mp/collect?api_secret=${API_SECRET}&measurement_id=${MEASUREMENT_ID}`","{ method: \"POST\", headers: { \"Content-Type\": \"application/json\" }, body: JSON.stringify(payload) }"],"targets":[],"kind":"network","conditions":[],"terminal":"boundary","depth":4,"via":"src/frontend/utils/analytics.ts:262"}
+]

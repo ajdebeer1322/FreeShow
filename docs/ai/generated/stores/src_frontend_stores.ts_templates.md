@@ -101,7 +101,7 @@ Saved: yes, with the listed transformations.
 - [src/frontend/components/main/popups/Transition.svelte:178](../../../../src/frontend/components/main/popups/Transition.svelte#L178) — $templates
 - [src/frontend/components/main/popups/localization/translation.ts:104](../../../../src/frontend/components/main/popups/localization/translation.ts#L104) — get(templates)
 - [src/frontend/components/output/Output.svelte:238](../../../../src/frontend/components/output/Output.svelte#L238) — $templates
-- [src/frontend/components/output/layers/SlideContent.svelte:199](../../../../src/frontend/components/output/layers/SlideContent.svelte#L199) — $templates
+- [src/frontend/components/output/layers/SlideContent.svelte:276](../../../../src/frontend/components/output/layers/SlideContent.svelte#L276) — $templates
 - [src/frontend/components/output/preview/MultiOutputs.svelte:220](../../../../src/frontend/components/output/preview/MultiOutputs.svelte#L220) — $templates
 - [src/frontend/components/output/preview/MultiOutputs.svelte:223](../../../../src/frontend/components/output/preview/MultiOutputs.svelte#L223) — $templates
 - [src/frontend/components/output/transitions/SlideItemTransition.svelte:98](../../../../src/frontend/components/output/transitions/SlideItemTransition.svelte#L98) — $templates

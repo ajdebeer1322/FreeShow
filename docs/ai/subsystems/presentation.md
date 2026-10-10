@@ -77,6 +77,6 @@
 - [guess] [D-hotspot-c1bd07711c914719](../history/records/src_frontend_components_helpers_OutputHelper.ts-1.md): Module hotspot: src/frontend/components/helpers/OutputHelper.ts.
 - [guess] [D-hotspot-7af11be48814e880](../history/records/src_frontend_components_helpers_output.ts-1.md): Module hotspot: src/frontend/components/helpers/output.ts.
 
-[code] All 63 related decision IDs and locations are included in the dependency JSON. Use `ai:ask -- why <file>:<line>` for exact records; generic commit intent is not an item-specific motive.
+[code] All 64 related decision IDs and locations are included in the dependency JSON. Use `ai:ask -- why <file>:<line>` for exact records; generic commit intent is not an item-specific motive.
 
 [code] Companion references: [F-009](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md), [F-014](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These refer to a later source snapshot; they are contextual evidence, not runtime verification here.

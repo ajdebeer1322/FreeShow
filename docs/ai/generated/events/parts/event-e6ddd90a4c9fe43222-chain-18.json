@@ -1,0 +1,9 @@
+[
+  {"id":"src/frontend/audio/audioPlayer.ts:14483","name":"<callback>","file":"src/frontend/audio/audioPlayer.ts","line":428,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/output/clear.ts:5729","name":"clearTimers","file":"src/frontend/components/output/clear.ts","line":158,"depth":2,"via":"clearTimers"},
+  {"id":"src/frontend/components/output/clear.ts:6149","name":"<callback>","file":"src/frontend/components/output/clear.ts","line":166,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/output/clear.ts:6333","name":"<callback>","file":"src/frontend/components/output/clear.ts","line":173,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/output/clear.ts:6399","name":"<callback>","file":"src/frontend/components/output/clear.ts","line":174,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:25237","name":"clearOverlayTimer","file":"src/frontend/components/helpers/output.ts","line":595,"depth":5,"via":"clearOverlayTimer"},
+  {"id":"src/frontend/components/helpers/output.ts:25335","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":596,"depth":6,"via":"<callback>"}
+]

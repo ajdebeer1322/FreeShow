@@ -1,0 +1,14 @@
+[
+  {"file":"src/frontend/components/helpers/output.ts","line":276,"expression":"(type === \"overlays\" || type === \"effects\") && data?.length","then":"{ if (!Array.isArray(data)) data = [data] if (toggle && i === 0) toggleState = outData?.includes(data[0]) if (toggle && toggleState) outData.splice(outData.indexOf(data[0]), 1) els"},
+  {"file":"src/frontend/components/helpers/output.ts","line":277,"expression":"!Array.isArray(data)","then":"data = [data]"},
+  {"file":"src/frontend/components/helpers/output.ts","line":278,"expression":"toggle && i === 0","then":"toggleState = outData?.includes(data[0])"},
+  {"file":"src/frontend/components/helpers/output.ts","line":279,"expression":"toggle && toggleState","then":"outData.splice(outData.indexOf(data[0]), 1)"},
+  {"file":"src/frontend/components/helpers/output.ts","line":280,"expression":"toggle || add","then":"outData = removeDuplicates([...(a[id].out?.[type] || []), ...data])"},
+  {"file":"src/frontend/components/helpers/output.ts","line":283,"expression":"type === \"effects\" && (!toggle || !toggleState)","then":"{ outData = clearDuplicateFullscreenEffects(outData, data, id) }"},
+  {"file":"src/frontend/components/helpers/output.ts","line":289,"expression":"outData.includes(overlayId)","then":"startOverlayTimer(id, overlayId, outData, type)"},
+  {"file":"src/frontend/components/helpers/output.ts","line":290,"expression":"get(overlayTimers)[id + overlayId]","then":"clearOverlayTimer(id, overlayId)"},
+  {"file":"src/frontend/components/helpers/output.ts","line":293,"expression":"data","then":"delete data.bindings"},
+  {"file":"src/frontend/components/helpers/output.ts","line":296,"expression":"type === \"overlays\" || type === \"effects\"","then":"{ clearOverlayTimers(id) }"},
+  {"file":"src/frontend/components/helpers/output.ts","line":304,"expression":"type === \"overlays\"","then":"saveLockedOverlays(a)"},
+  {"file":"src/frontend/components/helpers/output.ts","line":305,"expression":"type === \"scene\"","then":"saveActiveScenes(a)"}
+]

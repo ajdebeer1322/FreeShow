@@ -33,7 +33,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/590d09a6a9eba2fbf02f6cecb70c2ee35c3d4755): “✨ Fixed some slide rearrange issues - Fixed import comma split - Fixed auto size - Custom scripture color working when double clicking - Fixed image transition not working - Fixed ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/590d09a6a9eba2fbf02f6cecb70c2ee35c3d4755): “✨ Fixed some slide rearrange issues - Fixed import comma split - Fixed auto size - Custom scripture color working when double clicking - Fixed image transition not working - Fixed”
 
 Later line edits: 1; latest 3854a5e8. Full commit messages and lineage: JSON query data.
 

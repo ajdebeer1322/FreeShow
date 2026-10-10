@@ -14,7 +14,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/1ed8ffa3dd177d68ba1efe61d943b7baa7bd9027): “1.6.6-beta.4 (#3813) * Fix image items staying invisible with an item transition (#3789) * Canva allow subfolders #3796 * Open scripture location from content search #3799 * Fixed ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/1ed8ffa3dd177d68ba1efe61d943b7baa7bd9027): “1.6.6-beta.4 (#3813) * Fix image items staying invisible with an item transition (#3789) * Canva allow subfolders #3796 * Open scripture location from content search #3799 * Fixed”
 
 Later line edits: 0; latest 1ed8ffa3. Full commit messages and lineage: JSON query data.
 
@@ -68,7 +68,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/3b0affd6907867aa46e1f0743ddd322b7a97fdbd): “1.3.1 (#1019) * ✔ Fixed stage zoom showing up in output - Fixed animation easing not working - Fixed animation background zoom transform - Fixed locked show also locking templates ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/3b0affd6907867aa46e1f0743ddd322b7a97fdbd): “1.3.1 (#1019) * ✔ Fixed stage zoom showing up in output - Fixed animation easing not working - Fixed animation background zoom transform - Fixed locked show also locking templates”
 
 Later line edits: 36; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
@@ -140,7 +140,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/27a85a5769aee9968abfe0381b961235d653ce33): “1.3.3 (#1117) * ✔️ Fixed playwright Linux fontconfig issue * ✔️ Fixed playwright Linux fontconfig issue * ✨ Get slide output thumbnail from API - Drop timer & variable on slide in ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/27a85a5769aee9968abfe0381b961235d653ce33): “1.3.3 (#1117) * ✔️ Fixed playwright Linux fontconfig issue * ✔️ Fixed playwright Linux fontconfig issue * ✨ Get slide output thumbnail from API - Drop timer & variable on slide in”
 
 Later line edits: 34; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 

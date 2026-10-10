@@ -1,0 +1,8 @@
+[
+  {"id":"src/frontend/components/main/popups/NextTimer.svelte:2780","name":"<callback>","file":"src/frontend/components/main/popups/NextTimer.svelte","line":73,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:1118","name":"get","file":"src/frontend/components/helpers/shows.ts","line":27,"depth":2,"via":"_show(showId).get"},
+  {"id":"src/frontend/components/helpers/shows.ts:626","name":"_show","file":"src/frontend/components/helpers/shows.ts","line":18,"depth":2,"via":"_show"},
+  {"id":"src/frontend/components/helpers/shows.ts:2239","name":"remove","file":"src/frontend/components/helpers/shows.ts","line":59,"depth":3,"via":"remove"},
+  {"id":"src/frontend/components/helpers/shows.ts:2321","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":61,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/main/popups/NextTimer.svelte:3101","name":"<callback>","file":"src/frontend/components/main/popups/NextTimer.svelte","line":78,"depth":2,"via":"<callback>"}
+]

@@ -1,5 +1,4 @@
 [
-  "src/frontend/components/show/tools/HighlightedNotes.svelte",
   "src/frontend/components/show/tools/Media.svelte",
   "src/frontend/components/show/tools/Metadata.svelte",
   "src/frontend/components/show/tools/Notes.svelte",
@@ -38,5 +37,6 @@
   "src/frontend/components/stage/SkeletonStageSlide.svelte",
   "src/frontend/components/stage/StageLayout.svelte",
   "src/frontend/components/stage/StageLayouts.svelte",
-  "src/frontend/components/stage/StageSlide.svelte"
+  "src/frontend/components/stage/StageSlide.svelte",
+  "src/frontend/components/stage/StageTools.svelte"
 ]

@@ -1,0 +1,7 @@
+[
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1167,"expression":"syncData","args":["{ id: \"churchApps\", churchId: \"test-church\", teamId: \"test-team\", method: \"merge\" }"],"targets":["src/electron/cloud/syncManager.ts:3421"],"kind":"call","conditions":[]},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1169,"expression":"JSON.parse","args":["fs.readFileSync(fileB, \"utf8\")"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1169,"expression":"fs.readFileSync","args":["fileB","\"utf8\""],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1170,"expression":"expect(projectStoreB_final.projects[\"proj-shared\"].name).toBe","args":["\"Project Modified by C (Newest)\""],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1170,"expression":"expect","args":["projectStoreB_final.projects[\"proj-shared\"].name"],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"}
+]

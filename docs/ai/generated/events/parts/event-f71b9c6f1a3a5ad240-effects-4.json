@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/main/popups/Transition.svelte","line":106,"store":"src/frontend/stores.ts#transitionData","kind":"store-write","symbol":"changeTransition","expression":"transitionData.update((a: any) => { a[id] = updateSpecific(a[id], key, value, reset) return a })","depth":2,"via":"src/frontend/components/main/popups/Transition.svelte:15518"}
+]

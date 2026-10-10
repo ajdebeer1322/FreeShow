@@ -1,0 +1,10 @@
+[
+  {"file":"src/frontend/converters/songbeamer.ts","line":246,"expression":"metadata.chords[chordLine].push","args":["{ x: parseFloat(chordParts[0]), line: chordLine, key: chordParts[2] }"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/converters/songbeamer.ts","line":247,"expression":"parseFloat","args":["chordParts[0]"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/converters/songbeamer.ts","line":254,"expression":"parts[1].trim","args":[],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/converters/songbeamer.ts","line":262,"expression":"ccli.substring","args":["0","index"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/converters/songbeamer.ts","line":265,"expression":"parts[1].trim().split","args":["\",\""],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/converters/songbeamer.ts","line":265,"expression":"parts[1].trim","args":[],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/converters/songbeamer.ts","line":267,"expression":"slideTagToGroup","args":["tag"],"targets":["src/frontend/converters/songbeamer.ts:10309"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/converters/songbeamer.ts","line":269,"expression":"metadata.verse_order.push","args":["{ group, groupNumber }"],"targets":[],"kind":"call","conditions":[{"file":"src/frontend/converters/songbeamer.ts","line":268,"expression":"group !== null","branch":"then"}],"terminal":"platform/read"}
+]

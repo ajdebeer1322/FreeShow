@@ -32,7 +32,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/bd9aad46d54676ac64c99683ddebc64403f3aa01): “1.6.2 (#3402) * test(sync): cover the modified-time merge path for shows/projects/stage (#3365) * Fixed Next on media finished sometimes triggering twice * Fixed errors * Backup & ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/bd9aad46d54676ac64c99683ddebc64403f3aa01): “1.6.2 (#3402) * test(sync): cover the modified-time merge path for shows/projects/stage (#3365) * Fixed Next on media finished sometimes triggering twice * Fixed errors * Backup &”
 
 Later line edits: 0; latest bd9aad46. Full commit messages and lineage: JSON query data.
 

@@ -1,0 +1,11 @@
+[
+  {"id":"src/frontend/show/slides.ts:11613","name":"<callback>","file":"src/frontend/show/slides.ts","line":280,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/show/slides.ts:11677","name":"<callback>","file":"src/frontend/show/slides.ts","line":284,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/show/slides.ts:12057","name":"<callback>","file":"src/frontend/show/slides.ts","line":289,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/show/slides.ts:12217","name":"<callback>","file":"src/frontend/show/slides.ts","line":290,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/show/slides.ts:12431","name":"<callback>","file":"src/frontend/show/slides.ts","line":294,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/show/slides.ts:17215","name":"changeParent","file":"src/frontend/show/slides.ts","line":412,"depth":3,"via":"changeParent"},
+  {"id":"src/frontend/show/slides.ts:14072","name":"<callback>","file":"src/frontend/show/slides.ts","line":334,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/show/slides.ts:14278","name":"<callback>","file":"src/frontend/show/slides.ts","line":338,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/show/slides.ts:14381","name":"<callback>","file":"src/frontend/show/slides.ts","line":340,"depth":4,"via":"<callback>"}
+]

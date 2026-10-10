@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "sourceRevision": "379e268046d7de3344b6fa1e7809116a7ba01856",
   "compiler": {
     "typescript": "5.9.3",
     "svelte": "5.57.2"
@@ -11,7 +11,7 @@
     "channels": 30,
     "messages": 441,
     "settings": 567,
-    "timers": 1158,
+    "timers": 1159,
     "workarounds": 311,
     "components": 560,
     "diagnostics": 0,
@@ -210,7 +210,7 @@
       "windows/cam.json"
     ]
   },
-  "sourceFingerprint": "9f2de953d78c6bf930ab444b17eda2f02e5771257944d7c9f324467e90e2d43e",
+  "sourceFingerprint": "c9939cb5f7d8abf719940994f6719d9a6648ee30b18d6301bc66846373aba666",
   "limitations": [
     "Static imports only; dynamic computed paths remain unresolved.",
     "Store methods and $ auto-subscriptions are indexed; arbitrary helper/mutable aliases may escape analysis.",

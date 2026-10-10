@@ -1,0 +1,12 @@
+[
+  {"id":"src/frontend/media/cameraManager.ts:2572","name":"<callback>","file":"src/frontend/media/cameraManager.ts","line":74,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/media/cameraManager.ts:4335","name":"<callback>","file":"src/frontend/media/cameraManager.ts","line":121,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/media/cameraManager.ts:4400","name":"<callback>","file":"src/frontend/media/cameraManager.ts","line":122,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/IPC/main.ts:2279","name":"sendMain","file":"src/frontend/IPC/main.ts","line":68,"depth":5,"via":"sendMain"},
+  {"id":"src/frontend/media/cameraManager.ts:9425","name":"markBadCamera","file":"src/frontend/media/cameraManager.ts","line":281,"depth":5,"via":"this.markBadCamera"},
+  {"id":"src/frontend/media/cameraManager.ts:9525","name":"<callback>","file":"src/frontend/media/cameraManager.ts","line":283,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/media/cameraManager.ts:11107","name":"startKeepaliveMonitor","file":"src/frontend/media/cameraManager.ts","line":328,"depth":3,"via":"this.startKeepaliveMonitor"},
+  {"id":"src/frontend/media/cameraManager.ts:11229","name":"<callback>","file":"src/frontend/media/cameraManager.ts","line":330,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/media/cameraManager.ts:11463","name":"checkAndRestartDeadCameras","file":"src/frontend/media/cameraManager.ts","line":339,"depth":5,"via":"this.checkAndRestartDeadCameras"},
+  {"id":"src/frontend/media/cameraManager.ts:11742","name":"<callback>","file":"src/frontend/media/cameraManager.ts","line":343,"depth":6,"via":"<callback>"}
+]

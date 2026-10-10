@@ -1,0 +1,5 @@
+[
+  {"id":"src/frontend/components/helpers/debugLog.ts:2338","name":"<callback>","file":"src/frontend/components/helpers/debugLog.ts","line":62,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/request.ts:295","name":"<callback>","file":"src/frontend/utils/request.ts","line":6,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/main/Top.svelte:2003","name":"<callback>","file":"src/frontend/components/main/Top.svelte","line":46,"depth":1,"via":"<callback>"}
+]

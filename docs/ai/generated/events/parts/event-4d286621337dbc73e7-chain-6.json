@@ -1,0 +1,4 @@
+[
+  {"id":"src/frontend/components/edit/scripts/itemClipboard.ts:9624","name":"setFilterStyle","file":"src/frontend/components/edit/scripts/itemClipboard.ts","line":305,"depth":3,"via":"setFilterStyle"},
+  {"id":"src/frontend/components/edit/scripts/itemClipboard.ts:9738","name":"<callback>","file":"src/frontend/components/edit/scripts/itemClipboard.ts","line":306,"depth":4,"via":"<callback>"}
+]

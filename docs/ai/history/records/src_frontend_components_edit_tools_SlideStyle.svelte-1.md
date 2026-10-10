@@ -14,7 +14,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/449b82c7ae90d8e32bc152928e46d30df34144bc): “1.5.8 (#2875) * Updated Turkish language * Load player video name - Tweaks * Tweaks * Fixed metadata sometimes not removed * Scripture numbers will be on the same line as start of ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/449b82c7ae90d8e32bc152928e46d30df34144bc): “1.5.8 (#2875) * Updated Turkish language * Load player video name - Tweaks * Tweaks * Fixed metadata sometimes not removed * Scripture numbers will be on the same line as start of”
 
 Later line edits: 0; latest 449b82c7. Full commit messages and lineage: JSON query data.
 

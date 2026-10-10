@@ -1,0 +1,13 @@
+[
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1272,"expression":"JSON.parse","args":["fs.readFileSync(fileB, \"utf8\")"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1272,"expression":"fs.readFileSync","args":["fileB","\"utf8\""],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1273,"expression":"expect(settingsB.background.brightness).toBe","args":["5"],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1273,"expression":"expect","args":["settingsB.background.brightness"],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1277,"expression":"resetSyncManagerModule","args":[],"targets":["src/electron/cloud/syncManager.ts:32660"],"kind":"call","conditions":[]},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1278,"expression":"createStores","args":[],"targets":["src/electron/data/store.ts:5076"],"kind":"call","conditions":[]},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1280,"expression":"syncData","args":["{ id: \"churchApps\", churchId: \"test-church\", teamId: \"test-team\", method: \"merge\" }"],"targets":["src/electron/cloud/syncManager.ts:3421"],"kind":"call","conditions":[]},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1282,"expression":"JSON.parse","args":["fs.readFileSync(fileA, \"utf8\")"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1282,"expression":"fs.readFileSync","args":["fileA","\"utf8\""],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1283,"expression":"expect(settingsA.background.brightness).toBe","args":["5"],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1283,"expression":"expect","args":["settingsA.background.brightness"],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"}
+]

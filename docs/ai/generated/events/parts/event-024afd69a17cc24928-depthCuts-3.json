@@ -1,0 +1,12 @@
+[
+  {"target":"src/frontend/components/helpers/shows.ts:17003","via":"remove","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:36040","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:37310","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/show/formatTextEditor.ts:18020","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/show/getTextEditor.ts:2462","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/show/getTextEditor.ts:2633","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/show/getTextEditor.ts:2961","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/show/getTextEditor.ts:3037","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/show/getTextEditor.ts:3145","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/edit/scripts/textStyle.ts:11300","via":"getItemText","reason":"six-level depth limit"}
+]

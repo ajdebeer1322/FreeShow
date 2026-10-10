@@ -1,0 +1,14 @@
+[
+  {"id":"src/electron/capture/helpers/CaptureTransmitter.ts:26062","name":"sendBufferToBlackmagic","file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":556,"depth":6,"via":"this.sendBufferToBlackmagic"},
+  {"id":"src/electron/capture/helpers/CaptureTransmitter.ts:22942","name":"getServerScale","file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":479,"depth":6,"via":"this.getServerScale"},
+  {"id":"src/electron/capture/helpers/CaptureTransmitter.ts:29103","name":"sendBufferToServer","file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":619,"depth":6,"via":"this.sendBufferToServer"},
+  {"id":"src/electron/capture/helpers/CaptureTransmitter.ts:27307","name":"sendBufferToMain","file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":580,"depth":6,"via":"this.sendBufferToMain"},
+  {"id":"src/electron/capture/helpers/CaptureTransmitter.ts:29897","name":"sendBufferToWebRtcHost","file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":636,"depth":6,"via":"this.sendBufferToWebRtcHost"},
+  {"id":"src/electron/capture/helpers/CaptureTransmitter.ts:30403","name":"sendBufferToRtmpStreamer","file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":649,"depth":6,"via":"this.sendBufferToRtmpStreamer"},
+  {"id":"src/electron/capture/helpers/CaptureTransmitter.ts:31332","name":"sendBufferToRecorder","file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":673,"depth":6,"via":"this.sendBufferToRecorder"},
+  {"id":"src/electron/capture/helpers/CaptureLifecycle.ts:6188","name":"calculateFrameDelay","file":"src/electron/capture/helpers/CaptureLifecycle.ts","line":145,"depth":1,"via":"this.calculateFrameDelay"},
+  {"id":"src/electron/output/OutputHelper.ts:2946","name":"getOutput","file":"src/electron/output/OutputHelper.ts","line":51,"depth":2,"via":"OutputHelper.getOutput"},
+  {"id":"src/electron/capture/helpers/CaptureLifecycle.ts:6594","name":"getAdaptiveFrameRate","file":"src/electron/capture/helpers/CaptureLifecycle.ts","line":155,"depth":2,"via":"this.getAdaptiveFrameRate"},
+  {"id":"src/electron/capture/CaptureHelper.ts:1929","name":"getMaxActiveFramerate","file":"src/electron/capture/CaptureHelper.ts","line":53,"depth":3,"via":"CaptureHelper.getMaxActiveFramerate"},
+  {"id":"src/electron/capture/helpers/CaptureTransmitter.ts:6792","name":"getTimeSinceLastChange","file":"src/electron/capture/helpers/CaptureTransmitter.ts","line":145,"depth":3,"via":"CaptureTransmitter.getTimeSinceLastChange"}
+]

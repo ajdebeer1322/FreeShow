@@ -1,0 +1,3 @@
+[
+  {"id":"event-c8d513b460855ca655","file":"src/frontend/components/output/VideoSlider.svelte","line":159,"kind":"click","handler":"() => (fullLength = !fullLength)","conditions":[],"eventName":"click","element":"span","modifiers":[],"attributes":["style={fullLength ? \"\" : \"color: var(--secondary)\"}","role=\"button\"","tabindex=\"0\"","aria-label=\"Toggle time display format\""],"componentTarget":null,"forwarded":false,"roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

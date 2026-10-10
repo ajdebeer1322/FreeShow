@@ -37,6 +37,6 @@
   {"file":"src/frontend/components/helpers/dropActions.ts","line":1030,"store":"src/frontend/stores.ts#scriptureSettings","kind":"get","symbol":"scripture","expression":"get(scriptureSettings)"},
   {"file":"src/frontend/components/helpers/output.ts","line":1575,"store":"src/frontend/stores.ts#scriptureSettings","kind":"get","symbol":"replaceScriptureValues","expression":"get(scriptureSettings)"},
   {"file":"src/frontend/components/main/popups/DrawerSearchOptions.svelte","line":7,"store":"src/frontend/stores.ts#scriptureSettings","kind":"dollar","symbol":null,"expression":"$scriptureSettings"},
-  {"file":"src/frontend/components/output/layers/SlideContent.svelte","line":199,"store":"src/frontend/stores.ts#scriptureSettings","kind":"dollar","symbol":"slideNeedsAutoSize","expression":"$scriptureSettings"},
+  {"file":"src/frontend/components/output/layers/SlideContent.svelte","line":276,"store":"src/frontend/stores.ts#scriptureSettings","kind":"dollar","symbol":"slideNeedsAutoSize","expression":"$scriptureSettings"},
   {"file":"src/frontend/components/output/transitions/SlideItemTransition.svelte","line":98,"store":"src/frontend/stores.ts#scriptureSettings","kind":"dollar","symbol":"startTransition","expression":"$scriptureSettings"}
 ]

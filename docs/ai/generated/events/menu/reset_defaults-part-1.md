@@ -1,0 +1,13 @@
+# menu/reset_defaults (1)
+
+## reset_defaults — event-a401628d72546f9dd5
+
+[code] [src/frontend/components/context/contextMenus.ts:74](../../../../../src/frontend/components/context/contextMenus.ts#L74); reset_defaults. resolved-within-bound.
+
+Conditions: src/frontend/components/context/menuClick.ts:137 clickActions&#91;id&#93; exists; enabled is passed to handler, not a dispatch guard; src/frontend/components/context/ContextMenu.svelte:1 ContextMenu.checkIfEnabled and loaders gate visible items; disabled handled by ContextItem; src/frontend/components/context/menuClick.ts:561 activeTab === "templates"; src/frontend/components/context/menuClick.ts:562 activeTab === "overlays"; src/frontend/components/context/menuClick.ts:564 subTab === "effects".
+
+Calls: src/frontend/components/context/menuClick.ts:559 reset_defaults (depth 0); src/frontend/utils/createData.ts:552 setExampleTemplates (depth 1); src/frontend/utils/createData.ts:553 <callback> (depth 2); src/frontend/utils/createData.ts:558 <callback> (depth 2); src/frontend/utils/createData.ts:598 getDefaultTemplates (depth 2); src/frontend/utils/language.ts:83 translateText (depth 3); src/frontend/utils/language.ts:89 <callback> (depth 4); src/frontend/utils/language.ts:96 <callback> (depth 4); src/frontend/utils/createData.ts:1022 getDefaultScriptureTemplates (depth 3); src/frontend/utils/createData.ts:1393 createDoubleTemplate (depth 2); src/frontend/utils/createData.ts:1394 <callback> (depth 3); src/frontend/utils/createData.ts:111 setExampleEffects (depth 1); src/frontend/utils/createData.ts:112 <callback> (depth 2); src/frontend/utils/createData.ts:135 getDefaultEffects (depth 2); src/frontend/utils/createData.ts:421 setExampleOverlays (depth 1); src/frontend/utils/createData.ts:422 <callback> (depth 2).
+
+Effects: src/frontend/utils/createData.ts:563 store-write src/frontend/stores.ts#templates ; src/frontend/utils/createData.ts:553 store-write src/frontend/stores.ts#deletedDefaults ; src/frontend/utils/createData.ts:558 store-write src/frontend/stores.ts#templateCategories ; src/frontend/utils/createData.ts:1394 store-write src/frontend/stores.ts#templates ; src/frontend/utils/createData.ts:117 store-write src/frontend/stores.ts#effects ; src/frontend/utils/createData.ts:112 store-write src/frontend/stores.ts#deletedDefaults ; src/frontend/utils/createData.ts:427 store-write src/frontend/stores.ts#overlays ; src/frontend/utils/createData.ts:422 store-write src/frontend/stores.ts#deletedDefaults .
+
+no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 0; depth cutoffs: 0. Full edges/effects/conditions in JSON.

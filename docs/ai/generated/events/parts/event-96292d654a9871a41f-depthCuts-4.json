@@ -1,0 +1,5 @@
+[
+  {"target":"src/frontend/utils/request.ts:295","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:37859","via":"createRegex","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/showActions.ts:38168","via":"<callback>","reason":"six-level depth limit"}
+]

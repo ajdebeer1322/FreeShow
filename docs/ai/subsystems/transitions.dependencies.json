@@ -1,5 +1,5 @@
 {
-  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "sourceRevision": "379e268046d7de3344b6fa1e7809116a7ba01856",
   "files": [
     "src/frontend/components/output/layers/Overlay.svelte",
     "src/frontend/components/output/layers/SlideContent.svelte",
@@ -20,14 +20,15 @@
     "timer-f6ec73855261ef74",
     "timer-02e3dbe0dce4be88",
     "timer-811b130039a75869",
+    "timer-b042c8c4f6d462fd",
     "timer-cf6a381999a4c4c9",
     "poll-interval-9bfb40909220b56c",
     "poll-timeout-0363d78a143e0794",
     "delay-variable-b5ea3e940d0e3c3e",
-    "timer-8093f55a2dd3b53d",
     "timer-5a0884eced6ca67c",
     "timer-24d1dc584a7d8c38",
     "timer-7e20e324eb39abdb",
+    "timer-02741a0b4a6cecaf",
     "timer-15659966c137e66b",
     "timer-9f0e2d3a775127fb",
     "transition-dd644ad430340edf",
@@ -64,67 +65,73 @@
       "id": "D-timer-811b130039a75869",
       "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
       "file": "src/frontend/components/output/layers/SlideContent.svelte",
-      "line": 99
+      "line": 102
     },
     {
-      "id": "D-timer-cf6a381999a4c4c9",
+      "id": "D-timer-b042c8c4f6d462fd",
       "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
       "file": "src/frontend/components/output/layers/SlideContent.svelte",
       "line": 229
     },
     {
+      "id": "D-timer-cf6a381999a4c4c9",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 307
+    },
+    {
       "id": "D-poll-interval-9bfb40909220b56c",
       "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
       "file": "src/frontend/components/output/layers/SlideContent.svelte",
-      "line": 234
+      "line": 312
     },
     {
       "id": "D-poll-timeout-0363d78a143e0794",
       "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
       "file": "src/frontend/components/output/layers/SlideContent.svelte",
-      "line": 234
+      "line": 312
     },
     {
       "id": "D-delay-variable-b5ea3e940d0e3c3e",
       "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
       "file": "src/frontend/components/output/layers/SlideContent.svelte",
-      "line": 253
-    },
-    {
-      "id": "D-timer-8093f55a2dd3b53d",
-      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
-      "file": "src/frontend/components/output/layers/SlideContent.svelte",
-      "line": 316
+      "line": 331
     },
     {
       "id": "D-timer-5a0884eced6ca67c",
       "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
       "file": "src/frontend/components/output/layers/SlideContent.svelte",
-      "line": 322
+      "line": 400
     },
     {
       "id": "D-timer-24d1dc584a7d8c38",
       "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
       "file": "src/frontend/components/output/layers/SlideContent.svelte",
-      "line": 337
+      "line": 415
     },
     {
       "id": "D-timer-7e20e324eb39abdb",
       "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
       "file": "src/frontend/components/output/layers/SlideContent.svelte",
-      "line": 343
+      "line": 421
+    },
+    {
+      "id": "D-timer-02741a0b4a6cecaf",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 430
     },
     {
       "id": "D-timer-15659966c137e66b",
       "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
       "file": "src/frontend/components/output/layers/SlideContent.svelte",
-      "line": 365
+      "line": 450
     },
     {
       "id": "D-timer-9f0e2d3a775127fb",
       "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
       "file": "src/frontend/components/output/layers/SlideContent.svelte",
-      "line": 368
+      "line": 453
     },
     {
       "id": "D-transition-dd644ad430340edf",
@@ -154,7 +161,7 @@
       "id": "D-transition-b712a212520a543f",
       "document": "docs/ai/history/records/src_frontend_components_output_transitions_SlideItemTransition.svelte-1.md",
       "file": "src/frontend/components/output/transitions/SlideItemTransition.svelte",
-      "line": 150
+      "line": 152
     },
     {
       "id": "D-workaround-ee1ab844f3a096ba",
@@ -166,19 +173,19 @@
       "id": "D-workaround-f5143d8681582f2a",
       "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
       "file": "src/frontend/components/output/layers/SlideContent.svelte",
-      "line": 226
+      "line": 304
     },
     {
       "id": "D-workaround-255a8ffcc83f0cdc",
       "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
       "file": "src/frontend/components/output/layers/SlideContent.svelte",
-      "line": 364
+      "line": 449
     },
     {
       "id": "D-workaround-c3e4f430a922e675",
       "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
       "file": "src/frontend/components/output/layers/SlideContent.svelte",
-      "line": 370
+      "line": 455
     },
     {
       "id": "D-workaround-192612476c3b7922",
@@ -208,7 +215,7 @@
       "id": "D-workaround-88461c9d5f160880",
       "document": "docs/ai/history/records/src_frontend_components_output_transitions_SlideItemTransition.svelte-1.md",
       "file": "src/frontend/components/output/transitions/SlideItemTransition.svelte",
-      "line": 115
+      "line": 117
     },
     {
       "id": "D-hotspot-5abe0f4a0d17bd17",

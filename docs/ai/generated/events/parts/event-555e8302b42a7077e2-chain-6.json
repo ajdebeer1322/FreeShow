@@ -1,0 +1,11 @@
+[
+  {"id":"src/frontend/components/edit/scripts/itemClipboard.ts:10043","name":"getItemKeys","file":"src/frontend/components/edit/scripts/itemClipboard.ts","line":315,"depth":4,"via":"getItemKeys"},
+  {"id":"src/frontend/components/edit/scripts/itemClipboard.ts:10225","name":"<callback>","file":"src/frontend/components/edit/scripts/itemClipboard.ts","line":319,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/itemClipboard.ts:10302","name":"<callback>","file":"src/frontend/components/edit/scripts/itemClipboard.ts","line":321,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/itemClipboard.ts:10540","name":"<callback>","file":"src/frontend/components/edit/scripts/itemClipboard.ts","line":331,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/itemClipboard.ts:2232","name":"<callback>","file":"src/frontend/components/edit/scripts/itemClipboard.ts","line":69,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/array.ts:6534","name":"clone","file":"src/frontend/components/helpers/array.ts","line":181,"depth":2,"via":"clone"},
+  {"id":"src/frontend/utils/common.ts:8507","name":"throttle","file":"src/frontend/utils/common.ts","line":236,"depth":2,"via":"throttle"},
+  {"id":"src/frontend/utils/common.ts:8801","name":"<callback>","file":"src/frontend/utils/common.ts","line":247,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/tools/EditValues.svelte:9882","name":"<callback>","file":"src/frontend/components/edit/tools/EditValues.svelte","line":209,"depth":2,"via":"<callback>"}
+]

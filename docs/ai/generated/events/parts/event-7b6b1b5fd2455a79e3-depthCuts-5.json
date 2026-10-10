@@ -1,0 +1,5 @@
+[
+  {"target":"src/frontend/utils/request.ts:295","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioSender.ts:7020","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioSender.ts:8447","via":"this.getIcecastConfig","reason":"six-level depth limit"}
+]

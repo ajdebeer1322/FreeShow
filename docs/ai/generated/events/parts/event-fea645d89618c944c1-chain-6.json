@@ -1,0 +1,22 @@
+[
+  {"id":"src/frontend/components/helpers/shows.ts:35306","name":"get","file":"src/frontend/components/helpers/shows.ts","line":676,"depth":4,"via":"get"},
+  {"id":"src/frontend/components/helpers/shows.ts:35510","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":680,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:35718","name":"set","file":"src/frontend/components/helpers/shows.ts","line":686,"depth":4,"via":"set"},
+  {"id":"src/frontend/components/helpers/shows.ts:35819","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":688,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:36040","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":693,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:36561","name":"add","file":"src/frontend/components/helpers/shows.ts","line":706,"depth":4,"via":"add"},
+  {"id":"src/frontend/components/helpers/shows.ts:36665","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":708,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:37007","name":"remove","file":"src/frontend/components/helpers/shows.ts","line":720,"depth":4,"via":"remove"},
+  {"id":"src/frontend/components/helpers/shows.ts:37089","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":722,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:37310","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":727,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:1118","name":"get","file":"src/frontend/components/helpers/shows.ts","line":27,"depth":2,"via":"_show(outputSlide?.id).get"},
+  {"id":"src/frontend/components/edit/scripts/textStyle.ts:9666","name":"getTextLines","file":"src/frontend/components/edit/scripts/textStyle.ts","line":260,"depth":2,"via":"getTextLines"},
+  {"id":"src/frontend/components/edit/scripts/textStyle.ts:9869","name":"<callback>","file":"src/frontend/components/edit/scripts/textStyle.ts","line":264,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/textStyle.ts:11300","name":"getItemText","file":"src/frontend/components/edit/scripts/textStyle.ts","line":310,"depth":4,"via":"getItemText"},
+  {"id":"src/frontend/components/edit/scripts/textStyle.ts:10018","name":"<callback>","file":"src/frontend/components/edit/scripts/textStyle.ts","line":269,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/textStyle.ts:10142","name":"<callback>","file":"src/frontend/components/edit/scripts/textStyle.ts","line":273,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/textStyle.ts:10491","name":"<callback>","file":"src/frontend/components/edit/scripts/textStyle.ts","line":283,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/show/slides.ts:41069","name":"replaceVirtualBreaks","file":"src/frontend/show/slides.ts","line":1034,"depth":5,"via":"replaceVirtualBreaks"},
+  {"id":"src/frontend/components/edit/scripts/textStyle.ts:10668","name":"<callback>","file":"src/frontend/components/edit/scripts/textStyle.ts","line":288,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/textStyle.ts:10760","name":"<callback>","file":"src/frontend/components/edit/scripts/textStyle.ts","line":292,"depth":3,"via":"<callback>"}
+]

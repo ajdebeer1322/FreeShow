@@ -1,0 +1,21 @@
+[
+  {"id":"src/frontend/components/helpers/debugLog.ts:10971","name":"<callback>","file":"src/frontend/components/helpers/debugLog.ts","line":254,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:1476","name":"debugLog","file":"src/frontend/components/helpers/debugLog.ts","line":41,"depth":3,"via":"debugLog"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:1235","name":"outputWindowLabel","file":"src/frontend/components/helpers/debugLog.ts","line":35,"depth":4,"via":"outputWindowLabel"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:5901","name":"outputName","file":"src/frontend/components/helpers/debugLog.ts","line":137,"depth":5,"via":"outputName"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:2683","name":"stringify","file":"src/frontend/components/helpers/debugLog.ts","line":78,"depth":4,"via":"stringify"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:2082","name":"addDebugEntry","file":"src/frontend/components/helpers/debugLog.ts","line":55,"depth":4,"via":"addDebugEntry"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:2338","name":"<callback>","file":"src/frontend/components/helpers/debugLog.ts","line":62,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:2499","name":"<callback>","file":"src/frontend/components/helpers/debugLog.ts","line":65,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/request.ts:295","name":"<callback>","file":"src/frontend/utils/request.ts","line":6,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/utils/shortcuts.ts:14294","name":"isComposing","file":"src/frontend/utils/shortcuts.ts","line":336,"depth":1,"via":"isComposing"},
+  {"id":"src/frontend/utils/shortcuts.ts:8110","name":"isEditingText","file":"src/frontend/utils/shortcuts.ts","line":173,"depth":1,"via":"isEditingText"},
+  {"id":"src/frontend/utils/profile.ts:180","name":"getAccess","file":"src/frontend/utils/profile.ts","line":5,"depth":1,"via":"getAccess"},
+  {"id":"src/frontend/utils/shortcuts.ts:13667","name":"getNormalizedKey","file":"src/frontend/utils/shortcuts.ts","line":317,"depth":1,"via":"getNormalizedKey"},
+  {"id":"src/frontend/utils/shortcuts.ts:13223","name":"getLayoutMappedShortcutKey","file":"src/frontend/utils/shortcuts.ts","line":305,"depth":2,"via":"getLayoutMappedShortcutKey"},
+  {"id":"src/frontend/utils/shortcuts.ts:13540","name":"shouldNormalizeShortcutKey","file":"src/frontend/utils/shortcuts.ts","line":313,"depth":2,"via":"shouldNormalizeShortcutKey"},
+  {"id":"src/frontend/utils/shortcuts.ts:14063","name":"isFormattingKey","file":"src/frontend/utils/shortcuts.ts","line":329,"depth":1,"via":"isFormattingKey"},
+  {"id":"src/frontend/utils/shortcutsHelper.ts:1316","name":"isTypingTarget","file":"src/frontend/utils/shortcutsHelper.ts","line":40,"depth":1,"via":"isTypingTarget"},
+  {"id":"src/frontend/utils/shortcuts.ts:10158","name":"invokeCtrlShortcut","file":"src/frontend/utils/shortcuts.ts","line":219,"depth":1,"via":"invokeCtrlShortcut"},
+  {"id":"src/frontend/utils/popup.ts:11036","name":"triggerPopupSubmit","file":"src/frontend/utils/popup.ts","line":243,"depth":1,"via":"triggerPopupSubmit"}
+]

@@ -1,0 +1,12 @@
+[
+  {"id":"src/frontend/components/helpers/array.ts:335","name":"removeDuplicates","file":"src/frontend/components/helpers/array.ts","line":10,"depth":4,"via":"removeDuplicates"},
+  {"id":"src/frontend/utils/save.ts:3475","name":"<callback>","file":"src/frontend/utils/save.ts","line":144,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/array.ts:6534","name":"clone","file":"src/frontend/components/helpers/array.ts","line":181,"depth":2,"via":"clone"},
+  {"id":"src/frontend/utils/save.ts:3811","name":"<callback>","file":"src/frontend/utils/save.ts","line":153,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/utils/save.ts:7468","name":"getSyncedSettings","file":"src/frontend/utils/save.ts","line":257,"depth":2,"via":"getSyncedSettings"},
+  {"id":"src/frontend/utils/save.ts:6177","name":"<callback>","file":"src/frontend/utils/save.ts","line":214,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/utils/common.ts:1175","name":"newToast","file":"src/frontend/utils/common.ts","line":26,"depth":2,"via":"newToast"},
+  {"id":"src/frontend/components/helpers/array.ts:335","name":"removeDuplicates","file":"src/frontend/components/helpers/array.ts","line":10,"depth":3,"via":"removeDuplicates"},
+  {"id":"src/frontend/utils/save.ts:7428","name":"<callback>","file":"src/frontend/utils/save.ts","line":254,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/IPC/main.ts:2279","name":"sendMain","file":"src/frontend/IPC/main.ts","line":68,"depth":3,"via":"sendMain"}
+]

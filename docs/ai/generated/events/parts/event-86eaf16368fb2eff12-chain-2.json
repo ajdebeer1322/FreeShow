@@ -1,0 +1,16 @@
+[
+  {"id":"src/frontend/audio/audioFading.ts:7371","name":"fadeoutAudio","file":"src/frontend/audio/audioFading.ts","line":206,"depth":3,"via":"fadeoutAudio"},
+  {"id":"src/frontend/audio/audioFading.ts:5108","name":"fadeAudio","file":"src/frontend/audio/audioFading.ts","line":138,"depth":4,"via":"fadeAudio"},
+  {"id":"src/frontend/audio/audioFading.ts:8558","name":"stopFade","file":"src/frontend/audio/audioFading.ts","line":240,"depth":5,"via":"stopFade"},
+  {"id":"src/frontend/audio/audioFading.ts:9054","name":"<callback>","file":"src/frontend/audio/audioFading.ts","line":252,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/audio/audioFading.ts:9131","name":"<callback>","file":"src/frontend/audio/audioFading.ts","line":255,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/audio/audioFading.ts:6028","name":"<callback>","file":"src/frontend/audio/audioFading.ts","line":168,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/audio/audioFading.ts:6141","name":"<callback>","file":"src/frontend/audio/audioFading.ts","line":171,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/audio/audioFading.ts:6858","name":"<callback>","file":"src/frontend/audio/audioFading.ts","line":185,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/audio/audioFading.ts:7655","name":"fadeinAllPlayingAudio","file":"src/frontend/audio/audioFading.ts","line":214,"depth":2,"via":"fadeinAllPlayingAudio"},
+  {"id":"src/frontend/audio/audioFading.ts:8003","name":"<callback>","file":"src/frontend/audio/audioFading.ts","line":224,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/audio/audioFading.ts:8215","name":"fadeinAudio","file":"src/frontend/audio/audioFading.ts","line":232,"depth":4,"via":"fadeinAudio"},
+  {"id":"src/frontend/audio/audioFading.ts:8374","name":"<callback>","file":"src/frontend/audio/audioFading.ts","line":234,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/audio/audioFading.ts:8215","name":"fadeinAudio","file":"src/frontend/audio/audioFading.ts","line":232,"depth":3,"via":"fadeinAudio"},
+  {"id":"src/frontend/audio/audioFading.ts:8374","name":"<callback>","file":"src/frontend/audio/audioFading.ts","line":234,"depth":4,"via":"<callback>"}
+]

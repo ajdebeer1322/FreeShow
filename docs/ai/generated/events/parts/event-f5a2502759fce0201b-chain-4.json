@@ -1,0 +1,6 @@
+[
+  {"id":"src/frontend/utils/cloudSync.ts:2875","name":"<callback>","file":"src/frontend/utils/cloudSync.ts","line":76,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/utils/startup.ts:5611","name":"<callback>","file":"src/frontend/utils/startup.ts","line":154,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/IPC/main.ts:2279","name":"sendMain","file":"src/frontend/IPC/main.ts","line":68,"depth":3,"via":"sendMain"},
+  {"id":"src/frontend/utils/startup.ts:6158","name":"<callback>","file":"src/frontend/utils/startup.ts","line":167,"depth":2,"via":"<callback>"}
+]

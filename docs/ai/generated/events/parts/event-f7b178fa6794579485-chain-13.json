@@ -1,0 +1,11 @@
+[
+  {"id":"src/frontend/components/show/getTextEditor.ts:2407","name":"<callback>","file":"src/frontend/components/show/getTextEditor.ts","line":68,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/show/getTextEditor.ts:2462","name":"<callback>","file":"src/frontend/components/show/getTextEditor.ts","line":68,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/show/getTextEditor.ts:2549","name":"<callback>","file":"src/frontend/components/show/getTextEditor.ts","line":69,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/show/getTextEditor.ts:2633","name":"<callback>","file":"src/frontend/components/show/getTextEditor.ts","line":71,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/show/getTextEditor.ts:2961","name":"<callback>","file":"src/frontend/components/show/getTextEditor.ts","line":78,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/show/getTextEditor.ts:3037","name":"<callback>","file":"src/frontend/components/show/getTextEditor.ts","line":79,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/show/getTextEditor.ts:3145","name":"<callback>","file":"src/frontend/components/show/getTextEditor.ts","line":81,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/show/getTextEditor.ts:941","name":"<callback>","file":"src/frontend/components/show/getTextEditor.ts","line":26,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/show/getTextEditor.ts:3760","name":"replaceValues","file":"src/frontend/components/show/getTextEditor.ts","line":102,"depth":3,"via":"replaceValues"}
+]

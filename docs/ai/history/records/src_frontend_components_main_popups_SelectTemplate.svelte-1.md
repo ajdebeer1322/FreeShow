@@ -32,7 +32,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/a36080086b1dc0ea56ac71e9cddac9c1847dc2ab): “1.4.3 (#1623) * 🎵 NowPlayingCover not removed when fading between songs - Removing duplicate artists from NowPlaying file - Audio metadata dynamic value now remains when audio is ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/a36080086b1dc0ea56ac71e9cddac9c1847dc2ab): “1.4.3 (#1623) * 🎵 NowPlayingCover not removed when fading between songs - Removing duplicate artists from NowPlaying file - Audio metadata dynamic value now remains when audio is”
 
 Later line edits: 0; latest a3608008. Full commit messages and lineage: JSON query data.
 

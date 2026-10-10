@@ -1,0 +1,4 @@
+[
+  {"file":"src/frontend/components/helpers/history.ts","line":219,"store":"src/frontend/stores.ts#undoHistory","kind":"store-write","symbol":"history","expression":"undoHistory.update((uh: any) => { const lastEntry = uh[uh.length - 1] // only coalesce entries changing the same key, otherwise the other key's change would be lost on undo const s","depth":4,"via":"src/frontend/components/helpers/history.ts:9415"},
+  {"file":"src/frontend/components/helpers/select.ts","line":23,"store":"src/frontend/stores.ts#selected","kind":"store-write","symbol":"deselect","expression":"selected.set({ id: null, data: [] })","depth":4,"via":"src/frontend/components/helpers/select.ts:724"}
+]

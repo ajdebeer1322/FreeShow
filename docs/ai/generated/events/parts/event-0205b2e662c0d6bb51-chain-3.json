@@ -1,0 +1,6 @@
+[
+  {"id":"src/electron/IPC/responsesMain.ts:22327","name":"logError","file":"src/electron/IPC/responsesMain.ts","line":482,"depth":4,"via":"logError"},
+  {"id":"src/electron/contentProviders/planningCenter/request.ts:6512","name":"<callback>","file":"src/electron/contentProviders/planningCenter/request.ts","line":223,"depth":3,"via":"<callback>"},
+  {"id":"src/electron/contentProviders/planningCenter/request.ts:7558","name":"rateLimit","file":"src/electron/contentProviders/planningCenter/request.ts","line":249,"depth":4,"via":"rateLimit"},
+  {"id":"src/electron/contentProviders/planningCenter/request.ts:7558","name":"rateLimit","file":"src/electron/contentProviders/planningCenter/request.ts","line":249,"depth":3,"via":"rateLimit"}
+]

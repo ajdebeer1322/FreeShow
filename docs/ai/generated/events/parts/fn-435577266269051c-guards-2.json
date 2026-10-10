@@ -1,0 +1,12 @@
+[
+  {"file":"src/electron/cloud/drive.ts","line":507,"expression":"DEBUG","then":"console.info(\"Shows checked!\")"},
+  {"file":"src/electron/cloud/drive.ts","line":509,"expression":"downloadCount","then":"{ if (DEBUG) console.info(\"Downloading shows:\", downloadCount) changes.push({ type: \"show\", action: \"download\", name, count: downloadCount }) if (DEBUG) console.info(\"Trimmed shows"},
+  {"file":"src/electron/cloud/drive.ts","line":510,"expression":"DEBUG","then":"console.info(\"Downloading shows:\", downloadCount)"},
+  {"file":"src/electron/cloud/drive.ts","line":512,"expression":"DEBUG","then":"console.info(\"Trimmed shows:\", Object.keys(shows).length)"},
+  {"file":"src/electron/cloud/drive.ts","line":513,"expression":"Object.keys(shows).length","then":"sendMain(Main.SHOWS, shows)"},
+  {"file":"src/electron/cloud/drive.ts","line":515,"expression":"!uploadCount","then":"return"},
+  {"file":"src/electron/cloud/drive.ts","line":516,"expression":"DEBUG","then":"console.info(\"Uploading shows:\", uploadCount)"},
+  {"file":"src/electron/cloud/drive.ts","line":519,"expression":"data.method === \"download\"","then":"return"},
+  {"file":"src/electron/cloud/drive.ts","line":520,"expression":"DEBUG","then":"console.info(\"Drive shows:\", Object.keys(allShows).length)"},
+  {"file":"src/electron/cloud/drive.ts","line":525,"expression":"response?.status !== 200","then":"{ changes.push({ type: \"show\", action: \"upload_failed\", name }) return }"}
+]

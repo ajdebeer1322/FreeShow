@@ -23,7 +23,7 @@
 
 ## Stores and messages
 
-[code] Static scope: 43 files, 94 referenced stores, 68 concrete message keys, 69 timing entries. [Complete dependency index](output-rendering.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
+[code] Static scope: 43 files, 94 referenced stores, 68 concrete message keys, 70 timing entries. [Complete dependency index](output-rendering.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
 
 - [code] [src/frontend/components/output/preview/SpotifyManager.ts#spotifyIsFading](../generated/stores/src_frontend_components_output_preview_SpotifyManager.ts_spotifyIsFading.md)
 - [code] [src/frontend/components/output/preview/SpotifyManager.ts#spotifyState](../generated/stores/src_frontend_components_output_preview_SpotifyManager.ts_spotifyState.md)
@@ -55,7 +55,7 @@
 ## Rules that must stay true
 
 - [code] Layer configuration and content equality checks serve different lifetimes; preserve that distinction. ([src/frontend/components/output/Output.svelte:71](../../../src/frontend/components/output/Output.svelte#L71))
-- [code] Retain generation guards so superseded timer callbacks cannot replace newer slide content. ([src/frontend/components/output/layers/SlideContent.svelte:143](../../../src/frontend/components/output/layers/SlideContent.svelte#L143))
+- [code] Retain generation guards so superseded timer callbacks cannot replace newer slide content. ([src/frontend/components/output/layers/SlideContent.svelte:146](../../../src/frontend/components/output/layers/SlideContent.svelte#L146))
 
 ## Known issues and verification limits
 
@@ -74,9 +74,9 @@
 - [code] [D-timer-3517f50f02ec5b4a](../history/records/src_frontend_components_output_animation.ts-1.md): wait: 50 (50 ms).
 - [code] [D-timer-f6ec73855261ef74](../history/records/src_frontend_components_output_layers_Overlay.svelte-1.md): setTimeout: omitted (0 ms).
 - [code] [D-timer-cf6a381999a4c4c9](../history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md): setTimeout: betweenClearingTransition.duration (dynamic ms).
-- [code] [D-timer-8093f55a2dd3b53d](../history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md): setTimeout: omitted (0 ms).
 - [code] [D-timer-5a0884eced6ca67c](../history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md): setTimeout: omitted (0 ms).
+- [code] [D-timer-24d1dc584a7d8c38](../history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md): setTimeout: waitToShow (dynamic ms).
 
-[code] All 135 related decision IDs and locations are included in the dependency JSON. Use `ai:ask -- why <file>:<line>` for exact records; generic commit intent is not an item-specific motive.
+[code] All 136 related decision IDs and locations are included in the dependency JSON. Use `ai:ask -- why <file>:<line>` for exact records; generic commit intent is not an item-specific motive.
 
 [code] Companion references: [F-003](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md), [F-014](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md), [F-016](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These refer to a later source snapshot; they are contextual evidence, not runtime verification here.

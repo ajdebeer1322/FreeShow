@@ -1,0 +1,8 @@
+[
+  {"target":"src/frontend/components/helpers/shows.ts:10685","via":"remove","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:11521","via":"lines","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:35510","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:35819","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:36665","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:37089","via":"<callback>","reason":"six-level depth limit"}
+]

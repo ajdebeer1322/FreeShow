@@ -1,0 +1,14 @@
+[
+  {"id":"src/frontend/components/helpers/fonts.ts:2973","name":"getWeightFromStyle","file":"src/frontend/components/helpers/fonts.ts","line":107,"depth":4,"via":"getWeightFromStyle"},
+  {"id":"src/frontend/components/helpers/fonts.ts:3215","name":"<callback>","file":"src/frontend/components/helpers/fonts.ts","line":112,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/fonts.ts:8864","name":"loadGoogleFont","file":"src/frontend/components/helpers/fonts.ts","line":270,"depth":3,"via":"loadGoogleFont"},
+  {"id":"src/frontend/components/helpers/fonts.ts:8974","name":"<callback>","file":"src/frontend/components/helpers/fonts.ts","line":273,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/fonts.ts:9675","name":"getGoogleFontLink","file":"src/frontend/components/helpers/fonts.ts","line":300,"depth":5,"via":"getGoogleFontLink"},
+  {"id":"src/frontend/components/helpers/fonts.ts:9070","name":"<callback>","file":"src/frontend/components/helpers/fonts.ts","line":276,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/fonts.ts:9120","name":"<callback>","file":"src/frontend/components/helpers/fonts.ts","line":277,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/fonts.ts:9162","name":"<callback>","file":"src/frontend/components/helpers/fonts.ts","line":278,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/fonts.ts:3663","name":"getFontName","file":"src/frontend/components/helpers/fonts.ts","line":125,"depth":6,"via":"getFontName"},
+  {"id":"src/frontend/components/helpers/fonts.ts:9452","name":"finish","file":"src/frontend/components/helpers/fonts.ts","line":289,"depth":5,"via":"finish"},
+  {"id":"src/frontend/utils/common.ts:1175","name":"newToast","file":"src/frontend/utils/common.ts","line":26,"depth":2,"via":"newToast"},
+  {"id":"src/frontend/components/helpers/array.ts:335","name":"removeDuplicates","file":"src/frontend/components/helpers/array.ts","line":10,"depth":3,"via":"removeDuplicates"}
+]

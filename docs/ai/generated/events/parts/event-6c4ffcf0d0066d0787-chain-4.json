@@ -1,0 +1,4 @@
+[
+  {"id":"src/frontend/components/helpers/media.ts:1037","name":"getExtension","file":"src/frontend/components/helpers/media.ts","line":19,"depth":4,"via":"getExtension"},
+  {"id":"src/frontend/components/quicksearch/quicksearch.ts:8377","name":"<callback>","file":"src/frontend/components/quicksearch/quicksearch.ts","line":242,"depth":3,"via":"<callback>"}
+]

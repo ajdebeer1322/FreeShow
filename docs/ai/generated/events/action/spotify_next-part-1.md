@@ -1,0 +1,13 @@
+# action/spotify_next (1)
+
+## spotify_next — event-4fff6e8b34759b7f30
+
+[code] [src/frontend/components/actions/api.ts:373](../../../../../src/frontend/components/actions/api.ts#L373); () => skipNext(). partial.
+
+Conditions: none extracted; parent state may gate mounting.
+
+Calls: src/frontend/components/actions/api.ts:373 spotify_next (depth 0); src/frontend/components/output/preview/SpotifyManager.ts:167 skipNext (depth 1); src/frontend/components/output/preview/SpotifyManager.ts:161 skip (depth 2); src/frontend/components/output/preview/SpotifyManager.ts:162 <callback> (depth 3); src/frontend/components/output/preview/SpotifyManager.ts:141 runCmd (depth 3); src/frontend/IPC/main.ts:19 requestMain (depth 4); src/frontend/IPC/main.ts:68 sendMain (depth 5); src/frontend/IPC/main.ts:28 cleanup (depth 5); src/frontend/IPC/main.ts:36 <callback> (depth 5); src/frontend/IPC/main.ts:37 <callback> (depth 6); src/frontend/IPC/main.ts:48 <callback> (depth 6).
+
+Effects: src/frontend/components/output/preview/SpotifyManager.ts:162 store-write src/frontend/components/output/preview/SpotifyManager.ts#spotifyState ; src/frontend/components/output/preview/SpotifyManager.ts:142 ipc requestMain(Main.SPOTIFY_COMMAND, { command, value } as any) ; src/frontend/IPC/main.ts:23 ipc sendMain(id, value, listenerId) ; src/frontend/IPC/main.ts:72 ipc window.api.send(MAIN, { channel: id, data: value }, listenerId) .
+
+no direct audience effect indexed; unresolved/deeper calls may change output. Undo: no history creation found within six levels; not proof of non-undoability. Unresolved edges: 3; depth cutoffs: 1. Full edges/effects/conditions in JSON.

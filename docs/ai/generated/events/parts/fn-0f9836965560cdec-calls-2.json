@@ -1,0 +1,9 @@
+[
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1324,"expression":"resetSyncManagerModule","args":[],"targets":["src/electron/cloud/syncManager.ts:32660"],"kind":"call","conditions":[]},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1325,"expression":"createStores","args":[],"targets":["src/electron/data/store.ts:5076"],"kind":"call","conditions":[]},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1327,"expression":"syncData","args":["{ id: \"churchApps\", churchId: \"test-church\", teamId: \"test-team\", method: \"merge\" }"],"targets":["src/electron/cloud/syncManager.ts:3421"],"kind":"call","conditions":[]},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1329,"expression":"JSON.parse","args":["fs.readFileSync(fileA, \"utf8\")"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1329,"expression":"fs.readFileSync","args":["fileA","\"utf8\""],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1330,"expression":"expect(settingsA.background.brightness).toBe","args":["2"],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"},
+  {"file":"src/electron/cloud/syncManager.test.ts","line":1330,"expression":"expect","args":["settingsA.background.brightness"],"targets":[],"kind":"call","conditions":[],"reason":"unresolved receiver, alias, callback parameter or external implementation"}
+]

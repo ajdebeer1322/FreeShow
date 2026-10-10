@@ -1,5 +1,4 @@
 [
-  "src/frontend/components/settings/tabs/StylesButtons.svelte",
   "src/frontend/components/settings/tabs/StylesTabs.svelte",
   "src/frontend/components/settings/tabs/Theme.svelte",
   "src/frontend/components/settings/tabs/ThemeButtons.svelte",
@@ -38,5 +37,6 @@
   "src/frontend/components/show/ppt/PowerPointPreview.svelte",
   "src/frontend/components/show/ppt/ScreenCapture.svelte",
   "src/frontend/components/show/project.ts",
-  "src/frontend/components/show/tools/Arrangements.svelte"
+  "src/frontend/components/show/tools/Arrangements.svelte",
+  "src/frontend/components/show/tools/HighlightedNotes.svelte"
 ]

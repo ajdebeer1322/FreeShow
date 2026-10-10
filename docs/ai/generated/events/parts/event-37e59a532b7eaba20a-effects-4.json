@@ -1,0 +1,4 @@
+[
+  {"file":"src/frontend/components/helpers/showActions.ts","line":511,"expression":"setOutput","args":["\"transition\"","{ duration }","false","outputId"],"targets":["src/frontend/components/helpers/output.ts:6608"],"kind":"presentation","conditions":[{"file":"src/frontend/components/helpers/showActions.ts","line":509,"expression":"(duration || 0) > 0","branch":"then"}],"depth":4,"via":"src/frontend/components/helpers/showActions.ts:20860"},
+  {"file":"src/frontend/components/output/clear.ts","line":162,"expression":"setOutput","args":["\"transition\"","null","false","specificOutputId"],"targets":["src/frontend/components/helpers/output.ts:6608"],"kind":"presentation","conditions":[],"depth":5,"via":"src/frontend/components/output/clear.ts:5729"}
+]

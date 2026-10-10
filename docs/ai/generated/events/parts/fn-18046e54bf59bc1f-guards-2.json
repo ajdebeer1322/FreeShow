@@ -1,0 +1,9 @@
+[
+  {"file":"src/frontend/converters/xml.ts","line":111,"expression":"n.firstChild","then":"{ s += \">\" for (let c = n.firstChild; c; c = c.nextSibling) s += asXml(c) s += \"</\" + n.nodeName + \">\" return s }"},
+  {"file":"src/frontend/converters/xml.ts","line":121,"expression":"n.nodeType === 3","then":"return n.nodeValue"},
+  {"file":"src/frontend/converters/xml.ts","line":122,"expression":"n.nodeType === 4","then":"return \"<![CDATA[\" + n.nodeValue + \"]]>\""},
+  {"file":"src/frontend/converters/xml.ts","line":135,"expression":"n.nodeType === 3","then":"{ // text node if (!n.nodeValue.match(/[^ \\f\\n\\r\\t\\v]/)) { // pure whitespace text node const nxt = n.nextSibling e.removeChild(n) n = nxt } else { n = n.nextSibling } }"},
+  {"file":"src/frontend/converters/xml.ts","line":137,"expression":"!n.nodeValue.match(/[^ \\f\\n\\r\\t\\v]/)","then":"{ // pure whitespace text node const nxt = n.nextSibling e.removeChild(n) n = nxt }"},
+  {"file":"src/frontend/converters/xml.ts","line":145,"expression":"n.nodeType === 1","then":"{ // element node X.removeWhite(n) n = n.nextSibling }"},
+  {"file":"src/frontend/converters/xml.ts","line":159,"expression":"xmlData.nodeType === 9","then":"xmlData = xmlData.documentElement"}
+]

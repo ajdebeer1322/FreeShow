@@ -1,0 +1,8 @@
+[
+  {"target":"src/frontend/components/helpers/output.ts:26008","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:22033","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/edit/scripts/textStyle.ts:11300","via":"getItemText","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/array.ts:1815","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/debugLog.ts:5901","via":"outputName","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/debugLog.ts:2338","via":"<callback>","reason":"six-level depth limit"}
+]

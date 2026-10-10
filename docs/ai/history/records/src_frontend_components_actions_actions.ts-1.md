@@ -68,7 +68,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/3b0affd6907867aa46e1f0743ddd322b7a97fdbd): “1.3.1 (#1019) * ✔ Fixed stage zoom showing up in output - Fixed animation easing not working - Fixed animation background zoom transform - Fixed locked show also locking templates ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/3b0affd6907867aa46e1f0743ddd322b7a97fdbd): “1.3.1 (#1019) * ✔ Fixed stage zoom showing up in output - Fixed animation easing not working - Fixed animation background zoom transform - Fixed locked show also locking templates”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/3b0affd6907867aa46e1f0743ddd322b7a97fdbd): “- Add multiple wait actions”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/3b0affd6907867aa46e1f0743ddd322b7a97fdbd): “- Add multiple wait actions”
 

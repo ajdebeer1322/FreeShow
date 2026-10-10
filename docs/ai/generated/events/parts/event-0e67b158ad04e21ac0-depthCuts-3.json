@@ -1,0 +1,19 @@
+[
+  {"target":"src/frontend/components/helpers/shows.ts:31470","via":"remove","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:33358","via":"children","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:35819","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:36665","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:37089","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:37310","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:31964","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:26697","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:27305","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:28681","via":"removeId","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:28839","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:33483","via":"set","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:19818","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/edit/scripts/textStyle.ts:11102","via":"getSlideText","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:24135","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:27667","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:33969","via":"<callback>","reason":"six-level depth limit"}
+]

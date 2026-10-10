@@ -32,9 +32,9 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c0ad5391c81b49b836a6b7f58b6ad72fad2f5c15): “1.3.1-beta.1 (#1010) * ✔ Fixed auto size timing issue - Fixed transition issue - UI tweaks * Updated issue templates * ✔ Fixed Quelea misspelling - Fixed scripture output freezing ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c0ad5391c81b49b836a6b7f58b6ad72fad2f5c15): “1.3.1-beta.1 (#1010) * ✔ Fixed auto size timing issue - Fixed transition issue - UI tweaks * Updated issue templates * ✔ Fixed Quelea misspelling - Fixed scripture output freezing”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/1ed8ffa3dd177d68ba1efe61d943b7baa7bd9027): “* Fixed scripture dynamic value templates sometimes not working #3794”
-- [guess] [source](https://github.com/ChurchApps/FreeShow/issues/3794): “In the latest beta, our scripture lower third template appears on our stream output but no text appears. Rolling back to beta2 works fine. ”
+- [guess] [source](https://github.com/ChurchApps/FreeShow/issues/3794): “In the latest beta, our scripture lower third template appears on our stream output but no text appears. Rolling back to beta2 works fine.”
 
 Later line edits: 3; latest 1ed8ffa3. Full commit messages and lineage: JSON query data.
 

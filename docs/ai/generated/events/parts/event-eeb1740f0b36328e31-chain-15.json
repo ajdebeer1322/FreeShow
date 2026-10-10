@@ -1,0 +1,17 @@
+[
+  {"id":"src/frontend/components/helpers/history.ts:1015","name":"isNoDataChange","file":"src/frontend/components/helpers/history.ts","line":26,"depth":2,"via":"isNoDataChange"},
+  {"id":"src/frontend/components/helpers/array.ts:9431","name":"areObjectsEqual","file":"src/frontend/components/helpers/array.ts","line":274,"depth":3,"via":"areObjectsEqual"},
+  {"id":"src/frontend/components/helpers/history.ts:9199","name":"<callback>","file":"src/frontend/components/helpers/history.ts","line":210,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/history.ts:9415","name":"<callback>","file":"src/frontend/components/helpers/history.ts","line":219,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/select.ts:724","name":"deselect","file":"src/frontend/components/helpers/select.ts","line":22,"depth":2,"via":"deselect"},
+  {"id":"src/frontend/components/helpers/messages.ts:2907","name":"createMessage","file":"src/frontend/components/helpers/messages.ts","line":56,"depth":1,"via":"createMessage"},
+  {"id":"src/frontend/components/helpers/messages.ts:1396","name":"getMessageTokens","file":"src/frontend/components/helpers/messages.ts","line":28,"depth":2,"via":"getMessageTokens"},
+  {"id":"src/frontend/components/helpers/messages.ts:1518","name":"<callback>","file":"src/frontend/components/helpers/messages.ts","line":29,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/messages.ts:264","name":"messageItemText","file":"src/frontend/components/helpers/messages.ts","line":6,"depth":4,"via":"messageItemText"},
+  {"id":"src/frontend/components/helpers/messages.ts:305","name":"<callback>","file":"src/frontend/components/helpers/messages.ts","line":6,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/messages.ts:337","name":"<callback>","file":"src/frontend/components/helpers/messages.ts","line":6,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/messages.ts:207","name":"tokenPattern","file":"src/frontend/components/helpers/messages.ts","line":5,"depth":4,"via":"tokenPattern"},
+  {"id":"src/frontend/components/helpers/messages.ts:1584","name":"<callback>","file":"src/frontend/components/helpers/messages.ts","line":29,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/messages.ts:1653","name":"<callback>","file":"src/frontend/components/helpers/messages.ts","line":30,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/messages.ts:1693","name":"<callback>","file":"src/frontend/components/helpers/messages.ts","line":30,"depth":4,"via":"<callback>"}
+]

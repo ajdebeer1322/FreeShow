@@ -1,0 +1,12 @@
+[
+  {"id":"src/frontend/components/helpers/shows.ts:35510","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":680,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:35718","name":"set","file":"src/frontend/components/helpers/shows.ts","line":686,"depth":3,"via":"set"},
+  {"id":"src/frontend/components/helpers/shows.ts:35819","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":688,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:36040","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":693,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:36561","name":"add","file":"src/frontend/components/helpers/shows.ts","line":706,"depth":3,"via":"add"},
+  {"id":"src/frontend/components/helpers/shows.ts:36665","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":708,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:37007","name":"remove","file":"src/frontend/components/helpers/shows.ts","line":720,"depth":3,"via":"remove"},
+  {"id":"src/frontend/components/helpers/shows.ts:37089","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":722,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:37310","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":727,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/utils/profile.ts:180","name":"getAccess","file":"src/frontend/utils/profile.ts","line":5,"depth":1,"via":"getAccess"}
+]

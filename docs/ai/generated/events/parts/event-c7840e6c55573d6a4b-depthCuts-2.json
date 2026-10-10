@@ -1,0 +1,12 @@
+[
+  {"target":"src/frontend/components/helpers/shows.ts:36561","via":"add","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:37007","via":"remove","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/timeline/TimelineActions.ts:6785","via":"this.getActionIndex","reason":"six-level depth limit"},
+  {"target":"src/frontend/utils/common.ts:9036","via":"hasNewerUpdate","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/timeline/TimelineActions.ts:4366","via":"this.saveState","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/timeline/TimelineActions.ts:6866","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/utils/common.ts:9386","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/edit/tools/EditValues.svelte:2050","via":"getValue","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/edit/scripts/itemClipboard.ts:10225","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/edit/scripts/itemClipboard.ts:10540","via":"<callback>","reason":"six-level depth limit"}
+]

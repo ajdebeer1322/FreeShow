@@ -1,0 +1,10 @@
+[
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1061,"expression":"!v","then":"return 0"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1063,"expression":"isNaN(n)","then":"return 0"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1083,"expression":"imgX === 0 && imgY === 0 && imgW === 100 && imgH === 100","then":"{ const srcL = toFract(getAttribute(blipFill, \"l\", \"a:srcRect\")) const srcT = toFract(getAttribute(blipFill, \"t\", \"a:srcRect\")) const srcR = toFract(getAttribute(blipFill, \"r\", \"a:"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1119,"expression":"prstGeom === \"rect\"","then":"{ if (fill === \"none\") return null // Use vbWidth and vbHeight for non-square shapes return `<svg data-shape=\"rect\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 ${vbWidth} ${vbH"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1120,"expression":"fill === \"none\"","then":"return null"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1135,"expression":"avLst?.[\"a:gd\"]","then":"{ const valStr = getAttribute(avLst, \"fmla\", \"a:gd\") if (valStr && valStr.startsWith(\"val\")) { adj = parseFloat(valStr.split(\" \")[1]) } }"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1137,"expression":"valStr && valStr.startsWith(\"val\")","then":"{ adj = parseFloat(valStr.split(\" \")[1]) }"},
+  {"file":"src/frontend/converters/powerpoint/PowerPointHelper.ts","line":1143,"expression":"!path","then":"return null"}
+]

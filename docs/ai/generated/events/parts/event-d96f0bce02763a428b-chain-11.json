@@ -1,0 +1,6 @@
+[
+  {"id":"src/frontend/components/helpers/show.ts:19665","name":"<callback>","file":"src/frontend/components/helpers/show.ts","line":509,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/show.ts:18018","name":"getSelectedSlideIndexes","file":"src/frontend/components/helpers/show.ts","line":474,"depth":1,"via":"getSelectedSlideIndexes"},
+  {"id":"src/frontend/components/helpers/show.ts:18172","name":"<callback>","file":"src/frontend/components/helpers/show.ts","line":477,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/show.ts:18215","name":"<callback>","file":"src/frontend/components/helpers/show.ts","line":477,"depth":2,"via":"<callback>"}
+]

@@ -1,0 +1,4 @@
+[
+  {"file":"src/frontend/utils/startup.ts","line":172,"store":"src/frontend/stores.ts#alertMessage","kind":"store-write","symbol":"contentProviderSync","expression":"alertMessage.set(\"You can now set up free cloud sync with ChurchApps! Go to Settings>Files to log in.\" + (hasDriveSync ? \"<br>It's recommended to switch over from your current Goog","depth":2,"via":"src/frontend/utils/startup.ts:6158"},
+  {"file":"src/frontend/utils/startup.ts","line":173,"store":"src/frontend/stores.ts#activePopup","kind":"store-write","symbol":"contentProviderSync","expression":"activePopup.set(\"alert\")","depth":2,"via":"src/frontend/utils/startup.ts:6158"}
+]

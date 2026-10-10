@@ -1,0 +1,3 @@
+[
+  {"file":"src/frontend/components/main/popups/Action.svelte","line":333,"expression":"history","args":["{ id: \"SHOW_LAYOUT\", newData: { key: \"actions\", data: newActions, indexes } }"],"targets":["src/frontend/components/helpers/history.ts:1696"],"kind":"history","conditions":[],"historyType":"SHOW_LAYOUT","depth":1,"via":"src/frontend/components/main/popups/Action.svelte:12691"}
+]

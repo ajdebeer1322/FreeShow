@@ -1,0 +1,8 @@
+[
+  {"id":"src/frontend/components/helpers/select.ts:724","name":"deselect","file":"src/frontend/components/helpers/select.ts","line":22,"depth":3,"via":"deselect"},
+  {"id":"src/frontend/converters/project.ts:5005","name":"<callback>","file":"src/frontend/converters/project.ts","line":126,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/media.ts:2136","name":"getFileName","file":"src/frontend/components/helpers/media.ts","line":46,"depth":3,"via":"getFileName"},
+  {"id":"src/frontend/components/helpers/media.ts:1771","name":"getMediaType","file":"src/frontend/components/helpers/media.ts","line":38,"depth":3,"via":"getMediaType"},
+  {"id":"src/frontend/components/helpers/media.ts:1037","name":"getExtension","file":"src/frontend/components/helpers/media.ts","line":19,"depth":3,"via":"getExtension"},
+  {"id":"src/frontend/components/helpers/media.ts:1315","name":"removeExtension","file":"src/frontend/components/helpers/media.ts","line":26,"depth":3,"via":"removeExtension"}
+]

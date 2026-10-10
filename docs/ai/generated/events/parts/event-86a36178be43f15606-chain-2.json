@@ -1,0 +1,23 @@
+[
+  {"id":"src/frontend/components/helpers/style.ts:1133","name":"getFilters","file":"src/frontend/components/helpers/style.ts","line":37,"depth":4,"via":"getFilters"},
+  {"id":"src/frontend/components/helpers/style.ts:1303","name":"<callback>","file":"src/frontend/components/helpers/style.ts","line":41,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/slide/Textbox.svelte:20444","name":"<callback>","file":"src/frontend/components/slide/Textbox.svelte","line":472,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/slide/Textbox.svelte:20602","name":"<callback>","file":"src/frontend/components/slide/Textbox.svelte","line":475,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/slide/Textbox.svelte:20853","name":"<callback>","file":"src/frontend/components/slide/Textbox.svelte","line":479,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/autosize.ts:657","name":"autosize","file":"src/frontend/components/edit/scripts/autosize.ts","line":19,"depth":2,"via":"autosize"},
+  {"id":"src/frontend/components/edit/scripts/autosize.ts:5053","name":"virtualElem","file":"src/frontend/components/edit/scripts/autosize.ts","line":119,"depth":3,"via":"virtualElem"},
+  {"id":"src/frontend/components/edit/scripts/autosize.ts:5598","name":"<callback>","file":"src/frontend/components/edit/scripts/autosize.ts","line":132,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/autosize.ts:6699","name":"<callback>","file":"src/frontend/components/edit/scripts/autosize.ts","line":151,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/autosize.ts:6800","name":"<callback>","file":"src/frontend/components/edit/scripts/autosize.ts","line":152,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/autosize.ts:7644","name":"<callback>","file":"src/frontend/components/edit/scripts/autosize.ts","line":166,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/autosize.ts:8224","name":"<callback>","file":"src/frontend/components/edit/scripts/autosize.ts","line":176,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/autosize.ts:2254","name":"<callback>","file":"src/frontend/components/edit/scripts/autosize.ts","line":49,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/autosize.ts:2447","name":"<callback>","file":"src/frontend/components/edit/scripts/autosize.ts","line":54,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/autosize.ts:4077","name":"addStyleToElemText","file":"src/frontend/components/edit/scripts/autosize.ts","line":98,"depth":3,"via":"addStyleToElemText"},
+  {"id":"src/frontend/components/edit/scripts/autosize.ts:3724","name":"textIsBiggerThanBox","file":"src/frontend/components/edit/scripts/autosize.ts","line":92,"depth":3,"via":"textIsBiggerThanBox"},
+  {"id":"src/frontend/components/slide/autosizeCache.ts:380","name":"writeAutoSizeCache","file":"src/frontend/components/slide/autosizeCache.ts","line":16,"depth":2,"via":"writeAutoSizeCache"},
+  {"id":"src/frontend/components/slide/Textbox.svelte:29137","name":"setItemPreviewAutoFontSize","file":"src/frontend/components/slide/Textbox.svelte","line":666,"depth":2,"via":"setItemPreviewAutoFontSize"},
+  {"id":"src/frontend/components/slide/Textbox.svelte:29533","name":"<callback>","file":"src/frontend/components/slide/Textbox.svelte","line":673,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/slide/Textbox.svelte:29928","name":"<callback>","file":"src/frontend/components/slide/Textbox.svelte","line":681,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/slide/Textbox.svelte:30341","name":"<callback>","file":"src/frontend/components/slide/Textbox.svelte","line":689,"depth":3,"via":"<callback>"}
+]

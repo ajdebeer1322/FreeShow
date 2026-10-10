@@ -14,7 +14,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/af8fd36381e60e15f49d4bc8e912f50bfaeea83c): “1.3.9 (#1349) * 🚩 Updated languages * OPUS rebuild * 🔊 NDI audio updates - Groups list are sorted better by name and number - Media item data will also be transferred in project ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/af8fd36381e60e15f49d4bc8e912f50bfaeea83c): “1.3.9 (#1349) * 🚩 Updated languages * OPUS rebuild * 🔊 NDI audio updates - Groups list are sorted better by name and number - Media item data will also be transferred in project”
 
 Later line edits: 0; latest af8fd363. Full commit messages and lineage: JSON query data.
 

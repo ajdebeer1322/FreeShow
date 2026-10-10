@@ -1,0 +1,13 @@
+[
+  {"id":"src/frontend/IPC/main.ts:1801","name":"<callback>","file":"src/frontend/IPC/main.ts","line":48,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/array.ts:1246","name":"sortByName","file":"src/frontend/components/helpers/array.ts","line":42,"depth":3,"via":"sortByName"},
+  {"id":"src/frontend/components/helpers/array.ts:1428","name":"<callback>","file":"src/frontend/components/helpers/array.ts","line":45,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/array.ts:1477","name":"<callback>","file":"src/frontend/components/helpers/array.ts","line":46,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/utils/shortcuts.ts:22587","name":"<callback>","file":"src/frontend/utils/shortcuts.ts","line":553,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/utils/shortcuts.ts:22646","name":"<callback>","file":"src/frontend/utils/shortcuts.ts","line":553,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/utils/shortcuts.ts:22809","name":"<callback>","file":"src/frontend/utils/shortcuts.ts","line":556,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/utils/shortcuts.ts:22882","name":"<callback>","file":"src/frontend/utils/shortcuts.ts","line":557,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/utils/shortcuts.ts:23112","name":"<callback>","file":"src/frontend/utils/shortcuts.ts","line":559,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:17875","name":"startFolderTimer","file":"src/frontend/components/helpers/output.ts","line":390,"depth":3,"via":"startFolderTimer"},
+  {"id":"src/frontend/components/helpers/output.ts:18277","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":394,"depth":4,"via":"<callback>"}
+]

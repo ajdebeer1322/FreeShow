@@ -1,0 +1,6 @@
+[
+  {"id":"src/frontend/components/drawer/audio/metronome.ts:6368","name":"<callback>","file":"src/frontend/components/drawer/audio/metronome.ts","line":184,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/drawer/audio/metronome.ts:6547","name":"playNoteAtTime","file":"src/frontend/components/drawer/audio/metronome.ts","line":192,"depth":5,"via":"playNoteAtTime"},
+  {"id":"src/frontend/audio/routing/audioRoutingManager.ts:25806","name":"registerInputNode","file":"src/frontend/audio/routing/audioRoutingManager.ts","line":696,"depth":6,"via":"AudioRoutingManager.getInstance().registerInputNode"},
+  {"id":"src/frontend/components/drawer/audio/metronome.ts:7362","name":"<callback>","file":"src/frontend/components/drawer/audio/metronome.ts","line":210,"depth":6,"via":"<callback>"}
+]

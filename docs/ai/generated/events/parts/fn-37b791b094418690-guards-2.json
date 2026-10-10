@@ -1,0 +1,10 @@
+[
+  {"file":"src/frontend/components/helpers/showActions.ts","line":485,"expression":"data.actions.stopTimers","then":"stopTimers()"},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":486,"expression":"data.actions.clearAudio","then":"clearAudio()"},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":489,"expression":"data.actions.audioStream","then":"AudioPlayer.start(data.actions.audioStream, { name: \"\" })"},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":492,"expression":"data.actions.outputStyle","then":"changeOutputStyle(data.actions as any)"},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":493,"expression":"data.actions.startTimer","then":"playSlideTimers({ showId, slideId: layout[index].id, overlayIds: data.overlays || [] })"},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":496,"expression":"data.actions?.slideActions?.length","then":"{ // let values update setTimeout(() => { playSlideActions(data.actions!.slideActions!, outputIds, index) }, actionTimeout) }"},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":506,"expression":"outputIds.includes(id)","then":"get(slideTimers)[id].timer?.clear()"},
+  {"file":"src/frontend/components/helpers/showActions.ts","line":509,"expression":"(duration || 0) > 0","then":"{ // outTransition.set({ duration }) setOutput(\"transition\", { duration }, false, outputId) }"}
+]

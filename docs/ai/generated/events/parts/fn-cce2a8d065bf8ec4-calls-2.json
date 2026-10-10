@@ -1,0 +1,12 @@
+[
+  {"file":"src/frontend/utils/cloudSync.ts","line":183,"expression":"setStatus","args":["\"synced\"","3"],"targets":["src/frontend/utils/common.ts:1422"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/utils/cloudSync.ts","line":186,"expression":"syncFinished","args":[],"targets":["src/frontend/utils/cloudSync.ts:1052"],"kind":"call","conditions":[{"file":"src/frontend/utils/cloudSync.ts","line":185,"expression":"isClosing","branch":"then"}]},
+  {"file":"src/frontend/utils/cloudSync.ts","line":193,"expression":"showsCache.update","args":["(a) => { downloaded.forEach((id) => delete a[id]) return a }"],"targets":[],"kind":"call","conditions":[{"file":"src/frontend/utils/cloudSync.ts","line":192,"expression":"downloaded.length","branch":"then"}],"terminal":"store"},
+  {"file":"src/frontend/utils/cloudSync.ts","line":193,"expression":"<callback>","targets":["src/frontend/utils/cloudSync.ts:6411"],"kind":"callback","reason":"callback may run later or conditionally"},
+  {"file":"src/frontend/utils/cloudSync.ts","line":200,"expression":"get","args":["activeShow"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/utils/cloudSync.ts","line":201,"expression":"get","args":["shows"],"targets":[],"kind":"call","conditions":[{"file":"src/frontend/utils/cloudSync.ts","line":201,"expression":"get(shows)[currentlyActive]","branch":"else/enclosing"}],"terminal":"platform/read"},
+  {"file":"src/frontend/utils/cloudSync.ts","line":201,"expression":"loadShows","args":["[currentlyActive]"],"targets":["src/frontend/components/helpers/setShow.ts:7918"],"kind":"call","conditions":[{"file":"src/frontend/utils/cloudSync.ts","line":201,"expression":"get(shows)[currentlyActive]","branch":"then"}]},
+  {"file":"src/frontend/utils/cloudSync.ts","line":204,"expression":"setTimeout","args":["() => saved.set(true)","100"],"targets":[],"kind":"call","conditions":[],"terminal":"scheduler"},
+  {"file":"src/frontend/utils/cloudSync.ts","line":204,"expression":"<callback>","targets":["src/frontend/utils/cloudSync.ts:6707"],"kind":"callback","reason":"callback may run later or conditionally"},
+  {"file":"src/frontend/utils/cloudSync.ts","line":209,"expression":"syncFinished","args":[],"targets":["src/frontend/utils/cloudSync.ts:1052"],"kind":"call","conditions":[]}
+]

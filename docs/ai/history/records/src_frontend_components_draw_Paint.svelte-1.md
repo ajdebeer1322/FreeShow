@@ -86,7 +86,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/13fe2b40ff6a76224c6e4717013b59a97d609629): “v0.9.8 (#269) * 🚩 Updated Italian language * ✨ Improvements - Updated preview optimized speed - Go to next after video working again - Next after media will continue to next show ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/13fe2b40ff6a76224c6e4717013b59a97d609629): “v0.9.8 (#269) * 🚩 Updated Italian language * ✨ Improvements - Updated preview optimized speed - Go to next after video working again - Next after media will continue to next show”
 
 Later line edits: 0; latest 13fe2b40. Full commit messages and lineage: JSON query data.
 

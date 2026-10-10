@@ -1,0 +1,18 @@
+[
+  {"file":"src/frontend/utils/save.ts","line":231,"expression":"get","args":["themes"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/utils/save.ts","line":232,"expression":"get","args":["driveKeys"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/utils/save.ts","line":234,"expression":"get","args":["showsCache"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/utils/save.ts","line":235,"expression":"get","args":["scripturesCache"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/utils/save.ts","line":236,"expression":"get","args":["deletedShows"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/utils/save.ts","line":237,"expression":"get","args":["renamedShows"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/utils/save.ts","line":239,"expression":"get","args":["textCache"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/utils/save.ts","line":240,"expression":"get","args":["undoHistory"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/utils/save.ts","line":240,"expression":"get","args":["redoHistory"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/utils/save.ts","line":241,"expression":"get","args":["usageLog"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/utils/save.ts","line":247,"expression":"clone","args":["allSavedData"],"targets":["src/frontend/components/helpers/array.ts:6534"],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/utils/save.ts","line":249,"expression":"deletedShows.set","args":["[]"],"targets":[],"kind":"call","conditions":[],"terminal":"store"},
+  {"file":"src/frontend/utils/save.ts","line":250,"expression":"renamedShows.set","args":["[]"],"targets":[],"kind":"call","conditions":[],"terminal":"store"},
+  {"file":"src/frontend/utils/save.ts","line":252,"expression":"newToast","args":["\"settings.backup_started\""],"targets":["src/frontend/utils/common.ts:1175"],"kind":"call","conditions":[{"file":"src/frontend/utils/save.ts","line":252,"expression":"customTriggers.backup","branch":"then"}]},
+  {"file":"src/frontend/utils/save.ts","line":254,"expression":"setTimeout","args":["() => sendMain(Main.SAVE, saveData)"],"targets":[],"kind":"call","conditions":[],"terminal":"ipc"},
+  {"file":"src/frontend/utils/save.ts","line":254,"expression":"<callback>","targets":["src/frontend/utils/save.ts:7428"],"kind":"callback","reason":"callback may run later or conditionally"}
+]

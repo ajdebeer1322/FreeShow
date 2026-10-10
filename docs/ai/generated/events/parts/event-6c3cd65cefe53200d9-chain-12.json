@@ -1,0 +1,5 @@
+[
+  {"id":"src/frontend/utils/common.ts:1752","name":"wait","file":"src/frontend/utils/common.ts","line":46,"depth":2,"via":"wait"},
+  {"id":"src/frontend/utils/common.ts:1810","name":"<callback>","file":"src/frontend/utils/common.ts","line":47,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/utils/common.ts:1844","name":"<callback>","file":"src/frontend/utils/common.ts","line":48,"depth":4,"via":"<callback>"}
+]

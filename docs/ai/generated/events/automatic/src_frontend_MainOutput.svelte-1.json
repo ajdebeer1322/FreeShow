@@ -1,0 +1,3 @@
+[
+  {"id":"event-dd5e630331ecc0c4c2","file":"src/frontend/MainOutput.svelte","line":38,"kind":"automatic","handler":"() => { loaded = true }","conditions":[],"eventName":"setTimeout","delay":"2000","origin":"<callback>","roots":["src/frontend/MainOutput.svelte:1664"],"calls":[],"effects":[],"unresolved":[],"chain":[{"id":"src/frontend/MainOutput.svelte:1664","name":"<callback>","file":"src/frontend/MainOutput.svelte","line":38,"depth":0,"via":"event"}],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

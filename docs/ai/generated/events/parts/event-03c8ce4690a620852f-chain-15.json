@@ -1,0 +1,11 @@
+[
+  {"id":"src/frontend/components/helpers/history.ts:1015","name":"isNoDataChange","file":"src/frontend/components/helpers/history.ts","line":26,"depth":2,"via":"isNoDataChange"},
+  {"id":"src/frontend/components/helpers/array.ts:9431","name":"areObjectsEqual","file":"src/frontend/components/helpers/array.ts","line":274,"depth":3,"via":"areObjectsEqual"},
+  {"id":"src/frontend/components/helpers/history.ts:9199","name":"<callback>","file":"src/frontend/components/helpers/history.ts","line":210,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/history.ts:9415","name":"<callback>","file":"src/frontend/components/helpers/history.ts","line":219,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/select.ts:724","name":"deselect","file":"src/frontend/components/helpers/select.ts","line":22,"depth":2,"via":"deselect"},
+  {"id":"src/frontend/components/helpers/media.ts:2136","name":"getFileName","file":"src/frontend/components/helpers/media.ts","line":46,"depth":1,"via":"getFileName"},
+  {"id":"src/frontend/components/helpers/media.ts:1771","name":"getMediaType","file":"src/frontend/components/helpers/media.ts","line":38,"depth":1,"via":"getMediaType"},
+  {"id":"src/frontend/components/helpers/media.ts:1037","name":"getExtension","file":"src/frontend/components/helpers/media.ts","line":19,"depth":1,"via":"getExtension"},
+  {"id":"src/frontend/components/helpers/clipboard.ts:6271","name":"deleteAction","file":"src/frontend/components/helpers/clipboard.ts","line":200,"depth":1,"via":"deleteAction"}
+]

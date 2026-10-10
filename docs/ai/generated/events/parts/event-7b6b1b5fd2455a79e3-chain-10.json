@@ -1,0 +1,4 @@
+[
+  {"id":"src/frontend/audio/audioPlayer.ts:15813","name":"setTempo","file":"src/frontend/audio/audioPlayer.ts","line":467,"depth":2,"via":"this.setTempo"},
+  {"id":"src/frontend/audio/audioAnalyser.ts:15005","name":"setTempo","file":"src/frontend/audio/audioAnalyser.ts","line":395,"depth":3,"via":"AudioAnalyser.setTempo"}
+]

@@ -1,0 +1,19 @@
+[
+  {"id":"src/frontend/utils/common.ts:998","name":"isMainWindow","file":"src/frontend/utils/common.ts","line":18,"depth":3,"via":"isMainWindow"},
+  {"id":"src/frontend/components/helpers/output.ts:44596","name":"addOutput","file":"src/frontend/components/helpers/output.ts","line":1102,"depth":3,"via":"addOutput"},
+  {"id":"src/frontend/components/helpers/output.ts:44791","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":1106,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:45184","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":1116,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/utils/language.ts:3244","name":"translateText","file":"src/frontend/utils/language.ts","line":83,"depth":5,"via":"translateText"},
+  {"id":"src/frontend/utils/language.ts:3505","name":"<callback>","file":"src/frontend/utils/language.ts","line":89,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/language.ts:3700","name":"<callback>","file":"src/frontend/utils/language.ts","line":96,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/utils/request.ts:141","name":"send","file":"src/frontend/utils/request.ts","line":4,"depth":5,"via":"send"},
+  {"id":"src/frontend/components/helpers/debugLog.ts:10836","name":"debugSentToOutput","file":"src/frontend/components/helpers/debugLog.ts","line":252,"depth":6,"via":"debugSentToOutput"},
+  {"id":"src/frontend/utils/request.ts:295","name":"<callback>","file":"src/frontend/utils/request.ts","line":6,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:6432","name":"toggleOutput","file":"src/frontend/components/helpers/output.ts","line":149,"depth":5,"via":"toggleOutput"},
+  {"id":"src/frontend/components/helpers/output.ts:5304","name":"toggleOutputs","file":"src/frontend/components/helpers/output.ts","line":130,"depth":6,"via":"toggleOutputs"},
+  {"id":"src/frontend/components/helpers/array.ts:5153","name":"keysToID","file":"src/frontend/components/helpers/array.ts","line":137,"depth":3,"via":"keysToID"},
+  {"id":"src/frontend/components/helpers/array.ts:5320","name":"<callback>","file":"src/frontend/components/helpers/array.ts","line":139,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/output.ts:27517","name":"<callback>","file":"src/frontend/components/helpers/output.ts","line":668,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/apiGet.ts:2088","name":"<callback>","file":"src/frontend/components/actions/apiGet.ts","line":57,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/apiGet.ts:2182","name":"getPlayingVideoTime","file":"src/frontend/components/actions/apiGet.ts","line":62,"depth":1,"via":"getPlayingVideoTime"}
+]

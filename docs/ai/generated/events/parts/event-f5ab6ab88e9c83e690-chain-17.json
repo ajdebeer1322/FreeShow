@@ -1,0 +1,14 @@
+[
+  {"id":"src/frontend/components/helpers/showActions.ts:21308","name":"playSlideActions","file":"src/frontend/components/helpers/showActions.ts","line":518,"depth":5,"via":"playSlideActions"},
+  {"id":"src/frontend/components/helpers/showActions.ts:21573","name":"<callback>","file":"src/frontend/components/helpers/showActions.ts","line":523,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/showActions.ts:21858","name":"<callback>","file":"src/frontend/components/helpers/showActions.ts","line":532,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/showActions.ts:22133","name":"playOutputStyleTemplateActions","file":"src/frontend/components/helpers/showActions.ts","line":543,"depth":6,"via":"playOutputStyleTemplateActions"},
+  {"id":"src/frontend/components/helpers/showActions.ts:22133","name":"playOutputStyleTemplateActions","file":"src/frontend/components/helpers/showActions.ts","line":543,"depth":4,"via":"playOutputStyleTemplateActions"},
+  {"id":"src/frontend/components/helpers/showActions.ts:22218","name":"<callback>","file":"src/frontend/components/helpers/showActions.ts","line":544,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/showActions.ts:22648","name":"<callback>","file":"src/frontend/components/helpers/showActions.ts","line":554,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/showActions.ts:20860","name":"nextSlideTimers","file":"src/frontend/components/helpers/showActions.ts","line":503,"depth":4,"via":"nextSlideTimers"},
+  {"id":"src/frontend/components/helpers/showActions.ts:20984","name":"<callback>","file":"src/frontend/components/helpers/showActions.ts","line":505,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/output/clear.ts:5729","name":"clearTimers","file":"src/frontend/components/output/clear.ts","line":158,"depth":5,"via":"clearTimers"},
+  {"id":"src/frontend/components/output/clear.ts:6149","name":"<callback>","file":"src/frontend/components/output/clear.ts","line":166,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/output/clear.ts:6333","name":"<callback>","file":"src/frontend/components/output/clear.ts","line":173,"depth":6,"via":"<callback>"}
+]

@@ -1,0 +1,3 @@
+[
+  {"id":"event-eb4fb45057255814aa","file":"src/frontend/components/system/Clock.svelte","line":24,"kind":"automatic","handler":"() => (d = new Date())","conditions":[],"eventName":"setInterval","delay":"250","origin":"<callback>","roots":["src/frontend/components/system/Clock.svelte:735"],"calls":[],"effects":[],"unresolved":[],"chain":[{"id":"src/frontend/components/system/Clock.svelte:735","name":"<callback>","file":"src/frontend/components/system/Clock.svelte","line":24,"depth":0,"via":"event"}],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

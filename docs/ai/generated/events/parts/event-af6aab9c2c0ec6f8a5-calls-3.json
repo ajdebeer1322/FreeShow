@@ -1,0 +1,12 @@
+[
+  {"file":"src/server/remote/components/tablet/layout/TabletTop.svelte","line":23,"expression":"activeTab.set","args":["\"edit\""],"targets":[],"kind":"call","conditions":[],"terminal":"store"},
+  {"file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte","line":101,"expression":"runAction","args":["action"],"targets":["src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte:931"],"kind":"call","conditions":[]},
+  {"file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte","line":151,"expression":"playPauseTimer","args":["timer.id"],"targets":["src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte:2102"],"kind":"call","conditions":[]},
+  {"file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte","line":183,"expression":"resetTimer","args":["timer.id"],"targets":["src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte:2417"],"kind":"call","conditions":[]},
+  {"file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte","line":210,"expression":"resetVariable","args":["variable"],"targets":["src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte:3958"],"kind":"call","conditions":[]},
+  {"file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte","line":225,"expression":"decrementVariable","args":["variable"],"targets":["src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte:3640"],"kind":"call","conditions":[]},
+  {"file":"src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte","line":228,"expression":"incrementVariable","args":["variable"],"targets":["src/server/remote/components/tablet/layout/drawer/pages/TabletDrawerFunctions.svelte:3319"],"kind":"call","conditions":[]},
+  {"file":"src/server/stage/components/Textbox.svelte","line":508,"expression":"transpose","args":["\"down\""],"targets":["src/server/stage/components/Textbox.svelte:8578"],"kind":"call","conditions":[]},
+  {"file":"src/server/stage/components/Textbox.svelte","line":509,"expression":"transpose","args":["\"reset\""],"targets":["src/server/stage/components/Textbox.svelte:8578"],"kind":"call","conditions":[]},
+  {"file":"src/server/stage/components/Textbox.svelte","line":510,"expression":"transpose","args":["\"up\""],"targets":["src/server/stage/components/Textbox.svelte:8578"],"kind":"call","conditions":[]}
+]

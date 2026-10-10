@@ -1,0 +1,8 @@
+[
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":359,"expression":"get","args":["styles"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":361,"expression":"getMediaStyle","args":["get(media)[templateBackground]","currentStyle"],"targets":["src/frontend/components/helpers/media.ts:13571"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":361,"expression":"get","args":["media"],"targets":[],"kind":"call","conditions":[],"terminal":"platform/read"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":362,"expression":"setOutput","args":["\"background\"","{ path: templateBackground, loop: true, muted: true, ...mediaStyle }"],"targets":["src/frontend/components/helpers/output.ts:6608"],"kind":"call","conditions":[]},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":366,"expression":"getPreviousSlides","targets":["src/frontend/components/drawer/bible/scripture.ts:16254"],"kind":"callback","reason":"callback may run later or conditionally"},
+  {"file":"src/frontend/components/drawer/bible/scripture.ts","line":377,"expression":"getNextSlides","targets":["src/frontend/components/drawer/bible/scripture.ts:16769"],"kind":"callback","reason":"callback may run later or conditionally"}
+]

@@ -1,0 +1,15 @@
+[
+  {"id":"src/frontend/components/actions/actions.ts:7346","name":"addSlideAction","file":"src/frontend/components/actions/actions.ts","line":197,"depth":3,"via":"addSlideAction"},
+  {"id":"src/frontend/components/helpers/show.ts:15718","name":"getLayoutRef","file":"src/frontend/components/helpers/show.ts","line":418,"depth":4,"via":"getLayoutRef"},
+  {"id":"src/frontend/components/actions/actions.ts:8118","name":"<callback>","file":"src/frontend/components/actions/actions.ts","line":216,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/actions/actions.ts:6032","name":"isMatchingSlideAction","file":"src/frontend/components/actions/actions.ts","line":174,"depth":5,"via":"isMatchingSlideAction"},
+  {"id":"src/frontend/components/actions/actions.ts:8898","name":"getActionTriggerId","file":"src/frontend/components/actions/actions.ts","line":235,"depth":6,"via":"getActionTriggerId"},
+  {"id":"src/frontend/components/edit/scripts/itemHelpers.ts:4382","name":"<callback>","file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":81,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/style.ts:1467","name":"removeText","file":"src/frontend/components/helpers/style.ts","line":49,"depth":3,"via":"removeText"},
+  {"id":"src/frontend/components/edit/scripts/itemHelpers.ts:7322","name":"<callback>","file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":137,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/show.ts:15718","name":"getLayoutRef","file":"src/frontend/components/helpers/show.ts","line":418,"depth":3,"via":"getLayoutRef"},
+  {"id":"src/frontend/components/edit/scripts/itemHelpers.ts:8560","name":"<callback>","file":"src/frontend/components/edit/scripts/itemHelpers.ts","line":166,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/textStyle.ts:12281","name":"setCaret","file":"src/frontend/components/edit/scripts/textStyle.ts","line":353,"depth":4,"via":"setCaret"},
+  {"id":"src/frontend/components/edit/scripts/textStyle.ts:12713","name":"nodeTextLength","file":"src/frontend/components/edit/scripts/textStyle.ts","line":362,"depth":5,"via":"nodeTextLength"},
+  {"id":"src/frontend/components/edit/scripts/textStyle.ts:12923","name":"<callback>","file":"src/frontend/components/edit/scripts/textStyle.ts","line":367,"depth":5,"via":"<callback>"}
+]

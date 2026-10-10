@@ -1,5 +1,4 @@
 [
-  "src/frontend/utils/pcoLiveSync.ts",
   "src/frontend/utils/popup.ts",
   "src/frontend/utils/profile.ts",
   "src/frontend/utils/receivers.ts",
@@ -31,7 +30,6 @@
   "src/types/Channels.ts",
   "src/types/IPC/Main.ts",
   "src/types/IPC/ToMain.ts",
-  "src/types/Show.ts",
   "src/types/Songbeamer.ts",
   "src/types/ai/Ai.ts"
 ]

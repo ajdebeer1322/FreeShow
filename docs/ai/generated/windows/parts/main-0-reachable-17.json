@@ -1,5 +1,4 @@
 [
-  "src/frontend/converters/imageShow.ts",
   "src/frontend/converters/importHelpers.ts",
   "src/frontend/converters/lessonsChurch.ts",
   "src/frontend/converters/mediashout.ts",
@@ -38,5 +37,6 @@
   "src/frontend/utils/language.ts",
   "src/frontend/utils/languageData.ts",
   "src/frontend/utils/listeners.ts",
-  "src/frontend/utils/obsTalk.ts"
+  "src/frontend/utils/obsTalk.ts",
+  "src/frontend/utils/pcoLiveSync.ts"
 ]

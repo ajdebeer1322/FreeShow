@@ -1,0 +1,9 @@
+[
+  {"target":"src/frontend/audio/audioAnalyser.ts:17768","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/utils/common.ts:1844","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/utils/stageTalk.ts:2208","via":"getNextBackground","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/media.ts:17571","via":"getBase64Path","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:23345","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:23420","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:24789","via":"<callback>","reason":"six-level depth limit"}
+]

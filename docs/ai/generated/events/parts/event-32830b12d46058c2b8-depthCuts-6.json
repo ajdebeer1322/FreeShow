@@ -1,0 +1,4 @@
+[
+  {"target":"src/frontend/components/helpers/shows.ts:36665","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/shows.ts:37089","via":"<callback>","reason":"six-level depth limit"}
+]

@@ -1,0 +1,6 @@
+[
+  {"id":"src/frontend/audio/audioPlayer.ts:15715","name":"setPitch","file":"src/frontend/audio/audioPlayer.ts","line":463,"depth":6,"via":"this.setPitch"},
+  {"id":"src/frontend/audio/audioPlayer.ts:15813","name":"setTempo","file":"src/frontend/audio/audioPlayer.ts","line":467,"depth":6,"via":"this.setTempo"},
+  {"id":"src/frontend/audio/audioPlayer.ts:17498","name":"nowPlaying","file":"src/frontend/audio/audioPlayer.ts","line":518,"depth":3,"via":"this.nowPlaying"},
+  {"id":"src/frontend/audio/audioPlayer.ts:19787","name":"getDurationSync","file":"src/frontend/audio/audioPlayer.ts","line":578,"depth":4,"via":"this.getDurationSync"}
+]

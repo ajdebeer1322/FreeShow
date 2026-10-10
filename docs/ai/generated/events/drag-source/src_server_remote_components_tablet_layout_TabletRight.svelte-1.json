@@ -1,0 +1,3 @@
+[
+  {"id":"event-37426f376a12a1bd08","file":"src/server/remote/components/tablet/layout/TabletRight.svelte","line":73,"kind":"drag-source","handler":"draggable=\"false\"","conditions":[],"attributes":["src={backgroundThumbnail}","alt=\"Background\"","draggable=\"false\""],"roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

@@ -1,0 +1,4 @@
+[
+  {"file":"src/frontend/components/helpers/shows.ts","line":708,"store":"src/frontend/stores.ts#showsCache","kind":"store-write","symbol":"add","expression":"showsCache.update((a) => { if (!a[id]) return a if (!a[id].media) a[id].media = {} a[id].media[bgid] = object touchShowModified(a[id]) return a })","depth":5,"via":"src/frontend/components/helpers/shows.ts:36665"},
+  {"file":"src/frontend/components/helpers/shows.ts","line":722,"store":"src/frontend/stores.ts#showsCache","kind":"store-write","symbol":"remove","expression":"showsCache.update((a) => { if (!a[id]) return a if (!a[id].media) a[id].media = {} if (!mediaIds.length) mediaIds = Object.keys(a[id].media) mediaIds.forEach((mediaId, i) => { if (","depth":5,"via":"src/frontend/components/helpers/shows.ts:37089"}
+]

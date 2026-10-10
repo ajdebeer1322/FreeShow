@@ -1,0 +1,14 @@
+[
+  {"id":"src/frontend/components/helpers/showActions.ts:26640","name":"playPreviousGroup","file":"src/frontend/components/helpers/showActions.ts","line":671,"depth":2,"via":"playPreviousGroup"},
+  {"id":"src/frontend/components/helpers/showActions.ts:24787","name":"playGroup","file":"src/frontend/components/helpers/showActions.ts","line":623,"depth":3,"via":"playGroup"},
+  {"id":"src/frontend/components/helpers/showActions.ts:25075","name":"<callback>","file":"src/frontend/components/helpers/showActions.ts","line":630,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/showActions.ts:26101","name":"<callback>","file":"src/frontend/components/helpers/showActions.ts","line":654,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/showActions.ts:26317","name":"<callback>","file":"src/frontend/components/helpers/showActions.ts","line":659,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/showActions.ts:26437","name":"playNextGroup","file":"src/frontend/components/helpers/showActions.ts","line":667,"depth":2,"via":"playNextGroup"},
+  {"id":"src/frontend/components/output/preview/Preview.svelte:4332","name":"<callback>","file":"src/frontend/components/output/preview/Preview.svelte","line":84,"depth":1,"via":"<callback>"},
+  {"id":"src/frontend/components/output/preview/Preview.svelte:4970","name":"<callback>","file":"src/frontend/components/output/preview/Preview.svelte","line":99,"depth":1,"via":"<callback>"},
+  {"id":"src/frontend/utils/search.ts:318","name":"formatSearch","file":"src/frontend/utils/search.ts","line":8,"depth":2,"via":"formatSearch"},
+  {"id":"src/frontend/components/edit/scripts/textStyle.ts:11102","name":"getSlideText","file":"src/frontend/components/edit/scripts/textStyle.ts","line":304,"depth":2,"via":"getSlideText"},
+  {"id":"src/frontend/components/edit/scripts/textStyle.ts:11218","name":"<callback>","file":"src/frontend/components/edit/scripts/textStyle.ts","line":306,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/textStyle.ts:11300","name":"getItemText","file":"src/frontend/components/edit/scripts/textStyle.ts","line":310,"depth":4,"via":"getItemText"}
+]

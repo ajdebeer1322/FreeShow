@@ -14,7 +14,7 @@ Code comment: “// preload show (so the layout can be changed)”
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c49202065eb31b67cb66d102806195d7039b62a5): “v1.2.5 (#756) * 📄 Option to not disable Hardware Acceleration - Updated languages - Unsplash UTM links - Fixed HTTP output media - More optimized .json cache storage - Fixed fade ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/c49202065eb31b67cb66d102806195d7039b62a5): “v1.2.5 (#756) * 📄 Option to not disable Hardware Acceleration - Updated languages - Unsplash UTM links - Fixed HTTP output media - More optimized .json cache storage - Fixed fade”
 - [code] src/frontend/components/helpers/showActions.ts:114: “// preload show (so the layout can be changed)”
 
 Later line edits: 0; latest c4920206. Full commit messages and lineage: JSON query data.
@@ -252,7 +252,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/449b82c7ae90d8e32bc152928e46d30df34144bc): “1.5.8 (#2875) * Updated Turkish language * Load player video name - Tweaks * Tweaks * Fixed metadata sometimes not removed * Scripture numbers will be on the same line as start of ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/449b82c7ae90d8e32bc152928e46d30df34144bc): “1.5.8 (#2875) * Updated Turkish language * Load player video name - Tweaks * Tweaks * Fixed metadata sometimes not removed * Scripture numbers will be on the same line as start of”
 
 Later line edits: 0; latest 449b82c7. Full commit messages and lineage: JSON query data.
 

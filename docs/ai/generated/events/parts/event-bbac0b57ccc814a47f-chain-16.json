@@ -1,0 +1,12 @@
+[
+  {"id":"src/frontend/components/helpers/shows.ts:2239","name":"remove","file":"src/frontend/components/helpers/shows.ts","line":59,"depth":2,"via":"remove"},
+  {"id":"src/frontend/components/helpers/shows.ts:2321","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":61,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:1508","name":"set","file":"src/frontend/components/helpers/shows.ts","line":38,"depth":1,"via":"_show().set"},
+  {"id":"src/frontend/components/helpers/shows.ts:1622","name":"<callback>","file":"src/frontend/components/helpers/shows.ts","line":40,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/shows.ts:367","name":"touchShowModified","file":"src/frontend/components/helpers/shows.ts","line":10,"depth":3,"via":"touchShowModified"},
+  {"id":"src/frontend/components/main/popups/Action.svelte:12691","name":"saveSlide","file":"src/frontend/components/main/popups/Action.svelte","line":307,"depth":1,"via":"saveSlide"},
+  {"id":"src/frontend/components/helpers/show.ts:15718","name":"getLayoutRef","file":"src/frontend/components/helpers/show.ts","line":418,"depth":2,"via":"getLayoutRef"},
+  {"id":"src/frontend/components/main/popups/Action.svelte:12988","name":"<callback>","file":"src/frontend/components/main/popups/Action.svelte","line":314,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/components/main/popups/Action.svelte:13233","name":"<callback>","file":"src/frontend/components/main/popups/Action.svelte","line":318,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/main/popups/Action.svelte:12647","name":"<callback>","file":"src/frontend/components/main/popups/Action.svelte","line":304,"depth":1,"via":"<callback>"}
+]

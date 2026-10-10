@@ -86,7 +86,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/449b82c7ae90d8e32bc152928e46d30df34144bc): “1.5.8 (#2875) * Updated Turkish language * Load player video name - Tweaks * Tweaks * Fixed metadata sometimes not removed * Scripture numbers will be on the same line as start of ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/449b82c7ae90d8e32bc152928e46d30df34144bc): “1.5.8 (#2875) * Updated Turkish language * Load player video name - Tweaks * Tweaks * Fixed metadata sometimes not removed * Scripture numbers will be on the same line as start of”
 
 Later line edits: 0; latest 449b82c7. Full commit messages and lineage: JSON query data.
 
@@ -158,7 +158,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055): “1.6.0-beta.2 (#3090) * Updated languages * Better media item cropping #2856 * Corrected beta changelog #3015 * Item resize works better when rotated #2999 * Refactor chord parsing ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055): “1.6.0-beta.2 (#3090) * Updated languages * Better media item cropping #2856 * Corrected beta changelog #3015 * Item resize works better when rotated #2999 * Refactor chord parsing”
 
 Later line edits: 0; latest 5c94f232. Full commit messages and lineage: JSON query data.
 
@@ -176,7 +176,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/27a85a5769aee9968abfe0381b961235d653ce33): “1.3.3 (#1117) * ✔️ Fixed playwright Linux fontconfig issue * ✔️ Fixed playwright Linux fontconfig issue * ✨ Get slide output thumbnail from API - Drop timer & variable on slide in ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/27a85a5769aee9968abfe0381b961235d653ce33): “1.3.3 (#1117) * ✔️ Fixed playwright Linux fontconfig issue * ✔️ Fixed playwright Linux fontconfig issue * ✨ Get slide output thumbnail from API - Drop timer & variable on slide in”
 
 Later line edits: 1; latest 1f661639. Full commit messages and lineage: JSON query data.
 
@@ -194,7 +194,7 @@ Code comment: “// wait for content load”
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/27a85a5769aee9968abfe0381b961235d653ce33): “1.3.3 (#1117) * ✔️ Fixed playwright Linux fontconfig issue * ✔️ Fixed playwright Linux fontconfig issue * ✨ Get slide output thumbnail from API - Drop timer & variable on slide in ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/27a85a5769aee9968abfe0381b961235d653ce33): “1.3.3 (#1117) * ✔️ Fixed playwright Linux fontconfig issue * ✔️ Fixed playwright Linux fontconfig issue * ✨ Get slide output thumbnail from API - Drop timer & variable on slide in”
 - [code] src/electron/data/thumbnails.ts:416: “// wait for content load”
 
 Later line edits: 1; latest 1f661639. Full commit messages and lineage: JSON query data.

@@ -1,0 +1,19 @@
+[
+  {"file":"src/frontend/components/helpers/history.ts","line":174,"expression":"ref.type === \"parent\"","then":"_show(showID).layouts([obj.location.layout!]).slides([ref.index]).set({ key: \"audio\", value: audio })"},
+  {"file":"src/frontend/components/helpers/history.ts","line":186,"expression":"temp.obj","then":"obj = temp.obj"},
+  {"file":"src/frontend/components/helpers/history.ts","line":189,"expression":"old && !shouldUndo && !obj.oldData","then":"obj.oldData = old"},
+  {"file":"src/frontend/components/helpers/history.ts","line":191,"expression":"obj.save === false","then":"return"},
+  {"file":"src/frontend/components/helpers/history.ts","line":193,"expression":"shouldUndo === null && isNoDataChange(obj)","then":"return"},
+  {"file":"src/frontend/components/helpers/history.ts","line":194,"expression":"shouldUndo === null","then":"redoHistory.set([])"},
+  {"file":"src/frontend/components/helpers/history.ts","line":198,"expression":"obj.location!.page === \"drawer\"","then":"{ // TODO: open drawer }"},
+  {"file":"src/frontend/components/helpers/history.ts","line":200,"expression":"obj.location!.page !== \"none\"","then":"{ // this makes more sense if ((get(activePage) === \"show\" || get(activePage) === \"edit\") && (obj.location!.page === \"show\" || obj.location!.page === \"edit\")) { // dont do anything"},
+  {"file":"src/frontend/components/helpers/history.ts","line":202,"expression":"(get(activePage) === \"show\" || get(activePage) === \"edit\") && (obj.location!.page === \"show\" || obj.location!.page === \"edit\")","then":"{ // dont do anything }"},
+  {"file":"src/frontend/components/helpers/history.ts","line":209,"expression":"shouldUndo","then":"{ redoHistory.update((rh) => { rh.push(obj) // delete oldest if more than set value // rh = rh.slice(-get(historyCacheCount)) return rh }) }"},
+  {"file":"src/frontend/components/helpers/history.ts","line":225,"expression":"shouldUndo === null && sameKeys && (override.includes(obj.id) || obj.location?.override) && lastEntry?.id === obj.id && JSON.stringify(Object.values(lastEntry?.location || {})) === JSON.stringify(Object.values(obj.location || {}))","then":"{ // override, but keep previousData!!! const newestData = obj.newData if (newestData?.previousData) newestData.previousData = lastEntry.newData.previousData lastEntry.newData = ne"},
+  {"file":"src/frontend/components/helpers/history.ts","line":228,"expression":"newestData?.previousData","then":"newestData.previousData = lastEntry.newData.previousData"},
+  {"file":"src/frontend/components/helpers/history.ts","line":246,"expression":"obj.id === \"UPDATE\" && obj.location?.page === \"show\" && (obj.newData?.key === \"shows\" || obj.oldData?.key === \"shows\")","then":"{ const projectId = obj.oldData?.id || obj.newData?.id || get(activeProject) if (projectId && get(activeProject) === projectId) { const showIndex = get(activeShow)?.index const ite"},
+  {"file":"src/frontend/components/helpers/history.ts","line":248,"expression":"projectId && get(activeProject) === projectId","then":"{ const showIndex = get(activeShow)?.index const item = get(projects)[projectId]?.shows?.[showIndex ?? -1] if (showIndex !== undefined && showIndex !== null && item?.type === \"show"},
+  {"file":"src/frontend/components/helpers/history.ts","line":251,"expression":"showIndex !== undefined && showIndex !== null && item?.type === \"show_placeholder\"","then":"{ activeShow.set({ id: item.id, type: \"show_placeholder\", index: showIndex }) }"},
+  {"file":"src/frontend/components/helpers/history.ts","line":259,"expression":"obj.location?.page !== \"edit\" && obj.id !== \"SHOW_LAYOUT\" && obj.id !== \"setItems\" && !get(contextActive)","then":"{ deselect() }"},
+  {"file":"src/frontend/components/helpers/history.ts","line":263,"expression":"!get(isDev)","then":"return"}
+]

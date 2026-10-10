@@ -1,0 +1,8 @@
+[
+  {"id":"src/frontend/audio/audioPlaylist.ts:7024","name":"getSongs","file":"src/frontend/audio/audioPlaylist.ts","line":181,"depth":3,"via":"getSongs"},
+  {"id":"src/frontend/components/helpers/array.ts:7242","name":"shuffleArray","file":"src/frontend/components/helpers/array.ts","line":211,"depth":4,"via":"shuffleArray"},
+  {"id":"src/frontend/audio/audioPlaylist.ts:7404","name":"<callback>","file":"src/frontend/audio/audioPlaylist.ts","line":191,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/audio/audioFading.ts:6939","name":"audioIsFading","file":"src/frontend/audio/audioFading.ts","line":191,"depth":3,"via":"audioIsFading"},
+  {"id":"src/frontend/audio/audioPlaylist.ts:5525","name":"<callback>","file":"src/frontend/audio/audioPlaylist.ts","line":147,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/audio/audioPlaylist.ts:6014","name":"<callback>","file":"src/frontend/audio/audioPlaylist.ts","line":160,"depth":3,"via":"<callback>"}
+]

@@ -1,0 +1,18 @@
+[
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":744,"expression":"overrideTemplate?.items?.length","then":"{ slideTemplate = overrideTemplate appliedFirstOverride = true if (!show.slides[id].settings) show.slides[id].settings = {} show.slides[id].settings.template = firstSlideTemplateId"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":747,"expression":"!show.slides[id].settings","then":"show.slides[id].settings = {}"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":750,"expression":"!isFirstSlide && slide.settings?.template === firstSlideTemplateId","then":"{ if (show.slides[id].settings) { delete show.slides[id].settings.template if (!Object.keys(show.slides[id].settings).length) delete (show.slides[id] as any).settings } }"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":751,"expression":"show.slides[id].settings","then":"{ delete show.slides[id].settings.template if (!Object.keys(show.slides[id].settings).length) delete (show.slides[id] as any).settings }"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":753,"expression":"!Object.keys(show.slides[id].settings).length","then":"delete (show.slides[id] as any).settings"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":757,"expression":"!slideTemplate?.items?.length","then":"return"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":759,"expression":"shiftItems && !slide.settings?.template && !newTemplate","then":"slide.items = [...slide.items.slice(1), slide.items[0]].filter((a) => a)"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":760,"expression":"!shiftItems && newTemplate && !slide.settings?.template && slideTemplate.items?.length > 1","then":"{ const previousTemplateItems = get(templates)[data.previousData.template]?.items || [] const newTemplateItems = slideTemplate.items || [] slide.items = clone(rearrangeContent(slid"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":770,"expression":"changeOverflowItems","then":"{ const templateItemCount = getItemsCountByType(slideTemplate.items) const slideItemCount = getItemsCountByType(newItems) newItems = newItems .reverse() .filter((a) => { const type"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":777,"expression":"templateItemCount[type] - slideItemCount[type] >= 0","then":"return true"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":778,"expression":"type !== \"text\" && !a.fromTemplate","then":"return true"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":779,"expression":"type === \"text\" && !isEmptyOrSpecial(a)","then":"return true"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":780,"expression":"type === \"media\" && a.src","then":"return true"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":788,"expression":"!show.slides[id].settings","then":"show.slides[id].settings = {}"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":789,"expression":"slideTemplate.settings?.backgroundColor","then":"show.slides[id].settings.color = slideTemplate.settings?.backgroundColor"},
+  {"file":"src/frontend/components/helpers/historyActions.ts","line":804,"expression":"obj.save === false && JSON.stringify(show) === previousShow","then":"return"}
+]

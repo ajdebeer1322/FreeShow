@@ -1,0 +1,3 @@
+[
+  {"id":"event-d61b4e6becfe706096","file":"src/frontend/components/drawer/pages/Shows.svelte","line":273,"kind":"drag-source","handler":"draggable","conditions":[],"attributes":["id=\"show_drawer\"","data={{ id: show.id }}","shiftRange={filteredShows}","draggable"],"roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

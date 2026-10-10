@@ -1,0 +1,22 @@
+[
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:1877","via":"AudioRoutingManager.getInstance","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/debugLog.ts:5901","via":"outputName","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/debugLog.ts:2338","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioSender.ts:13275","via":"this.getOutputShowId","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/array.ts:5320","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/IPC/main.ts:1178","via":"cleanup","reason":"six-level depth limit"},
+  {"target":"src/frontend/utils/popup.ts:9724","via":"unsubscribe","reason":"six-level depth limit"},
+  {"target":"src/frontend/utils/popup.ts:9815","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/utils/popup.ts:9946","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/utils/popup.ts:10084","via":"finish","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioSender.ts:6577","via":"this.createFallbackProcessor","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioSender.ts:5049","via":"portResponseHandler","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioSender.ts:6116","via":"cleanupListener","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:12378","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:3113","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:3360","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:3802","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/routing/audioRoutingManager.ts:3874","via":"<callback>","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioSidechain.ts:644","via":"AudioSidechain.getInstance","reason":"six-level depth limit"},
+  {"target":"src/frontend/audio/audioMultichannel.ts:3325","via":"this.configureNodeForMultichannel","reason":"six-level depth limit"}
+]

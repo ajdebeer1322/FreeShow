@@ -14,7 +14,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/514646b44c0f64eeb7dae944156f16a848ab56f6): “1.4.8-beta.2 (#1867) * ✔️ List points are now colored - Fixed child slide backgrounds not rendering in RemoteShow - Fixed media thumbnails not loading temporarily in RemoteShow if ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/514646b44c0f64eeb7dae944156f16a848ab56f6): “1.4.8-beta.2 (#1867) * ✔️ List points are now colored - Fixed child slide backgrounds not rendering in RemoteShow - Fixed media thumbnails not loading temporarily in RemoteShow if”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/514646b44c0f64eeb7dae944156f16a848ab56f6): “- Include song metadata (title, artist, key, tempo, capo)”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/514646b44c0f64eeb7dae944156f16a848ab56f6): “- Include song metadata (title, artist, key, tempo, capo)”
 
@@ -34,7 +34,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/fbc4ae8a15fead1dff9263c56ec733fd8b5c4465): “v1.2.8-beta.1 (#845) * Fix a few English grammar mistakes (#824) * ✔ Fixed files not dropping - Fixed output not cleared when resetting app - Fixed video controls not working from ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/fbc4ae8a15fead1dff9263c56ec733fd8b5c4465): “v1.2.8-beta.1 (#845) * Fix a few English grammar mistakes (#824) * ✔ Fixed files not dropping - Fixed output not cleared when resetting app - Fixed video controls not working from”
 
 Later line edits: 0; latest fbc4ae8a. Full commit messages and lineage: JSON query data.
 

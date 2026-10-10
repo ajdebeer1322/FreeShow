@@ -1,0 +1,9 @@
+[
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":643,"expression":"currentType !== \"text\" || (!currentItems[i].lines && typeof currentValue === \"string\")","then":"currentItems[i].style = currentValue"},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":647,"expression":"currentItems[i].lines?.[j] && currentValue?.[j] !== undefined","then":"{ currentItems[i].lines![j][aligns ? \"align\" : \"text\"] = currentValue[j] }"},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":656,"expression":"textItems.length","then":"{ let textLength = textItems.reduce((length, item) => (length += getItemText(item).length), 0) if (!textLength) { newToast(\"empty.text\") return } }"},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":658,"expression":"!textLength","then":"{ newToast(\"empty.text\") return }"},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":675,"expression":"setItemStyle.includes(id)","then":"{ slides.forEach((slide, i) => { if (!slideItems[i].length) return history({ id: \"setItems\", // oldData: { style: { key: \"style\", values: [oldData] } }, newData: { style: { key: \"s"},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":677,"expression":"!slideItems[i].length","then":"return"},
+  {"file":"src/frontend/components/edit/tools/BoxStyle.svelte","line":692,"expression":"!slideItems[i].length","then":"return"}
+]

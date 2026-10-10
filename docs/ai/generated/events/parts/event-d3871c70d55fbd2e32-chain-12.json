@@ -1,0 +1,5 @@
+[
+  {"id":"src/frontend/components/helpers/show.ts:15718","name":"getLayoutRef","file":"src/frontend/components/helpers/show.ts","line":418,"depth":3,"via":"getLayoutRef"},
+  {"id":"src/frontend/converters/canvaPresentation.ts:4591","name":"<callback>","file":"src/frontend/converters/canvaPresentation.ts","line":110,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/converters/canvaPresentation.ts:4685","name":"<callback>","file":"src/frontend/converters/canvaPresentation.ts","line":112,"depth":3,"via":"<callback>"}
+]

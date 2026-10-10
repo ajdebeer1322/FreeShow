@@ -1,0 +1,21 @@
+[
+  {"id":"src/frontend/components/edit/editbox/EditboxPaste.ts:9279","name":"<callback>","file":"src/frontend/components/edit/editbox/EditboxPaste.ts","line":198,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/editbox/EditboxPaste.ts:9446","name":"<callback>","file":"src/frontend/components/edit/editbox/EditboxPaste.ts","line":203,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/editbox/EditboxPaste.ts:10297","name":"<callback>","file":"src/frontend/components/edit/editbox/EditboxPaste.ts","line":224,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/editbox/EditboxPaste.ts:11769","name":"<callback>","file":"src/frontend/components/edit/editbox/EditboxPaste.ts","line":263,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/helpers/array.ts:6534","name":"clone","file":"src/frontend/components/helpers/array.ts","line":181,"depth":4,"via":"clone"},
+  {"id":"src/frontend/components/edit/editbox/EditboxHelper.ts:1319","name":"splitAllCrlf","file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":35,"depth":3,"via":"EditboxHelper.splitAllCrlf"},
+  {"id":"src/frontend/components/edit/editbox/EditboxHelper.ts:1412","name":"<callback>","file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":37,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/editbox/EditboxHelper.ts:1559","name":"splitCrlf","file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":44,"depth":5,"via":"this.splitCrlf"},
+  {"id":"src/frontend/components/edit/editbox/EditboxHelper.ts:1809","name":"<callback>","file":"src/frontend/components/edit/editbox/EditboxHelper.ts","line":52,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/editbox/EditboxPaste.ts:13355","name":"<callback>","file":"src/frontend/components/edit/editbox/EditboxPaste.ts","line":304,"depth":3,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/editbox/EditboxPaste.ts:13413","name":"<callback>","file":"src/frontend/components/edit/editbox/EditboxPaste.ts","line":306,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/scripts/textStyle.ts:12281","name":"setCaret","file":"src/frontend/components/edit/scripts/textStyle.ts","line":353,"depth":5,"via":"setCaret"},
+  {"id":"src/frontend/components/edit/scripts/textStyle.ts:12713","name":"nodeTextLength","file":"src/frontend/components/edit/scripts/textStyle.ts","line":362,"depth":6,"via":"nodeTextLength"},
+  {"id":"src/frontend/components/edit/scripts/textStyle.ts:12923","name":"<callback>","file":"src/frontend/components/edit/scripts/textStyle.ts","line":367,"depth":6,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/editbox/EditboxLines.svelte:30165","name":"setPasting","file":"src/frontend/components/edit/editbox/EditboxLines.svelte","line":688,"depth":1,"via":"setPasting"},
+  {"id":"src/frontend/components/edit/editbox/EditboxLines.svelte:30477","name":"<callback>","file":"src/frontend/components/edit/editbox/EditboxLines.svelte","line":699,"depth":1,"via":"<callback>"},
+  {"id":"src/frontend/components/edit/editbox/EditboxLines.svelte:30503","name":"<callback>","file":"src/frontend/components/edit/editbox/EditboxLines.svelte","line":699,"depth":2,"via":"<callback>"},
+  {"id":"src/frontend/utils/common.ts:1175","name":"newToast","file":"src/frontend/utils/common.ts","line":26,"depth":1,"via":"newToast"},
+  {"id":"src/frontend/components/helpers/array.ts:335","name":"removeDuplicates","file":"src/frontend/components/helpers/array.ts","line":10,"depth":2,"via":"removeDuplicates"}
+]

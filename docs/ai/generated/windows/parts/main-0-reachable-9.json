@@ -1,5 +1,4 @@
 [
-  "src/frontend/components/inputs/MaterialColorInput.svelte",
   "src/frontend/components/inputs/MaterialColorsInput.svelte",
   "src/frontend/components/inputs/MaterialDatePicker.svelte",
   "src/frontend/components/inputs/MaterialDropdown.svelte",
@@ -38,5 +37,6 @@
   "src/frontend/components/main/popups/AddAudioEffect.svelte",
   "src/frontend/components/main/popups/Alert.svelte",
   "src/frontend/components/main/popups/AspectRatio.svelte",
-  "src/frontend/components/main/popups/AudioEffect.svelte"
+  "src/frontend/components/main/popups/AudioEffect.svelte",
+  "src/frontend/components/main/popups/AudioStream.svelte"
 ]

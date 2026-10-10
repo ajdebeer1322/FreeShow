@@ -1,0 +1,4 @@
+[
+  {"target":"src/frontend/components/helpers/output.ts:15494","via":"checkAudio","reason":"six-level depth limit"},
+  {"target":"src/frontend/components/helpers/output.ts:10591","via":"<callback>","reason":"six-level depth limit"}
+]

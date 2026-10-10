@@ -1,0 +1,8 @@
+[
+  {"id":"src/frontend/components/timeline/TimelinePlayback.ts:25933","name":"<callback>","file":"src/frontend/components/timeline/TimelinePlayback.ts","line":716,"depth":4,"via":"<callback>"},
+  {"id":"src/frontend/components/timeline/ShowTimeline.ts:1261","name":"isRecording","file":"src/frontend/components/timeline/ShowTimeline.ts","line":35,"depth":5,"via":"ShowTimeline.isRecording"},
+  {"id":"src/frontend/components/timeline/TimelinePlayback.ts:26754","name":"<callback>","file":"src/frontend/components/timeline/TimelinePlayback.ts","line":731,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/timeline/TimelinePlayback.ts:26879","name":"<callback>","file":"src/frontend/components/timeline/TimelinePlayback.ts","line":735,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/timeline/TimelinePlayback.ts:27382","name":"<callback>","file":"src/frontend/components/timeline/TimelinePlayback.ts","line":746,"depth":5,"via":"<callback>"},
+  {"id":"src/frontend/components/timeline/TimelinePlayback.ts:27929","name":"runCallbacks","file":"src/frontend/components/timeline/TimelinePlayback.ts","line":765,"depth":3,"via":"this.runCallbacks"}
+]

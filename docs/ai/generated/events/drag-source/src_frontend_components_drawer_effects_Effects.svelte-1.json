@@ -1,0 +1,3 @@
+[
+  {"id":"event-6c5b790c7e91a75f87","file":"src/frontend/components/drawer/effects/Effects.svelte","line":86,"kind":"drag-source","handler":"draggable","conditions":[],"attributes":["id=\"effect\"","data={effect.id}","fill","draggable"],"roots":[],"calls":[],"effects":[],"unresolved":[],"chain":[],"depthCuts":[],"resolution":"resolved-within-bound","storeTransports":[],"audience":"no direct audience effect indexed; unresolved/deeper calls may change output","undo":"no history creation found within six levels; not proof of non-undoability"}
+]

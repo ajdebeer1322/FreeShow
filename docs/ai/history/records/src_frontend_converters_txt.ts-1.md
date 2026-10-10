@@ -14,7 +14,7 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 
 Sources:
 
-- [code] [source](https://github.com/ChurchApps/FreeShow/commit/d679dc8627066aeee7beaeb18b608944dd9296d3): “v0.9.9 (#277) * ✔ Fixed Object has been destroyed error * 🚩 Added Turkish language - Block bad lyrics from Genius - Pressing enter to show scripture when searching works - Styled ”
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/d679dc8627066aeee7beaeb18b608944dd9296d3): “v0.9.9 (#277) * ✔ Fixed Object has been destroyed error * 🚩 Added Turkish language - Block bad lyrics from Genius - Pressing enter to show scripture when searching works - Styled”
 
 Later line edits: 1; latest af8fd363. Full commit messages and lineage: JSON query data.
 
