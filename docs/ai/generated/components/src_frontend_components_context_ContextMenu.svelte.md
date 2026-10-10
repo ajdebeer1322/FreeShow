@@ -8,7 +8,7 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/components/context/ContextMenu.svelte:237](../../../../src/frontend/components/context/ContextMenu.svelte#L237) — SpellCheckMenu → src/frontend/components/context/SpellCheckMenu.svelte; 
+- [src/frontend/components/context/ContextMenu.svelte:237](../../../../src/frontend/components/context/ContextMenu.svelte#L237) — SpellCheckMenu → src/frontend/components/context/SpellCheckMenu.svelte;
 - [src/frontend/components/context/ContextMenu.svelte:245](../../../../src/frontend/components/context/ContextMenu.svelte#L245) — ContextItem → src/frontend/components/context/ContextItem.svelte; id={itemId}; {contextElem}; highlighted={highlighted.id === itemId}; group
 - [src/frontend/components/context/ContextMenu.svelte:250](../../../../src/frontend/components/context/ContextMenu.svelte#L250) — ContextChild → src/frontend/components/context/ContextChild.svelte; {id}; {contextElem}; {side}; translate={y > window.innerHeight - 50 ? translate : 0}; highlightedPath={highlight
 - [src/frontend/components/context/ContextMenu.svelte:253](../../../../src/frontend/components/context/ContextMenu.svelte#L253) — ContextItem → src/frontend/components/context/ContextItem.svelte; {id}; {contextElem}; highlighted={highlighted.id === id}

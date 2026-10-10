@@ -29,15 +29,15 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/output/preview/SpotifyManager.ts:28](../../../../src/frontend/components/output/preview/SpotifyManager.ts#L28) — timer-a582d3a096d774b9: setInterval = dynamic ms (interval); 
-- [src/frontend/components/output/preview/SpotifyManager.ts:40](../../../../src/frontend/components/output/preview/SpotifyManager.ts#L40) — timer-07dd34919a91ba7e: setInterval = 50 ms (50); 
-- [src/frontend/components/output/preview/SpotifyManager.ts:58](../../../../src/frontend/components/output/preview/SpotifyManager.ts#L58) — request-budget-49d07b8479fef552: request-budget = 15000 ms (15000); 
-- [src/frontend/components/output/preview/SpotifyManager.ts:142](../../../../src/frontend/components/output/preview/SpotifyManager.ts#L142) — request-budget-a9927f5f8ad9ae75: request-budget = 15000 ms (15000); 
-- [src/frontend/components/output/preview/SpotifyManager.ts:164](../../../../src/frontend/components/output/preview/SpotifyManager.ts#L164) — timer-b371f7f52370b029: setTimeout = 500 ms (500); 
-- [src/frontend/components/output/preview/SpotifyManager.ts:173](../../../../src/frontend/components/output/preview/SpotifyManager.ts#L173) — timer-ddf37c11d3afecfd: setTimeout = 300 ms (300); 
-- [src/frontend/components/output/preview/SpotifyManager.ts:181](../../../../src/frontend/components/output/preview/SpotifyManager.ts#L181) — request-budget-c0fb8126fd8b897f: request-budget = 15000 ms (15000); 
+- [src/frontend/components/output/preview/SpotifyManager.ts:28](../../../../src/frontend/components/output/preview/SpotifyManager.ts#L28) — timer-a582d3a096d774b9: setInterval = dynamic ms (interval);
+- [src/frontend/components/output/preview/SpotifyManager.ts:40](../../../../src/frontend/components/output/preview/SpotifyManager.ts#L40) — timer-07dd34919a91ba7e: setInterval = 50 ms (50);
+- [src/frontend/components/output/preview/SpotifyManager.ts:58](../../../../src/frontend/components/output/preview/SpotifyManager.ts#L58) — request-budget-49d07b8479fef552: request-budget = 15000 ms (15000);
+- [src/frontend/components/output/preview/SpotifyManager.ts:142](../../../../src/frontend/components/output/preview/SpotifyManager.ts#L142) — request-budget-a9927f5f8ad9ae75: request-budget = 15000 ms (15000);
+- [src/frontend/components/output/preview/SpotifyManager.ts:164](../../../../src/frontend/components/output/preview/SpotifyManager.ts#L164) — timer-b371f7f52370b029: setTimeout = 500 ms (500);
+- [src/frontend/components/output/preview/SpotifyManager.ts:173](../../../../src/frontend/components/output/preview/SpotifyManager.ts#L173) — timer-ddf37c11d3afecfd: setTimeout = 300 ms (300);
+- [src/frontend/components/output/preview/SpotifyManager.ts:181](../../../../src/frontend/components/output/preview/SpotifyManager.ts#L181) — request-budget-c0fb8126fd8b897f: request-budget = 15000 ms (15000);
 - [src/frontend/components/output/preview/SpotifyManager.ts:193](../../../../src/frontend/components/output/preview/SpotifyManager.ts#L193) — timer-96a515fd6feb579f: wait = 50 ms (stepMs); // fade out time in ms (minimum 3 seconds) // time between volume changes
-- [src/frontend/components/output/preview/SpotifyManager.ts:197](../../../../src/frontend/components/output/preview/SpotifyManager.ts#L197) — timer-fe3d63646b1bcfab: wait = 500 ms (500); 
+- [src/frontend/components/output/preview/SpotifyManager.ts:197](../../../../src/frontend/components/output/preview/SpotifyManager.ts#L197) — timer-fe3d63646b1bcfab: wait = 500 ms (500);
 
 ## Workarounds
 

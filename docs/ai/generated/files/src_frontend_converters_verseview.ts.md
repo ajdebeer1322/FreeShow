@@ -28,7 +28,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/converters/verseview.ts:63](../../../../src/frontend/converters/verseview.ts#L63) — timer-992f74bb06e0ff73: setTimeout = 10 ms (10); 
+- [src/frontend/converters/verseview.ts:63](../../../../src/frontend/converters/verseview.ts#L63) — timer-992f74bb06e0ff73: setTimeout = 10 ms (10);
 
 ## Workarounds
 

@@ -25,7 +25,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/ai/llm/llmSession.ts:20](../../../../src/frontend/ai/llm/llmSession.ts#L20) — request-budget-d216b603773e177a: request-budget = 15000 ms (15000); 
+- [src/frontend/ai/llm/llmSession.ts:20](../../../../src/frontend/ai/llm/llmSession.ts#L20) — request-budget-d216b603773e177a: request-budget = 15000 ms (15000);
 
 ## Workarounds
 

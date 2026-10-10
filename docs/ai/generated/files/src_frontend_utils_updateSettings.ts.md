@@ -132,11 +132,11 @@ No static evidence found.
 
 - [src/frontend/utils/updateSettings.ts:147](../../../../src/frontend/utils/updateSettings.ts#L147) — timer-7df79813576661ba: setTimeout = dynamic ms (get(os).platform === "darwin" ? 3500 : 2500); // output // wait until content is loaded
 - [src/frontend/utils/updateSettings.ts:151](../../../../src/frontend/utils/updateSettings.ts#L151) — timer-9145b1698af201fd: setTimeout = dynamic ms (get(os).platform === "darwin" ? delay + 300 : delay); // wait until content is loaded
-- [src/frontend/utils/updateSettings.ts:152](../../../../src/frontend/utils/updateSettings.ts#L152) — timer-c3a74cfeca555af7: setTimeout = dynamic ms (get(os).platform === "darwin" ? delay + 300 + 500 : delay + 500); 
+- [src/frontend/utils/updateSettings.ts:152](../../../../src/frontend/utils/updateSettings.ts#L152) — timer-c3a74cfeca555af7: setTimeout = dynamic ms (get(os).platform === "darwin" ? delay + 300 + 500 : delay + 500);
 - [src/frontend/utils/updateSettings.ts:203](../../../../src/frontend/utils/updateSettings.ts#L203) — timer-314f416c295defba: setTimeout = 1000 ms (1000); // update store as this is non-synced settings
 - [src/frontend/utils/updateSettings.ts:280](../../../../src/frontend/utils/updateSettings.ts#L280) — timer-e7a8dc71cff4615f: setTimeout = 10 ms (10); // timeout to ensure outputs are initialized // only get locked overlays
 - [src/frontend/utils/updateSettings.ts:294](../../../../src/frontend/utils/updateSettings.ts#L294) — timer-efca5a8c148aab35: setTimeout = 10 ms (10); // timeout to ensure outputs are initialized
-- [src/frontend/utils/updateSettings.ts:406](../../../../src/frontend/utils/updateSettings.ts#L406) — timer-e2f017cf8a946c3a: setTimeout = 3000 ms (3000); 
+- [src/frontend/utils/updateSettings.ts:406](../../../../src/frontend/utils/updateSettings.ts#L406) — timer-e2f017cf8a946c3a: setTimeout = 3000 ms (3000);
 - [src/frontend/utils/updateSettings.ts:418](../../../../src/frontend/utils/updateSettings.ts#L418) — timer-eadfd600d7b4d03e: setTimeout = 0 ms (omitted); // don't backup when just initialized (or reset) // skip the "Recently used" list, and open "all projects" // let "activeProjec
 
 ## Workarounds

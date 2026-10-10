@@ -25,7 +25,7 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/output/layers/Background.svelte:48](../../../../src/frontend/components/output/layers/Background.svelte#L48) — timer-fe3553171eefaaf5: setTimeout = dynamic ms (duration / 2); 
+- [src/frontend/components/output/layers/Background.svelte:48](../../../../src/frontend/components/output/layers/Background.svelte#L48) — timer-fe3553171eefaaf5: setTimeout = dynamic ms (duration / 2);
 - [src/frontend/components/output/layers/Background.svelte:95](../../../../src/frontend/components/output/layers/Background.svelte#L95) — timer-32131be162076e13: setTimeout = dynamic ms (mountDelay); // && background2?.path ? background2?.path !== data.path : background2?.id !== data.id
 - [src/frontend/components/output/layers/Background.svelte:111](../../../../src/frontend/components/output/layers/Background.svelte#L111) — timer-1ea9fa8d2ca7787d: setTimeout = dynamic ms (maxLoadTimeout); // max loading time fallback
 - [src/frontend/components/output/layers/Background.svelte:124](../../../../src/frontend/components/output/layers/Background.svelte#L124) — timer-54f2a6c7918ee167: setTimeout = 0 ms (omitted); // allow firstActive to trigger first

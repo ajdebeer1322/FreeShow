@@ -24,7 +24,7 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte:520](../../../../src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte#L520) — css-transition-9f31316a216b0ab2: css-transition = 200 ms (opacity 0.2s ease); 
+- [src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte:520](../../../../src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte#L520) — css-transition-9f31316a216b0ab2: css-transition = 200 ms (opacity 0.2s ease);
 - [src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte:557](../../../../src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte#L557) — css-transition-f88a0db3aeef5520: css-transition = 100 ms (all 0.1s ease); /* transition: all 0.1s ease; */
 
 ## Workarounds

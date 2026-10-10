@@ -70,7 +70,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/4d9a70036177673e92beb2d88e0a37c278503639): “v1.1.6 (#500) * 🖼 Locate audio files in drawer folders - Locate media working more consistently with cloud * 🚩 Updated Italian and Slovenian language - Fixed error parsing data s”
 
-Later line edits: 2; latest 4d9a7003. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 4d9a7003. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #500](https://github.com/ChurchApps/FreeShow/pull/500) (read; no item-specific matching bullet); [pr #500](https://github.com/ChurchApps/FreeShow/pull/500) (read; no item-specific matching bullet)
 

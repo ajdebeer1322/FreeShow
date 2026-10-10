@@ -26,9 +26,9 @@ None detected.
 ## Timing
 
 - [src/frontend/components/inputs/MaterialTextarea.svelte:52](../../../../src/frontend/components/inputs/MaterialTextarea.svelte#L52) — css-transition-2941d2c6b68141bc: css-transition = 220 ms (0.22s height ease); /* transition: 0.22s height ease; */ /* height: 50px; */
-- [src/frontend/components/inputs/MaterialTextarea.svelte:103](../../../../src/frontend/components/inputs/MaterialTextarea.svelte#L103) — css-transition-1f116b1eaa6ef11e: css-transition = 100 ms (0.1s opacity ease); 
-- [src/frontend/components/inputs/MaterialTextarea.svelte:123](../../../../src/frontend/components/inputs/MaterialTextarea.svelte#L123) — css-transition-dfe4e8a5dfab0767: css-transition = 200 ms (all 0.2s ease); 
-- [src/frontend/components/inputs/MaterialTextarea.svelte:152](../../../../src/frontend/components/inputs/MaterialTextarea.svelte#L152) — css-transition-d6c31801298d8f8e: css-transition = 200 ms (transform 0.2s ease); 
+- [src/frontend/components/inputs/MaterialTextarea.svelte:103](../../../../src/frontend/components/inputs/MaterialTextarea.svelte#L103) — css-transition-1f116b1eaa6ef11e: css-transition = 100 ms (0.1s opacity ease);
+- [src/frontend/components/inputs/MaterialTextarea.svelte:123](../../../../src/frontend/components/inputs/MaterialTextarea.svelte#L123) — css-transition-dfe4e8a5dfab0767: css-transition = 200 ms (all 0.2s ease);
+- [src/frontend/components/inputs/MaterialTextarea.svelte:152](../../../../src/frontend/components/inputs/MaterialTextarea.svelte#L152) — css-transition-d6c31801298d8f8e: css-transition = 200 ms (transform 0.2s ease);
 
 ## Workarounds
 

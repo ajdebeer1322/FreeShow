@@ -18,7 +18,7 @@ Sources:
 
 Later line edits: 12; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1324](https://github.com/ChurchApps/FreeShow/pull/1324) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
+GitHub: [pr #1324](https://github.com/ChurchApps/FreeShow/pull/1324) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
 ## D-timer-74e78e6ade559fb0
 
@@ -36,7 +36,7 @@ Sources:
 
 Later line edits: 12; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1324](https://github.com/ChurchApps/FreeShow/pull/1324) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
+GitHub: [pr #1324](https://github.com/ChurchApps/FreeShow/pull/1324) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
 ## D-timer-0e7638db77512ae2
 
@@ -54,7 +54,7 @@ Sources:
 
 Later line edits: 12; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1324](https://github.com/ChurchApps/FreeShow/pull/1324) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
+GitHub: [pr #1324](https://github.com/ChurchApps/FreeShow/pull/1324) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
 ## D-timer-950e3ff3eca2f609
 
@@ -70,7 +70,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/bbfe98072aefe0c6311c5044e1ac63152f45a204): “1.6.5-beta.2 (#3587) * More specific sync error messages (#3557) * Break CJK text on full-width punctuation when splitting long verses (#3561) * Update * Fixed broken chars * Don't”
 
-Later line edits: 13; latest bbfe9807. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest bbfe9807. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3587](https://github.com/ChurchApps/FreeShow/pull/3587) (read; no item-specific matching bullet); [pr #3587](https://github.com/ChurchApps/FreeShow/pull/3587) (read; no item-specific matching bullet)
 
@@ -88,9 +88,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/ca7f29bf8195b7f5d44fc749406a52e5c81c5b48): “1.6.5-beta.4 (#3635) * Output position updates #3495 * Updated bug report * Action to disable slides #3607 * Fixed ICS import issues #3601 * Manage multiple calendars - URL calenda”
 
-Later line edits: 13; latest ca7f29bf. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest ca7f29bf. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3635](https://github.com/ChurchApps/FreeShow/pull/3635) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3635](https://github.com/ChurchApps/FreeShow/pull/3635) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3635](https://github.com/ChurchApps/FreeShow/pull/3635) (read; no item-specific matching bullet); [pr #3635](https://github.com/ChurchApps/FreeShow/pull/3635) (read; no item-specific matching bullet)
 
 ## D-workaround-7da6bfaa6a149df6
 
@@ -108,4 +108,4 @@ Sources:
 
 Later line edits: 12; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1324](https://github.com/ChurchApps/FreeShow/pull/1324) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
+GitHub: [pr #1324](https://github.com/ChurchApps/FreeShow/pull/1324) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)

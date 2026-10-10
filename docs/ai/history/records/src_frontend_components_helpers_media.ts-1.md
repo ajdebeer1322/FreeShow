@@ -16,9 +16,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/118b1e37ca10acf11d0d1bd1d6c846dd9fec7dec): “1.5.3 (#2445) * APlay Updates (#2432) * Fixed custom data location sometimes incorrect - Fixed some songs logged twice in a row - Updated languages * Fixed not marking as played wi”
 
-Later line edits: 2; latest 118b1e37. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 118b1e37. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2445](https://github.com/ChurchApps/FreeShow/pull/2445) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2445](https://github.com/ChurchApps/FreeShow/pull/2445) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2445](https://github.com/ChurchApps/FreeShow/pull/2445) (read; no item-specific matching bullet); [pr #2445](https://github.com/ChurchApps/FreeShow/pull/2445) (read; no item-specific matching bullet)
 
 ## D-poll-interval-ee3a3da5ffa25bab
 
@@ -106,7 +106,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/687575a35ad2f42a29638aa6751701b262e245de): “1.6.5 (#3659) * Updated languages * Delete all non-locked shows tweak * Rename project placeholders * Undo replacing a placeholder * Improved repeating ICS import #3643 * Project t”
 
-Later line edits: 7; latest 687575a3. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 687575a3. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet); [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet)
 
@@ -124,7 +124,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/687575a35ad2f42a29638aa6751701b262e245de): “1.6.5 (#3659) * Updated languages * Delete all non-locked shows tweak * Rename project placeholders * Undo replacing a placeholder * Improved repeating ICS import #3643 * Project t”
 
-Later line edits: 7; latest 687575a3. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 687575a3. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet); [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet)
 
@@ -142,7 +142,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/c193fda76be08b09c92fe886fe9dd96b33d2e89e): “1.5.0-beta.1 (#2066) * 🚩 Updated languages * Update makesnap (#2019) * Don't fail on directory creation if exists * Update snapcraft syntax Per warning: "Running snapcraft without”
 
-Later line edits: 4; latest c193fda7. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest c193fda7. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2066](https://github.com/ChurchApps/FreeShow/pull/2066) (read; no item-specific matching bullet); [pr #2066](https://github.com/ChurchApps/FreeShow/pull/2066) (read; no item-specific matching bullet)
 
@@ -160,9 +160,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/8e3de40166c2872866dc5b3fc37b97eb882aed2b): “1.6.1-beta.2 (#3250) * Refactor architecture check for npm installation (#3219) GCC 15 on arm64 can fail compiling @discordjs/opus unless this warning is not treated as an error. *”
 
-Later line edits: 2; latest 8e3de401. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 8e3de401. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (read; no item-specific matching bullet); [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (read; no item-specific matching bullet)
 
 ## D-request-budget-61627858f6a91b08
 
@@ -178,9 +178,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/9d558fc2770b29c12331906ce8de5c4fcfd6fb56): “1.4.1-beta.2 (#1528) * 🚩 Updated Dutch language - Fixed a freeze issue * Feat RTL styles & arabic locale (#1506) * add arabic locale * add RTL functionality * add stylelint and fo”
 
-Later line edits: 2; latest 9d558fc2. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 9d558fc2. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1528](https://github.com/ChurchApps/FreeShow/pull/1528) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1528](https://github.com/ChurchApps/FreeShow/pull/1528) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1528](https://github.com/ChurchApps/FreeShow/pull/1528) (read; no item-specific matching bullet); [pr #1528](https://github.com/ChurchApps/FreeShow/pull/1528) (read; no item-specific matching bullet)
 
 ## D-timer-c9aa03a0bc012d07
 
@@ -198,7 +198,7 @@ Sources:
 
 Later line edits: 0; latest 2a7e39ae. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #929](https://github.com/ChurchApps/FreeShow/pull/929) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #929](https://github.com/ChurchApps/FreeShow/pull/929) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #929](https://github.com/ChurchApps/FreeShow/pull/929) (read; no item-specific matching bullet); [pr #929](https://github.com/ChurchApps/FreeShow/pull/929) (read; no item-specific matching bullet)
 
 ## D-poll-interval-9aea957a500b4301
 
@@ -215,7 +215,7 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/687575a35ad2f42a29638aa6751701b262e245de): “1.6.5 (#3659) * Updated languages * Delete all non-locked shows tweak * Rename project placeholders * Undo replacing a placeholder * Improved repeating ICS import #3643 * Project t”
 - [code] src/frontend/components/helpers/media.ts:634: “// wait until loaded”
 
-Later line edits: 3; latest 687575a3. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 687575a3. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet); [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet)
 
@@ -234,7 +234,7 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/687575a35ad2f42a29638aa6751701b262e245de): “1.6.5 (#3659) * Updated languages * Delete all non-locked shows tweak * Rename project placeholders * Undo replacing a placeholder * Improved repeating ICS import #3643 * Project t”
 - [code] src/frontend/components/helpers/media.ts:634: “// wait until loaded”
 
-Later line edits: 3; latest 687575a3. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 687575a3. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet); [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet)
 
@@ -252,7 +252,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/687575a35ad2f42a29638aa6751701b262e245de): “1.6.5 (#3659) * Updated languages * Delete all non-locked shows tweak * Rename project placeholders * Undo replacing a placeholder * Improved repeating ICS import #3643 * Project t”
 
-Later line edits: 2; latest 687575a3. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 687575a3. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet); [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet)
 
@@ -273,7 +273,7 @@ Sources:
 
 Later line edits: 0; latest 6d5ff9ac. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #620](https://github.com/ChurchApps/FreeShow/pull/620) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #620](https://github.com/ChurchApps/FreeShow/pull/620) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #620](https://github.com/ChurchApps/FreeShow/pull/620) (read; no item-specific matching bullet); [pr #620](https://github.com/ChurchApps/FreeShow/pull/620) (read; no item-specific matching bullet)
 
 ## D-request-budget-915ad0da92ac42ef
 
@@ -289,6 +289,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/118b1e37ca10acf11d0d1bd1d6c846dd9fec7dec): “1.5.3 (#2445) * APlay Updates (#2432) * Fixed custom data location sometimes incorrect - Fixed some songs logged twice in a row - Updated languages * Fixed not marking as played wi”
 
-Later line edits: 2; latest 118b1e37. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 118b1e37. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2445](https://github.com/ChurchApps/FreeShow/pull/2445) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2445](https://github.com/ChurchApps/FreeShow/pull/2445) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2445](https://github.com/ChurchApps/FreeShow/pull/2445) (read; no item-specific matching bullet); [pr #2445](https://github.com/ChurchApps/FreeShow/pull/2445) (read; no item-specific matching bullet)

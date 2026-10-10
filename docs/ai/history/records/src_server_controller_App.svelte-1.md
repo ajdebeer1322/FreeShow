@@ -16,9 +16,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/d51401b1c00218abdbf1f6b2a2f6b122786ae7b4): “1.5.2-beta.1 (#2310) * Fixed freeze when playing scripture from RemoteShow - Updated languages * Updated Chinese language * Fixed freeze with deleted action tag * Removed bad code ”
 
-Later line edits: 3; latest d51401b1. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest d51401b1. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2310](https://github.com/ChurchApps/FreeShow/pull/2310) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2310](https://github.com/ChurchApps/FreeShow/pull/2310) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2310](https://github.com/ChurchApps/FreeShow/pull/2310) (read; no item-specific matching bullet); [pr #2310](https://github.com/ChurchApps/FreeShow/pull/2310) (read; no item-specific matching bullet)
 
 ## D-timer-1bdf644d9eb7871a
 
@@ -72,7 +72,7 @@ Sources:
 
 Later line edits: 1; latest ca7f29bf. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3635](https://github.com/ChurchApps/FreeShow/pull/3635) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3635](https://github.com/ChurchApps/FreeShow/pull/3635) (read; no item-specific matching bullet)
 
 ## D-css-transition-e170776275f02525
 
@@ -90,4 +90,4 @@ Sources:
 
 Later line edits: 1; latest ca7f29bf. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1043](https://github.com/ChurchApps/FreeShow/pull/1043) (read; no item-specific matching bullet); [pr #3635](https://github.com/ChurchApps/FreeShow/pull/3635) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1043](https://github.com/ChurchApps/FreeShow/pull/1043) (read; no item-specific matching bullet); [pr #3635](https://github.com/ChurchApps/FreeShow/pull/3635) (read; no item-specific matching bullet)

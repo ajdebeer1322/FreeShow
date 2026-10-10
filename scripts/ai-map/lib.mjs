@@ -36,7 +36,7 @@ export function json(value) {
     return JSON.stringify(value, null, 2) + "\n"
 }
 export const compact = (value, length = 180) => String(value ?? "").replace(/\s+/g, " ").slice(0, length)
-export const escape = (value) => compact(value).replaceAll("|", "\\|").replaceAll("`", "'").replaceAll("[", "&#91;").replaceAll("]", "&#93;")
+export const escape = (value) => compact(value).trimEnd().replaceAll("|", "\\|").replaceAll("`", "'").replaceAll("[", "&#91;").replaceAll("]", "&#93;")
 export function sourceLink(ref, document) {
     const target = slash(path.relative(path.dirname(document), ref.file))
     return `[${ref.file}:${ref.line}](${target}#L${ref.line})`
@@ -56,10 +56,13 @@ export function loadModel() {
     const manifest = readJson(`${GENERATED}/manifest.json`)
     if (!manifest) throw new Error("Maps are absent. Run npm run ai:map first.")
     const tables = {}
-    for (const [name, files] of Object.entries(manifest.tables)) tables[name] = files.flatMap((file) => readJson(`${GENERATED}/${file}`)).map(record => {
-        for (const [field, parts] of Object.entries(record.$parts || {})) record[field] = parts.flatMap(part => readJson(`${GENERATED}/${part}`))
-        delete record.$parts
-        return record
-    })
+    for (const [name, entry] of Object.entries(manifest.tables)) {
+        const files=Array.isArray(entry)?entry:entry.$parts.flatMap(file=>readJson(`${GENERATED}/${file}`))
+        tables[name] = files.flatMap((file) => readJson(`${GENERATED}/${file}`)).map(record => {
+            for (const [field, parts] of Object.entries(record.$parts || {})) record[field] = parts.flatMap(part => readJson(`${GENERATED}/${part}`))
+            delete record.$parts
+            return record
+        })
+    }
     return { manifest, ...tables }
 }

@@ -16,9 +16,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/8e3de40166c2872866dc5b3fc37b97eb882aed2b): “1.6.1-beta.2 (#3250) * Refactor architecture check for npm installation (#3219) GCC 15 on arm64 can fail compiling @discordjs/opus unless this warning is not treated as an error. *”
 
-Later line edits: 8; latest 8e3de401. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 8e3de401. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (read; no item-specific matching bullet); [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (read; no item-specific matching bullet)
 
 ## D-request-budget-148dbecf9d20ee1a
 
@@ -34,9 +34,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/78bf809d4e1a3e44cbba5d2489d6e17dcc7c65c8): “1.5.1-beta.1 (#2238) * lnxarm wait longer * - Fixed video start time not working - Updated French language * Action tags are shown if multiple - Updated Chinese language - Removed ”
 
-Later line edits: 4; latest 7e8c959b. Full commit messages and lineage: JSON query data.
+Later line edits: 2; latest 7e8c959b. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2238](https://github.com/ChurchApps/FreeShow/pull/2238) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2534](https://github.com/ChurchApps/FreeShow/pull/2534) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2238](https://github.com/ChurchApps/FreeShow/pull/2238) (read; no item-specific matching bullet); [pr #2534](https://github.com/ChurchApps/FreeShow/pull/2534) (read; no item-specific matching bullet)
 
 ## D-request-budget-6cffe3825242b013
 

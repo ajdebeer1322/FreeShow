@@ -31,7 +31,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/helpers/messageOutput.ts:52](../../../../src/frontend/components/helpers/messageOutput.ts#L52) — timer-8c1e0c85617ea549: setTimeout = dynamic ms (Math.min(2147483647, Math.max(0, message.expiresAt - Date.now()))); 
+- [src/frontend/components/helpers/messageOutput.ts:52](../../../../src/frontend/components/helpers/messageOutput.ts#L52) — timer-8c1e0c85617ea549: setTimeout = dynamic ms (Math.min(2147483647, Math.max(0, message.expiresAt - Date.now())));
 
 ## Workarounds
 

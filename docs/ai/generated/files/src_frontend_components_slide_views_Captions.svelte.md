@@ -24,7 +24,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/slide/views/Captions.svelte:43](../../../../src/frontend/components/slide/views/Captions.svelte#L43) — timer-fc6c28cfc1b72c9b: setTimeout = 1000 ms (1000); 
+- [src/frontend/components/slide/views/Captions.svelte:43](../../../../src/frontend/components/slide/views/Captions.svelte#L43) — timer-fc6c28cfc1b72c9b: setTimeout = 1000 ms (1000);
 
 ## Workarounds
 

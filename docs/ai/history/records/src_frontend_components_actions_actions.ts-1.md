@@ -18,7 +18,7 @@ Sources:
 
 Later line edits: 0; latest 88de0b82. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2526](https://github.com/ChurchApps/FreeShow/pull/2526) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2526](https://github.com/ChurchApps/FreeShow/pull/2526) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2526](https://github.com/ChurchApps/FreeShow/pull/2526) (read; no item-specific matching bullet); [pr #2526](https://github.com/ChurchApps/FreeShow/pull/2526) (read; no item-specific matching bullet)
 
 ## D-timer-a1481bdadb234426
 
@@ -36,7 +36,7 @@ Sources:
 
 Later line edits: 1; latest a59b2b7d. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #555](https://github.com/ChurchApps/FreeShow/pull/555) (read; no item-specific matching bullet); [pr #863](https://github.com/ChurchApps/FreeShow/pull/863) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #555](https://github.com/ChurchApps/FreeShow/pull/555) (read; no item-specific matching bullet); [pr #863](https://github.com/ChurchApps/FreeShow/pull/863) (read; no item-specific matching bullet)
 
 ## D-timer-ef8284be3ab63db7
 
@@ -52,7 +52,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/f11403c7eb26183695b5faabaf198b355afe4054): “1.5.0-beta.3 (#2143) * Added back math to new number inputs - Even faster performance - Removed unused components - Small tweaks * ✨ Enhancements - Change media fit blur amount - S”
 
-Later line edits: 2; latest f11403c7. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest f11403c7. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2143](https://github.com/ChurchApps/FreeShow/pull/2143) (read; no item-specific matching bullet); [pr #2143](https://github.com/ChurchApps/FreeShow/pull/2143) (read; no item-specific matching bullet)
 
@@ -74,4 +74,4 @@ Sources:
 
 Later line edits: 0; latest 3b0affd6. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1019](https://github.com/ChurchApps/FreeShow/pull/1019) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1019](https://github.com/ChurchApps/FreeShow/pull/1019) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1019](https://github.com/ChurchApps/FreeShow/pull/1019) (read; no item-specific matching bullet); [pr #1019](https://github.com/ChurchApps/FreeShow/pull/1019) (read; no item-specific matching bullet)

@@ -126,8 +126,8 @@ No static evidence found.
 ## Timing
 
 - [src/frontend/utils/save.ts:254](../../../../src/frontend/utils/save.ts#L254) — timer-60669cb141a1eac5: setTimeout = 0 ms (omitted); // trigger toast before saving
-- [src/frontend/utils/save.ts:350](../../../../src/frontend/utils/save.ts#L350) — timer-1c68e6ba9795d4bd: setTimeout = dynamic ms (ms); 
-- [src/frontend/utils/save.ts:394](../../../../src/frontend/utils/save.ts#L394) — timer-a78297164b122d8d: setTimeout = 0 ms (omitted); 
+- [src/frontend/utils/save.ts:350](../../../../src/frontend/utils/save.ts#L350) — timer-1c68e6ba9795d4bd: setTimeout = dynamic ms (ms);
+- [src/frontend/utils/save.ts:394](../../../../src/frontend/utils/save.ts#L394) — timer-a78297164b122d8d: setTimeout = 0 ms (omitted);
 
 ## Workarounds
 

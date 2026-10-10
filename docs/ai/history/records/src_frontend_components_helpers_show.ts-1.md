@@ -72,6 +72,6 @@ Sources:
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/ee5e33e53d495bfc6a1ac7f418e41b7ac202ba91): “Only allow linking slides that go to different outputs Both slides need specific outputs with none in common. A stored link that becomes invalid shows as two single slides. Also do”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/cb967d9f2c683ec3998dc0f8249e29716d75eb2e): “- Background inheritance on slide click now only uses slides meant for each output, including output-specific clear-background cues”
 
-Later line edits: 1; latest cb967d9f. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest cb967d9f. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

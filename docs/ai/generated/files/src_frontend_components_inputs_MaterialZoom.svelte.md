@@ -41,7 +41,7 @@ None detected.
 ## Timing
 
 - [src/frontend/components/inputs/MaterialZoom.svelte:73](../../../../src/frontend/components/inputs/MaterialZoom.svelte#L73) — timer-b71777e22e19ee02: setTimeout = 500 ms (500); // don't start timeout if scrolling with mouse
-- [src/frontend/components/inputs/MaterialZoom.svelte:87](../../../../src/frontend/components/inputs/MaterialZoom.svelte#L87) — transition-367fa3f4339d6633: transition-directive = dynamic ms ({ duration: 150 }); 
+- [src/frontend/components/inputs/MaterialZoom.svelte:87](../../../../src/frontend/components/inputs/MaterialZoom.svelte#L87) — transition-367fa3f4339d6633: transition-directive = dynamic ms ({ duration: 150 });
 
 ## Workarounds
 

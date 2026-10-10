@@ -51,7 +51,7 @@ No static evidence found.
 ## Timing
 
 - [src/frontend/components/helpers/debugLog.ts:62](../../../../src/frontend/components/helpers/debugLog.ts#L62) — timer-96f8011b64dcd4c5: setTimeout = 50 ms (50); // lines from the output windows arrive a little later than they happened
-- [src/frontend/components/helpers/debugLog.ts:388](../../../../src/frontend/components/helpers/debugLog.ts#L388) — timer-592890f75440810a: setTimeout = 60 ms (60); 
+- [src/frontend/components/helpers/debugLog.ts:388](../../../../src/frontend/components/helpers/debugLog.ts#L388) — timer-592890f75440810a: setTimeout = 60 ms (60);
 
 ## Workarounds
 

@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/0dc519a8060ad08cee791b09c2c74afa2a1b5e65): “v1.2.0 (#676) * implemented rudimentary support for WebRequests (#635) * Add xml version tag handling for xml files without newlines (#644) XML without line breaks is perfectly val”
 
-Later line edits: 1; latest 0dc519a8. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 0dc519a8. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #676](https://github.com/ChurchApps/FreeShow/pull/676) (read; no item-specific matching bullet); [pr #676](https://github.com/ChurchApps/FreeShow/pull/676) (read; no item-specific matching bullet)
 
@@ -36,7 +36,7 @@ Sources:
 
 Later line edits: 0; latest d6d4b4bf. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (read; no item-specific matching bullet); [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (read; no item-specific matching bullet)
 
 ## D-workaround-19a528400a498fab
 

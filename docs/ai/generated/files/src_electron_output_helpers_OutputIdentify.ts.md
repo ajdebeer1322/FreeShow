@@ -21,7 +21,7 @@ None detected.
 
 ## Timing
 
-- [src/electron/output/helpers/OutputIdentify.ts:15](../../../../src/electron/output/helpers/OutputIdentify.ts#L15) — timer-223adb10530a945c: setTimeout = dynamic ms (this.IDENTIFY_TIMEOUT); 
+- [src/electron/output/helpers/OutputIdentify.ts:15](../../../../src/electron/output/helpers/OutputIdentify.ts#L15) — timer-223adb10530a945c: setTimeout = dynamic ms (this.IDENTIFY_TIMEOUT);
 
 ## Workarounds
 

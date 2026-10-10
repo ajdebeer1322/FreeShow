@@ -17,6 +17,6 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/fb6390bbd14d60be8143283e9d5c42485053ef94): “1.5.7-beta.2 (#2804) * OpenSong Fixes #2733 * Button to Convert background to media item #2739 - Tweaks * Fixed camera/screen on slide not starting #2760 * Tweaks * Improve Navigat”
 - [code] src/server/remote/components/pages/ScriptureContentTablet.svelte:216: “// Wait for books to load, then auto-navigate”
 
-Later line edits: 2; latest fb6390bb. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest fb6390bb. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2804](https://github.com/ChurchApps/FreeShow/pull/2804) (read; no item-specific matching bullet); [pr #2804](https://github.com/ChurchApps/FreeShow/pull/2804) (read; no item-specific matching bullet)

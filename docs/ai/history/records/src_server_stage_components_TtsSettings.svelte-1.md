@@ -18,7 +18,7 @@ Sources:
 
 Later line edits: 0; latest e3fc2b5a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3291](https://github.com/ChurchApps/FreeShow/pull/3291) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3291](https://github.com/ChurchApps/FreeShow/pull/3291) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3291](https://github.com/ChurchApps/FreeShow/pull/3291) (read; no item-specific matching bullet); [pr #3291](https://github.com/ChurchApps/FreeShow/pull/3291) (read; no item-specific matching bullet)
 
 ## D-css-transition-40879a2e667fec6c
 
@@ -36,7 +36,7 @@ Sources:
 
 Later line edits: 0; latest e3fc2b5a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3291](https://github.com/ChurchApps/FreeShow/pull/3291) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3291](https://github.com/ChurchApps/FreeShow/pull/3291) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3291](https://github.com/ChurchApps/FreeShow/pull/3291) (read; no item-specific matching bullet); [pr #3291](https://github.com/ChurchApps/FreeShow/pull/3291) (read; no item-specific matching bullet)
 
 ## D-css-transition-47c7407dc83ffad7
 
@@ -54,4 +54,4 @@ Sources:
 
 Later line edits: 0; latest e3fc2b5a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3291](https://github.com/ChurchApps/FreeShow/pull/3291) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3291](https://github.com/ChurchApps/FreeShow/pull/3291) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3291](https://github.com/ChurchApps/FreeShow/pull/3291) (read; no item-specific matching bullet); [pr #3291](https://github.com/ChurchApps/FreeShow/pull/3291) (read; no item-specific matching bullet)

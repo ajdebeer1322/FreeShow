@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/8438279f5e9b639fab864602124c6b3e36a777a1): “🎨 Draw & Slide Edit”
 
-Later line edits: 3; latest 13fe2b40. Full commit messages and lineage: JSON query data.
+Later line edits: 2; latest 13fe2b40. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #269](https://github.com/ChurchApps/FreeShow/pull/269) (read; no item-specific matching bullet)
 
@@ -34,7 +34,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/8438279f5e9b639fab864602124c6b3e36a777a1): “🎨 Draw & Slide Edit”
 
-Later line edits: 3; latest 13fe2b40. Full commit messages and lineage: JSON query data.
+Later line edits: 2; latest 13fe2b40. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #269](https://github.com/ChurchApps/FreeShow/pull/269) (read; no item-specific matching bullet)
 
@@ -70,6 +70,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/080ad04cc0d58a68cab26e173b667f2462ad7dec): “✏ Text edit, enter working & many bug fixes”
 
-Later line edits: 3; latest 80a0ddad. Full commit messages and lineage: JSON query data.
+Later line edits: 1; latest 80a0ddad. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

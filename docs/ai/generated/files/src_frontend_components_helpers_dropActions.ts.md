@@ -77,7 +77,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/helpers/dropActions.ts:272](../../../../src/frontend/components/helpers/dropActions.ts#L272) — timer-e6f6af3be8ab1771: setTimeout = 0 ms (omitted); 
+- [src/frontend/components/helpers/dropActions.ts:272](../../../../src/frontend/components/helpers/dropActions.ts#L272) — timer-e6f6af3be8ab1771: setTimeout = 0 ms (omitted);
 
 ## Workarounds
 

@@ -34,8 +34,8 @@ None detected.
 ## Timing
 
 - [src/electron/utils/helpers.ts:32](../../../../src/electron/utils/helpers.ts#L32) — timer-547ee94de63a81e8: setTimeout = dynamic ms (Number(ms)); // async wait (instead of timeouts)
-- [src/electron/utils/helpers.ts:44](../../../../src/electron/utils/helpers.ts#L44) — timer-369bd954d52f24c3: setTimeout = dynamic ms (timeoutValue); 
-- [src/electron/utils/helpers.ts:49](../../../../src/electron/utils/helpers.ts#L49) — timer-6e23c23c3964350e: setInterval = dynamic ms (intervalTime); 
+- [src/electron/utils/helpers.ts:44](../../../../src/electron/utils/helpers.ts#L44) — timer-369bd954d52f24c3: setTimeout = dynamic ms (timeoutValue);
+- [src/electron/utils/helpers.ts:49](../../../../src/electron/utils/helpers.ts#L49) — timer-6e23c23c3964350e: setInterval = dynamic ms (intervalTime);
 
 ## Workarounds
 

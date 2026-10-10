@@ -16,9 +16,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/d6d4b4bf026e58b44fabd0bbe37be90189656001): “1.5.0-beta.2 (#2108) * Better Electron mirror approach * Fixed PDF chord sheet option not showing up right away * Small fixes & tweaks * Fix for snap build * Fix for snap build * U”
 
-Later line edits: 2; latest d6d4b4bf. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest d6d4b4bf. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (read; no item-specific matching bullet); [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (read; no item-specific matching bullet)
 
 ## D-timer-496c542955db9354
 
@@ -34,9 +34,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/d6d4b4bf026e58b44fabd0bbe37be90189656001): “1.5.0-beta.2 (#2108) * Better Electron mirror approach * Fixed PDF chord sheet option not showing up right away * Small fixes & tweaks * Fix for snap build * Fix for snap build * U”
 
-Later line edits: 3; latest d6d4b4bf. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest d6d4b4bf. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (read; no item-specific matching bullet); [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (read; no item-specific matching bullet)
 
 ## D-timer-4954257b01ec7b75
 
@@ -70,9 +70,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/d6d4b4bf026e58b44fabd0bbe37be90189656001): “1.5.0-beta.2 (#2108) * Better Electron mirror approach * Fixed PDF chord sheet option not showing up right away * Small fixes & tweaks * Fix for snap build * Fix for snap build * U”
 
-Later line edits: 3; latest d6d4b4bf. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest d6d4b4bf. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (read; no item-specific matching bullet); [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (read; no item-specific matching bullet)
 
 ## D-css-transition-1a56c08974a377da
 
@@ -88,6 +88,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/d6d4b4bf026e58b44fabd0bbe37be90189656001): “1.5.0-beta.2 (#2108) * Better Electron mirror approach * Fixed PDF chord sheet option not showing up right away * Small fixes & tweaks * Fix for snap build * Fix for snap build * U”
 
-Later line edits: 2; latest d6d4b4bf. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest d6d4b4bf. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (read; no item-specific matching bullet); [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (read; no item-specific matching bullet)

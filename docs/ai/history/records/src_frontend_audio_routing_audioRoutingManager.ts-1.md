@@ -34,7 +34,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6d9caa19b807c49af06baf77db0d8b9c1e3f4125): “1.6.6-beta.2 (#3759) * Updated Romanian language * Audit fix * Sentry fixes * Update GitHub Actions Tags * STT enhancements * Smart floating hover effects * Smart floating UI tweak”
 
-Later line edits: 1; latest 6d9caa19. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 6d9caa19. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3759](https://github.com/ChurchApps/FreeShow/pull/3759) (read; no item-specific matching bullet); [pr #3759](https://github.com/ChurchApps/FreeShow/pull/3759) (read; no item-specific matching bullet)
 
@@ -52,6 +52,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6d9caa19b807c49af06baf77db0d8b9c1e3f4125): “1.6.6-beta.2 (#3759) * Updated Romanian language * Audit fix * Sentry fixes * Update GitHub Actions Tags * STT enhancements * Smart floating hover effects * Smart floating UI tweak”
 
-Later line edits: 1; latest 6d9caa19. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 6d9caa19. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3759](https://github.com/ChurchApps/FreeShow/pull/3759) (read; no item-specific matching bullet); [pr #3759](https://github.com/ChurchApps/FreeShow/pull/3759) (read; no item-specific matching bullet)

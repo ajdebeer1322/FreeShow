@@ -1,0 +1,382 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "sourceFingerprint": "9f2de953d78c6bf930ab444b17eda2f02e5771257944d7c9f324467e90e2d43e",
+  "observedAt": "2026-10-10T17:27:25.437Z",
+  "environment": {
+    "node": "v22.23.3",
+    "runtimeVersions": {
+      "node": "22.21.1",
+      "acorn": "8.15.0",
+      "ada": "2.9.2",
+      "amaro": "1.1.4",
+      "ares": "1.34.5",
+      "brotli": "1.0.9",
+      "cjs_module_lexer": "2.1.0",
+      "cldr": "44.1",
+      "icu": "74.2",
+      "llhttp": "9.3.0",
+      "modules": "136",
+      "napi": "10",
+      "nbytes": "0.1.1",
+      "ncrypto": "0.0.1",
+      "nghttp2": "1.64.0",
+      "openssl": "0.0.0",
+      "simdjson": "3.13.0",
+      "simdutf": "7.0.0",
+      "sqlite": "3.50.4",
+      "tz": "2025b",
+      "undici": "6.22.0",
+      "unicode": "15.1",
+      "uv": "1.51.0",
+      "uvwasi": "0.0.23",
+      "v8": "13.8.258.32-electron.0",
+      "zlib": "1.3.1",
+      "zstd": "1.5.8",
+      "electron": "37.10.3",
+      "chrome": "138.0.7204.251"
+    },
+    "svelte": "5 legacy mode",
+    "display": ":99",
+    "softwareRendering": true,
+    "port3000Used": false,
+    "storeIsolation": true,
+    "instrumentation": "Production test entry exposes existing helpers/stores; debug panel DOM hidden to avoid covering clicks; product source unchanged",
+    "build": {
+      "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+      "sourceFingerprint": "9f2de953d78c6bf930ab444b17eda2f02e5771257944d7c9f324467e90e2d43e",
+      "destination": "<worktree>docs/ai/.cache/runtime-app",
+      "node": "v22.23.3",
+      "built": "2026-10-10T17:26:51.884Z",
+      "sourceModified": false,
+      "port3000Used": false,
+      "instrumentation": "test entries expose existing renderer stores/helpers and backend classes"
+    }
+  },
+  "observations": [
+    {
+      "id": "opening-output",
+      "status": "verified",
+      "method": "Existing toggleOutputs helper; renderer/window handshake observed",
+      "evidence": {
+        "outputWindowURL": "file://<worktree>docs/ai/.cache/runtime-app/public/index.html",
+        "windowCount": 2
+      },
+      "elapsedMs": 2776
+    },
+    {
+      "id": "clicking-slide",
+      "status": "verified",
+      "method": "Real thumbnail click, output store and DOM",
+      "evidence": {
+        "state": {
+          "default": {
+            "slide": {
+              "id": "5d73d4abbd0",
+              "layout": "8085d73d4ab",
+              "index": 0,
+              "line": 0,
+              "revealCount": 0,
+              "itemClickReveal": false,
+              "projectIndex": 0
+            },
+            "active": true
+          }
+        },
+        "renderedText": " AI map first line"
+      },
+      "elapsedMs": 2148
+    },
+    {
+      "id": "next-space",
+      "status": "verified",
+      "method": "Real keyboard Space through the built-in shortcut",
+      "evidence": {
+        "state": {
+          "default": {
+            "slide": {
+              "layout": "8085d73d4ab",
+              "index": 1,
+              "id": "5d73d4abbd0",
+              "projectIndex": 0
+            },
+            "active": true
+          }
+        }
+      },
+      "elapsedMs": 432
+    },
+    {
+      "id": "clearing-all",
+      "status": "verified",
+      "method": "Real keyboard Escape through clearAll",
+      "evidence": {
+        "state": {
+          "default": {
+            "slide": null,
+            "background": null,
+            "active": true
+          }
+        }
+      },
+      "elapsedMs": 944
+    },
+    {
+      "id": "video-background",
+      "status": "verified",
+      "method": "Existing setOutput helper with the repository clipA.mp4 fixture; media DOM observed",
+      "evidence": {
+        "state": {
+          "default": {
+            "slide": null,
+            "background": {
+              "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+              "type": "video",
+              "loop": true,
+              "muted": true
+            },
+            "active": true
+          }
+        },
+        "videos": [
+          {
+            "readyState": 4,
+            "paused": false,
+            "currentTime": 0.041798
+          }
+        ]
+      },
+      "elapsedMs": 147
+    },
+    {
+      "id": "editing-textbox",
+      "status": "verified",
+      "method": "Real Edit view and contenteditable input; show cache/history observed",
+      "evidence": {
+        "historyEntries": 3,
+        "textChanged": true
+      },
+      "elapsedMs": 430
+    },
+    {
+      "id": "saving",
+      "status": "verified",
+      "method": "Real Control+S; disk file content verified",
+      "evidence": {
+        "savedEditedShow": true,
+        "fixtureDataDirectory": "<fixture>"
+      },
+      "elapsedMs": 1889
+    },
+    {
+      "id": "showing-scripture",
+      "status": "verified",
+      "method": "Seeded local Bible selection, native playScripture helper, output DOM; no external Bible API",
+      "evidence": {
+        "state": {
+          "default": {
+            "slide": {
+              "id": "temp",
+              "categoryId": "ai-map-bible",
+              "tempItems": [
+                {
+                  "align": "",
+                  "lines": [
+                    {
+                      "text": [
+                        {
+                          "value": "AI map scripture verse ",
+                          "style": "font-size: 80px;"
+                        }
+                      ],
+                      "align": "text-align: start;"
+                    }
+                  ],
+                  "style": "top: 150px;left: 50px;width: 1820px;height: 780px;",
+                  "specialStyle": {},
+                  "actions": {}
+                }
+              ],
+              "previousSlides": [
+                [
+                  {
+                    "align": "",
+                    "lines": [
+                      {
+                        "text": [],
+                        "align": "text-align: start;"
+                      }
+                    ],
+                    "style": "top: 150px;left: 50px;width: 1820px;height: 780px;",
+                    "specialStyle": {},
+                    "actions": {}
+                  }
+                ],
+                [
+                  {
+                    "align": "",
+                    "lines": [
+                      {
+                        "text": [],
+                        "align": "text-align: start;"
+                      }
+                    ],
+                    "style": "top: 150px;left: 50px;width: 1820px;height: 780px;",
+                    "specialStyle": {},
+                    "actions": {}
+                  }
+                ],
+                [
+                  {
+                    "align": "",
+                    "lines": [
+                      {
+                        "text": [],
+                        "align": "text-align: start;"
+                      }
+                    ],
+                    "style": "top: 150px;left: 50px;width: 1820px;height: 780px;",
+                    "specialStyle": {},
+                    "actions": {}
+                  }
+                ]
+              ],
+              "nextSlides": [
+                [
+                  {
+                    "align": "",
+                    "lines": [
+                      {
+                        "text": [
+                          {
+                            "value": "AI map next scripture verse ",
+                            "style": "font-size: 80px;"
+                          }
+                        ],
+                        "align": "text-align: start;"
+                      }
+                    ],
+                    "style": "top: 150px;left: 50px;width: 1820px;height: 780px;",
+                    "specialStyle": {},
+                    "actions": {}
+                  }
+                ],
+                [
+                  {
+                    "align": "",
+                    "lines": [
+                      {
+                        "text": [],
+                        "align": "text-align: start;"
+                      }
+                    ],
+                    "style": "top: 150px;left: 50px;width: 1820px;height: 780px;",
+                    "specialStyle": {},
+                    "actions": {}
+                  }
+                ],
+                [
+                  {
+                    "align": "",
+                    "lines": [
+                      {
+                        "text": [],
+                        "align": "text-align: start;"
+                      }
+                    ],
+                    "style": "top: 150px;left: 50px;width: 1820px;height: 780px;",
+                    "specialStyle": {},
+                    "actions": {}
+                  }
+                ]
+              ],
+              "attributionString": "",
+              "translations": 1,
+              "settings": {}
+            },
+            "background": {
+              "path": "<worktree>config/testing/fixtures/output/clipA.mp4",
+              "type": "video",
+              "loop": true,
+              "muted": true
+            },
+            "active": true
+          }
+        },
+        "rendered": true
+      },
+      "elapsedMs": 435
+    },
+    {
+      "id": "playing-audio",
+      "status": "verified",
+      "method": "Native AudioPlayer.start with generated quiet WAV; media clock observed (speaker audibility not verified)",
+      "evidence": {
+        "started": true,
+        "clockAdvanced": true,
+        "speakerAudibilityVerified": false
+      },
+      "elapsedMs": 201
+    },
+    {
+      "id": "starting-ndi",
+      "status": "verified",
+      "method": "Backend createSenderNDI and capture lifecycle; native sender status observed, external receiver/hardware not verified",
+      "evidence": {
+        "senderRegistered": true,
+        "outputCapture": true,
+        "nativeStatus": {
+          "name": "FreeShow AI map isolated fixture",
+          "sender": true,
+          "status": "unconnected",
+          "inFlight": 1,
+          "connections": 0,
+          "previousStatus": "unconnected0"
+        },
+        "externalReceiverVerified": false
+      },
+      "elapsedMs": 922
+    }
+  ],
+  "errors": [],
+  "consoleTail": [
+    "%cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security\n  Policy set or a policy with \"unsafe-eval\" enabled. This exposes users of\n  this app to unnecessary security risks.\n\nFor more information and help, consult\nhttps://electronjs.org/docs/tutorial/security.\nThis warning will not show up\nonce the app is packaged.",
+    "%cElectron Security Warning (Disabled webSecurity) font-weight: bold; This renderer process has \"webSecurity\" disabled. This\n  exposes users of this app to severe security risks.\n\nFor more information and help, consult\nhttps://electronjs.org/docs/tutorial/security.\nThis warning will not show up\nonce the app is packaged.",
+    "%cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security\n  Policy set or a policy with \"unsafe-eval\" enabled. This exposes users of\n  this app to unnecessary security risks.\n\nFor more information and help, consult\nhttps://electronjs.org/docs/tutorial/security.\nThis warning will not show up\nonce the app is packaged.",
+    "RECEIVED UNKNOWN SETTINGS KEY: syncedOutputs",
+    "HISTORY INIT [UPDATE]: {id: UPDATE, location: Object, oldData: null, newData: null, time: 1791653233062}",
+    "Autofocus processing was blocked because a document already has a focused element.",
+    "HISTORY INIT [UPDATE]: {id: UPDATE, newData: Object, oldData: Object, location: Object, time: 1791653233667}",
+    "HISTORY INIT [TEMPLATE]: {id: TEMPLATE, save: false, newData: Object, location: Object, oldData: null}",
+    "HISTORY INIT [TEMPLATE]: {id: TEMPLATE, save: false, newData: Object, location: Object, oldData: null}",
+    "%cElectron Security Warning (Disabled webSecurity) font-weight: bold; This renderer process has \"webSecurity\" disabled. This\n  exposes users of this app to severe security risks.\n\nFor more information and help, consult\nhttps://electronjs.org/docs/tutorial/security.\nThis warning will not show up\nonce the app is packaged.",
+    "%cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security\n  Policy set or a policy with \"unsafe-eval\" enabled. This exposes users of\n  this app to unnecessary security risks.\n\nFor more information and help, consult\nhttps://electronjs.org/docs/tutorial/security.\nThis warning will not show up\nonce the app is packaged.",
+    "%cElectron Security Warning (Disabled webSecurity) font-weight: bold; This renderer process has \"webSecurity\" disabled. This\n  exposes users of this app to severe security risks.\n\nFor more information and help, consult\nhttps://electronjs.org/docs/tutorial/security.\nThis warning will not show up\nonce the app is packaged.",
+    "%cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security\n  Policy set or a policy with \"unsafe-eval\" enabled. This exposes users of\n  this app to unnecessary security risks.\n\nFor more information and help, consult\nhttps://electronjs.org/docs/tutorial/security.\nThis warning will not show up\nonce the app is packaged.",
+    "https://svelte.dev/e/derived_inert",
+    "https://svelte.dev/e/derived_inert",
+    "https://svelte.dev/e/derived_inert",
+    "https://svelte.dev/e/derived_inert",
+    "https://svelte.dev/e/derived_inert",
+    "https://svelte.dev/e/derived_inert",
+    "https://svelte.dev/e/derived_inert",
+    "https://svelte.dev/e/derived_inert",
+    "https://svelte.dev/e/derived_inert",
+    "https://svelte.dev/e/derived_inert",
+    "Could not load local fonts: TypeError: window.queryLocalFonts is not a function\n    at PPe (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:171:64551)\n    at IPe (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:171:65664)\n    at file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:479:121607\n    at bae (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:644)\n    at Array.map (<anonymous>)\n    at file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:21:7413\n    at V (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:28209)\n    at file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:21:7403\n    at Yoe (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:25820)\n    at Bo (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:27005)\n    at doe (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:9285)\n    at #_ (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:11949)\n    at #_ (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:12187)\n    at e.flush (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:13530)\n    at Array.<anonymous> (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:15261)\n    at Wr (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:694)\n    at qae (file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:5121)\n    at file://<worktree>docs/ai/.cache/runtime-app/public/build/bundle.js:20:5202",
+    "HISTORY INIT [SHOW_ITEMS]: {id: SHOW_ITEMS, newData: Object, location: Object, oldData: null, time: 1791653240734}",
+    "SAVING...",
+    "SAVED!",
+    "HISTORY INIT [TEMPLATE]: {id: TEMPLATE, save: false, newData: Object, location: Object, oldData: null}",
+    "HISTORY INIT [TEMPLATE]: {id: TEMPLATE, save: false, newData: Object, location: Object, oldData: null}",
+    "ALSA lib confmisc.c:855:(parse_card) cannot find card '0'\nALSA lib conf.c:5208:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory\nALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings\nALSA lib conf.c:5208:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory\nALSA lib confmisc.c:1342:(snd_func_refer) error evaluating name\nALSA lib conf.c:5208:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory\nALSA lib conf.c:5731:(snd_config_expand) Evaluate error: No such file or directory\nALSA lib pcm.c:2721:(snd_pcm_open_noupdate) Unknown PCM default\n[47504:1010/172723.263477:ERROR:media/audio/alsa/alsa_util.cc:209] PcmOpen: default,No such file or directory\n",
+    "ALSA lib confmisc.c:855:(parse_card) cannot find card '0'\nALSA lib conf.c:5208:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory\nALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings\nALSA lib conf.c:5208:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory\nALSA lib confmisc.c:1342:(snd_func_refer) error evaluating name\nALSA lib conf.c:5208:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory\nALSA lib conf.c:5731:(snd_config_expand) Evaluate error: No such file or directory\nALSA lib pcm.c:2721:(snd_pcm_open_noupdate) Unknown PCM default\n[47504:1010/172723.265001:ERROR:media/audio/alsa/alsa_util.cc:209] PcmOpen: plug:default,No such file or directory\n",
+    "Output default rendered 1919x1079 but is configured 1920x1080; resampling frames for NDI/OMT\n",
+    "Debugger ending on ws://127.0.0.1:39311/1c95f200-93a6-4cd0-ac2d-81c2a5415e3e\nFor help, see: https://nodejs.org/en/docs/inspector\n",
+    "SAVING...",
+    "libEGL warning: failed to open /dev/dri/renderD128: Permission denied\n\n",
+    "libEGL warning: failed to open /dev/dri/renderD128: Permission denied\n\n",
+    "libEGL warning: failed to open /dev/dri/card1: Permission denied\n\n",
+    "[osr-capture] linux readback backend: egl-gles3 (platform=surfaceless, modifiers=yes)\n",
+    "[47450:1010/172725.052400:ERROR:gpu/command_buffer/service/shared_image/shared_image_manager.cc:497] SharedImageManager::ProduceMemory: Trying to Produce a Memory representation from a non-existent mailbox.\n"
+  ]
+}

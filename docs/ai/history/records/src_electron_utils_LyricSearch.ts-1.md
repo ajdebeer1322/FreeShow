@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/caaa6a83a222cd5bd03c3c957f09f84a8d231687): “Remove the page header Genius puts in front of the lyrics When a song has no description, the lyrics started with page text like "62 ContributorsTranslationsItalianoO Holy Night Ly”
 
-Later line edits: 1; latest caaa6a83. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest caaa6a83. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

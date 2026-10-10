@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/f9161201693820a1ff0bdf79f1c283df674de721): “1.5.9-beta.1 (#2912) * Reverted timeout change * Fixed stage media not centered * Fixed stage icon not centered * PPT import enhancements - Custom image svg clip - Slide gradient c”
 
-Later line edits: 2; latest f9161201. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest f9161201. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2912](https://github.com/ChurchApps/FreeShow/pull/2912) (read; no item-specific matching bullet); [pr #2912](https://github.com/ChurchApps/FreeShow/pull/2912) (read; no item-specific matching bullet)
 
@@ -74,7 +74,7 @@ Sources:
 
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/e5f66233fa0187a258128aa929a3f0c71fa43948): “Phase 2: required code changes for Svelte 5 (legacy mode) - mount(App, { target }) instead of new App({ target }) in the 6 entry points (frontend/main.ts and server/{cam,controller”
 
-Later line edits: 4; latest e5f66233. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest e5f66233. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 
@@ -92,7 +92,7 @@ Sources:
 
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/e5f66233fa0187a258128aa929a3f0c71fa43948): “Phase 2: required code changes for Svelte 5 (legacy mode) - mount(App, { target }) instead of new App({ target }) in the 6 entry points (frontend/main.ts and server/{cam,controller”
 
-Later line edits: 2; latest e5f66233. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest e5f66233. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 
@@ -110,7 +110,7 @@ Sources:
 
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/e5f66233fa0187a258128aa929a3f0c71fa43948): “Phase 2: required code changes for Svelte 5 (legacy mode) - mount(App, { target }) instead of new App({ target }) in the 6 entry points (frontend/main.ts and server/{cam,controller”
 
-Later line edits: 2; latest e5f66233. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest e5f66233. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 
@@ -150,7 +150,7 @@ Sources:
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/b5946b2dafb6207a5372eec5f9943ce283e3a508): “* Update QuickSearch.svelte”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/b5946b2dafb6207a5372eec5f9943ce283e3a508): “* Update QuickSearch.svelte”
 
-Later line edits: 3; latest b5946b2d. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest b5946b2d. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet); [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet)
 
@@ -170,4 +170,4 @@ Sources:
 
 Later line edits: 0; latest 57a96752. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (read; no item-specific matching bullet); [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (read; no item-specific matching bullet)

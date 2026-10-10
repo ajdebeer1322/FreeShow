@@ -44,8 +44,8 @@ No static evidence found.
 
 - [src/frontend/components/helpers/timerTick.ts:30](../../../../src/frontend/components/helpers/timerTick.ts#L30) — timer-06ff8a0a9cf88b24: setTimeout = dynamic ms (customInterval); // if (!get(activeTimers).length \|\| timeout) return
 - [src/frontend/components/helpers/timerTick.ts:59](../../../../src/frontend/components/helpers/timerTick.ts#L59) — timer-4b90df160dc0b6d6: setTimeout = 50 ms (50); // timeout so timer_end action don't clear at the same time as next timer tick starts // don't clear pcoLive entries
-- [src/frontend/components/helpers/timerTick.ts:181](../../../../src/frontend/components/helpers/timerTick.ts#L181) — timer-eda4a46f7f23017e: setTimeout = 1000 ms (INTERVAL); 
-- [src/frontend/components/helpers/timerTick.ts:250](../../../../src/frontend/components/helpers/timerTick.ts#L250) — timer-a57300dad7b26cc3: setTimeout = 1000 ms (1000); 
+- [src/frontend/components/helpers/timerTick.ts:181](../../../../src/frontend/components/helpers/timerTick.ts#L181) — timer-eda4a46f7f23017e: setTimeout = 1000 ms (INTERVAL);
+- [src/frontend/components/helpers/timerTick.ts:250](../../../../src/frontend/components/helpers/timerTick.ts#L250) — timer-a57300dad7b26cc3: setTimeout = 1000 ms (1000);
 
 ## Workarounds
 

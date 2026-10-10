@@ -61,7 +61,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/converters/importHelpers.ts:31](../../../../src/frontend/converters/importHelpers.ts#L31) — timer-fb942c1900d7159a: setTimeout = 0 ms (omitted); 
+- [src/frontend/converters/importHelpers.ts:31](../../../../src/frontend/converters/importHelpers.ts#L31) — timer-fb942c1900d7159a: setTimeout = 0 ms (omitted);
 
 ## Workarounds
 

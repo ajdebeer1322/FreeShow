@@ -26,7 +26,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/helpers/debugLog.test.ts:43](../../../../src/frontend/components/helpers/debugLog.test.ts#L43) — timer-9e6b70557744d77f: setTimeout = 80 ms (80); 
+- [src/frontend/components/helpers/debugLog.test.ts:43](../../../../src/frontend/components/helpers/debugLog.test.ts#L43) — timer-9e6b70557744d77f: setTimeout = 80 ms (80);
 
 ## Workarounds
 

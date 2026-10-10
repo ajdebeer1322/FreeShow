@@ -29,8 +29,8 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/media/cameraManager.ts:168](../../../../src/frontend/media/cameraManager.ts#L168) — timer-690a9910343a30b0: setTimeout = dynamic ms (delay); 
-- [src/frontend/media/cameraManager.ts:182](../../../../src/frontend/media/cameraManager.ts#L182) — timer-b6f929a91793be95: setTimeout = 1500 ms (1500); 
+- [src/frontend/media/cameraManager.ts:168](../../../../src/frontend/media/cameraManager.ts#L168) — timer-690a9910343a30b0: setTimeout = dynamic ms (delay);
+- [src/frontend/media/cameraManager.ts:182](../../../../src/frontend/media/cameraManager.ts#L182) — timer-b6f929a91793be95: setTimeout = 1500 ms (1500);
 - [src/frontend/media/cameraManager.ts:330](../../../../src/frontend/media/cameraManager.ts#L330) — timer-9391e00177f17cd7: setInterval = 30000 ms (HALF_MINUTE); // --- Keepalive & Background Monitoring ---
 
 ## Workarounds

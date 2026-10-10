@@ -26,8 +26,8 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/media/Video.svelte:93](../../../../src/frontend/components/media/Video.svelte#L93) — timer-5e2f33f21fe8db3b: setInterval = 1000 ms (1000); 
-- [src/frontend/components/media/Video.svelte:164](../../../../src/frontend/components/media/Video.svelte#L164) — timer-1b66b389fd3440f0: setTimeout = 200 ms (200); 
+- [src/frontend/components/media/Video.svelte:93](../../../../src/frontend/components/media/Video.svelte#L93) — timer-5e2f33f21fe8db3b: setInterval = 1000 ms (1000);
+- [src/frontend/components/media/Video.svelte:164](../../../../src/frontend/components/media/Video.svelte#L164) — timer-1b66b389fd3440f0: setTimeout = 200 ms (200);
 - [src/frontend/components/media/Video.svelte:174](../../../../src/frontend/components/media/Video.svelte#L174) — timer-ca6287bc41cdf553: setTimeout = 20 ms (20); // don't change rapidly
 
 ## Workarounds

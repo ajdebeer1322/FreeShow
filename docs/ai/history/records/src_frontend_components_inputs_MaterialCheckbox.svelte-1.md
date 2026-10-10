@@ -34,7 +34,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/a2f34e2a335c1f5e01fdd9e663191298328e50ea): “1.6.2-beta.1 (#3336) * 1.6.1 (#3291) * Updated Norwegian language * Updated Hungarian language * Fixed PDF to image conversion with special file name #3177 * Actions Grid Mode in t”
 
-Later line edits: 2; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 

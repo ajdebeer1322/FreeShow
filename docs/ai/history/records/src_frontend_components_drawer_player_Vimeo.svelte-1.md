@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/bbfe98072aefe0c6311c5044e1ac63152f45a204): “1.6.5-beta.2 (#3587) * More specific sync error messages (#3557) * Break CJK text on full-width punctuation when splitting long verses (#3561) * Update * Fixed broken chars * Don't”
 
-Later line edits: 3; latest bbfe9807. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest bbfe9807. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3587](https://github.com/ChurchApps/FreeShow/pull/3587) (read; no item-specific matching bullet); [pr #3587](https://github.com/ChurchApps/FreeShow/pull/3587) (read; no item-specific matching bullet)
 
@@ -34,7 +34,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/bbfe98072aefe0c6311c5044e1ac63152f45a204): “1.6.5-beta.2 (#3587) * More specific sync error messages (#3557) * Break CJK text on full-width punctuation when splitting long verses (#3561) * Update * Fixed broken chars * Don't”
 
-Later line edits: 2; latest bbfe9807. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest bbfe9807. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3587](https://github.com/ChurchApps/FreeShow/pull/3587) (read; no item-specific matching bullet); [pr #3587](https://github.com/ChurchApps/FreeShow/pull/3587) (read; no item-specific matching bullet)
 
@@ -52,6 +52,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/387264380a6fa2fec2c678dc32691f13a798ae6d): “📺 Multiple outputs - Override output style with template - Choose layers to show to output - Fixed VideoPsalm importing - Fixed to next slide time not starting - Draw icons - Unsa”
 
-Later line edits: 2; latest 464e57bf. Full commit messages and lineage: JSON query data.
+Later line edits: 1; latest 464e57bf. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #232](https://github.com/ChurchApps/FreeShow/pull/232) (read; no item-specific matching bullet)

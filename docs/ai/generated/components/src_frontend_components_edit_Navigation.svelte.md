@@ -11,13 +11,13 @@ No static evidence found.
 - [src/frontend/components/edit/Navigation.svelte:133](../../../../src/frontend/components/edit/Navigation.svelte#L133) — Button → src/frontend/components/inputs/Button.svelte; on:click={() => activePage.set("show")}; center; dark
 - [src/frontend/components/edit/Navigation.svelte:134](../../../../src/frontend/components/edit/Navigation.svelte#L134) — Icon → src/frontend/components/helpers/Icon.svelte; id="back"; right
 - [src/frontend/components/edit/Navigation.svelte:135](../../../../src/frontend/components/edit/Navigation.svelte#L135) — T → src/frontend/components/helpers/T.svelte; id="actions.back"
-- [src/frontend/components/edit/Navigation.svelte:140](../../../../src/frontend/components/edit/Navigation.svelte#L140) — Slides → src/frontend/components/edit/Slides.svelte; 
+- [src/frontend/components/edit/Navigation.svelte:140](../../../../src/frontend/components/edit/Navigation.svelte#L140) — Slides → src/frontend/components/edit/Slides.svelte;
 - [src/frontend/components/edit/Navigation.svelte:143](../../../../src/frontend/components/edit/Navigation.svelte#L143) — T → src/frontend/components/helpers/T.svelte; id="edit.recent"
 - [src/frontend/components/edit/Navigation.svelte:148](../../../../src/frontend/components/edit/Navigation.svelte#L148) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; style="width: 100%;padding: 0.15rem 0.65rem;font-weight: normal;justify-content: left;"; on:click={() => open
 - [src/frontend/components/edit/Navigation.svelte:149](../../../../src/frontend/components/edit/Navigation.svelte#L149) — Icon → src/frontend/components/helpers/Icon.svelte; id={edited.icon}
 - [src/frontend/components/edit/Navigation.svelte:155](../../../../src/frontend/components/edit/Navigation.svelte#L155) — Center → src/frontend/components/system/Center.svelte; faded
 - [src/frontend/components/edit/Navigation.svelte:156](../../../../src/frontend/components/edit/Navigation.svelte#L156) — T → src/frontend/components/helpers/T.svelte; id="empty.general"
-- [src/frontend/components/edit/Navigation.svelte:164](../../../../src/frontend/components/edit/Navigation.svelte#L164) — Slides → src/frontend/components/edit/Slides.svelte; 
+- [src/frontend/components/edit/Navigation.svelte:164](../../../../src/frontend/components/edit/Navigation.svelte#L164) — Slides → src/frontend/components/edit/Slides.svelte;
 - [src/frontend/components/edit/Navigation.svelte:166](../../../../src/frontend/components/edit/Navigation.svelte#L166) — FloatingInputs → src/frontend/components/input/FloatingInputs.svelte; onlyOne
 - [src/frontend/components/edit/Navigation.svelte:167](../../../../src/frontend/components/edit/Navigation.svelte#L167) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; disabled={isLocked}; icon="add"; title="new.slide"; on:click={addSlide}
 - [src/frontend/components/edit/Navigation.svelte:168](../../../../src/frontend/components/edit/Navigation.svelte#L168) — T → src/frontend/components/helpers/T.svelte; id="new.slide"

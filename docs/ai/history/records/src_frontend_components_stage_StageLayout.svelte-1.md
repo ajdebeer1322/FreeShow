@@ -18,7 +18,7 @@ Sources:
 
 Later line edits: 0; latest c9f83b17. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3450](https://github.com/ChurchApps/FreeShow/pull/3450) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3450](https://github.com/ChurchApps/FreeShow/pull/3450) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3450](https://github.com/ChurchApps/FreeShow/pull/3450) (read; no item-specific matching bullet); [pr #3450](https://github.com/ChurchApps/FreeShow/pull/3450) (read; no item-specific matching bullet)
 
 ## D-timer-eac28faacc67998a
 
@@ -34,7 +34,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/acaf215cd489c101afffe5ad12362061c45dec59): “🥳 Disable stage shows. Add icons to slides. Added more strings.”
 
-Later line edits: 48; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 42; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -52,9 +52,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/d6d4b4bf026e58b44fabd0bbe37be90189656001): “1.5.0-beta.2 (#2108) * Better Electron mirror approach * Fixed PDF chord sheet option not showing up right away * Small fixes & tweaks * Fix for snap build * Fix for snap build * U”
 
-Later line edits: 48; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 12; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
+GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
 ## D-timer-c85da46b17de9a9e
 

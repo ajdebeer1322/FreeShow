@@ -26,7 +26,7 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/output/VideoSlider.svelte:69](../../../../src/frontend/components/output/VideoSlider.svelte#L69) — timer-642a9b379cf65a92: setTimeout = 150 ms (150); 
+- [src/frontend/components/output/VideoSlider.svelte:69](../../../../src/frontend/components/output/VideoSlider.svelte#L69) — timer-642a9b379cf65a92: setTimeout = 150 ms (150);
 
 ## Workarounds
 

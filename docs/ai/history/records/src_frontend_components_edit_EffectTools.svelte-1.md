@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/c416aec28ca722cdf0557730656a08200b910b1f): “1.4.5-beta.1 (#1706) * 🚩 Updated Chinese language * ✔️ Fixed import menu not opening - Fixed incorrect stage output scaling for custom resolutions - PDFs converted to images added”
 
-Later line edits: 2; latest c416aec2. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest c416aec2. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #1706](https://github.com/ChurchApps/FreeShow/pull/1706) (read; no item-specific matching bullet); [pr #1706](https://github.com/ChurchApps/FreeShow/pull/1706) (read; no item-specific matching bullet)

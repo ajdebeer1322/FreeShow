@@ -34,9 +34,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/3f9ae152d916dfc5d6e728348953181189c4c7fb): “1.5.1 (#2284) * Fixed default scripture chapter/verse not being 1 * Updated languages * Fixed stage display slide text invisible - Fixed slide timers stopping in the background - F”
 
-Later line edits: 2; latest 3f9ae152. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 3f9ae152. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2284](https://github.com/ChurchApps/FreeShow/pull/2284) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2284](https://github.com/ChurchApps/FreeShow/pull/2284) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2284](https://github.com/ChurchApps/FreeShow/pull/2284) (read; no item-specific matching bullet); [pr #2284](https://github.com/ChurchApps/FreeShow/pull/2284) (read; no item-specific matching bullet)
 
 ## D-timer-853b7b28abe3b43a
 
@@ -70,9 +70,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/88de0b8203a64fbe6111649173aab19b0ce4277f): “1.5.5-beta.2 (#2526) * Fix song number search to support alphanumeric values (e.g., MP133) (#2498) * Change license from GPL-3.0 to GPL-3.0-or-later (#2500) License has to be in SP”
 
-Later line edits: 2; latest 88de0b82. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 88de0b82. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2526](https://github.com/ChurchApps/FreeShow/pull/2526) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2526](https://github.com/ChurchApps/FreeShow/pull/2526) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2526](https://github.com/ChurchApps/FreeShow/pull/2526) (read; no item-specific matching bullet); [pr #2526](https://github.com/ChurchApps/FreeShow/pull/2526) (read; no item-specific matching bullet)
 
 ## D-timer-d27d19d6f63624af
 
@@ -88,9 +88,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/88de0b8203a64fbe6111649173aab19b0ce4277f): “1.5.5-beta.2 (#2526) * Fix song number search to support alphanumeric values (e.g., MP133) (#2498) * Change license from GPL-3.0 to GPL-3.0-or-later (#2500) License has to be in SP”
 
-Later line edits: 2; latest 88de0b82. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 88de0b82. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2526](https://github.com/ChurchApps/FreeShow/pull/2526) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2526](https://github.com/ChurchApps/FreeShow/pull/2526) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2526](https://github.com/ChurchApps/FreeShow/pull/2526) (read; no item-specific matching bullet); [pr #2526](https://github.com/ChurchApps/FreeShow/pull/2526) (read; no item-specific matching bullet)
 
 ## D-timer-daef93546f8b8dea
 
@@ -106,7 +106,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/b5946b2dafb6207a5372eec5f9943ce283e3a508): “1.5.7 (#2839) * Added back forceLogin - Fixed on B1Admin * Fixed clear background not working if no output screen exists * Updated languages * fix: improve split long verses with t”
 
-Later line edits: 1; latest b5946b2d. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest b5946b2d. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet); [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet)
 
@@ -160,7 +160,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/7221d2710ee0377a09536df2df38d2ea11db791b): “1.6.0-beta.4 (#3147) * Handle full-section Planning Center repeats (#3099) * Fixed some timeline keyframes not editable #3100 * Timer now flashes in StageShow #3101 * Fixed timer i”
 
-Later line edits: 16; latest 7221d271. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 7221d271. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3147](https://github.com/ChurchApps/FreeShow/pull/3147) (read; no item-specific matching bullet); [pr #3147](https://github.com/ChurchApps/FreeShow/pull/3147) (read; no item-specific matching bullet)
 
@@ -181,3 +181,21 @@ Sources:
 Later line edits: 0; latest 1f661639. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet); [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet)
+
+## D-hotspot-6cb8b03b0b53a0ef
+
+[guess] Module hotspot: src/frontend/components/slide/TextboxLines.svelte
+
+Location: [src/frontend/components/slide/TextboxLines.svelte:78](../../../../src/frontend/components/slide/TextboxLines.svelte#L78). Category: hotspot.
+
+Added/traced: [7221d271](https://github.com/ChurchApps/FreeShow/commit/7221d2710ee0377a09536df2df38d2ea11db791b) on 2026-04-09; git log -S --follow (earliest exact-text occurrence in file lineage).
+
+Unresolved: local history identifies an addition/edit but gives no item-specific motive.
+
+Sources:
+
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/7221d2710ee0377a09536df2df38d2ea11db791b): “1.6.0-beta.4 (#3147) * Handle full-section Planning Center repeats (#3099) * Fixed some timeline keyframes not editable #3100 * Timer now flashes in StageShow #3101 * Fixed timer i”
+
+Later line edits: 0; latest 7221d271. Full commit messages and lineage: JSON query data.
+
+GitHub: [pr #3147](https://github.com/ChurchApps/FreeShow/pull/3147) (read; no item-specific matching bullet); [pr #3147](https://github.com/ChurchApps/FreeShow/pull/3147) (read; no item-specific matching bullet)

@@ -25,9 +25,9 @@ No static evidence found.
 
 ## Timing
 
-- [src/server/stage/components/Timer.svelte:59](../../../../src/server/stage/components/Timer.svelte#L59) — timer-cd9b9c6101821810: setInterval = 1200 ms (INTERVAL); 
-- [src/server/stage/components/Timer.svelte:61](../../../../src/server/stage/components/Timer.svelte#L61) — timer-2b1926ca73094eb0: setTimeout = 240 ms (INTERVAL * 0.2); 
-- [src/server/stage/components/Timer.svelte:102](../../../../src/server/stage/components/Timer.svelte#L102) — css-transition-95d4651e0253c81f: css-transition = 500 ms (0.5s width); 
+- [src/server/stage/components/Timer.svelte:59](../../../../src/server/stage/components/Timer.svelte#L59) — timer-cd9b9c6101821810: setInterval = 1200 ms (INTERVAL);
+- [src/server/stage/components/Timer.svelte:61](../../../../src/server/stage/components/Timer.svelte#L61) — timer-2b1926ca73094eb0: setTimeout = 240 ms (INTERVAL * 0.2);
+- [src/server/stage/components/Timer.svelte:102](../../../../src/server/stage/components/Timer.svelte#L102) — css-transition-95d4651e0253c81f: css-transition = 500 ms (0.5s width);
 - [src/server/stage/components/Timer.svelte:124](../../../../src/server/stage/components/Timer.svelte#L124) — css-transition-ad68370e86a287bc: css-transition = 500 ms (0.5s --percentage); /* @property --percentage { initial-value: 100; inherits: false; syntax: "<*>"; } */ /* transition: 0.
 
 ## Workarounds

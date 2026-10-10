@@ -7,7 +7,8 @@ const sources = {
     "src/frontend/Test.svelte": '<script lang="ts">\nimport {get} from "svelte/store"\nimport {outputs as out} from "./stores"\nimport Child from "./Child.svelte"\nconst wait=(ms=15)=>new Promise(r=>setTimeout(r,ms))\n// TODO retain until measured\nwait()\nget(out)\nout.update(v=>v)\nconst text="TODO is not a comment"\n</script>\n<Child data={$out} />\n<input bind:value={$out.name} />\n<button on:click={()=> $out.name="changed"}>Change</button>\n',
     "src/frontend/Child.svelte": '<script>export let data</script>\n<p>{data}</p>',
     "src/types/IPC/Main.ts": 'export enum Main { VERSION="VERSION" }\nexport interface MainSendPayloads { VERSION: {verbose:boolean} }',
-    "src/frontend/IPC/test.ts": 'import {Main} from "../../types/IPC/Main"\nfunction requestMain(){}\nrequestMain(Main.VERSION,{verbose:true})\n'
+    "src/frontend/IPC/test.ts": 'import {Main} from "../../types/IPC/Main"\nfunction requestMain(){}\nfunction receiveMain(){}\nrequestMain(Main.VERSION,{verbose:true})\nreceiveMain(Main.VERSION,(data)=>{ const allShowsInFolder=data; })\n',
+    "src/frontend/utils/receivers.ts": 'export const receiveOUTPUTasOUTPUT={OUTPUTS: (data: {id:string}) => ({buffer:data,size:1,preventDefault:()=>{}})}'
 }
 let model
 // One shared fixture scan tests compiler/scope contracts, not source snapshots.
@@ -30,6 +31,14 @@ test("component bindings and payload contracts",()=>{
     const msg=model.messages.find(m=>m.id==="MAIN/VERSION")
     assert.equal(msg.senders.length,1)
     assert.equal(msg.payloads[0].type,"{verbose:boolean}")
+    assert.equal(msg.payloads.length,1) // an untyped callback body is not a payload type
+})
+
+test("handler payload members are not message keys; inline payload types are retained",()=>{
+    assert(!model.messages.some(message=>["buffer","size","preventDefault"].includes(message.key)))
+    const message=model.messages.find(message=>message.id==="OUTPUT/OUTPUTS")
+    assert.equal(message.handlers.length,1)
+    assert.equal(message.payloads[0].type,"{id:string}")
 })
 
 test("finds comments following interpolated templates and regex literals",()=>{

@@ -18,7 +18,7 @@ Sources:
 
 Later line edits: 3; latest 7e8c959b. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2238](https://github.com/ChurchApps/FreeShow/pull/2238) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2534](https://github.com/ChurchApps/FreeShow/pull/2534) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2238](https://github.com/ChurchApps/FreeShow/pull/2238) (read; no item-specific matching bullet); [pr #2534](https://github.com/ChurchApps/FreeShow/pull/2534) (read; no item-specific matching bullet)
 
 ## D-request-budget-8486ba16fa96c0b5
 
@@ -36,7 +36,7 @@ Sources:
 
 Later line edits: 2; latest 7e8c959b. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2325](https://github.com/ChurchApps/FreeShow/pull/2325) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2534](https://github.com/ChurchApps/FreeShow/pull/2534) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2325](https://github.com/ChurchApps/FreeShow/pull/2325) (read; no item-specific matching bullet); [pr #2534](https://github.com/ChurchApps/FreeShow/pull/2534) (read; no item-specific matching bullet)
 
 ## D-request-budget-423da224c42af9e3
 
@@ -52,7 +52,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/b5946b2dafb6207a5372eec5f9943ce283e3a508): “1.5.7 (#2839) * Added back forceLogin - Fixed on B1Admin * Fixed clear background not working if no output screen exists * Updated languages * fix: improve split long verses with t”
 
-Later line edits: 5; latest b5946b2d. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest b5946b2d. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet); [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet)
 
@@ -72,7 +72,7 @@ Sources:
 
 Later line edits: 0; latest 6ad1f69b. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2674](https://github.com/ChurchApps/FreeShow/pull/2674) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2674](https://github.com/ChurchApps/FreeShow/pull/2674) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2674](https://github.com/ChurchApps/FreeShow/pull/2674) (read; no item-specific matching bullet); [pr #2674](https://github.com/ChurchApps/FreeShow/pull/2674) (read; no item-specific matching bullet)
 
 ## D-workaround-02d5a574c685cb45
 
@@ -89,7 +89,8 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/035bfdd50d7490a637abc5d01c1bc3e74bab74f3): “1.5.6-beta.2 (#2656) * Fixed pro5 import issue * Fixed clear audio not stopping playlist * Fixed dropdown closing too quick - Restoring old settings won't mess up the data path * G”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/035bfdd50d7490a637abc5d01c1bc3e74bab74f3): “* macOS go back workaround #2614”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/035bfdd50d7490a637abc5d01c1bc3e74bab74f3): “* macOS go back workaround #2614”
+- [guess] [source](https://github.com/ChurchApps/FreeShow/issues/2614): “**Describe the bug** <!-- A clear and concise description of what the bug is. --> This is a regression on this issue #2061 on MacOS. As of version 1.5.5 on MacOS mouse buttons 5 an”
 
-Later line edits: 11; latest 035bfdd5. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 035bfdd5. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2656](https://github.com/ChurchApps/FreeShow/pull/2656) (read; no item-specific matching bullet); [pr #2656](https://github.com/ChurchApps/FreeShow/pull/2656) (read; no item-specific matching bullet)
+GitHub: [pr #2656](https://github.com/ChurchApps/FreeShow/pull/2656) (read; no item-specific matching bullet); [pr #2656](https://github.com/ChurchApps/FreeShow/pull/2656) (read; no item-specific matching bullet); [issue #2614](https://github.com/ChurchApps/FreeShow/issues/2614) (read; no item-specific matching bullet)

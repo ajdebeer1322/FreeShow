@@ -52,6 +52,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/b72bd40f9d951dede7ad1c37b6f9f82440bc1de0): “🖼 Image Intersection Controll, Media Preview Video Play, and many fixes”
 
-Later line edits: 4; latest 960db1d0. Full commit messages and lineage: JSON query data.
+Later line edits: 3; latest 960db1d0. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

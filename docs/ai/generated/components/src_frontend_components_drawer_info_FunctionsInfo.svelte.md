@@ -8,7 +8,7 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/components/drawer/info/FunctionsInfo.svelte:36](../../../../src/frontend/components/drawer/info/FunctionsInfo.svelte#L36) — TimerInfo → src/frontend/components/drawer/timers/TimerInfo.svelte; 
-- [src/frontend/components/drawer/info/FunctionsInfo.svelte:41](../../../../src/frontend/components/drawer/info/FunctionsInfo.svelte#L41) — ScenesInfo → src/frontend/components/drawer/info/ScenesInfo.svelte; 
-- [src/frontend/components/drawer/info/FunctionsInfo.svelte:43](../../../../src/frontend/components/drawer/info/FunctionsInfo.svelte#L43) — InteractionsInfo → src/frontend/components/drawer/pages/InteractionsInfo.svelte; 
-- [src/frontend/components/drawer/info/FunctionsInfo.svelte:45](../../../../src/frontend/components/drawer/info/FunctionsInfo.svelte#L45) — OBSInfo → src/frontend/components/drawer/info/OBSInfo.svelte; 
+- [src/frontend/components/drawer/info/FunctionsInfo.svelte:36](../../../../src/frontend/components/drawer/info/FunctionsInfo.svelte#L36) — TimerInfo → src/frontend/components/drawer/timers/TimerInfo.svelte;
+- [src/frontend/components/drawer/info/FunctionsInfo.svelte:41](../../../../src/frontend/components/drawer/info/FunctionsInfo.svelte#L41) — ScenesInfo → src/frontend/components/drawer/info/ScenesInfo.svelte;
+- [src/frontend/components/drawer/info/FunctionsInfo.svelte:43](../../../../src/frontend/components/drawer/info/FunctionsInfo.svelte#L43) — InteractionsInfo → src/frontend/components/drawer/pages/InteractionsInfo.svelte;
+- [src/frontend/components/drawer/info/FunctionsInfo.svelte:45](../../../../src/frontend/components/drawer/info/FunctionsInfo.svelte#L45) — OBSInfo → src/frontend/components/drawer/info/OBSInfo.svelte;

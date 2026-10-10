@@ -18,7 +18,7 @@ Sources:
 
 Later line edits: 0; latest 84fa33d2. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2924](https://github.com/ChurchApps/FreeShow/pull/2924) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2924](https://github.com/ChurchApps/FreeShow/pull/2924) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2924](https://github.com/ChurchApps/FreeShow/pull/2924) (read; no item-specific matching bullet); [pr #2924](https://github.com/ChurchApps/FreeShow/pull/2924) (read; no item-specific matching bullet)
 
 ## D-timer-720345f9c280d7db
 
@@ -55,7 +55,7 @@ Sources:
 
 Later line edits: 0; latest 9d558fc2. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1528](https://github.com/ChurchApps/FreeShow/pull/1528) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1528](https://github.com/ChurchApps/FreeShow/pull/1528) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1528](https://github.com/ChurchApps/FreeShow/pull/1528) (read; no item-specific matching bullet); [pr #1528](https://github.com/ChurchApps/FreeShow/pull/1528) (read; no item-specific matching bullet)
 
 ## D-timer-b7a145bcac09ea03
 
@@ -127,7 +127,7 @@ Sources:
 
 Later line edits: 1; latest a59b2b7d. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #555](https://github.com/ChurchApps/FreeShow/pull/555) (read; no item-specific matching bullet); [pr #863](https://github.com/ChurchApps/FreeShow/pull/863) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #555](https://github.com/ChurchApps/FreeShow/pull/555) (read; no item-specific matching bullet); [pr #863](https://github.com/ChurchApps/FreeShow/pull/863) (read; no item-specific matching bullet)
 
 ## D-workaround-f00f478e00a6b235
 
@@ -179,7 +179,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6679b31329c7b1031420f8737098dbb8da1f8427): “📑 Rewriting history - A lot faster EasyWorship import - Importing from another application will create its own category - Updated initialize popup looks - All project folders will”
 
-Later line edits: 2; latest 6679b313. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 6679b313. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 

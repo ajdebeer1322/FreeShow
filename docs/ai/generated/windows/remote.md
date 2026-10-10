@@ -76,8 +76,6 @@ Reachability includes conditional imports. Receiver registration shared by main/
 - [src/server/remote/util/receiver.ts:154](../../../../src/server/remote/util/receiver.ts#L154) — REMOTE/CATEGORIES
 - [src/server/remote/util/receiver.ts:157](../../../../src/server/remote/util/receiver.ts#L157) — REMOTE/ACTIVE_SCRIPTURE
 - [src/server/remote/util/receiver.ts:194](../../../../src/server/remote/util/receiver.ts#L194) — REMOTE/GET_SCRIPTURE
-- [src/server/remote/util/receiver.ts:219](../../../../src/server/remote/util/receiver.ts#L219) — REMOTE/books
-- [src/server/remote/util/receiver.ts:242](../../../../src/server/remote/util/receiver.ts#L242) — REMOTE/books
 - [src/server/remote/util/receiver.ts:248](../../../../src/server/remote/util/receiver.ts#L248) — REMOTE/SEARCH_SCRIPTURE
 - [src/server/remote/util/receiver.ts:254](../../../../src/server/remote/util/receiver.ts#L254) — REMOTE/OVERLAYS
 - [src/server/remote/util/receiver.ts:257](../../../../src/server/remote/util/receiver.ts#L257) — REMOTE/OVERLAY_CATEGORIES
@@ -99,7 +97,6 @@ Reachability includes conditional imports. Receiver registration shared by main/
 - [src/server/remote/util/receiver.ts:315](../../../../src/server/remote/util/receiver.ts#L315) — REMOTE/GET_AUDIO_MIXER
 - [src/server/remote/util/receiver.ts:319](../../../../src/server/remote/util/receiver.ts#L319) — REMOTE/GET_AUDIO
 - [src/server/remote/util/receiver.ts:322](../../../../src/server/remote/util/receiver.ts#L322) — REMOTE/MEDIA
-- [src/server/remote/util/receiver.ts:337](../../../../src/server/remote/util/receiver.ts#L337) — REMOTE/id
 - [src/server/remote/util/receiver.ts:351](../../../../src/server/remote/util/receiver.ts#L351) — REMOTE/API:get_thumbnail
 - [src/server/remote/util/receiver.ts:356](../../../../src/server/remote/util/receiver.ts#L356) — REMOTE/API:get_plain_text
 - [src/server/remote/util/receiver.ts:359](../../../../src/server/remote/util/receiver.ts#L359) — REMOTE/API:get_groups

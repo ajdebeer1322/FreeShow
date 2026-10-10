@@ -18,7 +18,7 @@ Sources:
 
 Later line edits: 0; latest 269dd93f. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (read; no item-specific matching bullet); [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (read; no item-specific matching bullet)
 
 ## D-timer-e60d621c70482ad8
 
@@ -36,7 +36,7 @@ Sources:
 
 Later line edits: 0; latest 269dd93f. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (read; no item-specific matching bullet); [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (read; no item-specific matching bullet)
 
 ## D-timer-b6b629a5a0feaf6f
 
@@ -52,7 +52,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/7221d2710ee0377a09536df2df38d2ea11db791b): “1.6.0-beta.4 (#3147) * Handle full-section Planning Center repeats (#3099) * Fixed some timeline keyframes not editable #3100 * Timer now flashes in StageShow #3101 * Fixed timer i”
 
-Later line edits: 29; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 3; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3147](https://github.com/ChurchApps/FreeShow/pull/3147) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 

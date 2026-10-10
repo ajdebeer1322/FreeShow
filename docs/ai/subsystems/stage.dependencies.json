@@ -123,14 +123,7 @@
     "STAGE/STREAM_UNSUBSCRIBE",
     "STAGE/SWITCH",
     "STAGE/TIMERS",
-    "STAGE/VARIABLES",
-    "STAGE/currentProjectIndexes",
-    "STAGE/currentShowSlide",
-    "STAGE/layoutGroups",
-    "STAGE/outputId",
-    "STAGE/projectItems",
-    "STAGE/show",
-    "STAGE/slidesLength"
+    "STAGE/VARIABLES"
   ],
   "timingIds": [
     "timer-f996ed9f2f4e7de8",

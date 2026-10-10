@@ -1,6 +1,3 @@
 [
-  {"file":"src/frontend/IPC/responsesMain.ts","line":621,"endLine":621,"channel":"MAIN","keys":["TIMECODE_STATUS"],"role":"receive","direction":"electron/other renderer → renderer","symbol":null,"payload":null,"expression":"[Main.TIMECODE_STATUS]: (data) => updateTimelineStatus(data!)","dynamic":false},
-  {"file":"src/frontend/IPC/responsesMain.ts","line":622,"endLine":622,"channel":"MAIN","keys":["TIMECODE_AUDIO_DATA"],"role":"receive","direction":"electron/other renderer → renderer","symbol":null,"payload":null,"expression":"[Main.TIMECODE_AUDIO_DATA]: (data) => processTimecodeFrame(data!)","dynamic":false},
-  {"file":"src/frontend/IPC/responsesMain.ts","line":625,"endLine":625,"channel":"MAIN","keys":["AI_STATUS"],"role":"receive","direction":"electron/other renderer → renderer","symbol":null,"payload":null,"expression":"[ToMain.AI_STATUS]: (data) => aiSttStatus.set(data)","dynamic":false},
   {"file":"src/frontend/IPC/responsesMain.ts","line":626,"endLine":626,"channel":"MAIN","keys":["AI_TRANSCRIPT"],"role":"receive","direction":"electron/other renderer → renderer","symbol":null,"payload":null,"expression":"[ToMain.AI_TRANSCRIPT]: (data) => Transcript.push(data)","dynamic":false}
 ]

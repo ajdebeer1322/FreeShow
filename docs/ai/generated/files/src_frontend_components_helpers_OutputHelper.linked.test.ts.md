@@ -43,8 +43,8 @@ No static evidence found.
 - [src/frontend/components/helpers/OutputHelper.linked.test.ts:120](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L120) — timer-80babbe6d57b1c31: setTimeout = 130 ms (130); // presses are further apart than the 50ms active item cache
 - [src/frontend/components/helpers/OutputHelper.linked.test.ts:124](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L124) — timer-eef11821c436c430: setTimeout = 1600 ms (1600); // presses are further apart than the 50ms active item cache // delayed "clear what is left behind" checks of one test must not
 - [src/frontend/components/helpers/OutputHelper.linked.test.ts:211](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L211) — timer-24ea734e000f5706: setTimeout = 60 ms (60); // OutputHelper caches the active item for 50ms
-- [src/frontend/components/helpers/OutputHelper.linked.test.ts:338](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L338) — timer-32d372477647c348: setTimeout = 0 ms (0); 
-- [src/frontend/components/helpers/OutputHelper.linked.test.ts:382](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L382) — timer-18c789a15300758e: setTimeout = 130 ms (130); 
+- [src/frontend/components/helpers/OutputHelper.linked.test.ts:338](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L338) — timer-32d372477647c348: setTimeout = 0 ms (0);
+- [src/frontend/components/helpers/OutputHelper.linked.test.ts:382](../../../../src/frontend/components/helpers/OutputHelper.linked.test.ts#L382) — timer-18c789a15300758e: setTimeout = 130 ms (130);
 
 ## Workarounds
 

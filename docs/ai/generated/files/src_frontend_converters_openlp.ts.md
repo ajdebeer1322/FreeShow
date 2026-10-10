@@ -32,7 +32,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/converters/openlp.ts:41](../../../../src/frontend/converters/openlp.ts#L41) — timer-75dbdcb55dbf4588: setTimeout = 10 ms (10); 
+- [src/frontend/converters/openlp.ts:41](../../../../src/frontend/converters/openlp.ts#L41) — timer-75dbdcb55dbf4588: setTimeout = 10 ms (10);
 
 ## Workarounds
 

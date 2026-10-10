@@ -18,7 +18,7 @@ Sources:
 
 Later line edits: 0; latest 1ed8ffa3. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3813](https://github.com/ChurchApps/FreeShow/pull/3813) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3813](https://github.com/ChurchApps/FreeShow/pull/3813) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3813](https://github.com/ChurchApps/FreeShow/pull/3813) (read; no item-specific matching bullet); [pr #3813](https://github.com/ChurchApps/FreeShow/pull/3813) (read; no item-specific matching bullet)
 
 ## D-timer-3c77de0d8fbf7697
 
@@ -70,9 +70,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/3b0affd6907867aa46e1f0743ddd322b7a97fdbd): “1.3.1 (#1019) * ✔ Fixed stage zoom showing up in output - Fixed animation easing not working - Fixed animation background zoom transform - Fixed locked show also locking templates ”
 
-Later line edits: 56; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 36; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1019](https://github.com/ChurchApps/FreeShow/pull/1019) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
+GitHub: [pr #1019](https://github.com/ChurchApps/FreeShow/pull/1019) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
 ## D-workaround-32fb45a3b7711914
 
@@ -124,7 +124,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6085de9e5c4d6745bb3bcdbe2fa672f3136d9e72): “v1.1.8 (#616) * 🚩 Updated languages * ✨ Optimization - Consistent saving - Better organization & naming - Better startup - Playlist names decoded * 🎨 Custom border radius - Fixed”
 
-Later line edits: 56; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 40; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #616](https://github.com/ChurchApps/FreeShow/pull/616) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -142,9 +142,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/27a85a5769aee9968abfe0381b961235d653ce33): “1.3.3 (#1117) * ✔️ Fixed playwright Linux fontconfig issue * ✔️ Fixed playwright Linux fontconfig issue * ✨ Get slide output thumbnail from API - Drop timer & variable on slide in ”
 
-Later line edits: 56; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 34; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1117](https://github.com/ChurchApps/FreeShow/pull/1117) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
+GitHub: [pr #1117](https://github.com/ChurchApps/FreeShow/pull/1117) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
 ## D-workaround-a7bf816c64d40cd8
 
@@ -160,7 +160,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/7d56d94fb5f422b5011c3c01cb8a88e06c588a5a): “✨ Optimizing - Smaller show button height - Lazy loading slides in edit view - Changing from draw will now remove playing media”
 
-Later line edits: 56; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 55; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -178,6 +178,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6085de9e5c4d6745bb3bcdbe2fa672f3136d9e72): “v1.1.8 (#616) * 🚩 Updated languages * ✨ Optimization - Consistent saving - Better organization & naming - Better startup - Playlist names decoded * 🎨 Custom border radius - Fixed”
 
-Later line edits: 56; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 40; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #616](https://github.com/ChurchApps/FreeShow/pull/616) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)

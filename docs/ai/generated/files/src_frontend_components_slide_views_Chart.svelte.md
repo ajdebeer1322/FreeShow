@@ -22,7 +22,7 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/slide/views/Chart.svelte:32](../../../../src/frontend/components/slide/views/Chart.svelte#L32) — timer-ac57522fe9507a49: setInterval = 1000 ms (1000); 
+- [src/frontend/components/slide/views/Chart.svelte:32](../../../../src/frontend/components/slide/views/Chart.svelte#L32) — timer-ac57522fe9507a49: setInterval = 1000 ms (1000);
 
 ## Workarounds
 

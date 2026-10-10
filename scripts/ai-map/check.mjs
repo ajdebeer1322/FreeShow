@@ -2,7 +2,7 @@ import fs from "node:fs"
 import path from "node:path"
 import { pathToFileURL } from "node:url"
 import { generate } from "./generate.mjs"
-import { ROOT, GENERATED, read, readJson, walk, hash } from "./lib.mjs"
+import { ROOT, GENERATED, read, readJson, walk, hash, json } from "./lib.mjs"
 
 export function validateReference(reference, model, source) {
     const file=model.files.find(file=>file.file===reference.file)
@@ -12,6 +12,12 @@ export function validateReference(reference, model, source) {
     if(reference.excerpt && !source.split(/\r?\n/)[reference.line-1]?.includes(reference.excerpt)) return `Source anchor changed: ${reference.file}:${reference.line}`
     if(reference.fileHash && reference.fileHash!==hash(source)) return `Claim requires review after source change: ${reference.file}`
     return null
+}
+export function docReferences(content) {
+    return [...content.matchAll(/(?<![\w/.-])(src\/[\w./-]+\.(?:ts|js|mjs|cjs|svelte))(?::(\d+)|#([\w$]+))?/g)].map(match=>{
+        const line=match[2] || (/^L\d+$/.test(match[3] || "")?match[3].slice(1):null),symbol=match[3] && !/^L\d+$/.test(match[3])?match[3]:null
+        return {file:match[1],...(line?{line:Number(line)}:{}),...(symbol?{symbol}:{})}
+    })
 }
 export function checkDocs(model) {
     const errors=[]
@@ -30,8 +36,8 @@ export function checkDocs(model) {
                 if(refError) errors.push(`${doc}: ${refError}`)
             }
         }
-        for(const match of content.matchAll(/\b(src\/[\w./-]+\.(?:ts|js|svelte)):(\d+)/g)) {
-            const error=validateReference({file:match[1],line:Number(match[2])},model,fs.existsSync(path.resolve(ROOT,match[1]))?read(match[1]):"")
+        for(const reference of docReferences(content)) {
+            const error=validateReference(reference,model,fs.existsSync(path.resolve(ROOT,reference.file))?read(reference.file):"")
             if(error) errors.push(`${doc}: ${error}`)
         }
     }
@@ -48,6 +54,12 @@ export function checkDocs(model) {
             if(!file || item.sourceHash!==file.hash) errors.push(`History source changed: ${item.id}; regenerate/review history`)
             if(!fs.existsSync(path.resolve(ROOT,item.document))) errors.push(`History page absent: ${item.document}`)
         }
+    }
+    const flows=readJson("docs/ai/flows/index.json"),observations=readJson("docs/ai/flows/observations.json")
+    if(flows) {
+        if(flows.sourceRevision!==model.sourceRevision)errors.push("Flow source revision changed; review/regenerate traces")
+        if(observations?.sourceFingerprint!==hash(json(model.files.map(file=>[file.file,file.hash]))))errors.push("Runtime flow evidence is absent or stale; repeat observations")
+        for(const flow of flows.flows)if(flow.verified && !observations?.observations.some(item=>item.id===flow.id && item.status==="verified"))errors.push(`Verified flow lacks observation: ${flow.id}`)
     }
     return [...new Set(errors)]
 }

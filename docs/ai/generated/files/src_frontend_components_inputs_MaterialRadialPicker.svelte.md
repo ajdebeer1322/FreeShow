@@ -23,10 +23,10 @@ None detected.
 ## Timing
 
 - [src/frontend/components/inputs/MaterialRadialPicker.svelte:139](../../../../src/frontend/components/inputs/MaterialRadialPicker.svelte#L139) — timer-5a7f50fc0fa2eabd: setTimeout = 500 ms (500); // don't start timeout if scrolling with mouse
-- [src/frontend/components/inputs/MaterialRadialPicker.svelte:269](../../../../src/frontend/components/inputs/MaterialRadialPicker.svelte#L269) — css-transition-5cbb65398ed382a1: css-transition = 150 ms (0.15s opacity ease); 
-- [src/frontend/components/inputs/MaterialRadialPicker.svelte:286](../../../../src/frontend/components/inputs/MaterialRadialPicker.svelte#L286) — css-transition-af79c8c19f330fff: css-transition = 150 ms (background 0.15s ease,); 
-- [src/frontend/components/inputs/MaterialRadialPicker.svelte:313](../../../../src/frontend/components/inputs/MaterialRadialPicker.svelte#L313) — css-transition-8f902406ef751034: css-transition = 200 ms (all 0.2s ease); 
-- [src/frontend/components/inputs/MaterialRadialPicker.svelte:338](../../../../src/frontend/components/inputs/MaterialRadialPicker.svelte#L338) — css-transition-6a0624a21e64b1ed: css-transition = 200 ms (transform 0.2s ease); 
+- [src/frontend/components/inputs/MaterialRadialPicker.svelte:269](../../../../src/frontend/components/inputs/MaterialRadialPicker.svelte#L269) — css-transition-5cbb65398ed382a1: css-transition = 150 ms (0.15s opacity ease);
+- [src/frontend/components/inputs/MaterialRadialPicker.svelte:286](../../../../src/frontend/components/inputs/MaterialRadialPicker.svelte#L286) — css-transition-af79c8c19f330fff: css-transition = 150 ms (background 0.15s ease,);
+- [src/frontend/components/inputs/MaterialRadialPicker.svelte:313](../../../../src/frontend/components/inputs/MaterialRadialPicker.svelte#L313) — css-transition-8f902406ef751034: css-transition = 200 ms (all 0.2s ease);
+- [src/frontend/components/inputs/MaterialRadialPicker.svelte:338](../../../../src/frontend/components/inputs/MaterialRadialPicker.svelte#L338) — css-transition-6a0624a21e64b1ed: css-transition = 200 ms (transform 0.2s ease);
 
 ## Workarounds
 

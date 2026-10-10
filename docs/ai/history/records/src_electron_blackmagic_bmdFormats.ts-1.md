@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/e3fc2b5a1c56f77db88c632b1cd6bb3e87ae613d): “1.6.1 (#3291)”
 
-Later line edits: 1; latest e3fc2b5a. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest e3fc2b5a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3291](https://github.com/ChurchApps/FreeShow/pull/3291) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3291](https://github.com/ChurchApps/FreeShow/pull/3291) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3291](https://github.com/ChurchApps/FreeShow/pull/3291) (read; no item-specific matching bullet); [pr #3291](https://github.com/ChurchApps/FreeShow/pull/3291) (read; no item-specific matching bullet)

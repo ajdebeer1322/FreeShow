@@ -16,9 +16,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/c4e7a152b98156859f4ef94c959ddbb401d693de): “1.3.6 (#1231) * ✨ Move stage items with arrow keys - Scripture settings showing up more as expected - Scripture all verse text shown if right side is closed - Updated Chinese langu”
 
-Later line edits: 22; latest 8db7e02a. Full commit messages and lineage: JSON query data.
+Later line edits: 13; latest 8db7e02a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1231](https://github.com/ChurchApps/FreeShow/pull/1231) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2461](https://github.com/ChurchApps/FreeShow/pull/2461) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1231](https://github.com/ChurchApps/FreeShow/pull/1231) (read; no item-specific matching bullet); [pr #2461](https://github.com/ChurchApps/FreeShow/pull/2461) (read; no item-specific matching bullet)
 
 ## D-timer-9bf54f51f45e952e
 

@@ -8,9 +8,9 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/components/output/preview/Preview.svelte:256](../../../../src/frontend/components/output/preview/Preview.svelte#L256) — PreviewOutputs → src/frontend/components/output/preview/PreviewOutputs.svelte; 
+- [src/frontend/components/output/preview/Preview.svelte:256](../../../../src/frontend/components/output/preview/Preview.svelte#L256) — PreviewOutputs → src/frontend/components/output/preview/PreviewOutputs.svelte;
 - [src/frontend/components/output/preview/Preview.svelte:259](../../../../src/frontend/components/output/preview/Preview.svelte#L259) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; class="hide"; icon="hide"; style="z-index: 2;"; title="preview._hide_preview"; on:click={() => (enablePreview
-- [src/frontend/components/output/preview/Preview.svelte:261](../../../../src/frontend/components/output/preview/Preview.svelte#L261) — MultiOutputs → src/frontend/components/output/preview/MultiOutputs.svelte; 
+- [src/frontend/components/output/preview/Preview.svelte:261](../../../../src/frontend/components/output/preview/Preview.svelte#L261) — MultiOutputs → src/frontend/components/output/preview/MultiOutputs.svelte;
 - [src/frontend/components/output/preview/Preview.svelte:263](../../../../src/frontend/components/output/preview/Preview.svelte#L263) — AudioMeter → src/frontend/components/drawer/audio/AudioMeter.svelte; channelId="main"; preview
 - [src/frontend/components/output/preview/Preview.svelte:267](../../../../src/frontend/components/output/preview/Preview.svelte#L267) — Button → src/frontend/components/inputs/Button.svelte; on:click={() => (enablePreview = true)}; style="width: 100%;"; center; dark
 - [src/frontend/components/output/preview/Preview.svelte:268](../../../../src/frontend/components/output/preview/Preview.svelte#L268) — Icon → src/frontend/components/helpers/Icon.svelte; id="eye"; right
@@ -20,7 +20,7 @@ No static evidence found.
 - [src/frontend/components/output/preview/Preview.svelte:284](../../../../src/frontend/components/output/preview/Preview.svelte#L284) — MediaControls → src/frontend/components/output/tools/MediaControls.svelte; currentOutput={currentBgOutput}; outputId={backgroundOutputId}
 - [src/frontend/components/output/preview/Preview.svelte:286](../../../../src/frontend/components/output/preview/Preview.svelte#L286) — Show → src/frontend/components/output/tools/Show.svelte; {currentOutput}; {ref}; {linesIndex}; {maxLines}
 - [src/frontend/components/output/preview/Preview.svelte:288](../../../../src/frontend/components/output/preview/Preview.svelte#L288) — Overlay → src/frontend/components/output/tools/Overlay.svelte; {currentOutput}
-- [src/frontend/components/output/preview/Preview.svelte:290](../../../../src/frontend/components/output/preview/Preview.svelte#L290) — Audio → src/frontend/components/output/tools/Audio.svelte; 
+- [src/frontend/components/output/preview/Preview.svelte:290](../../../../src/frontend/components/output/preview/Preview.svelte#L290) — Audio → src/frontend/components/output/tools/Audio.svelte;
 - [src/frontend/components/output/preview/Preview.svelte:295](../../../../src/frontend/components/output/preview/Preview.svelte#L295) — NextTimer → src/frontend/components/output/tools/NextTimer.svelte; {currentOutput}; timer={timer?.timer ? timer : { time: 0, paused: true, timer: {} }}
-- [src/frontend/components/output/preview/Preview.svelte:297](../../../../src/frontend/components/output/preview/Preview.svelte#L297) — TimerControls → src/frontend/components/output/tools/TimerControls.svelte; 
-- [src/frontend/components/output/preview/Preview.svelte:302](../../../../src/frontend/components/output/preview/Preview.svelte#L302) — SpotifyController → src/frontend/components/output/preview/SpotifyController.svelte; 
+- [src/frontend/components/output/preview/Preview.svelte:297](../../../../src/frontend/components/output/preview/Preview.svelte#L297) — TimerControls → src/frontend/components/output/tools/TimerControls.svelte;
+- [src/frontend/components/output/preview/Preview.svelte:302](../../../../src/frontend/components/output/preview/Preview.svelte#L302) — SpotifyController → src/frontend/components/output/preview/SpotifyController.svelte;

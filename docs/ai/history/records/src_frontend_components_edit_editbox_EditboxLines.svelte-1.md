@@ -109,7 +109,7 @@ Sources:
 
 Later line edits: 3; latest af8fd363. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #555](https://github.com/ChurchApps/FreeShow/pull/555) (read; no item-specific matching bullet); [pr #1349](https://github.com/ChurchApps/FreeShow/pull/1349) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #555](https://github.com/ChurchApps/FreeShow/pull/555) (read; no item-specific matching bullet); [pr #1349](https://github.com/ChurchApps/FreeShow/pull/1349) (read; no item-specific matching bullet)
 
 ## D-timer-7b5a59e90aaf64e2
 
@@ -125,7 +125,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/687575a35ad2f42a29638aa6751701b262e245de): “1.6.5 (#3659) * Updated languages * Delete all non-locked shows tweak * Rename project placeholders * Undo replacing a placeholder * Improved repeating ICS import #3643 * Project t”
 
-Later line edits: 3; latest 687575a3. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 687575a3. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet); [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet)
 
@@ -146,7 +146,7 @@ Sources:
 
 Later line edits: 0; latest 69383987. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1064](https://github.com/ChurchApps/FreeShow/pull/1064) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1064](https://github.com/ChurchApps/FreeShow/pull/1064) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1064](https://github.com/ChurchApps/FreeShow/pull/1064) (read; no item-specific matching bullet); [pr #1064](https://github.com/ChurchApps/FreeShow/pull/1064) (read; no item-specific matching bullet)
 
 ## D-workaround-4004c03eee3b3cc2
 
@@ -198,6 +198,25 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/0dc519a8060ad08cee791b09c2c74afa2a1b5e65): “v1.2.0 (#676) * implemented rudimentary support for WebRequests (#635) * Add xml version tag handling for xml files without newlines (#644) XML without line breaks is perfectly val”
 
-Later line edits: 1; latest 0dc519a8. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 0dc519a8. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #676](https://github.com/ChurchApps/FreeShow/pull/676) (read; no item-specific matching bullet); [pr #676](https://github.com/ChurchApps/FreeShow/pull/676) (read; no item-specific matching bullet)
+
+## D-hotspot-518617204fed88c8
+
+[guess] Module hotspot: src/frontend/components/edit/editbox/EditboxLines.svelte
+
+Location: [src/frontend/components/edit/editbox/EditboxLines.svelte:113](../../../../src/frontend/components/edit/editbox/EditboxLines.svelte#L113). Category: hotspot.
+
+Added/traced: [031f4ab1](https://github.com/ChurchApps/FreeShow/commit/031f4ab12bee09fa1bf6929af995e75193f8694c) on 2024-06-07; git log -L (earliest tracked source-line ancestor).
+
+Unresolved: local history identifies an addition/edit but gives no item-specific motive.
+
+Sources:
+
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/031f4ab12bee09fa1bf6929af995e75193f8694c): “v1.1.7 (#555) * 📄 Added x64 mac arch due to new arm64 Github Actions machines * 📄 Added x64 mac arch to zip * 🚩 Updated Italian language * 📦 Added NDI macOS arm64 support * Ndi”
+- [guess] [source](https://github.com/ChurchApps/FreeShow/issues/2899): “**Describe the bug** When using the Bamini Tamil font in FreeShow, the character "ஈ" (which corresponds to the "<" symbol in Bamini encoding) cannot be typed inside the workspace e”
+
+Later line edits: 0; latest 031f4ab1. Full commit messages and lineage: JSON query data.
+
+GitHub: [pr #555](https://github.com/ChurchApps/FreeShow/pull/555) (read; no item-specific matching bullet); [pr #555](https://github.com/ChurchApps/FreeShow/pull/555) (read; no item-specific matching bullet); [issue #2899](https://github.com/ChurchApps/FreeShow/issues/2899) (read; no item-specific matching bullet)

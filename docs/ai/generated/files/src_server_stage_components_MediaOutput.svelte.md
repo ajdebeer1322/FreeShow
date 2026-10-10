@@ -20,7 +20,7 @@ None detected.
 
 ## Timing
 
-- [src/server/stage/components/MediaOutput.svelte:12](../../../../src/server/stage/components/MediaOutput.svelte#L12) — timer-7cdde1c729d6aa5f: setInterval = 1000 ms (1000); 
+- [src/server/stage/components/MediaOutput.svelte:12](../../../../src/server/stage/components/MediaOutput.svelte#L12) — timer-7cdde1c729d6aa5f: setInterval = 1000 ms (1000);
 
 ## Workarounds
 

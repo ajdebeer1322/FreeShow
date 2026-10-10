@@ -27,7 +27,7 @@ None detected.
 
 ## Timing
 
-- [src/server/stage/util/socket.ts:56](../../../../src/server/stage/util/socket.ts#L56) — timer-335010893ab67f61: setTimeout = 3000 ms (waitingTimeout); 
+- [src/server/stage/util/socket.ts:56](../../../../src/server/stage/util/socket.ts#L56) — timer-335010893ab67f61: setTimeout = 3000 ms (waitingTimeout);
 
 ## Workarounds
 

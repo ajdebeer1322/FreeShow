@@ -23,7 +23,7 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/show/tools/Notes.svelte:17](../../../../src/frontend/components/show/tools/Notes.svelte#L17) — timer-1fdfc00b86308aec: setTimeout = 100 ms (TIME); 
+- [src/frontend/components/show/tools/Notes.svelte:17](../../../../src/frontend/components/show/tools/Notes.svelte#L17) — timer-1fdfc00b86308aec: setTimeout = 100 ms (TIME);
 - [src/frontend/components/show/tools/Notes.svelte:25](../../../../src/frontend/components/show/tools/Notes.svelte#L25) — timer-4e32912ec0df7c1d: setTimeout = 0 ms (omitted); // timeout so textarea value can update on context paste
 
 ## Workarounds

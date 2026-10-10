@@ -1,0 +1,65 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "flows": [
+    {
+      "id": "clicking-slide",
+      "title": "Clicking a slide",
+      "document": "docs/ai/flows/clicking-slide.md",
+      "verified": true
+    },
+    {
+      "id": "next-space",
+      "title": "Next slide with Space",
+      "document": "docs/ai/flows/next-space.md",
+      "verified": true
+    },
+    {
+      "id": "clearing-all",
+      "title": "Clearing all",
+      "document": "docs/ai/flows/clearing-all.md",
+      "verified": true
+    },
+    {
+      "id": "video-background",
+      "title": "Setting a video background",
+      "document": "docs/ai/flows/video-background.md",
+      "verified": true
+    },
+    {
+      "id": "opening-output",
+      "title": "Opening an output",
+      "document": "docs/ai/flows/opening-output.md",
+      "verified": true
+    },
+    {
+      "id": "editing-textbox",
+      "title": "Editing a text box",
+      "document": "docs/ai/flows/editing-textbox.md",
+      "verified": true
+    },
+    {
+      "id": "saving",
+      "title": "Saving",
+      "document": "docs/ai/flows/saving.md",
+      "verified": true
+    },
+    {
+      "id": "showing-scripture",
+      "title": "Showing scripture",
+      "document": "docs/ai/flows/showing-scripture.md",
+      "verified": true
+    },
+    {
+      "id": "playing-audio",
+      "title": "Playing audio",
+      "document": "docs/ai/flows/playing-audio.md",
+      "verified": true
+    },
+    {
+      "id": "starting-ndi",
+      "title": "Starting NDI",
+      "document": "docs/ai/flows/starting-ndi.md",
+      "verified": true
+    }
+  ]
+}

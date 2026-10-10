@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/f11403c7eb26183695b5faabaf198b355afe4054): “1.5.0-beta.3 (#2143) * Added back math to new number inputs - Even faster performance - Removed unused components - Small tweaks * ✨ Enhancements - Change media fit blur amount - S”
 
-Later line edits: 9; latest 687575a3. Full commit messages and lineage: JSON query data.
+Later line edits: 3; latest 687575a3. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2143](https://github.com/ChurchApps/FreeShow/pull/2143) (read; no item-specific matching bullet); [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet)

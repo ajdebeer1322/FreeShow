@@ -34,6 +34,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6679b31329c7b1031420f8737098dbb8da1f8427): “📑 Rewriting history - A lot faster EasyWorship import - Importing from another application will create its own category - Updated initialize popup looks - All project folders will”
 
-Later line edits: 3; latest 6679b313. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 6679b313. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

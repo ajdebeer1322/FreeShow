@@ -118,8 +118,8 @@ No static evidence found.
 ## Timing
 
 - [src/frontend/IPC/responsesMain.ts:255](../../../../src/frontend/IPC/responsesMain.ts#L255) — timer-701dcf5794003745: setTimeout = 2000 ms (2000); // Remove completed/errored downloads after a short delay
-- [src/frontend/IPC/responsesMain.ts:279](../../../../src/frontend/IPC/responsesMain.ts#L279) — timer-fd3bd1d50125472f: setTimeout = dynamic ms (data.status === "error" ? 7000 : 3000); 
-- [src/frontend/IPC/responsesMain.ts:354](../../../../src/frontend/IPC/responsesMain.ts#L354) — timer-c50dcc3732c60451: setTimeout = 1000 ms (1000); 
+- [src/frontend/IPC/responsesMain.ts:279](../../../../src/frontend/IPC/responsesMain.ts#L279) — timer-fd3bd1d50125472f: setTimeout = dynamic ms (data.status === "error" ? 7000 : 3000);
+- [src/frontend/IPC/responsesMain.ts:354](../../../../src/frontend/IPC/responsesMain.ts#L354) — timer-c50dcc3732c60451: setTimeout = 1000 ms (1000);
 
 ## Workarounds
 

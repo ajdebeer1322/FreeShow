@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/e5f66233fa0187a258128aa929a3f0c71fa43948): “Phase 2: required code changes for Svelte 5 (legacy mode) - mount(App, { target }) instead of new App({ target }) in the 6 entry points (frontend/main.ts and server/{cam,controller”
 
-Later line edits: 2; latest e5f66233. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest e5f66233. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 
@@ -36,4 +36,4 @@ Sources:
 
 Later line edits: 0; latest 81f55552. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2964](https://github.com/ChurchApps/FreeShow/pull/2964) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2964](https://github.com/ChurchApps/FreeShow/pull/2964) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2964](https://github.com/ChurchApps/FreeShow/pull/2964) (read; no item-specific matching bullet); [pr #2964](https://github.com/ChurchApps/FreeShow/pull/2964) (read; no item-specific matching bullet)

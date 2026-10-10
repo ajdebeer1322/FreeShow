@@ -35,7 +35,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/b5946b2dafb6207a5372eec5f9943ce283e3a508): “1.5.7 (#2839) * Added back forceLogin - Fixed on B1Admin * Fixed clear background not working if no output screen exists * Updated languages * fix: improve split long verses with t”
 
-Later line edits: 32; latest b5946b2d. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest b5946b2d. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet); [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet)
 
@@ -53,7 +53,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/b5946b2dafb6207a5372eec5f9943ce283e3a508): “1.5.7 (#2839) * Added back forceLogin - Fixed on B1Admin * Fixed clear background not working if no output screen exists * Updated languages * fix: improve split long verses with t”
 
-Later line edits: 33; latest b5946b2d. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest b5946b2d. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet); [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet)
 
@@ -125,7 +125,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/f191003e155e0e43fa4436584ed26fb9d8502a16): “1.5.7-beta.1 (#2755) * Catch bad file names in sync * Updated languages * Fixed "Add folder" missing #2701 * Fixed Scripture freeze #2707 * Fixed Scripture freeze #2707 * Notes lin”
 
-Later line edits: 25; latest f191003e. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest f191003e. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2755](https://github.com/ChurchApps/FreeShow/pull/2755) (read; no item-specific matching bullet); [pr #2755](https://github.com/ChurchApps/FreeShow/pull/2755) (read; no item-specific matching bullet)
 
@@ -144,7 +144,7 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/bd9c476f385dbb4cd40853623ea804feccc4c0e7): “1.4.8 (#1895) * 🖼️ Online media will be downloaded for offline use - Timer condition only show if running - Hold CTRL/CMD to change dropdown value - ALT to deactivate slide layers”
 - [code] src/frontend/components/show/Slides.svelte:293: “// e.preventDefault()”
 
-Later line edits: 19; latest bd9c476f. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest bd9c476f. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #1895](https://github.com/ChurchApps/FreeShow/pull/1895) (read; no item-specific matching bullet); [pr #1895](https://github.com/ChurchApps/FreeShow/pull/1895) (read; no item-specific matching bullet)
 
@@ -162,7 +162,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6085de9e5c4d6745bb3bcdbe2fa672f3136d9e72): “v1.1.8 (#616) * 🚩 Updated languages * ✨ Optimization - Consistent saving - Better organization & naming - Better startup - Playlist names decoded * 🎨 Custom border radius - Fixed”
 
-Later line edits: 1; latest 6085de9e. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 6085de9e. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #616](https://github.com/ChurchApps/FreeShow/pull/616) (read; no item-specific matching bullet); [pr #616](https://github.com/ChurchApps/FreeShow/pull/616) (read; no item-specific matching bullet)
 
@@ -198,9 +198,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/269dd93f13ca46e84086e8ea41b095ed485e7fd9): “1.6.4 (#3529) * Set gradient as template background #3518 * Fixed template sometimes removing incorrect items * Slide preview optimizations - Tweaks * Fixed default auto size issue”
 
-Later line edits: 2; latest 269dd93f. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 269dd93f. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (read; no item-specific matching bullet); [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (read; no item-specific matching bullet)
 
 ## D-timer-7a348766e7210457
 
@@ -216,9 +216,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/c8595b09dbd91134de37d21c7929f49ebd14d6f9): “1.5.0 (#2170) * 1.5.0-beta.4 (#2152) * Fixed template items order - Fixed template button not showing up for scripture shows * Auto prevent sleep mode * Increased PCO items from 25”
 
-Later line edits: 1; latest c8595b09. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest c8595b09. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2170](https://github.com/ChurchApps/FreeShow/pull/2170) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2170](https://github.com/ChurchApps/FreeShow/pull/2170) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2170](https://github.com/ChurchApps/FreeShow/pull/2170) (read; no item-specific matching bullet); [pr #2170](https://github.com/ChurchApps/FreeShow/pull/2170) (read; no item-specific matching bullet)
 
 ## D-workaround-127ffeee6fdfc29a
 
@@ -234,7 +234,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/304ed2f6993e778aed9553ebf45752a9442a19be): “Play YouTube videos, better live/capture Added first webcam server”
 
-Later line edits: 18; latest 253a9573. Full commit messages and lineage: JSON query data.
+Later line edits: 15; latest 253a9573. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 
@@ -252,7 +252,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/b908bc173d2b56adde342ba705f8c1424a459134): “1.4.6 (#1777) * Fix TypeError when dynamicRSS is undefined in getDynamicIds (#1764) Resolves error: "Cannot read properties of undefined (reading 'length')" when get(special).dynam”
 
-Later line edits: 22; latest b908bc17. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest b908bc17. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #1777](https://github.com/ChurchApps/FreeShow/pull/1777) (read; no item-specific matching bullet); [pr #1777](https://github.com/ChurchApps/FreeShow/pull/1777) (read; no item-specific matching bullet)
 
@@ -270,6 +270,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/f933e39d6c72743609ccda8be5d5221e3dd98d24): “📺 External Screen & &#91;Reorder Slides&#93;”
 
-Later line edits: 1; latest f933e39d. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest f933e39d. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

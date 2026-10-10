@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/5eee3496546df9bad97b96eb6e72c431ad888789): “📚 Groups!”
 
-Later line edits: 3; latest 253a9573. Full commit messages and lineage: JSON query data.
+Later line edits: 2; latest 253a9573. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 

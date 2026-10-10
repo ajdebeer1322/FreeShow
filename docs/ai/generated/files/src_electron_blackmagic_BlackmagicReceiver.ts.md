@@ -28,7 +28,7 @@ None detected.
 
 ## Timing
 
-- [src/electron/blackmagic/BlackmagicReceiver.ts:81](../../../../src/electron/blackmagic/BlackmagicReceiver.ts#L81) — timer-fbff0b3d8f04e3d5: setInterval = dynamic ms (Math.max(10, Math.round(1000 / frameRate))); 
+- [src/electron/blackmagic/BlackmagicReceiver.ts:81](../../../../src/electron/blackmagic/BlackmagicReceiver.ts#L81) — timer-fbff0b3d8f04e3d5: setInterval = dynamic ms (Math.max(10, Math.round(1000 / frameRate)));
 
 ## Workarounds
 

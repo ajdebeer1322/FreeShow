@@ -9,7 +9,7 @@ No static evidence found.
 ## Rendered components and props
 
 - [src/frontend/components/stage/StageLayouts.svelte:90](../../../../src/frontend/components/stage/StageLayouts.svelte#L90) — Autoscroll → src/frontend/components/system/Autoscroll.svelte; {offset}; bind:scrollElem; timeout={150}; smoothTimeout={0}
-- [src/frontend/components/stage/StageLayouts.svelte:94](../../../../src/frontend/components/stage/StageLayouts.svelte#L94) — StageSlide → src/frontend/components/stage/StageSlide.svelte; id={show.id}; layout={show}; active={$activeStage.id === show.id}; on:click={(e) => { if (!e.ctrlKey && !e.metaKey && 
+- [src/frontend/components/stage/StageLayouts.svelte:94](../../../../src/frontend/components/stage/StageLayouts.svelte#L94) — StageSlide → src/frontend/components/stage/StageSlide.svelte; id={show.id}; layout={show}; active={$activeStage.id === show.id}; on:click={(e) => { if (!e.ctrlKey && !e.metaKey &&
 - [src/frontend/components/stage/StageLayouts.svelte:107](../../../../src/frontend/components/stage/StageLayouts.svelte#L107) — SkeletonStageSlide → src/frontend/components/stage/SkeletonStageSlide.svelte; layout={show}; active={$activeStage.id === show.id}; on:click={(e) => { if (!e.ctrlKey && !e.metaKey &
 - [src/frontend/components/stage/StageLayouts.svelte:125](../../../../src/frontend/components/stage/StageLayouts.svelte#L125) — Center → src/frontend/components/system/Center.svelte; faded
 - [src/frontend/components/stage/StageLayouts.svelte:126](../../../../src/frontend/components/stage/StageLayouts.svelte#L126) — T → src/frontend/components/helpers/T.svelte; id="empty.layouts"

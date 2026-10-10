@@ -36,8 +36,8 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/audio/audioPlaylist.ts:98](../../../../src/frontend/audio/audioPlaylist.ts#L98) — timer-32dda56df87476ed: setTimeout = dynamic ms (crossfadeDuration * 1000); 
-- [src/frontend/audio/audioPlaylist.ts:147](../../../../src/frontend/audio/audioPlaylist.ts#L147) — timer-1a58d6ba5292c42c: setTimeout = 100 ms (100); 
+- [src/frontend/audio/audioPlaylist.ts:98](../../../../src/frontend/audio/audioPlaylist.ts#L98) — timer-32dda56df87476ed: setTimeout = dynamic ms (crossfadeDuration * 1000);
+- [src/frontend/audio/audioPlaylist.ts:147](../../../../src/frontend/audio/audioPlaylist.ts#L147) — timer-1a58d6ba5292c42c: setTimeout = 100 ms (100);
 
 ## Workarounds
 

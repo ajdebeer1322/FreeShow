@@ -27,7 +27,7 @@ None detected.
 
 ## Timing
 
-- [src/electron/worshipTools/worshipTools.ts:284](../../../../src/electron/worshipTools/worshipTools.ts#L284) — timer-56e72a7b442a88e6: setTimeout = 40000 ms (READ_RESPONSE_TIMEOUT); 
+- [src/electron/worshipTools/worshipTools.ts:284](../../../../src/electron/worshipTools/worshipTools.ts#L284) — timer-56e72a7b442a88e6: setTimeout = 40000 ms (READ_RESPONSE_TIMEOUT);
 
 ## Workarounds
 

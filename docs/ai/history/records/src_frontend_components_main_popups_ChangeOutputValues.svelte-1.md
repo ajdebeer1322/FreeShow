@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/c193fda76be08b09c92fe886fe9dd96b33d2e89e): “1.5.0-beta.1 (#2066) * 🚩 Updated languages * Update makesnap (#2019) * Don't fail on directory creation if exists * Update snapcraft syntax Per warning: "Running snapcraft without”
 
-Later line edits: 1; latest c193fda7. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest c193fda7. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2066](https://github.com/ChurchApps/FreeShow/pull/2066) (read; no item-specific matching bullet); [pr #2066](https://github.com/ChurchApps/FreeShow/pull/2066) (read; no item-specific matching bullet)

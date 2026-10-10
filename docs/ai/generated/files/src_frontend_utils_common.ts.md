@@ -155,15 +155,15 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/utils/common.ts:39](../../../../src/frontend/utils/common.ts#L39) — timer-9f6b8e5cf5368ba6: setTimeout = dynamic ms (timeout * 1000); 
+- [src/frontend/utils/common.ts:39](../../../../src/frontend/utils/common.ts#L39) — timer-9f6b8e5cf5368ba6: setTimeout = dynamic ms (timeout * 1000);
 - [src/frontend/utils/common.ts:48](../../../../src/frontend/utils/common.ts#L48) — timer-79ea7d9ed01d74dc: setTimeout = dynamic ms (Number(ms)); // async wait (instead of timeouts)
-- [src/frontend/utils/common.ts:60](../../../../src/frontend/utils/common.ts#L60) — timer-f6f9a86a55c5f7b5: setTimeout = dynamic ms (timeoutValue); 
-- [src/frontend/utils/common.ts:65](../../../../src/frontend/utils/common.ts#L65) — timer-0af0b0886aab9a74: setInterval = dynamic ms (intervalTime); 
-- [src/frontend/utils/common.ts:129](../../../../src/frontend/utils/common.ts#L129) — timer-8601d857a2301a3e: setTimeout = dynamic ms (saveInterval); 
-- [src/frontend/utils/common.ts:176](../../../../src/frontend/utils/common.ts#L176) — timer-6f0010303394167b: setTimeout = 1800 ms (1800); 
-- [src/frontend/utils/common.ts:217](../../../../src/frontend/utils/common.ts#L217) — timer-9447b9eca0f56d8d: setTimeout = 100 ms (100); 
-- [src/frontend/utils/common.ts:247](../../../../src/frontend/utils/common.ts#L247) — timer-8337e2f5a59c7d60: setTimeout = dynamic ms (1000 / maxUpdatesPerSecond); 
-- [src/frontend/utils/common.ts:263](../../../../src/frontend/utils/common.ts#L263) — timer-5f7db6fe59ea035c: setTimeout = dynamic ms (maxUpdatesMs); 
+- [src/frontend/utils/common.ts:60](../../../../src/frontend/utils/common.ts#L60) — timer-f6f9a86a55c5f7b5: setTimeout = dynamic ms (timeoutValue);
+- [src/frontend/utils/common.ts:65](../../../../src/frontend/utils/common.ts#L65) — timer-0af0b0886aab9a74: setInterval = dynamic ms (intervalTime);
+- [src/frontend/utils/common.ts:129](../../../../src/frontend/utils/common.ts#L129) — timer-8601d857a2301a3e: setTimeout = dynamic ms (saveInterval);
+- [src/frontend/utils/common.ts:176](../../../../src/frontend/utils/common.ts#L176) — timer-6f0010303394167b: setTimeout = 1800 ms (1800);
+- [src/frontend/utils/common.ts:217](../../../../src/frontend/utils/common.ts#L217) — timer-9447b9eca0f56d8d: setTimeout = 100 ms (100);
+- [src/frontend/utils/common.ts:247](../../../../src/frontend/utils/common.ts#L247) — timer-8337e2f5a59c7d60: setTimeout = dynamic ms (1000 / maxUpdatesPerSecond);
+- [src/frontend/utils/common.ts:263](../../../../src/frontend/utils/common.ts#L263) — timer-5f7db6fe59ea035c: setTimeout = dynamic ms (maxUpdatesMs);
 
 ## Workarounds
 

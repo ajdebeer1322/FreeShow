@@ -1,3 +1,0 @@
-[
-  {"file":"src/electron/IPC/responsesMain.ts","line":297,"endLine":297,"channel":"MAIN","keys":["AI_LLM_COMPLETE"],"role":"receive","direction":"renderer/client → electron","symbol":null,"payload":null,"expression":"[Main.AI_LLM_COMPLETE]: (data) => completeLLM(data)","dynamic":false}
-]

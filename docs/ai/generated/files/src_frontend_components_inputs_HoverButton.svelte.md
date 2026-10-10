@@ -29,9 +29,9 @@ None detected.
 ## Timing
 
 - [src/frontend/components/inputs/HoverButton.svelte:15](../../../../src/frontend/components/inputs/HoverButton.svelte#L15) — timer-80fe52a473c9464d: setTimeout = 800 ms (800); // fade out (to show itself)
-- [src/frontend/components/inputs/HoverButton.svelte:39](../../../../src/frontend/components/inputs/HoverButton.svelte#L39) — css-transition-01a897d18cc24ee4: css-transition = 2000 ms (2s opacity); 
-- [src/frontend/components/inputs/HoverButton.svelte:47](../../../../src/frontend/components/inputs/HoverButton.svelte#L47) — css-transition-307f8bc5731bfbac: css-transition = 200 ms (0.2s opacity); 
-- [src/frontend/components/inputs/HoverButton.svelte:58](../../../../src/frontend/components/inputs/HoverButton.svelte#L58) — css-transition-87fc4f52cc4bf6bf: css-transition = 400 ms (0.4s opacity); 
+- [src/frontend/components/inputs/HoverButton.svelte:39](../../../../src/frontend/components/inputs/HoverButton.svelte#L39) — css-transition-01a897d18cc24ee4: css-transition = 2000 ms (2s opacity);
+- [src/frontend/components/inputs/HoverButton.svelte:47](../../../../src/frontend/components/inputs/HoverButton.svelte#L47) — css-transition-307f8bc5731bfbac: css-transition = 200 ms (0.2s opacity);
+- [src/frontend/components/inputs/HoverButton.svelte:58](../../../../src/frontend/components/inputs/HoverButton.svelte#L58) — css-transition-87fc4f52cc4bf6bf: css-transition = 400 ms (0.4s opacity);
 
 ## Workarounds
 

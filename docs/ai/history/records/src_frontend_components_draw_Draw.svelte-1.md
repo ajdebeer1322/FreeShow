@@ -17,7 +17,7 @@ Sources:
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/e5f66233fa0187a258128aa929a3f0c71fa43948): “Phase 2: required code changes for Svelte 5 (legacy mode) - mount(App, { target }) instead of new App({ target }) in the 6 entry points (frontend/main.ts and server/{cam,controller”
 - [code] src/frontend/components/draw/Draw.svelte:26: “<!-- can't fade out, because Svelte bug will make it stay forever if tabs changed from Draw while active -->”
 
-Later line edits: 8; latest e5f66233. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest e5f66233. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 
@@ -36,7 +36,7 @@ Sources:
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/e5f66233fa0187a258128aa929a3f0c71fa43948): “Phase 2: required code changes for Svelte 5 (legacy mode) - mount(App, { target }) instead of new App({ target }) in the 6 entry points (frontend/main.ts and server/{cam,controller”
 - [code] src/frontend/components/draw/Draw.svelte:26: “<!-- can't fade out, because Svelte bug will make it stay forever if tabs changed from Draw while active -->”
 
-Later line edits: 8; latest e5f66233. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest e5f66233. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 
@@ -57,4 +57,4 @@ Sources:
 
 Later line edits: 0; latest 0570c5b8. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1838](https://github.com/ChurchApps/FreeShow/pull/1838) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1838](https://github.com/ChurchApps/FreeShow/pull/1838) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1838](https://github.com/ChurchApps/FreeShow/pull/1838) (read; no item-specific matching bullet); [pr #1838](https://github.com/ChurchApps/FreeShow/pull/1838) (read; no item-specific matching bullet)

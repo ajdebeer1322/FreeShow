@@ -9,7 +9,7 @@ No static evidence found.
 ## Rendered components and props
 
 - [src/frontend/components/show/Show.svelte:72](../../../../src/frontend/components/show/Show.svelte#L72) — FocusMode → src/frontend/components/show/focus/FocusMode.svelte; normalView
-- [src/frontend/components/show/Show.svelte:75](../../../../src/frontend/components/show/Show.svelte#L75) — MediaPreview → src/frontend/components/show/media/MediaPreview.svelte; 
+- [src/frontend/components/show/Show.svelte:75](../../../../src/frontend/components/show/Show.svelte#L75) — MediaPreview → src/frontend/components/show/media/MediaPreview.svelte;
 - [src/frontend/components/show/Show.svelte:77](../../../../src/frontend/components/show/Show.svelte#L77) — AudioPreview → src/frontend/components/show/AudioPreview.svelte; active={$activeShow}
 - [src/frontend/components/show/Show.svelte:81](../../../../src/frontend/components/show/Show.svelte#L81) — Section → src/frontend/components/show/Section.svelte; section={show}
 - [src/frontend/components/show/Show.svelte:84](../../../../src/frontend/components/show/Show.svelte#L84) — OverlayPreview → src/frontend/components/show/overlay/OverlayPreview.svelte; {show}
@@ -24,9 +24,9 @@ No static evidence found.
 - [src/frontend/components/show/Show.svelte:122](../../../../src/frontend/components/show/Show.svelte#L122) — NdiStream → src/frontend/components/drawer/live/NDIStream.svelte; screen={{ id: show.id, name: show.name \|\| "" }}; background
 - [src/frontend/components/show/Show.svelte:126](../../../../src/frontend/components/show/Show.svelte#L126) — FolderShow → src/frontend/components/show/folder/FolderShow.svelte; path={show.id}; index={show.index \|\| 0}
 - [src/frontend/components/show/Show.svelte:129](../../../../src/frontend/components/show/Show.svelte#L129) — Slides → src/frontend/components/show/Slides.svelte; showId={$activeShow?.id \|\| ""}
-- [src/frontend/components/show/Show.svelte:131](../../../../src/frontend/components/show/Show.svelte#L131) — ProjectShowPlaceholder → src/frontend/components/show/placeholder/ProjectShowPlaceholder.svelte; 
-- [src/frontend/components/show/Show.svelte:136](../../../../src/frontend/components/show/Show.svelte#L136) — Splash → src/frontend/components/main/Splash.svelte; 
-- [src/frontend/components/show/Show.svelte:141](../../../../src/frontend/components/show/Show.svelte#L141) — SlideBar → src/frontend/components/slide/SlideBar.svelte; 
-- [src/frontend/components/show/Show.svelte:145](../../../../src/frontend/components/show/Show.svelte#L145) — ShowNotes → src/frontend/components/show/ShowNotes.svelte; 
+- [src/frontend/components/show/Show.svelte:131](../../../../src/frontend/components/show/Show.svelte#L131) — ProjectShowPlaceholder → src/frontend/components/show/placeholder/ProjectShowPlaceholder.svelte;
+- [src/frontend/components/show/Show.svelte:136](../../../../src/frontend/components/show/Show.svelte#L136) — Splash → src/frontend/components/main/Splash.svelte;
+- [src/frontend/components/show/Show.svelte:141](../../../../src/frontend/components/show/Show.svelte#L141) — SlideBar → src/frontend/components/slide/SlideBar.svelte;
+- [src/frontend/components/show/Show.svelte:145](../../../../src/frontend/components/show/Show.svelte#L145) — ShowNotes → src/frontend/components/show/ShowNotes.svelte;
 - [src/frontend/components/show/Show.svelte:150](../../../../src/frontend/components/show/Show.svelte#L150) — Resizeable → src/frontend/components/system/Resizeable.svelte; id="timeline"; side="bottom"; maxWidth={DEFAULT_WIDTH}; minWidth={40}
 - [src/frontend/components/show/Show.svelte:153](../../../../src/frontend/components/show/Show.svelte#L153) — Timeline → src/frontend/components/timeline/Timeline.svelte; type="show"; isClosed={$resized.timeline <= 40}

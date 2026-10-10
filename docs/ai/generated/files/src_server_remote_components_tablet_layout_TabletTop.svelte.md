@@ -27,7 +27,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/server/remote/components/tablet/layout/TabletTop.svelte:78](../../../../src/server/remote/components/tablet/layout/TabletTop.svelte#L78) — css-transition-acf41c570e54a40f: css-transition = 200 ms (opacity 0.2s); 
+- [src/server/remote/components/tablet/layout/TabletTop.svelte:78](../../../../src/server/remote/components/tablet/layout/TabletTop.svelte#L78) — css-transition-acf41c570e54a40f: css-transition = 200 ms (opacity 0.2s);
 
 ## Workarounds
 

@@ -146,7 +146,7 @@ No static evidence found.
 ## Timing
 
 - [src/frontend/utils/popup.ts:194](../../../../src/frontend/utils/popup.ts#L194) — timer-6f2e3d826604ecd6: setInterval = 300 ms (300); // check that popup is still active
-- [src/frontend/utils/popup.ts:207](../../../../src/frontend/utils/popup.ts#L207) — timer-5fa2411406a8d2b7: setTimeout = 50 ms (50); 
+- [src/frontend/utils/popup.ts:207](../../../../src/frontend/utils/popup.ts#L207) — timer-5fa2411406a8d2b7: setTimeout = 50 ms (50);
 
 ## Workarounds
 

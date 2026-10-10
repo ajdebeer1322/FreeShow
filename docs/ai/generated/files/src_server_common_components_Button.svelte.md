@@ -42,7 +42,7 @@ None detected.
 
 ## Timing
 
-- [src/server/common/components/Button.svelte:30](../../../../src/server/common/components/Button.svelte#L30) — css-transition-c6475bc0a5dc3675: css-transition = 150 ms (background-color 0.15s ease); 
+- [src/server/common/components/Button.svelte:30](../../../../src/server/common/components/Button.svelte#L30) — css-transition-c6475bc0a5dc3675: css-transition = 150 ms (background-color 0.15s ease);
 
 ## Workarounds
 

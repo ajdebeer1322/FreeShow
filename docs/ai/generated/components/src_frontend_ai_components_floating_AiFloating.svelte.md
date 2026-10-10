@@ -8,7 +8,7 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/ai/components/floating/AiFloating.svelte:202](../../../../src/frontend/ai/components/floating/AiFloating.svelte#L202) — SmartAction → src/frontend/ai/components/floating/SmartAction.svelte; 
+- [src/frontend/ai/components/floating/AiFloating.svelte:202](../../../../src/frontend/ai/components/floating/AiFloating.svelte#L202) — SmartAction → src/frontend/ai/components/floating/SmartAction.svelte;
 - [src/frontend/ai/components/floating/AiFloating.svelte:206](../../../../src/frontend/ai/components/floating/AiFloating.svelte#L206) — AiRing → src/frontend/ai/components/floating/AiRing.svelte; {state}; {audioLevel}; borderRadius={isOpen ? "20px" : "50%"}; opacity={state === "inactive" \|\| isOpen ? 0.8 : 0.4}; fil
 - [src/frontend/ai/components/floating/AiFloating.svelte:208](../../../../src/frontend/ai/components/floating/AiFloating.svelte#L208) — AiVisual → src/frontend/ai/components/floating/AiVisual.svelte; {state}; on:click={toggleExpand}
 - [src/frontend/ai/components/floating/AiFloating.svelte:212](../../../../src/frontend/ai/components/floating/AiFloating.svelte#L212) — Tabs → src/frontend/components/main/Tabs.svelte; {tabs}; bind:active={activeTab}
@@ -16,4 +16,4 @@ No static evidence found.
 - [src/frontend/ai/components/floating/AiFloating.svelte:219](../../../../src/frontend/ai/components/floating/AiFloating.svelte#L219) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; icon="settings"; title="menu.settings"; style="padding: 10px;"; on:click={openSettings}
 - [src/frontend/ai/components/floating/AiFloating.svelte:221](../../../../src/frontend/ai/components/floating/AiFloating.svelte#L221) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; class="popup-close"; icon="close"; iconSize={1.2}; title="actions.close"; style="padding: 8px;"; on:click={to
 - [src/frontend/ai/components/floating/AiFloating.svelte:226](../../../../src/frontend/ai/components/floating/AiFloating.svelte#L226) — AiTranscription → src/frontend/ai/components/floating/AiTranscription.svelte; {state}
-- [src/frontend/ai/components/floating/AiFloating.svelte:228](../../../../src/frontend/ai/components/floating/AiFloating.svelte#L228) — AiChat → src/frontend/ai/components/floating/AiChat.svelte; 
+- [src/frontend/ai/components/floating/AiFloating.svelte:228](../../../../src/frontend/ai/components/floating/AiFloating.svelte#L228) — AiChat → src/frontend/ai/components/floating/AiChat.svelte;

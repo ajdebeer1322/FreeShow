@@ -22,8 +22,8 @@ None detected.
 ## Timing
 
 - [src/server/common/components/HoverButton.svelte:12](../../../../src/server/common/components/HoverButton.svelte#L12) — timer-f8c6c10d19e97a61: setTimeout = 800 ms (800); // fade out (to show itself)
-- [src/server/common/components/HoverButton.svelte:34](../../../../src/server/common/components/HoverButton.svelte#L34) — css-transition-12ce33dae285f5a7: css-transition = 2000 ms (2s opacity); 
-- [src/server/common/components/HoverButton.svelte:42](../../../../src/server/common/components/HoverButton.svelte#L42) — css-transition-1b82bc7afb945522: css-transition = 200 ms (0.2s opacity); 
+- [src/server/common/components/HoverButton.svelte:34](../../../../src/server/common/components/HoverButton.svelte#L34) — css-transition-12ce33dae285f5a7: css-transition = 2000 ms (2s opacity);
+- [src/server/common/components/HoverButton.svelte:42](../../../../src/server/common/components/HoverButton.svelte#L42) — css-transition-1b82bc7afb945522: css-transition = 200 ms (0.2s opacity);
 
 ## Workarounds
 

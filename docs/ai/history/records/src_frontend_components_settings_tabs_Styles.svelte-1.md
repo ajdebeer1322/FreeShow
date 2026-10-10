@@ -34,6 +34,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/425a7419e5db66843009702d4b88a66d7241d811): “1.4.9-beta.2 (#1975) * ✔️ Fixed freeze when playing PDF files * ✨ UI updates * 🎨 Color update * 🎨 Updated General settings * 🚩 Updated Chinese language * Feature/quicksearch UI ”
 
-Later line edits: 12; latest 425a7419. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 425a7419. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #1975](https://github.com/ChurchApps/FreeShow/pull/1975) (read; no item-specific matching bullet); [pr #1975](https://github.com/ChurchApps/FreeShow/pull/1975) (read; no item-specific matching bullet)

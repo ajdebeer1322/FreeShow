@@ -35,7 +35,6 @@ Reachability includes conditional imports. Receiver registration shared by main/
 - [src/server/stage/util/receiver.ts:43](../../../../src/server/stage/util/receiver.ts#L43) — STAGE/LAYOUT
 - [src/server/stage/util/receiver.ts:58](../../../../src/server/stage/util/receiver.ts#L58) — STAGE/SWITCH
 - [src/server/stage/util/receiver.ts:60](../../../../src/server/stage/util/receiver.ts#L60) — STAGE/OUT
-- [src/server/stage/util/receiver.ts:64](../../../../src/server/stage/util/receiver.ts#L64) — STAGE/outputId
 - [src/server/stage/util/receiver.ts:71](../../../../src/server/stage/util/receiver.ts#L71) — STAGE/OUT_SLIDE_CACHE
 - [src/server/stage/util/receiver.ts:72](../../../../src/server/stage/util/receiver.ts#L72) — STAGE/BACKGROUND
 - [src/server/stage/util/receiver.ts:73](../../../../src/server/stage/util/receiver.ts#L73) — STAGE/MEDIA

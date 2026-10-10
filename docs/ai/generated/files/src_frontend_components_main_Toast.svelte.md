@@ -22,8 +22,8 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/main/Toast.svelte:31](../../../../src/frontend/components/main/Toast.svelte#L31) — timer-9a09e989a5d94d37: setTimeout = 4000 ms (toastDuration); 
-- [src/frontend/components/main/Toast.svelte:48](../../../../src/frontend/components/main/Toast.svelte#L48) — transition-8e100143cb8bb526: transition-directive = dynamic ms (default transition parameters); 
+- [src/frontend/components/main/Toast.svelte:31](../../../../src/frontend/components/main/Toast.svelte#L31) — timer-9a09e989a5d94d37: setTimeout = 4000 ms (toastDuration);
+- [src/frontend/components/main/Toast.svelte:48](../../../../src/frontend/components/main/Toast.svelte#L48) — transition-8e100143cb8bb526: transition-directive = dynamic ms (default transition parameters);
 
 ## Workarounds
 

@@ -85,7 +85,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 - [src/frontend/audio/audioPlayer.ts:400](../../../../src/frontend/audio/audioPlayer.ts#L400) — playingAudio.update((a) => { const item = a&#91;id&#93; if (item?.audio) { try { ;(item.audio as any)._cleanupListeners?.() item.audio.pause() item.audio.src = "" item.audio.removeAttribut
 - [src/frontend/audio/audioPlayer.ts:666](../../../../src/frontend/audio/audioPlayer.ts#L666) — playingAudio.update((a) => { if (!a&#91;id&#93;) return a a&#91;id&#93;&#91;key&#93; = value return a })
 - [src/frontend/audio/audioPlayer.ts:674](../../../../src/frontend/audio/audioPlayer.ts#L674) — playingAudio.update((a) => { if (!a&#91;id&#93;?.audio) return a a&#91;id&#93;.audio&#91;key&#93; = key === "volume" ? Math.min(1, Math.max(0, value)) : value if (key === "volume") AudioAnalyser.setSource
-- [src/frontend/components/output/tools/Audio.svelte:68](../../../../src/frontend/components/output/tools/Audio.svelte#L68) — playingAudio.update((a) => { if (a&#91;id&#93;?.audio?.currentTime === undefined) return a a&#91;id&#93;.audio.currentTime = e.target.value \|\| 0 // something (in audio.ts I guess) plays the audio 
+- [src/frontend/components/output/tools/Audio.svelte:68](../../../../src/frontend/components/output/tools/Audio.svelte#L68) — playingAudio.update((a) => { if (a&#91;id&#93;?.audio?.currentTime === undefined) return a a&#91;id&#93;.audio.currentTime = e.target.value \|\| 0 // something (in audio.ts I guess) plays the audio
 
 ## Transport
 

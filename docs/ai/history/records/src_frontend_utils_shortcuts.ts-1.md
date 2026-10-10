@@ -36,7 +36,7 @@ Sources:
 
 Later line edits: 0; latest bdc13129. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #953](https://github.com/ChurchApps/FreeShow/pull/953) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #953](https://github.com/ChurchApps/FreeShow/pull/953) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #953](https://github.com/ChurchApps/FreeShow/pull/953) (read; no item-specific matching bullet); [pr #953](https://github.com/ChurchApps/FreeShow/pull/953) (read; no item-specific matching bullet)
 
 ## D-timer-02487d4a128bab12
 
@@ -52,7 +52,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/4d9a70036177673e92beb2d88e0a37c278503639): “v1.1.6 (#500) * 🖼 Locate audio files in drawer folders - Locate media working more consistently with cloud * 🚩 Updated Italian and Slovenian language - Fixed error parsing data s”
 
-Later line edits: 1; latest 4d9a7003. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 4d9a7003. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #500](https://github.com/ChurchApps/FreeShow/pull/500) (read; no item-specific matching bullet); [pr #500](https://github.com/ChurchApps/FreeShow/pull/500) (read; no item-specific matching bullet)
 
@@ -88,9 +88,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/8db7e02ab54c75e08ca2228e0488c2d23a226ee1): “1.5.4 (#2461) * Tighten scripture template overrides (#2447) * Tighten scripture template overrides * Formatting --------- Co-authored-by: Kristoffer <kristoffervassbo@gmail.com> *”
 
-Later line edits: 3; latest 8db7e02a. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 8db7e02a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2461](https://github.com/ChurchApps/FreeShow/pull/2461) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2461](https://github.com/ChurchApps/FreeShow/pull/2461) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2461](https://github.com/ChurchApps/FreeShow/pull/2461) (read; no item-specific matching bullet); [pr #2461](https://github.com/ChurchApps/FreeShow/pull/2461) (read; no item-specific matching bullet)
 
 ## D-timer-49cc82e274a964e9
 
@@ -124,9 +124,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/8e3de40166c2872866dc5b3fc37b97eb882aed2b): “1.6.1-beta.2 (#3250) * Refactor architecture check for npm installation (#3219) GCC 15 on arm64 can fail compiling @discordjs/opus unless this warning is not treated as an error. *”
 
-Later line edits: 5; latest 8e3de401. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 8e3de401. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (read; no item-specific matching bullet); [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (read; no item-specific matching bullet)
 
 ## D-workaround-32942beeb5ae2204
 

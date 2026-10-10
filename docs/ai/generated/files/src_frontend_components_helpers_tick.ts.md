@@ -27,10 +27,10 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/helpers/tick.ts:22](../../../../src/frontend/components/helpers/tick.ts#L22) — timer-a79e7c5345b9affb: setTimeout = 10 ms (10); 
-- [src/frontend/components/helpers/tick.ts:94](../../../../src/frontend/components/helpers/tick.ts#L94) — timer-b553dcfbed28b352: setTimeout = dynamic ms (remaining); 
-- [src/frontend/components/helpers/tick.ts:119](../../../../src/frontend/components/helpers/tick.ts#L119) — timer-cb47c358ffc1d742: setTimeout = 50 ms (50); 
-- [src/frontend/components/helpers/tick.ts:134](../../../../src/frontend/components/helpers/tick.ts#L134) — timer-4e3f278eee5882a8: setTimeout = 10 ms (10); 
+- [src/frontend/components/helpers/tick.ts:22](../../../../src/frontend/components/helpers/tick.ts#L22) — timer-a79e7c5345b9affb: setTimeout = 10 ms (10);
+- [src/frontend/components/helpers/tick.ts:94](../../../../src/frontend/components/helpers/tick.ts#L94) — timer-b553dcfbed28b352: setTimeout = dynamic ms (remaining);
+- [src/frontend/components/helpers/tick.ts:119](../../../../src/frontend/components/helpers/tick.ts#L119) — timer-cb47c358ffc1d742: setTimeout = 50 ms (50);
+- [src/frontend/components/helpers/tick.ts:134](../../../../src/frontend/components/helpers/tick.ts#L134) — timer-4e3f278eee5882a8: setTimeout = 10 ms (10);
 
 ## Workarounds
 

@@ -17,7 +17,7 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/b5946b2dafb6207a5372eec5f9943ce283e3a508): “1.5.7 (#2839) * Added back forceLogin - Fixed on B1Admin * Fixed clear background not working if no output screen exists * Updated languages * fix: improve split long verses with t”
 - [code] src/frontend/utils/startup.ts:27: “// wait for window.api to be available (preload script might not be ready yet) - not likely”
 
-Later line edits: 1; latest b5946b2d. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest b5946b2d. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet); [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet)
 
@@ -36,7 +36,7 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/b5946b2dafb6207a5372eec5f9943ce283e3a508): “1.5.7 (#2839) * Added back forceLogin - Fixed on B1Admin * Fixed clear background not working if no output screen exists * Updated languages * fix: improve split long verses with t”
 - [code] src/frontend/utils/startup.ts:27: “// wait for window.api to be available (preload script might not be ready yet) - not likely”
 
-Later line edits: 1; latest b5946b2d. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest b5946b2d. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet); [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet)
 
@@ -56,7 +56,7 @@ Sources:
 
 Later line edits: 17; latest 57a96752. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (read; no item-specific matching bullet)
 
 ## D-poll-interval-4f60e427575ea13e
 
@@ -72,9 +72,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/57a967525c249b7cbd1e7d556cfa898c6dbf99a0): “1.5.8-beta.1 (#2847) * Fixed chosen profile not updating projects list right away - Updated Chinese language * Fixed song upload issue #2842 * Fixed missing libltc on Linux #2841 *”
 
-Later line edits: 19; latest 57a96752. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 57a96752. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (read; no item-specific matching bullet); [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (read; no item-specific matching bullet)
 
 ## D-poll-timeout-c02189d8b1c84fcd
 
@@ -90,9 +90,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/57a967525c249b7cbd1e7d556cfa898c6dbf99a0): “1.5.8-beta.1 (#2847) * Fixed chosen profile not updating projects list right away - Updated Chinese language * Fixed song upload issue #2842 * Fixed missing libltc on Linux #2841 *”
 
-Later line edits: 19; latest 57a96752. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 57a96752. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (read; no item-specific matching bullet); [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (read; no item-specific matching bullet)
 
 ## D-timer-d8eed8a72f69a1e0
 
@@ -216,7 +216,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/c193fda76be08b09c92fe886fe9dd96b33d2e89e): “1.5.0-beta.1 (#2066) * 🚩 Updated languages * Update makesnap (#2019) * Don't fail on directory creation if exists * Update snapcraft syntax Per warning: "Running snapcraft without”
 
-Later line edits: 12; latest c193fda7. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest c193fda7. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2066](https://github.com/ChurchApps/FreeShow/pull/2066) (read; no item-specific matching bullet); [pr #2066](https://github.com/ChurchApps/FreeShow/pull/2066) (read; no item-specific matching bullet)
 
@@ -234,7 +234,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/c193fda76be08b09c92fe886fe9dd96b33d2e89e): “1.5.0-beta.1 (#2066) * 🚩 Updated languages * Update makesnap (#2019) * Don't fail on directory creation if exists * Update snapcraft syntax Per warning: "Running snapcraft without”
 
-Later line edits: 12; latest c193fda7. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest c193fda7. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2066](https://github.com/ChurchApps/FreeShow/pull/2066) (read; no item-specific matching bullet); [pr #2066](https://github.com/ChurchApps/FreeShow/pull/2066) (read; no item-specific matching bullet)
 

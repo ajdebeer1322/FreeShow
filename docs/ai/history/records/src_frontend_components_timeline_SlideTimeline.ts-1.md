@@ -71,7 +71,8 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055): “1.6.0-beta.2 (#3090) * Updated languages * Better media item cropping #2856 * Corrected beta changelog #3015 * Item resize works better when rotated #2999 * Refactor chord parsing ”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055): “* Slide text style prioritized over style template when parts are different, matching colors #3024”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055): “* Slide text style prioritized over style template when parts are different, matching colors #3024”
+- [guess] [source](https://github.com/ChurchApps/FreeShow/issues/3024): “**Describe the feature** Regular, bold and italic text styles are used frequently within our slides. Sometimes only one word might be bold (e.g., "Amen."). We would like bold and i”
 
 Later line edits: 0; latest 5c94f232. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3090](https://github.com/ChurchApps/FreeShow/pull/3090) (read; no item-specific matching bullet); [pr #3090](https://github.com/ChurchApps/FreeShow/pull/3090) (read; no item-specific matching bullet)
+GitHub: [pr #3090](https://github.com/ChurchApps/FreeShow/pull/3090) (read; no item-specific matching bullet); [pr #3090](https://github.com/ChurchApps/FreeShow/pull/3090) (read; no item-specific matching bullet); [issue #3024](https://github.com/ChurchApps/FreeShow/issues/3024) (read; no item-specific matching bullet)

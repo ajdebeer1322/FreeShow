@@ -75,14 +75,14 @@ None detected.
 ## Timing
 
 - [src/frontend/components/inputs/MaterialNumberInput.svelte:103](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L103) — timer-f8714876192268c0: setTimeout = 500 ms (500); // don't start timeout if scrolling with mouse
-- [src/frontend/components/inputs/MaterialNumberInput.svelte:135](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L135) — timer-faac5895caac5d24: setTimeout = 3000 ms (3000); 
-- [src/frontend/components/inputs/MaterialNumberInput.svelte:264](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L264) — css-transition-1946594794be3a7c: css-transition = 100 ms (0.1s opacity ease); 
-- [src/frontend/components/inputs/MaterialNumberInput.svelte:282](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L282) — css-transition-4b1ff45abc523a4a: css-transition = 150 ms (0.15s opacity ease); 
-- [src/frontend/components/inputs/MaterialNumberInput.svelte:299](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L299) — css-transition-ebe7dea451aee555: css-transition = 150 ms (background 0.15s ease,); 
-- [src/frontend/components/inputs/MaterialNumberInput.svelte:332](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L332) — css-transition-88bc3df73e91651f: css-transition = 200 ms (all 0.2s ease); 
-- [src/frontend/components/inputs/MaterialNumberInput.svelte:355](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L355) — css-transition-b8779d7637634260: css-transition = 200 ms (transform 0.2s ease); 
+- [src/frontend/components/inputs/MaterialNumberInput.svelte:135](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L135) — timer-faac5895caac5d24: setTimeout = 3000 ms (3000);
+- [src/frontend/components/inputs/MaterialNumberInput.svelte:264](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L264) — css-transition-1946594794be3a7c: css-transition = 100 ms (0.1s opacity ease);
+- [src/frontend/components/inputs/MaterialNumberInput.svelte:282](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L282) — css-transition-4b1ff45abc523a4a: css-transition = 150 ms (0.15s opacity ease);
+- [src/frontend/components/inputs/MaterialNumberInput.svelte:299](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L299) — css-transition-ebe7dea451aee555: css-transition = 150 ms (background 0.15s ease,);
+- [src/frontend/components/inputs/MaterialNumberInput.svelte:332](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L332) — css-transition-88bc3df73e91651f: css-transition = 200 ms (all 0.2s ease);
+- [src/frontend/components/inputs/MaterialNumberInput.svelte:355](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L355) — css-transition-b8779d7637634260: css-transition = 200 ms (transform 0.2s ease);
 - [src/frontend/components/inputs/MaterialNumberInput.svelte:396](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L396) — css-transition-da467ce11d88c840: css-transition = 200 ms (0.2s opacity ease); /* padding-right: 30px; */
-- [src/frontend/components/inputs/MaterialNumberInput.svelte:452](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L452) — css-transition-00ac74867dae18d7: css-transition = 200 ms (box-shadow 0.2s,); 
+- [src/frontend/components/inputs/MaterialNumberInput.svelte:452](../../../../src/frontend/components/inputs/MaterialNumberInput.svelte#L452) — css-transition-00ac74867dae18d7: css-transition = 200 ms (box-shadow 0.2s,);
 
 ## Workarounds
 

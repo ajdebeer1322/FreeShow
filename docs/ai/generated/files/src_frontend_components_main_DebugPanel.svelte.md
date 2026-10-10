@@ -31,7 +31,7 @@ No static evidence found.
 ## Timing
 
 - [src/frontend/components/main/DebugPanel.svelte:20](../../../../src/frontend/components/main/DebugPanel.svelte#L20) — timer-9d387eac7a3c7dae: setTimeout = 120 ms (120); // refresh the state when anything it shows changes
-- [src/frontend/components/main/DebugPanel.svelte:57](../../../../src/frontend/components/main/DebugPanel.svelte#L57) — timer-491a615ee9988c16: setTimeout = 2500 ms (2500); 
+- [src/frontend/components/main/DebugPanel.svelte:57](../../../../src/frontend/components/main/DebugPanel.svelte#L57) — timer-491a615ee9988c16: setTimeout = 2500 ms (2500);
 
 ## Workarounds
 

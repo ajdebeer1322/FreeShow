@@ -9,5 +9,5 @@ No static evidence found.
 ## Rendered components and props
 
 - [src/frontend/components/edit/AudioTools.svelte:73](../../../../src/frontend/components/edit/AudioTools.svelte#L73) — EditValues → src/frontend/components/edit/tools/EditValues.svelte; sections={currentAudioSections}; item={currentMedia}; on:change={valueChanged}
-- [src/frontend/components/edit/AudioTools.svelte:76](../../../../src/frontend/components/edit/AudioTools.svelte#L76) — FloatingInputs → src/frontend/components/input/FloatingInputs.svelte; 
+- [src/frontend/components/edit/AudioTools.svelte:76](../../../../src/frontend/components/edit/AudioTools.svelte#L76) — FloatingInputs → src/frontend/components/input/FloatingInputs.svelte;
 - [src/frontend/components/edit/AudioTools.svelte:77](../../../../src/frontend/components/edit/AudioTools.svelte#L77) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; icon="reset"; title="actions.reset"; on:click={reset}

@@ -37,7 +37,7 @@ Saved: yes, with the listed transformations.
 - [src/frontend/components/slide/views/DynamicEvents.svelte:34](../../../../src/frontend/components/slide/views/DynamicEvents.svelte#L34) — $events
 - [src/frontend/components/slide/views/DynamicEvents.svelte:38](../../../../src/frontend/components/slide/views/DynamicEvents.svelte#L38) — $events
 - [src/frontend/converters/calendar.ts:105](../../../../src/frontend/converters/calendar.ts#L105) — get(events)
-- [src/frontend/utils/listeners.ts:172](../../../../src/frontend/utils/listeners.ts#L172) — events.subscribe((data) => { send(OUTPUT, &#91;"EVENTS"&#93;, data) // STAGE // WIP all stage listeners should not send to all stages, just the connected ids send(STAGE, &#91;"EVENTS"&#93;, data) 
+- [src/frontend/utils/listeners.ts:172](../../../../src/frontend/utils/listeners.ts#L172) — events.subscribe((data) => { send(OUTPUT, &#91;"EVENTS"&#93;, data) // STAGE // WIP all stage listeners should not send to all stages, just the connected ids send(STAGE, &#91;"EVENTS"&#93;, data)
 - [src/frontend/utils/save.ts:229](../../../../src/frontend/utils/save.ts#L229) — get(events)
 - [src/frontend/utils/stageTalk.ts:99](../../../../src/frontend/utils/stageTalk.ts#L99) — get(events)
 

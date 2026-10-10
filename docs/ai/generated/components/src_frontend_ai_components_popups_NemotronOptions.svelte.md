@@ -8,6 +8,6 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/ai/components/popups/NemotronOptions.svelte:64](../../../../src/frontend/ai/components/popups/NemotronOptions.svelte#L64) — Loader → src/frontend/components/main/Loader.svelte; 
+- [src/frontend/ai/components/popups/NemotronOptions.svelte:64](../../../../src/frontend/ai/components/popups/NemotronOptions.svelte#L64) — Loader → src/frontend/components/main/Loader.svelte;
 - [src/frontend/ai/components/popups/NemotronOptions.svelte:67](../../../../src/frontend/ai/components/popups/NemotronOptions.svelte#L67) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; variant="outlined"; icon="download"; disabled={isModelDownloading}; style="flex: 1;"; on:click={downloadModel
 - [src/frontend/ai/components/popups/NemotronOptions.svelte:68](../../../../src/frontend/ai/components/popups/NemotronOptions.svelte#L68) — T → src/frontend/components/helpers/T.svelte; id="cloud.replace"

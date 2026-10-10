@@ -9,6 +9,6 @@ No static evidence found.
 ## Rendered components and props
 
 - [src/frontend/components/drawer/navigation/ShowsTabs.svelte:72](../../../../src/frontend/components/drawer/navigation/ShowsTabs.svelte#L72) — NavigationSections → src/frontend/components/drawer/navigation/NavigationSections.svelte; {sections}; active={activeSubTab}; on:rename={updateName}
-- [src/frontend/components/drawer/navigation/ShowsTabs.svelte:74](../../../../src/frontend/components/drawer/navigation/ShowsTabs.svelte#L74) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; style="width: 100%;"; title="new.category"; variant="outlined"; disabled={readOnly}; on:click={newCategory}; 
+- [src/frontend/components/drawer/navigation/ShowsTabs.svelte:74](../../../../src/frontend/components/drawer/navigation/ShowsTabs.svelte#L74) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; style="width: 100%;"; title="new.category"; variant="outlined"; disabled={readOnly}; on:click={newCategory};
 - [src/frontend/components/drawer/navigation/ShowsTabs.svelte:75](../../../../src/frontend/components/drawer/navigation/ShowsTabs.svelte#L75) — Icon → src/frontend/components/helpers/Icon.svelte; id="add"; size={$labelsDisabled ? 0.9 : 1}; white={$labelsDisabled}
 - [src/frontend/components/drawer/navigation/ShowsTabs.svelte:76](../../../../src/frontend/components/drawer/navigation/ShowsTabs.svelte#L76) — T → src/frontend/components/helpers/T.svelte; id="new.category"

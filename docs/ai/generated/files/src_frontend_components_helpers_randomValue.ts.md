@@ -25,8 +25,8 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/helpers/randomValue.ts:98](../../../../src/frontend/components/helpers/randomValue.ts#L98) — timer-e81af87f3e52bac8: wait = 16 ms (16); 
-- [src/frontend/components/helpers/randomValue.ts:120](../../../../src/frontend/components/helpers/randomValue.ts#L120) — timer-8bc5b22a2e2206c6: wait = 60 ms (speed); 
+- [src/frontend/components/helpers/randomValue.ts:98](../../../../src/frontend/components/helpers/randomValue.ts#L98) — timer-e81af87f3e52bac8: wait = 16 ms (16);
+- [src/frontend/components/helpers/randomValue.ts:120](../../../../src/frontend/components/helpers/randomValue.ts#L120) — timer-8bc5b22a2e2206c6: wait = 60 ms (speed);
 
 ## Workarounds
 

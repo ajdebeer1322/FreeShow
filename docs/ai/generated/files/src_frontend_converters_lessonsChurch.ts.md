@@ -39,7 +39,7 @@ No static evidence found.
 ## Timing
 
 - [src/frontend/converters/lessonsChurch.ts:95](../../../../src/frontend/converters/lessonsChurch.ts#L95) — timer-30f2f49d4a3ce27e: setTimeout = 8000 ms (8000); // will automatically get added to the "lessons" project if just 1 show sent to tempShows // refresh thumbnails
-- [src/frontend/converters/lessonsChurch.ts:109](../../../../src/frontend/converters/lessonsChurch.ts#L109) — timer-3e86f469ec8f8cc1: setTimeout = 50 ms (50); 
+- [src/frontend/converters/lessonsChurch.ts:109](../../../../src/frontend/converters/lessonsChurch.ts#L109) — timer-3e86f469ec8f8cc1: setTimeout = 50 ms (50);
 - [src/frontend/converters/lessonsChurch.ts:187](../../../../src/frontend/converters/lessonsChurch.ts#L187) — timer-f6fab286d3c61499: setTimeout = 5000 ms (5000); // 5 seconds
 
 ## Workarounds

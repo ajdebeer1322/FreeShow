@@ -33,7 +33,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/converters/chordpro.ts:28](../../../../src/frontend/converters/chordpro.ts#L28) — timer-f55db16432771533: setTimeout = 10 ms (10); 
+- [src/frontend/converters/chordpro.ts:28](../../../../src/frontend/converters/chordpro.ts#L28) — timer-f55db16432771533: setTimeout = 10 ms (10);
 
 ## Workarounds
 

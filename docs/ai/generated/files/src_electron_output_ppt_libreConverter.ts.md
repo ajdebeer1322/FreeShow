@@ -28,7 +28,7 @@ None detected.
 
 ## Timing
 
-- [src/electron/output/ppt/libreConverter.ts:66](../../../../src/electron/output/ppt/libreConverter.ts#L66) — timer-19736bacaa594d42: setTimeout = 500 ms (500); 
+- [src/electron/output/ppt/libreConverter.ts:66](../../../../src/electron/output/ppt/libreConverter.ts#L66) — timer-19736bacaa594d42: setTimeout = 500 ms (500);
 
 ## Workarounds
 

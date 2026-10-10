@@ -40,7 +40,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/helpers/mediaInspector.ts:76](../../../../src/frontend/components/helpers/mediaInspector.ts#L76) — request-budget-1a04385d321776fa: request-budget = 15000 ms (15000); 
+- [src/frontend/components/helpers/mediaInspector.ts:76](../../../../src/frontend/components/helpers/mediaInspector.ts#L76) — request-budget-1a04385d321776fa: request-budget = 15000 ms (15000);
 
 ## Workarounds
 

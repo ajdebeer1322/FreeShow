@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/acaf215cd489c101afffe5ad12362061c45dec59): “🥳 Disable stage shows. Add icons to slides. Added more strings.”
 
-Later line edits: 6; latest 256b8c79. Full commit messages and lineage: JSON query data.
+Later line edits: 3; latest 256b8c79. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

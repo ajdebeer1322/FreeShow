@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/1ed8ffa3dd177d68ba1efe61d943b7baa7bd9027): “1.6.6-beta.4 (#3813) * Fix image items staying invisible with an item transition (#3789) * Canva allow subfolders #3796 * Open scripture location from content search #3799 * Fixed ”
 
-Later line edits: 1; latest 1ed8ffa3. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 1ed8ffa3. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3813](https://github.com/ChurchApps/FreeShow/pull/3813) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3813](https://github.com/ChurchApps/FreeShow/pull/3813) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3813](https://github.com/ChurchApps/FreeShow/pull/3813) (read; no item-specific matching bullet); [pr #3813](https://github.com/ChurchApps/FreeShow/pull/3813) (read; no item-specific matching bullet)

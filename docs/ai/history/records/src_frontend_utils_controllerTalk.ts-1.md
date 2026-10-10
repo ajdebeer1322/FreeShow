@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/8ee66b7b5f95581e00c26e42d9da8fd6015eaea9): “1.3.2-beta.1 (#1043) * chore: non-conflicting dependency updates (#1016) * use package-lock to ensure devs are using the same versions of dependencies * update sqlite * update geni”
 
-Later line edits: 1; latest 8ee66b7b. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 8ee66b7b. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #1043](https://github.com/ChurchApps/FreeShow/pull/1043) (read; no item-specific matching bullet); [pr #1043](https://github.com/ChurchApps/FreeShow/pull/1043) (read; no item-specific matching bullet)
 

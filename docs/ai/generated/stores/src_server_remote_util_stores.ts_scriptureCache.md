@@ -23,7 +23,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 - [src/server/remote/util/receiver.ts:198](../../../../src/server/remote/util/receiver.ts#L198) — _update("scriptureCache", data.id, sanitizeBiblePayload(data.bible))
 - [src/server/remote/util/receiver.ts:209](../../../../src/server/remote/util/receiver.ts#L209) — scriptureCache.update((cache) => { const bible = cache&#91;id&#93; \|\| { books: &#91;&#93; as any&#91;&#93; } const books = Array.isArray(bible.books) ? bible.books : &#91;&#93; const book = books&#91;bookIndex&#93; \|\| {}
-- [src/server/remote/util/receiver.ts:229](../../../../src/server/remote/util/receiver.ts#L229) — scriptureCache.update((cache) => { const bible = cache&#91;id&#93; \|\| { books: &#91;&#93; as any&#91;&#93; } const books = Array.isArray(bible.books) ? bible.books : &#91;&#93; const book = books&#91;bookIndex&#93; \|\| { 
+- [src/server/remote/util/receiver.ts:229](../../../../src/server/remote/util/receiver.ts#L229) — scriptureCache.update((cache) => { const bible = cache&#91;id&#93; \|\| { books: &#91;&#93; as any&#91;&#93; } const books = Array.isArray(bible.books) ? bible.books : &#91;&#93; const book = books&#91;bookIndex&#93; \|\| {
 
 ## Transport
 

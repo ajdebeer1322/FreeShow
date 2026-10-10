@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/a2f34e2a335c1f5e01fdd9e663191298328e50ea): “1.6.2-beta.1 (#3336) * 1.6.1 (#3291) * Updated Norwegian language * Updated Hungarian language * Fixed PDF to image conversion with special file name #3177 * Actions Grid Mode in t”
 
-Later line edits: 3; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -34,9 +34,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/f8d43d175b7cde4a36813a0632776df218ed9b13): “1.6.2-beta.2 (#3364) * Show Style custom First slide template in preview * More uniform tips * Updated Chinese language * Moved Log song usage to Shows drawer - Clock visible more ”
 
-Later line edits: 7; latest f8d43d17. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest f8d43d17. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3364](https://github.com/ChurchApps/FreeShow/pull/3364) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3364](https://github.com/ChurchApps/FreeShow/pull/3364) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3364](https://github.com/ChurchApps/FreeShow/pull/3364) (read; no item-specific matching bullet); [pr #3364](https://github.com/ChurchApps/FreeShow/pull/3364) (read; no item-specific matching bullet)
 
 ## D-timer-19e88a40358a7b28
 

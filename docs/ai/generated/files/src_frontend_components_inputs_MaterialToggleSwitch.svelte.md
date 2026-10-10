@@ -63,10 +63,10 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/inputs/MaterialToggleSwitch.svelte:134](../../../../src/frontend/components/inputs/MaterialToggleSwitch.svelte#L134) — css-transition-b1032edafe99dd47: css-transition = 200 ms (background-color 0.2s ease,); 
-- [src/frontend/components/inputs/MaterialToggleSwitch.svelte:152](../../../../src/frontend/components/inputs/MaterialToggleSwitch.svelte#L152) — css-transition-82b77671503b3ab0: css-transition = 100 ms (filter 0.1s ease,); 
-- [src/frontend/components/inputs/MaterialToggleSwitch.svelte:185](../../../../src/frontend/components/inputs/MaterialToggleSwitch.svelte#L185) — css-transition-d29ed98cf4dc72ca: css-transition = 200 ms (transform 0.2s ease); 
-- [src/frontend/components/inputs/MaterialToggleSwitch.svelte:226](../../../../src/frontend/components/inputs/MaterialToggleSwitch.svelte#L226) — css-transition-2cad63d297910017: css-transition = 200 ms (0.2s opacity ease); 
+- [src/frontend/components/inputs/MaterialToggleSwitch.svelte:134](../../../../src/frontend/components/inputs/MaterialToggleSwitch.svelte#L134) — css-transition-b1032edafe99dd47: css-transition = 200 ms (background-color 0.2s ease,);
+- [src/frontend/components/inputs/MaterialToggleSwitch.svelte:152](../../../../src/frontend/components/inputs/MaterialToggleSwitch.svelte#L152) — css-transition-82b77671503b3ab0: css-transition = 100 ms (filter 0.1s ease,);
+- [src/frontend/components/inputs/MaterialToggleSwitch.svelte:185](../../../../src/frontend/components/inputs/MaterialToggleSwitch.svelte#L185) — css-transition-d29ed98cf4dc72ca: css-transition = 200 ms (transform 0.2s ease);
+- [src/frontend/components/inputs/MaterialToggleSwitch.svelte:226](../../../../src/frontend/components/inputs/MaterialToggleSwitch.svelte#L226) — css-transition-2cad63d297910017: css-transition = 200 ms (0.2s opacity ease);
 
 ## Workarounds
 

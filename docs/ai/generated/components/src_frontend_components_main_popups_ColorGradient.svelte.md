@@ -8,11 +8,11 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/components/main/popups/ColorGradient.svelte:66](../../../../src/frontend/components/main/popups/ColorGradient.svelte#L66) — InputRow → src/frontend/components/input/InputRow.svelte; 
+- [src/frontend/components/main/popups/ColorGradient.svelte:66](../../../../src/frontend/components/main/popups/ColorGradient.svelte#L66) — InputRow → src/frontend/components/input/InputRow.svelte;
 - [src/frontend/components/main/popups/ColorGradient.svelte:67](../../../../src/frontend/components/main/popups/ColorGradient.svelte#L67) — MaterialDropdown → src/frontend/components/inputs/MaterialDropdown.svelte; label="sort.type"; value={activeType}; options={types}; on:change={(e) => (activeType = e.detail)}
 - [src/frontend/components/main/popups/ColorGradient.svelte:70](../../../../src/frontend/components/main/popups/ColorGradient.svelte#L70) — MaterialDropdown → src/frontend/components/inputs/MaterialDropdown.svelte; label="color.shape"; value={activeShape}; options={shapes}; on:change={(e) => (activeShape = e.detail)}
 - [src/frontend/components/main/popups/ColorGradient.svelte:72](../../../../src/frontend/components/main/popups/ColorGradient.svelte#L72) — MaterialRadialPicker → src/frontend/components/inputs/MaterialRadialPicker.svelte; label="color.angle"; value={parsedValue.deg}; on:change={(e) => (parsedValue.deg = e.detail)}
-- [src/frontend/components/main/popups/ColorGradient.svelte:82](../../../../src/frontend/components/main/popups/ColorGradient.svelte#L82) — InputRow → src/frontend/components/input/InputRow.svelte; 
+- [src/frontend/components/main/popups/ColorGradient.svelte:82](../../../../src/frontend/components/main/popups/ColorGradient.svelte#L82) — InputRow → src/frontend/components/input/InputRow.svelte;
 - [src/frontend/components/main/popups/ColorGradient.svelte:83](../../../../src/frontend/components/main/popups/ColorGradient.svelte#L83) — MaterialColorInput → src/frontend/components/inputs/MaterialColorInput.svelte; style="min-width: 50%;"; label="edit.color"; value={colorPart.color}; on:input={(e) => (colorPart.col
 - [src/frontend/components/main/popups/ColorGradient.svelte:84](../../../../src/frontend/components/main/popups/ColorGradient.svelte#L84) — MaterialNumberInput → src/frontend/components/inputs/MaterialNumberInput.svelte; label="settings.position"; value={pos}; min={prevPos}; max={nextPos}; on:change={(e) => (colorPart.
 - [src/frontend/components/main/popups/ColorGradient.svelte:86](../../../../src/frontend/components/main/popups/ColorGradient.svelte#L86) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; icon="up"; on:click={() => moveUp(i)}

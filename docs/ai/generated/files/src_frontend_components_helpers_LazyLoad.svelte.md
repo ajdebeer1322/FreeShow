@@ -12,7 +12,7 @@ No static evidence found.
 
 ## Components rendered
 
-- [src/frontend/components/helpers/LazyLoad.svelte:15](../../../../src/frontend/components/helpers/LazyLoad.svelte#L15) — svelte:component → dynamic; props: 
+- [src/frontend/components/helpers/LazyLoad.svelte:15](../../../../src/frontend/components/helpers/LazyLoad.svelte#L15) — svelte:component → dynamic; props:
 
 ## Stores used
 

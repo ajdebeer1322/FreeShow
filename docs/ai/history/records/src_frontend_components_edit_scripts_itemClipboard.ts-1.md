@@ -19,7 +19,7 @@ Sources:
 
 Later line edits: 1; latest 1f661639. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #845](https://github.com/ChurchApps/FreeShow/pull/845) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet)
+GitHub: [pr #845](https://github.com/ChurchApps/FreeShow/pull/845) (read; no item-specific matching bullet); [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet)
 
 ## D-timer-6569bf27be4a7e34
 
@@ -38,7 +38,7 @@ Sources:
 
 Later line edits: 1; latest 1f661639. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #845](https://github.com/ChurchApps/FreeShow/pull/845) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet)
+GitHub: [pr #845](https://github.com/ChurchApps/FreeShow/pull/845) (read; no item-specific matching bullet); [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet)
 
 ## D-timer-61d33c09865b8834
 
@@ -57,7 +57,7 @@ Sources:
 
 Later line edits: 1; latest 1f661639. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #845](https://github.com/ChurchApps/FreeShow/pull/845) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet)
+GitHub: [pr #845](https://github.com/ChurchApps/FreeShow/pull/845) (read; no item-specific matching bullet); [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet)
 
 ## D-workaround-7760e0a8c0ace22c
 
@@ -73,6 +73,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/cc30be873dcdfc1e006261d701e9b08aa167c368): “1.4.0 (#1460) * Updated Windows signing deps * 🎨 Context menu & popup border radius * ✨ Added textbox press/release action - CSV file import - Added API action to select project b”
 
-Later line edits: 2; latest cc30be87. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest cc30be87. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #1460](https://github.com/ChurchApps/FreeShow/pull/1460) (read; no item-specific matching bullet); [pr #1460](https://github.com/ChurchApps/FreeShow/pull/1460) (read; no item-specific matching bullet)

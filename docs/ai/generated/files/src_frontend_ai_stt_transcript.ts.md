@@ -25,7 +25,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/ai/stt/transcript.ts:49](../../../../src/frontend/ai/stt/transcript.ts#L49) — timer-1c578b43b57fbf72: setTimeout = dynamic ms (this.INTERIM_DEBOUNCE_MS); 
+- [src/frontend/ai/stt/transcript.ts:49](../../../../src/frontend/ai/stt/transcript.ts#L49) — timer-1c578b43b57fbf72: setTimeout = dynamic ms (this.INTERIM_DEBOUNCE_MS);
 
 ## Workarounds
 

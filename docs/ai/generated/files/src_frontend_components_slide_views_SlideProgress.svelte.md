@@ -33,8 +33,8 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/slide/views/SlideProgress.svelte:224](../../../../src/frontend/components/slide/views/SlideProgress.svelte#L224) — css-transition-9feeee86f94955a3: css-transition = 500 ms (width 0.5s); 
-- [src/frontend/components/slide/views/SlideProgress.svelte:249](../../../../src/frontend/components/slide/views/SlideProgress.svelte#L249) — css-transition-2e129643484861e7: css-transition = 200 ms (color 0.2s); 
+- [src/frontend/components/slide/views/SlideProgress.svelte:224](../../../../src/frontend/components/slide/views/SlideProgress.svelte#L224) — css-transition-9feeee86f94955a3: css-transition = 500 ms (width 0.5s);
+- [src/frontend/components/slide/views/SlideProgress.svelte:249](../../../../src/frontend/components/slide/views/SlideProgress.svelte#L249) — css-transition-2e129643484861e7: css-transition = 200 ms (color 0.2s);
 
 ## Workarounds
 

@@ -1,0 +1,39 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/frontend/components/show/AudioPreview.svelte",
+    "src/frontend/audio/audioPlayer.ts"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-9807349814ea2248",
+      "file": "src/frontend/audio/audioPlayer.ts",
+      "line": 324,
+      "document": "docs/ai/history/records/src_frontend_audio_audioPlayer.ts-1.md"
+    },
+    {
+      "id": "D-timer-20c98931bc13a4a6",
+      "file": "src/frontend/audio/audioPlayer.ts",
+      "line": 346,
+      "document": "docs/ai/history/records/src_frontend_audio_audioPlayer.ts-1.md"
+    },
+    {
+      "id": "D-request-budget-d2c4392b834275a6",
+      "file": "src/frontend/audio/audioPlayer.ts",
+      "line": 654,
+      "document": "docs/ai/history/records/src_frontend_audio_audioPlayer.ts-1.md"
+    },
+    {
+      "id": "D-timer-b15e52b0d7d6c6c8",
+      "file": "src/frontend/components/show/AudioPreview.svelte",
+      "line": 38,
+      "document": "docs/ai/history/records/src_frontend_components_show_AudioPreview.svelte-1.md"
+    },
+    {
+      "id": "D-timer-9bf54f51f45e952e",
+      "file": "src/frontend/components/show/AudioPreview.svelte",
+      "line": 101,
+      "document": "docs/ai/history/records/src_frontend_components_show_AudioPreview.svelte-1.md"
+    }
+  ]
+}

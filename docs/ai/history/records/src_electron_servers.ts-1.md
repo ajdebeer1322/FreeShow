@@ -17,7 +17,7 @@ Sources:
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/5da19dcfbe7ca7a9576610c4b5dfd84d594ad5ed): “Keep linked slides together when stepping, add a debug panel, stop the project view flashing Linked slides - A linked card shares one next slide timer and moves on as one slide (ti”
 - [code] src/electron/servers.ts:192: “// keep-alive connections would otherwise hold the close back”
 
-Later line edits: 21; latest 5da19dcf. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 5da19dcf. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 
@@ -35,7 +35,7 @@ Sources:
 
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/5da19dcfbe7ca7a9576610c4b5dfd84d594ad5ed): “Keep linked slides together when stepping, add a debug panel, stop the project view flashing Linked slides - A linked card shares one next slide timer and moves on as one slide (ti”
 
-Later line edits: 21; latest 5da19dcf. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 5da19dcf. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 
@@ -53,6 +53,6 @@ Sources:
 
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/5da19dcfbe7ca7a9576610c4b5dfd84d594ad5ed): “Keep linked slides together when stepping, add a debug panel, stop the project view flashing Linked slides - A linked card shares one next slide timer and moves on as one slide (ti”
 
-Later line edits: 8; latest 5da19dcf. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 5da19dcf. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

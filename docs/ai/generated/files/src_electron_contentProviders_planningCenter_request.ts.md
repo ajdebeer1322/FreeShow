@@ -39,7 +39,7 @@ None detected.
 
 ## Timing
 
-- [src/electron/contentProviders/planningCenter/request.ts:259](../../../../src/electron/contentProviders/planningCenter/request.ts#L259) — timer-97208a6cc2505b59: setTimeout = dynamic ms (retryAfter * 1000); 
+- [src/electron/contentProviders/planningCenter/request.ts:259](../../../../src/electron/contentProviders/planningCenter/request.ts#L259) — timer-97208a6cc2505b59: setTimeout = dynamic ms (retryAfter * 1000);
 
 ## Workarounds
 

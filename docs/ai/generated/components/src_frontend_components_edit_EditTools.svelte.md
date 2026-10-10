@@ -8,17 +8,17 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/components/edit/EditTools.svelte:418](../../../../src/frontend/components/edit/EditTools.svelte#L418) — MessageDesignTools → src/frontend/components/edit/tools/MessageDesignTools.svelte; 
+- [src/frontend/components/edit/EditTools.svelte:418](../../../../src/frontend/components/edit/EditTools.svelte#L418) — MessageDesignTools → src/frontend/components/edit/tools/MessageDesignTools.svelte;
 - [src/frontend/components/edit/EditTools.svelte:420](../../../../src/frontend/components/edit/EditTools.svelte#L420) — Tabs → src/frontend/components/main/Tabs.svelte; {tabs}; bind:active; {overflowHidden}
 - [src/frontend/components/edit/EditTools.svelte:425](../../../../src/frontend/components/edit/EditTools.svelte#L425) — BoxStyle → src/frontend/components/edit/tools/BoxStyle.svelte; id={item?.type \|\| "text"}; bind:allSlideItems; bind:item; {customLocalFonts}
 - [src/frontend/components/edit/EditTools.svelte:427](../../../../src/frontend/components/edit/EditTools.svelte#L427) — Center → src/frontend/components/system/Center.svelte; faded
 - [src/frontend/components/edit/EditTools.svelte:428](../../../../src/frontend/components/edit/EditTools.svelte#L428) — T → src/frontend/components/helpers/T.svelte; id="empty.items"
 - [src/frontend/components/edit/EditTools.svelte:434](../../../../src/frontend/components/edit/EditTools.svelte#L434) — ItemStyle → src/frontend/components/edit/tools/ItemStyle.svelte; bind:allSlideItems; bind:item
-- [src/frontend/components/edit/EditTools.svelte:438](../../../../src/frontend/components/edit/EditTools.svelte#L438) — SlideFilters → src/frontend/components/edit/tools/SlideFilters.svelte; 
+- [src/frontend/components/edit/EditTools.svelte:438](../../../../src/frontend/components/edit/EditTools.svelte#L438) — SlideFilters → src/frontend/components/edit/tools/SlideFilters.svelte;
 - [src/frontend/components/edit/EditTools.svelte:443](../../../../src/frontend/components/edit/EditTools.svelte#L443) — TemplateStyle → src/frontend/components/edit/tools/TemplateStyle.svelte; bind:allSlideItems
 - [src/frontend/components/edit/EditTools.svelte:445](../../../../src/frontend/components/edit/EditTools.svelte#L445) — OverlayStyle → src/frontend/components/edit/tools/OverlayStyle.svelte; bind:allSlideItems
 - [src/frontend/components/edit/EditTools.svelte:447](../../../../src/frontend/components/edit/EditTools.svelte#L447) — SlideStyle → src/frontend/components/edit/tools/SlideStyle.svelte; bind:allSlideItems
-- [src/frontend/components/edit/EditTools.svelte:453](../../../../src/frontend/components/edit/EditTools.svelte#L453) — FloatingInputs → src/frontend/components/input/FloatingInputs.svelte; 
+- [src/frontend/components/edit/EditTools.svelte:453](../../../../src/frontend/components/edit/EditTools.svelte#L453) — FloatingInputs → src/frontend/components/input/FloatingInputs.svelte;
 - [src/frontend/components/edit/EditTools.svelte:455](../../../../src/frontend/components/edit/EditTools.svelte#L455) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; icon="paste"; title="actions.paste"; on:click={() => pasteStyle()}
 - [src/frontend/components/edit/EditTools.svelte:456](../../../../src/frontend/components/edit/EditTools.svelte#L456) — T → src/frontend/components/helpers/T.svelte; id="actions.paste"
 - [src/frontend/components/edit/EditTools.svelte:464](../../../../src/frontend/components/edit/EditTools.svelte#L464) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; icon="down"; title="actions.to_following"; on:click={() => pasteStyle(false, true)}

@@ -16,9 +16,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/88de0b8203a64fbe6111649173aab19b0ce4277f): “1.5.5-beta.2 (#2526) * Fix song number search to support alphanumeric values (e.g., MP133) (#2498) * Change license from GPL-3.0 to GPL-3.0-or-later (#2500) License has to be in SP”
 
-Later line edits: 105; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 15; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2526](https://github.com/ChurchApps/FreeShow/pull/2526) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
+GitHub: [pr #2526](https://github.com/ChurchApps/FreeShow/pull/2526) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
 ## D-workaround-b26ab8ff5971d6f0
 
@@ -52,7 +52,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/035bfdd50d7490a637abc5d01c1bc3e74bab74f3): “1.5.6-beta.2 (#2656) * Fixed pro5 import issue * Fixed clear audio not stopping playlist * Fixed dropdown closing too quick - Restoring old settings won't mess up the data path * G”
 
-Later line edits: 105; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 12; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2656](https://github.com/ChurchApps/FreeShow/pull/2656) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -70,7 +70,8 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/9d99d78eb91dd5f8fdf02b9023c5711670ed7b5f): “1.5.2 (#2325)”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/a2f34e2a335c1f5e01fdd9e663191298328e50ea): “* Scripture show Smart split verses #3280”
+- [guess] [source](https://github.com/ChurchApps/FreeShow/issues/3280): “## My need Currently, when importing Scripture, we have to choose between two compromises: 1. **Split by verse:** This creates one slide per verse. It keeps verses intact but waste”
 
-Later line edits: 105; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 21; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2325](https://github.com/ChurchApps/FreeShow/pull/2325) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
+GitHub: [pr #2325](https://github.com/ChurchApps/FreeShow/pull/2325) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet); [issue #3280](https://github.com/ChurchApps/FreeShow/issues/3280) (read; no item-specific matching bullet)

@@ -75,6 +75,6 @@
 - [code] [D-timer-f65342b60e6c9864](../history/records/src_frontend_components_edit_editors_SlideEditor.svelte-1.md): setTimeout: omitted (0 ms).
 - [code] [D-timer-b6fc8e623ce0ed10](../history/records/src_frontend_components_edit_scripts_itemClipboard.ts-1.md): wait: 10 (10 ms).
 
-[code] All 95 related decision IDs and locations are included in the dependency JSON. Use `ai:ask -- why <file>:<line>` for exact records; generic commit intent is not an item-specific motive.
+[code] All 103 related decision IDs and locations are included in the dependency JSON. Use `ai:ask -- why <file>:<line>` for exact records; generic commit intent is not an item-specific motive.
 
 [code] Companion references: [F-018](https://github.com/ajdebeer1322/FreeShow/blob/a3cdd7f576480f842077c233c79f6f4c3238fd07/HOW_IT_WORKS.md). These refer to a later source snapshot; they are contextual evidence, not runtime verification here.

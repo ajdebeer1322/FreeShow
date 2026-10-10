@@ -23,9 +23,9 @@ None detected.
 ## Timing
 
 - [src/electron/capture/senderWorker.ts:98](../../../../src/electron/capture/senderWorker.ts#L98) — timer-6af9594cd007f23a: setTimeout = dynamic ms (ADAPTER.recreateDelayMs); // replace an existing sender instead of skipping the create
-- [src/electron/capture/senderWorker.ts:133](../../../../src/electron/capture/senderWorker.ts#L133) — timer-35801dd54d5acfca: setInterval = 250 ms (CONNECTION_POLL_INTERVAL_MS); 
+- [src/electron/capture/senderWorker.ts:133](../../../../src/electron/capture/senderWorker.ts#L133) — timer-35801dd54d5acfca: setInterval = 250 ms (CONNECTION_POLL_INTERVAL_MS);
 - [src/electron/capture/senderWorker.ts:291](../../../../src/electron/capture/senderWorker.ts#L291) — timer-fa4d6db19060d0bd: setTimeout = dynamic ms (delay); // stopped
-- [src/electron/capture/senderWorker.ts:551](../../../../src/electron/capture/senderWorker.ts#L551) — timer-b74c50b5de4ab312: setInterval = 1000 ms (1000); 
+- [src/electron/capture/senderWorker.ts:551](../../../../src/electron/capture/senderWorker.ts#L551) — timer-b74c50b5de4ab312: setInterval = 1000 ms (1000);
 
 ## Workarounds
 

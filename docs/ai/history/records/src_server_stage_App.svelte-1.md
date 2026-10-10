@@ -35,7 +35,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/c43982258db14e348181b5a509b289c2d3b70af4): “📱 Remote App: Change Slides + HTML Viewport”
 
-Later line edits: 3; latest 9dca76b8. Full commit messages and lineage: JSON query data.
+Later line edits: 2; latest 9dca76b8. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 
@@ -53,7 +53,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/3de8f490f1d5d40d2d4e56616ed274387f37ec39): “📽 Video! Fixes & Improvements”
 
-Later line edits: 4; latest 9dca76b8. Full commit messages and lineage: JSON query data.
+Later line edits: 1; latest 9dca76b8. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 
@@ -73,7 +73,7 @@ Sources:
 
 Later line edits: 0; latest 2de869f6. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3555](https://github.com/ChurchApps/FreeShow/pull/3555) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3555](https://github.com/ChurchApps/FreeShow/pull/3555) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3555](https://github.com/ChurchApps/FreeShow/pull/3555) (read; no item-specific matching bullet); [pr #3555](https://github.com/ChurchApps/FreeShow/pull/3555) (read; no item-specific matching bullet)
 
 ## D-css-transition-e937d2185b4f9f6f
 
@@ -91,7 +91,7 @@ Sources:
 
 Later line edits: 0; latest 2de869f6. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3555](https://github.com/ChurchApps/FreeShow/pull/3555) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3555](https://github.com/ChurchApps/FreeShow/pull/3555) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3555](https://github.com/ChurchApps/FreeShow/pull/3555) (read; no item-specific matching bullet); [pr #3555](https://github.com/ChurchApps/FreeShow/pull/3555) (read; no item-specific matching bullet)
 
 ## D-css-transition-30ec4bd4f4779c65
 
@@ -109,7 +109,7 @@ Sources:
 
 Later line edits: 0; latest 2de869f6. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3555](https://github.com/ChurchApps/FreeShow/pull/3555) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3555](https://github.com/ChurchApps/FreeShow/pull/3555) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3555](https://github.com/ChurchApps/FreeShow/pull/3555) (read; no item-specific matching bullet); [pr #3555](https://github.com/ChurchApps/FreeShow/pull/3555) (read; no item-specific matching bullet)
 
 ## D-css-transition-f2cb43bc736e7b8d
 
@@ -127,4 +127,4 @@ Sources:
 
 Later line edits: 0; latest 2de869f6. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3555](https://github.com/ChurchApps/FreeShow/pull/3555) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3555](https://github.com/ChurchApps/FreeShow/pull/3555) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3555](https://github.com/ChurchApps/FreeShow/pull/3555) (read; no item-specific matching bullet); [pr #3555](https://github.com/ChurchApps/FreeShow/pull/3555) (read; no item-specific matching bullet)

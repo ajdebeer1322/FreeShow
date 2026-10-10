@@ -20,7 +20,7 @@ None detected.
 
 ## Timing
 
-- [src/server/cam/App.svelte:88](../../../../src/server/cam/App.svelte#L88) — timer-355223975a14f28d: setInterval = 5 ms (5); 
+- [src/server/cam/App.svelte:88](../../../../src/server/cam/App.svelte#L88) — timer-355223975a14f28d: setInterval = 5 ms (5);
 - [src/server/cam/App.svelte:164](../../../../src/server/cam/App.svelte#L164) — css-transition-70385d50c0a7de93: css-transition = 500 ms (background-color 0.5s); /* transition: background-color 0.5s; */
 
 ## Workarounds

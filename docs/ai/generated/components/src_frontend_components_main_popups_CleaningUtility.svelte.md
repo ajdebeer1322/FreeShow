@@ -8,15 +8,15 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/components/main/popups/CleaningUtility.svelte:91](../../../../src/frontend/components/main/popups/CleaningUtility.svelte#L91) — InputRow → src/frontend/components/input/InputRow.svelte; 
+- [src/frontend/components/main/popups/CleaningUtility.svelte:91](../../../../src/frontend/components/main/popups/CleaningUtility.svelte#L91) — InputRow → src/frontend/components/input/InputRow.svelte;
 - [src/frontend/components/main/popups/CleaningUtility.svelte:92](../../../../src/frontend/components/main/popups/CleaningUtility.svelte#L92) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; style="width: 100%;"; icon="delete"; info={"" + (allShowsInFolder.length - Object.keys($shows).length)}; on:c
 - [src/frontend/components/main/popups/CleaningUtility.svelte:93](../../../../src/frontend/components/main/popups/CleaningUtility.svelte#L93) — T → src/frontend/components/helpers/T.svelte; id="actions.delete_shows_not_indexed"
 - [src/frontend/components/main/popups/CleaningUtility.svelte:100](../../../../src/frontend/components/main/popups/CleaningUtility.svelte#L100) — InputRow → src/frontend/components/input/InputRow.svelte; arrow
 - [src/frontend/components/main/popups/CleaningUtility.svelte:101](../../../../src/frontend/components/main/popups/CleaningUtility.svelte#L101) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; style="width: 100%;"; icon="delete"; info={"" + emptyShows.length}; on:click={deleteEmptyShows}; red; white
 - [src/frontend/components/main/popups/CleaningUtility.svelte:102](../../../../src/frontend/components/main/popups/CleaningUtility.svelte#L102) — T → src/frontend/components/helpers/T.svelte; id="actions.delete_empty_shows"
 - [src/frontend/components/main/popups/CleaningUtility.svelte:114](../../../../src/frontend/components/main/popups/CleaningUtility.svelte#L114) — Center → src/frontend/components/system/Center.svelte; padding={10}
-- [src/frontend/components/main/popups/CleaningUtility.svelte:115](../../../../src/frontend/components/main/popups/CleaningUtility.svelte#L115) — Loader → src/frontend/components/main/Loader.svelte; 
-- [src/frontend/components/main/popups/CleaningUtility.svelte:121](../../../../src/frontend/components/main/popups/CleaningUtility.svelte#L121) — InputRow → src/frontend/components/input/InputRow.svelte; 
+- [src/frontend/components/main/popups/CleaningUtility.svelte:115](../../../../src/frontend/components/main/popups/CleaningUtility.svelte#L115) — Loader → src/frontend/components/main/Loader.svelte;
+- [src/frontend/components/main/popups/CleaningUtility.svelte:121](../../../../src/frontend/components/main/popups/CleaningUtility.svelte#L121) — InputRow → src/frontend/components/input/InputRow.svelte;
 - [src/frontend/components/main/popups/CleaningUtility.svelte:122](../../../../src/frontend/components/main/popups/CleaningUtility.svelte#L122) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; style="width: 100%;"; icon="launch"; info={"" + duplicatedShows.length}; on:click={deleteDuplicatedShows}; wh
 - [src/frontend/components/main/popups/CleaningUtility.svelte:123](../../../../src/frontend/components/main/popups/CleaningUtility.svelte#L123) — T → src/frontend/components/helpers/T.svelte; id="popup.delete_duplicated_shows"
 - [src/frontend/components/main/popups/CleaningUtility.svelte:129](../../../../src/frontend/components/main/popups/CleaningUtility.svelte#L129) — Center → src/frontend/components/system/Center.svelte; faded

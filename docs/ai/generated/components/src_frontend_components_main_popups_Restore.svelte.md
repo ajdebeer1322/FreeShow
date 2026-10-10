@@ -9,7 +9,7 @@ No static evidence found.
 ## Rendered components and props
 
 - [src/frontend/components/main/popups/Restore.svelte:76](../../../../src/frontend/components/main/popups/Restore.svelte#L76) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; class="popup-back"; icon="back"; iconSize={1.3}; title="actions.back"; on:click={() => activePopup.set($popup
-- [src/frontend/components/main/popups/Restore.svelte:81](../../../../src/frontend/components/main/popups/Restore.svelte#L81) — InputRow → src/frontend/components/input/InputRow.svelte; 
+- [src/frontend/components/main/popups/Restore.svelte:81](../../../../src/frontend/components/main/popups/Restore.svelte#L81) — InputRow → src/frontend/components/input/InputRow.svelte;
 - [src/frontend/components/main/popups/Restore.svelte:82](../../../../src/frontend/components/main/popups/Restore.svelte#L82) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; variant="outlined"; title="settings.restore"; style="width: 100%;"; on:click={() => restore(backup)}
 - [src/frontend/components/main/popups/Restore.svelte:91](../../../../src/frontend/components/main/popups/Restore.svelte#L91) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; variant="outlined"; icon={deletingPath === backup.path ? "undo" : "delete"}; title="actions.delete"; disabled
 - [src/frontend/components/main/popups/Restore.svelte:97](../../../../src/frontend/components/main/popups/Restore.svelte#L97) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; variant="outlined"; on:click={restoreCustom}

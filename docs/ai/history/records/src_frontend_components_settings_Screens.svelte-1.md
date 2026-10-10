@@ -16,9 +16,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/8e3de40166c2872866dc5b3fc37b97eb882aed2b): “1.6.1-beta.2 (#3250) * Refactor architecture check for npm installation (#3219) GCC 15 on arm64 can fail compiling @discordjs/opus unless this warning is not treated as an error. *”
 
-Later line edits: 11; latest 8e3de401. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 8e3de401. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (read; no item-specific matching bullet); [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (read; no item-specific matching bullet)
 
 ## D-timer-fb996090b7d09795
 
@@ -52,6 +52,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/bbf0c8322309d2f41e1fb25c9ed74e1018a73071): “💻 Better output display. Import PowerPoint & PDF. Added tooltips. Bugfixes.”
 
-Later line edits: 6; latest 8a38b0b9. Full commit messages and lineage: JSON query data.
+Later line edits: 3; latest 8a38b0b9. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

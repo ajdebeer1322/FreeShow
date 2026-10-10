@@ -20,7 +20,7 @@ None detected.
 
 ## Timing
 
-- [src/server/common/components/TextInput.svelte:34](../../../../src/server/common/components/TextInput.svelte#L34) — css-transition-74e0d9a7a6122058: css-transition = 200 ms (border-color 0.2s ease,); 
+- [src/server/common/components/TextInput.svelte:34](../../../../src/server/common/components/TextInput.svelte#L34) — css-transition-74e0d9a7a6122058: css-transition = 200 ms (border-color 0.2s ease,);
 
 ## Workarounds
 

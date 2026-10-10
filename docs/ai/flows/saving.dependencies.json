@@ -1,0 +1,150 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/frontend/utils/shortcuts.ts",
+    "src/frontend/utils/save.ts",
+    "src/electron/IPC/responsesMain.ts",
+    "src/electron/data/save.ts",
+    "src/frontend/IPC/responsesMain.ts"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-7dea68a4caa76ac9",
+      "file": "src/electron/data/save.ts",
+      "line": 112,
+      "document": "docs/ai/history/records/src_electron_data_save.ts-1.md"
+    },
+    {
+      "id": "D-timer-701dcf5794003745",
+      "file": "src/frontend/IPC/responsesMain.ts",
+      "line": 255,
+      "document": "docs/ai/history/records/src_frontend_IPC_responsesMain.ts-1.md"
+    },
+    {
+      "id": "D-timer-fd3bd1d50125472f",
+      "file": "src/frontend/IPC/responsesMain.ts",
+      "line": 279,
+      "document": "docs/ai/history/records/src_frontend_IPC_responsesMain.ts-1.md"
+    },
+    {
+      "id": "D-timer-c50dcc3732c60451",
+      "file": "src/frontend/IPC/responsesMain.ts",
+      "line": 354,
+      "document": "docs/ai/history/records/src_frontend_IPC_responsesMain.ts-1.md"
+    },
+    {
+      "id": "D-timer-60669cb141a1eac5",
+      "file": "src/frontend/utils/save.ts",
+      "line": 254,
+      "document": "docs/ai/history/records/src_frontend_utils_save.ts-1.md"
+    },
+    {
+      "id": "D-timer-1c68e6ba9795d4bd",
+      "file": "src/frontend/utils/save.ts",
+      "line": 350,
+      "document": "docs/ai/history/records/src_frontend_utils_save.ts-1.md"
+    },
+    {
+      "id": "D-timer-a78297164b122d8d",
+      "file": "src/frontend/utils/save.ts",
+      "line": 394,
+      "document": "docs/ai/history/records/src_frontend_utils_save.ts-1.md"
+    },
+    {
+      "id": "D-timer-d54945e8b6ca3a3b",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 44,
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md"
+    },
+    {
+      "id": "D-timer-eba1ab375c1246ce",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 104,
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md"
+    },
+    {
+      "id": "D-timer-02487d4a128bab12",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 117,
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md"
+    },
+    {
+      "id": "D-timer-851791bf1a8c5445",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 125,
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md"
+    },
+    {
+      "id": "D-timer-19c301648459c9bd",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 142,
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md"
+    },
+    {
+      "id": "D-timer-49cc82e274a964e9",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 355,
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md"
+    },
+    {
+      "id": "D-request-budget-8f3ea1ff0f1850b2",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 552,
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md"
+    },
+    {
+      "id": "D-workaround-32942beeb5ae2204",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 353,
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md"
+    },
+    {
+      "id": "D-hotspot-0b4e59d5ecf3f9a4",
+      "file": "src/electron/IPC/responsesMain.ts",
+      "line": 303,
+      "document": "docs/ai/history/records/src_electron_IPC_responsesMain.ts-1.md"
+    },
+    {
+      "id": "D-hotspot-2dc83fd7826af5f5",
+      "file": "src/electron/data/save.ts",
+      "line": 21,
+      "document": "docs/ai/history/records/src_electron_data_save.ts-1.md"
+    },
+    {
+      "id": "D-hotspot-e35a1a0f8f77831a",
+      "file": "src/frontend/IPC/responsesMain.ts",
+      "line": 375,
+      "document": "docs/ai/history/records/src_frontend_IPC_responsesMain.ts-1.md"
+    },
+    {
+      "id": "D-hotspot-613d3d6405b1c316",
+      "file": "src/frontend/utils/save.ts",
+      "line": 124,
+      "document": "docs/ai/history/records/src_frontend_utils_save.ts-1.md"
+    },
+    {
+      "id": "D-fork-4beaefae8634deef",
+      "file": "src/electron/IPC/responsesMain.ts",
+      "line": 166,
+      "document": "docs/ai/history/records/src_electron_IPC_responsesMain.ts-1.md"
+    },
+    {
+      "id": "D-fork-6abcc122b2964bc8",
+      "file": "src/frontend/IPC/responsesMain.ts",
+      "line": 143,
+      "document": "docs/ai/history/records/src_frontend_IPC_responsesMain.ts-1.md"
+    },
+    {
+      "id": "D-fork-7730fb58996b2211",
+      "file": "src/electron/IPC/responsesMain.ts",
+      "line": 181,
+      "document": "docs/ai/history/records/src_electron_IPC_responsesMain.ts-1.md"
+    },
+    {
+      "id": "D-fork-8b25eae37271597d",
+      "file": "src/electron/IPC/responsesMain.ts",
+      "line": 1,
+      "document": "docs/ai/history/records/src_electron_IPC_responsesMain.ts-1.md"
+    }
+  ]
+}

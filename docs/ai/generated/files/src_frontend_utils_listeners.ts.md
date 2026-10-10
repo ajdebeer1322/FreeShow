@@ -93,20 +93,20 @@ No static evidence found.
 - [src/frontend/utils/listeners.ts:88](../../../../src/frontend/utils/listeners.ts#L88) — timer-91237ea1937c25d4: hasNewerUpdate = 0 ms (0); // send(OUTPUT, &#91;"SHOWS_DATA"&#93;, data) // TIMELINE style updates everytime unless set to 20ms // update "shows" with new "showsCac
 - [src/frontend/utils/listeners.ts:96](../../../../src/frontend/utils/listeners.ts#L96) — timer-f1182f79d2ac9331: hasNewerUpdate = 50 ms (50); // needs to be sent before output data // STAGE
 - [src/frontend/utils/listeners.ts:125](../../../../src/frontend/utils/listeners.ts#L125) — timer-30c6cdc96dd587ad: hasNewerUpdate = 50 ms (50); // show category metadata display
-- [src/frontend/utils/listeners.ts:131](../../../../src/frontend/utils/listeners.ts#L131) — timer-f2496c195fbf5d2d: hasNewerUpdate = 50 ms (50); 
-- [src/frontend/utils/listeners.ts:136](../../../../src/frontend/utils/listeners.ts#L136) — timer-78a49b00f2489896: hasNewerUpdate = 50 ms (50); 
+- [src/frontend/utils/listeners.ts:131](../../../../src/frontend/utils/listeners.ts#L131) — timer-f2496c195fbf5d2d: hasNewerUpdate = 50 ms (50);
+- [src/frontend/utils/listeners.ts:136](../../../../src/frontend/utils/listeners.ts#L136) — timer-78a49b00f2489896: hasNewerUpdate = 50 ms (50);
 - [src/frontend/utils/listeners.ts:156](../../../../src/frontend/utils/listeners.ts#L156) — timer-d36c909e79ba2d5a: hasNewerUpdate = 50 ms (50); // Object.keys(get(cachedShowsData)).forEach(id => { // if (get(showsCache)&#91;id&#93;?.settings?.template === id) // set false // });
-- [src/frontend/utils/listeners.ts:161](../../../../src/frontend/utils/listeners.ts#L161) — timer-35661c215f79ee35: hasNewerUpdate = 50 ms (50); 
-- [src/frontend/utils/listeners.ts:167](../../../../src/frontend/utils/listeners.ts#L167) — timer-f7dbfded530d6376: hasNewerUpdate = 50 ms (50); 
+- [src/frontend/utils/listeners.ts:161](../../../../src/frontend/utils/listeners.ts#L161) — timer-35661c215f79ee35: hasNewerUpdate = 50 ms (50);
+- [src/frontend/utils/listeners.ts:167](../../../../src/frontend/utils/listeners.ts#L167) — timer-f7dbfded530d6376: hasNewerUpdate = 50 ms (50);
 - [src/frontend/utils/listeners.ts:184](../../../../src/frontend/utils/listeners.ts#L184) — timer-4094713e914b0c42: hasNewerUpdate = 120 ms (120); // Debounce and filter ACTIVE_SCRIPTURE to avoid sending partial states (book-only/chapter-only)
 - [src/frontend/utils/listeners.ts:195](../../../../src/frontend/utils/listeners.ts#L195) — timer-702f0910e390b86a: hasNewerUpdate = 1 ms (1); // wait in case multiple slide layers get activated right after each other - to reduce the amount of updates // having more is pr
 - [src/frontend/utils/listeners.ts:207](../../../../src/frontend/utils/listeners.ts#L207) — timer-756c345185aae765: setTimeout = 0 ms (omitted); // let it update properly
-- [src/frontend/utils/listeners.ts:228](../../../../src/frontend/utils/listeners.ts#L228) — timer-f66ff4e5cd000595: hasNewerUpdate = 50 ms (50); 
+- [src/frontend/utils/listeners.ts:228](../../../../src/frontend/utils/listeners.ts#L228) — timer-f66ff4e5cd000595: hasNewerUpdate = 50 ms (50);
 - [src/frontend/utils/listeners.ts:284](../../../../src/frontend/utils/listeners.ts#L284) — timer-421770ee60f90a38: hasNewerUpdate = 50 ms (50); // used by stage output
-- [src/frontend/utils/listeners.ts:298](../../../../src/frontend/utils/listeners.ts#L298) — timer-b21439fccd301942: hasNewerUpdate = 50 ms (50); 
+- [src/frontend/utils/listeners.ts:298](../../../../src/frontend/utils/listeners.ts#L298) — timer-b21439fccd301942: hasNewerUpdate = 50 ms (50);
 - [src/frontend/utils/listeners.ts:424](../../../../src/frontend/utils/listeners.ts#L424) — timer-7d05d9f1086f4e8c: hasNewerUpdate = 30 ms (30); // REMOTE
-- [src/frontend/utils/listeners.ts:430](../../../../src/frontend/utils/listeners.ts#L430) — timer-ad64a7bf4c0509cb: hasNewerUpdate = 30 ms (30); 
-- [src/frontend/utils/listeners.ts:461](../../../../src/frontend/utils/listeners.ts#L461) — timer-3c77de0d8fbf7697: setTimeout = 0 ms (omitted); 
+- [src/frontend/utils/listeners.ts:430](../../../../src/frontend/utils/listeners.ts#L430) — timer-ad64a7bf4c0509cb: hasNewerUpdate = 30 ms (30);
+- [src/frontend/utils/listeners.ts:461](../../../../src/frontend/utils/listeners.ts#L461) — timer-3c77de0d8fbf7697: setTimeout = 0 ms (omitted);
 - [src/frontend/utils/listeners.ts:522](../../../../src/frontend/utils/listeners.ts#L522) — timer-3dbfba5225c7a03e: setTimeout = 100 ms (100); // used for stage mirror data
 
 ## Workarounds

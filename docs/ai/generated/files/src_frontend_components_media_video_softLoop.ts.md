@@ -22,7 +22,7 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/media/video/softLoop.ts:33](../../../../src/frontend/components/media/video/softLoop.ts#L33) — timer-41206b4eadc10c34: setTimeout = 1500 ms (1500); 
+- [src/frontend/components/media/video/softLoop.ts:33](../../../../src/frontend/components/media/video/softLoop.ts#L33) — timer-41206b4eadc10c34: setTimeout = 1500 ms (1500);
 
 ## Workarounds
 

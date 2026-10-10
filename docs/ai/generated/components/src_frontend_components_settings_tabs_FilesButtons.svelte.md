@@ -8,7 +8,7 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/components/settings/tabs/FilesButtons.svelte:14](../../../../src/frontend/components/settings/tabs/FilesButtons.svelte#L14) — InputRow → src/frontend/components/input/InputRow.svelte; 
+- [src/frontend/components/settings/tabs/FilesButtons.svelte:14](../../../../src/frontend/components/settings/tabs/FilesButtons.svelte#L14) — InputRow → src/frontend/components/input/InputRow.svelte;
 - [src/frontend/components/settings/tabs/FilesButtons.svelte:15](../../../../src/frontend/components/settings/tabs/FilesButtons.svelte#L15) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; style="flex: 1;font-size: 1.1em;padding: 20px !important;"; title="settings.backup_info"; on:click={backup}
 - [src/frontend/components/settings/tabs/FilesButtons.svelte:16](../../../../src/frontend/components/settings/tabs/FilesButtons.svelte#L16) — Icon → src/frontend/components/helpers/Icon.svelte; id="export"; size={1.3}
 - [src/frontend/components/settings/tabs/FilesButtons.svelte:17](../../../../src/frontend/components/settings/tabs/FilesButtons.svelte#L17) — T → src/frontend/components/helpers/T.svelte; id="settings.backup_all"

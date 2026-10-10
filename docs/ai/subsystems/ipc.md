@@ -25,7 +25,7 @@
 
 ## Stores and messages
 
-[code] Static scope: 10 files, 94 referenced stores, 319 concrete message keys, 26 timing entries. [Complete dependency index](ipc.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
+[code] Static scope: 10 files, 94 referenced stores, 311 concrete message keys, 26 timing entries. [Complete dependency index](ipc.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
 
 - [code] [src/frontend/stores.ts#actionTags](../generated/stores/src_frontend_stores.ts_actionTags.md)
 - [code] [src/frontend/stores.ts#actions](../generated/stores/src_frontend_stores.ts_actions.md)

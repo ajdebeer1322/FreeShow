@@ -23,8 +23,8 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/edit/editbox/EditboxPaste.ts:304](../../../../src/frontend/components/edit/editbox/EditboxPaste.ts#L304) — timer-fe391a80aaf2f52f: setTimeout = 10 ms (10); 
-- [src/frontend/components/edit/editbox/EditboxPaste.ts:306](../../../../src/frontend/components/edit/editbox/EditboxPaste.ts#L306) — timer-9e47b3616569d4bb: setTimeout = 10 ms (10); 
+- [src/frontend/components/edit/editbox/EditboxPaste.ts:304](../../../../src/frontend/components/edit/editbox/EditboxPaste.ts#L304) — timer-fe391a80aaf2f52f: setTimeout = 10 ms (10);
+- [src/frontend/components/edit/editbox/EditboxPaste.ts:306](../../../../src/frontend/components/edit/editbox/EditboxPaste.ts#L306) — timer-9e47b3616569d4bb: setTimeout = 10 ms (10);
 
 ## Workarounds
 

@@ -25,7 +25,7 @@ None detected.
 
 ## Timing
 
-- [src/electron/data/bonjour.ts:38](../../../../src/electron/data/bonjour.ts#L38) — timer-23b92f06339eae23: setTimeout = 1000 ms (1000); 
+- [src/electron/data/bonjour.ts:38](../../../../src/electron/data/bonjour.ts#L38) — timer-23b92f06339eae23: setTimeout = 1000 ms (1000);
 
 ## Workarounds
 

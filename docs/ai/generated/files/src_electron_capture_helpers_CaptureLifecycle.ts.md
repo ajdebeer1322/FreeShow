@@ -28,8 +28,8 @@ None detected.
 ## Timing
 
 - [src/electron/capture/helpers/CaptureLifecycle.ts:83](../../../../src/electron/capture/helpers/CaptureLifecycle.ts#L83) — timer-41d0c8e49fa02d4b: setTimeout = dynamic ms (1000 / this.FALLBACK_FPS); // Blackmagic only - skip frames
-- [src/electron/capture/helpers/CaptureLifecycle.ts:102](../../../../src/electron/capture/helpers/CaptureLifecycle.ts#L102) — timer-86f9e4a4d651ef72: setTimeout = dynamic ms (delay); 
-- [src/electron/capture/helpers/CaptureLifecycle.ts:244](../../../../src/electron/capture/helpers/CaptureLifecycle.ts#L244) — timer-19e88a40358a7b28: setTimeout = dynamic ms (this.WEBRTC_START_DELAY_MS); 
+- [src/electron/capture/helpers/CaptureLifecycle.ts:102](../../../../src/electron/capture/helpers/CaptureLifecycle.ts#L102) — timer-86f9e4a4d651ef72: setTimeout = dynamic ms (delay);
+- [src/electron/capture/helpers/CaptureLifecycle.ts:244](../../../../src/electron/capture/helpers/CaptureLifecycle.ts#L244) — timer-19e88a40358a7b28: setTimeout = dynamic ms (this.WEBRTC_START_DELAY_MS);
 
 ## Workarounds
 

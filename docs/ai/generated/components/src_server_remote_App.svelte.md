@@ -9,6 +9,6 @@ No static evidence found.
 ## Rendered components and props
 
 - [src/server/remote/App.svelte:16](../../../../src/server/remote/App.svelte#L16) — Error → src/server/common/components/Error.svelte; errors={$errors}
-- [src/server/remote/App.svelte:19](../../../../src/server/remote/App.svelte#L19) — Main → src/server/remote/components/Main.svelte; 
-- [src/server/remote/App.svelte:21](../../../../src/server/remote/App.svelte#L21) — Auth → src/server/remote/components/Auth.svelte; 
-- [src/server/remote/App.svelte:23](../../../../src/server/remote/App.svelte#L23) — Center → src/server/common/components/Center.svelte; 
+- [src/server/remote/App.svelte:19](../../../../src/server/remote/App.svelte#L19) — Main → src/server/remote/components/Main.svelte;
+- [src/server/remote/App.svelte:21](../../../../src/server/remote/App.svelte#L21) — Auth → src/server/remote/components/Auth.svelte;
+- [src/server/remote/App.svelte:23](../../../../src/server/remote/App.svelte#L23) — Center → src/server/common/components/Center.svelte;

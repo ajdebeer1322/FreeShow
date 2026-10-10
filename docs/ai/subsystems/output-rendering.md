@@ -23,7 +23,7 @@
 
 ## Stores and messages
 
-[code] Static scope: 43 files, 94 referenced stores, 72 concrete message keys, 69 timing entries. [Complete dependency index](output-rendering.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
+[code] Static scope: 43 files, 94 referenced stores, 68 concrete message keys, 69 timing entries. [Complete dependency index](output-rendering.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
 
 - [code] [src/frontend/components/output/preview/SpotifyManager.ts#spotifyIsFading](../generated/stores/src_frontend_components_output_preview_SpotifyManager.ts_spotifyIsFading.md)
 - [code] [src/frontend/components/output/preview/SpotifyManager.ts#spotifyState](../generated/stores/src_frontend_components_output_preview_SpotifyManager.ts_spotifyState.md)

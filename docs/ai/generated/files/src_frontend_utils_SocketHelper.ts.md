@@ -24,7 +24,7 @@ None detected.
 ## Timing
 
 - [src/frontend/utils/SocketHelper.ts:115](../../../../src/frontend/utils/SocketHelper.ts#L115) — timer-260dfbe26f4d6a29: wait = 100 ms (100); // 50 * 100ms = 5 seconds
-- [src/frontend/utils/SocketHelper.ts:139](../../../../src/frontend/utils/SocketHelper.ts#L139) — request-budget-5ba95814a384bb9b: request-budget = 15000 ms (15000); 
+- [src/frontend/utils/SocketHelper.ts:139](../../../../src/frontend/utils/SocketHelper.ts#L139) — request-budget-5ba95814a384bb9b: request-budget = 15000 ms (15000);
 
 ## Workarounds
 

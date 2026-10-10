@@ -23,7 +23,7 @@ None detected.
 ## Timing
 
 - [src/server/common/components/Dropdown.svelte:28](../../../../src/server/common/components/Dropdown.svelte#L28) — timer-0aed6db68a559881: setTimeout = 10 ms (10); // dropdown does not have a scroll bar if not much content, return so parent is not scrolled!
-- [src/server/common/components/Dropdown.svelte:54](../../../../src/server/common/components/Dropdown.svelte#L54) — transition-158015066434c51b: transition-directive = dynamic ms ({ duration: 200 }); 
+- [src/server/common/components/Dropdown.svelte:54](../../../../src/server/common/components/Dropdown.svelte#L54) — transition-158015066434c51b: transition-directive = dynamic ms ({ duration: 200 });
 
 ## Workarounds
 

@@ -1,6 +1,6 @@
 # Why and provenance
 
-1603 records: every 1158 timing entry and 311 workaround comment, plus 105 hotspot modules.
+1613 records: every 1158 timing entry and 311 workaround comment, plus 115 hotspot modules.
 
 16/311 workaround motives (5.1%) have an explicit causal code comment. Release-bullet candidates and generic fork commit messages do not count as item-specific sourced motives.
 
@@ -9,7 +9,7 @@
 - [code] `git blame --line-porcelain` records the latest edit; `git log -L` traces each line; unique exact text also uses `git log -S --follow`. Dates/quotes are copied from commits, never inferred from a release date.
 - [guess] Earliest tracked text can represent a move or rewrite rather than the start of the broader behavior. Full lineage and pickaxe needles are preserved in JSON. Initial repository imports limit older history.
 - [guess] Bundled release bullets are lexical candidates, never asserted as reasons without manual confirmation. Both introduction and latest-edit PRs are considered; only candidate-linked issue numbers are read.
-- [code] GitHub reads are cached in the gitignored `docs/ai/.cache/`; authenticated CLI is preferred, public API fallback reserves quota and stops on 403/429. Needed PRs: 129; fetched/cached: 56; empty bodies: 56. Bundled bullets are available in local squash commit messages even when the PR body is empty; candidates are labeled by their actual source. Unauthenticated GitHub API quota reserve reached; login required for remaining sources.
+- [code] GitHub reads are cached in the gitignored `docs/ai/.cache/`; authenticated CLI is preferred, public API fallback reserves quota and stops on 403/429. Needed PRs: 129; fetched/cached: 129; empty bodies: 129. Bundled bullets are available in local squash commit messages even when the PR body is empty; candidates are labeled by their actual source. No rate-limit stop.
 - [code] Fork classification uses commit ancestry relative to `upstream/main` at generation. No remote writes are performed.
 
 Run `node scripts/ai-map/history.mjs` to rebuild, then review guesses. Query with `npm run ai:ask -- why <file>:<line>`.
@@ -547,6 +547,10 @@ Run `node scripts/ai-map/history.mjs` to rebuild, then review guesses. Query wit
 - [src_electron_output_helpers_OutputValues.ts-1.md](records/src_electron_output_helpers_OutputValues.ts-1.md)
 - [src_electron_output_helpers_OutputVisibility.ts-1.md](records/src_electron_output_helpers_OutputVisibility.ts-1.md)
 - [src_electron_output_ppt_pptToShow.ts-1.md](records/src_electron_output_ppt_pptToShow.ts-1.md)
+- [src_frontend_components_edit_editbox_EditboxChords.svelte-1.md](records/src_frontend_components_edit_editbox_EditboxChords.svelte-1.md)
+- [src_frontend_components_edit_editbox_EditboxCropping.svelte-1.md](records/src_frontend_components_edit_editbox_EditboxCropping.svelte-1.md)
+- [src_frontend_components_edit_editbox_EditboxHelper.ts-1.md](records/src_frontend_components_edit_editbox_EditboxHelper.ts-1.md)
+- [src_frontend_components_edit_scripts_autosize.ts-1.md](records/src_frontend_components_edit_scripts_autosize.ts-1.md)
 - [src_frontend_components_helpers_mediaInspectorLogic.test.ts-1.md](records/src_frontend_components_helpers_mediaInspectorLogic.test.ts-1.md)
 - [src_frontend_components_helpers_mediaInspectorLogic.ts-1.md](records/src_frontend_components_helpers_mediaInspectorLogic.ts-1.md)
 - [src_frontend_components_media_Image.svelte-1.md](records/src_frontend_components_media_Image.svelte-1.md)
@@ -570,6 +574,7 @@ Run `node scripts/ai-map/history.mjs` to rebuild, then review guesses. Query wit
 - [src_frontend_components_output_tools_Overlay.svelte-1.md](records/src_frontend_components_output_tools_Overlay.svelte-1.md)
 - [src_frontend_components_output_tools_Show.svelte-1.md](records/src_frontend_components_output_tools_Show.svelte-1.md)
 - [src_frontend_components_output_tools_TimerControls.svelte-1.md](records/src_frontend_components_output_tools_TimerControls.svelte-1.md)
+- [src_frontend_components_slide_autosizeCache.ts-1.md](records/src_frontend_components_slide_autosizeCache.ts-1.md)
 - [src_frontend_utils_request.ts-1.md](records/src_frontend_utils_request.ts-1.md)
 - [src_frontend_components_context_contextMenus.ts-1.md](records/src_frontend_components_context_contextMenus.ts-1.md)
 - [src_electron_worshipTools_extract.ts-1.md](records/src_electron_worshipTools_extract.ts-1.md)
@@ -579,4 +584,3 @@ Run `node scripts/ai-map/history.mjs` to rebuild, then review guesses. Query wit
 - [src_electron_data_defaults.ts-1.md](records/src_electron_data_defaults.ts-1.md)
 - [src_electron_utils_LyricSearch.ts-1.md](records/src_electron_utils_LyricSearch.ts-1.md)
 - [src_frontend_components_show_tools_Arrangements.svelte-1.md](records/src_frontend_components_show_tools_Arrangements.svelte-1.md)
-- [src_frontend_components_edit_editbox_EditboxChords.svelte-1.md](records/src_frontend_components_edit_editbox_EditboxChords.svelte-1.md)

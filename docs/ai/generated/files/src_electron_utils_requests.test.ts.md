@@ -24,9 +24,9 @@ None detected.
 
 - [src/electron/utils/requests.test.ts:57](../../../../src/electron/utils/requests.test.ts#L57) — timer-a716bc2f88647e4d: setTimeout = 10 ms (10); // simulate Node emitting "timeout" after options.timeout elapses on a hung connection
 - [src/electron/utils/requests.test.ts:74](../../../../src/electron/utils/requests.test.ts#L74) — timer-34569d8860e63978: setTimeout = 0 ms (0); // response headers arrived, but the body stalls (e.g. a slow/hung backend) - then the // timeout fires; both the request's "error" a
-- [src/electron/utils/requests.test.ts:77](../../../../src/electron/utils/requests.test.ts#L77) — timer-a3acafe3292daca6: setTimeout = 10 ms (10); 
-- [src/electron/utils/requests.test.ts:89](../../../../src/electron/utils/requests.test.ts#L89) — timer-841290a8ea4475ec: setTimeout = 10 ms (10); 
-- [src/electron/utils/requests.test.ts:102](../../../../src/electron/utils/requests.test.ts#L102) — timer-19476bb77c055f60: setTimeout = 10 ms (10); 
+- [src/electron/utils/requests.test.ts:77](../../../../src/electron/utils/requests.test.ts#L77) — timer-a3acafe3292daca6: setTimeout = 10 ms (10);
+- [src/electron/utils/requests.test.ts:89](../../../../src/electron/utils/requests.test.ts#L89) — timer-841290a8ea4475ec: setTimeout = 10 ms (10);
+- [src/electron/utils/requests.test.ts:102](../../../../src/electron/utils/requests.test.ts#L102) — timer-19476bb77c055f60: setTimeout = 10 ms (10);
 
 ## Workarounds
 

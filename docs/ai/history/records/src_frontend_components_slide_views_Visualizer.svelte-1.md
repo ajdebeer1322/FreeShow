@@ -16,9 +16,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/a78fa924b1438e193b83ddb5df38fa45993043a6): “1.4.0-beta.2 (#1445) * arm will wait longer for release to be created * ✔️ Fixed beta update alert not working * ✔️ Fixed media thumbnails incorrect - Drop screen/camera captures i”
 
-Later line edits: 2; latest a78fa924. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest a78fa924. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1445](https://github.com/ChurchApps/FreeShow/pull/1445) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1445](https://github.com/ChurchApps/FreeShow/pull/1445) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1445](https://github.com/ChurchApps/FreeShow/pull/1445) (read; no item-specific matching bullet); [pr #1445](https://github.com/ChurchApps/FreeShow/pull/1445) (read; no item-specific matching bullet)
 
 ## D-workaround-b0027d40ff0de414
 

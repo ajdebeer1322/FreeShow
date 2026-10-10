@@ -1,0 +1,592 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/frontend/utils/shortcuts.ts",
+    "src/frontend/components/helpers/OutputHelper.ts",
+    "src/frontend/components/helpers/output.ts",
+    "src/frontend/utils/listeners.ts",
+    "src/electron/output/helpers/OutputSend.ts",
+    "src/frontend/utils/receivers.ts",
+    "src/frontend/components/output/Output.svelte",
+    "src/frontend/components/output/layers/SlideContent.svelte",
+    "src/frontend/components/slide/Textbox.svelte"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-7e3fa0f5a6daab8a",
+      "file": "src/frontend/components/helpers/OutputHelper.ts",
+      "line": 107,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_OutputHelper.ts-1.md"
+    },
+    {
+      "id": "D-timer-f635a8c6373dace3",
+      "file": "src/frontend/components/helpers/OutputHelper.ts",
+      "line": 376,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_OutputHelper.ts-1.md"
+    },
+    {
+      "id": "D-timer-c7515519ab245f5b",
+      "file": "src/frontend/components/helpers/OutputHelper.ts",
+      "line": 701,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_OutputHelper.ts-1.md"
+    },
+    {
+      "id": "D-timer-4d6c34e19e747079",
+      "file": "src/frontend/components/helpers/OutputHelper.ts",
+      "line": 725,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_OutputHelper.ts-1.md"
+    },
+    {
+      "id": "D-timer-d0086bcfd0fe5a3e",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 198,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-timer-6a6776591c6f13c0",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 202,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-timer-d61e1db10e4232d4",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 228,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-timer-1f9b8e69711ab128",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 465,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-timer-bb92282b1e49c938",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 579,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-timer-3289ae6e2b7f01d5",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 744,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-request-budget-38893430dafba01e",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 1136,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-request-budget-242311a284e7fd1d",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 1140,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-timer-2b5c2038674eb2e8",
+      "file": "src/frontend/components/output/Output.svelte",
+      "line": 232,
+      "document": "docs/ai/history/records/src_frontend_components_output_Output.svelte-1.md"
+    },
+    {
+      "id": "D-timer-e32be761249e48e5",
+      "file": "src/frontend/components/output/Output.svelte",
+      "line": 251,
+      "document": "docs/ai/history/records/src_frontend_components_output_Output.svelte-1.md"
+    },
+    {
+      "id": "D-timer-c7f603e7a62b8e68",
+      "file": "src/frontend/components/output/Output.svelte",
+      "line": 288,
+      "document": "docs/ai/history/records/src_frontend_components_output_Output.svelte-1.md"
+    },
+    {
+      "id": "D-timer-1c582d8bc2469e6e",
+      "file": "src/frontend/components/output/Output.svelte",
+      "line": 353,
+      "document": "docs/ai/history/records/src_frontend_components_output_Output.svelte-1.md"
+    },
+    {
+      "id": "D-transition-a52a4277e6832735",
+      "file": "src/frontend/components/output/Output.svelte",
+      "line": 433,
+      "document": "docs/ai/history/records/src_frontend_components_output_Output.svelte-1.md"
+    },
+    {
+      "id": "D-timer-811b130039a75869",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 99,
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md"
+    },
+    {
+      "id": "D-timer-cf6a381999a4c4c9",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 229,
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md"
+    },
+    {
+      "id": "D-poll-interval-9bfb40909220b56c",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 234,
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md"
+    },
+    {
+      "id": "D-poll-timeout-0363d78a143e0794",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 234,
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md"
+    },
+    {
+      "id": "D-delay-variable-b5ea3e940d0e3c3e",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 253,
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md"
+    },
+    {
+      "id": "D-timer-8093f55a2dd3b53d",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 316,
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md"
+    },
+    {
+      "id": "D-timer-5a0884eced6ca67c",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 322,
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md"
+    },
+    {
+      "id": "D-timer-24d1dc584a7d8c38",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 337,
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md"
+    },
+    {
+      "id": "D-timer-7e20e324eb39abdb",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 343,
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md"
+    },
+    {
+      "id": "D-timer-15659966c137e66b",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 365,
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md"
+    },
+    {
+      "id": "D-timer-9f0e2d3a775127fb",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 368,
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md"
+    },
+    {
+      "id": "D-timer-455e7bbdb9293974",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 99,
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md"
+    },
+    {
+      "id": "D-timer-b00ae6b7871edf88",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 116,
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md"
+    },
+    {
+      "id": "D-timer-5be751488eaaec4f",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 329,
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md"
+    },
+    {
+      "id": "D-timer-0f70b7a0a6f1d0dc",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 433,
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md"
+    },
+    {
+      "id": "D-timer-ea90315dd39e1bd3",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 456,
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md"
+    },
+    {
+      "id": "D-timer-ba5b46aed387d23e",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 740,
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md"
+    },
+    {
+      "id": "D-timer-0b58f901828bacd2",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 766,
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md"
+    },
+    {
+      "id": "D-css-transition-e8f2912eee283d24",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 867,
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md"
+    },
+    {
+      "id": "D-timer-1f9d8d350248523a",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 76,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-91237ea1937c25d4",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 88,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-f1182f79d2ac9331",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 96,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-30c6cdc96dd587ad",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 125,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-f2496c195fbf5d2d",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 131,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-78a49b00f2489896",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 136,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-d36c909e79ba2d5a",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 156,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-35661c215f79ee35",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 161,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-f7dbfded530d6376",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 167,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-4094713e914b0c42",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 184,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-702f0910e390b86a",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 195,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-756c345185aae765",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 207,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-f66ff4e5cd000595",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 228,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-421770ee60f90a38",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 284,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-b21439fccd301942",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 298,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-7d05d9f1086f4e8c",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 424,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-ad64a7bf4c0509cb",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 430,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-timer-3c77de0d8fbf7697",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 461,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-timer-3dbfba5225c7a03e",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 522,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-timer-186a9d92f4736347",
+      "file": "src/frontend/utils/receivers.ts",
+      "line": 390,
+      "document": "docs/ai/history/records/src_frontend_utils_receivers.ts-1.md"
+    },
+    {
+      "id": "D-timer-d54945e8b6ca3a3b",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 44,
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md"
+    },
+    {
+      "id": "D-timer-eba1ab375c1246ce",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 104,
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md"
+    },
+    {
+      "id": "D-timer-02487d4a128bab12",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 117,
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md"
+    },
+    {
+      "id": "D-timer-851791bf1a8c5445",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 125,
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md"
+    },
+    {
+      "id": "D-timer-19c301648459c9bd",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 142,
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md"
+    },
+    {
+      "id": "D-timer-49cc82e274a964e9",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 355,
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md"
+    },
+    {
+      "id": "D-request-budget-8f3ea1ff0f1850b2",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 552,
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md"
+    },
+    {
+      "id": "D-workaround-54e5a3124de0a074",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 391,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-workaround-b5f5674d4434818f",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 402,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-workaround-d6148c554c3c02e6",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 974,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-workaround-229f80072a307a8f",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 1101,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-workaround-1b750c909fa8ae17",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 1155,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-workaround-7f9dddc86d4745e0",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 1449,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-workaround-7d2d98fea6e8561e",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 1570,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-workaround-395774d06ba1cead",
+      "file": "src/frontend/components/output/Output.svelte",
+      "line": 126,
+      "document": "docs/ai/history/records/src_frontend_components_output_Output.svelte-1.md"
+    },
+    {
+      "id": "D-workaround-880590e1ed183fbd",
+      "file": "src/frontend/components/output/Output.svelte",
+      "line": 213,
+      "document": "docs/ai/history/records/src_frontend_components_output_Output.svelte-1.md"
+    },
+    {
+      "id": "D-workaround-f5143d8681582f2a",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 226,
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md"
+    },
+    {
+      "id": "D-workaround-255a8ffcc83f0cdc",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 364,
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md"
+    },
+    {
+      "id": "D-workaround-c3e4f430a922e675",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 370,
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md"
+    },
+    {
+      "id": "D-workaround-902cd8f473e59048",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 271,
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md"
+    },
+    {
+      "id": "D-workaround-a932274379d3ebdb",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 759,
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md"
+    },
+    {
+      "id": "D-workaround-8a8aae2cde12e5b3",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 859,
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md"
+    },
+    {
+      "id": "D-workaround-46e794498d8af69b",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 865,
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md"
+    },
+    {
+      "id": "D-workaround-5ddc66dd8df53cc0",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 106,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-workaround-32fb45a3b7711914",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 108,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-workaround-fddd3fe5718c2308",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 115,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-workaround-b4e91c23d7618c03",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 176,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-workaround-b7e01b475601dac8",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 257,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-workaround-a7bf816c64d40cd8",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 454,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-workaround-76607b6c7a35135c",
+      "file": "src/frontend/utils/receivers.ts",
+      "line": 220,
+      "document": "docs/ai/history/records/src_frontend_utils_receivers.ts-1.md"
+    },
+    {
+      "id": "D-workaround-09c55545f0c8736b",
+      "file": "src/frontend/utils/receivers.ts",
+      "line": 336,
+      "document": "docs/ai/history/records/src_frontend_utils_receivers.ts-1.md"
+    },
+    {
+      "id": "D-workaround-32942beeb5ae2204",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 353,
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md"
+    },
+    {
+      "id": "D-hotspot-94b53592b6d592e8",
+      "file": "src/electron/output/helpers/OutputSend.ts",
+      "line": 8,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputSend.ts-1.md"
+    },
+    {
+      "id": "D-hotspot-c1bd07711c914719",
+      "file": "src/frontend/components/helpers/OutputHelper.ts",
+      "line": 22,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_OutputHelper.ts-1.md"
+    },
+    {
+      "id": "D-hotspot-7af11be48814e880",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 76,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-hotspot-972464c413969487",
+      "file": "src/frontend/components/output/Output.svelte",
+      "line": 116,
+      "document": "docs/ai/history/records/src_frontend_components_output_Output.svelte-1.md"
+    },
+    {
+      "id": "D-hotspot-4805edbf17306bc5",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 37,
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md"
+    },
+    {
+      "id": "D-hotspot-0a2808186a73fd33",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 132,
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md"
+    },
+    {
+      "id": "D-hotspot-5bda320764e68b73",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 74,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-hotspot-dd79ef5596b01fbd",
+      "file": "src/frontend/utils/receivers.ts",
+      "line": 80,
+      "document": "docs/ai/history/records/src_frontend_utils_receivers.ts-1.md"
+    }
+  ]
+}

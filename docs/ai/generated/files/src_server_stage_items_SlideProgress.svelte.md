@@ -20,8 +20,8 @@ No static evidence found.
 
 ## Timing
 
-- [src/server/stage/items/SlideProgress.svelte:87](../../../../src/server/stage/items/SlideProgress.svelte#L87) — css-transition-b7f01fe45b645b3d: css-transition = 500 ms (width 0.5s); 
-- [src/server/stage/items/SlideProgress.svelte:101](../../../../src/server/stage/items/SlideProgress.svelte#L101) — css-transition-ee70357b58868b8a: css-transition = 200 ms (color 0.2s); 
+- [src/server/stage/items/SlideProgress.svelte:87](../../../../src/server/stage/items/SlideProgress.svelte#L87) — css-transition-b7f01fe45b645b3d: css-transition = 500 ms (width 0.5s);
+- [src/server/stage/items/SlideProgress.svelte:101](../../../../src/server/stage/items/SlideProgress.svelte#L101) — css-transition-ee70357b58868b8a: css-transition = 200 ms (color 0.2s);
 
 ## Workarounds
 

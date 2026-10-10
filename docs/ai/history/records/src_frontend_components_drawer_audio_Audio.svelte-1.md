@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/035bfdd50d7490a637abc5d01c1bc3e74bab74f3): “1.5.6-beta.2 (#2656) * Fixed pro5 import issue * Fixed clear audio not stopping playlist * Fixed dropdown closing too quick - Restoring old settings won't mess up the data path * G”
 
-Later line edits: 5; latest 035bfdd5. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 035bfdd5. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2656](https://github.com/ChurchApps/FreeShow/pull/2656) (read; no item-specific matching bullet); [pr #2656](https://github.com/ChurchApps/FreeShow/pull/2656) (read; no item-specific matching bullet)
 
@@ -52,7 +52,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/8e3667695c785f82cfea75a50c426de8fec418c4): “1.5.5-beta.1 (#2497) * Fixed freeze issue * Fixed freeze issue * Fixed thumbnail creation broken * Indented expanded arrow menu * Fix slide flicker (#2462) * Fix flicker on unchang”
 
-Later line edits: 1; latest 8e366769. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 8e366769. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2497](https://github.com/ChurchApps/FreeShow/pull/2497) (read; no item-specific matching bullet); [pr #2497](https://github.com/ChurchApps/FreeShow/pull/2497) (read; no item-specific matching bullet)
 

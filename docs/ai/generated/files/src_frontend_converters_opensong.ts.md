@@ -36,7 +36,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/converters/opensong.ts:44](../../../../src/frontend/converters/opensong.ts#L44) — timer-52e73c217f88ac0e: setTimeout = 10 ms (10); 
+- [src/frontend/converters/opensong.ts:44](../../../../src/frontend/converters/opensong.ts#L44) — timer-52e73c217f88ac0e: setTimeout = 10 ms (10);
 
 ## Workarounds
 

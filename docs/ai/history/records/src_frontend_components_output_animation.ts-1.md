@@ -35,9 +35,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/9d558fc2770b29c12331906ce8de5c4fcfd6fb56): “1.4.1-beta.2 (#1528) * 🚩 Updated Dutch language - Fixed a freeze issue * Feat RTL styles & arabic locale (#1506) * add arabic locale * add RTL functionality * add stylelint and fo”
 
-Later line edits: 1; latest 9d558fc2. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 9d558fc2. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1528](https://github.com/ChurchApps/FreeShow/pull/1528) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1528](https://github.com/ChurchApps/FreeShow/pull/1528) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1528](https://github.com/ChurchApps/FreeShow/pull/1528) (read; no item-specific matching bullet); [pr #1528](https://github.com/ChurchApps/FreeShow/pull/1528) (read; no item-specific matching bullet)
 
 ## D-timer-ea0786bec5abcfe6
 
@@ -71,6 +71,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/0570c5b80284848f1f2eaf173baf6126ed18f83d): “1.4.8.beta.1 (#1838) * ✔️ Fixed overlay timer stopping when slide was presented - Clear specific overlay action includes effects - Changing output style updates the template proper”
 
-Later line edits: 3; latest 0570c5b8. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 0570c5b8. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1838](https://github.com/ChurchApps/FreeShow/pull/1838) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1838](https://github.com/ChurchApps/FreeShow/pull/1838) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1838](https://github.com/ChurchApps/FreeShow/pull/1838) (read; no item-specific matching bullet); [pr #1838](https://github.com/ChurchApps/FreeShow/pull/1838) (read; no item-specific matching bullet)

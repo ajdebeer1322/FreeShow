@@ -18,7 +18,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 ## Writes
 
-- [src/frontend/ai/stt/transcript.ts:34](../../../../src/frontend/ai/stt/transcript.ts#L34) — sttTranscript.update((t) => { if (part.interim) return { ...t, unprocessed: textPart } const wordCount = part.glue ? 0 : textPart.split(/\s+/).filter(Boolean).length this.pushed = 
+- [src/frontend/ai/stt/transcript.ts:34](../../../../src/frontend/ai/stt/transcript.ts#L34) — sttTranscript.update((t) => { if (part.interim) return { ...t, unprocessed: textPart } const wordCount = part.glue ? 0 : textPart.split(/\s+/).filter(Boolean).length this.pushed =
 
 ## Transport
 

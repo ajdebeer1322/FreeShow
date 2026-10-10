@@ -37,7 +37,7 @@ Sources:
 
 Later line edits: 0; latest 6301a520. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #732](https://github.com/ChurchApps/FreeShow/pull/732) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #732](https://github.com/ChurchApps/FreeShow/pull/732) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #732](https://github.com/ChurchApps/FreeShow/pull/732) (read; no item-specific matching bullet); [pr #732](https://github.com/ChurchApps/FreeShow/pull/732) (read; no item-specific matching bullet)
 
 ## D-timer-1ae4d96edb9b2c80
 
@@ -53,7 +53,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/4face4422500cbfa8f2b400bdfcbcd0f6861f6c0): “1.5.1-beta.2 (#2259) * Fixed freeze on startup if song number was not a string value - Fixed show not loading in output if presented before loaded * Fixed stage editor freezing wit”
 
-Later line edits: 2; latest 4face442. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 4face442. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2259](https://github.com/ChurchApps/FreeShow/pull/2259) (read; no item-specific matching bullet); [pr #2259](https://github.com/ChurchApps/FreeShow/pull/2259) (read; no item-specific matching bullet)
 
@@ -145,7 +145,7 @@ Sources:
 
 Later line edits: 3; latest 0570c5b8. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1838](https://github.com/ChurchApps/FreeShow/pull/1838) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1838](https://github.com/ChurchApps/FreeShow/pull/1838) (read; no item-specific matching bullet)
 
 ## D-workaround-a6ece9248d8bae6c
 
@@ -181,7 +181,7 @@ Sources:
 
 Later line edits: 0; latest 5766f02c. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1487](https://github.com/ChurchApps/FreeShow/pull/1487) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1487](https://github.com/ChurchApps/FreeShow/pull/1487) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1487](https://github.com/ChurchApps/FreeShow/pull/1487) (read; no item-specific matching bullet); [pr #1487](https://github.com/ChurchApps/FreeShow/pull/1487) (read; no item-specific matching bullet)
 
 ## D-workaround-be168cfcf86f7641
 
@@ -202,7 +202,7 @@ Sources:
 
 Later line edits: 0; latest 6301a520. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #732](https://github.com/ChurchApps/FreeShow/pull/732) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #732](https://github.com/ChurchApps/FreeShow/pull/732) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #732](https://github.com/ChurchApps/FreeShow/pull/732) (read; no item-specific matching bullet); [pr #732](https://github.com/ChurchApps/FreeShow/pull/732) (read; no item-specific matching bullet)
 
 ## D-fork-cff3eb93446e3a79
 
@@ -218,6 +218,6 @@ Sources:
 
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/cff3eb93446e3a79a948e6d8256e28d0e0c5ed19): “Move and copy slides between shows in the Show view Dragging slides onto another show (or arrangement) moves them, Ctrl/Cmd or Alt copies. Copy, paste, duplicate, cut and delete no”
 
-Later line edits: 8; latest cff3eb93. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest cff3eb93. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

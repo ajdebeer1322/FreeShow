@@ -18,6 +18,6 @@ Sources:
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/4face4422500cbfa8f2b400bdfcbcd0f6861f6c0): “* Double click scripture drawer tab to play”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/4face4422500cbfa8f2b400bdfcbcd0f6861f6c0): “* Double click scripture drawer tab to play”
 
-Later line edits: 1; latest 4face442. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 4face442. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2259](https://github.com/ChurchApps/FreeShow/pull/2259) (read; no item-specific matching bullet); [pr #2259](https://github.com/ChurchApps/FreeShow/pull/2259) (read; no item-specific matching bullet)

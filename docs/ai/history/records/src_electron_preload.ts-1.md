@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/7e8c959bc17a30c1227778cd164de2662aaf4c57): “1.5.5 (#2534) * Auto size fixes * Some dynamic values hidden by default - Fixed scripture issues - Fixed timer issues - Fixed line break issue - Updated Dutch language * Fixes * Up”
 
-Later line edits: 14; latest 7e8c959b. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 7e8c959b. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2534](https://github.com/ChurchApps/FreeShow/pull/2534) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2534](https://github.com/ChurchApps/FreeShow/pull/2534) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2534](https://github.com/ChurchApps/FreeShow/pull/2534) (read; no item-specific matching bullet); [pr #2534](https://github.com/ChurchApps/FreeShow/pull/2534) (read; no item-specific matching bullet)

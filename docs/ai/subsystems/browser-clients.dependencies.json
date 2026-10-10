@@ -352,12 +352,6 @@
     "REMOTE/TIMER_TAGS",
     "REMOTE/VARIABLES",
     "REMOTE/VARIABLE_TAGS",
-    "REMOTE/bookFilter",
-    "REMOTE/bookIndex",
-    "REMOTE/books",
-    "REMOTE/chapterIndex",
-    "REMOTE/id",
-    "REMOTE/styleRes",
     "STAGE/ACTIVE_TIMERS",
     "STAGE/BACKGROUND",
     "STAGE/DATA",
@@ -379,8 +373,7 @@
     "STAGE/STREAM_UNSUBSCRIBE",
     "STAGE/SWITCH",
     "STAGE/TIMERS",
-    "STAGE/VARIABLES",
-    "STAGE/outputId"
+    "STAGE/VARIABLES"
   ],
   "timingIds": [
     "timer-3b0f679e4b7bc042",

@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/c49202065eb31b67cb66d102806195d7039b62a5): “v1.2.5 (#756) * 📄 Option to not disable Hardware Acceleration - Updated languages - Unsplash UTM links - Fixed HTTP output media - More optimized .json cache storage - Fixed fade ”
 
-Later line edits: 3; latest c4920206. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest c4920206. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #756](https://github.com/ChurchApps/FreeShow/pull/756) (read; no item-specific matching bullet); [pr #756](https://github.com/ChurchApps/FreeShow/pull/756) (read; no item-specific matching bullet)
 
@@ -54,7 +54,7 @@ Sources:
 
 Later line edits: 1; latest 78bf809d. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2238](https://github.com/ChurchApps/FreeShow/pull/2238) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2238](https://github.com/ChurchApps/FreeShow/pull/2238) (read; no item-specific matching bullet)
 
 ## D-css-transition-6a482dae88d0ee20
 
@@ -72,7 +72,7 @@ Sources:
 
 Later line edits: 0; latest 6b45d3f8. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (read; no item-specific matching bullet); [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (read; no item-specific matching bullet)
 
 ## D-workaround-2627d97bc1efd92c
 
@@ -89,9 +89,9 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/f2442e391d1b1ac0de3cd435f247d6bc6b844931): “1.4.2 (#1592) * fix 'source' in snapcraft.yaml (#1560) Since 'snapcraft' must be run from the root and since 'snapcraft.yaml' must be in the 'snap' directory of the root (accommoda”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/f2442e391d1b1ac0de3cd435f247d6bc6b844931): “- Next slide timer preview not jumping out between slides”
 
-Later line edits: 22; latest 655fca42. Full commit messages and lineage: JSON query data.
+Later line edits: 3; latest 655fca42. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1592](https://github.com/ChurchApps/FreeShow/pull/1592) (read; no item-specific matching bullet); [pr #2265](https://github.com/ChurchApps/FreeShow/pull/2265) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1592](https://github.com/ChurchApps/FreeShow/pull/1592) (read; no item-specific matching bullet); [pr #2265](https://github.com/ChurchApps/FreeShow/pull/2265) (read; no item-specific matching bullet)
 
 ## D-hotspot-50f78edf6994345e
 
@@ -107,6 +107,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/1f661639ea0d5eaced52d2b8772183358310ad7f): “1.4.0-beta.1 (#1419) * 🔊 Sound effects player - Set audio type music/effect - Audio editor waveform preview - Set individual playlist volume - Add more actions if wait item is add”
 
-Later line edits: 13; latest 1f661639. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 1f661639. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet); [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet)

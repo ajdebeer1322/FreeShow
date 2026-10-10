@@ -73,7 +73,7 @@ Sources:
 
 Later line edits: 0; latest 6b45d3f8. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (read; no item-specific matching bullet); [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (read; no item-specific matching bullet)
 
 ## D-workaround-54933e35f291a1e4
 
@@ -107,6 +107,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/3377daf3dd3e06423b311485bcd2f809c2bf2de2): “😃 Rearrange slides working! Add media to slides And many more fixes, and some new features.”
 
-Later line edits: 6; latest 253a9573. Full commit messages and lineage: JSON query data.
+Later line edits: 5; latest 253a9573. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/26bf9321ba4956ac29b08be1c75f4917a302d384): “1.5.6-beta.1 (#2579) * Fixed fonts sometimes not working for special text - Fixed template freezes - Fixed thumbnail not working in ControlShow - Updated languages * Large dropdown”
 
-Later line edits: 4; latest 26bf9321. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 26bf9321. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2579](https://github.com/ChurchApps/FreeShow/pull/2579) (read; no item-specific matching bullet); [pr #2579](https://github.com/ChurchApps/FreeShow/pull/2579) (read; no item-specific matching bullet)
 
@@ -53,7 +53,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/a2f34e2a335c1f5e01fdd9e663191298328e50ea): “1.6.2-beta.1 (#3336) * 1.6.1 (#3291) * Updated Norwegian language * Updated Hungarian language * Fixed PDF to image conversion with special file name #3177 * Actions Grid Mode in t”
 
-Later line edits: 1; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -71,6 +71,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/a2f34e2a335c1f5e01fdd9e663191298328e50ea): “1.6.2-beta.1 (#3336) * 1.6.1 (#3291) * Updated Norwegian language * Updated Hungarian language * Fixed PDF to image conversion with special file name #3177 * Actions Grid Mode in t”
 
-Later line edits: 1; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)

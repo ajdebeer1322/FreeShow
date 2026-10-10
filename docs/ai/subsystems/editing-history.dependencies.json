@@ -792,6 +792,54 @@
       "line": 13
     },
     {
+      "id": "D-hotspot-2293463580b06742",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_Editbox.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/Editbox.svelte",
+      "line": 45
+    },
+    {
+      "id": "D-hotspot-65fec7ab48e1c6a0",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxChords.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxChords.svelte",
+      "line": 25
+    },
+    {
+      "id": "D-hotspot-a095ea84b9eab827",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxCropping.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxCropping.svelte",
+      "line": 30
+    },
+    {
+      "id": "D-hotspot-fe10f111c864c382",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxHelper.ts-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxHelper.ts",
+      "line": 9
+    },
+    {
+      "id": "D-hotspot-518617204fed88c8",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 113
+    },
+    {
+      "id": "D-hotspot-41d026e16a4b0a8d",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxPaste.ts-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxPaste.ts",
+      "line": 17
+    },
+    {
+      "id": "D-hotspot-4bb21f770ed1467d",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxPlain.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxPlain.svelte",
+      "line": 37
+    },
+    {
+      "id": "D-hotspot-be1d1e172d2b20fa",
+      "document": "docs/ai/history/records/src_frontend_components_edit_scripts_autosize.ts-1.md",
+      "file": "src/frontend/components/edit/scripts/autosize.ts",
+      "line": 19
+    },
+    {
       "id": "D-fork-1390ec11b0296bb6",
       "document": "docs/ai/history/records/src_frontend_components_edit_MediaTools.svelte-1.md",
       "file": "src/frontend/components/edit/MediaTools.svelte",

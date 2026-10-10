@@ -8,7 +8,7 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/components/show/tools/SlideGroups.svelte:67](../../../../src/frontend/components/show/tools/SlideGroups.svelte#L67) — Arrangements → src/frontend/components/show/tools/Arrangements.svelte; 
+- [src/frontend/components/show/tools/SlideGroups.svelte:67](../../../../src/frontend/components/show/tools/SlideGroups.svelte#L67) — Arrangements → src/frontend/components/show/tools/Arrangements.svelte;
 - [src/frontend/components/show/tools/SlideGroups.svelte:72](../../../../src/frontend/components/show/tools/SlideGroups.svelte#L72) — T → src/frontend/components/helpers/T.svelte; id="groups.current"
 - [src/frontend/components/show/tools/SlideGroups.svelte:80](../../../../src/frontend/components/show/tools/SlideGroups.svelte#L80) — SelectElem → src/frontend/components/system/SelectElem.svelte; id="group"; data={{ id: slide.id }}; draggable={!isLocked && !slide.locked}
 - [src/frontend/components/show/tools/SlideGroups.svelte:124](../../../../src/frontend/components/show/tools/SlideGroups.svelte#L124) — Icon → src/frontend/components/helpers/Icon.svelte; id="lock"; size={0.7}; white

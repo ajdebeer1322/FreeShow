@@ -36,7 +36,7 @@ Sources:
 
 Later line edits: 3; latest 269dd93f. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #232](https://github.com/ChurchApps/FreeShow/pull/232) (read; no item-specific matching bullet); [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #232](https://github.com/ChurchApps/FreeShow/pull/232) (read; no item-specific matching bullet); [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (read; no item-specific matching bullet)
 
 ## D-timer-5be751488eaaec4f
 
@@ -52,7 +52,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/687575a35ad2f42a29638aa6751701b262e245de): “1.6.5 (#3659) * Updated languages * Delete all non-locked shows tweak * Rename project placeholders * Undo replacing a placeholder * Improved repeating ICS import #3643 * Project t”
 
-Later line edits: 8; latest 687575a3. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 687575a3. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet); [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet)
 
@@ -72,7 +72,7 @@ Sources:
 
 Later line edits: 3; latest f191003e. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #922](https://github.com/ChurchApps/FreeShow/pull/922) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2755](https://github.com/ChurchApps/FreeShow/pull/2755) (read; no item-specific matching bullet)
+GitHub: [pr #922](https://github.com/ChurchApps/FreeShow/pull/922) (read; no item-specific matching bullet); [pr #2755](https://github.com/ChurchApps/FreeShow/pull/2755) (read; no item-specific matching bullet)
 
 ## D-timer-ea90315dd39e1bd3
 
@@ -107,7 +107,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/687575a35ad2f42a29638aa6751701b262e245de): “1.6.5 (#3659) * Updated languages * Delete all non-locked shows tweak * Rename project placeholders * Undo replacing a placeholder * Improved repeating ICS import #3643 * Project t”
 
-Later line edits: 2; latest 687575a3. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 687575a3. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet); [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet)
 
@@ -145,7 +145,7 @@ Sources:
 
 Later line edits: 0; latest 11c3d427. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #947](https://github.com/ChurchApps/FreeShow/pull/947) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #947](https://github.com/ChurchApps/FreeShow/pull/947) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #947](https://github.com/ChurchApps/FreeShow/pull/947) (read; no item-specific matching bullet); [pr #947](https://github.com/ChurchApps/FreeShow/pull/947) (read; no item-specific matching bullet)
 
 ## D-workaround-902cd8f473e59048
 
@@ -217,7 +217,7 @@ Sources:
 
 Later line edits: 0; latest 11c3d427. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #947](https://github.com/ChurchApps/FreeShow/pull/947) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #947](https://github.com/ChurchApps/FreeShow/pull/947) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #947](https://github.com/ChurchApps/FreeShow/pull/947) (read; no item-specific matching bullet); [pr #947](https://github.com/ChurchApps/FreeShow/pull/947) (read; no item-specific matching bullet)
 
 ## D-hotspot-0a2808186a73fd33
 
@@ -233,6 +233,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/b908bc173d2b56adde342ba705f8c1424a459134): “1.4.6 (#1777) * Fix TypeError when dynamicRSS is undefined in getDynamicIds (#1764) Resolves error: "Cannot read properties of undefined (reading 'length')" when get(special).dynam”
 
-Later line edits: 5; latest b908bc17. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest b908bc17. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #1777](https://github.com/ChurchApps/FreeShow/pull/1777) (read; no item-specific matching bullet); [pr #1777](https://github.com/ChurchApps/FreeShow/pull/1777) (read; no item-specific matching bullet)

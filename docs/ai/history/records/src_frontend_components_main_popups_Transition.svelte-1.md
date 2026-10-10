@@ -34,6 +34,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/e6f1afe44054849545c627520676886c0b76cf62): “v0.9.4 (#227) * Reverted electron - Seemingly not working on mac/linux * 🚩 Updated Italian * Update italian language JSON (#198) * Update First upper text in copy on it language.j”
 
-Later line edits: 5; latest e6f1afe4. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest e6f1afe4. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #227](https://github.com/ChurchApps/FreeShow/pull/227) (read; no item-specific matching bullet); [pr #227](https://github.com/ChurchApps/FreeShow/pull/227) (read; no item-specific matching bullet)

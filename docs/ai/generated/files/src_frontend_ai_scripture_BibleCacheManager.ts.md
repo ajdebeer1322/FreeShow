@@ -28,8 +28,8 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/ai/scripture/BibleCacheManager.ts:65](../../../../src/frontend/ai/scripture/BibleCacheManager.ts#L65) — timer-c64a352c11be2ebc: setTimeout = 50 ms (50); 
-- [src/frontend/ai/scripture/BibleCacheManager.ts:76](../../../../src/frontend/ai/scripture/BibleCacheManager.ts#L76) — timer-bed6aedbf4521e58: setTimeout = 100 ms (100); 
+- [src/frontend/ai/scripture/BibleCacheManager.ts:65](../../../../src/frontend/ai/scripture/BibleCacheManager.ts#L65) — timer-c64a352c11be2ebc: setTimeout = 50 ms (50);
+- [src/frontend/ai/scripture/BibleCacheManager.ts:76](../../../../src/frontend/ai/scripture/BibleCacheManager.ts#L76) — timer-bed6aedbf4521e58: setTimeout = 100 ms (100);
 - [src/frontend/ai/scripture/BibleCacheManager.ts:122](../../../../src/frontend/ai/scripture/BibleCacheManager.ts#L122) — timer-2815fd0ecc65d29c: setTimeout = 0 ms (0); // Yield frame if execution takes >8ms
 
 ## Workarounds

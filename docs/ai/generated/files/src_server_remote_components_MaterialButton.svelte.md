@@ -28,7 +28,7 @@ None detected.
 
 ## Timing
 
-- [src/server/remote/components/MaterialButton.svelte:128](../../../../src/server/remote/components/MaterialButton.svelte#L128) — css-transition-c4bd9a1e98e151f9: css-transition = 400 ms (opacity 0.4s ease,); 
+- [src/server/remote/components/MaterialButton.svelte:128](../../../../src/server/remote/components/MaterialButton.svelte#L128) — css-transition-c4bd9a1e98e151f9: css-transition = 400 ms (opacity 0.4s ease,);
 
 ## Workarounds
 

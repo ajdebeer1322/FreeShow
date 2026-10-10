@@ -25,8 +25,8 @@ None detected.
 
 ## Timing
 
-- [src/electron/utils/spotify.ts:179](../../../../src/electron/utils/spotify.ts#L179) — timer-eb085972bcc67d8b: setTimeout = 500 ms (500); 
-- [src/electron/utils/spotify.ts:215](../../../../src/electron/utils/spotify.ts#L215) — timer-7b5ac9c65efea577: setTimeout = 500 ms (500); 
+- [src/electron/utils/spotify.ts:179](../../../../src/electron/utils/spotify.ts#L179) — timer-eb085972bcc67d8b: setTimeout = 500 ms (500);
+- [src/electron/utils/spotify.ts:215](../../../../src/electron/utils/spotify.ts#L215) — timer-7b5ac9c65efea577: setTimeout = 500 ms (500);
 
 ## Workarounds
 

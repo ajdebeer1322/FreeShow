@@ -26,7 +26,7 @@ No static evidence found.
 ## Timing
 
 - [src/frontend/components/drawer/player/Vimeo.svelte:72](../../../../src/frontend/components/drawer/player/Vimeo.svelte#L72) — timer-3b6e070313aa7e7d: setInterval = 500 ms (500); // if (!preview) return
-- [src/frontend/components/drawer/player/Vimeo.svelte:115](../../../../src/frontend/components/drawer/player/Vimeo.svelte#L115) — timer-a85c2872ed8dbc0e: setTimeout = dynamic ms (ms); 
+- [src/frontend/components/drawer/player/Vimeo.svelte:115](../../../../src/frontend/components/drawer/player/Vimeo.svelte#L115) — timer-a85c2872ed8dbc0e: setTimeout = dynamic ms (ms);
 
 ## Workarounds
 

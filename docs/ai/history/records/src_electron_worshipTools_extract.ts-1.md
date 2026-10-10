@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/418bc303c33665813dcb966064b2b99afa5062bc): “Handle SongSelect chart structures in the WorshipTools import Real charts use variant sections (Chorus 1A/1B), wordless repeat sections (Verse 1 Repeat), jump cues, first/second en”
 
-Later line edits: 1; latest 4beaefae. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 4beaefae. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

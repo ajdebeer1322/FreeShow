@@ -18,7 +18,7 @@ Sources:
 
 Later line edits: 1; latest af8fd363. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1279](https://github.com/ChurchApps/FreeShow/pull/1279) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1349](https://github.com/ChurchApps/FreeShow/pull/1349) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1279](https://github.com/ChurchApps/FreeShow/pull/1279) (read; no item-specific matching bullet); [pr #1349](https://github.com/ChurchApps/FreeShow/pull/1349) (read; no item-specific matching bullet)
 
 ## D-timer-69c209c6308a84a0
 
@@ -34,9 +34,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/a36080086b1dc0ea56ac71e9cddac9c1847dc2ab): “1.4.3 (#1623) * 🎵 NowPlayingCover not removed when fading between songs - Removing duplicate artists from NowPlaying file - Audio metadata dynamic value now remains when audio is ”
 
-Later line edits: 3; latest a3608008. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest a3608008. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1623](https://github.com/ChurchApps/FreeShow/pull/1623) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1623](https://github.com/ChurchApps/FreeShow/pull/1623) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1623](https://github.com/ChurchApps/FreeShow/pull/1623) (read; no item-specific matching bullet); [pr #1623](https://github.com/ChurchApps/FreeShow/pull/1623) (read; no item-specific matching bullet)
 
 ## D-timer-ecf139232b1de98e
 

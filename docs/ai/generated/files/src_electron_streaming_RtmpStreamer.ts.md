@@ -29,12 +29,12 @@ None detected.
 
 ## Timing
 
-- [src/electron/streaming/RtmpStreamer.ts:301](../../../../src/electron/streaming/RtmpStreamer.ts#L301) — timer-9665d6b4f4c447f8: setTimeout = dynamic ms (delay); 
-- [src/electron/streaming/RtmpStreamer.ts:401](../../../../src/electron/streaming/RtmpStreamer.ts#L401) — timer-d0b0898302711a3f: setTimeout = dynamic ms (delay); 
-- [src/electron/streaming/RtmpStreamer.ts:477](../../../../src/electron/streaming/RtmpStreamer.ts#L477) — timer-599f72444f6037f3: setTimeout = 2000 ms (RELAY_LIVE_AFTER_MS); 
-- [src/electron/streaming/RtmpStreamer.ts:529](../../../../src/electron/streaming/RtmpStreamer.ts#L529) — timer-623fb0629ad07d11: setTimeout = dynamic ms (delay); 
-- [src/electron/streaming/RtmpStreamer.ts:672](../../../../src/electron/streaming/RtmpStreamer.ts#L672) — timer-aebfbdeb6242a082: setTimeout = 1000 ms (STATUS_PUSH_INTERVAL_MS); 
-- [src/electron/streaming/RtmpStreamer.ts:704](../../../../src/electron/streaming/RtmpStreamer.ts#L704) — timer-b730b94e51c955ae: setTimeout = dynamic ms (timeoutMs); 
+- [src/electron/streaming/RtmpStreamer.ts:301](../../../../src/electron/streaming/RtmpStreamer.ts#L301) — timer-9665d6b4f4c447f8: setTimeout = dynamic ms (delay);
+- [src/electron/streaming/RtmpStreamer.ts:401](../../../../src/electron/streaming/RtmpStreamer.ts#L401) — timer-d0b0898302711a3f: setTimeout = dynamic ms (delay);
+- [src/electron/streaming/RtmpStreamer.ts:477](../../../../src/electron/streaming/RtmpStreamer.ts#L477) — timer-599f72444f6037f3: setTimeout = 2000 ms (RELAY_LIVE_AFTER_MS);
+- [src/electron/streaming/RtmpStreamer.ts:529](../../../../src/electron/streaming/RtmpStreamer.ts#L529) — timer-623fb0629ad07d11: setTimeout = dynamic ms (delay);
+- [src/electron/streaming/RtmpStreamer.ts:672](../../../../src/electron/streaming/RtmpStreamer.ts#L672) — timer-aebfbdeb6242a082: setTimeout = 1000 ms (STATUS_PUSH_INTERVAL_MS);
+- [src/electron/streaming/RtmpStreamer.ts:704](../../../../src/electron/streaming/RtmpStreamer.ts#L704) — timer-b730b94e51c955ae: setTimeout = dynamic ms (timeoutMs);
 
 ## Workarounds
 

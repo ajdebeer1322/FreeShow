@@ -9,10 +9,10 @@ No static evidence found.
 ## Rendered components and props
 
 - [src/frontend/components/stage/StageTools.svelte:181](../../../../src/frontend/components/stage/StageTools.svelte#L181) — Tabs → src/frontend/components/main/Tabs.svelte; {tabs}; bind:active
-- [src/frontend/components/stage/StageTools.svelte:186](../../../../src/frontend/components/stage/StageTools.svelte#L186) — BoxStyle → src/frontend/components/stage/tools/BoxStyle.svelte; 
+- [src/frontend/components/stage/StageTools.svelte:186](../../../../src/frontend/components/stage/StageTools.svelte#L186) — BoxStyle → src/frontend/components/stage/tools/BoxStyle.svelte;
 - [src/frontend/components/stage/StageTools.svelte:188](../../../../src/frontend/components/stage/StageTools.svelte#L188) — Center → src/frontend/components/system/Center.svelte; faded
 - [src/frontend/components/stage/StageTools.svelte:189](../../../../src/frontend/components/stage/StageTools.svelte#L189) — T → src/frontend/components/helpers/T.svelte; id="empty.items"
-- [src/frontend/components/stage/StageTools.svelte:195](../../../../src/frontend/components/stage/StageTools.svelte#L195) — ItemStyle → src/frontend/components/stage/tools/ItemStyle.svelte; 
-- [src/frontend/components/stage/StageTools.svelte:199](../../../../src/frontend/components/stage/StageTools.svelte#L199) — SlideStyle → src/frontend/components/stage/tools/SlideStyle.svelte; 
-- [src/frontend/components/stage/StageTools.svelte:204](../../../../src/frontend/components/stage/StageTools.svelte#L204) — FloatingInputs → src/frontend/components/input/FloatingInputs.svelte; 
+- [src/frontend/components/stage/StageTools.svelte:195](../../../../src/frontend/components/stage/StageTools.svelte#L195) — ItemStyle → src/frontend/components/stage/tools/ItemStyle.svelte;
+- [src/frontend/components/stage/StageTools.svelte:199](../../../../src/frontend/components/stage/StageTools.svelte#L199) — SlideStyle → src/frontend/components/stage/tools/SlideStyle.svelte;
+- [src/frontend/components/stage/StageTools.svelte:204](../../../../src/frontend/components/stage/StageTools.svelte#L204) — FloatingInputs → src/frontend/components/input/FloatingInputs.svelte;
 - [src/frontend/components/stage/StageTools.svelte:205](../../../../src/frontend/components/stage/StageTools.svelte#L205) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; icon="reset"; title="actions.reset"; on:click={resetStageStyle}

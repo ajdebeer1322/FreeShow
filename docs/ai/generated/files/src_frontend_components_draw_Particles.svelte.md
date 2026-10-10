@@ -21,8 +21,8 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/draw/Particles.svelte:19](../../../../src/frontend/components/draw/Particles.svelte#L19) — timer-5420a1c0e32537b6: setTimeout = 20 ms (20); 
-- [src/frontend/components/draw/Particles.svelte:23](../../../../src/frontend/components/draw/Particles.svelte#L23) — timer-280ec0e401732cd2: setTimeout = 500 ms (500); 
+- [src/frontend/components/draw/Particles.svelte:19](../../../../src/frontend/components/draw/Particles.svelte#L19) — timer-5420a1c0e32537b6: setTimeout = 20 ms (20);
+- [src/frontend/components/draw/Particles.svelte:23](../../../../src/frontend/components/draw/Particles.svelte#L23) — timer-280ec0e401732cd2: setTimeout = 500 ms (500);
 
 ## Workarounds
 

@@ -16,9 +16,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/d6d4b4bf026e58b44fabd0bbe37be90189656001): “1.5.0-beta.2 (#2108) * Better Electron mirror approach * Fixed PDF chord sheet option not showing up right away * Small fixes & tweaks * Fix for snap build * Fix for snap build * U”
 
-Later line edits: 32; latest d6d4b4bf. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest d6d4b4bf. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (read; no item-specific matching bullet); [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (read; no item-specific matching bullet)
 
 ## D-timer-76788babf35adf59
 
@@ -36,7 +36,7 @@ Sources:
 
 Later line edits: 0; latest d679dc86. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #277](https://github.com/ChurchApps/FreeShow/pull/277) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #277](https://github.com/ChurchApps/FreeShow/pull/277) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #277](https://github.com/ChurchApps/FreeShow/pull/277) (read; no item-specific matching bullet); [pr #277](https://github.com/ChurchApps/FreeShow/pull/277) (read; no item-specific matching bullet)
 
 ## D-timer-f2a6563193973600
 
@@ -53,9 +53,9 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6b45d3f829247048542b28fd61fcd2d907465c01): “1.4.9 (#2011) * ✔️ Fixed set custom splash text not working * Fix duplicated .local in macOS (#2004) * ✨ Refines URL generation for platform-specific hostname handling Updates host”
 - [code] src/frontend/components/edit/editors/SlideEditor.svelte:188: “// e.preventDefault()”
 
-Later line edits: 32; latest 6b45d3f8. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 6b45d3f8. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (read; no item-specific matching bullet); [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (read; no item-specific matching bullet)
 
 ## D-timer-f65342b60e6c9864
 
@@ -74,7 +74,7 @@ Sources:
 
 Later line edits: 0; latest 2a7e39ae. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #929](https://github.com/ChurchApps/FreeShow/pull/929) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #929](https://github.com/ChurchApps/FreeShow/pull/929) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #929](https://github.com/ChurchApps/FreeShow/pull/929) (read; no item-specific matching bullet); [pr #929](https://github.com/ChurchApps/FreeShow/pull/929) (read; no item-specific matching bullet)
 
 ## D-workaround-3e5e69c17d3bad48
 
@@ -90,6 +90,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/9d438149c2097fd52a4b78288480d0b14676595c): “✨ Improvements - Duplicating overlays/templates working properly - Fixed YouTube player time always at 0 - Changing history not changing pages as often - Toggling outputs is easier”
 
-Later line edits: 7; latest 9d438149. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 9d438149. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

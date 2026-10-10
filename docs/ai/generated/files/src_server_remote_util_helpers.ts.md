@@ -58,10 +58,10 @@ No static evidence found.
 
 ## Timing
 
-- [src/server/remote/util/helpers.ts:27](../../../../src/server/remote/util/helpers.ts#L27) — timer-8ec41c795a3353e6: setTimeout = 2000 ms (2000); 
+- [src/server/remote/util/helpers.ts:27](../../../../src/server/remote/util/helpers.ts#L27) — timer-8ec41c795a3353e6: setTimeout = 2000 ms (2000);
 - [src/server/remote/util/helpers.ts:126](../../../../src/server/remote/util/helpers.ts#L126) — timer-45ad656937235fc7: setTimeout = dynamic ms (delay); /** Debounce function - delays execution until after a pause in calls */
-- [src/server/remote/util/helpers.ts:137](../../../../src/server/remote/util/helpers.ts#L137) — timer-3362179bb33f68f7: setTimeout = dynamic ms (limit); 
-- [src/server/remote/util/helpers.ts:195](../../../../src/server/remote/util/helpers.ts#L195) — timer-1d7e22bb1ec607b6: setTimeout = dynamic ms (delayMs); 
+- [src/server/remote/util/helpers.ts:137](../../../../src/server/remote/util/helpers.ts#L137) — timer-3362179bb33f68f7: setTimeout = dynamic ms (limit);
+- [src/server/remote/util/helpers.ts:195](../../../../src/server/remote/util/helpers.ts#L195) — timer-1d7e22bb1ec607b6: setTimeout = dynamic ms (delayMs);
 
 ## Workarounds
 

@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/9dca76b8c4e5971a0e8fdf5472bdbc5f89baf695): “📺 Output cropping - Black output overflow color - Choose resolution - Close fullscreen preview button - Zooming with trackpad or touch screen should work better now - Dragging dra”
 
-Later line edits: 3; latest 9dca76b8. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 9dca76b8. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 

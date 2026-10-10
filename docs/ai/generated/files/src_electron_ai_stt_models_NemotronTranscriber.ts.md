@@ -25,9 +25,9 @@ None detected.
 
 ## Timing
 
-- [src/electron/ai/stt/models/NemotronTranscriber.ts:66](../../../../src/electron/ai/stt/models/NemotronTranscriber.ts#L66) — timer-c24d79bcfc249752: setTimeout = 3000 ms (WORKER_FLUSH_TIMEOUT); 
-- [src/electron/ai/stt/models/NemotronTranscriber.ts:122](../../../../src/electron/ai/stt/models/NemotronTranscriber.ts#L122) — timer-a0680d4b12198881: setTimeout = 30000 ms (WORKER_START_TIMEOUT); 
-- [src/electron/ai/stt/models/NemotronTranscriber.ts:182](../../../../src/electron/ai/stt/models/NemotronTranscriber.ts#L182) — timer-04dc5b5326e90fe5: setInterval = 5000 ms (WORKER_STALL_CHECK_INTERVAL); 
+- [src/electron/ai/stt/models/NemotronTranscriber.ts:66](../../../../src/electron/ai/stt/models/NemotronTranscriber.ts#L66) — timer-c24d79bcfc249752: setTimeout = 3000 ms (WORKER_FLUSH_TIMEOUT);
+- [src/electron/ai/stt/models/NemotronTranscriber.ts:122](../../../../src/electron/ai/stt/models/NemotronTranscriber.ts#L122) — timer-a0680d4b12198881: setTimeout = 30000 ms (WORKER_START_TIMEOUT);
+- [src/electron/ai/stt/models/NemotronTranscriber.ts:182](../../../../src/electron/ai/stt/models/NemotronTranscriber.ts#L182) — timer-04dc5b5326e90fe5: setInterval = 5000 ms (WORKER_STALL_CHECK_INTERVAL);
 
 ## Workarounds
 

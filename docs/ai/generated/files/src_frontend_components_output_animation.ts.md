@@ -26,7 +26,7 @@ No static evidence found.
 ## Timing
 
 - [src/frontend/components/output/animation.ts:12](../../../../src/frontend/components/output/animation.ts#L12) — timer-3517f50f02ec5b4a: wait = 50 ms (50); // give time for initial element & prevent infinite loops
-- [src/frontend/components/output/animation.ts:35](../../../../src/frontend/components/output/animation.ts#L35) — timer-d033e09c7d59a8b7: wait = dynamic ms (duration * 1000); 
+- [src/frontend/components/output/animation.ts:35](../../../../src/frontend/components/output/animation.ts#L35) — timer-d033e09c7d59a8b7: wait = dynamic ms (duration * 1000);
 - [src/frontend/components/output/animation.ts:104](../../../../src/frontend/components/output/animation.ts#L104) — timer-ea0786bec5abcfe6: wait = 40 ms (40); // set transitions first so it can animate
 
 ## Workarounds

@@ -31,7 +31,7 @@ None detected.
 ## Timing
 
 - [src/frontend/components/output/layers/Overlay.svelte:42](../../../../src/frontend/components/output/layers/Overlay.svelte#L42) — timer-f6ec73855261ef74: setTimeout = 0 ms (omitted); // wait for previous items to start fading out (svelte will keep them until the transition is done!)
-- [src/frontend/components/output/layers/Overlay.svelte:56](../../../../src/frontend/components/output/layers/Overlay.svelte#L56) — timer-02e3dbe0dce4be88: setInterval = dynamic ms (isMic ? 100 : 300); 
+- [src/frontend/components/output/layers/Overlay.svelte:56](../../../../src/frontend/components/output/layers/Overlay.svelte#L56) — timer-02e3dbe0dce4be88: setInterval = dynamic ms (isMic ? 100 : 300);
 
 ## Workarounds
 

@@ -23,7 +23,7 @@ None detected.
 
 ## Timing
 
-- [src/electron/ai/stt/models/nemotronWorker.ts:277](../../../../src/electron/ai/stt/models/nemotronWorker.ts#L277) — timer-b222450863ada261: setInterval = 5000 ms (5000); 
+- [src/electron/ai/stt/models/nemotronWorker.ts:277](../../../../src/electron/ai/stt/models/nemotronWorker.ts#L277) — timer-b222450863ada261: setInterval = 5000 ms (5000);
 
 ## Workarounds
 

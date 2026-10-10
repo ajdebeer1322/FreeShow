@@ -8,16 +8,16 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/server/remote/components/Main.svelte:134](../../../../src/server/remote/components/Main.svelte#L134) — svelte:component → dynamic; 
-- [src/server/remote/components/Main.svelte:136](../../../../src/server/remote/components/Main.svelte#L136) — Center → src/server/common/components/Center.svelte; 
-- [src/server/remote/components/Main.svelte:136](../../../../src/server/remote/components/Main.svelte#L136) — Loading → src/server/common/components/Loading.svelte; 
-- [src/server/remote/components/Main.svelte:143](../../../../src/server/remote/components/Main.svelte#L143) — Shows → src/server/remote/components/pages/Shows.svelte; 
-- [src/server/remote/components/Main.svelte:145](../../../../src/server/remote/components/Main.svelte#L145) — Scripture → src/server/remote/components/pages/Scripture.svelte; 
-- [src/server/remote/components/Main.svelte:147](../../../../src/server/remote/components/Main.svelte#L147) — Project → src/server/remote/components/pages/Project.svelte; 
-- [src/server/remote/components/Main.svelte:150](../../../../src/server/remote/components/Main.svelte#L150) — Show → src/server/remote/components/pages/Show.svelte; 
-- [src/server/remote/components/Main.svelte:152](../../../../src/server/remote/components/Main.svelte#L152) — ShowContent → src/server/remote/components/pages/ShowContent.svelte; 
-- [src/server/remote/components/Main.svelte:155](../../../../src/server/remote/components/Main.svelte#L155) — Slide → src/server/remote/components/pages/Slide.svelte; 
-- [src/server/remote/components/Main.svelte:157](../../../../src/server/remote/components/Main.svelte#L157) — Lyrics → src/server/remote/components/pages/Lyrics.svelte; 
+- [src/server/remote/components/Main.svelte:134](../../../../src/server/remote/components/Main.svelte#L134) — svelte:component → dynamic;
+- [src/server/remote/components/Main.svelte:136](../../../../src/server/remote/components/Main.svelte#L136) — Center → src/server/common/components/Center.svelte;
+- [src/server/remote/components/Main.svelte:136](../../../../src/server/remote/components/Main.svelte#L136) — Loading → src/server/common/components/Loading.svelte;
+- [src/server/remote/components/Main.svelte:143](../../../../src/server/remote/components/Main.svelte#L143) — Shows → src/server/remote/components/pages/Shows.svelte;
+- [src/server/remote/components/Main.svelte:145](../../../../src/server/remote/components/Main.svelte#L145) — Scripture → src/server/remote/components/pages/Scripture.svelte;
+- [src/server/remote/components/Main.svelte:147](../../../../src/server/remote/components/Main.svelte#L147) — Project → src/server/remote/components/pages/Project.svelte;
+- [src/server/remote/components/Main.svelte:150](../../../../src/server/remote/components/Main.svelte#L150) — Show → src/server/remote/components/pages/Show.svelte;
+- [src/server/remote/components/Main.svelte:152](../../../../src/server/remote/components/Main.svelte#L152) — ShowContent → src/server/remote/components/pages/ShowContent.svelte;
+- [src/server/remote/components/Main.svelte:155](../../../../src/server/remote/components/Main.svelte#L155) — Slide → src/server/remote/components/pages/Slide.svelte;
+- [src/server/remote/components/Main.svelte:157](../../../../src/server/remote/components/Main.svelte#L157) — Lyrics → src/server/remote/components/pages/Lyrics.svelte;
 - [src/server/remote/components/Main.svelte:161](../../../../src/server/remote/components/Main.svelte#L161) — Tabs → src/server/common/components/Tabs.svelte; {tabs}; bind:active={tab}; disabled={tabsDisabled}; on:double={double}; noTopRadius={(tab === "show" && ($activeShow?.id === $outSh
 - [src/server/remote/components/Main.svelte:168](../../../../src/server/remote/components/Main.svelte#L168) — Button → src/server/common/components/Button.svelte; on:click={() => createShow.set(false)}; variant="outlined"; style="margin-right: 8px;"
 - [src/server/remote/components/Main.svelte:169](../../../../src/server/remote/components/Main.svelte#L169) — Icon → src/server/common/components/Icon.svelte; id="back"; size={2}

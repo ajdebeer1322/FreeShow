@@ -28,7 +28,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/helpers/fonts.ts:276](../../../../src/frontend/components/helpers/fonts.ts#L276) — timer-2ddec725cd79609b: setTimeout = 5000 ms (5000); 
+- [src/frontend/components/helpers/fonts.ts:276](../../../../src/frontend/components/helpers/fonts.ts#L276) — timer-2ddec725cd79609b: setTimeout = 5000 ms (5000);
 
 ## Workarounds
 

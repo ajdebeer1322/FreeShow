@@ -18,7 +18,7 @@ Sources:
 
 Later line edits: 1; latest af8fd363. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #277](https://github.com/ChurchApps/FreeShow/pull/277) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1349](https://github.com/ChurchApps/FreeShow/pull/1349) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #277](https://github.com/ChurchApps/FreeShow/pull/277) (read; no item-specific matching bullet); [pr #1349](https://github.com/ChurchApps/FreeShow/pull/1349) (read; no item-specific matching bullet)
 
 ## D-workaround-80c990f38982c1f3
 
@@ -36,6 +36,6 @@ Sources:
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/82282d5a1410b1cda6a7609afd4b11e060455d6b): “- Fixed adding group sometimes freezing the program”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/82282d5a1410b1cda6a7609afd4b11e060455d6b): “- Fixed adding group sometimes freezing the program”
 
-Later line edits: 2; latest 82282d5a. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 82282d5a. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

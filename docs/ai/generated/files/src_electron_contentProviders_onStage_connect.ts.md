@@ -31,7 +31,7 @@ None detected.
 
 ## Timing
 
-- [src/electron/contentProviders/onStage/connect.ts:168](../../../../src/electron/contentProviders/onStage/connect.ts#L168) — timer-7bb018a8b708aac9: setTimeout = 600000 ms (AUTH_FLOW_TIMEOUT_MS); 
+- [src/electron/contentProviders/onStage/connect.ts:168](../../../../src/electron/contentProviders/onStage/connect.ts#L168) — timer-7bb018a8b708aac9: setTimeout = 600000 ms (AUTH_FLOW_TIMEOUT_MS);
 
 ## Workarounds
 

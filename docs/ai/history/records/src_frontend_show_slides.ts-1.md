@@ -18,7 +18,7 @@ Sources:
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/fb41219416a92f8560bd8e7a7fc88be1befaea9e): “- Custom groups with numbers will not get replaced in text editor”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/fb41219416a92f8560bd8e7a7fc88be1befaea9e): “- Custom groups with numbers will not get replaced in text editor”
 
-Later line edits: 2; latest fb412194. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest fb412194. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #355](https://github.com/ChurchApps/FreeShow/pull/355) (read; no item-specific matching bullet); [pr #355](https://github.com/ChurchApps/FreeShow/pull/355) (read; no item-specific matching bullet)
 
@@ -38,7 +38,7 @@ Sources:
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/80a0ddad82eea290395d1886b404c9b917e8e272): “- Changing group on multiple slides will preserve layout data”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/80a0ddad82eea290395d1886b404c9b917e8e272): “- Changing group on multiple slides will preserve layout data”
 
-Later line edits: 3; latest 80a0ddad. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 80a0ddad. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 
@@ -74,6 +74,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/4bf44652755ddebc4f969d3b79d4d0ebf717888b): “1.5.3-beta.3 (#2429) * Implement Multi-Chapter Searching of verses (#2418) * Implement Multi-Chapter Searching of verses * Ensure slide names also match multi-chapter shows * Fix s”
 
-Later line edits: 1; latest 4bf44652. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 4bf44652. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2429](https://github.com/ChurchApps/FreeShow/pull/2429) (read; no item-specific matching bullet); [pr #2429](https://github.com/ChurchApps/FreeShow/pull/2429) (read; no item-specific matching bullet)

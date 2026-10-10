@@ -9,7 +9,7 @@ No static evidence found.
 ## Rendered components and props
 
 - [src/frontend/components/main/popups/SyncFolders.svelte:64](../../../../src/frontend/components/main/popups/SyncFolders.svelte#L64) — Center → src/frontend/components/system/Center.svelte; padding={15}
-- [src/frontend/components/main/popups/SyncFolders.svelte:65](../../../../src/frontend/components/main/popups/SyncFolders.svelte#L65) — Loader → src/frontend/components/main/Loader.svelte; 
+- [src/frontend/components/main/popups/SyncFolders.svelte:65](../../../../src/frontend/components/main/popups/SyncFolders.svelte#L65) — Loader → src/frontend/components/main/Loader.svelte;
 - [src/frontend/components/main/popups/SyncFolders.svelte:68](../../../../src/frontend/components/main/popups/SyncFolders.svelte#L68) — Center → src/frontend/components/system/Center.svelte; padding={20}; faded
 - [src/frontend/components/main/popups/SyncFolders.svelte:72](../../../../src/frontend/components/main/popups/SyncFolders.svelte#L72) — Tip → src/frontend/components/main/Tip.svelte; value="Only services in the selected folders will be automatically synced."; bottom={20}
 - [src/frontend/components/main/popups/SyncFolders.svelte:75](../../../../src/frontend/components/main/popups/SyncFolders.svelte#L75) — FolderTree → src/frontend/components/main/popups/SyncFoldersPcoFolderTree.svelte; nodes={folderTree}; selectedIds={$contentProviderData.planningcenter?.syncFolderIds \|\| &#91;&#93;}; on:tog

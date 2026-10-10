@@ -68,19 +68,19 @@
     "docs/ai/history/data/065.json"
   ],
   "totals": {
-    "records": 1603,
+    "records": 1613,
     "timing": 1158,
     "workarounds": 311,
-    "hotspotModules": 105,
+    "hotspotModules": 115,
     "sourcedWorkaroundWhy": 16,
     "sourcedWorkaroundWhyPercent": 5.1,
     "unresolvedIntroductions": 0,
     "neededPRs": 129,
-    "fetchedPRs": 56,
-    "githubAuthenticated": false,
-    "githubRequests": 1,
-    "githubGap": "Unauthenticated GitHub API quota reserve reached; login required for remaining sources.",
-    "fetchedPRsWithEmptyBody": 56,
+    "fetchedPRs": 129,
+    "githubAuthenticated": true,
+    "githubRequests": 0,
+    "githubGap": null,
+    "fetchedPRsWithEmptyBody": 129,
     "forkDecisions": 29
   },
   "documents": [
@@ -615,6 +615,10 @@
     "docs/ai/history/records/src_electron_output_helpers_OutputValues.ts-1.md",
     "docs/ai/history/records/src_electron_output_helpers_OutputVisibility.ts-1.md",
     "docs/ai/history/records/src_electron_output_ppt_pptToShow.ts-1.md",
+    "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxChords.svelte-1.md",
+    "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxCropping.svelte-1.md",
+    "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxHelper.ts-1.md",
+    "docs/ai/history/records/src_frontend_components_edit_scripts_autosize.ts-1.md",
     "docs/ai/history/records/src_frontend_components_helpers_mediaInspectorLogic.test.ts-1.md",
     "docs/ai/history/records/src_frontend_components_helpers_mediaInspectorLogic.ts-1.md",
     "docs/ai/history/records/src_frontend_components_media_Image.svelte-1.md",
@@ -638,6 +642,7 @@
     "docs/ai/history/records/src_frontend_components_output_tools_Overlay.svelte-1.md",
     "docs/ai/history/records/src_frontend_components_output_tools_Show.svelte-1.md",
     "docs/ai/history/records/src_frontend_components_output_tools_TimerControls.svelte-1.md",
+    "docs/ai/history/records/src_frontend_components_slide_autosizeCache.ts-1.md",
     "docs/ai/history/records/src_frontend_utils_request.ts-1.md",
     "docs/ai/history/records/src_frontend_components_context_contextMenus.ts-1.md",
     "docs/ai/history/records/src_electron_worshipTools_extract.ts-1.md",
@@ -646,7 +651,6 @@
     "docs/ai/history/records/src_frontend_components_helpers_slideTransfer.ts-1.md",
     "docs/ai/history/records/src_electron_data_defaults.ts-1.md",
     "docs/ai/history/records/src_electron_utils_LyricSearch.ts-1.md",
-    "docs/ai/history/records/src_frontend_components_show_tools_Arrangements.svelte-1.md",
-    "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxChords.svelte-1.md"
+    "docs/ai/history/records/src_frontend_components_show_tools_Arrangements.svelte-1.md"
   ]
 }

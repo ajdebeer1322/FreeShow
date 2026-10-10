@@ -22,8 +22,8 @@ None detected.
 
 ## Timing
 
-- [src/frontend/ai/components/floating/AiRing.svelte:36](../../../../src/frontend/ai/components/floating/AiRing.svelte#L36) — css-transition-f57cb41efc973e2f: css-transition = 400 ms (border-radius 0.4s cubic-bezier(0.16, 1, 0.3, 1),); 
-- [src/frontend/ai/components/floating/AiRing.svelte:60](../../../../src/frontend/ai/components/floating/AiRing.svelte#L60) — css-transition-67ebeeccb5d33882: css-transition = 200 ms (background 0.2s ease-out); 
+- [src/frontend/ai/components/floating/AiRing.svelte:36](../../../../src/frontend/ai/components/floating/AiRing.svelte#L36) — css-transition-f57cb41efc973e2f: css-transition = 400 ms (border-radius 0.4s cubic-bezier(0.16, 1, 0.3, 1),);
+- [src/frontend/ai/components/floating/AiRing.svelte:60](../../../../src/frontend/ai/components/floating/AiRing.svelte#L60) — css-transition-67ebeeccb5d33882: css-transition = 200 ms (background 0.2s ease-out);
 
 ## Workarounds
 

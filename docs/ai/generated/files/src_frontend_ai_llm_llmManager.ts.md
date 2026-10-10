@@ -27,7 +27,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/ai/llm/llmManager.ts:64](../../../../src/frontend/ai/llm/llmManager.ts#L64) — request-budget-b754d18840af60bb: request-budget = 60000 ms (60000); 
+- [src/frontend/ai/llm/llmManager.ts:64](../../../../src/frontend/ai/llm/llmManager.ts#L64) — request-budget-b754d18840af60bb: request-budget = 60000 ms (60000);
 
 ## Workarounds
 

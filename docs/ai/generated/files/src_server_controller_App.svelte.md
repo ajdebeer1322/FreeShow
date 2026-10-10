@@ -27,11 +27,11 @@ None detected.
 
 ## Timing
 
-- [src/server/controller/App.svelte:35](../../../../src/server/controller/App.svelte#L35) — timer-89b7ed1e0bdbc22d: setInterval = 800 ms (800); 
-- [src/server/controller/App.svelte:54](../../../../src/server/controller/App.svelte#L54) — timer-1bdf644d9eb7871a: setTimeout = 2000 ms (2000); 
+- [src/server/controller/App.svelte:35](../../../../src/server/controller/App.svelte#L35) — timer-89b7ed1e0bdbc22d: setInterval = 800 ms (800);
+- [src/server/controller/App.svelte:54](../../../../src/server/controller/App.svelte#L54) — timer-1bdf644d9eb7871a: setTimeout = 2000 ms (2000);
 - [src/server/controller/App.svelte:196](../../../../src/server/controller/App.svelte#L196) — css-transition-593af182e498ba23: css-transition = 500 ms (background-color 0.5s); /* transition: background-color 0.5s; */
 - [src/server/controller/App.svelte:336](../../../../src/server/controller/App.svelte#L336) — css-transition-1eb01e3e07234d3d: css-transition = 400 ms (all 0.4s); /* height: 50%; */ /* transition: all 0.4s; */
-- [src/server/controller/App.svelte:385](../../../../src/server/controller/App.svelte#L385) — css-transition-e170776275f02525: css-transition = 100 ms (background-color 0.1s); 
+- [src/server/controller/App.svelte:385](../../../../src/server/controller/App.svelte#L385) — css-transition-e170776275f02525: css-transition = 100 ms (background-color 0.1s);
 
 ## Workarounds
 

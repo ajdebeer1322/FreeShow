@@ -26,17 +26,17 @@
   "REMOTE/PASSWORD",
   "REMOTE/ACCESS",
   "REMOTE/LANGUAGE",
-  "REMOTE/styleRes",
   "REMOTE/GET_SCRIPTURE",
-  "REMOTE/id",
-  "REMOTE/bookIndex",
-  "REMOTE/chapterIndex",
   "REMOTE/SEARCH_SCRIPTURE",
-  "REMOTE/bookFilter",
   "REMOTE/GET_OVERLAYS",
   "REMOTE/GET_TEMPLATES",
   "REMOTE/GET_FUNCTIONS",
   "REMOTE/GET_AUDIO_MIXER",
   "REMOTE/CATEGORIES",
-  "REMOTE/API:next_slide"
+  "REMOTE/API:next_slide",
+  "REMOTE/API:previous_slide",
+  "REMOTE/API:clear_all",
+  "REMOTE/API:create_show",
+  "REMOTE/API:get_groups",
+  "REMOTE/API:add_group"
 ]

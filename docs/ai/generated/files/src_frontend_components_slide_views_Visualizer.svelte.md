@@ -28,7 +28,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/slide/views/Visualizer.svelte:23](../../../../src/frontend/components/slide/views/Visualizer.svelte#L23) — timer-66346c5229e872c2: setInterval = 800 ms (800); 
+- [src/frontend/components/slide/views/Visualizer.svelte:23](../../../../src/frontend/components/slide/views/Visualizer.svelte#L23) — timer-66346c5229e872c2: setInterval = 800 ms (800);
 
 ## Workarounds
 

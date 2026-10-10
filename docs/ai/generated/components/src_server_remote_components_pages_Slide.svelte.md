@@ -8,7 +8,7 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/server/remote/components/pages/Slide.svelte:37](../../../../src/server/remote/components/pages/Slide.svelte#L37) — Lyrics → src/server/remote/components/pages/Lyrics.svelte; 
+- [src/server/remote/components/pages/Slide.svelte:37](../../../../src/server/remote/components/pages/Slide.svelte#L37) — Lyrics → src/server/remote/components/pages/Lyrics.svelte;
 - [src/server/remote/components/pages/Slide.svelte:40](../../../../src/server/remote/components/pages/Slide.svelte#L40) — Slide → src/server/remote/components/show/Slide.svelte; outSlide={slideNum}; {transition}
 - [src/server/remote/components/pages/Slide.svelte:42](../../../../src/server/remote/components/pages/Slide.svelte#L42) — Slide → src/server/remote/components/show/Slide.svelte; outSlide={nextSlide(layout, slideNum) \|\| 0}; {transition}
 - [src/server/remote/components/pages/Slide.svelte:53](../../../../src/server/remote/components/pages/Slide.svelte#L53) — Button → src/server/common/components/Button.svelte; class="desktop-nav"; on:click={() => send("API:previous_slide")}; disabled={slideNum <= 0}; variant="outlined"; center; compact

@@ -16,9 +16,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/1ed8ffa3dd177d68ba1efe61d943b7baa7bd9027): “1.6.6-beta.4 (#3813) * Fix image items staying invisible with an item transition (#3789) * Canva allow subfolders #3796 * Open scripture location from content search #3799 * Fixed ”
 
-Later line edits: 57; latest 1ed8ffa3. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 1ed8ffa3. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3813](https://github.com/ChurchApps/FreeShow/pull/3813) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3813](https://github.com/ChurchApps/FreeShow/pull/3813) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3813](https://github.com/ChurchApps/FreeShow/pull/3813) (read; no item-specific matching bullet); [pr #3813](https://github.com/ChurchApps/FreeShow/pull/3813) (read; no item-specific matching bullet)
 
 ## D-timer-91237ea1937c25d4
 
@@ -34,7 +34,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055): “1.6.0-beta.2 (#3090) * Updated languages * Better media item cropping #2856 * Corrected beta changelog #3015 * Item resize works better when rotated #2999 * Refactor chord parsing ”
 
-Later line edits: 56; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 5; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3090](https://github.com/ChurchApps/FreeShow/pull/3090) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -52,7 +52,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/4face4422500cbfa8f2b400bdfcbcd0f6861f6c0): “1.5.1-beta.2 (#2259) * Fixed freeze on startup if song number was not a string value - Fixed show not loading in output if presented before loaded * Fixed stage editor freezing wit”
 
-Later line edits: 56; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 17; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2259](https://github.com/ChurchApps/FreeShow/pull/2259) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -70,9 +70,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/57a967525c249b7cbd1e7d556cfa898c6dbf99a0): “1.5.8-beta.1 (#2847) * Fixed chosen profile not updating projects list right away - Updated Chinese language * Fixed song upload issue #2842 * Fixed missing libltc on Linux #2841 *”
 
-Later line edits: 56; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 6; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
+GitHub: [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
 ## D-timer-f2496c195fbf5d2d
 
@@ -88,7 +88,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/fb6390bbd14d60be8143283e9d5c42485053ef94): “1.5.7-beta.2 (#2804) * OpenSong Fixes #2733 * Button to Convert background to media item #2739 - Tweaks * Fixed camera/screen on slide not starting #2760 * Tweaks * Improve Navigat”
 
-Later line edits: 56; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 8; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2804](https://github.com/ChurchApps/FreeShow/pull/2804) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -106,7 +106,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/f11403c7eb26183695b5faabaf198b355afe4054): “1.5.0-beta.3 (#2143) * Added back math to new number inputs - Even faster performance - Removed unused components - Small tweaks * ✨ Enhancements - Change media fit blur amount - S”
 
-Later line edits: 56; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 19; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2143](https://github.com/ChurchApps/FreeShow/pull/2143) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -124,7 +124,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/8e3667695c785f82cfea75a50c426de8fec418c4): “1.5.5-beta.1 (#2497) * Fixed freeze issue * Fixed freeze issue * Fixed thumbnail creation broken * Indented expanded arrow menu * Fix slide flicker (#2462) * Fix flicker on unchang”
 
-Later line edits: 56; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 12; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2497](https://github.com/ChurchApps/FreeShow/pull/2497) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -142,7 +142,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/f11403c7eb26183695b5faabaf198b355afe4054): “1.5.0-beta.3 (#2143) * Added back math to new number inputs - Even faster performance - Removed unused components - Small tweaks * ✨ Enhancements - Change media fit blur amount - S”
 
-Later line edits: 56; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 19; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2143](https://github.com/ChurchApps/FreeShow/pull/2143) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -160,7 +160,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/8e3667695c785f82cfea75a50c426de8fec418c4): “1.5.5-beta.1 (#2497) * Fixed freeze issue * Fixed freeze issue * Fixed thumbnail creation broken * Indented expanded arrow menu * Fix slide flicker (#2462) * Fix flicker on unchang”
 
-Later line edits: 56; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 12; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2497](https://github.com/ChurchApps/FreeShow/pull/2497) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -179,7 +179,7 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/f11403c7eb26183695b5faabaf198b355afe4054): “1.5.0-beta.3 (#2143) * Added back math to new number inputs - Even faster performance - Removed unused components - Small tweaks * ✨ Enhancements - Change media fit blur amount - S”
 - [code] src/frontend/utils/listeners.ts:183: “// Debounce and filter ACTIVE_SCRIPTURE to avoid sending partial states (book-only/chapter-only)”
 
-Later line edits: 56; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 19; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2143](https://github.com/ChurchApps/FreeShow/pull/2143) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -197,7 +197,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/4face4422500cbfa8f2b400bdfcbcd0f6861f6c0): “1.5.1-beta.2 (#2259) * Fixed freeze on startup if song number was not a string value - Fixed show not loading in output if presented before loaded * Fixed stage editor freezing wit”
 
-Later line edits: 56; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 17; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2259](https://github.com/ChurchApps/FreeShow/pull/2259) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -233,7 +233,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/f11403c7eb26183695b5faabaf198b355afe4054): “1.5.0-beta.3 (#2143) * Added back math to new number inputs - Even faster performance - Removed unused components - Small tweaks * ✨ Enhancements - Change media fit blur amount - S”
 
-Later line edits: 56; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 19; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2143](https://github.com/ChurchApps/FreeShow/pull/2143) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -251,7 +251,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/f11403c7eb26183695b5faabaf198b355afe4054): “1.5.0-beta.3 (#2143) * Added back math to new number inputs - Even faster performance - Removed unused components - Small tweaks * ✨ Enhancements - Change media fit blur amount - S”
 
-Later line edits: 56; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 19; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2143](https://github.com/ChurchApps/FreeShow/pull/2143) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -269,7 +269,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/f11403c7eb26183695b5faabaf198b355afe4054): “1.5.0-beta.3 (#2143) * Added back math to new number inputs - Even faster performance - Removed unused components - Small tweaks * ✨ Enhancements - Change media fit blur amount - S”
 
-Later line edits: 56; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 19; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2143](https://github.com/ChurchApps/FreeShow/pull/2143) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -289,4 +289,4 @@ Sources:
 
 Later line edits: 0; latest 1ed8ffa3. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3813](https://github.com/ChurchApps/FreeShow/pull/3813) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3813](https://github.com/ChurchApps/FreeShow/pull/3813) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3813](https://github.com/ChurchApps/FreeShow/pull/3813) (read; no item-specific matching bullet); [pr #3813](https://github.com/ChurchApps/FreeShow/pull/3813) (read; no item-specific matching bullet)

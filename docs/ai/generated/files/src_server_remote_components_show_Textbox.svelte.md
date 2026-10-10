@@ -29,7 +29,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/server/remote/components/show/Textbox.svelte:32](../../../../src/server/remote/components/show/Textbox.svelte#L32) — timer-5f0ef0260111ecd9: setTimeout = 200 ms (200); 
+- [src/server/remote/components/show/Textbox.svelte:32](../../../../src/server/remote/components/show/Textbox.svelte#L32) — timer-5f0ef0260111ecd9: setTimeout = 200 ms (200);
 
 ## Workarounds
 

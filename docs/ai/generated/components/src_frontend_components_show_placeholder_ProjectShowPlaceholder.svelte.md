@@ -9,5 +9,5 @@ No static evidence found.
 ## Rendered components and props
 
 - [src/frontend/components/show/placeholder/ProjectShowPlaceholder.svelte:36](../../../../src/frontend/components/show/placeholder/ProjectShowPlaceholder.svelte#L36) — DropArea → src/frontend/components/system/DropArea.svelte; id="project"; hoverTimeout={150}
-- [src/frontend/components/show/placeholder/ProjectShowPlaceholder.svelte:37](../../../../src/frontend/components/show/placeholder/ProjectShowPlaceholder.svelte#L37) — Center → src/frontend/components/system/Center.svelte; 
+- [src/frontend/components/show/placeholder/ProjectShowPlaceholder.svelte:37](../../../../src/frontend/components/show/placeholder/ProjectShowPlaceholder.svelte#L37) — Center → src/frontend/components/system/Center.svelte;
 - [src/frontend/components/show/placeholder/ProjectShowPlaceholder.svelte:39](../../../../src/frontend/components/show/placeholder/ProjectShowPlaceholder.svelte#L39) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; variant="contained"; icon="slide"; style="font-size: 1.1em;"; on:click={replace}

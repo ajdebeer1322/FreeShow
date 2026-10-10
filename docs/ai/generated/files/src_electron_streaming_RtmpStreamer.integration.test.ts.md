@@ -26,20 +26,20 @@ None detected.
 
 ## Timing
 
-- [src/electron/streaming/RtmpStreamer.integration.test.ts:61](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L61) — timer-03683a265c65832d: setInterval = 66.66666666666667 ms (1000 / FPS); 
+- [src/electron/streaming/RtmpStreamer.integration.test.ts:61](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L61) — timer-03683a265c65832d: setInterval = 66.66666666666667 ms (1000 / FPS);
 - [src/electron/streaming/RtmpStreamer.integration.test.ts:89](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L89) — timer-03148b700a74112a: setTimeout = 600 ms (600); // wait for encoding to finish buffered frames then stop
 - [src/electron/streaming/RtmpStreamer.integration.test.ts:119](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L119) — timer-1f3254abda9d9691: setTimeout = 2400 ms (2400); // the encoder spawns on the first frame, using its actual dimensions
-- [src/electron/streaming/RtmpStreamer.integration.test.ts:127](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L127) — timer-aff8ed727652ba9d: setTimeout = 400 ms (400); 
-- [src/electron/streaming/RtmpStreamer.integration.test.ts:145](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L145) — timer-49c65d625080d89c: setTimeout = 3200 ms (3200); 
-- [src/electron/streaming/RtmpStreamer.integration.test.ts:166](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L166) — timer-95a32357424a028f: setTimeout = 3600 ms (3600); 
-- [src/electron/streaming/RtmpStreamer.integration.test.ts:177](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L177) — timer-cffd0cc4ec0f7113: setTimeout = 400 ms (400); 
-- [src/electron/streaming/RtmpStreamer.integration.test.ts:188](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L188) — timer-0ce30f2f183ba64c: setTimeout = 2300 ms (2300); 
+- [src/electron/streaming/RtmpStreamer.integration.test.ts:127](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L127) — timer-aff8ed727652ba9d: setTimeout = 400 ms (400);
+- [src/electron/streaming/RtmpStreamer.integration.test.ts:145](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L145) — timer-49c65d625080d89c: setTimeout = 3200 ms (3200);
+- [src/electron/streaming/RtmpStreamer.integration.test.ts:166](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L166) — timer-95a32357424a028f: setTimeout = 3600 ms (3600);
+- [src/electron/streaming/RtmpStreamer.integration.test.ts:177](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L177) — timer-cffd0cc4ec0f7113: setTimeout = 400 ms (400);
+- [src/electron/streaming/RtmpStreamer.integration.test.ts:188](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L188) — timer-0ce30f2f183ba64c: setTimeout = 2300 ms (2300);
 - [src/electron/streaming/RtmpStreamer.integration.test.ts:195](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L195) — timer-783123ae3368b28d: setTimeout = 300 ms (300); // a capture size change forces a new encoder, which restarts its mpegts clock at zero // the relay must be torn down rather than
 - [src/electron/streaming/RtmpStreamer.integration.test.ts:200](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L200) — timer-b24ce8d2e7bc9293: setTimeout = 3300 ms (3300); // the relay must be torn down rather than left connected across the timestamp discontinuity
 - [src/electron/streaming/RtmpStreamer.integration.test.ts:207](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L207) — timer-6d7b5363ff7870d1: setTimeout = 400 ms (400); // and it must come back on its own // the broadcast size is the configured one throughout; the larger capture is scaled down
 - [src/electron/streaming/RtmpStreamer.integration.test.ts:243](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L243) — timer-bbbf907f27b2b6cd: setTimeout = 200 ms (200); // arrives before start() has registered the streamer, so it would be dropped without the pending queue
-- [src/electron/streaming/RtmpStreamer.integration.test.ts:258](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L258) — timer-e5bc58bba478a1db: setTimeout = 2300 ms (2300); 
-- [src/electron/streaming/RtmpStreamer.integration.test.ts:261](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L261) — timer-4fcd76a26f0dd5ac: setTimeout = 400 ms (400); 
+- [src/electron/streaming/RtmpStreamer.integration.test.ts:258](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L258) — timer-e5bc58bba478a1db: setTimeout = 2300 ms (2300);
+- [src/electron/streaming/RtmpStreamer.integration.test.ts:261](../../../../src/electron/streaming/RtmpStreamer.integration.test.ts#L261) — timer-4fcd76a26f0dd5ac: setTimeout = 400 ms (400);
 
 ## Workarounds
 

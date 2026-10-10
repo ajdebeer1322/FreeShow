@@ -1,6 +1,4 @@
 [
-  "MAIN/AI_STATUS",
-  "MAIN/AI_TRANSCRIPT",
   "MAIN/AUDIO_METADATA",
   "MAIN/ALERT",
   "MAIN/SHOWS",
@@ -32,11 +30,13 @@
   "MAIN/SPELL_CHECK",
   "MAIN/WORSHIPTOOLS_STATE",
   "MAIN/WORSHIPTOOLS_PROGRESS",
-  "MAIN/total",
-  "MAIN/origin",
   "MAIN/AUDIO",
   "MAIN/pdf",
   "MAIN/powerkey",
   "MAIN/freeshow",
-  "MAIN/freeshow_project"
+  "MAIN/freeshow_project",
+  "MAIN/freeshow_template",
+  "MAIN/freeshow_overlay",
+  "MAIN/freeshow_theme",
+  "MAIN/freeshow_action"
 ]

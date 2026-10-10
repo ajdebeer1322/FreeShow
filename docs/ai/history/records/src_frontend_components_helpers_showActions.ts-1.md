@@ -17,7 +17,7 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/c49202065eb31b67cb66d102806195d7039b62a5): “v1.2.5 (#756) * 📄 Option to not disable Hardware Acceleration - Updated languages - Unsplash UTM links - Fixed HTTP output media - More optimized .json cache storage - Fixed fade ”
 - [code] src/frontend/components/helpers/showActions.ts:114: “// preload show (so the layout can be changed)”
 
-Later line edits: 8; latest c4920206. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest c4920206. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #756](https://github.com/ChurchApps/FreeShow/pull/756) (read; no item-specific matching bullet); [pr #756](https://github.com/ChurchApps/FreeShow/pull/756) (read; no item-specific matching bullet)
 
@@ -73,7 +73,7 @@ Sources:
 
 Later line edits: 1; latest 6b45d3f8. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1706](https://github.com/ChurchApps/FreeShow/pull/1706) (read; no item-specific matching bullet); [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1706](https://github.com/ChurchApps/FreeShow/pull/1706) (read; no item-specific matching bullet); [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (read; no item-specific matching bullet)
 
 ## D-timer-2efd07edaaf6af61
 
@@ -92,7 +92,7 @@ Sources:
 
 Later line edits: 2; latest 6b45d3f8. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #217](https://github.com/ChurchApps/FreeShow/pull/217) (read; no item-specific matching bullet); [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #217](https://github.com/ChurchApps/FreeShow/pull/217) (read; no item-specific matching bullet); [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (read; no item-specific matching bullet)
 
 ## D-timer-b809a42ca63bfd42
 
@@ -164,7 +164,7 @@ Sources:
 
 Later line edits: 2; latest ca7f29bf. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #227](https://github.com/ChurchApps/FreeShow/pull/227) (read; no item-specific matching bullet); [pr #3635](https://github.com/ChurchApps/FreeShow/pull/3635) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #227](https://github.com/ChurchApps/FreeShow/pull/227) (read; no item-specific matching bullet); [pr #3635](https://github.com/ChurchApps/FreeShow/pull/3635) (read; no item-specific matching bullet)
 
 ## D-timer-1e0c03ac8679480d
 
@@ -216,7 +216,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/929857dc87eda22ec4626895684a0e7c8ecace34): “🧾 Text edit mode Bugfixes: - Arrow keys in project will get correct layout Tweaks: - Importing will only add to project when it is one song - Templates will no longer apply text i”
 
-Later line edits: 6; latest 936f1e60. Full commit messages and lineage: JSON query data.
+Later line edits: 2; latest 936f1e60. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 

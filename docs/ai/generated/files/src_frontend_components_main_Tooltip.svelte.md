@@ -21,7 +21,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/main/Tooltip.svelte:15](../../../../src/frontend/components/main/Tooltip.svelte#L15) — transition-42ab39c99e86f491: transition-directive = dynamic ms ({ duration: 150 }); 
+- [src/frontend/components/main/Tooltip.svelte:15](../../../../src/frontend/components/main/Tooltip.svelte#L15) — transition-42ab39c99e86f491: transition-directive = dynamic ms ({ duration: 150 });
 
 ## Workarounds
 

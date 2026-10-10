@@ -18,7 +18,7 @@ Sources:
 
 Later line edits: 0; latest 9d99d78e. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2325](https://github.com/ChurchApps/FreeShow/pull/2325) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2325](https://github.com/ChurchApps/FreeShow/pull/2325) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2325](https://github.com/ChurchApps/FreeShow/pull/2325) (read; no item-specific matching bullet); [pr #2325](https://github.com/ChurchApps/FreeShow/pull/2325) (read; no item-specific matching bullet)
 
 ## D-timer-870ffd48cd207725
 
@@ -34,7 +34,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/1f661639ea0d5eaced52d2b8772183358310ad7f): “1.4.0-beta.1 (#1419) * 🔊 Sound effects player - Set audio type music/effect - Audio editor waveform preview - Set individual playlist volume - Add more actions if wait item is add”
 
-Later line edits: 1; latest 1f661639. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 1f661639. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet); [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet)
 
@@ -54,7 +54,7 @@ Sources:
 
 Later line edits: 0; latest 29b5c6f3. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #816](https://github.com/ChurchApps/FreeShow/pull/816) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #816](https://github.com/ChurchApps/FreeShow/pull/816) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #816](https://github.com/ChurchApps/FreeShow/pull/816) (read; no item-specific matching bullet); [pr #816](https://github.com/ChurchApps/FreeShow/pull/816) (read; no item-specific matching bullet)
 
 ## D-timer-f348e8b54f73ce20
 
@@ -72,7 +72,7 @@ Sources:
 
 Later line edits: 0; latest 57a96752. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (read; no item-specific matching bullet); [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (read; no item-specific matching bullet)
 
 ## D-transition-e486326e5da88010
 
@@ -88,7 +88,7 @@ Sources:
 
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/e5f66233fa0187a258128aa929a3f0c71fa43948): “Phase 2: required code changes for Svelte 5 (legacy mode) - mount(App, { target }) instead of new App({ target }) in the 6 entry points (frontend/main.ts and server/{cam,controller”
 
-Later line edits: 9; latest e5f66233. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest e5f66233. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 
@@ -109,4 +109,4 @@ Sources:
 
 Later line edits: 0; latest 93d55f36. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1279](https://github.com/ChurchApps/FreeShow/pull/1279) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1279](https://github.com/ChurchApps/FreeShow/pull/1279) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1279](https://github.com/ChurchApps/FreeShow/pull/1279) (read; no item-specific matching bullet); [pr #1279](https://github.com/ChurchApps/FreeShow/pull/1279) (read; no item-specific matching bullet)

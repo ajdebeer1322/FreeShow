@@ -22,7 +22,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/drawer/audio/AudioSidechain.svelte:54](../../../../src/frontend/components/drawer/audio/AudioSidechain.svelte#L54) — css-transition-21ef452a006381f9: css-transition = 80 ms (width 0.08s ease-out); 
+- [src/frontend/components/drawer/audio/AudioSidechain.svelte:54](../../../../src/frontend/components/drawer/audio/AudioSidechain.svelte#L54) — css-transition-21ef452a006381f9: css-transition = 80 ms (width 0.08s ease-out);
 
 ## Workarounds
 

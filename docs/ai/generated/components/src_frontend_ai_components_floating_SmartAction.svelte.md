@@ -8,7 +8,7 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/ai/components/floating/SmartAction.svelte:28](../../../../src/frontend/ai/components/floating/SmartAction.svelte#L28) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; style="padding: 0;border-radius: 50px;"; on:click={() => { if (smartAction?.trigger) { smartAction.trigger() 
+- [src/frontend/ai/components/floating/SmartAction.svelte:28](../../../../src/frontend/ai/components/floating/SmartAction.svelte#L28) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; style="padding: 0;border-radius: 50px;"; on:click={() => { if (smartAction?.trigger) { smartAction.trigger()
 - [src/frontend/ai/components/floating/SmartAction.svelte:40](../../../../src/frontend/ai/components/floating/SmartAction.svelte#L40) — AiRing → src/frontend/ai/components/floating/AiRing.svelte; opacity={0.85}
 - [src/frontend/ai/components/floating/SmartAction.svelte:43](../../../../src/frontend/ai/components/floating/SmartAction.svelte#L43) — Icon → src/frontend/components/helpers/Icon.svelte; id="check"; white
 - [src/frontend/ai/components/floating/SmartAction.svelte:47](../../../../src/frontend/ai/components/floating/SmartAction.svelte#L47) — Icon → src/frontend/components/helpers/Icon.svelte; id="play"; white

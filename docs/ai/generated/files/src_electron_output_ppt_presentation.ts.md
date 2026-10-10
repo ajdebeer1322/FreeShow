@@ -26,10 +26,10 @@ None detected.
 
 ## Timing
 
-- [src/electron/output/ppt/presentation.ts:68](../../../../src/electron/output/ppt/presentation.ts#L68) — timer-ff0e213488cc1e86: setTimeout = 0 ms (omitted); 
-- [src/electron/output/ppt/presentation.ts:170](../../../../src/electron/output/ppt/presentation.ts#L170) — timer-663339f3843aefea: setTimeout = 50 ms (navigationWait); 
-- [src/electron/output/ppt/presentation.ts:179](../../../../src/electron/output/ppt/presentation.ts#L179) — timer-8d46ca2b059d2083: setTimeout = 50 ms (navigationWait); 
-- [src/electron/output/ppt/presentation.ts:206](../../../../src/electron/output/ppt/presentation.ts#L206) — timer-e2617a79777e818a: setTimeout = 0 ms (omitted); 
+- [src/electron/output/ppt/presentation.ts:68](../../../../src/electron/output/ppt/presentation.ts#L68) — timer-ff0e213488cc1e86: setTimeout = 0 ms (omitted);
+- [src/electron/output/ppt/presentation.ts:170](../../../../src/electron/output/ppt/presentation.ts#L170) — timer-663339f3843aefea: setTimeout = 50 ms (navigationWait);
+- [src/electron/output/ppt/presentation.ts:179](../../../../src/electron/output/ppt/presentation.ts#L179) — timer-8d46ca2b059d2083: setTimeout = 50 ms (navigationWait);
+- [src/electron/output/ppt/presentation.ts:206](../../../../src/electron/output/ppt/presentation.ts#L206) — timer-e2617a79777e818a: setTimeout = 0 ms (omitted);
 - [src/electron/output/ppt/presentation.ts:236](../../../../src/electron/output/ppt/presentation.ts#L236) — timer-5a274df41676b458: setTimeout = 5000 ms (5000); // return state // update state every once in a while in case presentation window is in focus
 
 ## Workarounds

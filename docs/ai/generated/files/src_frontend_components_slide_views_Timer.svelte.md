@@ -32,10 +32,10 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/slide/views/Timer.svelte:109](../../../../src/frontend/components/slide/views/Timer.svelte#L109) — timer-5ca707de79c6d185: setInterval = 1200 ms (INTERVAL); 
-- [src/frontend/components/slide/views/Timer.svelte:111](../../../../src/frontend/components/slide/views/Timer.svelte#L111) — timer-3127e895d7369253: setTimeout = 240 ms (INTERVAL * 0.2); 
-- [src/frontend/components/slide/views/Timer.svelte:134](../../../../src/frontend/components/slide/views/Timer.svelte#L134) — timer-fb5d01327a4aec59: setInterval = 5000 ms (5000); 
-- [src/frontend/components/slide/views/Timer.svelte:181](../../../../src/frontend/components/slide/views/Timer.svelte#L181) — css-transition-8216c56664dfcdce: css-transition = 1000 ms (1s width linear); 
+- [src/frontend/components/slide/views/Timer.svelte:109](../../../../src/frontend/components/slide/views/Timer.svelte#L109) — timer-5ca707de79c6d185: setInterval = 1200 ms (INTERVAL);
+- [src/frontend/components/slide/views/Timer.svelte:111](../../../../src/frontend/components/slide/views/Timer.svelte#L111) — timer-3127e895d7369253: setTimeout = 240 ms (INTERVAL * 0.2);
+- [src/frontend/components/slide/views/Timer.svelte:134](../../../../src/frontend/components/slide/views/Timer.svelte#L134) — timer-fb5d01327a4aec59: setInterval = 5000 ms (5000);
+- [src/frontend/components/slide/views/Timer.svelte:181](../../../../src/frontend/components/slide/views/Timer.svelte#L181) — css-transition-8216c56664dfcdce: css-transition = 1000 ms (1s width linear);
 - [src/frontend/components/slide/views/Timer.svelte:203](../../../../src/frontend/components/slide/views/Timer.svelte#L203) — css-transition-09f357735c08b644: css-transition = 500 ms (0.5s --percentage); /* @property --percentage { initial-value: 100; inherits: false; syntax: "<*>"; } */ /* transition: 0.
 
 ## Workarounds

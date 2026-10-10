@@ -1,0 +1,193 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/frontend/components/settings/tabs/Outputs.svelte",
+    "src/electron/output/helpers/OutputLifecycle.ts",
+    "src/electron/ndi/NdiSender.ts",
+    "src/electron/ndi/ndiWorker.ts",
+    "src/electron/capture/senderWorker.ts",
+    "src/electron/capture/helpers/CaptureLifecycle.ts"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-41d0c8e49fa02d4b",
+      "file": "src/electron/capture/helpers/CaptureLifecycle.ts",
+      "line": 83,
+      "document": "docs/ai/history/records/src_electron_capture_helpers_CaptureLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-86f9e4a4d651ef72",
+      "file": "src/electron/capture/helpers/CaptureLifecycle.ts",
+      "line": 102,
+      "document": "docs/ai/history/records/src_electron_capture_helpers_CaptureLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-19e88a40358a7b28",
+      "file": "src/electron/capture/helpers/CaptureLifecycle.ts",
+      "line": 244,
+      "document": "docs/ai/history/records/src_electron_capture_helpers_CaptureLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-6af9594cd007f23a",
+      "file": "src/electron/capture/senderWorker.ts",
+      "line": 98,
+      "document": "docs/ai/history/records/src_electron_capture_senderWorker.ts-1.md"
+    },
+    {
+      "id": "D-timer-35801dd54d5acfca",
+      "file": "src/electron/capture/senderWorker.ts",
+      "line": 133,
+      "document": "docs/ai/history/records/src_electron_capture_senderWorker.ts-1.md"
+    },
+    {
+      "id": "D-timer-fa4d6db19060d0bd",
+      "file": "src/electron/capture/senderWorker.ts",
+      "line": 291,
+      "document": "docs/ai/history/records/src_electron_capture_senderWorker.ts-1.md"
+    },
+    {
+      "id": "D-timer-b74c50b5de4ab312",
+      "file": "src/electron/capture/senderWorker.ts",
+      "line": 551,
+      "document": "docs/ai/history/records/src_electron_capture_senderWorker.ts-1.md"
+    },
+    {
+      "id": "D-timer-120d1fdece6c0384",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 46,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-e60d621c70482ad8",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 49,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-b6b629a5a0feaf6f",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 116,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-798c4a9bcba52b97",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 278,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-5d1ac0838e158089",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 529,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-d7bcb2969f87a9ae",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 628,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-4e19a3f0a3b7b86b",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 647,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-4ef794dcf06d3262",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 840,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-c5f588d6c6928899",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 842,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-7839a135f26f609e",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 892,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-76ca877bc0c72c1b",
+      "file": "src/frontend/components/settings/tabs/Outputs.svelte",
+      "line": 38,
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Outputs.svelte-1.md"
+    },
+    {
+      "id": "D-timer-447c94fa7f1fb475",
+      "file": "src/frontend/components/settings/tabs/Outputs.svelte",
+      "line": 99,
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Outputs.svelte-1.md"
+    },
+    {
+      "id": "D-request-budget-7977c2a412834df9",
+      "file": "src/frontend/components/settings/tabs/Outputs.svelte",
+      "line": 203,
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Outputs.svelte-1.md"
+    },
+    {
+      "id": "D-timer-9ad0217da931d2a8",
+      "file": "src/frontend/components/settings/tabs/Outputs.svelte",
+      "line": 271,
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Outputs.svelte-1.md"
+    },
+    {
+      "id": "D-timer-503fa0e12bfcfd1e",
+      "file": "src/frontend/components/settings/tabs/Outputs.svelte",
+      "line": 301,
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Outputs.svelte-1.md"
+    },
+    {
+      "id": "D-timer-86f39dfd9a44eb5c",
+      "file": "src/frontend/components/settings/tabs/Outputs.svelte",
+      "line": 306,
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Outputs.svelte-1.md"
+    },
+    {
+      "id": "D-workaround-ed0583a51419340e",
+      "file": "src/frontend/components/settings/tabs/Outputs.svelte",
+      "line": 98,
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Outputs.svelte-1.md"
+    },
+    {
+      "id": "D-workaround-b53868df971ad24b",
+      "file": "src/frontend/components/settings/tabs/Outputs.svelte",
+      "line": 375,
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Outputs.svelte-1.md"
+    },
+    {
+      "id": "D-hotspot-05827e5cde4b8d8f",
+      "file": "src/electron/capture/helpers/CaptureLifecycle.ts",
+      "line": 10,
+      "document": "docs/ai/history/records/src_electron_capture_helpers_CaptureLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-hotspot-41b7a5869060aa8d",
+      "file": "src/electron/capture/senderWorker.ts",
+      "line": 16,
+      "document": "docs/ai/history/records/src_electron_capture_senderWorker.ts-1.md"
+    },
+    {
+      "id": "D-hotspot-935a6c5530437c9c",
+      "file": "src/electron/ndi/NdiSender.ts",
+      "line": 14,
+      "document": "docs/ai/history/records/src_electron_ndi_NdiSender.ts-1.md"
+    },
+    {
+      "id": "D-hotspot-018061c053b78732",
+      "file": "src/electron/ndi/ndiWorker.ts",
+      "line": 37,
+      "document": "docs/ai/history/records/src_electron_ndi_ndiWorker.ts-1.md"
+    },
+    {
+      "id": "D-hotspot-d96d73d105eca7cb",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 33,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    }
+  ]
+}

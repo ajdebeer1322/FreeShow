@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6b1113ca15e1fa33d06e4bfd45a9b89dac2d0a0f): “1.6.5-beta.3 (#3610) * Updated Norwegian language * Don't show network output node if no network outputs * Reset sync state if failed * Updated languages * Fixed videos with modifi”
 
-Later line edits: 7; latest 6b1113ca. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 6b1113ca. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3610](https://github.com/ChurchApps/FreeShow/pull/3610) (read; no item-specific matching bullet); [pr #3610](https://github.com/ChurchApps/FreeShow/pull/3610) (read; no item-specific matching bullet)

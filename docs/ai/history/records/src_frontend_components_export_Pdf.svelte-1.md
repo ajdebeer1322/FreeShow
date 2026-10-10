@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/432050210f460bcd96a0d1029b9dc4c3ad789ab6): “1.6.1-beta.3 (#3271) * Show loading improvement * BMD Keying Layer #3247 * BMD updates #3232 * Tweak * Charcoal theme #3259 * Audio playlist auto pause after one song has ended - F”
 
-Later line edits: 8; latest 43205021. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 43205021. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3271](https://github.com/ChurchApps/FreeShow/pull/3271) (read; no item-specific matching bullet); [pr #3271](https://github.com/ChurchApps/FreeShow/pull/3271) (read; no item-specific matching bullet)
 
@@ -52,6 +52,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/88a00d72a9ec8f9b479b47351750881c4a854c22): “📄 PDF export should work with many pages - Slides in PDF should no longer clip pages - PDF page numbers should work on many pages”
 
-Later line edits: 8; latest f8d43d17. Full commit messages and lineage: JSON query data.
+Later line edits: 7; latest f8d43d17. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3364](https://github.com/ChurchApps/FreeShow/pull/3364) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3364](https://github.com/ChurchApps/FreeShow/pull/3364) (read; no item-specific matching bullet)

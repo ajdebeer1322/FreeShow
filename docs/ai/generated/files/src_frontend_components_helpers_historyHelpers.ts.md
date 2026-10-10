@@ -90,9 +90,9 @@ No static evidence found.
 - [src/frontend/components/helpers/historyHelpers.ts:225](../../../../src/frontend/components/helpers/historyHelpers.ts#L225) — timer-720345f9c280d7db: setTimeout = 10 ms (10); // ...data.data // focus on section title input
 - [src/frontend/components/helpers/historyHelpers.ts:372](../../../../src/frontend/components/helpers/historyHelpers.ts#L372) — timer-4a4d158dd87e57ea: setTimeout = 0 ms (omitted); // name // update remote project shows data, so the new show is properly added
 - [src/frontend/components/helpers/historyHelpers.ts:433](../../../../src/frontend/components/helpers/historyHelpers.ts#L433) — timer-b7a145bcac09ea03: setTimeout = 10 ms (10); // remove from "not found" (should not be nessesary)
-- [src/frontend/components/helpers/historyHelpers.ts:534](../../../../src/frontend/components/helpers/historyHelpers.ts#L534) — timer-b1318da65e5767ce: setTimeout = 100 ms (100); 
+- [src/frontend/components/helpers/historyHelpers.ts:534](../../../../src/frontend/components/helpers/historyHelpers.ts#L534) — timer-b1318da65e5767ce: setTimeout = 100 ms (100);
 - [src/frontend/components/helpers/historyHelpers.ts:552](../../../../src/frontend/components/helpers/historyHelpers.ts#L552) — timer-dfe4906ba5b025a5: setTimeout = 100 ms (100); // data.default = true // } // setTheme({ ...data, data: data.previousValue })
-- [src/frontend/components/helpers/historyHelpers.ts:572](../../../../src/frontend/components/helpers/historyHelpers.ts#L572) — timer-6a2ed228b85fe668: setTimeout = 100 ms (100); 
+- [src/frontend/components/helpers/historyHelpers.ts:572](../../../../src/frontend/components/helpers/historyHelpers.ts#L572) — timer-6a2ed228b85fe668: setTimeout = 100 ms (100);
 
 ## Workarounds
 

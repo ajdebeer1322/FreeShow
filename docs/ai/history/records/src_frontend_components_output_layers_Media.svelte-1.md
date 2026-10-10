@@ -18,7 +18,7 @@ Sources:
 
 Later line edits: 1; latest 11c3d427. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #452](https://github.com/ChurchApps/FreeShow/pull/452) (read; no item-specific matching bullet); [pr #947](https://github.com/ChurchApps/FreeShow/pull/947) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #452](https://github.com/ChurchApps/FreeShow/pull/452) (read; no item-specific matching bullet); [pr #947](https://github.com/ChurchApps/FreeShow/pull/947) (read; no item-specific matching bullet)
 
 ## D-css-transition-4fd64c1e2d064b4a
 

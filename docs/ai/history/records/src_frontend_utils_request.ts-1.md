@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/2b9da33be2bcec118f7f8c9f672f5342724873dc): “🎵 Lyrics mode. You can delete slides. Fixed; rename, YouTube, & more”
 
-Later line edits: 1; latest 2b9da33b. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 2b9da33b. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

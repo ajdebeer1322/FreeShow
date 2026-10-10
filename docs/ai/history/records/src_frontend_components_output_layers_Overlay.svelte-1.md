@@ -17,7 +17,7 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/48650ae1d402cd38c02a8952d2a05c4049a1a208): “v1.2.6 (#789) * ✔ Fixed èê removed from file names - Camera item fit - Fixed slide split removing chords * ✔ Ctrl+N to create different elements - Updated media selection - Add med”
 - [code] src/frontend/components/output/layers/Overlay.svelte:40: “// wait for previous items to start fading out (svelte will keep them until the transition is done!)”
 
-Later line edits: 1; latest 48650ae1. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 48650ae1. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #789](https://github.com/ChurchApps/FreeShow/pull/789) (read; no item-specific matching bullet); [pr #789](https://github.com/ChurchApps/FreeShow/pull/789) (read; no item-specific matching bullet)
 
@@ -35,9 +35,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/d6d4b4bf026e58b44fabd0bbe37be90189656001): “1.5.0-beta.2 (#2108) * Better Electron mirror approach * Fixed PDF chord sheet option not showing up right away * Small fixes & tweaks * Fix for snap build * Fix for snap build * U”
 
-Later line edits: 8; latest c9f83b17. Full commit messages and lineage: JSON query data.
+Later line edits: 6; latest c9f83b17. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3450](https://github.com/ChurchApps/FreeShow/pull/3450) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (read; no item-specific matching bullet); [pr #3450](https://github.com/ChurchApps/FreeShow/pull/3450) (read; no item-specific matching bullet)
 
 ## D-workaround-ee1ab844f3a096ba
 
@@ -53,7 +53,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/4bf44652755ddebc4f969d3b79d4d0ebf717888b): “1.5.3-beta.3 (#2429) * Implement Multi-Chapter Searching of verses (#2418) * Implement Multi-Chapter Searching of verses * Ensure slide names also match multi-chapter shows * Fix s”
 
-Later line edits: 2; latest 4bf44652. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 4bf44652. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2429](https://github.com/ChurchApps/FreeShow/pull/2429) (read; no item-specific matching bullet); [pr #2429](https://github.com/ChurchApps/FreeShow/pull/2429) (read; no item-specific matching bullet)
 

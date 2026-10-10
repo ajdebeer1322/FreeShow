@@ -42,9 +42,9 @@ No static evidence found.
 
 - [src/frontend/components/inputs/HiddenInput.svelte:23](../../../../src/frontend/components/inputs/HiddenInput.svelte#L23) — timer-a4b46c4a61875425: setTimeout = 10 ms (10); // \|\| e.target.closest(".contextMenu")
 - [src/frontend/components/inputs/HiddenInput.svelte:31](../../../../src/frontend/components/inputs/HiddenInput.svelte#L31) — timer-e183d713f7365988: setTimeout = 10 ms (10); // prevVal = value
-- [src/frontend/components/inputs/HiddenInput.svelte:40](../../../../src/frontend/components/inputs/HiddenInput.svelte#L40) — timer-43b76574b09dbcd4: setTimeout = 700 ms (HOLD_TIME); 
-- [src/frontend/components/inputs/HiddenInput.svelte:59](../../../../src/frontend/components/inputs/HiddenInput.svelte#L59) — timer-1d4841e0f9640d4d: setTimeout = 20 ms (20); 
-- [src/frontend/components/inputs/HiddenInput.svelte:102](../../../../src/frontend/components/inputs/HiddenInput.svelte#L102) — timer-5c1e294070456271: setTimeout = 10 ms (10); 
+- [src/frontend/components/inputs/HiddenInput.svelte:40](../../../../src/frontend/components/inputs/HiddenInput.svelte#L40) — timer-43b76574b09dbcd4: setTimeout = 700 ms (HOLD_TIME);
+- [src/frontend/components/inputs/HiddenInput.svelte:59](../../../../src/frontend/components/inputs/HiddenInput.svelte#L59) — timer-1d4841e0f9640d4d: setTimeout = 20 ms (20);
+- [src/frontend/components/inputs/HiddenInput.svelte:102](../../../../src/frontend/components/inputs/HiddenInput.svelte#L102) — timer-5c1e294070456271: setTimeout = 10 ms (10);
 
 ## Workarounds
 

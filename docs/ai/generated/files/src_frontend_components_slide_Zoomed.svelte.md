@@ -45,7 +45,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/slide/Zoomed.svelte:183](../../../../src/frontend/components/slide/Zoomed.svelte#L183) — css-transition-7222eb8ec6561875: css-transition = 800 ms (800ms background-color); 
+- [src/frontend/components/slide/Zoomed.svelte:183](../../../../src/frontend/components/slide/Zoomed.svelte#L183) — css-transition-7222eb8ec6561875: css-transition = 800 ms (800ms background-color);
 - [src/frontend/components/slide/Zoomed.svelte:232](../../../../src/frontend/components/slide/Zoomed.svelte#L232) — css-transition-76905644c186e3b6: css-transition = 200 ms (0.2s inset-inline-start,); /* .zoom { transition: 0.2s inset-inline-start, 0.2s top; } */
 
 ## Workarounds

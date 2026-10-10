@@ -59,19 +59,19 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/utils/cloudSync.ts:38](../../../../src/frontend/utils/cloudSync.ts#L38) — request-budget-3f94e933780deecf: request-budget = 15000 ms (15000); 
-- [src/frontend/utils/cloudSync.ts:51](../../../../src/frontend/utils/cloudSync.ts#L51) — request-budget-90642cdd9c2580b0: request-budget = 15000 ms (15000); 
-- [src/frontend/utils/cloudSync.ts:56](../../../../src/frontend/utils/cloudSync.ts#L56) — request-budget-77b877efe249816b: request-budget = 15000 ms (15000); 
-- [src/frontend/utils/cloudSync.ts:83](../../../../src/frontend/utils/cloudSync.ts#L83) — request-budget-4180248b4e910733: request-budget = 15000 ms (15000); 
-- [src/frontend/utils/cloudSync.ts:93](../../../../src/frontend/utils/cloudSync.ts#L93) — request-budget-aba3a9f201163688: request-budget = 15000 ms (15000); 
+- [src/frontend/utils/cloudSync.ts:38](../../../../src/frontend/utils/cloudSync.ts#L38) — request-budget-3f94e933780deecf: request-budget = 15000 ms (15000);
+- [src/frontend/utils/cloudSync.ts:51](../../../../src/frontend/utils/cloudSync.ts#L51) — request-budget-90642cdd9c2580b0: request-budget = 15000 ms (15000);
+- [src/frontend/utils/cloudSync.ts:56](../../../../src/frontend/utils/cloudSync.ts#L56) — request-budget-77b877efe249816b: request-budget = 15000 ms (15000);
+- [src/frontend/utils/cloudSync.ts:83](../../../../src/frontend/utils/cloudSync.ts#L83) — request-budget-4180248b4e910733: request-budget = 15000 ms (15000);
+- [src/frontend/utils/cloudSync.ts:93](../../../../src/frontend/utils/cloudSync.ts#L93) — request-budget-aba3a9f201163688: request-budget = 15000 ms (15000);
 - [src/frontend/utils/cloudSync.ts:102](../../../../src/frontend/utils/cloudSync.ts#L102) — request-budget-2ebdbb2eca63f5ce: request-budget = 15000 ms (15000); // ensure previous popup is closed first to prevent Svelte bug "locking" popup
 - [src/frontend/utils/cloudSync.ts:106](../../../../src/frontend/utils/cloudSync.ts#L106) — timer-d8977510d8dcc3d0: setTimeout = 250 ms (250); // ensure previous popup is closed first to prevent Svelte bug "locking" popup
 - [src/frontend/utils/cloudSync.ts:160](../../../../src/frontend/utils/cloudSync.ts#L160) — request-budget-70a4aead76ddeb01: request-budget = 300000 ms (timeout); // 5 minutes
 - [src/frontend/utils/cloudSync.ts:204](../../../../src/frontend/utils/cloudSync.ts#L204) — timer-99d12f1e2b96628f: setTimeout = 100 ms (100); // reload current show // set status back to saved // console.log(status.changedFiles)
-- [src/frontend/utils/cloudSync.ts:241](../../../../src/frontend/utils/cloudSync.ts#L241) — request-budget-74171d8eccbb9c4b: request-budget = 15000 ms (15000); 
+- [src/frontend/utils/cloudSync.ts:241](../../../../src/frontend/utils/cloudSync.ts#L241) — request-budget-74171d8eccbb9c4b: request-budget = 15000 ms (15000);
 - [src/frontend/utils/cloudSync.ts:259](../../../../src/frontend/utils/cloudSync.ts#L259) — timer-91ce986820e52e49: wait = 100 ms (100); // ensure message is sent before disconnecting
 - [src/frontend/utils/cloudSync.ts:397](../../../../src/frontend/utils/cloudSync.ts#L397) — timer-77bed2090346bdfe: hasNewerUpdate = 1000 ms (1000); // 3 minutes
-- [src/frontend/utils/cloudSync.ts:418](../../../../src/frontend/utils/cloudSync.ts#L418) — timer-c068ad5d4ae34a45: setTimeout = 50 ms (50); 
+- [src/frontend/utils/cloudSync.ts:418](../../../../src/frontend/utils/cloudSync.ts#L418) — timer-c068ad5d4ae34a45: setTimeout = 50 ms (50);
 
 ## Workarounds
 

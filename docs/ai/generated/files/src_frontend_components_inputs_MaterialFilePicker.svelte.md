@@ -38,9 +38,9 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/inputs/MaterialFilePicker.svelte:180](../../../../src/frontend/components/inputs/MaterialFilePicker.svelte#L180) — css-transition-8c3083ea380f2e79: css-transition = 200 ms (transform 0.2s ease); 
-- [src/frontend/components/inputs/MaterialFilePicker.svelte:195](../../../../src/frontend/components/inputs/MaterialFilePicker.svelte#L195) — css-transition-0c8463ac76b32af2: css-transition = 200 ms (all 0.2s ease); 
-- [src/frontend/components/inputs/MaterialFilePicker.svelte:215](../../../../src/frontend/components/inputs/MaterialFilePicker.svelte#L215) — css-transition-8489622a2b731c6a: css-transition = 200 ms (transform 0.2s ease); 
+- [src/frontend/components/inputs/MaterialFilePicker.svelte:180](../../../../src/frontend/components/inputs/MaterialFilePicker.svelte#L180) — css-transition-8c3083ea380f2e79: css-transition = 200 ms (transform 0.2s ease);
+- [src/frontend/components/inputs/MaterialFilePicker.svelte:195](../../../../src/frontend/components/inputs/MaterialFilePicker.svelte#L195) — css-transition-0c8463ac76b32af2: css-transition = 200 ms (all 0.2s ease);
+- [src/frontend/components/inputs/MaterialFilePicker.svelte:215](../../../../src/frontend/components/inputs/MaterialFilePicker.svelte#L215) — css-transition-8489622a2b731c6a: css-transition = 200 ms (transform 0.2s ease);
 
 ## Workarounds
 

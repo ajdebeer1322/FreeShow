@@ -21,7 +21,7 @@
 
 ## Stores and messages
 
-[code] Static scope: 126 files, 128 referenced stores, 44 concrete message keys, 156 timing entries. [Complete dependency index](drawer-media.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
+[code] Static scope: 126 files, 128 referenced stores, 43 concrete message keys, 156 timing entries. [Complete dependency index](drawer-media.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
 
 - [code] [src/frontend/components/drawer/media/MediaCard.svelte#currentOutput](../generated/stores/src_frontend_components_drawer_media_MediaCard.svelte_currentOutput.md)
 - [code] [src/frontend/components/drawer/media/MediaCard.svelte#currentStyle](../generated/stores/src_frontend_components_drawer_media_MediaCard.svelte_currentStyle.md)

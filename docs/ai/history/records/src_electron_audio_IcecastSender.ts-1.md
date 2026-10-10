@@ -18,7 +18,7 @@ Sources:
 
 Later line edits: 1; latest bbfe9807. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3291](https://github.com/ChurchApps/FreeShow/pull/3291) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3587](https://github.com/ChurchApps/FreeShow/pull/3587) (read; no item-specific matching bullet)
+GitHub: [pr #3291](https://github.com/ChurchApps/FreeShow/pull/3291) (read; no item-specific matching bullet); [pr #3587](https://github.com/ChurchApps/FreeShow/pull/3587) (read; no item-specific matching bullet)
 
 ## D-timer-0b706ea96cddfdab
 
@@ -34,7 +34,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/bbfe98072aefe0c6311c5044e1ac63152f45a204): “1.6.5-beta.2 (#3587) * More specific sync error messages (#3557) * Break CJK text on full-width punctuation when splitting long verses (#3561) * Update * Fixed broken chars * Don't”
 
-Later line edits: 1; latest bbfe9807. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest bbfe9807. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3587](https://github.com/ChurchApps/FreeShow/pull/3587) (read; no item-specific matching bullet); [pr #3587](https://github.com/ChurchApps/FreeShow/pull/3587) (read; no item-specific matching bullet)
 
@@ -53,6 +53,6 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6b1113ca15e1fa33d06e4bfd45a9b89dac2d0a0f): “1.6.5-beta.3 (#3610) * Updated Norwegian language * Don't show network output node if no network outputs * Reset sync state if failed * Updated languages * Fixed videos with modifi”
 - [code] src/electron/audio/IcecastSender.ts:33: “// Separated real audio time tracking to fix the silence pacing bug”
 
-Later line edits: 1; latest 6b1113ca. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 6b1113ca. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3610](https://github.com/ChurchApps/FreeShow/pull/3610) (read; no item-specific matching bullet); [pr #3610](https://github.com/ChurchApps/FreeShow/pull/3610) (read; no item-specific matching bullet)

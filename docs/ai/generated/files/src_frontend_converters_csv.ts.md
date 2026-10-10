@@ -31,7 +31,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/converters/csv.ts:20](../../../../src/frontend/converters/csv.ts#L20) — timer-77b8c6eb4dcb9485: setTimeout = 10 ms (10); 
+- [src/frontend/converters/csv.ts:20](../../../../src/frontend/converters/csv.ts#L20) — timer-77b8c6eb4dcb9485: setTimeout = 10 ms (10);
 
 ## Workarounds
 

@@ -22,7 +22,7 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/drawer/media/Image.svelte:31](../../../../src/frontend/components/drawer/media/Image.svelte#L31) — timer-124a2bbc438496a9: setTimeout = dynamic ms (time); 
+- [src/frontend/components/drawer/media/Image.svelte:31](../../../../src/frontend/components/drawer/media/Image.svelte#L31) — timer-124a2bbc438496a9: setTimeout = dynamic ms (time);
 
 ## Workarounds
 

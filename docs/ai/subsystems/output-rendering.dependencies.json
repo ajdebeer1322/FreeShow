@@ -209,11 +209,7 @@
     "OUTPUT/TRANSITION",
     "OUTPUT/UPDATE_OUTPUTS_DATA",
     "OUTPUT/VARIABLES",
-    "OUTPUT/VISUALIZER_DATA",
-    "OUTPUT/buffer",
-    "OUTPUT/preventDefault",
-    "OUTPUT/size",
-    "OUTPUT/value"
+    "OUTPUT/VISUALIZER_DATA"
   ],
   "timingIds": [
     "timer-6c606adee9f9fe54",

@@ -21,7 +21,7 @@ None detected.
 
 ## Timing
 
-- [src/frontend/ai/components/floating/ConfidenceMeter.svelte:23](../../../../src/frontend/ai/components/floating/ConfidenceMeter.svelte#L23) — css-transition-14ae50956401a469: css-transition = 300 ms (background 0.3s ease); 
+- [src/frontend/ai/components/floating/ConfidenceMeter.svelte:23](../../../../src/frontend/ai/components/floating/ConfidenceMeter.svelte#L23) — css-transition-14ae50956401a469: css-transition = 300 ms (background 0.3s ease);
 
 ## Workarounds
 

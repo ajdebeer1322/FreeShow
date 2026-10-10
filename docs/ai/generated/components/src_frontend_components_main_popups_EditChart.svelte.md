@@ -8,7 +8,7 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/components/main/popups/EditChart.svelte:72](../../../../src/frontend/components/main/popups/EditChart.svelte#L72) — InputRow → src/frontend/components/input/InputRow.svelte; 
+- [src/frontend/components/main/popups/EditChart.svelte:72](../../../../src/frontend/components/main/popups/EditChart.svelte#L72) — InputRow → src/frontend/components/input/InputRow.svelte;
 - [src/frontend/components/main/popups/EditChart.svelte:75](../../../../src/frontend/components/main/popups/EditChart.svelte#L75) — MaterialTextInput → src/frontend/components/inputs/MaterialTextInput.svelte; label="inputs.name"; value={grid&#91;rowIdx&#93;&#91;0&#93;}; on:input={(e) => { grid&#91;rowIdx&#93;&#91;0&#93; = e.detail grid = grid
 - [src/frontend/components/main/popups/EditChart.svelte:83](../../../../src/frontend/components/main/popups/EditChart.svelte#L83) — MaterialTextInput → src/frontend/components/inputs/MaterialTextInput.svelte; label="variables.value"; value={grid&#91;rowIdx&#93;&#91;1&#93; \|\| ""}; on:input={(e) => { grid&#91;rowIdx&#93;&#91;1&#93; = e.detail g
 - [src/frontend/components/main/popups/EditChart.svelte:91](../../../../src/frontend/components/main/popups/EditChart.svelte#L91) — MaterialColorInput → src/frontend/components/inputs/MaterialColorInput.svelte; label="edit.color"; style="max-width: 150px;"; value={grid&#91;rowIdx&#93;&#91;2&#93; \|\| getDefaultColor(rowIdx, grid

@@ -72,7 +72,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/drawer/bible/scripture.ts:94](../../../../src/frontend/components/drawer/bible/scripture.ts#L94) — request-budget-524260bc3a3af5c6: request-budget = 15000 ms (15000); 
+- [src/frontend/components/drawer/bible/scripture.ts:94](../../../../src/frontend/components/drawer/bible/scripture.ts#L94) — request-budget-524260bc3a3af5c6: request-budget = 15000 ms (15000);
 
 ## Workarounds
 

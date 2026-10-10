@@ -9,7 +9,7 @@ const forkCommits=new Set(git(["rev-list",revision,"--not","upstream/main"]).spl
 const metadata=new Map()
 const fields=git(["log",revision,"--format=%H%x00%cs%x00%B%x00"]).split("\0")
 for(let i=0;i+2<fields.length;i+=3) metadata.set(fields[i].trim(),{commit:fields[i].trim(),date:fields[i+1],message:fields[i+2].trim()})
-const hotspot=/^src\/frontend\/(?:components\/output\/|components\/media\/|components\/slide\/(?:Textbox|Video)\.svelte|components\/slide\/textStyle\.ts|components\/helpers\/(?:showActions|output|OutputHelper|media|video)[^/]*\.|utils\/(?:save|listeners|receivers|request|video)\.|IPC\/)|^src\/electron\/(?:output\/|capture\/|ndi\/|omt\/|blackmagic\/|IPC\/|data\/save)/
+const hotspot=/^src\/frontend\/(?:components\/output\/|components\/media\/|components\/slide\/(?:Textbox|TextboxLines|Video)\.svelte|components\/slide\/(?:textStyle|autosizeCache)\.ts|components\/edit\/scripts\/autosize\.ts|components\/edit\/editbox\/|components\/helpers\/(?:showActions|output|OutputHelper|media|video)[^/]*\.|utils\/(?:save|listeners|receivers|request|video)\.|IPC\/)|^src\/electron\/(?:output\/|capture\/|ndi\/|omt\/|blackmagic\/|IPC\/|data\/save)/
 const items=[...model.timers.map(item=>({...item,category:"timing"})),...model.workarounds.map(item=>({...item,category:"workaround"})),...model.files.filter(file=>hotspot.test(file.file)).map(file=>({id:`hotspot-${hash(file.file).slice(0,16)}`,file:file.file,line:file.symbols.find(symbol=>["ClassDeclaration","FunctionDeclaration"].includes(symbol.kind))?.line || 1,category:"hotspot",kind:"module",code:file.file}))]
 // Explicit fork decisions preserve commit intent independently of old module origins.
 for (const commit of [...forkCommits].sort()) {
@@ -37,6 +37,11 @@ for(const file of [...new Set(items.map(item=>item.file))]) {
 }
 const causal=/because|prevent|avoid|ensure|otherwise|(?:svelte|transition).{0,40}bug|wait (?:for|until)|so (?:that|the)|(?:fix|workaround).{0,80}(?:bug|issue|crash|flash|stuck|race)/i
 const records=new Array(items.length)
+const descendantPromises=new Map()
+async function descendants(commit) {
+    if(!descendantPromises.has(commit))descendantPromises.set(commit,cachedGit(["rev-list","--ancestry-path",`${commit}..${revision}`],`descendants:${commit}`).then(result=>new Set(result.output.split("\n"))))
+    return descendantPromises.get(commit)
+}
 let next=0, complete=0
 async function worker() {
     while(next<items.length) {
@@ -59,8 +64,8 @@ async function worker() {
         let confidence=comment?"code":"guess",sourcedWhy=!!comment
         if(item.explicitCommit && intro) {why=`Fork decision: “${intro.message}”`;confidence="code";sourcedWhy=true}
         if(!item.explicitCommit && !comment && intro && forkCommits.has(introduction) && !/^(?:Phase \d|Document|Add an output timing test)/.test(intro.message)) {why=`Fork commit states: “${intro.message}”. This is commit-level intent; finer item-specific intent is unresolved.`;confidence="guess";sourcedWhy=false}
-        const id=`D-${item.id}`,document=`docs/ai/history/records/${slug(item.file)}-${Math.floor(items.filter(other=>other.file===item.file).findIndex(other=>other.id===item.id)/16)+1}.md`
-        records[index]={id,itemId:item.id,category:item.category,file:item.file,line:item.line,endLine:item.endLine || item.line,sourceHash:file.hash,changedFiles:item.changedFiles || [],what:item.category==="workaround"?item.text:item.category==="timing"?`${item.kind}: ${item.expression} (${item.valueMs ?? "dynamic"} ms)`:item.category==="fork-feature"?item.code:`Module hotspot: ${item.file}`,introduction:intro?{...intro,method,url:`https://github.com/${repo}/commit/${introduction}`,limits:"Exact-text/line provenance is not proof of when the broader feature began; moves and rewrites can change lineage."}:null,latestEdit:latest || null,lineage:changes,pickaxe,laterChanges:changes.filter(commit=>commit!==introduction).map(commit=>metadata.get(commit)).filter(Boolean),forkFeature:forkCommits.has(introduction),why,confidence,sourcedWhy,sources:[...(intro?[{kind:"commit",commit:introduction,quote:intro.message,url:`https://github.com/${repo}/commit/${introduction}`}]:[]),...(comment?[{kind:"comment",ref:`${comment.file}:${comment.line}`,quote:comment.text}]:[])],historyError:lineage.error,github:[],document}
+        const id=`D-${item.id}`,document=`docs/ai/history/records/${slug(item.file)}-${Math.floor(items.filter(other=>other.file===item.file).findIndex(other=>other.id===item.id)/16)+1}.md`,after=intro?await descendants(introduction):new Set()
+        records[index]={id,itemId:item.id,category:item.category,file:item.file,line:item.line,endLine:item.endLine || item.line,sourceHash:file.hash,changedFiles:item.changedFiles || [],what:item.category==="workaround"?item.text:item.category==="timing"?`${item.kind}: ${item.expression} (${item.valueMs ?? "dynamic"} ms)`:item.category==="fork-feature"?item.code:`Module hotspot: ${item.file}`,introduction:intro?{...intro,method,url:`https://github.com/${repo}/commit/${introduction}`,limits:"Exact-text/line provenance is not proof of when the broader feature began; moves and rewrites can change lineage."}:null,latestEdit:latest || null,lineage:changes,pickaxe,laterChanges:changes.filter(commit=>after.has(commit)).map(commit=>metadata.get(commit)).filter(Boolean),forkFeature:forkCommits.has(introduction),why,confidence,sourcedWhy,sources:[...(intro?[{kind:"commit",commit:introduction,quote:intro.message,url:`https://github.com/${repo}/commit/${introduction}`}]:[]),...(comment?[{kind:"comment",ref:`${comment.file}:${comment.line}`,quote:comment.text}]:[])],historyError:lineage.error,github:[],document}
         complete++
         if(complete%100===0) console.log(`Local history: ${complete}/${items.length}`)
     }
@@ -77,6 +82,7 @@ async function github(kind,number,repo="ChurchApps/FreeShow") {
     try {
         let data
         if(ghAuthenticated) {
+            requests++
             const result=await run("gh",[kind==="pulls"?"pr":"issue","view",String(number),"-R",repo,"--json","number,title,body,url,createdAt,closedAt"],{maxBuffer:8*1024*1024});data=JSON.parse(result.stdout)
         } else {
             if(remaining<=5 || requests>=55) {stopped="Unauthenticated GitHub API quota reserve reached; login required for remaining sources.";return {error:stopped}}
@@ -128,6 +134,17 @@ for(const record of records) {
             }
         }
         record.github.push(entry)
+    }
+    // A release body can be empty even when the squash message links an issue.
+    // Read only issue numbers in candidate bullets or comments in the record's scope.
+    const comments=model.files.find(file=>file.file===record.file).comments.filter(comment=>record.category==="hotspot" || Math.abs(comment.line-record.line)<8)
+    const issueLinks=new Map()
+    for(const comment of comments)for(const match of comment.text.matchAll(/https:\/\/github\.com\/([\w.-]+\/[\w.-]+)\/issues\/(\d+)/g))issueLinks.set(`${match[1]}#${match[2]}`,{repo:match[1],number:Number(match[2]),source:`${record.file}:${comment.line}`,quote:comment.text,confidence:"code"})
+    for(const source of record.sources.filter(source=>source.kind==="commit-bullet-candidate"))for(const match of source.quote.matchAll(/#(\d{1,6})\b/g))issueLinks.set(`ChurchApps/FreeShow#${match[1]}`,{repo:"ChurchApps/FreeShow",number:Number(match[1]),source:source.url,quote:source.quote,confidence:"guess"})
+    for(const link of issueLinks.values()) {
+        const issue=await github("issues",link.number,link.repo)
+        record.github.push({kind:"issue",number:link.number,repo:link.repo,url:issue.data?.url || `https://github.com/${link.repo}/issues/${link.number}`,error:issue.error || null,quote:issue.data?.body || null,confidence:link.confidence,linkSource:link.source,linkQuote:link.quote})
+        if(issue.data)record.sources.push({kind:"linked-issue",url:issue.data.url,quote:issue.data.body || issue.data.title,confidence:"guess"})
     }
 }
 const tableFiles=[]

@@ -16,9 +16,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/fbc4ae8a15fead1dff9263c56ec733fd8b5c4465): “v1.2.8-beta.1 (#845) * Fix a few English grammar mistakes (#824) * ✔ Fixed files not dropping - Fixed output not cleared when resetting app - Fixed video controls not working from ”
 
-Later line edits: 1; latest fbc4ae8a. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest fbc4ae8a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #845](https://github.com/ChurchApps/FreeShow/pull/845) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #845](https://github.com/ChurchApps/FreeShow/pull/845) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #845](https://github.com/ChurchApps/FreeShow/pull/845) (read; no item-specific matching bullet); [pr #845](https://github.com/ChurchApps/FreeShow/pull/845) (read; no item-specific matching bullet)
 
 ## D-timer-b68512d991dd0600
 
@@ -88,6 +88,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/464e57bf037a3aa102535b6870cb878cee0f8b3e): “v0.9.5 (#232) * ✔ Fixed issue in output stream file * 🌐 Website item - Clicking a template multiple times will roll items around - Slide transition working after doing item transi”
 
-Later line edits: 1; latest 464e57bf. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 464e57bf. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #232](https://github.com/ChurchApps/FreeShow/pull/232) (read; no item-specific matching bullet); [pr #232](https://github.com/ChurchApps/FreeShow/pull/232) (read; no item-specific matching bullet)

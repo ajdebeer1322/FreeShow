@@ -20,7 +20,7 @@ None detected.
 
 ## Timing
 
-- [src/server/common/components/Checkbox.svelte:41](../../../../src/server/common/components/Checkbox.svelte#L41) — css-transition-9244fbcbe4d8ac28: css-transition = 300 ms (all 300ms); 
+- [src/server/common/components/Checkbox.svelte:41](../../../../src/server/common/components/Checkbox.svelte#L41) — css-transition-9244fbcbe4d8ac28: css-transition = 300 ms (all 300ms);
 
 ## Workarounds
 

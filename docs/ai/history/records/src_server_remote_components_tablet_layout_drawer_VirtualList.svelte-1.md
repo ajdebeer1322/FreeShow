@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/26bf9321ba4956ac29b08be1c75f4917a302d384): “1.5.6-beta.1 (#2579) * Fixed fonts sometimes not working for special text - Fixed template freezes - Fixed thumbnail not working in ControlShow - Updated languages * Large dropdown”
 
-Later line edits: 1; latest 26bf9321. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 26bf9321. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2579](https://github.com/ChurchApps/FreeShow/pull/2579) (read; no item-specific matching bullet); [pr #2579](https://github.com/ChurchApps/FreeShow/pull/2579) (read; no item-specific matching bullet)
 

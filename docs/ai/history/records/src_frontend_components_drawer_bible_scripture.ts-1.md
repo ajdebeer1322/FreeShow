@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/0560e697a4c582aa72585e25f3b2e362c88ea5a3): “1.5.3-beta.2 (#2408) * Fixed custom data location sometimes incorrect - Fixed some songs logged twice in a row - Updated languages * Fixed not marking as played with project sectio”
 
-Later line edits: 3; latest 0560e697. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 0560e697. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2408](https://github.com/ChurchApps/FreeShow/pull/2408) (read; no item-specific matching bullet); [pr #2408](https://github.com/ChurchApps/FreeShow/pull/2408) (read; no item-specific matching bullet)
 
@@ -35,9 +35,9 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/655fca426fba80c0f783675e0282941d2f551887): “1.5.1-beta.3 (#2265) * Drive supportsAllDrives on init * Fixed scripture renaming updating original name * Control active timers from clear button - If timer end is not 0 it will s”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/655fca426fba80c0f783675e0282941d2f551887): “- Splitted scripture verse fixes”
 
-Later line edits: 4; latest 88de0b82. Full commit messages and lineage: JSON query data.
+Later line edits: 2; latest 88de0b82. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2265](https://github.com/ChurchApps/FreeShow/pull/2265) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2526](https://github.com/ChurchApps/FreeShow/pull/2526) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2265](https://github.com/ChurchApps/FreeShow/pull/2265) (read; no item-specific matching bullet); [pr #2526](https://github.com/ChurchApps/FreeShow/pull/2526) (read; no item-specific matching bullet)
 
 ## D-workaround-5b2058a647a16f64
 
@@ -55,7 +55,7 @@ Sources:
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/4face4422500cbfa8f2b400bdfcbcd0f6861f6c0): “* Double click scripture drawer tab to play”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/4face4422500cbfa8f2b400bdfcbcd0f6861f6c0): “* Double click scripture drawer tab to play”
 
-Later line edits: 2; latest 4face442. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 4face442. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2259](https://github.com/ChurchApps/FreeShow/pull/2259) (read; no item-specific matching bullet); [pr #2259](https://github.com/ChurchApps/FreeShow/pull/2259) (read; no item-specific matching bullet)
 
@@ -73,6 +73,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/2594947797475dfb7ae251800f6ba4ece6c52d96): “1.5.3-beta.1 (#2366) * 1.5.2 (#2325) * Replaced all Chums references with ChurchApps (#2319) * Replaced CSS zoom with transform-based scaling (#2320) * Set next timer on PDF * Code”
 
-Later line edits: 1; latest 25949477. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 25949477. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2366](https://github.com/ChurchApps/FreeShow/pull/2366) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2366](https://github.com/ChurchApps/FreeShow/pull/2366) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2366](https://github.com/ChurchApps/FreeShow/pull/2366) (read; no item-specific matching bullet); [pr #2366](https://github.com/ChurchApps/FreeShow/pull/2366) (read; no item-specific matching bullet)

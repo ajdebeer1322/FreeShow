@@ -10,5 +10,5 @@ No static evidence found.
 
 - [src/frontend/components/main/popups/CloudUpdate.svelte:20](../../../../src/frontend/components/main/popups/CloudUpdate.svelte#L20) — Icon → src/frontend/components/helpers/Icon.svelte; id={change.action}; size={1.3}; white={change.action.includes("failed")}
 - [src/frontend/components/main/popups/CloudUpdate.svelte:29](../../../../src/frontend/components/main/popups/CloudUpdate.svelte#L29) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; variant="outlined"; icon="check"; on:click={() => activePopup.set(null)}
-- [src/frontend/components/main/popups/CloudUpdate.svelte:32](../../../../src/frontend/components/main/popups/CloudUpdate.svelte#L32) — Center → src/frontend/components/system/Center.svelte; 
-- [src/frontend/components/main/popups/CloudUpdate.svelte:33](../../../../src/frontend/components/main/popups/CloudUpdate.svelte#L33) — Loader → src/frontend/components/main/Loader.svelte; 
+- [src/frontend/components/main/popups/CloudUpdate.svelte:32](../../../../src/frontend/components/main/popups/CloudUpdate.svelte#L32) — Center → src/frontend/components/system/Center.svelte;
+- [src/frontend/components/main/popups/CloudUpdate.svelte:33](../../../../src/frontend/components/main/popups/CloudUpdate.svelte#L33) — Loader → src/frontend/components/main/Loader.svelte;

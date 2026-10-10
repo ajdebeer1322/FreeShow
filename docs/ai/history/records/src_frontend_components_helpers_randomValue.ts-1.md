@@ -18,7 +18,7 @@ Sources:
 
 Later line edits: 1; latest e0b36f5a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1460](https://github.com/ChurchApps/FreeShow/pull/1460) (read; no item-specific matching bullet); [pr #3417](https://github.com/ChurchApps/FreeShow/pull/3417) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1460](https://github.com/ChurchApps/FreeShow/pull/1460) (read; no item-specific matching bullet); [pr #3417](https://github.com/ChurchApps/FreeShow/pull/3417) (read; no item-specific matching bullet)
 
 ## D-timer-8bc5b22a2e2206c6
 
@@ -36,4 +36,4 @@ Sources:
 
 Later line edits: 1; latest e0b36f5a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1460](https://github.com/ChurchApps/FreeShow/pull/1460) (read; no item-specific matching bullet); [pr #3417](https://github.com/ChurchApps/FreeShow/pull/3417) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1460](https://github.com/ChurchApps/FreeShow/pull/1460) (read; no item-specific matching bullet); [pr #3417](https://github.com/ChurchApps/FreeShow/pull/3417) (read; no item-specific matching bullet)

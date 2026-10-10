@@ -27,8 +27,8 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/ai/stt/stt.ts:54](../../../../src/frontend/ai/stt/stt.ts#L54) — request-budget-df080a12e28e45d2: request-budget = 60000 ms (60000); 
-- [src/frontend/ai/stt/stt.ts:139](../../../../src/frontend/ai/stt/stt.ts#L139) — timer-352450de660da9fe: setTimeout = dynamic ms (delayMs); 
+- [src/frontend/ai/stt/stt.ts:54](../../../../src/frontend/ai/stt/stt.ts#L54) — request-budget-df080a12e28e45d2: request-budget = 60000 ms (60000);
+- [src/frontend/ai/stt/stt.ts:139](../../../../src/frontend/ai/stt/stt.ts#L139) — timer-352450de660da9fe: setTimeout = dynamic ms (delayMs);
 
 ## Workarounds
 

@@ -33,7 +33,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/converters/propresenter.ts:27](../../../../src/frontend/converters/propresenter.ts#L27) — timer-fb2130ae44f188cc: setTimeout = 50 ms (50); 
+- [src/frontend/converters/propresenter.ts:27](../../../../src/frontend/converters/propresenter.ts#L27) — timer-fb2130ae44f188cc: setTimeout = 50 ms (50);
 
 ## Workarounds
 

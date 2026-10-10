@@ -28,9 +28,9 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/draw/Paint.svelte:80](../../../../src/frontend/components/draw/Paint.svelte#L80) — timer-1a0486d7aaf6d657: setTimeout = 100 ms (100); 
-- [src/frontend/components/draw/Paint.svelte:94](../../../../src/frontend/components/draw/Paint.svelte#L94) — timer-5aeb9582123d5e3d: setTimeout = 1 ms (1); 
-- [src/frontend/components/draw/Paint.svelte:96](../../../../src/frontend/components/draw/Paint.svelte#L96) — timer-fecd840494c76a90: setTimeout = 20 ms (20); 
+- [src/frontend/components/draw/Paint.svelte:80](../../../../src/frontend/components/draw/Paint.svelte#L80) — timer-1a0486d7aaf6d657: setTimeout = 100 ms (100);
+- [src/frontend/components/draw/Paint.svelte:94](../../../../src/frontend/components/draw/Paint.svelte#L94) — timer-5aeb9582123d5e3d: setTimeout = 1 ms (1);
+- [src/frontend/components/draw/Paint.svelte:96](../../../../src/frontend/components/draw/Paint.svelte#L96) — timer-fecd840494c76a90: setTimeout = 20 ms (20);
 
 ## Workarounds
 

@@ -1,7 +1,8 @@
 // No filesystem, process state, network or mutation: reusable by a future MCP adapter.
 const ref = item => `${item.file}:${item.line}`
 function refs(label, items = [], all = false, describe = item => item.kind || item.symbol || "") {
-    const lines = [...new Set(items.map(item => `  ${ref(item)} ${describe(item)}`.trimEnd()))]
+    const ordered=[...items].sort((a,b)=>Number(/\.(?:test|spec)\.[cm]?[jt]s$/.test(a.file))-Number(/\.(?:test|spec)\.[cm]?[jt]s$/.test(b.file)))
+    const lines = [...new Set(ordered.map(item => `  ${ref(item)} ${describe(item)}`.trimEnd()))]
     const limit = all ? lines.length : 12
     return `${label} (${lines.length}):\n${lines.slice(0,limit).join("\n") || "  none indexed"}${lines.length > limit ? `\n  … ${lines.length-limit} more; add --all` : ""}`
 }

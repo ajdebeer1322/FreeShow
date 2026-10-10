@@ -8,4 +8,4 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/server/remote/components/tablet/layout/TabletLeft.svelte:6](../../../../src/server/remote/components/tablet/layout/TabletLeft.svelte#L6) — Project → src/server/remote/components/pages/Project.svelte; 
+- [src/server/remote/components/tablet/layout/TabletLeft.svelte:6](../../../../src/server/remote/components/tablet/layout/TabletLeft.svelte#L6) — Project → src/server/remote/components/pages/Project.svelte;

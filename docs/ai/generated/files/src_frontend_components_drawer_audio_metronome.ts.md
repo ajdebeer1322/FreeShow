@@ -35,8 +35,8 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/drawer/audio/metronome.ts:141](../../../../src/frontend/components/drawer/audio/metronome.ts#L141) — timer-3a498603ef18bfcb: setInterval = 25 ms (25); 
-- [src/frontend/components/drawer/audio/metronome.ts:184](../../../../src/frontend/components/drawer/audio/metronome.ts#L184) — timer-672e130e73cd268a: setTimeout = dynamic ms (delayMs); 
+- [src/frontend/components/drawer/audio/metronome.ts:141](../../../../src/frontend/components/drawer/audio/metronome.ts#L141) — timer-3a498603ef18bfcb: setInterval = 25 ms (25);
+- [src/frontend/components/drawer/audio/metronome.ts:184](../../../../src/frontend/components/drawer/audio/metronome.ts#L184) — timer-672e130e73cd268a: setTimeout = dynamic ms (delayMs);
 
 ## Workarounds
 

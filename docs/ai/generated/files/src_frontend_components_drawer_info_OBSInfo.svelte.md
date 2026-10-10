@@ -23,8 +23,8 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/drawer/info/OBSInfo.svelte:41](../../../../src/frontend/components/drawer/info/OBSInfo.svelte#L41) — timer-583b84bd2dfe2576: setInterval = 500 ms (500); 
-- [src/frontend/components/drawer/info/OBSInfo.svelte:55](../../../../src/frontend/components/drawer/info/OBSInfo.svelte#L55) — timer-377602fc952f6500: setInterval = 1000 ms (1000); 
+- [src/frontend/components/drawer/info/OBSInfo.svelte:41](../../../../src/frontend/components/drawer/info/OBSInfo.svelte#L41) — timer-583b84bd2dfe2576: setInterval = 500 ms (500);
+- [src/frontend/components/drawer/info/OBSInfo.svelte:55](../../../../src/frontend/components/drawer/info/OBSInfo.svelte#L55) — timer-377602fc952f6500: setInterval = 1000 ms (1000);
 - [src/frontend/components/drawer/info/OBSInfo.svelte:92](../../../../src/frontend/components/drawer/info/OBSInfo.svelte#L92) — timer-e57b6a295e32f67b: wait = 100 ms (100); // let main page load first
 
 ## Workarounds

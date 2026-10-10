@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/7c1cfed579b449f47cc63e3901918d665f73ea5d): “Move the groups toggle and merge button into a fixed bar under the list The floating circle covered the last groups; they now sit in a slim toolbar at the bottom of the Groups tab.”
 
-Later line edits: 53; latest 7c1cfed5. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 7c1cfed5. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

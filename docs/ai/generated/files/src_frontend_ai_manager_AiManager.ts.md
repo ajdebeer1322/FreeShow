@@ -39,8 +39,8 @@ No static evidence found.
 ## Timing
 
 - [src/frontend/ai/manager/AiManager.ts:214](../../../../src/frontend/ai/manager/AiManager.ts#L214) — timer-cb9b3c3e4ee36763: setTimeout = 500 ms (500); // reset output updates when not "manually" played
-- [src/frontend/ai/manager/AiManager.ts:233](../../../../src/frontend/ai/manager/AiManager.ts#L233) — timer-bc31274749159d34: setTimeout = dynamic ms (TIMEOUT); 
-- [src/frontend/ai/manager/AiManager.ts:265](../../../../src/frontend/ai/manager/AiManager.ts#L265) — timer-cc072b5ea7124701: setTimeout = 1000 ms (1000); 
+- [src/frontend/ai/manager/AiManager.ts:233](../../../../src/frontend/ai/manager/AiManager.ts#L233) — timer-bc31274749159d34: setTimeout = dynamic ms (TIMEOUT);
+- [src/frontend/ai/manager/AiManager.ts:265](../../../../src/frontend/ai/manager/AiManager.ts#L265) — timer-cc072b5ea7124701: setTimeout = 1000 ms (1000);
 
 ## Workarounds
 

@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/df5c41a5335daaf9b0ca401cffa7f75092c9f221): “1.6.4-beta.2 (#3517) * Don't fail license check if offline * Fixed Flipped Checkbox Logic (#3474) * Added Conditions button for Output window item #3461 * Fixed output stacking #34”
 
-Later line edits: 2; latest df5c41a5. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest df5c41a5. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3517](https://github.com/ChurchApps/FreeShow/pull/3517) (read; no item-specific matching bullet); [pr #3517](https://github.com/ChurchApps/FreeShow/pull/3517) (read; no item-specific matching bullet)

@@ -17,7 +17,7 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/80a0ddad82eea290395d1886b404c9b917e8e272): “✨ Enhanced duplicating slides - Move child slide will not delete parent - Changing group on multiple slides will preserve layout data - Toggle global groups view in show tools - Sl”
 - [code] src/frontend/components/helpers/shows.ts:413: “// fix bug where some childs are stored as an array”
 
-Later line edits: 7; latest 80a0ddad. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 80a0ddad. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 

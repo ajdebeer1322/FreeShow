@@ -34,7 +34,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/df5c41a5335daaf9b0ca401cffa7f75092c9f221): “1.6.4-beta.2 (#3517) * Don't fail license check if offline * Fixed Flipped Checkbox Logic (#3474) * Added Conditions button for Output window item #3461 * Fixed output stacking #34”
 
-Later line edits: 1; latest df5c41a5. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest df5c41a5. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3517](https://github.com/ChurchApps/FreeShow/pull/3517) (read; no item-specific matching bullet); [pr #3517](https://github.com/ChurchApps/FreeShow/pull/3517) (read; no item-specific matching bullet)
 
@@ -54,7 +54,7 @@ Sources:
 
 Later line edits: 1; latest 8e3de401. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2656](https://github.com/ChurchApps/FreeShow/pull/2656) (read; no item-specific matching bullet); [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2656](https://github.com/ChurchApps/FreeShow/pull/2656) (read; no item-specific matching bullet); [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (read; no item-specific matching bullet)
 
 ## D-request-budget-4180248b4e910733
 
@@ -72,7 +72,7 @@ Sources:
 
 Later line edits: 2; latest 8e3de401. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2656](https://github.com/ChurchApps/FreeShow/pull/2656) (read; no item-specific matching bullet); [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2656](https://github.com/ChurchApps/FreeShow/pull/2656) (read; no item-specific matching bullet); [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (read; no item-specific matching bullet)
 
 ## D-request-budget-aba3a9f201163688
 
@@ -125,9 +125,9 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6ad1f69b4c8fae7859516b95a19cf865ea91bdda): “1.5.6-beta.3 (#2674) * Fix verse 1 duplication when split by 'Split long verses' feature (#2657) When clicking a book name to auto-focus on verse 1, then shift-clicking to extend t”
 - [code] src/frontend/utils/cloudSync.ts:104: “// ensure previous popup is closed first to prevent Svelte bug "locking" popup”
 
-Later line edits: 1; latest 6ad1f69b. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 6ad1f69b. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2674](https://github.com/ChurchApps/FreeShow/pull/2674) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2674](https://github.com/ChurchApps/FreeShow/pull/2674) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2674](https://github.com/ChurchApps/FreeShow/pull/2674) (read; no item-specific matching bullet); [pr #2674](https://github.com/ChurchApps/FreeShow/pull/2674) (read; no item-specific matching bullet)
 
 ## D-request-budget-70a4aead76ddeb01
 
@@ -179,9 +179,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/8e3de40166c2872866dc5b3fc37b97eb882aed2b): “1.6.1-beta.2 (#3250) * Refactor architecture check for npm installation (#3219) GCC 15 on arm64 can fail compiling @discordjs/opus unless this warning is not treated as an error. *”
 
-Later line edits: 1; latest 8e3de401. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 8e3de401. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (read; no item-specific matching bullet); [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (read; no item-specific matching bullet)
 
 ## D-timer-91ce986820e52e49
 
@@ -198,7 +198,7 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/b5946b2dafb6207a5372eec5f9943ce283e3a508): “1.5.7 (#2839) * Added back forceLogin - Fixed on B1Admin * Fixed clear background not working if no output screen exists * Updated languages * fix: improve split long verses with t”
 - [code] src/frontend/utils/cloudSync.ts:259: “// ensure message is sent before disconnecting”
 
-Later line edits: 1; latest b5946b2d. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest b5946b2d. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet); [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet)
 
@@ -253,6 +253,6 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6ad1f69b4c8fae7859516b95a19cf865ea91bdda): “1.5.6-beta.3 (#2674) * Fix verse 1 duplication when split by 'Split long verses' feature (#2657) When clicking a book name to auto-focus on verse 1, then shift-clicking to extend t”
 - [code] src/frontend/utils/cloudSync.ts:104: “// ensure previous popup is closed first to prevent Svelte bug "locking" popup”
 
-Later line edits: 1; latest 6ad1f69b. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 6ad1f69b. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2674](https://github.com/ChurchApps/FreeShow/pull/2674) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2674](https://github.com/ChurchApps/FreeShow/pull/2674) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2674](https://github.com/ChurchApps/FreeShow/pull/2674) (read; no item-specific matching bullet); [pr #2674](https://github.com/ChurchApps/FreeShow/pull/2674) (read; no item-specific matching bullet)

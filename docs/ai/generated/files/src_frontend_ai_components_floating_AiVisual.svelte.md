@@ -22,11 +22,11 @@ No static evidence found.
 ## Timing
 
 - [src/frontend/ai/components/floating/AiVisual.svelte:86](../../../../src/frontend/ai/components/floating/AiVisual.svelte#L86) — css-transition-5d93e47c5b5da248: css-transition = 200 ms (transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1)); /* Smooth transform without forced layout re-rasterization */
-- [src/frontend/ai/components/floating/AiVisual.svelte:99](../../../../src/frontend/ai/components/floating/AiVisual.svelte#L99) — css-transition-c568171144305f9b: css-transition = 200 ms (background-color 0.2s ease,); 
+- [src/frontend/ai/components/floating/AiVisual.svelte:99](../../../../src/frontend/ai/components/floating/AiVisual.svelte#L99) — css-transition-c568171144305f9b: css-transition = 200 ms (background-color 0.2s ease,);
 - [src/frontend/ai/components/floating/AiVisual.svelte:122](../../../../src/frontend/ai/components/floating/AiVisual.svelte#L122) — css-transition-4b66072e66284b8c: css-transition = 80 ms (transform 0.08s ease); /* Press effect */
-- [src/frontend/ai/components/floating/AiVisual.svelte:129](../../../../src/frontend/ai/components/floating/AiVisual.svelte#L129) — css-transition-d1850f693a923a5c: css-transition = 200 ms (stroke 0.2s ease); 
-- [src/frontend/ai/components/floating/AiVisual.svelte:159](../../../../src/frontend/ai/components/floating/AiVisual.svelte#L159) — css-transition-461e55592c24b3db: css-transition = 200 ms (opacity 0.2s ease,); 
-- [src/frontend/ai/components/floating/AiVisual.svelte:194](../../../../src/frontend/ai/components/floating/AiVisual.svelte#L194) — css-transition-7b6d490cd7611a7c: css-transition = 60 ms (transform 60ms linear,); 
+- [src/frontend/ai/components/floating/AiVisual.svelte:129](../../../../src/frontend/ai/components/floating/AiVisual.svelte#L129) — css-transition-d1850f693a923a5c: css-transition = 200 ms (stroke 0.2s ease);
+- [src/frontend/ai/components/floating/AiVisual.svelte:159](../../../../src/frontend/ai/components/floating/AiVisual.svelte#L159) — css-transition-461e55592c24b3db: css-transition = 200 ms (opacity 0.2s ease,);
+- [src/frontend/ai/components/floating/AiVisual.svelte:194](../../../../src/frontend/ai/components/floating/AiVisual.svelte#L194) — css-transition-7b6d490cd7611a7c: css-transition = 60 ms (transform 60ms linear,);
 
 ## Workarounds
 

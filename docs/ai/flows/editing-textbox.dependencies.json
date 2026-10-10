@@ -1,0 +1,162 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/frontend/components/edit/Editor.svelte",
+    "src/frontend/components/edit/editbox/EditboxLines.svelte",
+    "src/frontend/components/helpers/history.ts",
+    "src/frontend/components/helpers/historyActions.ts",
+    "src/frontend/utils/save.ts"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-5e98db0692205d25",
+      "file": "src/frontend/components/edit/Editor.svelte",
+      "line": 43,
+      "document": "docs/ai/history/records/src_frontend_components_edit_Editor.svelte-1.md"
+    },
+    {
+      "id": "D-timer-61f7bdd47edc8f5e",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 48,
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md"
+    },
+    {
+      "id": "D-timer-1e2d924fe8854b99",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 67,
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md"
+    },
+    {
+      "id": "D-timer-2f8c0f56d0d76c56",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 110,
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md"
+    },
+    {
+      "id": "D-timer-e5b4c039e16f2f0e",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 128,
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md"
+    },
+    {
+      "id": "D-timer-325b591545d49627",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 132,
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md"
+    },
+    {
+      "id": "D-timer-3c5f02e61d5904e6",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 240,
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md"
+    },
+    {
+      "id": "D-timer-7b5a59e90aaf64e2",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 412,
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md"
+    },
+    {
+      "id": "D-timer-ac889c0760866c37",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 637,
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md"
+    },
+    {
+      "id": "D-timer-a9b6f740d52c5f0f",
+      "file": "src/frontend/components/helpers/historyActions.ts",
+      "line": 350,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyActions.ts-1.md"
+    },
+    {
+      "id": "D-timer-1c8b621575651cc1",
+      "file": "src/frontend/components/helpers/historyActions.ts",
+      "line": 358,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyActions.ts-1.md"
+    },
+    {
+      "id": "D-timer-84af9cee6a88ddd6",
+      "file": "src/frontend/components/helpers/historyActions.ts",
+      "line": 432,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyActions.ts-1.md"
+    },
+    {
+      "id": "D-timer-e0e2d595fc02488b",
+      "file": "src/frontend/components/helpers/historyActions.ts",
+      "line": 582,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyActions.ts-1.md"
+    },
+    {
+      "id": "D-timer-60669cb141a1eac5",
+      "file": "src/frontend/utils/save.ts",
+      "line": 254,
+      "document": "docs/ai/history/records/src_frontend_utils_save.ts-1.md"
+    },
+    {
+      "id": "D-timer-1c68e6ba9795d4bd",
+      "file": "src/frontend/utils/save.ts",
+      "line": 350,
+      "document": "docs/ai/history/records/src_frontend_utils_save.ts-1.md"
+    },
+    {
+      "id": "D-timer-a78297164b122d8d",
+      "file": "src/frontend/utils/save.ts",
+      "line": 394,
+      "document": "docs/ai/history/records/src_frontend_utils_save.ts-1.md"
+    },
+    {
+      "id": "D-workaround-1d96f1c7423b76ca",
+      "file": "src/frontend/components/edit/Editor.svelte",
+      "line": 46,
+      "document": "docs/ai/history/records/src_frontend_components_edit_Editor.svelte-1.md"
+    },
+    {
+      "id": "D-workaround-4004c03eee3b3cc2",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 43,
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md"
+    },
+    {
+      "id": "D-workaround-eb22969bf84eebb0",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 153,
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md"
+    },
+    {
+      "id": "D-workaround-eb3c428abb9ec25e",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 297,
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md"
+    },
+    {
+      "id": "D-workaround-5bc335f05b9739dc",
+      "file": "src/frontend/components/helpers/history.ts",
+      "line": 197,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_history.ts-1.md"
+    },
+    {
+      "id": "D-workaround-e58f78a2ac28825e",
+      "file": "src/frontend/components/helpers/history.ts",
+      "line": 226,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_history.ts-1.md"
+    },
+    {
+      "id": "D-hotspot-518617204fed88c8",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 113,
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md"
+    },
+    {
+      "id": "D-hotspot-613d3d6405b1c316",
+      "file": "src/frontend/utils/save.ts",
+      "line": 124,
+      "document": "docs/ai/history/records/src_frontend_utils_save.ts-1.md"
+    },
+    {
+      "id": "D-fork-174674236734d953",
+      "file": "src/frontend/components/helpers/historyActions.ts",
+      "line": 272,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyActions.ts-1.md"
+    }
+  ]
+}

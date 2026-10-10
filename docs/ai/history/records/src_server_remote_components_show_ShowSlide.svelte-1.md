@@ -16,9 +16,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/d1945fb0c41c83b946f094a9fc62be032690200f): “1.3.4-beta.2 (#1198) * 📖 Fixed Beblia chapters with just one verse not importing - Auto format VTT files with spaces - Fixed subtitles not getting disabled - Fixed every overlay r”
 
-Later line edits: 1; latest d1945fb0. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest d1945fb0. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1198](https://github.com/ChurchApps/FreeShow/pull/1198) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1198](https://github.com/ChurchApps/FreeShow/pull/1198) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1198](https://github.com/ChurchApps/FreeShow/pull/1198) (read; no item-specific matching bullet); [pr #1198](https://github.com/ChurchApps/FreeShow/pull/1198) (read; no item-specific matching bullet)
 
 ## D-workaround-5127f7fc6513ba81
 

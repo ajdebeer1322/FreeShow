@@ -25,7 +25,7 @@
 
 ## Stores and messages
 
-[code] Static scope: 128 files, 128 referenced stores, 120 concrete message keys, 122 timing entries. [Complete dependency index](browser-clients.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
+[code] Static scope: 128 files, 128 referenced stores, 113 concrete message keys, 122 timing entries. [Complete dependency index](browser-clients.dependencies.json) includes conditional and test paths. Runtime use can be narrower.
 
 - [code] [src/frontend/stores.ts#actionTags](../generated/stores/src_frontend_stores.ts_actionTags.md)
 - [code] [src/frontend/stores.ts#actions](../generated/stores/src_frontend_stores.ts_actions.md)

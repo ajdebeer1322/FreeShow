@@ -54,7 +54,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/converters/txt.ts:39](../../../../src/frontend/converters/txt.ts#L39) — timer-c459511a2afb0a31: setTimeout = 50 ms (50); 
+- [src/frontend/converters/txt.ts:39](../../../../src/frontend/converters/txt.ts#L39) — timer-c459511a2afb0a31: setTimeout = 50 ms (50);
 
 ## Workarounds
 

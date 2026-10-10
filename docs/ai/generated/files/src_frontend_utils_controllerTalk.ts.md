@@ -30,8 +30,8 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/utils/controllerTalk.ts:23](../../../../src/frontend/utils/controllerTalk.ts#L23) — timer-3c548305adb2b4f3: setTimeout = 2000 ms (2000); 
-- [src/frontend/utils/controllerTalk.ts:72](../../../../src/frontend/utils/controllerTalk.ts#L72) — timer-6b7425373740c712: setTimeout = 50 ms (50); 
+- [src/frontend/utils/controllerTalk.ts:23](../../../../src/frontend/utils/controllerTalk.ts#L23) — timer-3c548305adb2b4f3: setTimeout = 2000 ms (2000);
+- [src/frontend/utils/controllerTalk.ts:72](../../../../src/frontend/utils/controllerTalk.ts#L72) — timer-6b7425373740c712: setTimeout = 50 ms (50);
 
 ## Workarounds
 

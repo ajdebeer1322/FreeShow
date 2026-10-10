@@ -21,7 +21,7 @@ None detected.
 
 ## Timing
 
-- [src/frontend/audio/audioMultichannel.ts:36](../../../../src/frontend/audio/audioMultichannel.ts#L36) — timer-14e0ad8347887f69: setTimeout = 3000 ms (3000); 
+- [src/frontend/audio/audioMultichannel.ts:36](../../../../src/frontend/audio/audioMultichannel.ts#L36) — timer-14e0ad8347887f69: setTimeout = 3000 ms (3000);
 
 ## Workarounds
 

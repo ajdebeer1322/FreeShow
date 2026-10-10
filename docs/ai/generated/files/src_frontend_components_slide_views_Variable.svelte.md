@@ -27,7 +27,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/slide/views/Variable.svelte:36](../../../../src/frontend/components/slide/views/Variable.svelte#L36) — timer-1c13710d01e48d22: setInterval = 1000 ms (1000); 
+- [src/frontend/components/slide/views/Variable.svelte:36](../../../../src/frontend/components/slide/views/Variable.svelte#L36) — timer-1c13710d01e48d22: setInterval = 1000 ms (1000);
 
 ## Workarounds
 

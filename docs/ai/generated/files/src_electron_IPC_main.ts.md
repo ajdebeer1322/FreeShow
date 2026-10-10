@@ -66,7 +66,7 @@ None detected.
 
 ## Timing
 
-- [src/electron/IPC/main.ts:73](../../../../src/electron/IPC/main.ts#L73) — timer-a60aaabebf410332: setTimeout = dynamic ms (waitingTimeout); 
+- [src/electron/IPC/main.ts:73](../../../../src/electron/IPC/main.ts#L73) — timer-a60aaabebf410332: setTimeout = dynamic ms (waitingTimeout);
 
 ## Workarounds
 

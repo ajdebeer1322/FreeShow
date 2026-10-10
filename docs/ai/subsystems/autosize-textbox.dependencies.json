@@ -280,6 +280,12 @@
       "line": 787
     },
     {
+      "id": "D-hotspot-be1d1e172d2b20fa",
+      "document": "docs/ai/history/records/src_frontend_components_edit_scripts_autosize.ts-1.md",
+      "file": "src/frontend/components/edit/scripts/autosize.ts",
+      "line": 19
+    },
+    {
       "id": "D-hotspot-4805edbf17306bc5",
       "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
       "file": "src/frontend/components/output/layers/SlideContent.svelte",
@@ -290,6 +296,12 @@
       "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md",
       "file": "src/frontend/components/slide/Textbox.svelte",
       "line": 132
+    },
+    {
+      "id": "D-hotspot-6cb8b03b0b53a0ef",
+      "document": "docs/ai/history/records/src_frontend_components_slide_TextboxLines.svelte-1.md",
+      "file": "src/frontend/components/slide/TextboxLines.svelte",
+      "line": 78
     }
   ]
 }

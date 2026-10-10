@@ -1,9 +1,4 @@
 [
-  "REMOTE/API:previous_slide",
-  "REMOTE/API:clear_all",
-  "REMOTE/API:create_show",
-  "REMOTE/API:get_groups",
-  "REMOTE/API:add_group",
   "REMOTE/API:rearrange_groups",
   "REMOTE/API:play_media",
   "REMOTE/API:get_cleared",
@@ -38,5 +33,10 @@
   "REMOTE/API:id_stop_timer",
   "REMOTE/API:change_variable",
   "REMOTE/API:clear_overlay",
-  "REMOTE/API:id_select_overlay"
+  "REMOTE/API:id_select_overlay",
+  "REMOTE/API:set_template",
+  "REMOTE/ERROR",
+  "REMOTE/API:get_output",
+  "REMOTE/GET_AUDIO",
+  "REMOTE/MEDIA"
 ]

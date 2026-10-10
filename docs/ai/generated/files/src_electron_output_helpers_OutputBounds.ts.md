@@ -25,7 +25,7 @@ None detected.
 
 ## Timing
 
-- [src/electron/output/helpers/OutputBounds.ts:17](../../../../src/electron/output/helpers/OutputBounds.ts#L17) — timer-64767d148ad26730: setTimeout = 1000 ms (1000); 
+- [src/electron/output/helpers/OutputBounds.ts:17](../../../../src/electron/output/helpers/OutputBounds.ts#L17) — timer-64767d148ad26730: setTimeout = 1000 ms (1000);
 - [src/electron/output/helpers/OutputBounds.ts:37](../../../../src/electron/output/helpers/OutputBounds.ts#L37) — timer-faf6472326533e73: setTimeout = 10 ms (10); // has to be set twice to work first time
 - [src/electron/output/helpers/OutputBounds.ts:43](../../../../src/electron/output/helpers/OutputBounds.ts#L43) — timer-fb6abda19b31cf90: setTimeout = 80 ms (80); // ensure bounds are set properly
 

@@ -22,8 +22,8 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/drawer/audio/MetronomeVisualizer.svelte:74](../../../../src/frontend/components/drawer/audio/MetronomeVisualizer.svelte#L74) — css-transition-0620b35aa7f92403: css-transition = 200 ms (background-color 0.2s,); 
-- [src/frontend/components/drawer/audio/MetronomeVisualizer.svelte:122](../../../../src/frontend/components/drawer/audio/MetronomeVisualizer.svelte#L122) — css-transition-f0685579a42d133a: css-transition = 200 ms (transform 0.2s ease-in-out,); 
+- [src/frontend/components/drawer/audio/MetronomeVisualizer.svelte:74](../../../../src/frontend/components/drawer/audio/MetronomeVisualizer.svelte#L74) — css-transition-0620b35aa7f92403: css-transition = 200 ms (background-color 0.2s,);
+- [src/frontend/components/drawer/audio/MetronomeVisualizer.svelte:122](../../../../src/frontend/components/drawer/audio/MetronomeVisualizer.svelte#L122) — css-transition-f0685579a42d133a: css-transition = 200 ms (transform 0.2s ease-in-out,);
 
 ## Workarounds
 

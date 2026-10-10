@@ -24,7 +24,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/edit/editors/AudioEditor.svelte:83](../../../../src/frontend/components/edit/editors/AudioEditor.svelte#L83) — css-transition-8bfe4f9e19ff444e: css-transition = 200 ms (height 0.2s ease-in-out); 
+- [src/frontend/components/edit/editors/AudioEditor.svelte:83](../../../../src/frontend/components/edit/editors/AudioEditor.svelte#L83) — css-transition-8bfe4f9e19ff444e: css-transition = 200 ms (height 0.2s ease-in-out);
 
 ## Workarounds
 

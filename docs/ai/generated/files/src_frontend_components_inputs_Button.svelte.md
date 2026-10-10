@@ -65,7 +65,7 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/inputs/Button.svelte:32](../../../../src/frontend/components/inputs/Button.svelte#L32) — css-transition-5ad7f71f783ebe30: css-transition = 200 ms (background-color 0.2s,); 
+- [src/frontend/components/inputs/Button.svelte:32](../../../../src/frontend/components/inputs/Button.svelte#L32) — css-transition-5ad7f71f783ebe30: css-transition = 200 ms (background-color 0.2s,);
 
 ## Workarounds
 

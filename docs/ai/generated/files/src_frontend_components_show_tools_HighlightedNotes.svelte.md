@@ -23,8 +23,8 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/show/tools/HighlightedNotes.svelte:19](../../../../src/frontend/components/show/tools/HighlightedNotes.svelte#L19) — timer-72fc0e79e1a5e093: setTimeout = 100 ms (100); 
-- [src/frontend/components/show/tools/HighlightedNotes.svelte:26](../../../../src/frontend/components/show/tools/HighlightedNotes.svelte#L26) — timer-1f626119499458b7: setTimeout = 0 ms (omitted); 
+- [src/frontend/components/show/tools/HighlightedNotes.svelte:19](../../../../src/frontend/components/show/tools/HighlightedNotes.svelte#L19) — timer-72fc0e79e1a5e093: setTimeout = 100 ms (100);
+- [src/frontend/components/show/tools/HighlightedNotes.svelte:26](../../../../src/frontend/components/show/tools/HighlightedNotes.svelte#L26) — timer-1f626119499458b7: setTimeout = 0 ms (omitted);
 
 ## Workarounds
 

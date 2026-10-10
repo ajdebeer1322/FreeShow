@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/2594947797475dfb7ae251800f6ba4ece6c52d96): “1.5.3-beta.1 (#2366) * 1.5.2 (#2325) * Replaced all Chums references with ChurchApps (#2319) * Replaced CSS zoom with transform-based scaling (#2320) * Set next timer on PDF * Code”
 
-Later line edits: 3; latest 25949477. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 25949477. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2366](https://github.com/ChurchApps/FreeShow/pull/2366) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2366](https://github.com/ChurchApps/FreeShow/pull/2366) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2366](https://github.com/ChurchApps/FreeShow/pull/2366) (read; no item-specific matching bullet); [pr #2366](https://github.com/ChurchApps/FreeShow/pull/2366) (read; no item-specific matching bullet)

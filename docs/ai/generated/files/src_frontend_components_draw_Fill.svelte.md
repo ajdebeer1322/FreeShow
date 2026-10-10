@@ -20,7 +20,7 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/draw/Fill.svelte:23](../../../../src/frontend/components/draw/Fill.svelte#L23) — timer-2b00540e0094798e: setTimeout = 10 ms (10); 
+- [src/frontend/components/draw/Fill.svelte:23](../../../../src/frontend/components/draw/Fill.svelte#L23) — timer-2b00540e0094798e: setTimeout = 10 ms (10);
 
 ## Workarounds
 

@@ -9,6 +9,6 @@ No static evidence found.
 ## Rendered components and props
 
 - [src/frontend/components/main/popups/CustomAction.svelte:45](../../../../src/frontend/components/main/popups/CustomAction.svelte#L45) — Tip → src/frontend/components/main/Tip.svelte; type="info"; value={type === "show" ? "show.custom_action_tip" : "tips.custom_action"}; bottom={20}
-- [src/frontend/components/main/popups/CustomAction.svelte:47](../../../../src/frontend/components/main/popups/CustomAction.svelte#L47) — InputRow → src/frontend/components/input/InputRow.svelte; 
+- [src/frontend/components/main/popups/CustomAction.svelte:47](../../../../src/frontend/components/main/popups/CustomAction.svelte#L47) — InputRow → src/frontend/components/input/InputRow.svelte;
 - [src/frontend/components/main/popups/CustomAction.svelte:48](../../../../src/frontend/components/main/popups/CustomAction.svelte#L48) — MaterialDropdown → src/frontend/components/inputs/MaterialDropdown.svelte; label="midi.start_action"; options={actionOptions.map((a) => ({ label: a.name, value: a.id }))}; value={c
 - [src/frontend/components/main/popups/CustomAction.svelte:50](../../../../src/frontend/components/main/popups/CustomAction.svelte#L50) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; title="titlebar.edit"; icon="edit"; on:click={editAction}

@@ -18,7 +18,7 @@ Sources:
 
 Later line edits: 0; latest 6b45d3f8. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (read; no item-specific matching bullet); [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (read; no item-specific matching bullet)
 
 ## D-timer-c4e51c7eafaeb12b
 
@@ -52,7 +52,7 @@ Sources:
 
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/e5f66233fa0187a258128aa929a3f0c71fa43948): “Phase 2: required code changes for Svelte 5 (legacy mode) - mount(App, { target }) instead of new App({ target }) in the 6 entry points (frontend/main.ts and server/{cam,controller”
 
-Later line edits: 1; latest e5f66233. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest e5f66233. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 
@@ -70,7 +70,7 @@ Sources:
 
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/e5f66233fa0187a258128aa929a3f0c71fa43948): “Phase 2: required code changes for Svelte 5 (legacy mode) - mount(App, { target }) instead of new App({ target }) in the 6 entry points (frontend/main.ts and server/{cam,controller”
 
-Later line edits: 5; latest e5f66233. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest e5f66233. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 
@@ -90,7 +90,7 @@ Sources:
 
 Later line edits: 0; latest 269dd93f. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (read; no item-specific matching bullet); [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (read; no item-specific matching bullet)
 
 ## D-workaround-c5d9abbdf3d25bb9
 
@@ -106,7 +106,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/e62c01894726ccb42dcb388112c90c3ccca6217c): “1.6.0-beta.1 (#3012) * Updated Norwegian language * Updated languages * Scripture template condition * Updated functions access * Video preview hide play when playing * Translation”
 
-Later line edits: 1; latest e62c0189. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest e62c0189. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3012](https://github.com/ChurchApps/FreeShow/pull/3012) (read; no item-specific matching bullet); [pr #3012](https://github.com/ChurchApps/FreeShow/pull/3012) (read; no item-specific matching bullet)
 
@@ -126,4 +126,4 @@ Sources:
 
 Later line edits: 2; latest 84fa33d2. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2924](https://github.com/ChurchApps/FreeShow/pull/2924) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (read; no item-specific matching bullet); [pr #2924](https://github.com/ChurchApps/FreeShow/pull/2924) (read; no item-specific matching bullet)

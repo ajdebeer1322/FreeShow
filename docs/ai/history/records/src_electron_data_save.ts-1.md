@@ -16,9 +16,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/d51401b1c00218abdbf1f6b2a2f6b122786ae7b4): “1.5.2-beta.1 (#2310) * Fixed freeze when playing scripture from RemoteShow - Updated languages * Updated Chinese language * Fixed freeze with deleted action tag * Removed bad code ”
 
-Later line edits: 4; latest d51401b1. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest d51401b1. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2310](https://github.com/ChurchApps/FreeShow/pull/2310) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2310](https://github.com/ChurchApps/FreeShow/pull/2310) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2310](https://github.com/ChurchApps/FreeShow/pull/2310) (read; no item-specific matching bullet); [pr #2310](https://github.com/ChurchApps/FreeShow/pull/2310) (read; no item-specific matching bullet)
 
 ## D-hotspot-2dc83fd7826af5f5
 
@@ -34,6 +34,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/d51401b1c00218abdbf1f6b2a2f6b122786ae7b4): “1.5.2-beta.1 (#2310) * Fixed freeze when playing scripture from RemoteShow - Updated languages * Updated Chinese language * Fixed freeze with deleted action tag * Removed bad code ”
 
-Later line edits: 1; latest d51401b1. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest d51401b1. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2310](https://github.com/ChurchApps/FreeShow/pull/2310) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2310](https://github.com/ChurchApps/FreeShow/pull/2310) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2310](https://github.com/ChurchApps/FreeShow/pull/2310) (read; no item-specific matching bullet); [pr #2310](https://github.com/ChurchApps/FreeShow/pull/2310) (read; no item-specific matching bullet)

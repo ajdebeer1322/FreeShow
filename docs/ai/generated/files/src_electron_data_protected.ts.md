@@ -34,7 +34,7 @@ None detected.
 
 ## Timing
 
-- [src/electron/data/protected.ts:284](../../../../src/electron/data/protected.ts#L284) — timer-e695defe76b08a9e: setTimeout = 1800000 ms (CACHE_TTL); 
+- [src/electron/data/protected.ts:284](../../../../src/electron/data/protected.ts#L284) — timer-e695defe76b08a9e: setTimeout = 1800000 ms (CACHE_TTL);
 
 ## Workarounds
 

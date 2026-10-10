@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/5e0b704e83343f125d21dee46b3ef994bd2c0a22): “1.3.4-beta.1 (#1172) * 📄 Updates * ✔️ Fixed incorrect order when importing PowerPoint slides * ✨ Click existing slide note to edit - Fixed preview hidden if only one output - Fixe”
 
-Later line edits: 1; latest 5e0b704e. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 5e0b704e. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #1172](https://github.com/ChurchApps/FreeShow/pull/1172) (read; no item-specific matching bullet); [pr #1172](https://github.com/ChurchApps/FreeShow/pull/1172) (read; no item-specific matching bullet)

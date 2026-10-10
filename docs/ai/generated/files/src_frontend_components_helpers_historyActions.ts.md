@@ -55,10 +55,10 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/helpers/historyActions.ts:350](../../../../src/frontend/components/helpers/historyActions.ts#L350) — timer-a9b6f740d52c5f0f: setTimeout = 2000 ms (2000); 
-- [src/frontend/components/helpers/historyActions.ts:358](../../../../src/frontend/components/helpers/historyActions.ts#L358) — timer-1c8b621575651cc1: setTimeout = 2000 ms (2000); 
-- [src/frontend/components/helpers/historyActions.ts:432](../../../../src/frontend/components/helpers/historyActions.ts#L432) — timer-84af9cee6a88ddd6: setTimeout = 10 ms (10); 
-- [src/frontend/components/helpers/historyActions.ts:582](../../../../src/frontend/components/helpers/historyActions.ts#L582) — timer-e0e2d595fc02488b: setTimeout = 10 ms (10); 
+- [src/frontend/components/helpers/historyActions.ts:350](../../../../src/frontend/components/helpers/historyActions.ts#L350) — timer-a9b6f740d52c5f0f: setTimeout = 2000 ms (2000);
+- [src/frontend/components/helpers/historyActions.ts:358](../../../../src/frontend/components/helpers/historyActions.ts#L358) — timer-1c8b621575651cc1: setTimeout = 2000 ms (2000);
+- [src/frontend/components/helpers/historyActions.ts:432](../../../../src/frontend/components/helpers/historyActions.ts#L432) — timer-84af9cee6a88ddd6: setTimeout = 10 ms (10);
+- [src/frontend/components/helpers/historyActions.ts:582](../../../../src/frontend/components/helpers/historyActions.ts#L582) — timer-e0e2d595fc02488b: setTimeout = 10 ms (10);
 
 ## Workarounds
 

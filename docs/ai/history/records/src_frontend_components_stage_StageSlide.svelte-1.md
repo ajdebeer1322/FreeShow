@@ -16,9 +16,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/d6d4b4bf026e58b44fabd0bbe37be90189656001): “1.5.0-beta.2 (#2108) * Better Electron mirror approach * Fixed PDF chord sheet option not showing up right away * Small fixes & tweaks * Fix for snap build * Fix for snap build * U”
 
-Later line edits: 36; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 9; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
+GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
 ## D-timer-ad2e429793ad27f9
 
@@ -36,7 +36,7 @@ Sources:
 
 Later line edits: 0; latest c9f83b17. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3450](https://github.com/ChurchApps/FreeShow/pull/3450) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3450](https://github.com/ChurchApps/FreeShow/pull/3450) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3450](https://github.com/ChurchApps/FreeShow/pull/3450) (read; no item-specific matching bullet); [pr #3450](https://github.com/ChurchApps/FreeShow/pull/3450) (read; no item-specific matching bullet)
 
 ## D-workaround-3756f38aa73fa6ec
 
@@ -52,6 +52,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/2d1c596f40b7db94e4bd2afcc7ac8a75fcd12de1): “1.4.4-beta.1 (#1661) * ✔️ Fixed some context menu items not working - Change slides view shortcut - Timer blink start offset * Configured vsCode settings to enforce existing code s”
 
-Later line edits: 36; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 14; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1661](https://github.com/ChurchApps/FreeShow/pull/1661) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
+GitHub: [pr #1661](https://github.com/ChurchApps/FreeShow/pull/1661) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)

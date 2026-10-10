@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/5f5dbccf89baedec68ee153c52a5cf352a2e830b): “1.4.6-beta.1 (#1758) * ✨ Drawer indicator when search is active after changing tabs - Artist metadata auto set from web lyrics - Fixed effects staying if going to draw page - Remov”
 
-Later line edits: 6; latest 5f5dbccf. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 5f5dbccf. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #1758](https://github.com/ChurchApps/FreeShow/pull/1758) (read; no item-specific matching bullet); [pr #1758](https://github.com/ChurchApps/FreeShow/pull/1758) (read; no item-specific matching bullet)
 
@@ -34,7 +34,7 @@ Sources:
 
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/1390ec11b0296bb6f76b897bff72099d188c1afe): “Redesign the media inspector with a drag-to-crop editor - Crop by dragging a box over the image (position, zoom, corner handles) instead of number sliders - Match the crop to the s”
 
-Later line edits: 1; latest 1390ec11. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 1390ec11. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 
@@ -54,6 +54,6 @@ Sources:
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/846d90984dd65100413d0b06336cd1c611f00aa5): “- The inspector popup now uses the whole window so nothing is cut off”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/846d90984dd65100413d0b06336cd1c611f00aa5): “- The inspector popup now uses the whole window so nothing is cut off”
 
-Later line edits: 4; latest 846d9098. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 846d9098. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

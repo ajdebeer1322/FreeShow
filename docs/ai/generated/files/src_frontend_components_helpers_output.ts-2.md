@@ -52,10 +52,10 @@ No static evidence found.
 - [src/frontend/components/helpers/output.ts:202](../../../../src/frontend/components/helpers/output.ts#L202) — timer-6a6776591c6f13c0: setTimeout = 0 ms (omitted); // timeout to activate after output has updated // timeout to activate after output has updated // start recording time on brea
 - [src/frontend/components/helpers/output.ts:228](../../../../src/frontend/components/helpers/output.ts#L228) — timer-d61e1db10e4232d4: setTimeout = 50 ms (50); // reset slide cache (after update)
 - [src/frontend/components/helpers/output.ts:465](../../../../src/frontend/components/helpers/output.ts#L465) — timer-1f9b8e69711ab128: setTimeout = 100 ms (100); // update stage background if any
-- [src/frontend/components/helpers/output.ts:579](../../../../src/frontend/components/helpers/output.ts#L579) — timer-bb92282b1e49c938: setTimeout = dynamic ms (overlay.displayDuration! * 1000); 
-- [src/frontend/components/helpers/output.ts:744](../../../../src/frontend/components/helpers/output.ts#L744) — timer-3289ae6e2b7f01d5: setTimeout = 100 ms (100); 
-- [src/frontend/components/helpers/output.ts:1136](../../../../src/frontend/components/helpers/output.ts#L1136) — request-budget-38893430dafba01e: request-budget = 15000 ms (15000); 
-- [src/frontend/components/helpers/output.ts:1140](../../../../src/frontend/components/helpers/output.ts#L1140) — request-budget-242311a284e7fd1d: request-budget = 15000 ms (15000); 
+- [src/frontend/components/helpers/output.ts:579](../../../../src/frontend/components/helpers/output.ts#L579) — timer-bb92282b1e49c938: setTimeout = dynamic ms (overlay.displayDuration! * 1000);
+- [src/frontend/components/helpers/output.ts:744](../../../../src/frontend/components/helpers/output.ts#L744) — timer-3289ae6e2b7f01d5: setTimeout = 100 ms (100);
+- [src/frontend/components/helpers/output.ts:1136](../../../../src/frontend/components/helpers/output.ts#L1136) — request-budget-38893430dafba01e: request-budget = 15000 ms (15000);
+- [src/frontend/components/helpers/output.ts:1140](../../../../src/frontend/components/helpers/output.ts#L1140) — request-budget-242311a284e7fd1d: request-budget = 15000 ms (15000);
 
 ## Workarounds
 

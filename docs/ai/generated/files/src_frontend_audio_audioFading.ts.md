@@ -44,10 +44,10 @@ No static evidence found.
 ## Timing
 
 - [src/frontend/audio/audioFading.ts:33](../../../../src/frontend/audio/audioFading.ts#L33) — timer-c4c28f45bdead784: setTimeout = 100 ms (100); // force stop audio files (bypass timeout if already active)
-- [src/frontend/audio/audioFading.ts:119](../../../../src/frontend/audio/audioFading.ts#L119) — timer-74e78e6ade559fb0: setTimeout = dynamic ms (waitTime); 
-- [src/frontend/audio/audioFading.ts:171](../../../../src/frontend/audio/audioFading.ts#L171) — timer-0e7638db77512ae2: setInterval = dynamic ms (time); 
-- [src/frontend/audio/audioFading.ts:185](../../../../src/frontend/audio/audioFading.ts#L185) — timer-950e3ff3eca2f609: setTimeout = dynamic ms (duration * 1500); 
-- [src/frontend/audio/audioFading.ts:252](../../../../src/frontend/audio/audioFading.ts#L252) — timer-19f7c4c7de3f11af: setTimeout = 50 ms (50); 
+- [src/frontend/audio/audioFading.ts:119](../../../../src/frontend/audio/audioFading.ts#L119) — timer-74e78e6ade559fb0: setTimeout = dynamic ms (waitTime);
+- [src/frontend/audio/audioFading.ts:171](../../../../src/frontend/audio/audioFading.ts#L171) — timer-0e7638db77512ae2: setInterval = dynamic ms (time);
+- [src/frontend/audio/audioFading.ts:185](../../../../src/frontend/audio/audioFading.ts#L185) — timer-950e3ff3eca2f609: setTimeout = dynamic ms (duration * 1500);
+- [src/frontend/audio/audioFading.ts:252](../../../../src/frontend/audio/audioFading.ts#L252) — timer-19f7c4c7de3f11af: setTimeout = 50 ms (50);
 
 ## Workarounds
 

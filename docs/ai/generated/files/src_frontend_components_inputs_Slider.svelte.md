@@ -25,10 +25,10 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/inputs/Slider.svelte:18](../../../../src/frontend/components/inputs/Slider.svelte#L18) — css-transition-1c33526354805fd0: css-transition = 200 ms (0.2s); 
-- [src/frontend/components/inputs/Slider.svelte:19](../../../../src/frontend/components/inputs/Slider.svelte#L19) — css-transition-4e8db5dc671eb9c5: css-transition = 200 ms (opacity 0.2s); 
-- [src/frontend/components/inputs/Slider.svelte:46](../../../../src/frontend/components/inputs/Slider.svelte#L46) — css-transition-b952038858868b0e: css-transition = 200 ms (0.2s); 
-- [src/frontend/components/inputs/Slider.svelte:47](../../../../src/frontend/components/inputs/Slider.svelte#L47) — css-transition-2846919321e517c2: css-transition = 200 ms (opacity 0.2s,); 
+- [src/frontend/components/inputs/Slider.svelte:18](../../../../src/frontend/components/inputs/Slider.svelte#L18) — css-transition-1c33526354805fd0: css-transition = 200 ms (0.2s);
+- [src/frontend/components/inputs/Slider.svelte:19](../../../../src/frontend/components/inputs/Slider.svelte#L19) — css-transition-4e8db5dc671eb9c5: css-transition = 200 ms (opacity 0.2s);
+- [src/frontend/components/inputs/Slider.svelte:46](../../../../src/frontend/components/inputs/Slider.svelte#L46) — css-transition-b952038858868b0e: css-transition = 200 ms (0.2s);
+- [src/frontend/components/inputs/Slider.svelte:47](../../../../src/frontend/components/inputs/Slider.svelte#L47) — css-transition-2846919321e517c2: css-transition = 200 ms (opacity 0.2s,);
 
 ## Workarounds
 

@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/13879edffb94600d563479a212fb16ebc7ce4040): “1.6.6-beta.3 (#3786) * Fix syncManager test suite crashing on missing electron mock methods (#3761) * Export/import Overlays #3762 * Trying to fix VideoToolbox ffmpeg issue * Fix s”
 
-Later line edits: 1; latest 13879edf. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 13879edf. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3786](https://github.com/ChurchApps/FreeShow/pull/3786) (read; no item-specific matching bullet); [pr #3786](https://github.com/ChurchApps/FreeShow/pull/3786) (read; no item-specific matching bullet)
 
@@ -36,4 +36,4 @@ Sources:
 
 Later line edits: 0; latest ac338749. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1324](https://github.com/ChurchApps/FreeShow/pull/1324) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1324](https://github.com/ChurchApps/FreeShow/pull/1324) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1324](https://github.com/ChurchApps/FreeShow/pull/1324) (read; no item-specific matching bullet); [pr #1324](https://github.com/ChurchApps/FreeShow/pull/1324) (read; no item-specific matching bullet)

@@ -25,8 +25,8 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/output/transitions/OutputTransition.svelte:18](../../../../src/frontend/components/output/transitions/OutputTransition.svelte#L18) — transition-dd644ad430340edf: transition-directive = dynamic ms (inTransition \|\| transition \|\| {}); 
-- [src/frontend/components/output/transitions/OutputTransition.svelte:18](../../../../src/frontend/components/output/transitions/OutputTransition.svelte#L18) — transition-b17303e2f94a38e3: transition-directive = dynamic ms (outTransition \|\| transition \|\| {}); 
+- [src/frontend/components/output/transitions/OutputTransition.svelte:18](../../../../src/frontend/components/output/transitions/OutputTransition.svelte#L18) — transition-dd644ad430340edf: transition-directive = dynamic ms (inTransition \|\| transition \|\| {});
+- [src/frontend/components/output/transitions/OutputTransition.svelte:18](../../../../src/frontend/components/output/transitions/OutputTransition.svelte#L18) — transition-b17303e2f94a38e3: transition-directive = dynamic ms (outTransition \|\| transition \|\| {});
 
 ## Workarounds
 

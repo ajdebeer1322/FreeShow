@@ -28,8 +28,8 @@ None detected.
 
 ## Timing
 
-- [src/electron/utils/gpu.ts:163](../../../../src/electron/utils/gpu.ts#L163) — timer-4964f9eb4e6072f1: setTimeout = 5000 ms (5000); 
-- [src/electron/utils/gpu.ts:168](../../../../src/electron/utils/gpu.ts#L168) — timer-6720e2ba13770c5e: setTimeout = 20000 ms (20_000); 
+- [src/electron/utils/gpu.ts:163](../../../../src/electron/utils/gpu.ts#L163) — timer-4964f9eb4e6072f1: setTimeout = 5000 ms (5000);
+- [src/electron/utils/gpu.ts:168](../../../../src/electron/utils/gpu.ts#L168) — timer-6720e2ba13770c5e: setTimeout = 20000 ms (20_000);
 
 ## Workarounds
 

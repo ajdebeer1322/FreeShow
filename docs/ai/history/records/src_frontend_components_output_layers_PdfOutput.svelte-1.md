@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/a6698fc012f8f128df84700ffbe50d9264035171): “1.6.6-beta.1 (#3721) * Check textFit when detecting items that need auto size (#3660) * Planning Center item type categories * Updated Hungarian language * Updated languages * Fixe”
 
-Later line edits: 2; latest a6698fc0. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest a6698fc0. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3721](https://github.com/ChurchApps/FreeShow/pull/3721) (read; no item-specific matching bullet); [pr #3721](https://github.com/ChurchApps/FreeShow/pull/3721) (read; no item-specific matching bullet)

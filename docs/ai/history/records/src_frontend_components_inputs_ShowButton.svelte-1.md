@@ -17,7 +17,7 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/c49202065eb31b67cb66d102806195d7039b62a5): “v1.2.5 (#756) * 📄 Option to not disable Hardware Acceleration - Updated languages - Unsplash UTM links - Fixed HTTP output media - More optimized .json cache storage - Fixed fade ”
 - [code] src/frontend/components/inputs/ShowButton.svelte:130: “// preload show (so the layout can be changed)”
 
-Later line edits: 12; latest c4920206. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest c4920206. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #756](https://github.com/ChurchApps/FreeShow/pull/756) (read; no item-specific matching bullet); [pr #756](https://github.com/ChurchApps/FreeShow/pull/756) (read; no item-specific matching bullet)
 
@@ -35,7 +35,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/4bf44652755ddebc4f969d3b79d4d0ebf717888b): “1.5.3-beta.3 (#2429) * Implement Multi-Chapter Searching of verses (#2418) * Implement Multi-Chapter Searching of verses * Ensure slide names also match multi-chapter shows * Fix s”
 
-Later line edits: 1; latest 4bf44652. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 4bf44652. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2429](https://github.com/ChurchApps/FreeShow/pull/2429) (read; no item-specific matching bullet); [pr #2429](https://github.com/ChurchApps/FreeShow/pull/2429) (read; no item-specific matching bullet)
 

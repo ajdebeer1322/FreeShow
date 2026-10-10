@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/4bf44652755ddebc4f969d3b79d4d0ebf717888b): “1.5.3-beta.3 (#2429) * Implement Multi-Chapter Searching of verses (#2418) * Implement Multi-Chapter Searching of verses * Ensure slide names also match multi-chapter shows * Fix s”
 
-Later line edits: 1; latest 4bf44652. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 4bf44652. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2429](https://github.com/ChurchApps/FreeShow/pull/2429) (read; no item-specific matching bullet); [pr #2429](https://github.com/ChurchApps/FreeShow/pull/2429) (read; no item-specific matching bullet)
 

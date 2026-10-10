@@ -18,7 +18,7 @@ Sources:
 
 Later line edits: 1; latest 43205021. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3271](https://github.com/ChurchApps/FreeShow/pull/3271) (read; no item-specific matching bullet)
+GitHub: [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (read; no item-specific matching bullet); [pr #3271](https://github.com/ChurchApps/FreeShow/pull/3271) (read; no item-specific matching bullet)
 
 ## D-timer-e7277e7fac2d9047
 
@@ -36,7 +36,7 @@ Sources:
 
 Later line edits: 1; latest 43205021. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3271](https://github.com/ChurchApps/FreeShow/pull/3271) (read; no item-specific matching bullet)
+GitHub: [pr #3250](https://github.com/ChurchApps/FreeShow/pull/3250) (read; no item-specific matching bullet); [pr #3271](https://github.com/ChurchApps/FreeShow/pull/3271) (read; no item-specific matching bullet)
 
 ## D-workaround-90c98b00dcc3f4e5
 
@@ -72,6 +72,6 @@ Sources:
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/cb967d9f2c683ec3998dc0f8249e29716d75eb2e): “- Two neighbouring slides can be linked into one card that activates both on click”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/cb967d9f2c683ec3998dc0f8249e29716d75eb2e): “- Two neighbouring slides can be linked into one card that activates both on click”
 
-Later line edits: 10; latest cb967d9f. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest cb967d9f. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

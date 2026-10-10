@@ -266,6 +266,8 @@ export function scan(options = {}) {
         for (const key of entry.keys) {
             const message = ensureMessage(channel, key)
             message[role === "send" ? "senders" : "handlers"].push(entry)
+            const payloadType=payload && (ts.isFunctionLike(payload)?payload.parameters?.[0]?.type:ts.isTypeNode(payload)?payload:null)
+            if(role === "receive" && payloadType)message.payloads.push({...ref(context,payloadType),contract:"handler parameter",type:payloadType.getText(context.sf),symbol:key})
         }
         const callback = ancestor(node, (parent) => ts.isCallExpression(parent) && ts.isPropertyAccessExpression(parent.expression) && parent.expression.name.text === "subscribe")
         if (callback && role === "send") {
@@ -422,7 +424,11 @@ export function scan(options = {}) {
                 }
             }
             if ((ts.isPropertyAssignment(node) || ts.isShorthandPropertyAssignment(node)) && ts.isObjectLiteralExpression(node.parent)) {
-                const variable = ancestor(node, (parent) => ts.isVariableDeclaration(parent))
+                // Only properties of the actual handler table are message keys.
+                // Nested payload objects/callbacks must not inherit its table name.
+                let object=node.parent
+                while(object.parent && unwrap(object.parent)===object)object=object.parent
+                const variable = ts.isVariableDeclaration(object.parent) && object.parent.initializer===object ? object.parent : null
                 const objectName = name(variable?.name) || ""
                 if (HANDLER_NAME.test(objectName) && (ts.isFunctionLike(node.initializer) || ts.isShorthandPropertyAssignment(node))) {
                     const key = name(node.name)

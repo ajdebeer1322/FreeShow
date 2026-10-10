@@ -52,9 +52,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/2a653ae1aba1460eb8dcffa5878353e5a28f6725): “1.3.0-beta.2 (#922) * ✔ Fixed Bible metadata only working on first load - Fixed used projects list not updating on sync - Fixed an issue with .show file importing - Guide translati”
 
-Later line edits: 2; latest 2a653ae1. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 2a653ae1. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #922](https://github.com/ChurchApps/FreeShow/pull/922) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #922](https://github.com/ChurchApps/FreeShow/pull/922) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #922](https://github.com/ChurchApps/FreeShow/pull/922) (read; no item-specific matching bullet); [pr #922](https://github.com/ChurchApps/FreeShow/pull/922) (read; no item-specific matching bullet)
 
 ## D-timer-90febf363ed53cc3
 
@@ -70,7 +70,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6d9caa19b807c49af06baf77db0d8b9c1e3f4125): “1.6.6-beta.2 (#3759) * Updated Romanian language * Audit fix * Sentry fixes * Update GitHub Actions Tags * STT enhancements * Smart floating hover effects * Smart floating UI tweak”
 
-Later line edits: 1; latest 6d9caa19. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 6d9caa19. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3759](https://github.com/ChurchApps/FreeShow/pull/3759) (read; no item-specific matching bullet); [pr #3759](https://github.com/ChurchApps/FreeShow/pull/3759) (read; no item-specific matching bullet)
 
@@ -142,7 +142,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/8e3667695c785f82cfea75a50c426de8fec418c4): “1.5.5-beta.1 (#2497) * Fixed freeze issue * Fixed freeze issue * Fixed thumbnail creation broken * Indented expanded arrow menu * Fix slide flicker (#2462) * Fix flicker on unchang”
 
-Later line edits: 2; latest 8e366769. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 8e366769. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2497](https://github.com/ChurchApps/FreeShow/pull/2497) (read; no item-specific matching bullet); [pr #2497](https://github.com/ChurchApps/FreeShow/pull/2497) (read; no item-specific matching bullet)
 
@@ -162,7 +162,7 @@ Sources:
 
 Later line edits: 0; latest 6b45d3f8. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (read; no item-specific matching bullet); [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (read; no item-specific matching bullet)
 
 ## D-timer-61c94421d1bc6be5
 
@@ -181,7 +181,7 @@ Sources:
 
 Later line edits: 0; latest 6b45d3f8. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (read; no item-specific matching bullet); [pr #2011](https://github.com/ChurchApps/FreeShow/pull/2011) (read; no item-specific matching bullet)
 
 ## D-timer-23434a29a832567e
 
@@ -199,4 +199,4 @@ Sources:
 
 Later line edits: 0; latest bd9aad46. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3402](https://github.com/ChurchApps/FreeShow/pull/3402) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3402](https://github.com/ChurchApps/FreeShow/pull/3402) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3402](https://github.com/ChurchApps/FreeShow/pull/3402) (read; no item-specific matching bullet); [pr #3402](https://github.com/ChurchApps/FreeShow/pull/3402) (read; no item-specific matching bullet)

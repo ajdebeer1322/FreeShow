@@ -28,7 +28,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/server/stage/util/helpers.ts:17](../../../../src/server/stage/util/helpers.ts#L17) — timer-474e6b5933237353: setTimeout = 2000 ms (2000); 
+- [src/server/stage/util/helpers.ts:17](../../../../src/server/stage/util/helpers.ts#L17) — timer-474e6b5933237353: setTimeout = 2000 ms (2000);
 
 ## Workarounds
 

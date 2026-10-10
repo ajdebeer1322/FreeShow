@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/a286a829b304f4bcf06a74839b914ece1ca653a0): “📂 Drop files, filter media & transitions”
 
-Later line edits: 6; latest 79df8c39. Full commit messages and lineage: JSON query data.
+Later line edits: 5; latest 79df8c39. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 
@@ -36,4 +36,4 @@ Sources:
 
 Later line edits: 2; latest a78fa924. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1445](https://github.com/ChurchApps/FreeShow/pull/1445) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1445](https://github.com/ChurchApps/FreeShow/pull/1445) (read; no item-specific matching bullet)

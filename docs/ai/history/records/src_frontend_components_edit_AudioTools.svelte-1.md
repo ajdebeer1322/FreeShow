@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/5f5dbccf89baedec68ee153c52a5cf352a2e830b): “1.4.6-beta.1 (#1758) * ✨ Drawer indicator when search is active after changing tabs - Artist metadata auto set from web lyrics - Fixed effects staying if going to draw page - Remov”
 
-Later line edits: 1; latest 5f5dbccf. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 5f5dbccf. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #1758](https://github.com/ChurchApps/FreeShow/pull/1758) (read; no item-specific matching bullet); [pr #1758](https://github.com/ChurchApps/FreeShow/pull/1758) (read; no item-specific matching bullet)
 

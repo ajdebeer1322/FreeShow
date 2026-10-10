@@ -22,7 +22,7 @@ Saved: no direct save-object evidence (not proof of transient-only lifetime).
 
 ## Writes
 
-- [src/frontend/components/context/menuClick.ts:480](../../../../src/frontend/components/context/menuClick.ts#L480) — interactions.update((a) => { if (!a&#91;interactionId&#93;) return a const input = clone(a&#91;interactionId&#93;.inputs&#91;index&#93;) a&#91;interactionId&#93;.inputs.splice(index + 1, 0, { ...input, question: 
+- [src/frontend/components/context/menuClick.ts:480](../../../../src/frontend/components/context/menuClick.ts#L480) — interactions.update((a) => { if (!a&#91;interactionId&#93;) return a const input = clone(a&#91;interactionId&#93;.inputs&#91;index&#93;) a&#91;interactionId&#93;.inputs.splice(index + 1, 0, { ...input, question:
 - [src/frontend/components/drawer/pages/Interactions.svelte:24](../../../../src/frontend/components/drawer/pages/Interactions.svelte#L24) — interactions.update((a) => { a&#91;id&#93; = { name: "", inputs: &#91;&#93;, lastConnection: initConnection() // init id for qr slide } return a })
 - [src/frontend/components/drawer/pages/Interactions.svelte:43](../../../../src/frontend/components/drawer/pages/Interactions.svelte#L43) — interactions.update((a) => { if (!a&#91;id&#93;) return a if (!a&#91;id&#93;.name) openedInteractionId.set(id) a&#91;id&#93;.name = value return a })
 - [src/frontend/components/drawer/pages/Interactions.svelte:62](../../../../src/frontend/components/drawer/pages/Interactions.svelte#L62) — interactions.update((a) => { const items = clone(a&#91;openedId&#93;?.inputs) if (!items) return a const currentItem = items.splice(index, 1)&#91;0&#93; if (direction === "forward") index = Math.m

@@ -24,10 +24,10 @@ None detected.
 
 ## Timing
 
-- [src/server/output_stream/App.svelte:19](../../../../src/server/output_stream/App.svelte#L19) — timer-679d8b3021cab9a5: setTimeout = dynamic ms (time); 
-- [src/server/output_stream/App.svelte:24](../../../../src/server/output_stream/App.svelte#L24) — timer-fc7e1f16f9d62963: setTimeout = dynamic ms (timeLoss); 
-- [src/server/output_stream/App.svelte:59](../../../../src/server/output_stream/App.svelte#L59) — timer-7172eceed6668027: setTimeout = 3000 ms (3000); 
-- [src/server/output_stream/App.svelte:143](../../../../src/server/output_stream/App.svelte#L143) — timer-382840faf06c2e0a: setTimeout = 2000 ms (2000); 
+- [src/server/output_stream/App.svelte:19](../../../../src/server/output_stream/App.svelte#L19) — timer-679d8b3021cab9a5: setTimeout = dynamic ms (time);
+- [src/server/output_stream/App.svelte:24](../../../../src/server/output_stream/App.svelte#L24) — timer-fc7e1f16f9d62963: setTimeout = dynamic ms (timeLoss);
+- [src/server/output_stream/App.svelte:59](../../../../src/server/output_stream/App.svelte#L59) — timer-7172eceed6668027: setTimeout = 3000 ms (3000);
+- [src/server/output_stream/App.svelte:143](../../../../src/server/output_stream/App.svelte#L143) — timer-382840faf06c2e0a: setTimeout = 2000 ms (2000);
 - [src/server/output_stream/App.svelte:212](../../../../src/server/output_stream/App.svelte#L212) — css-transition-306817d987795994: css-transition = 500 ms (background-color 0.5s); /* background-color: var(--primary); */ /* transition: background-color 0.5s; */
 
 ## Workarounds

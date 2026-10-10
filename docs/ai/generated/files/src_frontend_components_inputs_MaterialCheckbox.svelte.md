@@ -33,10 +33,10 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/inputs/MaterialCheckbox.svelte:133](../../../../src/frontend/components/inputs/MaterialCheckbox.svelte#L133) — css-transition-6716410b1de26ae2: css-transition = 200 ms (background-color 0.2s ease,); 
+- [src/frontend/components/inputs/MaterialCheckbox.svelte:133](../../../../src/frontend/components/inputs/MaterialCheckbox.svelte#L133) — css-transition-6716410b1de26ae2: css-transition = 200 ms (background-color 0.2s ease,);
 - [src/frontend/components/inputs/MaterialCheckbox.svelte:156](../../../../src/frontend/components/inputs/MaterialCheckbox.svelte#L156) — css-transition-29c9154559a9ba5d: css-transition = 120 ms (opacity 0.12s ease); /* var(--secondary-text) */
-- [src/frontend/components/inputs/MaterialCheckbox.svelte:171](../../../../src/frontend/components/inputs/MaterialCheckbox.svelte#L171) — css-transition-9dc2f05616d4d4ee: css-transition = 200 ms (transform 0.2s ease); 
-- [src/frontend/components/inputs/MaterialCheckbox.svelte:215](../../../../src/frontend/components/inputs/MaterialCheckbox.svelte#L215) — css-transition-a48e5928c62c76fd: css-transition = 200 ms (0.2s opacity ease); 
+- [src/frontend/components/inputs/MaterialCheckbox.svelte:171](../../../../src/frontend/components/inputs/MaterialCheckbox.svelte#L171) — css-transition-9dc2f05616d4d4ee: css-transition = 200 ms (transform 0.2s ease);
+- [src/frontend/components/inputs/MaterialCheckbox.svelte:215](../../../../src/frontend/components/inputs/MaterialCheckbox.svelte#L215) — css-transition-a48e5928c62c76fd: css-transition = 200 ms (0.2s opacity ease);
 
 ## Workarounds
 

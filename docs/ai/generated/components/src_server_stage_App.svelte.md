@@ -10,7 +10,7 @@ No static evidence found.
 
 - [src/server/stage/App.svelte:145](../../../../src/server/stage/App.svelte#L145) — Icon → src/server/common/components/Icon.svelte; id="locked"; size={1.1}; white
 - [src/server/stage/App.svelte:190](../../../../src/server/stage/App.svelte#L190) — Icon → src/server/common/components/Icon.svelte; id="locked"; size={1}; white
-- [src/server/stage/App.svelte:211](../../../../src/server/stage/App.svelte#L211) — Slide → src/server/stage/components/Slide.svelte; 
+- [src/server/stage/App.svelte:211](../../../../src/server/stage/App.svelte#L211) — Slide → src/server/stage/components/Slide.svelte;
 - [src/server/stage/App.svelte:214](../../../../src/server/stage/App.svelte#L214) — TtsSettings → src/server/stage/components/TtsSettings.svelte; on:close={() => (showTtsSettings = false)}
 - [src/server/stage/App.svelte:221](../../../../src/server/stage/App.svelte#L221) — Button → src/server/common/components/Button.svelte; on:click={goHome}; style="flex: 1;"; center
 - [src/server/stage/App.svelte:222](../../../../src/server/stage/App.svelte#L222) — Icon → src/server/common/components/Icon.svelte; id="home"

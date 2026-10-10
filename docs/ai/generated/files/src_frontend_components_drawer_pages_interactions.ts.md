@@ -31,7 +31,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/drawer/pages/interactions.ts:141](../../../../src/frontend/components/drawer/pages/interactions.ts#L141) — timer-96f72d7c049d85df: setInterval = 1000 ms (1000); 
+- [src/frontend/components/drawer/pages/interactions.ts:141](../../../../src/frontend/components/drawer/pages/interactions.ts#L141) — timer-96f72d7c049d85df: setInterval = 1000 ms (1000);
 
 ## Workarounds
 

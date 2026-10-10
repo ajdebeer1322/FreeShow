@@ -131,14 +131,11 @@ Reachability includes conditional imports. Receiver registration shared by main/
 - [src/frontend/IPC/responsesMain.ts:246](../../../../src/frontend/IPC/responsesMain.ts#L246) — MAIN/IMAGES_TO_SHOW
 - [src/frontend/IPC/responsesMain.ts:247](../../../../src/frontend/IPC/responsesMain.ts#L247) — MAIN/RTMP_STATUS
 - [src/frontend/IPC/responsesMain.ts:248](../../../../src/frontend/IPC/responsesMain.ts#L248) — MAIN/MEDIA_DOWNLOAD_PROGRESS
-- [src/frontend/IPC/responsesMain.ts:263](../../../../src/frontend/IPC/responsesMain.ts#L263) — MAIN/progress
-- [src/frontend/IPC/responsesMain.ts:263](../../../../src/frontend/IPC/responsesMain.ts#L263) — MAIN/total
 - [src/frontend/IPC/responsesMain.ts:267](../../../../src/frontend/IPC/responsesMain.ts#L267) — MAIN/PDF_IMPORT_PROGRESS
 - [src/frontend/IPC/responsesMain.ts:294](../../../../src/frontend/IPC/responsesMain.ts#L294) — MAIN/AUDIO_METADATA
 - [src/frontend/IPC/responsesMain.ts:302](../../../../src/frontend/IPC/responsesMain.ts#L302) — MAIN/GET_DYNAMIC_VALUES
 - [src/frontend/IPC/responsesMain.ts:342](../../../../src/frontend/IPC/responsesMain.ts#L342) — MAIN/PROVIDER_CONNECT
 - [src/frontend/IPC/responsesMain.ts:358](../../../../src/frontend/IPC/responsesMain.ts#L358) — MAIN/PROVIDER_PROJECTS
-- [src/frontend/IPC/responsesMain.ts:476](../../../../src/frontend/IPC/responsesMain.ts#L476) — MAIN/origin
 - [src/frontend/IPC/responsesMain.ts:544](../../../../src/frontend/IPC/responsesMain.ts#L544) — MAIN/OPEN_FOLDER2
 - [src/frontend/IPC/responsesMain.ts:546](../../../../src/frontend/IPC/responsesMain.ts#L546) — MAIN/MEDIA
 - [src/frontend/IPC/responsesMain.ts:547](../../../../src/frontend/IPC/responsesMain.ts#L547) — MAIN/AUDIO
@@ -182,3 +179,6 @@ Reachability includes conditional imports. Receiver registration shared by main/
 - [src/frontend/components/inputs/MaterialFilePicker.svelte:38](../../../../src/frontend/components/inputs/MaterialFilePicker.svelte#L38) — MAIN/OPEN_FILE2
 - [src/frontend/components/inputs/MaterialFolderPicker.svelte:33](../../../../src/frontend/components/inputs/MaterialFolderPicker.svelte#L33) — MAIN/OPEN_FOLDER2
 - [src/frontend/components/inputs/MediaPicker.svelte:27](../../../../src/frontend/components/inputs/MediaPicker.svelte#L27) — MAIN/OPEN_FILE2
+- [src/frontend/components/main/popups/CleaningUtility.svelte:35](../../../../src/frontend/components/main/popups/CleaningUtility.svelte#L35) — MAIN/FULL_SHOWS_LIST
+- [src/frontend/components/main/popups/createShow/WebSearch.svelte:47](../../../../src/frontend/components/main/popups/createShow/WebSearch.svelte#L47) — MAIN/SEARCH_LYRICS
+- [src/frontend/components/main/popups/createShow/WebSearch.svelte:58](../../../../src/frontend/components/main/popups/createShow/WebSearch.svelte#L58) — MAIN/GET_LYRICS

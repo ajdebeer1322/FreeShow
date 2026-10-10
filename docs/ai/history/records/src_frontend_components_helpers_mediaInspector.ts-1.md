@@ -52,6 +52,6 @@ Sources:
 
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/88e6a4d951a93f29c101b56ae2a92e9f8771cb10): “Mark the show as modified when the inspector loop setting changes so it saves and syncs Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>”
 
-Later line edits: 1; latest 88e6a4d9. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 88e6a4d9. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

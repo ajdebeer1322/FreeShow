@@ -8,4 +8,4 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/components/drawer/info/OverlayInfo.svelte:12](../../../../src/frontend/components/drawer/info/OverlayInfo.svelte#L12) — EffectsInfo → src/frontend/components/drawer/info/EffectsInfo.svelte; 
+- [src/frontend/components/drawer/info/OverlayInfo.svelte:12](../../../../src/frontend/components/drawer/info/OverlayInfo.svelte#L12) — EffectsInfo → src/frontend/components/drawer/info/EffectsInfo.svelte;

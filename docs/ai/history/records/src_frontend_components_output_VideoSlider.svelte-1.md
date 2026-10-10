@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/bbfe98072aefe0c6311c5044e1ac63152f45a204): “1.6.5-beta.2 (#3587) * More specific sync error messages (#3557) * Break CJK text on full-width punctuation when splitting long verses (#3561) * Update * Fixed broken chars * Don't”
 
-Later line edits: 21; latest bbfe9807. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest bbfe9807. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3587](https://github.com/ChurchApps/FreeShow/pull/3587) (read; no item-specific matching bullet); [pr #3587](https://github.com/ChurchApps/FreeShow/pull/3587) (read; no item-specific matching bullet)
 
@@ -36,4 +36,4 @@ Sources:
 
 Later line edits: 20; latest 8db7e02a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2461](https://github.com/ChurchApps/FreeShow/pull/2461) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2461](https://github.com/ChurchApps/FreeShow/pull/2461) (read; no item-specific matching bullet)

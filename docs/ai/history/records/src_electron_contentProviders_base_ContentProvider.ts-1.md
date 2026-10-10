@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/ae02f861ed5489aece72a8850d67060c36845b22): “Replace hard-coded pink with the theme accent - Default accent in global.css, server pages and OAuth pages is the new blue - Purple/pink gradients (buttons, floating inputs, progre”
 
-Later line edits: 1; latest ae02f861. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest ae02f861. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

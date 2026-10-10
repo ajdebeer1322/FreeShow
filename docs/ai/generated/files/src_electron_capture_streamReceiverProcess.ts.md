@@ -23,18 +23,18 @@ None detected.
 
 ## Timing
 
-- [src/electron/capture/streamReceiverProcess.ts:162](../../../../src/electron/capture/streamReceiverProcess.ts#L162) — timer-0280c6b80685edb0: setTimeout = 10000 ms (10000); 
+- [src/electron/capture/streamReceiverProcess.ts:162](../../../../src/electron/capture/streamReceiverProcess.ts#L162) — timer-0280c6b80685edb0: setTimeout = 10000 ms (10000);
 - [src/electron/capture/streamReceiverProcess.ts:190](../../../../src/electron/capture/streamReceiverProcess.ts#L190) — timer-a09f2b055d5bb086: setInterval = 1000 ms (1000); // without the interval it only finds one source: https://github.com/emanspeaks/grandiose/commit/271cd73b5269ab827155a1a944c15
-- [src/electron/capture/streamReceiverProcess.ts:206](../../../../src/electron/capture/streamReceiverProcess.ts#L206) — transition-d492cb21071c9cad: delay-property = 0 ms (0); 
-- [src/electron/capture/streamReceiverProcess.ts:212](../../../../src/electron/capture/streamReceiverProcess.ts#L212) — transition-36632b9521ea16ec: delay-property = 1 ms (1); 
-- [src/electron/capture/streamReceiverProcess.ts:219](../../../../src/electron/capture/streamReceiverProcess.ts#L219) — transition-8357cbe3590ceea6: delay-property = dynamic ms (Math.min(5 * Math.pow(1.5, newCount), 100)); 
+- [src/electron/capture/streamReceiverProcess.ts:206](../../../../src/electron/capture/streamReceiverProcess.ts#L206) — transition-d492cb21071c9cad: delay-property = 0 ms (0);
+- [src/electron/capture/streamReceiverProcess.ts:212](../../../../src/electron/capture/streamReceiverProcess.ts#L212) — transition-36632b9521ea16ec: delay-property = 1 ms (1);
+- [src/electron/capture/streamReceiverProcess.ts:219](../../../../src/electron/capture/streamReceiverProcess.ts#L219) — transition-8357cbe3590ceea6: delay-property = dynamic ms (Math.min(5 * Math.pow(1.5, newCount), 100));
 - [src/electron/capture/streamReceiverProcess.ts:247](../../../../src/electron/capture/streamReceiverProcess.ts#L247) — timer-6d71f6b7605dd54c: setTimeout = 500 ms (500); // video() already blocks until the next frame, so pace on the source: waiting // after every frame pushes the next fetch past th
-- [src/electron/capture/streamReceiverProcess.ts:261](../../../../src/electron/capture/streamReceiverProcess.ts#L261) — timer-2e8f2542c9535041: setTimeout = dynamic ms (delay); 
+- [src/electron/capture/streamReceiverProcess.ts:261](../../../../src/electron/capture/streamReceiverProcess.ts#L261) — timer-2e8f2542c9535041: setTimeout = dynamic ms (delay);
 - [src/electron/capture/streamReceiverProcess.ts:295](../../../../src/electron/capture/streamReceiverProcess.ts#L295) — timer-b17fe1de63788e70: setTimeout = 100 ms (100); // if a thumbnail loop is running, upgrade it to full capture
-- [src/electron/capture/streamReceiverProcess.ts:319](../../../../src/electron/capture/streamReceiverProcess.ts#L319) — timer-a2f86108f7064e21: setTimeout = 100 ms (100); 
-- [src/electron/capture/streamReceiverProcess.ts:328](../../../../src/electron/capture/streamReceiverProcess.ts#L328) — timer-3c2365458dc806b5: setTimeout = 100 ms (100); 
-- [src/electron/capture/streamReceiverProcess.ts:398](../../../../src/electron/capture/streamReceiverProcess.ts#L398) — timer-5323eca8986eebcf: setTimeout = 400 ms (400); 
-- [src/electron/capture/streamReceiverProcess.ts:439](../../../../src/electron/capture/streamReceiverProcess.ts#L439) — timer-9cfa9d25e15c19f9: setTimeout = dynamic ms (ms); 
+- [src/electron/capture/streamReceiverProcess.ts:319](../../../../src/electron/capture/streamReceiverProcess.ts#L319) — timer-a2f86108f7064e21: setTimeout = 100 ms (100);
+- [src/electron/capture/streamReceiverProcess.ts:328](../../../../src/electron/capture/streamReceiverProcess.ts#L328) — timer-3c2365458dc806b5: setTimeout = 100 ms (100);
+- [src/electron/capture/streamReceiverProcess.ts:398](../../../../src/electron/capture/streamReceiverProcess.ts#L398) — timer-5323eca8986eebcf: setTimeout = 400 ms (400);
+- [src/electron/capture/streamReceiverProcess.ts:439](../../../../src/electron/capture/streamReceiverProcess.ts#L439) — timer-9cfa9d25e15c19f9: setTimeout = dynamic ms (ms);
 
 ## Workarounds
 

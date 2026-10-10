@@ -9,26 +9,26 @@ No static evidence found.
 ## Rendered components and props
 
 - [src/frontend/components/settings/Settings.svelte:54](../../../../src/frontend/components/settings/Settings.svelte#L54) — Tip → src/frontend/components/main/Tip.svelte; type="info"; value={translateText(hints&#91;tabId&#93;)}; style="opacity: 0.7;"; hiddenText; white
-- [src/frontend/components/settings/Settings.svelte:58](../../../../src/frontend/components/settings/Settings.svelte#L58) — StylesButtons → src/frontend/components/settings/tabs/StylesButtons.svelte; 
+- [src/frontend/components/settings/Settings.svelte:58](../../../../src/frontend/components/settings/Settings.svelte#L58) — StylesButtons → src/frontend/components/settings/tabs/StylesButtons.svelte;
 - [src/frontend/components/settings/Settings.svelte:60](../../../../src/frontend/components/settings/Settings.svelte#L60) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; title="actions.reset"; icon="reset"; on:click={resetAudioRouting}
-- [src/frontend/components/settings/Settings.svelte:62](../../../../src/frontend/components/settings/Settings.svelte#L62) — ProfilesButtons → src/frontend/components/settings/tabs/ProfilesButtons.svelte; 
-- [src/frontend/components/settings/Settings.svelte:64](../../../../src/frontend/components/settings/Settings.svelte#L64) — ThemeButtons → src/frontend/components/settings/tabs/ThemeButtons.svelte; 
+- [src/frontend/components/settings/Settings.svelte:62](../../../../src/frontend/components/settings/Settings.svelte#L62) — ProfilesButtons → src/frontend/components/settings/tabs/ProfilesButtons.svelte;
+- [src/frontend/components/settings/Settings.svelte:64](../../../../src/frontend/components/settings/Settings.svelte#L64) — ThemeButtons → src/frontend/components/settings/tabs/ThemeButtons.svelte;
 - [src/frontend/components/settings/Settings.svelte:66](../../../../src/frontend/components/settings/Settings.svelte#L66) — MaterialButton → src/frontend/components/inputs/MaterialButton.svelte; title="create_show.more_options"; on:click={() => (showGlobalOutputOptions = !showGlobalOutputOptions)}
 - [src/frontend/components/settings/Settings.svelte:67](../../../../src/frontend/components/settings/Settings.svelte#L67) — Icon → src/frontend/components/helpers/Icon.svelte; id="options"; white={!showGlobalOutputOptions}
-- [src/frontend/components/settings/Settings.svelte:75](../../../../src/frontend/components/settings/Settings.svelte#L75) — General → src/frontend/components/settings/tabs/General.svelte; 
-- [src/frontend/components/settings/Settings.svelte:78](../../../../src/frontend/components/settings/Settings.svelte#L78) — OutputsGeneral → src/frontend/components/settings/tabs/OutputsGeneral.svelte; 
-- [src/frontend/components/settings/Settings.svelte:80](../../../../src/frontend/components/settings/Settings.svelte#L80) — Outputs → src/frontend/components/settings/tabs/Outputs.svelte; 
-- [src/frontend/components/settings/Settings.svelte:83](../../../../src/frontend/components/settings/Settings.svelte#L83) — Styles → src/frontend/components/settings/tabs/Styles.svelte; 
-- [src/frontend/components/settings/Settings.svelte:85](../../../../src/frontend/components/settings/Settings.svelte#L85) — AudioRouting → src/frontend/components/settings/tabs/AudioRouting.svelte; 
-- [src/frontend/components/settings/Settings.svelte:87](../../../../src/frontend/components/settings/Settings.svelte#L87) — Connection → src/frontend/components/settings/tabs/Connection.svelte; 
-- [src/frontend/components/settings/Settings.svelte:89](../../../../src/frontend/components/settings/Settings.svelte#L89) — Files → src/frontend/components/settings/tabs/Files.svelte; 
-- [src/frontend/components/settings/Settings.svelte:91](../../../../src/frontend/components/settings/Settings.svelte#L91) — Profiles → src/frontend/components/settings/tabs/Profiles.svelte; 
-- [src/frontend/components/settings/Settings.svelte:93](../../../../src/frontend/components/settings/Settings.svelte#L93) — Theme → src/frontend/components/settings/tabs/Theme.svelte; 
-- [src/frontend/components/settings/Settings.svelte:95](../../../../src/frontend/components/settings/Settings.svelte#L95) — SmartSettings → src/frontend/ai/components/settings/SmartSettings.svelte; 
-- [src/frontend/components/settings/Settings.svelte:97](../../../../src/frontend/components/settings/Settings.svelte#L97) — Other → src/frontend/components/settings/tabs/Other.svelte; 
-- [src/frontend/components/settings/Settings.svelte:104](../../../../src/frontend/components/settings/Settings.svelte#L104) — OutputsTabs → src/frontend/components/settings/tabs/OutputsTabs.svelte; 
-- [src/frontend/components/settings/Settings.svelte:107](../../../../src/frontend/components/settings/Settings.svelte#L107) — StylesTabs → src/frontend/components/settings/tabs/StylesTabs.svelte; 
-- [src/frontend/components/settings/Settings.svelte:109](../../../../src/frontend/components/settings/Settings.svelte#L109) — FilesButtons → src/frontend/components/settings/tabs/FilesButtons.svelte; 
-- [src/frontend/components/settings/Settings.svelte:111](../../../../src/frontend/components/settings/Settings.svelte#L111) — ProfilesTabs → src/frontend/components/settings/tabs/ProfilesTabs.svelte; 
-- [src/frontend/components/settings/Settings.svelte:113](../../../../src/frontend/components/settings/Settings.svelte#L113) — ThemeTabs → src/frontend/components/settings/tabs/ThemeTabs.svelte; 
-- [src/frontend/components/settings/Settings.svelte:115](../../../../src/frontend/components/settings/Settings.svelte#L115) — OtherButtons → src/frontend/components/settings/tabs/OtherButtons.svelte; 
+- [src/frontend/components/settings/Settings.svelte:75](../../../../src/frontend/components/settings/Settings.svelte#L75) — General → src/frontend/components/settings/tabs/General.svelte;
+- [src/frontend/components/settings/Settings.svelte:78](../../../../src/frontend/components/settings/Settings.svelte#L78) — OutputsGeneral → src/frontend/components/settings/tabs/OutputsGeneral.svelte;
+- [src/frontend/components/settings/Settings.svelte:80](../../../../src/frontend/components/settings/Settings.svelte#L80) — Outputs → src/frontend/components/settings/tabs/Outputs.svelte;
+- [src/frontend/components/settings/Settings.svelte:83](../../../../src/frontend/components/settings/Settings.svelte#L83) — Styles → src/frontend/components/settings/tabs/Styles.svelte;
+- [src/frontend/components/settings/Settings.svelte:85](../../../../src/frontend/components/settings/Settings.svelte#L85) — AudioRouting → src/frontend/components/settings/tabs/AudioRouting.svelte;
+- [src/frontend/components/settings/Settings.svelte:87](../../../../src/frontend/components/settings/Settings.svelte#L87) — Connection → src/frontend/components/settings/tabs/Connection.svelte;
+- [src/frontend/components/settings/Settings.svelte:89](../../../../src/frontend/components/settings/Settings.svelte#L89) — Files → src/frontend/components/settings/tabs/Files.svelte;
+- [src/frontend/components/settings/Settings.svelte:91](../../../../src/frontend/components/settings/Settings.svelte#L91) — Profiles → src/frontend/components/settings/tabs/Profiles.svelte;
+- [src/frontend/components/settings/Settings.svelte:93](../../../../src/frontend/components/settings/Settings.svelte#L93) — Theme → src/frontend/components/settings/tabs/Theme.svelte;
+- [src/frontend/components/settings/Settings.svelte:95](../../../../src/frontend/components/settings/Settings.svelte#L95) — SmartSettings → src/frontend/ai/components/settings/SmartSettings.svelte;
+- [src/frontend/components/settings/Settings.svelte:97](../../../../src/frontend/components/settings/Settings.svelte#L97) — Other → src/frontend/components/settings/tabs/Other.svelte;
+- [src/frontend/components/settings/Settings.svelte:104](../../../../src/frontend/components/settings/Settings.svelte#L104) — OutputsTabs → src/frontend/components/settings/tabs/OutputsTabs.svelte;
+- [src/frontend/components/settings/Settings.svelte:107](../../../../src/frontend/components/settings/Settings.svelte#L107) — StylesTabs → src/frontend/components/settings/tabs/StylesTabs.svelte;
+- [src/frontend/components/settings/Settings.svelte:109](../../../../src/frontend/components/settings/Settings.svelte#L109) — FilesButtons → src/frontend/components/settings/tabs/FilesButtons.svelte;
+- [src/frontend/components/settings/Settings.svelte:111](../../../../src/frontend/components/settings/Settings.svelte#L111) — ProfilesTabs → src/frontend/components/settings/tabs/ProfilesTabs.svelte;
+- [src/frontend/components/settings/Settings.svelte:113](../../../../src/frontend/components/settings/Settings.svelte#L113) — ThemeTabs → src/frontend/components/settings/tabs/ThemeTabs.svelte;
+- [src/frontend/components/settings/Settings.svelte:115](../../../../src/frontend/components/settings/Settings.svelte#L115) — OtherButtons → src/frontend/components/settings/tabs/OtherButtons.svelte;

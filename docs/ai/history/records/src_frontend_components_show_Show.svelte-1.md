@@ -18,7 +18,7 @@ Sources:
 
 Later line edits: 0; latest 81f55552. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2964](https://github.com/ChurchApps/FreeShow/pull/2964) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2964](https://github.com/ChurchApps/FreeShow/pull/2964) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2964](https://github.com/ChurchApps/FreeShow/pull/2964) (read; no item-specific matching bullet); [pr #2964](https://github.com/ChurchApps/FreeShow/pull/2964) (read; no item-specific matching bullet)
 
 ## D-fork-755ae106e1ed848c
 
@@ -36,6 +36,6 @@ Sources:
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/755ae106e1ed848c9c69f773550dfcdab2f34fc4): “- Arrangements (select, new, rename, delete) now live above the groups in the right panel”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/755ae106e1ed848c9c69f773550dfcdab2f34fc4): “- Arrangements (select, new, rename, delete) now live above the groups in the right panel”
 
-Later line edits: 9; latest 755ae106. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 755ae106. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/b5946b2dafb6207a5372eec5f9943ce283e3a508): “1.5.7 (#2839) * Added back forceLogin - Fixed on B1Admin * Fixed clear background not working if no output screen exists * Updated languages * fix: improve split long verses with t”
 
-Later line edits: 43; latest b5946b2d. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest b5946b2d. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet); [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet)
 
@@ -34,9 +34,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/3f9ae152d916dfc5d6e728348953181189c4c7fb): “1.5.1 (#2284) * Fixed default scripture chapter/verse not being 1 * Updated languages * Fixed stage display slide text invisible - Fixed slide timers stopping in the background - F”
 
-Later line edits: 2; latest 6ad1f69b. Full commit messages and lineage: JSON query data.
+Later line edits: 1; latest 6ad1f69b. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2284](https://github.com/ChurchApps/FreeShow/pull/2284) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2674](https://github.com/ChurchApps/FreeShow/pull/2674) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2284](https://github.com/ChurchApps/FreeShow/pull/2284) (read; no item-specific matching bullet); [pr #2674](https://github.com/ChurchApps/FreeShow/pull/2674) (read; no item-specific matching bullet)
 
 ## D-timer-2611e2304b6b9288
 
@@ -52,9 +52,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6ad1f69b4c8fae7859516b95a19cf865ea91bdda): “1.5.6-beta.3 (#2674) * Fix verse 1 duplication when split by 'Split long verses' feature (#2657) When clicking a book name to auto-focus on verse 1, then shift-clicking to extend t”
 
-Later line edits: 11; latest 6ad1f69b. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 6ad1f69b. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2674](https://github.com/ChurchApps/FreeShow/pull/2674) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2674](https://github.com/ChurchApps/FreeShow/pull/2674) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2674](https://github.com/ChurchApps/FreeShow/pull/2674) (read; no item-specific matching bullet); [pr #2674](https://github.com/ChurchApps/FreeShow/pull/2674) (read; no item-specific matching bullet)
 
 ## D-timer-ef1fcf4bccfb8bfa
 
@@ -106,9 +106,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/3f9ae152d916dfc5d6e728348953181189c4c7fb): “1.5.1 (#2284) * Fixed default scripture chapter/verse not being 1 * Updated languages * Fixed stage display slide text invisible - Fixed slide timers stopping in the background - F”
 
-Later line edits: 2; latest 3f9ae152. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 3f9ae152. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2284](https://github.com/ChurchApps/FreeShow/pull/2284) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2284](https://github.com/ChurchApps/FreeShow/pull/2284) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2284](https://github.com/ChurchApps/FreeShow/pull/2284) (read; no item-specific matching bullet); [pr #2284](https://github.com/ChurchApps/FreeShow/pull/2284) (read; no item-specific matching bullet)
 
 ## D-css-transition-573b1d1933c30fca
 
@@ -214,7 +214,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/c0ad5391c81b49b836a6b7f58b6ad72fad2f5c15): “1.3.1-beta.1 (#1010) * ✔ Fixed auto size timing issue - Fixed transition issue - UI tweaks * Updated issue templates * ✔ Fixed Quelea misspelling - Fixed scripture output freezing ”
 
-Later line edits: 1; latest c0ad5391. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest c0ad5391. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #1010](https://github.com/ChurchApps/FreeShow/pull/1010) (read; no item-specific matching bullet); [pr #1010](https://github.com/ChurchApps/FreeShow/pull/1010) (read; no item-specific matching bullet)
 

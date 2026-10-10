@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/3854a5e84fa2856a6ba598d267f718c614a2e2c3): “📦 Better ProPresenter importing - Support for ProPresenter .pro4, .pro5 and json file import - Select all items in edit and stage - Select all dates in month in calendar - Calenda”
 
-Later line edits: 2; latest 5fbfc417. Full commit messages and lineage: JSON query data.
+Later line edits: 1; latest 5fbfc417. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #217](https://github.com/ChurchApps/FreeShow/pull/217) (read; no item-specific matching bullet)

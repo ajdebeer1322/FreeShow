@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/7221d2710ee0377a09536df2df38d2ea11db791b): “1.6.0-beta.4 (#3147) * Handle full-section Planning Center repeats (#3099) * Fixed some timeline keyframes not editable #3100 * Timer now flashes in StageShow #3101 * Fixed timer i”
 
-Later line edits: 3; latest 7221d271. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 7221d271. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3147](https://github.com/ChurchApps/FreeShow/pull/3147) (read; no item-specific matching bullet); [pr #3147](https://github.com/ChurchApps/FreeShow/pull/3147) (read; no item-specific matching bullet)
 
@@ -36,4 +36,4 @@ Sources:
 
 Later line edits: 0; latest bd9aad46. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3402](https://github.com/ChurchApps/FreeShow/pull/3402) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3402](https://github.com/ChurchApps/FreeShow/pull/3402) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3402](https://github.com/ChurchApps/FreeShow/pull/3402) (read; no item-specific matching bullet); [pr #3402](https://github.com/ChurchApps/FreeShow/pull/3402) (read; no item-specific matching bullet)

@@ -16,9 +16,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/c4e7a152b98156859f4ef94c959ddbb401d693de): “1.3.6 (#1231) * ✨ Move stage items with arrow keys - Scripture settings showing up more as expected - Scripture all verse text shown if right side is closed - Updated Chinese langu”
 
-Later line edits: 75; latest 687575a3. Full commit messages and lineage: JSON query data.
+Later line edits: 34; latest 687575a3. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1231](https://github.com/ChurchApps/FreeShow/pull/1231) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet)
+GitHub: [pr #1231](https://github.com/ChurchApps/FreeShow/pull/1231) (read; no item-specific matching bullet); [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet)
 
 ## D-timer-0bcedcdd45a9d9e8
 
@@ -34,9 +34,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/d6d4b4bf026e58b44fabd0bbe37be90189656001): “1.5.0-beta.2 (#2108) * Better Electron mirror approach * Fixed PDF chord sheet option not showing up right away * Small fixes & tweaks * Fix for snap build * Fix for snap build * U”
 
-Later line edits: 74; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 18; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
+GitHub: [pr #2108](https://github.com/ChurchApps/FreeShow/pull/2108) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
 ## D-timer-b8b8c511e27f394a
 
@@ -52,7 +52,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/f191003e155e0e43fa4436584ed26fb9d8502a16): “1.5.7-beta.1 (#2755) * Catch bad file names in sync * Updated languages * Fixed "Add folder" missing #2701 * Fixed Scripture freeze #2707 * Fixed Scripture freeze #2707 * Notes lin”
 
-Later line edits: 74; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 5; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2755](https://github.com/ChurchApps/FreeShow/pull/2755) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -70,9 +70,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/2a7e39ae66433fca6520f07d799366baa52770b6): “1.3.0-beta.3 (#929) * ✨ Tweaked group count style - Fixed scripture changing in some cases - Fixed some issues with split in two - Split in two will also split text content - Fixed”
 
-Later line edits: 74; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 39; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #929](https://github.com/ChurchApps/FreeShow/pull/929) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
+GitHub: [pr #929](https://github.com/ChurchApps/FreeShow/pull/929) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
 ## D-timer-4057e0fcd76ddcbf
 
@@ -106,7 +106,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/687575a35ad2f42a29638aa6751701b262e245de): “1.6.5 (#3659) * Updated languages * Delete all non-locked shows tweak * Rename project placeholders * Undo replacing a placeholder * Improved repeating ICS import #3643 * Project t”
 
-Later line edits: 76; latest 687575a3. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 687575a3. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet); [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet)
 
@@ -124,7 +124,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/687575a35ad2f42a29638aa6751701b262e245de): “1.6.5 (#3659) * Updated languages * Delete all non-locked shows tweak * Rename project placeholders * Undo replacing a placeholder * Improved repeating ICS import #3643 * Project t”
 
-Later line edits: 76; latest 687575a3. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 687575a3. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet); [pr #3659](https://github.com/ChurchApps/FreeShow/pull/3659) (read; no item-specific matching bullet)
 
@@ -160,6 +160,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/1f661639ea0d5eaced52d2b8772183358310ad7f): “1.4.0-beta.1 (#1419) * 🔊 Sound effects player - Set audio type music/effect - Audio editor waveform preview - Set individual playlist volume - Add more actions if wait item is add”
 
-Later line edits: 74; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 30; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)

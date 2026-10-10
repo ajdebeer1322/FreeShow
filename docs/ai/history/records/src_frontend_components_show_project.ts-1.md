@@ -16,9 +16,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/57a967525c249b7cbd1e7d556cfa898c6dbf99a0): “1.5.8-beta.1 (#2847) * Fixed chosen profile not updating projects list right away - Updated Chinese language * Fixed song upload issue #2842 * Fixed missing libltc on Linux #2841 *”
 
-Later line edits: 1; latest 57a96752. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 57a96752. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (read; no item-specific matching bullet); [pr #2847](https://github.com/ChurchApps/FreeShow/pull/2847) (read; no item-specific matching bullet)
 
 ## D-timer-0cc66d4445cf5198
 
@@ -37,4 +37,4 @@ Sources:
 
 Later line edits: 0; latest 84fa33d2. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2924](https://github.com/ChurchApps/FreeShow/pull/2924) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2924](https://github.com/ChurchApps/FreeShow/pull/2924) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2924](https://github.com/ChurchApps/FreeShow/pull/2924) (read; no item-specific matching bullet); [pr #2924](https://github.com/ChurchApps/FreeShow/pull/2924) (read; no item-specific matching bullet)

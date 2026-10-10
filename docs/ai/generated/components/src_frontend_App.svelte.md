@@ -8,19 +8,19 @@ No static evidence found.
 
 ## Rendered components and props
 
-- [src/frontend/App.svelte:70](../../../../src/frontend/App.svelte#L70) — Pdf → src/frontend/components/export/Pdf.svelte; 
-- [src/frontend/App.svelte:74](../../../../src/frontend/App.svelte#L74) — MenuBar → src/frontend/components/main/MenuBar.svelte; 
-- [src/frontend/App.svelte:78](../../../../src/frontend/App.svelte#L78) — ContextMenu → src/frontend/components/context/ContextMenu.svelte; 
-- [src/frontend/App.svelte:79](../../../../src/frontend/App.svelte#L79) — TooltipManager → src/frontend/components/main/TooltipManager.svelte; 
-- [src/frontend/App.svelte:82](../../../../src/frontend/App.svelte#L82) — MainOutput → src/frontend/MainOutput.svelte; 
-- [src/frontend/App.svelte:84](../../../../src/frontend/App.svelte#L84) — Popup → src/frontend/components/main/Popup.svelte; 
-- [src/frontend/App.svelte:85](../../../../src/frontend/App.svelte#L85) — QuickSearch → src/frontend/components/quicksearch/QuickSearch.svelte; 
-- [src/frontend/App.svelte:86](../../../../src/frontend/App.svelte#L86) — Toast → src/frontend/components/main/Toast.svelte; 
-- [src/frontend/App.svelte:87](../../../../src/frontend/App.svelte#L87) — StatusIndicator → src/frontend/components/main/StatusIndicator.svelte; 
-- [src/frontend/App.svelte:88](../../../../src/frontend/App.svelte#L88) — Recorder → src/frontend/components/main/Recorder.svelte; 
-- [src/frontend/App.svelte:89](../../../../src/frontend/App.svelte#L89) — Guide → src/frontend/components/guide/Guide.svelte; 
-- [src/frontend/App.svelte:90](../../../../src/frontend/App.svelte#L90) — ProgressPanel → src/frontend/components/main/ProgressPanel.svelte; 
-- [src/frontend/App.svelte:92](../../../../src/frontend/App.svelte#L92) — MainLayout → src/frontend/MainLayout.svelte; 
-- [src/frontend/App.svelte:95](../../../../src/frontend/App.svelte#L95) — ProfileSelector → src/frontend/components/main/ProfileSelector.svelte; 
-- [src/frontend/App.svelte:98](../../../../src/frontend/App.svelte#L98) — Center → src/frontend/components/system/Center.svelte; 
+- [src/frontend/App.svelte:70](../../../../src/frontend/App.svelte#L70) — Pdf → src/frontend/components/export/Pdf.svelte;
+- [src/frontend/App.svelte:74](../../../../src/frontend/App.svelte#L74) — MenuBar → src/frontend/components/main/MenuBar.svelte;
+- [src/frontend/App.svelte:78](../../../../src/frontend/App.svelte#L78) — ContextMenu → src/frontend/components/context/ContextMenu.svelte;
+- [src/frontend/App.svelte:79](../../../../src/frontend/App.svelte#L79) — TooltipManager → src/frontend/components/main/TooltipManager.svelte;
+- [src/frontend/App.svelte:82](../../../../src/frontend/App.svelte#L82) — MainOutput → src/frontend/MainOutput.svelte;
+- [src/frontend/App.svelte:84](../../../../src/frontend/App.svelte#L84) — Popup → src/frontend/components/main/Popup.svelte;
+- [src/frontend/App.svelte:85](../../../../src/frontend/App.svelte#L85) — QuickSearch → src/frontend/components/quicksearch/QuickSearch.svelte;
+- [src/frontend/App.svelte:86](../../../../src/frontend/App.svelte#L86) — Toast → src/frontend/components/main/Toast.svelte;
+- [src/frontend/App.svelte:87](../../../../src/frontend/App.svelte#L87) — StatusIndicator → src/frontend/components/main/StatusIndicator.svelte;
+- [src/frontend/App.svelte:88](../../../../src/frontend/App.svelte#L88) — Recorder → src/frontend/components/main/Recorder.svelte;
+- [src/frontend/App.svelte:89](../../../../src/frontend/App.svelte#L89) — Guide → src/frontend/components/guide/Guide.svelte;
+- [src/frontend/App.svelte:90](../../../../src/frontend/App.svelte#L90) — ProgressPanel → src/frontend/components/main/ProgressPanel.svelte;
+- [src/frontend/App.svelte:92](../../../../src/frontend/App.svelte#L92) — MainLayout → src/frontend/MainLayout.svelte;
+- [src/frontend/App.svelte:95](../../../../src/frontend/App.svelte#L95) — ProfileSelector → src/frontend/components/main/ProfileSelector.svelte;
+- [src/frontend/App.svelte:98](../../../../src/frontend/App.svelte#L98) — Center → src/frontend/components/system/Center.svelte;
 - [src/frontend/App.svelte:99](../../../../src/frontend/App.svelte#L99) — Loader → src/frontend/components/main/Loader.svelte; size={2}

@@ -51,7 +51,8 @@ Unresolved: local history identifies an addition/edit but gives no item-specific
 Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/02a9b936ec534e2ce9b1e0514b61dbb54bb1b3b3): “🧼 Cleaning”
+- [guess] [source](https://github.com/ChurchApps/FreeShow/issues/1720): “Hello FreeShow team, I’d like to suggest a new feature that could make presentations even more dynamic and flexible: the ability to assign values to variables directly within the t”
 
 Later line edits: 0; latest 02a9b936. Full commit messages and lineage: JSON query data.
 
-GitHub: No release/issue number in the traced commits.
+GitHub: [issue #1720](https://github.com/ChurchApps/FreeShow/issues/1720) (read; no item-specific matching bullet)

@@ -90,9 +90,9 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/actions/actions.ts:49](../../../../src/frontend/components/actions/actions.ts#L49) — timer-dacc4df78bbb6628: setTimeout = 100 ms (100); 
+- [src/frontend/components/actions/actions.ts:49](../../../../src/frontend/components/actions/actions.ts#L49) — timer-dacc4df78bbb6628: setTimeout = 100 ms (100);
 - [src/frontend/components/actions/actions.ts:65](../../../../src/frontend/components/actions/actions.ts#L65) — timer-a1481bdadb234426: setTimeout = 20 ms (20); // remove from active (timeout to show outline)
-- [src/frontend/components/actions/actions.ts:81](../../../../src/frontend/components/actions/actions.ts#L81) — timer-ef8284be3ab63db7: wait = dynamic ms ((triggerData.number \|\| 0) * 1000); 
+- [src/frontend/components/actions/actions.ts:81](../../../../src/frontend/components/actions/actions.ts#L81) — timer-ef8284be3ab63db7: wait = dynamic ms ((triggerData.number \|\| 0) * 1000);
 - [src/frontend/components/actions/actions.ts:104](../../../../src/frontend/components/actions/actions.ts#L104) — timer-65e2645485849141: wait = 10 ms (10); // without this slide content might get "stuck", if cleared when transitioning
 
 ## Workarounds

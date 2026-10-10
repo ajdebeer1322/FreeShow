@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6d9caa19b807c49af06baf77db0d8b9c1e3f4125): “1.6.6-beta.2 (#3759) * Updated Romanian language * Audit fix * Sentry fixes * Update GitHub Actions Tags * STT enhancements * Smart floating hover effects * Smart floating UI tweak”
 
-Later line edits: 5; latest 6d9caa19. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 6d9caa19. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3759](https://github.com/ChurchApps/FreeShow/pull/3759) (read; no item-specific matching bullet); [pr #3759](https://github.com/ChurchApps/FreeShow/pull/3759) (read; no item-specific matching bullet)
 
@@ -88,7 +88,7 @@ Sources:
 
 - [code] [source](https://github.com/ajdebeer1322/FreeShow/commit/e5f66233fa0187a258128aa929a3f0c71fa43948): “Phase 2: required code changes for Svelte 5 (legacy mode) - mount(App, { target }) instead of new App({ target }) in the 6 entry points (frontend/main.ts and server/{cam,controller”
 
-Later line edits: 5; latest e5f66233. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest e5f66233. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.
 
@@ -106,7 +106,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/0dc519a8060ad08cee791b09c2c74afa2a1b5e65): “v1.2.0 (#676) * implemented rudimentary support for WebRequests (#635) * Add xml version tag handling for xml files without newlines (#644) XML without line breaks is perfectly val”
 
-Later line edits: 5; latest 0dc519a8. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 0dc519a8. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #676](https://github.com/ChurchApps/FreeShow/pull/676) (read; no item-specific matching bullet); [pr #676](https://github.com/ChurchApps/FreeShow/pull/676) (read; no item-specific matching bullet)
 
@@ -126,7 +126,7 @@ Sources:
 
 Later line edits: 0; latest bfe8678c. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #702](https://github.com/ChurchApps/FreeShow/pull/702) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #702](https://github.com/ChurchApps/FreeShow/pull/702) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #702](https://github.com/ChurchApps/FreeShow/pull/702) (read; no item-specific matching bullet); [pr #702](https://github.com/ChurchApps/FreeShow/pull/702) (read; no item-specific matching bullet)
 
 ## D-hotspot-972464c413969487
 
@@ -142,6 +142,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/9d558fc2770b29c12331906ce8de5c4fcfd6fb56): “1.4.1-beta.2 (#1528) * 🚩 Updated Dutch language - Fixed a freeze issue * Feat RTL styles & arabic locale (#1506) * add arabic locale * add RTL functionality * add stylelint and fo”
 
-Later line edits: 5; latest 9d558fc2. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 9d558fc2. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1528](https://github.com/ChurchApps/FreeShow/pull/1528) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1528](https://github.com/ChurchApps/FreeShow/pull/1528) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1528](https://github.com/ChurchApps/FreeShow/pull/1528) (read; no item-specific matching bullet); [pr #1528](https://github.com/ChurchApps/FreeShow/pull/1528) (read; no item-specific matching bullet)

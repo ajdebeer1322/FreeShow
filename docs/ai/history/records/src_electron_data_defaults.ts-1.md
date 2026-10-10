@@ -18,6 +18,6 @@ Sources:
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/c570f6bb0134b2517e7ec76f11669949e9cc17e7): “- Default and light themes, default output color and the active slide outline use a soft blue instead of pink”
 - [guess] [source](https://github.com/ChurchApps/FreeShow/commit/c570f6bb0134b2517e7ec76f11669949e9cc17e7): “- Default and light themes, default output color and the active slide outline use a soft blue instead of pink”
 
-Later line edits: 3; latest c570f6bb. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest c570f6bb. Full commit messages and lineage: JSON query data.
 
 GitHub: No release/issue number in the traced commits.

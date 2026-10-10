@@ -22,7 +22,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/server/common/components/Textarea.svelte:25](../../../../src/server/common/components/Textarea.svelte#L25) — css-transition-f5d63626b3779860: css-transition = 200 ms (border-color 0.2s ease,); 
+- [src/server/common/components/Textarea.svelte:25](../../../../src/server/common/components/Textarea.svelte#L25) — css-transition-f5d63626b3779860: css-transition = 200 ms (border-color 0.2s ease,);
 
 ## Workarounds
 

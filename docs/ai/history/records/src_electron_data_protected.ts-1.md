@@ -18,4 +18,4 @@ Sources:
 
 Later line edits: 0; latest 118b1e37. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2445](https://github.com/ChurchApps/FreeShow/pull/2445) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2445](https://github.com/ChurchApps/FreeShow/pull/2445) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2445](https://github.com/ChurchApps/FreeShow/pull/2445) (read; no item-specific matching bullet); [pr #2445](https://github.com/ChurchApps/FreeShow/pull/2445) (read; no item-specific matching bullet)

@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/c193fda76be08b09c92fe886fe9dd96b33d2e89e): “1.5.0-beta.1 (#2066) * 🚩 Updated languages * Update makesnap (#2019) * Don't fail on directory creation if exists * Update snapcraft syntax Per warning: "Running snapcraft without”
 
-Later line edits: 43; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 13; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2066](https://github.com/ChurchApps/FreeShow/pull/2066) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 
@@ -34,7 +34,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6d9caa19b807c49af06baf77db0d8b9c1e3f4125): “1.6.6-beta.2 (#3759) * Updated Romanian language * Audit fix * Sentry fixes * Update GitHub Actions Tags * STT enhancements * Smart floating hover effects * Smart floating UI tweak”
 
-Later line edits: 44; latest 6d9caa19. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 6d9caa19. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3759](https://github.com/ChurchApps/FreeShow/pull/3759) (read; no item-specific matching bullet); [pr #3759](https://github.com/ChurchApps/FreeShow/pull/3759) (read; no item-specific matching bullet)
 
@@ -52,7 +52,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/5e0b704e83343f125d21dee46b3ef994bd2c0a22): “1.3.4-beta.1 (#1172) * 📄 Updates * ✔️ Fixed incorrect order when importing PowerPoint slides * ✨ Click existing slide note to edit - Fixed preview hidden if only one output - Fixe”
 
-Later line edits: 43; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 22; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #1172](https://github.com/ChurchApps/FreeShow/pull/1172) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)
 

@@ -36,7 +36,7 @@ Sources:
 
 Later line edits: 1; latest d1945fb0. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1108](https://github.com/ChurchApps/FreeShow/pull/1108) (read; no item-specific matching bullet); [pr #1198](https://github.com/ChurchApps/FreeShow/pull/1198) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1108](https://github.com/ChurchApps/FreeShow/pull/1108) (read; no item-specific matching bullet); [pr #1198](https://github.com/ChurchApps/FreeShow/pull/1198) (read; no item-specific matching bullet)
 
 ## D-workaround-9e967b75964aa6eb
 
@@ -52,6 +52,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/93d55f36a112759b6a4d85e465ab42a574d90b5f): “1.3.8 (#1279) * ✨ Template selector popup - Updated styles page - Fixed scriptures not showing up in output - UI tweaks * 🚩 Updated Norwegian language * feat: Adds an option to to”
 
-Later line edits: 1; latest 93d55f36. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 93d55f36. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1279](https://github.com/ChurchApps/FreeShow/pull/1279) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1279](https://github.com/ChurchApps/FreeShow/pull/1279) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1279](https://github.com/ChurchApps/FreeShow/pull/1279) (read; no item-specific matching bullet); [pr #1279](https://github.com/ChurchApps/FreeShow/pull/1279) (read; no item-specific matching bullet)

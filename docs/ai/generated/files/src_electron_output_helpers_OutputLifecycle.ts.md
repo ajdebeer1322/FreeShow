@@ -38,13 +38,13 @@ None detected.
 
 ## Timing
 
-- [src/electron/output/helpers/OutputLifecycle.ts:46](../../../../src/electron/output/helpers/OutputLifecycle.ts#L46) — timer-120d1fdece6c0384: setTimeout = 500 ms (500); 
-- [src/electron/output/helpers/OutputLifecycle.ts:49](../../../../src/electron/output/helpers/OutputLifecycle.ts#L49) — timer-e60d621c70482ad8: setTimeout = 1000 ms (1000); 
+- [src/electron/output/helpers/OutputLifecycle.ts:46](../../../../src/electron/output/helpers/OutputLifecycle.ts#L46) — timer-120d1fdece6c0384: setTimeout = 500 ms (500);
+- [src/electron/output/helpers/OutputLifecycle.ts:49](../../../../src/electron/output/helpers/OutputLifecycle.ts#L49) — timer-e60d621c70482ad8: setTimeout = 1000 ms (1000);
 - [src/electron/output/helpers/OutputLifecycle.ts:116](../../../../src/electron/output/helpers/OutputLifecycle.ts#L116) — timer-b6b629a5a0feaf6f: setTimeout = 1200 ms (1200); // OutputHelper.Bounds.updatePreviewBounds()
-- [src/electron/output/helpers/OutputLifecycle.ts:278](../../../../src/electron/output/helpers/OutputLifecycle.ts#L278) — timer-798c4a9bcba52b97: setInterval = dynamic ms (interval); 
+- [src/electron/output/helpers/OutputLifecycle.ts:278](../../../../src/electron/output/helpers/OutputLifecycle.ts#L278) — timer-798c4a9bcba52b97: setInterval = dynamic ms (interval);
 - [src/electron/output/helpers/OutputLifecycle.ts:529](../../../../src/electron/output/helpers/OutputLifecycle.ts#L529) — timer-5d1ac0838e158089: setInterval = 1000 ms (1000); // in-flight ledger — a seq is counted in globalInFlight iff it is in this map, so completion/teardown can never // double-dec
-- [src/electron/output/helpers/OutputLifecycle.ts:628](../../../../src/electron/output/helpers/OutputLifecycle.ts#L628) — timer-d7bcb2969f87a9ae: setTimeout = dynamic ms (admitNextDue - now); 
-- [src/electron/output/helpers/OutputLifecycle.ts:647](../../../../src/electron/output/helpers/OutputLifecycle.ts#L647) — timer-4e19a3f0a3b7b86b: setTimeout = dynamic ms (OutputLifecycle.getOsrTargetInterval(id)); 
+- [src/electron/output/helpers/OutputLifecycle.ts:628](../../../../src/electron/output/helpers/OutputLifecycle.ts#L628) — timer-d7bcb2969f87a9ae: setTimeout = dynamic ms (admitNextDue - now);
+- [src/electron/output/helpers/OutputLifecycle.ts:647](../../../../src/electron/output/helpers/OutputLifecycle.ts#L647) — timer-4e19a3f0a3b7b86b: setTimeout = dynamic ms (OutputLifecycle.getOsrTargetInterval(id));
 - [src/electron/output/helpers/OutputLifecycle.ts:840](../../../../src/electron/output/helpers/OutputLifecycle.ts#L840) — timer-4ef794dcf06d3262: setTimeout = dynamic ms (interval); // transmitFrame no-ops until the output's capture channels are set up, and throttles each consumer // re-read the inter
 - [src/electron/output/helpers/OutputLifecycle.ts:842](../../../../src/electron/output/helpers/OutputLifecycle.ts#L842) — timer-c5f588d6c6928899: setTimeout = dynamic ms (this.getOsrSendInterval(id)); // re-read the interval each tick so framerate changes (e.g. NDI connect) take effect
 - [src/electron/output/helpers/OutputLifecycle.ts:892](../../../../src/electron/output/helpers/OutputLifecycle.ts#L892) — timer-7839a135f26f609e: wait = 80 ms (80); // this has to be called to actually remove the process!

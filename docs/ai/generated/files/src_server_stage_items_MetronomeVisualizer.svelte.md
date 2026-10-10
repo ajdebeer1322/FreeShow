@@ -21,8 +21,8 @@ No static evidence found.
 
 ## Timing
 
-- [src/server/stage/items/MetronomeVisualizer.svelte:74](../../../../src/server/stage/items/MetronomeVisualizer.svelte#L74) — css-transition-e493412e310bc0f2: css-transition = 200 ms (background-color 0.2s,); 
-- [src/server/stage/items/MetronomeVisualizer.svelte:119](../../../../src/server/stage/items/MetronomeVisualizer.svelte#L119) — css-transition-ae12feeb734cc151: css-transition = 200 ms (transform 0.2s ease-in-out,); 
+- [src/server/stage/items/MetronomeVisualizer.svelte:74](../../../../src/server/stage/items/MetronomeVisualizer.svelte#L74) — css-transition-e493412e310bc0f2: css-transition = 200 ms (background-color 0.2s,);
+- [src/server/stage/items/MetronomeVisualizer.svelte:119](../../../../src/server/stage/items/MetronomeVisualizer.svelte#L119) — css-transition-ae12feeb734cc151: css-transition = 200 ms (transform 0.2s ease-in-out,);
 
 ## Workarounds
 

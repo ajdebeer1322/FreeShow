@@ -25,7 +25,7 @@ None detected.
 
 ## Timing
 
-- [src/frontend/ai/scripture/BibleSearchDetector.ts:205](../../../../src/frontend/ai/scripture/BibleSearchDetector.ts#L205) — timer-ea9f614f610b4d42: setTimeout = 0 ms (0); 
+- [src/frontend/ai/scripture/BibleSearchDetector.ts:205](../../../../src/frontend/ai/scripture/BibleSearchDetector.ts#L205) — timer-ea9f614f610b4d42: setTimeout = 0 ms (0);
 
 ## Workarounds
 

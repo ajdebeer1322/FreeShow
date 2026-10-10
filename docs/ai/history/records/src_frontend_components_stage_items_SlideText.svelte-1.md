@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/c49202065eb31b67cb66d102806195d7039b62a5): “v1.2.5 (#756) * 📄 Option to not disable Hardware Acceleration - Updated languages - Unsplash UTM links - Fixed HTTP output media - More optimized .json cache storage - Fixed fade ”
 
-Later line edits: 2; latest c4920206. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest c4920206. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #756](https://github.com/ChurchApps/FreeShow/pull/756) (read; no item-specific matching bullet); [pr #756](https://github.com/ChurchApps/FreeShow/pull/756) (read; no item-specific matching bullet)
 
@@ -34,7 +34,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/cc30be873dcdfc1e006261d701e9b08aa167c368): “1.4.0 (#1460) * Updated Windows signing deps * 🎨 Context menu & popup border radius * ✨ Added textbox press/release action - CSV file import - Added API action to select project b”
 
-Later line edits: 2; latest cc30be87. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest cc30be87. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #1460](https://github.com/ChurchApps/FreeShow/pull/1460) (read; no item-specific matching bullet); [pr #1460](https://github.com/ChurchApps/FreeShow/pull/1460) (read; no item-specific matching bullet)
 

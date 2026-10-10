@@ -34,6 +34,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/8e3667695c785f82cfea75a50c426de8fec418c4): “1.5.5-beta.1 (#2497) * Fixed freeze issue * Fixed freeze issue * Fixed thumbnail creation broken * Indented expanded arrow menu * Fix slide flicker (#2462) * Fix flicker on unchang”
 
-Later line edits: 47; latest a2f34e2a. Full commit messages and lineage: JSON query data.
+Later line edits: 11; latest a2f34e2a. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2497](https://github.com/ChurchApps/FreeShow/pull/2497) (read; no item-specific matching bullet); [pr #3336](https://github.com/ChurchApps/FreeShow/pull/3336) (read; no item-specific matching bullet)

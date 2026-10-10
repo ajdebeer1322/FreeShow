@@ -16,9 +16,9 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/269dd93f13ca46e84086e8ea41b095ed485e7fd9): “1.6.4 (#3529) * Set gradient as template background #3518 * Fixed template sometimes removing incorrect items * Slide preview optimizations - Tweaks * Fixed default auto size issue”
 
-Later line edits: 4; latest 269dd93f. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 269dd93f. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (read; no item-specific matching bullet); [pr #3529](https://github.com/ChurchApps/FreeShow/pull/3529) (read; no item-specific matching bullet)
 
 ## D-workaround-59eb486216322b02
 

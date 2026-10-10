@@ -17,9 +17,9 @@ Sources:
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/2bb2107b7f257899c754385d049e0e7d045ae26f): “1.3.7 (#1249) * Use v4 * ✔️ Fixed cloud sync issue - Fixed action tags not saving - Fixed selected line bar not matching correct output - Function keys will work now even if a inpu”
 - [code] src/frontend/components/main/Top.svelte:33: “// prevent displaying just after close”
 
-Later line edits: 1; latest 2bb2107b. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 2bb2107b. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1249](https://github.com/ChurchApps/FreeShow/pull/1249) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1249](https://github.com/ChurchApps/FreeShow/pull/1249) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #1249](https://github.com/ChurchApps/FreeShow/pull/1249) (read; no item-specific matching bullet); [pr #1249](https://github.com/ChurchApps/FreeShow/pull/1249) (read; no item-specific matching bullet)
 
 ## D-timer-4879dfc2cdaf79c8
 
@@ -55,4 +55,4 @@ Sources:
 
 Later line edits: 1; latest e5f66233. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #922](https://github.com/ChurchApps/FreeShow/pull/922) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #922](https://github.com/ChurchApps/FreeShow/pull/922) (read; no item-specific matching bullet)

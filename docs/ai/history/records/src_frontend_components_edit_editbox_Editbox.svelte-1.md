@@ -36,7 +36,7 @@ Sources:
 
 Later line edits: 1; latest 351f2788. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #555](https://github.com/ChurchApps/FreeShow/pull/555) (read; no item-specific matching bullet); [pr #908](https://github.com/ChurchApps/FreeShow/pull/908) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #555](https://github.com/ChurchApps/FreeShow/pull/555) (read; no item-specific matching bullet); [pr #908](https://github.com/ChurchApps/FreeShow/pull/908) (read; no item-specific matching bullet)
 
 ## D-css-transition-fea12e5b933dd78d
 
@@ -72,4 +72,22 @@ Sources:
 
 Later line edits: 0; latest 16746bcb. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #3462](https://github.com/ChurchApps/FreeShow/pull/3462) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #3462](https://github.com/ChurchApps/FreeShow/pull/3462) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #3462](https://github.com/ChurchApps/FreeShow/pull/3462) (read; no item-specific matching bullet); [pr #3462](https://github.com/ChurchApps/FreeShow/pull/3462) (read; no item-specific matching bullet)
+
+## D-hotspot-2293463580b06742
+
+[guess] Module hotspot: src/frontend/components/edit/editbox/Editbox.svelte
+
+Location: [src/frontend/components/edit/editbox/Editbox.svelte:45](../../../../src/frontend/components/edit/editbox/Editbox.svelte#L45). Category: hotspot.
+
+Added/traced: [031f4ab1](https://github.com/ChurchApps/FreeShow/commit/031f4ab12bee09fa1bf6929af995e75193f8694c) on 2024-06-07; git log -S --follow (earliest exact-text occurrence in file lineage).
+
+Unresolved: local history identifies an addition/edit but gives no item-specific motive.
+
+Sources:
+
+- [code] [source](https://github.com/ChurchApps/FreeShow/commit/031f4ab12bee09fa1bf6929af995e75193f8694c): “v1.1.7 (#555) * 📄 Added x64 mac arch due to new arm64 Github Actions machines * 📄 Added x64 mac arch to zip * 🚩 Updated Italian language * 📦 Added NDI macOS arm64 support * Ndi”
+
+Later line edits: 0; latest 031f4ab1. Full commit messages and lineage: JSON query data.
+
+GitHub: [pr #555](https://github.com/ChurchApps/FreeShow/pull/555) (read; no item-specific matching bullet); [pr #555](https://github.com/ChurchApps/FreeShow/pull/555) (read; no item-specific matching bullet)

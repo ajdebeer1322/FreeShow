@@ -13,7 +13,7 @@ No static evidence found.
 
 ## Components rendered
 
-- [src/frontend/components/drawer/info/OverlayInfo.svelte:12](../../../../src/frontend/components/drawer/info/OverlayInfo.svelte#L12) — EffectsInfo → src/frontend/components/drawer/info/EffectsInfo.svelte; props: 
+- [src/frontend/components/drawer/info/OverlayInfo.svelte:12](../../../../src/frontend/components/drawer/info/OverlayInfo.svelte#L12) — EffectsInfo → src/frontend/components/drawer/info/EffectsInfo.svelte; props:
 
 ## Stores used
 

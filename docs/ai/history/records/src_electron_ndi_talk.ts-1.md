@@ -16,6 +16,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/1f661639ea0d5eaced52d2b8772183358310ad7f): “1.4.0-beta.1 (#1419) * 🔊 Sound effects player - Set audio type music/effect - Audio editor waveform preview - Set individual playlist volume - Add more actions if wait item is add”
 
-Later line edits: 1; latest 1f661639. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 1f661639. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet); [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet)

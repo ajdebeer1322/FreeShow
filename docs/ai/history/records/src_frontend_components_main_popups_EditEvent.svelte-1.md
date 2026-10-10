@@ -16,7 +16,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6085de9e5c4d6745bb3bcdbe2fa672f3136d9e72): “v1.1.8 (#616) * 🚩 Updated languages * ✨ Optimization - Consistent saving - Better organization & naming - Better startup - Playlist names decoded * 🎨 Custom border radius - Fixed”
 
-Later line edits: 1; latest 6085de9e. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 6085de9e. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #616](https://github.com/ChurchApps/FreeShow/pull/616) (read; no item-specific matching bullet); [pr #616](https://github.com/ChurchApps/FreeShow/pull/616) (read; no item-specific matching bullet)
 
@@ -34,7 +34,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6085de9e5c4d6745bb3bcdbe2fa672f3136d9e72): “v1.1.8 (#616) * 🚩 Updated languages * ✨ Optimization - Consistent saving - Better organization & naming - Better startup - Playlist names decoded * 🎨 Custom border radius - Fixed”
 
-Later line edits: 2; latest 6085de9e. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 6085de9e. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #616](https://github.com/ChurchApps/FreeShow/pull/616) (read; no item-specific matching bullet); [pr #616](https://github.com/ChurchApps/FreeShow/pull/616) (read; no item-specific matching bullet)
 

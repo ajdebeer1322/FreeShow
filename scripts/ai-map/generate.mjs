@@ -34,7 +34,11 @@ export function generate(model = scan()) {
         }
     }
     const totals = Object.fromEntries(Object.entries(tables).map(([key]) => [key, model[key].length]))
-    const manifest = { schemaVersion: 1, sourceRevision: model.sourceRevision, compiler: model.compiler, totals, tables, sourceFingerprint: hash(json(model.files.map(file => [file.file, file.hash]))), limitations: ["Static imports only; dynamic computed paths remain unresolved.", "Store methods and $ auto-subscriptions are indexed; arbitrary helper/mutable aliases may escape analysis.", "IPC payload types are explicit contracts when available; untyped endpoints keep source expressions.", "Settings property paths with computed keys use *; store reads also index whole settings values.", "Window reachability is an upper bound across conditional branches; preview is embedded.", "Numeric timings are evaluated only for literals and simple constant arithmetic; null means dynamic, not zero."] }
+    // The manifest itself must also stay bounded, even for >1,000 source files.
+    for(const [name,files] of Object.entries(tables))if(files.length>80)tables[name]={$parts:chunks(files,80).map((part,index)=>{
+        const file=`indexes/${name}-${index+1}.json`;put(file,json(part));return file
+    })}
+    const manifest = { schemaVersion: 2, sourceRevision: model.sourceRevision, compiler: model.compiler, totals, tables, sourceFingerprint: hash(json(model.files.map(file => [file.file, file.hash]))), limitations: ["Static imports only; dynamic computed paths remain unresolved.", "Store methods and $ auto-subscriptions are indexed; arbitrary helper/mutable aliases may escape analysis.", "IPC payload types are explicit contracts when available; untyped endpoints keep source expressions.", "Settings property paths with computed keys use *; store reads also index whole settings values.", "Window reachability is an upper bound across conditional branches; preview is embedded.", "Numeric timings are evaluated only for literals and simple constant arithmetic; null means dynamic, not zero."] }
     put("manifest.json", json(manifest))
     const front = `${GENERATED}/README.md`
     put("README.md", heading("Generated maps") + Object.entries(totals).map(([key,count]) => `- [${key}: ${count}](${key}/README.md)`).join("\n") + "\n\n" + manifest.limitations.map(line => `- ${line}`).join("\n") + "\n")
@@ -54,7 +58,13 @@ export function generate(model = scan()) {
             }
             links.push(`- [${entry.id || entry.file || entry.name}](${key}.md)`)
         }
-        put(`${table}/README.md`, heading(table) + links.join("\n") + "\n")
+        if(links.length<=80)put(`${table}/README.md`,heading(table)+links.join("\n")+"\n")
+        else {
+            const indexes=chunks(links,80).map((part,index)=>{
+                const file=`index-${index+1}.md`;put(`${table}/${file}`,heading(`${table} index ${index+1}`)+part.join("\n")+"\n");return `- [Entries ${index*80+1}–${index*80+part.length}](${file})`
+            })
+            put(`${table}/README.md`,heading(table)+indexes.join("\n")+"\n")
+        }
     }
     pages("stores",model.stores,(store,doc)=>heading(store.id)+`Definition: ${sourceLink(store,doc)}; ${store.factory}; type \`${escape(store.type)}\`.\n\nSaved: ${store.persistence.length ? "yes, with the listed transformations" : "no direct save-object evidence (not proof of transient-only lifetime)"}.\n\n## Reads\n\n${list(store.reads,doc)}\n\n## Writes\n\n${list(store.writes,doc)}\n\n## Transport\n\n${list(store.transports,doc,item=>`${item.role} ${item.channel}/${item.keys.join(",")} — ${item.relation}`)}\n\n## Persistence\n\n${list(store.persistence,doc,item=>`${item.group}/${item.key}${item.transformed ? " (transformed)" : ""}`)}\n`)
     pages("channels",model.channels,(channel,doc)=>{

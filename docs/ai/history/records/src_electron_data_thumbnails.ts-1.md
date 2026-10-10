@@ -142,7 +142,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/b5946b2dafb6207a5372eec5f9943ce283e3a508): “1.5.7 (#2839) * Added back forceLogin - Fixed on B1Admin * Fixed clear background not working if no output screen exists * Updated languages * fix: improve split long verses with t”
 
-Later line edits: 4; latest b5946b2d. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest b5946b2d. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet); [pr #2839](https://github.com/ChurchApps/FreeShow/pull/2839) (read; no item-specific matching bullet)
 
@@ -160,7 +160,7 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/5c94f2329fff57a999237a72a3c21eb7302ec055): “1.6.0-beta.2 (#3090) * Updated languages * Better media item cropping #2856 * Corrected beta changelog #3015 * Item resize works better when rotated #2999 * Refactor chord parsing ”
 
-Later line edits: 2; latest 5c94f232. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 5c94f232. Full commit messages and lineage: JSON query data.
 
 GitHub: [pr #3090](https://github.com/ChurchApps/FreeShow/pull/3090) (read; no item-specific matching bullet); [pr #3090](https://github.com/ChurchApps/FreeShow/pull/3090) (read; no item-specific matching bullet)
 
@@ -180,7 +180,7 @@ Sources:
 
 Later line edits: 1; latest 1f661639. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1117](https://github.com/ChurchApps/FreeShow/pull/1117) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet)
+GitHub: [pr #1117](https://github.com/ChurchApps/FreeShow/pull/1117) (read; no item-specific matching bullet); [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet)
 
 ## D-timer-199572256a718081
 
@@ -199,7 +199,7 @@ Sources:
 
 Later line edits: 1; latest 1f661639. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #1117](https://github.com/ChurchApps/FreeShow/pull/1117) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet)
+GitHub: [pr #1117](https://github.com/ChurchApps/FreeShow/pull/1117) (read; no item-specific matching bullet); [pr #1419](https://github.com/ChurchApps/FreeShow/pull/1419) (read; no item-specific matching bullet)
 
 ## D-workaround-867d49b739600d36
 
@@ -215,6 +215,6 @@ Sources:
 
 - [code] [source](https://github.com/ChurchApps/FreeShow/commit/6d5ff9ac922f833883a388da0d3c2c528ee60813): “v1.1.9 (#620) * 📝 Updated playwright * ✔ Fixed freeze when adding new action and media tab was open - Fixed slide background showing when clear action was set - Fixed update popup”
 
-Later line edits: 1; latest 6d5ff9ac. Full commit messages and lineage: JSON query data.
+Later line edits: 0; latest 6d5ff9ac. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #620](https://github.com/ChurchApps/FreeShow/pull/620) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #620](https://github.com/ChurchApps/FreeShow/pull/620) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #620](https://github.com/ChurchApps/FreeShow/pull/620) (read; no item-specific matching bullet); [pr #620](https://github.com/ChurchApps/FreeShow/pull/620) (read; no item-specific matching bullet)

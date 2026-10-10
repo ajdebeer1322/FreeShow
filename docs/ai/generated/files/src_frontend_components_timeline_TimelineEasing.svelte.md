@@ -27,7 +27,7 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/timeline/TimelineEasing.svelte:439](../../../../src/frontend/components/timeline/TimelineEasing.svelte#L439) — css-transition-e45c5060817e2ecb: css-transition = 150 ms (background-color 0.15s ease); 
+- [src/frontend/components/timeline/TimelineEasing.svelte:439](../../../../src/frontend/components/timeline/TimelineEasing.svelte#L439) — css-transition-e45c5060817e2ecb: css-transition = 150 ms (background-color 0.15s ease);
 
 ## Workarounds
 

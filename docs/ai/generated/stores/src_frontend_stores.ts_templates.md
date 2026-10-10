@@ -149,7 +149,7 @@ Saved: yes, with the listed transformations.
 - [src/frontend/utils/createData.ts:563](../../../../src/frontend/utils/createData.ts#L563) — templates.set({ ...get(templates), ...getDefaultTemplates() })
 - [src/frontend/utils/createData.ts:580](../../../../src/frontend/utils/createData.ts#L580) — templates.set({ ...get(templates), ...templatesList })
 - [src/frontend/utils/createData.ts:587](../../../../src/frontend/utils/createData.ts#L587) — templates.update((a) => { Object.keys(defaultTemplates).forEach((id) => { // if deleted or exists, skip if (deletedIds.includes(id) \|\| a&#91;id&#93;) return a&#91;id&#93; = defaultTemplates&#91;id&#93; })
-- [src/frontend/utils/createData.ts:1394](../../../../src/frontend/utils/createData.ts#L1394) — templates.update((a) => { a.double = { isDefault: true, name: "Double", color: null, // "#FF6543", category: "song", items: &#91; { style: "top: 550px;left: 30px;width: 1860px;height: 
+- [src/frontend/utils/createData.ts:1394](../../../../src/frontend/utils/createData.ts#L1394) — templates.update((a) => { a.double = { isDefault: true, name: "Double", color: null, // "#FF6543", category: "song", items: &#91; { style: "top: 550px;left: 30px;width: 1860px;height:
 - [src/frontend/utils/receivers.ts:242](../../../../src/frontend/utils/receivers.ts#L242) — templates.set(a)
 
 ## Transport

@@ -18,7 +18,7 @@ Sources:
 
 Later line edits: 0; latest 655fca42. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2265](https://github.com/ChurchApps/FreeShow/pull/2265) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2265](https://github.com/ChurchApps/FreeShow/pull/2265) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2265](https://github.com/ChurchApps/FreeShow/pull/2265) (read; no item-specific matching bullet); [pr #2265](https://github.com/ChurchApps/FreeShow/pull/2265) (read; no item-specific matching bullet)
 
 ## D-css-transition-f88a0db3aeef5520
 
@@ -36,4 +36,4 @@ Sources:
 
 Later line edits: 0; latest 655fca42. Full commit messages and lineage: JSON query data.
 
-GitHub: [pr #2265](https://github.com/ChurchApps/FreeShow/pull/2265) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.); [pr #2265](https://github.com/ChurchApps/FreeShow/pull/2265) (Unauthenticated GitHub API quota reserve reached; login required for remaining sources.)
+GitHub: [pr #2265](https://github.com/ChurchApps/FreeShow/pull/2265) (read; no item-specific matching bullet); [pr #2265](https://github.com/ChurchApps/FreeShow/pull/2265) (read; no item-specific matching bullet)

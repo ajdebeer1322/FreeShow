@@ -63,7 +63,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/components/system/SelectElem.svelte:49](../../../../src/frontend/components/system/SelectElem.svelte#L49) — timer-dc6c429a12742424: setTimeout = 500 ms (TRIGGER_TIMEOUT); 
+- [src/frontend/components/system/SelectElem.svelte:49](../../../../src/frontend/components/system/SelectElem.svelte#L49) — timer-dc6c429a12742424: setTimeout = 500 ms (TRIGGER_TIMEOUT);
 - [src/frontend/components/system/SelectElem.svelte:67](../../../../src/frontend/components/system/SelectElem.svelte#L67) — timer-e3674dff4196a3ff: setTimeout = 50 ms (50); // select after show is opened (because a slide is selected in the new show)
 
 ## Workarounds

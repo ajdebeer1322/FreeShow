@@ -9,6 +9,6 @@ No static evidence found.
 ## Rendered components and props
 
 - [src/frontend/components/show/ShowTools.svelte:48](../../../../src/frontend/components/show/ShowTools.svelte#L48) — Tabs → src/frontend/components/main/Tabs.svelte; {tabs}; bind:active
-- [src/frontend/components/show/ShowTools.svelte:52](../../../../src/frontend/components/show/ShowTools.svelte#L52) — SlideGroups → src/frontend/components/show/tools/SlideGroups.svelte; 
-- [src/frontend/components/show/ShowTools.svelte:55](../../../../src/frontend/components/show/ShowTools.svelte#L55) — Media → src/frontend/components/show/tools/Media.svelte; 
-- [src/frontend/components/show/ShowTools.svelte:59](../../../../src/frontend/components/show/ShowTools.svelte#L59) — Metadata → src/frontend/components/show/tools/Metadata.svelte; 
+- [src/frontend/components/show/ShowTools.svelte:52](../../../../src/frontend/components/show/ShowTools.svelte#L52) — SlideGroups → src/frontend/components/show/tools/SlideGroups.svelte;
+- [src/frontend/components/show/ShowTools.svelte:55](../../../../src/frontend/components/show/ShowTools.svelte#L55) — Media → src/frontend/components/show/tools/Media.svelte;
+- [src/frontend/components/show/ShowTools.svelte:59](../../../../src/frontend/components/show/ShowTools.svelte#L59) — Metadata → src/frontend/components/show/tools/Metadata.svelte;

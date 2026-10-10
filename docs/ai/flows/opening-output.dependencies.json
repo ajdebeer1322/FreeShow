@@ -1,0 +1,405 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/frontend/components/main/Top.svelte",
+    "src/frontend/components/helpers/output.ts",
+    "src/electron/index.ts",
+    "src/electron/output/OutputHelper.ts",
+    "src/electron/output/helpers/OutputVisibility.ts",
+    "src/electron/output/helpers/OutputLifecycle.ts",
+    "src/frontend/utils/listeners.ts",
+    "src/frontend/MainOutput.svelte"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-51ac636915599bca",
+      "file": "src/electron/index.ts",
+      "line": 111,
+      "document": "docs/ai/history/records/src_electron_index.ts-1.md"
+    },
+    {
+      "id": "D-timer-3fc1a9fe04ea67e0",
+      "file": "src/electron/index.ts",
+      "line": 112,
+      "document": "docs/ai/history/records/src_electron_index.ts-1.md"
+    },
+    {
+      "id": "D-timer-5db0bffd18569125",
+      "file": "src/electron/index.ts",
+      "line": 152,
+      "document": "docs/ai/history/records/src_electron_index.ts-1.md"
+    },
+    {
+      "id": "D-timer-120d1fdece6c0384",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 46,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-e60d621c70482ad8",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 49,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-b6b629a5a0feaf6f",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 116,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-798c4a9bcba52b97",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 278,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-5d1ac0838e158089",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 529,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-d7bcb2969f87a9ae",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 628,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-4e19a3f0a3b7b86b",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 647,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-4ef794dcf06d3262",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 840,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-c5f588d6c6928899",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 842,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-7839a135f26f609e",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 892,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-timer-6c606adee9f9fe54",
+      "file": "src/frontend/MainOutput.svelte",
+      "line": 38,
+      "document": "docs/ai/history/records/src_frontend_MainOutput.svelte-1.md"
+    },
+    {
+      "id": "D-transition-381f42150b26fd9e",
+      "file": "src/frontend/MainOutput.svelte",
+      "line": 70,
+      "document": "docs/ai/history/records/src_frontend_MainOutput.svelte-1.md"
+    },
+    {
+      "id": "D-timer-d0086bcfd0fe5a3e",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 198,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-timer-6a6776591c6f13c0",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 202,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-timer-d61e1db10e4232d4",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 228,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-timer-1f9b8e69711ab128",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 465,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-timer-bb92282b1e49c938",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 579,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-timer-3289ae6e2b7f01d5",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 744,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-request-budget-38893430dafba01e",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 1136,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-request-budget-242311a284e7fd1d",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 1140,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-timer-03ccf6b182b056ea",
+      "file": "src/frontend/components/main/Top.svelte",
+      "line": 35,
+      "document": "docs/ai/history/records/src_frontend_components_main_Top.svelte-1.md"
+    },
+    {
+      "id": "D-timer-4879dfc2cdaf79c8",
+      "file": "src/frontend/components/main/Top.svelte",
+      "line": 46,
+      "document": "docs/ai/history/records/src_frontend_components_main_Top.svelte-1.md"
+    },
+    {
+      "id": "D-transition-b97c45ddc8069df1",
+      "file": "src/frontend/components/main/Top.svelte",
+      "line": 149,
+      "document": "docs/ai/history/records/src_frontend_components_main_Top.svelte-1.md"
+    },
+    {
+      "id": "D-timer-1f9d8d350248523a",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 76,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-91237ea1937c25d4",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 88,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-f1182f79d2ac9331",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 96,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-30c6cdc96dd587ad",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 125,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-f2496c195fbf5d2d",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 131,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-78a49b00f2489896",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 136,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-d36c909e79ba2d5a",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 156,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-35661c215f79ee35",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 161,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-f7dbfded530d6376",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 167,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-4094713e914b0c42",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 184,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-702f0910e390b86a",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 195,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-756c345185aae765",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 207,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-f66ff4e5cd000595",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 228,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-421770ee60f90a38",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 284,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-b21439fccd301942",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 298,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-7d05d9f1086f4e8c",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 424,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-1.md"
+    },
+    {
+      "id": "D-timer-ad64a7bf4c0509cb",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 430,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-timer-3c77de0d8fbf7697",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 461,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-timer-3dbfba5225c7a03e",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 522,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-workaround-dd6d6214d6a7e928",
+      "file": "src/frontend/MainOutput.svelte",
+      "line": 35,
+      "document": "docs/ai/history/records/src_frontend_MainOutput.svelte-1.md"
+    },
+    {
+      "id": "D-workaround-54e5a3124de0a074",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 391,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-workaround-b5f5674d4434818f",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 402,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-workaround-d6148c554c3c02e6",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 974,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-workaround-229f80072a307a8f",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 1101,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-workaround-1b750c909fa8ae17",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 1155,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-workaround-7f9dddc86d4745e0",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 1449,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-workaround-7d2d98fea6e8561e",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 1570,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-workaround-5ddc66dd8df53cc0",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 106,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-workaround-32fb45a3b7711914",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 108,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-workaround-fddd3fe5718c2308",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 115,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-workaround-b4e91c23d7618c03",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 176,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-workaround-b7e01b475601dac8",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 257,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-workaround-a7bf816c64d40cd8",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 454,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-hotspot-e29021bf61ba180d",
+      "file": "src/electron/output/OutputHelper.ts",
+      "line": 15,
+      "document": "docs/ai/history/records/src_electron_output_OutputHelper.ts-1.md"
+    },
+    {
+      "id": "D-hotspot-d96d73d105eca7cb",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 33,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md"
+    },
+    {
+      "id": "D-hotspot-33fb77333b98f198",
+      "file": "src/electron/output/helpers/OutputVisibility.ts",
+      "line": 10,
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputVisibility.ts-1.md"
+    },
+    {
+      "id": "D-hotspot-7af11be48814e880",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 76,
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md"
+    },
+    {
+      "id": "D-hotspot-5bda320764e68b73",
+      "file": "src/frontend/utils/listeners.ts",
+      "line": 74,
+      "document": "docs/ai/history/records/src_frontend_utils_listeners.ts-2.md"
+    },
+    {
+      "id": "D-fork-e5f66233fa0187a2",
+      "file": "src/frontend/MainOutput.svelte",
+      "line": 70,
+      "document": "docs/ai/history/records/src_frontend_MainOutput.svelte-1.md"
+    }
+  ]
+}

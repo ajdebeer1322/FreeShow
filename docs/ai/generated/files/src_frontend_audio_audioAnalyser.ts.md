@@ -52,7 +52,7 @@ No static evidence found.
 
 ## Timing
 
-- [src/frontend/audio/audioAnalyser.ts:141](../../../../src/frontend/audio/audioAnalyser.ts#L141) — timer-5c88db9678bfd2b2: setTimeout = 100 ms (100); 
+- [src/frontend/audio/audioAnalyser.ts:141](../../../../src/frontend/audio/audioAnalyser.ts#L141) — timer-5c88db9678bfd2b2: setTimeout = 100 ms (100);
 
 ## Workarounds
 

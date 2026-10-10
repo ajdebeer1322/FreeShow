@@ -23,7 +23,7 @@ None detected.
 
 ## Timing
 
-- [src/electron/contentProviders/canva/CanvaContentLibrary.ts:459](../../../../src/electron/contentProviders/canva/CanvaContentLibrary.ts#L459) — timer-c47591f14fd4a951: setTimeout = 1000 ms (1000); 
+- [src/electron/contentProviders/canva/CanvaContentLibrary.ts:459](../../../../src/electron/contentProviders/canva/CanvaContentLibrary.ts#L459) — timer-c47591f14fd4a951: setTimeout = 1000 ms (1000);
 
 ## Workarounds
 

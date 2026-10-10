@@ -40,14 +40,14 @@ None detected.
 
 ## Timing
 
-- [src/electron/data/thumbnails.ts:55](../../../../src/electron/data/thumbnails.ts#L55) — poll-interval-364b11aedd3bb631: poll-interval = 50 ms (50); 
-- [src/electron/data/thumbnails.ts:55](../../../../src/electron/data/thumbnails.ts#L55) — poll-timeout-ef5634ee5533652b: poll-timeout = 10000 ms (10000); 
-- [src/electron/data/thumbnails.ts:74](../../../../src/electron/data/thumbnails.ts#L74) — poll-interval-e784b03989e389c2: poll-interval = 50 ms (50); 
-- [src/electron/data/thumbnails.ts:74](../../../../src/electron/data/thumbnails.ts#L74) — poll-timeout-8c132ced2daa0bde: poll-timeout = 10000 ms (10000); 
-- [src/electron/data/thumbnails.ts:215](../../../../src/electron/data/thumbnails.ts#L215) — timer-705ce4bac411b1b1: setTimeout = 15000 ms (CAPTURE_TIMEOUT); 
+- [src/electron/data/thumbnails.ts:55](../../../../src/electron/data/thumbnails.ts#L55) — poll-interval-364b11aedd3bb631: poll-interval = 50 ms (50);
+- [src/electron/data/thumbnails.ts:55](../../../../src/electron/data/thumbnails.ts#L55) — poll-timeout-ef5634ee5533652b: poll-timeout = 10000 ms (10000);
+- [src/electron/data/thumbnails.ts:74](../../../../src/electron/data/thumbnails.ts#L74) — poll-interval-e784b03989e389c2: poll-interval = 50 ms (50);
+- [src/electron/data/thumbnails.ts:74](../../../../src/electron/data/thumbnails.ts#L74) — poll-timeout-8c132ced2daa0bde: poll-timeout = 10000 ms (10000);
+- [src/electron/data/thumbnails.ts:215](../../../../src/electron/data/thumbnails.ts#L215) — timer-705ce4bac411b1b1: setTimeout = 15000 ms (CAPTURE_TIMEOUT);
 - [src/electron/data/thumbnails.ts:229](../../../../src/electron/data/thumbnails.ts#L229) — poll-interval-b64790bb1b7bc914: poll-interval = 50 ms (50); // console.time("CAPTURING: " + captureIndex + " - " + data.input) // generate a max amount at the same time // while (m
-- [src/electron/data/thumbnails.ts:229](../../../../src/electron/data/thumbnails.ts#L229) — poll-timeout-788694d1cd8085cb: poll-timeout = 5000 ms (5000); // console.time("CAPTURING: " + captureIndex + " - " + data.input) // generate a max amount at the same time // while 
-- [src/electron/data/thumbnails.ts:263](../../../../src/electron/data/thumbnails.ts#L263) — timer-130e28da265a4409: setTimeout = 0 ms (omitted); 
+- [src/electron/data/thumbnails.ts:229](../../../../src/electron/data/thumbnails.ts#L229) — poll-timeout-788694d1cd8085cb: poll-timeout = 5000 ms (5000); // console.time("CAPTURING: " + captureIndex + " - " + data.input) // generate a max amount at the same time // while
+- [src/electron/data/thumbnails.ts:263](../../../../src/electron/data/thumbnails.ts#L263) — timer-130e28da265a4409: setTimeout = 0 ms (omitted);
 - [src/electron/data/thumbnails.ts:295](../../../../src/electron/data/thumbnails.ts#L295) — request-budget-7476f75a4aae7b2a: request-budget = dynamic ms (unknown); // Large PDFs can take significantly longer than the default 15s IPC timeout.
 - [src/electron/data/thumbnails.ts:410](../../../../src/electron/data/thumbnails.ts#L410) — timer-32d45152b0a52a4b: setTimeout = 3000 ms (3000); // send correct output data after load
 - [src/electron/data/thumbnails.ts:417](../../../../src/electron/data/thumbnails.ts#L417) — timer-199572256a718081: setTimeout = 3000 ms (3000); // wait for content load

@@ -25,9 +25,9 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/system/Autoscroll.svelte:16](../../../../src/frontend/components/system/Autoscroll.svelte#L16) — timer-12577529fe7c7bf2: setTimeout = dynamic ms (smoothTimeout); 
+- [src/frontend/components/system/Autoscroll.svelte:16](../../../../src/frontend/components/system/Autoscroll.svelte#L16) — timer-12577529fe7c7bf2: setTimeout = dynamic ms (smoothTimeout);
 - [src/frontend/components/system/Autoscroll.svelte:44](../../../../src/frontend/components/system/Autoscroll.svelte#L44) — timer-211dfb0b3383d4e7: setTimeout = dynamic ms (timeout); // don't scroll if already in view // if (offset > elem.scrollTop && offset < elem.scrollTop + elem.clientHeight) return
-- [src/frontend/components/system/Autoscroll.svelte:56](../../../../src/frontend/components/system/Autoscroll.svelte#L56) — timer-677658d43b93817c: setTimeout = dynamic ms (timeout + 400); 
+- [src/frontend/components/system/Autoscroll.svelte:56](../../../../src/frontend/components/system/Autoscroll.svelte#L56) — timer-677658d43b93817c: setTimeout = dynamic ms (timeout + 400);
 
 ## Workarounds
 

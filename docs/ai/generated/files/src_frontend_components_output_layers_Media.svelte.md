@@ -28,8 +28,8 @@ None detected.
 
 ## Timing
 
-- [src/frontend/components/output/layers/Media.svelte:49](../../../../src/frontend/components/output/layers/Media.svelte#L49) — timer-05e5abc802c44755: setTimeout = dynamic ms ((retryCount + 1) * 200); 
-- [src/frontend/components/output/layers/Media.svelte:75](../../../../src/frontend/components/output/layers/Media.svelte#L75) — css-transition-4fd64c1e2d064b4a: css-transition = 500 ms (opacity 0.5s); 
+- [src/frontend/components/output/layers/Media.svelte:49](../../../../src/frontend/components/output/layers/Media.svelte#L49) — timer-05e5abc802c44755: setTimeout = dynamic ms ((retryCount + 1) * 200);
+- [src/frontend/components/output/layers/Media.svelte:75](../../../../src/frontend/components/output/layers/Media.svelte#L75) — css-transition-4fd64c1e2d064b4a: css-transition = 500 ms (opacity 0.5s);
 
 ## Workarounds
 
