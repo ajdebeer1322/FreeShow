@@ -6,7 +6,7 @@ This is a source-navigation and change-planning reference, not end-user document
 
 - Application: FreeShow, GPL-3.0, an Electron presentation application for lyrics, images, videos, scripture, audio, overlays, stage displays, remote control, and external output integrations.
 - Upstream: `ChurchApps/FreeShow`. This checkout was cloned from the fork `ajdebeer1322/FreeShow`; verify `git remote -v` before publishing anything.
-- Stack in `package.json`: Svelte 3, TypeScript 4.9, Vite 4, Electron 37; use the lockfile rather than assuming latest APIs.
+- Stack in `package.json`: Svelte 5.57 (components still run in Svelte 5 legacy mode, see "Svelte 5 legacy mode" below), TypeScript 5.9, Vite 8 with `@sveltejs/vite-plugin-svelte` 7, Vitest 4, svelte-check 4, Electron 37; use the lockfile rather than assuming latest APIs.
 - Four code boundaries: Electron main process (`src/electron`), renderer (`src/frontend`), browser clients served by the app (`src/server`), and shared contracts (`src/types`).
 - Electron owns filesystem access, app windows, devices, native modules, servers, and persistence. The renderer owns reactive UI, editing/history, and presentation decisions. Shared IPC contracts connect them. Browser clients have their own entrypoints and are not the desktop renderer.
 
@@ -190,7 +190,7 @@ Text-line backgrounds are suppressed on empty rendered lines by `components/slid
 Repeated identical slides (e.g. three Verse 1 in a row) hold on output without a fade: `components/output/layers/SlideContent.svelte::updateItems` leaves identical text items untouched (same lines, no `{dynamic}` values, already shown) and skips the hide/show cycle, and `transitions/SlideItemTransition.svelte::startTransition` updates the slide refs in place instead of stacking a new transition when the item and lines are unchanged.
 
 - Reuse `MaterialButton`, `T`, existing icons and CSS theme variables. English translation IDs are in `public/lang/en.json`; prefer existing strings for unchanged actions.
-- Follow Svelte 3 syntax and existing reactive store patterns; do not introduce Svelte 5 APIs.
+- Follow the existing legacy component syntax (`export let`, `$:`, `on:`, `<slot>`, `createEventDispatcher`, stores) and do not convert components to runes (`$state`, `$props`, `$derived`) as part of other work. Svelte 5 specifics are listed in "Svelte 5 legacy mode" below.
 - Prettier config: `config/formatting/.prettierrc.yaml` (4 spaces, double quotes, no semicolons, wide print width). Format only changed files to avoid unrelated churn.
 - Search with `rg --files` / `rg -n`. Useful starting searches:
 
@@ -210,6 +210,22 @@ Change routing:
 - IPC feature: shared enum/payload + preload permissions if needed + both handlers + listener cleanup.
 - Remote/stage feature: `src/server` client + its Electron server/IPC handler; desktop components are not automatically reused.
 - Native output feature: Electron integration + lifecycle/formats/buffers + renderer settings/IPC; validate with actual native dependencies/devices.
+
+## Svelte 5 legacy mode
+
+The app was moved from Svelte 3 to Svelte 5 as a foundation step only. Components were **not** converted to runes: every component is an old-style component that Svelte 5 compiles in legacy mode. Keep it that way until a component is migrated on purpose.
+
+- Tooling: `@sveltejs/vite-plugin-svelte` 7 + Vite 8 (rolldown). `vitePreprocess()` only handles styles, TypeScript is stripped by the Svelte compiler itself. Only plain CSS and TypeScript are used (no SCSS/PostCSS). `svelte.config.mjs` is used by svelte-check/editor tooling, the Vite configs set their own options.
+- Entry points use `mount(App, { target })` from `svelte` (`src/frontend/main.ts`, `src/server/*/main.ts`). Svelte 5 components are not classes; `new Component()`, `$set`, `$on` and `$destroy` do not exist. Tests that need them use `config/testing/legacyMount.ts` (`createClassComponent` from `svelte/legacy`).
+- **Transitions:** Svelte 4+ made `transition:`/`in:`/`out:` local (only played when their own block changes). Svelte 3 played them when any parent block was added or removed. Every existing directive therefore has `|global` to keep the old behaviour, including the `custom` helper in `utils/transitions.ts`. Add `|global` to new ones as well when they have to play for parent blocks. The one explicit `|local` in `server/remote/components/show/Slide.svelte` was left as it was.
+- **`{#key}` blocks:** Svelte 5 keeps the branch of a key value and revives it when the same value returns while the old branch is still fading out (Svelte 3 always created a new branch). The output engine toggles `show` true → false → true to hide and re-show items (`output/layers/SlideContent.svelte`, `output/layers/Overlay.svelte`), which stacked every previous slide in the output. Those two components key on a counter (`showKey`, bumped by `setShow()` on every change) instead of the boolean. Use a counter key for any new hide/show cycle with outro transitions.
+- **Store shadowing:** `{@const connections = ...}` next to a `$connections` store subscription is an error in Svelte 5 (`store_invalid_scoped_subscription`); use a different local name.
+- **Scoped CSS:** Svelte 5 removes selectors it cannot match inside the component (`css_unused_selector`), including `:has()` and ancestor selectors that depend on slotted/child markup. Wrap the part that comes from another component in `:global(...)` (`FloatingInputs.svelte`, `Popup.svelte`, `Tabs.svelte`). Only the first scoped class of a selector counts for specificity now (later ones use `:where`).
+- `derived_inert` console warning: the `out:custom` options in `output/transitions/OutputTransition.svelte` read props of a block that is being removed. It is Svelte telling the value may be stale; the output timing was compared against Svelte 3 and matched, but it is expected in the console until that code is reworked.
+- Build log filters (vite `onwarn`): `a11y_*` and `element_invalid_self_closing_tag` warnings are not printed by the Vite builds; svelte-check still reports them.
+- TypeScript: `src/frontend/tsconfig.json` sets `strict: false` and both frontend and server `verbatimModuleSyntax: false` to keep the behaviour of `@tsconfig/svelte` 2 (non-`type` imports of types are still elided). `src/server/tsconfig.json` has `allowJs` for the JS-only `VirtualList.svelte`. Server IIFE bundles define `import.meta.url` as `document.baseURI` (`config/building/vite.config.servers.mjs`).
+- Removed in the upgrade: `config/building/rollup.config.mjs`, `rollup-plugin-svelte`, `svelte-inspector`, `svelte-preprocess` and `eslint-plugin-svelte3`/`npm run lint:svelte` (Svelte 3 only; `config/linting/eslint.svelte.js` is kept as the rule list for a replacement). `esbuild` is an explicit devDependency now (used by `config/testing/worshipToolsExtract.test.ts`).
+- Workarounds labelled "svelte bug" (`OutputTransition.svelte`, `SlideContent.svelte`, `SlideItemTransition.svelte`) were intentionally left untouched; they are the first candidates when a component is migrated.
 
 ## Build and test commands
 
@@ -243,8 +259,8 @@ These are environment/baseline observations, not permanent project guarantees:
 - For renderer/unit/Electron UI checks, dependencies were installed with `npm ci --ignore-scripts`, then `node node_modules/electron/install.js`. This does not rebuild native integration modules and is not evidence that packaging/device integrations work.
 - Frontend/server/Electron compilation succeeded. Full postbuild stopped on absent `node_modules/@discordjs/opus/prebuild` after skipped native scripts. Resolve native install before claiming a packaged app build.
 - Build scripts rewrite tracked `public/index.html` between dev and production entrypoints. Inspect/revert incidental generated HTML changes before handing over a feature diff; rebuild for UI tests when needed.
-- The merged beta 4 baseline and this fork both report 186 Svelte errors, 60 warnings and 238 hints (8 GB Node heap). No new diagnostic locations; one existing EditValues union overload message can reorder its types. Compare against the same base/dependencies when assessing changes.
-- Repository-wide formatting had existing failures (41 files); scoped checks are useful for avoiding unrelated formatting edits.
+- On Svelte 3 / svelte-check 2 the fork reported 186 Svelte errors, 60 warnings and 243 hints (8 GB Node heap). After the Svelte 5 upgrade svelte-check 4 reports 31 errors (29 of the old ones plus 2 new `TemplateStyle.svelte` prop type errors) and 317 warnings (165 `element_invalid_self_closing_tag`, most of the rest `a11y_*`); it only prints hints with `--threshold hint`. Compare against the same base/dependencies when assessing changes.
+- Repository-wide formatting has existing failures (36 files, unchanged by the Svelte 5 upgrade); scoped checks are useful for avoiding unrelated formatting edits.
 - Targeted ESLint/stylelint on changed source also reported existing diagnostics. Compare baseline locations, not just global counts.
 - All 244 unit checks pass (211 beta 4 checks plus linked-slide grouping, copy naming, media inspector, crop geometry, filter string, default color and next timer helpers), including both normal and legacy Focus Mode destination cases and Messages tests. All three Electron UI tests pass (startup/group editing, continuous Show drag/drop and Messages). The latter two cover native edge insertion/center background replacement, live-output isolation, arbitrary tokens, gradient shapes, animated scrolling in preview/output, undo/redo and definition-only persistence. Check current output rather than assuming historical test counts.
 - Beta 4 added sync result arrays used by `syncData::finish`. Initialize `downloadedShowIds` / `replacedShows` before early upload/empty-cloud/error returns; otherwise those flows throw a temporal-dead-zone error. Existing cloud sync tests cover this.
