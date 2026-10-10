@@ -104,3 +104,101 @@ export function compareToGolden(actual: ScenarioResult, golden: ScenarioResult):
     if (actual.lastChange > golden.lastChange * 1.5 + 300) problems.push(`last change after ${actual.lastChange} ms, expected about ${golden.lastChange} ms`)
     return problems
 }
+
+// ---- Auto size probe ----
+// Records, once per frame, every visible text box of the output with its effective opacity and rendered font size, so
+// a test can tell when new text is fully visible and whether it was ever visible at a size it did not keep.
+
+export type ProbeBox = { text: string; opacity: number; fontSize: number }
+export type ProbeFrame = { at: number; boxes: ProbeBox[] }
+export type ProbeSummary = {
+    // ms from the activation (key press / click) until the target text was first visible / fully visible, null if never
+    firstVisible: number | null
+    fullyVisible: number | null
+    // font sizes (px) the target text was visible at (opacity above 0.02), in order of appearance
+    sizes: number[]
+    // true when the target text was visible at a size other than the one it ended with
+    flash: boolean
+    firstFrameSize: number | null
+    finalSize: number | null
+    // text boxes visible at the same time: at most (an outgoing and an incoming one) and when it has settled
+    maxBoxes: number
+    finalBoxes: number
+}
+
+// Runs inside the output window.
+export function startProbe() {
+    const w = window as any
+    w.__probe = []
+    const origin = performance.timeOrigin
+
+    function collect(): ProbeBox[] {
+        const boxes: ProbeBox[] = []
+        const seen = new Map<Element, { text: string; opacity: number; fontSize: number }>()
+        document.querySelectorAll<HTMLElement>(".textContainer").forEach((span) => {
+            const text = (span.textContent || "").trim()
+            if (!text) return
+            let opacity = 1
+            for (let el: Element | null = span; el; el = el.parentElement) {
+                const style = getComputedStyle(el)
+                if (style.display === "none" || style.visibility === "hidden") return
+                opacity *= parseFloat(style.opacity || "1")
+            }
+            const fontSize = parseFloat(getComputedStyle(span).fontSize) || 0
+            const box = span.closest(".item") || span
+            const previous = seen.get(box)
+            if (previous) {
+                previous.text += " " + text
+                previous.fontSize = Math.max(previous.fontSize, fontSize)
+            } else {
+                const entry = { text, opacity, fontSize }
+                seen.set(box, entry)
+                boxes.push(entry)
+            }
+        })
+        return boxes
+    }
+
+    const loop = () => {
+        w.__probe.push({ at: origin + performance.now(), boxes: collect() })
+        w.__probeRaf = requestAnimationFrame(loop)
+    }
+    loop()
+}
+
+export function stopProbe(): ProbeFrame[] {
+    const w = window as any
+    cancelAnimationFrame(w.__probeRaf)
+    return w.__probe
+}
+
+// `activation` is the epoch time (Date.now()) the slide was activated, `target` a part of the new text.
+export function summarizeProbe(frames: ProbeFrame[], activation: number, target: string): ProbeSummary {
+    const sizes: number[] = []
+    let firstVisible: number | null = null
+    let fullyVisible: number | null = null
+    let firstFrameSize: number | null = null
+    let finalSize: number | null = null
+
+    let maxBoxes = 0
+    for (const frame of frames) {
+        if (frame.at < activation) continue
+        maxBoxes = Math.max(maxBoxes, frame.boxes.filter((b) => b.opacity > 0.02).length)
+        const box = frame.boxes.find((b) => b.text.includes(target))
+        if (!box) continue
+        if (box.opacity > 0.02) {
+            const size = Math.round(box.fontSize * 2) / 2
+            if (firstVisible === null) {
+                firstVisible = Math.round(frame.at - activation)
+                firstFrameSize = size
+            }
+            if (!sizes.length || sizes[sizes.length - 1] !== size) sizes.push(size)
+            finalSize = size
+        }
+        if (fullyVisible === null && box.opacity > 0.98) fullyVisible = Math.round(frame.at - activation)
+    }
+
+    const last = frames[frames.length - 1]
+    const finalBoxes = last ? last.boxes.filter((b) => b.opacity > 0.02).length : 0
+    return { firstVisible, fullyVisible, sizes, flash: new Set(sizes).size > 1, firstFrameSize, finalSize, maxBoxes, finalBoxes }
+}

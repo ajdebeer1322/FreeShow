@@ -11,7 +11,7 @@
     export let transitionEnabled = false
     export let transitioningBetween = false
     export let isClearing = false
-    // outgoing items hold for auto size delay while incoming content calculates font size
+    // outgoing items hold for auto size delay while incoming content calculates font size (false when the size is known)
     export let incomingNeedsAutoSize = true
     export let preview = false
     export let item: Item
@@ -100,7 +100,9 @@
             // only keep the legacy autosize delay when nothing has pre-populated a font size yet
             const templateNeedsAutoSize = slideHasAutoSizeItem(customTemplate)
 
-            if (templateNeedsAutoSize || itemNeedsAutoSize(item)) {
+            // the output waits for a measured size before it changes the content (SlideContent), so this fixed delay
+            // is only for what it does not measure first
+            if (incomingNeedsAutoSize && (templateNeedsAutoSize || itemNeedsAutoSize(item))) {
                 autoSizeDelay = 500
                 outDelay = autoSizeDelay
                 if (!inDelay) inDelay = outDelay * 0.98

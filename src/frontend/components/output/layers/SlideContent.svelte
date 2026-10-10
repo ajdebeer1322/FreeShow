@@ -7,7 +7,7 @@
     import { getItemText } from "../../edit/scripts/textStyle"
     import { clone } from "../../helpers/array"
     import { loadCustomFonts } from "../../helpers/fonts"
-    import { getStyleTemplate, itemNeedsAutoSize, slideHasAutoSizeItem } from "../../helpers/output"
+    import { getStyleTemplate, itemHasAutoSize, itemNeedsAutoSize, slideHasAutoSizeItem } from "../../helpers/output"
     import Textbox from "../../slide/Textbox.svelte"
     import { SlideTimeline } from "../../timeline/SlideTimeline"
     import SlideItemTransition from "../transitions/SlideItemTransition.svelte"
@@ -85,8 +85,11 @@
         return JSON.stringify(oldItem) === JSON.stringify(newItem)
     }
     // maintain a hidden workload that primes autosize results ahead of the visible reveal
-    let precomputeTargets: { item: Item; index: number; key: string }[] = []
+    let precomputeTargets: { item: Item; index: number; key: string; token: string; signature: string }[] = []
     let precomputePending = new Set<string>()
+    // the content each item key was measured for, so the same text is not measured (or waited for) again
+    let measuredSignatures = new Map<string, string>()
+    let precomputeRuns = 0
 
     const showItemRef = { outputId, slideIndex: outSlide?.index }
     let conditionsUpdater = 0
@@ -150,7 +153,22 @@
         if (!item) return false
         const type = item.type || "text"
         if (type !== "text") return false
-        return !!item.auto
+        return itemHasAutoSize(item)
+    }
+
+    // The visible text box can only reuse a measurement it caches: not text that changes, chords, a line limit from the
+    // output style or lines that are revealed one by one. Those are measured by the text box itself (after it is shown).
+    function canPrecomputeAutoSize(item: Item) {
+        if (!shouldPrecomputeAutoSize(item)) return false
+        return !getItemText(item).includes("{") && !item.chords?.enabled && !Number(currentStyle?.lines || 0) && !item.lineReveal
+    }
+
+    // what a measured size depends on: the item (not its stored sizes), the output size and the style
+    function autoSizeSignature(item: Item) {
+        const content: any = clone(item)
+        delete content.autoFontSize
+        delete content.previewAutoFontSize
+        return JSON.stringify([content, ratio, currentStyle, styleIdOverride, mirror, outSlide?.id, outSlide?.layout, currentSlide?.id])
     }
 
     // kick off hidden textbox renders that warm the autosize cache before we flip "show" on
@@ -161,16 +179,22 @@
             return
         }
 
-        const targets: { item: Item; index: number; key: string }[] = []
+        const targets: { item: Item; index: number; key: string; token: string; signature: string }[] = []
         const pendingKeys = new Set<string>()
 
         items.forEach((item, index) => {
-            if (!shouldPrecomputeAutoSize(item)) return
+            if (!canPrecomputeAutoSize(item)) return
             const key = createAutoSizeKey(item, index)
             if (!key) return
             if (item.autoFontSize) return // skip entries that already have cached measurements
+
+            // measured for this content already, the visible textbox has the size cached
+            const signature = autoSizeSignature(item)
+            if (measuredSignatures.get(key) === signature) return
+
             pendingKeys.add(key)
-            targets.push({ item: clone(item), index, key })
+            // the token gives every run its own textbox, so a finished one is never reused (it would not report again)
+            targets.push({ item: clone(item), index, key, signature, token: `${key}#${++precomputeRuns}` })
         })
 
         precomputeTargets = targets
@@ -178,21 +202,74 @@
     }
 
     // remove hidden probes once the underlying textbox reports that its autosize cache is hot
-    function handlePrecomputeReady(event: CustomEvent<{ key: string; fontSize: number }>) {
+    function handlePrecomputeReady(event: CustomEvent<{ key: string; fontSize: number }>, token: string) {
         const key = event.detail?.key
-        if (!key || !precomputePending.has(key)) return
+        const target = precomputeTargets.find((a) => a.token === token)
+        if (!key || !target || !precomputePending.has(key)) return
         precomputePending.delete(key)
-        if (!precomputePending.size) precomputeTargets = []
+        measuredSignatures.delete(key)
+        measuredSignatures.set(key, target.signature)
+        if (measuredSignatures.size > 500) measuredSignatures.delete(measuredSignatures.keys().next().value as string)
+        if (!precomputePending.size) {
+            precomputeTargets = []
+            continueAfterAutoSize()
+        }
+    }
+
+    // The outgoing items stay and the new ones are not placed until the incoming auto sized text is measured (the
+    // measurement above), at most this long. The new textbox then has its size cached and shows at it from the first frame.
+    const AUTO_SIZE_MAX_WAIT = 500
+    let autoSizeContinue: (() => void) | null = null
+    let autoSizeFallback: NodeJS.Timeout | null = null
+    function waitForAutoSize(callback: () => void, wait: boolean) {
+        stopAutoSizeWait()
+        if (!wait || !precomputePending.size) return callback()
+
+        autoSizeContinue = callback
+        autoSizeFallback = setTimeout(continueAfterAutoSize, AUTO_SIZE_MAX_WAIT)
+    }
+    function continueAfterAutoSize() {
+        const callback = autoSizeContinue
+        stopAutoSizeWait()
+        callback?.()
+    }
+    function stopAutoSizeWait() {
+        if (autoSizeFallback) clearTimeout(autoSizeFallback)
+        autoSizeFallback = null
+        autoSizeContinue = null
+    }
+    onDestroy(stopAutoSizeWait)
+
+    // custom show/hide timers keep their own delays
+    function hasCustomTimer(items: Item[] | undefined) {
+        return !!items?.some((item) => item?.actions?.showTimer || item?.actions?.hideTimer)
     }
 
     // create a stable identifier for precompute + visible textbox coordination
+    // Items from a template have no id, and the textbox keeps one measurement per key: the position alone would make
+    // every slide replace the size of the previous one, so the text and box are part of the key.
+    const autoSizeKeys = new WeakMap<Item, string>()
     function createAutoSizeKey(item: Item, index: number) {
-        return item?.id ? String(item.id) : `idx-${index}`
+        if (item?.id) return String(item.id)
+        if (!item) return `idx-${index}`
+
+        let content = autoSizeKeys.get(item)
+        if (content === undefined) {
+            const text = JSON.stringify([item.style, item.align, item.lines, item.textFit, item.auto, item.list, item.scrolling])
+            let hash = 5381
+            for (let i = 0; i < text.length; i++) hash = ((hash << 5) + hash + text.charCodeAt(i)) | 0
+            content = (hash >>> 0).toString(36)
+            autoSizeKeys.set(item, content)
+        }
+        return `idx-${index}-${content}`
     }
 
     // outgoing items hold for auto size delay while incoming content calculates font size
     $: incomingNeedsAutoSize = slideNeedsAutoSize(currentSlide, outSlide, currentStyle)
     function slideNeedsAutoSize(slide: any, out: OutSlide, style: any) {
+        // text that is measured off-screen is waited for until it is ready (waitForAutoSize), no fixed delay needed for that
+        if (!preview && !hasCustomTimer(slide?.items)) return !!slide?.items?.some((item: Item) => itemNeedsAutoSize(item) && !canPrecomputeAutoSize(item))
+
         if (slide?.items?.some(itemNeedsAutoSize)) return true
 
         let customTemplate = getStyleTemplate(out, style)
@@ -208,6 +285,7 @@
 
         if (!currentSlideItems?.length) {
             debugRender(`slide content cleared (${outSlide?.id}#${outSlide?.index} has no items)`)
+            stopAutoSizeWait()
             scheduleAutoSizePrecompute([])
             currentItems = []
             // Clear persistent items when no slide content
@@ -292,6 +370,7 @@
         if (isDifferentSlide && currentItems.length && currentSlide.items.length) transitioningBetween = true
 
         if (timeout) clearTimeout(timeout)
+        stopAutoSizeWait()
 
         // If all items are persistent/held (unchanged), skip the show/hide cycle entirely
         if (transitioningItems.length === 0 && (persistentItems.length > 0 || heldTextItems > 0)) {
@@ -312,8 +391,7 @@
 
         const gen = ++updateGeneration
 
-        // wait for between to update out transition
-        timeout = setTimeout(() => {
+        const hideAndShow = () => {
             if (gen !== updateGeneration) return
             debugRender("slide content hidden (show = false)")
             setShow(false)
@@ -346,6 +424,13 @@
                     })
                 }, waitToShow)
             })
+        }
+
+        // wait for between to update out transition
+        timeout = setTimeout(() => {
+            if (gen !== updateGeneration) return
+            // hold the outgoing items until the incoming text size is known (items with custom show/hide timers keep theirs)
+            waitForAutoSize(hideAndShow, !hasCustomTimer(currentItems) && !hasCustomTimer(currentSlide.items))
         })
     }
 
@@ -497,20 +582,21 @@
 
 {#if precomputeTargets.length}
     <div class="autosize-precompute" aria-hidden="true">
-        {#each precomputeTargets as target (target.key)}
-            <Textbox item={target.item} {ratio} {outputId} outputStyle={currentStyle} {mirror} {preview} {styleIdOverride} ref={{ type: "show", showId: outSlide?.id, slideId: currentSlide?.id, id: currentSlide?.id || "", layoutId: outSlide?.layout }} autoSizeKey={target.key} on:autosizeReady={handlePrecomputeReady} updateDynamicValues={!isClearing} />
+        {#each precomputeTargets as target (target.token)}
+            <Textbox item={target.item} {ratio} {outputId} outputStyle={currentStyle} {mirror} {preview} {styleIdOverride} ref={{ type: "show", showId: outSlide?.id, slideId: currentSlide?.id, id: currentSlide?.id || "", layoutId: outSlide?.layout }} autoSizeKey={target.key} on:autosizeReady={(e) => handlePrecomputeReady(e, target.token)} updateDynamicValues={!isClearing} />
         {/each}
     </div>
 {/if}
 
 <style>
-    /* park precompute textboxes far off-screen so they never flash during transitions */
+    /* park precompute textboxes far off-screen so they never flash during transitions, in a box as big as the one the
+       visible textboxes are in (the measured size depends on it, and the cache entry has to match the visible textbox) */
     .autosize-precompute {
         position: absolute;
         top: -10000px;
         left: -10000px;
-        width: 0;
-        height: 0;
+        width: 100%;
+        height: 100%;
         overflow: hidden;
         pointer-events: none;
         visibility: hidden;
