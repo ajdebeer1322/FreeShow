@@ -1,0 +1,410 @@
+{
+ "text/click-slide-1": {
+  "states": [
+   [
+    "T:First slide line"
+   ]
+  ],
+  "lastChange": 789
+ },
+ "text/arrow-right": {
+  "states": [
+   [
+    "T:First slide line"
+   ],
+   [
+    "T:First slide line",
+    "T:Second slide line"
+   ],
+   [
+    "T:Second slide line"
+   ]
+  ],
+  "lastChange": 752
+ },
+ "text/arrow-right-2": {
+  "states": [
+   [
+    "T:Second slide line"
+   ],
+   [
+    "T:Second slide line",
+    "T:Third slide line"
+   ],
+   [
+    "T:Third slide line"
+   ]
+  ],
+  "lastChange": 736
+ },
+ "text/arrow-left": {
+  "states": [
+   [
+    "T:Third slide line"
+   ],
+   [
+    "T:Second slide line",
+    "T:Third slide line"
+   ],
+   [
+    "T:Second slide line"
+   ]
+  ],
+  "lastChange": 724
+ },
+ "text/space": {
+  "states": [
+   [
+    "T:Second slide line"
+   ],
+   [
+    "T:Second slide line",
+    "T:Third slide line"
+   ],
+   [
+    "T:Third slide line"
+   ]
+  ],
+  "lastChange": 733
+ },
+ "text/rapid-left-x3": {
+  "states": [
+   [
+    "T:Third slide line"
+   ],
+   [
+    "T:First slide line",
+    "T:Third slide line"
+   ],
+   [
+    "T:First slide line"
+   ]
+  ],
+  "lastChange": 807
+ },
+ "text/click-slide-2": {
+  "states": [
+   [
+    "T:First slide line"
+   ],
+   [
+    "T:First slide line",
+    "T:Second slide line"
+   ],
+   [
+    "T:Second slide line"
+   ]
+  ],
+  "lastChange": 764
+ },
+ "text/click-slide-1-again": {
+  "states": [
+   [
+    "T:Second slide line"
+   ],
+   [
+    "T:First slide line",
+    "T:Second slide line"
+   ],
+   [
+    "T:First slide line"
+   ]
+  ],
+  "lastChange": 770
+ },
+ "text/same-slide-click": {
+  "states": [
+   [
+    "T:First slide line"
+   ]
+  ],
+  "lastChange": 0
+ },
+ "text/escape-clear": {
+  "states": [
+   [
+    "T:First slide line"
+   ],
+   []
+  ],
+  "lastChange": 486
+ },
+ "text/click-slide-1-after-clear": {
+  "states": [
+   [
+    "T:First slide line"
+   ]
+  ],
+  "lastChange": 762
+ },
+ "background/bg-click-1-image": {
+  "states": [
+   [
+    "IMG:red.png"
+   ],
+   [
+    "IMG:red.png",
+    "T:One"
+   ]
+  ],
+  "lastChange": 781
+ },
+ "background/bg-click-2-image-to-image": {
+  "states": [
+   [
+    "IMG:red.png",
+    "T:One"
+   ],
+   [
+    "IMG:blue.png",
+    "IMG:red.png",
+    "T:One"
+   ],
+   [
+    "IMG:blue.png",
+    "IMG:red.png",
+    "T:One",
+    "T:Two"
+   ],
+   [
+    "IMG:blue.png",
+    "IMG:red.png",
+    "T:Two"
+   ],
+   [
+    "IMG:blue.png",
+    "T:Two"
+   ]
+  ],
+  "lastChange": 1022
+ },
+ "background/bg-click-3-image-to-video": {
+  "states": [
+   [
+    "IMG:blue.png",
+    "T:Two"
+   ],
+   [
+    "IMG:blue.png",
+    "T:Two",
+    "VID:clipA.mp4 loop"
+   ],
+   [
+    "IMG:blue.png",
+    "T:Three",
+    "T:Two",
+    "VID:clipA.mp4 loop"
+   ],
+   [
+    "IMG:blue.png",
+    "T:Three",
+    "VID:clipA.mp4 loop"
+   ],
+   [
+    "T:Three",
+    "VID:clipA.mp4 loop"
+   ]
+  ],
+  "lastChange": 1041
+ },
+ "background/bg-click-4-video-to-video": {
+  "states": [
+   [
+    "T:Three",
+    "VID:clipA.mp4 loop"
+   ],
+   [
+    "T:Three",
+    "VID:clipA.mp4 loop",
+    "VID:clipB.mp4 loop"
+   ],
+   [
+    "T:Four",
+    "T:Three",
+    "VID:clipA.mp4 loop",
+    "VID:clipB.mp4 loop"
+   ],
+   [
+    "T:Four",
+    "VID:clipA.mp4 loop",
+    "VID:clipB.mp4 loop"
+   ],
+   [
+    "T:Four",
+    "VID:clipB.mp4 loop"
+   ]
+  ],
+  "lastChange": 1058
+ },
+ "background/bg-arrow-left-video-to-video": {
+  "states": [
+   [
+    "T:Four",
+    "VID:clipB.mp4 loop"
+   ],
+   [
+    "T:Four",
+    "VID:clipA.mp4 loop",
+    "VID:clipB.mp4 loop"
+   ],
+   [
+    "T:Four",
+    "T:Three",
+    "VID:clipA.mp4 loop",
+    "VID:clipB.mp4 loop"
+   ],
+   [
+    "T:Three",
+    "VID:clipA.mp4 loop",
+    "VID:clipB.mp4 loop"
+   ],
+   [
+    "T:Three",
+    "VID:clipA.mp4 loop"
+   ]
+  ],
+  "lastChange": 1006
+ },
+ "background/bg-arrow-left-video-to-image": {
+  "states": [
+   [
+    "T:Three",
+    "VID:clipA.mp4 loop"
+   ],
+   [
+    "IMG:blue.png",
+    "T:Three",
+    "VID:clipA.mp4 loop"
+   ],
+   [
+    "IMG:blue.png",
+    "T:Three",
+    "T:Two",
+    "VID:clipA.mp4 loop"
+   ],
+   [
+    "IMG:blue.png",
+    "T:Two",
+    "VID:clipA.mp4 loop"
+   ],
+   [
+    "IMG:blue.png",
+    "T:Two"
+   ]
+  ],
+  "lastChange": 997
+ },
+ "background/bg-escape-clear": {
+  "states": [
+   [
+    "IMG:blue.png",
+    "T:Two"
+   ],
+   [
+    "IMG:blue.png"
+   ],
+   []
+  ],
+  "lastChange": 776
+ },
+ "background/bg-after-clear-click-1": {
+  "states": [
+   [
+    "IMG:red.png"
+   ],
+   [
+    "IMG:red.png",
+    "T:One"
+   ]
+  ],
+  "lastChange": 787
+ },
+ "autosize/auto-click-1": {
+  "states": [
+   [
+    "T:Short"
+   ]
+  ],
+  "lastChange": 521
+ },
+ "autosize/auto-click-2-long": {
+  "states": [
+   [
+    "T:Short"
+   ],
+   [
+    "T:Short",
+    "T:This is a much longer line of text that has to be shrunk or grown to fit the output screen nicely",
+    "T:and a second fairly long line to make the box fill up quite a lot"
+   ],
+   [
+    "T:This is a much longer line of text that has to be shrunk or grown to fit the output screen nicely",
+    "T:and a second fairly long line to make the box fill up quite a lot"
+   ]
+  ],
+  "lastChange": 573
+ },
+ "autosize/auto-click-3": {
+  "states": [
+   [
+    "T:This is a much longer line of text that has to be shrunk or grown to fit the output screen nicely",
+    "T:and a second fairly long line to make the box fill up quite a lot"
+   ],
+   [
+    "T:This is a much longer line of text that has to be shrunk or grown to fit the output screen nicely",
+    "T:Tiny",
+    "T:and a second fairly long line to make the box fill up quite a lot"
+   ],
+   [
+    "T:Tiny"
+   ]
+  ],
+  "lastChange": 571
+ },
+ "autosize/auto-arrow-left": {
+  "states": [
+   [
+    "T:Tiny"
+   ],
+   [
+    "T:This is a much longer line of text that has to be shrunk or grown to fit the output screen nicely",
+    "T:Tiny",
+    "T:and a second fairly long line to make the box fill up quite a lot"
+   ],
+   [
+    "T:This is a much longer line of text that has to be shrunk or grown to fit the output screen nicely",
+    "T:and a second fairly long line to make the box fill up quite a lot"
+   ]
+  ],
+  "lastChange": 553
+ },
+ "autosize/auto-arrow-left-2": {
+  "states": [
+   [
+    "T:This is a much longer line of text that has to be shrunk or grown to fit the output screen nicely",
+    "T:and a second fairly long line to make the box fill up quite a lot"
+   ],
+   [
+    "T:Short",
+    "T:This is a much longer line of text that has to be shrunk or grown to fit the output screen nicely",
+    "T:and a second fairly long line to make the box fill up quite a lot"
+   ],
+   [
+    "T:Short"
+   ]
+  ],
+  "lastChange": 541
+ },
+ "autosize/auto-arrow-right-x2-fast": {
+  "states": [
+   [
+    "T:Short"
+   ],
+   [],
+   [
+    "T:Tiny"
+   ]
+  ],
+  "lastChange": 616
+ }
+}
