@@ -1,0 +1,825 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/frontend/components/edit/AudioTools.svelte",
+    "src/frontend/components/edit/EditHeader.svelte",
+    "src/frontend/components/edit/EditTools.svelte",
+    "src/frontend/components/edit/Editor.svelte",
+    "src/frontend/components/edit/EffectTools.svelte",
+    "src/frontend/components/edit/ItemAddMenu.svelte",
+    "src/frontend/components/edit/MediaTools.svelte",
+    "src/frontend/components/edit/Navigation.svelte",
+    "src/frontend/components/edit/SceneTools.svelte",
+    "src/frontend/components/edit/Slides.svelte",
+    "src/frontend/components/edit/editbox/Editbox.svelte",
+    "src/frontend/components/edit/editbox/EditboxChords.svelte",
+    "src/frontend/components/edit/editbox/EditboxCropping.svelte",
+    "src/frontend/components/edit/editbox/EditboxHelper.ts",
+    "src/frontend/components/edit/editbox/EditboxLines.svelte",
+    "src/frontend/components/edit/editbox/EditboxPaste.ts",
+    "src/frontend/components/edit/editbox/EditboxPlain.svelte",
+    "src/frontend/components/edit/editors/AudioEditor.svelte",
+    "src/frontend/components/edit/editors/CameraEditor.svelte",
+    "src/frontend/components/edit/editors/EffectEditor.svelte",
+    "src/frontend/components/edit/editors/ImageCropEditor.svelte",
+    "src/frontend/components/edit/editors/MediaEditor.svelte",
+    "src/frontend/components/edit/editors/OverlayEditor.svelte",
+    "src/frontend/components/edit/editors/SceneEditor.svelte",
+    "src/frontend/components/edit/editors/SlideEditor.svelte",
+    "src/frontend/components/edit/editors/TemplateEditor.svelte",
+    "src/frontend/components/edit/scripts/Cursor.ts",
+    "src/frontend/components/edit/scripts/autoPosition.ts",
+    "src/frontend/components/edit/scripts/autosize.ts",
+    "src/frontend/components/edit/scripts/chords.ts",
+    "src/frontend/components/edit/scripts/edit.ts",
+    "src/frontend/components/edit/scripts/itemClipboard.ts",
+    "src/frontend/components/edit/scripts/itemHelpers.ts",
+    "src/frontend/components/edit/scripts/shapeOutside.ts",
+    "src/frontend/components/edit/scripts/textStyle.ts",
+    "src/frontend/components/edit/scripts/zoom.ts",
+    "src/frontend/components/edit/tools/BoxStyle.svelte",
+    "src/frontend/components/edit/tools/EditValues.svelte",
+    "src/frontend/components/edit/tools/ItemStyle.svelte",
+    "src/frontend/components/edit/tools/ItemsList.svelte",
+    "src/frontend/components/edit/tools/MessageDesignTools.svelte",
+    "src/frontend/components/edit/tools/OverlayStyle.svelte",
+    "src/frontend/components/edit/tools/SlideFilters.svelte",
+    "src/frontend/components/edit/tools/SlideStyle.svelte",
+    "src/frontend/components/edit/tools/TemplateStyle.svelte",
+    "src/frontend/components/edit/values/boxes.ts",
+    "src/frontend/components/edit/values/captionLanguages.ts",
+    "src/frontend/components/edit/values/chords.ts",
+    "src/frontend/components/edit/values/effects.ts",
+    "src/frontend/components/edit/values/filters.ts",
+    "src/frontend/components/edit/values/item.ts",
+    "src/frontend/components/edit/values/items.ts",
+    "src/frontend/components/edit/values/media.ts",
+    "src/frontend/components/helpers/history.ts",
+    "src/frontend/components/helpers/historyActions.ts",
+    "src/frontend/components/helpers/historyHelpers.ts",
+    "src/frontend/components/helpers/historyStores.ts",
+    "src/frontend/show/slides.ts",
+    "src/types/History.ts"
+  ],
+  "stores": [
+    "src/frontend/stores.ts#actions",
+    "src/frontend/stores.ts#activeDrawerTab",
+    "src/frontend/stores.ts#activeDropId",
+    "src/frontend/stores.ts#activeEdit",
+    "src/frontend/stores.ts#activePage",
+    "src/frontend/stores.ts#activePopup",
+    "src/frontend/stores.ts#activeProfile",
+    "src/frontend/stores.ts#activeProject",
+    "src/frontend/stores.ts#activeRename",
+    "src/frontend/stores.ts#activeShow",
+    "src/frontend/stores.ts#activeStage",
+    "src/frontend/stores.ts#activeStyle",
+    "src/frontend/stores.ts#activeTagFilter",
+    "src/frontend/stores.ts#activeTimers",
+    "src/frontend/stores.ts#alertMessage",
+    "src/frontend/stores.ts#allOutputs",
+    "src/frontend/stores.ts#audioChannelsData",
+    "src/frontend/stores.ts#audioFolders",
+    "src/frontend/stores.ts#audioPlaylists",
+    "src/frontend/stores.ts#cachedShowsData",
+    "src/frontend/stores.ts#categories",
+    "src/frontend/stores.ts#cloudUsers",
+    "src/frontend/stores.ts#contextActive",
+    "src/frontend/stores.ts#copyPasteEdit",
+    "src/frontend/stores.ts#currentOutputSettings",
+    "src/frontend/stores.ts#deletedShows",
+    "src/frontend/stores.ts#dictionary",
+    "src/frontend/stores.ts#drawer",
+    "src/frontend/stores.ts#drawerOpenedInEdit",
+    "src/frontend/stores.ts#drawerTabsData",
+    "src/frontend/stores.ts#editColumns",
+    "src/frontend/stores.ts#editHistory",
+    "src/frontend/stores.ts#editMode",
+    "src/frontend/stores.ts#editingProjectTemplate",
+    "src/frontend/stores.ts#effects",
+    "src/frontend/stores.ts#events",
+    "src/frontend/stores.ts#focusMode",
+    "src/frontend/stores.ts#folders",
+    "src/frontend/stores.ts#globalTags",
+    "src/frontend/stores.ts#groups",
+    "src/frontend/stores.ts#historyCacheCount",
+    "src/frontend/stores.ts#hoveredEffectItem",
+    "src/frontend/stores.ts#interactions",
+    "src/frontend/stores.ts#isDev",
+    "src/frontend/stores.ts#labelsDisabled",
+    "src/frontend/stores.ts#media",
+    "src/frontend/stores.ts#mediaFolders",
+    "src/frontend/stores.ts#messageDrafts",
+    "src/frontend/stores.ts#notFound",
+    "src/frontend/stores.ts#openToolsTab",
+    "src/frontend/stores.ts#openedFolders",
+    "src/frontend/stores.ts#os",
+    "src/frontend/stores.ts#outputSlideCache",
+    "src/frontend/stores.ts#outputs",
+    "src/frontend/stores.ts#overlayCategories",
+    "src/frontend/stores.ts#overlays",
+    "src/frontend/stores.ts#playerVideos",
+    "src/frontend/stores.ts#playingVideoState",
+    "src/frontend/stores.ts#popupData",
+    "src/frontend/stores.ts#profiles",
+    "src/frontend/stores.ts#projectTemplates",
+    "src/frontend/stores.ts#projectView",
+    "src/frontend/stores.ts#projects",
+    "src/frontend/stores.ts#redoHistory",
+    "src/frontend/stores.ts#refreshEditSlide",
+    "src/frontend/stores.ts#refreshListBoxes",
+    "src/frontend/stores.ts#renamedShows",
+    "src/frontend/stores.ts#resized",
+    "src/frontend/stores.ts#scenes",
+    "src/frontend/stores.ts#selected",
+    "src/frontend/stores.ts#settingsTab",
+    "src/frontend/stores.ts#shownTips",
+    "src/frontend/stores.ts#shows",
+    "src/frontend/stores.ts#showsCache",
+    "src/frontend/stores.ts#slideNotesActive",
+    "src/frontend/stores.ts#slidesOptions",
+    "src/frontend/stores.ts#special",
+    "src/frontend/stores.ts#stageShows",
+    "src/frontend/stores.ts#storedChordsData",
+    "src/frontend/stores.ts#storedEditMenuState",
+    "src/frontend/stores.ts#styles",
+    "src/frontend/stores.ts#templateCategories",
+    "src/frontend/stores.ts#templates",
+    "src/frontend/stores.ts#theme",
+    "src/frontend/stores.ts#themes",
+    "src/frontend/stores.ts#timers",
+    "src/frontend/stores.ts#undoHistory",
+    "src/frontend/stores.ts#variables"
+  ],
+  "messages": [
+    "OUTPUT/MAIN_REQUEST_VOLUME",
+    "OUTPUT/OVERLAY",
+    "REMOTE/SHOWS"
+  ],
+  "timingIds": [
+    "timer-737a89a2c952f65d",
+    "timer-c911c69311425a9f",
+    "timer-e794269abab2849f",
+    "timer-b17a8fb3fd914761",
+    "timer-bf1b5424f206b40a",
+    "timer-a787551638fd8f23",
+    "transition-680bfe31aa49f17e",
+    "css-transition-4d93e764b8e66309",
+    "timer-5e98db0692205d25",
+    "timer-65da9787bdb19ef6",
+    "transition-dd7788a5c6bc0dc2",
+    "transition-62e9f904193f0263",
+    "css-transition-198251855a6f9e88",
+    "timer-d2b209ef4c07c80b",
+    "timer-28e9370c85c677b1",
+    "timer-525d9e27c8962157",
+    "timer-2cd2b194d1458479",
+    "timer-c637d48fdad2d3dd",
+    "timer-9952186d4ee0f0a6",
+    "timer-89a708f7b066b0a2",
+    "timer-92d51a46c17004c9",
+    "css-transition-fea12e5b933dd78d",
+    "timer-61f7bdd47edc8f5e",
+    "timer-1e2d924fe8854b99",
+    "timer-2f8c0f56d0d76c56",
+    "timer-e5b4c039e16f2f0e",
+    "timer-325b591545d49627",
+    "timer-3c5f02e61d5904e6",
+    "timer-7b5a59e90aaf64e2",
+    "timer-ac889c0760866c37",
+    "timer-fe391a80aaf2f52f",
+    "timer-9e47b3616569d4bb",
+    "timer-ae331556b9a2c655",
+    "css-transition-8bfe4f9e19ff444e",
+    "timer-6363738859153f98",
+    "timer-76788babf35adf59",
+    "timer-f2a6563193973600",
+    "timer-f65342b60e6c9864",
+    "timer-b6fc8e623ce0ed10",
+    "timer-6569bf27be4a7e34",
+    "timer-61d33c09865b8834",
+    "timer-4821e55884bb5650",
+    "timer-5be01c7af848300d",
+    "timer-e2da4a052b050158",
+    "timer-496c542955db9354",
+    "timer-4954257b01ec7b75",
+    "css-transition-d1517e3b7605ed94",
+    "css-transition-1a56c08974a377da",
+    "timer-7282e4d303cd9991",
+    "timer-a9b6f740d52c5f0f",
+    "timer-1c8b621575651cc1",
+    "timer-84af9cee6a88ddd6",
+    "timer-e0e2d595fc02488b",
+    "timer-cf3a0164fdf03c21",
+    "timer-720345f9c280d7db",
+    "timer-4a4d158dd87e57ea",
+    "timer-b7a145bcac09ea03",
+    "timer-b1318da65e5767ce",
+    "timer-dfe4906ba5b025a5",
+    "timer-6a2ed228b85fe668"
+  ],
+  "workaroundIds": [
+    "workaround-d778cfa73751bced",
+    "workaround-f4d49647f7003ed7",
+    "workaround-1d96f1c7423b76ca",
+    "workaround-40543f9f740f4b52",
+    "workaround-6b46754ea072a069",
+    "workaround-4004c03eee3b3cc2",
+    "workaround-eb22969bf84eebb0",
+    "workaround-eb3c428abb9ec25e",
+    "workaround-e6358195f1d55b63",
+    "workaround-3e5e69c17d3bad48",
+    "workaround-7760e0a8c0ace22c",
+    "workaround-6eb97acd1335e124",
+    "workaround-d7e3e1526c586256",
+    "workaround-ec1c8f4a1328a944",
+    "workaround-5c7f8d01485c3966",
+    "workaround-11514f457c3a3604",
+    "workaround-dadb7f0e6b1470f0",
+    "workaround-f8c8f02dba4e6b8b",
+    "workaround-03b5b18830e05cf4",
+    "workaround-5bc335f05b9739dc",
+    "workaround-e58f78a2ac28825e",
+    "workaround-f00f478e00a6b235",
+    "workaround-18dd47975640ab38",
+    "workaround-88e59d4d03ff323c",
+    "workaround-d78cae508b34ebfe",
+    "workaround-9cc5c46f261a73e0",
+    "workaround-e5d4879afa60fa28",
+    "workaround-93f6ebc266fce151",
+    "workaround-860b8e0586027edf",
+    "workaround-1b4951dfa1b92378"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-737a89a2c952f65d",
+      "document": "docs/ai/history/records/src_frontend_components_edit_AudioTools.svelte-1.md",
+      "file": "src/frontend/components/edit/AudioTools.svelte",
+      "line": 35
+    },
+    {
+      "id": "D-timer-c911c69311425a9f",
+      "document": "docs/ai/history/records/src_frontend_components_edit_AudioTools.svelte-1.md",
+      "file": "src/frontend/components/edit/AudioTools.svelte",
+      "line": 36
+    },
+    {
+      "id": "D-timer-e794269abab2849f",
+      "document": "docs/ai/history/records/src_frontend_components_edit_AudioTools.svelte-1.md",
+      "file": "src/frontend/components/edit/AudioTools.svelte",
+      "line": 37
+    },
+    {
+      "id": "D-timer-b17a8fb3fd914761",
+      "document": "docs/ai/history/records/src_frontend_components_edit_AudioTools.svelte-1.md",
+      "file": "src/frontend/components/edit/AudioTools.svelte",
+      "line": 58
+    },
+    {
+      "id": "D-timer-bf1b5424f206b40a",
+      "document": "docs/ai/history/records/src_frontend_components_edit_AudioTools.svelte-1.md",
+      "file": "src/frontend/components/edit/AudioTools.svelte",
+      "line": 61
+    },
+    {
+      "id": "D-timer-a787551638fd8f23",
+      "document": "docs/ai/history/records/src_frontend_components_edit_AudioTools.svelte-1.md",
+      "file": "src/frontend/components/edit/AudioTools.svelte",
+      "line": 64
+    },
+    {
+      "id": "D-transition-680bfe31aa49f17e",
+      "document": "docs/ai/history/records/src_frontend_components_edit_EditHeader.svelte-1.md",
+      "file": "src/frontend/components/edit/EditHeader.svelte",
+      "line": 59
+    },
+    {
+      "id": "D-css-transition-4d93e764b8e66309",
+      "document": "docs/ai/history/records/src_frontend_components_edit_EditHeader.svelte-1.md",
+      "file": "src/frontend/components/edit/EditHeader.svelte",
+      "line": 123
+    },
+    {
+      "id": "D-timer-5e98db0692205d25",
+      "document": "docs/ai/history/records/src_frontend_components_edit_Editor.svelte-1.md",
+      "file": "src/frontend/components/edit/Editor.svelte",
+      "line": 43
+    },
+    {
+      "id": "D-timer-65da9787bdb19ef6",
+      "document": "docs/ai/history/records/src_frontend_components_edit_EffectTools.svelte-1.md",
+      "file": "src/frontend/components/edit/EffectTools.svelte",
+      "line": 53
+    },
+    {
+      "id": "D-transition-dd7788a5c6bc0dc2",
+      "document": "docs/ai/history/records/src_frontend_components_edit_ItemAddMenu.svelte-1.md",
+      "file": "src/frontend/components/edit/ItemAddMenu.svelte",
+      "line": 118
+    },
+    {
+      "id": "D-transition-62e9f904193f0263",
+      "document": "docs/ai/history/records/src_frontend_components_edit_ItemAddMenu.svelte-1.md",
+      "file": "src/frontend/components/edit/ItemAddMenu.svelte",
+      "line": 174
+    },
+    {
+      "id": "D-css-transition-198251855a6f9e88",
+      "document": "docs/ai/history/records/src_frontend_components_edit_ItemAddMenu.svelte-1.md",
+      "file": "src/frontend/components/edit/ItemAddMenu.svelte",
+      "line": 330
+    },
+    {
+      "id": "D-timer-d2b209ef4c07c80b",
+      "document": "docs/ai/history/records/src_frontend_components_edit_Navigation.svelte-1.md",
+      "file": "src/frontend/components/edit/Navigation.svelte",
+      "line": 94
+    },
+    {
+      "id": "D-timer-28e9370c85c677b1",
+      "document": "docs/ai/history/records/src_frontend_components_edit_Slides.svelte-1.md",
+      "file": "src/frontend/components/edit/Slides.svelte",
+      "line": 20
+    },
+    {
+      "id": "D-timer-525d9e27c8962157",
+      "document": "docs/ai/history/records/src_frontend_components_edit_Slides.svelte-1.md",
+      "file": "src/frontend/components/edit/Slides.svelte",
+      "line": 65
+    },
+    {
+      "id": "D-timer-2cd2b194d1458479",
+      "document": "docs/ai/history/records/src_frontend_components_edit_Slides.svelte-1.md",
+      "file": "src/frontend/components/edit/Slides.svelte",
+      "line": 80
+    },
+    {
+      "id": "D-timer-c637d48fdad2d3dd",
+      "document": "docs/ai/history/records/src_frontend_components_edit_Slides.svelte-1.md",
+      "file": "src/frontend/components/edit/Slides.svelte",
+      "line": 94
+    },
+    {
+      "id": "D-timer-9952186d4ee0f0a6",
+      "document": "docs/ai/history/records/src_frontend_components_edit_Slides.svelte-1.md",
+      "file": "src/frontend/components/edit/Slides.svelte",
+      "line": 123
+    },
+    {
+      "id": "D-timer-89a708f7b066b0a2",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_Editbox.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/Editbox.svelte",
+      "line": 128
+    },
+    {
+      "id": "D-timer-92d51a46c17004c9",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_Editbox.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/Editbox.svelte",
+      "line": 155
+    },
+    {
+      "id": "D-css-transition-fea12e5b933dd78d",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_Editbox.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/Editbox.svelte",
+      "line": 290
+    },
+    {
+      "id": "D-timer-61f7bdd47edc8f5e",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 48
+    },
+    {
+      "id": "D-timer-1e2d924fe8854b99",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 67
+    },
+    {
+      "id": "D-timer-2f8c0f56d0d76c56",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 110
+    },
+    {
+      "id": "D-timer-e5b4c039e16f2f0e",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 128
+    },
+    {
+      "id": "D-timer-325b591545d49627",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 132
+    },
+    {
+      "id": "D-timer-3c5f02e61d5904e6",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 240
+    },
+    {
+      "id": "D-timer-7b5a59e90aaf64e2",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 412
+    },
+    {
+      "id": "D-timer-ac889c0760866c37",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 637
+    },
+    {
+      "id": "D-timer-fe391a80aaf2f52f",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxPaste.ts-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxPaste.ts",
+      "line": 304
+    },
+    {
+      "id": "D-timer-9e47b3616569d4bb",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxPaste.ts-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxPaste.ts",
+      "line": 306
+    },
+    {
+      "id": "D-timer-ae331556b9a2c655",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxPlain.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxPlain.svelte",
+      "line": 126
+    },
+    {
+      "id": "D-css-transition-8bfe4f9e19ff444e",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editors_AudioEditor.svelte-1.md",
+      "file": "src/frontend/components/edit/editors/AudioEditor.svelte",
+      "line": 83
+    },
+    {
+      "id": "D-timer-6363738859153f98",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editors_SlideEditor.svelte-1.md",
+      "file": "src/frontend/components/edit/editors/SlideEditor.svelte",
+      "line": 122
+    },
+    {
+      "id": "D-timer-76788babf35adf59",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editors_SlideEditor.svelte-1.md",
+      "file": "src/frontend/components/edit/editors/SlideEditor.svelte",
+      "line": 167
+    },
+    {
+      "id": "D-timer-f2a6563193973600",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editors_SlideEditor.svelte-1.md",
+      "file": "src/frontend/components/edit/editors/SlideEditor.svelte",
+      "line": 191
+    },
+    {
+      "id": "D-timer-f65342b60e6c9864",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editors_SlideEditor.svelte-1.md",
+      "file": "src/frontend/components/edit/editors/SlideEditor.svelte",
+      "line": 257
+    },
+    {
+      "id": "D-timer-b6fc8e623ce0ed10",
+      "document": "docs/ai/history/records/src_frontend_components_edit_scripts_itemClipboard.ts-1.md",
+      "file": "src/frontend/components/edit/scripts/itemClipboard.ts",
+      "line": 112
+    },
+    {
+      "id": "D-timer-6569bf27be4a7e34",
+      "document": "docs/ai/history/records/src_frontend_components_edit_scripts_itemClipboard.ts-1.md",
+      "file": "src/frontend/components/edit/scripts/itemClipboard.ts",
+      "line": 237
+    },
+    {
+      "id": "D-timer-61d33c09865b8834",
+      "document": "docs/ai/history/records/src_frontend_components_edit_scripts_itemClipboard.ts-1.md",
+      "file": "src/frontend/components/edit/scripts/itemClipboard.ts",
+      "line": 290
+    },
+    {
+      "id": "D-timer-4821e55884bb5650",
+      "document": "docs/ai/history/records/src_frontend_components_edit_scripts_itemHelpers.ts-1.md",
+      "file": "src/frontend/components/edit/scripts/itemHelpers.ts",
+      "line": 166
+    },
+    {
+      "id": "D-timer-5be01c7af848300d",
+      "document": "docs/ai/history/records/src_frontend_components_edit_tools_BoxStyle.svelte-1.md",
+      "file": "src/frontend/components/edit/tools/BoxStyle.svelte",
+      "line": 730
+    },
+    {
+      "id": "D-timer-e2da4a052b050158",
+      "document": "docs/ai/history/records/src_frontend_components_edit_tools_EditValues.svelte-1.md",
+      "file": "src/frontend/components/edit/tools/EditValues.svelte",
+      "line": 258
+    },
+    {
+      "id": "D-timer-496c542955db9354",
+      "document": "docs/ai/history/records/src_frontend_components_edit_tools_EditValues.svelte-1.md",
+      "file": "src/frontend/components/edit/tools/EditValues.svelte",
+      "line": 262
+    },
+    {
+      "id": "D-timer-4954257b01ec7b75",
+      "document": "docs/ai/history/records/src_frontend_components_edit_tools_EditValues.svelte-1.md",
+      "file": "src/frontend/components/edit/tools/EditValues.svelte",
+      "line": 330
+    },
+    {
+      "id": "D-css-transition-d1517e3b7605ed94",
+      "document": "docs/ai/history/records/src_frontend_components_edit_tools_EditValues.svelte-1.md",
+      "file": "src/frontend/components/edit/tools/EditValues.svelte",
+      "line": 446
+    },
+    {
+      "id": "D-css-transition-1a56c08974a377da",
+      "document": "docs/ai/history/records/src_frontend_components_edit_tools_EditValues.svelte-1.md",
+      "file": "src/frontend/components/edit/tools/EditValues.svelte",
+      "line": 475
+    },
+    {
+      "id": "D-timer-7282e4d303cd9991",
+      "document": "docs/ai/history/records/src_frontend_components_edit_tools_ItemStyle.svelte-1.md",
+      "file": "src/frontend/components/edit/tools/ItemStyle.svelte",
+      "line": 81
+    },
+    {
+      "id": "D-timer-a9b6f740d52c5f0f",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyActions.ts-1.md",
+      "file": "src/frontend/components/helpers/historyActions.ts",
+      "line": 350
+    },
+    {
+      "id": "D-timer-1c8b621575651cc1",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyActions.ts-1.md",
+      "file": "src/frontend/components/helpers/historyActions.ts",
+      "line": 358
+    },
+    {
+      "id": "D-timer-84af9cee6a88ddd6",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyActions.ts-1.md",
+      "file": "src/frontend/components/helpers/historyActions.ts",
+      "line": 432
+    },
+    {
+      "id": "D-timer-e0e2d595fc02488b",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyActions.ts-1.md",
+      "file": "src/frontend/components/helpers/historyActions.ts",
+      "line": 582
+    },
+    {
+      "id": "D-timer-cf3a0164fdf03c21",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyHelpers.ts-1.md",
+      "file": "src/frontend/components/helpers/historyHelpers.ts",
+      "line": 188
+    },
+    {
+      "id": "D-timer-720345f9c280d7db",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyHelpers.ts-1.md",
+      "file": "src/frontend/components/helpers/historyHelpers.ts",
+      "line": 225
+    },
+    {
+      "id": "D-timer-4a4d158dd87e57ea",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyHelpers.ts-1.md",
+      "file": "src/frontend/components/helpers/historyHelpers.ts",
+      "line": 372
+    },
+    {
+      "id": "D-timer-b7a145bcac09ea03",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyHelpers.ts-1.md",
+      "file": "src/frontend/components/helpers/historyHelpers.ts",
+      "line": 433
+    },
+    {
+      "id": "D-timer-b1318da65e5767ce",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyHelpers.ts-1.md",
+      "file": "src/frontend/components/helpers/historyHelpers.ts",
+      "line": 534
+    },
+    {
+      "id": "D-timer-dfe4906ba5b025a5",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyHelpers.ts-1.md",
+      "file": "src/frontend/components/helpers/historyHelpers.ts",
+      "line": 552
+    },
+    {
+      "id": "D-timer-6a2ed228b85fe668",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyHelpers.ts-1.md",
+      "file": "src/frontend/components/helpers/historyHelpers.ts",
+      "line": 572
+    },
+    {
+      "id": "D-workaround-d778cfa73751bced",
+      "document": "docs/ai/history/records/src_frontend_components_edit_EditTools.svelte-1.md",
+      "file": "src/frontend/components/edit/EditTools.svelte",
+      "line": 45
+    },
+    {
+      "id": "D-workaround-f4d49647f7003ed7",
+      "document": "docs/ai/history/records/src_frontend_components_edit_EditTools.svelte-1.md",
+      "file": "src/frontend/components/edit/EditTools.svelte",
+      "line": 312
+    },
+    {
+      "id": "D-workaround-1d96f1c7423b76ca",
+      "document": "docs/ai/history/records/src_frontend_components_edit_Editor.svelte-1.md",
+      "file": "src/frontend/components/edit/Editor.svelte",
+      "line": 46
+    },
+    {
+      "id": "D-workaround-40543f9f740f4b52",
+      "document": "docs/ai/history/records/src_frontend_components_edit_MediaTools.svelte-1.md",
+      "file": "src/frontend/components/edit/MediaTools.svelte",
+      "line": 32
+    },
+    {
+      "id": "D-workaround-6b46754ea072a069",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_Editbox.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/Editbox.svelte",
+      "line": 358
+    },
+    {
+      "id": "D-workaround-4004c03eee3b3cc2",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 43
+    },
+    {
+      "id": "D-workaround-eb22969bf84eebb0",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 153
+    },
+    {
+      "id": "D-workaround-eb3c428abb9ec25e",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxLines.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxLines.svelte",
+      "line": 297
+    },
+    {
+      "id": "D-workaround-e6358195f1d55b63",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxPlain.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxPlain.svelte",
+      "line": 78
+    },
+    {
+      "id": "D-workaround-3e5e69c17d3bad48",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editors_SlideEditor.svelte-1.md",
+      "file": "src/frontend/components/edit/editors/SlideEditor.svelte",
+      "line": 476
+    },
+    {
+      "id": "D-workaround-7760e0a8c0ace22c",
+      "document": "docs/ai/history/records/src_frontend_components_edit_scripts_itemClipboard.ts-1.md",
+      "file": "src/frontend/components/edit/scripts/itemClipboard.ts",
+      "line": 229
+    },
+    {
+      "id": "D-workaround-6eb97acd1335e124",
+      "document": "docs/ai/history/records/src_frontend_components_edit_tools_BoxStyle.svelte-1.md",
+      "file": "src/frontend/components/edit/tools/BoxStyle.svelte",
+      "line": 572
+    },
+    {
+      "id": "D-workaround-d7e3e1526c586256",
+      "document": "docs/ai/history/records/src_frontend_components_edit_tools_BoxStyle.svelte-1.md",
+      "file": "src/frontend/components/edit/tools/BoxStyle.svelte",
+      "line": 624
+    },
+    {
+      "id": "D-workaround-ec1c8f4a1328a944",
+      "document": "docs/ai/history/records/src_frontend_components_edit_tools_BoxStyle.svelte-1.md",
+      "file": "src/frontend/components/edit/tools/BoxStyle.svelte",
+      "line": 694
+    },
+    {
+      "id": "D-workaround-5c7f8d01485c3966",
+      "document": "docs/ai/history/records/src_frontend_components_edit_tools_ItemsList.svelte-1.md",
+      "file": "src/frontend/components/edit/tools/ItemsList.svelte",
+      "line": 68
+    },
+    {
+      "id": "D-workaround-11514f457c3a3604",
+      "document": "docs/ai/history/records/src_frontend_components_edit_tools_SlideStyle.svelte-1.md",
+      "file": "src/frontend/components/edit/tools/SlideStyle.svelte",
+      "line": 76
+    },
+    {
+      "id": "D-workaround-dadb7f0e6b1470f0",
+      "document": "docs/ai/history/records/src_frontend_components_edit_values_boxes.ts-1.md",
+      "file": "src/frontend/components/edit/values/boxes.ts",
+      "line": 334
+    },
+    {
+      "id": "D-workaround-f8c8f02dba4e6b8b",
+      "document": "docs/ai/history/records/src_frontend_components_edit_values_boxes.ts-1.md",
+      "file": "src/frontend/components/edit/values/boxes.ts",
+      "line": 662
+    },
+    {
+      "id": "D-workaround-03b5b18830e05cf4",
+      "document": "docs/ai/history/records/src_frontend_components_edit_values_effects.ts-1.md",
+      "file": "src/frontend/components/edit/values/effects.ts",
+      "line": 263
+    },
+    {
+      "id": "D-workaround-5bc335f05b9739dc",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_history.ts-1.md",
+      "file": "src/frontend/components/helpers/history.ts",
+      "line": 197
+    },
+    {
+      "id": "D-workaround-e58f78a2ac28825e",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_history.ts-1.md",
+      "file": "src/frontend/components/helpers/history.ts",
+      "line": 226
+    },
+    {
+      "id": "D-workaround-f00f478e00a6b235",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyHelpers.ts-1.md",
+      "file": "src/frontend/components/helpers/historyHelpers.ts",
+      "line": 30
+    },
+    {
+      "id": "D-workaround-18dd47975640ab38",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyHelpers.ts-1.md",
+      "file": "src/frontend/components/helpers/historyHelpers.ts",
+      "line": 217
+    },
+    {
+      "id": "D-workaround-88e59d4d03ff323c",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyHelpers.ts-1.md",
+      "file": "src/frontend/components/helpers/historyHelpers.ts",
+      "line": 361
+    },
+    {
+      "id": "D-workaround-d78cae508b34ebfe",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyHelpers.ts-1.md",
+      "file": "src/frontend/components/helpers/historyHelpers.ts",
+      "line": 524
+    },
+    {
+      "id": "D-workaround-9cc5c46f261a73e0",
+      "document": "docs/ai/history/records/src_frontend_show_slides.ts-1.md",
+      "file": "src/frontend/show/slides.ts",
+      "line": 98
+    },
+    {
+      "id": "D-workaround-e5d4879afa60fa28",
+      "document": "docs/ai/history/records/src_frontend_show_slides.ts-1.md",
+      "file": "src/frontend/show/slides.ts",
+      "line": 214
+    },
+    {
+      "id": "D-workaround-93f6ebc266fce151",
+      "document": "docs/ai/history/records/src_frontend_show_slides.ts-1.md",
+      "file": "src/frontend/show/slides.ts",
+      "line": 274
+    },
+    {
+      "id": "D-workaround-860b8e0586027edf",
+      "document": "docs/ai/history/records/src_frontend_show_slides.ts-1.md",
+      "file": "src/frontend/show/slides.ts",
+      "line": 531
+    },
+    {
+      "id": "D-workaround-1b4951dfa1b92378",
+      "document": "docs/ai/history/records/src_types_History.ts-1.md",
+      "file": "src/types/History.ts",
+      "line": 13
+    },
+    {
+      "id": "D-fork-1390ec11b0296bb6",
+      "document": "docs/ai/history/records/src_frontend_components_edit_MediaTools.svelte-1.md",
+      "file": "src/frontend/components/edit/MediaTools.svelte",
+      "line": 69
+    },
+    {
+      "id": "D-fork-174674236734d953",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyActions.ts-1.md",
+      "file": "src/frontend/components/helpers/historyActions.ts",
+      "line": 272
+    },
+    {
+      "id": "D-fork-846d90984dd65100",
+      "document": "docs/ai/history/records/src_frontend_components_edit_MediaTools.svelte-1.md",
+      "file": "src/frontend/components/edit/MediaTools.svelte",
+      "line": 25
+    },
+    {
+      "id": "D-fork-be2706a5b9aed4c3",
+      "document": "docs/ai/history/records/src_frontend_components_edit_EditTools.svelte-1.md",
+      "file": "src/frontend/components/edit/EditTools.svelte",
+      "line": 58
+    },
+    {
+      "id": "D-fork-f910dbf6dd979317",
+      "document": "docs/ai/history/records/src_frontend_components_edit_editbox_EditboxChords.svelte-1.md",
+      "file": "src/frontend/components/edit/editbox/EditboxChords.svelte",
+      "line": 228
+    }
+  ]
+}

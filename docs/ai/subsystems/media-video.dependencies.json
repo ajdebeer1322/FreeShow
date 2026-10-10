@@ -1,0 +1,571 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/frontend/components/helpers/media.ts",
+    "src/frontend/components/helpers/showActions.ts",
+    "src/frontend/components/media/Image.svelte",
+    "src/frontend/components/media/Video.svelte",
+    "src/frontend/components/media/video/softLoop.ts",
+    "src/frontend/components/media/video/videoPlayer.ts",
+    "src/frontend/components/media/video/videoSync.ts",
+    "src/frontend/components/media/video/videoTime.ts",
+    "src/frontend/components/output/layers/Background.svelte",
+    "src/frontend/components/output/layers/BackgroundMedia.svelte",
+    "src/frontend/components/output/layers/Media.svelte"
+  ],
+  "stores": [
+    "src/frontend/stores.ts#activeEdit",
+    "src/frontend/stores.ts#activeFocus",
+    "src/frontend/stores.ts#activeInteractions",
+    "src/frontend/stores.ts#activePage",
+    "src/frontend/stores.ts#activeProject",
+    "src/frontend/stores.ts#activeShow",
+    "src/frontend/stores.ts#allOutputs",
+    "src/frontend/stores.ts#audioChannelsData",
+    "src/frontend/stores.ts#audioData",
+    "src/frontend/stores.ts#audioFolders",
+    "src/frontend/stores.ts#cachePath",
+    "src/frontend/stores.ts#cachedDynamicValues",
+    "src/frontend/stores.ts#currentWindow",
+    "src/frontend/stores.ts#customMetadata",
+    "src/frontend/stores.ts#dictionary",
+    "src/frontend/stores.ts#dynamicValueData",
+    "src/frontend/stores.ts#editingProjectTemplate",
+    "src/frontend/stores.ts#focusMode",
+    "src/frontend/stores.ts#interactions",
+    "src/frontend/stores.ts#loadedMediaThumbnails",
+    "src/frontend/stores.ts#media",
+    "src/frontend/stores.ts#mediaFolders",
+    "src/frontend/stores.ts#outLocked",
+    "src/frontend/stores.ts#outputDisplay",
+    "src/frontend/stores.ts#outputs",
+    "src/frontend/stores.ts#overlays",
+    "src/frontend/stores.ts#playerVideos",
+    "src/frontend/stores.ts#playingAudio",
+    "src/frontend/stores.ts#playingMetronome",
+    "src/frontend/stores.ts#playingVideoState",
+    "src/frontend/stores.ts#playingVideos",
+    "src/frontend/stores.ts#projectTemplates",
+    "src/frontend/stores.ts#projects",
+    "src/frontend/stores.ts#shows",
+    "src/frontend/stores.ts#showsCache",
+    "src/frontend/stores.ts#slideTimers",
+    "src/frontend/stores.ts#special",
+    "src/frontend/stores.ts#stageShows",
+    "src/frontend/stores.ts#styles",
+    "src/frontend/stores.ts#templates",
+    "src/frontend/stores.ts#timers",
+    "src/frontend/stores.ts#transitionData",
+    "src/frontend/stores.ts#variables"
+  ],
+  "messages": [
+    "MAIN/CAPTURE_SLIDE",
+    "MAIN/CHECK_MEDIA_LICENSE",
+    "MAIN/DOES_MEDIA_EXIST",
+    "MAIN/GET_THUMBNAIL",
+    "MAIN/LOCATE_MEDIA_FILE",
+    "MAIN/MEDIA_CODEC",
+    "MAIN/MEDIA_DOWNLOAD",
+    "MAIN/MEDIA_IS_DOWNLOADED",
+    "MAIN/READ_AUDIO_METADATA",
+    "MAIN/READ_EXIF",
+    "MAIN/SAVE_IMAGE",
+    "MAIN/SEND_MIDI",
+    "OUTPUT/DYNAMIC_VALUE_DATA",
+    "OUTPUT/MAIN_REQUEST_DYNAMIC_VALUE",
+    "OUTPUT/MAIN_SHOWS_DATA",
+    "OUTPUT/OVERLAYS"
+  ],
+  "timingIds": [
+    "request-budget-14e13ad8ffd2663d",
+    "poll-interval-ee3a3da5ffa25bab",
+    "poll-timeout-3bbf13c026ed486a",
+    "poll-interval-14af15f8d9be4a0b",
+    "poll-timeout-27a2e8088ebee51a",
+    "request-budget-992d091a2f1cdf6b",
+    "request-budget-588898683577ed66",
+    "request-budget-ec61baab0ff41643",
+    "request-budget-ef548bc284c3fba2",
+    "request-budget-61627858f6a91b08",
+    "timer-c9aa03a0bc012d07",
+    "poll-interval-9aea957a500b4301",
+    "poll-timeout-40d26b0f5ebcb0a8",
+    "timer-65d342a86751dc8c",
+    "timer-e8b7794a60cb9b55",
+    "request-budget-915ad0da92ac42ef",
+    "request-budget-7b1f317ce6a2d8d5",
+    "timer-c1b7dd5471c77c43",
+    "timer-adbf2ea668c80884",
+    "timer-c1a395bdd22fc870",
+    "timer-ee2e20f69450cdf5",
+    "timer-2efd07edaaf6af61",
+    "timer-b809a42ca63bfd42",
+    "timer-9ca3583b7910e457",
+    "timer-306169a1b680e355",
+    "timer-740c1f8368df9e9e",
+    "timer-1e0c03ac8679480d",
+    "request-budget-a06b3c813a5e0f6b",
+    "timer-5e2f33f21fe8db3b",
+    "timer-1b66b389fd3440f0",
+    "timer-ca6287bc41cdf553",
+    "timer-41206b4eadc10c34",
+    "timer-855d0e06b24148fe",
+    "timer-712b236861bb0c31",
+    "timer-9acfa5efccaef862",
+    "timer-88afe0d0358f6192",
+    "timer-ee6d648cb5a47588",
+    "timer-50d96301ef560df0",
+    "request-budget-0b4bc13cfa359851",
+    "timer-19871648cec0be99",
+    "timer-245cd5f7c05a73d0",
+    "timer-6719b9b5acd92dc1",
+    "timer-fe3553171eefaaf5",
+    "timer-32131be162076e13",
+    "timer-1ea9fa8d2ca7787d",
+    "timer-54f2a6c7918ee167",
+    "timer-bee4a460e0391e4d",
+    "timer-05e5abc802c44755",
+    "css-transition-4fd64c1e2d064b4a"
+  ],
+  "workaroundIds": [
+    "workaround-4ffe3a82599de495",
+    "workaround-d0a3e7645694d8a7",
+    "workaround-94a2c2daeceaec51",
+    "workaround-9749ee5a7db30206",
+    "workaround-f71816d45dd52a40",
+    "workaround-d074f7d32ea3d598",
+    "workaround-48b69393e2634acd",
+    "workaround-d5b1b732917a8eb2",
+    "workaround-50747b0c19846f4b",
+    "workaround-7cb390e9f0474f0a",
+    "workaround-743511ce00359c38"
+  ],
+  "decisions": [
+    {
+      "id": "D-request-budget-14e13ad8ffd2663d",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 144
+    },
+    {
+      "id": "D-poll-interval-ee3a3da5ffa25bab",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 192
+    },
+    {
+      "id": "D-poll-timeout-3bbf13c026ed486a",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 192
+    },
+    {
+      "id": "D-poll-interval-14af15f8d9be4a0b",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 254
+    },
+    {
+      "id": "D-poll-timeout-27a2e8088ebee51a",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 254
+    },
+    {
+      "id": "D-request-budget-992d091a2f1cdf6b",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 272
+    },
+    {
+      "id": "D-request-budget-588898683577ed66",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 283
+    },
+    {
+      "id": "D-request-budget-ec61baab0ff41643",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 289
+    },
+    {
+      "id": "D-request-budget-ef548bc284c3fba2",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 312
+    },
+    {
+      "id": "D-request-budget-61627858f6a91b08",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 445
+    },
+    {
+      "id": "D-timer-c9aa03a0bc012d07",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 519
+    },
+    {
+      "id": "D-poll-interval-9aea957a500b4301",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 635
+    },
+    {
+      "id": "D-poll-timeout-40d26b0f5ebcb0a8",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 635
+    },
+    {
+      "id": "D-timer-65d342a86751dc8c",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 650
+    },
+    {
+      "id": "D-timer-e8b7794a60cb9b55",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 663
+    },
+    {
+      "id": "D-request-budget-915ad0da92ac42ef",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 785
+    },
+    {
+      "id": "D-request-budget-7b1f317ce6a2d8d5",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-2.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 821
+    },
+    {
+      "id": "D-timer-c1b7dd5471c77c43",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 113
+    },
+    {
+      "id": "D-timer-adbf2ea668c80884",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 301
+    },
+    {
+      "id": "D-timer-c1a395bdd22fc870",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 441
+    },
+    {
+      "id": "D-timer-ee2e20f69450cdf5",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 457
+    },
+    {
+      "id": "D-timer-2efd07edaaf6af61",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 465
+    },
+    {
+      "id": "D-timer-b809a42ca63bfd42",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 498
+    },
+    {
+      "id": "D-timer-9ca3583b7910e457",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 654
+    },
+    {
+      "id": "D-timer-306169a1b680e355",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 659
+    },
+    {
+      "id": "D-timer-740c1f8368df9e9e",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 720
+    },
+    {
+      "id": "D-timer-1e0c03ac8679480d",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 931
+    },
+    {
+      "id": "D-request-budget-a06b3c813a5e0f6b",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 1506
+    },
+    {
+      "id": "D-timer-5e2f33f21fe8db3b",
+      "document": "docs/ai/history/records/src_frontend_components_media_Video.svelte-1.md",
+      "file": "src/frontend/components/media/Video.svelte",
+      "line": 93
+    },
+    {
+      "id": "D-timer-1b66b389fd3440f0",
+      "document": "docs/ai/history/records/src_frontend_components_media_Video.svelte-1.md",
+      "file": "src/frontend/components/media/Video.svelte",
+      "line": 164
+    },
+    {
+      "id": "D-timer-ca6287bc41cdf553",
+      "document": "docs/ai/history/records/src_frontend_components_media_Video.svelte-1.md",
+      "file": "src/frontend/components/media/Video.svelte",
+      "line": 174
+    },
+    {
+      "id": "D-timer-41206b4eadc10c34",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_softLoop.ts-1.md",
+      "file": "src/frontend/components/media/video/softLoop.ts",
+      "line": 33
+    },
+    {
+      "id": "D-timer-855d0e06b24148fe",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 179
+    },
+    {
+      "id": "D-timer-712b236861bb0c31",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 365
+    },
+    {
+      "id": "D-timer-9acfa5efccaef862",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 445
+    },
+    {
+      "id": "D-timer-88afe0d0358f6192",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 467
+    },
+    {
+      "id": "D-timer-ee6d648cb5a47588",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 525
+    },
+    {
+      "id": "D-timer-50d96301ef560df0",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 558
+    },
+    {
+      "id": "D-request-budget-0b4bc13cfa359851",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 705
+    },
+    {
+      "id": "D-timer-19871648cec0be99",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 737
+    },
+    {
+      "id": "D-timer-245cd5f7c05a73d0",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 890
+    },
+    {
+      "id": "D-timer-6719b9b5acd92dc1",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 909
+    },
+    {
+      "id": "D-timer-fe3553171eefaaf5",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Background.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Background.svelte",
+      "line": 48
+    },
+    {
+      "id": "D-timer-32131be162076e13",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Background.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Background.svelte",
+      "line": 95
+    },
+    {
+      "id": "D-timer-1ea9fa8d2ca7787d",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Background.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Background.svelte",
+      "line": 111
+    },
+    {
+      "id": "D-timer-54f2a6c7918ee167",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Background.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Background.svelte",
+      "line": 124
+    },
+    {
+      "id": "D-timer-bee4a460e0391e4d",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Background.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Background.svelte",
+      "line": 148
+    },
+    {
+      "id": "D-timer-05e5abc802c44755",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Media.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Media.svelte",
+      "line": 49
+    },
+    {
+      "id": "D-css-transition-4fd64c1e2d064b4a",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Media.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Media.svelte",
+      "line": 75
+    },
+    {
+      "id": "D-workaround-4ffe3a82599de495",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 92
+    },
+    {
+      "id": "D-workaround-d0a3e7645694d8a7",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 333
+    },
+    {
+      "id": "D-workaround-94a2c2daeceaec51",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 369
+    },
+    {
+      "id": "D-workaround-9749ee5a7db30206",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 382
+    },
+    {
+      "id": "D-workaround-f71816d45dd52a40",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 409
+    },
+    {
+      "id": "D-workaround-d074f7d32ea3d598",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-2.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 650
+    },
+    {
+      "id": "D-workaround-48b69393e2634acd",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-2.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 813
+    },
+    {
+      "id": "D-workaround-d5b1b732917a8eb2",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 518
+    },
+    {
+      "id": "D-workaround-50747b0c19846f4b",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Background.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Background.svelte",
+      "line": 28
+    },
+    {
+      "id": "D-workaround-7cb390e9f0474f0a",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Background.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Background.svelte",
+      "line": 29
+    },
+    {
+      "id": "D-workaround-743511ce00359c38",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Background.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Background.svelte",
+      "line": 41
+    },
+    {
+      "id": "D-hotspot-7e8d40fc51026076",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-2.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 19
+    },
+    {
+      "id": "D-hotspot-b8873238b2580417",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-2.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 90
+    },
+    {
+      "id": "D-hotspot-0e953fa8b602c16f",
+      "document": "docs/ai/history/records/src_frontend_components_media_Image.svelte-1.md",
+      "file": "src/frontend/components/media/Image.svelte",
+      "line": 10
+    },
+    {
+      "id": "D-hotspot-61d327500378b65d",
+      "document": "docs/ai/history/records/src_frontend_components_media_Video.svelte-1.md",
+      "file": "src/frontend/components/media/Video.svelte",
+      "line": 66
+    },
+    {
+      "id": "D-hotspot-7d8b5cc4a04e3f36",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_softLoop.ts-1.md",
+      "file": "src/frontend/components/media/video/softLoop.ts",
+      "line": 3
+    },
+    {
+      "id": "D-hotspot-8f19f512e85419e8",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 62
+    },
+    {
+      "id": "D-hotspot-6dc7095db41c5212",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoSync.ts-1.md",
+      "file": "src/frontend/components/media/video/videoSync.ts",
+      "line": 4
+    },
+    {
+      "id": "D-hotspot-b413118cece8f24d",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoTime.ts-1.md",
+      "file": "src/frontend/components/media/video/videoTime.ts",
+      "line": 3
+    },
+    {
+      "id": "D-hotspot-76056d058d1ad6d6",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Background.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Background.svelte",
+      "line": 40
+    },
+    {
+      "id": "D-hotspot-95b89a7ef247db20",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_BackgroundMedia.svelte-1.md",
+      "file": "src/frontend/components/output/layers/BackgroundMedia.svelte",
+      "line": 1
+    },
+    {
+      "id": "D-hotspot-c214e07d820fc1c9",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Media.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Media.svelte",
+      "line": 33
+    }
+  ]
+}

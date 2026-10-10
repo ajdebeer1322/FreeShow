@@ -1,0 +1,186 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/electron/cloud/ChurchAppsSyncManager.ts",
+    "src/electron/cloud/cloud.ts",
+    "src/electron/cloud/drive.ts",
+    "src/electron/cloud/syncLedger.test.ts",
+    "src/electron/cloud/syncLedger.ts",
+    "src/electron/cloud/syncManager.test.ts",
+    "src/electron/cloud/syncManager.ts",
+    "src/electron/data/backup.ts",
+    "src/electron/data/zip.ts",
+    "src/frontend/utils/cloudSync.ts",
+    "src/frontend/utils/drive.ts"
+  ],
+  "stores": [
+    "src/frontend/stores.ts#activeEdit",
+    "src/frontend/stores.ts#activePage",
+    "src/frontend/stores.ts#activePopup",
+    "src/frontend/stores.ts#activeProject",
+    "src/frontend/stores.ts#activeShow",
+    "src/frontend/stores.ts#alertMessage",
+    "src/frontend/stores.ts#cloudSyncData",
+    "src/frontend/stores.ts#cloudUsers",
+    "src/frontend/stores.ts#deletedShows",
+    "src/frontend/stores.ts#deviceId",
+    "src/frontend/stores.ts#driveData",
+    "src/frontend/stores.ts#driveKeys",
+    "src/frontend/stores.ts#focusMode",
+    "src/frontend/stores.ts#popupData",
+    "src/frontend/stores.ts#providerConnections",
+    "src/frontend/stores.ts#renamedShows",
+    "src/frontend/stores.ts#saved",
+    "src/frontend/stores.ts#scripturesCache",
+    "src/frontend/stores.ts#shows",
+    "src/frontend/stores.ts#showsCache",
+    "src/frontend/stores.ts#special"
+  ],
+  "messages": [
+    "CLOUD/DRIVE_CONNECT",
+    "CLOUD/SYNC_DATA",
+    "MAIN/ALERT",
+    "MAIN/BACKUP",
+    "MAIN/CAN_SYNC",
+    "MAIN/CLOUD_DATA",
+    "MAIN/CLOUD_SYNC",
+    "MAIN/GET_CONVERSATION_ID",
+    "MAIN/GET_DEVICE_NAME",
+    "MAIN/GET_TEAMS",
+    "MAIN/MEDIA_FOLDER_COPY",
+    "MAIN/RESTORE2",
+    "MAIN/SHOWS"
+  ],
+  "timingIds": [
+    "timer-3933b26e0f44e54a",
+    "request-budget-3f94e933780deecf",
+    "request-budget-90642cdd9c2580b0",
+    "request-budget-77b877efe249816b",
+    "request-budget-4180248b4e910733",
+    "request-budget-aba3a9f201163688",
+    "request-budget-2ebdbb2eca63f5ce",
+    "timer-d8977510d8dcc3d0",
+    "request-budget-70a4aead76ddeb01",
+    "timer-99d12f1e2b96628f",
+    "request-budget-74171d8eccbb9c4b",
+    "timer-91ce986820e52e49",
+    "timer-77bed2090346bdfe",
+    "timer-c068ad5d4ae34a45",
+    "timer-6091a4aa62e98158"
+  ],
+  "workaroundIds": [
+    "workaround-b404ae8a8c6cc004",
+    "workaround-0275d34cb219c0fa",
+    "workaround-aaf1d709f51e81df"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-3933b26e0f44e54a",
+      "document": "docs/ai/history/records/src_electron_cloud_syncManager.ts-1.md",
+      "file": "src/electron/cloud/syncManager.ts",
+      "line": 465
+    },
+    {
+      "id": "D-request-budget-3f94e933780deecf",
+      "document": "docs/ai/history/records/src_frontend_utils_cloudSync.ts-1.md",
+      "file": "src/frontend/utils/cloudSync.ts",
+      "line": 38
+    },
+    {
+      "id": "D-request-budget-90642cdd9c2580b0",
+      "document": "docs/ai/history/records/src_frontend_utils_cloudSync.ts-1.md",
+      "file": "src/frontend/utils/cloudSync.ts",
+      "line": 51
+    },
+    {
+      "id": "D-request-budget-77b877efe249816b",
+      "document": "docs/ai/history/records/src_frontend_utils_cloudSync.ts-1.md",
+      "file": "src/frontend/utils/cloudSync.ts",
+      "line": 56
+    },
+    {
+      "id": "D-request-budget-4180248b4e910733",
+      "document": "docs/ai/history/records/src_frontend_utils_cloudSync.ts-1.md",
+      "file": "src/frontend/utils/cloudSync.ts",
+      "line": 83
+    },
+    {
+      "id": "D-request-budget-aba3a9f201163688",
+      "document": "docs/ai/history/records/src_frontend_utils_cloudSync.ts-1.md",
+      "file": "src/frontend/utils/cloudSync.ts",
+      "line": 93
+    },
+    {
+      "id": "D-request-budget-2ebdbb2eca63f5ce",
+      "document": "docs/ai/history/records/src_frontend_utils_cloudSync.ts-1.md",
+      "file": "src/frontend/utils/cloudSync.ts",
+      "line": 102
+    },
+    {
+      "id": "D-timer-d8977510d8dcc3d0",
+      "document": "docs/ai/history/records/src_frontend_utils_cloudSync.ts-1.md",
+      "file": "src/frontend/utils/cloudSync.ts",
+      "line": 106
+    },
+    {
+      "id": "D-request-budget-70a4aead76ddeb01",
+      "document": "docs/ai/history/records/src_frontend_utils_cloudSync.ts-1.md",
+      "file": "src/frontend/utils/cloudSync.ts",
+      "line": 160
+    },
+    {
+      "id": "D-timer-99d12f1e2b96628f",
+      "document": "docs/ai/history/records/src_frontend_utils_cloudSync.ts-1.md",
+      "file": "src/frontend/utils/cloudSync.ts",
+      "line": 204
+    },
+    {
+      "id": "D-request-budget-74171d8eccbb9c4b",
+      "document": "docs/ai/history/records/src_frontend_utils_cloudSync.ts-1.md",
+      "file": "src/frontend/utils/cloudSync.ts",
+      "line": 241
+    },
+    {
+      "id": "D-timer-91ce986820e52e49",
+      "document": "docs/ai/history/records/src_frontend_utils_cloudSync.ts-1.md",
+      "file": "src/frontend/utils/cloudSync.ts",
+      "line": 259
+    },
+    {
+      "id": "D-timer-77bed2090346bdfe",
+      "document": "docs/ai/history/records/src_frontend_utils_cloudSync.ts-1.md",
+      "file": "src/frontend/utils/cloudSync.ts",
+      "line": 397
+    },
+    {
+      "id": "D-timer-c068ad5d4ae34a45",
+      "document": "docs/ai/history/records/src_frontend_utils_cloudSync.ts-1.md",
+      "file": "src/frontend/utils/cloudSync.ts",
+      "line": 418
+    },
+    {
+      "id": "D-timer-6091a4aa62e98158",
+      "document": "docs/ai/history/records/src_frontend_utils_drive.ts-1.md",
+      "file": "src/frontend/utils/drive.ts",
+      "line": 39
+    },
+    {
+      "id": "D-workaround-b404ae8a8c6cc004",
+      "document": "docs/ai/history/records/src_electron_cloud_syncLedger.test.ts-1.md",
+      "file": "src/electron/cloud/syncLedger.test.ts",
+      "line": 157
+    },
+    {
+      "id": "D-workaround-0275d34cb219c0fa",
+      "document": "docs/ai/history/records/src_electron_cloud_syncManager.ts-1.md",
+      "file": "src/electron/cloud/syncManager.ts",
+      "line": 81
+    },
+    {
+      "id": "D-workaround-aaf1d709f51e81df",
+      "document": "docs/ai/history/records/src_frontend_utils_cloudSync.ts-1.md",
+      "file": "src/frontend/utils/cloudSync.ts",
+      "line": 104
+    }
+  ]
+}

@@ -1,0 +1,1643 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/frontend/components/drawer/Card.svelte",
+    "src/frontend/components/drawer/Content.svelte",
+    "src/frontend/components/drawer/Drawer.svelte",
+    "src/frontend/components/drawer/Label.svelte",
+    "src/frontend/components/drawer/MaterialDrawerTab.svelte",
+    "src/frontend/components/drawer/Navigation.svelte",
+    "src/frontend/components/drawer/VirtualList.svelte",
+    "src/frontend/components/drawer/audio/Audio.svelte",
+    "src/frontend/components/drawer/audio/AudioChannelMixer.svelte",
+    "src/frontend/components/drawer/audio/AudioEffect.svelte",
+    "src/frontend/components/drawer/audio/AudioEffects.svelte",
+    "src/frontend/components/drawer/audio/AudioFile.svelte",
+    "src/frontend/components/drawer/audio/AudioMeter.svelte",
+    "src/frontend/components/drawer/audio/AudioMixers.svelte",
+    "src/frontend/components/drawer/audio/AudioMixersGroup.svelte",
+    "src/frontend/components/drawer/audio/AudioSidechain.svelte",
+    "src/frontend/components/drawer/audio/Metronome.svelte",
+    "src/frontend/components/drawer/audio/MetronomeInputs.svelte",
+    "src/frontend/components/drawer/audio/MetronomeVisualizer.svelte",
+    "src/frontend/components/drawer/audio/effects/AudioCompressor.svelte",
+    "src/frontend/components/drawer/audio/effects/AudioDelay.svelte",
+    "src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte",
+    "src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte",
+    "src/frontend/components/drawer/audio/effects/AudioFilter.svelte",
+    "src/frontend/components/drawer/audio/effects/AudioLimiter.svelte",
+    "src/frontend/components/drawer/audio/effects/AudioNoiseGate.svelte",
+    "src/frontend/components/drawer/audio/effects/AudioReverb.svelte",
+    "src/frontend/components/drawer/audio/effects/AudioStereoShaper.svelte",
+    "src/frontend/components/drawer/audio/metronome.ts",
+    "src/frontend/components/drawer/bible/Scripture.svelte",
+    "src/frontend/components/drawer/bible/scripture.ts",
+    "src/frontend/components/drawer/calendar/Calendar.svelte",
+    "src/frontend/components/drawer/calendar/CalendarsManagement.svelte",
+    "src/frontend/components/drawer/calendar/CreateCalendarShow.svelte",
+    "src/frontend/components/drawer/calendar/Day.svelte",
+    "src/frontend/components/drawer/calendar/calendar.ts",
+    "src/frontend/components/drawer/calendar/calendars.ts",
+    "src/frontend/components/drawer/calendar/event.ts",
+    "src/frontend/components/drawer/effects/EffectIcons.svelte",
+    "src/frontend/components/drawer/effects/Effects.svelte",
+    "src/frontend/components/drawer/info/AudioInfo.svelte",
+    "src/frontend/components/drawer/info/CalendarInfo.svelte",
+    "src/frontend/components/drawer/info/CanvaInfo.svelte",
+    "src/frontend/components/drawer/info/EffectsInfo.svelte",
+    "src/frontend/components/drawer/info/FunctionsInfo.svelte",
+    "src/frontend/components/drawer/info/Info.svelte",
+    "src/frontend/components/drawer/info/InfoMetadata.svelte",
+    "src/frontend/components/drawer/info/MediaInfo.svelte",
+    "src/frontend/components/drawer/info/OBSInfo.svelte",
+    "src/frontend/components/drawer/info/OverlayInfo.svelte",
+    "src/frontend/components/drawer/info/PlayerInfo.svelte",
+    "src/frontend/components/drawer/info/ScenesInfo.svelte",
+    "src/frontend/components/drawer/info/ScriptureInfo.svelte",
+    "src/frontend/components/drawer/info/ShowInfo.svelte",
+    "src/frontend/components/drawer/info/TemplateInfo.svelte",
+    "src/frontend/components/drawer/live/AudioStreams.svelte",
+    "src/frontend/components/drawer/live/BMDStream.svelte",
+    "src/frontend/components/drawer/live/BMDStreams.svelte",
+    "src/frontend/components/drawer/live/Cam.svelte",
+    "src/frontend/components/drawer/live/Cameras.svelte",
+    "src/frontend/components/drawer/live/Capture.svelte",
+    "src/frontend/components/drawer/live/LiveInfo.svelte",
+    "src/frontend/components/drawer/live/Mic.svelte",
+    "src/frontend/components/drawer/live/Microphones.svelte",
+    "src/frontend/components/drawer/live/NDIStream.svelte",
+    "src/frontend/components/drawer/live/NDIStreams.svelte",
+    "src/frontend/components/drawer/live/OMTStream.svelte",
+    "src/frontend/components/drawer/live/OMTStreams.svelte",
+    "src/frontend/components/drawer/live/Screens.svelte",
+    "src/frontend/components/drawer/live/Windows.svelte",
+    "src/frontend/components/drawer/live/recorder.ts",
+    "src/frontend/components/drawer/live/streamCanvas.ts",
+    "src/frontend/components/drawer/media/CLogo.svelte",
+    "src/frontend/components/drawer/media/Canva.svelte",
+    "src/frontend/components/drawer/media/ContentLibraryBrowser.svelte",
+    "src/frontend/components/drawer/media/Folder.svelte",
+    "src/frontend/components/drawer/media/Image.svelte",
+    "src/frontend/components/drawer/media/IntersectionObserver.svelte",
+    "src/frontend/components/drawer/media/Media.svelte",
+    "src/frontend/components/drawer/media/MediaCard.svelte",
+    "src/frontend/components/drawer/media/MediaGrid.svelte",
+    "src/frontend/components/drawer/media/MediaLoader.svelte",
+    "src/frontend/components/drawer/media/pixabay.ts",
+    "src/frontend/components/drawer/media/unsplash.ts",
+    "src/frontend/components/drawer/navigation/AudioTabs.svelte",
+    "src/frontend/components/drawer/navigation/CalendarTabs.svelte",
+    "src/frontend/components/drawer/navigation/FunctionsTabs.svelte",
+    "src/frontend/components/drawer/navigation/MediaTabs.svelte",
+    "src/frontend/components/drawer/navigation/NavigationSections.svelte",
+    "src/frontend/components/drawer/navigation/OverlaysTabs.svelte",
+    "src/frontend/components/drawer/navigation/ScriptureTabs.svelte",
+    "src/frontend/components/drawer/navigation/ShowsTabs.svelte",
+    "src/frontend/components/drawer/navigation/TemplatesTabs.svelte",
+    "src/frontend/components/drawer/pages/Actions.svelte",
+    "src/frontend/components/drawer/pages/Interactions.svelte",
+    "src/frontend/components/drawer/pages/InteractionsInfo.svelte",
+    "src/frontend/components/drawer/pages/OBS.svelte",
+    "src/frontend/components/drawer/pages/OverlayActions.svelte",
+    "src/frontend/components/drawer/pages/Overlays.svelte",
+    "src/frontend/components/drawer/pages/SceneActions.svelte",
+    "src/frontend/components/drawer/pages/ScenePreview.svelte",
+    "src/frontend/components/drawer/pages/Scenes.svelte",
+    "src/frontend/components/drawer/pages/Shows.svelte",
+    "src/frontend/components/drawer/pages/TemplateSlide.svelte",
+    "src/frontend/components/drawer/pages/Templates.svelte",
+    "src/frontend/components/drawer/pages/Variables.svelte",
+    "src/frontend/components/drawer/pages/firebaseUtils.ts",
+    "src/frontend/components/drawer/pages/interactionSlides.ts",
+    "src/frontend/components/drawer/pages/interactions.ts",
+    "src/frontend/components/drawer/player/PlayerVideos.svelte",
+    "src/frontend/components/drawer/player/Vimeo.svelte",
+    "src/frontend/components/drawer/player/YouTube.svelte",
+    "src/frontend/components/drawer/player/YouTubePlayer.svelte",
+    "src/frontend/components/drawer/player/YouTubePlayerLite.svelte",
+    "src/frontend/components/drawer/player/playerHelper.ts",
+    "src/frontend/components/drawer/timers/TimerInfo.svelte",
+    "src/frontend/components/drawer/timers/Timers.svelte",
+    "src/frontend/components/drawer/timers/timers.ts",
+    "src/frontend/components/helpers/media.ts",
+    "src/frontend/components/media/Image.svelte",
+    "src/frontend/components/media/Video.svelte",
+    "src/frontend/components/media/video/softLoop.ts",
+    "src/frontend/components/media/video/videoPlayer.ts",
+    "src/frontend/components/media/video/videoSync.ts",
+    "src/frontend/components/media/video/videoTime.ts",
+    "src/frontend/values/tabs.ts"
+  ],
+  "stores": [
+    "src/frontend/components/drawer/media/MediaCard.svelte#currentOutput",
+    "src/frontend/components/drawer/media/MediaCard.svelte#currentStyle",
+    "src/frontend/stores.ts#actionHistory",
+    "src/frontend/stores.ts#actionTags",
+    "src/frontend/stores.ts#actions",
+    "src/frontend/stores.ts#activeActionTagFilter",
+    "src/frontend/stores.ts#activeAudioEffects",
+    "src/frontend/stores.ts#activeCanvaPresentation",
+    "src/frontend/stores.ts#activeDays",
+    "src/frontend/stores.ts#activeDrawerTab",
+    "src/frontend/stores.ts#activeEdit",
+    "src/frontend/stores.ts#activeFocus",
+    "src/frontend/stores.ts#activeInteractions",
+    "src/frontend/stores.ts#activeMediaTagFilter",
+    "src/frontend/stores.ts#activePage",
+    "src/frontend/stores.ts#activePlayerTagFilter",
+    "src/frontend/stores.ts#activePlaylist",
+    "src/frontend/stores.ts#activePopup",
+    "src/frontend/stores.ts#activeProfile",
+    "src/frontend/stores.ts#activeProject",
+    "src/frontend/stores.ts#activeRecording",
+    "src/frontend/stores.ts#activeRename",
+    "src/frontend/stores.ts#activeScripture",
+    "src/frontend/stores.ts#activeShow",
+    "src/frontend/stores.ts#activeStyle",
+    "src/frontend/stores.ts#activeTagFilter",
+    "src/frontend/stores.ts#activeTimerTagFilter",
+    "src/frontend/stores.ts#activeTimers",
+    "src/frontend/stores.ts#activeTriggerFunction",
+    "src/frontend/stores.ts#activeVariableTagFilter",
+    "src/frontend/stores.ts#alertMessage",
+    "src/frontend/stores.ts#audioChannelsData",
+    "src/frontend/stores.ts#audioEffectPresets",
+    "src/frontend/stores.ts#audioEffects",
+    "src/frontend/stores.ts#audioFolders",
+    "src/frontend/stores.ts#audioPlaylists",
+    "src/frontend/stores.ts#audioRouting",
+    "src/frontend/stores.ts#audioStreams",
+    "src/frontend/stores.ts#cachePath",
+    "src/frontend/stores.ts#calendarAddShow",
+    "src/frontend/stores.ts#calendars",
+    "src/frontend/stores.ts#categories",
+    "src/frontend/stores.ts#channelSidechainMultipliers",
+    "src/frontend/stores.ts#cloudSyncData",
+    "src/frontend/stores.ts#currentRecordingStream",
+    "src/frontend/stores.ts#currentWindow",
+    "src/frontend/stores.ts#customMessageCredits",
+    "src/frontend/stores.ts#customMetadata",
+    "src/frontend/stores.ts#customScriptureBooks",
+    "src/frontend/stores.ts#dataPath",
+    "src/frontend/stores.ts#dictionary",
+    "src/frontend/stores.ts#disableDragging",
+    "src/frontend/stores.ts#drawer",
+    "src/frontend/stores.ts#drawerOpenedInEdit",
+    "src/frontend/stores.ts#drawerTabsData",
+    "src/frontend/stores.ts#effects",
+    "src/frontend/stores.ts#effectsLibrary",
+    "src/frontend/stores.ts#events",
+    "src/frontend/stores.ts#focusMode",
+    "src/frontend/stores.ts#forceClock",
+    "src/frontend/stores.ts#fullColors",
+    "src/frontend/stores.ts#globalTags",
+    "src/frontend/stores.ts#interactions",
+    "src/frontend/stores.ts#labelsDisabled",
+    "src/frontend/stores.ts#language",
+    "src/frontend/stores.ts#loadedMediaThumbnails",
+    "src/frontend/stores.ts#media",
+    "src/frontend/stores.ts#mediaFolders",
+    "src/frontend/stores.ts#mediaOptions",
+    "src/frontend/stores.ts#mediaTags",
+    "src/frontend/stores.ts#metronome",
+    "src/frontend/stores.ts#metronomeTimer",
+    "src/frontend/stores.ts#nextActionEventPaused",
+    "src/frontend/stores.ts#nextActionEventStart",
+    "src/frontend/stores.ts#notFound",
+    "src/frontend/stores.ts#obsData",
+    "src/frontend/stores.ts#openScripture",
+    "src/frontend/stores.ts#openedInteractionId",
+    "src/frontend/stores.ts#openedMediaFolders",
+    "src/frontend/stores.ts#os",
+    "src/frontend/stores.ts#outLocked",
+    "src/frontend/stores.ts#outputs",
+    "src/frontend/stores.ts#overlayCategories",
+    "src/frontend/stores.ts#overlays",
+    "src/frontend/stores.ts#photoApiCredits",
+    "src/frontend/stores.ts#playerTags",
+    "src/frontend/stores.ts#playerVideos",
+    "src/frontend/stores.ts#playingAudio",
+    "src/frontend/stores.ts#playingMetronome",
+    "src/frontend/stores.ts#playingVideoState",
+    "src/frontend/stores.ts#playingVideos",
+    "src/frontend/stores.ts#popupData",
+    "src/frontend/stores.ts#previousShow",
+    "src/frontend/stores.ts#projects",
+    "src/frontend/stores.ts#providerConnections",
+    "src/frontend/stores.ts#quickTextCache",
+    "src/frontend/stores.ts#randomNumberVariable",
+    "src/frontend/stores.ts#recordingChannels",
+    "src/frontend/stores.ts#resized",
+    "src/frontend/stores.ts#runningActions",
+    "src/frontend/stores.ts#scenes",
+    "src/frontend/stores.ts#scriptureHistory",
+    "src/frontend/stores.ts#scriptureMode",
+    "src/frontend/stores.ts#scriptureSettings",
+    "src/frontend/stores.ts#scriptures",
+    "src/frontend/stores.ts#scripturesCache",
+    "src/frontend/stores.ts#selectAllAudio",
+    "src/frontend/stores.ts#selectAllMedia",
+    "src/frontend/stores.ts#selected",
+    "src/frontend/stores.ts#settingsTab",
+    "src/frontend/stores.ts#shows",
+    "src/frontend/stores.ts#showsCache",
+    "src/frontend/stores.ts#sorted",
+    "src/frontend/stores.ts#sortedShowsList",
+    "src/frontend/stores.ts#special",
+    "src/frontend/stores.ts#styles",
+    "src/frontend/stores.ts#templateApplied",
+    "src/frontend/stores.ts#templateCategories",
+    "src/frontend/stores.ts#templates",
+    "src/frontend/stores.ts#theme",
+    "src/frontend/stores.ts#themes",
+    "src/frontend/stores.ts#timelineRecordingAction",
+    "src/frontend/stores.ts#timerTags",
+    "src/frontend/stores.ts#timers",
+    "src/frontend/stores.ts#transitionData",
+    "src/frontend/stores.ts#usageLog",
+    "src/frontend/stores.ts#variableTags",
+    "src/frontend/stores.ts#variables"
+  ],
+  "messages": [
+    "BLACKMAGIC/GET_DEVICES",
+    "BLACKMAGIC/RECEIVE_FRAME",
+    "BLACKMAGIC/RECEIVE_STREAM",
+    "BLACKMAGIC/STOP_RECEIVER",
+    "EXPORT/USAGE",
+    "MAIN/ACCESS_MICROPHONE_PERMISSION",
+    "MAIN/ACCESS_SCREEN_PERMISSION",
+    "MAIN/BIBLE",
+    "MAIN/BUNDLE_MEDIA_FILES",
+    "MAIN/CAPTURE_SLIDE",
+    "MAIN/CHECK_MEDIA_LICENSE",
+    "MAIN/DOES_MEDIA_EXIST",
+    "MAIN/FILE_INFO",
+    "MAIN/GET_CONTENT_LIBRARY",
+    "MAIN/GET_CONTENT_PROVIDERS",
+    "MAIN/GET_MEDIA_FOLDER_PATH",
+    "MAIN/GET_PROVIDER_CONTENT",
+    "MAIN/GET_SCREENS",
+    "MAIN/GET_THUMBNAIL",
+    "MAIN/GET_WINDOWS",
+    "MAIN/LOCATE_MEDIA_FILE",
+    "MAIN/MEDIA_CODEC",
+    "MAIN/MEDIA_DOWNLOAD",
+    "MAIN/MEDIA_IS_DOWNLOADED",
+    "MAIN/OPEN_FOLDER",
+    "MAIN/OPEN_FOLDER2",
+    "MAIN/PROVIDER_DISCONNECT",
+    "MAIN/PROVIDER_LOAD_SERVICES",
+    "MAIN/PROVIDER_STARTUP_LOAD",
+    "MAIN/READ_AUDIO_METADATA",
+    "MAIN/READ_FOLDER",
+    "MAIN/RECORDER",
+    "MAIN/SAVE_IMAGE",
+    "MAIN/URL",
+    "NDI/CAPTURE_DESTROY",
+    "NDI/CAPTURE_STREAM",
+    "NDI/RECEIVE_LIST",
+    "NDI/RECEIVE_STREAM",
+    "NDI/name",
+    "OMT/CAPTURE_DESTROY",
+    "OMT/CAPTURE_STREAM",
+    "OMT/RECEIVE_LIST",
+    "OMT/RECEIVE_STREAM",
+    "OUTPUT/CAPTURE"
+  ],
+  "timingIds": [
+    "css-transition-07fe660244194fb5",
+    "css-transition-a439e5fab8254eed",
+    "timer-80e56637fa7321ac",
+    "timer-19a40423e26e3e22",
+    "timer-0c9b736fb0889809",
+    "timer-361f2d375e133d74",
+    "timer-eba043a185c12903",
+    "timer-d0c17e1c51bbbe55",
+    "request-budget-5bf0c992c3af46eb",
+    "timer-1ff816afe7cecab9",
+    "timer-87fab19790eb1293",
+    "css-transition-d39da7598db76600",
+    "timer-0d1bd311604a99a5",
+    "css-transition-e816c16349c571d8",
+    "css-transition-36529f3d35411013",
+    "css-transition-21ef452a006381f9",
+    "css-transition-0620b35aa7f92403",
+    "css-transition-f0685579a42d133a",
+    "timer-18b02192a9962108",
+    "css-transition-732bd31585858e3f",
+    "css-transition-b8dd95bd6f27cd0b",
+    "css-transition-b279828eb7c3d4c8",
+    "css-transition-9f31316a216b0ab2",
+    "css-transition-f88a0db3aeef5520",
+    "css-transition-7eaaa69c0254b51d",
+    "timer-392f30be57b1c356",
+    "css-transition-a2ba42ed149c37d9",
+    "css-transition-adcbb590619b2998",
+    "timer-61593a45c5ffedbb",
+    "css-transition-4a9462056f093b62",
+    "css-transition-be7b5b31618e7261",
+    "css-transition-76c4171211e8603e",
+    "css-transition-c47324b0d4cd0ede",
+    "timer-3a498603ef18bfcb",
+    "timer-672e130e73cd268a",
+    "timer-75d39e2b011614fd",
+    "timer-d7554eba5e559324",
+    "timer-2d2c961976fb9d33",
+    "timer-4105a7f57add1cf4",
+    "timer-b84ccfe21e8f34e0",
+    "timer-39e0c9e78645de02",
+    "timer-0788805eed28cf25",
+    "timer-f0be490ee8b7f8ba",
+    "timer-1740a1819cd38b97",
+    "timer-8303c02ad65c136f",
+    "timer-9be30dd112b1dd32",
+    "timer-e9b8884264bed8e5",
+    "timer-0f4d2cd5c8a50a6c",
+    "timer-4bffa207274fe186",
+    "timer-0ba24520f2a14634",
+    "timer-c964a22d6952e52c",
+    "request-budget-524260bc3a3af5c6",
+    "timer-0adf56492a0ef2bd",
+    "timer-a5cf23b3b8c064cf",
+    "css-transition-a62b469106f4f73c",
+    "timer-016ec0d6a8e361fb",
+    "timer-16c276fff5cb484c",
+    "timer-ff52230332d869ff",
+    "request-budget-f002608a1caa1eaf",
+    "timer-583b84bd2dfe2576",
+    "timer-377602fc952f6500",
+    "timer-e57b6a295e32f67b",
+    "request-budget-3ef4dd277a7ba003",
+    "timer-8596e4c5cd366f68",
+    "timer-8107dbf291e48078",
+    "timer-a7d139c15c4f0e42",
+    "timer-807b5e642233490b",
+    "timer-72541be43b42b7db",
+    "timer-e7c4027c595d5a5a",
+    "timer-2eea0d350079d63a",
+    "timer-0eab0909d005ccba",
+    "timer-dd5e80bc7b46b4fc",
+    "css-transition-69149d7b0331b4fe",
+    "css-transition-167a55c861d8b4ce",
+    "timer-90eb8b2515fbcfec",
+    "request-budget-73e51a4a9c438d0b",
+    "request-budget-7e2cb521bc469124",
+    "timer-5f62799f6bff8b0d",
+    "request-budget-1f40f7c5ff238829",
+    "request-budget-aa03ec85553516ed",
+    "css-transition-6e4ef69f9716504a",
+    "timer-124a2bbc438496a9",
+    "request-budget-68bef6cd1a8851f4",
+    "request-budget-8486ba16fa96c0b5",
+    "request-budget-423da224c42af9e3",
+    "request-budget-9e6e5bd832ca67d0",
+    "timer-8c09e67d7ca2a705",
+    "timer-56dab5201f57646b",
+    "timer-272df02fe14c4464",
+    "timer-ef5ca003da6f9810",
+    "request-budget-cae8c69eed624a00",
+    "request-budget-66efab84a95e4d5e",
+    "request-budget-368a5992f92d9776",
+    "request-budget-b94cfe67cce9c496",
+    "timer-41668d0784caee06",
+    "timer-7b5b1eaea61c1765",
+    "css-transition-8663b9c778b28bd4",
+    "css-transition-34ff50bb2235f478",
+    "timer-c18569cb78498ee7",
+    "timer-f638f6140a949bc0",
+    "css-transition-87b1e3e1aa10ba99",
+    "css-transition-df85fe17445751eb",
+    "timer-2ccbd5730c5b8728",
+    "timer-6975083c8800a996",
+    "timer-1dbe94d05e17e52d",
+    "timer-f9ade56baa4c64c1",
+    "timer-c30568b139fa78f7",
+    "timer-76a94653c1c52659",
+    "timer-d4c9d62f5f3bdf30",
+    "timer-ad2fa4f8b14d149c",
+    "timer-c4e0160a6d1326e0",
+    "timer-a34d626e596ab044",
+    "timer-7d98e7a66d5b1d83",
+    "timer-a2f4ca4800e591d0",
+    "timer-48ed3e76b8de4c58",
+    "timer-96f72d7c049d85df",
+    "timer-9afd3d734fcf91f8",
+    "timer-3b6e070313aa7e7d",
+    "timer-a85c2872ed8dbc0e",
+    "timer-a2e98562a27fcd56",
+    "timer-8dc9ae9c934cbef3",
+    "timer-888bfd504fd4736a",
+    "timer-433ac25f922f4665",
+    "timer-6f7bbd05b4c19719",
+    "timer-2a00fc6c0cbf9369",
+    "request-budget-14e13ad8ffd2663d",
+    "poll-interval-ee3a3da5ffa25bab",
+    "poll-timeout-3bbf13c026ed486a",
+    "poll-interval-14af15f8d9be4a0b",
+    "poll-timeout-27a2e8088ebee51a",
+    "request-budget-992d091a2f1cdf6b",
+    "request-budget-588898683577ed66",
+    "request-budget-ec61baab0ff41643",
+    "request-budget-ef548bc284c3fba2",
+    "request-budget-61627858f6a91b08",
+    "timer-c9aa03a0bc012d07",
+    "poll-interval-9aea957a500b4301",
+    "poll-timeout-40d26b0f5ebcb0a8",
+    "timer-65d342a86751dc8c",
+    "timer-e8b7794a60cb9b55",
+    "request-budget-915ad0da92ac42ef",
+    "request-budget-7b1f317ce6a2d8d5",
+    "timer-5e2f33f21fe8db3b",
+    "timer-1b66b389fd3440f0",
+    "timer-ca6287bc41cdf553",
+    "timer-41206b4eadc10c34",
+    "timer-855d0e06b24148fe",
+    "timer-712b236861bb0c31",
+    "timer-9acfa5efccaef862",
+    "timer-88afe0d0358f6192",
+    "timer-ee6d648cb5a47588",
+    "timer-50d96301ef560df0",
+    "request-budget-0b4bc13cfa359851",
+    "timer-19871648cec0be99",
+    "timer-245cd5f7c05a73d0",
+    "timer-6719b9b5acd92dc1"
+  ],
+  "workaroundIds": [
+    "workaround-721103329916cdb3",
+    "workaround-a670f5a23ded50f5",
+    "workaround-a986d3eca46aa260",
+    "workaround-b26ab8ff5971d6f0",
+    "workaround-076763b4903a07bd",
+    "workaround-2543e398582e7233",
+    "workaround-36d19c6d91518976",
+    "workaround-5b2058a647a16f64",
+    "workaround-68939d49d1b56f7f",
+    "workaround-2e958f7a463d8a8d",
+    "workaround-dd45f340e00e3792",
+    "workaround-7e9a94391252aaab",
+    "workaround-315f250c16bb05e2",
+    "workaround-01c37f41ab6a7301",
+    "workaround-7fea134ec3996863",
+    "workaround-02d5a574c685cb45",
+    "workaround-9e967b75964aa6eb",
+    "workaround-305d38cc28994761",
+    "workaround-993a01fe84439f33",
+    "workaround-ba20f84f0d8ae91a",
+    "workaround-3040c51c71d9881f",
+    "workaround-c6431ca039ea1066",
+    "workaround-3c2a7e0e9dbf41fb",
+    "workaround-bc2f5c401a2dafe0",
+    "workaround-80c21296be20d204",
+    "workaround-24ebd4003bd5fb2c",
+    "workaround-e816f9e26fb66dde",
+    "workaround-d5b1b732917a8eb2"
+  ],
+  "decisions": [
+    {
+      "id": "D-css-transition-07fe660244194fb5",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_Card.svelte-1.md",
+      "file": "src/frontend/components/drawer/Card.svelte",
+      "line": 80
+    },
+    {
+      "id": "D-css-transition-a439e5fab8254eed",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_Card.svelte-1.md",
+      "file": "src/frontend/components/drawer/Card.svelte",
+      "line": 102
+    },
+    {
+      "id": "D-timer-80e56637fa7321ac",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_Drawer.svelte-1.md",
+      "file": "src/frontend/components/drawer/Drawer.svelte",
+      "line": 49
+    },
+    {
+      "id": "D-timer-19a40423e26e3e22",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_Drawer.svelte-1.md",
+      "file": "src/frontend/components/drawer/Drawer.svelte",
+      "line": 141
+    },
+    {
+      "id": "D-timer-0c9b736fb0889809",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_Drawer.svelte-1.md",
+      "file": "src/frontend/components/drawer/Drawer.svelte",
+      "line": 145
+    },
+    {
+      "id": "D-timer-361f2d375e133d74",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_Drawer.svelte-1.md",
+      "file": "src/frontend/components/drawer/Drawer.svelte",
+      "line": 242
+    },
+    {
+      "id": "D-timer-eba043a185c12903",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_Drawer.svelte-1.md",
+      "file": "src/frontend/components/drawer/Drawer.svelte",
+      "line": 249
+    },
+    {
+      "id": "D-timer-d0c17e1c51bbbe55",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_VirtualList.svelte-1.md",
+      "file": "src/frontend/components/drawer/VirtualList.svelte",
+      "line": 16
+    },
+    {
+      "id": "D-request-budget-5bf0c992c3af46eb",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_Audio.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/Audio.svelte",
+      "line": 97
+    },
+    {
+      "id": "D-timer-1ff816afe7cecab9",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_Audio.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/Audio.svelte",
+      "line": 292
+    },
+    {
+      "id": "D-timer-87fab19790eb1293",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_Audio.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/Audio.svelte",
+      "line": 293
+    },
+    {
+      "id": "D-css-transition-d39da7598db76600",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_Audio.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/Audio.svelte",
+      "line": 576
+    },
+    {
+      "id": "D-timer-0d1bd311604a99a5",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_AudioEffect.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/AudioEffect.svelte",
+      "line": 25
+    },
+    {
+      "id": "D-css-transition-e816c16349c571d8",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_AudioEffects.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/AudioEffects.svelte",
+      "line": 126
+    },
+    {
+      "id": "D-css-transition-36529f3d35411013",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_AudioMixersGroup.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/AudioMixersGroup.svelte",
+      "line": 83
+    },
+    {
+      "id": "D-css-transition-21ef452a006381f9",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_AudioSidechain.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/AudioSidechain.svelte",
+      "line": 54
+    },
+    {
+      "id": "D-css-transition-0620b35aa7f92403",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_MetronomeVisualizer.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/MetronomeVisualizer.svelte",
+      "line": 74
+    },
+    {
+      "id": "D-css-transition-f0685579a42d133a",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_MetronomeVisualizer.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/MetronomeVisualizer.svelte",
+      "line": 122
+    },
+    {
+      "id": "D-timer-18b02192a9962108",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioCompressor.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioCompressor.svelte",
+      "line": 39
+    },
+    {
+      "id": "D-css-transition-732bd31585858e3f",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioCompressor.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioCompressor.svelte",
+      "line": 206
+    },
+    {
+      "id": "D-css-transition-b8dd95bd6f27cd0b",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioCompressor.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioCompressor.svelte",
+      "line": 244
+    },
+    {
+      "id": "D-css-transition-b279828eb7c3d4c8",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioDelay.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioDelay.svelte",
+      "line": 125
+    },
+    {
+      "id": "D-css-transition-9f31316a216b0ab2",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioEqualizer.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte",
+      "line": 520
+    },
+    {
+      "id": "D-css-transition-f88a0db3aeef5520",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioEqualizer.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte",
+      "line": 557
+    },
+    {
+      "id": "D-css-transition-7eaaa69c0254b51d",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioFilter.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioFilter.svelte",
+      "line": 184
+    },
+    {
+      "id": "D-timer-392f30be57b1c356",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioLimiter.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioLimiter.svelte",
+      "line": 34
+    },
+    {
+      "id": "D-css-transition-a2ba42ed149c37d9",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioLimiter.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioLimiter.svelte",
+      "line": 166
+    },
+    {
+      "id": "D-css-transition-adcbb590619b2998",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioLimiter.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioLimiter.svelte",
+      "line": 204
+    },
+    {
+      "id": "D-timer-61593a45c5ffedbb",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioNoiseGate.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioNoiseGate.svelte",
+      "line": 34
+    },
+    {
+      "id": "D-css-transition-4a9462056f093b62",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioNoiseGate.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioNoiseGate.svelte",
+      "line": 141
+    },
+    {
+      "id": "D-css-transition-be7b5b31618e7261",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioNoiseGate.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioNoiseGate.svelte",
+      "line": 170
+    },
+    {
+      "id": "D-css-transition-76c4171211e8603e",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioReverb.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioReverb.svelte",
+      "line": 127
+    },
+    {
+      "id": "D-css-transition-c47324b0d4cd0ede",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioStereoShaper.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioStereoShaper.svelte",
+      "line": 123
+    },
+    {
+      "id": "D-timer-3a498603ef18bfcb",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_metronome.ts-1.md",
+      "file": "src/frontend/components/drawer/audio/metronome.ts",
+      "line": 141
+    },
+    {
+      "id": "D-timer-672e130e73cd268a",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_metronome.ts-1.md",
+      "file": "src/frontend/components/drawer/audio/metronome.ts",
+      "line": 184
+    },
+    {
+      "id": "D-timer-75d39e2b011614fd",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 47
+    },
+    {
+      "id": "D-timer-d7554eba5e559324",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 424
+    },
+    {
+      "id": "D-timer-2d2c961976fb9d33",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 442
+    },
+    {
+      "id": "D-timer-4105a7f57add1cf4",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 492
+    },
+    {
+      "id": "D-timer-b84ccfe21e8f34e0",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 493
+    },
+    {
+      "id": "D-timer-39e0c9e78645de02",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 494
+    },
+    {
+      "id": "D-timer-0788805eed28cf25",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 528
+    },
+    {
+      "id": "D-timer-f0be490ee8b7f8ba",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 569
+    },
+    {
+      "id": "D-timer-1740a1819cd38b97",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 637
+    },
+    {
+      "id": "D-timer-8303c02ad65c136f",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 643
+    },
+    {
+      "id": "D-timer-9be30dd112b1dd32",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 654
+    },
+    {
+      "id": "D-timer-e9b8884264bed8e5",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 859
+    },
+    {
+      "id": "D-timer-0f4d2cd5c8a50a6c",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 877
+    },
+    {
+      "id": "D-timer-4bffa207274fe186",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 947
+    },
+    {
+      "id": "D-timer-0ba24520f2a14634",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 949
+    },
+    {
+      "id": "D-timer-c964a22d6952e52c",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 990
+    },
+    {
+      "id": "D-request-budget-524260bc3a3af5c6",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_scripture.ts-1.md",
+      "file": "src/frontend/components/drawer/bible/scripture.ts",
+      "line": 94
+    },
+    {
+      "id": "D-timer-0adf56492a0ef2bd",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_calendar_Calendar.svelte-1.md",
+      "file": "src/frontend/components/drawer/calendar/Calendar.svelte",
+      "line": 106
+    },
+    {
+      "id": "D-timer-a5cf23b3b8c064cf",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_calendar_Calendar.svelte-1.md",
+      "file": "src/frontend/components/drawer/calendar/Calendar.svelte",
+      "line": 192
+    },
+    {
+      "id": "D-css-transition-a62b469106f4f73c",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_calendar_CalendarsManagement.svelte-1.md",
+      "file": "src/frontend/components/drawer/calendar/CalendarsManagement.svelte",
+      "line": 103
+    },
+    {
+      "id": "D-timer-016ec0d6a8e361fb",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_effects_EffectIcons.svelte-1.md",
+      "file": "src/frontend/components/drawer/effects/EffectIcons.svelte",
+      "line": 14
+    },
+    {
+      "id": "D-timer-16c276fff5cb484c",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_effects_Effects.svelte-1.md",
+      "file": "src/frontend/components/drawer/effects/Effects.svelte",
+      "line": 43
+    },
+    {
+      "id": "D-timer-ff52230332d869ff",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_info_FunctionsInfo.svelte-1.md",
+      "file": "src/frontend/components/drawer/info/FunctionsInfo.svelte",
+      "line": 21
+    },
+    {
+      "id": "D-request-budget-f002608a1caa1eaf",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_info_MediaInfo.svelte-1.md",
+      "file": "src/frontend/components/drawer/info/MediaInfo.svelte",
+      "line": 28
+    },
+    {
+      "id": "D-timer-583b84bd2dfe2576",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_info_OBSInfo.svelte-1.md",
+      "file": "src/frontend/components/drawer/info/OBSInfo.svelte",
+      "line": 41
+    },
+    {
+      "id": "D-timer-377602fc952f6500",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_info_OBSInfo.svelte-1.md",
+      "file": "src/frontend/components/drawer/info/OBSInfo.svelte",
+      "line": 55
+    },
+    {
+      "id": "D-timer-e57b6a295e32f67b",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_info_OBSInfo.svelte-1.md",
+      "file": "src/frontend/components/drawer/info/OBSInfo.svelte",
+      "line": 92
+    },
+    {
+      "id": "D-request-budget-3ef4dd277a7ba003",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_info_PlayerInfo.svelte-1.md",
+      "file": "src/frontend/components/drawer/info/PlayerInfo.svelte",
+      "line": 34
+    },
+    {
+      "id": "D-timer-8596e4c5cd366f68",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_info_ScriptureInfo.svelte-1.md",
+      "file": "src/frontend/components/drawer/info/ScriptureInfo.svelte",
+      "line": 54
+    },
+    {
+      "id": "D-timer-8107dbf291e48078",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_info_ShowInfo.svelte-1.md",
+      "file": "src/frontend/components/drawer/info/ShowInfo.svelte",
+      "line": 27
+    },
+    {
+      "id": "D-timer-a7d139c15c4f0e42",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_info_ShowInfo.svelte-1.md",
+      "file": "src/frontend/components/drawer/info/ShowInfo.svelte",
+      "line": 86
+    },
+    {
+      "id": "D-timer-807b5e642233490b",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_live_Cam.svelte-1.md",
+      "file": "src/frontend/components/drawer/live/Cam.svelte",
+      "line": 69
+    },
+    {
+      "id": "D-timer-72541be43b42b7db",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_live_Cam.svelte-1.md",
+      "file": "src/frontend/components/drawer/live/Cam.svelte",
+      "line": 95
+    },
+    {
+      "id": "D-timer-e7c4027c595d5a5a",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_live_Cam.svelte-1.md",
+      "file": "src/frontend/components/drawer/live/Cam.svelte",
+      "line": 117
+    },
+    {
+      "id": "D-timer-2eea0d350079d63a",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_live_Capture.svelte-1.md",
+      "file": "src/frontend/components/drawer/live/Capture.svelte",
+      "line": 58
+    },
+    {
+      "id": "D-timer-0eab0909d005ccba",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_live_Capture.svelte-1.md",
+      "file": "src/frontend/components/drawer/live/Capture.svelte",
+      "line": 70
+    },
+    {
+      "id": "D-timer-dd5e80bc7b46b4fc",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_live_Mic.svelte-1.md",
+      "file": "src/frontend/components/drawer/live/Mic.svelte",
+      "line": 65
+    },
+    {
+      "id": "D-css-transition-69149d7b0331b4fe",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_live_Mic.svelte-1.md",
+      "file": "src/frontend/components/drawer/live/Mic.svelte",
+      "line": 135
+    },
+    {
+      "id": "D-css-transition-167a55c861d8b4ce",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_live_Mic.svelte-1.md",
+      "file": "src/frontend/components/drawer/live/Mic.svelte",
+      "line": 154
+    },
+    {
+      "id": "D-timer-90eb8b2515fbcfec",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_live_OMTStreams.svelte-1.md",
+      "file": "src/frontend/components/drawer/live/OMTStreams.svelte",
+      "line": 29
+    },
+    {
+      "id": "D-request-budget-73e51a4a9c438d0b",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_live_Screens.svelte-1.md",
+      "file": "src/frontend/components/drawer/live/Screens.svelte",
+      "line": 11
+    },
+    {
+      "id": "D-request-budget-7e2cb521bc469124",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_live_Windows.svelte-1.md",
+      "file": "src/frontend/components/drawer/live/Windows.svelte",
+      "line": 16
+    },
+    {
+      "id": "D-timer-5f62799f6bff8b0d",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_live_recorder.ts-1.md",
+      "file": "src/frontend/components/drawer/live/recorder.ts",
+      "line": 139
+    },
+    {
+      "id": "D-request-budget-1f40f7c5ff238829",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_media_ContentLibraryBrowser.svelte-1.md",
+      "file": "src/frontend/components/drawer/media/ContentLibraryBrowser.svelte",
+      "line": 75
+    },
+    {
+      "id": "D-request-budget-aa03ec85553516ed",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_media_ContentLibraryBrowser.svelte-1.md",
+      "file": "src/frontend/components/drawer/media/ContentLibraryBrowser.svelte",
+      "line": 116
+    },
+    {
+      "id": "D-css-transition-6e4ef69f9716504a",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_media_ContentLibraryBrowser.svelte-1.md",
+      "file": "src/frontend/components/drawer/media/ContentLibraryBrowser.svelte",
+      "line": 259
+    },
+    {
+      "id": "D-timer-124a2bbc438496a9",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_media_Image.svelte-1.md",
+      "file": "src/frontend/components/drawer/media/Image.svelte",
+      "line": 31
+    },
+    {
+      "id": "D-request-budget-68bef6cd1a8851f4",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_media_Media.svelte-1.md",
+      "file": "src/frontend/components/drawer/media/Media.svelte",
+      "line": 121
+    },
+    {
+      "id": "D-request-budget-8486ba16fa96c0b5",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_media_Media.svelte-1.md",
+      "file": "src/frontend/components/drawer/media/Media.svelte",
+      "line": 128
+    },
+    {
+      "id": "D-request-budget-423da224c42af9e3",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_media_Media.svelte-1.md",
+      "file": "src/frontend/components/drawer/media/Media.svelte",
+      "line": 226
+    },
+    {
+      "id": "D-request-budget-9e6e5bd832ca67d0",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_media_Media.svelte-1.md",
+      "file": "src/frontend/components/drawer/media/Media.svelte",
+      "line": 249
+    },
+    {
+      "id": "D-timer-8c09e67d7ca2a705",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_media_MediaCard.svelte-1.md",
+      "file": "src/frontend/components/drawer/media/MediaCard.svelte",
+      "line": 116
+    },
+    {
+      "id": "D-timer-56dab5201f57646b",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_media_MediaCard.svelte-1.md",
+      "file": "src/frontend/components/drawer/media/MediaCard.svelte",
+      "line": 185
+    },
+    {
+      "id": "D-timer-272df02fe14c4464",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_media_MediaLoader.svelte-1.md",
+      "file": "src/frontend/components/drawer/media/MediaLoader.svelte",
+      "line": 115
+    },
+    {
+      "id": "D-timer-ef5ca003da6f9810",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_media_MediaLoader.svelte-1.md",
+      "file": "src/frontend/components/drawer/media/MediaLoader.svelte",
+      "line": 127
+    },
+    {
+      "id": "D-request-budget-cae8c69eed624a00",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_navigation_AudioTabs.svelte-1.md",
+      "file": "src/frontend/components/drawer/navigation/AudioTabs.svelte",
+      "line": 32
+    },
+    {
+      "id": "D-request-budget-66efab84a95e4d5e",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_navigation_MediaTabs.svelte-1.md",
+      "file": "src/frontend/components/drawer/navigation/MediaTabs.svelte",
+      "line": 31
+    },
+    {
+      "id": "D-request-budget-368a5992f92d9776",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_navigation_MediaTabs.svelte-1.md",
+      "file": "src/frontend/components/drawer/navigation/MediaTabs.svelte",
+      "line": 48
+    },
+    {
+      "id": "D-request-budget-b94cfe67cce9c496",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_navigation_MediaTabs.svelte-1.md",
+      "file": "src/frontend/components/drawer/navigation/MediaTabs.svelte",
+      "line": 55
+    },
+    {
+      "id": "D-timer-41668d0784caee06",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_navigation_NavigationSections.svelte-1.md",
+      "file": "src/frontend/components/drawer/navigation/NavigationSections.svelte",
+      "line": 21
+    },
+    {
+      "id": "D-timer-7b5b1eaea61c1765",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_navigation_ShowsTabs.svelte-1.md",
+      "file": "src/frontend/components/drawer/navigation/ShowsTabs.svelte",
+      "line": 25
+    },
+    {
+      "id": "D-css-transition-8663b9c778b28bd4",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_Actions.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/Actions.svelte",
+      "line": 277
+    },
+    {
+      "id": "D-css-transition-34ff50bb2235f478",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_Actions.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/Actions.svelte",
+      "line": 298
+    },
+    {
+      "id": "D-timer-c18569cb78498ee7",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_OBS.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/OBS.svelte",
+      "line": 217
+    },
+    {
+      "id": "D-timer-f638f6140a949bc0",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_OBS.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/OBS.svelte",
+      "line": 246
+    },
+    {
+      "id": "D-css-transition-87b1e3e1aa10ba99",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_OBS.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/OBS.svelte",
+      "line": 466
+    },
+    {
+      "id": "D-css-transition-df85fe17445751eb",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_OBS.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/OBS.svelte",
+      "line": 488
+    },
+    {
+      "id": "D-timer-2ccbd5730c5b8728",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_OverlayActions.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/OverlayActions.svelte",
+      "line": 18
+    },
+    {
+      "id": "D-timer-6975083c8800a996",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_Overlays.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/Overlays.svelte",
+      "line": 54
+    },
+    {
+      "id": "D-timer-1dbe94d05e17e52d",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_Overlays.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/Overlays.svelte",
+      "line": 78
+    },
+    {
+      "id": "D-timer-f9ade56baa4c64c1",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_SceneActions.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/SceneActions.svelte",
+      "line": 23
+    },
+    {
+      "id": "D-timer-c30568b139fa78f7",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_SceneActions.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/SceneActions.svelte",
+      "line": 32
+    },
+    {
+      "id": "D-timer-76a94653c1c52659",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_Scenes.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/Scenes.svelte",
+      "line": 46
+    },
+    {
+      "id": "D-timer-d4c9d62f5f3bdf30",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_Scenes.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/Scenes.svelte",
+      "line": 70
+    },
+    {
+      "id": "D-timer-ad2fa4f8b14d149c",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_Shows.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/Shows.svelte",
+      "line": 65
+    },
+    {
+      "id": "D-timer-c4e0160a6d1326e0",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_Shows.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/Shows.svelte",
+      "line": 106
+    },
+    {
+      "id": "D-timer-a34d626e596ab044",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_Shows.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/Shows.svelte",
+      "line": 147
+    },
+    {
+      "id": "D-timer-7d98e7a66d5b1d83",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_Templates.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/Templates.svelte",
+      "line": 61
+    },
+    {
+      "id": "D-timer-a2f4ca4800e591d0",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_Templates.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/Templates.svelte",
+      "line": 85
+    },
+    {
+      "id": "D-timer-48ed3e76b8de4c58",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_Templates.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/Templates.svelte",
+      "line": 173
+    },
+    {
+      "id": "D-timer-96f72d7c049d85df",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_interactions.ts-1.md",
+      "file": "src/frontend/components/drawer/pages/interactions.ts",
+      "line": 141
+    },
+    {
+      "id": "D-timer-9afd3d734fcf91f8",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_player_PlayerVideos.svelte-1.md",
+      "file": "src/frontend/components/drawer/player/PlayerVideos.svelte",
+      "line": 60
+    },
+    {
+      "id": "D-timer-3b6e070313aa7e7d",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_player_Vimeo.svelte-1.md",
+      "file": "src/frontend/components/drawer/player/Vimeo.svelte",
+      "line": 72
+    },
+    {
+      "id": "D-timer-a85c2872ed8dbc0e",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_player_Vimeo.svelte-1.md",
+      "file": "src/frontend/components/drawer/player/Vimeo.svelte",
+      "line": 115
+    },
+    {
+      "id": "D-timer-a2e98562a27fcd56",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_player_YouTube.svelte-1.md",
+      "file": "src/frontend/components/drawer/player/YouTube.svelte",
+      "line": 51
+    },
+    {
+      "id": "D-timer-8dc9ae9c934cbef3",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_player_YouTube.svelte-1.md",
+      "file": "src/frontend/components/drawer/player/YouTube.svelte",
+      "line": 70
+    },
+    {
+      "id": "D-timer-888bfd504fd4736a",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_player_YouTubePlayerLite.svelte-1.md",
+      "file": "src/frontend/components/drawer/player/YouTubePlayerLite.svelte",
+      "line": 22
+    },
+    {
+      "id": "D-timer-433ac25f922f4665",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_player_YouTubePlayerLite.svelte-1.md",
+      "file": "src/frontend/components/drawer/player/YouTubePlayerLite.svelte",
+      "line": 27
+    },
+    {
+      "id": "D-timer-6f7bbd05b4c19719",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_player_YouTubePlayerLite.svelte-1.md",
+      "file": "src/frontend/components/drawer/player/YouTubePlayerLite.svelte",
+      "line": 63
+    },
+    {
+      "id": "D-timer-2a00fc6c0cbf9369",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_timers_Timers.svelte-1.md",
+      "file": "src/frontend/components/drawer/timers/Timers.svelte",
+      "line": 44
+    },
+    {
+      "id": "D-request-budget-14e13ad8ffd2663d",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 144
+    },
+    {
+      "id": "D-poll-interval-ee3a3da5ffa25bab",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 192
+    },
+    {
+      "id": "D-poll-timeout-3bbf13c026ed486a",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 192
+    },
+    {
+      "id": "D-poll-interval-14af15f8d9be4a0b",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 254
+    },
+    {
+      "id": "D-poll-timeout-27a2e8088ebee51a",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 254
+    },
+    {
+      "id": "D-request-budget-992d091a2f1cdf6b",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 272
+    },
+    {
+      "id": "D-request-budget-588898683577ed66",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 283
+    },
+    {
+      "id": "D-request-budget-ec61baab0ff41643",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 289
+    },
+    {
+      "id": "D-request-budget-ef548bc284c3fba2",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 312
+    },
+    {
+      "id": "D-request-budget-61627858f6a91b08",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 445
+    },
+    {
+      "id": "D-timer-c9aa03a0bc012d07",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 519
+    },
+    {
+      "id": "D-poll-interval-9aea957a500b4301",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 635
+    },
+    {
+      "id": "D-poll-timeout-40d26b0f5ebcb0a8",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 635
+    },
+    {
+      "id": "D-timer-65d342a86751dc8c",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 650
+    },
+    {
+      "id": "D-timer-e8b7794a60cb9b55",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 663
+    },
+    {
+      "id": "D-request-budget-915ad0da92ac42ef",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-1.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 785
+    },
+    {
+      "id": "D-request-budget-7b1f317ce6a2d8d5",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-2.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 821
+    },
+    {
+      "id": "D-timer-5e2f33f21fe8db3b",
+      "document": "docs/ai/history/records/src_frontend_components_media_Video.svelte-1.md",
+      "file": "src/frontend/components/media/Video.svelte",
+      "line": 93
+    },
+    {
+      "id": "D-timer-1b66b389fd3440f0",
+      "document": "docs/ai/history/records/src_frontend_components_media_Video.svelte-1.md",
+      "file": "src/frontend/components/media/Video.svelte",
+      "line": 164
+    },
+    {
+      "id": "D-timer-ca6287bc41cdf553",
+      "document": "docs/ai/history/records/src_frontend_components_media_Video.svelte-1.md",
+      "file": "src/frontend/components/media/Video.svelte",
+      "line": 174
+    },
+    {
+      "id": "D-timer-41206b4eadc10c34",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_softLoop.ts-1.md",
+      "file": "src/frontend/components/media/video/softLoop.ts",
+      "line": 33
+    },
+    {
+      "id": "D-timer-855d0e06b24148fe",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 179
+    },
+    {
+      "id": "D-timer-712b236861bb0c31",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 365
+    },
+    {
+      "id": "D-timer-9acfa5efccaef862",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 445
+    },
+    {
+      "id": "D-timer-88afe0d0358f6192",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 467
+    },
+    {
+      "id": "D-timer-ee6d648cb5a47588",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 525
+    },
+    {
+      "id": "D-timer-50d96301ef560df0",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 558
+    },
+    {
+      "id": "D-request-budget-0b4bc13cfa359851",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 705
+    },
+    {
+      "id": "D-timer-19871648cec0be99",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 737
+    },
+    {
+      "id": "D-timer-245cd5f7c05a73d0",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 890
+    },
+    {
+      "id": "D-timer-6719b9b5acd92dc1",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 909
+    },
+    {
+      "id": "D-workaround-721103329916cdb3",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_VirtualList.svelte-1.md",
+      "file": "src/frontend/components/drawer/VirtualList.svelte",
+      "line": 159
+    },
+    {
+      "id": "D-workaround-a670f5a23ded50f5",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_Metronome.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/Metronome.svelte",
+      "line": 91
+    },
+    {
+      "id": "D-workaround-a986d3eca46aa260",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-2.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 267
+    },
+    {
+      "id": "D-workaround-b26ab8ff5971d6f0",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-2.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 440
+    },
+    {
+      "id": "D-workaround-076763b4903a07bd",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-2.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 927
+    },
+    {
+      "id": "D-workaround-2543e398582e7233",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-2.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 1235
+    },
+    {
+      "id": "D-workaround-36d19c6d91518976",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_scripture.ts-1.md",
+      "file": "src/frontend/components/drawer/bible/scripture.ts",
+      "line": 210
+    },
+    {
+      "id": "D-workaround-5b2058a647a16f64",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_scripture.ts-1.md",
+      "file": "src/frontend/components/drawer/bible/scripture.ts",
+      "line": 311
+    },
+    {
+      "id": "D-workaround-68939d49d1b56f7f",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_scripture.ts-1.md",
+      "file": "src/frontend/components/drawer/bible/scripture.ts",
+      "line": 2106
+    },
+    {
+      "id": "D-workaround-2e958f7a463d8a8d",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_calendar_CalendarsManagement.svelte-1.md",
+      "file": "src/frontend/components/drawer/calendar/CalendarsManagement.svelte",
+      "line": 30
+    },
+    {
+      "id": "D-workaround-dd45f340e00e3792",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_calendar_calendar.ts-1.md",
+      "file": "src/frontend/components/drawer/calendar/calendar.ts",
+      "line": 58
+    },
+    {
+      "id": "D-workaround-7e9a94391252aaab",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_calendar_calendar.ts-1.md",
+      "file": "src/frontend/components/drawer/calendar/calendar.ts",
+      "line": 112
+    },
+    {
+      "id": "D-workaround-315f250c16bb05e2",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_calendar_event.ts-1.md",
+      "file": "src/frontend/components/drawer/calendar/event.ts",
+      "line": 152
+    },
+    {
+      "id": "D-workaround-01c37f41ab6a7301",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_info_ScenesInfo.svelte-1.md",
+      "file": "src/frontend/components/drawer/info/ScenesInfo.svelte",
+      "line": 1
+    },
+    {
+      "id": "D-workaround-7fea134ec3996863",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_live_BMDStream.svelte-1.md",
+      "file": "src/frontend/components/drawer/live/BMDStream.svelte",
+      "line": 55
+    },
+    {
+      "id": "D-workaround-02d5a574c685cb45",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_media_Media.svelte-1.md",
+      "file": "src/frontend/components/drawer/media/Media.svelte",
+      "line": 394
+    },
+    {
+      "id": "D-workaround-9e967b75964aa6eb",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_media_MediaCard.svelte-1.md",
+      "file": "src/frontend/components/drawer/media/MediaCard.svelte",
+      "line": 95
+    },
+    {
+      "id": "D-workaround-305d38cc28994761",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_media_MediaGrid.svelte-1.md",
+      "file": "src/frontend/components/drawer/media/MediaGrid.svelte",
+      "line": 143
+    },
+    {
+      "id": "D-workaround-993a01fe84439f33",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_OverlayActions.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/OverlayActions.svelte",
+      "line": 19
+    },
+    {
+      "id": "D-workaround-ba20f84f0d8ae91a",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_TemplateSlide.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/TemplateSlide.svelte",
+      "line": 74
+    },
+    {
+      "id": "D-workaround-3040c51c71d9881f",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_TemplateSlide.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/TemplateSlide.svelte",
+      "line": 94
+    },
+    {
+      "id": "D-workaround-c6431ca039ea1066",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_Templates.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/Templates.svelte",
+      "line": 146
+    },
+    {
+      "id": "D-workaround-3c2a7e0e9dbf41fb",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_pages_Templates.svelte-1.md",
+      "file": "src/frontend/components/drawer/pages/Templates.svelte",
+      "line": 156
+    },
+    {
+      "id": "D-workaround-bc2f5c401a2dafe0",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_player_Vimeo.svelte-1.md",
+      "file": "src/frontend/components/drawer/player/Vimeo.svelte",
+      "line": 177
+    },
+    {
+      "id": "D-workaround-80c21296be20d204",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_player_YouTube.svelte-1.md",
+      "file": "src/frontend/components/drawer/player/YouTube.svelte",
+      "line": 93
+    },
+    {
+      "id": "D-workaround-24ebd4003bd5fb2c",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_player_YouTube.svelte-1.md",
+      "file": "src/frontend/components/drawer/player/YouTube.svelte",
+      "line": 113
+    },
+    {
+      "id": "D-workaround-e816f9e26fb66dde",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_timers_timers.ts-1.md",
+      "file": "src/frontend/components/drawer/timers/timers.ts",
+      "line": 64
+    },
+    {
+      "id": "D-workaround-d5b1b732917a8eb2",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 518
+    },
+    {
+      "id": "D-hotspot-7e8d40fc51026076",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_media.ts-2.md",
+      "file": "src/frontend/components/helpers/media.ts",
+      "line": 19
+    },
+    {
+      "id": "D-hotspot-0e953fa8b602c16f",
+      "document": "docs/ai/history/records/src_frontend_components_media_Image.svelte-1.md",
+      "file": "src/frontend/components/media/Image.svelte",
+      "line": 10
+    },
+    {
+      "id": "D-hotspot-61d327500378b65d",
+      "document": "docs/ai/history/records/src_frontend_components_media_Video.svelte-1.md",
+      "file": "src/frontend/components/media/Video.svelte",
+      "line": 66
+    },
+    {
+      "id": "D-hotspot-7d8b5cc4a04e3f36",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_softLoop.ts-1.md",
+      "file": "src/frontend/components/media/video/softLoop.ts",
+      "line": 3
+    },
+    {
+      "id": "D-hotspot-8f19f512e85419e8",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoPlayer.ts-1.md",
+      "file": "src/frontend/components/media/video/videoPlayer.ts",
+      "line": 62
+    },
+    {
+      "id": "D-hotspot-6dc7095db41c5212",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoSync.ts-1.md",
+      "file": "src/frontend/components/media/video/videoSync.ts",
+      "line": 4
+    },
+    {
+      "id": "D-hotspot-b413118cece8f24d",
+      "document": "docs/ai/history/records/src_frontend_components_media_video_videoTime.ts-1.md",
+      "file": "src/frontend/components/media/video/videoTime.ts",
+      "line": 3
+    }
+  ]
+}

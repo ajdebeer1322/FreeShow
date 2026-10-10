@@ -1,0 +1,204 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/frontend/MainLayout.svelte",
+    "src/frontend/components/helpers/messageOutput.ts",
+    "src/frontend/components/helpers/messageShapes.ts",
+    "src/frontend/components/helpers/messages.test.ts",
+    "src/frontend/components/helpers/messages.ts",
+    "src/frontend/components/output/effects/Effect.svelte",
+    "src/frontend/components/output/effects/EffectOutput.svelte",
+    "src/frontend/components/output/effects/effectItems.ts",
+    "src/frontend/components/output/effects/effectRenderer.ts",
+    "src/frontend/components/output/effects/simplex-noise.js",
+    "src/frontend/components/output/layers/MessageInstance.svelte",
+    "src/frontend/components/output/layers/Messages.svelte",
+    "src/frontend/components/output/layers/Overlay.svelte",
+    "src/frontend/components/output/layers/Overlays.svelte",
+    "src/frontend/components/output/messages/MessageWordingEditor.svelte",
+    "src/frontend/components/output/messages/MessagesPanel.svelte"
+  ],
+  "stores": [
+    "src/frontend/components/helpers/debugLog.ts#debugPanelOpen",
+    "src/frontend/stores.ts#activeEdit",
+    "src/frontend/stores.ts#activeMessage",
+    "src/frontend/stores.ts#activePage",
+    "src/frontend/stores.ts#activeProfile",
+    "src/frontend/stores.ts#activeProject",
+    "src/frontend/stores.ts#activeShow",
+    "src/frontend/stores.ts#activeStage",
+    "src/frontend/stores.ts#ai",
+    "src/frontend/stores.ts#currentWindow",
+    "src/frontend/stores.ts#editMode",
+    "src/frontend/stores.ts#effects",
+    "src/frontend/stores.ts#focusMode",
+    "src/frontend/stores.ts#hoveredEffectItem",
+    "src/frontend/stores.ts#loaded",
+    "src/frontend/stores.ts#messageDrafts",
+    "src/frontend/stores.ts#messagesPanelOpen",
+    "src/frontend/stores.ts#os",
+    "src/frontend/stores.ts#outLocked",
+    "src/frontend/stores.ts#outputs",
+    "src/frontend/stores.ts#overlays",
+    "src/frontend/stores.ts#profiles",
+    "src/frontend/stores.ts#projectView",
+    "src/frontend/stores.ts#resized",
+    "src/frontend/stores.ts#showChangeProfileMenu",
+    "src/frontend/stores.ts#showsCache",
+    "src/frontend/stores.ts#special"
+  ],
+  "messages": [],
+  "timingIds": [
+    "timer-253411ea115dffcb",
+    "timer-8c1e0c85617ea549",
+    "timer-f6ec73855261ef74",
+    "timer-02e3dbe0dce4be88",
+    "timer-c8b1324766a3ca96",
+    "timer-41c3b957824dcbd6"
+  ],
+  "workaroundIds": [
+    "workaround-df6e80871c42cf91",
+    "workaround-ee1ab844f3a096ba",
+    "workaround-b5317912fb4983b7"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-253411ea115dffcb",
+      "document": "docs/ai/history/records/src_frontend_MainLayout.svelte-1.md",
+      "file": "src/frontend/MainLayout.svelte",
+      "line": 50
+    },
+    {
+      "id": "D-timer-8c1e0c85617ea549",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_messageOutput.ts-1.md",
+      "file": "src/frontend/components/helpers/messageOutput.ts",
+      "line": 52
+    },
+    {
+      "id": "D-timer-f6ec73855261ef74",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlay.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlay.svelte",
+      "line": 42
+    },
+    {
+      "id": "D-timer-02e3dbe0dce4be88",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlay.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlay.svelte",
+      "line": 56
+    },
+    {
+      "id": "D-timer-c8b1324766a3ca96",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlays.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlays.svelte",
+      "line": 42
+    },
+    {
+      "id": "D-timer-41c3b957824dcbd6",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlays.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlays.svelte",
+      "line": 60
+    },
+    {
+      "id": "D-workaround-df6e80871c42cf91",
+      "document": "docs/ai/history/records/src_frontend_components_output_effects_effectRenderer.ts-1.md",
+      "file": "src/frontend/components/output/effects/effectRenderer.ts",
+      "line": 629
+    },
+    {
+      "id": "D-workaround-ee1ab844f3a096ba",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlay.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlay.svelte",
+      "line": 35
+    },
+    {
+      "id": "D-workaround-b5317912fb4983b7",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlays.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlays.svelte",
+      "line": 18
+    },
+    {
+      "id": "D-hotspot-2b887fe783da1533",
+      "document": "docs/ai/history/records/src_frontend_components_output_effects_Effect.svelte-1.md",
+      "file": "src/frontend/components/output/effects/Effect.svelte",
+      "line": 40
+    },
+    {
+      "id": "D-hotspot-b8bfe90047044417",
+      "document": "docs/ai/history/records/src_frontend_components_output_effects_EffectOutput.svelte-1.md",
+      "file": "src/frontend/components/output/effects/EffectOutput.svelte",
+      "line": 1
+    },
+    {
+      "id": "D-hotspot-e432b4d64482f644",
+      "document": "docs/ai/history/records/src_frontend_components_output_effects_effectItems.ts-1.md",
+      "file": "src/frontend/components/output/effects/effectItems.ts",
+      "line": 1
+    },
+    {
+      "id": "D-hotspot-6a6d1ae35d346cb9",
+      "document": "docs/ai/history/records/src_frontend_components_output_effects_effectRenderer.ts-1.md",
+      "file": "src/frontend/components/output/effects/effectRenderer.ts",
+      "line": 7
+    },
+    {
+      "id": "D-hotspot-98283fadbabfea20",
+      "document": "docs/ai/history/records/src_frontend_components_output_effects_simplex-noise.js-1.md",
+      "file": "src/frontend/components/output/effects/simplex-noise.js",
+      "line": 84
+    },
+    {
+      "id": "D-hotspot-40435b90ac8a247e",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_MessageInstance.svelte-1.md",
+      "file": "src/frontend/components/output/layers/MessageInstance.svelte",
+      "line": 11
+    },
+    {
+      "id": "D-hotspot-53c43a25fab0d6fd",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Messages.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Messages.svelte",
+      "line": 1
+    },
+    {
+      "id": "D-hotspot-5abe0f4a0d17bd17",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlay.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlay.svelte",
+      "line": 27
+    },
+    {
+      "id": "D-hotspot-931ce60445cf9f67",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlays.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlays.svelte",
+      "line": 25
+    },
+    {
+      "id": "D-hotspot-35bd87b172d9e0dc",
+      "document": "docs/ai/history/records/src_frontend_components_output_messages_MessageWordingEditor.svelte-1.md",
+      "file": "src/frontend/components/output/messages/MessageWordingEditor.svelte",
+      "line": 14
+    },
+    {
+      "id": "D-hotspot-5c5cac52a2266b5f",
+      "document": "docs/ai/history/records/src_frontend_components_output_messages_MessagesPanel.svelte-1.md",
+      "file": "src/frontend/components/output/messages/MessagesPanel.svelte",
+      "line": 64
+    },
+    {
+      "id": "D-fork-3fff806d7bdd4f00",
+      "document": "docs/ai/history/records/src_frontend_MainLayout.svelte-1.md",
+      "file": "src/frontend/MainLayout.svelte",
+      "line": 30
+    },
+    {
+      "id": "D-fork-8f95ffa855b6282a",
+      "document": "docs/ai/history/records/src_frontend_MainLayout.svelte-1.md",
+      "file": "src/frontend/MainLayout.svelte",
+      "line": 33
+    },
+    {
+      "id": "D-fork-d3b3f77519612260",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlay.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlay.svelte",
+      "line": 24
+    }
+  ]
+}

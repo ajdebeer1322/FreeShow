@@ -1,0 +1,225 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/frontend/components/helpers/drop.test.ts",
+    "src/frontend/components/helpers/drop.ts",
+    "src/frontend/components/helpers/dropActions.ts",
+    "src/frontend/components/helpers/historyActions.ts",
+    "src/frontend/components/helpers/slideTransfer.ts",
+    "src/frontend/components/system/DropArea.svelte",
+    "src/frontend/components/system/SelectElem.svelte"
+  ],
+  "stores": [
+    "src/frontend/stores.ts#activeDrawerTab",
+    "src/frontend/stores.ts#activeDropId",
+    "src/frontend/stores.ts#activeEdit",
+    "src/frontend/stores.ts#activeFocus",
+    "src/frontend/stores.ts#activePage",
+    "src/frontend/stores.ts#activePopup",
+    "src/frontend/stores.ts#activeProject",
+    "src/frontend/stores.ts#activeRename",
+    "src/frontend/stores.ts#activeShow",
+    "src/frontend/stores.ts#alertMessage",
+    "src/frontend/stores.ts#audioFolders",
+    "src/frontend/stores.ts#audioPlaylists",
+    "src/frontend/stores.ts#audioStreams",
+    "src/frontend/stores.ts#cachedShowsData",
+    "src/frontend/stores.ts#deletedShows",
+    "src/frontend/stores.ts#disableDragging",
+    "src/frontend/stores.ts#drawerTabsData",
+    "src/frontend/stores.ts#editingProjectTemplate",
+    "src/frontend/stores.ts#effectsLibrary",
+    "src/frontend/stores.ts#focusMode",
+    "src/frontend/stores.ts#groups",
+    "src/frontend/stores.ts#media",
+    "src/frontend/stores.ts#mediaFolders",
+    "src/frontend/stores.ts#notFound",
+    "src/frontend/stores.ts#os",
+    "src/frontend/stores.ts#outputs",
+    "src/frontend/stores.ts#overlays",
+    "src/frontend/stores.ts#playerVideos",
+    "src/frontend/stores.ts#projectTemplates",
+    "src/frontend/stores.ts#projects",
+    "src/frontend/stores.ts#refreshEditSlide",
+    "src/frontend/stores.ts#renamedShows",
+    "src/frontend/stores.ts#scenes",
+    "src/frontend/stores.ts#scriptureSettings",
+    "src/frontend/stores.ts#scriptures",
+    "src/frontend/stores.ts#selected",
+    "src/frontend/stores.ts#shows",
+    "src/frontend/stores.ts#showsCache",
+    "src/frontend/stores.ts#slidesOptions",
+    "src/frontend/stores.ts#templates",
+    "src/frontend/stores.ts#timers",
+    "src/frontend/stores.ts#undoHistory"
+  ],
+  "messages": [
+    "MAIN/FILE_INFO",
+    "MAIN/IMPORT_FILES"
+  ],
+  "timingIds": [
+    "request-budget-5e3d9ebc61b5c4a2",
+    "timer-e6f6af3be8ab1771",
+    "timer-a9b6f740d52c5f0f",
+    "timer-1c8b621575651cc1",
+    "timer-84af9cee6a88ddd6",
+    "timer-e0e2d595fc02488b",
+    "timer-128b83181ec37c89",
+    "timer-dafe625da0454005",
+    "css-transition-f92c73ec82189d6d",
+    "timer-dc6c429a12742424",
+    "timer-e3674dff4196a3ff"
+  ],
+  "workaroundIds": [
+    "workaround-3bb671b00db17792",
+    "workaround-9580f7a0bce1cbe0",
+    "workaround-e0c951643ed827ba",
+    "workaround-24648a056c3dc244",
+    "workaround-73af15c929afb0d4",
+    "workaround-d37a5b5c7c33a829",
+    "workaround-13a8b18ec2c07f06",
+    "workaround-31bc093c73164980",
+    "workaround-54933e35f291a1e4",
+    "workaround-0e63fd37a47f94b4"
+  ],
+  "decisions": [
+    {
+      "id": "D-request-budget-5e3d9ebc61b5c4a2",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_drop.ts-1.md",
+      "file": "src/frontend/components/helpers/drop.ts",
+      "line": 81
+    },
+    {
+      "id": "D-timer-e6f6af3be8ab1771",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_dropActions.ts-1.md",
+      "file": "src/frontend/components/helpers/dropActions.ts",
+      "line": 272
+    },
+    {
+      "id": "D-timer-a9b6f740d52c5f0f",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyActions.ts-1.md",
+      "file": "src/frontend/components/helpers/historyActions.ts",
+      "line": 350
+    },
+    {
+      "id": "D-timer-1c8b621575651cc1",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyActions.ts-1.md",
+      "file": "src/frontend/components/helpers/historyActions.ts",
+      "line": 358
+    },
+    {
+      "id": "D-timer-84af9cee6a88ddd6",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyActions.ts-1.md",
+      "file": "src/frontend/components/helpers/historyActions.ts",
+      "line": 432
+    },
+    {
+      "id": "D-timer-e0e2d595fc02488b",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyActions.ts-1.md",
+      "file": "src/frontend/components/helpers/historyActions.ts",
+      "line": 582
+    },
+    {
+      "id": "D-timer-128b83181ec37c89",
+      "document": "docs/ai/history/records/src_frontend_components_system_DropArea.svelte-1.md",
+      "file": "src/frontend/components/system/DropArea.svelte",
+      "line": 23
+    },
+    {
+      "id": "D-timer-dafe625da0454005",
+      "document": "docs/ai/history/records/src_frontend_components_system_DropArea.svelte-1.md",
+      "file": "src/frontend/components/system/DropArea.svelte",
+      "line": 35
+    },
+    {
+      "id": "D-css-transition-f92c73ec82189d6d",
+      "document": "docs/ai/history/records/src_frontend_components_system_DropArea.svelte-1.md",
+      "file": "src/frontend/components/system/DropArea.svelte",
+      "line": 238
+    },
+    {
+      "id": "D-timer-dc6c429a12742424",
+      "document": "docs/ai/history/records/src_frontend_components_system_SelectElem.svelte-1.md",
+      "file": "src/frontend/components/system/SelectElem.svelte",
+      "line": 49
+    },
+    {
+      "id": "D-timer-e3674dff4196a3ff",
+      "document": "docs/ai/history/records/src_frontend_components_system_SelectElem.svelte-1.md",
+      "file": "src/frontend/components/system/SelectElem.svelte",
+      "line": 67
+    },
+    {
+      "id": "D-workaround-3bb671b00db17792",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_dropActions.ts-1.md",
+      "file": "src/frontend/components/helpers/dropActions.ts",
+      "line": 224
+    },
+    {
+      "id": "D-workaround-9580f7a0bce1cbe0",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_dropActions.ts-1.md",
+      "file": "src/frontend/components/helpers/dropActions.ts",
+      "line": 609
+    },
+    {
+      "id": "D-workaround-e0c951643ed827ba",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_dropActions.ts-1.md",
+      "file": "src/frontend/components/helpers/dropActions.ts",
+      "line": 610
+    },
+    {
+      "id": "D-workaround-24648a056c3dc244",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_dropActions.ts-1.md",
+      "file": "src/frontend/components/helpers/dropActions.ts",
+      "line": 611
+    },
+    {
+      "id": "D-workaround-73af15c929afb0d4",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_dropActions.ts-1.md",
+      "file": "src/frontend/components/helpers/dropActions.ts",
+      "line": 1039
+    },
+    {
+      "id": "D-workaround-d37a5b5c7c33a829",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_dropActions.ts-1.md",
+      "file": "src/frontend/components/helpers/dropActions.ts",
+      "line": 1145
+    },
+    {
+      "id": "D-workaround-13a8b18ec2c07f06",
+      "document": "docs/ai/history/records/src_frontend_components_system_SelectElem.svelte-1.md",
+      "file": "src/frontend/components/system/SelectElem.svelte",
+      "line": 142
+    },
+    {
+      "id": "D-workaround-31bc093c73164980",
+      "document": "docs/ai/history/records/src_frontend_components_system_SelectElem.svelte-1.md",
+      "file": "src/frontend/components/system/SelectElem.svelte",
+      "line": 211
+    },
+    {
+      "id": "D-workaround-54933e35f291a1e4",
+      "document": "docs/ai/history/records/src_frontend_components_system_SelectElem.svelte-1.md",
+      "file": "src/frontend/components/system/SelectElem.svelte",
+      "line": 303
+    },
+    {
+      "id": "D-workaround-0e63fd37a47f94b4",
+      "document": "docs/ai/history/records/src_frontend_components_system_SelectElem.svelte-1.md",
+      "file": "src/frontend/components/system/SelectElem.svelte",
+      "line": 334
+    },
+    {
+      "id": "D-fork-174674236734d953",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_historyActions.ts-1.md",
+      "file": "src/frontend/components/helpers/historyActions.ts",
+      "line": 272
+    },
+    {
+      "id": "D-fork-b8784f3f034095ef",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_slideTransfer.ts-1.md",
+      "file": "src/frontend/components/helpers/slideTransfer.ts",
+      "line": 376
+    }
+  ]
+}

@@ -1,0 +1,631 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/frontend/components/stage/SkeletonStageSlide.svelte",
+    "src/frontend/components/stage/StageLayout.svelte",
+    "src/frontend/components/stage/StageLayouts.svelte",
+    "src/frontend/components/stage/StageSlide.svelte",
+    "src/frontend/components/stage/StageTools.svelte",
+    "src/frontend/components/stage/Stagebox.svelte",
+    "src/frontend/components/stage/items/SlideNotes.svelte",
+    "src/frontend/components/stage/items/SlideText.svelte",
+    "src/frontend/components/stage/stage.ts",
+    "src/frontend/components/stage/tools/BoxStyle.svelte",
+    "src/frontend/components/stage/tools/ItemStyle.svelte",
+    "src/frontend/components/stage/tools/SlideStyle.svelte",
+    "src/frontend/components/stage/tools/StageItemsList.svelte",
+    "src/frontend/components/stage/values/text.ts",
+    "src/frontend/utils/stageTalk.ts",
+    "src/server/stage/App.svelte",
+    "src/server/stage/components/Main.svelte",
+    "src/server/stage/components/MediaOutput.svelte",
+    "src/server/stage/components/PreviewCanvas.svelte",
+    "src/server/stage/components/Slide.svelte",
+    "src/server/stage/components/Stagebox.svelte",
+    "src/server/stage/components/Textbox.svelte",
+    "src/server/stage/components/Timer.svelte",
+    "src/server/stage/components/TtsSettings.svelte",
+    "src/server/stage/components/Variable.svelte",
+    "src/server/stage/components/Zoomed.svelte",
+    "src/server/stage/global.d.ts",
+    "src/server/stage/helpers/show.ts",
+    "src/server/stage/helpers/textStyle.ts",
+    "src/server/stage/html/navigation.js",
+    "src/server/stage/items/AnalogClock.svelte",
+    "src/server/stage/items/Clock.svelte",
+    "src/server/stage/items/MetronomeVisualizer.svelte",
+    "src/server/stage/items/SlideNotes.svelte",
+    "src/server/stage/items/SlideProgress.svelte",
+    "src/server/stage/items/SlideText.svelte",
+    "src/server/stage/main.ts",
+    "src/server/stage/util/dictionary.ts",
+    "src/server/stage/util/helpers.ts",
+    "src/server/stage/util/itemHelpers.ts",
+    "src/server/stage/util/receiver.ts",
+    "src/server/stage/util/socket.ts",
+    "src/server/stage/util/stores.ts",
+    "src/server/stage/util/tts.ts"
+  ],
+  "stores": [
+    "src/frontend/stores.ts#actions",
+    "src/frontend/stores.ts#activePage",
+    "src/frontend/stores.ts#activePopup",
+    "src/frontend/stores.ts#activeProject",
+    "src/frontend/stores.ts#activeShow",
+    "src/frontend/stores.ts#activeStage",
+    "src/frontend/stores.ts#activeTimers",
+    "src/frontend/stores.ts#allOutputs",
+    "src/frontend/stores.ts#connections",
+    "src/frontend/stores.ts#currentOutputSettings",
+    "src/frontend/stores.ts#currentWindow",
+    "src/frontend/stores.ts#dictionary",
+    "src/frontend/stores.ts#events",
+    "src/frontend/stores.ts#groups",
+    "src/frontend/stores.ts#labelsDisabled",
+    "src/frontend/stores.ts#media",
+    "src/frontend/stores.ts#metronome",
+    "src/frontend/stores.ts#metronomeTimer",
+    "src/frontend/stores.ts#outputSlideCache",
+    "src/frontend/stores.ts#outputs",
+    "src/frontend/stores.ts#projects",
+    "src/frontend/stores.ts#refreshEditSlide",
+    "src/frontend/stores.ts#settingsTab",
+    "src/frontend/stores.ts#showsCache",
+    "src/frontend/stores.ts#stageShows",
+    "src/frontend/stores.ts#theme",
+    "src/frontend/stores.ts#themes",
+    "src/frontend/stores.ts#timeFormat",
+    "src/frontend/stores.ts#timers",
+    "src/frontend/stores.ts#toggleOutputEnabled",
+    "src/frontend/stores.ts#variables",
+    "src/server/stage/util/stores.ts#activeTimers",
+    "src/server/stage/util/stores.ts#background",
+    "src/server/stage/util/stores.ts#dictionary",
+    "src/server/stage/util/stores.ts#errors",
+    "src/server/stage/util/stores.ts#events",
+    "src/server/stage/util/stores.ts#layouts",
+    "src/server/stage/util/stores.ts#media",
+    "src/server/stage/util/stores.ts#metronome",
+    "src/server/stage/util/stores.ts#metronomeTimer",
+    "src/server/stage/util/stores.ts#output",
+    "src/server/stage/util/stores.ts#outputSlideCache",
+    "src/server/stage/util/stores.ts#passwordRequiredLayout",
+    "src/server/stage/util/stores.ts#progressData",
+    "src/server/stage/util/stores.ts#selectedLayout",
+    "src/server/stage/util/stores.ts#showsCache",
+    "src/server/stage/util/stores.ts#stageLayout",
+    "src/server/stage/util/stores.ts#stream",
+    "src/server/stage/util/stores.ts#timeFormat",
+    "src/server/stage/util/stores.ts#timers",
+    "src/server/stage/util/stores.ts#updateTransposed",
+    "src/server/stage/util/stores.ts#variables",
+    "src/server/stage/util/tts.ts#ttsVoice"
+  ],
+  "messages": [
+    "STAGE/ACTIVE_TIMERS",
+    "STAGE/BACKGROUND",
+    "STAGE/DATA",
+    "STAGE/ERROR",
+    "STAGE/EVENTS",
+    "STAGE/LANGUAGE",
+    "STAGE/LAYOUT",
+    "STAGE/LAYOUTS",
+    "STAGE/MEDIA",
+    "STAGE/METRONOME",
+    "STAGE/METRONOME_TIMER",
+    "STAGE/OUT",
+    "STAGE/OUT_SLIDE_CACHE",
+    "STAGE/REQUEST_PROGRESS",
+    "STAGE/RUN_ACTION",
+    "STAGE/SHOW_DATA",
+    "STAGE/STREAM_FRAME",
+    "STAGE/STREAM_SUBSCRIBE",
+    "STAGE/STREAM_UNSUBSCRIBE",
+    "STAGE/SWITCH",
+    "STAGE/TIMERS",
+    "STAGE/VARIABLES",
+    "STAGE/currentProjectIndexes",
+    "STAGE/currentShowSlide",
+    "STAGE/layoutGroups",
+    "STAGE/outputId",
+    "STAGE/projectItems",
+    "STAGE/show",
+    "STAGE/slidesLength"
+  ],
+  "timingIds": [
+    "timer-f996ed9f2f4e7de8",
+    "timer-eac28faacc67998a",
+    "timer-3d72797d1c0bdef8",
+    "timer-c85da46b17de9a9e",
+    "timer-6738ed17d8a91674",
+    "timer-4084c52e5f0ea49a",
+    "timer-c2324aa7208a1a18",
+    "timer-ad2e429793ad27f9",
+    "timer-0967cf805959e3bc",
+    "timer-f032a1a011e224d5",
+    "timer-0bcedcdd45a9d9e8",
+    "timer-b8b8c511e27f394a",
+    "timer-af3e0baf26a9a2b7",
+    "timer-4057e0fcd76ddcbf",
+    "timer-e72bd61466e4c838",
+    "timer-d9de4a3f5b621466",
+    "timer-711cdd89f6be9657",
+    "timer-e33c7a8e2216ceab",
+    "timer-5171a930da6d8332",
+    "timer-22a3bf2d25721b16",
+    "timer-aec1c40f41c733ea",
+    "css-transition-4d09c838e0ab6f0f",
+    "css-transition-83f49fdab0ff9408",
+    "css-transition-e937d2185b4f9f6f",
+    "css-transition-30ec4bd4f4779c65",
+    "css-transition-f2cb43bc736e7b8d",
+    "timer-7cdde1c729d6aa5f",
+    "timer-5dbc3ac26a0a41ac",
+    "timer-1998d71032147233",
+    "timer-65ef51de420f3b13",
+    "timer-1bd672d9b5866181",
+    "timer-346b463ce722d8c6",
+    "timer-0293c3c79420194c",
+    "timer-8c4b7518e0549146",
+    "timer-d5d7430202d5412f",
+    "timer-09236ec5054904f1",
+    "timer-90febf363ed53cc3",
+    "timer-35dc3b5b8cc48e93",
+    "timer-04348659f234ed07",
+    "timer-ff15a56c7e307c5f",
+    "timer-621540f238178a4c",
+    "timer-b4264f96caa9f640",
+    "timer-61c94421d1bc6be5",
+    "timer-23434a29a832567e",
+    "timer-cd9b9c6101821810",
+    "timer-2b1926ca73094eb0",
+    "css-transition-95d4651e0253c81f",
+    "css-transition-ad68370e86a287bc",
+    "css-transition-f4ef1e759546d6c7",
+    "css-transition-40879a2e667fec6c",
+    "css-transition-47c7407dc83ffad7",
+    "timer-8984a59732965214",
+    "timer-c8483c86c4c15213",
+    "timer-60675aa1d31e349f",
+    "timer-778e9932eff640f2",
+    "timer-da161ed839a1abfd",
+    "css-transition-e493412e310bc0f2",
+    "css-transition-ae12feeb734cc151",
+    "css-transition-b7f01fe45b645b3d",
+    "css-transition-ee70357b58868b8a",
+    "timer-474e6b5933237353",
+    "timer-335010893ab67f61"
+  ],
+  "workaroundIds": [
+    "workaround-3756f38aa73fa6ec",
+    "workaround-b49bf280492bd3d8",
+    "workaround-bccd7c2b6a2436f4",
+    "workaround-14f54bfecfee4df9",
+    "workaround-c2370fee5cea5cd5",
+    "workaround-80860b1553ad48ab",
+    "workaround-5087976fe8ebb002",
+    "workaround-cd5354eac8ae73f6"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-f996ed9f2f4e7de8",
+      "document": "docs/ai/history/records/src_frontend_components_stage_StageLayout.svelte-1.md",
+      "file": "src/frontend/components/stage/StageLayout.svelte",
+      "line": 38
+    },
+    {
+      "id": "D-timer-eac28faacc67998a",
+      "document": "docs/ai/history/records/src_frontend_components_stage_StageLayout.svelte-1.md",
+      "file": "src/frontend/components/stage/StageLayout.svelte",
+      "line": 82
+    },
+    {
+      "id": "D-timer-3d72797d1c0bdef8",
+      "document": "docs/ai/history/records/src_frontend_components_stage_StageLayout.svelte-1.md",
+      "file": "src/frontend/components/stage/StageLayout.svelte",
+      "line": 120
+    },
+    {
+      "id": "D-timer-c85da46b17de9a9e",
+      "document": "docs/ai/history/records/src_frontend_components_stage_StageLayout.svelte-1.md",
+      "file": "src/frontend/components/stage/StageLayout.svelte",
+      "line": 138
+    },
+    {
+      "id": "D-timer-6738ed17d8a91674",
+      "document": "docs/ai/history/records/src_frontend_components_stage_StageLayouts.svelte-1.md",
+      "file": "src/frontend/components/stage/StageLayouts.svelte",
+      "line": 38
+    },
+    {
+      "id": "D-timer-4084c52e5f0ea49a",
+      "document": "docs/ai/history/records/src_frontend_components_stage_StageLayouts.svelte-1.md",
+      "file": "src/frontend/components/stage/StageLayouts.svelte",
+      "line": 75
+    },
+    {
+      "id": "D-timer-c2324aa7208a1a18",
+      "document": "docs/ai/history/records/src_frontend_components_stage_StageSlide.svelte-1.md",
+      "file": "src/frontend/components/stage/StageSlide.svelte",
+      "line": 46
+    },
+    {
+      "id": "D-timer-ad2e429793ad27f9",
+      "document": "docs/ai/history/records/src_frontend_components_stage_StageSlide.svelte-1.md",
+      "file": "src/frontend/components/stage/StageSlide.svelte",
+      "line": 57
+    },
+    {
+      "id": "D-timer-0967cf805959e3bc",
+      "document": "docs/ai/history/records/src_frontend_components_stage_StageTools.svelte-1.md",
+      "file": "src/frontend/components/stage/StageTools.svelte",
+      "line": 141
+    },
+    {
+      "id": "D-timer-f032a1a011e224d5",
+      "document": "docs/ai/history/records/src_frontend_components_stage_Stagebox.svelte-1.md",
+      "file": "src/frontend/components/stage/Stagebox.svelte",
+      "line": 152
+    },
+    {
+      "id": "D-timer-0bcedcdd45a9d9e8",
+      "document": "docs/ai/history/records/src_frontend_components_stage_Stagebox.svelte-1.md",
+      "file": "src/frontend/components/stage/Stagebox.svelte",
+      "line": 180
+    },
+    {
+      "id": "D-timer-b8b8c511e27f394a",
+      "document": "docs/ai/history/records/src_frontend_components_stage_Stagebox.svelte-1.md",
+      "file": "src/frontend/components/stage/Stagebox.svelte",
+      "line": 188
+    },
+    {
+      "id": "D-timer-af3e0baf26a9a2b7",
+      "document": "docs/ai/history/records/src_frontend_components_stage_Stagebox.svelte-1.md",
+      "file": "src/frontend/components/stage/Stagebox.svelte",
+      "line": 229
+    },
+    {
+      "id": "D-timer-4057e0fcd76ddcbf",
+      "document": "docs/ai/history/records/src_frontend_components_stage_Stagebox.svelte-1.md",
+      "file": "src/frontend/components/stage/Stagebox.svelte",
+      "line": 286
+    },
+    {
+      "id": "D-timer-e72bd61466e4c838",
+      "document": "docs/ai/history/records/src_frontend_components_stage_Stagebox.svelte-1.md",
+      "file": "src/frontend/components/stage/Stagebox.svelte",
+      "line": 315
+    },
+    {
+      "id": "D-timer-d9de4a3f5b621466",
+      "document": "docs/ai/history/records/src_frontend_components_stage_Stagebox.svelte-1.md",
+      "file": "src/frontend/components/stage/Stagebox.svelte",
+      "line": 316
+    },
+    {
+      "id": "D-timer-711cdd89f6be9657",
+      "document": "docs/ai/history/records/src_frontend_components_stage_items_SlideText.svelte-1.md",
+      "file": "src/frontend/components/stage/items/SlideText.svelte",
+      "line": 98
+    },
+    {
+      "id": "D-timer-e33c7a8e2216ceab",
+      "document": "docs/ai/history/records/src_frontend_components_stage_tools_BoxStyle.svelte-1.md",
+      "file": "src/frontend/components/stage/tools/BoxStyle.svelte",
+      "line": 238
+    },
+    {
+      "id": "D-timer-5171a930da6d8332",
+      "document": "docs/ai/history/records/src_frontend_components_stage_tools_ItemStyle.svelte-1.md",
+      "file": "src/frontend/components/stage/tools/ItemStyle.svelte",
+      "line": 91
+    },
+    {
+      "id": "D-timer-22a3bf2d25721b16",
+      "document": "docs/ai/history/records/src_server_stage_App.svelte-1.md",
+      "file": "src/server/stage/App.svelte",
+      "line": 38
+    },
+    {
+      "id": "D-timer-aec1c40f41c733ea",
+      "document": "docs/ai/history/records/src_server_stage_App.svelte-1.md",
+      "file": "src/server/stage/App.svelte",
+      "line": 49
+    },
+    {
+      "id": "D-css-transition-4d09c838e0ab6f0f",
+      "document": "docs/ai/history/records/src_server_stage_App.svelte-1.md",
+      "file": "src/server/stage/App.svelte",
+      "line": 256
+    },
+    {
+      "id": "D-css-transition-83f49fdab0ff9408",
+      "document": "docs/ai/history/records/src_server_stage_App.svelte-1.md",
+      "file": "src/server/stage/App.svelte",
+      "line": 417
+    },
+    {
+      "id": "D-css-transition-e937d2185b4f9f6f",
+      "document": "docs/ai/history/records/src_server_stage_App.svelte-1.md",
+      "file": "src/server/stage/App.svelte",
+      "line": 452
+    },
+    {
+      "id": "D-css-transition-30ec4bd4f4779c65",
+      "document": "docs/ai/history/records/src_server_stage_App.svelte-1.md",
+      "file": "src/server/stage/App.svelte",
+      "line": 472
+    },
+    {
+      "id": "D-css-transition-f2cb43bc736e7b8d",
+      "document": "docs/ai/history/records/src_server_stage_App.svelte-1.md",
+      "file": "src/server/stage/App.svelte",
+      "line": 508
+    },
+    {
+      "id": "D-timer-7cdde1c729d6aa5f",
+      "document": "docs/ai/history/records/src_server_stage_components_MediaOutput.svelte-1.md",
+      "file": "src/server/stage/components/MediaOutput.svelte",
+      "line": 12
+    },
+    {
+      "id": "D-timer-5dbc3ac26a0a41ac",
+      "document": "docs/ai/history/records/src_server_stage_components_PreviewCanvas.svelte-1.md",
+      "file": "src/server/stage/components/PreviewCanvas.svelte",
+      "line": 12
+    },
+    {
+      "id": "D-timer-1998d71032147233",
+      "document": "docs/ai/history/records/src_server_stage_components_Slide.svelte-1.md",
+      "file": "src/server/stage/components/Slide.svelte",
+      "line": 20
+    },
+    {
+      "id": "D-timer-65ef51de420f3b13",
+      "document": "docs/ai/history/records/src_server_stage_components_Slide.svelte-1.md",
+      "file": "src/server/stage/components/Slide.svelte",
+      "line": 32
+    },
+    {
+      "id": "D-timer-1bd672d9b5866181",
+      "document": "docs/ai/history/records/src_server_stage_components_Slide.svelte-1.md",
+      "file": "src/server/stage/components/Slide.svelte",
+      "line": 45
+    },
+    {
+      "id": "D-timer-346b463ce722d8c6",
+      "document": "docs/ai/history/records/src_server_stage_components_Stagebox.svelte-1.md",
+      "file": "src/server/stage/components/Stagebox.svelte",
+      "line": 45
+    },
+    {
+      "id": "D-timer-0293c3c79420194c",
+      "document": "docs/ai/history/records/src_server_stage_components_Stagebox.svelte-1.md",
+      "file": "src/server/stage/components/Stagebox.svelte",
+      "line": 131
+    },
+    {
+      "id": "D-timer-8c4b7518e0549146",
+      "document": "docs/ai/history/records/src_server_stage_components_Textbox.svelte-1.md",
+      "file": "src/server/stage/components/Textbox.svelte",
+      "line": 58
+    },
+    {
+      "id": "D-timer-d5d7430202d5412f",
+      "document": "docs/ai/history/records/src_server_stage_components_Textbox.svelte-1.md",
+      "file": "src/server/stage/components/Textbox.svelte",
+      "line": 64
+    },
+    {
+      "id": "D-timer-09236ec5054904f1",
+      "document": "docs/ai/history/records/src_server_stage_components_Textbox.svelte-1.md",
+      "file": "src/server/stage/components/Textbox.svelte",
+      "line": 68
+    },
+    {
+      "id": "D-timer-90febf363ed53cc3",
+      "document": "docs/ai/history/records/src_server_stage_components_Textbox.svelte-1.md",
+      "file": "src/server/stage/components/Textbox.svelte",
+      "line": 95
+    },
+    {
+      "id": "D-timer-35dc3b5b8cc48e93",
+      "document": "docs/ai/history/records/src_server_stage_components_Textbox.svelte-1.md",
+      "file": "src/server/stage/components/Textbox.svelte",
+      "line": 183
+    },
+    {
+      "id": "D-timer-04348659f234ed07",
+      "document": "docs/ai/history/records/src_server_stage_components_Textbox.svelte-1.md",
+      "file": "src/server/stage/components/Textbox.svelte",
+      "line": 194
+    },
+    {
+      "id": "D-timer-ff15a56c7e307c5f",
+      "document": "docs/ai/history/records/src_server_stage_components_Textbox.svelte-1.md",
+      "file": "src/server/stage/components/Textbox.svelte",
+      "line": 283
+    },
+    {
+      "id": "D-timer-621540f238178a4c",
+      "document": "docs/ai/history/records/src_server_stage_components_Textbox.svelte-1.md",
+      "file": "src/server/stage/components/Textbox.svelte",
+      "line": 291
+    },
+    {
+      "id": "D-timer-b4264f96caa9f640",
+      "document": "docs/ai/history/records/src_server_stage_components_Textbox.svelte-1.md",
+      "file": "src/server/stage/components/Textbox.svelte",
+      "line": 334
+    },
+    {
+      "id": "D-timer-61c94421d1bc6be5",
+      "document": "docs/ai/history/records/src_server_stage_components_Textbox.svelte-1.md",
+      "file": "src/server/stage/components/Textbox.svelte",
+      "line": 341
+    },
+    {
+      "id": "D-timer-23434a29a832567e",
+      "document": "docs/ai/history/records/src_server_stage_components_Textbox.svelte-1.md",
+      "file": "src/server/stage/components/Textbox.svelte",
+      "line": 474
+    },
+    {
+      "id": "D-timer-cd9b9c6101821810",
+      "document": "docs/ai/history/records/src_server_stage_components_Timer.svelte-1.md",
+      "file": "src/server/stage/components/Timer.svelte",
+      "line": 59
+    },
+    {
+      "id": "D-timer-2b1926ca73094eb0",
+      "document": "docs/ai/history/records/src_server_stage_components_Timer.svelte-1.md",
+      "file": "src/server/stage/components/Timer.svelte",
+      "line": 61
+    },
+    {
+      "id": "D-css-transition-95d4651e0253c81f",
+      "document": "docs/ai/history/records/src_server_stage_components_Timer.svelte-1.md",
+      "file": "src/server/stage/components/Timer.svelte",
+      "line": 102
+    },
+    {
+      "id": "D-css-transition-ad68370e86a287bc",
+      "document": "docs/ai/history/records/src_server_stage_components_Timer.svelte-1.md",
+      "file": "src/server/stage/components/Timer.svelte",
+      "line": 124
+    },
+    {
+      "id": "D-css-transition-f4ef1e759546d6c7",
+      "document": "docs/ai/history/records/src_server_stage_components_TtsSettings.svelte-1.md",
+      "file": "src/server/stage/components/TtsSettings.svelte",
+      "line": 165
+    },
+    {
+      "id": "D-css-transition-40879a2e667fec6c",
+      "document": "docs/ai/history/records/src_server_stage_components_TtsSettings.svelte-1.md",
+      "file": "src/server/stage/components/TtsSettings.svelte",
+      "line": 208
+    },
+    {
+      "id": "D-css-transition-47c7407dc83ffad7",
+      "document": "docs/ai/history/records/src_server_stage_components_TtsSettings.svelte-1.md",
+      "file": "src/server/stage/components/TtsSettings.svelte",
+      "line": 238
+    },
+    {
+      "id": "D-timer-8984a59732965214",
+      "document": "docs/ai/history/records/src_server_stage_html_navigation.js-1.md",
+      "file": "src/server/stage/html/navigation.js",
+      "line": 27
+    },
+    {
+      "id": "D-timer-c8483c86c4c15213",
+      "document": "docs/ai/history/records/src_server_stage_html_navigation.js-1.md",
+      "file": "src/server/stage/html/navigation.js",
+      "line": 167
+    },
+    {
+      "id": "D-timer-60675aa1d31e349f",
+      "document": "docs/ai/history/records/src_server_stage_html_navigation.js-1.md",
+      "file": "src/server/stage/html/navigation.js",
+      "line": 263
+    },
+    {
+      "id": "D-timer-778e9932eff640f2",
+      "document": "docs/ai/history/records/src_server_stage_html_navigation.js-1.md",
+      "file": "src/server/stage/html/navigation.js",
+      "line": 268
+    },
+    {
+      "id": "D-timer-da161ed839a1abfd",
+      "document": "docs/ai/history/records/src_server_stage_items_Clock.svelte-1.md",
+      "file": "src/server/stage/items/Clock.svelte",
+      "line": 22
+    },
+    {
+      "id": "D-css-transition-e493412e310bc0f2",
+      "document": "docs/ai/history/records/src_server_stage_items_MetronomeVisualizer.svelte-1.md",
+      "file": "src/server/stage/items/MetronomeVisualizer.svelte",
+      "line": 74
+    },
+    {
+      "id": "D-css-transition-ae12feeb734cc151",
+      "document": "docs/ai/history/records/src_server_stage_items_MetronomeVisualizer.svelte-1.md",
+      "file": "src/server/stage/items/MetronomeVisualizer.svelte",
+      "line": 119
+    },
+    {
+      "id": "D-css-transition-b7f01fe45b645b3d",
+      "document": "docs/ai/history/records/src_server_stage_items_SlideProgress.svelte-1.md",
+      "file": "src/server/stage/items/SlideProgress.svelte",
+      "line": 87
+    },
+    {
+      "id": "D-css-transition-ee70357b58868b8a",
+      "document": "docs/ai/history/records/src_server_stage_items_SlideProgress.svelte-1.md",
+      "file": "src/server/stage/items/SlideProgress.svelte",
+      "line": 101
+    },
+    {
+      "id": "D-timer-474e6b5933237353",
+      "document": "docs/ai/history/records/src_server_stage_util_helpers.ts-1.md",
+      "file": "src/server/stage/util/helpers.ts",
+      "line": 17
+    },
+    {
+      "id": "D-timer-335010893ab67f61",
+      "document": "docs/ai/history/records/src_server_stage_util_socket.ts-1.md",
+      "file": "src/server/stage/util/socket.ts",
+      "line": 56
+    },
+    {
+      "id": "D-workaround-3756f38aa73fa6ec",
+      "document": "docs/ai/history/records/src_frontend_components_stage_StageSlide.svelte-1.md",
+      "file": "src/frontend/components/stage/StageSlide.svelte",
+      "line": 63
+    },
+    {
+      "id": "D-workaround-b49bf280492bd3d8",
+      "document": "docs/ai/history/records/src_frontend_components_stage_Stagebox.svelte-1.md",
+      "file": "src/frontend/components/stage/Stagebox.svelte",
+      "line": 126
+    },
+    {
+      "id": "D-workaround-bccd7c2b6a2436f4",
+      "document": "docs/ai/history/records/src_frontend_components_stage_Stagebox.svelte-1.md",
+      "file": "src/frontend/components/stage/Stagebox.svelte",
+      "line": 425
+    },
+    {
+      "id": "D-workaround-14f54bfecfee4df9",
+      "document": "docs/ai/history/records/src_frontend_components_stage_items_SlideText.svelte-1.md",
+      "file": "src/frontend/components/stage/items/SlideText.svelte",
+      "line": 71
+    },
+    {
+      "id": "D-workaround-c2370fee5cea5cd5",
+      "document": "docs/ai/history/records/src_frontend_components_stage_items_SlideText.svelte-1.md",
+      "file": "src/frontend/components/stage/items/SlideText.svelte",
+      "line": 111
+    },
+    {
+      "id": "D-workaround-80860b1553ad48ab",
+      "document": "docs/ai/history/records/src_frontend_components_stage_tools_BoxStyle.svelte-1.md",
+      "file": "src/frontend/components/stage/tools/BoxStyle.svelte",
+      "line": 194
+    },
+    {
+      "id": "D-workaround-5087976fe8ebb002",
+      "document": "docs/ai/history/records/src_frontend_utils_stageTalk.ts-1.md",
+      "file": "src/frontend/utils/stageTalk.ts",
+      "line": 18
+    },
+    {
+      "id": "D-workaround-cd5354eac8ae73f6",
+      "document": "docs/ai/history/records/src_server_stage_helpers_textStyle.ts-1.md",
+      "file": "src/server/stage/helpers/textStyle.ts",
+      "line": 258
+    }
+  ]
+}

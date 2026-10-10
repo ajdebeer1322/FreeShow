@@ -1,0 +1,221 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/frontend/components/drawer/bible/Scripture.svelte",
+    "src/frontend/components/drawer/bible/scripture.ts",
+    "src/frontend/components/drawer/info/ScriptureInfo.svelte",
+    "src/types/Scripture.ts"
+  ],
+  "stores": [
+    "src/frontend/stores.ts#activeEdit",
+    "src/frontend/stores.ts#activePage",
+    "src/frontend/stores.ts#activeProject",
+    "src/frontend/stores.ts#activeScripture",
+    "src/frontend/stores.ts#activeShow",
+    "src/frontend/stores.ts#activeStyle",
+    "src/frontend/stores.ts#activeTriggerFunction",
+    "src/frontend/stores.ts#customScriptureBooks",
+    "src/frontend/stores.ts#drawerTabsData",
+    "src/frontend/stores.ts#media",
+    "src/frontend/stores.ts#notFound",
+    "src/frontend/stores.ts#openScripture",
+    "src/frontend/stores.ts#outLocked",
+    "src/frontend/stores.ts#outputs",
+    "src/frontend/stores.ts#overlays",
+    "src/frontend/stores.ts#resized",
+    "src/frontend/stores.ts#scriptureHistory",
+    "src/frontend/stores.ts#scriptureMode",
+    "src/frontend/stores.ts#scriptureSettings",
+    "src/frontend/stores.ts#scriptures",
+    "src/frontend/stores.ts#scripturesCache",
+    "src/frontend/stores.ts#selected",
+    "src/frontend/stores.ts#settingsTab",
+    "src/frontend/stores.ts#styles",
+    "src/frontend/stores.ts#templates"
+  ],
+  "messages": [
+    "MAIN/BIBLE",
+    "MAIN/URL"
+  ],
+  "timingIds": [
+    "timer-75d39e2b011614fd",
+    "timer-d7554eba5e559324",
+    "timer-2d2c961976fb9d33",
+    "timer-4105a7f57add1cf4",
+    "timer-b84ccfe21e8f34e0",
+    "timer-39e0c9e78645de02",
+    "timer-0788805eed28cf25",
+    "timer-f0be490ee8b7f8ba",
+    "timer-1740a1819cd38b97",
+    "timer-8303c02ad65c136f",
+    "timer-9be30dd112b1dd32",
+    "timer-e9b8884264bed8e5",
+    "timer-0f4d2cd5c8a50a6c",
+    "timer-4bffa207274fe186",
+    "timer-0ba24520f2a14634",
+    "timer-c964a22d6952e52c",
+    "request-budget-524260bc3a3af5c6",
+    "timer-8596e4c5cd366f68"
+  ],
+  "workaroundIds": [
+    "workaround-a986d3eca46aa260",
+    "workaround-b26ab8ff5971d6f0",
+    "workaround-076763b4903a07bd",
+    "workaround-2543e398582e7233",
+    "workaround-36d19c6d91518976",
+    "workaround-5b2058a647a16f64",
+    "workaround-68939d49d1b56f7f"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-75d39e2b011614fd",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 47
+    },
+    {
+      "id": "D-timer-d7554eba5e559324",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 424
+    },
+    {
+      "id": "D-timer-2d2c961976fb9d33",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 442
+    },
+    {
+      "id": "D-timer-4105a7f57add1cf4",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 492
+    },
+    {
+      "id": "D-timer-b84ccfe21e8f34e0",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 493
+    },
+    {
+      "id": "D-timer-39e0c9e78645de02",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 494
+    },
+    {
+      "id": "D-timer-0788805eed28cf25",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 528
+    },
+    {
+      "id": "D-timer-f0be490ee8b7f8ba",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 569
+    },
+    {
+      "id": "D-timer-1740a1819cd38b97",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 637
+    },
+    {
+      "id": "D-timer-8303c02ad65c136f",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 643
+    },
+    {
+      "id": "D-timer-9be30dd112b1dd32",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 654
+    },
+    {
+      "id": "D-timer-e9b8884264bed8e5",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 859
+    },
+    {
+      "id": "D-timer-0f4d2cd5c8a50a6c",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 877
+    },
+    {
+      "id": "D-timer-4bffa207274fe186",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 947
+    },
+    {
+      "id": "D-timer-0ba24520f2a14634",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 949
+    },
+    {
+      "id": "D-timer-c964a22d6952e52c",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-1.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 990
+    },
+    {
+      "id": "D-request-budget-524260bc3a3af5c6",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_scripture.ts-1.md",
+      "file": "src/frontend/components/drawer/bible/scripture.ts",
+      "line": 94
+    },
+    {
+      "id": "D-timer-8596e4c5cd366f68",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_info_ScriptureInfo.svelte-1.md",
+      "file": "src/frontend/components/drawer/info/ScriptureInfo.svelte",
+      "line": 54
+    },
+    {
+      "id": "D-workaround-a986d3eca46aa260",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-2.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 267
+    },
+    {
+      "id": "D-workaround-b26ab8ff5971d6f0",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-2.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 440
+    },
+    {
+      "id": "D-workaround-076763b4903a07bd",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-2.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 927
+    },
+    {
+      "id": "D-workaround-2543e398582e7233",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_Scripture.svelte-2.md",
+      "file": "src/frontend/components/drawer/bible/Scripture.svelte",
+      "line": 1235
+    },
+    {
+      "id": "D-workaround-36d19c6d91518976",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_scripture.ts-1.md",
+      "file": "src/frontend/components/drawer/bible/scripture.ts",
+      "line": 210
+    },
+    {
+      "id": "D-workaround-5b2058a647a16f64",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_scripture.ts-1.md",
+      "file": "src/frontend/components/drawer/bible/scripture.ts",
+      "line": 311
+    },
+    {
+      "id": "D-workaround-68939d49d1b56f7f",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_bible_scripture.ts-1.md",
+      "file": "src/frontend/components/drawer/bible/scripture.ts",
+      "line": 2106
+    }
+  ]
+}

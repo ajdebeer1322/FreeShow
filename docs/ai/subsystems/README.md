@@ -1,0 +1,27 @@
+# Subsystem guides
+
+[code] Curated claims cite exact source anchors. Dependency JSON captures the full static scope; conditional imports and tests are navigation evidence, not observed execution. Each guide stays below 400 lines.
+
+- [Startup and process selection](startup.md)
+- [Stores and saving](stores-saving.md)
+- [IPC contracts and dispatch](ipc.md)
+- [Show, slide and layout model](show-model.md)
+- [Projects and continuous Show view](projects.md)
+- [Slide activation and presentation](presentation.md)
+- [Output window rendering](output-rendering.md)
+- [Backgrounds, media and video synchronization](media-video.md)
+- [Transitions and delayed layer replacement](transitions.md)
+- [Textbox and auto-size measurement](autosize-textbox.md)
+- [Overlays, effects and Messages](overlays-effects-messages.md)
+- [Stage displays](stage.md)
+- [Remote, controller and browser clients](browser-clients.md)
+- [Capture: NDI, OMT, Blackmagic, WebRTC and RTMP](capture.md)
+- [Audio playback and routing](audio.md)
+- [Scripture loading and presentation](scripture.md)
+- [Editing and undo/redo](editing-history.md)
+- [Drag/drop destination and insertion rules](drag-drop.md)
+- [Drawer and media library](drawer-media.md)
+- [Settings, defaults and runtime propagation](settings.md)
+- [Import/export and conversion](import-export.md)
+- [Cloud sync and backup](cloud-backup.md)
+- [Fork features and their reasons](fork-features.md)

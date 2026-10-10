@@ -6,7 +6,7 @@ Source base: `96078ca1fdd5d34864da9e793c9a48a984b00ce3` (`origin/upgrade/svelte-
 - [x] Phase 2 — pure query functions and read-only CLI; bounded plain-text results, `--all`, qualified duplicate store names, inclusive decision ranges; query tests pass.
 - [x] Phase 3 — front door, bounded generated pages, file/line/symbol/excerpt checks and deterministic freshness validation; extractor regression covers interpolated templates/regex comments.
 - [x] Phase 4 — 1,603 decision records: every 1,158 timing entry, 311 workaround comments, 105 hotspot modules and 29 explicit fork decisions. Local introductions traced; 16/311 workaround motives (5.1%) sourced from explicit causal comments. 56/129 needed PRs cached/read; all fetched bodies empty. Remaining remote sources and manual bullet attribution are explicit gaps.
-- [ ] Phase 5 — subsystem explanations and suspected bugs
+- [x] Phase 5 — 23 subsystem guides, complete per-area dependency JSON, 183 reviewed source anchors, and three suspected issues with evidence/reproduction plans. All guides below 400 lines; reference check passes.
 - [ ] Phase 6 — flow traces and runtime observations
 
 ## Snapshot limits

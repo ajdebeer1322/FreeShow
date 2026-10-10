@@ -1,0 +1,502 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/electron/audio/IcecastSender.ts",
+    "src/electron/audio/audio.ts",
+    "src/electron/audio/nowPlaying.ts",
+    "src/electron/audio/processAudio.ts",
+    "src/electron/audio/receiveAudio.ts",
+    "src/frontend/audio/audioAnalyser.ts",
+    "src/frontend/audio/audioChannelRecorder.ts",
+    "src/frontend/audio/audioFading.ts",
+    "src/frontend/audio/audioMicrophone.ts",
+    "src/frontend/audio/audioMultichannel.ts",
+    "src/frontend/audio/audioPlayer.ts",
+    "src/frontend/audio/audioPlaylist.ts",
+    "src/frontend/audio/audioProcessor.ts",
+    "src/frontend/audio/audioSender.ts",
+    "src/frontend/audio/audioSidechain.ts",
+    "src/frontend/audio/audioWaveform.ts",
+    "src/frontend/audio/dBUtils.ts",
+    "src/frontend/audio/effects/audioCompressor.ts",
+    "src/frontend/audio/effects/audioDelay.ts",
+    "src/frontend/audio/effects/audioEffectsHelpers.ts",
+    "src/frontend/audio/effects/audioEqualizer.ts",
+    "src/frontend/audio/effects/audioFilter.ts",
+    "src/frontend/audio/effects/audioLimiter.ts",
+    "src/frontend/audio/effects/audioNoiseGate.ts",
+    "src/frontend/audio/effects/audioReverb.ts",
+    "src/frontend/audio/effects/audioStereoShaper.ts",
+    "src/frontend/audio/routing/audioInputCapture.ts",
+    "src/frontend/audio/routing/audioRoutingInit.ts",
+    "src/frontend/audio/routing/audioRoutingManager.ts",
+    "src/frontend/audio/spectrumAnalyzer.ts",
+    "src/frontend/components/drawer/audio/Audio.svelte",
+    "src/frontend/components/drawer/audio/AudioChannelMixer.svelte",
+    "src/frontend/components/drawer/audio/AudioEffect.svelte",
+    "src/frontend/components/drawer/audio/AudioEffects.svelte",
+    "src/frontend/components/drawer/audio/AudioFile.svelte",
+    "src/frontend/components/drawer/audio/AudioMeter.svelte",
+    "src/frontend/components/drawer/audio/AudioMixers.svelte",
+    "src/frontend/components/drawer/audio/AudioMixersGroup.svelte",
+    "src/frontend/components/drawer/audio/AudioSidechain.svelte",
+    "src/frontend/components/drawer/audio/Metronome.svelte",
+    "src/frontend/components/drawer/audio/MetronomeInputs.svelte",
+    "src/frontend/components/drawer/audio/MetronomeVisualizer.svelte",
+    "src/frontend/components/drawer/audio/effects/AudioCompressor.svelte",
+    "src/frontend/components/drawer/audio/effects/AudioDelay.svelte",
+    "src/frontend/components/drawer/audio/effects/AudioEffectPresets.svelte",
+    "src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte",
+    "src/frontend/components/drawer/audio/effects/AudioFilter.svelte",
+    "src/frontend/components/drawer/audio/effects/AudioLimiter.svelte",
+    "src/frontend/components/drawer/audio/effects/AudioNoiseGate.svelte",
+    "src/frontend/components/drawer/audio/effects/AudioReverb.svelte",
+    "src/frontend/components/drawer/audio/effects/AudioStereoShaper.svelte",
+    "src/frontend/components/drawer/audio/metronome.ts",
+    "src/frontend/components/output/tools/Audio.svelte"
+  ],
+  "stores": [
+    "src/frontend/stores.ts#activeAudioEffects",
+    "src/frontend/stores.ts#activeDrawerTab",
+    "src/frontend/stores.ts#activeFocus",
+    "src/frontend/stores.ts#activePage",
+    "src/frontend/stores.ts#activePlaylist",
+    "src/frontend/stores.ts#activePopup",
+    "src/frontend/stores.ts#activeRename",
+    "src/frontend/stores.ts#activeShow",
+    "src/frontend/stores.ts#audioChannelsData",
+    "src/frontend/stores.ts#audioEffectPresets",
+    "src/frontend/stores.ts#audioEffects",
+    "src/frontend/stores.ts#audioFolders",
+    "src/frontend/stores.ts#audioPlaylists",
+    "src/frontend/stores.ts#audioRouting",
+    "src/frontend/stores.ts#channelSidechainMultipliers",
+    "src/frontend/stores.ts#currentWindow",
+    "src/frontend/stores.ts#customMetadata",
+    "src/frontend/stores.ts#dictionary",
+    "src/frontend/stores.ts#disabledServers",
+    "src/frontend/stores.ts#drawer",
+    "src/frontend/stores.ts#drawerTabsData",
+    "src/frontend/stores.ts#effectsLibrary",
+    "src/frontend/stores.ts#focusMode",
+    "src/frontend/stores.ts#isFadingOut",
+    "src/frontend/stores.ts#labelsDisabled",
+    "src/frontend/stores.ts#media",
+    "src/frontend/stores.ts#metronome",
+    "src/frontend/stores.ts#metronomeTimer",
+    "src/frontend/stores.ts#outLocked",
+    "src/frontend/stores.ts#outputs",
+    "src/frontend/stores.ts#playingAudio",
+    "src/frontend/stores.ts#playingAudioPaths",
+    "src/frontend/stores.ts#playingMetronome",
+    "src/frontend/stores.ts#playingVideos",
+    "src/frontend/stores.ts#popupData",
+    "src/frontend/stores.ts#recordingChannels",
+    "src/frontend/stores.ts#selectAllAudio",
+    "src/frontend/stores.ts#selected",
+    "src/frontend/stores.ts#serverData",
+    "src/frontend/stores.ts#special"
+  ],
+  "messages": [
+    "AUDIO/CLOSE_PORT",
+    "AUDIO/INIT_PORT",
+    "AUDIO/PCM",
+    "MAIN/ACCESS_MICROPHONE_PERMISSION",
+    "MAIN/AUDIO_METADATA",
+    "MAIN/NOW_PLAYING",
+    "MAIN/NOW_PLAYING_UNSET",
+    "MAIN/READ_AUDIO_METADATA",
+    "MAIN/READ_FOLDER",
+    "MAIN/RECORDER"
+  ],
+  "timingIds": [
+    "timer-5cbdc2c6e0896b2d",
+    "timer-0b706ea96cddfdab",
+    "timer-5c88db9678bfd2b2",
+    "timer-c4c28f45bdead784",
+    "timer-74e78e6ade559fb0",
+    "timer-0e7638db77512ae2",
+    "timer-950e3ff3eca2f609",
+    "timer-19f7c4c7de3f11af",
+    "timer-14e0ad8347887f69",
+    "timer-9807349814ea2248",
+    "timer-20c98931bc13a4a6",
+    "request-budget-d2c4392b834275a6",
+    "timer-32dda56df87476ed",
+    "timer-1a58d6ba5292c42c",
+    "transition-d79d5c17ae87ebfc",
+    "poll-interval-e1c9f567f16d54f5",
+    "poll-timeout-f679a6bd0a5b855e",
+    "transition-4d3c093a053235be",
+    "timer-550377b271af5cf3",
+    "timer-c2fcec2294d6942d",
+    "request-budget-5bf0c992c3af46eb",
+    "timer-1ff816afe7cecab9",
+    "timer-87fab19790eb1293",
+    "css-transition-d39da7598db76600",
+    "timer-0d1bd311604a99a5",
+    "css-transition-e816c16349c571d8",
+    "css-transition-36529f3d35411013",
+    "css-transition-21ef452a006381f9",
+    "css-transition-0620b35aa7f92403",
+    "css-transition-f0685579a42d133a",
+    "timer-18b02192a9962108",
+    "css-transition-732bd31585858e3f",
+    "css-transition-b8dd95bd6f27cd0b",
+    "css-transition-b279828eb7c3d4c8",
+    "css-transition-9f31316a216b0ab2",
+    "css-transition-f88a0db3aeef5520",
+    "css-transition-7eaaa69c0254b51d",
+    "timer-392f30be57b1c356",
+    "css-transition-a2ba42ed149c37d9",
+    "css-transition-adcbb590619b2998",
+    "timer-61593a45c5ffedbb",
+    "css-transition-4a9462056f093b62",
+    "css-transition-be7b5b31618e7261",
+    "css-transition-76c4171211e8603e",
+    "css-transition-c47324b0d4cd0ede",
+    "timer-3a498603ef18bfcb",
+    "timer-672e130e73cd268a",
+    "timer-f1fb15b899965a04",
+    "timer-ab66760fb5d99ede"
+  ],
+  "workaroundIds": [
+    "workaround-24932ccfa7cdf39e",
+    "workaround-bdf041b6b932624f",
+    "workaround-4cbcf23d06c2c9f7",
+    "workaround-7da6bfaa6a149df6",
+    "workaround-a670f5a23ded50f5"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-5cbdc2c6e0896b2d",
+      "document": "docs/ai/history/records/src_electron_audio_IcecastSender.ts-1.md",
+      "file": "src/electron/audio/IcecastSender.ts",
+      "line": 142
+    },
+    {
+      "id": "D-timer-0b706ea96cddfdab",
+      "document": "docs/ai/history/records/src_electron_audio_IcecastSender.ts-1.md",
+      "file": "src/electron/audio/IcecastSender.ts",
+      "line": 172
+    },
+    {
+      "id": "D-timer-5c88db9678bfd2b2",
+      "document": "docs/ai/history/records/src_frontend_audio_audioAnalyser.ts-1.md",
+      "file": "src/frontend/audio/audioAnalyser.ts",
+      "line": 141
+    },
+    {
+      "id": "D-timer-c4c28f45bdead784",
+      "document": "docs/ai/history/records/src_frontend_audio_audioFading.ts-1.md",
+      "file": "src/frontend/audio/audioFading.ts",
+      "line": 33
+    },
+    {
+      "id": "D-timer-74e78e6ade559fb0",
+      "document": "docs/ai/history/records/src_frontend_audio_audioFading.ts-1.md",
+      "file": "src/frontend/audio/audioFading.ts",
+      "line": 119
+    },
+    {
+      "id": "D-timer-0e7638db77512ae2",
+      "document": "docs/ai/history/records/src_frontend_audio_audioFading.ts-1.md",
+      "file": "src/frontend/audio/audioFading.ts",
+      "line": 171
+    },
+    {
+      "id": "D-timer-950e3ff3eca2f609",
+      "document": "docs/ai/history/records/src_frontend_audio_audioFading.ts-1.md",
+      "file": "src/frontend/audio/audioFading.ts",
+      "line": 185
+    },
+    {
+      "id": "D-timer-19f7c4c7de3f11af",
+      "document": "docs/ai/history/records/src_frontend_audio_audioFading.ts-1.md",
+      "file": "src/frontend/audio/audioFading.ts",
+      "line": 252
+    },
+    {
+      "id": "D-timer-14e0ad8347887f69",
+      "document": "docs/ai/history/records/src_frontend_audio_audioMultichannel.ts-1.md",
+      "file": "src/frontend/audio/audioMultichannel.ts",
+      "line": 36
+    },
+    {
+      "id": "D-timer-9807349814ea2248",
+      "document": "docs/ai/history/records/src_frontend_audio_audioPlayer.ts-1.md",
+      "file": "src/frontend/audio/audioPlayer.ts",
+      "line": 324
+    },
+    {
+      "id": "D-timer-20c98931bc13a4a6",
+      "document": "docs/ai/history/records/src_frontend_audio_audioPlayer.ts-1.md",
+      "file": "src/frontend/audio/audioPlayer.ts",
+      "line": 346
+    },
+    {
+      "id": "D-request-budget-d2c4392b834275a6",
+      "document": "docs/ai/history/records/src_frontend_audio_audioPlayer.ts-1.md",
+      "file": "src/frontend/audio/audioPlayer.ts",
+      "line": 654
+    },
+    {
+      "id": "D-timer-32dda56df87476ed",
+      "document": "docs/ai/history/records/src_frontend_audio_audioPlaylist.ts-1.md",
+      "file": "src/frontend/audio/audioPlaylist.ts",
+      "line": 98
+    },
+    {
+      "id": "D-timer-1a58d6ba5292c42c",
+      "document": "docs/ai/history/records/src_frontend_audio_audioPlaylist.ts-1.md",
+      "file": "src/frontend/audio/audioPlaylist.ts",
+      "line": 147
+    },
+    {
+      "id": "D-transition-d79d5c17ae87ebfc",
+      "document": "docs/ai/history/records/src_frontend_audio_effects_audioEffectsHelpers.ts-1.md",
+      "file": "src/frontend/audio/effects/audioEffectsHelpers.ts",
+      "line": 49
+    },
+    {
+      "id": "D-poll-interval-e1c9f567f16d54f5",
+      "document": "docs/ai/history/records/src_frontend_audio_routing_audioRoutingInit.ts-1.md",
+      "file": "src/frontend/audio/routing/audioRoutingInit.ts",
+      "line": 39
+    },
+    {
+      "id": "D-poll-timeout-f679a6bd0a5b855e",
+      "document": "docs/ai/history/records/src_frontend_audio_routing_audioRoutingInit.ts-1.md",
+      "file": "src/frontend/audio/routing/audioRoutingInit.ts",
+      "line": 39
+    },
+    {
+      "id": "D-transition-4d3c093a053235be",
+      "document": "docs/ai/history/records/src_frontend_audio_routing_audioRoutingManager.ts-1.md",
+      "file": "src/frontend/audio/routing/audioRoutingManager.ts",
+      "line": 53
+    },
+    {
+      "id": "D-timer-550377b271af5cf3",
+      "document": "docs/ai/history/records/src_frontend_audio_routing_audioRoutingManager.ts-1.md",
+      "file": "src/frontend/audio/routing/audioRoutingManager.ts",
+      "line": 563
+    },
+    {
+      "id": "D-timer-c2fcec2294d6942d",
+      "document": "docs/ai/history/records/src_frontend_audio_routing_audioRoutingManager.ts-1.md",
+      "file": "src/frontend/audio/routing/audioRoutingManager.ts",
+      "line": 587
+    },
+    {
+      "id": "D-request-budget-5bf0c992c3af46eb",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_Audio.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/Audio.svelte",
+      "line": 97
+    },
+    {
+      "id": "D-timer-1ff816afe7cecab9",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_Audio.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/Audio.svelte",
+      "line": 292
+    },
+    {
+      "id": "D-timer-87fab19790eb1293",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_Audio.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/Audio.svelte",
+      "line": 293
+    },
+    {
+      "id": "D-css-transition-d39da7598db76600",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_Audio.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/Audio.svelte",
+      "line": 576
+    },
+    {
+      "id": "D-timer-0d1bd311604a99a5",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_AudioEffect.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/AudioEffect.svelte",
+      "line": 25
+    },
+    {
+      "id": "D-css-transition-e816c16349c571d8",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_AudioEffects.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/AudioEffects.svelte",
+      "line": 126
+    },
+    {
+      "id": "D-css-transition-36529f3d35411013",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_AudioMixersGroup.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/AudioMixersGroup.svelte",
+      "line": 83
+    },
+    {
+      "id": "D-css-transition-21ef452a006381f9",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_AudioSidechain.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/AudioSidechain.svelte",
+      "line": 54
+    },
+    {
+      "id": "D-css-transition-0620b35aa7f92403",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_MetronomeVisualizer.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/MetronomeVisualizer.svelte",
+      "line": 74
+    },
+    {
+      "id": "D-css-transition-f0685579a42d133a",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_MetronomeVisualizer.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/MetronomeVisualizer.svelte",
+      "line": 122
+    },
+    {
+      "id": "D-timer-18b02192a9962108",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioCompressor.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioCompressor.svelte",
+      "line": 39
+    },
+    {
+      "id": "D-css-transition-732bd31585858e3f",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioCompressor.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioCompressor.svelte",
+      "line": 206
+    },
+    {
+      "id": "D-css-transition-b8dd95bd6f27cd0b",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioCompressor.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioCompressor.svelte",
+      "line": 244
+    },
+    {
+      "id": "D-css-transition-b279828eb7c3d4c8",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioDelay.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioDelay.svelte",
+      "line": 125
+    },
+    {
+      "id": "D-css-transition-9f31316a216b0ab2",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioEqualizer.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte",
+      "line": 520
+    },
+    {
+      "id": "D-css-transition-f88a0db3aeef5520",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioEqualizer.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioEqualizer.svelte",
+      "line": 557
+    },
+    {
+      "id": "D-css-transition-7eaaa69c0254b51d",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioFilter.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioFilter.svelte",
+      "line": 184
+    },
+    {
+      "id": "D-timer-392f30be57b1c356",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioLimiter.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioLimiter.svelte",
+      "line": 34
+    },
+    {
+      "id": "D-css-transition-a2ba42ed149c37d9",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioLimiter.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioLimiter.svelte",
+      "line": 166
+    },
+    {
+      "id": "D-css-transition-adcbb590619b2998",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioLimiter.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioLimiter.svelte",
+      "line": 204
+    },
+    {
+      "id": "D-timer-61593a45c5ffedbb",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioNoiseGate.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioNoiseGate.svelte",
+      "line": 34
+    },
+    {
+      "id": "D-css-transition-4a9462056f093b62",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioNoiseGate.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioNoiseGate.svelte",
+      "line": 141
+    },
+    {
+      "id": "D-css-transition-be7b5b31618e7261",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioNoiseGate.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioNoiseGate.svelte",
+      "line": 170
+    },
+    {
+      "id": "D-css-transition-76c4171211e8603e",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioReverb.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioReverb.svelte",
+      "line": 127
+    },
+    {
+      "id": "D-css-transition-c47324b0d4cd0ede",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_effects_AudioStereoShaper.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/effects/AudioStereoShaper.svelte",
+      "line": 123
+    },
+    {
+      "id": "D-timer-3a498603ef18bfcb",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_metronome.ts-1.md",
+      "file": "src/frontend/components/drawer/audio/metronome.ts",
+      "line": 141
+    },
+    {
+      "id": "D-timer-672e130e73cd268a",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_metronome.ts-1.md",
+      "file": "src/frontend/components/drawer/audio/metronome.ts",
+      "line": 184
+    },
+    {
+      "id": "D-timer-f1fb15b899965a04",
+      "document": "docs/ai/history/records/src_frontend_components_output_tools_Audio.svelte-1.md",
+      "file": "src/frontend/components/output/tools/Audio.svelte",
+      "line": 47
+    },
+    {
+      "id": "D-timer-ab66760fb5d99ede",
+      "document": "docs/ai/history/records/src_frontend_components_output_tools_Audio.svelte-1.md",
+      "file": "src/frontend/components/output/tools/Audio.svelte",
+      "line": 72
+    },
+    {
+      "id": "D-workaround-24932ccfa7cdf39e",
+      "document": "docs/ai/history/records/src_electron_audio_IcecastSender.ts-1.md",
+      "file": "src/electron/audio/IcecastSender.ts",
+      "line": 33
+    },
+    {
+      "id": "D-workaround-bdf041b6b932624f",
+      "document": "docs/ai/history/records/src_frontend_audio_audioAnalyser.ts-1.md",
+      "file": "src/frontend/audio/audioAnalyser.ts",
+      "line": 13
+    },
+    {
+      "id": "D-workaround-4cbcf23d06c2c9f7",
+      "document": "docs/ai/history/records/src_frontend_audio_audioAnalyser.ts-1.md",
+      "file": "src/frontend/audio/audioAnalyser.ts",
+      "line": 493
+    },
+    {
+      "id": "D-workaround-7da6bfaa6a149df6",
+      "document": "docs/ai/history/records/src_frontend_audio_audioFading.ts-1.md",
+      "file": "src/frontend/audio/audioFading.ts",
+      "line": 162
+    },
+    {
+      "id": "D-workaround-a670f5a23ded50f5",
+      "document": "docs/ai/history/records/src_frontend_components_drawer_audio_Metronome.svelte-1.md",
+      "file": "src/frontend/components/drawer/audio/Metronome.svelte",
+      "line": 91
+    },
+    {
+      "id": "D-hotspot-4f6da6366e4a661b",
+      "document": "docs/ai/history/records/src_frontend_components_output_tools_Audio.svelte-1.md",
+      "file": "src/frontend/components/output/tools/Audio.svelte",
+      "line": 14
+    }
+  ]
+}

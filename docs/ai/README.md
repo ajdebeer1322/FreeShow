@@ -12,6 +12,8 @@ Start here before changing the code. Prefer generated facts and read the referen
 | Where are delays in an area? | `npm run ai:ask -- timers src/frontend/components/output`; [timing index](generated/timers/README.md) |
 | Which settings are used where? | [Settings index](generated/settings/README.md) |
 | Which comments call out unfinished work or bugs? | [Workaround index](generated/workarounds/README.md) |
+| How does an area work, and which rules matter? | [23 subsystem guides](subsystems/README.md) |
+| Which new concerns need investigation? | [Suspected bugs](SUSPECTED_BUGS.md) |
 | What has been built and what remains? | [Progress and snapshot limits](PROGRESS.md) |
 
 ## Roles of the documentation

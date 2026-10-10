@@ -1,0 +1,836 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/electron/blackmagic/BlackmagicManager.ts",
+    "src/electron/blackmagic/BlackmagicReceiver.ts",
+    "src/electron/blackmagic/BlackmagicSender.ts",
+    "src/electron/blackmagic/BufferManager.ts",
+    "src/electron/blackmagic/ImageBufferConverter.ts",
+    "src/electron/blackmagic/TypeData.ts",
+    "src/electron/blackmagic/bmdFormats.ts",
+    "src/electron/blackmagic/bmdTalk.ts",
+    "src/electron/blackmagic/macadam-interface.d.ts",
+    "src/electron/blackmagic/macadamLoader.ts",
+    "src/electron/capture/CaptureHelper.ts",
+    "src/electron/capture/CaptureOptions.ts",
+    "src/electron/capture/SenderCapture.ts",
+    "src/electron/capture/StreamReceiverHost.ts",
+    "src/electron/capture/helpers/CaptureLifecycle.ts",
+    "src/electron/capture/helpers/CaptureTransmitter.ts",
+    "src/electron/capture/senderWorker.ts",
+    "src/electron/capture/streamFrames.ts",
+    "src/electron/capture/streamReceiverProcess.ts",
+    "src/electron/ndi/NdiReceiver.ts",
+    "src/electron/ndi/NdiSender.ts",
+    "src/electron/ndi/ndiWorker.ts",
+    "src/electron/ndi/talk.ts",
+    "src/electron/ndi/vingester-util.ts",
+    "src/electron/omt/OmtReceiver.ts",
+    "src/electron/omt/OmtSender.ts",
+    "src/electron/omt/omtModule.ts",
+    "src/electron/omt/omtWorker.ts",
+    "src/electron/omt/talk.ts",
+    "src/electron/output/Output.ts",
+    "src/electron/output/OutputHelper.ts",
+    "src/electron/output/helpers/OutputAlwaysOnTop.ts",
+    "src/electron/output/helpers/OutputBounds.ts",
+    "src/electron/output/helpers/OutputIdentify.ts",
+    "src/electron/output/helpers/OutputLifecycle.ts",
+    "src/electron/output/helpers/OutputSend.ts",
+    "src/electron/output/helpers/OutputValues.ts",
+    "src/electron/output/helpers/OutputVisibility.ts",
+    "src/electron/output/ppt/libreConverter.ts",
+    "src/electron/output/ppt/pptToShow.ts",
+    "src/electron/output/ppt/presentation.ts",
+    "src/electron/streaming/RtmpStreamer.integration.test.ts",
+    "src/electron/streaming/RtmpStreamer.ts",
+    "src/electron/streaming/WebRtcHost.ts",
+    "src/electron/streaming/encoderDetection.ts",
+    "src/electron/streaming/encoderProfiles.test.ts",
+    "src/electron/streaming/encoderProfiles.ts",
+    "src/electron/streaming/ffmpegManager.ts"
+  ],
+  "stores": [],
+  "messages": [
+    "BLACKMAGIC/GET_DEVICES",
+    "BLACKMAGIC/RECEIVE_FRAME",
+    "BLACKMAGIC/RECEIVE_STREAM",
+    "BLACKMAGIC/RESET_DEVICE",
+    "BLACKMAGIC/STOP_RECEIVER",
+    "MAIN/ALERT",
+    "MAIN/IMPORT2",
+    "MAIN/PRESENTATION_STATE",
+    "MAIN/TOAST",
+    "NDI/CAPTURE_DESTROY",
+    "NDI/CAPTURE_STREAM",
+    "NDI/NDI_DATA",
+    "NDI/RECEIVE_LIST",
+    "NDI/RECEIVE_STREAM",
+    "OMT/CAPTURE_DESTROY",
+    "OMT/CAPTURE_STREAM",
+    "OMT/OMT_DATA",
+    "OMT/RECEIVE_LIST",
+    "OMT/RECEIVE_STREAM",
+    "OUTPUT/ALIGN_WITH_SCREEN",
+    "OUTPUT/CAPTURE",
+    "OUTPUT/CREATE",
+    "OUTPUT/FOCUS",
+    "OUTPUT/IDENTIFY_SCREENS",
+    "OUTPUT/MOVE",
+    "OUTPUT/REMOVE",
+    "OUTPUT/REQUEST_PREVIEW",
+    "OUTPUT/SET_VALUE",
+    "OUTPUT/TOGGLE_OUTPUTS",
+    "OUTPUT/TO_FRONT",
+    "OUTPUT/UPDATE_BOUNDS"
+  ],
+  "timingIds": [
+    "timer-fbff0b3d8f04e3d5",
+    "timer-322e1a1d9bbc9fe9",
+    "timer-2e38a23fc7573d7b",
+    "timer-1f5d74ec1269c927",
+    "timer-5876dbcae2723310",
+    "timer-1bbbbca048a4ae02",
+    "timer-aa5dfb77d2429b6f",
+    "timer-1de53c178343e108",
+    "timer-777bfa3059430d70",
+    "timer-f2460ea3235644f8",
+    "timer-41d0c8e49fa02d4b",
+    "timer-86f9e4a4d651ef72",
+    "timer-19e88a40358a7b28",
+    "timer-6af9594cd007f23a",
+    "timer-35801dd54d5acfca",
+    "timer-fa4d6db19060d0bd",
+    "timer-b74c50b5de4ab312",
+    "timer-0280c6b80685edb0",
+    "timer-a09f2b055d5bb086",
+    "transition-d492cb21071c9cad",
+    "transition-36632b9521ea16ec",
+    "transition-8357cbe3590ceea6",
+    "timer-6d71f6b7605dd54c",
+    "timer-2e8f2542c9535041",
+    "timer-b17fe1de63788e70",
+    "timer-a2f86108f7064e21",
+    "timer-3c2365458dc806b5",
+    "timer-5323eca8986eebcf",
+    "timer-9cfa9d25e15c19f9",
+    "timer-64767d148ad26730",
+    "timer-faf6472326533e73",
+    "timer-fb6abda19b31cf90",
+    "timer-223adb10530a945c",
+    "timer-120d1fdece6c0384",
+    "timer-e60d621c70482ad8",
+    "timer-b6b629a5a0feaf6f",
+    "timer-798c4a9bcba52b97",
+    "timer-5d1ac0838e158089",
+    "timer-d7bcb2969f87a9ae",
+    "timer-4e19a3f0a3b7b86b",
+    "timer-4ef794dcf06d3262",
+    "timer-c5f588d6c6928899",
+    "timer-7839a135f26f609e",
+    "timer-19736bacaa594d42",
+    "timer-ff0e213488cc1e86",
+    "timer-663339f3843aefea",
+    "timer-8d46ca2b059d2083",
+    "timer-e2617a79777e818a",
+    "timer-5a274df41676b458",
+    "timer-03683a265c65832d",
+    "timer-03148b700a74112a",
+    "timer-1f3254abda9d9691",
+    "timer-aff8ed727652ba9d",
+    "timer-49c65d625080d89c",
+    "timer-95a32357424a028f",
+    "timer-cffd0cc4ec0f7113",
+    "timer-0ce30f2f183ba64c",
+    "timer-783123ae3368b28d",
+    "timer-b24ce8d2e7bc9293",
+    "timer-6d7b5363ff7870d1",
+    "timer-bbbf907f27b2b6cd",
+    "timer-e5bc58bba478a1db",
+    "timer-4fcd76a26f0dd5ac",
+    "timer-9665d6b4f4c447f8",
+    "timer-d0b0898302711a3f",
+    "timer-599f72444f6037f3",
+    "timer-623fb0629ad07d11",
+    "timer-aebfbdeb6242a082",
+    "timer-b730b94e51c955ae"
+  ],
+  "workaroundIds": [
+    "workaround-e272d8ff8ede76f6",
+    "workaround-b113049b944d3ca6"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-fbff0b3d8f04e3d5",
+      "document": "docs/ai/history/records/src_electron_blackmagic_BlackmagicReceiver.ts-1.md",
+      "file": "src/electron/blackmagic/BlackmagicReceiver.ts",
+      "line": 81
+    },
+    {
+      "id": "D-timer-322e1a1d9bbc9fe9",
+      "document": "docs/ai/history/records/src_electron_blackmagic_BlackmagicSender.ts-1.md",
+      "file": "src/electron/blackmagic/BlackmagicSender.ts",
+      "line": 98
+    },
+    {
+      "id": "D-timer-2e38a23fc7573d7b",
+      "document": "docs/ai/history/records/src_electron_blackmagic_BlackmagicSender.ts-1.md",
+      "file": "src/electron/blackmagic/BlackmagicSender.ts",
+      "line": 167
+    },
+    {
+      "id": "D-timer-1f5d74ec1269c927",
+      "document": "docs/ai/history/records/src_electron_blackmagic_BlackmagicSender.ts-1.md",
+      "file": "src/electron/blackmagic/BlackmagicSender.ts",
+      "line": 187
+    },
+    {
+      "id": "D-timer-5876dbcae2723310",
+      "document": "docs/ai/history/records/src_electron_blackmagic_BlackmagicSender.ts-1.md",
+      "file": "src/electron/blackmagic/BlackmagicSender.ts",
+      "line": 325
+    },
+    {
+      "id": "D-timer-1bbbbca048a4ae02",
+      "document": "docs/ai/history/records/src_electron_blackmagic_BlackmagicSender.ts-1.md",
+      "file": "src/electron/blackmagic/BlackmagicSender.ts",
+      "line": 606
+    },
+    {
+      "id": "D-timer-aa5dfb77d2429b6f",
+      "document": "docs/ai/history/records/src_electron_blackmagic_BlackmagicSender.ts-1.md",
+      "file": "src/electron/blackmagic/BlackmagicSender.ts",
+      "line": 779
+    },
+    {
+      "id": "D-timer-1de53c178343e108",
+      "document": "docs/ai/history/records/src_electron_blackmagic_BlackmagicSender.ts-1.md",
+      "file": "src/electron/blackmagic/BlackmagicSender.ts",
+      "line": 821
+    },
+    {
+      "id": "D-timer-777bfa3059430d70",
+      "document": "docs/ai/history/records/src_electron_blackmagic_BlackmagicSender.ts-1.md",
+      "file": "src/electron/blackmagic/BlackmagicSender.ts",
+      "line": 839
+    },
+    {
+      "id": "D-timer-f2460ea3235644f8",
+      "document": "docs/ai/history/records/src_electron_blackmagic_bmdTalk.ts-1.md",
+      "file": "src/electron/blackmagic/bmdTalk.ts",
+      "line": 88
+    },
+    {
+      "id": "D-timer-41d0c8e49fa02d4b",
+      "document": "docs/ai/history/records/src_electron_capture_helpers_CaptureLifecycle.ts-1.md",
+      "file": "src/electron/capture/helpers/CaptureLifecycle.ts",
+      "line": 83
+    },
+    {
+      "id": "D-timer-86f9e4a4d651ef72",
+      "document": "docs/ai/history/records/src_electron_capture_helpers_CaptureLifecycle.ts-1.md",
+      "file": "src/electron/capture/helpers/CaptureLifecycle.ts",
+      "line": 102
+    },
+    {
+      "id": "D-timer-19e88a40358a7b28",
+      "document": "docs/ai/history/records/src_electron_capture_helpers_CaptureLifecycle.ts-1.md",
+      "file": "src/electron/capture/helpers/CaptureLifecycle.ts",
+      "line": 244
+    },
+    {
+      "id": "D-timer-6af9594cd007f23a",
+      "document": "docs/ai/history/records/src_electron_capture_senderWorker.ts-1.md",
+      "file": "src/electron/capture/senderWorker.ts",
+      "line": 98
+    },
+    {
+      "id": "D-timer-35801dd54d5acfca",
+      "document": "docs/ai/history/records/src_electron_capture_senderWorker.ts-1.md",
+      "file": "src/electron/capture/senderWorker.ts",
+      "line": 133
+    },
+    {
+      "id": "D-timer-fa4d6db19060d0bd",
+      "document": "docs/ai/history/records/src_electron_capture_senderWorker.ts-1.md",
+      "file": "src/electron/capture/senderWorker.ts",
+      "line": 291
+    },
+    {
+      "id": "D-timer-b74c50b5de4ab312",
+      "document": "docs/ai/history/records/src_electron_capture_senderWorker.ts-1.md",
+      "file": "src/electron/capture/senderWorker.ts",
+      "line": 551
+    },
+    {
+      "id": "D-timer-0280c6b80685edb0",
+      "document": "docs/ai/history/records/src_electron_capture_streamReceiverProcess.ts-1.md",
+      "file": "src/electron/capture/streamReceiverProcess.ts",
+      "line": 162
+    },
+    {
+      "id": "D-timer-a09f2b055d5bb086",
+      "document": "docs/ai/history/records/src_electron_capture_streamReceiverProcess.ts-1.md",
+      "file": "src/electron/capture/streamReceiverProcess.ts",
+      "line": 190
+    },
+    {
+      "id": "D-transition-d492cb21071c9cad",
+      "document": "docs/ai/history/records/src_electron_capture_streamReceiverProcess.ts-1.md",
+      "file": "src/electron/capture/streamReceiverProcess.ts",
+      "line": 206
+    },
+    {
+      "id": "D-transition-36632b9521ea16ec",
+      "document": "docs/ai/history/records/src_electron_capture_streamReceiverProcess.ts-1.md",
+      "file": "src/electron/capture/streamReceiverProcess.ts",
+      "line": 212
+    },
+    {
+      "id": "D-transition-8357cbe3590ceea6",
+      "document": "docs/ai/history/records/src_electron_capture_streamReceiverProcess.ts-1.md",
+      "file": "src/electron/capture/streamReceiverProcess.ts",
+      "line": 219
+    },
+    {
+      "id": "D-timer-6d71f6b7605dd54c",
+      "document": "docs/ai/history/records/src_electron_capture_streamReceiverProcess.ts-1.md",
+      "file": "src/electron/capture/streamReceiverProcess.ts",
+      "line": 247
+    },
+    {
+      "id": "D-timer-2e8f2542c9535041",
+      "document": "docs/ai/history/records/src_electron_capture_streamReceiverProcess.ts-1.md",
+      "file": "src/electron/capture/streamReceiverProcess.ts",
+      "line": 261
+    },
+    {
+      "id": "D-timer-b17fe1de63788e70",
+      "document": "docs/ai/history/records/src_electron_capture_streamReceiverProcess.ts-1.md",
+      "file": "src/electron/capture/streamReceiverProcess.ts",
+      "line": 295
+    },
+    {
+      "id": "D-timer-a2f86108f7064e21",
+      "document": "docs/ai/history/records/src_electron_capture_streamReceiverProcess.ts-1.md",
+      "file": "src/electron/capture/streamReceiverProcess.ts",
+      "line": 319
+    },
+    {
+      "id": "D-timer-3c2365458dc806b5",
+      "document": "docs/ai/history/records/src_electron_capture_streamReceiverProcess.ts-1.md",
+      "file": "src/electron/capture/streamReceiverProcess.ts",
+      "line": 328
+    },
+    {
+      "id": "D-timer-5323eca8986eebcf",
+      "document": "docs/ai/history/records/src_electron_capture_streamReceiverProcess.ts-1.md",
+      "file": "src/electron/capture/streamReceiverProcess.ts",
+      "line": 398
+    },
+    {
+      "id": "D-timer-9cfa9d25e15c19f9",
+      "document": "docs/ai/history/records/src_electron_capture_streamReceiverProcess.ts-1.md",
+      "file": "src/electron/capture/streamReceiverProcess.ts",
+      "line": 439
+    },
+    {
+      "id": "D-timer-64767d148ad26730",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputBounds.ts-1.md",
+      "file": "src/electron/output/helpers/OutputBounds.ts",
+      "line": 17
+    },
+    {
+      "id": "D-timer-faf6472326533e73",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputBounds.ts-1.md",
+      "file": "src/electron/output/helpers/OutputBounds.ts",
+      "line": 37
+    },
+    {
+      "id": "D-timer-fb6abda19b31cf90",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputBounds.ts-1.md",
+      "file": "src/electron/output/helpers/OutputBounds.ts",
+      "line": 43
+    },
+    {
+      "id": "D-timer-223adb10530a945c",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputIdentify.ts-1.md",
+      "file": "src/electron/output/helpers/OutputIdentify.ts",
+      "line": 15
+    },
+    {
+      "id": "D-timer-120d1fdece6c0384",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 46
+    },
+    {
+      "id": "D-timer-e60d621c70482ad8",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 49
+    },
+    {
+      "id": "D-timer-b6b629a5a0feaf6f",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 116
+    },
+    {
+      "id": "D-timer-798c4a9bcba52b97",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 278
+    },
+    {
+      "id": "D-timer-5d1ac0838e158089",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 529
+    },
+    {
+      "id": "D-timer-d7bcb2969f87a9ae",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 628
+    },
+    {
+      "id": "D-timer-4e19a3f0a3b7b86b",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 647
+    },
+    {
+      "id": "D-timer-4ef794dcf06d3262",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 840
+    },
+    {
+      "id": "D-timer-c5f588d6c6928899",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 842
+    },
+    {
+      "id": "D-timer-7839a135f26f609e",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 892
+    },
+    {
+      "id": "D-timer-19736bacaa594d42",
+      "document": "docs/ai/history/records/src_electron_output_ppt_libreConverter.ts-1.md",
+      "file": "src/electron/output/ppt/libreConverter.ts",
+      "line": 66
+    },
+    {
+      "id": "D-timer-ff0e213488cc1e86",
+      "document": "docs/ai/history/records/src_electron_output_ppt_presentation.ts-1.md",
+      "file": "src/electron/output/ppt/presentation.ts",
+      "line": 68
+    },
+    {
+      "id": "D-timer-663339f3843aefea",
+      "document": "docs/ai/history/records/src_electron_output_ppt_presentation.ts-1.md",
+      "file": "src/electron/output/ppt/presentation.ts",
+      "line": 170
+    },
+    {
+      "id": "D-timer-8d46ca2b059d2083",
+      "document": "docs/ai/history/records/src_electron_output_ppt_presentation.ts-1.md",
+      "file": "src/electron/output/ppt/presentation.ts",
+      "line": 179
+    },
+    {
+      "id": "D-timer-e2617a79777e818a",
+      "document": "docs/ai/history/records/src_electron_output_ppt_presentation.ts-1.md",
+      "file": "src/electron/output/ppt/presentation.ts",
+      "line": 206
+    },
+    {
+      "id": "D-timer-5a274df41676b458",
+      "document": "docs/ai/history/records/src_electron_output_ppt_presentation.ts-1.md",
+      "file": "src/electron/output/ppt/presentation.ts",
+      "line": 236
+    },
+    {
+      "id": "D-timer-03683a265c65832d",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.integration.test.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.integration.test.ts",
+      "line": 61
+    },
+    {
+      "id": "D-timer-03148b700a74112a",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.integration.test.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.integration.test.ts",
+      "line": 89
+    },
+    {
+      "id": "D-timer-1f3254abda9d9691",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.integration.test.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.integration.test.ts",
+      "line": 119
+    },
+    {
+      "id": "D-timer-aff8ed727652ba9d",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.integration.test.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.integration.test.ts",
+      "line": 127
+    },
+    {
+      "id": "D-timer-49c65d625080d89c",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.integration.test.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.integration.test.ts",
+      "line": 145
+    },
+    {
+      "id": "D-timer-95a32357424a028f",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.integration.test.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.integration.test.ts",
+      "line": 166
+    },
+    {
+      "id": "D-timer-cffd0cc4ec0f7113",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.integration.test.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.integration.test.ts",
+      "line": 177
+    },
+    {
+      "id": "D-timer-0ce30f2f183ba64c",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.integration.test.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.integration.test.ts",
+      "line": 188
+    },
+    {
+      "id": "D-timer-783123ae3368b28d",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.integration.test.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.integration.test.ts",
+      "line": 195
+    },
+    {
+      "id": "D-timer-b24ce8d2e7bc9293",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.integration.test.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.integration.test.ts",
+      "line": 200
+    },
+    {
+      "id": "D-timer-6d7b5363ff7870d1",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.integration.test.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.integration.test.ts",
+      "line": 207
+    },
+    {
+      "id": "D-timer-bbbf907f27b2b6cd",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.integration.test.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.integration.test.ts",
+      "line": 243
+    },
+    {
+      "id": "D-timer-e5bc58bba478a1db",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.integration.test.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.integration.test.ts",
+      "line": 258
+    },
+    {
+      "id": "D-timer-4fcd76a26f0dd5ac",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.integration.test.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.integration.test.ts",
+      "line": 261
+    },
+    {
+      "id": "D-timer-9665d6b4f4c447f8",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.ts",
+      "line": 301
+    },
+    {
+      "id": "D-timer-d0b0898302711a3f",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.ts",
+      "line": 401
+    },
+    {
+      "id": "D-timer-599f72444f6037f3",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.ts",
+      "line": 477
+    },
+    {
+      "id": "D-timer-623fb0629ad07d11",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.ts",
+      "line": 529
+    },
+    {
+      "id": "D-timer-aebfbdeb6242a082",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.ts",
+      "line": 672
+    },
+    {
+      "id": "D-timer-b730b94e51c955ae",
+      "document": "docs/ai/history/records/src_electron_streaming_RtmpStreamer.ts-1.md",
+      "file": "src/electron/streaming/RtmpStreamer.ts",
+      "line": 704
+    },
+    {
+      "id": "D-workaround-e272d8ff8ede76f6",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputAlwaysOnTop.ts-1.md",
+      "file": "src/electron/output/helpers/OutputAlwaysOnTop.ts",
+      "line": 24
+    },
+    {
+      "id": "D-workaround-b113049b944d3ca6",
+      "document": "docs/ai/history/records/src_electron_output_ppt_presentation.ts-1.md",
+      "file": "src/electron/output/ppt/presentation.ts",
+      "line": 183
+    },
+    {
+      "id": "D-hotspot-a44a55c71642a046",
+      "document": "docs/ai/history/records/src_electron_blackmagic_BlackmagicManager.ts-1.md",
+      "file": "src/electron/blackmagic/BlackmagicManager.ts",
+      "line": 6
+    },
+    {
+      "id": "D-hotspot-8ee5d3113849b899",
+      "document": "docs/ai/history/records/src_electron_blackmagic_BlackmagicReceiver.ts-1.md",
+      "file": "src/electron/blackmagic/BlackmagicReceiver.ts",
+      "line": 21
+    },
+    {
+      "id": "D-hotspot-8ffe230af3ac98d8",
+      "document": "docs/ai/history/records/src_electron_blackmagic_BlackmagicSender.ts-1.md",
+      "file": "src/electron/blackmagic/BlackmagicSender.ts",
+      "line": 49
+    },
+    {
+      "id": "D-hotspot-ad71f0fdec84f745",
+      "document": "docs/ai/history/records/src_electron_blackmagic_BufferManager.ts-1.md",
+      "file": "src/electron/blackmagic/BufferManager.ts",
+      "line": 19
+    },
+    {
+      "id": "D-hotspot-6bc9e4f298c54f90",
+      "document": "docs/ai/history/records/src_electron_blackmagic_ImageBufferConverter.ts-1.md",
+      "file": "src/electron/blackmagic/ImageBufferConverter.ts",
+      "line": 15
+    },
+    {
+      "id": "D-hotspot-6c335062ee3437e9",
+      "document": "docs/ai/history/records/src_electron_blackmagic_TypeData.ts-1.md",
+      "file": "src/electron/blackmagic/TypeData.ts",
+      "line": 1
+    },
+    {
+      "id": "D-hotspot-232ba3e8719741eb",
+      "document": "docs/ai/history/records/src_electron_blackmagic_bmdFormats.ts-1.md",
+      "file": "src/electron/blackmagic/bmdFormats.ts",
+      "line": 13
+    },
+    {
+      "id": "D-hotspot-da423c57d4cac482",
+      "document": "docs/ai/history/records/src_electron_blackmagic_bmdTalk.ts-1.md",
+      "file": "src/electron/blackmagic/bmdTalk.ts",
+      "line": 22
+    },
+    {
+      "id": "D-hotspot-c711287d0874497a",
+      "document": "docs/ai/history/records/src_electron_blackmagic_macadam-interface.d.ts-1.md",
+      "file": "src/electron/blackmagic/macadam-interface.d.ts",
+      "line": 127
+    },
+    {
+      "id": "D-hotspot-056142d15073651d",
+      "document": "docs/ai/history/records/src_electron_blackmagic_macadamLoader.ts-1.md",
+      "file": "src/electron/blackmagic/macadamLoader.ts",
+      "line": 7
+    },
+    {
+      "id": "D-hotspot-a98c5a8ade6f0625",
+      "document": "docs/ai/history/records/src_electron_capture_CaptureHelper.ts-1.md",
+      "file": "src/electron/capture/CaptureHelper.ts",
+      "line": 10
+    },
+    {
+      "id": "D-hotspot-845de67f54a48a71",
+      "document": "docs/ai/history/records/src_electron_capture_CaptureOptions.ts-1.md",
+      "file": "src/electron/capture/CaptureOptions.ts",
+      "line": 1
+    },
+    {
+      "id": "D-hotspot-7223a13f7c47da4b",
+      "document": "docs/ai/history/records/src_electron_capture_SenderCapture.ts-1.md",
+      "file": "src/electron/capture/SenderCapture.ts",
+      "line": 24
+    },
+    {
+      "id": "D-hotspot-aa5a89f4a6eeb852",
+      "document": "docs/ai/history/records/src_electron_capture_StreamReceiverHost.ts-1.md",
+      "file": "src/electron/capture/StreamReceiverHost.ts",
+      "line": 12
+    },
+    {
+      "id": "D-hotspot-05827e5cde4b8d8f",
+      "document": "docs/ai/history/records/src_electron_capture_helpers_CaptureLifecycle.ts-1.md",
+      "file": "src/electron/capture/helpers/CaptureLifecycle.ts",
+      "line": 10
+    },
+    {
+      "id": "D-hotspot-26632f9dc25c3fdf",
+      "document": "docs/ai/history/records/src_electron_capture_helpers_CaptureTransmitter.ts-1.md",
+      "file": "src/electron/capture/helpers/CaptureTransmitter.ts",
+      "line": 21
+    },
+    {
+      "id": "D-hotspot-41b7a5869060aa8d",
+      "document": "docs/ai/history/records/src_electron_capture_senderWorker.ts-1.md",
+      "file": "src/electron/capture/senderWorker.ts",
+      "line": 16
+    },
+    {
+      "id": "D-hotspot-cc77375c5d2b042d",
+      "document": "docs/ai/history/records/src_electron_capture_streamFrames.ts-1.md",
+      "file": "src/electron/capture/streamFrames.ts",
+      "line": 10
+    },
+    {
+      "id": "D-hotspot-0dded53fd70f8235",
+      "document": "docs/ai/history/records/src_electron_capture_streamReceiverProcess.ts-1.md",
+      "file": "src/electron/capture/streamReceiverProcess.ts",
+      "line": 28
+    },
+    {
+      "id": "D-hotspot-adceb5078229ea11",
+      "document": "docs/ai/history/records/src_electron_ndi_NdiReceiver.ts-1.md",
+      "file": "src/electron/ndi/NdiReceiver.ts",
+      "line": 7
+    },
+    {
+      "id": "D-hotspot-935a6c5530437c9c",
+      "document": "docs/ai/history/records/src_electron_ndi_NdiSender.ts-1.md",
+      "file": "src/electron/ndi/NdiSender.ts",
+      "line": 14
+    },
+    {
+      "id": "D-hotspot-018061c053b78732",
+      "document": "docs/ai/history/records/src_electron_ndi_ndiWorker.ts-1.md",
+      "file": "src/electron/ndi/ndiWorker.ts",
+      "line": 37
+    },
+    {
+      "id": "D-hotspot-fa708ae57331e16d",
+      "document": "docs/ai/history/records/src_electron_ndi_talk.ts-1.md",
+      "file": "src/electron/ndi/talk.ts",
+      "line": 6
+    },
+    {
+      "id": "D-hotspot-5652c17afcae4c3d",
+      "document": "docs/ai/history/records/src_electron_ndi_vingester-util.ts-1.md",
+      "file": "src/electron/ndi/vingester-util.ts",
+      "line": 9
+    },
+    {
+      "id": "D-hotspot-1b7bbfbc2c788b33",
+      "document": "docs/ai/history/records/src_electron_omt_OmtReceiver.ts-1.md",
+      "file": "src/electron/omt/OmtReceiver.ts",
+      "line": 7
+    },
+    {
+      "id": "D-hotspot-f54d67887828272a",
+      "document": "docs/ai/history/records/src_electron_omt_OmtSender.ts-1.md",
+      "file": "src/electron/omt/OmtSender.ts",
+      "line": 14
+    },
+    {
+      "id": "D-hotspot-dc82caa1bf5ed257",
+      "document": "docs/ai/history/records/src_electron_omt_omtModule.ts-1.md",
+      "file": "src/electron/omt/omtModule.ts",
+      "line": 8
+    },
+    {
+      "id": "D-hotspot-ea699ecee6db4562",
+      "document": "docs/ai/history/records/src_electron_omt_omtWorker.ts-1.md",
+      "file": "src/electron/omt/omtWorker.ts",
+      "line": 12
+    },
+    {
+      "id": "D-hotspot-54233efce65f21d3",
+      "document": "docs/ai/history/records/src_electron_omt_talk.ts-1.md",
+      "file": "src/electron/omt/talk.ts",
+      "line": 7
+    },
+    {
+      "id": "D-hotspot-db2b59994df88026",
+      "document": "docs/ai/history/records/src_electron_output_Output.ts-1.md",
+      "file": "src/electron/output/Output.ts",
+      "line": 5
+    },
+    {
+      "id": "D-hotspot-e29021bf61ba180d",
+      "document": "docs/ai/history/records/src_electron_output_OutputHelper.ts-1.md",
+      "file": "src/electron/output/OutputHelper.ts",
+      "line": 15
+    },
+    {
+      "id": "D-hotspot-63451bc9920d7639",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputAlwaysOnTop.ts-1.md",
+      "file": "src/electron/output/helpers/OutputAlwaysOnTop.ts",
+      "line": 8
+    },
+    {
+      "id": "D-hotspot-7a25368c8c4b3c67",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputBounds.ts-1.md",
+      "file": "src/electron/output/helpers/OutputBounds.ts",
+      "line": 6
+    },
+    {
+      "id": "D-hotspot-4aa55d94a099b132",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputIdentify.ts-1.md",
+      "file": "src/electron/output/helpers/OutputIdentify.ts",
+      "line": 4
+    },
+    {
+      "id": "D-hotspot-d96d73d105eca7cb",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputLifecycle.ts-1.md",
+      "file": "src/electron/output/helpers/OutputLifecycle.ts",
+      "line": 33
+    },
+    {
+      "id": "D-hotspot-94b53592b6d592e8",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputSend.ts-1.md",
+      "file": "src/electron/output/helpers/OutputSend.ts",
+      "line": 8
+    },
+    {
+      "id": "D-hotspot-b3fbaeca0ecb6bdf",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputValues.ts-1.md",
+      "file": "src/electron/output/helpers/OutputValues.ts",
+      "line": 45
+    },
+    {
+      "id": "D-hotspot-33fb77333b98f198",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputVisibility.ts-1.md",
+      "file": "src/electron/output/helpers/OutputVisibility.ts",
+      "line": 10
+    },
+    {
+      "id": "D-hotspot-75db8ee8f29d950a",
+      "document": "docs/ai/history/records/src_electron_output_ppt_libreConverter.ts-1.md",
+      "file": "src/electron/output/ppt/libreConverter.ts",
+      "line": 13
+    },
+    {
+      "id": "D-hotspot-463a60d102ffbf66",
+      "document": "docs/ai/history/records/src_electron_output_ppt_pptToShow.ts-1.md",
+      "file": "src/electron/output/ppt/pptToShow.ts",
+      "line": 10
+    },
+    {
+      "id": "D-hotspot-7fa603b17805ac69",
+      "document": "docs/ai/history/records/src_electron_output_ppt_presentation.ts-1.md",
+      "file": "src/electron/output/ppt/presentation.ts",
+      "line": 15
+    }
+  ]
+}

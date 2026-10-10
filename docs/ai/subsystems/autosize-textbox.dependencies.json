@@ -1,0 +1,295 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/frontend/components/edit/scripts/autosize.ts",
+    "src/frontend/components/output/layers/SlideContent.svelte",
+    "src/frontend/components/slide/Textbox.svelte",
+    "src/frontend/components/slide/TextboxLines.svelte"
+  ],
+  "stores": [
+    "src/frontend/stores.ts#currentWindow",
+    "src/frontend/stores.ts#groups",
+    "src/frontend/stores.ts#outputs",
+    "src/frontend/stores.ts#overlays",
+    "src/frontend/stores.ts#scriptureSettings",
+    "src/frontend/stores.ts#showsCache",
+    "src/frontend/stores.ts#slideTimelineSpeedMultiplier",
+    "src/frontend/stores.ts#slidesOptions",
+    "src/frontend/stores.ts#styles",
+    "src/frontend/stores.ts#templates",
+    "src/frontend/stores.ts#variables"
+  ],
+  "messages": [
+    "OUTPUT/ACTION_MAIN"
+  ],
+  "timingIds": [
+    "timer-811b130039a75869",
+    "timer-cf6a381999a4c4c9",
+    "poll-interval-9bfb40909220b56c",
+    "poll-timeout-0363d78a143e0794",
+    "delay-variable-b5ea3e940d0e3c3e",
+    "timer-8093f55a2dd3b53d",
+    "timer-5a0884eced6ca67c",
+    "timer-24d1dc584a7d8c38",
+    "timer-7e20e324eb39abdb",
+    "timer-15659966c137e66b",
+    "timer-9f0e2d3a775127fb",
+    "timer-455e7bbdb9293974",
+    "timer-b00ae6b7871edf88",
+    "timer-5be751488eaaec4f",
+    "timer-0f70b7a0a6f1d0dc",
+    "timer-ea90315dd39e1bd3",
+    "timer-ba5b46aed387d23e",
+    "timer-0b58f901828bacd2",
+    "css-transition-e8f2912eee283d24",
+    "timer-607cd06f61c0a80b",
+    "timer-c2e87b6bc4bb5c8b",
+    "timer-853b7b28abe3b43a",
+    "timer-a76c6f59b58c0868",
+    "timer-d27d19d6f63624af",
+    "timer-daef93546f8b8dea",
+    "css-transition-7b3a0ca31398650d",
+    "css-transition-3d7ade87dd39700b"
+  ],
+  "workaroundIds": [
+    "workaround-f5143d8681582f2a",
+    "workaround-255a8ffcc83f0cdc",
+    "workaround-c3e4f430a922e675",
+    "workaround-902cd8f473e59048",
+    "workaround-a932274379d3ebdb",
+    "workaround-8a8aae2cde12e5b3",
+    "workaround-46e794498d8af69b",
+    "workaround-f6fc7593ac359205",
+    "workaround-224ea5f73bdc18c9"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-811b130039a75869",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 99
+    },
+    {
+      "id": "D-timer-cf6a381999a4c4c9",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 229
+    },
+    {
+      "id": "D-poll-interval-9bfb40909220b56c",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 234
+    },
+    {
+      "id": "D-poll-timeout-0363d78a143e0794",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 234
+    },
+    {
+      "id": "D-delay-variable-b5ea3e940d0e3c3e",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 253
+    },
+    {
+      "id": "D-timer-8093f55a2dd3b53d",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 316
+    },
+    {
+      "id": "D-timer-5a0884eced6ca67c",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 322
+    },
+    {
+      "id": "D-timer-24d1dc584a7d8c38",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 337
+    },
+    {
+      "id": "D-timer-7e20e324eb39abdb",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 343
+    },
+    {
+      "id": "D-timer-15659966c137e66b",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 365
+    },
+    {
+      "id": "D-timer-9f0e2d3a775127fb",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 368
+    },
+    {
+      "id": "D-timer-455e7bbdb9293974",
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 99
+    },
+    {
+      "id": "D-timer-b00ae6b7871edf88",
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 116
+    },
+    {
+      "id": "D-timer-5be751488eaaec4f",
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 329
+    },
+    {
+      "id": "D-timer-0f70b7a0a6f1d0dc",
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 433
+    },
+    {
+      "id": "D-timer-ea90315dd39e1bd3",
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 456
+    },
+    {
+      "id": "D-timer-ba5b46aed387d23e",
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 740
+    },
+    {
+      "id": "D-timer-0b58f901828bacd2",
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 766
+    },
+    {
+      "id": "D-css-transition-e8f2912eee283d24",
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 867
+    },
+    {
+      "id": "D-timer-607cd06f61c0a80b",
+      "document": "docs/ai/history/records/src_frontend_components_slide_TextboxLines.svelte-1.md",
+      "file": "src/frontend/components/slide/TextboxLines.svelte",
+      "line": 75
+    },
+    {
+      "id": "D-timer-c2e87b6bc4bb5c8b",
+      "document": "docs/ai/history/records/src_frontend_components_slide_TextboxLines.svelte-1.md",
+      "file": "src/frontend/components/slide/TextboxLines.svelte",
+      "line": 223
+    },
+    {
+      "id": "D-timer-853b7b28abe3b43a",
+      "document": "docs/ai/history/records/src_frontend_components_slide_TextboxLines.svelte-1.md",
+      "file": "src/frontend/components/slide/TextboxLines.svelte",
+      "line": 356
+    },
+    {
+      "id": "D-timer-a76c6f59b58c0868",
+      "document": "docs/ai/history/records/src_frontend_components_slide_TextboxLines.svelte-1.md",
+      "file": "src/frontend/components/slide/TextboxLines.svelte",
+      "line": 364
+    },
+    {
+      "id": "D-timer-d27d19d6f63624af",
+      "document": "docs/ai/history/records/src_frontend_components_slide_TextboxLines.svelte-1.md",
+      "file": "src/frontend/components/slide/TextboxLines.svelte",
+      "line": 365
+    },
+    {
+      "id": "D-timer-daef93546f8b8dea",
+      "document": "docs/ai/history/records/src_frontend_components_slide_TextboxLines.svelte-1.md",
+      "file": "src/frontend/components/slide/TextboxLines.svelte",
+      "line": 373
+    },
+    {
+      "id": "D-css-transition-7b3a0ca31398650d",
+      "document": "docs/ai/history/records/src_frontend_components_slide_TextboxLines.svelte-1.md",
+      "file": "src/frontend/components/slide/TextboxLines.svelte",
+      "line": 544
+    },
+    {
+      "id": "D-css-transition-3d7ade87dd39700b",
+      "document": "docs/ai/history/records/src_frontend_components_slide_TextboxLines.svelte-1.md",
+      "file": "src/frontend/components/slide/TextboxLines.svelte",
+      "line": 593
+    },
+    {
+      "id": "D-workaround-f5143d8681582f2a",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 226
+    },
+    {
+      "id": "D-workaround-255a8ffcc83f0cdc",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 364
+    },
+    {
+      "id": "D-workaround-c3e4f430a922e675",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 370
+    },
+    {
+      "id": "D-workaround-902cd8f473e59048",
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 271
+    },
+    {
+      "id": "D-workaround-a932274379d3ebdb",
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 759
+    },
+    {
+      "id": "D-workaround-8a8aae2cde12e5b3",
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 859
+    },
+    {
+      "id": "D-workaround-46e794498d8af69b",
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 865
+    },
+    {
+      "id": "D-workaround-f6fc7593ac359205",
+      "document": "docs/ai/history/records/src_frontend_components_slide_TextboxLines.svelte-1.md",
+      "file": "src/frontend/components/slide/TextboxLines.svelte",
+      "line": 394
+    },
+    {
+      "id": "D-workaround-224ea5f73bdc18c9",
+      "document": "docs/ai/history/records/src_frontend_components_slide_TextboxLines.svelte-1.md",
+      "file": "src/frontend/components/slide/TextboxLines.svelte",
+      "line": 787
+    },
+    {
+      "id": "D-hotspot-4805edbf17306bc5",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 37
+    },
+    {
+      "id": "D-hotspot-0a2808186a73fd33",
+      "document": "docs/ai/history/records/src_frontend_components_slide_Textbox.svelte-1.md",
+      "file": "src/frontend/components/slide/Textbox.svelte",
+      "line": 132
+    }
+  ]
+}

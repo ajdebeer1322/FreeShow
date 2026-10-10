@@ -1,0 +1,558 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/frontend/components/helpers/OutputHelper.ts",
+    "src/frontend/components/helpers/output.ts",
+    "src/frontend/components/helpers/showActions.ts",
+    "src/frontend/components/show/Slides.svelte",
+    "src/frontend/utils/shortcuts.ts"
+  ],
+  "stores": [
+    "src/frontend/components/helpers/debugLog.ts#debugPanelOpen",
+    "src/frontend/stores.ts#actions",
+    "src/frontend/stores.ts#activeDrawerTab",
+    "src/frontend/stores.ts#activeEdit",
+    "src/frontend/stores.ts#activeFocus",
+    "src/frontend/stores.ts#activeInteractions",
+    "src/frontend/stores.ts#activePage",
+    "src/frontend/stores.ts#activePopup",
+    "src/frontend/stores.ts#activeProject",
+    "src/frontend/stores.ts#activeRename",
+    "src/frontend/stores.ts#activeScenes",
+    "src/frontend/stores.ts#activeShow",
+    "src/frontend/stores.ts#activeStage",
+    "src/frontend/stores.ts#activeTimers",
+    "src/frontend/stores.ts#alertMessage",
+    "src/frontend/stores.ts#allOutputs",
+    "src/frontend/stores.ts#audioChannelsData",
+    "src/frontend/stores.ts#audioData",
+    "src/frontend/stores.ts#cachedDynamicValues",
+    "src/frontend/stores.ts#cachedShowsData",
+    "src/frontend/stores.ts#categories",
+    "src/frontend/stores.ts#connections",
+    "src/frontend/stores.ts#contextActive",
+    "src/frontend/stores.ts#currentOutputSettings",
+    "src/frontend/stores.ts#customMessageCredits",
+    "src/frontend/stores.ts#customMetadata",
+    "src/frontend/stores.ts#dictionary",
+    "src/frontend/stores.ts#disabledServers",
+    "src/frontend/stores.ts#drawer",
+    "src/frontend/stores.ts#dynamicValueData",
+    "src/frontend/stores.ts#editMode",
+    "src/frontend/stores.ts#editingProjectTemplate",
+    "src/frontend/stores.ts#effects",
+    "src/frontend/stores.ts#focusMode",
+    "src/frontend/stores.ts#focusedArea",
+    "src/frontend/stores.ts#groups",
+    "src/frontend/stores.ts#guideActive",
+    "src/frontend/stores.ts#interactions",
+    "src/frontend/stores.ts#lessonsLoaded",
+    "src/frontend/stores.ts#lockedOverlays",
+    "src/frontend/stores.ts#media",
+    "src/frontend/stores.ts#notFound",
+    "src/frontend/stores.ts#os",
+    "src/frontend/stores.ts#outLocked",
+    "src/frontend/stores.ts#outputDisplay",
+    "src/frontend/stores.ts#outputSlideCache",
+    "src/frontend/stores.ts#outputState",
+    "src/frontend/stores.ts#outputs",
+    "src/frontend/stores.ts#overlayTimers",
+    "src/frontend/stores.ts#overlays",
+    "src/frontend/stores.ts#playerVideos",
+    "src/frontend/stores.ts#playingAudio",
+    "src/frontend/stores.ts#playingMetronome",
+    "src/frontend/stores.ts#playingVideoState",
+    "src/frontend/stores.ts#projectTemplates",
+    "src/frontend/stores.ts#projects",
+    "src/frontend/stores.ts#quickSearchActive",
+    "src/frontend/stores.ts#refreshEditSlide",
+    "src/frontend/stores.ts#scenes",
+    "src/frontend/stores.ts#scriptureSettings",
+    "src/frontend/stores.ts#scriptures",
+    "src/frontend/stores.ts#selected",
+    "src/frontend/stores.ts#serverData",
+    "src/frontend/stores.ts#showRecentlyUsedProjects",
+    "src/frontend/stores.ts#shows",
+    "src/frontend/stores.ts#showsCache",
+    "src/frontend/stores.ts#slideTimers",
+    "src/frontend/stores.ts#slidesOptions",
+    "src/frontend/stores.ts#special",
+    "src/frontend/stores.ts#spellcheck",
+    "src/frontend/stores.ts#stageShows",
+    "src/frontend/stores.ts#styles",
+    "src/frontend/stores.ts#syncedOutputs",
+    "src/frontend/stores.ts#templates",
+    "src/frontend/stores.ts#theme",
+    "src/frontend/stores.ts#themes",
+    "src/frontend/stores.ts#timelineRecordingAction",
+    "src/frontend/stores.ts#timers",
+    "src/frontend/stores.ts#topContextActive",
+    "src/frontend/stores.ts#transitionData",
+    "src/frontend/stores.ts#usageLog",
+    "src/frontend/stores.ts#variables"
+  ],
+  "messages": [
+    "MAIN/ENCODER_DETECT",
+    "MAIN/FFMPEG_CHECK",
+    "MAIN/FFMPEG_DOWNLOAD",
+    "MAIN/FULLSCREEN",
+    "MAIN/PRESENTATION_CONTROL",
+    "MAIN/READ_EXIF",
+    "MAIN/READ_FOLDER",
+    "MAIN/SEND_MIDI",
+    "MAIN/SET_RTMP_ENCODER",
+    "OUTPUT/CAPTURE",
+    "OUTPUT/CREATE",
+    "OUTPUT/DYNAMIC_VALUE_DATA",
+    "OUTPUT/MAIN_REQUEST_DYNAMIC_VALUE",
+    "OUTPUT/MAIN_SHORTCUT",
+    "OUTPUT/MAIN_SHOWS_DATA",
+    "OUTPUT/OVERLAYS",
+    "OUTPUT/SET_VALUE",
+    "OUTPUT/TOGGLE_OUTPUTS"
+  ],
+  "timingIds": [
+    "timer-7e3fa0f5a6daab8a",
+    "timer-f635a8c6373dace3",
+    "timer-c7515519ab245f5b",
+    "timer-4d6c34e19e747079",
+    "timer-d0086bcfd0fe5a3e",
+    "timer-6a6776591c6f13c0",
+    "timer-d61e1db10e4232d4",
+    "timer-1f9b8e69711ab128",
+    "timer-bb92282b1e49c938",
+    "timer-3289ae6e2b7f01d5",
+    "request-budget-38893430dafba01e",
+    "request-budget-242311a284e7fd1d",
+    "timer-c1b7dd5471c77c43",
+    "timer-adbf2ea668c80884",
+    "timer-c1a395bdd22fc870",
+    "timer-ee2e20f69450cdf5",
+    "timer-2efd07edaaf6af61",
+    "timer-b809a42ca63bfd42",
+    "timer-9ca3583b7910e457",
+    "timer-306169a1b680e355",
+    "timer-740c1f8368df9e9e",
+    "timer-1e0c03ac8679480d",
+    "request-budget-a06b3c813a5e0f6b",
+    "timer-ebd954250a2d31f2",
+    "timer-7d2ef5c4cd505394",
+    "timer-6ba04398ebd6ca34",
+    "timer-4ebf65c64141e167",
+    "timer-bbdc99703042d47c",
+    "timer-a9e82d89b5e78126",
+    "timer-f589ba4e92832180",
+    "timer-e42d27608fc0931b",
+    "timer-5a91e1b02b4d1d79",
+    "timer-3a60fceb18b9b1ff",
+    "timer-6c1f6c6e91a6eed9",
+    "timer-7a348766e7210457",
+    "timer-d54945e8b6ca3a3b",
+    "timer-eba1ab375c1246ce",
+    "timer-02487d4a128bab12",
+    "timer-851791bf1a8c5445",
+    "timer-19c301648459c9bd",
+    "timer-49cc82e274a964e9",
+    "request-budget-8f3ea1ff0f1850b2"
+  ],
+  "workaroundIds": [
+    "workaround-54e5a3124de0a074",
+    "workaround-b5f5674d4434818f",
+    "workaround-d6148c554c3c02e6",
+    "workaround-229f80072a307a8f",
+    "workaround-1b750c909fa8ae17",
+    "workaround-7f9dddc86d4745e0",
+    "workaround-7d2d98fea6e8561e",
+    "workaround-4ffe3a82599de495",
+    "workaround-d0a3e7645694d8a7",
+    "workaround-94a2c2daeceaec51",
+    "workaround-9749ee5a7db30206",
+    "workaround-f71816d45dd52a40",
+    "workaround-d074f7d32ea3d598",
+    "workaround-48b69393e2634acd",
+    "workaround-127ffeee6fdfc29a",
+    "workaround-0cd643155adf0593",
+    "workaround-df3e47bc58edc7ff",
+    "workaround-32942beeb5ae2204"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-7e3fa0f5a6daab8a",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_OutputHelper.ts-1.md",
+      "file": "src/frontend/components/helpers/OutputHelper.ts",
+      "line": 107
+    },
+    {
+      "id": "D-timer-f635a8c6373dace3",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_OutputHelper.ts-1.md",
+      "file": "src/frontend/components/helpers/OutputHelper.ts",
+      "line": 376
+    },
+    {
+      "id": "D-timer-c7515519ab245f5b",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_OutputHelper.ts-1.md",
+      "file": "src/frontend/components/helpers/OutputHelper.ts",
+      "line": 701
+    },
+    {
+      "id": "D-timer-4d6c34e19e747079",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_OutputHelper.ts-1.md",
+      "file": "src/frontend/components/helpers/OutputHelper.ts",
+      "line": 725
+    },
+    {
+      "id": "D-timer-d0086bcfd0fe5a3e",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 198
+    },
+    {
+      "id": "D-timer-6a6776591c6f13c0",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 202
+    },
+    {
+      "id": "D-timer-d61e1db10e4232d4",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 228
+    },
+    {
+      "id": "D-timer-1f9b8e69711ab128",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 465
+    },
+    {
+      "id": "D-timer-bb92282b1e49c938",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 579
+    },
+    {
+      "id": "D-timer-3289ae6e2b7f01d5",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 744
+    },
+    {
+      "id": "D-request-budget-38893430dafba01e",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 1136
+    },
+    {
+      "id": "D-request-budget-242311a284e7fd1d",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 1140
+    },
+    {
+      "id": "D-timer-c1b7dd5471c77c43",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 113
+    },
+    {
+      "id": "D-timer-adbf2ea668c80884",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 301
+    },
+    {
+      "id": "D-timer-c1a395bdd22fc870",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 441
+    },
+    {
+      "id": "D-timer-ee2e20f69450cdf5",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 457
+    },
+    {
+      "id": "D-timer-2efd07edaaf6af61",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 465
+    },
+    {
+      "id": "D-timer-b809a42ca63bfd42",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 498
+    },
+    {
+      "id": "D-timer-9ca3583b7910e457",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 654
+    },
+    {
+      "id": "D-timer-306169a1b680e355",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 659
+    },
+    {
+      "id": "D-timer-740c1f8368df9e9e",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 720
+    },
+    {
+      "id": "D-timer-1e0c03ac8679480d",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 931
+    },
+    {
+      "id": "D-request-budget-a06b3c813a5e0f6b",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 1506
+    },
+    {
+      "id": "D-timer-ebd954250a2d31f2",
+      "document": "docs/ai/history/records/src_frontend_components_show_Slides.svelte-1.md",
+      "file": "src/frontend/components/show/Slides.svelte",
+      "line": 42
+    },
+    {
+      "id": "D-timer-7d2ef5c4cd505394",
+      "document": "docs/ai/history/records/src_frontend_components_show_Slides.svelte-1.md",
+      "file": "src/frontend/components/show/Slides.svelte",
+      "line": 86
+    },
+    {
+      "id": "D-timer-6ba04398ebd6ca34",
+      "document": "docs/ai/history/records/src_frontend_components_show_Slides.svelte-1.md",
+      "file": "src/frontend/components/show/Slides.svelte",
+      "line": 89
+    },
+    {
+      "id": "D-timer-4ebf65c64141e167",
+      "document": "docs/ai/history/records/src_frontend_components_show_Slides.svelte-1.md",
+      "file": "src/frontend/components/show/Slides.svelte",
+      "line": 123
+    },
+    {
+      "id": "D-timer-bbdc99703042d47c",
+      "document": "docs/ai/history/records/src_frontend_components_show_Slides.svelte-1.md",
+      "file": "src/frontend/components/show/Slides.svelte",
+      "line": 175
+    },
+    {
+      "id": "D-timer-a9e82d89b5e78126",
+      "document": "docs/ai/history/records/src_frontend_components_show_Slides.svelte-1.md",
+      "file": "src/frontend/components/show/Slides.svelte",
+      "line": 209
+    },
+    {
+      "id": "D-timer-f589ba4e92832180",
+      "document": "docs/ai/history/records/src_frontend_components_show_Slides.svelte-1.md",
+      "file": "src/frontend/components/show/Slides.svelte",
+      "line": 214
+    },
+    {
+      "id": "D-timer-e42d27608fc0931b",
+      "document": "docs/ai/history/records/src_frontend_components_show_Slides.svelte-1.md",
+      "file": "src/frontend/components/show/Slides.svelte",
+      "line": 296
+    },
+    {
+      "id": "D-timer-5a91e1b02b4d1d79",
+      "document": "docs/ai/history/records/src_frontend_components_show_Slides.svelte-1.md",
+      "file": "src/frontend/components/show/Slides.svelte",
+      "line": 416
+    },
+    {
+      "id": "D-timer-3a60fceb18b9b1ff",
+      "document": "docs/ai/history/records/src_frontend_components_show_Slides.svelte-1.md",
+      "file": "src/frontend/components/show/Slides.svelte",
+      "line": 424
+    },
+    {
+      "id": "D-timer-6c1f6c6e91a6eed9",
+      "document": "docs/ai/history/records/src_frontend_components_show_Slides.svelte-1.md",
+      "file": "src/frontend/components/show/Slides.svelte",
+      "line": 466
+    },
+    {
+      "id": "D-timer-7a348766e7210457",
+      "document": "docs/ai/history/records/src_frontend_components_show_Slides.svelte-1.md",
+      "file": "src/frontend/components/show/Slides.svelte",
+      "line": 511
+    },
+    {
+      "id": "D-timer-d54945e8b6ca3a3b",
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 44
+    },
+    {
+      "id": "D-timer-eba1ab375c1246ce",
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 104
+    },
+    {
+      "id": "D-timer-02487d4a128bab12",
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 117
+    },
+    {
+      "id": "D-timer-851791bf1a8c5445",
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 125
+    },
+    {
+      "id": "D-timer-19c301648459c9bd",
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 142
+    },
+    {
+      "id": "D-timer-49cc82e274a964e9",
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 355
+    },
+    {
+      "id": "D-request-budget-8f3ea1ff0f1850b2",
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 552
+    },
+    {
+      "id": "D-workaround-54e5a3124de0a074",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 391
+    },
+    {
+      "id": "D-workaround-b5f5674d4434818f",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 402
+    },
+    {
+      "id": "D-workaround-d6148c554c3c02e6",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 974
+    },
+    {
+      "id": "D-workaround-229f80072a307a8f",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 1101
+    },
+    {
+      "id": "D-workaround-1b750c909fa8ae17",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 1155
+    },
+    {
+      "id": "D-workaround-7f9dddc86d4745e0",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 1449
+    },
+    {
+      "id": "D-workaround-7d2d98fea6e8561e",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 1570
+    },
+    {
+      "id": "D-workaround-4ffe3a82599de495",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 92
+    },
+    {
+      "id": "D-workaround-d0a3e7645694d8a7",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 333
+    },
+    {
+      "id": "D-workaround-94a2c2daeceaec51",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 369
+    },
+    {
+      "id": "D-workaround-9749ee5a7db30206",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 382
+    },
+    {
+      "id": "D-workaround-f71816d45dd52a40",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-1.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 409
+    },
+    {
+      "id": "D-workaround-d074f7d32ea3d598",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-2.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 650
+    },
+    {
+      "id": "D-workaround-48b69393e2634acd",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-2.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 813
+    },
+    {
+      "id": "D-workaround-127ffeee6fdfc29a",
+      "document": "docs/ai/history/records/src_frontend_components_show_Slides.svelte-1.md",
+      "file": "src/frontend/components/show/Slides.svelte",
+      "line": 113
+    },
+    {
+      "id": "D-workaround-0cd643155adf0593",
+      "document": "docs/ai/history/records/src_frontend_components_show_Slides.svelte-1.md",
+      "file": "src/frontend/components/show/Slides.svelte",
+      "line": 144
+    },
+    {
+      "id": "D-workaround-df3e47bc58edc7ff",
+      "document": "docs/ai/history/records/src_frontend_components_show_Slides.svelte-1.md",
+      "file": "src/frontend/components/show/Slides.svelte",
+      "line": 519
+    },
+    {
+      "id": "D-workaround-32942beeb5ae2204",
+      "document": "docs/ai/history/records/src_frontend_utils_shortcuts.ts-1.md",
+      "file": "src/frontend/utils/shortcuts.ts",
+      "line": 353
+    },
+    {
+      "id": "D-hotspot-c1bd07711c914719",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_OutputHelper.ts-1.md",
+      "file": "src/frontend/components/helpers/OutputHelper.ts",
+      "line": 22
+    },
+    {
+      "id": "D-hotspot-7af11be48814e880",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_output.ts-1.md",
+      "file": "src/frontend/components/helpers/output.ts",
+      "line": 76
+    },
+    {
+      "id": "D-hotspot-b8873238b2580417",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_showActions.ts-2.md",
+      "file": "src/frontend/components/helpers/showActions.ts",
+      "line": 90
+    }
+  ]
+}

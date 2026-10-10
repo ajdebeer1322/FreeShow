@@ -1,0 +1,226 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/electron/index.ts",
+    "src/electron/preload.ts",
+    "src/frontend/App.svelte",
+    "src/frontend/main.ts",
+    "src/frontend/utils/startup.ts"
+  ],
+  "stores": [
+    "src/frontend/stores.ts#activePopup",
+    "src/frontend/stores.ts#activeProfile",
+    "src/frontend/stores.ts#activeTimers",
+    "src/frontend/stores.ts#alertMessage",
+    "src/frontend/stores.ts#cachePath",
+    "src/frontend/stores.ts#closeAd",
+    "src/frontend/stores.ts#cloudSyncData",
+    "src/frontend/stores.ts#contentProviderData",
+    "src/frontend/stores.ts#currentWindow",
+    "src/frontend/stores.ts#dataPath",
+    "src/frontend/stores.ts#deviceId",
+    "src/frontend/stores.ts#disabledServers",
+    "src/frontend/stores.ts#driveKeys",
+    "src/frontend/stores.ts#events",
+    "src/frontend/stores.ts#isDev",
+    "src/frontend/stores.ts#language",
+    "src/frontend/stores.ts#loaded",
+    "src/frontend/stores.ts#loadedState",
+    "src/frontend/stores.ts#localeDirection",
+    "src/frontend/stores.ts#os",
+    "src/frontend/stores.ts#outputDisplay",
+    "src/frontend/stores.ts#outputs",
+    "src/frontend/stores.ts#profiles",
+    "src/frontend/stores.ts#providerConnections",
+    "src/frontend/stores.ts#shows",
+    "src/frontend/stores.ts#special",
+    "src/frontend/stores.ts#theme",
+    "src/frontend/stores.ts#themes",
+    "src/frontend/stores.ts#timers",
+    "src/frontend/stores.ts#version",
+    "src/frontend/stores.ts#windowState"
+  ],
+  "messages": [
+    "MAIN/ALERT",
+    "MAIN/CACHE",
+    "MAIN/CHECK_RAM_USAGE",
+    "MAIN/DATA_PATH",
+    "MAIN/DEVICE_ID",
+    "MAIN/DRIVE_API_KEY",
+    "MAIN/EVENTS",
+    "MAIN/GET_CACHE_PATH",
+    "MAIN/GET_OS",
+    "MAIN/HISTORY",
+    "MAIN/IS_DEV",
+    "MAIN/MAXIMIZED",
+    "MAIN/MEDIA",
+    "MAIN/OVERLAYS",
+    "MAIN/PROJECTS",
+    "MAIN/PROVIDER_CONNECTIONS",
+    "MAIN/PROVIDER_STARTUP_LOAD",
+    "MAIN/RTMP_STATUS",
+    "MAIN/SETTINGS",
+    "MAIN/SHOWS",
+    "MAIN/STAGE",
+    "MAIN/SYNCED_SETTINGS",
+    "MAIN/TEMPLATES",
+    "MAIN/THEMES",
+    "MAIN/USAGE",
+    "MAIN/VERSION",
+    "OUTPUT/REQUEST_DATA_MAIN",
+    "STARTUP/READY",
+    "STARTUP/TYPE"
+  ],
+  "timingIds": [
+    "timer-51ac636915599bca",
+    "timer-3fc1a9fe04ea67e0",
+    "timer-5db0bffd18569125",
+    "timer-83a3b0af414bfda1",
+    "timer-85d18e9849d4e7c7",
+    "timer-05f6758c0b8a3917",
+    "timer-c54d006ef917beee",
+    "poll-interval-ff0931245341ff34",
+    "poll-timeout-3ca3833a9015a0c6",
+    "timer-f68e0613e5603222",
+    "poll-interval-4f60e427575ea13e",
+    "poll-timeout-c02189d8b1c84fcd",
+    "timer-d8eed8a72f69a1e0",
+    "timer-e3cfcb6d5a1e1624",
+    "timer-3c917e7b669ba507",
+    "timer-317a6f025267735b",
+    "request-budget-5a2fe375e793011f",
+    "timer-3d52cd3cdb47a56a",
+    "poll-interval-0a7ff818a353030e",
+    "poll-timeout-e1287cb444cf94aa",
+    "timer-44c5371a0b029875"
+  ],
+  "workaroundIds": [],
+  "decisions": [
+    {
+      "id": "D-timer-51ac636915599bca",
+      "document": "docs/ai/history/records/src_electron_index.ts-1.md",
+      "file": "src/electron/index.ts",
+      "line": 111
+    },
+    {
+      "id": "D-timer-3fc1a9fe04ea67e0",
+      "document": "docs/ai/history/records/src_electron_index.ts-1.md",
+      "file": "src/electron/index.ts",
+      "line": 112
+    },
+    {
+      "id": "D-timer-5db0bffd18569125",
+      "document": "docs/ai/history/records/src_electron_index.ts-1.md",
+      "file": "src/electron/index.ts",
+      "line": 152
+    },
+    {
+      "id": "D-timer-83a3b0af414bfda1",
+      "document": "docs/ai/history/records/src_electron_preload.ts-1.md",
+      "file": "src/electron/preload.ts",
+      "line": 34
+    },
+    {
+      "id": "D-timer-85d18e9849d4e7c7",
+      "document": "docs/ai/history/records/src_frontend_App.svelte-1.md",
+      "file": "src/frontend/App.svelte",
+      "line": 40
+    },
+    {
+      "id": "D-timer-05f6758c0b8a3917",
+      "document": "docs/ai/history/records/src_frontend_App.svelte-1.md",
+      "file": "src/frontend/App.svelte",
+      "line": 43
+    },
+    {
+      "id": "D-timer-c54d006ef917beee",
+      "document": "docs/ai/history/records/src_frontend_App.svelte-1.md",
+      "file": "src/frontend/App.svelte",
+      "line": 60
+    },
+    {
+      "id": "D-poll-interval-ff0931245341ff34",
+      "document": "docs/ai/history/records/src_frontend_utils_startup.ts-1.md",
+      "file": "src/frontend/utils/startup.ts",
+      "line": 28
+    },
+    {
+      "id": "D-poll-timeout-3ca3833a9015a0c6",
+      "document": "docs/ai/history/records/src_frontend_utils_startup.ts-1.md",
+      "file": "src/frontend/utils/startup.ts",
+      "line": 28
+    },
+    {
+      "id": "D-timer-f68e0613e5603222",
+      "document": "docs/ai/history/records/src_frontend_utils_startup.ts-1.md",
+      "file": "src/frontend/utils/startup.ts",
+      "line": 65
+    },
+    {
+      "id": "D-poll-interval-4f60e427575ea13e",
+      "document": "docs/ai/history/records/src_frontend_utils_startup.ts-1.md",
+      "file": "src/frontend/utils/startup.ts",
+      "line": 68
+    },
+    {
+      "id": "D-poll-timeout-c02189d8b1c84fcd",
+      "document": "docs/ai/history/records/src_frontend_utils_startup.ts-1.md",
+      "file": "src/frontend/utils/startup.ts",
+      "line": 68
+    },
+    {
+      "id": "D-timer-d8eed8a72f69a1e0",
+      "document": "docs/ai/history/records/src_frontend_utils_startup.ts-1.md",
+      "file": "src/frontend/utils/startup.ts",
+      "line": 88
+    },
+    {
+      "id": "D-timer-e3cfcb6d5a1e1624",
+      "document": "docs/ai/history/records/src_frontend_utils_startup.ts-1.md",
+      "file": "src/frontend/utils/startup.ts",
+      "line": 91
+    },
+    {
+      "id": "D-timer-3c917e7b669ba507",
+      "document": "docs/ai/history/records/src_frontend_utils_startup.ts-1.md",
+      "file": "src/frontend/utils/startup.ts",
+      "line": 102
+    },
+    {
+      "id": "D-timer-317a6f025267735b",
+      "document": "docs/ai/history/records/src_frontend_utils_startup.ts-1.md",
+      "file": "src/frontend/utils/startup.ts",
+      "line": 103
+    },
+    {
+      "id": "D-request-budget-5a2fe375e793011f",
+      "document": "docs/ai/history/records/src_frontend_utils_startup.ts-1.md",
+      "file": "src/frontend/utils/startup.ts",
+      "line": 121
+    },
+    {
+      "id": "D-timer-3d52cd3cdb47a56a",
+      "document": "docs/ai/history/records/src_frontend_utils_startup.ts-1.md",
+      "file": "src/frontend/utils/startup.ts",
+      "line": 167
+    },
+    {
+      "id": "D-poll-interval-0a7ff818a353030e",
+      "document": "docs/ai/history/records/src_frontend_utils_startup.ts-1.md",
+      "file": "src/frontend/utils/startup.ts",
+      "line": 206
+    },
+    {
+      "id": "D-poll-timeout-e1287cb444cf94aa",
+      "document": "docs/ai/history/records/src_frontend_utils_startup.ts-1.md",
+      "file": "src/frontend/utils/startup.ts",
+      "line": 206
+    },
+    {
+      "id": "D-timer-44c5371a0b029875",
+      "document": "docs/ai/history/records/src_frontend_utils_startup.ts-1.md",
+      "file": "src/frontend/utils/startup.ts",
+      "line": 220
+    }
+  ]
+}

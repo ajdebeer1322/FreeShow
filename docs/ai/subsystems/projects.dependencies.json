@@ -1,0 +1,192 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/frontend/components/show/Projects.svelte",
+    "src/frontend/components/show/Show.svelte",
+    "src/frontend/components/show/focus/FocusItem.svelte",
+    "src/frontend/components/show/focus/FocusMode.svelte",
+    "src/frontend/components/show/focus/focus.ts",
+    "src/frontend/components/show/focus/projectSignature.test.ts",
+    "src/frontend/components/show/focus/projectSignature.ts",
+    "src/frontend/components/show/focus/showColors.ts",
+    "src/frontend/components/show/project.ts",
+    "src/types/Projects.ts"
+  ],
+  "stores": [
+    "src/frontend/components/show/arrangementBar.ts#openArrangementBars",
+    "src/frontend/stores.ts#activeEdit",
+    "src/frontend/stores.ts#activeFocus",
+    "src/frontend/stores.ts#activePopup",
+    "src/frontend/stores.ts#activeProject",
+    "src/frontend/stores.ts#activeRename",
+    "src/frontend/stores.ts#activeShow",
+    "src/frontend/stores.ts#autoOpenedTimeline",
+    "src/frontend/stores.ts#categories",
+    "src/frontend/stores.ts#contentProviderData",
+    "src/frontend/stores.ts#dictionary",
+    "src/frontend/stores.ts#drawer",
+    "src/frontend/stores.ts#editingProjectTemplate",
+    "src/frontend/stores.ts#focusMode",
+    "src/frontend/stores.ts#folders",
+    "src/frontend/stores.ts#openedFolders",
+    "src/frontend/stores.ts#outLocked",
+    "src/frontend/stores.ts#outputs",
+    "src/frontend/stores.ts#overlays",
+    "src/frontend/stores.ts#playerVideos",
+    "src/frontend/stores.ts#projectTemplates",
+    "src/frontend/stores.ts#projectView",
+    "src/frontend/stores.ts#projects",
+    "src/frontend/stores.ts#providerConnections",
+    "src/frontend/stores.ts#resized",
+    "src/frontend/stores.ts#saved",
+    "src/frontend/stores.ts#showRecentlyUsedProjects",
+    "src/frontend/stores.ts#shows",
+    "src/frontend/stores.ts#showsCache",
+    "src/frontend/stores.ts#sorted",
+    "src/frontend/stores.ts#special",
+    "src/frontend/stores.ts#templateApplied"
+  ],
+  "messages": [
+    "MAIN/IMPORT",
+    "MAIN/ONSTAGE_LOAD_SERVICE",
+    "MAIN/PCO_LOAD_PLAN"
+  ],
+  "timingIds": [
+    "timer-3cb5c135e6bfaab5",
+    "timer-cc6cd5755f2707b8",
+    "transition-d0a120135e21b401",
+    "transition-2dc067be65e1855a",
+    "transition-6c7e1bbdadf13e86",
+    "css-transition-38ce6a1666e149a3",
+    "css-transition-930b077c0c5c4cf2",
+    "css-transition-3631d6b1a4e4149c",
+    "css-transition-e3104660f221f1ee",
+    "timer-f00cf5cc97e29817",
+    "timer-247873dbe40216d0",
+    "timer-a0ad934ecd8ee03f",
+    "timer-3b8398e8a34be12b",
+    "timer-44d942e19b54b9ac",
+    "timer-0cc66d4445cf5198"
+  ],
+  "workaroundIds": [
+    "workaround-8c91721a8543d001",
+    "workaround-439efed608eb7eee",
+    "workaround-41fc0b8bbaaa0657"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-3cb5c135e6bfaab5",
+      "document": "docs/ai/history/records/src_frontend_components_show_Projects.svelte-1.md",
+      "file": "src/frontend/components/show/Projects.svelte",
+      "line": 117
+    },
+    {
+      "id": "D-timer-cc6cd5755f2707b8",
+      "document": "docs/ai/history/records/src_frontend_components_show_Projects.svelte-1.md",
+      "file": "src/frontend/components/show/Projects.svelte",
+      "line": 180
+    },
+    {
+      "id": "D-transition-d0a120135e21b401",
+      "document": "docs/ai/history/records/src_frontend_components_show_Projects.svelte-1.md",
+      "file": "src/frontend/components/show/Projects.svelte",
+      "line": 386
+    },
+    {
+      "id": "D-transition-2dc067be65e1855a",
+      "document": "docs/ai/history/records/src_frontend_components_show_Projects.svelte-1.md",
+      "file": "src/frontend/components/show/Projects.svelte",
+      "line": 480
+    },
+    {
+      "id": "D-transition-6c7e1bbdadf13e86",
+      "document": "docs/ai/history/records/src_frontend_components_show_Projects.svelte-1.md",
+      "file": "src/frontend/components/show/Projects.svelte",
+      "line": 530
+    },
+    {
+      "id": "D-css-transition-38ce6a1666e149a3",
+      "document": "docs/ai/history/records/src_frontend_components_show_Projects.svelte-1.md",
+      "file": "src/frontend/components/show/Projects.svelte",
+      "line": 632
+    },
+    {
+      "id": "D-css-transition-930b077c0c5c4cf2",
+      "document": "docs/ai/history/records/src_frontend_components_show_Projects.svelte-1.md",
+      "file": "src/frontend/components/show/Projects.svelte",
+      "line": 727
+    },
+    {
+      "id": "D-css-transition-3631d6b1a4e4149c",
+      "document": "docs/ai/history/records/src_frontend_components_show_Projects.svelte-1.md",
+      "file": "src/frontend/components/show/Projects.svelte",
+      "line": 836
+    },
+    {
+      "id": "D-css-transition-e3104660f221f1ee",
+      "document": "docs/ai/history/records/src_frontend_components_show_Show.svelte-1.md",
+      "file": "src/frontend/components/show/Show.svelte",
+      "line": 194
+    },
+    {
+      "id": "D-timer-f00cf5cc97e29817",
+      "document": "docs/ai/history/records/src_frontend_components_show_focus_FocusMode.svelte-1.md",
+      "file": "src/frontend/components/show/focus/FocusMode.svelte",
+      "line": 33
+    },
+    {
+      "id": "D-timer-247873dbe40216d0",
+      "document": "docs/ai/history/records/src_frontend_components_show_focus_FocusMode.svelte-1.md",
+      "file": "src/frontend/components/show/focus/FocusMode.svelte",
+      "line": 71
+    },
+    {
+      "id": "D-timer-a0ad934ecd8ee03f",
+      "document": "docs/ai/history/records/src_frontend_components_show_focus_FocusMode.svelte-1.md",
+      "file": "src/frontend/components/show/focus/FocusMode.svelte",
+      "line": 109
+    },
+    {
+      "id": "D-timer-3b8398e8a34be12b",
+      "document": "docs/ai/history/records/src_frontend_components_show_focus_FocusMode.svelte-1.md",
+      "file": "src/frontend/components/show/focus/FocusMode.svelte",
+      "line": 160
+    },
+    {
+      "id": "D-timer-44d942e19b54b9ac",
+      "document": "docs/ai/history/records/src_frontend_components_show_project.ts-1.md",
+      "file": "src/frontend/components/show/project.ts",
+      "line": 26
+    },
+    {
+      "id": "D-timer-0cc66d4445cf5198",
+      "document": "docs/ai/history/records/src_frontend_components_show_project.ts-1.md",
+      "file": "src/frontend/components/show/project.ts",
+      "line": 57
+    },
+    {
+      "id": "D-workaround-8c91721a8543d001",
+      "document": "docs/ai/history/records/src_frontend_components_show_Projects.svelte-1.md",
+      "file": "src/frontend/components/show/Projects.svelte",
+      "line": 385
+    },
+    {
+      "id": "D-workaround-439efed608eb7eee",
+      "document": "docs/ai/history/records/src_frontend_components_show_Projects.svelte-1.md",
+      "file": "src/frontend/components/show/Projects.svelte",
+      "line": 410
+    },
+    {
+      "id": "D-workaround-41fc0b8bbaaa0657",
+      "document": "docs/ai/history/records/src_frontend_components_show_focus_FocusItem.svelte-1.md",
+      "file": "src/frontend/components/show/focus/FocusItem.svelte",
+      "line": 73
+    },
+    {
+      "id": "D-fork-755ae106e1ed848c",
+      "document": "docs/ai/history/records/src_frontend_components_show_Show.svelte-1.md",
+      "file": "src/frontend/components/show/Show.svelte",
+      "line": 144
+    }
+  ]
+}

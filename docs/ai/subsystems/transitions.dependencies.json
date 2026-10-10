@@ -1,0 +1,244 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/frontend/components/output/layers/Overlay.svelte",
+    "src/frontend/components/output/layers/SlideContent.svelte",
+    "src/frontend/components/output/transitions/OutputTransition.svelte",
+    "src/frontend/components/output/transitions/SlideItemTransition.svelte",
+    "src/frontend/utils/transitions.ts"
+  ],
+  "stores": [
+    "src/frontend/stores.ts#currentWindow",
+    "src/frontend/stores.ts#scriptureSettings",
+    "src/frontend/stores.ts#showsCache",
+    "src/frontend/stores.ts#slideTimelineSpeedMultiplier",
+    "src/frontend/stores.ts#templates",
+    "src/frontend/stores.ts#transitionData"
+  ],
+  "messages": [],
+  "timingIds": [
+    "timer-f6ec73855261ef74",
+    "timer-02e3dbe0dce4be88",
+    "timer-811b130039a75869",
+    "timer-cf6a381999a4c4c9",
+    "poll-interval-9bfb40909220b56c",
+    "poll-timeout-0363d78a143e0794",
+    "delay-variable-b5ea3e940d0e3c3e",
+    "timer-8093f55a2dd3b53d",
+    "timer-5a0884eced6ca67c",
+    "timer-24d1dc584a7d8c38",
+    "timer-7e20e324eb39abdb",
+    "timer-15659966c137e66b",
+    "timer-9f0e2d3a775127fb",
+    "transition-dd644ad430340edf",
+    "transition-b17303e2f94a38e3",
+    "delay-variable-db24bdba2f920ac4",
+    "delay-variable-2846d12ec581d0d4",
+    "transition-b712a212520a543f"
+  ],
+  "workaroundIds": [
+    "workaround-ee1ab844f3a096ba",
+    "workaround-f5143d8681582f2a",
+    "workaround-255a8ffcc83f0cdc",
+    "workaround-c3e4f430a922e675",
+    "workaround-192612476c3b7922",
+    "workaround-86684951cee41110",
+    "workaround-684e6233cc41dc40",
+    "workaround-688519df0a88a89d",
+    "workaround-88461c9d5f160880"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-f6ec73855261ef74",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlay.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlay.svelte",
+      "line": 42
+    },
+    {
+      "id": "D-timer-02e3dbe0dce4be88",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlay.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlay.svelte",
+      "line": 56
+    },
+    {
+      "id": "D-timer-811b130039a75869",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 99
+    },
+    {
+      "id": "D-timer-cf6a381999a4c4c9",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 229
+    },
+    {
+      "id": "D-poll-interval-9bfb40909220b56c",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 234
+    },
+    {
+      "id": "D-poll-timeout-0363d78a143e0794",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 234
+    },
+    {
+      "id": "D-delay-variable-b5ea3e940d0e3c3e",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 253
+    },
+    {
+      "id": "D-timer-8093f55a2dd3b53d",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 316
+    },
+    {
+      "id": "D-timer-5a0884eced6ca67c",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 322
+    },
+    {
+      "id": "D-timer-24d1dc584a7d8c38",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 337
+    },
+    {
+      "id": "D-timer-7e20e324eb39abdb",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 343
+    },
+    {
+      "id": "D-timer-15659966c137e66b",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 365
+    },
+    {
+      "id": "D-timer-9f0e2d3a775127fb",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 368
+    },
+    {
+      "id": "D-transition-dd644ad430340edf",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_OutputTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/OutputTransition.svelte",
+      "line": 18
+    },
+    {
+      "id": "D-transition-b17303e2f94a38e3",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_OutputTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/OutputTransition.svelte",
+      "line": 18
+    },
+    {
+      "id": "D-delay-variable-db24bdba2f920ac4",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_SlideItemTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/SlideItemTransition.svelte",
+      "line": 83
+    },
+    {
+      "id": "D-delay-variable-2846d12ec581d0d4",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_SlideItemTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/SlideItemTransition.svelte",
+      "line": 84
+    },
+    {
+      "id": "D-transition-b712a212520a543f",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_SlideItemTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/SlideItemTransition.svelte",
+      "line": 150
+    },
+    {
+      "id": "D-workaround-ee1ab844f3a096ba",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlay.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlay.svelte",
+      "line": 35
+    },
+    {
+      "id": "D-workaround-f5143d8681582f2a",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 226
+    },
+    {
+      "id": "D-workaround-255a8ffcc83f0cdc",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 364
+    },
+    {
+      "id": "D-workaround-c3e4f430a922e675",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 370
+    },
+    {
+      "id": "D-workaround-192612476c3b7922",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_OutputTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/OutputTransition.svelte",
+      "line": 12
+    },
+    {
+      "id": "D-workaround-86684951cee41110",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_SlideItemTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/SlideItemTransition.svelte",
+      "line": 45
+    },
+    {
+      "id": "D-workaround-684e6233cc41dc40",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_SlideItemTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/SlideItemTransition.svelte",
+      "line": 46
+    },
+    {
+      "id": "D-workaround-688519df0a88a89d",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_SlideItemTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/SlideItemTransition.svelte",
+      "line": 47
+    },
+    {
+      "id": "D-workaround-88461c9d5f160880",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_SlideItemTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/SlideItemTransition.svelte",
+      "line": 115
+    },
+    {
+      "id": "D-hotspot-5abe0f4a0d17bd17",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlay.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlay.svelte",
+      "line": 27
+    },
+    {
+      "id": "D-hotspot-4805edbf17306bc5",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 37
+    },
+    {
+      "id": "D-hotspot-41052711399985b1",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_OutputTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/OutputTransition.svelte",
+      "line": 1
+    },
+    {
+      "id": "D-hotspot-a9848b6bb4feda16",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_SlideItemTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/SlideItemTransition.svelte",
+      "line": 29
+    },
+    {
+      "id": "D-fork-d3b3f77519612260",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlay.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlay.svelte",
+      "line": 24
+    }
+  ]
+}

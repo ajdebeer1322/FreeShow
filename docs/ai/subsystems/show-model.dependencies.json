@@ -1,0 +1,138 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/frontend/classes/Show.ts",
+    "src/frontend/components/helpers/setShow.ts",
+    "src/frontend/components/helpers/show.ts",
+    "src/frontend/components/helpers/shows.ts",
+    "src/frontend/show/slides.ts",
+    "src/types/Projects.ts",
+    "src/types/Show.ts"
+  ],
+  "stores": [
+    "src/frontend/stores.ts#activeEdit",
+    "src/frontend/stores.ts#activeFocus",
+    "src/frontend/stores.ts#activePage",
+    "src/frontend/stores.ts#activeProject",
+    "src/frontend/stores.ts#activeShow",
+    "src/frontend/stores.ts#cachedShowsData",
+    "src/frontend/stores.ts#categories",
+    "src/frontend/stores.ts#customMetadata",
+    "src/frontend/stores.ts#dictionary",
+    "src/frontend/stores.ts#focusMode",
+    "src/frontend/stores.ts#groupNumbers",
+    "src/frontend/stores.ts#groups",
+    "src/frontend/stores.ts#notFound",
+    "src/frontend/stores.ts#projects",
+    "src/frontend/stores.ts#refreshEditSlide",
+    "src/frontend/stores.ts#saved",
+    "src/frontend/stores.ts#selected",
+    "src/frontend/stores.ts#shows",
+    "src/frontend/stores.ts#showsCache",
+    "src/frontend/stores.ts#slidesOptions",
+    "src/frontend/stores.ts#sorted",
+    "src/frontend/stores.ts#sortedShowsList",
+    "src/frontend/stores.ts#special",
+    "src/frontend/stores.ts#templates",
+    "src/frontend/stores.ts#textCache"
+  ],
+  "messages": [
+    "MAIN/SHOW"
+  ],
+  "timingIds": [
+    "request-budget-cbbb22bcf02d3c62",
+    "timer-0afe36641d41c302",
+    "timer-e8573623c5988ae6",
+    "timer-13bb95597df09c01"
+  ],
+  "workaroundIds": [
+    "workaround-2e8c8028cceda221",
+    "workaround-000a55efea267ad2",
+    "workaround-a2af8b83de8fb7b1",
+    "workaround-f89cf61c577dbd14",
+    "workaround-9cc5c46f261a73e0",
+    "workaround-e5d4879afa60fa28",
+    "workaround-93f6ebc266fce151",
+    "workaround-860b8e0586027edf"
+  ],
+  "decisions": [
+    {
+      "id": "D-request-budget-cbbb22bcf02d3c62",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_setShow.ts-1.md",
+      "file": "src/frontend/components/helpers/setShow.ts",
+      "line": 186
+    },
+    {
+      "id": "D-timer-0afe36641d41c302",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_setShow.ts-1.md",
+      "file": "src/frontend/components/helpers/setShow.ts",
+      "line": 247
+    },
+    {
+      "id": "D-timer-e8573623c5988ae6",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_setShow.ts-1.md",
+      "file": "src/frontend/components/helpers/setShow.ts",
+      "line": 262
+    },
+    {
+      "id": "D-timer-13bb95597df09c01",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_show.ts-1.md",
+      "file": "src/frontend/components/helpers/show.ts",
+      "line": 94
+    },
+    {
+      "id": "D-workaround-2e8c8028cceda221",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_show.ts-1.md",
+      "file": "src/frontend/components/helpers/show.ts",
+      "line": 49
+    },
+    {
+      "id": "D-workaround-000a55efea267ad2",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_show.ts-1.md",
+      "file": "src/frontend/components/helpers/show.ts",
+      "line": 512
+    },
+    {
+      "id": "D-workaround-a2af8b83de8fb7b1",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_shows.ts-1.md",
+      "file": "src/frontend/components/helpers/shows.ts",
+      "line": 413
+    },
+    {
+      "id": "D-workaround-f89cf61c577dbd14",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_shows.ts-1.md",
+      "file": "src/frontend/components/helpers/shows.ts",
+      "line": 427
+    },
+    {
+      "id": "D-workaround-9cc5c46f261a73e0",
+      "document": "docs/ai/history/records/src_frontend_show_slides.ts-1.md",
+      "file": "src/frontend/show/slides.ts",
+      "line": 98
+    },
+    {
+      "id": "D-workaround-e5d4879afa60fa28",
+      "document": "docs/ai/history/records/src_frontend_show_slides.ts-1.md",
+      "file": "src/frontend/show/slides.ts",
+      "line": 214
+    },
+    {
+      "id": "D-workaround-93f6ebc266fce151",
+      "document": "docs/ai/history/records/src_frontend_show_slides.ts-1.md",
+      "file": "src/frontend/show/slides.ts",
+      "line": 274
+    },
+    {
+      "id": "D-workaround-860b8e0586027edf",
+      "document": "docs/ai/history/records/src_frontend_show_slides.ts-1.md",
+      "file": "src/frontend/show/slides.ts",
+      "line": 531
+    },
+    {
+      "id": "D-fork-ee5e33e53d495bfc",
+      "document": "docs/ai/history/records/src_frontend_components_helpers_show.ts-1.md",
+      "file": "src/frontend/components/helpers/show.ts",
+      "line": 459
+    }
+  ]
+}

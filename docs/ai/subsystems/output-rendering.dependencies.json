@@ -1,0 +1,1125 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/electron/output/helpers/OutputSend.ts",
+    "src/frontend/MainOutput.svelte",
+    "src/frontend/components/output/Camera.svelte",
+    "src/frontend/components/output/Output.svelte",
+    "src/frontend/components/output/ShowActions.svelte",
+    "src/frontend/components/output/VideoSlider.svelte",
+    "src/frontend/components/output/Window.svelte",
+    "src/frontend/components/output/animation.ts",
+    "src/frontend/components/output/clear.ts",
+    "src/frontend/components/output/effects/Effect.svelte",
+    "src/frontend/components/output/effects/EffectOutput.svelte",
+    "src/frontend/components/output/effects/effectItems.ts",
+    "src/frontend/components/output/effects/effectRenderer.ts",
+    "src/frontend/components/output/effects/simplex-noise.js",
+    "src/frontend/components/output/layers/Background.svelte",
+    "src/frontend/components/output/layers/BackgroundMedia.svelte",
+    "src/frontend/components/output/layers/Media.svelte",
+    "src/frontend/components/output/layers/MessageInstance.svelte",
+    "src/frontend/components/output/layers/Messages.svelte",
+    "src/frontend/components/output/layers/Overlay.svelte",
+    "src/frontend/components/output/layers/Overlays.svelte",
+    "src/frontend/components/output/layers/PdfOutput.svelte",
+    "src/frontend/components/output/layers/SceneMedia.svelte",
+    "src/frontend/components/output/layers/SlideContent.svelte",
+    "src/frontend/components/output/messages/MessageWordingEditor.svelte",
+    "src/frontend/components/output/messages/MessagesPanel.svelte",
+    "src/frontend/components/output/preview/ClearButtons.svelte",
+    "src/frontend/components/output/preview/MultiOutputs.svelte",
+    "src/frontend/components/output/preview/Preview.svelte",
+    "src/frontend/components/output/preview/PreviewCanvas.svelte",
+    "src/frontend/components/output/preview/PreviewOutput.svelte",
+    "src/frontend/components/output/preview/PreviewOutputs.svelte",
+    "src/frontend/components/output/preview/SpotifyController.svelte",
+    "src/frontend/components/output/preview/SpotifyManager.ts",
+    "src/frontend/components/output/tools/Audio.svelte",
+    "src/frontend/components/output/tools/MediaControls.svelte",
+    "src/frontend/components/output/tools/NextTimer.svelte",
+    "src/frontend/components/output/tools/Overlay.svelte",
+    "src/frontend/components/output/tools/Show.svelte",
+    "src/frontend/components/output/tools/TimerControls.svelte",
+    "src/frontend/components/output/transitions/OutputTransition.svelte",
+    "src/frontend/components/output/transitions/SlideItemTransition.svelte",
+    "src/frontend/utils/receivers.ts"
+  ],
+  "stores": [
+    "src/frontend/components/output/preview/SpotifyManager.ts#spotifyIsFading",
+    "src/frontend/components/output/preview/SpotifyManager.ts#spotifyState",
+    "src/frontend/stores.ts#actions",
+    "src/frontend/stores.ts#activeAnimate",
+    "src/frontend/stores.ts#activeEdit",
+    "src/frontend/stores.ts#activeFocus",
+    "src/frontend/stores.ts#activeMessage",
+    "src/frontend/stores.ts#activePage",
+    "src/frontend/stores.ts#activePlaylist",
+    "src/frontend/stores.ts#activePopup",
+    "src/frontend/stores.ts#activeProfile",
+    "src/frontend/stores.ts#activeProject",
+    "src/frontend/stores.ts#activeRecording",
+    "src/frontend/stores.ts#activeShow",
+    "src/frontend/stores.ts#activeStage",
+    "src/frontend/stores.ts#activeStyle",
+    "src/frontend/stores.ts#activeTimers",
+    "src/frontend/stores.ts#alertMessage",
+    "src/frontend/stores.ts#allOutputs",
+    "src/frontend/stores.ts#audioChannelsData",
+    "src/frontend/stores.ts#audioData",
+    "src/frontend/stores.ts#audioPlaylists",
+    "src/frontend/stores.ts#cachedDynamicValues",
+    "src/frontend/stores.ts#categories",
+    "src/frontend/stores.ts#closeAd",
+    "src/frontend/stores.ts#colorbars",
+    "src/frontend/stores.ts#contextActive",
+    "src/frontend/stores.ts#currentWindow",
+    "src/frontend/stores.ts#customMessageCredits",
+    "src/frontend/stores.ts#customMetadata",
+    "src/frontend/stores.ts#dictionary",
+    "src/frontend/stores.ts#draw",
+    "src/frontend/stores.ts#drawSettings",
+    "src/frontend/stores.ts#drawTool",
+    "src/frontend/stores.ts#driveData",
+    "src/frontend/stores.ts#dynamicValueData",
+    "src/frontend/stores.ts#effects",
+    "src/frontend/stores.ts#events",
+    "src/frontend/stores.ts#focusMode",
+    "src/frontend/stores.ts#globalRegexes",
+    "src/frontend/stores.ts#groups",
+    "src/frontend/stores.ts#guideActive",
+    "src/frontend/stores.ts#hoveredEffectItem",
+    "src/frontend/stores.ts#isFadingOut",
+    "src/frontend/stores.ts#isTimelinePlaying",
+    "src/frontend/stores.ts#labelsDisabled",
+    "src/frontend/stores.ts#livePrepare",
+    "src/frontend/stores.ts#media",
+    "src/frontend/stores.ts#messageDrafts",
+    "src/frontend/stores.ts#messagesPanelOpen",
+    "src/frontend/stores.ts#metronome",
+    "src/frontend/stores.ts#metronomeTimer",
+    "src/frontend/stores.ts#ndiData",
+    "src/frontend/stores.ts#omtData",
+    "src/frontend/stores.ts#outLocked",
+    "src/frontend/stores.ts#outputCache",
+    "src/frontend/stores.ts#outputDisplay",
+    "src/frontend/stores.ts#outputSlideCache",
+    "src/frontend/stores.ts#outputState",
+    "src/frontend/stores.ts#outputs",
+    "src/frontend/stores.ts#overlayTimers",
+    "src/frontend/stores.ts#overlays",
+    "src/frontend/stores.ts#playerVideos",
+    "src/frontend/stores.ts#playingAudio",
+    "src/frontend/stores.ts#playingAudioPaths",
+    "src/frontend/stores.ts#playingMetronome",
+    "src/frontend/stores.ts#playingVideoState",
+    "src/frontend/stores.ts#popupData",
+    "src/frontend/stores.ts#presentationData",
+    "src/frontend/stores.ts#previewBuffers",
+    "src/frontend/stores.ts#profiles",
+    "src/frontend/stores.ts#projects",
+    "src/frontend/stores.ts#resized",
+    "src/frontend/stores.ts#rtmpStatus",
+    "src/frontend/stores.ts#scriptureSettings",
+    "src/frontend/stores.ts#selected",
+    "src/frontend/stores.ts#settingsTab",
+    "src/frontend/stores.ts#shows",
+    "src/frontend/stores.ts#showsCache",
+    "src/frontend/stores.ts#slideTimelineSpeedMultiplier",
+    "src/frontend/stores.ts#slideTimers",
+    "src/frontend/stores.ts#special",
+    "src/frontend/stores.ts#stageShows",
+    "src/frontend/stores.ts#styles",
+    "src/frontend/stores.ts#syncedOutputs",
+    "src/frontend/stores.ts#templates",
+    "src/frontend/stores.ts#timeFormat",
+    "src/frontend/stores.ts#timelineRecordingAction",
+    "src/frontend/stores.ts#timers",
+    "src/frontend/stores.ts#toggleOutputEnabled",
+    "src/frontend/stores.ts#topContextActive",
+    "src/frontend/stores.ts#transitionData",
+    "src/frontend/stores.ts#variables",
+    "src/frontend/stores.ts#visualizerData"
+  ],
+  "messages": [
+    "CLOUD/DRIVE_CONNECT",
+    "CLOUD/GET_MAIN_FOLDER",
+    "CLOUD/SYNC_DATA",
+    "MAIN/SPOTIFY_COMMAND",
+    "MAIN/SPOTIFY_GET_STATE",
+    "MAIN/URL",
+    "NDI/SEND_DATA",
+    "OMT/SEND_DATA",
+    "OUTPUT/ACTION_MAIN",
+    "OUTPUT/ACTIVE_PROJECT",
+    "OUTPUT/ACTIVE_TIMERS",
+    "OUTPUT/ALERT_MAIN",
+    "OUTPUT/ALL_OUTPUTS",
+    "OUTPUT/AUDIO_DATA",
+    "OUTPUT/BUFFER",
+    "OUTPUT/CATEGORIES",
+    "OUTPUT/CLOSE_AD",
+    "OUTPUT/COLORBARS",
+    "OUTPUT/CUSTOM_CREDITS",
+    "OUTPUT/CUSTOM_METADATA",
+    "OUTPUT/DEBUG_ENABLED",
+    "OUTPUT/DRAW",
+    "OUTPUT/DRAW_SETTINGS",
+    "OUTPUT/DRAW_TOOL",
+    "OUTPUT/DYNAMIC_VALUE_DATA",
+    "OUTPUT/EFFECTS",
+    "OUTPUT/EVENTS",
+    "OUTPUT/GLOBAL_REGEXES",
+    "OUTPUT/GROUPS",
+    "OUTPUT/LANGUAGE",
+    "OUTPUT/LIVE_PREPARE",
+    "OUTPUT/MAIN_DEBUG",
+    "OUTPUT/MAIN_LOG",
+    "OUTPUT/MAIN_REQUEST_DYNAMIC_VALUE",
+    "OUTPUT/MAIN_REQUEST_VOLUME",
+    "OUTPUT/MAIN_SHORTCUT",
+    "OUTPUT/MAIN_SHOWS_DATA",
+    "OUTPUT/MEDIA",
+    "OUTPUT/METRONOME",
+    "OUTPUT/METRONOME_TIMER",
+    "OUTPUT/MOVE",
+    "OUTPUT/OUTPUTS",
+    "OUTPUT/OUTPUT_STATE",
+    "OUTPUT/OUT_SLIDE_CACHE",
+    "OUTPUT/OVERLAYS",
+    "OUTPUT/PLAYER_VIDEOS",
+    "OUTPUT/PLAYING_AUDIO",
+    "OUTPUT/PLAYING_VIDEO_STATE",
+    "OUTPUT/PROJECTS",
+    "OUTPUT/RECORDER_FRAME",
+    "OUTPUT/REQUEST_DATA_MAIN",
+    "OUTPUT/REQUEST_DYNAMIC_VALUE",
+    "OUTPUT/REQUEST_VOLUME",
+    "OUTPUT/RESTART",
+    "OUTPUT/SHOWS",
+    "OUTPUT/SHOWS_DATA",
+    "OUTPUT/SLIDE_TIMELINE_SPEED_MULTIPLIER",
+    "OUTPUT/SPECIAL",
+    "OUTPUT/STAGE",
+    "OUTPUT/STYLES",
+    "OUTPUT/SYNCED_OUTPUTS",
+    "OUTPUT/TEMPLATES",
+    "OUTPUT/TIMERS",
+    "OUTPUT/TIME_FORMAT",
+    "OUTPUT/TRANSITION",
+    "OUTPUT/UPDATE_OUTPUTS_DATA",
+    "OUTPUT/VARIABLES",
+    "OUTPUT/VISUALIZER_DATA",
+    "OUTPUT/buffer",
+    "OUTPUT/preventDefault",
+    "OUTPUT/size",
+    "OUTPUT/value"
+  ],
+  "timingIds": [
+    "timer-6c606adee9f9fe54",
+    "transition-381f42150b26fd9e",
+    "timer-2b5c2038674eb2e8",
+    "timer-e32be761249e48e5",
+    "timer-c7f603e7a62b8e68",
+    "timer-1c582d8bc2469e6e",
+    "transition-a52a4277e6832735",
+    "timer-642a9b379cf65a92",
+    "timer-3517f50f02ec5b4a",
+    "timer-d033e09c7d59a8b7",
+    "timer-ea0786bec5abcfe6",
+    "timer-fe3553171eefaaf5",
+    "timer-32131be162076e13",
+    "timer-1ea9fa8d2ca7787d",
+    "timer-54f2a6c7918ee167",
+    "timer-bee4a460e0391e4d",
+    "timer-05e5abc802c44755",
+    "css-transition-4fd64c1e2d064b4a",
+    "timer-f6ec73855261ef74",
+    "timer-02e3dbe0dce4be88",
+    "timer-c8b1324766a3ca96",
+    "timer-41c3b957824dcbd6",
+    "timer-811b130039a75869",
+    "timer-cf6a381999a4c4c9",
+    "poll-interval-9bfb40909220b56c",
+    "poll-timeout-0363d78a143e0794",
+    "delay-variable-b5ea3e940d0e3c3e",
+    "timer-8093f55a2dd3b53d",
+    "timer-5a0884eced6ca67c",
+    "timer-24d1dc584a7d8c38",
+    "timer-7e20e324eb39abdb",
+    "timer-15659966c137e66b",
+    "timer-9f0e2d3a775127fb",
+    "timer-a954e6b84abd33e7",
+    "timer-b68512d991dd0600",
+    "timer-85f48a6cdc082ff2",
+    "timer-6237e484beef898d",
+    "timer-513775858a32109f",
+    "css-transition-53310b2215950abd",
+    "timer-9ef53a745286a6a6",
+    "timer-084dd14da2bf00d5",
+    "css-transition-47c511794f43bfea",
+    "css-transition-6a482dae88d0ee20",
+    "timer-274e846139f7ad26",
+    "css-transition-9730fb5c72b6ae0d",
+    "timer-f225e244c2794490",
+    "timer-67e8386c28823ed6",
+    "css-transition-e7440993a7474ecf",
+    "css-transition-101b0f5525de5e1a",
+    "css-transition-486658356f49cb61",
+    "css-transition-bbdef723916f6949",
+    "timer-a582d3a096d774b9",
+    "timer-07dd34919a91ba7e",
+    "request-budget-49d07b8479fef552",
+    "request-budget-a9927f5f8ad9ae75",
+    "timer-b371f7f52370b029",
+    "timer-ddf37c11d3afecfd",
+    "request-budget-c0fb8126fd8b897f",
+    "timer-96a515fd6feb579f",
+    "timer-fe3d63646b1bcfab",
+    "timer-f1fb15b899965a04",
+    "timer-ab66760fb5d99ede",
+    "timer-a59893817465e4be",
+    "transition-dd644ad430340edf",
+    "transition-b17303e2f94a38e3",
+    "delay-variable-db24bdba2f920ac4",
+    "delay-variable-2846d12ec581d0d4",
+    "transition-b712a212520a543f",
+    "timer-186a9d92f4736347"
+  ],
+  "workaroundIds": [
+    "workaround-dd6d6214d6a7e928",
+    "workaround-395774d06ba1cead",
+    "workaround-880590e1ed183fbd",
+    "workaround-5aa7486140abfa04",
+    "workaround-2782d7b04bf3f541",
+    "workaround-df6e80871c42cf91",
+    "workaround-50747b0c19846f4b",
+    "workaround-7cb390e9f0474f0a",
+    "workaround-743511ce00359c38",
+    "workaround-ee1ab844f3a096ba",
+    "workaround-b5317912fb4983b7",
+    "workaround-f5143d8681582f2a",
+    "workaround-255a8ffcc83f0cdc",
+    "workaround-c3e4f430a922e675",
+    "workaround-2627d97bc1efd92c",
+    "workaround-192612476c3b7922",
+    "workaround-86684951cee41110",
+    "workaround-684e6233cc41dc40",
+    "workaround-688519df0a88a89d",
+    "workaround-88461c9d5f160880",
+    "workaround-76607b6c7a35135c",
+    "workaround-09c55545f0c8736b"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-6c606adee9f9fe54",
+      "document": "docs/ai/history/records/src_frontend_MainOutput.svelte-1.md",
+      "file": "src/frontend/MainOutput.svelte",
+      "line": 38
+    },
+    {
+      "id": "D-transition-381f42150b26fd9e",
+      "document": "docs/ai/history/records/src_frontend_MainOutput.svelte-1.md",
+      "file": "src/frontend/MainOutput.svelte",
+      "line": 70
+    },
+    {
+      "id": "D-timer-2b5c2038674eb2e8",
+      "document": "docs/ai/history/records/src_frontend_components_output_Output.svelte-1.md",
+      "file": "src/frontend/components/output/Output.svelte",
+      "line": 232
+    },
+    {
+      "id": "D-timer-e32be761249e48e5",
+      "document": "docs/ai/history/records/src_frontend_components_output_Output.svelte-1.md",
+      "file": "src/frontend/components/output/Output.svelte",
+      "line": 251
+    },
+    {
+      "id": "D-timer-c7f603e7a62b8e68",
+      "document": "docs/ai/history/records/src_frontend_components_output_Output.svelte-1.md",
+      "file": "src/frontend/components/output/Output.svelte",
+      "line": 288
+    },
+    {
+      "id": "D-timer-1c582d8bc2469e6e",
+      "document": "docs/ai/history/records/src_frontend_components_output_Output.svelte-1.md",
+      "file": "src/frontend/components/output/Output.svelte",
+      "line": 353
+    },
+    {
+      "id": "D-transition-a52a4277e6832735",
+      "document": "docs/ai/history/records/src_frontend_components_output_Output.svelte-1.md",
+      "file": "src/frontend/components/output/Output.svelte",
+      "line": 433
+    },
+    {
+      "id": "D-timer-642a9b379cf65a92",
+      "document": "docs/ai/history/records/src_frontend_components_output_VideoSlider.svelte-1.md",
+      "file": "src/frontend/components/output/VideoSlider.svelte",
+      "line": 69
+    },
+    {
+      "id": "D-timer-3517f50f02ec5b4a",
+      "document": "docs/ai/history/records/src_frontend_components_output_animation.ts-1.md",
+      "file": "src/frontend/components/output/animation.ts",
+      "line": 12
+    },
+    {
+      "id": "D-timer-d033e09c7d59a8b7",
+      "document": "docs/ai/history/records/src_frontend_components_output_animation.ts-1.md",
+      "file": "src/frontend/components/output/animation.ts",
+      "line": 35
+    },
+    {
+      "id": "D-timer-ea0786bec5abcfe6",
+      "document": "docs/ai/history/records/src_frontend_components_output_animation.ts-1.md",
+      "file": "src/frontend/components/output/animation.ts",
+      "line": 104
+    },
+    {
+      "id": "D-timer-fe3553171eefaaf5",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Background.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Background.svelte",
+      "line": 48
+    },
+    {
+      "id": "D-timer-32131be162076e13",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Background.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Background.svelte",
+      "line": 95
+    },
+    {
+      "id": "D-timer-1ea9fa8d2ca7787d",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Background.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Background.svelte",
+      "line": 111
+    },
+    {
+      "id": "D-timer-54f2a6c7918ee167",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Background.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Background.svelte",
+      "line": 124
+    },
+    {
+      "id": "D-timer-bee4a460e0391e4d",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Background.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Background.svelte",
+      "line": 148
+    },
+    {
+      "id": "D-timer-05e5abc802c44755",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Media.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Media.svelte",
+      "line": 49
+    },
+    {
+      "id": "D-css-transition-4fd64c1e2d064b4a",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Media.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Media.svelte",
+      "line": 75
+    },
+    {
+      "id": "D-timer-f6ec73855261ef74",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlay.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlay.svelte",
+      "line": 42
+    },
+    {
+      "id": "D-timer-02e3dbe0dce4be88",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlay.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlay.svelte",
+      "line": 56
+    },
+    {
+      "id": "D-timer-c8b1324766a3ca96",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlays.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlays.svelte",
+      "line": 42
+    },
+    {
+      "id": "D-timer-41c3b957824dcbd6",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlays.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlays.svelte",
+      "line": 60
+    },
+    {
+      "id": "D-timer-811b130039a75869",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 99
+    },
+    {
+      "id": "D-timer-cf6a381999a4c4c9",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 229
+    },
+    {
+      "id": "D-poll-interval-9bfb40909220b56c",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 234
+    },
+    {
+      "id": "D-poll-timeout-0363d78a143e0794",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 234
+    },
+    {
+      "id": "D-delay-variable-b5ea3e940d0e3c3e",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 253
+    },
+    {
+      "id": "D-timer-8093f55a2dd3b53d",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 316
+    },
+    {
+      "id": "D-timer-5a0884eced6ca67c",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 322
+    },
+    {
+      "id": "D-timer-24d1dc584a7d8c38",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 337
+    },
+    {
+      "id": "D-timer-7e20e324eb39abdb",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 343
+    },
+    {
+      "id": "D-timer-15659966c137e66b",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 365
+    },
+    {
+      "id": "D-timer-9f0e2d3a775127fb",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 368
+    },
+    {
+      "id": "D-timer-a954e6b84abd33e7",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_ClearButtons.svelte-1.md",
+      "file": "src/frontend/components/output/preview/ClearButtons.svelte",
+      "line": 27
+    },
+    {
+      "id": "D-timer-b68512d991dd0600",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_ClearButtons.svelte-1.md",
+      "file": "src/frontend/components/output/preview/ClearButtons.svelte",
+      "line": 97
+    },
+    {
+      "id": "D-timer-85f48a6cdc082ff2",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_ClearButtons.svelte-1.md",
+      "file": "src/frontend/components/output/preview/ClearButtons.svelte",
+      "line": 101
+    },
+    {
+      "id": "D-timer-6237e484beef898d",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_ClearButtons.svelte-1.md",
+      "file": "src/frontend/components/output/preview/ClearButtons.svelte",
+      "line": 105
+    },
+    {
+      "id": "D-timer-513775858a32109f",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_MultiOutputs.svelte-1.md",
+      "file": "src/frontend/components/output/preview/MultiOutputs.svelte",
+      "line": 60
+    },
+    {
+      "id": "D-css-transition-53310b2215950abd",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_MultiOutputs.svelte-1.md",
+      "file": "src/frontend/components/output/preview/MultiOutputs.svelte",
+      "line": 291
+    },
+    {
+      "id": "D-timer-9ef53a745286a6a6",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_Preview.svelte-1.md",
+      "file": "src/frontend/components/output/preview/Preview.svelte",
+      "line": 84
+    },
+    {
+      "id": "D-timer-084dd14da2bf00d5",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_Preview.svelte-1.md",
+      "file": "src/frontend/components/output/preview/Preview.svelte",
+      "line": 198
+    },
+    {
+      "id": "D-css-transition-47c511794f43bfea",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_Preview.svelte-1.md",
+      "file": "src/frontend/components/output/preview/Preview.svelte",
+      "line": 333
+    },
+    {
+      "id": "D-css-transition-6a482dae88d0ee20",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_Preview.svelte-1.md",
+      "file": "src/frontend/components/output/preview/Preview.svelte",
+      "line": 357
+    },
+    {
+      "id": "D-timer-274e846139f7ad26",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_PreviewCanvas.svelte-1.md",
+      "file": "src/frontend/components/output/preview/PreviewCanvas.svelte",
+      "line": 27
+    },
+    {
+      "id": "D-css-transition-9730fb5c72b6ae0d",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_PreviewOutputs.svelte-1.md",
+      "file": "src/frontend/components/output/preview/PreviewOutputs.svelte",
+      "line": 98
+    },
+    {
+      "id": "D-timer-f225e244c2794490",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_SpotifyController.svelte-1.md",
+      "file": "src/frontend/components/output/preview/SpotifyController.svelte",
+      "line": 26
+    },
+    {
+      "id": "D-timer-67e8386c28823ed6",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_SpotifyController.svelte-1.md",
+      "file": "src/frontend/components/output/preview/SpotifyController.svelte",
+      "line": 59
+    },
+    {
+      "id": "D-css-transition-e7440993a7474ecf",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_SpotifyController.svelte-1.md",
+      "file": "src/frontend/components/output/preview/SpotifyController.svelte",
+      "line": 183
+    },
+    {
+      "id": "D-css-transition-101b0f5525de5e1a",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_SpotifyController.svelte-1.md",
+      "file": "src/frontend/components/output/preview/SpotifyController.svelte",
+      "line": 211
+    },
+    {
+      "id": "D-css-transition-486658356f49cb61",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_SpotifyController.svelte-1.md",
+      "file": "src/frontend/components/output/preview/SpotifyController.svelte",
+      "line": 279
+    },
+    {
+      "id": "D-css-transition-bbdef723916f6949",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_SpotifyController.svelte-1.md",
+      "file": "src/frontend/components/output/preview/SpotifyController.svelte",
+      "line": 308
+    },
+    {
+      "id": "D-timer-a582d3a096d774b9",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_SpotifyManager.ts-1.md",
+      "file": "src/frontend/components/output/preview/SpotifyManager.ts",
+      "line": 28
+    },
+    {
+      "id": "D-timer-07dd34919a91ba7e",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_SpotifyManager.ts-1.md",
+      "file": "src/frontend/components/output/preview/SpotifyManager.ts",
+      "line": 40
+    },
+    {
+      "id": "D-request-budget-49d07b8479fef552",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_SpotifyManager.ts-1.md",
+      "file": "src/frontend/components/output/preview/SpotifyManager.ts",
+      "line": 58
+    },
+    {
+      "id": "D-request-budget-a9927f5f8ad9ae75",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_SpotifyManager.ts-1.md",
+      "file": "src/frontend/components/output/preview/SpotifyManager.ts",
+      "line": 142
+    },
+    {
+      "id": "D-timer-b371f7f52370b029",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_SpotifyManager.ts-1.md",
+      "file": "src/frontend/components/output/preview/SpotifyManager.ts",
+      "line": 164
+    },
+    {
+      "id": "D-timer-ddf37c11d3afecfd",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_SpotifyManager.ts-1.md",
+      "file": "src/frontend/components/output/preview/SpotifyManager.ts",
+      "line": 173
+    },
+    {
+      "id": "D-request-budget-c0fb8126fd8b897f",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_SpotifyManager.ts-1.md",
+      "file": "src/frontend/components/output/preview/SpotifyManager.ts",
+      "line": 181
+    },
+    {
+      "id": "D-timer-96a515fd6feb579f",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_SpotifyManager.ts-1.md",
+      "file": "src/frontend/components/output/preview/SpotifyManager.ts",
+      "line": 193
+    },
+    {
+      "id": "D-timer-fe3d63646b1bcfab",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_SpotifyManager.ts-1.md",
+      "file": "src/frontend/components/output/preview/SpotifyManager.ts",
+      "line": 197
+    },
+    {
+      "id": "D-timer-f1fb15b899965a04",
+      "document": "docs/ai/history/records/src_frontend_components_output_tools_Audio.svelte-1.md",
+      "file": "src/frontend/components/output/tools/Audio.svelte",
+      "line": 47
+    },
+    {
+      "id": "D-timer-ab66760fb5d99ede",
+      "document": "docs/ai/history/records/src_frontend_components_output_tools_Audio.svelte-1.md",
+      "file": "src/frontend/components/output/tools/Audio.svelte",
+      "line": 72
+    },
+    {
+      "id": "D-timer-a59893817465e4be",
+      "document": "docs/ai/history/records/src_frontend_components_output_tools_MediaControls.svelte-1.md",
+      "file": "src/frontend/components/output/tools/MediaControls.svelte",
+      "line": 37
+    },
+    {
+      "id": "D-transition-dd644ad430340edf",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_OutputTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/OutputTransition.svelte",
+      "line": 18
+    },
+    {
+      "id": "D-transition-b17303e2f94a38e3",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_OutputTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/OutputTransition.svelte",
+      "line": 18
+    },
+    {
+      "id": "D-delay-variable-db24bdba2f920ac4",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_SlideItemTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/SlideItemTransition.svelte",
+      "line": 83
+    },
+    {
+      "id": "D-delay-variable-2846d12ec581d0d4",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_SlideItemTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/SlideItemTransition.svelte",
+      "line": 84
+    },
+    {
+      "id": "D-transition-b712a212520a543f",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_SlideItemTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/SlideItemTransition.svelte",
+      "line": 150
+    },
+    {
+      "id": "D-timer-186a9d92f4736347",
+      "document": "docs/ai/history/records/src_frontend_utils_receivers.ts-1.md",
+      "file": "src/frontend/utils/receivers.ts",
+      "line": 390
+    },
+    {
+      "id": "D-workaround-dd6d6214d6a7e928",
+      "document": "docs/ai/history/records/src_frontend_MainOutput.svelte-1.md",
+      "file": "src/frontend/MainOutput.svelte",
+      "line": 35
+    },
+    {
+      "id": "D-workaround-395774d06ba1cead",
+      "document": "docs/ai/history/records/src_frontend_components_output_Output.svelte-1.md",
+      "file": "src/frontend/components/output/Output.svelte",
+      "line": 126
+    },
+    {
+      "id": "D-workaround-880590e1ed183fbd",
+      "document": "docs/ai/history/records/src_frontend_components_output_Output.svelte-1.md",
+      "file": "src/frontend/components/output/Output.svelte",
+      "line": 213
+    },
+    {
+      "id": "D-workaround-5aa7486140abfa04",
+      "document": "docs/ai/history/records/src_frontend_components_output_ShowActions.svelte-1.md",
+      "file": "src/frontend/components/output/ShowActions.svelte",
+      "line": 69
+    },
+    {
+      "id": "D-workaround-2782d7b04bf3f541",
+      "document": "docs/ai/history/records/src_frontend_components_output_Window.svelte-1.md",
+      "file": "src/frontend/components/output/Window.svelte",
+      "line": 47
+    },
+    {
+      "id": "D-workaround-df6e80871c42cf91",
+      "document": "docs/ai/history/records/src_frontend_components_output_effects_effectRenderer.ts-1.md",
+      "file": "src/frontend/components/output/effects/effectRenderer.ts",
+      "line": 629
+    },
+    {
+      "id": "D-workaround-50747b0c19846f4b",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Background.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Background.svelte",
+      "line": 28
+    },
+    {
+      "id": "D-workaround-7cb390e9f0474f0a",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Background.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Background.svelte",
+      "line": 29
+    },
+    {
+      "id": "D-workaround-743511ce00359c38",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Background.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Background.svelte",
+      "line": 41
+    },
+    {
+      "id": "D-workaround-ee1ab844f3a096ba",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlay.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlay.svelte",
+      "line": 35
+    },
+    {
+      "id": "D-workaround-b5317912fb4983b7",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlays.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlays.svelte",
+      "line": 18
+    },
+    {
+      "id": "D-workaround-f5143d8681582f2a",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 226
+    },
+    {
+      "id": "D-workaround-255a8ffcc83f0cdc",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 364
+    },
+    {
+      "id": "D-workaround-c3e4f430a922e675",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 370
+    },
+    {
+      "id": "D-workaround-2627d97bc1efd92c",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_Preview.svelte-1.md",
+      "file": "src/frontend/components/output/preview/Preview.svelte",
+      "line": 293
+    },
+    {
+      "id": "D-workaround-192612476c3b7922",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_OutputTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/OutputTransition.svelte",
+      "line": 12
+    },
+    {
+      "id": "D-workaround-86684951cee41110",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_SlideItemTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/SlideItemTransition.svelte",
+      "line": 45
+    },
+    {
+      "id": "D-workaround-684e6233cc41dc40",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_SlideItemTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/SlideItemTransition.svelte",
+      "line": 46
+    },
+    {
+      "id": "D-workaround-688519df0a88a89d",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_SlideItemTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/SlideItemTransition.svelte",
+      "line": 47
+    },
+    {
+      "id": "D-workaround-88461c9d5f160880",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_SlideItemTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/SlideItemTransition.svelte",
+      "line": 115
+    },
+    {
+      "id": "D-workaround-76607b6c7a35135c",
+      "document": "docs/ai/history/records/src_frontend_utils_receivers.ts-1.md",
+      "file": "src/frontend/utils/receivers.ts",
+      "line": 220
+    },
+    {
+      "id": "D-workaround-09c55545f0c8736b",
+      "document": "docs/ai/history/records/src_frontend_utils_receivers.ts-1.md",
+      "file": "src/frontend/utils/receivers.ts",
+      "line": 336
+    },
+    {
+      "id": "D-hotspot-94b53592b6d592e8",
+      "document": "docs/ai/history/records/src_electron_output_helpers_OutputSend.ts-1.md",
+      "file": "src/electron/output/helpers/OutputSend.ts",
+      "line": 8
+    },
+    {
+      "id": "D-hotspot-816de61f48910714",
+      "document": "docs/ai/history/records/src_frontend_components_output_Camera.svelte-1.md",
+      "file": "src/frontend/components/output/Camera.svelte",
+      "line": 18
+    },
+    {
+      "id": "D-hotspot-972464c413969487",
+      "document": "docs/ai/history/records/src_frontend_components_output_Output.svelte-1.md",
+      "file": "src/frontend/components/output/Output.svelte",
+      "line": 116
+    },
+    {
+      "id": "D-hotspot-fee823eed3d928b5",
+      "document": "docs/ai/history/records/src_frontend_components_output_ShowActions.svelte-1.md",
+      "file": "src/frontend/components/output/ShowActions.svelte",
+      "line": 55
+    },
+    {
+      "id": "D-hotspot-997b07f7e5fb4234",
+      "document": "docs/ai/history/records/src_frontend_components_output_VideoSlider.svelte-1.md",
+      "file": "src/frontend/components/output/VideoSlider.svelte",
+      "line": 26
+    },
+    {
+      "id": "D-hotspot-36402b371a8396bd",
+      "document": "docs/ai/history/records/src_frontend_components_output_Window.svelte-1.md",
+      "file": "src/frontend/components/output/Window.svelte",
+      "line": 39
+    },
+    {
+      "id": "D-hotspot-389f8b09c55680d0",
+      "document": "docs/ai/history/records/src_frontend_components_output_animation.ts-1.md",
+      "file": "src/frontend/components/output/animation.ts",
+      "line": 8
+    },
+    {
+      "id": "D-hotspot-2ac59dd4ca721755",
+      "document": "docs/ai/history/records/src_frontend_components_output_clear.ts-1.md",
+      "file": "src/frontend/components/output/clear.ts",
+      "line": 14
+    },
+    {
+      "id": "D-hotspot-2b887fe783da1533",
+      "document": "docs/ai/history/records/src_frontend_components_output_effects_Effect.svelte-1.md",
+      "file": "src/frontend/components/output/effects/Effect.svelte",
+      "line": 40
+    },
+    {
+      "id": "D-hotspot-b8bfe90047044417",
+      "document": "docs/ai/history/records/src_frontend_components_output_effects_EffectOutput.svelte-1.md",
+      "file": "src/frontend/components/output/effects/EffectOutput.svelte",
+      "line": 1
+    },
+    {
+      "id": "D-hotspot-e432b4d64482f644",
+      "document": "docs/ai/history/records/src_frontend_components_output_effects_effectItems.ts-1.md",
+      "file": "src/frontend/components/output/effects/effectItems.ts",
+      "line": 1
+    },
+    {
+      "id": "D-hotspot-6a6d1ae35d346cb9",
+      "document": "docs/ai/history/records/src_frontend_components_output_effects_effectRenderer.ts-1.md",
+      "file": "src/frontend/components/output/effects/effectRenderer.ts",
+      "line": 7
+    },
+    {
+      "id": "D-hotspot-98283fadbabfea20",
+      "document": "docs/ai/history/records/src_frontend_components_output_effects_simplex-noise.js-1.md",
+      "file": "src/frontend/components/output/effects/simplex-noise.js",
+      "line": 84
+    },
+    {
+      "id": "D-hotspot-76056d058d1ad6d6",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Background.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Background.svelte",
+      "line": 40
+    },
+    {
+      "id": "D-hotspot-95b89a7ef247db20",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_BackgroundMedia.svelte-1.md",
+      "file": "src/frontend/components/output/layers/BackgroundMedia.svelte",
+      "line": 1
+    },
+    {
+      "id": "D-hotspot-c214e07d820fc1c9",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Media.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Media.svelte",
+      "line": 33
+    },
+    {
+      "id": "D-hotspot-40435b90ac8a247e",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_MessageInstance.svelte-1.md",
+      "file": "src/frontend/components/output/layers/MessageInstance.svelte",
+      "line": 11
+    },
+    {
+      "id": "D-hotspot-53c43a25fab0d6fd",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Messages.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Messages.svelte",
+      "line": 1
+    },
+    {
+      "id": "D-hotspot-5abe0f4a0d17bd17",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlay.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlay.svelte",
+      "line": 27
+    },
+    {
+      "id": "D-hotspot-931ce60445cf9f67",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlays.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlays.svelte",
+      "line": 25
+    },
+    {
+      "id": "D-hotspot-bc238cb159d16fe0",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_PdfOutput.svelte-1.md",
+      "file": "src/frontend/components/output/layers/PdfOutput.svelte",
+      "line": 32
+    },
+    {
+      "id": "D-hotspot-f1a58405eed32087",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SceneMedia.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SceneMedia.svelte",
+      "line": 1
+    },
+    {
+      "id": "D-hotspot-4805edbf17306bc5",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_SlideContent.svelte-1.md",
+      "file": "src/frontend/components/output/layers/SlideContent.svelte",
+      "line": 37
+    },
+    {
+      "id": "D-hotspot-35bd87b172d9e0dc",
+      "document": "docs/ai/history/records/src_frontend_components_output_messages_MessageWordingEditor.svelte-1.md",
+      "file": "src/frontend/components/output/messages/MessageWordingEditor.svelte",
+      "line": 14
+    },
+    {
+      "id": "D-hotspot-5c5cac52a2266b5f",
+      "document": "docs/ai/history/records/src_frontend_components_output_messages_MessagesPanel.svelte-1.md",
+      "file": "src/frontend/components/output/messages/MessagesPanel.svelte",
+      "line": 64
+    },
+    {
+      "id": "D-hotspot-03754982b067ed12",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_ClearButtons.svelte-1.md",
+      "file": "src/frontend/components/output/preview/ClearButtons.svelte",
+      "line": 45
+    },
+    {
+      "id": "D-hotspot-f98eb56af2825df2",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_MultiOutputs.svelte-1.md",
+      "file": "src/frontend/components/output/preview/MultiOutputs.svelte",
+      "line": 26
+    },
+    {
+      "id": "D-hotspot-50f78edf6994345e",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_Preview.svelte-1.md",
+      "file": "src/frontend/components/output/preview/Preview.svelte",
+      "line": 41
+    },
+    {
+      "id": "D-hotspot-45168facfc00d419",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_PreviewCanvas.svelte-1.md",
+      "file": "src/frontend/components/output/preview/PreviewCanvas.svelte",
+      "line": 28
+    },
+    {
+      "id": "D-hotspot-c7565dfbe72f5912",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_PreviewOutput.svelte-1.md",
+      "file": "src/frontend/components/output/preview/PreviewOutput.svelte",
+      "line": 1
+    },
+    {
+      "id": "D-hotspot-11c50e1bf5937673",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_PreviewOutputs.svelte-1.md",
+      "file": "src/frontend/components/output/preview/PreviewOutputs.svelte",
+      "line": 17
+    },
+    {
+      "id": "D-hotspot-2e89aa00ad1438c7",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_SpotifyController.svelte-1.md",
+      "file": "src/frontend/components/output/preview/SpotifyController.svelte",
+      "line": 15
+    },
+    {
+      "id": "D-hotspot-16e7b51249beef0a",
+      "document": "docs/ai/history/records/src_frontend_components_output_preview_SpotifyManager.ts-1.md",
+      "file": "src/frontend/components/output/preview/SpotifyManager.ts",
+      "line": 19
+    },
+    {
+      "id": "D-hotspot-4f6da6366e4a661b",
+      "document": "docs/ai/history/records/src_frontend_components_output_tools_Audio.svelte-1.md",
+      "file": "src/frontend/components/output/tools/Audio.svelte",
+      "line": 14
+    },
+    {
+      "id": "D-hotspot-fa9f34165caad324",
+      "document": "docs/ai/history/records/src_frontend_components_output_tools_MediaControls.svelte-1.md",
+      "file": "src/frontend/components/output/tools/MediaControls.svelte",
+      "line": 38
+    },
+    {
+      "id": "D-hotspot-bbd066d30a75db1a",
+      "document": "docs/ai/history/records/src_frontend_components_output_tools_NextTimer.svelte-1.md",
+      "file": "src/frontend/components/output/tools/NextTimer.svelte",
+      "line": 20
+    },
+    {
+      "id": "D-hotspot-d8ec65dfcea32e2b",
+      "document": "docs/ai/history/records/src_frontend_components_output_tools_Overlay.svelte-1.md",
+      "file": "src/frontend/components/output/tools/Overlay.svelte",
+      "line": 19
+    },
+    {
+      "id": "D-hotspot-3a2a3d1d50510a39",
+      "document": "docs/ai/history/records/src_frontend_components_output_tools_Show.svelte-1.md",
+      "file": "src/frontend/components/output/tools/Show.svelte",
+      "line": 24
+    },
+    {
+      "id": "D-hotspot-46662562a1ac3fa0",
+      "document": "docs/ai/history/records/src_frontend_components_output_tools_TimerControls.svelte-1.md",
+      "file": "src/frontend/components/output/tools/TimerControls.svelte",
+      "line": 1
+    },
+    {
+      "id": "D-hotspot-41052711399985b1",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_OutputTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/OutputTransition.svelte",
+      "line": 1
+    },
+    {
+      "id": "D-hotspot-a9848b6bb4feda16",
+      "document": "docs/ai/history/records/src_frontend_components_output_transitions_SlideItemTransition.svelte-1.md",
+      "file": "src/frontend/components/output/transitions/SlideItemTransition.svelte",
+      "line": 29
+    },
+    {
+      "id": "D-hotspot-dd79ef5596b01fbd",
+      "document": "docs/ai/history/records/src_frontend_utils_receivers.ts-1.md",
+      "file": "src/frontend/utils/receivers.ts",
+      "line": 80
+    },
+    {
+      "id": "D-fork-d3b3f77519612260",
+      "document": "docs/ai/history/records/src_frontend_components_output_layers_Overlay.svelte-1.md",
+      "file": "src/frontend/components/output/layers/Overlay.svelte",
+      "line": 24
+    },
+    {
+      "id": "D-fork-e5f66233fa0187a2",
+      "document": "docs/ai/history/records/src_frontend_MainOutput.svelte-1.md",
+      "file": "src/frontend/MainOutput.svelte",
+      "line": 70
+    }
+  ]
+}

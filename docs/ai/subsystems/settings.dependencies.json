@@ -1,0 +1,585 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/electron/data/defaults.ts",
+    "src/frontend/components/settings/Screens.svelte",
+    "src/frontend/components/settings/Settings.svelte",
+    "src/frontend/components/settings/SettingsTabs.svelte",
+    "src/frontend/components/settings/SettingsTools.svelte",
+    "src/frontend/components/settings/tabs/AudioRouting.svelte",
+    "src/frontend/components/settings/tabs/AudioRoutingNode.svelte",
+    "src/frontend/components/settings/tabs/Connection.svelte",
+    "src/frontend/components/settings/tabs/Files.svelte",
+    "src/frontend/components/settings/tabs/FilesButtons.svelte",
+    "src/frontend/components/settings/tabs/General.svelte",
+    "src/frontend/components/settings/tabs/Other.svelte",
+    "src/frontend/components/settings/tabs/OtherButtons.svelte",
+    "src/frontend/components/settings/tabs/Outputs.svelte",
+    "src/frontend/components/settings/tabs/OutputsGeneral.svelte",
+    "src/frontend/components/settings/tabs/OutputsTabs.svelte",
+    "src/frontend/components/settings/tabs/Profiles.svelte",
+    "src/frontend/components/settings/tabs/ProfilesButtons.svelte",
+    "src/frontend/components/settings/tabs/ProfilesTabs.svelte",
+    "src/frontend/components/settings/tabs/Styles.svelte",
+    "src/frontend/components/settings/tabs/StylesButtons.svelte",
+    "src/frontend/components/settings/tabs/StylesTabs.svelte",
+    "src/frontend/components/settings/tabs/Theme.svelte",
+    "src/frontend/components/settings/tabs/ThemeButtons.svelte",
+    "src/frontend/components/settings/tabs/ThemeTabs.svelte",
+    "src/frontend/components/settings/tabs/defaultThemes.ts",
+    "src/frontend/utils/updateSettings.ts",
+    "src/types/Settings.ts"
+  ],
+  "stores": [
+    "src/frontend/stores.ts#actionTags",
+    "src/frontend/stores.ts#actions",
+    "src/frontend/stores.ts#activeDrawerTab",
+    "src/frontend/stores.ts#activeEdit",
+    "src/frontend/stores.ts#activePage",
+    "src/frontend/stores.ts#activePopup",
+    "src/frontend/stores.ts#activeProfile",
+    "src/frontend/stores.ts#activeProject",
+    "src/frontend/stores.ts#activeScenes",
+    "src/frontend/stores.ts#activeShow",
+    "src/frontend/stores.ts#activeStage",
+    "src/frontend/stores.ts#activeStyle",
+    "src/frontend/stores.ts#activeTriggerFunction",
+    "src/frontend/stores.ts#ai",
+    "src/frontend/stores.ts#alertMessage",
+    "src/frontend/stores.ts#alertUpdates",
+    "src/frontend/stores.ts#audioChannelsData",
+    "src/frontend/stores.ts#audioEffectPresets",
+    "src/frontend/stores.ts#audioEffects",
+    "src/frontend/stores.ts#audioFolders",
+    "src/frontend/stores.ts#audioPlaylists",
+    "src/frontend/stores.ts#audioRouting",
+    "src/frontend/stores.ts#audioStreams",
+    "src/frontend/stores.ts#autoOutput",
+    "src/frontend/stores.ts#autosave",
+    "src/frontend/stores.ts#calendarAddShow",
+    "src/frontend/stores.ts#calendars",
+    "src/frontend/stores.ts#categories",
+    "src/frontend/stores.ts#cloudSyncData",
+    "src/frontend/stores.ts#companion",
+    "src/frontend/stores.ts#connections",
+    "src/frontend/stores.ts#contentProviderData",
+    "src/frontend/stores.ts#currentOutputSettings",
+    "src/frontend/stores.ts#customFonts",
+    "src/frontend/stores.ts#customMetadata",
+    "src/frontend/stores.ts#customizedIcons",
+    "src/frontend/stores.ts#dataPath",
+    "src/frontend/stores.ts#deletedDefaults",
+    "src/frontend/stores.ts#dictionary",
+    "src/frontend/stores.ts#disabledServers",
+    "src/frontend/stores.ts#drawSettings",
+    "src/frontend/stores.ts#drawer",
+    "src/frontend/stores.ts#drawerTabsData",
+    "src/frontend/stores.ts#driveData",
+    "src/frontend/stores.ts#driveKeys",
+    "src/frontend/stores.ts#effects",
+    "src/frontend/stores.ts#effectsLibrary",
+    "src/frontend/stores.ts#emitters",
+    "src/frontend/stores.ts#focusMode",
+    "src/frontend/stores.ts#folders",
+    "src/frontend/stores.ts#formatNewShow",
+    "src/frontend/stores.ts#fullColors",
+    "src/frontend/stores.ts#globalRegexes",
+    "src/frontend/stores.ts#globalTags",
+    "src/frontend/stores.ts#groupNumbers",
+    "src/frontend/stores.ts#groups",
+    "src/frontend/stores.ts#interactions",
+    "src/frontend/stores.ts#labelsDisabled",
+    "src/frontend/stores.ts#language",
+    "src/frontend/stores.ts#loaded",
+    "src/frontend/stores.ts#loadedState",
+    "src/frontend/stores.ts#lockedOverlays",
+    "src/frontend/stores.ts#maxConnections",
+    "src/frontend/stores.ts#mediaFolders",
+    "src/frontend/stores.ts#mediaOptions",
+    "src/frontend/stores.ts#mediaTags",
+    "src/frontend/stores.ts#metronome",
+    "src/frontend/stores.ts#ndiData",
+    "src/frontend/stores.ts#notFound",
+    "src/frontend/stores.ts#obsData",
+    "src/frontend/stores.ts#omtData",
+    "src/frontend/stores.ts#openedFolders",
+    "src/frontend/stores.ts#os",
+    "src/frontend/stores.ts#outLocked",
+    "src/frontend/stores.ts#outputDisplay",
+    "src/frontend/stores.ts#outputs",
+    "src/frontend/stores.ts#overlayCategories",
+    "src/frontend/stores.ts#overlays",
+    "src/frontend/stores.ts#playerTags",
+    "src/frontend/stores.ts#playerVideos",
+    "src/frontend/stores.ts#playingAudio",
+    "src/frontend/stores.ts#popupData",
+    "src/frontend/stores.ts#ports",
+    "src/frontend/stores.ts#profiles",
+    "src/frontend/stores.ts#projectTemplates",
+    "src/frontend/stores.ts#projectView",
+    "src/frontend/stores.ts#providerConnections",
+    "src/frontend/stores.ts#remotePassword",
+    "src/frontend/stores.ts#resized",
+    "src/frontend/stores.ts#rtmpStatus",
+    "src/frontend/stores.ts#saved",
+    "src/frontend/stores.ts#scenes",
+    "src/frontend/stores.ts#scriptureSettings",
+    "src/frontend/stores.ts#scriptures",
+    "src/frontend/stores.ts#selected",
+    "src/frontend/stores.ts#selectedProfile",
+    "src/frontend/stores.ts#serverData",
+    "src/frontend/stores.ts#settingsTab",
+    "src/frontend/stores.ts#showRecentlyUsedProjects",
+    "src/frontend/stores.ts#slidesOptions",
+    "src/frontend/stores.ts#sorted",
+    "src/frontend/stores.ts#special",
+    "src/frontend/stores.ts#splitLines",
+    "src/frontend/stores.ts#stageShows",
+    "src/frontend/stores.ts#statusIndicator",
+    "src/frontend/stores.ts#styles",
+    "src/frontend/stores.ts#templateCategories",
+    "src/frontend/stores.ts#templates",
+    "src/frontend/stores.ts#theme",
+    "src/frontend/stores.ts#themes",
+    "src/frontend/stores.ts#timeFormat",
+    "src/frontend/stores.ts#timecode",
+    "src/frontend/stores.ts#timeline",
+    "src/frontend/stores.ts#timerTags",
+    "src/frontend/stores.ts#timers",
+    "src/frontend/stores.ts#toggleOutputEnabled",
+    "src/frontend/stores.ts#transitionData",
+    "src/frontend/stores.ts#variableTags",
+    "src/frontend/stores.ts#variables",
+    "src/frontend/stores.ts#videoMarkers"
+  ],
+  "messages": [
+    "BLACKMAGIC/GET_DEVICES",
+    "MAIN/BUNDLE_MEDIA_FILES",
+    "MAIN/ENCODER_DETECT",
+    "MAIN/GET_DISPLAYS",
+    "MAIN/GET_GRAPHICS_DEVICES",
+    "MAIN/GET_MEDIA_FOLDER_PATH",
+    "MAIN/GET_STORE_VALUE",
+    "MAIN/IP",
+    "MAIN/ONSTAGE_GET_TEAMS",
+    "MAIN/ONSTAGE_SWITCH_TEAM",
+    "MAIN/OPEN_APPDATA",
+    "MAIN/OPEN_FOLDER_PATH",
+    "MAIN/OPEN_LOG",
+    "MAIN/PROVIDER_DISCONNECT",
+    "MAIN/PROVIDER_LOAD_SERVICES",
+    "MAIN/READ_FILE",
+    "MAIN/REFRESH_SHOWS",
+    "MAIN/RESTORE_CLOUD_BACKUP",
+    "MAIN/SET_MEDIA_FOLDER_PATH",
+    "MAIN/SET_STORE_VALUE",
+    "MAIN/START",
+    "MAIN/UPDATE_DATA_PATH",
+    "MAIN/WEBSOCKET_START",
+    "MAIN/WEBSOCKET_STOP",
+    "NDI/NDI_DATA",
+    "OMT/OMT_DATA",
+    "OUTPUT/CREATE",
+    "OUTPUT/IDENTIFY_SCREENS",
+    "OUTPUT/REMOVE",
+    "OUTPUT/SET_VALUE",
+    "OUTPUT/UPDATE_BOUNDS"
+  ],
+  "timingIds": [
+    "request-budget-7183983c1254f5dd",
+    "timer-fb996090b7d09795",
+    "css-transition-7c16514e693edb53",
+    "css-transition-e6d6fc5456191de6",
+    "css-transition-9c9217e957492430",
+    "css-transition-0fd7080b3df10ef8",
+    "css-transition-5ab43582ddd6cee7",
+    "css-transition-3001249ad69b8ab3",
+    "request-budget-85ac298b156fbf3d",
+    "request-budget-148dbecf9d20ee1a",
+    "request-budget-6cffe3825242b013",
+    "request-budget-bb9e8ab93ef87856",
+    "request-budget-4a09b70776d73596",
+    "timer-f2c571e10544b766",
+    "request-budget-3534c47857dced4c",
+    "request-budget-59283a242f49d400",
+    "timer-34258e322c44f3c3",
+    "request-budget-cb48148c000e5bbd",
+    "request-budget-bf1a2318905dda83",
+    "request-budget-80d3494204e5f875",
+    "request-budget-f50d0f072f76da51",
+    "request-budget-6b6e6bda359e5948",
+    "request-budget-0e7f3c74bb2bb87a",
+    "request-budget-bde69da91987648f",
+    "timer-76ca877bc0c72c1b",
+    "timer-447c94fa7f1fb475",
+    "request-budget-7977c2a412834df9",
+    "timer-9ad0217da931d2a8",
+    "timer-503fa0e12bfcfd1e",
+    "timer-86f39dfd9a44eb5c",
+    "timer-879216d50ca5e794",
+    "timer-d3317352554b238d",
+    "timer-aea5759b603d9c3d",
+    "timer-07dcba7004b7ef48",
+    "timer-7df79813576661ba",
+    "timer-9145b1698af201fd",
+    "timer-c3a74cfeca555af7",
+    "timer-314f416c295defba",
+    "timer-e7a8dc71cff4615f",
+    "timer-efca5a8c148aab35",
+    "timer-e2f017cf8a946c3a",
+    "timer-eadfd600d7b4d03e"
+  ],
+  "workaroundIds": [
+    "workaround-c89b73f9c37da437",
+    "workaround-65423c82c0e26c94",
+    "workaround-efcc28e07fcda5e7",
+    "workaround-d64b0833751a3863",
+    "workaround-ed0583a51419340e",
+    "workaround-b53868df971ad24b",
+    "workaround-59eb486216322b02",
+    "workaround-ba8ac43af468df9b",
+    "workaround-223a5a68e440c693",
+    "workaround-8e1c44a793dd706c",
+    "workaround-fef424cd1c4fa065",
+    "workaround-6489182dbe16e462",
+    "workaround-ca55b8e88ff74f9a"
+  ],
+  "decisions": [
+    {
+      "id": "D-request-budget-7183983c1254f5dd",
+      "document": "docs/ai/history/records/src_frontend_components_settings_Screens.svelte-1.md",
+      "file": "src/frontend/components/settings/Screens.svelte",
+      "line": 50
+    },
+    {
+      "id": "D-timer-fb996090b7d09795",
+      "document": "docs/ai/history/records/src_frontend_components_settings_Screens.svelte-1.md",
+      "file": "src/frontend/components/settings/Screens.svelte",
+      "line": 129
+    },
+    {
+      "id": "D-css-transition-7c16514e693edb53",
+      "document": "docs/ai/history/records/src_frontend_components_settings_Screens.svelte-1.md",
+      "file": "src/frontend/components/settings/Screens.svelte",
+      "line": 382
+    },
+    {
+      "id": "D-css-transition-e6d6fc5456191de6",
+      "document": "docs/ai/history/records/src_frontend_components_settings_Settings.svelte-1.md",
+      "file": "src/frontend/components/settings/Settings.svelte",
+      "line": 139
+    },
+    {
+      "id": "D-css-transition-9c9217e957492430",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_AudioRouting.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/AudioRouting.svelte",
+      "line": 911
+    },
+    {
+      "id": "D-css-transition-0fd7080b3df10ef8",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_AudioRouting.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/AudioRouting.svelte",
+      "line": 1001
+    },
+    {
+      "id": "D-css-transition-5ab43582ddd6cee7",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_AudioRoutingNode.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/AudioRoutingNode.svelte",
+      "line": 297
+    },
+    {
+      "id": "D-css-transition-3001249ad69b8ab3",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_AudioRoutingNode.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/AudioRoutingNode.svelte",
+      "line": 366
+    },
+    {
+      "id": "D-request-budget-85ac298b156fbf3d",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Connection.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Connection.svelte",
+      "line": 26
+    },
+    {
+      "id": "D-request-budget-148dbecf9d20ee1a",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Connection.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Connection.svelte",
+      "line": 134
+    },
+    {
+      "id": "D-request-budget-6cffe3825242b013",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Connection.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Connection.svelte",
+      "line": 185
+    },
+    {
+      "id": "D-request-budget-bb9e8ab93ef87856",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Connection.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Connection.svelte",
+      "line": 191
+    },
+    {
+      "id": "D-request-budget-4a09b70776d73596",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Files.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Files.svelte",
+      "line": 76
+    },
+    {
+      "id": "D-timer-f2c571e10544b766",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Files.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Files.svelte",
+      "line": 87
+    },
+    {
+      "id": "D-request-budget-3534c47857dced4c",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Files.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Files.svelte",
+      "line": 89
+    },
+    {
+      "id": "D-request-budget-59283a242f49d400",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Files.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Files.svelte",
+      "line": 129
+    },
+    {
+      "id": "D-timer-34258e322c44f3c3",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Files.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Files.svelte",
+      "line": 168
+    },
+    {
+      "id": "D-request-budget-cb48148c000e5bbd",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Files.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Files.svelte",
+      "line": 211
+    },
+    {
+      "id": "D-request-budget-bf1a2318905dda83",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Files.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Files.svelte",
+      "line": 242
+    },
+    {
+      "id": "D-request-budget-80d3494204e5f875",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Files.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Files.svelte",
+      "line": 263
+    },
+    {
+      "id": "D-request-budget-f50d0f072f76da51",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Other.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Other.svelte",
+      "line": 11
+    },
+    {
+      "id": "D-request-budget-6b6e6bda359e5948",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Other.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Other.svelte",
+      "line": 14
+    },
+    {
+      "id": "D-request-budget-0e7f3c74bb2bb87a",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Other.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Other.svelte",
+      "line": 17
+    },
+    {
+      "id": "D-request-budget-bde69da91987648f",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Other.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Other.svelte",
+      "line": 21
+    },
+    {
+      "id": "D-timer-76ca877bc0c72c1b",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Outputs.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Outputs.svelte",
+      "line": 38
+    },
+    {
+      "id": "D-timer-447c94fa7f1fb475",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Outputs.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Outputs.svelte",
+      "line": 99
+    },
+    {
+      "id": "D-request-budget-7977c2a412834df9",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Outputs.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Outputs.svelte",
+      "line": 203
+    },
+    {
+      "id": "D-timer-9ad0217da931d2a8",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Outputs.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Outputs.svelte",
+      "line": 271
+    },
+    {
+      "id": "D-timer-503fa0e12bfcfd1e",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Outputs.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Outputs.svelte",
+      "line": 301
+    },
+    {
+      "id": "D-timer-86f39dfd9a44eb5c",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Outputs.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Outputs.svelte",
+      "line": 306
+    },
+    {
+      "id": "D-timer-879216d50ca5e794",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_OutputsTabs.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/OutputsTabs.svelte",
+      "line": 51
+    },
+    {
+      "id": "D-timer-d3317352554b238d",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_ProfilesTabs.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/ProfilesTabs.svelte",
+      "line": 49
+    },
+    {
+      "id": "D-timer-aea5759b603d9c3d",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Theme.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Theme.svelte",
+      "line": 55
+    },
+    {
+      "id": "D-timer-07dcba7004b7ef48",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_ThemeTabs.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/ThemeTabs.svelte",
+      "line": 52
+    },
+    {
+      "id": "D-timer-7df79813576661ba",
+      "document": "docs/ai/history/records/src_frontend_utils_updateSettings.ts-1.md",
+      "file": "src/frontend/utils/updateSettings.ts",
+      "line": 147
+    },
+    {
+      "id": "D-timer-9145b1698af201fd",
+      "document": "docs/ai/history/records/src_frontend_utils_updateSettings.ts-1.md",
+      "file": "src/frontend/utils/updateSettings.ts",
+      "line": 151
+    },
+    {
+      "id": "D-timer-c3a74cfeca555af7",
+      "document": "docs/ai/history/records/src_frontend_utils_updateSettings.ts-1.md",
+      "file": "src/frontend/utils/updateSettings.ts",
+      "line": 152
+    },
+    {
+      "id": "D-timer-314f416c295defba",
+      "document": "docs/ai/history/records/src_frontend_utils_updateSettings.ts-1.md",
+      "file": "src/frontend/utils/updateSettings.ts",
+      "line": 203
+    },
+    {
+      "id": "D-timer-e7a8dc71cff4615f",
+      "document": "docs/ai/history/records/src_frontend_utils_updateSettings.ts-1.md",
+      "file": "src/frontend/utils/updateSettings.ts",
+      "line": 280
+    },
+    {
+      "id": "D-timer-efca5a8c148aab35",
+      "document": "docs/ai/history/records/src_frontend_utils_updateSettings.ts-1.md",
+      "file": "src/frontend/utils/updateSettings.ts",
+      "line": 294
+    },
+    {
+      "id": "D-timer-e2f017cf8a946c3a",
+      "document": "docs/ai/history/records/src_frontend_utils_updateSettings.ts-1.md",
+      "file": "src/frontend/utils/updateSettings.ts",
+      "line": 406
+    },
+    {
+      "id": "D-timer-eadfd600d7b4d03e",
+      "document": "docs/ai/history/records/src_frontend_utils_updateSettings.ts-1.md",
+      "file": "src/frontend/utils/updateSettings.ts",
+      "line": 418
+    },
+    {
+      "id": "D-workaround-c89b73f9c37da437",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_AudioRouting.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/AudioRouting.svelte",
+      "line": 402
+    },
+    {
+      "id": "D-workaround-65423c82c0e26c94",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Connection.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Connection.svelte",
+      "line": 29
+    },
+    {
+      "id": "D-workaround-efcc28e07fcda5e7",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_General.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/General.svelte",
+      "line": 22
+    },
+    {
+      "id": "D-workaround-d64b0833751a3863",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_General.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/General.svelte",
+      "line": 23
+    },
+    {
+      "id": "D-workaround-ed0583a51419340e",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Outputs.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Outputs.svelte",
+      "line": 98
+    },
+    {
+      "id": "D-workaround-b53868df971ad24b",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Outputs.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Outputs.svelte",
+      "line": 375
+    },
+    {
+      "id": "D-workaround-59eb486216322b02",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_OutputsTabs.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/OutputsTabs.svelte",
+      "line": 120
+    },
+    {
+      "id": "D-workaround-ba8ac43af468df9b",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Profiles.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Profiles.svelte",
+      "line": 166
+    },
+    {
+      "id": "D-workaround-223a5a68e440c693",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Profiles.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Profiles.svelte",
+      "line": 169
+    },
+    {
+      "id": "D-workaround-8e1c44a793dd706c",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Profiles.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Profiles.svelte",
+      "line": 170
+    },
+    {
+      "id": "D-workaround-fef424cd1c4fa065",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_ProfilesTabs.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/ProfilesTabs.svelte",
+      "line": 51
+    },
+    {
+      "id": "D-workaround-6489182dbe16e462",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Styles.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Styles.svelte",
+      "line": 171
+    },
+    {
+      "id": "D-workaround-ca55b8e88ff74f9a",
+      "document": "docs/ai/history/records/src_frontend_components_settings_tabs_Styles.svelte-1.md",
+      "file": "src/frontend/components/settings/tabs/Styles.svelte",
+      "line": 187
+    },
+    {
+      "id": "D-fork-c570f6bb0134b251",
+      "document": "docs/ai/history/records/src_electron_data_defaults.ts-1.md",
+      "file": "src/electron/data/defaults.ts",
+      "line": 6
+    }
+  ]
+}

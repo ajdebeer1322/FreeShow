@@ -1,0 +1,446 @@
+{
+  "sourceRevision": "d3b3f77519612260851f8e5e63ef0d18b7de5a86",
+  "files": [
+    "src/electron/data/export.ts",
+    "src/electron/data/import.ts",
+    "src/electron/output/ppt/libreConverter.ts",
+    "src/electron/output/ppt/pptToShow.ts",
+    "src/electron/output/ppt/presentation.ts",
+    "src/frontend/components/export/Pdf.svelte",
+    "src/frontend/components/export/ProjectLinkTypes.ts",
+    "src/frontend/components/export/project.ts",
+    "src/frontend/components/export/projectLink.ts",
+    "src/frontend/converters/bebliaBible.ts",
+    "src/frontend/converters/bible.ts",
+    "src/frontend/converters/calendar.ts",
+    "src/frontend/converters/canvaPresentation.ts",
+    "src/frontend/converters/chordpro.ts",
+    "src/frontend/converters/csv.ts",
+    "src/frontend/converters/easyslides.ts",
+    "src/frontend/converters/easyworship.ts",
+    "src/frontend/converters/imageShow.ts",
+    "src/frontend/converters/importHelpers.ts",
+    "src/frontend/converters/lessonsChurch.ts",
+    "src/frontend/converters/mediashout.ts",
+    "src/frontend/converters/openlp.ts",
+    "src/frontend/converters/opensong.ts",
+    "src/frontend/converters/osisBible.ts",
+    "src/frontend/converters/powerpoint/PowerPointHelper.ts",
+    "src/frontend/converters/powerpoint/powerpointImporter.ts",
+    "src/frontend/converters/powerpoint/powerpointShapes.ts",
+    "src/frontend/converters/project.ts",
+    "src/frontend/converters/propresenter.ts",
+    "src/frontend/converters/quelea.ts",
+    "src/frontend/converters/softprojector.ts",
+    "src/frontend/converters/songbeamer.ts",
+    "src/frontend/converters/txt.ts",
+    "src/frontend/converters/txtAutoSections.ts",
+    "src/frontend/converters/verseview.ts",
+    "src/frontend/converters/videopsalm.ts",
+    "src/frontend/converters/worshipTools.ts",
+    "src/frontend/converters/worshipToolsText.test.ts",
+    "src/frontend/converters/worshipToolsText.ts",
+    "src/frontend/converters/xml.ts",
+    "src/frontend/converters/zefaniaBible.ts"
+  ],
+  "stores": [
+    "src/frontend/stores.ts#actionTags",
+    "src/frontend/stores.ts#actions",
+    "src/frontend/stores.ts#activeDrawerTab",
+    "src/frontend/stores.ts#activePage",
+    "src/frontend/stores.ts#activePopup",
+    "src/frontend/stores.ts#activeProject",
+    "src/frontend/stores.ts#activeRename",
+    "src/frontend/stores.ts#activeShow",
+    "src/frontend/stores.ts#alertMessage",
+    "src/frontend/stores.ts#calendars",
+    "src/frontend/stores.ts#categories",
+    "src/frontend/stores.ts#currentWindow",
+    "src/frontend/stores.ts#dictionary",
+    "src/frontend/stores.ts#drawerTabsData",
+    "src/frontend/stores.ts#editingProjectTemplate",
+    "src/frontend/stores.ts#effects",
+    "src/frontend/stores.ts#events",
+    "src/frontend/stores.ts#focusMode",
+    "src/frontend/stores.ts#folders",
+    "src/frontend/stores.ts#formatNewShow",
+    "src/frontend/stores.ts#globalTags",
+    "src/frontend/stores.ts#groups",
+    "src/frontend/stores.ts#media",
+    "src/frontend/stores.ts#overlays",
+    "src/frontend/stores.ts#playerVideos",
+    "src/frontend/stores.ts#projectTemplates",
+    "src/frontend/stores.ts#projectView",
+    "src/frontend/stores.ts#projects",
+    "src/frontend/stores.ts#recentFiles",
+    "src/frontend/stores.ts#refreshSlideThumbnails",
+    "src/frontend/stores.ts#scriptures",
+    "src/frontend/stores.ts#scripturesCache",
+    "src/frontend/stores.ts#shows",
+    "src/frontend/stores.ts#showsCache",
+    "src/frontend/stores.ts#special",
+    "src/frontend/stores.ts#splitLines"
+  ],
+  "messages": [
+    "EXPORT/DONE",
+    "EXPORT/EXPORT",
+    "EXPORT/GENERATE",
+    "EXPORT/NEXT",
+    "EXPORT/PDF",
+    "MAIN/ALERT",
+    "MAIN/DOWNLOAD_LESSONS_MEDIA",
+    "MAIN/GET_PROVIDER_CONTENT",
+    "MAIN/IMPORT2",
+    "MAIN/IMPORT_FILES",
+    "MAIN/PRESENTATION_STATE",
+    "MAIN/REPLACE_MEDIA_PATHS",
+    "MAIN/TOAST",
+    "STARTUP/TYPE"
+  ],
+  "timingIds": [
+    "timer-19736bacaa594d42",
+    "timer-ff0e213488cc1e86",
+    "timer-663339f3843aefea",
+    "timer-8d46ca2b059d2083",
+    "timer-e2617a79777e818a",
+    "timer-5a274df41676b458",
+    "timer-dd3a822c327f7a85",
+    "timer-1da259b854c54e17",
+    "request-budget-87c6696e00b30371",
+    "request-budget-8be7018f3f77454a",
+    "request-budget-d9a23edf72e7bee0",
+    "request-budget-534c7009d300d95a",
+    "timer-f55db16432771533",
+    "timer-77b8c6eb4dcb9485",
+    "timer-7d16ac97246b240d",
+    "timer-fb942c1900d7159a",
+    "timer-30f2f49d4a3ce27e",
+    "timer-3e86f469ec8f8cc1",
+    "timer-f6fab286d3c61499",
+    "timer-75dbdcb55dbf4588",
+    "timer-52e73c217f88ac0e",
+    "timer-0efc9d8ac3bc36cd",
+    "timer-fb2130ae44f188cc",
+    "timer-956eab3666ede8a5",
+    "timer-069ee8408f070968",
+    "timer-c459511a2afb0a31",
+    "timer-992f74bb06e0ff73"
+  ],
+  "workaroundIds": [
+    "workaround-81ad611163ed49ac",
+    "workaround-b113049b944d3ca6",
+    "workaround-5980fc833a62f5d7",
+    "workaround-79856f5d4e83da21",
+    "workaround-8f107d61c6b2d419",
+    "workaround-ba5c647497771c05",
+    "workaround-81a04fe8be86aa8d",
+    "workaround-92bb108338e45032",
+    "workaround-82e1f1a40e185111",
+    "workaround-cc6a991174180e62",
+    "workaround-a4af92b6835c861a",
+    "workaround-80d440fc4f755277",
+    "workaround-ba1a4b9d42501571",
+    "workaround-66ee62460f2d2d5e",
+    "workaround-905e7ef4f95303b1",
+    "workaround-0f6ce3304e5eb800",
+    "workaround-1a6ac8f440228f3d",
+    "workaround-bc8409b5f1a8cd79",
+    "workaround-80c990f38982c1f3"
+  ],
+  "decisions": [
+    {
+      "id": "D-timer-19736bacaa594d42",
+      "document": "docs/ai/history/records/src_electron_output_ppt_libreConverter.ts-1.md",
+      "file": "src/electron/output/ppt/libreConverter.ts",
+      "line": 66
+    },
+    {
+      "id": "D-timer-ff0e213488cc1e86",
+      "document": "docs/ai/history/records/src_electron_output_ppt_presentation.ts-1.md",
+      "file": "src/electron/output/ppt/presentation.ts",
+      "line": 68
+    },
+    {
+      "id": "D-timer-663339f3843aefea",
+      "document": "docs/ai/history/records/src_electron_output_ppt_presentation.ts-1.md",
+      "file": "src/electron/output/ppt/presentation.ts",
+      "line": 170
+    },
+    {
+      "id": "D-timer-8d46ca2b059d2083",
+      "document": "docs/ai/history/records/src_electron_output_ppt_presentation.ts-1.md",
+      "file": "src/electron/output/ppt/presentation.ts",
+      "line": 179
+    },
+    {
+      "id": "D-timer-e2617a79777e818a",
+      "document": "docs/ai/history/records/src_electron_output_ppt_presentation.ts-1.md",
+      "file": "src/electron/output/ppt/presentation.ts",
+      "line": 206
+    },
+    {
+      "id": "D-timer-5a274df41676b458",
+      "document": "docs/ai/history/records/src_electron_output_ppt_presentation.ts-1.md",
+      "file": "src/electron/output/ppt/presentation.ts",
+      "line": 236
+    },
+    {
+      "id": "D-timer-dd3a822c327f7a85",
+      "document": "docs/ai/history/records/src_frontend_components_export_Pdf.svelte-1.md",
+      "file": "src/frontend/components/export/Pdf.svelte",
+      "line": 89
+    },
+    {
+      "id": "D-timer-1da259b854c54e17",
+      "document": "docs/ai/history/records/src_frontend_converters_bible.ts-1.md",
+      "file": "src/frontend/converters/bible.ts",
+      "line": 23
+    },
+    {
+      "id": "D-request-budget-87c6696e00b30371",
+      "document": "docs/ai/history/records/src_frontend_converters_canvaPresentation.ts-1.md",
+      "file": "src/frontend/converters/canvaPresentation.ts",
+      "line": 45
+    },
+    {
+      "id": "D-request-budget-8be7018f3f77454a",
+      "document": "docs/ai/history/records/src_frontend_converters_canvaPresentation.ts-1.md",
+      "file": "src/frontend/converters/canvaPresentation.ts",
+      "line": 98
+    },
+    {
+      "id": "D-request-budget-d9a23edf72e7bee0",
+      "document": "docs/ai/history/records/src_frontend_converters_canvaPresentation.ts-1.md",
+      "file": "src/frontend/converters/canvaPresentation.ts",
+      "line": 102
+    },
+    {
+      "id": "D-request-budget-534c7009d300d95a",
+      "document": "docs/ai/history/records/src_frontend_converters_canvaPresentation.ts-1.md",
+      "file": "src/frontend/converters/canvaPresentation.ts",
+      "line": 200
+    },
+    {
+      "id": "D-timer-f55db16432771533",
+      "document": "docs/ai/history/records/src_frontend_converters_chordpro.ts-1.md",
+      "file": "src/frontend/converters/chordpro.ts",
+      "line": 28
+    },
+    {
+      "id": "D-timer-77b8c6eb4dcb9485",
+      "document": "docs/ai/history/records/src_frontend_converters_csv.ts-1.md",
+      "file": "src/frontend/converters/csv.ts",
+      "line": 20
+    },
+    {
+      "id": "D-timer-7d16ac97246b240d",
+      "document": "docs/ai/history/records/src_frontend_converters_easyslides.ts-1.md",
+      "file": "src/frontend/converters/easyslides.ts",
+      "line": 27
+    },
+    {
+      "id": "D-timer-fb942c1900d7159a",
+      "document": "docs/ai/history/records/src_frontend_converters_importHelpers.ts-1.md",
+      "file": "src/frontend/converters/importHelpers.ts",
+      "line": 31
+    },
+    {
+      "id": "D-timer-30f2f49d4a3ce27e",
+      "document": "docs/ai/history/records/src_frontend_converters_lessonsChurch.ts-1.md",
+      "file": "src/frontend/converters/lessonsChurch.ts",
+      "line": 95
+    },
+    {
+      "id": "D-timer-3e86f469ec8f8cc1",
+      "document": "docs/ai/history/records/src_frontend_converters_lessonsChurch.ts-1.md",
+      "file": "src/frontend/converters/lessonsChurch.ts",
+      "line": 109
+    },
+    {
+      "id": "D-timer-f6fab286d3c61499",
+      "document": "docs/ai/history/records/src_frontend_converters_lessonsChurch.ts-1.md",
+      "file": "src/frontend/converters/lessonsChurch.ts",
+      "line": 187
+    },
+    {
+      "id": "D-timer-75dbdcb55dbf4588",
+      "document": "docs/ai/history/records/src_frontend_converters_openlp.ts-1.md",
+      "file": "src/frontend/converters/openlp.ts",
+      "line": 41
+    },
+    {
+      "id": "D-timer-52e73c217f88ac0e",
+      "document": "docs/ai/history/records/src_frontend_converters_opensong.ts-1.md",
+      "file": "src/frontend/converters/opensong.ts",
+      "line": 44
+    },
+    {
+      "id": "D-timer-0efc9d8ac3bc36cd",
+      "document": "docs/ai/history/records/src_frontend_converters_powerpoint_powerpointImporter.ts-1.md",
+      "file": "src/frontend/converters/powerpoint/powerpointImporter.ts",
+      "line": 25
+    },
+    {
+      "id": "D-timer-fb2130ae44f188cc",
+      "document": "docs/ai/history/records/src_frontend_converters_propresenter.ts-1.md",
+      "file": "src/frontend/converters/propresenter.ts",
+      "line": 27
+    },
+    {
+      "id": "D-timer-956eab3666ede8a5",
+      "document": "docs/ai/history/records/src_frontend_converters_quelea.ts-1.md",
+      "file": "src/frontend/converters/quelea.ts",
+      "line": 52
+    },
+    {
+      "id": "D-timer-069ee8408f070968",
+      "document": "docs/ai/history/records/src_frontend_converters_softprojector.ts-1.md",
+      "file": "src/frontend/converters/softprojector.ts",
+      "line": 47
+    },
+    {
+      "id": "D-timer-c459511a2afb0a31",
+      "document": "docs/ai/history/records/src_frontend_converters_txt.ts-1.md",
+      "file": "src/frontend/converters/txt.ts",
+      "line": 39
+    },
+    {
+      "id": "D-timer-992f74bb06e0ff73",
+      "document": "docs/ai/history/records/src_frontend_converters_verseview.ts-1.md",
+      "file": "src/frontend/converters/verseview.ts",
+      "line": 63
+    },
+    {
+      "id": "D-workaround-81ad611163ed49ac",
+      "document": "docs/ai/history/records/src_electron_data_export.ts-1.md",
+      "file": "src/electron/data/export.ts",
+      "line": 212
+    },
+    {
+      "id": "D-workaround-b113049b944d3ca6",
+      "document": "docs/ai/history/records/src_electron_output_ppt_presentation.ts-1.md",
+      "file": "src/electron/output/ppt/presentation.ts",
+      "line": 183
+    },
+    {
+      "id": "D-workaround-5980fc833a62f5d7",
+      "document": "docs/ai/history/records/src_frontend_components_export_Pdf.svelte-1.md",
+      "file": "src/frontend/components/export/Pdf.svelte",
+      "line": 34
+    },
+    {
+      "id": "D-workaround-79856f5d4e83da21",
+      "document": "docs/ai/history/records/src_frontend_components_export_Pdf.svelte-1.md",
+      "file": "src/frontend/components/export/Pdf.svelte",
+      "line": 418
+    },
+    {
+      "id": "D-workaround-8f107d61c6b2d419",
+      "document": "docs/ai/history/records/src_frontend_components_export_project.ts-1.md",
+      "file": "src/frontend/components/export/project.ts",
+      "line": 79
+    },
+    {
+      "id": "D-workaround-ba5c647497771c05",
+      "document": "docs/ai/history/records/src_frontend_converters_calendar.ts-1.md",
+      "file": "src/frontend/converters/calendar.ts",
+      "line": 109
+    },
+    {
+      "id": "D-workaround-81a04fe8be86aa8d",
+      "document": "docs/ai/history/records/src_frontend_converters_easyworship.ts-1.md",
+      "file": "src/frontend/converters/easyworship.ts",
+      "line": 285
+    },
+    {
+      "id": "D-workaround-92bb108338e45032",
+      "document": "docs/ai/history/records/src_frontend_converters_importHelpers.ts-1.md",
+      "file": "src/frontend/converters/importHelpers.ts",
+      "line": 294
+    },
+    {
+      "id": "D-workaround-82e1f1a40e185111",
+      "document": "docs/ai/history/records/src_frontend_converters_lessonsChurch.ts-1.md",
+      "file": "src/frontend/converters/lessonsChurch.ts",
+      "line": 61
+    },
+    {
+      "id": "D-workaround-cc6a991174180e62",
+      "document": "docs/ai/history/records/src_frontend_converters_lessonsChurch.ts-1.md",
+      "file": "src/frontend/converters/lessonsChurch.ts",
+      "line": 89
+    },
+    {
+      "id": "D-workaround-a4af92b6835c861a",
+      "document": "docs/ai/history/records/src_frontend_converters_openlp.ts-1.md",
+      "file": "src/frontend/converters/openlp.ts",
+      "line": 165
+    },
+    {
+      "id": "D-workaround-80d440fc4f755277",
+      "document": "docs/ai/history/records/src_frontend_converters_openlp.ts-1.md",
+      "file": "src/frontend/converters/openlp.ts",
+      "line": 329
+    },
+    {
+      "id": "D-workaround-ba1a4b9d42501571",
+      "document": "docs/ai/history/records/src_frontend_converters_opensong.ts-1.md",
+      "file": "src/frontend/converters/opensong.ts",
+      "line": 350
+    },
+    {
+      "id": "D-workaround-66ee62460f2d2d5e",
+      "document": "docs/ai/history/records/src_frontend_converters_osisBible.ts-1.md",
+      "file": "src/frontend/converters/osisBible.ts",
+      "line": 77
+    },
+    {
+      "id": "D-workaround-905e7ef4f95303b1",
+      "document": "docs/ai/history/records/src_frontend_converters_powerpoint_PowerPointHelper.ts-1.md",
+      "file": "src/frontend/converters/powerpoint/PowerPointHelper.ts",
+      "line": 810
+    },
+    {
+      "id": "D-workaround-0f6ce3304e5eb800",
+      "document": "docs/ai/history/records/src_frontend_converters_powerpoint_PowerPointHelper.ts-1.md",
+      "file": "src/frontend/converters/powerpoint/PowerPointHelper.ts",
+      "line": 1021
+    },
+    {
+      "id": "D-workaround-1a6ac8f440228f3d",
+      "document": "docs/ai/history/records/src_frontend_converters_project.ts-1.md",
+      "file": "src/frontend/converters/project.ts",
+      "line": 215
+    },
+    {
+      "id": "D-workaround-bc8409b5f1a8cd79",
+      "document": "docs/ai/history/records/src_frontend_converters_propresenter.ts-1.md",
+      "file": "src/frontend/converters/propresenter.ts",
+      "line": 692
+    },
+    {
+      "id": "D-workaround-80c990f38982c1f3",
+      "document": "docs/ai/history/records/src_frontend_converters_txt.ts-1.md",
+      "file": "src/frontend/converters/txt.ts",
+      "line": 390
+    },
+    {
+      "id": "D-hotspot-75db8ee8f29d950a",
+      "document": "docs/ai/history/records/src_electron_output_ppt_libreConverter.ts-1.md",
+      "file": "src/electron/output/ppt/libreConverter.ts",
+      "line": 13
+    },
+    {
+      "id": "D-hotspot-463a60d102ffbf66",
+      "document": "docs/ai/history/records/src_electron_output_ppt_pptToShow.ts-1.md",
+      "file": "src/electron/output/ppt/pptToShow.ts",
+      "line": 10
+    },
+    {
+      "id": "D-hotspot-7fa603b17805ac69",
+      "document": "docs/ai/history/records/src_electron_output_ppt_presentation.ts-1.md",
+      "file": "src/electron/output/ppt/presentation.ts",
+      "line": 15
+    }
+  ]
+}
