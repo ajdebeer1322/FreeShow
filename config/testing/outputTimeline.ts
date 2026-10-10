@@ -101,7 +101,11 @@ export function compareToGolden(actual: ScenarioResult, golden: ScenarioResult):
     if (describe(actualStart) !== describe(goldenStart)) problems.push(`starts with [${describe(actualStart)}], expected [${describe(goldenStart)}]`)
     if (union(actual.states).join("|") !== union(golden.states).join("|")) problems.push(`showed layers [${union(actual.states).join(", ")}], expected [${union(golden.states).join(", ")}]`)
     if (maxLayers(actual.states) > maxLayers(golden.states)) problems.push(`up to ${maxLayers(actual.states)} layers at once, expected at most ${maxLayers(golden.states)}`)
-    if (actual.lastChange > golden.lastChange * 1.5 + 300) problems.push(`last change after ${actual.lastChange} ms, expected about ${golden.lastChange} ms`)
+    // The same source built with Svelte 3 and Svelte 5 measured within about 15 ms of each other on one machine, and a run
+    // varies by about 10-20 ms, so more than 15% or 75 ms (the larger) is a real slowdown. Keep the golden recorded on the
+    // machine and the Svelte 3 build it is compared with (see HOW_IT_WORKS.md, F-013).
+    const allowed = Math.max(golden.lastChange * 0.15, 75)
+    if (actual.lastChange > golden.lastChange + allowed) problems.push(`last change after ${actual.lastChange} ms, expected about ${golden.lastChange} ms (at most ${Math.round(golden.lastChange + allowed)} ms)`)
     return problems
 }
 

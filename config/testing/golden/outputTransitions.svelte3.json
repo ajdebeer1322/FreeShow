@@ -325,7 +325,7 @@
     "T:Short"
    ]
   ],
-  "lastChange": 521
+  "lastChange": 769
  },
  "autosize/auto-click-2-long": {
   "states": [
@@ -342,7 +342,7 @@
     "T:and a second fairly long line to make the box fill up quite a lot"
    ]
   ],
-  "lastChange": 573
+  "lastChange": 769
  },
  "autosize/auto-click-3": {
   "states": [
@@ -359,7 +359,7 @@
     "T:Tiny"
    ]
   ],
-  "lastChange": 571
+  "lastChange": 770
  },
  "autosize/auto-arrow-left": {
   "states": [
@@ -376,7 +376,7 @@
     "T:and a second fairly long line to make the box fill up quite a lot"
    ]
   ],
-  "lastChange": 553
+  "lastChange": 745
  },
  "autosize/auto-arrow-left-2": {
   "states": [
@@ -393,7 +393,7 @@
     "T:Short"
    ]
   ],
-  "lastChange": 541
+  "lastChange": 723
  },
  "autosize/auto-arrow-right-x2-fast": {
   "states": [
@@ -405,6 +405,6 @@
     "T:Tiny"
    ]
   ],
-  "lastChange": 616
+  "lastChange": 892
  }
 }

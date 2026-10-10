@@ -162,6 +162,9 @@ async function startApp(seed: Seed = {}): Promise<Running> {
         if (!output) await delay(500)
     }
     if (!output) throw new Error("output window not found")
+    // MainOutput.svelte only mounts the output 2 s after its window (the font preload element is shown until then); a
+    // first activation before that waits for the rest of it, so scenarios would depend on how fast the test got here
+    await output.waitForFunction(() => !document.querySelector(".fontPreload"), undefined, { timeout: 15_000 }).catch(() => {})
     return { app, main, output, directory }
 }
 
@@ -231,6 +234,16 @@ async function finish(name: string) {
     const prefix = `${name}/`
     const scenarios = Object.keys(results).filter((key) => key.startsWith(prefix))
     expect(scenarios.length).toBeGreaterThan(0)
+
+    // FS_TIMELINE_OUT=file.json: also write what was recorded (to compare builds), whatever the golden says
+    if (process.env.FS_TIMELINE_OUT) {
+        let all: { [key: string]: ScenarioResult } = {}
+        try {
+            all = JSON.parse(readFileSync(process.env.FS_TIMELINE_OUT, "utf8"))
+        } catch {}
+        for (const key of scenarios) all[key] = results[key]
+        writeFileSync(process.env.FS_TIMELINE_OUT, JSON.stringify(all, null, 1) + "\n")
+    }
 
     if (RECORD) {
         const current = JSON.parse(readFileSync(GOLDEN_PATH, "utf8"))
