@@ -449,6 +449,56 @@ of `stateSignature` (and the fallback cache key). [code]
 `t = t1 + (t2 - t1) * easing(i / n)` (out: `t = 1 - easing(p)`), so the same functions can be sampled into
 keyframes. [code]
 
+**F-025 (2026-10-10) Whole-screen dimming during a text fade: the text box's own background fades with the text.**
+Output brightness (average luminance of the output window, main process `capturePage`, ~17 ms per sample, 4 changes
+per variant, fade 500 ms / offset 50 %, Svelte 5 build; the Svelte 3 build of `main` gave the same numbers):
+
+| Variant (2 text slides) | steady | during the fade | change |
+| --- | --- | --- | --- |
+| plain black, white text, no box, no background | 1.6 | 0.4 | text only, invisible |
+| same background image on both slides (control) | 254 | 254 | none |
+| **box `rgb(255 255 255 / .8)` on plain black (no background)** | 162 | **40** at +463 ms | **-76 %, back by +860 ms** |
+| box `rgb(0 0 0 / .75)` on a white background | 104 | **218** at +470 ms | +114 (the shade vanishes) |
+| box A `.75` -> box B `.3` (white background) | 104 -> 194 | overshoots to **233** | +40 above both |
+| `backdrop-filter: brightness(.4)` (slide data) on white | 134 | **254** from +110 to +870 ms | filter off for the whole fade |
+| box + `backdrop-filter: blur(20px)` | 104 | 218 | as the box |
+| fade offset 0 instead of 50 % (box on white) | 104 | 137 (+33) | smaller, backdrop still pops (+121) |
+| transition "none", box on white | 104 | **255** for ~100 ms | whole screen flashes (blank frames, F-020) |
+| transition "none", box on black | 162 | **0** for ~100 ms | whole screen goes black |
+
+The box fades because the whole `.transitioner` (box + text) is the faded element and the two boxes are not both
+opaque at the same time (offset 50 %: coverage `1 - (1 - a_old)(1 - a_new)` falls to ~27 % at +375 ms). With a light
+box on a black output with no background (the common "lyrics box" setup) it reads as the whole screen dimming and
+coming back. [verified]
+
+**F-026 (2026-10-10) `backdrop-filter` is switched off by any ancestor with opacity < 1, and stays off after a finished fill-forwards animation.**
+Standalone Chromium spike (400 x 240 white scene, box with `backdrop-filter: brightness(.4)`): in a wrapper with
+opacity 1 -> 102; **opacity .99 -> 255 (filter gone)**; opacity .5 -> 255; a filter-only "plate" element outside the
+faded wrapper keeps it (101); fading only the text inside the box keeps it (101); after a **finished
+`animate(..., {fill: "forwards"})`** at opacity 1 -> **255 (still off)**; after `cancel()` -> 102. So it is a Backdrop
+Root effect, not a missing transition (the `transition: backdrop-filter 500ms` in `Textbox.svelte` is irrelevant for
+this), and a new engine must cancel finished animations (set the final style, `fill: "none"`). [verified]
+
+**F-027 (2026-10-10) Background layer: different files dip toward black; same/inherited backgrounds do not.**
+Same image on both slides: no change. A slide without its own background inherits the previous one (look-back in
+`showActions.ts::updateOut`): no change (both `loop` unset and `loop: false` on the media entry: no change in this
+seeding). Same picture in two different files (white / white copy): **254 -> 191 (-25 %) at +690 ms -> 254**.
+White -> gray (128): dips to **112** at +520/+790 ms, 12 % below the final gray, over ~700 ms. Cause [code]:
+`Background.svelte` mounts the new media and both `BackgroundMedia` run `OutputTransition` (old `out`, new `in`) with
+the same duration, so the result is `new * e + old * (1 - e)^2`. A slide without a background where nothing is
+inherited (first slide, after a clear, a media entry that must not repeat) fades the background to black, by design.
+Not touched here, see work item W-01. [verified, code]
+
+**F-028 (2026-10-10) Slide colour / `Zoomed` colour transition not reproduced.**
+Two slides with `settings.color` white / `#808080`: the second colour was never applied in this seeding (254 for
+both), so the 800 ms `background-color` transition in `Zoomed.svelte` is **not** confirmed as a cause. [verified that
+it did not show up; mechanism unverified]
+
+**F-029 (2026-10-10) Output brightness probe.**
+`config/testing/outputBrightness.ts`: `startBrightness(app, outputPage)` / `stopBrightness()` / `brightnessDip()`. The
+main process `webContents.capturePage()` loop gives a sample every ~17 ms (median; 6-46 ms) at 64 px wide, so a 500
+ms fade has ~30 samples. Needs the Electron app (not a plain browser). [verified]
+
 ### Open questions (move to the log with evidence when answered)
 
 - Where inside Svelte 5's transition engine do the +35-55 ms of outro removal come from (F-016)?
@@ -480,6 +530,17 @@ keyframes. [code]
 ## 11. Text layer redesign (runes, crossfade)
 
 The planned replacement of `SlideContent` + `SlideItemTransition` is designed in `TEXT_LAYER_DESIGN.md`: the full list
-of behaviours to keep with their locations and tests (B-01..B-55), the layer lifecycle, the timing rule
+of behaviours to keep with their locations and tests (B-01..B-64), the layer lifecycle, the timing rule
 `new.start = max(t0 + fadeInOffset, ready)`, the transition sampling, interruption rules, the switch
-`special.textEngine`, the test plan (T-01..T-19), risks and a 13-day estimate. Findings behind it: F-020 to F-024.
+`special.textEngine`, the test plan (T-01..T-22), the box-steady rule (B-60..B-64), risks and a 14.5-day estimate. Findings behind it: F-020 to F-029.
+
+---
+
+## 12. Separate work items (not part of the text layer)
+
+**W-01 `Background.svelte` crossfade dips toward black (F-027).** Fix belongs in `layers/Background.svelte` /
+`BackgroundMedia.svelte`: fade the **new** background in over the **old** one, only after it has loaded, and keep the
+old one fully opaque until the new one is fully visible, then remove it (no simultaneous out fade). Expected result:
+no dip between opaque images (today -25 % for two different files with the same look). Check videos (poster/first
+frame), `fadingOut`, `loop: false`, player (YouTube) which must not stack two iframes, and the media transition `none`.
+Test: the brightness probe with two opaque images, minimum >= min(base, final) - 3 %. Estimated 1-1.5 days.

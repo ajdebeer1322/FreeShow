@@ -26,7 +26,11 @@ legacy syntax (it only gets the switch).
 - Behind `special.textEngine: "classic" | "crossfade"` (default `"classic"`), switchable live.
 - Baseline problems this fixes **[verified]**: with transition "none" the classic engine shows **7-8 blank frames
   (~120 ms without text)** on auto sized slides, and **3-20 blank frames** on rapid presses (also with fade).
-- Estimate: **~13 working days (range 11-16)** in 9 independently testable steps (section 8).
+- **Keep the box steady** (new rule, section 3.11): when old and new text boxes have the same box styling, only the
+  text inside is crossfaded; when the box changes, boxes crossfade but the backdrop filter is held by a non-faded
+  plate. Measured today **[verified F-025]**: a light text box on a plain black output takes the **whole screen
+  from 162 to 40 and back (-76 %)** during a fade, and `backdrop-filter` is off for the entire fade.
+- Estimate: **~14.5 working days (range 12-17.5)** in 10 independently testable steps (section 8).
 
 ---
 
@@ -44,6 +48,18 @@ legacy syntax (it only gets the switch).
 Blank frame = an animation frame after the activation with no text box at opacity > 0.02 between the first and the
 last frame that shows text. Source: temporary Playwright probe (per-frame `.textContainer` opacity), 4 s run per
 transition, `ArrowRight/Left`. **[verified]**
+
+**Whole-screen brightness during a fade** (F-025, F-026, F-027, average luminance of the output window; same on the
+Svelte 3 build of `main`) **[verified]**:
+
+| Variant | steady | extreme during the fade |
+| --- | --- | --- |
+| light box (`white / .8`) on plain black, no background media | 162 | **40** (-76 %), back at +860 ms |
+| dark box (`black / .75`) on a white background | 104 | **218** (+114) |
+| `backdrop-filter: brightness(.4)` on the slide | 134 | **254** for ~760 ms (filter off, then pops back) |
+| transition "none", any of the above | 104 / 162 | **255 / 0** for ~100 ms (blank frames) |
+| two different background files with the same look | 254 | **191** (-25 %) (background layer, work item W-01) |
+| same / inherited background | 254 | 254 |
 
 Line stepping with an output style line limit goes through the **same full cycle** as a slide change (old window
 out, new window in, one box at the end), it does not accumulate `SlideItemTransition` states **[verified]**:
@@ -116,6 +132,16 @@ section 6). "Probe" = the per-frame recorder in `outputTimeline.ts` (extended in
 | B-54 | **Rapid presses**: only the latest wins (`updateGeneration` + cleared timers); classic keeps <= 2 boxes visible. **[verified]** | `SlideContent.updateItems` | T-04, T-05 |
 | B-55 | **Everything is cleaned up on destroy** (15 ms and 300/100 ms intervals, timeouts, auto size waits). **[code]** | `onDestroy`, `onMount` return | T-18 |
 
+### 2.6 Box styling and screen brightness (new rule)
+
+| ID | Behaviour | Where | Test |
+| --- | --- | --- | --- |
+| B-60 | **Classic fades the box with the text**: the faded element is `.transitioner`, which contains the item's `.item` box (`background`, border, shade, `border-radius`, shadow, position/size) and the text. A box that is the same on both slides therefore dips out and in. **[verified F-025]** | `OutputTransition.svelte` (`in:/out:custom` on the wrapper), `Textbox.svelte` `.item` | T-20 |
+| B-61 | **Slide `backdrop-filter`** (`slideData["backdrop-filter"]` -> `backdropFilter` prop -> inline `backdrop-filter` on `.item`) is **off for the whole fade** because an ancestor has opacity < 1 (Chromium backdrop root), and returns when the animation ends. `filter` on `.item` is unaffected. **[verified F-026]** | `SlideContent.svelte` prop `backdropFilter`, `Textbox.svelte` `foregroundFilters` | T-21 |
+| B-62 | **The new engine must keep the box steady** when old and new box styling match, crossfade the boxes when they differ, and never let the backdrop filter pop (section 3.11). | new | T-20, T-21, T-22 |
+| B-63 | **Average screen brightness must not dip, flash or pop** during text -> text (outside the text pixels themselves). | new | T-20..T-22 |
+| B-64 | **Background layer is not part of the text layer**: `Background.svelte` crossfade dips (F-027) is separate work item W-01; the text layer must neither depend on nor change it. | `Background.svelte` | T-22 baseline only |
+
 ---
 
 ## 3. Design
@@ -179,7 +205,10 @@ change detected (signature differs from the newest layer, B-01)
   out  ----- fade out; when all its animations finished -> removed from `layers` (no Svelte outro)
 ```
 
-Rules: a layer is removed **only** by its own animations finishing (or by cancel on interruption/clear). Keyed
+Rules: a layer is removed **only** by its own animations finishing (or by cancel on interruption/clear). **A finished
+animation is committed and cancelled** (`fill: "none"` after writing the final inline style, or `cancel()` in
+`onfinish`): a finished `fill: "forwards"` animation keeps the element an opacity root and leaves its
+`backdrop-filter` **off** [verified F-026]. Keyed
 `{#each layers as layer (layer.id)}` has **no** `transition:` directive, so Svelte removes the DOM synchronously
 with the state change (F-016 is irrelevant).
 
@@ -321,6 +350,50 @@ is passed to `Textbox` (it reports readiness right away: `loaded = true` at once
 becomes ready in ~1-2 frames and the preview crossfades like the output. `mirror && !preview` (stage, scenes,
 draw) -> no animation, instant swap (B-13). The preview never stores sizes (`itemIndex` stays -1).
 
+### 3.11 Keeping the box steady and the backdrop filter alive (new)
+
+**What is "the box".** For an item pair (same index in old and new layer) compute `boxSignature(item, slideData)`:
+the item `style` properties that are not text styling (position/size, `background*`, `border*`, `box-shadow`,
+`border-radius`, `padding`, `transform`/`rotate`, `filter`, `opacity`, `clip-path`/crop), plus the slide's
+`backdrop-filter`. Text-only properties (`color`, `font-*`, `text-*`, `letter-spacing`, `line-height`, `align`) are
+ignored. **[guess]** the property list is exact; confirm against `getItemStyle`/`isCroppedItem` in S3b.
+
+**Case 1: same box (the common lyrics case).** Only the text is crossfaded:
+
+- the **old** layer keeps its `.item` (box, backdrop filter) at full opacity; the layer wrapper is not faded, the
+  animation targets the item's text container (`.align`, the child that holds the lines);
+- the **new** layer's `.item` is mounted with its box neutralized (`wrapper.boxless`: `background: none`,
+  `border-color: transparent`, `box-shadow: none`, `backdrop-filter: none`, all `!important`, geometry and
+  border *width* unchanged) and its `.align` fades in;
+- at the end, **in one frame**: `boxless` is removed from the new layer and the old layer is removed. The box was
+  there before and is there after; there is never a frame with two boxes (semi-transparent boxes would double
+  darken) or none.
+
+**Case 2: box changes.** Wrapper opacity crossfade as today (both boxes fade), plus a **backdrop plate** per
+affected item, so the filter does not pop:
+
+- the plate is `oldItemElement.cloneNode(false)` (a shallow clone keeps the inline geometry and
+  `backdrop-filter`, no children, so no style logic is duplicated), with `background: none; border-color:
+  transparent; box-shadow: none`, placed in the layer stack **below** the layers and **outside** every animated
+  wrapper, so no ancestor has opacity < 1;
+- the new layer's own `backdrop-filter` is neutralized while it animates;
+- when the new layer is fully visible (animation committed and cancelled): enable the new filter and remove the
+  plate in the same frame. The filter "holds" the old value until the new content is visible, then steps once.
+
+**Appearing from nothing / clearing.** First appearance: plate with the new filter from the **start** of the fade-in
+(readable text over a bright background is worth more than a gradual dim); clearing: plate stays until the text is
+fully gone, then is removed. [decision, Q-05]
+
+**Transition "none"** (no animation): swap in one frame; the plate is not needed; box state is the new layer's.
+
+**Interrupted crossfade:** frozen layers keep their `boxless`/plate state; the plate always follows the **newest
+visible** layer's old box (re-cloned from the layer that is currently the most visible).
+
+**Checks that must hold (tests T-20..T-22):** same box -> brightness within 3 % of steady for the whole change;
+box changes -> brightness stays between base and final +- 3 % (no overshoot like the measured 233 over 194);
+backdrop filter -> no sample with the filter off while text is visible; "none" -> no sample outside
+[min(base, final), max(base, final)] +- 3 % (no blank flash).
+
 ---
 
 ## 4. What stays the same / is explicitly not changed
@@ -339,6 +412,8 @@ draw) -> no animation, instant swap (B-13). The preview never stores sizes (`ite
 3. Rapid presses: no blank intervals; interrupted fades continue from their current opacity.
 4. Metadata overlay may now lead the slide text by up to ~110 ms on a first showing (classic: lagged by 250 ms).
 5. Old element removal is exact (animation end), not Svelte's outro + effect flush (F-016).
+6. A box that is the same on both slides stays; only the words crossfade (no whole-screen dim/flash, F-025).
+7. The backdrop filter no longer disappears during a fade (F-026).
 
 Everything else (types, easings, directions, timers, offsets) is parity by construction (3.5) and by tests (T-07).
 
@@ -354,6 +429,10 @@ Everything else (types, easings, directions, timers, offsets) is parity by const
   measured through `.transitioner`): `state`, effective opacity, computed `transform`, and
   `getAnimations()` -> `{playState, currentTime}`. Derived metrics: `blankFrames`, `maxLayers`, `oldStartFrame`,
   `newStartFrame`, `startDeltaFrames`, `finalLayers`, `curve` (normalized time -> opacity/transform).
+- **Brightness probe** (`config/testing/outputBrightness.ts`, exists): `startBrightness/stopBrightness/brightnessDip`
+  give the average luminance of the whole output window at ~60 Hz plus `base`, `final`, `min`, `max`, `dip`, `rise`.
+  Seeds: custom show files with `itemStyle` (box), layout `backdrop-filter`, `bg` images (white, gray) as in the
+  classic baseline measurements of F-025/F-027.
 - **Pure unit tests** (Vitest, node): `plan.ts` (priority, between/in/out, timers, offsets), `keyframes.ts`
   (sampling equals Svelte's `fade/blur/scale/spin/slide` css at the sample points, in and out), timing algorithm
   (`N`, `O`, pause) as a pure function of `(t0, f, r, d)`.
@@ -382,6 +461,9 @@ Everything else (types, easings, directions, timers, offsets) is parity by const
 | T-16 | New engine no slower than classic in any scenario | paired medians: `new <= classic + 16 ms` for every golden and probe scenario | both |
 | T-17 | Two outputs | second output with another style updates independently; no shared module state (grep test: no top-level `let`/`Map` in `textlayer/`) | new |
 | T-18 | Leaks | after 200 rapid changes and a settle: layers 1, `document.getAnimations().length == 0`, no intervals left | new |
+| T-20 | **Brightness does not dip (same box).** text -> text with the same light box on black, same dark box on white, fade 500 at offsets 0 / 50 / 100 % | `dip <= 3 %` of steady and `rise <= 3 %` for every change; classic baseline recorded (-76 % / +114) | new (classic baseline) |
+| T-21 | **Backdrop filter never pops.** slide `backdrop-filter: brightness(.4)` on a white background, text -> text, first appearance, clearing | at no sample is the screen at the unfiltered value while text is visible (`max <= steady + 3 %`); filter steps at most once and only after the new text is fully visible | new (classic: off for ~760 ms) |
+| T-22 | **Box changes cross-fade without overshoot or flash.** box A -> box B, transition none (box on white and on black), different backdrop filters | brightness stays within [min(base, final), max(base, final)] +- 3 %; with none no sample at 0 / 255 | new (classic: overshoot to 233, 255 / 0 for ~100 ms) |
 | T-19 | Live switch | toggle engine mid-show: same text visible, no exceptions, one layer set | both |
 
 ---
@@ -400,6 +482,10 @@ Everything else (types, easings, directions, timers, offsets) is parity by const
 | R-08 | Timeline items change every 15 ms (`styleActions`): in runes, replace the Map instead of mutating, and only for the live layer. | `timeline.ts` + `$state.raw`. |
 | R-09 | `showItemRef` quirk (stale `slideIndex`) is reproduced or fixed? | Reproduce first (parity), fix separately. |
 | R-10 | Engine default and rollout. | Keep `"classic"` until T-15/T-16 pass for a release; then decide. |
+| R-11 | Neutralizing the new layer's box with CSS overrides assumes the box is exactly `.item` styles + `.align` text; per-line backgrounds (`specialStyle` line backgrounds), shapes, images and `clickReveal` outlines live inside or beside it. | S3b: render a matrix of item types; fall back to the wrapper crossfade (Case 2) when the item is not a plain text box. |
+| R-12 | Plate geometry from a shallow clone follows the old element's inline style, including percent positions and `zoom`; a resize during the fade moves the box but not the plate. | Plate lives inside the same scaled `Zoomed` container; re-clone on `ratio` change (rare, <= 500 ms). |
+| R-13 | `getAnimations()`/committed styles: `commitStyles()` on `.align` could write inline opacity that later clashes with `Textbox` hide logic (`.align.hidden`). | Use a class + CSS variable, not inline opacity, for the final state; verify with the readiness check of 3.7. |
+| Q-05 | First appearance: filter on at the start of the fade (chosen) or at the end? | Chosen start (readability); trivial to flip. |
 | Q-01 | Should the first slide skip `fadeInOffset`? | Yes (difference 1 above); trivial to flip. |
 | Q-02 | Should held items of a mixed slide stay un-faded (classic re-fades them)? | Keep parity; improve later. |
 | Q-03 | Should the old layer wait for the new one when the new one has only non-auto items? | No: ready at once, so no wait. |
@@ -415,18 +501,20 @@ Everything else (types, easings, directions, timers, offsets) is parity by const
 | S1 | `plan.ts`, `keyframes.ts`, timing function, `timeline.ts` + Vitest | unit tests T-03/T-07 pure parts, T-09 plan | 1.5 |
 | S2 | `TextLayer.svelte` skeleton: renders the current slide (persistent + one layer, no animation), props, fonts, `origin`, switch in `Output.svelte`, Settings entry, `special.textEngine` | T-19 (switch), T-12 DOM snapshot, T-15 classic golden unchanged, interop test | 1.5 |
 | S3 | Layer lifecycle: hidden measure, readiness, crossfade with offset, `none` swap | T-01, T-02, T-03, T-06 | 2 |
+| S3b | Box steady + backdrop plate (3.11): `boxSignature`, `boxless`, text-only fade, plate, cancel-on-finish | T-20, T-21, T-22 | 1.5 |
 | S4 | Per-item features: item transitions, between/in/out, timers, conditions, click reveal, `lineReveal`, held/persistent, timeline | T-08, T-09, T-10, T-11, T-12 | 2 |
 | S5 | Interruption, rapid presses, clearing, empty slides, hard timeouts, leak cleanup | T-04, T-05, T-18 | 1.5 |
 | S6 | Preview/mirror, multiple outputs, scripture/templates/dynamic/chords | T-13, T-14, T-17 | 1.5 |
 | S7 | Parity matrix + paired timing runs, golden for the new engine | T-07 full matrix, T-15, T-16 | 2 |
 | S8 | Polish, docs (`HOW_IT_WORKS.md`, `AI_README.md`), decision on the default | all green, two review passes | 1 |
 
-Total **13 days**, range 11-16 (the spike S0 and R-03/R-05 are the uncertain parts). Each step is mergeable behind
+Total **14.5 days**, range 12-17.5 (the spike S0, R-03/R-05 and the box matrix R-11 are the uncertain parts).
+Work item W-01 (`Background.svelte`, ~1-1.5 days) is separate and not counted. Each step is mergeable behind
 the switch: until S3 the new engine is a static renderer, so the default `classic` never regresses.
 
 ---
 
 ## 9. Findings added while preparing this design
 
-See `HOW_IT_WORKS.md` F-020 to F-024 (blank-frame baseline, line stepping, interop, Textbox readiness facts,
-`custom()` parameter facts).
+See `HOW_IT_WORKS.md` F-020 to F-029 (blank-frame baseline, line stepping, interop, Textbox readiness facts,
+`custom()` parameter facts, whole-screen dimming, backdrop root behaviour, background dips, brightness probe).
